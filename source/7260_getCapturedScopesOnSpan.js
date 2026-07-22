@@ -1,5 +1,5 @@
 // Module ID: 7260
-// Function ID: 58481
+// Function ID: 58492
 // Name: getCapturedScopesOnSpan
 // Dependencies: []
 

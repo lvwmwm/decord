@@ -1,10 +1,10 @@
-// Module ID: 10057
-// Function ID: 77686
+// Module ID: 10058
+// Function ID: 77699
 // Name: CreateGuild
 // Dependencies: []
 // Exports: default
 
-// Module 10057 (CreateGuild)
+// Module 10058 (CreateGuild)
 let closure_3 = importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,11 +12,11 @@ const MarketingURLs = arg1(dependencyMap[3]).MarketingURLs;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { flex: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { 562090611: null, 948336869: null, 951008687: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
 obj.contentContainer = obj;
 obj.header = { textAlign: "center" };
-obj.description = { SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME: null, SCROLL_EVENT_TIMER_MS: null, cutoutBottomRightSize: null };
-obj.iconUploader = { borderRadius: "/assets/design/components/Illustration/native/redesign/generated/images", backgroundColor: 160 };
+obj.description = { <string:2790674827>: null, <string:3372925522>: null, <string:2700829437>: null };
+obj.iconUploader = { "Bool(false)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(false)": 160 };
 obj.hint = { marginBottom: 8 };
 let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[4]);
@@ -62,7 +62,7 @@ export default function CreateGuild(arg0) {
       const result = obj.setAccessibilityFocus(obj);
     }
   }, items);
-  let obj = { style: tmp.flex, contentInset: { top: 0 }, contentContainerStyle: tmp.contentContainer };
+  let obj = { <string:1675145676>: 44, <string:2591642016>: 45, <string:2985086052>: 45, <string:1927697147>: 22, <string:3429125722>: 26, style: tmp.flex, contentInset: { top: 0 }, contentContainerStyle: tmp.contentContainer };
   obj = {};
   obj1 = { ref, style: tmp.header };
   if (null == customTitle) {
@@ -107,7 +107,7 @@ export default function CreateGuild(arg0) {
   const intl5 = arg1(dependencyMap[11]).intl;
   obj6.children = intl5.format(arg1(dependencyMap[11]).t.2bprXx, { guidelinesURL: MarketingURLs.GUIDELINES });
   items1[5] = callback(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj6);
-  const obj8 = { 9223372036854775807: 40, 0: true, -9223372036854775808: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", disabled: "" === guild.name };
+  const obj8 = { "Null": 40, "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", disabled: "" === guild.name };
   if (null == customButtonLabel) {
     const intl6 = arg1(dependencyMap[11]).intl;
     customButtonLabel = intl6.string(arg1(dependencyMap[11]).t.O0p/lS);

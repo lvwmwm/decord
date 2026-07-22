@@ -1,8 +1,8 @@
-// Module ID: 8772
-// Function ID: 69316
+// Module ID: 8773
+// Function ID: 69328
 // Dependencies: []
 
-// Module 8772
+// Module 8773
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ ScrollView: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -11,7 +11,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_12 };
+obj = { "Null": true, "Null": 6, "Null": 117, paddingTop: importDefault(dependencyMap[6]).space.PX_12 };
 obj.container = obj;
 obj1 = { paddingBottom: importDefault(dependencyMap[6]).space.PX_24 };
 obj.scrollView = obj1;

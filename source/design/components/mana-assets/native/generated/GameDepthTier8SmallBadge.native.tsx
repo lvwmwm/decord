@@ -1,7 +1,7 @@
 // Module ID: 6103
-// Function ID: 50076
+// Function ID: 50087
 // Name: GameDepthTier8SmallBadge
-// Dependencies: [131072, 561250304, 1879048192, 4160749588]
+// Dependencies: [131072, 561250304, 3657433088, 4160749587]
 // Exports: GameDepthTier8SmallBadge
 
 // Module 6103 (GameDepthTier8SmallBadge)

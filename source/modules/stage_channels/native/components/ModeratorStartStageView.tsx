@@ -1,10 +1,10 @@
-// Module ID: 10613
-// Function ID: 82812
+// Module ID: 10614
+// Function ID: 82825
 // Name: ModeratorStartStageView
 // Dependencies: []
 // Exports: default
 
-// Module 10613 (ModeratorStartStageView)
+// Module 10614 (ModeratorStartStageView)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

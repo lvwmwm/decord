@@ -1,10 +1,10 @@
-// Module ID: 11341
-// Function ID: 88180
+// Module ID: 11342
+// Function ID: 88193
 // Name: interactivityProps
 // Dependencies: []
 // Exports: default
 
-// Module 11341 (interactivityProps)
+// Module 11342 (interactivityProps)
 function interactivityProps(isInteractive) {
   const obj = {};
   let str = "none";
@@ -91,7 +91,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const CHAT_INPUT_TIMING_CONFIG = arg1(dependencyMap[2]).CHAT_INPUT_TIMING_CONFIG;
 const jsx = arg1(dependencyMap[3]).jsx;
-const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { overflow_top: false, GAME_SERVERS: false, leading: false, targetOrbAmount: false, subtitleLink: false, handleWaitForRemoteSession: false, targetOrbAmount: false } });
+const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { <string:1382672226>: false, <string:3949718378>: false, <string:1369504610>: false, <string:928094841>: false, <string:2985058826>: false, <string:1373970001>: false, <string:3965848119>: false } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };
 let closure_8 = { code: "function ChatInputActionButtonTransitionItemTsx2(){const{visible}=this.__closure;return{opacity:visible.get()};}" };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx");

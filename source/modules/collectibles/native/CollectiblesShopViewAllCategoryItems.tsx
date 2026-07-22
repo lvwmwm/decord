@@ -1,8 +1,8 @@
-// Module ID: 14389
-// Function ID: 108579
+// Module ID: 14397
+// Function ID: 108622
 // Dependencies: []
 
-// Module 14389
+// Module 14397
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, StyleSheet: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = arg1(dependencyMap[2]).CollectiblesMobileShopScreen;

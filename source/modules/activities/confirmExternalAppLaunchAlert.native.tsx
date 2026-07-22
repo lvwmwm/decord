@@ -1,10 +1,10 @@
-// Module ID: 10812
-// Function ID: 83971
+// Module ID: 10813
+// Function ID: 83984
 // Name: ConfirmActivityGateContent
 // Dependencies: []
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10812 (ConfirmActivityGateContent)
+// Module 10813 (ConfirmActivityGateContent)
 function ConfirmActivityGateContent(activityName) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer };
@@ -28,8 +28,6 @@ function ConfirmActivityGateContent(activityName) {
 function LinkButton() {
   let obj = { style: callback3().linkWrapper };
   obj = {
-    "Bool(true)": null,
-    "Bool(true)": null,
     onPress() {
       callback(closure_2[9]).openURL(closure_5);
     }
@@ -45,7 +43,7 @@ const PRIVATE_APPS_HELP_ARTICLE = arg1(dependencyMap[2]).PRIVATE_APPS_HELP_ARTIC
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ alertContainer: {}, alertEyebrowText: {}, alertTitleText: {}, alertSubtitleText: {}, announcementBirb: { "Null": false, "Null": false, "Null": false, "Null": false }, linkWrapper: { marginTop: 8 } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ alertContainer: {}, alertEyebrowText: {}, alertTitleText: {}, alertSubtitleText: {}, announcementBirb: { zIndex: 3.25, bottom: "contain", right: false, borderColor: true }, linkWrapper: { marginTop: 8 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/activities/confirmExternalAppLaunchAlert.native.tsx");
 

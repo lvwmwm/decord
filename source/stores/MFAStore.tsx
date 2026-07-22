@@ -1,9 +1,9 @@
-// Module ID: 12552
-// Function ID: 96478
+// Module ID: 12557
+// Function ID: 96506
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12552 (_isNativeReflectConstruct)
+// Module 12557 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +22,7 @@ let closure_8 = false;
 let closure_9 = [];
 let closure_10 = "";
 let closure_11 = false;
-let closure_12 = { "Bool(true)": null, "Bool(true)": null };
+let closure_12 = { 1330708484: "Normal", -9223372036854775808: true };
 let tmp2 = (Store) => {
   class MFAStore {
     constructor() {

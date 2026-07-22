@@ -1,10 +1,10 @@
-// Module ID: 9474
-// Function ID: 73807
+// Module ID: 9475
+// Function ID: 73820
 // Name: isNewMessageGroup
 // Dependencies: []
 // Exports: isNewGroupItem
 
-// Module 9474 (isNewMessageGroup)
+// Module 9475 (isNewMessageGroup)
 function isNewMessageGroup(isForumPost, content, hasFlag) {
   let type = hasFlag;
   const tmp = !hasFlag.hasFlag(constants3.HAS_THREAD) && !type.isCommandType();

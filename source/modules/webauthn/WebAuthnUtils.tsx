@@ -1,10 +1,10 @@
-// Module ID: 5594
-// Function ID: 47530
+// Module ID: 5593
+// Function ID: 47538
 // Name: encodeUserIdForWebAuthn
 // Dependencies: []
 // Exports: encodeUserIdForWebAuthn
 
-// Module 5594 (encodeUserIdForWebAuthn)
+// Module 5593 (encodeUserIdForWebAuthn)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/webauthn/WebAuthnUtils.tsx");
 

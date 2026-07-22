@@ -1,5 +1,5 @@
 // Module ID: 7807
-// Function ID: 62291
+// Function ID: 62301
 // Name: useHeroColors
 // Dependencies: []
 // Exports: default, getHeroColors

@@ -1,17 +1,17 @@
-// Module ID: 15054
-// Function ID: 113319
+// Module ID: 15062
+// Function ID: 113362
 // Name: SettingsButton
 // Dependencies: []
 // Exports: ICYMITab
 
-// Module 15054 (SettingsButton)
+// Module 15062 (SettingsButton)
 function SettingsButton() {
   const obj = {
     icon: callback2(arg1(dependencyMap[15]).FiltersHorizontalIcon, { size: "sm" }),
     onPress() {
       callback2(paths[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
       const obj = callback2(paths[16]);
-      callback2(paths[16]).feedPageActioned({ actionParameters: { <string:2204214729>: "surrogates", <string:1672982865>: "r", <string:1370399429>: "isArray", <string:3949021540>: "unicodeVersion" } });
+      callback2(paths[16]).feedPageActioned({ actionParameters: {} });
       const obj2 = callback2(paths[16]);
       callback2(paths[17]).openLazy(callback(paths[19])(paths[18], paths.paths), "ICYMISettingsActionSheet", {});
     }
@@ -240,7 +240,7 @@ function ICYMI(inNestedNavigator) {
     onPress() {
       stateFromStores(visibleItemIds[16]).itemInteracted("refresh_button", "refresh_button", "press_refresh_button");
       const obj = stateFromStores(visibleItemIds[16]);
-      stateFromStores(visibleItemIds[16]).feedPageActioned({ actionParameters: {} });
+      stateFromStores(visibleItemIds[16]).feedPageActioned({ actionParameters: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
       handleOnRefresh();
       lib();
     },
@@ -312,29 +312,28 @@ let closure_17 = arg1(dependencyMap[11]).createStyles((paddingTop) => {
 });
 const obj2 = arg1(dependencyMap[11]);
 let closure_18 = arg1(dependencyMap[13]).createICYMIStyles((margin) => {
-  let obj = { container: {} };
-  obj = { 0: true, 0: true, 0: true, -9223372036854775808: true, borderTopLeftRadius: importDefault(dependencyMap[12]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[12]).radii.sm };
+  let obj = { container: { gap: true, alignItems: true, justifyContent: true } };
+  obj = { -9223372036854775808: 1899409233, -9223372036854775808: -1, 0: 1922297169, -9223372036854775808: 24, borderTopLeftRadius: importDefault(dependencyMap[12]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[12]).radii.sm };
   obj.containerInPanels = obj;
   obj = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
   obj.containerBackground = obj;
-  const obj1 = { rows: "isArray", cardSize: "SOLID", overscroll: "isArray", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  const obj1 = { "Null": "isArray", "Null": "EXPRESSION_PICKER_EXPRESSION_FOCUS", "Null": "isArray", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
   obj.flashListWrapper = obj1;
   obj.refreshing = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj3 = { 0: "create", 0: "registerAsset", 0: "key", 9223372036854775807: "Text", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  const obj3 = { <string:1817292641>: null, <string:1398563427>: null, <string:2376753235>: null, <string:1627653640>: null, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
   obj.header = obj3;
-  obj.headerLeft = { "Null": 7, "Null": 370 };
+  obj.headerLeft = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
   const obj2 = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.headerClose = { marginRight: importDefault(dependencyMap[12]).space.PX_16, height: importDefault(dependencyMap[12]).space.PX_32, width: importDefault(dependencyMap[12]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[12]).radii.lg };
-  const obj5 = { "Bool(true)": "\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E \u0437\u0430 {{count}} \u0442\u0438\u0436\u0434\u0435\u043D\u044C", "Bool(true)": "\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E \u0437\u0430 {{count}} \u0442\u0438\u0436\u043D\u0456", "Bool(true)": "\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E \u0437\u0430 {{count}} \u0442\u0438\u0436\u043D\u0456\u0432", "Bool(true)": "{{count}} \u0442\u0438\u0436\u0434\u0435\u043D\u044C", "Bool(true)": "{{count}} \u0442\u0438\u0436\u043D\u0456", marginHorizontal: margin.margin };
-  obj.headerTitle = obj5;
-  obj.headerText = { "Null": true, "Null": true, "Bool(false)": true };
-  const obj6 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[12]).space.PX_12 };
+  obj.headerTitle = { marginHorizontal: margin.margin };
+  obj.headerText = { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null };
+  const obj6 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[12]).space.PX_12 };
   obj.headerActions = obj6;
-  const obj7 = { y: false, isArray: false, borderRadius: importDefault(dependencyMap[12]).radii.round };
+  const obj7 = { hideWhenScrolling: null, autoCapitalize: null, borderRadius: importDefault(dependencyMap[12]).radii.round };
   obj.notificationBadge = obj7;
-  const obj8 = { "Bool(true)": "values", "Bool(true)": "Array", paddingTop: importDefault(dependencyMap[12]).space.PX_96 };
+  const obj8 = { "Null": "<string:3942646034>", "Null": "<string:3355444267>", paddingTop: importDefault(dependencyMap[12]).space.PX_96 };
   obj.loading = obj8;
-  const obj9 = { "Bool(false)": "<string:1375732038>", "Bool(false)": "<string:3547876764>", "Bool(false)": "<string:1348682001>", "Bool(false)": "<string:410124290>", "Bool(false)": "<string:402653184>", "Bool(false)": "<string:16777216>", backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
+  const obj9 = { "Bool(false)": "sync", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", "Bool(false)": "MedalIcon", "Bool(false)": "png", "Bool(false)": "SETTINGS_PREMIUM_MANAGE_PLAN", "Bool(false)": "allowSparse", backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
   obj.headerBorder = obj9;
   return obj;
 });

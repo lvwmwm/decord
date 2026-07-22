@@ -1,9 +1,9 @@
-// Module ID: 16020
-// Function ID: 122957
+// Module ID: 16028
+// Function ID: 122999
 // Name: NativePlayAgeSignalsModule
 // Dependencies: []
 
-// Module 16020 (NativePlayAgeSignalsModule)
+// Module 16028 (NativePlayAgeSignalsModule)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativePlayAgeSignalsModule");
 const _module = require(dependencyMap[1]);

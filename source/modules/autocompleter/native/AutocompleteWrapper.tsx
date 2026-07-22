@@ -1,9 +1,9 @@
-// Module ID: 11419
-// Function ID: 88807
+// Module ID: 11420
+// Function ID: 88820
 // Name: isSlashAutocompleteType
 // Dependencies: []
 
-// Module 11419 (isSlashAutocompleteType)
+// Module 11420 (isSlashAutocompleteType)
 function isSlashAutocompleteType(arg0) {
   let tmp = arg0 === AutocompleteTypes.SLASHES;
   if (!tmp) {
@@ -60,19 +60,19 @@ let closure_27 = arg1(dependencyMap[14]).createStyles((borderRadius, borderWidth
   obj.marginHorizontal = marginHorizontal;
   obj.marginBottom = marginBottom;
   obj.autocompleteWrapper = obj;
-  obj.autocompleteWrapperAbsolute = { "Null": false, "Null": false, "Null": false };
+  obj.autocompleteWrapperAbsolute = {};
   obj = { backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius, borderWidth, borderTopWidth, borderColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
   obj.autocompleteContainer = obj;
-  const obj1 = { isArray: null, diversity: null, backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-  obj.autocomplete = obj1;
+  obj.autocomplete = { backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, marginLeft: -16 };
   obj.sectionDivider = obj2;
   const obj3 = { "Null": null, "Null": "260617da8a2932d3af6bc2abf2ba2716", marginBottom: "rejected-alert", paddingHorizontal: "png", backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj.sectionTitle = obj3;
+  const obj1 = { backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj.stickersAutocompleteList = { paddingLeft: 12 - borderWidth(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: borderWidth(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
   return obj;
 });
-let closure_28 = { stickerResults: [], nonStickerResults: [] };
+const obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, stickerResults: [], nonStickerResults: [] };
 const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   let canOnlyUseTextCommands;
   let screenIndex;
@@ -111,7 +111,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const scaledTextLineHeight = obj2.useScaledTextLineHeight("text-sm/semibold");
   const IncludeStickersInAutocomplete = arg1(dependencyMap[24]).IncludeStickersInAutocomplete;
   const setting = IncludeStickersInAutocomplete.getSetting();
-  const tmp5 = callback(onChangeAutoCompleteVisibility.useState(closure_28), 2);
+  const tmp5 = callback(onChangeAutoCompleteVisibility.useState(obj), 2);
   const first = tmp5[0];
   const resultCount = first.resultCount;
   const stickerResults = first.stickerResults;
@@ -128,7 +128,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const context = importAllResult.useContext(arg1(dependencyMap[25]).RedesignCompatContext);
   const items3 = [channel, setting];
   const memo = importAllResult.useMemo(() => analyticsLocations(canMentionEveryone[26]).getAutocompleteOptions(channel, true, setting), items3);
-  const tmp11 = callback(onChangeAutoCompleteVisibility.useState({ url: "<string:3349217282>", rejectWithError: "<string:160104449>", oldFormErrors: "<string:115015681>", retries: "<string:1749155841>" }), 2);
+  const tmp11 = callback(onChangeAutoCompleteVisibility.useState({ id: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", name: null, cost: false, id: null }), 2);
   const first1 = tmp11[0];
   const focused = first1.focused;
   const AutocompleteTypes = focused;
@@ -184,7 +184,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
           let obj1 = analyticsLocations(canMentionEveryone[28]);
           let applicationCommandOptionQueryOptions = obj1.getApplicationCommandOptionQueryOptions(activeOption);
         } else {
-          applicationCommandOptionQueryOptions = { canMentionEveryone, canMentionHere: canMentionEveryone };
+          applicationCommandOptionQueryOptions = { <string:74012607>: "<string:30179328>", <string:1627969113>: "<string:30645248>", <string:3832889527>: "hno-Arab-PK", <string:3884872643>: "isArray", <string:4283688289>: "isArray", <string:1294625142>: "isArray", <string:3708314371>: "<string:3211264>", <string:3119272427>: "isArray", canMentionEveryone, canMentionHere: canMentionEveryone };
         }
         let tmp7;
         if (null != activeOption) {
@@ -405,12 +405,12 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         }
       }
     }
-    return { <string:1375459504>: false, <string:3429148283>: false, <string:1373155564>: null };
+    return { 1367204962: "mn", -77364717: "description", "Bool(false)": "Array" };
   }, items4);
   const autocompleteType = memo1.autocompleteType;
   let closure_27 = autocompleteType;
   const query = memo1.query;
-  closure_28 = query;
+  obj = query;
   const queryOptions = memo1.queryOptions;
   const isSlashAutocompleteType = queryOptions;
   const autocompleteSelectionStart = memo1.autocompleteSelectionStart;

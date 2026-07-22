@@ -1,10 +1,10 @@
-// Module ID: 12575
-// Function ID: 96738
+// Module ID: 12580
+// Function ID: 96766
 // Name: VoiceActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12575 (VoiceActionSheet)
+// Module 12580 (VoiceActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -53,7 +53,7 @@ export default function VoiceActionSheet(channel) {
     obj1.children = items2;
     tmp11 = callback2(arg1(dependencyMap[12]).ActionSheet, obj1);
   } else {
-    const obj4 = { ind: null, PX_8: null };
+    const obj4 = { openDisableCommunication: null, freezeEnabled: null };
     const obj5 = { style: tmp.container };
     const obj6 = { blurTheme: "dark", style: tmp.visualEffectView };
     const items3 = [callback(importDefault(dependencyMap[16]), obj6), ];

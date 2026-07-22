@@ -1,5 +1,5 @@
 // Module ID: 3917
-// Function ID: 32368
+// Function ID: 32370
 // Name: CheckpointFriendsRive
 // Dependencies: []
 
@@ -8,8 +8,8 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { MAIN: {}, Sidekick: {}, Avatar: { 9223372036854775807: false, -9223372036854775808: false, 0: false, 0: false, 0: false, 0: false, 0: false }, Username: { 9223372036854775807: false, -9223372036854775808: false, 0: false, 0: false, 0: false, 0: false, 0: false }, Friends 01 Rotation: {} };
-let closure_8 = { MAIN: [], Sidekick: [], Avatar: ["<string:2554403107>", "<string:1358955096>", "<string:1027721412>", "<string:1107296519>", "38"], Username: ["<string:2554403107>", "<string:1358955096>", "<string:1027721412>", "<string:1107296519>", "38"], Friends 01 Rotation: [] };
+let closure_7 = { MAIN: {}, Sidekick: {}, Avatar: {}, Username: {}, Friends 01 Rotation: {} };
+let closure_8 = { MAIN: ["friends", "sidebar", "message-requests", "modal"], Sidekick: ["friends", "sidebar", "message-requests", "modal"], Avatar: [null, null, null, null, null], Username: [null, null, null, null, null], Friends 01 Rotation: ["friends", "sidebar", "message-requests", "modal"] };
 let closure_9 = {
   MAIN: function MAINBindings(reducedMotionEnabled) {
     let dataBinding;

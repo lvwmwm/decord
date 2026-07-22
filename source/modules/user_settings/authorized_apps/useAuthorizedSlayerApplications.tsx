@@ -1,10 +1,10 @@
-// Module ID: 14411
-// Function ID: 108720
+// Module ID: 14419
+// Function ID: 108763
 // Name: useAuthorizedSlayerApplications
 // Dependencies: []
 // Exports: default
 
-// Module 14411 (useAuthorizedSlayerApplications)
+// Module 14419 (useAuthorizedSlayerApplications)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const FetchState = arg1(dependencyMap[1]).FetchState;

@@ -1,10 +1,10 @@
-// Module ID: 13588
-// Function ID: 102994
+// Module ID: 13595
+// Function ID: 103027
 // Name: handleUnblockUser
 // Dependencies: []
 // Exports: default
 
-// Module 13588 (handleUnblockUser)
+// Module 13595 (handleUnblockUser)
 function handleUnblockUser(id) {
   importDefault(dependencyMap[3]).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
 }
@@ -12,7 +12,7 @@ function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   const arg1 = userRecord;
   const importDefault = importDefault(dependencyMap[4])().analyticsLocations;
-  let obj = { 9223372036854775807: "REMOTE_AUTH_CANCEL", -9223372036854775808: "SOLID", -9223372036854775808: "isUnicodeVariantSubtag", 0: "r", 9223372036854775807: "DEFAULT_PROFILE_EFFECT_WH_RATIO", 0: "y" };
+  let obj = {};
   obj = { user: userRecord, guildId: undefined, size: arg1(dependencyMap[6]).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.icon = jsx(arg1(dependencyMap[6]).Avatar, obj);
   let tmp2 = null != userRecord;

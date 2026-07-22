@@ -1,5 +1,5 @@
 // Module ID: 7764
-// Function ID: 61661
+// Function ID: 61671
 // Name: ChangeLogLink
 // Dependencies: []
 
@@ -104,13 +104,13 @@ obj = {};
 obj = { color: importDefault(dependencyMap[4]).colors.TEXT_LINK };
 obj.link = obj;
 obj.list = { marginBottom: 10 };
-obj.image = { "Null": null, "Null": null };
+obj.image = {};
 const tmp3 = arg1(dependencyMap[1]);
 obj.container = { borderLeftColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
-const obj1 = { borderLeftColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
-obj.text = { color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
+const obj2 = { overflow: false, position: false, bottom: false, color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
+obj.text = obj2;
 let closure_6 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
+const obj1 = { borderLeftColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
 const rules = importAll(dependencyMap[6]).createRules({});
 const importAllResult1 = importAll(dependencyMap[6]);
 const obj3 = {

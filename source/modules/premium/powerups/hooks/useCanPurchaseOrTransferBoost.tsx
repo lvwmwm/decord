@@ -1,10 +1,10 @@
-// Module ID: 11526
-// Function ID: 89802
+// Module ID: 11527
+// Function ID: 89815
 // Name: useCanPurchaseOrTransferBoost
 // Dependencies: []
 // Exports: default
 
-// Module 11526 (useCanPurchaseOrTransferBoost)
+// Module 11527 (useCanPurchaseOrTransferBoost)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const FractionalPremiumStates = arg1(dependencyMap[2]).FractionalPremiumStates;

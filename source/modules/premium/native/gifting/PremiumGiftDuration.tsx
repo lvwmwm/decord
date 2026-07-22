@@ -1,10 +1,10 @@
-// Module ID: 9756
-// Function ID: 75892
+// Module ID: 9757
+// Function ID: 75905
 // Name: PremiumGiftDurationButton
 // Dependencies: []
 // Exports: default
 
-// Module 9756 (PremiumGiftDurationButton)
+// Module 9757 (PremiumGiftDurationButton)
 let SubscriptionIntervalTypes;
 function PremiumGiftDurationButton(arg0) {
   let accessibilityRole;
@@ -53,7 +53,7 @@ function PremiumGiftDurationButton(arg0) {
   let tmp21 = null != combined;
   if (tmp21) {
     const obj4 = { style: tmp2.labelPromo };
-    const obj5 = { hasMaxConnections: 20, isBoostOnlySubscription: 20 };
+    const obj5 = {};
     const intl3 = arg1(dependencyMap[12]).intl;
     const obj6 = { discount: combined };
     obj5.children = intl3.formatToPlainString(arg1(dependencyMap[12]).t.IAybsG, obj6).toUpperCase();

@@ -1,10 +1,10 @@
-// Module ID: 13530
-// Function ID: 102659
+// Module ID: 13537
+// Function ID: 102692
 // Name: trackSafetySettingsNoticeAnalytics
 // Dependencies: [670, 2, 6]
 // Exports: trackSafetySettingsNoticeAnalytics
 
-// Module 13530 (trackSafetySettingsNoticeAnalytics)
+// Module 13537 (trackSafetySettingsNoticeAnalytics)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

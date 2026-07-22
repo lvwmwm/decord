@@ -1,5 +1,5 @@
 // Module ID: 7286
-// Function ID: 58725
+// Function ID: 58736
 // Name: isErrorEvent
 // Dependencies: []
 
@@ -27,7 +27,7 @@ export const BaseClient = () => {
       this._hooks = {};
       this._eventProcessors = [];
       tmp2 = BaseClient;
-      tmp3 = f58730;
+      tmp3 = f58741;
       if (arg0.dsn) {
         num3 = 3;
         tmp2Result = tmp2(tmp3[3]);
@@ -36,18 +36,18 @@ export const BaseClient = () => {
         num = 4;
         if (tmp2(tmp3[4]).DEBUG_BUILD) {
           tmp4 = BaseClient;
-          tmp5 = f58730;
+          tmp5 = f58741;
           num2 = 5;
-          logger = BaseClient(f58730[5]).logger;
+          logger = BaseClient(f58741[5]).logger;
           str = "No DSN provided, client will not send events.";
           warnResult = logger.warn("No DSN provided, client will not send events.");
         }
       }
       if (self._dsn) {
         tmp7 = BaseClient;
-        tmp8 = f58730;
+        tmp8 = f58741;
         num4 = 6;
-        obj2 = BaseClient(f58730[6]);
+        obj2 = BaseClient(f58741[6]);
         sdk = undefined;
         if (arg0._metadata) {
           sdk = arg0._metadata.sdk;
@@ -63,7 +63,7 @@ export const BaseClient = () => {
         obj1.url = envelopeEndpointWithUrlEncodedAuth;
         self._transport = arg0.transport(Object.assign(obj, arg0.transportOptions, obj1));
       }
-      items = [true, true, true];
+      items = [false, false, false];
       found = items.find((arg0) => {
         let tmp = arg0 in arg0;
         if (tmp) {
@@ -71,12 +71,12 @@ export const BaseClient = () => {
         }
         return tmp;
       });
-      f58730 = found;
+      f58741 = found;
       if (found) {
         tmp13 = BaseClient;
-        tmp14 = f58730;
+        tmp14 = f58741;
         num5 = 5;
-        obj5 = BaseClient(f58730[5]);
+        obj5 = BaseClient(f58741[5]);
         consoleSandboxResult = obj5.consoleSandbox(() => {
           console.warn("[Sentry] Deprecation warning: `" + found + "` is set to undefined, which leads to tracing being enabled. In v9, a value of `undefined` will result in tracing being disabled.");
         });

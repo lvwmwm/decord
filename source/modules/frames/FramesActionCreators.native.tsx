@@ -1,9 +1,9 @@
-// Module ID: 10472
-// Function ID: 81081
+// Module ID: 10473
+// Function ID: 81094
 // Name: _launchFrameOnNative
 // Dependencies: []
 
-// Module 10472 (_launchFrameOnNative)
+// Module 10473 (_launchFrameOnNative)
 function _launchFrameOnNative() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

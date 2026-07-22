@@ -1,10 +1,10 @@
-// Module ID: 15591
-// Function ID: 118997
+// Module ID: 15599
+// Function ID: 119040
 // Name: contextMenuButton
 // Dependencies: []
 // Exports: default
 
-// Module 15591 (contextMenuButton)
+// Module 15599 (contextMenuButton)
 function contextMenuButton(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
@@ -34,7 +34,7 @@ function QuestProgressBottomSheet(quest) {
   }
   obj.applicationId = id;
   obj.size = 600;
-  obj.names = ["RollOutRight"];
+  obj.names = ["ETHERNET"];
   const url = importDefault(dependencyMap[18])(obj).url;
   let obj4 = arg1(dependencyMap[19]);
   const questTaskDetails = obj4.useQuestTaskDetails(quest);
@@ -87,7 +87,7 @@ function QuestProgressBottomSheet(quest) {
   const callback3 = React.useCallback(() => {
     claim(closure_2[23]).hideActionSheet();
   }, []);
-  const obj3 = { bottom: null, right: null };
+  const obj3 = { showDot: null, GameDepthTier9LargeBadge: null };
   obj4 = { style: tmp2.heroContainer };
   let tmp20 = null != url;
   if (tmp20) {
@@ -177,7 +177,7 @@ function QuestProgressBottomSheet(quest) {
   obj18.loading = isClaiming;
   obj18.grow = true;
   const items9 = [callback2(arg1(dependencyMap[36]).Button, obj18), ];
-  const obj19 = { -9223372036854775808: null, -9223372036854775808: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 0: null, 0: "e9e0b327a07bc2a048d6ebd0769783d0" };
+  const obj19 = { <string:1675145676>: null, <string:3429170003>: true, <string:1381806572>: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", <string:1927719520>: null, <string:2700856422>: "e9e0b327a07bc2a048d6ebd0769783d0" };
   const intl4 = arg1(dependencyMap[14]).intl;
   obj19.text = intl4.string(arg1(dependencyMap[14]).t.cpT0Cq);
   obj19.onPress = callback3;
@@ -232,8 +232,7 @@ let closure_12 = arg1(dependencyMap[7]).createStyles((arg0) => {
   }
   obj3.bottom = num4;
   obj.gameTileContainer = obj3;
-  const obj4 = { websiteButtons: "names", ROUGH_COUNT_MILLION_PLAYERS: "construct", stopSurface: "View", 2018342988: "isArray", 663976015: "isArray", 664037462: "isArray", 1833066845: "Text", top: importDefault(dependencyMap[8]).space.PX_16, right: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_16 };
-  obj.contextMenuContainer = obj4;
+  obj.contextMenuContainer = { top: importDefault(dependencyMap[8]).space.PX_16, right: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_16 };
   const obj5 = { alignItems: "center" };
   let PX_16;
   if (!arg0) {

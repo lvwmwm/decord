@@ -1,10 +1,10 @@
-// Module ID: 11357
-// Function ID: 88322
+// Module ID: 11358
+// Function ID: 88335
 // Name: DMMessageStickerGreeting
 // Dependencies: []
 // Exports: default
 
-// Module 11357 (DMMessageStickerGreeting)
+// Module 11358 (DMMessageStickerGreeting)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -17,14 +17,14 @@ const tmp2 = arg1(dependencyMap[7]);
 let closure_13 = arg1(dependencyMap[8]).createStyles((arg0) => {
   let BACKGROUND_BASE_LOWER = arg0;
   let obj = {};
-  obj = { GuildEventRecurrence: -1842986559993929700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, queryInAppNavigations: 0.00000000000000000000000000000000000000000000000000000000000004667253313593581, EmojiButtonMouseEntered: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026482970243713326, dampingRatio: "isArray", mass: "key" };
+  obj = {};
   if (null == arg0) {
     BACKGROUND_BASE_LOWER = importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER;
   }
   obj.backgroundColor = BACKGROUND_BASE_LOWER;
   obj.container = obj;
   obj.stickerContainer = { paddingBottom: 16 };
-  obj = { "Null": "text-xxs/normal", "Null": "text-muted", "Null": true, "Null": "/assets/images/native/icons", "Null": 16, "Null": 16, "Null": null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.xxl };
+  obj = { 0: "text-xxs/normal", 0: "text-muted", -9223372036854775808: true, 9223372036854775807: "/assets/images/native/icons", 9223372036854775807: 16, 0: 16, 9223372036854775807: null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.xxl };
   obj.toastContainer = obj;
   obj.toastContent = { lineHeight: 20 };
   obj.gradient = {};

@@ -1,10 +1,10 @@
-// Module ID: 11868
-// Function ID: 91885
+// Module ID: 11869
+// Function ID: 91899
 // Name: useGuildProfileGameProfilesExperiment
 // Dependencies: []
 // Exports: useGuildProfileGameProfilesExperiment
 
-// Module 11868 (useGuildProfileGameProfilesExperiment)
+// Module 11869 (useGuildProfileGameProfilesExperiment)
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

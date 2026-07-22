@@ -1,10 +1,10 @@
-// Module ID: 15073
-// Function ID: 113462
+// Module ID: 15081
+// Function ID: 113505
 // Name: _maybeFetchGuildDiscoveryCategories
 // Dependencies: []
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 15073 (_maybeFetchGuildDiscoveryCategories)
+// Module 15081 (_maybeFetchGuildDiscoveryCategories)
 function _maybeFetchGuildDiscoveryCategories() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 11805
-// Function ID: 91597
+// Module ID: 11806
+// Function ID: 91611
 // Name: CollectiblesShopGiftPurchaseSection
 // Dependencies: []
 // Exports: default
 
-// Module 11805 (CollectiblesShopGiftPurchaseSection)
+// Module 11806 (CollectiblesShopGiftPurchaseSection)
 function CollectiblesShopGiftPurchaseSection(disabled) {
   let nextTier;
   const product = disabled.product;

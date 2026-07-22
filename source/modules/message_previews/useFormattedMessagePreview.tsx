@@ -1,10 +1,10 @@
-// Module ID: 10221
-// Function ID: 78979
+// Module ID: 10222
+// Function ID: 78992
 // Name: isMessageContentPreviewable
 // Dependencies: []
 // Exports: useFormattedMessagePreview
 
-// Module 10221 (isMessageContentPreviewable)
+// Module 10222 (isMessageContentPreviewable)
 function isMessageContentPreviewable(messageRecord) {
   const type = messageRecord.type;
   if (arg1(dependencyMap[4]).MessageTypes.DEFAULT !== type) {
@@ -75,13 +75,13 @@ function formatMessagePreview(type, isBlocked) {
             everyResult2 = attachments3.every((filename) => callback(closure_2[9]).isAudioFile(filename.filename));
           }
           if (everyResult) {
-            const obj2 = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
+            const obj2 = { expandableContent: 24, allowDots: 24, GIPHY_ASSET_PATH: null };
             const intl10 = callback(closure_2[8]).intl;
             const obj3 = { count: embeds.attachments.length };
             obj2.text = intl10.formatToPlainString(callback(closure_2[8]).t.h4pFfU, obj3);
             let obj8 = obj2;
           } else if (everyResult1) {
-            const obj4 = {};
+            const obj4 = { expandableContent: true, allowDots: true, GIPHY_ASSET_PATH: true };
             const intl9 = callback(closure_2[8]).intl;
             const obj5 = { count: embeds.attachments.length };
             obj4.text = intl9.formatToPlainString(callback(closure_2[8]).t.SJ6pPX, obj5);
@@ -93,7 +93,7 @@ function formatMessagePreview(type, isBlocked) {
             obj6.text = intl8.formatToPlainString(callback(closure_2[8]).t.fnO3hK, obj7);
             obj8 = obj6;
           } else {
-            obj8 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020045222830224, "Bool(true)": 83748098031734900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002482846645991894 };
+            obj8 = { expandableContent: false, allowDots: false, GIPHY_ASSET_PATH: false };
             const intl7 = callback(closure_2[8]).intl;
             const obj9 = { count: embeds.attachments.length };
             obj8.text = intl7.formatToPlainString(callback(closure_2[8]).t.89ihS8, obj9);
@@ -134,13 +134,13 @@ function formatMessagePreview(type, isBlocked) {
             });
           }
           if (everyResult3) {
-            const obj10 = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
+            const obj10 = { expandableContent: 24, allowDots: 24, GIPHY_ASSET_PATH: null };
             const intl6 = callback(closure_2[8]).intl;
             const obj11 = { count: embeds.embeds.length };
             obj10.text = intl6.formatToPlainString(callback(closure_2[8]).t.h4pFfU, obj11);
             let obj18 = obj10;
           } else if (everyResult4) {
-            const obj12 = {};
+            const obj12 = { expandableContent: true, allowDots: true, GIPHY_ASSET_PATH: true };
             const intl5 = callback(closure_2[8]).intl;
             const obj13 = { count: embeds.embeds.length };
             obj12.text = intl5.formatToPlainString(callback(closure_2[8]).t.SJ6pPX, obj13);
@@ -164,14 +164,14 @@ function formatMessagePreview(type, isBlocked) {
                 obj18 = obj17;
               }
             }
-            obj18 = { "Bool(true)": "redesign/message-preview/medium", "Bool(true)": "text-link", "Bool(true)": "redesign/message-preview/medium" };
+            obj18 = {};
             const intl3 = callback(closure_2[8]).intl;
             const obj19 = { count: embeds.embeds.length };
             obj18.text = intl3.formatToPlainString(callback(closure_2[8]).t.9XuYjs, obj19);
           }
           return obj18;
         } else if (embeds.stickerItems.length > 0) {
-          const obj20 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, text: embeds.stickerItems[0].name };
+          const obj20 = { expandableContent: true, allowDots: "/assets/design/components/Icon/native/redesign/generated/images", GIPHY_ASSET_PATH: 24, text: embeds.stickerItems[0].name };
           return obj20;
         } else if (embeds.isPoll()) {
           const obj21 = { type: "text" };

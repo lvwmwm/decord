@@ -20,13 +20,13 @@ export default () => {
         tmp6 = closure_1;
         num2 = 3;
         obj2 = Sensor(closure_1[3]);
-        mutable = obj2.makeMutable({ -9223372036854775808: null, 0: 0.6, 9223372036854775807: "BounceOutRight", -12057728822: null, 9223372036854775807: 0.6, 9223372036854775807: "BounceOutLeft", 9223372036854775807: null, 9223372036854775807: 0.6 });
+        mutable = obj2.makeMutable({ content: 0.6, padding: "BounceOut", getChannel: null, ip: 0.6, Array: "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft" });
       } else {
         tmp2 = Sensor;
         tmp3 = closure_1;
         num = 3;
         obj = Sensor(closure_1[3]);
-        mutable = obj.makeMutable({ -133159917712: "ERROR", 0: "ERROR", 0: "NOT_RESPONDER", 0: "NOT_RESPONDER" });
+        mutable = obj.makeMutable({ translateX: -24, translateY: null, scale: 1, channel: "Malaysia" });
       }
       this.data = mutable;
       return;

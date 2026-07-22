@@ -1,5 +1,5 @@
 // Module ID: 8011
-// Function ID: 63597
+// Function ID: 63607
 // Name: PremiumGroupWordmark
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ export default function PremiumGroupWordmark(arg0) {
   let alwaysWhite;
   let height;
   let width;
-  let obj = { variant: false, selectable: false, style: false };
+  let obj = { body: "spring", textAlign: 0.4, accessibilityRole: 1 };
   ({ width, height, alwaysWhite } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

@@ -1,5 +1,5 @@
 // Module ID: 7594
-// Function ID: 60808
+// Function ID: 60818
 // Name: _submitHamReportForFirstDM
 // Dependencies: []
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
@@ -123,7 +123,7 @@ export const showUnauthenticatedReportModalForUser = function showUnauthenticate
   let obj = { reported_user_id: tmp.id };
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.USER, obj);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.USER, record: tmp };
-  obj = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
+  obj = { "Null": "HTTP", "Null": "Date", "Null": "HTTP", onClose, emailToken };
   onClose(dependencyMap[6]).showReportModal(obj, {}, obj);
 };
 export const showUnauthenticatedReportModalForGuild = function showUnauthenticatedReportModalForGuild(emailToken, onClose) {
@@ -132,21 +132,21 @@ export const showUnauthenticatedReportModalForGuild = function showUnauthenticat
   obj = { guild_id: result.id };
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.GUILD, obj);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.GUILD, record: result };
-  const obj1 = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
+  const obj1 = { "Null": "HTTP", "Null": "Date", "Null": "HTTP", onClose, emailToken };
   onClose(dependencyMap[6]).showReportModal(obj, {}, obj1);
 };
 export const showUnauthenticatedReportModalForTida = function showUnauthenticatedReportModalForTida(emailToken, onClose) {
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.MEDIA_TAKEDOWN, {});
   let obj = onClose(dependencyMap[6]);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.MEDIA_TAKEDOWN };
-  obj = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
+  obj = { "Null": "HTTP", "Null": "Date", "Null": "HTTP", onClose, emailToken };
   obj.showReportModal(obj, {}, obj);
 };
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.MESSAGE, { message_id: undefined, channel_id: undefined });
   let obj = onClose(dependencyMap[6]);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.MESSAGE, record: new closure_5({}) };
-  obj = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
+  obj = { "Null": "HTTP", "Null": "Date", "Null": "HTTP", onClose, emailToken };
   obj.showReportModal(obj, {}, obj);
 };
 export const submitReportForInappropriateConversationSafetyAlert = function submitReportForInappropriateConversationSafetyAlert(arg0, arg1, arg2) {
@@ -159,18 +159,18 @@ export const showReportModalForInappropriateConversationSafetyAlert = function s
   obj = { onSubmit: arg1 };
   arg1(dependencyMap[6]).showReportModal(obj, { variant: "safety_alerts_v1" }, obj);
 };
-export const showReportModalForWidget = function showReportModalForWidget(user_id, id, onSubmit, appContext) {
-  let obj = id(dependencyMap[6]);
-  obj = { name: id(dependencyMap[5]).ReportNames.WIDGET };
-  id = id.id;
+export const showReportModalForWidget = function showReportModalForWidget(closure_0, closure_1) {
+  let obj = closure_1(dependencyMap[6]);
+  obj = { name: closure_1(dependencyMap[5]).ReportNames.WIDGET };
+  const id = closure_1.id;
   let str = "";
   if (null != id) {
     str = id;
   }
   obj.widget_id = str;
-  obj.user_id = user_id;
-  obj.widget = id;
-  obj = { onSubmit, appContext };
+  obj.user_id = closure_0;
+  obj.widget = closure_1;
+  obj = { onSubmit: arg2, appContext: arg3 };
   obj.showReportModal(obj, {}, obj);
 };
 export const showReportModalForApp = function showReportModalForApp(arg0) {

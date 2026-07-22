@@ -1,9 +1,9 @@
-// Module ID: 13900
-// Function ID: 105134
+// Module ID: 13907
+// Function ID: 105174
 // Name: VideoQuestModalSteps
 // Dependencies: []
 
-// Module 13900 (VideoQuestModalSteps)
+// Module 13907 (VideoQuestModalSteps)
 let StyleSheet;
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
@@ -11,7 +11,7 @@ const importAllResult = importAll(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let closure_9 = {};
+let closure_9 = { marginVertical: "Search", maxHeight: "secondary", maxWidth: true, minHeight: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl" };
 let obj = { WATCH_VIDEO: 0, [0]: "WATCH_VIDEO", POST_WATCH_VIDEO: 1, [1]: "POST_WATCH_VIDEO" };
 let obj2 = arg1(dependencyMap[5]);
 obj = { wrapper: {}, contentWrapper: { flex: 1 } };
@@ -110,7 +110,7 @@ let closure_14 = importAllResult.memo((sourceQuestContent) => {
         items = [, ];
         items[0] = -100;
         items[1] = 0;
-        obj.translateY = obj5.withSpring(obj6.interpolate(closure_9.get(), ["replace", "then"], items), closure_9);
+        obj.translateY = obj5.withSpring(obj6.interpolate(closure_9.get(), [77601039, 1612144654], items), closure_9);
         items1 = [];
         items1[0] = obj;
         obj.transform = items1;
@@ -134,7 +134,7 @@ let closure_14 = importAllResult.memo((sourceQuestContent) => {
         items = [, ];
         items[0] = closure_10.top;
         items[1] = 0;
-        obj.translateY = obj3.withSpring(obj4.interpolate(closure_9.get(), ["replace", "then"], items), closure_9);
+        obj.translateY = obj3.withSpring(obj4.interpolate(closure_9.get(), [77601039, 1612144654], items), closure_9);
         items1 = [];
         items1[0] = obj;
         obj.transform = items1;
@@ -266,7 +266,7 @@ const memoResult = importAllResult.memo(function VideoQuestModal(questContentPos
   if (null != nonNullableQuest) {
     tmp5 = null;
     if (null != memo) {
-      obj = { getInternalInstanceHandleFromPublicInstance: "<string:3722304989>", GameGenres: "<string:1895907309>", screens: memo };
+      obj = { "Null": "<string:3722304989>", "Null": "<string:1895907309>", screens: memo };
       tmp5 = callback2(arg1(dependencyMap[24]).Modal, obj);
     }
   }

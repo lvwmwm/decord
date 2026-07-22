@@ -1,10 +1,10 @@
-// Module ID: 5239
-// Function ID: 44262
+// Module ID: 4966
+// Function ID: 42674
 // Name: SubscribeModalGuildSelect
 // Dependencies: []
 // Exports: default
 
-// Module 5239 (SubscribeModalGuildSelect)
+// Module 4966 (SubscribeModalGuildSelect)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -14,14 +14,14 @@ let closure_9 = arg1(dependencyMap[5]).PremiumGuildSubscribeModalScenes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { borderRadius: "password", nestedScrollEnabled: "email", scrollEventThrottle: "name-prefix", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.safeArea = obj;
 obj.guildList = { padding: 16 };
-obj.guildOption = {};
-const tmp2 = arg1(dependencyMap[6]);
-obj.guildName = { color: arg1(dependencyMap[9]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+obj.guildOption = { <string:3814666730>: "<string:17891332>", <string:1280564396>: "iNR25n", <string:2650527326>: "<string:3393257728>" };
+const obj1 = { title: "absolute", options: 0, accessible: null, color: arg1(dependencyMap[9]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+obj.guildName = obj1;
 let closure_12 = obj.createStyles(obj);
-const obj1 = { color: arg1(dependencyMap[9]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+const tmp2 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalGuildSelect.tsx");
 
 export default function SubscribeModalGuildSelect(guildBoostSlots) {

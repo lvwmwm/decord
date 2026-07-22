@@ -1,16 +1,15 @@
 // Module ID: 7502
-// Function ID: 60139
+// Function ID: 60150
 // Name: CircleErrorIcon
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: CircleErrorIcon
 
 // Module 7502 (CircleErrorIcon)
-import "result";
-import { View } from "result";
-import result from "result";
-
-({ jsx: closure_4, jsxs: closure_5 } = result);
-result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleErrorIcon.tsx");
+importAll(dependencyMap[0]);
+const View = arg1(dependencyMap[1]).View;
+({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
+const tmp3 = arg1(dependencyMap[2]);
+const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleErrorIcon.tsx");
 
 export const CircleErrorIcon = function CircleErrorIcon(color) {
   let secondaryColor;
@@ -23,7 +22,7 @@ export const CircleErrorIcon = function CircleErrorIcon(color) {
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { body: false, borderRadius: false, accessibilityRole: false };
+  let obj = { -1435702126: "spring", -1718953382: 0.4, 2085832679: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
@@ -32,7 +31,7 @@ export const CircleErrorIcon = function CircleErrorIcon(color) {
   const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
   const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), { force: null, trackAnalytics: null }];
+  const items2 = [...items1.flat(), { 10360: 40, 10496: 40 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);

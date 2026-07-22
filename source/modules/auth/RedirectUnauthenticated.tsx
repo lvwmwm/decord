@@ -1,10 +1,10 @@
-// Module ID: 15307
-// Function ID: 116426
+// Module ID: 15315
+// Function ID: 116469
 // Name: getRedirectPath
 // Dependencies: []
 // Exports: default
 
-// Module 15307 (getRedirectPath)
+// Module 15315 (getRedirectPath)
 function getRedirectPath() {
   if (CONFERENCE_MODE_ENABLED) {
     let REGISTER = Routes.REGISTER;

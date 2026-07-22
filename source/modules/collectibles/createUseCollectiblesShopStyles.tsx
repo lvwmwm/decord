@@ -1,10 +1,10 @@
-// Module ID: 9767
-// Function ID: 75962
+// Module ID: 9768
+// Function ID: 75975
 // Name: getMidpointColor
 // Dependencies: []
 // Exports: default
 
-// Module 9767 (getMidpointColor)
+// Module 9768 (getMidpointColor)
 function getMidpointColor(toRgb, toRgb2) {
   let tmp4;
   let tmp5;

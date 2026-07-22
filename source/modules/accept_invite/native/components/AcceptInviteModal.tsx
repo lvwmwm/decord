@@ -1,10 +1,10 @@
-// Module ID: 15852
-// Function ID: 121309
+// Module ID: 15860
+// Function ID: 121352
 // Name: AcceptInviteModal
 // Dependencies: []
 // Exports: default
 
-// Module 15852 (AcceptInviteModal)
+// Module 15860 (AcceptInviteModal)
 let closure_3 = importAll(dependencyMap[0]);
 const CreateGuildModalStates = arg1(dependencyMap[1]).CreateGuildModalStates;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -19,7 +19,7 @@ export default function AcceptInviteModal(arg0) {
   const items = [arg0];
   obj.screens = React.useMemo(() => function getScreens(deeplinkAttemptId) {
     let obj = {};
-    obj = { 1388296529: null, -805977770: null, impressionName: deeplinkAttemptId(closure_2[3]).ImpressionNames.INVITE_ACCEPT };
+    obj = { type: "<string:1040334421>", text: "<string:1040334338>", impressionName: deeplinkAttemptId(closure_2[3]).ImpressionNames.INVITE_ACCEPT };
     obj = { deeplink_attempt_id: deeplinkAttemptId.deeplinkAttemptId, invite_code: deeplinkAttemptId(closure_2[4]).parseInviteCodeFromInviteKey(deeplinkAttemptId.code) };
     obj.impressionProperties = obj;
     obj.render = function render() {

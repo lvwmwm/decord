@@ -1,10 +1,10 @@
-// Module ID: 11657
-// Function ID: 90418
+// Module ID: 11658
+// Function ID: 90431
 // Name: PortalAccessibilityWorkaroundView
 // Dependencies: []
 // Exports: default
 
-// Module 11657 (PortalAccessibilityWorkaroundView)
+// Module 11658 (PortalAccessibilityWorkaroundView)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -14,7 +14,7 @@ export default function PortalAccessibilityWorkaroundView(arg0) {
   let obj = arg1(dependencyMap[3]);
   obj = null;
   if (obj.isIosFabric()) {
-    obj = { 0: "png", "Bool(true)": 8 };
+    obj = { version: "png", rendererPackageName: 8 };
   }
   obj = {};
   const merged = Object.assign(arg0);

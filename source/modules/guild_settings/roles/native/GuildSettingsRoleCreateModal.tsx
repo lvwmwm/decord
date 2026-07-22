@@ -1,10 +1,10 @@
-// Module ID: 16178
-// Function ID: 124836
+// Module ID: 16186
+// Function ID: 124878
 // Name: logTransitionEvent
 // Dependencies: []
 // Exports: default
 
-// Module 16178 (logTransitionEvent)
+// Module 16186 (logTransitionEvent)
 function logTransitionEvent(from_step, FLOW_DISMISSED, skip, guildId) {
   let obj = importDefault(dependencyMap[14]);
   obj = { flow_type: constants2.GUILD_ROLE_CREATION_MODAL, from_step, to_step: FLOW_DISMISSED, skip };
@@ -362,17 +362,17 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ MAX_ROLE_LENGTH: closure_16, DEFAULT_ROLE_COLOR: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20 } = arg1(dependencyMap[9]));
 const tmp4 = arg1(dependencyMap[9]);
 ({ jsx: closure_21, jsxs: closure_22 } = arg1(dependencyMap[10]));
-let closure_23 = { titleContainer: {}, title: { "Null": null, "Null": null } };
+let closure_23 = { titleContainer: {}, title: {} };
 let obj1 = arg1(dependencyMap[11]);
 let obj = {};
 obj = { marginTop: arg1(dependencyMap[12]).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
 obj.container = obj;
 obj.sceneHeader = {};
-obj.sceneSubtitle = { showInactive: false, GiftCardStack3dIllustration: false, FITNESS: false };
+obj.sceneSubtitle = { 1415738086: "messageId", 1650222166: "Array", 9223372036854775807: "isArray" };
 obj.sceneContent = { flex: 1 };
 obj1 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 obj.sceneInner = obj1;
-obj.colorTrailing = { "Null": 7, "Null": 370 };
+obj.colorTrailing = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.colorBlock = {};
 const tmp5 = arg1(dependencyMap[10]);
 obj.sceneFooter = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
@@ -386,7 +386,7 @@ let closure_27 = importAllResult.memo((step) => {
   const keys = Object.keys(obj4);
   let obj = { style: closure_23.titleContainer };
   const sum = keys.indexOf(step.step) + 1;
-  obj = { Opened: "guild", marginVertical: "2026-02_past_vc_activity_messages", marginStart: "Past VC Activity Messages", marginEnd: "guild", style: closure_23.title };
+  obj = { style: closure_23.title };
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.format(arg1(dependencyMap[17]).t.8v/u0i, { number: sum, total: keys.length });
   obj.children = callback4(arg1(dependencyMap[16]).Text, obj);

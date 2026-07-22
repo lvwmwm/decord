@@ -1,35 +1,35 @@
-// Module ID: 14830
-// Function ID: 111777
+// Module ID: 14838
+// Function ID: 111820
 // Name: trackClick
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 14830 (trackClick)
-import importAllResult from "result";
-import result from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 14838 (trackClick)
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function trackClick(type, guild_id) {
   let obj = importDefault(dependencyMap[10]);
   obj = { type, order: 0, guild_id };
   obj.track(constants.ACTIVITY_CARD_CLICKED, obj);
 }
-({ View: closure_4, Image: closure_5 } = result);
-let closure_9 = result.HappeningNowCardTrackingType;
-({ AnalyticEvents: closure_10, InstantInviteSources: closure_11 } = result);
-({ jsx: closure_12, jsxs: closure_13 } = result);
+({ View: closure_4, Image: closure_5 } = __exportStarResult1);
+let closure_9 = __exportStarResult1.HappeningNowCardTrackingType;
+({ AnalyticEvents: closure_10, InstantInviteSources: closure_11 } = __exportStarResult1);
+({ jsx: closure_12, jsxs: closure_13 } = __exportStarResult1);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.lg, height: result.HAPPENING_NOW_CARD_HEIGHT, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+obj = { width: "center", height: __exportStarResult1.HAPPENING_NOW_CARD_HEIGHT, borderRadius: importDefault(dependencyMap[9]).radii.lg, overflow: 174, flexShrink: null, width: 1, height: null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.actionCard = obj;
-result = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.actionCardImage = result;
-let closure_14 = result.createStyles(obj);
+__exportStarResult1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj.actionCardImage = __exportStarResult1;
+let closure_14 = __exportStarResult1.createStyles(obj);
 let closure_15 = importAllResult.memo((panelVariant) => {
   let imageSource;
   let onPress;
@@ -46,7 +46,7 @@ let closure_15 = importAllResult.memo((panelVariant) => {
   obj.children = items;
   return callback2(importDefault(dependencyMap[20]), obj);
 });
-result = arg1(dependencyMap[22]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx");
+const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx");
 
 export const HappeningNowCardCreateChannel = function HappeningNowCardCreateChannel(guildId) {
   guildId = guildId.guildId;

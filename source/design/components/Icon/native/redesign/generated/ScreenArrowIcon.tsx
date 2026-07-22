@@ -1,10 +1,10 @@
-// Module ID: 11554
-// Function ID: 89914
+// Module ID: 11555
+// Function ID: 89927
 // Name: ScreenArrowIcon
 // Dependencies: []
 // Exports: ScreenArrowIcon
 
-// Module 11554 (ScreenArrowIcon)
+// Module 11555 (ScreenArrowIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ScreenArrowIcon.tsx");

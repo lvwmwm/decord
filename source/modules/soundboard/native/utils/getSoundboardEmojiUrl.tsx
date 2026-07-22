@@ -1,10 +1,10 @@
-// Module ID: 11068
-// Function ID: 86104
+// Module ID: 11069
+// Function ID: 86117
 // Name: getSoundboardEmojiUrl
 // Dependencies: []
 // Exports: default
 
-// Module 11068 (getSoundboardEmojiUrl)
+// Module 11069 (getSoundboardEmojiUrl)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/soundboard/native/utils/getSoundboardEmojiUrl.tsx");
 

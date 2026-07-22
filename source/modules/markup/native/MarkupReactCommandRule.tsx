@@ -1,10 +1,10 @@
-// Module ID: 10870
-// Function ID: 84548
+// Module ID: 10871
+// Function ID: 84561
 // Name: handleTapCommandMention
 // Dependencies: []
 // Exports: default
 
-// Module 10870 (handleTapCommandMention)
+// Module 10871 (handleTapCommandMention)
 function handleTapCommandMention(channelId) {
   let appLauncherNavigator;
   let commandId;

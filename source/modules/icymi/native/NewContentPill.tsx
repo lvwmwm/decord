@@ -1,10 +1,10 @@
-// Module ID: 15125
-// Function ID: 114139
+// Module ID: 15133
+// Function ID: 114182
 // Name: CutoutGuildIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15125 (CutoutGuildIcon)
+// Module 15133 (CutoutGuildIcon)
 function CutoutGuildIcon(guild) {
   let obj = { style: {} };
   obj = {};
@@ -35,7 +35,7 @@ obj = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundCol
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.guildIconBG = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
-obj.refreshMorePillContainer = { "Bool(false)": "<string:1895974082>", "Bool(false)": "Array", "Bool(false)": "<string:75847746>", "Bool(false)": "<string:30065664>", "Bool(false)": "wy\u015Bcig", "Bool(false)": "ceremonia de contemplaci\u00F3n de la luna" };
+obj.refreshMorePillContainer = { marginHorizontal: "title", borderRadius: "__closure", padding: "r", marginLeft: "construct", width: "Array", height: "isArray" };
 let closure_11 = obj.createStyles(obj);
 let closure_12 = {};
 let closure_13 = { code: "function NewContentPillTsx1(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };

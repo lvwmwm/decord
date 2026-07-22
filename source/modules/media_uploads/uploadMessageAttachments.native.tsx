@@ -1,5 +1,5 @@
 // Module ID: 7074
-// Function ID: 56573
+// Function ID: 56584
 // Name: _uploadMessageAttachments
 // Dependencies: [653, 4320, 2, 57, 5, 1348]
 // Exports: uploadMessageAttachments

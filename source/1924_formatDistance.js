@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 1924 (formatDistance)
-let closure_0 = { lessThanXSeconds: { "Bool(false)": 28, "Bool(false)": null }, xSeconds: {}, halfAMinute: "half a minute", lessThanXMinutes: { "Bool(false)": true, "Bool(false)": true }, xMinutes: {}, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: { "Bool(false)": 3, "Bool(false)": 1 }, xWeeks: { "Bool(false)": "a.m.", "Bool(false)": "p.m." }, aboutXMonths: { "Bool(false)": "midnight", "Bool(false)": "noon" }, xMonths: { "Bool(false)": true, "Bool(false)": true }, aboutXYears: { "Bool(false)": null, "Bool(false)": null }, xYears: {}, overXYears: { "Bool(false)": "center", "Bool(false)": null }, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { removeInternalFields: false, ga: false }, xSeconds: {}, halfAMinute: "half a minute", lessThanXMinutes: { removeInternalFields: null, ga: null }, xMinutes: {}, aboutXHours: { removeInternalFields: null, ga: null }, xHours: {}, xDays: { removeInternalFields: 1107296560, ga: 75739 }, aboutXWeeks: { removeInternalFields: null, ga: null }, xWeeks: { removeInternalFields: "in the morning", ga: "in the afternoon" }, aboutXMonths: { removeInternalFields: "ur", ga: "PUSH_TO_TALK_PIP_PHYSICS" }, xMonths: { removeInternalFields: "y", ga: "SETTINGS_PREMIUM_MANAGE_PLAN" }, aboutXYears: {}, xYears: {}, overXYears: { removeInternalFields: null, ga: null }, almostXYears: { removeInternalFields: "<string:1598226688>", ga: "<string:1577058903>" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

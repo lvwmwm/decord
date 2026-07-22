@@ -1,5 +1,5 @@
 // Module ID: 4151
-// Function ID: 35102
+// Function ID: 35104
 // Name: items3
 // Dependencies: []
 // Exports: getAppIntentScheme
@@ -11,7 +11,7 @@ const items1 = ["1247266306231898122", "1257458870390099989", "12762390717646809
 let obj = { UNLOCKED: 1, [1]: "UNLOCKED", PORTRAIT: 2, [2]: "PORTRAIT", LANDSCAPE: 3, [3]: "LANDSCAPE" };
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
 obj = { label_type: require(dependencyMap[1]).EmbeddedActivityLabelTypes.NONE, omit_badge_from_surfaces: [] };
-obj = { lj: true, withTiming: true, application: true };
+obj = { <string:7611998>: 0.12841855, <string:16777216>: 0.008856452, <string:33554432>: 958236370018977700000000000000000000000000 };
 ({ UNLOCKED: obj3.default_orientation_lock_state, UNLOCKED: obj3.tablet_default_orientation_lock_state } = obj);
 const items3 = [require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms.WEB];
 obj.supported_platforms = items3;
@@ -75,7 +75,7 @@ export const TWELVE_BULLETS_PRD = "1276239071764680926";
 export const EMBEDDED_ACTIVITY_SURVEY_URL = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu";
 export const EMBEDDED_ACTIVITIES_BLOG_POST_URL = "https://discord.com/blog/server-activities-games-voice-watch-together";
 export const ImageSizes = {};
-export const STAFF_RELEASE_PHASES = [];
+export const STAFF_RELEASE_PHASES = [null, null, null];
 export const EXCLUDE_FULL_SCREEN_APPS = items;
 export const SHARE_INTERACTION_APPS = items1;
 export const ActivityFeedbackReasons = { ADS: "ADS", FAILED_LOAD: "FAILED_LOAD", LAGGING: "LAGGING", CONFUSING: "CONFUSING", NOT_FUN: "NOT_FUN", OTHER: "OTHER" };

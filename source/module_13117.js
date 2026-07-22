@@ -1,17 +1,10 @@
 // Module ID: 13117
-// Function ID: 99483
+// Function ID: 99499
 // Dependencies: []
 
 // Module 13117
 
-export default !require(dependencyMap[0])(() => {
-  const fn = () => {
-
-  };
-  const bindResult = fn.bind();
-  let hasOwnPropertyResult = "function" !== typeof bindResult;
-  if (!hasOwnPropertyResult) {
-    hasOwnPropertyResult = bindResult.hasOwnProperty("prototype");
-  }
-  return hasOwnPropertyResult;
-});
+export default (arg0, value) => {
+  const obj = { "Null": null, "Null": null, "Null": null, value };
+  defineProperty(require(dependencyMap[0]), arg0, obj);
+};

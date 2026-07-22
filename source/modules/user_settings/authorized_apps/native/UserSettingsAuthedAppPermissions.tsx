@@ -1,10 +1,10 @@
-// Module ID: 13726
-// Function ID: 103854
+// Module ID: 13733
+// Function ID: 103887
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 13726 (_createForOfIteratorHelperLoose)
+// Module 13733 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -89,7 +89,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, permissionContainer: { "Bool(false)": false, "Bool(false)": false }, permissionIcon: { marginTop: 1 }, permissionText: { "Bool(false)": "y", "Bool(false)": "isArray" } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, permissionContainer: {}, permissionIcon: { marginTop: 1 }, permissionText: { <string:3024947456>: null, <string:757573325>: null } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedAppPermissions.tsx");
 
@@ -132,9 +132,9 @@ export default function UserSettingsAuthedAppPermissions(oauth2Token) {
         } while (!iter2.done);
       }
       obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: true, children: name.name };
+      obj = { cachedAt: "polite", edpbxy: "column", children: name.name };
       const items2 = [callback(tmp(closure_2[7]).Text, obj), , , ];
-      const obj1 = { hasMaxConnections: "patach", isBoostOnlySubscription: "<string:1091633152>" };
+      const obj1 = { cachedAt: "lockScreen", edpbxy: "<string:1091633152>" };
       const intl2 = tmp(closure_2[6]).intl;
       obj1.children = intl2.string(tmp(closure_2[6]).t.xrmhRX);
       items2[1] = callback(tmp(closure_2[7]).Text, obj1);
@@ -143,7 +143,7 @@ export default function UserSettingsAuthedAppPermissions(oauth2Token) {
         obj = { style: items.permissionIcon, size: "xs", color: callback(closure_2[9]).colors.STATUS_POSITIVE };
         const items = [, ];
         items[0] = callback2(items(closure_2[8]).CircleCheckIcon, obj);
-        obj = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: items.permissionText, children };
+        obj = { "Null": 1, "Null": "tail", alignItems: null, style: items.permissionText, children };
         items[1] = callback2(items(closure_2[7]).Text, obj);
         obj.children = items;
         return callback3(closure_4, obj, arg1);

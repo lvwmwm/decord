@@ -1,10 +1,10 @@
-// Module ID: 10011
-// Function ID: 77395
+// Module ID: 10012
+// Function ID: 77408
 // Name: participantHasVideo
 // Dependencies: []
 // Exports: useCanRenderParticipantVideo
 
-// Module 10011 (participantHasVideo)
+// Module 10012 (participantHasVideo)
 function participantHasVideo(type) {
   let tmp = type;
   if (type.type === constants.ACTIVITY) {

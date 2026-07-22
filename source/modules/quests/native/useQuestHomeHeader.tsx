@@ -1,10 +1,10 @@
-// Module ID: 13779
-// Function ID: 104119
+// Module ID: 13786
+// Function ID: 104152
 // Name: QuestHomeHeaderTitle
 // Dependencies: []
 // Exports: default
 
-// Module 13779 (QuestHomeHeaderTitle)
+// Module 13786 (QuestHomeHeaderTitle)
 function QuestHomeHeaderTitle() {
   const tmp = callback3();
   let obj = { style: tmp.headerTitleContainer };
@@ -77,7 +77,7 @@ obj = {};
 obj = { "Null": true, "Null": true, "Null": true, marginTop: importDefault(dependencyMap[7]).space.PX_8, paddingLeft: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.headerTitleContainer = obj;
 obj.headerTitle = { flexShrink: 1 };
-const obj1 = { top: true, bottom: true, left: true, gap: importDefault(dependencyMap[7]).space.PX_8, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { "Null": true, "Null": true, "Null": true, gap: importDefault(dependencyMap[7]).space.PX_8, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.headerRightContainer = obj1;
 let closure_10 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);

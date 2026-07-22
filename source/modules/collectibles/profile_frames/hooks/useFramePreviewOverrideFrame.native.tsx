@@ -1,10 +1,10 @@
-// Module ID: 8235
-// Function ID: 65018
+// Module ID: 8236
+// Function ID: 65030
 // Name: useFramePreviewOverrideFrame
 // Dependencies: []
 // Exports: default
 
-// Module 8235 (useFramePreviewOverrideFrame)
+// Module 8236 (useFramePreviewOverrideFrame)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).useFramePreviewOverrideStore;

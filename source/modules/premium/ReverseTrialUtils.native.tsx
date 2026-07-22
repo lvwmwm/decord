@@ -1,5 +1,5 @@
 // Module ID: 7422
-// Function ID: 59649
+// Function ID: 59660
 // Name: useIsInReverseTrial
 // Dependencies: []
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining

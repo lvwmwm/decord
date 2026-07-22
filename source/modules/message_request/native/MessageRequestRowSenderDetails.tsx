@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 117797
+// Module ID: 15443
+// Function ID: 117840
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [31, 5602, 5603, 15443, 566, 5389, 15444, 2, 5602, 566, 2, 31, 33, 1273, 15446, 2]
+// Dependencies: [31, 5601, 5602, 15451, 566, 5119, 15452, 2, 5601, 566, 2, 31, 33, 1273, 15454, 2]
 // Exports: default
 
-// Module 15435 (MessageRequestRowSenderDetails)
+// Module 15443 (MessageRequestRowSenderDetails)
 import "module_31";
 import { View } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,9 +16,9 @@ import result2 from "result2";
 initialize = {};
 initialize = { borderRadius: require("useRefValue").AVATAR_SIZE_MAP[require("useRefValue").AvatarSizes.NORMAL] / 2, backgroundColor: require("useSpamMessageRequestCount").colors.BACKGROUND_SURFACE_HIGH };
 initialize.avatar = initialize;
-initialize.avatarContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-initialize.detailsContainer = { env_key: 9, session_id: null, player_name: "\u{1F91B}\u{1F3FC}", player_version: true };
-initialize.messageDetails = { "Null": 7, "Null": 370 };
+initialize.avatarContainer = { 0: null, -9223372036854775808: null, 0: null };
+initialize.detailsContainer = { "Bool(true)": 9, "Bool(true)": null, "Bool(true)": "\u{1F91B}\u{1F3FC}", "Bool(true)": true };
+initialize.messageDetails = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 initialize.username = { flexShrink: 1, color: require("useSpamMessageRequestCount").colors.MOBILE_TEXT_HEADING_PRIMARY };
 initialize.timestampSeparator = { marginHorizontal: 6 };
 initialize.messagePreview = { marginTop: 2 };
@@ -71,8 +71,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   const items1 = [callback(View, obj), ];
   const obj3 = { style: tmp.detailsContainer };
   const obj4 = { style: tmp.messageDetails };
-  const obj5 = { "Null": true, "Null": 15.1, "Null": 253, style: tmp.usernameTextContainer };
-  const obj6 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", style: tmp.username };
+  const obj5 = { style: tmp.usernameTextContainer };
+  const obj6 = { style: tmp.username };
   let stringResult = stateFromStores;
   if (null == stateFromStores) {
     let username;
@@ -89,16 +89,16 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   const items2 = [callback(arg1(dependencyMap[11]).Text, obj6), ];
   let tmp18 = null != stateFromStores;
   if (tmp18) {
-    const obj7 = {};
+    const obj7 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
     let obj11 = arg1(dependencyMap[8]);
-    const items3 = [-1402750382, obj11.getUserTag(otherUser)];
+    const items3 = [false, obj11.getUserTag(otherUser)];
     obj7.children = items3;
     tmp18 = callback2(arg1(dependencyMap[11]).Text, obj7);
   }
   items2[1] = tmp18;
   obj5.children = items2;
   const items4 = [callback2(arg1(dependencyMap[11]).Text, obj5), callback(arg1(dependencyMap[11]).Text, { style: tmp.timestampSeparator }), ];
-  const obj9 = { hasMaxConnections: 15, isBoostOnlySubscription: "center", children: messageRequestRelativeTimestampText };
+  const obj9 = { cachedAt: 15, edpbxy: "center", children: messageRequestRelativeTimestampText };
   items4[2] = callback(arg1(dependencyMap[11]).Text, obj9);
   obj4.children = items4;
   const items5 = [callback2(View, obj4), , ];

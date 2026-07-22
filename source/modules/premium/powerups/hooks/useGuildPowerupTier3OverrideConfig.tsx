@@ -1,10 +1,10 @@
-// Module ID: 11578
-// Function ID: 90008
+// Module ID: 11579
+// Function ID: 90021
 // Name: useGuildPowerupTier3OverrideConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11578 (useGuildPowerupTier3OverrideConfig)
+// Module 11579 (useGuildPowerupTier3OverrideConfig)
 let closure_3 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupTier3OverrideConfig.tsx");
@@ -26,7 +26,7 @@ export default function useGuildPowerupTier3OverrideConfig(arg0) {
     const intl = arg1(dependencyMap[3]).intl;
     obj.text = intl.string(importDefault(dependencyMap[4]).l9n4QZ);
   } else {
-    obj = { left: "<string:3349217282>", top: "<string:160104449>" };
+    obj = { icon: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", right: null };
   }
   return obj;
 };

@@ -1,10 +1,10 @@
-// Module ID: 14372
-// Function ID: 108502
+// Module ID: 14380
+// Function ID: 108545
 // Name: feedBlock
 // Dependencies: []
 // Exports: default
 
-// Module 14372 (feedBlock)
+// Module 14380 (feedBlock)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -16,18 +16,18 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { -2036989357: "<string:354549762>", 996371416: "<string:3477209090>", 5330602: "<string:587203104>", gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj = { gap: importDefault(dependencyMap[9]).space.PX_16 };
 obj.feedContainer = obj;
+const obj1 = { i: "isArray", borderRadius: "construct", x: "Map", y: "isArray", accessibilityRole: "isArray", gap: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
+obj.feedHeader = obj1;
 const tmp3 = arg1(dependencyMap[7]);
-obj.feedHeader = { gap: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
-const obj2 = { <string:3352632547>: null, <string:2849265413>: 0, <string:3032608799>: 360, <string:4037645763>: 0, gap: importDefault(dependencyMap[9]).space.PX_8 };
-obj.feedTitle = obj2;
-const obj1 = { gap: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
-obj.feedFooter = { gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj.feedTitle = { gap: importDefault(dependencyMap[9]).space.PX_8 };
+const obj3 = { <string:1358520847>: false, <string:1996080484>: false, <string:4190463447>: false, <string:1369626486>: false, "Bool(false)": false, gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj.feedFooter = obj3;
 obj.feedFooterImage = { width: 24, paddingHorizontal: 24 };
-obj.feedFooterOrbImage = {};
+obj.feedFooterOrbImage = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001424925562086477, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017914860073, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013037542142783, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002666708076683012 };
 let closure_13 = obj.createStyles(obj);
-const obj3 = { gap: importDefault(dependencyMap[9]).space.PX_16 };
+const obj2 = { gap: importDefault(dependencyMap[9]).space.PX_8 };
 const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/collectibles/native/FeedBlock.tsx");
 
 export default function _default(feedBlock) {
@@ -159,13 +159,13 @@ export default function _default(feedBlock) {
       let tmp29Result = callback(closure_4, obj11);
     } else {
       if (obj18.isAndroid()) {
-        const obj13 = {};
+        const obj13 = { "Null": "<string:3219980290>", "Null": "<string:4132503554>", "Null": "<string:2639024621>", "Null": "EgvHH/", "Null": "LINKS" };
         let tmp30Result = tmp30(tmp31[29]);
         obj13.url = tmp30(tmp31[30]);
         obj13.style = `no-hide-descendants`.feedFooterOrbImage;
         tmp29Result = tmp29(tmp30Result, obj13);
       } else {
-        const obj14 = { grow: true, key: true, label: null, name: false, backgroundColor: "no", justifyContent: "none" };
+        const obj14 = { "Bool(true)": "<string:1111560487>", "Bool(true)": "<string:16777677>", "Bool(true)": "<string:43746883>", "Bool(true)": "<string:43746560>", "Bool(true)": "<string:30645248>", "Bool(true)": "<string:454443264>" };
         const obj15 = {};
         tmp30Result = tmp30(tmp31[31]);
         obj15.uri = tmp30(tmp31[30]);

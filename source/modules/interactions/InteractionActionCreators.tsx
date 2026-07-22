@@ -1,5 +1,5 @@
 // Module ID: 7793
-// Function ID: 62220
+// Function ID: 62230
 // Name: _fetchMessageInteractionData
 // Dependencies: []
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed

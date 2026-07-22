@@ -1,5 +1,5 @@
 // Module ID: 6689
-// Function ID: 51752
+// Function ID: 51763
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -124,7 +124,7 @@ let tmp4 = (Store) => {
       if (null != length1) {
         num2 = length1;
       }
-      obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null };
+      obj = { <string:2630862235>: "mn", <string:3315451292>: "description", <string:3315495893>: "Array" };
       const sum = num + num2;
       obj.initialSendTimestamp = Date.now();
       obj.channelId = channelId;

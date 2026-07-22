@@ -1,21 +1,21 @@
-// Module ID: 15461
-// Function ID: 117937
+// Module ID: 15469
+// Function ID: 117980
 // Name: Settings
 // Dependencies: []
 // Exports: default
 
-// Module 15461 (Settings)
+// Module 15469 (Settings)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
-obj = { containerOuter: { Č: 10, accessibilityDismiss: 10 } };
+obj = { containerOuter: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, borderRadius: importDefault(dependencyMap[4]).radii.md, flex: 1 };
 obj.containerOuterTablet = obj;
 obj.container = { flex: 1 };
-obj.containerTablet = { borderRadius: importDefault(dependencyMap[4]).radii.md };
+const obj1 = { "Null": null, "Null": null, position: null, borderRadius: importDefault(dependencyMap[4]).radii.md };
+obj.containerTablet = obj1;
 let closure_6 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.md };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/settings/Settings.tsx");
 
 export default function Settings() {

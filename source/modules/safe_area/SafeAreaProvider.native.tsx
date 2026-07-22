@@ -1,10 +1,10 @@
-// Module ID: 13379
-// Function ID: 101713
+// Module ID: 13386
+// Function ID: 101746
 // Name: updateSafeAreaStoreEntry
 // Dependencies: []
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 13379 (updateSafeAreaStoreEntry)
+// Module 13386 (updateSafeAreaStoreEntry)
 function updateSafeAreaStoreEntry(arg0, arg1) {
   arg1 = arg0;
   const importDefault = arg1;
@@ -54,7 +54,7 @@ function updateSafeAreaStoreEntry(arg0, arg1) {
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = { 1912565759: 3375103, 1979675647: -8192, 1895788287: 4320799 };
+let closure_6 = {};
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/safe_area/SafeAreaProvider.native.tsx");
 
 export const SafeAreaReporter = function SafeAreaReporter() {

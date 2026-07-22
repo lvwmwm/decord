@@ -1,9 +1,9 @@
-// Module ID: 15184
-// Function ID: 114538
+// Module ID: 15192
+// Function ID: 114581
 // Name: ApplicationStatusIcon
 // Dependencies: []
 
-// Module 15184 (ApplicationStatusIcon)
+// Module 15192 (ApplicationStatusIcon)
 function ApplicationStatusIcon(status) {
   status = status.status;
   if (arg1(dependencyMap[5]).GuildJoinRequestApplicationStatuses.APPROVED === status) {
@@ -24,8 +24,8 @@ let obj1 = arg1(dependencyMap[3]);
 let obj = { label: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.container = obj;
-obj.row = {};
-obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj.row = { "Bool(false)": null, "Bool(false)": "210c1b00e626925954729db07b85fa94", "Bool(false)": "ic_polls", "Bool(false)": "png" };
+obj1 = { "Null": 0, "Null": "#dfdfdf", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.divider = obj1;
 let closure_9 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let tmp2 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     obj = {};
-    obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.label };
+    obj = { cachedAt: true, edpbxy: true, style: tmp.label };
     const intl = arg1(dependencyMap[10]).intl;
     obj.children = intl.string(arg1(dependencyMap[10]).t.hxa+G3);
     const items = [callback(arg1(dependencyMap[9]).Text, obj), ];
@@ -64,7 +64,7 @@ const memoResult = importAllResult.memo((arg0) => {
               return callback(closure_2[11])(arg0);
             }
           };
-          const obj1 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+          const obj1 = {};
           const obj5 = tmp(closure_2[12]);
           obj1.children = obj5.dateFormat(new Date(createdAt.createdAt), "LL");
           const items1 = [callback(tmp(closure_2[9]).Text, obj1), callback(closure_10, { status: createdAt.applicationStatus })];

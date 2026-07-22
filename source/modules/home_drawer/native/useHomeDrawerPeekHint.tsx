@@ -1,10 +1,10 @@
-// Module ID: 14682
-// Function ID: 110726
+// Module ID: 14690
+// Function ID: 110769
 // Name: items
 // Dependencies: []
 // Exports: useHomeDrawerPeekHint
 
-// Module 14682 (items)
+// Module 14690 (items)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

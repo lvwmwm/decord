@@ -1,10 +1,10 @@
-// Module ID: 10712
-// Function ID: 83382
+// Module ID: 10713
+// Function ID: 83395
 // Name: getSelectedNoiseSuppressionOption
 // Dependencies: []
 // Exports: handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10712 (getSelectedNoiseSuppressionOption)
+// Module 10713 (getSelectedNoiseSuppressionOption)
 function getSelectedNoiseSuppressionOption() {
   let obj = arg0;
   if (arg0 === undefined) {

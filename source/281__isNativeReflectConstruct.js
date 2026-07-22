@@ -335,9 +335,12 @@ const tmp3 = (Component) => {
   };
   return callback(TouchableNativeFeedback, items);
 }(importAllResult.Component);
-tmp3.SelectableBackground = (rippleRadius) => ({ rippleRadius });
+tmp3.SelectableBackground = (rippleRadius) => {
+  const obj = { "Bool(false)": true, "Bool(false)": true, rippleRadius };
+  return obj;
+};
 tmp3.SelectableBackgroundBorderless = (rippleRadius) => {
-  const obj = { -9223372036854775808: true, 9223372036854775807: true, rippleRadius };
+  const obj = { "Bool(false)": null, "Bool(false)": 1, rippleRadius };
   return obj;
 };
 tmp3.Ripple = (arg0, borderless, rippleRadius) => {

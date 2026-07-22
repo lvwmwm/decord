@@ -1,10 +1,10 @@
-// Module ID: 15948
-// Function ID: 122316
+// Module ID: 15956
+// Function ID: 122358
 // Name: useApplicationInfo
 // Dependencies: []
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 15948 (useApplicationInfo)
+// Module 15956 (useApplicationInfo)
 function useApplicationInfo(application) {
   const arg1 = application;
   const items = [, , , ];

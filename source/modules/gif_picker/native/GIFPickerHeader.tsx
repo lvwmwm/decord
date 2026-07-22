@@ -1,8 +1,8 @@
-// Module ID: 9579
-// Function ID: 74635
+// Module ID: 9580
+// Function ID: 74648
 // Dependencies: []
 
-// Module 9579
+// Module 9580
 const View = arg1(dependencyMap[1]).View;
 arg1(dependencyMap[2]).GIFPickerResultTypes;
 const importAllResult = importAll(dependencyMap[0]);
@@ -11,7 +11,7 @@ let obj1 = arg1(dependencyMap[4]);
 let obj = {};
 obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
 obj.container = obj;
-obj1 = { -1636733362: -2092891871, -1854497021: 1912603873, 1476244665: 7, -1041429462: 370, 1358078869: 3840, 1720799887: -2102574848, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, height: arg1(dependencyMap[6]).InputHeights.MD + importDefault(dependencyMap[5]).space.PX_4 / 2, gap: importDefault(dependencyMap[5]).space.PX_8 };
+obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, height: arg1(dependencyMap[6]).InputHeights.MD + importDefault(dependencyMap[5]).space.PX_4 / 2, gap: importDefault(dependencyMap[5]).space.PX_8 };
 obj.header = obj1;
 let closure_7 = obj1.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj1.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[11]).t.UTypEu, obj2);
     const obj3 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
     const items = [callback(arg1(dependencyMap[12]).ChevronLargeLeftIcon, obj3), ];
-    const obj4 = { 1448895712: "explicit_content_friend_dm", -1135386053: "enum", 833392556: "CVE" };
+    const obj4 = { 0: "explicit_content_friend_dm", -9223372036854775808: "enum", 9223372036854775807: "CVE" };
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
       const intl3 = arg1(dependencyMap[11]).intl;
       let stringResult = intl3.string(arg1(dependencyMap[11]).t.TsWCdW);

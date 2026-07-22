@@ -1,10 +1,10 @@
-// Module ID: 15046
-// Function ID: 113279
+// Module ID: 15054
+// Function ID: 113322
 // Name: announceActioned
 // Dependencies: []
 // Exports: ActionStatusSubLabel
 
-// Module 15046 (announceActioned)
+// Module 15054 (announceActioned)
 function announceActioned(intl) {
   const AccessibilityAnnouncer = arg1(dependencyMap[3]).AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
@@ -91,7 +91,7 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
           items = [, ];
           items[0] = result2;
           items[1] = result;
-          withTimingResult = obj2.withTiming(obj3.interpolate(num4, ["replace", "then"], items));
+          withTimingResult = obj2.withTiming(obj3.interpolate(num4, [77601039, 1612144654], items));
         }
       }
       obj.height = withTimingResult;
@@ -119,7 +119,7 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
         num4 = 1;
       }
       const items = [0.229, num];
-      withTimingResult = obj3.withTiming(num(actionStatusAccessibilityLabel[4]).interpolate(num4, ["replace", "then"], items));
+      withTimingResult = obj3.withTiming(num(actionStatusAccessibilityLabel[4]).interpolate(num4, [77601039, 1612144654], items));
       const obj4 = num(actionStatusAccessibilityLabel[4]);
     }
     obj.translateY = withTimingResult;
@@ -159,7 +159,7 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
         items = [, ];
         items[0] = num;
         items[1] = 0;
-        withTimingResult = obj3.withTiming(obj4.interpolate(num4, ["replace", "then"], items));
+        withTimingResult = obj3.withTiming(obj4.interpolate(num4, [77601039, 1612144654], items));
       }
       obj.translateY = withTimingResult;
       items1 = [];

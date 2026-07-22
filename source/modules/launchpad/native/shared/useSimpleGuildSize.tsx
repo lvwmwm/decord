@@ -1,10 +1,10 @@
-// Module ID: 15531
-// Function ID: 118569
+// Module ID: 15539
+// Function ID: 118612
 // Name: useSimpleGuildSize
 // Dependencies: []
 // Exports: default
 
-// Module 15531 (useSimpleGuildSize)
+// Module 15539 (useSimpleGuildSize)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildSize.tsx");
 

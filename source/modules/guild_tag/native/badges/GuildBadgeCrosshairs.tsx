@@ -1,18 +1,18 @@
-// Module ID: 12814
-// Function ID: 98131
+// Module ID: 12821
+// Function ID: 98164
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeCrosshairs
 
-// Module 12814 (items)
+// Module 12821 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = ["channelId", "channelId", "channelId", "channelId"];
-let closure_5 = [true, "<string:1329725442>", "<string:1358955076>"];
+let closure_5 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003152909256905305, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002353652551387877, 0.00000000000000000000000000000000000000000000000000000000000004667307916202893];
 let closure_6 = [0.1, 0.6, 0.95, 0.05];
-const items = [{ "Null": null, "Null": null }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }, { "Null": "\u{1F4A0}", "Null": 6 }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }];
+const items = [{ accessibilityRole: null, s: null }, { accessibilityRole: null, s: null }, { accessibilityRole: "\u{1F4A0}", s: 6 }, { accessibilityRole: null, s: null }];
 let closure_8 = [true, true, true];
-const items1 = [{ "Null": "Array", "Null": "isArray" }, { "Null": "\u{1F4A0}", "Null": 6 }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }];
+const items1 = [{ accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "\u{1F4A0}", s: 6 }, { accessibilityRole: null, s: null }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeCrosshairs.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeCrosshairs = function GuildBadgeCrosshairs(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

@@ -1,17 +1,17 @@
-// Module ID: 10599
-// Function ID: 82714
+// Module ID: 10600
+// Function ID: 82727
 // Name: safeAreaInitJs
 // Dependencies: []
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 10599 (safeAreaInitJs)
+// Module 10600 (safeAreaInitJs)
 function safeAreaInitJs(arg0) {
   let iframeWindowVarName;
   let insets;
   let isIframeLoadedVarName;
   ({ insets, iframeWindowVarName, isIframeLoadedVarName } = arg0);
   if (null == insets) {
-    insets = { "Bool(true)": "ERROR", "Bool(true)": "ERROR", "Bool(true)": "NOT_RESPONDER", "Bool(true)": "NOT_RESPONDER" };
+    insets = { wideBannerAnimatedUrl: -24, SPACE_32: null, np: 1, linkedUsers: "Malaysia" };
   }
   return "\n  " + iframeWindowVarName + ".addEventListener(\"load\", () => {\n    var iframeDoc = " + iframeWindowVarName + ".document;\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-left', '" + insets.left + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-right', '" + insets.right + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-top', '" + insets.top + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-bottom', '" + insets.bottom + "px');\n    " + isIframeLoadedVarName + " = true;\n  });\n";
 }

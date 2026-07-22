@@ -1,13 +1,13 @@
-// Module ID: 11362
-// Function ID: 88357
+// Module ID: 11363
+// Function ID: 88370
 // Dependencies: []
 
-// Module 11362
+// Module 11363
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { container: {} };
+let obj = { container: { width: true, marginHorizontal: true } };
 obj = { marginLeft: importDefault(dependencyMap[4]).space.PX_4 };
 obj.icon = obj;
 let closure_7 = arg1(dependencyMap[3]).createStyles(obj);

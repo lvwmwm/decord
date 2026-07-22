@@ -5,7 +5,7 @@
 
 // Module 862 (createMetricContainerEnvelopeItem)
 function createMetricContainerEnvelopeItem(items) {
-  const obj = { -824876486: false, 509723217: false, 1627466321: false, item_count: items.length };
+  const obj = { 145777185: "feedback", 1834027105: "info", 69280065: "trace", item_count: items.length };
   items = [obj, { items }];
   return items;
 }

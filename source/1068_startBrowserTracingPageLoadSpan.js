@@ -1,12 +1,10 @@
 // Module ID: 1068
 // Function ID: 12263
 // Name: startBrowserTracingPageLoadSpan
-// Dependencies: [977, 65, 1089, 978, 977, 794, 978, 977]
+// Dependencies: []
 // Exports: browserTracingIntegration
 
 // Module 1068 (startBrowserTracingPageLoadSpan)
-import getRNSentryModule from "getRNSentryModule";
-
 function startBrowserTracingPageLoadSpan(emit, name) {
   emit.emit("startPageLoadSpan", name, arg2);
   const currentScope = require(dependencyMap[1]).getCurrentScope();
@@ -62,9 +60,10 @@ function getActiveIdleSpan(closure_0) {
 function setActiveIdleSpan(arg0, arg1) {
   const result = require(dependencyMap[1]).addNonEnumerableProperty(arg0, closure_4, arg1);
 }
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const obj = { "Null": "force", "Null": "forceChange", "Null": "rotation", "Null": "rotationChange", "Null": "scale", "Null": "scaleChange", "Null": "duration", "Null": "velocity", "Null": "velocityX", "Null": "velocityY", "Null": "touch", "Null": "user", "Null": null, ignoreResourceSpans: [], ignorePerformanceApiSpans: [], _experiments: {} };
-let closure_3 = Object.assign({}, require("_toConsumableArray").TRACING_DEFAULTS, obj, require("module_1089").defaultRequestInstrumentationOptions);
+const obj = { MediaModalOverlayFooter: "<string:2231304194>", restricted_schedule: "<string:3545300993>", ZtggfH: "<string:2171945310>", asset: "<string:1683357700>", palette: "<string:3719430479>", discardSectionChanges: "<string:3539132146>", oneArgumentPooler: "<string:1641496581>", EXPIRING_SOON: "<string:1062753162>", Kindle: "<string:4262106897>", Kindle Fire: "<string:1633615441>", safeStringify: "<string:342950391>", profileEffectLayer: "<string:1090519040>", ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: "for_later", ignoreResourceSpans: [], ignorePerformanceApiSpans: [], _experiments: {} };
+let closure_3 = Object.assign({}, require(dependencyMap[1]).TRACING_DEFAULTS, obj, require(dependencyMap[2]).defaultRequestInstrumentationOptions);
 let closure_4 = "_sentry_idleSpan";
 
 export const BROWSER_TRACING_INTEGRATION_ID = "BrowserTracing";
@@ -74,7 +73,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
     function emitFinish() {
       let hasItem = readyState;
       if (readyState) {
-        const items = [null, null];
+        const items = [];
         hasItem = items.includes(readyState.readyState);
       }
       if (hasItem) {
@@ -230,7 +229,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
                     }
                     obj = { capture: true };
                     const listener = globalThis.addEventListener("click", interactionHandler, obj);
-                    const listener1 = globalThis.addEventListener("keydown", interactionHandler, { allowLinks: null, allowEmojiLinks: null });
+                    const listener1 = globalThis.addEventListener("keydown", interactionHandler, { -9223372036854775808: null, 0: null });
                   }
                 }
                 client.on("startNavigationSpan", (arg0, isRedirect) => {
@@ -281,7 +280,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
                     const result2 = currentScope.setSDKProcessingMetadata(obj2);
                     const _Object = Object;
                     const obj3 = { op: "navigation" };
-                    callback4(callback, Object.assign(obj3, arg0, { flex: "Array", maxHeight: "create" }));
+                    callback4(callback, Object.assign(obj3, arg0, { "Null": 36, "Null": 36 }));
                     const obj12 = callback(maybeEndActiveSpan[1]);
                   }
                 });

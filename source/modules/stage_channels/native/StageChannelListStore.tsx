@@ -1,15 +1,18 @@
-// Module ID: 10762
-// Function ID: 83649
+// Module ID: 10763
+// Function ID: 83662
 // Name: useActiveSpeakerPillScrollHandler
-// Dependencies: [357171200, 131072, 528089088, 452984832, 553648128, 503316480]
+// Dependencies: [357105664, 131072, 528089088, 452984832, 553648128, 503316480]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10762 (useActiveSpeakerPillScrollHandler)
+// Module 10763 (useActiveSpeakerPillScrollHandler)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).createWithEqualityFn((arg0) => {
   const arg1 = arg0;
-  return {
+  const obj = {
+    WAVE_EMPHASIZE: true,
+    paddingBottom: true,
+    getVoiceState: true,
     setShowActiveSpeakerPill(arg0) {
       return arg0(closure_1[3]).batchUpdates(() => arg0({ showActiveSpeakerPill: arg0 }));
     },
@@ -17,6 +20,7 @@ let closure_4 = arg1(dependencyMap[2]).createWithEqualityFn((arg0) => {
       return arg0(closure_1[3]).batchUpdates(() => arg0({ listRef: arg0 }));
     }
   };
+  return obj;
 });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");

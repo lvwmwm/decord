@@ -1,10 +1,10 @@
-// Module ID: 12726
-// Function ID: 97655
+// Module ID: 12733
+// Function ID: 97688
 // Name: filterOutMessageRequestsAndSpam
 // Dependencies: []
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 12726 (filterOutMessageRequestsAndSpam)
+// Module 12733 (filterOutMessageRequestsAndSpam)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/message_request/MessageRequestUtils.tsx");

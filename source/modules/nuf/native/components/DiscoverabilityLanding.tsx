@@ -1,10 +1,10 @@
-// Module ID: 11772
-// Function ID: 91391
+// Module ID: 11773
+// Function ID: 91404
 // Name: DiscoverabilityLanding
 // Dependencies: []
 // Exports: default
 
-// Module 11772 (DiscoverabilityLanding)
+// Module 11773 (DiscoverabilityLanding)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const useContactSyncModalStore = arg1(dependencyMap[2]).useContactSyncModalStore;
@@ -14,9 +14,9 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.headerContainer = { width: false, flexGrow: false, display: false };
-obj.header = { y: "center", GuildThemePreviewOwner: "center" };
-obj.image = { width: 0.3, container: "SlideOutLeft" };
+obj.headerContainer = { "Null": null, "Null": null, paddingHorizontal: null };
+obj.header = {};
+obj.image = {};
 obj.button = {};
 obj.title = { "Bool(true)": 52881784.83212474, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 obj.subtitle = {};
@@ -26,8 +26,8 @@ const obj1 = { paddingVertical: 16, backgroundColor: importDefault(dependencyMap
 const obj2 = {};
 const merged = Object.assign(importDefault(dependencyMap[7])(arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE, 16));
 obj.formText = obj2;
-obj.footerContainer = { textAlign: false, lineHeight: false };
-obj.info = { <string:2768392531>: 271, <string:2354343521>: 163, <string:2261284870>: null };
+obj.footerContainer = { "Bool(false)": false, "Bool(false)": false };
+obj.info = { <string:961756087>: 377564167843241300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1717707208>: 391547974124783460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:4224475813>: 405531890545774970000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 let closure_9 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[7]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/nuf/native/components/DiscoverabilityLanding.tsx");
@@ -53,11 +53,11 @@ export default function DiscoverabilityLanding(onNext) {
   const obj1 = { style: tmp.header };
   const obj2 = { resizeMode: "contain", style: tmp.image, source: importDefault(dependencyMap[14]) };
   const items1 = [callback(importDefault(dependencyMap[13]), obj2), , ];
-  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(dependencyMap[16]).intl;
   obj3.children = intl.string(arg1(dependencyMap[16]).t.n8nw6j);
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
-  const obj4 = { delete: "useProductDescription", dispatch: "isArrayBufferToString", raw: "multiItem", style: tmp.subtitle };
+  const obj4 = { "Null": "<string:4294735005>", "Null": "<string:327679>", alignItems: "<string:1048576>", style: tmp.subtitle };
   const intl2 = arg1(dependencyMap[16]).intl;
   obj4.children = intl2.string(arg1(dependencyMap[16]).t.KMW0kP);
   items1[2] = callback(arg1(dependencyMap[15]).Text, obj4);
@@ -76,13 +76,14 @@ export default function DiscoverabilityLanding(onNext) {
   }
   obj6.selected = allowEmail;
   const items3 = [callback(arg1(dependencyMap[17]).FormCheckboxRow, obj6), , ];
-  const obj8 = { delete: null, dispatch: null, raw: 20, style: tmp.info };
+  const obj8 = { style: tmp.info };
   const intl4 = arg1(dependencyMap[16]).intl;
   const items4 = [intl4.string(arg1(dependencyMap[16]).t.DGZg+k), " ", ];
   const intl5 = arg1(dependencyMap[16]).intl;
   items4[2] = intl5.format(arg1(dependencyMap[16]).t.QmF5z4, {
     learnMoreHook(children) {
-      return callback(onNext(allowPhone[15]).Text, { onPress: closure_3, children }, arg1);
+      const obj = { "Null": "business", "Null": "cached", "Null": "cancel", onPress: closure_3, children };
+      return callback(onNext(allowPhone[15]).Text, obj, arg1);
     }
   });
   obj8.children = items4;

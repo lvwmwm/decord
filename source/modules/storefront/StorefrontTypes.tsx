@@ -1,9 +1,9 @@
-// Module ID: 5613
-// Function ID: 47842
+// Module ID: 5612
+// Function ID: 47850
 // Name: StorefrontPromotionRewardType
 // Dependencies: []
 
-// Module 5613 (StorefrontPromotionRewardType)
+// Module 5612 (StorefrontPromotionRewardType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");
 

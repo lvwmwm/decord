@@ -1,10 +1,10 @@
-// Module ID: 9816
-// Function ID: 76166
+// Module ID: 9817
+// Function ID: 76179
 // Name: useCanSetThumbnail
 // Dependencies: []
 // Exports: default
 
-// Module 9816 (useCanSetThumbnail)
+// Module 9817 (useCanSetThumbnail)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/media_channel/useCanSetThumbnail.tsx");
 

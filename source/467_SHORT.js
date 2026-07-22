@@ -1,10 +1,10 @@
 // Module ID: 467
 // Function ID: 6148
 // Name: SHORT
-// Dependencies: [6]
+// Dependencies: [492]
 
 // Module 467 (SHORT)
-const constants = require("_classCallCheck").getConstants();
+const constants = require("v1").getConstants();
 
 export default {
   SHORT: constants.SHORT,

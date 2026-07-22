@@ -1,10 +1,10 @@
-// Module ID: 11898
-// Function ID: 92105
+// Module ID: 11899
+// Function ID: 92119
 // Name: formatDuration
 // Dependencies: []
 // Exports: default
 
-// Module 11898 (formatDuration)
+// Module 11899 (formatDuration)
 function formatDuration(arg0) {
   const sum = Date.now() + arg0;
   let obj = require(dependencyMap[1]);

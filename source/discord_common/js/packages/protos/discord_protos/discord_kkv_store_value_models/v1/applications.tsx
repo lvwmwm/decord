@@ -1,9 +1,9 @@
-// Module ID: 8950
-// Function ID: 70559
+// Module ID: 8951
+// Function ID: 70572
 // Name: _callSuper
 // Dependencies: []
 
-// Module 8950 (_callSuper)
+// Module 8951 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -37,14 +37,12 @@ let tmp2 = (MessageType) => {
   class ApplicationUserRoleConnection$Type {
     constructor() {
       tmp = closure_3(this, ApplicationUserRoleConnection$Type);
-      obj = { 9223372036854775807: "r", 9223372036854775807: "isInTreatment", 0: "OBSIDIAN", 0: "y" };
-      obj.V = {};
       items = [, , , ];
-      items[0] = obj;
+      items[0] = { V: {} };
       items[1] = {};
-      items[2] = { 1347510942: "surrogates", 1678385745: "isArray", 1364379111: "unicodeVersion", 140698458: "isArray" };
+      items[2] = {};
       items[3] = {};
-      items1 = ["initializeAndroidNotificationSettingsStore"];
+      items1 = ["handleComponentFinish"];
       items1[1] = items;
       return closure_10(this, ApplicationUserRoleConnection$Type, items1);
     }
@@ -54,7 +52,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": "png", "Bool(true)": "text", "Bool(true)": "text-md/normal", "Bool(true)": true, metadata: {} };
+      let obj = { "Null": "png", "Null": "text", "Null": "text-md/normal", "Null": true, metadata: {} };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, ApplicationUserRoleConnection$Type(closure_1[6]).MESSAGE_TYPE, obj);

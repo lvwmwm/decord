@@ -1,10 +1,10 @@
-// Module ID: 10286
-// Function ID: 79433
+// Module ID: 10287
+// Function ID: 79446
 // Name: NotificationSettingsMessageNotificationActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10286 (NotificationSettingsMessageNotificationActionSheet)
+// Module 10287 (NotificationSettingsMessageNotificationActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UserNotificationSettings = arg1(dependencyMap[2]).UserNotificationSettings;
@@ -32,7 +32,7 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   const obj2 = { variant: "text-sm/semibold" };
   const intl = arg1(dependencyMap[9]).intl;
   obj2.children = intl.string(arg1(dependencyMap[9]).t.1m22ZB);
-  const items1 = [callback(arg1(dependencyMap[8]).Text, obj2), callback(arg1(dependencyMap[8]).Text, { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" }), ];
+  const items1 = [callback(arg1(dependencyMap[8]).Text, obj2), callback(arg1(dependencyMap[8]).Text, { cachedAt: "center", edpbxy: "center" }), ];
   const obj3 = { style: tmp.form };
   const obj4 = { defaultValue: defaultValue.value, onChange: defaultValue.onChange, hasIcons: false };
   const obj5 = {};

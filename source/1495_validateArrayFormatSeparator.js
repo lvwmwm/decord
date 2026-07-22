@@ -91,7 +91,7 @@ function parseValue(str, parseNumbers) {
 function parse(str) {
   let tmp15;
   let tmp16;
-  const merged = Object.assign({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, arg1);
+  const merged = Object.assign({ color: "<string:1261587344>", tintColor: "<string:3783458818>", shadowColor: "<string:1535115266>", placeholderTextColor: "<string:409862146>", label: "<string:1016987650>", size: "<string:1016725506>" }, arg1);
   validateArrayFormatSeparator(merged.arrayFormatSeparator);
   const tmp4 = function parserForArrayFormat(merged) {
     const arrayFormat = merged.arrayFormat;
@@ -243,7 +243,7 @@ function parse(str) {
             let tmp30 = obj;
             let tmp4Result = tmp4(decode(tmp15, tmp2), null, tmp6);
           } else {
-            let items = [];
+            let items = [null, null, null];
             let tmp19 = merged;
             if (items.includes(tmp2.arrayFormat)) {
               let tmp23 = tmp16;
@@ -335,7 +335,7 @@ export const stringify = (arg0, arg1) => {
   let exports = arg1;
   if (arg0) {
     const _Object = Object;
-    const merged = Object.assign({ 5426273: true, 1678426334: true, -1564117289: true, 1172060754: true }, arg1);
+    const merged = Object.assign({ displayName: "<string:1261587344>", valueOf: "<string:3783458818>", body: "<string:1535115266>", borderRadius: "<string:409862146>" }, arg1);
     exports = merged;
     validateArrayFormatSeparator(merged.arrayFormatSeparator);
     function shouldFilter(item10026) {
@@ -550,7 +550,7 @@ export const parseUrl = (arg0, arg1) => {
 };
 export const stringifyUrl = (url) => {
   let concat = url;
-  const merged = Object.assign(callback({ size: null, text: null }, closure_6, true), arg1);
+  const merged = Object.assign(callback({ "Null": null, "Null": null }, closure_6, true), arg1);
   const str = removeHash(url.url);
   const json = exports.stringify(Object.assign(exports.parse(exports.extract(concat.url), { sort: false }), concat.query), merged);
   let combined = json;

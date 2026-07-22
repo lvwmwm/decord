@@ -1,12 +1,12 @@
-// Module ID: 9785
-// Function ID: 76050
+// Module ID: 9786
+// Function ID: 76063
 // Name: items
 // Dependencies: []
 
-// Module 9785 (items)
+// Module 9786 (items)
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = ["capnproto", "capnp"];
-const items = [{ navigationReplace: 0, openTextInVoiceIfVoiceChannel: null, hideFrame: "center" }, { navigationReplace: null, openTextInVoiceIfVoiceChannel: "url(#grad)", hideFrame: 26 }];
+let closure_3 = ["<string:844234756>", "<string:1253841213>"];
+const items = [{ DeeplinkSource: false, ModalFloatingActionProps: false, blacklist: false }, {}];
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
   const obj = { dotLottie: ref(dependencyMap[3]), ref, layers: closure_3, markers: items };

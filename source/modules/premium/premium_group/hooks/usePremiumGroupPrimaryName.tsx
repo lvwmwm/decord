@@ -1,10 +1,10 @@
-// Module ID: 12298
-// Function ID: 94195
+// Module ID: 12303
+// Function ID: 94223
 // Name: usePremiumGroupPrimaryName
 // Dependencies: []
 // Exports: default
 
-// Module 12298 (usePremiumGroupPrimaryName)
+// Module 12303 (usePremiumGroupPrimaryName)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 3979
-// Function ID: 33012
+// Function ID: 33014
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: coerceSidebarRoute, getCurrentRouteParents, getICYMIRouteIfActive, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToMemberVerification, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
@@ -795,7 +795,7 @@ export const navigateToCreateThread = function navigateToCreateThread(guild_id, 
   if (flag) {
     flag = true;
     if (null != rootNavigationRef) {
-      obj = {};
+      obj = { "Bool(true)": "cf5de2318a88a970dc053388278c5a16", "Bool(true)": "lt.messages.cf5de2318a88a970dc053388278c5a16.compiled.messages" };
       obj = { guildId: guild_id, channelId: id, showCreateThread: true };
       obj.params = obj;
       rootNavigationRef.navigate(obj);

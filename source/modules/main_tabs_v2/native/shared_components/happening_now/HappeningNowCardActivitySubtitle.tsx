@@ -1,16 +1,16 @@
-// Module ID: 14818
-// Function ID: 111705
+// Module ID: 14826
+// Function ID: 111748
 // Name: HappeningNowVoiceCardSubtitle
 // Dependencies: []
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 14818 (HappeningNowVoiceCardSubtitle)
+// Module 14826 (HappeningNowVoiceCardSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const ActivityTypes = arg1(dependencyMap[3]).ActivityTypes;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_7 = arg1(dependencyMap[5]).createStyles({ cardDetails: {} });
+let closure_7 = arg1(dependencyMap[5]).createStyles({ cardDetails: { getMentionIconType: "<string:4294927360>", scoreMethod: "<string:7471103>", popoutData: "<string:822083584>" } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActivitySubtitle.tsx");
 

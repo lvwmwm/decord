@@ -1,17 +1,17 @@
-// Module ID: 13910
-// Function ID: 105242
+// Module ID: 13917
+// Function ID: 105282
 // Name: useVideoSegmentAnalytics
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 13910 (useVideoSegmentAnalytics)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
-import result from "result";
+// Module 13917 (useVideoSegmentAnalytics)
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ useRef: closure_4, useCallback: closure_5, useEffect: closure_6 } = result);
-result = result.fileFinishedImporting("modules/video_player/useVideoSegmentAnalytics.tsx");
+({ useRef: closure_4, useCallback: closure_5, useEffect: closure_6 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/video_player/useVideoSegmentAnalytics.tsx");
 
 export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
   getCurrentVideoTime = getCurrentVideoTime.getCurrentVideoTime;

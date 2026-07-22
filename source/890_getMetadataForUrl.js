@@ -1,7 +1,7 @@
 // Module ID: 890
 // Function ID: 9822
 // Name: getMetadataForUrl
-// Dependencies: []
+// Dependencies: [0]
 
 // Module 890 (getMetadataForUrl)
 function getMetadataForUrl(arg0, arg1) {

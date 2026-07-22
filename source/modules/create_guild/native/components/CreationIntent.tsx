@@ -1,10 +1,10 @@
-// Module ID: 11730
-// Function ID: 91109
+// Module ID: 11731
+// Function ID: 91122
 // Name: CreationIntent
 // Dependencies: []
 // Exports: default
 
-// Module 11730 (CreationIntent)
+// Module 11731 (CreationIntent)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -21,7 +21,7 @@ const tmp5 = arg1(dependencyMap[4]);
 obj.scrollContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.headerContainer = {};
 obj.headerTitle = {};
-obj.headerDescription = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
+obj.headerDescription = {};
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.sections = { paddingHorizontal: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_PADDING };
 obj.skipDescription = {};

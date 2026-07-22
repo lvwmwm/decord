@@ -1,5 +1,5 @@
 // Module ID: 7017
-// Function ID: 56305
+// Function ID: 56316
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -75,7 +75,7 @@ function handleSetActiveCommand(channelId) {
     if (null != options) {
       const options1 = command.options;
       const item = options1.forEach((name) => {
-        obj[name.name] = { getApplication: "<string:1140850688>", setBarStyle: "<string:1358954496>", strokeContainer: "<string:1027775707>", getFramesFromEvent: "<string:1023410594>" };
+        obj[name.name] = {};
       });
     }
     tmp.optionStates = obj;
@@ -196,7 +196,7 @@ function handleUpdateOptionStates(channelId) {
             }
           }
         } else {
-          let obj1 = { PanResponder: "<string:1140850688>", SharedTransitionType: "<string:1358954496>", addData: "<string:1027775707>", registerGuildVisibilityMethod: "<string:1023410594>", location: undefined, length: undefined };
+          let obj1 = { location: undefined, length: undefined };
           obj[tmp9] = obj1;
           tmp10 = tmp3;
           tmp11 = tmp4;

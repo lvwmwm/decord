@@ -5,7 +5,7 @@
 
 // Module 3738 (_)
 const fn = function _(moment) {
-  let closure_0 = { paddingHorizontal: 1375731712, height: 1608474590, flexDirection: 1105958737, alignItems: 136501, guildId: 34945602, Set: 34945792, d: 1817137664, r: 1090612304, index: 321998, forEach: 208732433 };
+  let closure_0 = { format: "pos", r: "Array", memo: "isArray", forEach: "code", createStyles: "pos", unicodeVersion: "Array", ty: "isArray", unicodeVersion: "accessible", body: "kind", l: "unicodeVersion" };
   let closure_1 = {};
   return moment.defineLocale("hi", {
     months: "\u091C\u0928\u0935\u0930\u0940_\u092B\u093C\u0930\u0935\u0930\u0940_\u092E\u093E\u0930\u094D\u091A_\u0905\u092A\u094D\u0930\u0948\u0932_\u092E\u0908_\u091C\u0942\u0928_\u091C\u0941\u0932\u093E\u0908_\u0905\u0917\u0938\u094D\u0924_\u0938\u093F\u0924\u092E\u094D\u092C\u0930_\u0905\u0915\u094D\u091F\u0942\u092C\u0930_\u0928\u0935\u092E\u094D\u092C\u0930_\u0926\u093F\u0938\u092E\u094D\u092C\u0930".split("_"),
@@ -15,7 +15,7 @@ const fn = function _(moment) {
     weekdaysShort: "\u0930\u0935\u093F_\u0938\u094B\u092E_\u092E\u0902\u0917\u0932_\u092C\u0941\u0927_\u0917\u0941\u0930\u0942_\u0936\u0941\u0915\u094D\u0930_\u0936\u0928\u093F".split("_"),
     weekdaysMin: "\u0930_\u0938\u094B_\u092E\u0902_\u092C\u0941_\u0917\u0941_\u0936\u0941_\u0936".split("_"),
     longDateFormat: {},
-    calendar: {},
+    calendar: { variant: null, r: null, now: 16843015, Symbol: 838926593, Symbol: -956157438, enabled: -956184831 },
     relativeTime: {},
     preparse(_i) {
       return _i.replace(/[१२३४५६७८९०]/g, (arg0) => closure_1[arg0]);
@@ -82,7 +82,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

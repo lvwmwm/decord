@@ -1,10 +1,10 @@
-// Module ID: 14184
-// Function ID: 107375
+// Module ID: 14192
+// Function ID: 107418
 // Name: UserSettingsSwipeRightToLeft
 // Dependencies: []
 // Exports: default
 
-// Module 14184 (UserSettingsSwipeRightToLeft)
+// Module 14192 (UserSettingsSwipeRightToLeft)
 let closure_3 = importAll(dependencyMap[0]);
 const MobileSetting = arg1(dependencyMap[1]).MobileSetting;
 const jsx = arg1(dependencyMap[2]).jsx;

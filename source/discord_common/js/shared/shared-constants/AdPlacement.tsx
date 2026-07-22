@@ -1,9 +1,9 @@
-// Module ID: 5252
-// Function ID: 44539
+// Module ID: 4979
+// Function ID: 42951
 // Name: AdPlacement
 // Dependencies: []
 
-// Module 5252 (AdPlacement)
+// Module 4979 (AdPlacement)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AdPlacement.tsx");
 

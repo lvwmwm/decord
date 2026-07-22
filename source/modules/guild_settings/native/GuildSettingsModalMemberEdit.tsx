@@ -1,10 +1,10 @@
-// Module ID: 10970
-// Function ID: 85349
+// Module ID: 10971
+// Function ID: 85362
 // Name: _callSuper
 // Dependencies: []
 // Exports: default
 
-// Module 10970 (_callSuper)
+// Module 10971 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -183,11 +183,11 @@ obj = { form: { flex: 1 }, formContent: { paddingTop: 16 } };
 obj = { paddingHorizontal: importDefault(dependencyMap[18]).modules.mobile.TABLE_ROW_PADDING };
 obj.stackPadding = obj;
 obj.userInfo = { height: 63 };
-obj.avatar = {};
+obj.avatar = { "Null": "isArray", "Null": "c" };
 obj.rowLabel = { flexDirection: "row" };
-obj.ctaButton = {};
-obj.actionButtonLeft = {};
-obj.actionButtonRight = { "Null": null, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": 47 };
+obj.ctaButton = { y: 800, channelId: 16 };
+obj.actionButtonLeft = { currentScreen: 0, FAKE_SCOPES: 0, rolling: 1, dismissing: 0 };
+obj.actionButtonRight = {};
 obj.actionButtonContainer = { flexBasis: "auto" };
 let closure_26 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {

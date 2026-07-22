@@ -1,9 +1,9 @@
-// Module ID: 8724
-// Function ID: 69039
+// Module ID: 8725
+// Function ID: 69051
 // Name: VariantOption
 // Dependencies: []
 
-// Module 8724 (VariantOption)
+// Module 8725 (VariantOption)
 function VariantOption(variant) {
   variant = variant.variant;
   const tmp = callback3(variant.isSelected);
@@ -45,13 +45,13 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let obj = {};
-obj = { ty: 8, c: null, o: "\u270A\u{1F3FF}", paddingStart: importDefault(dependencyMap[4]).space.PX_4 };
+obj = { id: 8, title: null, options: "\u270A\u{1F3FF}", paddingStart: importDefault(dependencyMap[4]).space.PX_4 };
 obj.variantsContainer = obj;
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { marginStart: -importDefault(dependencyMap[4]).space.PX_4, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.round };
+  obj = { <string:1694692740>: "init", <string:2875367675>: "instance", <string:2899595606>: "ip", <string:2879454053>: "is", <string:3562103382>: "key", <string:385373100>: "language", <string:2988756154>: "labeled", <string:1985210209>: "level", marginStart: -importDefault(dependencyMap[4]).space.PX_4, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.round };
   obj.variantOption = obj;
   obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
   let num = 0;

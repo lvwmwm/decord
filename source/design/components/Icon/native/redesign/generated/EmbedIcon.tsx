@@ -1,10 +1,10 @@
-// Module ID: 9017
-// Function ID: 70930
+// Module ID: 9018
+// Function ID: 70943
 // Name: EmbedIcon
 // Dependencies: []
 // Exports: EmbedIcon
 
-// Module 9017 (EmbedIcon)
+// Module 9018 (EmbedIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/EmbedIcon.tsx");

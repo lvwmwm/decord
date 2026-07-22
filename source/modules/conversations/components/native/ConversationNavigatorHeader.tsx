@@ -1,10 +1,10 @@
-// Module ID: 9280
-// Function ID: 72505
+// Module ID: 9281
+// Function ID: 72518
 // Name: ConversationNavigatorHeader
 // Dependencies: []
 // Exports: default
 
-// Module 9280 (ConversationNavigatorHeader)
+// Module 9281 (ConversationNavigatorHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

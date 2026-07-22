@@ -1,10 +1,10 @@
-// Module ID: 12384
-// Function ID: 94675
+// Module ID: 12389
+// Function ID: 94703
 // Name: GiftingBadgeIntro
 // Dependencies: []
 // Exports: default
 
-// Module 12384 (GiftingBadgeIntro)
+// Module 12389 (GiftingBadgeIntro)
 function GiftingBadgeIntro(analyticsLocation) {
   const arg1 = analyticsLocation.analyticsLocation;
   const tmp = callback5(importDefault(dependencyMap[7])("UserSettingsGiftingBadgeProgress"));
@@ -40,7 +40,7 @@ function GiftingBadgeIntro(analyticsLocation) {
           }
           const items = [tmp3, ];
           obj = { style: tmp.badgeCopy };
-          const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+          const obj1 = { cachedAt: true, edpbxy: true };
           const name = simple_icon_url.name;
           let str = "";
           if (null != name) {
@@ -98,7 +98,7 @@ let closure_12 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj.wrapper = obj;
   obj = { gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.progressContainer = obj;
-  const obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressRow = obj1;
   obj.progressTitleText = { flex: 1 };
   obj.progressBarContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
@@ -106,26 +106,26 @@ let closure_12 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj.progressBarTrack = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
   const obj3 = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
   obj.progressBarFill = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500 };
-  const obj5 = { top: true, bottom: true, left: true, minHeight: importDefault(dependencyMap[6]).space.PX_16, marginTop: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj5 = { "Null": true, "Null": true, "Null": true, minHeight: importDefault(dependencyMap[6]).space.PX_16, marginTop: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressLabels = obj5;
   const obj4 = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500 };
   obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
-  obj.dropdownRow = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
+  obj.dropdownRow = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" };
+  const obj7 = { 9223372036854775807: "Portugu\u00EAs", -9223372036854775808: "Portuguese", 0: "pt-PT", paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
+  obj.badgesRow = obj7;
   const obj6 = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
-  obj.badgesRow = { paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
-  const obj8 = { to: 9126831853.500006, Z_NO_FLUSH: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000405821085137641, Z_PARTIAL_FLUSH: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001415335349591403, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
-  obj.badgeItem = obj8;
-  const obj7 = { paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
+  obj.badgeItem = { padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  const obj8 = { padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.badgeItemActive = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_MUTED };
-  obj.badgeCopy = { 1652262301: 1916866816, -1100937077: 1442840857 };
+  obj.badgeCopy = {};
   const obj9 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_MUTED };
   obj.footerText = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
   const obj10 = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
   obj.introContent = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj12 = { 9223372036854775807: "Portugu\u00EAs", -9223372036854775808: "Portuguese", 0: "pt-PT", paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  obj.introGrid = obj12;
   const obj11 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_4 };
-  obj.introGrid = { paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-  const obj13 = { to: 9126831853.500006, Z_NO_FLUSH: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000405821085137641, Z_PARTIAL_FLUSH: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001415335349591403, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
-  obj.introGridItem = obj13;
+  obj.introGridItem = { padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -252,7 +252,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj11.children = callback3(closure_6, obj12);
     const items4 = [callback3(closure_6, obj11), ];
     const obj14 = { style: tmp.progressLabels };
-    const obj15 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
+    const obj15 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images" };
     const intl3 = arg1(closure_2[13]).intl;
     const obj16 = {};
     let tmp48 = tmp49;
@@ -336,7 +336,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
               }
               obj1.children = str;
               const items2 = [callback3(analyticsLocation(closure_2[12]).Text, obj1), ];
-              const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
+              const obj2 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images" };
               const intl = analyticsLocation(closure_2[13]).intl;
               const obj3 = { count: callback2(key) };
               obj2.children = intl.format(closure_10(closure_2[14]).qvx9E4, obj3);
@@ -348,7 +348,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
             })
       };
       const items7 = [callback3(closure_6, obj24), ];
-      const obj25 = { delete: null, dispatch: null, raw: null, style: tmp.footerText };
+      const obj25 = { style: tmp.footerText };
       const intl6 = arg1(closure_2[13]).intl;
       obj25.children = intl6.string(importDefault(closure_2[14]).4Yp0mI);
       items7[1] = callback3(arg1(closure_2[12]).Text, obj25);

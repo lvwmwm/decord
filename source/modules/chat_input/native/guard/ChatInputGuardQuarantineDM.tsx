@@ -1,8 +1,8 @@
-// Module ID: 11473
-// Function ID: 89373
+// Module ID: 11474
+// Function ID: 89386
 // Dependencies: []
 
-// Module 11473
+// Module 11474
 const QUARANTINE_APPEAL_LINK = arg1(dependencyMap[1]).QUARANTINE_APPEAL_LINK;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 13464
-// Function ID: 102228
+// Module ID: 13471
+// Function ID: 102261
 // Name: UserProfileDisplayNameStylesEditButton
 // Dependencies: []
 // Exports: default
 
-// Module 13464 (UserProfileDisplayNameStylesEditButton)
+// Module 13471 (UserProfileDisplayNameStylesEditButton)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ useCallback: closure_4, useMemo: closure_5 } = arg1(dependencyMap[1]));
 const View = arg1(dependencyMap[2]).View;
@@ -98,7 +98,7 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
       let tmp9 = callback(user(isTryItOut[19]).Icon, obj);
     } else {
       obj = { style: callback.ggContainer };
-      obj = { "Bool(true)": "display", "Bool(true)": false, "Bool(true)": 600, "Bool(true)": 16, "Bool(true)": 20, "Bool(true)": "experimental/heading-sm/bold", userId: user.id, guildId, pendingDisplayNameStyles: tmp9Result };
+      obj = { userId: user.id, guildId, pendingDisplayNameStyles: tmp9Result };
       obj.children = callback(guildId(isTryItOut[21]), obj);
       tmp9 = callback(tmp9Result, obj);
     }

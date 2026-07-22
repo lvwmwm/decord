@@ -1,10 +1,10 @@
-// Module ID: 15578
-// Function ID: 118876
+// Module ID: 15586
+// Function ID: 118919
 // Name: MorphablePanelModes
 // Dependencies: []
 // Exports: default
 
-// Module 15578 (MorphablePanelModes)
+// Module 15586 (MorphablePanelModes)
 let MorphablePanelModes;
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
@@ -47,7 +47,7 @@ export default function useMorphablePanelGesture(mode) {
   let closure_10;
   tmp = importDefault(dependencyMap[2])();
   tmp2 = importDefault(dependencyMap[3])();
-  const sharedValue = arg1(dependencyMap[4]).useSharedValue({});
+  const sharedValue = arg1(dependencyMap[4]).useSharedValue({ 1627713636: 4, -1244900377: 8, -1590293822: "text-subtle", 141540436: "text-sm/normal", 756774337: "text-brand", 1579111068: "text-sm/normal" });
   closure_10 = sharedValue;
   const items = [sharedValue, mode, flag2, onPanMinimizeGestureEnd, onTapGestureStart, flag, tmp2, tmp, pipState, wrapperOffset, flag3];
   return React.useMemo(() => {
@@ -72,7 +72,7 @@ export default function useMorphablePanelGesture(mode) {
     const result = Gesture3.Pan().enabled(flag).manualActivation(true).maxPointers(1).shouldCancelWhenOutside(false);
     class V {
       constructor(arg0) {
-        tmp = closure_1(closure_2[6])(closure_6, {});
+        tmp = closure_1(closure_2[6])(closure_6, { 0: "%FunctionPrototype%", 0: "paddingStart" });
         obj = { absoluteXStart: arg0.absoluteX, absoluteYStart: arg0.absoluteY, active: false, cancel: arg0.absoluteY > closure_8.height - 2 * closure_9.bottom, gestureInBottomSafeArea: arg0.absoluteY > closure_8.height - closure_9.bottom, requiresPop: closure_5 };
         result = closure_10.set(obj);
         return;
@@ -147,7 +147,7 @@ export default function useMorphablePanelGesture(mode) {
                 tmp24 = closure_6;
                 tmp25 = closure_1(closure_2[6])(closure_6, {});
                 tmp26 = closure_10;
-                obj = { "Null": "<string:1124139010>", "Null": "843d42ee8ccb539c61b4f45fba39870a", "Null": "en-GB.messages.843d42ee8ccb539c61b4f45fba39870a.compiled.messages", "Null": "jsona", "Null": "<string:58302274>" };
+                obj = { flex: null, alignItems: "de0c5291417ca85ca49b63cd365d8403", paddingTop: "en-GB.messages.de0c5291417ca85ca49b63cd365d8403.compiled.messages", paddingBottom: "jsona", flexDirection: "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC" };
                 obj.absoluteXStart = absoluteX;
                 obj.absoluteYStart = absoluteY;
                 tmp27 = closure_10;
@@ -340,7 +340,7 @@ export default function useMorphablePanelGesture(mode) {
     X.__initData = closure_12;
     const obj3 = { initialGestureOffset: sharedValue, mode, MorphablePanelModes: wrapperOffset, calculatePIPPositionFromVelocity: mode(onTapGestureStart[7]).calculatePIPPositionFromVelocity, windowDimensions: tmp, safeArea: tmp2, disableHorizontalSafeAreas: flag3, updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), wrapperOffset, pipState, onPanMinimizeGestureEnd };
     const fn2 = function t() {
-      callback2(closure_2[6])(closure_10, { 9223372036854775807: null, 0: null });
+      callback2(closure_2[6])(closure_10, { "Bool(true)": true, "Bool(true)": true });
     };
     const onEndResult = onTouchesCancelledResult.onEnd(X);
     fn2.__closure = { updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), initialGestureOffset: sharedValue };

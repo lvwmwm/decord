@@ -1,8 +1,8 @@
-// Module ID: 9856
-// Function ID: 76288
+// Module ID: 9857
+// Function ID: 76301
 // Dependencies: []
 
-// Module 9856
+// Module 9857
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const FetchState = arg1(dependencyMap[1]).FetchState;
@@ -74,7 +74,7 @@ const obj = {
       obj = { type: "LOAD_PINNED_MESSAGES", channelId, reset: tmp2 };
       obj.dispatch(obj);
       const HTTP = reset(dependencyMap[4]).HTTP;
-      obj = { url: closure_7.PINS(channelId) };
+      obj = { applicationCommands: "jsx", isEncryptionAvailable: "r", flexGrow: "isArray", flexShrink: "accessibilityRole", alignSelf: "track", url: closure_7.PINS(channelId) };
       const obj1 = { limit: num };
       let toISOStringResult;
       if (null != before) {

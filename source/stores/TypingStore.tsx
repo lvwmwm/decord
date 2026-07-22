@@ -1,9 +1,9 @@
-// Module ID: 11097
-// Function ID: 86332
+// Module ID: 11098
+// Function ID: 86345
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11097 (_isNativeReflectConstruct)
+// Module 11098 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -245,7 +245,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[12]), {
               }
               if (num <= 5) {
                 const HTTP = channelId(closure_2[11]).HTTP;
-                const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_11.TYPING(channelId) };
+                const obj = { y: null, isArray: null, accessible: null, url: closure_11.TYPING(channelId) };
                 HTTP.post(obj).then((status) => {
                   if (200 === status.status) {
                     const message_send_cooldown_ms = status.body.message_send_cooldown_ms;

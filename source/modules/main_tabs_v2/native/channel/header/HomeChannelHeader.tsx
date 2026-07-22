@@ -1,14 +1,14 @@
-// Module ID: 10105
-// Function ID: 78225
+// Module ID: 10106
+// Function ID: 78238
 // Dependencies: []
 
-// Module 10105
+// Module 10106
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let obj = {};
-obj = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.container = obj;
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);
@@ -16,7 +16,7 @@ const memoResult = importAllResult.memo(function HomeChannelHeader() {
   let obj = { style: callback3().container };
   obj = { source: importDefault(dependencyMap[6]), size: arg1(dependencyMap[5]).Icon.Sizes.MEDIUM, disableColor: true };
   const items = [callback(arg1(dependencyMap[5]).Icon, obj), ];
-  obj = { hasMaxConnections: "next", isBoostOnlySubscription: "constructor" };
+  obj = {};
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.string(arg1(dependencyMap[8]).t.Ym2Ri6);
   items[1] = callback(arg1(dependencyMap[7]).Text, obj);

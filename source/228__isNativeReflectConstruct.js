@@ -1,9 +1,13 @@
 // Module ID: 228
 // Function ID: 3167
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [8058, 62976, 8448, 11264, 52224, 63744]
 
 // Module 228 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ArrowsUpDownIcon from "ArrowsUpDownIcon";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,10 +32,7 @@ function getSignal(arg0) {
     return value;
   }
 }
-let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
 let closure_6 = require(dependencyMap[4]);
 const tmp2 = (EventTarget) => {
   class AbortSignal {
@@ -90,7 +91,7 @@ if (tmp6) {
 if (tmp6) {
   const _Object = Object;
   const _Symbol2 = Symbol;
-  Object.defineProperty(tmp2.prototype, Symbol.toStringTag, {});
+  Object.defineProperty(tmp2.prototype, Symbol.toStringTag, { accessibilityRole: "r", s: "getMaxSoundboardSlots" });
 }
 const tmp8 = () => {
   class AbortController {
@@ -136,7 +137,7 @@ if (tmp11) {
 if (tmp11) {
   const _Object2 = Object;
   const _Symbol4 = Symbol;
-  Object.defineProperty(tmp8.prototype, Symbol.toStringTag, { "Null": null, "Null": false });
+  Object.defineProperty(tmp8.prototype, Symbol.toStringTag, { accessibilityRole: null, s: null });
 }
 module.exports.default = tmp8;
 module.exports.AbortController = tmp8;

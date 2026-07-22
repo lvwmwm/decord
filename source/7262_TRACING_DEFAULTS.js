@@ -1,5 +1,5 @@
 // Module ID: 7262
-// Function ID: 58486
+// Function ID: 58497
 // Name: TRACING_DEFAULTS
 // Dependencies: []
 // Exports: startIdleSpan
@@ -7,7 +7,7 @@
 // Module 7262 (TRACING_DEFAULTS)
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
-const obj = {};
+const obj = { 0: false, 0: "auto.db.supabase.postgres", 0: "Sloven\u010Dina" };
 
 export const TRACING_DEFAULTS = obj;
 export const startIdleSpan = function startIdleSpan(arg0) {

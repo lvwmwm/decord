@@ -1,10 +1,10 @@
-// Module ID: 14799
-// Function ID: 111531
+// Module ID: 14807
+// Function ID: 111574
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14799 (_createForOfIteratorHelperLoose)
+// Module 14807 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -698,10 +698,7 @@ export default function useHappeningNowData(has, guildId) {
           } else {
             bound = closure_28;
             if (closure_28.LIVE_GUILD_EVENT === value) {
-              bound = items.forEach((event) => {
-                const obj = { "Null": null, "Null": "", "Null": null, event };
-                return items4.push(obj);
-              });
+              bound = items.forEach((event) => items4.push({ event }));
               tmp65 = tmp51;
               tmp66 = tmp52;
               tmp67 = tmp53;
@@ -715,10 +712,7 @@ export default function useHappeningNowData(has, guildId) {
             } else {
               bound = closure_28;
               if (closure_28.UPCOMING_GUILD_EVENT === value) {
-                bound = items1.forEach((event) => {
-                  const obj = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022871480900821593, "Null": 16125669519079297000000000000000000000000000000000000000000000000000000000000000000, "Null": 4271974094940190000000000000000000000000000000000000000000000000000000000000000000000000000000000, event };
-                  return items4.push(obj);
-                });
+                bound = items1.forEach((event) => items4.push({ event }));
                 tmp65 = tmp51;
                 tmp66 = tmp52;
                 tmp67 = tmp53;

@@ -1,5 +1,5 @@
 // Module ID: 6889
-// Function ID: 54762
+// Function ID: 54773
 // Name: GuildsRequiringDeletedIdsSync
 // Dependencies: []
 
@@ -10,7 +10,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let tmp2 = () => {
   class GuildsRequiringDeletedIdsSync {
     constructor() {
-      f54769 = this;
+      f54780 = this;
       tmp = closure_3(this, GuildsRequiringDeletedIdsSync);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {

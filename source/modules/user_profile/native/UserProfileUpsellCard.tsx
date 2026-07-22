@@ -1,10 +1,10 @@
-// Module ID: 13490
-// Function ID: 102379
+// Module ID: 13497
+// Function ID: 102412
 // Name: UserProfileUpsellCard
 // Dependencies: []
 // Exports: default
 
-// Module 13490 (UserProfileUpsellCard)
+// Module 13497 (UserProfileUpsellCard)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const Gradients = arg1(dependencyMap[3]).Gradients;
@@ -12,14 +12,14 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { style: "\u{1F9D1}\u200D\u{1F3A8}", accessibilityRole: true, space: 12.1, TypeError: 124, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.upsellButton = obj;
-obj.titleContainer = { size: false, style: false, color: false, channel: false };
-obj.linearGradient = { "Null": false, "Null": false, "Null": false, "Null": false };
+obj.titleContainer = { -110959999: null, -1227664409: null, -1649041997: null, 1860687715: null };
+obj.linearGradient = { flex: "HT", backgroundColor: "prefixTag", padding: "values", 242550644: "isArray" };
 obj.outer = { marginHorizontal: arg1(dependencyMap[2]).PROFILE_SIDE_PADDING - 1 };
 const tmp4 = arg1(dependencyMap[4]);
 obj.scroll = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.inner = { paddingHorizontal: "<string:2382365025>", accessible: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002420963059289762 };
+obj.inner = { "Bool(false)": "<string:336527361>", "Bool(false)": "<string:1120403457>" };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCard.tsx");
@@ -57,7 +57,7 @@ export default function UserProfileUpsellCard(headerText) {
     text: ctaText,
     color: arg1(dependencyMap[7]).ButtonColors.GREEN,
     renderIcon() {
-      return callback2(tmp(closure_2[8]).NitroWheelIcon, { "Null": "<string:2235695108>", "Null": "<string:2701132348>" });
+      return callback2(tmp(closure_2[8]).NitroWheelIcon, { GuildBadgeSnail: "<string:2168586244>", EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: "<string:3405775420>" });
     }
   };
   let fn;

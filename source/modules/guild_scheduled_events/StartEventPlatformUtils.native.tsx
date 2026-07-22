@@ -1,10 +1,10 @@
-// Module ID: 8465
-// Function ID: 67533
+// Module ID: 8466
+// Function ID: 67545
 // Name: _navigateToEvent
 // Dependencies: []
 // Exports: navigateToEvent, postStartActions
 
-// Module 8465 (_navigateToEvent)
+// Module 8466 (_navigateToEvent)
 function _navigateToEvent() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

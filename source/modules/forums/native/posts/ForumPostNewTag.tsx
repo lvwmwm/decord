@@ -1,10 +1,10 @@
-// Module ID: 11128
-// Function ID: 86609
+// Module ID: 11129
+// Function ID: 86622
 // Name: ForumPostNewTag
 // Dependencies: []
 // Exports: default
 
-// Module 11128 (ForumPostNewTag)
+// Module 11129 (ForumPostNewTag)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
@@ -15,6 +15,8 @@ let closure_3 = obj.createStyles(obj);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
 
 export default function ForumPostNewTag(containerStyle) {
-  containerStyle = [containerStyle.containerStyle, callback().container];
-  return jsx(arg1(dependencyMap[4]).NewTag, { containerStyle });
+  const obj = { 9223372036854775807: 0.502, 9223372036854775807: 1, 0: "gr" };
+  const items = [containerStyle.containerStyle, callback().container];
+  obj.containerStyle = items;
+  return jsx(arg1(dependencyMap[4]).NewTag, obj);
 };

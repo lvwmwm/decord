@@ -1,7 +1,7 @@
 // Module ID: 6495
-// Function ID: 50664
+// Function ID: 50675
 // Name: SeverHubAbstractUI
-// Dependencies: [33554457, 1946157056, 33, 5232]
+// Dependencies: [33554457, 1946157056, 33, 5082]
 // Exports: SeverHubAbstractUI
 
 // Module 6495 (SeverHubAbstractUI)

@@ -1,10 +1,10 @@
-// Module ID: 13811
-// Function ID: 104464
+// Module ID: 13818
+// Function ID: 104504
 // Name: BountyVideo
 // Dependencies: []
 // Exports: BountyVideo
 
-// Module 13811 (BountyVideo)
+// Module 13818 (BountyVideo)
 let num = 0;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -28,7 +28,8 @@ let closure_15 = arg1(dependencyMap[8]).createStyles(() => {
   obj.videoContainer = obj;
   obj = { top: importDefault(dependencyMap[7]).space.PX_8, left: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_8 };
   obj.leftRow = obj;
-  obj.progress = { height: arg1(dependencyMap[9]).PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  const obj1 = { <string:765737181>: 40, <string:1382441379>: 40, height: arg1(dependencyMap[9]).PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  obj.progress = obj1;
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj2["backgroundColor"] = "#000000";
@@ -60,6 +61,7 @@ export const BountyVideo = function BountyVideo(bounty) {
   let onBuffer;
   let onLoadStart;
   let onPlayerStateChange;
+  let onVideoTracks;
   let orbsBalance;
   let ownedByVerticalScrollExperiment;
   let playerRef;
@@ -80,7 +82,7 @@ export const BountyVideo = function BountyVideo(bounty) {
   const onFirstFrame = bounty.onFirstFrame;
   let callback = onFirstFrame;
   let flag = bounty.isActive;
-  ({ sourceQuestContent, isCompleted, isProgressBarVisible, orbsBalance, handleVideoEnd, handleVideoPaused, handleVideoResumed, onLoadStart, onBuffer, rewardRemainingSeconds, rewardTotalSeconds, normalizedProgress, initialProgress, repeat } = bounty);
+  ({ sourceQuestContent, isCompleted, isProgressBarVisible, orbsBalance, handleVideoEnd, handleVideoPaused, handleVideoResumed, onLoadStart, onBuffer, onVideoTracks, rewardRemainingSeconds, rewardTotalSeconds, normalizedProgress, initialProgress, repeat } = bounty);
   if (flag === undefined) {
     flag = false;
   }
@@ -195,66 +197,70 @@ export const BountyVideo = function BountyVideo(bounty) {
     handleVideoProgress(currentTime);
   }, items5);
   let obj6 = arg1(dependencyMap[13]);
-  class Ce {
+  class Ae {
     constructor() {
       obj = { opacity: useSharedValue.get() };
       return obj;
     }
   }
-  Ce.__closure = { posterOpacity: sharedValue };
-  Ce.__workletHash = 4975136521719;
-  Ce.__initData = closure_16;
-  const animatedStyle = obj6.useAnimatedStyle(Ce);
+  Ae.__closure = { posterOpacity: sharedValue };
+  Ae.__workletHash = 4975136521719;
+  Ae.__initData = closure_16;
+  const animatedStyle = obj6.useAnimatedStyle(Ae);
   let obj7 = arg1(dependencyMap[13]);
-  class Ae {
-    constructor() {
-      if (null != closure_5) {
-        tmp2 = closure_5;
-        value = closure_5.get();
-      }
-      obj = {};
-      obj2 = bounty(handleVideoError[15]);
-      num = 0;
-      if (closure_4) {
-        flag = true;
-        num = 0;
-        if (true !== value) {
-          num = 1;
-        }
-      }
-      obj.opacity = obj2.withTiming(num, bounty(handleVideoError[16]).timingStandard);
-      return obj;
+  function ve() {
+    if (null != isScrollingInBoundsSharedValue) {
+      const value = isScrollingInBoundsSharedValue.get();
     }
+    const obj = {};
+    let num = 0;
+    if (flag) {
+      num = 0;
+      if (true !== value) {
+        num = 1;
+      }
+    }
+    obj.opacity = bounty(handleVideoError[15]).withTiming(num, bounty(handleVideoError[16]).timingStandard);
+    return obj;
   }
   obj = { isScrollingInBoundsSharedValue, withTiming: arg1(dependencyMap[15]).withTiming, isActive: flag, timingStandard: arg1(dependencyMap[16]).timingStandard };
-  Ae.__closure = obj;
-  Ae.__workletHash = 12676706441349;
-  Ae.__initData = closure_17;
-  const animatedStyle1 = obj7.useAnimatedStyle(Ae);
+  ve.__closure = obj;
+  ve.__workletHash = 12676706441349;
+  ve.__initData = closure_17;
+  const animatedStyle1 = obj7.useAnimatedStyle(ve);
   let obj9 = arg1(dependencyMap[13]);
-  function ve() {
-    if (null == peekScale) {
-      return {};
-    } else {
-      const value = peekScale.get();
-      let obj = {};
-      obj = {};
-      const diff = 1 - value;
-      const diff1 = 1 - bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE;
-      obj.translateY = diff / diff1 * bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET;
-      const items = [obj, ];
-      obj = { scale: value };
-      items[1] = obj;
-      obj.transform = items;
-      return obj;
+  class Fe {
+    constructor() {
+      if (null == peekScale) {
+        return {};
+      } else {
+        tmp = peekScale;
+        value = peekScale.get();
+        obj = {};
+        obj = {};
+        num = 1;
+        tmp4 = bounty;
+        tmp5 = handleVideoError;
+        num2 = 17;
+        diff = 1 - value;
+        diff1 = 1 - bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE;
+        obj.translateY = diff / diff1 * bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET;
+        items = [, ];
+        items[0] = obj;
+        obj1 = {};
+        obj1.scale = value;
+        items[1] = obj1;
+        obj.transform = items;
+        return obj;
+      }
     }
   }
   obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: arg1(dependencyMap[17]).AUTO_SCROLL_PEEK_SCALE, AUTO_SCROLL_PEEK_TOP_OFFSET: arg1(dependencyMap[17]).AUTO_SCROLL_PEEK_TOP_OFFSET };
-  ve.__closure = obj;
-  ve.__workletHash = 7501077341815;
-  ve.__initData = closure_18;
+  Fe.__closure = obj;
+  Fe.__workletHash = 7501077341815;
+  Fe.__initData = closure_18;
   let tmp26 = isCtaVisible;
-  const animatedStyle2 = obj9.useAnimatedStyle(ve);
+  const animatedStyle2 = obj9.useAnimatedStyle(Fe);
   if (isBountiesVerticalScrollExperimentEnabled) {
     let tmp27 = isCtaVisible;
     if (isCtaVisible) {
@@ -305,6 +311,7 @@ export const BountyVideo = function BountyVideo(bounty) {
     obj4.onLoadStart = onLoadStart;
     obj4.onBuffer = onBuffer;
     obj4.onReadyForDisplay = callback1;
+    obj4.onVideoTracks = onVideoTracks;
     obj4.hideControls = isEndCardVisible;
     obj4.showSkipButtons = false;
     obj4.repeat = repeat;
@@ -326,7 +333,7 @@ export const BountyVideo = function BountyVideo(bounty) {
     const items9 = [callback2(importDefault(dependencyMap[20]), obj7), ];
     let tmp56 = !first;
     if (tmp56) {
-      obj9 = { font: null, dx: null, color: token };
+      obj9 = { "Null": "Array", "Null": "isArray", color: token };
       tmp56 = callback2(height, obj9);
     }
     items9[1] = tmp56;

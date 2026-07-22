@@ -1,10 +1,10 @@
-// Module ID: 10345
-// Function ID: 79848
+// Module ID: 10346
+// Function ID: 79861
 // Name: ThemeDarkIcon
 // Dependencies: []
 // Exports: ThemeDarkIcon
 
-// Module 10345 (ThemeDarkIcon)
+// Module 10346 (ThemeDarkIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThemeDarkIcon.tsx");

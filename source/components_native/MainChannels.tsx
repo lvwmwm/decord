@@ -1,28 +1,28 @@
-// Module ID: 14677
-// Function ID: 110676
+// Module ID: 14685
+// Function ID: 110719
 // Name: DM_WIDTH
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 14677 (DM_WIDTH)
-import closure_3 from "result";
-import importAllResult from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 14685 (DM_WIDTH)
+import closure_3 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ View: closure_5, StyleSheet: closure_6 } = result);
-const DM_WIDTH = result.DM_WIDTH;
-const ME = result.ME;
-({ jsx: closure_9, jsxs: closure_10 } = result);
+({ View: closure_5, StyleSheet: closure_6 } = __exportStarResult1);
+const DM_WIDTH = __exportStarResult1.DM_WIDTH;
+const ME = __exportStarResult1.ME;
+({ jsx: closure_9, jsxs: closure_10 } = __exportStarResult1);
 let obj = {};
-obj = { left: DM_WIDTH, borderColor: require("result").colors.APP_FRAME_BORDER, borderTopLeftRadius: require("result").radii.xl };
+obj = { disableSelectedColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004172013485186689, disableBGColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060369154823, badge: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001188317643217, unread: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022876916604643697, isMuted: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147718568599, isTemporary: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004779528270704035, position: 197190070316633660000000000000000000000000000000000000000000000000000000000000000000, top: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001491668326535447, left: DM_WIDTH, borderColor: require("__exportStarResult1").colors.APP_FRAME_BORDER, borderTopLeftRadius: require("__exportStarResult1").radii.xl };
 obj.sideContainer = obj;
-result = { borderTopLeftRadius: require("result").radii.xl - 1, borderTopRightRadius: require("result").radii.none };
-obj.side = result;
-obj.sideTablet = { borderTopRightRadius: require("result").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
-let closure_11 = result.createStyles(obj);
+__exportStarResult1 = { borderTopLeftRadius: require("__exportStarResult1").radii.xl - 1, borderTopRightRadius: require("__exportStarResult1").radii.none };
+obj.side = __exportStarResult1;
+obj.sideTablet = { borderTopRightRadius: require("__exportStarResult1").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
+let closure_11 = __exportStarResult1.createStyles(obj);
 let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   let gesture;
   let homeDrawerState;
@@ -102,8 +102,8 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   obj.children = callback(arg1(dependencyMap[12]).NonCollapsableGestureDetector, obj);
   return callback(arg1(dependencyMap[10]).HomeDrawerStateContext.Provider, obj);
 });
-const obj2 = { borderTopRightRadius: require("result").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
-result = result.fileFinishedImporting("components_native/MainChannels.tsx");
+const obj2 = { borderTopRightRadius: require("__exportStarResult1").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
+const result = __exportStarResult1.fileFinishedImporting("components_native/MainChannels.tsx");
 
 export default importAllResult.memo(function MainChannelsRedesignInner() {
   const obj = { profile: arg1(dependencyMap[18]).Profiles.LeftPanel, children: callback(closure_12, {}) };

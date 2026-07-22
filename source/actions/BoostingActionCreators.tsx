@@ -1,5 +1,5 @@
 // Module ID: 4024
-// Function ID: 33500
+// Function ID: 33502
 // Name: _fetchAppliedGuildBoostsForGuild
 // Dependencies: []
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
@@ -114,7 +114,7 @@ async function _unapplyFromGuild(arg0, boostId, arg2) {
 }
 async function _cancelGuildBoostSlot(arg0, arg1) {
   const HTTP = callback(closure_2[5]).HTTP;
-  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_7.USER_GUILD_BOOST_SLOT_CANCEL(arg0) };
+  const obj = { y: null, isArray: null, accessible: null, url: closure_7.USER_GUILD_BOOST_SLOT_CANCEL(arg0) };
   const tmp = yield HTTP.post(obj);
   const fromServer = closure_5.createFromServer(tmp.body, subscriptionById.getSubscriptionById(tmp.body.subscription_id));
   callback2(closure_2[6]).dispatch({ type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: fromServer });
@@ -122,7 +122,7 @@ async function _cancelGuildBoostSlot(arg0, arg1) {
 }
 async function _uncancelGuildBoostSlot(arg0, arg1) {
   const HTTP = callback(closure_2[5]).HTTP;
-  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_7.USER_GUILD_BOOST_SLOT_UNCANCEL(arg0) };
+  const obj = { y: null, isArray: null, accessible: null, url: closure_7.USER_GUILD_BOOST_SLOT_UNCANCEL(arg0) };
   const tmp = yield HTTP.post(obj);
   const fromServer = closure_5.createFromServer(tmp.body, subscriptionById.getSubscriptionById(tmp.body.subscription_id));
   callback2(closure_2[6]).dispatch({ type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: fromServer });

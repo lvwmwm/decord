@@ -1,5 +1,5 @@
 // Module ID: 4180
-// Function ID: 35979
+// Function ID: 35986
 // Name: result
 // Dependencies: []
 // Exports: CLIP_NAME_TEMPLATE
@@ -58,6 +58,9 @@ export const CLIPS_EDUCATION_MAX_DISMISSALS_DISABLED = 1;
 export const DEFAULT_MAX_AUTO_CLIPS = 20;
 export const MIN_MAX_AUTO_CLIPS = 1;
 export const MAX_MAX_AUTO_CLIPS = 50;
+export const MIN_CLIPS_BITRATE_PERCENT = 10;
+export const MAX_CLIPS_BITRATE_PERCENT = 100;
+export const DEFAULT_CLIPS_BITRATE_PERCENT = 75;
 export const BYTES_PER_GB = 1073741824;
 export const MAX_TRANSIENT_STORAGE_BYTES = 16106127360;
 export const TRANSIENT_AUTOCLIP_DIRNAME = ".autoclip-cache";

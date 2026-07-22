@@ -1,5 +1,5 @@
 // Module ID: 7579
-// Function ID: 60586
+// Function ID: 60596
 // Name: RestrictedUser
 // Dependencies: []
 // Exports: default
@@ -53,7 +53,7 @@ function RestrictedUser(guildId) {
   let tmp23 = !user2.hasUniqueUsername();
   if (tmp23) {
     const obj7 = {};
-    const items6 = [null, participant.user.discriminator];
+    const items6 = ["Array", participant.user.discriminator];
     obj7.children = items6;
     tmp23 = callback3(arg1(dependencyMap[13]).Text, obj7);
   }
@@ -72,8 +72,8 @@ function RestrictedUser(guildId) {
   }
   obj9.children = stringResult1;
   const items8 = [callback2(arg1(dependencyMap[11]).LegacyText, obj9), ];
-  const obj10 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
-  const items9 = [true, true, stringResult];
+  const obj10 = { cachedAt: "y", edpbxy: "isArray" };
+  const items9 = [false, false, stringResult];
   obj10.children = items9;
   items8[1] = callback3(arg1(dependencyMap[13]).Text, obj10);
   obj8.children = items8;
@@ -91,7 +91,7 @@ function StageBlockedUsersActionSheetHeader(arg0) {
   if (blockedUserCount > 0) {
     if (ignoredUserCount > 0) {
       let obj = { style: tmp.header };
-      obj = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
+      obj = { style: tmp.title };
       const intl3 = arg1(dependencyMap[10]).intl;
       obj.children = intl3.string(arg1(dependencyMap[10]).t.Uzdyho);
       const items = [callback2(arg1(dependencyMap[13]).Text, obj), ];
@@ -106,7 +106,7 @@ function StageBlockedUsersActionSheetHeader(arg0) {
   }
   if (ignoredUserCount > 0) {
     obj = { style: tmp.header };
-    const obj2 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
+    const obj2 = { style: tmp.title };
     const intl = arg1(dependencyMap[10]).intl;
     const obj3 = { number: ignoredUserCount };
     obj2.children = intl.format(arg1(dependencyMap[10]).t.wvygk8, obj3);
@@ -120,7 +120,7 @@ function StageBlockedUsersActionSheetHeader(arg0) {
     obj6 = obj;
   } else {
     obj6 = { style: tmp.header };
-    const obj7 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
+    const obj7 = { style: tmp.title };
     const intl5 = arg1(dependencyMap[10]).intl;
     const obj8 = { number: blockedUserCount };
     obj7.children = intl5.format(arg1(dependencyMap[10]).t.HviVA9, obj8);
@@ -141,15 +141,15 @@ let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = arg1(dependencyMap[5]).STAGE_BLOCKED_USERS_SHEET_KEY;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { paddingHorizontal: 16 }, header: { padding: 16 }, title: {}, description: { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 } };
-obj = { "Bool(false)": -853685836052859800000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028527063193, "Bool(false)": 23139248489503270000000000000000000000000, "Bool(false)": 52052225289228490000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
+obj = { container: { paddingHorizontal: 16 }, header: { padding: 16 }, title: {}, description: { memo: 52881784.83212474, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 } };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.buttons = obj;
-obj.userContainer = { d: "toString", useMemo: "isArray", keys: "toString", hasDiversityParent: "isArray", skuId: "call", variant: "isArray" };
-obj.avatarContainer = {};
+obj.userContainer = {};
+obj.avatarContainer = { "Bool(true)": 10, "Bool(true)": 1, "Bool(true)": 0, "Bool(true)": "hidden", "Bool(true)": null };
 obj.avatar = { opacity: 0.5 };
 const tmp2 = arg1(dependencyMap[6]);
 obj.iconContainer = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
-obj.icon = { y: "<string:2552889346>", isArray: "<string:2938503170>" };
+obj.icon = { hideWhenScrolling: null, autoCapitalize: null };
 obj.flex = {};
 const obj1 = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.blocked = { color: importDefault(dependencyMap[8]).unsafe_rawColors.RED_400 };

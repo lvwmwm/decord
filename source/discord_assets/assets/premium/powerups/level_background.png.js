@@ -1,9 +1,9 @@
-// Module ID: 14881
-// Function ID: 112099
+// Module ID: 14889
+// Function ID: 112142
 // Name: metadata
 // Dependencies: []
 
-// Module 14881 (metadata)
+// Module 14889 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/powerups/level_background.png.js");
 

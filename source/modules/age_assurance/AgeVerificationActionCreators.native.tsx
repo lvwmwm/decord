@@ -1,5 +1,5 @@
 // Module ID: 7530
-// Function ID: 60240
+// Function ID: 60251
 // Name: openIncodeAgeVerificationModal
 // Dependencies: []
 
@@ -65,7 +65,7 @@ const obj = {
     const arg1 = fn;
     ({ shouldShowExpressiveModal, webviewUrl } = onClose);
     const importDefault = webviewUrl;
-    let obj = { FAILED: null, width: null, backgroundColor: null, paddingHorizontal: null, paddingVertical: null };
+    let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
     Object.setPrototypeOf(null);
     const merged = Object.assign(onClose, obj);
     const dependencyMap = merged;

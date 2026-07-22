@@ -1,10 +1,10 @@
-// Module ID: 10973
-// Function ID: 85432
+// Module ID: 10974
+// Function ID: 85445
 // Name: openDisableCommunication
 // Dependencies: []
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 10973 (openDisableCommunication)
+// Module 10974 (openDisableCommunication)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

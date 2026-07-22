@@ -1,15 +1,15 @@
-// Module ID: 10958
-// Function ID: 85238
+// Module ID: 10959
+// Function ID: 85251
 // Name: useSearchableSelectComponent
-// Dependencies: [4211081230, 4127195137, 33554471, 4026531840, 14609]
+// Dependencies: [4211081230, 4143972353, 33554471, 4026531840, 14609]
 // Exports: default
 
-// Module 10958 (useSearchableSelectComponent)
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
+// Module 10959 (useSearchableSelectComponent)
+import apexExperiment from "apexExperiment";
 
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
-const result = RegistrationTransitionActionTypes.fileFinishedImporting("modules/interaction_components/native/components/useSearchableSelectComponent.tsx");
+const result = apexExperiment.fileFinishedImporting("modules/interaction_components/native/components/useSearchableSelectComponent.tsx");
 
 export default function useSearchableSelectComponent(selectActionComponent) {
   let containerId;

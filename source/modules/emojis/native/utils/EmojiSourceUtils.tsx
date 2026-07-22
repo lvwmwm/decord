@@ -1,10 +1,10 @@
-// Module ID: 14816
-// Function ID: 111690
+// Module ID: 14824
+// Function ID: 111733
 // Name: _getEmojiSource
 // Dependencies: []
 // Exports: getEmojiSource
 
-// Module 14816 (_getEmojiSource)
+// Module 14824 (_getEmojiSource)
 function _getEmojiSource() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

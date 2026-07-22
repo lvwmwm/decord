@@ -1,10 +1,10 @@
-// Module ID: 12703
-// Function ID: 97467
+// Module ID: 12710
+// Function ID: 97500
 // Name: hasPerformanceForKrispFullband
 // Dependencies: []
 // Exports: default
 
-// Module 12703 (hasPerformanceForKrispFullband)
+// Module 12710 (hasPerformanceForKrispFullband)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/device/hasPerformanceForKrispFullband.tsx");
 

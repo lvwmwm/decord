@@ -1,5 +1,5 @@
 // Module ID: 4658
-// Function ID: 40335
+// Function ID: 40343
 // Name: getThemeMixColor
 // Dependencies: []
 // Exports: CustomThemedGradient, default
@@ -405,8 +405,8 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ softenGradient: { flex: 1 }, linearGradient: { flex: 1 }, absolute: { 0: "<string:408361903>", 9223372036854775807: "<string:2920093709>", -9223372036854775808: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 } });
-let closure_9 = {};
+let closure_8 = arg1(dependencyMap[4]).createStyles({ softenGradient: { flex: 1 }, linearGradient: { flex: 1 }, absolute: {} });
+let closure_9 = { 0: false, 0: false };
 let closure_10 = 0.5;
 let closure_11 = /^#(?:[0-9a-fA-F]{3}){1,2}$/;
 const obj = arg1(dependencyMap[4]);

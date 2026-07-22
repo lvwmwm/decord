@@ -1,10 +1,10 @@
-// Module ID: 11848
-// Function ID: 91800
+// Module ID: 11849
+// Function ID: 91814
 // Name: AppleNeutralIcon
 // Dependencies: []
 // Exports: AppleNeutralIcon
 
-// Module 11848 (AppleNeutralIcon)
+// Module 11849 (AppleNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AppleNeutralIcon.tsx");

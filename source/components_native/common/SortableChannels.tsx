@@ -1,9 +1,9 @@
-// Module ID: 16171
-// Function ID: 124680
+// Module ID: 16179
+// Function ID: 124722
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16171 (_createForOfIteratorHelperLoose)
+// Module 16179 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -255,7 +255,7 @@ let closure_18 = (Component) => {
       } else {
         layout = Component.list.state.active.layout;
         obj = {};
-        obj = {};
+        obj = { accessibilityLabel: 402653185, padding: 16777217, y: 38074178, space: 33949952, body: -302624512, np: 1106644561, apply: 180118 };
         activeOpacity = Component.activeOpacity;
         num = 0.8;
         if (null != activeOpacity) {
@@ -309,7 +309,7 @@ const tmp5 = (Component) => {
               onMoveCancel();
             }
           }
-          obj.setState({ style: true, showTopContainer: true, multiline: true });
+          obj.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
         }
       };
       obj.handleWrapperLayout = () => {
@@ -423,7 +423,7 @@ const tmp5 = (Component) => {
         const onRowActive = props.onRowActive;
         if (!props.disableSorting) {
           const pan = obj.state.pan;
-          pan.setValue({});
+          pan.setValue({ 0: "%FunctionPrototype%", 0: "paddingStart" });
           obj.moveY = layout.layout.pageY + layout.layout.frameHeight / 2;
           const index = layout.rowData.index;
           const obj = { active: layout, activeIndex: index, hoveringIndex: index };
@@ -658,7 +658,7 @@ const tmp5 = (Component) => {
         }
         return tmp2;
       };
-      obj = {};
+      obj = { 0: "%FunctionPrototype%", 0: "paddingStart" };
       valueXY = new closure_9.ValueXY(obj);
       panResponder = obj.createPanResponder(Component, obj, valueXY);
       obj.listener = valueXY.addListener((arg0) => {
@@ -673,7 +673,7 @@ const tmp5 = (Component) => {
       obj.scrollValue = 0;
       obj4 = SortableChannels(closure_1[9]);
       obj.scrollContainerHeight = 1.2 * obj4.getWindowDimensions().height;
-      obj1 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
+      obj1 = { "Bool(false)": "png", "Bool(false)": "xxs", "Bool(false)": "icon-subtle" };
       obj1.panResponder = panResponder;
       obj1.pan = valueXY;
       obj.state = obj1;
@@ -746,7 +746,7 @@ const tmp5 = (Component) => {
           if (null != onHoverChange) {
             onHoverChange("-1");
           }
-          self.setState({ style: true, showTopContainer: true, multiline: true });
+          self.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
         },
         onPanResponderRelease() {
           let active;
@@ -770,13 +770,13 @@ const tmp5 = (Component) => {
               tmp3 = index;
             }
             if (tmp3 === index) {
-              return self.setState({ style: true, showTopContainer: true, multiline: true });
+              return self.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
             } else {
               obj = { row: active.rowData, from: index - 1, to: tmp3 - 1 };
               if (null != onRowMoved) {
                 onRowMoved(obj);
               }
-              self.setState({ style: true, showTopContainer: true, multiline: true });
+              self.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
               const _Math = Math;
               const bound = Math.max(0, self.scrollContainerHeight - self.listLayout.height + active.layout.frameHeight);
               if (self.scrollValue > bound) {

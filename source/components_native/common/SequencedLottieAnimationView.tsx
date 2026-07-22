@@ -1,9 +1,9 @@
-// Module ID: 12438
-// Function ID: 94930
+// Module ID: 12443
+// Function ID: 94958
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12438 (_isNativeReflectConstruct)
+// Module 12443 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = ["progress", "layout"];
+let closure_2 = ["<string:3722352031>", "<string:3964565204>"];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

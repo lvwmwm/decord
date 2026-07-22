@@ -1,10 +1,10 @@
-// Module ID: 8769
-// Function ID: 69304
+// Module ID: 8770
+// Function ID: 69316
 // Name: UnsupportedFeatureModal
 // Dependencies: []
 // Exports: default
 
-// Module 8769 (UnsupportedFeatureModal)
+// Module 8770 (UnsupportedFeatureModal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -24,8 +24,8 @@ export default function UnsupportedFeatureModal(onDismiss) {
       }
     }),
     render() {
-      let obj = { style: {} };
-      obj = { hasMaxConnections: "gr", isBoostOnlySubscription: null };
+      let obj = { style: { 0: null, -9223372036854775808: null, 9223372036854775807: null, "Bool(false)": null } };
+      obj = { cachedAt: "gr", edpbxy: null };
       const intl = onDismiss(closure_2[7]).intl;
       obj.children = intl.string(onDismiss(closure_2[7]).t.I22zuX);
       obj.children = callback2(onDismiss(closure_2[6]).Text, obj);

@@ -1,10 +1,10 @@
-// Module ID: 15210
-// Function ID: 114792
+// Module ID: 15218
+// Function ID: 114835
 // Name: SearchTabsPage
 // Dependencies: []
 // Exports: default
 
-// Module 15210 (SearchTabsPage)
+// Module 15218 (SearchTabsPage)
 function SearchTabsPage(selectMediaTab) {
   let isFocused;
   let searchContext;

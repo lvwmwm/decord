@@ -1,14 +1,13 @@
-// Module ID: 12636
-// Function ID: 97258
+// Module ID: 12643
+// Function ID: 97291
 // Name: trackVideoToggle
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: default, setVideoToggleAnalyticsParams
 
-// Module 12636 (trackVideoToggle)
-import result from "result";
-
+// Module 12643 (trackVideoToggle)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-result = result.fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");
 
 export default function trackVideoToggle(toggled_user_id, video_toggle_reason, is_video_shown) {
   let allowedPoorFpsRatio;

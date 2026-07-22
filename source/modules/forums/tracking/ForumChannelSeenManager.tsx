@@ -1,10 +1,10 @@
-// Module ID: 9133
-// Function ID: 71588
+// Module ID: 9134
+// Function ID: 71601
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 9133 (_isNativeReflectConstruct)
+// Module 9134 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

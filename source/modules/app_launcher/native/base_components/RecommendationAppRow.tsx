@@ -1,10 +1,10 @@
-// Module ID: 11201
-// Function ID: 87235
+// Module ID: 11202
+// Function ID: 87248
 // Name: RecommendationAppRow
 // Dependencies: []
 // Exports: default
 
-// Module 11201 (RecommendationAppRow)
+// Module 11202 (RecommendationAppRow)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_launcher/native/base_components/RecommendationAppRow.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10549
-// Function ID: 82432
+// Module ID: 10550
+// Function ID: 82445
 // Name: isWatchTogetherApplication
 // Dependencies: []
 // Exports: default
 
-// Module 10549 (isWatchTogetherApplication)
+// Module 10550 (isWatchTogetherApplication)
 const _module = require(dependencyMap[0]);
 ({ WATCH_YOUTUBE_DEV_APP_ID: closure_0, WATCH_YOUTUBE_PROD_APP_ID: closure_1, WATCH_YOUTUBE_QA_APP_ID: closure_2 } = _module);
 const _module1 = require(dependencyMap[1]);

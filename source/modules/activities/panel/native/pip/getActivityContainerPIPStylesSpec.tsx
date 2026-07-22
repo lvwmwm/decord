@@ -1,10 +1,10 @@
-// Module ID: 15577
-// Function ID: 118874
+// Module ID: 15585
+// Function ID: 118917
 // Name: OrientationLockState
 // Dependencies: []
 // Exports: default
 
-// Module 15577 (OrientationLockState)
+// Module 15585 (OrientationLockState)
 const OrientationLockState = require(dependencyMap[0]).OrientationLockState;
 const LANDSCAPE_ACTIVITY_ASPECT_RATIO = require(dependencyMap[1]).LANDSCAPE_ACTIVITY_ASPECT_RATIO;
 const fn = function t(isLandscape) {

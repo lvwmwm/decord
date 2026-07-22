@@ -1,9 +1,9 @@
-// Module ID: 5659
-// Function ID: 48603
+// Module ID: 5658
+// Function ID: 48611
 // Name: GuildMemberSubscriptions
 // Dependencies: []
 
-// Module 5659 (GuildMemberSubscriptions)
+// Module 5658 (GuildMemberSubscriptions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const MINUTE = importDefault(dependencyMap[2]).Millis.MINUTE;

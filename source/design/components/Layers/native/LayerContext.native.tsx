@@ -1,9 +1,9 @@
-// Module ID: 5231
-// Function ID: 44224
+// Module ID: 5448
+// Function ID: 46578
 // Name: LayerContextManager
 // Dependencies: []
 
-// Module 5231 (LayerContextManager)
+// Module 5448 (LayerContextManager)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let tmp2 = () => {

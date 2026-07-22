@@ -1,10 +1,10 @@
-// Module ID: 8346
-// Function ID: 66467
+// Module ID: 8347
+// Function ID: 66479
 // Name: openGuildEventDetails
 // Dependencies: []
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8346 (openGuildEventDetails)
+// Module 8347 (openGuildEventDetails)
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;

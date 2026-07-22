@@ -1,7 +1,7 @@
 // Module ID: 13133
-// Function ID: 99511
+// Function ID: 99534
 // Dependencies: []
 
 // Module 13133
 
-export default (arg0) => Object(require(dependencyMap[0])(arg0));
+export default false;

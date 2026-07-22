@@ -1,16 +1,16 @@
-// Module ID: 9263
-// Function ID: 72366
+// Module ID: 9264
+// Function ID: 72379
 // Name: useGuildHasFeature
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: isTopicalNavEnabled, useIsTopicalNavEnabled
 
-// Module 9263 (useGuildHasFeature)
-import closure_2 from "result";
-import { GuildFeatures } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 9264 (useGuildHasFeature)
+import closure_2 from "__exportStarResult1";
+import { GuildFeatures } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function useGuildHasFeature(guild_id, CONVERSATIONS_EXTRACTION_PROCESSING) {
   CONVERSATIONS_EXTRACTION_PROCESSING = guild_id;
@@ -50,23 +50,23 @@ function isConversationDebugUXEnabled(guildId, location) {
   let enabled = !tmp7;
   if (!!tmp2) {
     const obj = { location };
-    enabled = result.getConfig(obj).enabled;
+    enabled = __exportStarResult1.getConfig(obj).enabled;
   }
   return enabled;
 }
 function useIsConversationDebugUXEnabled(guild_id, location) {
-  return useGuildHasFeature(guild_id, GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING) && result.useConfig({ location }).enabled;
+  return useGuildHasFeature(guild_id, GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING) && __exportStarResult1.useConfig({ location }).enabled;
 }
-result = { bottom: 9, name: 18, defaultConfig: { enabled: false }, variations: { [1]: { enabled: false }, [2]: { enabled: true } } };
-result = result.createApexExperiment(result);
-const apexExperiment1 = result.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-result = { bottom: false, name: false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-result = result.createApexExperiment(result);
-result = result.fileFinishedImporting("modules/conversations/ConversationExperiments.tsx");
+__exportStarResult1 = { "Bool(false)": "handleMessageListVisibilityChange", "Bool(false)": "%Uint16Array%", defaultConfig: { enabled: false }, variations: { [1]: { enabled: false }, [2]: { enabled: true } } };
+__exportStarResult1 = __exportStarResult1.createApexExperiment(__exportStarResult1);
+const apexExperiment1 = __exportStarResult1.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+__exportStarResult1 = { "Bool(false)": "a_20", "Bool(false)": "rect", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+__exportStarResult1 = __exportStarResult1.createApexExperiment(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/conversations/ConversationExperiments.tsx");
 
-export const ConversationHighlightingExperiment = result;
+export const ConversationHighlightingExperiment = __exportStarResult1;
 export const TopicalNavGuildExperiment = apexExperiment1;
-export const TopicalNavUserGateExperiment = result;
+export const TopicalNavUserGateExperiment = __exportStarResult1;
 export { isConversationDebugUXEnabled };
 export const isTopicalNavEnabled = function isTopicalNavEnabled(guildId, fetch_channel_conversations) {
   if (null == guildId) {
@@ -75,7 +75,7 @@ export const isTopicalNavEnabled = function isTopicalNavEnabled(guildId, fetch_c
     return true;
   } else {
     let obj = { location: fetch_channel_conversations };
-    if (result.getConfig(obj).enabled) {
+    if (__exportStarResult1.getConfig(obj).enabled) {
       const guild = store.getGuild(guildId);
       let enabled = null != guild;
       if (enabled) {
@@ -111,7 +111,7 @@ export const useIsTopicalNavEnabled = function useIsTopicalNavEnabled(guild_id, 
   if (tmp4) {
     let tmp6 = !tmp5;
     if (!tmp) {
-      const tmp7 = !result.useConfig(obj).enabled;
+      const tmp7 = !__exportStarResult1.useConfig(obj).enabled;
       let tmp8 = !tmp7;
       if (!tmp7) {
         if (enabled) {

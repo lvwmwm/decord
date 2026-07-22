@@ -1,10 +1,10 @@
-// Module ID: 11721
-// Function ID: 90992
+// Module ID: 11722
+// Function ID: 91005
 // Name: AddPhoneScreen
 // Dependencies: []
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 11721 (AddPhoneScreen)
+// Module 11722 (AddPhoneScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -30,7 +30,7 @@ export const AddPhoneScreen = function AddPhoneScreen() {
   const callback = obj.useNavigation();
   const tmp = callback5();
   obj = { style: tmp.header };
-  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = callback(dependencyMap[12]).intl;
   obj.children = intl.string(callback(dependencyMap[12]).t.Xgb497);
   const items = [callback3(callback(dependencyMap[11]).Text, obj), ];

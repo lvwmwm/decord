@@ -1,17 +1,16 @@
-// Module ID: 9744
-// Function ID: 75819
+// Module ID: 9745
+// Function ID: 75832
 // Name: CollectiblesWishlistItemCard
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 9744 (CollectiblesWishlistItemCard)
-import closure_3 from "result";
-import { transformSKUToCollectiblesItem as closure_4 } from "result";
-import closure_5 from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 9745 (CollectiblesWishlistItemCard)
+import __exportStarResult1 from "__exportStarResult1";
+import { transformSKUToCollectiblesItem as closure_4 } from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
 
 export default function CollectiblesWishlistItemCard(sku) {
   sku = sku.sku;
@@ -24,7 +23,7 @@ export default function CollectiblesWishlistItemCard(sku) {
   const importDefault = wishlistOwnerId;
   const size = sku.size;
   const dependencyMap = size;
-  let obj = { duration: null, damping: null, stiffness: null, mass: null, EARN: null };
+  let obj = { "Null": false, "Null": false, "Null": false, "Null": false, gap: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(sku, obj);
   let React;

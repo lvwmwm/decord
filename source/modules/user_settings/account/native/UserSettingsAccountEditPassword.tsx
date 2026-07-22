@@ -1,10 +1,10 @@
-// Module ID: 13559
-// Function ID: 102834
+// Module ID: 13566
+// Function ID: 102867
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 13559 (_isNativeReflectConstruct)
+// Module 13566 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,13 +30,13 @@ const tmp4 = arg1(dependencyMap[10]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[11]));
 let closure_19 = { newPassword: undefined, password: "" };
 let obj = arg1(dependencyMap[12]);
-obj = { onePass: { "Null": 0, "Null": -1048576 } };
+obj = { onePass: {} };
 obj = { borderRadius: importDefault(dependencyMap[13]).radii.xs };
 obj.unverifiedWrapper = obj;
 obj.container = { padding: 16 };
 obj.header = { marginBottom: 20 };
 obj.requiredActionsSubtitle = {};
-obj.requiredActionsTitle = { "Bool(false)": "values", "Bool(false)": "Array" };
+obj.requiredActionsTitle = { ref: "<string:3942646034>", handleDisabled: "<string:3355444267>" };
 obj.image = {};
 let closure_20 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (Component) => {

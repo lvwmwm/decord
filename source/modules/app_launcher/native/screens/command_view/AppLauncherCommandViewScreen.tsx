@@ -1,10 +1,10 @@
-// Module ID: 11265
-// Function ID: 87602
+// Module ID: 11266
+// Function ID: 87615
 // Name: AppLauncherCommandViewFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11265 (AppLauncherCommandViewFooter)
+// Module 11266 (AppLauncherCommandViewFooter)
 let DEFAULT_CONTENT_PADDING;
 function AppLauncherCommandViewFooter(arg0) {
   let animatedStyle;
@@ -85,7 +85,7 @@ function AppLauncherCommandViewFooter(arg0) {
   };
   const items1 = [tmp.footerContainer, animatedStyle];
   obj1 = { style: obj2, start: constants.START, end: obj3 };
-  const obj2 = { -9223372036854775808: 77, 9223372036854775807: null, 0: 1, 0: true, -27654118: null, bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal };
+  const obj2 = { bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal };
   const obj3 = { x: 0, y: 12 / (tmp2[0] + 12) };
   const tmp7 = importDefault(dependencyMap[19]);
   const items2 = [arg1(dependencyMap[20]).hexWithOpacity(tmp.linearGradient.backgroundColor, 0), tmp.linearGradient.backgroundColor];
@@ -295,9 +295,9 @@ function AppLauncherCommandViewInner(command) {
   first6 = tmp26[0];
   closure_40 = tmp26[1];
   const tmp28 = callback2(React.useState(0), 2);
-  const sum = importDefault(dependencyMap[26])({}).insets.bottom + tmp28[0];
+  const sum = importDefault(dependencyMap[26])({ -1397959526: 1766088043, 1449288620: 827788593 }).insets.bottom + tmp28[0];
   sum1 = sum + importDefault(dependencyMap[12]).space.PX_16;
-  sum2 = importDefault(dependencyMap[26])({}).insets.bottom + importDefault(dependencyMap[12]).space.PX_16;
+  sum2 = importDefault(dependencyMap[26])({ -1397959526: 1766088043, 1449288620: 827788593 }).insets.bottom + importDefault(dependencyMap[12]).space.PX_16;
   let obj2 = arg1(dependencyMap[15]);
   sharedValue = obj2.useSharedValue(false);
   let obj3 = arg1(dependencyMap[15]);
@@ -330,7 +330,7 @@ function AppLauncherCommandViewInner(command) {
       if (sharedValue1.get() < 0) {
         const current = ref.current;
         if (null != current) {
-          current.scrollTo({ "Bool(false)": "info", "Bool(false)": "/" });
+          current.scrollTo({ <string:1667345620>: null, <string:1638680913>: null });
         }
       } else if (diff3 > 0) {
         if (sharedValue1.get() > diff3) {
@@ -835,9 +835,9 @@ function AppLauncherCommandViewInner(command) {
     obj1.onLayout = callback10;
     obj1.automaticallyAdjustsScrollIndicatorInsets = false;
     obj3 = { style: tmp.commandNameContainer };
-    obj4 = { children: command.displayName };
+    obj4 = { cachedAt: null, edpbxy: null, children: command.displayName };
     const items17 = [callback5(arg1(dependencyMap[49]).Text, obj4), ];
-    obj5 = { hasMaxConnections: null, isBoostOnlySubscription: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
+    obj5 = { cachedAt: null, edpbxy: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
     items17[1] = callback5(arg1(dependencyMap[49]).Text, obj5);
     obj3.children = items17;
     const items18 = [callback6(tmp2, obj3), , , , , ];
@@ -891,7 +891,7 @@ function AppLauncherCommandViewInner(command) {
     let tmp88 = !tmp64;
     if (!tmp64) {
       const obj10 = { style: tmp.noOptionCalloutContainer };
-      const obj11 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+      const obj11 = { cachedAt: "y", edpbxy: "isArray" };
       const obj12 = { textAlign: "center" };
       obj11.style = obj12;
       const intl2 = arg1(dependencyMap[22]).intl;
@@ -902,7 +902,7 @@ function AppLauncherCommandViewInner(command) {
     items18[3] = tmp88;
     if (tmp63) {
       const obj13 = {};
-      const obj14 = { delete: null, dispatch: 1, raw: 1, style: tmp.optionalOptionsSectionTitle };
+      const obj14 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.optionalOptionsSectionTitle };
       const intl3 = arg1(dependencyMap[22]).intl;
       obj14.children = intl3.string(arg1(dependencyMap[22]).t.5C107K);
       const items19 = [callback5(arg1(dependencyMap[49]).Text, obj14), , ];
@@ -1040,7 +1040,7 @@ function AppLauncherCommandView(command) {
       }
       tmp5 = descriptor;
     }
-    let loading = tmp5;
+    const loading = tmp5;
     let tmp9 = null != application;
     if (tmp9) {
       const result3 = tmp3.result;
@@ -1068,8 +1068,9 @@ function AppLauncherCommandView(command) {
         const obj3 = arg2(command[57]);
       }
     }, items);
+    let obj3 = command(loading[58]);
     const items1 = [command(loading[34]).ApplicationCommandType.CHAT];
-    const permissionContext = command(loading[58]).usePermissionContext(channel, items1);
+    const permissionContext = obj3.usePermissionContext(channel, items1);
     if (null != tmp5) {
       if (null != command) {
         ({ context, userId, roleIds, isImpersonating } = permissionContext);
@@ -1100,8 +1101,8 @@ function AppLauncherCommandView(command) {
         return obj2;
       }
     }
-    loading = tmp4.fetchState.fetching || tmp3.fetchState.fetching;
-    return { loading };
+    obj3 = { a: "all", tag: true, paddingHorizontal: false, loading: tmp4.fetchState.fetching || tmp3.fetchState.fetching };
+    return obj3;
   }(context.channel, preSelectedCommand, analyticsLocation, sectionName);
   ({ command: command2, sectionDescriptor, loading } = tmp3);
   const dependencyMap = loading;
@@ -1196,8 +1197,9 @@ function NoPermsState(command) {
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[47]).AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
   obj = { style: tmp.emptyStateContainer };
   obj = { style: tmp.commandNameContainer };
-  const items = [callback5(arg1(dependencyMap[49]).Text, { children: command.displayName }), ];
-  const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
+  const obj1 = { cachedAt: null, edpbxy: null, children: command.displayName };
+  const items = [callback5(arg1(dependencyMap[49]).Text, obj1), ];
+  const obj2 = { cachedAt: null, edpbxy: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
   items[1] = callback5(arg1(dependencyMap[49]).Text, obj2);
   obj.children = items;
   const items1 = [callback6(closure_7, obj), ];
@@ -1240,22 +1242,22 @@ obj.optionalOptionsContainer = {};
 obj.optionalOptionsChild = { marginBottom: 24 };
 obj.optionalOptionsFirstChild = { marginTop: 12 };
 obj.optionalOptionsLastChild = { marginBottom: 12 };
-const obj2 = { recapPage: "<string:3082955202>", canSort: "<string:103629460>", GameDepthTier1SmallBadge: "<string:3630497793>", eventCounts: "<string:961609729>", paddingHorizontal: DEFAULT_CONTENT_PADDING };
+const obj2 = { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527, paddingHorizontal: DEFAULT_CONTENT_PADDING };
 obj.footerContainer = obj2;
-obj.submitButton = { Č: 10, accessibilityDismiss: 10 };
+obj.submitButton = {};
 obj.optionalOptionsSectionTitle = { marginTop: 36 };
 obj.optionalOptionList = { marginTop: 12 };
-const obj3 = { -9223372036854775808: 1463882195, 9223372036854775807: 1912603136, -9223372036854775808: 128, 9223372036854775807: 128, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[12]).radii.lg };
+const obj3 = { 9223372036854775807: 229916945, 0: -2140012543, 9223372036854775807: -2147483648, 0: 16777216, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[12]).radii.lg };
 obj.noRequiredOptionsCalloutContainer = obj3;
 const tmp6 = arg1(dependencyMap[10]);
 obj.noOptionCalloutContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
 obj.emptyState = {};
 const obj5 = { paddingTop: arg1(dependencyMap[13]).EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + importDefault(dependencyMap[12]).space.PX_4, flex: 1 };
 obj.emptyStateContainer = obj5;
-obj.failureStateButtonWrapper = { disabled: null, sequence: null };
+obj.failureStateButtonWrapper = { -2124314034: true, 529464659: null };
 const obj4 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
 obj.failureStateButtonPill = { borderRadius: importDefault(dependencyMap[12]).radii.xxl };
-obj.commandNameContainer = { "Null": 2, "Null": "notify_friends_on_go_live", "Null": "message" };
+obj.commandNameContainer = { opacity: 2, items: "notify_friends_on_go_live", triggerOnLongPress: "message" };
 const obj6 = { borderRadius: importDefault(dependencyMap[12]).radii.xxl };
 obj.linearGradient = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 let closure_23 = obj.createStyles(obj);

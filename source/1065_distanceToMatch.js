@@ -362,7 +362,7 @@ function initCanvasContextObserver(HTMLCanvasElement) {
           self.__context = str;
         }
         if (closure_3) {
-          const items = [true, true];
+          const items = ["r", "ArrayCreate"];
           if (items.includes(str)) {
             if (arr[0]) {
               if ("object" === typeof arr[0]) {
@@ -394,7 +394,7 @@ function patchGLPrototype(arr) {
   const defineProperty = items;
   const ownPropertyNames = Object.getOwnPropertyNames(arr);
   function _loop2(item10017) {
-    const items = [];
+    const items = [null, null, null, null];
     if (items.includes(item10017)) {
       return 0;
     } else if ("function" !== typeof item10017[tmp]) {
@@ -439,7 +439,7 @@ function __publicField$1(arg0, arg1, value) {
     text = `${arg1}`;
   }
   if (text in arg0) {
-    const obj = { 1694458623: "Small", 1761568511: "sm", 1811900927: "Placeholder", value };
+    const obj = { value };
     let tmp2 = defineProperty(arg0, text, obj);
   } else {
     arg0[text] = value;

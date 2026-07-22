@@ -18,7 +18,7 @@ export const CellRenderMask = () => {
       if (0 === arg0) {
         items = [];
       } else {
-        obj = { <string:2469287128>: "<string:8912898>", <string:3917845843>: "<string:2919038977>", <string:1884469743>: "<string:2024931329>" };
+        obj = { "Bool(false)": "httpServerLocation", "Bool(false)": "hash", "Bool(false)": "httpServerLocation" };
         num = 1;
         obj.last = arg0 - 1;
         items = [];

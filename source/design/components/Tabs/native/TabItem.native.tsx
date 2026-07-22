@@ -1,10 +1,10 @@
-// Module ID: 11639
-// Function ID: 90343
+// Module ID: 11640
+// Function ID: 90356
 // Name: useAnimatedTextStyle
 // Dependencies: []
 // Exports: TabItem
 
-// Module 11639 (useAnimatedTextStyle)
+// Module 11640 (useAnimatedTextStyle)
 function useAnimatedTextStyle(index) {
   index = index.index;
   const arg1 = index;
@@ -65,7 +65,7 @@ function TabItemCount(arg0) {
       items = [, ];
       items[0] = -10;
       items[1] = 0;
-      obj.translateX = obj4.withSpring(obj5.interpolate(closure_0.get(), ["replace", "then"], items), closure_8);
+      obj.translateX = obj4.withSpring(obj5.interpolate(closure_0.get(), [77601039, 1612144654], items), closure_8);
       items1 = [];
       items1[0] = obj;
       obj.transform = items1;
@@ -80,7 +80,7 @@ function TabItemCount(arg0) {
   const tmp = callback2();
   obj = { style: items1 };
   const items1 = [tmp.count, animatedStyle];
-  obj1 = { "Null": "8d7c88bf2a3c70b7581717d42e9c4ec1", "Null": "send_message_32px", "Null": "png", "Null": true, style: useAnimatedTextStyle({ index, activeIndex, pressed, variant }), children: count };
+  obj1 = { label: "8d7c88bf2a3c70b7581717d42e9c4ec1", accessible: "send_message_32px", surrogates: "png", jsx: true, style: useAnimatedTextStyle({ index, activeIndex, pressed, variant }), children: count };
   obj.children = callback(arg1(dependencyMap[7]).Text, obj1);
   return callback(importDefault(dependencyMap[3]).View, obj);
 }
@@ -88,8 +88,8 @@ let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dependencyMap[1]).Pressable);
-let closure_7 = { placeholder: -0.00000000000000000000000000000000000004995869994548859, onChange: 242321384378898780000000000000000000000000000000000000000000000000000000000000000000, isClearable: 427697983194162900000000000000000000000000000000000000000000000000000000000000000000000, scaleX: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006320645731423585 };
-let closure_8 = { placeholder: "primary", onChange: "lg", isClearable: null, scaleX: true };
+let closure_7 = { marginVertical: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010754332093450583, maxHeight: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014563163232767484, maxWidth: -867922343120036700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, minHeight: 4112214442204730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+let closure_8 = { marginVertical: true, maxHeight: true, maxWidth: true, minHeight: true };
 let obj1 = arg1(dependencyMap[4]);
 let obj = { item: { "Bool(true)": null, "Bool(true)": "6ac82e47fbd4ea8331f749e0f8f68b4b", "Bool(true)": "voice_bar_bluetooth", "Bool(true)": "png", "Bool(true)": true } };
 obj = { marginLeft: importDefault(dependencyMap[5]).space.PX_8 };
@@ -119,7 +119,7 @@ export const TabItem = function TabItem(arg0) {
   ({ count, index } = arg0);
   const arg1 = index;
   ({ state, pressed, variant } = arg0);
-  let obj = { overflow: null, height: 0.6, width: "BounceOutRight", marginTop: null, alignItems: 0.6, justifyContent: "BounceOutLeft", paddingHorizontal: null, width: 0.6 };
+  let obj = { "Bool(false)": 0.6, "Bool(false)": "BounceOut", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft" };
   ({ label, itemCount, grow } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
@@ -164,7 +164,7 @@ export const TabItem = function TabItem(arg0) {
   }
   obj["accessibilityHint"] = formatToPlainStringResult;
   obj["animatedProps"] = animatedProps;
-  const obj2 = { "Null": 0, "Null": null, "Null": 0, "Null": 96, style: tmp5, children: label };
+  const obj2 = { label: 0.931, accessible: 0, surrogates: null, jsx: 1, style: tmp5, children: label };
   const items1 = [callback(arg1(dependencyMap[7]).Text, obj2), ];
   let tmp12 = null;
   if (null != count) {

@@ -1,5 +1,5 @@
 // Module ID: 4149
-// Function ID: 35064
+// Function ID: 35066
 // Name: _callSuper
 // Dependencies: []
 
@@ -98,7 +98,7 @@ const tmp4 = (importDefaultResult) => {
     key: "connectionEntrypointUrl",
     get() {
       const self = this;
-      const items = [];
+      const items = ["targetFrames", "detached", "_profileId"];
       if (!items.includes(this.id)) {
         let str4 = self._connectionEntrypointUrl;
       } else if ("1443350165678198935" !== self.id) {

@@ -76,7 +76,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = { isArray: false, fileFinishedImporting: false, string: false, y: false };
+let closure_9 = { 9223372036854775807: "always", 0: false, -9223372036854775808: "list", 0: true };
 
 export default (arg0) => {
   class AnimatedColor {

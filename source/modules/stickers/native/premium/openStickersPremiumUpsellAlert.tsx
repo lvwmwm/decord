@@ -1,10 +1,10 @@
-// Module ID: 9615
-// Function ID: 74901
+// Module ID: 9616
+// Function ID: 74914
 // Name: _openStickersPremiumUpsellAlert
 // Dependencies: []
 // Exports: default
 
-// Module 9615 (_openStickersPremiumUpsellAlert)
+// Module 9616 (_openStickersPremiumUpsellAlert)
 function _openStickersPremiumUpsellAlert() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

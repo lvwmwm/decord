@@ -1,10 +1,10 @@
-// Module ID: 9304
-// Function ID: 72701
+// Module ID: 9305
+// Function ID: 72714
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 9304 (_createForOfIteratorHelperLoose)
+// Module 9305 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -711,7 +711,7 @@ export const loadMoreAfter = function loadMoreAfter(channelId, hasMoreAfter) {
   }
 };
 export const clearRows = function clearRows(current, clear) {
-  const obj = { display: null, flexDirection: null, alignItems: null, justifyContent: null, marginTop: null, icon: null, text: null, variant: null, size: null, grow: null, onPress: null, pendingUpdatesQueue: [] };
+  const obj = { "Bool(false)": "Enabled.", "Bool(false)": "PLUM_24", "Bool(false)": 0.5, "Bool(false)": 15, "Bool(false)": 200, "Bool(false)": true, "Bool(false)": "/assets/images/native/auto_moderation", "Bool(false)": 256, "Bool(false)": 256, "Bool(false)": null, "Bool(false)": "424407a78216a455f8fc1ac2080855a1", pendingUpdatesQueue: [] };
   arg4(obj);
   clear.clear();
   callback2(arg2, arg3, false);

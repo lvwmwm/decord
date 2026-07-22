@@ -1,10 +1,10 @@
-// Module ID: 8234
-// Function ID: 65015
+// Module ID: 8235
+// Function ID: 65027
 // Name: useMaybeFetchProfileFrame
 // Dependencies: []
 // Exports: default
 
-// Module 8234 (useMaybeFetchProfileFrame)
+// Module 8235 (useMaybeFetchProfileFrame)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
 

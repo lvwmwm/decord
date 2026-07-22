@@ -1,10 +1,10 @@
-// Module ID: 8585
-// Function ID: 68158
+// Module ID: 8586
+// Function ID: 68170
 // Name: useResolveGame
-// Dependencies: [31, 8596, 8597, 8599]
+// Dependencies: [31, 8597, 8598, 8600]
 // Exports: default
 
-// Module 8585 (useResolveGame)
+// Module 8586 (useResolveGame)
 import module_31 from "module_31";
 import useXboxGamePassStoreUrl from "useXboxGamePassStoreUrl";
 

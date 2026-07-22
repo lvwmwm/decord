@@ -1,5 +1,5 @@
 // Module ID: 5943
-// Function ID: 49836
+// Function ID: 49847
 // Name: ClydeAngledSpotIllustration
 // Dependencies: []
 // Exports: ClydeAngledSpotIllustration

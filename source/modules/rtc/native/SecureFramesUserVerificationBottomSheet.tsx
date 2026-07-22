@@ -1,10 +1,10 @@
-// Module ID: 8907
-// Function ID: 70287
+// Module ID: 8908
+// Function ID: 70300
 // Name: SecureFramesUserVerificationBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8907 (SecureFramesUserVerificationBottomSheet)
+// Module 8908 (SecureFramesUserVerificationBottomSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -17,11 +17,11 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { pointerEvents: "337f717407aa04f32bdedf504de7310b", onLayout: "emoji", variant: "png", color: true, selectable: "/assets/modules/premium/native/images/perks", enableBuildOverrides: 300, mustConfirmExternalLink: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
+obj = { 0: "337f717407aa04f32bdedf504de7310b", 0: "emoji", 9223372036854775807: "png", 0: true, 9223372036854775807: "/assets/modules/premium/native/images/perks", 0: 300, 0: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
 obj.iconContainer = obj;
-obj.icon = { y: "row", isArray: "center" };
+obj.icon = {};
 obj.content = {};
-obj.subtitle = {};
+obj.subtitle = { <string:787648700>: true, justifyContent: true, alignItems: true };
 obj.buttons = { marginTop: 40 };
 obj.helpMessage = { marginTop: 16 };
 let closure_15 = obj.createStyles(obj);
@@ -148,7 +148,7 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
   if (!loading) {
     obj2.children = memo1;
     const items9 = [tmp20(tmp22, obj2), , , , ];
-    obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, children: tmp14 };
+    obj3 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, children: tmp14 };
     items9[1] = name(arg1(dependencyMap[29]).Text, obj3);
     obj4 = { style: tmp.subtitle, children: tmp15 };
     items9[2] = name(arg1(dependencyMap[29]).Text, obj4);

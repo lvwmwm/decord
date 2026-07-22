@@ -4,9 +4,8 @@
 // Dependencies: []
 
 // Module 860 (createLogContainerEnvelopeItem)
-function createLogContainerEnvelopeItem(items) {
-  const obj = { -824876486: true, 509723217: true, 1627466321: true, item_count: items.length };
-  items = [obj, { items }];
+function createLogContainerEnvelopeItem(item_count) {
+  const items = [{ item_count: item_count.length }, { items: item_count }];
   return items;
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

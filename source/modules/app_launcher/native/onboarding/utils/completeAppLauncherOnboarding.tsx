@@ -1,10 +1,10 @@
-// Module ID: 11155
-// Function ID: 86763
+// Module ID: 11156
+// Function ID: 86776
 // Name: completeAppLauncherOnboarding
 // Dependencies: []
 // Exports: default
 
-// Module 11155 (completeAppLauncherOnboarding)
+// Module 11156 (completeAppLauncherOnboarding)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/app_launcher/native/onboarding/utils/completeAppLauncherOnboarding.tsx");
 

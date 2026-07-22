@@ -1,10 +1,10 @@
-// Module ID: 13671
-// Function ID: 103504
+// Module ID: 13678
+// Function ID: 103537
 // Name: FamilyCenterActivityCardPrefaceText
 // Dependencies: []
 // Exports: default
 
-// Module 13671 (FamilyCenterActivityCardPrefaceText)
+// Module 13678 (FamilyCenterActivityCardPrefaceText)
 function FamilyCenterActivityCardPrefaceText() {
   const tmp = callback3();
   const tmp2 = importDefault(dependencyMap[7])();
@@ -26,7 +26,7 @@ function FamilyCenterActivityCardPrefaceText() {
     tmp9 = callback(arg1(dependencyMap[13]).Icon, obj1);
   }
   const items = [tmp9, , ];
-  obj2 = { delete: "<string:1864193>", dispatch: "<string:2621440>", raw: "<string:1359020032>", style: tmp.text };
+  obj2 = { style: tmp.text };
   let tmp15 = ageSpecificText;
   if (activeLinkUserIds.length > 1) {
     tmp15 = ageSpecificText;
@@ -58,7 +58,7 @@ function FamilyCenterHeaderSubText() {
   const activityWindowTimestampFormatter = arg1(dependencyMap[9]).getActivityWindowTimestampFormatter(tmp);
   arg1(dependencyMap[8]);
   if (!tmp) {
-    obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: tmp4 };
+    obj = { cachedAt: "y", edpbxy: "isArray", children: tmp4 };
     let tmp5 = callback(arg1(dependencyMap[15]).Text, obj);
   } else {
     tmp5 = null;
@@ -79,10 +79,10 @@ class FamilyCenterActivityCardHeader {
         tmp3 = jsx;
         tmp4 = View;
         obj = {};
-        tmp5 = f103517;
+        tmp5 = f103550;
         obj1 = {};
         obj1.user = selectedTeenUser;
-        obj.children = jsx(f103517, obj1);
+        obj.children = jsx(f103550, obj1);
         tmp6 = jsx(View, obj);
         tmp9 = tmp6;
       } else {
@@ -117,7 +117,7 @@ class FamilyCenterActivityCardAccountSelect {
     dependencyMap = obj3.useFamilyCenterActions(obj).selectTeenUser;
     items = [];
     items[0] = activeLinkUsers;
-    f103512 = f103512.useMemo(() => activeLinkUsers.map((id) => {
+    f103545 = f103545.useMemo(() => activeLinkUsers.map((id) => {
       const obj = {};
       const name = callback(closure_2[26]).getName(id);
       const obj2 = callback(closure_2[26]);
@@ -167,14 +167,14 @@ class FamilyCenterActivityCardAccountSelect {
         }
       };
       tmp11 = jsx;
-      tmp12 = f103517;
+      tmp12 = f103550;
       obj3 = {};
       obj3.user = selectedTeenUser;
       flag = true;
       obj3.inSelector = true;
       tmp10 = importDefault(dependencyMap[16]);
       items1 = [, ];
-      items1[0] = jsx(f103517, obj3);
+      items1[0] = jsx(f103550, obj3);
       tmp13 = jsx;
       tmp14 = arg1;
       num2 = 13;
@@ -199,7 +199,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let closure_10 = "FamilyCenterTeenAccountSelect";
 let obj1 = arg1(dependencyMap[5]);
-let obj = { container: { ty: 8, c: null, o: "\u270A\u{1F3FF}" } };
+let obj = { container: { id: 8, title: null, options: "\u270A\u{1F3FF}" } };
 obj = { color: importDefault(dependencyMap[6]).colors.ICON_SUBTLE, width: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_16 };
 obj.icon = obj;
 obj1 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_4 };
@@ -207,7 +207,7 @@ obj.text = obj1;
 let closure_11 = obj1.createStyles(obj);
 let obj5 = arg1(dependencyMap[5]);
 const obj2 = {};
-const obj3 = { GameIconImageSize: "M", stageInfo: "hasConfetti", alignSelf: "Float64Array", useIOSCompletionStates: "ME", BADGE_TEXT_DEFAULT: "getApplicationState", padding: importDefault(dependencyMap[6]).space.PX_12, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.md, borderTopRightRadius: importDefault(dependencyMap[6]).radii.md };
+const obj3 = { "Bool(true)": -1577057855, "Bool(true)": 285212940, "Bool(true)": 38881089, "Bool(true)": 22508032, "Bool(true)": 9764864, padding: importDefault(dependencyMap[6]).space.PX_12, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.md, borderTopRightRadius: importDefault(dependencyMap[6]).radii.md };
 obj2.header = obj3;
 const obj4 = { borderRadius: arg1(dependencyMap[13]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[13]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj2.avatar = obj4;
@@ -245,10 +245,10 @@ const memoResult = importAllResult.memo((arg0) => {
 memoResult.displayName = "FamilyCenterActivityCardAccount";
 let obj12 = arg1(dependencyMap[5]);
 const obj8 = {};
-const obj9 = { d: "toString", useMemo: "isArray", keys: "toString", hasDiversityParent: "isArray", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
-const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
-obj8.touch = obj9;
 const obj7 = { flex: 1, paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
+const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
+obj8.touch = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
+const obj9 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
 const items = [{ rotate: "90deg" }];
 obj8.icon = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT, width: importDefault(dependencyMap[6]).space.PX_24, height: importDefault(dependencyMap[6]).space.PX_24, transform: items, marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 let closure_14 = obj12.createStyles(obj8);
@@ -260,13 +260,13 @@ const obj10 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_D
 obj11.preface = { display: "flex", marginBottom: importDefault(dependencyMap[6]).space.PX_12 };
 const obj13 = { display: "flex", marginBottom: importDefault(dependencyMap[6]).space.PX_12 };
 obj11.container = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
-const obj15 = { <string:2337341444>: "<string:3157541376>", <string:2971099654>: "<string:2774663169>", <string:1097896017>: "<string:1749155842>", padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_32 };
+const obj15 = { st: -645848117953284700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Date: 683517066491165300000000000000000000000000000000000000000000000000000000000000000000000000000000000, transform: 12290128766944652000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_32 };
 obj11.content = obj15;
-obj16 = { 1549967418: "isArray", 1380856145: "construct", 496989610: "Map", 75490881: "isArray", gap: importDefault(dependencyMap[6]).space.PX_8 };
+obj16 = { <string:2385789280>: "isArray", <string:3194028036>: "construct", <string:73463874>: "Map", <string:76344320>: "isArray", gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj11.totals = obj16;
 obj11.first = { width: "100%" };
 obj11.other = { width: "48.5%" };
-const obj17 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[6]).space.PX_32 };
+const obj17 = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, location: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[6]).space.PX_32 };
 obj11.activities = obj17;
 const obj14 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
 obj11.settingsControls = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };

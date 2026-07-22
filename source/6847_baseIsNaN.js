@@ -1,5 +1,5 @@
 // Module ID: 6847
-// Function ID: 54098
+// Function ID: 54109
 // Name: baseIsNaN
 // Dependencies: []
 

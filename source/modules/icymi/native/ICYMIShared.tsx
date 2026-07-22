@@ -1,13 +1,13 @@
-// Module ID: 15095
-// Function ID: 113787
+// Module ID: 15103
+// Function ID: 113830
 // Name: Separator
 // Dependencies: []
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost
 
-// Module 15095 (Separator)
+// Module 15103 (Separator)
 class Separator {
   constructor() {
-    obj = { style: f113794().separator };
+    obj = { style: f113837().separator };
     return jsx(View, obj);
   }
 }
@@ -28,7 +28,7 @@ function CutoutGuildIconWithUser(guild) {
 }
 class CutoutGuildIcon {
   constructor(arg0) {
-    obj = { style: {} };
+    obj = { style: { "Null": "isArray", "Null": "c" } };
     ({ guild, icon } = global);
     obj = {};
     obj1 = {};
@@ -54,7 +54,7 @@ class GuildContentPost {
     arg1 = guild;
     ({ channel: closure_1, id: closure_2, type: closure_3 } = global);
     ({ timestamp, hideTimestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f113794();
+    tmp = f113837();
     obj = arg1(dependencyMap[25]);
     obj = {};
     fontScale = obj.useFontScale();
@@ -87,7 +87,7 @@ class GuildContentPost {
       tmp18 = arg1;
       tmp19 = dependencyMap;
       num = 27;
-      obj7 = { "Null": 0, "Null": 5.566, "Null": 10 };
+      obj7 = {};
       num2 = 28;
       obj10 = arg1(dependencyMap[28]);
       obj7.children = obj10.getRelativeTimestamp(timestamp);
@@ -181,36 +181,37 @@ let closure_21 = arg1(dependencyMap[19]).createICYMIStyles((margin) => {
   obj.marginTop = num2;
   obj.paddingTop = margin.margin;
   obj.content = obj;
-  const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[21]).radii.round, backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+  const obj1 = { "Null": "Array", "Null": "png", "Null": 1, "Null": "tmpfile", borderRadius: importDefault(dependencyMap[21]).radii.round, backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
   obj.insetIconWrapper = obj1;
-  obj.authorIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": "press" };
+  obj.authorIcon = { 1191129599: false, 314226: false, 315873: "press" };
   obj2 = { tintColor: importDefault(dependencyMap[21]).colors.TEXT_MUTED };
   obj.moreDetailsIcon = obj2;
   ({ margin: obj8.paddingBottom, margin: obj8.marginHorizontal } = margin);
-  obj.channelNameAndAccessory = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r" };
+  obj.channelNameAndAccessory = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r" };
   obj4 = { flexDirection: "column", paddingBottom: margin.margin, marginHorizontal: margin.margin };
   obj.channelNameAndAccessoryLarge = obj4;
-  obj.header = {};
-  const obj5 = { isArray: null, diversity: null, marginLeft: margin.margin };
+  obj.header = { "Bool(false)": "REDESIGN_INPUT_CONTROL_ACTIVE_BG", "Bool(false)": "CAN" };
+  const obj5 = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>", marginLeft: margin.margin };
   obj.headerInfo = obj5;
-  obj.title = { 1650211683: 0, 1644363857: "", -77441452: 0, 67064224: 0 };
-  obj.titleLeft = {};
+  obj.title = { "Null": 0, "Null": "", paddingHorizontal: 0, alignItems: 0 };
+  obj.titleLeft = { error: "values", phone: "isArray", phoneToken: "isArray", name: "isArray", isNameFromContactBook: "values" };
   const obj6 = { "Bool(false)": false, "Bool(false)": 0, borderRadius: importDefault(dependencyMap[21]).radii.sm };
   obj.subTitleContainer = obj6;
-  obj.subtitle = { customNavbar: true, getOrFetchLinkedUsers: true, encoderQualityStats: true };
-  const obj7 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[21]).space.PX_4 };
+  obj.subtitle = {};
+  const obj7 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[21]).space.PX_4 };
   obj.genContentSubtitle = obj7;
   obj.genContentSubtitleChannel = {};
   obj.subtitleTrailing = { paddingVertical: 1 };
-  const obj8 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[21]).colors.BORDER_SUBTLE };
+  const obj8 = { hideWhenScrolling: false, autoCapitalize: false, backgroundColor: importDefault(dependencyMap[21]).colors.BORDER_SUBTLE };
   obj.separator = obj8;
-  obj.eventsSubtitle = { "Null": 7, "Null": 370 };
-  const obj9 = { icon: "WebUserSettings", label: "ME", hasCustomProfileTheme: "MediaManager", isPending: "type", accessibilityRole: "isArray", onPress: "NATIVE_REQUIRED_ASSETS_ICONS", editable: "getUserTrialOffer", backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[21]).radii.md };
+  obj.eventsSubtitle = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+  const obj9 = { forceAccessibleContainer: 285213908, contentContainerStyle: 553217, showsHorizontalScrollIndicator: 1090584576, horizontal: 316540, width: 141623569, height: 16777216, overflow: 82342977, backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[21]).radii.md };
   obj.comments = obj9;
-  obj.recentCommentText = { "Null": "<string:2370959201>", "Null": "<string:3375841609>", "Null": "<string:24182785>" };
+  obj.recentCommentText = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   obj.commentCount = {};
-  const obj10 = { "Null": 0, "Null": -1048576, tintColor: importDefault(dependencyMap[21]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.commentsIcon = obj10;
+  obj.commentsIcon = { tintColor: importDefault(dependencyMap[21]).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj10 = { tintColor: importDefault(dependencyMap[21]).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj3 = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r" };
   obj.chevron = { tintColor: importDefault(dependencyMap[21]).colors.TEXT_MUTED };
   return obj;
 });
@@ -226,7 +227,7 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: constants3.ICYMI, object: constants.ACK_MESSAGE_VIEWED, objectType: constants2.ACK_SEMI_AUTOMATIC };
     obj.ack(arg0, obj, true, true, arg2);
   }, 1500);
-  importDefault(dependencyMap[15])(closure_17.CHANNEL(id2, id, id3), { textContentType: null, autoCapitalize: null });
+  importDefault(dependencyMap[15])(closure_17.CHANNEL(id2, id, id3), { textContentType: "<string:1040334421>", autoCapitalize: "<string:1040334338>" });
   if (null != id3) {
     id2(dependencyMap[16]).runAfterInteractions(() => {
       let obj = arg2(closure_2[17]);
@@ -528,7 +529,7 @@ export const SimplePost = function SimplePost(arg0) {
   const fn = function c() {
     const obj = {};
     const items = [token, hexWithOpacityResult];
-    obj.backgroundColor = highlight(hexWithOpacityResult[44]).interpolateColor(sharedValue.get(), ["replace", "then"], items);
+    obj.backgroundColor = highlight(hexWithOpacityResult[44]).interpolateColor(sharedValue.get(), [77601039, 1612144654], items);
     return obj;
   };
   obj = { interpolateColor: arg1(dependencyMap[44]).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };

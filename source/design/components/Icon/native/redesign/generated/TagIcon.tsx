@@ -1,10 +1,10 @@
-// Module ID: 8721
-// Function ID: 69032
+// Module ID: 8722
+// Function ID: 69044
 // Name: TagIcon
 // Dependencies: []
 // Exports: TagIcon
 
-// Module 8721 (TagIcon)
+// Module 8722 (TagIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TagIcon.tsx");

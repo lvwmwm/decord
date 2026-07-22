@@ -1,10 +1,10 @@
 // Module ID: 7925
-// Function ID: 63286
+// Function ID: 63296
 // Name: ROLL_DURATION_MS
 // Dependencies: []
 
 // Module 7925 (ROLL_DURATION_MS)
-const items = [];
+const items = [true, true, true, true, true, true];
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/dice_roll/DiceRollConstants.tsx");
 

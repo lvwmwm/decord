@@ -1,9 +1,9 @@
-// Module ID: 14373
-// Function ID: 108510
+// Module ID: 14381
+// Function ID: 108553
 // Name: ShopHomeSortType
 // Dependencies: []
 
-// Module 14373 (ShopHomeSortType)
+// Module 14381 (ShopHomeSortType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopHomeSortType.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 5698
-// Function ID: 49055
+// Module ID: 5697
+// Function ID: 49063
 // Name: resolveImageSource
 // Dependencies: []
 // Exports: getGuildBadgeImageSource
 
-// Module 5698 (resolveImageSource)
+// Module 5697 (resolveImageSource)
 function resolveImageSource(premiumImageSource, guildTraits, theme) {
   if (guildTraits.premium) {
     if (null != premiumImageSource.premiumImageSource) {

@@ -1,10 +1,10 @@
-// Module ID: 14231
-// Function ID: 107573
+// Module ID: 14239
+// Function ID: 107616
 // Name: useHighlightNotifications
 // Dependencies: []
 // Exports: useHighlightNotifications
 
-// Module 14231 (useHighlightNotifications)
+// Module 14239 (useHighlightNotifications)
 function useHighlightNotifications() {
   const items = [closure_2];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => guildCount.getGuildCount() > 0);

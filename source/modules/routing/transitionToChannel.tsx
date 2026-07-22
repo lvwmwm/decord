@@ -1,5 +1,5 @@
 // Module ID: 4134
-// Function ID: 34360
+// Function ID: 34362
 // Name: transitionToChannel
 // Dependencies: []
 // Exports: transitionToMessage, transitionToStaticChannelRoute, transitionToThread, tryTransitionToThreadMessage

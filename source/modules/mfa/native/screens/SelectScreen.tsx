@@ -1,18 +1,18 @@
-// Module ID: 14518
-// Function ID: 109345
+// Module ID: 14526
+// Function ID: 109388
 // Name: SelectScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14518 (SelectScreen)
+// Module 14526 (SelectScreen)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const SELECT_NAMES = arg1(dependencyMap[2]).SELECT_NAMES;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
-  let obj = { container: {} };
-  obj = { width: -352714750, height: 141754370, aspectRatio: 671088640, primaryColor: 67108864, secondaryColor: 1358954496 };
+  let obj = { container: { <string:4224476331>: null, <string:1415819756>: null } };
+  obj = { 1314564412: -352059390, 1011982433: 141754370, 1375429033: 671088640, -1419704179: 67108864, 1385855313: 1358954496 };
   const NAV_BAR_HEIGHT = arg1(dependencyMap[5]).NAV_BAR_HEIGHT;
   if (arg0) {
     let diff = NAV_BAR_HEIGHT;

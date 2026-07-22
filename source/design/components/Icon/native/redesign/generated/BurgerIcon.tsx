@@ -1,10 +1,10 @@
-// Module ID: 13413
-// Function ID: 101894
+// Module ID: 13420
+// Function ID: 101927
 // Name: BurgerIcon
-// Dependencies: [1224736789, 2080374805, 33554453, 1979711488, 31, 33]
+// Dependencies: [1056964629, 2063597588, 33554453, 1979711488, 31, 33]
 // Exports: BurgerIcon
 
-// Module 13413 (BurgerIcon)
+// Module 13420 (BurgerIcon)
 import module_33 from "module_33";
 
 importAll(dependencyMap[0]);

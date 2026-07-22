@@ -1,10 +1,10 @@
-// Module ID: 9257
-// Function ID: 72339
+// Module ID: 9258
+// Function ID: 72352
 // Name: EnvelopeIcon
 // Dependencies: []
 // Exports: EnvelopeIcon
 
-// Module 9257 (EnvelopeIcon)
+// Module 9258 (EnvelopeIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/EnvelopeIcon.tsx");

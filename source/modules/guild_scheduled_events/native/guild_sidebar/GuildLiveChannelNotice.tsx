@@ -1,10 +1,10 @@
-// Module ID: 14892
-// Function ID: 112186
+// Module ID: 14900
+// Function ID: 112229
 // Name: UserSummaryRow
 // Dependencies: []
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 14892 (UserSummaryRow)
+// Module 14900 (UserSummaryRow)
 function UserSummaryRow(arg0) {
   let audienceCount;
   let isLiveStreaming;
@@ -229,7 +229,7 @@ function SeeDetailButton(guildEvent) {
     obj = { eventId: guildEvent.id, event: guildEvent };
     const result = obj.openGuildEventDetails(obj);
   }, items);
-  obj = { paddingVertical: "key", display: "Array", flexDirection: "isArray", onPress: callback };
+  obj = { enlargeSquare: null, fillAspectRatio: null, <string:1650710705>: null, onPress: callback };
   const intl = arg1(dependencyMap[31]).intl;
   obj.text = intl.string(arg1(dependencyMap[31]).t.z4FcDs);
   obj.children = callback(arg1(dependencyMap[27]).Button, obj);
@@ -336,18 +336,18 @@ let closure_23 = importDefaultResult.reactParserFor(obj);
 const obj2 = { react: arg1(dependencyMap[13]).inlineChannelReact };
 let closure_24 = arg1(dependencyMap[18]).createStyles((height) => {
   let obj = { container: obj };
-  obj = { "Null": 7, "Null": 370, marginTop: PX_82 };
-  obj = { channel_id: "r", Array: "isArray", mn: "Array", jsx: "Text", _distance: "get", scales: "jsx", cursor: "Array", y: "isArray", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round, height };
+  obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginTop: PX_82 };
+  obj = { "Null": "r", "Null": "isArray", "Null": "Array", "Null": "Text", "Null": "top", "Null": "jsx", "Null": "Array", "Null": "isArray", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round, height };
   obj.overflowCircle = obj;
   obj.wrapper = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, height: closure_19 };
-  const obj2 = { friendMessageContainer: "<string:17891332>", recurrenceRule: "dsnToString", LaunchPadModeSetting: "<string:8929536>", GetStringOrBooleanOption: "<string:1090584577>", GiftCardStack3dIllustration: "\u{1F44D}\u{1F3FE}", borderRadius: importDefault(dependencyMap[10]).radii.round, height };
+  const obj2 = { "Bool(false)": "w", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "constructor", "Bool(false)": "isArray", borderRadius: importDefault(dependencyMap[10]).radii.round, height };
   obj.badge = obj2;
   const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, height: closure_19 };
   obj.audienceBadge = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWER };
   return obj;
 });
 const obj7 = arg1(dependencyMap[18]);
-const obj3 = { card: { padding: PX_122 }, row: { "Null": 7, "Null": 370 }, infoRow: { marginTop: PX_4 }, liveNowIcon: { marginEnd: 4 }, uppercase: { textTransform: "uppercase" } };
+const obj3 = { card: { padding: PX_122 }, row: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, infoRow: { marginTop: PX_4 }, liveNowIcon: { marginEnd: 4 }, uppercase: { textTransform: "uppercase" } };
 const obj4 = {};
 const obj8 = arg1(dependencyMap[18]);
 if (obj11.isAndroid()) {
@@ -355,7 +355,7 @@ if (obj11.isAndroid()) {
 }
 obj4.marginTop = num;
 obj3.headingText = obj4;
-const obj5 = { <string:1549954009>: 205.5, <string:67064148>: null, <string:2018617953>: "020c495593a12ad5f00af9becbc3507d", backgroundColor: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE, borderRadius: importDefault(dependencyMap[10]).radii.xs };
+const obj5 = { -9223372036854775808: 205.5, 9223372036854775807: null, 0: "020c495593a12ad5f00af9becbc3507d", backgroundColor: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE, borderRadius: importDefault(dependencyMap[10]).radii.xs };
 obj3.liveDot = obj5;
 obj3.calendarIcon = { marginRight: 7 };
 obj3.topic = { marginTop: PX_82 };
@@ -376,7 +376,7 @@ let closure_26 = importAllResult.memo((arg0) => {
   let obj = {};
   obj = { style: tmp.row };
   if (null != LiveIcon) {
-    obj = { style: tmp.calendarIcon };
+    obj = { "Bool(false)": 1058144258, "Bool(false)": -162463743, style: tmp.calendarIcon };
     let tmp6 = callback(LiveIcon, obj);
   } else {
     const obj1 = { style: tmp.liveDot };
@@ -399,9 +399,7 @@ let closure_26 = importAllResult.memo((arg0) => {
   obj2.children = heading;
   items[1] = callback(arg1(dependencyMap[19]).Text, obj2);
   obj.children = items;
-  const items2 = [closure_14(View, obj), voiceUsers, , , ];
-  const obj3 = { "Bool(false)": "gr", "Bool(false)": null, "Bool(false)": "Group 8", "Bool(false)": 1, style: tmp.topic, children: topic };
-  items2[2] = callback(arg1(dependencyMap[19]).Text, obj3);
+  const items2 = [closure_14(View, obj), voiceUsers, callback(arg1(dependencyMap[19]).Text, { style: tmp.topic, children: topic }), , ];
   const obj4 = { style: items3 };
   const items3 = [, ];
   ({ row: arr4[0], infoRow: arr4[1] } = tmp);

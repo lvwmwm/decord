@@ -1,10 +1,10 @@
-// Module ID: 11910
-// Function ID: 92209
+// Module ID: 11911
+// Function ID: 92223
 // Name: isOnPlayStation
 // Dependencies: []
 // Exports: default
 
-// Module 11910 (isOnPlayStation)
+// Module 11911 (isOnPlayStation)
 const ActivityGamePlatforms = require(dependencyMap[0]).ActivityGamePlatforms;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");

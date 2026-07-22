@@ -1,10 +1,10 @@
-// Module ID: 8594
-// Function ID: 68256
+// Module ID: 8595
+// Function ID: 68268
 // Name: useInAppBrowserReturn
 // Dependencies: []
 // Exports: default
 
-// Module 8594 (useInAppBrowserReturn)
+// Module 8595 (useInAppBrowserReturn)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");

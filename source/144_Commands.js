@@ -4,11 +4,11 @@
 // Dependencies: []
 
 // Module 144 (Commands)
-let obj = { uiViewClassName: "AndroidTextInput", bubblingEventTypes: { topEndEditing: { phasedRegistrationNames: {} }, topKeyPress: { phasedRegistrationNames: { "Null": false, "Null": true } }, topSubmitEditing: { phasedRegistrationNames: { "Null": "\u{1F409}", "Null": 6 } } }, directEventTypes: { topScroll: { registrationName: "onScroll" } } };
+let obj = { uiViewClassName: "AndroidTextInput", bubblingEventTypes: { topEndEditing: { phasedRegistrationNames: {} }, topKeyPress: { phasedRegistrationNames: { "Bool(false)": null, "Bool(false)": false } }, topSubmitEditing: { phasedRegistrationNames: { "Bool(false)": null, "Bool(false)": "\u{1F409}" } } }, directEventTypes: { topScroll: { registrationName: "onScroll" } } };
 obj = {};
 obj = { process: arg1(dependencyMap[1]).default };
 obj.textShadowColor = obj;
-const tmp2 = importDefault(dependencyMap[0])({ supportedCommands: ["View", "size", "includes"] });
+const tmp2 = importDefault(dependencyMap[0])({ supportedCommands: ["Uint8Array", "and", "j"] });
 obj.underlineColorAndroid = { process: arg1(dependencyMap[1]).default };
 const obj1 = { process: arg1(dependencyMap[1]).default };
 obj.selectionColor = { process: arg1(dependencyMap[1]).default };

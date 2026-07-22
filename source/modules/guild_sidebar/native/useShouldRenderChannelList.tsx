@@ -1,10 +1,10 @@
-// Module ID: 14963
-// Function ID: 112581
+// Module ID: 14971
+// Function ID: 112624
 // Name: useShouldRenderChannelList
 // Dependencies: []
 // Exports: useShouldRenderChannelList
 
-// Module 14963 (useShouldRenderChannelList)
+// Module 14971 (useShouldRenderChannelList)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

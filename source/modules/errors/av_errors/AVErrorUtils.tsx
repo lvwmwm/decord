@@ -1,10 +1,10 @@
-// Module ID: 16406
-// Function ID: 126746
+// Module ID: 16414
+// Function ID: 126788
 // Name: getReportInboundErrors
 // Dependencies: []
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 16406 (getReportInboundErrors)
+// Module 16414 (getReportInboundErrors)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = 10 * importDefault(dependencyMap[1]).Millis.SECOND;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");

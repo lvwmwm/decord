@@ -1,7 +1,7 @@
 // Module ID: 575
 // Function ID: 6958
 // Name: toNumber
-// Dependencies: []
+// Dependencies: [604, 577, 580]
 
 // Module 575 (toNumber)
 let closure_2 = /^[-+]0x[0-9a-f]+$/i;

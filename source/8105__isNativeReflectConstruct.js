@@ -1,5 +1,5 @@
 // Module ID: 8105
-// Function ID: 64204
+// Function ID: 64214
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -63,6 +63,6 @@ const tmp3 = (arg0) => {
   return callback(Rect, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "Rect";
-tmp3.defaultProps = { dispatch: "ERROR", split: "ERROR", location: "NOT_RESPONDER", __initData: "NOT_RESPONDER" };
+tmp3.defaultProps = { "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" };
 
 export default tmp3;

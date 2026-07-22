@@ -1,18 +1,18 @@
-// Module ID: 14679
-// Function ID: 110685
+// Module ID: 14687
+// Function ID: 110728
 // Name: HOME_DRAWER_FLING_PHYSICS
 // Dependencies: []
 // Exports: useHomeGesture
 
-// Module 14679 (HOME_DRAWER_FLING_PHYSICS)
+// Module 14687 (HOME_DRAWER_FLING_PHYSICS)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const computeMaxX = arg1(dependencyMap[2]).computeMaxX;
 let closure_7 = importDefault(dependencyMap[3]);
 const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-let closure_9 = { disableNewIOSPicker: false, webpackId: false, connectedEmbeddedActivity: false };
-let obj = { disableNewIOSPicker: 2441348311250642400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, webpackId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001586577, connectedEmbeddedActivity: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002131465965376 };
+let closure_9 = { 84079581: "<string:1094708428>", -79768422: "#C2CBE1", -618226596: "<string:70288449>" };
+let obj = { 84079581: 44553897654398590000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -79768422: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001586577, -618226596: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002131465965376 };
 let closure_11 = { PEEK: "PEEK", OPEN: "OPEN" };
 let closure_12 = { code: "function useHomeDrawerGestureTsx1(){const{dragOffsetX,INITIAL_OPEN_WIDTH}=this.__closure;return dragOffsetX.get()>=INITIAL_OPEN_WIDTH;}" };
 let closure_13 = { code: "function useHomeDrawerGestureTsx2(isOpen,wasOpen){const{gestureState,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;if(!gestureState.get().active||wasOpen===null){return;}if(isOpen===wasOpen){return;}if(isOpen){runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}else{runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.SOFT);}}" };
@@ -34,7 +34,7 @@ obj = {};
 const Gesture = arg1(dependencyMap[16]).Gesture;
 obj.gesture = Gesture.Pan();
 obj.panelStyles = {};
-obj.gestureState = arg1(dependencyMap[17]).createFakeSharedValue({ buttonLabel: true, blur: "/assets/.cache/intl/ZGVzaWdu", backgroundColor: null, padding: "6f26364a343a1fa9a6e8ce73bcba4b45" });
+obj.gestureState = arg1(dependencyMap[17]).createFakeSharedValue({});
 const obj4 = arg1(dependencyMap[17]);
 obj.panelX = require("module_0");
 const obj5 = arg1(dependencyMap[17]);
@@ -182,7 +182,7 @@ export const useHomeGesture = function useHomeGesture() {
     if (enableHome) {
       tmp(tmp7, tmp8);
     } else {
-      tmp({ "Null": -536870861, "Null": -299892737 }, { "Bool(true)": "ERROR", "Bool(true)": "ERROR", "Bool(true)": "NOT_RESPONDER", "Bool(true)": "NOT_RESPONDER" });
+      tmp({ "Null": "%FunctionPrototype%", "Null": "paddingStart" }, { wideBannerAnimatedUrl: -24, SPACE_32: null, np: 1, linkedUsers: "Malaysia" });
     }
   }, items);
   const items1 = [enableHome, panelX];
@@ -277,7 +277,7 @@ export const useHomeGesture = function useHomeGesture() {
         tmp5 = gestureState;
         value = panelX.get();
         str = "animate-always";
-        withSpringResult = obj.withSpring(value, gestureState.get().active ? closure_9 : f110687, "animate-always");
+        withSpringResult = obj.withSpring(value, gestureState.get().active ? closure_9 : f110730, "animate-always");
       } else {
         return closure_17;
       }
@@ -344,7 +344,7 @@ export const useHomeGesture = function useHomeGesture() {
     obj.opacity = obj6.withSpring(panelX(updateMaxX[6]).clamp(result, 0, 1), callback);
     return obj;
   }
-  obj1 = { 9223372036854775807: 16, 0: 16, 9223372036854775807: null, 9223372036854775807: "a57ba6ff6390c76b45de1785f93f6e88", -9223372036854775808: "ic-application-required", 0: "png", drawerRevealX: derivedValue, withSpring: arg1(dependencyMap[15]).withSpring, HOME_DRAWER_FLING_PHYSICS: obj, clamp: arg1(dependencyMap[6]).clamp };
+  obj1 = { drawerRevealX: derivedValue, withSpring: arg1(dependencyMap[15]).withSpring, HOME_DRAWER_FLING_PHYSICS: obj, clamp: arg1(dependencyMap[6]).clamp };
   pe.__closure = obj1;
   pe.__workletHash = 11639414708115;
   pe.__initData = closure_18;
@@ -363,14 +363,14 @@ export const useHomeGesture = function useHomeGesture() {
       obj = {};
       obj = {};
       obj3 = panelX(updateMaxX[15]);
-      obj.translateX = obj3.withSpring(num, f110687);
+      obj.translateX = obj3.withSpring(num, f110730);
       items = [];
       items[0] = obj;
       obj.transform = items;
       return obj;
     }
   }
-  obj2 = { "Null": false, "Null": false, "Null": false, drawerRevealX: derivedValue, withSpring: arg1(dependencyMap[15]).withSpring, HOME_DRAWER_FLING_PHYSICS: obj };
+  obj2 = { drawerRevealX: derivedValue, withSpring: arg1(dependencyMap[15]).withSpring, HOME_DRAWER_FLING_PHYSICS: obj };
   Ee.__closure = obj2;
   Ee.__workletHash = 16360618332998;
   Ee.__initData = closure_19;
@@ -389,14 +389,14 @@ export const useHomeGesture = function useHomeGesture() {
       obj = {};
       obj = {};
       obj3 = panelX(updateMaxX[15]);
-      obj.translateX = obj3.withSpring(num, f110687);
+      obj.translateX = obj3.withSpring(num, f110730);
       items = [];
       items[0] = obj;
       obj.transform = items;
       return obj;
     }
   }
-  const obj3 = { "Bool(false)": null, "Bool(false)": "0e02f6accc59d44ac3827104886762f1", "Bool(false)": "boost", drawerRevealX: derivedValue, withSpring: arg1(dependencyMap[15]).withSpring, HOME_DRAWER_FLING_PHYSICS: obj };
+  const obj3 = { "Bool(true)": null, "Bool(true)": "0e02f6accc59d44ac3827104886762f1", "Bool(true)": "boost", drawerRevealX: derivedValue, withSpring: arg1(dependencyMap[15]).withSpring, HOME_DRAWER_FLING_PHYSICS: obj };
   Oe.__closure = obj3;
   Oe.__workletHash = 8561772429103;
   Oe.__initData = closure_20;
@@ -557,7 +557,7 @@ export const useHomeGesture = function useHomeGesture() {
       }
       const result = store.set(false);
       tmp(closure_2[6]).runOnJS(closure_6)();
-      const result1 = tmp2.set({ buttonLabel: true, blur: "/assets/.cache/intl/ZGVzaWdu", backgroundColor: null, padding: "6f26364a343a1fa9a6e8ce73bcba4b45" });
+      const result1 = tmp2.set({});
       const result2 = store2.set(0);
     };
     const onEndResult = onChangeResult.onEnd(fn4);

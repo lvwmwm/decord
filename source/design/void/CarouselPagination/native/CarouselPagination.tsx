@@ -1,15 +1,15 @@
-// Module ID: 12971
-// Function ID: 98669
+// Module ID: 12978
+// Function ID: 98702
 // Name: CarouselPagination
 // Dependencies: []
 // Exports: default
 
-// Module 12971 (CarouselPagination)
+// Module 12978 (CarouselPagination)
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let obj = { container: { -9223372036854775808: "lb", 9223372036854775807: "4", 1814906173: "true" } };
-obj = { type: 858992922, value: 858993459, source: "accessibilityRole", language: "name", borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.ICON_STRONG };
+let obj = { container: { "Bool(true)": "lb", "Bool(true)": "4", "Bool(true)": "true" } };
+obj = { type: null, value: 4, source: "relative", language: "100%", borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.ICON_STRONG };
 obj.dot = obj;
 let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
 let closure_6 = { code: "function CarouselPaginationTsx1(){const{withTiming,active,STANDARD_EASING}=this.__closure;return withTiming(active?1:0,{duration:250,easing:STANDARD_EASING},'animate-always');}" };
@@ -39,12 +39,12 @@ let closure_8 = importAllResult.memo((active) => {
   const backgroundColor = tmp.dot.backgroundColor;
   const View = backgroundColor;
   const fn2 = function c() {
-    const obj = { width: active(BRAND_500[5]).interpolate(derivedValue.get(), ["replace", "then"], [null, null]) };
+    const obj = { width: active(BRAND_500[5]).interpolate(derivedValue.get(), [77601039, 1612144654], ["%isFinite%", "getPremiumTypeFromRawValue"]) };
     const obj2 = active(BRAND_500[5]);
     const items = [backgroundColor, BRAND_500];
-    obj.backgroundColor = active(BRAND_500[5]).interpolateColor(derivedValue.get(), ["replace", "then"], items);
+    obj.backgroundColor = active(BRAND_500[5]).interpolateColor(derivedValue.get(), [77601039, 1612144654], items);
     const obj3 = active(BRAND_500[5]);
-    obj.opacity = active(BRAND_500[5]).interpolate(derivedValue.get(), ["replace", "then"], []);
+    obj.opacity = active(BRAND_500[5]).interpolate(derivedValue.get(), [77601039, 1612144654], []);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[5]).interpolate, progress: derivedValue, interpolateColor: arg1(dependencyMap[5]).interpolateColor, backgroundColor, brand500: BRAND_500 };

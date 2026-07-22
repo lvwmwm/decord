@@ -1,10 +1,10 @@
-// Module ID: 8579
-// Function ID: 68134
+// Module ID: 8580
+// Function ID: 68146
 // Name: ClickableGameIcon
 // Dependencies: []
 // Exports: default
 
-// Module 8579 (ClickableGameIcon)
+// Module 8580 (ClickableGameIcon)
 function ClickableGameIcon(game) {
   let activityLevel;
   let enabled;
@@ -43,7 +43,7 @@ function FavoriteGame(game) {
   ({ activityLevel, clickable } = game);
   let obj = { style: styles().favoriteGame };
   const items = [callback(ClickableGameIcon, { game, activityLevel, enabled: clickable }), ];
-  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, children: game.name };
+  obj = { cachedAt: true, edpbxy: true, children: game.name };
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);
   obj.children = items;
   return callback2(View, obj);
@@ -125,11 +125,11 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: {}, favoriteGame: { <string:18940595>: 8, <string:24337135>: null, <string:332421729>: "\u270A\u{1F3FF}", <string:82118454>: true }, lastItem: { 1912565759: "isArray", 1979675647: "warn", 1895788287: "textAlign" } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SCRIM, opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[4]).radii.xs, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+obj = { container: { "Bool(true)": 9126805527, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000273953900656662, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002040683002168536 }, favoriteGame: { 9223372036854775807: 8, -9223372036854775808: null, 0: "\u270A\u{1F3FF}", 9223372036854775807: true }, lastItem: { "Null": 711724901615082200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 703831249369113300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 426844242226160100000000000000000000000000000000000000000000 } };
+obj = { left: "center", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SCRIM, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia", borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.lastItemOverlay = obj;
 obj.lastItemImage = { position: "absolute" };
-obj.lastItemText = { [Symbol.iterator]: "boolean", MANUAL_ENABLE: "string", solidBackground: "boolean", cardStyle: "string", product: "boolean" };
+obj.lastItemText = { usesClientMods: 1441161644, addScreenshotButtonLabel: -1500074894, bHa9kN: true, display: true, borderWidth: true };
 const styles = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGames.tsx");

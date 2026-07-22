@@ -1,10 +1,10 @@
-// Module ID: 16254
-// Function ID: 125573
+// Module ID: 16262
+// Function ID: 125615
 // Name: useCreateCreatorMonetizationAcceptTermsRequest
 // Dependencies: []
 // Exports: default
 
-// Module 16254 (useCreateCreatorMonetizationAcceptTermsRequest)
+// Module 16262 (useCreateCreatorMonetizationAcceptTermsRequest)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

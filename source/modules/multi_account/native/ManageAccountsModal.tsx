@@ -1,9 +1,9 @@
-// Module ID: 14982
-// Function ID: 112789
+// Module ID: 14990
+// Function ID: 112832
 // Name: RemoveMultiAccountUserButton
 // Dependencies: []
 
-// Module 14982 (RemoveMultiAccountUserButton)
+// Module 14990 (RemoveMultiAccountUserButton)
 function RemoveMultiAccountUserButton(user) {
   user = user.user;
   const arg1 = user;
@@ -123,7 +123,7 @@ function ManageAccounts(isEditing) {
       }
       obj.onPressUser = fn;
       obj.showActiveAccountLabel = true;
-      obj = { width: null, position: null, top: null, component: navigation(multiAccountUsers[23]).View, style: closure_6 };
+      obj = { borderRadius: null, justifyContent: null, alignItems: null, component: navigation(multiAccountUsers[23]).View, style: closure_6 };
       let tmp4 = isEditing;
       if (isEditing) {
         obj = { duration: closure_12 };
@@ -134,7 +134,7 @@ function ManageAccounts(isEditing) {
       }
       obj.children = tmp4;
       obj.leading = callback(isEditing(multiAccountUsers[30]).TransitionGroup, obj);
-      const obj2 = { flexShrink: true, flexGrow: true, overflow: true, position: true, component: closure_7, style: callback.trailingIconContainer };
+      const obj2 = { component: closure_7, style: callback.trailingIconContainer };
       const tmp15 = navigation(multiAccountUsers[31]);
       const obj3 = { duration: closure_12, style: callback.trailingIcon };
       if (isEditing) {
@@ -158,7 +158,7 @@ function ManageAccounts(isEditing) {
     scrollEventThrottle: 16,
     scrollEnabled: true
   };
-  obj2 = { flexShrink: true, flexGrow: true, overflow: true, position: true, component: closure_7 };
+  obj2 = { component: closure_7 };
   let tmp8 = !isEditing;
   if (tmp8) {
     obj3 = { duration: closure_12 };
@@ -214,7 +214,7 @@ let obj1 = arg1(dependencyMap[12]);
 let closure_20 = obj1.createNativeStackNavigator();
 let obj2 = arg1(dependencyMap[13]);
 let obj = {};
-obj = { "Null": -93192191, "Null": 2013265920, "Null": 16777216, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW };
+obj = { opacity: "97335968179b868ec33c96b39450902f", d: "img_premium_canvas_mobile", fill: "png", backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW };
 obj.sortableListView = obj1;

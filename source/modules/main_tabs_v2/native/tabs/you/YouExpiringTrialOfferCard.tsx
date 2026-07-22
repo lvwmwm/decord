@@ -1,10 +1,10 @@
-// Module ID: 15366
-// Function ID: 117032
+// Module ID: 15374
+// Function ID: 117075
 // Name: getNoticeCTAColor
 // Dependencies: []
 // Exports: default
 
-// Module 15366 (getNoticeCTAColor)
+// Module 15374 (getNoticeCTAColor)
 function getNoticeCTAColor(arg0) {
   if (closure_9.PREMIUM_TIER_0_TRIAL_ENDING === arg0) {
     return Gradients.PREMIUM_TIER_0;
@@ -47,10 +47,10 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
 let closure_15 = 10 * importDefault(dependencyMap[7]).Millis.SECOND;
 let obj = arg1(dependencyMap[8]);
-obj = { header: { "Null": "isArray", "Null": "no", "Null": "content", "Null": "a" }, closeButton: { "Bool(false)": false, "Bool(false)": 0, "Bool(false)": 0 } };
+obj = { header: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, closeButton: { convertShortcutToName: false, hasUnreadMessages: 0, CreatorMonetizationRestrictions: 0 } };
 obj = { color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.closeIcon = obj;
-obj.linearGradient = { "Null": false, "Null": false, "Null": false, "Null": false };
+obj.linearGradient = { flex: "HT", backgroundColor: "prefixTag", padding: "values", 242550644: "isArray" };
 const tmp3 = arg1(dependencyMap[6]);
 obj.primaryCTA = { borderRadius: importDefault(dependencyMap[9]).radii.round, gap: 4 };
 let closure_16 = obj.createStyles(obj);
@@ -109,7 +109,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj = {};
         obj = { style: tmp.header };
         const articleURL = importDefault(dependencyMap[18]).getArticleURL(PREMIUM_TRIAL);
-        obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "153e24032a5a8790888aef41caaf4b2c" };
+        obj1 = { cachedAt: null, edpbxy: "153e24032a5a8790888aef41caaf4b2c" };
         const obj14 = importDefault(dependencyMap[18]);
         const tmp12 = closure_14;
         const tmp13 = closure_13;
@@ -144,7 +144,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
           obj = { untilAtLeast: callback };
           callback(tmp[10]).dismiss(obj);
         };
-        const obj4 = { color: tmp.closeIcon.color };
+        const obj4 = { "Null": null, "Null": null, color: tmp.closeIcon.color };
         obj3.children = callback(arg1(dependencyMap[22]).CloseIcon, obj4);
         items2[1] = callback(arg1(dependencyMap[21]).PressableOpacity, obj3);
         const obj5 = { style: tmp.primaryCTA };
@@ -159,7 +159,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
           navigateToPremium();
         };
         obj5.renderIcon = function renderIcon() {
-          return callback2(navigateToPremium(tmp[23]).NitroWheelIcon, { "Null": 12, "Null": 4 });
+          return callback2(navigateToPremium(tmp[23]).NitroWheelIcon, {});
         };
         obj5.renderLinearGradient = function renderLinearGradient() {
           const obj = { style: items, start: constants2.START, end: constants2.END };

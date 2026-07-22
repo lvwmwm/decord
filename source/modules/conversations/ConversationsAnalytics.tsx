@@ -1,9 +1,9 @@
-// Module ID: 9267
-// Function ID: 72402
+// Module ID: 9268
+// Function ID: 72415
 // Name: channelProps
 // Dependencies: []
 
-// Module 9267 (channelProps)
+// Module 9268 (channelProps)
 function channelProps(channelId) {
   const channel = channel.getChannel(channelId);
   const obj = { channel_id: channelId };

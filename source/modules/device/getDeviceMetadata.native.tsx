@@ -1,5 +1,5 @@
 // Module ID: 6914
-// Function ID: 55084
+// Function ID: 55095
 // Name: getDeviceMetadata
 // Dependencies: []
 // Exports: default

@@ -1,20 +1,22 @@
-// Module ID: 13485
-// Function ID: 102353
+// Module ID: 13492
+// Function ID: 102386
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [126746624, 523829248, 884080640, 79429632, 270270464, 131072, 528285696, 452984832, 2248146944, 167772181, 553648154, 503316480, 2969567248, 4177526786, 3103784964, 469762078, 3321888784, 2617245713, 33554434, 4026531840]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 27, 7835, 1849, 33, 4126, 689, 5461, 5481, 566, 13499]
 // Exports: default
 
-// Module 13485 (UserProfilePrimaryGuildEditButton)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const GuildTagBadgeSize = arg1(dependencyMap[2]).GuildTagBadgeSize;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.tag = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx");
+// Module 13492 (UserProfilePrimaryGuildEditButton)
+import "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import { GuildTagBadgeSize } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import useGuildProfileEditForm from "useGuildProfileEditForm";
+
+__exportStarResult1 = {};
+__exportStarResult1 = { borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.tag = __exportStarResult1;
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = useGuildProfileEditForm.fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx");
 
 export default function UserProfilePrimaryGuildEditButton(arg0) {
   let disabled;

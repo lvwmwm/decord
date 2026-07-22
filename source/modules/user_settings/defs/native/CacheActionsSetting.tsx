@@ -1,9 +1,9 @@
-// Module ID: 14277
-// Function ID: 107898
+// Module ID: 14285
+// Function ID: 107941
 // Name: handleCacheActionPress
 // Dependencies: []
 
-// Module 14277 (handleCacheActionPress)
+// Module 14285 (handleCacheActionPress)
 function handleCacheActionPress(key) {
   let obj = importDefault(dependencyMap[4]);
   obj = {

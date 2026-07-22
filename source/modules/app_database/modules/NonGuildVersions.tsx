@@ -1,5 +1,5 @@
 // Module ID: 6894
-// Function ID: 54886
+// Function ID: 54897
 // Name: NonGuildVersions
 // Dependencies: []
 
@@ -13,7 +13,7 @@ importDefaultResult = new importDefaultResult("NonGuildVersions");
 let tmp4 = () => {
   class NonGuildVersions {
     constructor() {
-      f54893 = this;
+      f54904 = this;
       tmp = closure_4(this, NonGuildVersions);
       this.actions = {
         CONNECTION_OPEN(arg0, arg1) {
@@ -23,7 +23,7 @@ let tmp4 = () => {
               return self.handleConnectionOpen(arg0, arg1);
             }
       };
-      obj = f54893(closure_2[5]);
+      obj = f54904(closure_2[5]);
       if (obj.isCacheEnabled()) {
         tmp2 = closure_6;
         tmp3 = NonGuildVersions;

@@ -1,5 +1,5 @@
 // Module ID: 7308
-// Function ID: 58944
+// Function ID: 58955
 // Name: aggregateExceptionsFromError
 // Dependencies: []
 // Exports: applyAggregateErrorsToEvent
@@ -44,7 +44,7 @@ function aggregateExceptionsFromError(arg0, arg1, arg2, errors) {
   }
 }
 function applyExceptionGroupFieldsForParentException(mechanism, exception_id) {
-  mechanism.mechanism = mechanism.mechanism || {};
+  mechanism.mechanism = mechanism.mechanism || { -1604557429: 295321873, -564905130: -1101987839 };
   let tmp = "AggregateError" === mechanism.type;
   if (tmp) {
     let obj = { is_exception_group: true };
@@ -54,7 +54,7 @@ function applyExceptionGroupFieldsForParentException(mechanism, exception_id) {
   mechanism.mechanism = Object.assign({}, mechanism.mechanism, tmp, obj);
 }
 function applyExceptionGroupFieldsForChildException(mechanism, source, exception_id, parent_id) {
-  mechanism.mechanism = mechanism.mechanism || {};
+  mechanism.mechanism = mechanism.mechanism || { -1604557429: 295321873, -564905130: -1101987839 };
   mechanism.mechanism = Object.assign({}, mechanism.mechanism, { type: "chained", source, exception_id, parent_id });
 }
 let closure_2 = require(dependencyMap[0]);

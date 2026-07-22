@@ -1,9 +1,8 @@
 // Module ID: 9840
-// Function ID: 76239
+// Function ID: 76251
 // Dependencies: []
 
 // Module 9840
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, scales: [] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [-1509949129, 1895825713, 855638518] });

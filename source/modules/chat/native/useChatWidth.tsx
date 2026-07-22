@@ -1,10 +1,10 @@
-// Module ID: 10838
-// Function ID: 84112
+// Module ID: 10839
+// Function ID: 84125
 // Name: useChatWidth
 // Dependencies: []
 // Exports: default, getChatWidth
 
-// Module 10838 (useChatWidth)
+// Module 10839 (useChatWidth)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
 

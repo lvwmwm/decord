@@ -1,10 +1,10 @@
-// Module ID: 11907
-// Function ID: 92183
+// Module ID: 11908
+// Function ID: 92197
 // Name: useEntryActivityAndApplication
 // Dependencies: []
 // Exports: default
 
-// Module 11907 (useEntryActivityAndApplication)
+// Module 11908 (useEntryActivityAndApplication)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

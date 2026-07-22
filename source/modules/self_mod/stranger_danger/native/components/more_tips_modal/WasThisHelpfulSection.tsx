@@ -1,10 +1,10 @@
-// Module ID: 10404
-// Function ID: 80156
+// Module ID: 10405
+// Function ID: 80169
 // Name: WasThisHelpfulSection
 // Dependencies: []
 // Exports: default
 
-// Module 10404 (WasThisHelpfulSection)
+// Module 10405 (WasThisHelpfulSection)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const tmp3 = arg1(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: {} };
+obj = { container: { <string:3814666730>: 8, <string:1280564396>: 18 } };
 obj = { flexDirection: "row", marginTop: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.buttonsContainer = obj;
 const tmp4 = arg1(dependencyMap[4]);
@@ -27,7 +27,7 @@ const obj3 = { borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colo
 obj.buttonIconInactive = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj4 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.buttonIconActive = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.toastContainer = { MKTG_HYPESQUAD_FORM_SUBMITTED: false, marginInlineEnd: false };
+obj.toastContainer = { "Bool(false)": null, "Bool(false)": null };
 let closure_13 = obj.createStyles(obj);
 const obj5 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/WasThisHelpfulSection.tsx");
@@ -84,7 +84,7 @@ export default function WasThisHelpfulSection(channelId) {
     channelId(senderId[13]).trackCtaEvent(obj);
   }, items3);
   obj = { style: tmp.container };
-  obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
+  obj = { cachedAt: -8364226096399416000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012460413631725481 };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.L84yVm);
   const items4 = [callback(arg1(dependencyMap[14]).Text, obj), ];

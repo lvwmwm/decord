@@ -1,10 +1,10 @@
-// Module ID: 16359
-// Function ID: 126206
+// Module ID: 16367
+// Function ID: 126248
 // Name: _getTemplates
 // Dependencies: []
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 16359 (_getTemplates)
+// Module 16367 (_getTemplates)
 function _getTemplates() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

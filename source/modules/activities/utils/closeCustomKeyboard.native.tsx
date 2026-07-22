@@ -1,13 +1,12 @@
-// Module ID: 10815
-// Function ID: 83990
+// Module ID: 10816
+// Function ID: 84003
 // Name: closeCustomKeyboard
-// Dependencies: [0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 10815 (closeCustomKeyboard)
-import result from "result";
-
-result = result.fileFinishedImporting("modules/activities/utils/closeCustomKeyboard.native.tsx");
+// Module 10816 (closeCustomKeyboard)
+const _module = require(dependencyMap[1]);
+const result = _module.fileFinishedImporting("modules/activities/utils/closeCustomKeyboard.native.tsx");
 
 export default function closeCustomKeyboard(channelId) {
   const bestActiveInputForChannelId = require(dependencyMap[0]).getBestActiveInputForChannelId(channelId);

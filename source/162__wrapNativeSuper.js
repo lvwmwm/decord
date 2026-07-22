@@ -1,7 +1,7 @@
 // Module ID: 162
 // Function ID: 2470
 // Name: _wrapNativeSuper
-// Dependencies: []
+// Dependencies: [0, 4294967295, 4294967295]
 
 // Module 162 (_wrapNativeSuper)
 function _wrapNativeSuper(arg0) {
@@ -53,7 +53,7 @@ function _wrapNativeSuper(arg0) {
           }
           const _Object = Object;
           let obj = {};
-          obj = { value: Wrapper };
+          obj = { 1837105156: 1, 894631940: "column", 65904547: 200, 1233076609: "", value: Wrapper };
           obj.constructor = obj;
           Wrapper.prototype = Object.create(arg0.prototype, obj);
           return map(closure_2[3])(Wrapper, arg0);

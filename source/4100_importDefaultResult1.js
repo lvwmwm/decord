@@ -1,5 +1,5 @@
 // Module ID: 4100
-// Function ID: 33948
+// Function ID: 33950
 // Name: importDefaultResult1
 // Dependencies: []
 
@@ -11,7 +11,7 @@ const importDefaultResult1Result1 = importDefaultResult1(importDefaultResult1({}
 const importDefaultResult1Result2 = importDefaultResult1(importDefaultResult1(importDefaultResult1({}, arg1(dependencyMap[2]).HapticFeedbackTypes.impactLight, 0.3), arg1(dependencyMap[2]).HapticFeedbackTypes.impactMedium, 0.6), arg1(dependencyMap[2]).HapticFeedbackTypes.impactHeavy, 0.8);
 const importDefaultResult1Result3 = importDefaultResult1(importDefaultResult1(importDefaultResult1(importDefaultResult1({}, arg1(dependencyMap[2]).HapticFeedbackTypes.impactLight, 0.3), arg1(dependencyMap[2]).HapticFeedbackTypes.impactMedium, 0.6), arg1(dependencyMap[2]).HapticFeedbackTypes.impactHeavy, 0.8), arg1(dependencyMap[2]).HapticFeedbackTypes.rigid, 1);
 let closure_4 = importDefaultResult1(importDefaultResult1(importDefaultResult1(importDefaultResult1(importDefaultResult1(importDefaultResult1({}, arg1(dependencyMap[2]).HapticFeedbackTypes.impactLight, 0.3), arg1(dependencyMap[2]).HapticFeedbackTypes.impactMedium, 0.6), arg1(dependencyMap[2]).HapticFeedbackTypes.impactHeavy, 0.8), arg1(dependencyMap[2]).HapticFeedbackTypes.rigid, 1), arg1(dependencyMap[2]).HapticFeedbackTypes.soft, 0.1), arg1(dependencyMap[2]).HapticFeedbackTypes.selection, 0.3);
-let closure_5 = { messageId: null, local: null };
+let closure_5 = { "Bool(false)": true, "Bool(false)": true };
 let closure_6 = true;
 const obj = {
   setEnabled(arg0) {

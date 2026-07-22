@@ -1,12 +1,17 @@
 // Module ID: 6913
-// Function ID: 55077
+// Function ID: 55088
 // Name: ProcessUtils
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 6913 (ProcessUtils)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("utils/ProcessUtilsBase.tsx");
+
+export const ElectronProcessType = { Unknown: "unknown", Main: "main", Renderer: "renderer", GPU: "gpu", Utility: "utility", Crashpad: "crashpad", Clips: "clips" };
+export const ProcessUtils = () => {
   class ProcessUtils {
     constructor() {
       tmp = ProcessUtils(this, ProcessUtils);
@@ -43,7 +48,3 @@ const tmp2 = () => {
   };
   return callback(ProcessUtils, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("utils/ProcessUtilsBase.tsx");
-
-export const ElectronProcessType = { Unknown: "unknown", Main: "main", Renderer: "renderer", GPU: "gpu", Utility: "utility", Crashpad: "crashpad", Clips: "clips" };
-export const ProcessUtils = tmp2;

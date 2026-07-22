@@ -1,9 +1,9 @@
-// Module ID: 10593
-// Function ID: 82654
+// Module ID: 10594
+// Function ID: 82667
 // Name: enforcing
 // Dependencies: []
 
-// Module 10593 (enforcing)
+// Module 10594 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeScreenWakeLockModule");
 const _module = require(dependencyMap[1]);

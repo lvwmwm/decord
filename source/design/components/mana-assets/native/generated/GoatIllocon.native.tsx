@@ -1,7 +1,7 @@
 // Module ID: 6235
-// Function ID: 50274
+// Function ID: 50285
 // Name: GoatIllocon
-// Dependencies: [33554456, 1946157056, 33, 5232]
+// Dependencies: [33554456, 1946157056, 33, 5082]
 // Exports: GoatIllocon
 
 // Module 6235 (GoatIllocon)

@@ -1,10 +1,10 @@
-// Module ID: 9676
-// Function ID: 75337
+// Module ID: 9677
+// Function ID: 75350
 // Name: openGiftingBadgeInfoActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9676 (openGiftingBadgeInfoActionSheet)
+// Module 9677 (openGiftingBadgeInfoActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/gifting/native/openGiftingBadgeInfoActionSheet.tsx");
 

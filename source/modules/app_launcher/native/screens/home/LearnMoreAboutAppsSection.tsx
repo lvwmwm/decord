@@ -1,10 +1,10 @@
-// Module ID: 11203
-// Function ID: 87239
+// Module ID: 11204
+// Function ID: 87252
 // Name: LearnMoreAboutAppsSection
 // Dependencies: []
 // Exports: default
 
-// Module 11203 (LearnMoreAboutAppsSection)
+// Module 11204 (LearnMoreAboutAppsSection)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
@@ -16,11 +16,11 @@ obj.container = obj;
 obj.body = { textAlign: "center" };
 const tmp2 = arg1(dependencyMap[3]);
 obj.divider = { height: importDefault(dependencyMap[5]).space.PX_16 };
-const obj2 = { Č: "isArray", accessibilityDismiss: "textAlign", showChannelChangeConfirmationAlert: "h", isDeadEnd: "a", target_application_id: "isArray", placeholder: "x", enableAnimation: "Symbol", borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
-const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
-obj.linkButton = obj2;
-let closure_8 = obj.createStyles(obj);
 const obj1 = { height: importDefault(dependencyMap[5]).space.PX_16 };
+const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
+obj.linkButton = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+let closure_8 = obj.createStyles(obj);
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/screens/home/LearnMoreAboutAppsSection.tsx");
 
 export default function LearnMoreAboutAppsSection(visible) {
@@ -41,11 +41,11 @@ export default function LearnMoreAboutAppsSection(visible) {
   obj = { style: tmp.container };
   obj = { style: tmp.divider };
   const items = [callback(View, obj), callback(arg1(dependencyMap[11]).Text, { children: stringResult }), , , , ];
-  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.body, children: stringResult1 };
+  const obj1 = { cachedAt: true, edpbxy: true, style: tmp.body, children: stringResult1 };
   items[2] = callback(arg1(dependencyMap[11]).Text, obj1);
   items[3] = callback(View, { style: tmp.divider });
   const obj3 = { style: tmp.linkButton, onPress: callback, accessibilityRole: "link", accessibilityLabel: formatToPlainStringResult };
-  const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+  const obj4 = {};
   const intl4 = arg1(dependencyMap[8]).intl;
   obj4.children = intl4.string(arg1(dependencyMap[8]).t.Ye51oT);
   obj3.children = callback(arg1(dependencyMap[11]).Text, obj4);

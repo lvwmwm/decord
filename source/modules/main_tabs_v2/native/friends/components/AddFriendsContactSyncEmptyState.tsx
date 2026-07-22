@@ -1,10 +1,10 @@
-// Module ID: 15335
-// Function ID: 116779
+// Module ID: 15343
+// Function ID: 116822
 // Name: AddFriendsContactSyncEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 15335 (AddFriendsContactSyncEmptyState)
+// Module 15343 (AddFriendsContactSyncEmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -13,11 +13,11 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { alignItems: "center", marginTop: importDefault(dependencyMap[4]).space.PX_24, marginHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: importDefault(dependencyMap[4]).space.PX_12, backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.content = obj;
-const obj1 = { y: null, isArray: "v2", marginTop: importDefault(dependencyMap[4]).space.PX_24, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
-obj.headerImage = obj1;
-const obj2 = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007830165971214, "Bool(false)": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002749361552429656, "Bool(false)": -973722733340751400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-obj.title = obj2;
 const tmp4 = arg1(dependencyMap[2]);
+obj.headerImage = { marginTop: importDefault(dependencyMap[4]).space.PX_24, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+const obj2 = { GUILD_CHANNEL_RESYNC_COMPLETED: 9, TOO_MANY_BLOCKED_USERS: "BLURPLE_71", onResumed: 1, marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
+obj.title = obj2;
+const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_24, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.subtitle = { marginBottom: importDefault(dependencyMap[4]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_48, width: "100%", alignContent: "center" };
 obj.subtitleText = { textAlign: "center" };
 const obj3 = { marginBottom: importDefault(dependencyMap[4]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_48, width: "100%", alignContent: "center" };
@@ -31,7 +31,7 @@ export default function AddFriendsContactSyncEmptyState() {
   let obj = { style: tmp.content };
   obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(dependencyMap[5]) };
   const items = [callback(closure_4, obj), , , ];
-  obj = { delete: "accessibilityLabel", dispatch: "r", raw: "isArray", style: tmp.title };
+  obj = { "Null": "<string:4294472349>", "Null": "<string:4294508543>", alignItems: "<string:1107427327>", style: tmp.title };
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t./G+nci);
   items[1] = callback(arg1(dependencyMap[6]).Text, obj);
@@ -43,7 +43,7 @@ export default function AddFriendsContactSyncEmptyState() {
   obj1.children = callback(arg1(dependencyMap[8]).TextWithIOSLinkWorkaround, obj2);
   items[2] = callback(closure_3, obj1);
   const obj4 = { style: tmp.trailing };
-  const obj5 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj5 = {};
   const intl3 = arg1(dependencyMap[7]).intl;
   obj5.text = intl3.string(arg1(dependencyMap[7]).t.QUXSpo);
   obj5.onPress = function onPress() {

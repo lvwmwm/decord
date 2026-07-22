@@ -1,9 +1,9 @@
-// Module ID: 8366
-// Function ID: 66686
+// Module ID: 8367
+// Function ID: 66698
 // Name: PX_4
 // Dependencies: []
 
-// Module 8366 (PX_4)
+// Module 8367 (PX_4)
 const PX_4 = importDefault(dependencyMap[0]).space.PX_4;
 const PX_8 = importDefault(dependencyMap[0]).space.PX_8;
 const sum = 2 * PX_8 + PX_4;

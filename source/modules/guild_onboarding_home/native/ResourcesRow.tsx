@@ -1,17 +1,17 @@
-// Module ID: 15161
-// Function ID: 114351
+// Module ID: 15169
+// Function ID: 114394
 // Name: ResourcesRow
 // Dependencies: []
 // Exports: default
 
-// Module 15161 (ResourcesRow)
+// Module 15169 (ResourcesRow)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 let closure_4 = arg1(dependencyMap[2]).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {} };
-obj = { accessible: 141317.775, guild: 0.00000000000000000000000000000000000000000000000000000000000004133483696510626, borderRadius: importDefault(dependencyMap[5]).radii.round, httpServerLocation: "\u{1F469}\u{1F3FF}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", description: true, flexDirection: null, paddingRight: 15.1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+obj = { accessible: -935339437381959400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, onPress: 0.00000000000000000000000000000000000000000000000000000000000004667253313593581, has: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020096735338359966, scales: "isArray", description: "key", flexDirection: "Array", paddingRight: "LIGHT", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.channelItem = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

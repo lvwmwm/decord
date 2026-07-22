@@ -1,10 +1,10 @@
-// Module ID: 10673
-// Function ID: 83190
+// Module ID: 10674
+// Function ID: 83203
 // Name: VideoButton
 // Dependencies: []
 // Exports: default
 
-// Module 10673 (VideoButton)
+// Module 10674 (VideoButton)
 class VideoButton {
   constructor(arg0) {
     channel = global.channel;
@@ -147,7 +147,7 @@ class DisconnectStreamButton {
     items = [, ];
     items[0] = View;
     items[1] = closure_10;
-    f83205 = obj.useStateFromStores(items, () => {
+    f83218 = obj.useStateFromStores(items, () => {
       const selectedParticipant = selectedParticipant.getSelectedParticipant(channel.id);
       if (null != selectedParticipant) {
         if (selectedParticipant.type !== constants.ACTIVITY) {
@@ -179,9 +179,9 @@ class DisconnectStreamButton {
       tmp5 = dependencyMap;
       num = 20;
       obj = {};
-      tmp6 = f83205;
+      tmp6 = f83218;
       num2 = 26;
-      obj.source = f83205(dependencyMap[26]);
+      obj.source = f83218(dependencyMap[26]);
       tmp7 = arg1;
       num3 = 21;
       intl = arg1(dependencyMap[21]).intl;
@@ -331,12 +331,12 @@ let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { "Bool(false)": true, "Bool(false)": "/assets/images/native/icons/voice_calls", "Bool(false)": 24, "Bool(false)": 24, height: arg1(dependencyMap[12]).CALL_ACTION_BAR_HEIGHT };
 obj.container = obj;
-const tmp2 = arg1(dependencyMap[10]);
-obj.containerForFiveButtonLayout = { height: arg1(dependencyMap[12]).FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT, paddingTop: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_TOP, paddingBottom: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_BOTTOM };
+const obj1 = { "Null": 44, "Null": null, "Null": "center", "Null": "flex-start", "Null": "absolute", "Null": 0, height: arg1(dependencyMap[12]).FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT, paddingTop: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_TOP, paddingBottom: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_BOTTOM };
+obj.containerForFiveButtonLayout = obj1;
 let closure_17 = obj.createStyles(obj);
 const obj2 = { NONE: 0, [0]: "NONE", SCREEN_SHARE_START: 1, [1]: "SCREEN_SHARE_START", SCREEN_SHARE_END: 2, [2]: "SCREEN_SHARE_END", AUDIO_ROUTE: 3, [3]: "AUDIO_ROUTE" };
 const obj3 = { END_STREAM: 0, [0]: "END_STREAM", END_ACTIVITY: 1, [1]: "END_ACTIVITY", END_CALL: 2, [2]: "END_CALL", END_REMOTE: 3, [3]: "END_REMOTE" };
-const obj1 = { height: arg1(dependencyMap[12]).FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT, paddingTop: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_TOP, paddingBottom: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_BOTTOM };
+const tmp2 = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[40]).fileFinishedImporting("modules/video_calls/native/components/ChannelCallActionBar.tsx");
 
 export default function ChannelCallActionBar(arg0) {

@@ -1,10 +1,13 @@
-// Module ID: 8238
-// Function ID: 65046
+// Module ID: 8239
+// Function ID: 65058
 // Name: _readFile
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8238 (_readFile)
+// Module 8239 (_readFile)
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+
 async function _readFile(arg0, arg1, filePathForGif, arg3) {
   if (null == callback(closure_1[2])) {
     if (null == null) {
@@ -25,10 +28,8 @@ async function _readFile(arg0, arg1, filePathForGif, arg3) {
     const obj = callback(closure_1[2]);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("FileManagerUtils");
-const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/FileManagerUtils.android.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("utils/FileManagerUtils.android.tsx");
 
 export const writeFile = function writeFile(cache, combined1, arg2, utf8) {
   let nextPromise;

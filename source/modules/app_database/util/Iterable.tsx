@@ -1,12 +1,14 @@
 // Module ID: 6709
-// Function ID: 52156
+// Function ID: 52167
 // Name: Chained
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 // Exports: chain
 
 // Module 6709 (Chained)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 let closure_2 = () => {
   class Chained {
     constructor(arg0) {
@@ -41,7 +43,7 @@ let closure_2 = () => {
   items[1] = obj;
   return callback(Chained, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_database/util/Iterable.tsx");
+const result = items.fileFinishedImporting("modules/app_database/util/Iterable.tsx");
 
 export const chain = function chain(arg0) {
   return new closure_2(HermesBuiltin.copyRestArgs());

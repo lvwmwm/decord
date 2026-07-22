@@ -1,10 +1,10 @@
-// Module ID: 14638
-// Function ID: 110404
+// Module ID: 14646
+// Function ID: 110447
 // Name: statesAreEqual
 // Dependencies: []
 // Exports: default
 
-// Module 14638 (statesAreEqual)
+// Module 14646 (statesAreEqual)
 function statesAreEqual(arg0, arg1) {
   return importDefault(dependencyMap[3]).isEqual(arg0, arg1);
 }

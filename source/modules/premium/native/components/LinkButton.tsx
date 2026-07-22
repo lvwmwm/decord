@@ -1,5 +1,5 @@
 // Module ID: 6641
-// Function ID: 50996
+// Function ID: 51007
 // Name: LinkButton
 // Dependencies: []
 // Exports: LinkButton
@@ -8,7 +8,7 @@
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).createStyles({ defaultContainerStyle: {}, disabledContainerStyle: { opacity: 0.5 } });
+let closure_4 = arg1(dependencyMap[2]).createStyles({ defaultContainerStyle: { "Null": "O", "Null": "l", "Null": "\u0596", "Null": "\u0598" }, disabledContainerStyle: { opacity: 0.5 } });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");
 

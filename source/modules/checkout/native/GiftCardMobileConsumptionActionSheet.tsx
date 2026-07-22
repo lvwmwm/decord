@@ -1,5 +1,5 @@
 // Module ID: 5801
-// Function ID: 49617
+// Function ID: 49628
 // Name: GiftCardMobileConsumptionActionSheet
 // Dependencies: []
 // Exports: default
@@ -15,9 +15,9 @@ obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_
 obj.sheet = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.container = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-const obj2 = { 663976015: "handleHeaderLayout", 664037462: "gay-Latn-ID", paddingTop: importDefault(dependencyMap[5]).space.PX_12 };
+const obj2 = { "Null": "w", "Null": "Array", paddingTop: importDefault(dependencyMap[5]).space.PX_12 };
 obj.illustration = obj2;
-obj.body = { 1616111827: 69, -1290341649: null, -657693324: 1, -1225038868: null, mn: "\u{1F9D4}\u200D\u2642\uFE0F", current: true, round: 13.1 };
+obj.body = { "Bool(false)": 69, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": "\u{1F9D4}\u200D\u2642\uFE0F", "Bool(false)": true, "Bool(false)": 13.1 };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/checkout/native/GiftCardMobileConsumptionActionSheet.tsx");
@@ -56,12 +56,12 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   obj = { style: items2 };
   const items2 = [tmp.container, { paddingBottom: importDefault(closure_2[6])().bottom }];
   obj = { spacing: importDefault(closure_2[5]).space.PX_16 };
-  const items3 = [callback(View, { style: tmp.illustration, children: callback(arg1(closure_2[10]).LaptopSpotIllustration, {}) }), , ];
+  const items3 = [callback(View, { style: tmp.illustration, children: callback(arg1(closure_2[10]).LaptopSpotIllustration, { include_inactive: "isArray", limit: "ct", exclude_unpaid_statuses: "start" }) }), , ];
   const obj2 = { style: tmp.body };
   const intl = arg1(closure_2[12]).intl;
   obj2.children = intl.string(importDefault(closure_2[13]).V3DI1E);
   items3[1] = callback(arg1(closure_2[11]).Text, obj2);
-  const obj3 = {};
+  const obj3 = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7", <string:1643763554>: "da.messages.955eed7cc4876c0375acb05d74c44ea7.compiled.messages" };
   const intl2 = arg1(closure_2[12]).intl;
   obj3.text = intl2.string(importDefault(closure_2[13]).YZePWx);
   obj3.onPress = function onPress() {

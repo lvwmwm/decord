@@ -1,5 +1,5 @@
 // Module ID: 4659
-// Function ID: 40361
+// Function ID: 40369
 // Name: getIsScreenLandscape
 // Dependencies: []
 // Exports: getIsScreenLandscape, useIsScreenLandscape

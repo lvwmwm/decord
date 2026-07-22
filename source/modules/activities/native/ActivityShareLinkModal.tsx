@@ -1,10 +1,10 @@
-// Module ID: 13290
-// Function ID: 100938
+// Module ID: 13297
+// Function ID: 100971
 // Name: ActivityShareLinkModal
 // Dependencies: []
 // Exports: default
 
-// Module 13290 (ActivityShareLinkModal)
+// Module 13297 (ActivityShareLinkModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,8 +19,8 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingVertical: importDefault(dependencyMap[11]).space.PX_8, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
 obj.headerContainer = obj;
-obj.header = { 1370382596: false, -865629095: false, -1428639508: false };
-const obj1 = { "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
+obj.header = {};
+const obj1 = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj1;
 let closure_14 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[9]);
@@ -144,7 +144,9 @@ export default function ActivityShareLinkModal(applicationId) {
   obj.children = first3(arg1(dependencyMap[27]).Header, obj1);
   const items9 = [first3(closure_6, obj), ];
   const obj2 = { style: tmp.container };
-  const items10 = [first3(importDefault(dependencyMap[32]), { absolute: true }), first3(importDefault(dependencyMap[33]), { initialSelectedDestinations: [], onSelectedDestinationChange: callback, originDestination: memo, rowMode: constants.TOGGLE }), ];
+  const items10 = [first3(importDefault(dependencyMap[32]), { absolute: true }), , ];
+  const obj3 = { "Bool(true)": "Galaxy S7", "Bool(true)": "SM-G930", "Bool(true)": "Galaxy S7 Edge", "Bool(true)": "SM-G935", initialSelectedDestinations: [], onSelectedDestinationChange: callback, originDestination: memo, rowMode: constants.TOGGLE };
+  items10[1] = first3(importDefault(dependencyMap[33]), obj3);
   const obj4 = { disabled: first, floatingBackgroundColor: tmp.container.backgroundColor, isVisible: first2.length > 0, loading: first };
   let tmp25;
   if (!first) {

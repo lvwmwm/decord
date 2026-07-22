@@ -1,10 +1,10 @@
-// Module ID: 14970
-// Function ID: 112689
+// Module ID: 14978
+// Function ID: 112732
 // Name: getGuildIconSize
 // Dependencies: []
 // Exports: default
 
-// Module 14970 (getGuildIconSize)
+// Module 14978 (getGuildIconSize)
 function getGuildIconSize(variant) {
   let num = 50;
   if ("one-column" === variant) {
@@ -47,7 +47,7 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   }
   const tmp2 = getGuildIconSize(variant);
   let obj = {};
-  obj = { paddingTop: "<string:1014759426>", justifyContent: "<string:2772566018>", alignItems: "<string:3774874224>", 114037406: "<string:1107296841>", -1626851176: "M4 12H3v3h1v-3ZM5 10h1V9H4v1H2v1h2v1h1v-2ZM2 9H1v1h1V9ZM16 3h-1v6h1V3ZM14 1h-2v1h2V1ZM15 2h-1v1h1V2ZM14 10h-2V9h-2v1h1v2h1v3h1v-3h-1v-1h2v-1h1V9h-1v1Z", 1422290913: "#000", backgroundColor: importDefault(dependencyMap[10]).colors.BG_SURFACE_RAISED, borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.lg, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
+  obj = { 9223372036854775807: true, -9223372036854775808: true, 0: true, 9223372036854775807: true, 0: true, 0: true, backgroundColor: importDefault(dependencyMap[10]).colors.BG_SURFACE_RAISED, borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.lg, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
   obj.card = obj;
   obj = {};
   let num2 = 80;
@@ -58,7 +58,7 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   obj.backgroundColor = importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT;
   obj.bannerContainer = obj;
   obj.banner = { flex: 1 };
-  const obj1 = { "Bool(true)": 0.129, "Bool(true)": 1 };
+  const obj1 = { "Null": 0.129, "Null": 1 };
   let num3 = 28;
   if ("one-column" === variant) {
     num3 = 32;
@@ -70,20 +70,20 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   obj.guildIconContainer = { top: getGuildIconTop(variant) };
   const obj2 = { top: getGuildIconTop(variant) };
   obj.guildIcon = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
-  const obj4 = { "Null": 7, "Null": 370, marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
+  const obj4 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
   obj.guildNameRow = obj4;
   const obj5 = {};
   const space = importDefault(dependencyMap[10]).space;
   obj5.marginRight = "one-column" === variant ? space.PX_8 : space.PX_4;
   obj.guildBadge = obj5;
-  obj.guildName = { flexShrink: null, flexGrow: null };
+  obj.guildName = { backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
   const obj6 = {};
   const space2 = importDefault(dependencyMap[10]).space;
   obj6.marginBottom = "one-column" === variant ? space2.PX_8 : space2.PX_4;
   obj.description = obj6;
   const obj3 = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
   obj.memberCounts = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_16 };
-  const obj8 = { marginTop: 231584265132739040000000000000000000000000000000000000000000000000000000000000, marginBottom: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000858413609814, paddingHorizontal: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169759663475, flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004275217972943208, alignItems: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011309568068630963 };
+  const obj8 = { <string:3327959291>: 231584265132739040000000000000000000000000000000000000000000000000000000000000, <string:657871202>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000858413609814, <string:1666624354>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169759663475, <string:1392078417>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004342148194607104, <string:3391647669>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015006194110467344 };
   const space3 = importDefault(dependencyMap[10]).space;
   obj8.marginBottom = "one-column" === variant ? space3.PX_12 : space3.PX_8;
   obj.memberCount = obj8;
@@ -94,7 +94,7 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   obj.dot = obj9;
   const obj10 = { width: num, height: num, borderRadius: result, backgroundColor: importDefault(dependencyMap[10]).colors.TEXT_STATUS_ONLINE };
   obj.dotOnline = obj10;
-  const obj11 = { "Bool(false)": "isArray", "Bool(false)": "Text", "Bool(false)": "marginTop", width: 2 * importDefault(dependencyMap[10]).radii.lg, height: 2 * importDefault(dependencyMap[10]).radii.lg, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
+  const obj11 = { convertShortcutToName: "Array", hasUnreadMessages: "parseSemver", CreatorMonetizationRestrictions: "Array", width: 2 * importDefault(dependencyMap[10]).radii.lg, height: 2 * importDefault(dependencyMap[10]).radii.lg, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
   obj.dismissButton = obj11;
   return obj;
 });
@@ -277,7 +277,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const obj15 = { style: tmp.memberCount };
     const obj16 = { style: tmp.dotOnline };
     const items12 = [callback3(stateFromStores1, obj16), ];
-    const obj17 = {};
+    const obj17 = { cachedAt: null, edpbxy: null };
     const intl = arg1(dependencyMap[17]).intl;
     const obj18 = { membersOnline: num };
     obj17.children = intl.format(arg1(dependencyMap[17]).t.LC+S+m, obj18);
@@ -293,7 +293,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const obj19 = { style: tmp.memberCount };
     const obj20 = { style: tmp.dot };
     const items14 = [callback3(stateFromStores1, obj20), ];
-    const obj21 = {};
+    const obj21 = { cachedAt: null, edpbxy: null };
     const intl2 = arg1(dependencyMap[17]).intl;
     const obj22 = { count: num2 };
     obj21.children = intl2.format(arg1(dependencyMap[17]).t.zRl6XR, obj22);
@@ -305,7 +305,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   obj14.children = items13;
   const items15 = [callback4(stateFromStores1, obj14), ];
   if (stateFromStores1) {
-    const obj23 = { <string:1365418235>: true, <string:1398885937>: true, <string:1640527953>: true, <string:39014754>: true, <string:1386919778>: true };
+    const obj23 = { <string:3562165089>: "<string:1275069015>", <string:1383310252>: "<string:2617246295>", <string:3767060185>: "<string:1375732179>", <string:74212417>: "<string:1306077004>", <string:2982962944>: "<string:2034307329>" };
     const intl4 = arg1(dependencyMap[17]).intl;
     obj23.text = intl4.string(arg1(dependencyMap[17]).t.KLOhbO);
     obj23.onPress = callback1;

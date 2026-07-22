@@ -1,5 +1,5 @@
 // Module ID: 7443
-// Function ID: 59691
+// Function ID: 59702
 // Name: usePremiumPrimaryGradientColors
 // Dependencies: []
 // Exports: default

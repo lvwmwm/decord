@@ -1,10 +1,10 @@
-// Module ID: 15701
-// Function ID: 120024
+// Module ID: 15709
+// Function ID: 120067
 // Name: FocusedActivityAccessibilityLayer
-// Dependencies: [2162688, 270401536, 45154304, 260308992, 737476608, 731774976, 361431040, 1029242880, 119603200, 689045504, 442368000]
+// Dependencies: [2162688, 270401536, 45154304, 260308992, 737542144, 731840512, 361365504, 1029767168, 119603200, 689111040, 442368000]
 // Exports: default
 
-// Module 15701 (FocusedActivityAccessibilityLayer)
+// Module 15709 (FocusedActivityAccessibilityLayer)
 function FocusedActivityAccessibilityLayer(activityName) {
   let channelId;
   let children;

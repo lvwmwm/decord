@@ -1,10 +1,10 @@
-// Module ID: 12797
-// Function ID: 98086
+// Module ID: 12804
+// Function ID: 98119
 // Name: useIsServerThemeAvailableForGuild
 // Dependencies: []
 // Exports: default
 
-// Module 12797 (useIsServerThemeAvailableForGuild)
+// Module 12804 (useIsServerThemeAvailableForGuild)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useIsServerThemeAvailableForGuild.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 7727
-// Function ID: 61449
+// Function ID: 61459
 // Name: createPremiumGroupInviteSystemMessage
 // Dependencies: []
 // Exports: createPremiumGroupInviteSystemMessage

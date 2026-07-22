@@ -1,7 +1,7 @@
 // Module ID: 704
 // Function ID: 8711
 // Name: baseGet
-// Dependencies: [735, 740]
+// Dependencies: []
 
 // Module 704 (baseGet)
 

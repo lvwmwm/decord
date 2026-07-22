@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 119820
+// Module ID: 15691
+// Function ID: 119863
 // Name: useCanConnect
 // Dependencies: []
 // Exports: default
 
-// Module 15683 (useCanConnect)
+// Module 15691 (useCanConnect)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

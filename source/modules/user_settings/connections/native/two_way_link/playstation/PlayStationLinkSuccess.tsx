@@ -1,16 +1,16 @@
-// Module ID: 8973
-// Function ID: 70740
+// Module ID: 8974
+// Function ID: 70753
 // Name: PlayStationLinkSuccess
 // Dependencies: []
 // Exports: PlayStationLinkSuccess
 
-// Module 8973 (PlayStationLinkSuccess)
+// Module 8974 (PlayStationLinkSuccess)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { <string:651579779>: true, <string:4249959009>: true, <string:1446732419>: true } });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
@@ -25,7 +25,7 @@ export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
   const intl = arg1(dependencyMap[7]).intl;
   obj2.children = intl.string(arg1(dependencyMap[7]).t.e6SOl0);
   items[1] = callback(arg1(dependencyMap[6]).Text, obj2);
-  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: twoWayLinkStyles.body };
+  const obj3 = { cachedAt: 1, edpbxy: 1, style: twoWayLinkStyles.body };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[7]).t.QjAZAQ);
   items[2] = callback(arg1(dependencyMap[6]).Text, obj3);

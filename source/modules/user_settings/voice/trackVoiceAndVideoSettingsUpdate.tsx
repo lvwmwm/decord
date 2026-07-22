@@ -1,10 +1,10 @@
-// Module ID: 8839
-// Function ID: 69739
+// Module ID: 8840
+// Function ID: 69752
 // Name: trackVoiceAndVideoDebuggingSettingsUpdated
 // Dependencies: [670, 2, 6]
 // Exports: default
 
-// Module 8839 (trackVoiceAndVideoDebuggingSettingsUpdated)
+// Module 8840 (trackVoiceAndVideoDebuggingSettingsUpdated)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

@@ -1,9 +1,9 @@
-// Module ID: 10801
-// Function ID: 83890
+// Module ID: 10802
+// Function ID: 83903
 // Name: getMatchData
 // Dependencies: []
 
-// Module 10801 (getMatchData)
+// Module 10802 (getMatchData)
 function getMatchData(pathname) {
   let channelId;
   let guildId;
@@ -44,7 +44,7 @@ function getMatchData(pathname) {
       const obj2 = { guildId: matchPathResult1.params.guildId, channelId: null };
       let obj3 = obj2;
     } else {
-      obj3 = { children: "o", ao: "o" };
+      obj3 = { "Null": "o", "Null": "o" };
     }
     return obj3;
   }

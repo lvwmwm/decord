@@ -1,9 +1,9 @@
-// Module ID: 9137
-// Function ID: 71642
+// Module ID: 9138
+// Function ID: 71655
 // Name: openMemberVerificationModal
 // Dependencies: []
 
-// Module 9137 (openMemberVerificationModal)
+// Module 9138 (openMemberVerificationModal)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_member_verification/MemberVerificationModalActionCreators.tsx");
 

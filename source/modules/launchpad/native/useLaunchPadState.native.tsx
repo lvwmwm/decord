@@ -1,14 +1,14 @@
-// Module ID: 15517
-// Function ID: 118397
+// Module ID: 15525
+// Function ID: 118440
 // Name: useLaunchPadState
 // Dependencies: []
 // Exports: default
 
-// Module 15517 (useLaunchPadState)
+// Module 15525 (useLaunchPadState)
 let closure_3 = importAll(dependencyMap[0]);
 ({ LAUNCH_PAD_PULL_TAB_MAX_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_SCALE_OFFSET: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = {};
-const obj = { "Bool(false)": "Array", "Bool(false)": "%MapPrototype%", "Bool(false)": "isArray", "Bool(false)": "MiniaturesSpotIllustration" };
+const obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "construct", "Bool(false)": "Array" };
 const tmp2 = arg1(dependencyMap[1]);
 obj.position = arg1(dependencyMap[2]).getLaunchPadPullTabPositionCached();
 let closure_8 = { code: "function setLaunchPadShown_useLaunchPadStateNativeTsx1(shown){const{launchPadShown}=this.__closure;launchPadShown.set(shown);}" };

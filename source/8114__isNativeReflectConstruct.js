@@ -1,5 +1,5 @@
 // Module ID: 8114
-// Function ID: 64252
+// Function ID: 64262
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = ["pillIcon", "CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD", "trackCtaEvent", "Array", "EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS", "r", "WEB", "ICYMI", "GUILD_SETTINGS_TEMPLATE"];
+let closure_3 = ["isArray", "id", "backgroundColor", "Array", "isArray", "View", "h", "r", "isArray"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

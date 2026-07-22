@@ -5,28 +5,25 @@
 
 // Module 1178 (defaultButtonStyles)
 function defaultButtonStyles(theme) {
-  const triggerButton = { borderColor: false, height: null, width: false, margin: false, backgroundColor: 1, marginRight: 1, height: false, width: false, borderRadius: false, borderWidth: null, backgroundColor: "no-preference", paddingVertical: false, borderRadius: "auto", alignItems: "none", marginBottom: true };
-  ({ background: obj.backgroundColor, border: obj.shadowColor } = theme);
-  triggerButton.shadowOffset = { "Null": null, "Null": null };
-  triggerButton.borderColor = theme.border;
+  const triggerButton = { backgroundColor: theme.background, shadowColor: theme.border, shadowOffset: { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 }, borderColor: theme.border };
   const triggerText = { color: theme.foreground, fontSize: 18 };
-  const obj = { 9223372036854775807: "transparent", -9223372036854775808: null, 9223372036854775807: null, 0: "row", tintColor: theme.sentryLogo };
-  return { triggerButton, triggerText, triggerIcon: obj };
+  return { triggerButton, triggerText, triggerIcon: { tintColor: theme.sentryLogo } };
 }
 arg5.default = function defaultStyles(color) {
   const container = { backgroundColor: color.background };
-  const title = { experiment_location: null, hashedName: 15, variantId: 5, isOverride: "center", exposureTrackingEnabled: 1, color: color.foreground };
-  ({ background: obj6.backgroundColor, border: obj6.borderColor } = color);
-  ({ background: obj8.backgroundColor, border: obj8.borderColor } = color);
-  const obj6 = { color: color.foreground, fontSize: 16 };
-  const obj7 = { accessibilityRole: 4, ip: "vendor", Set: "enum", body: "\u7E41\u9AD4\u4E2D\u6587", name: "Traditional Chinese", backgroundColor: color.accentBackground };
-  const obj8 = { color: color.accentForeground, fontSize: 18 };
-  return { container, title, label: { color: color.foreground }, input: { borderColor: color.border, color: color.foreground }, textArea: { color: color.foreground }, screenshotButton: { 467722684: -285212012, -1141743416: 2097152298, 1726807569: 1426064020, -1604561349: -1953886329, 145711700: -1313895541, 1721305188: -230575694 }, screenshotContainer: {}, screenshotThumbnail: { 2018655073: true, 1669594568: true, 1045670548: true, -460645489: true }, screenshotText: { color: color.foreground, fontSize: 16 }, takeScreenshotButton: { accessible: true, Icon: true, Icon: true, error: true, label: true, accessibilityRole: true, padding: true, Date: true }, takeScreenshotText: obj6, submitButton: obj7, submitText: obj8, cancelButton: { backgroundColor: color.background, borderColor: color.border }, cancelText: { color: color.foreground, fontSize: 16 }, titleContainer: {}, sentryLogo: { tintColor: color.sentryLogo } };
+  const title = { borderWidth: 15, alignSelf: 5, marginLeft: "center", marginTop: 10, display: "game_library", color: color.foreground };
+  ({ border: obj4.borderColor, foreground: obj4.color } = color);
+  const obj2 = { backgroundColor: 4, color: color.foreground };
+  const obj4 = { color: color.foreground, fontSize: 16 };
+  const obj7 = { 9223372036854775807: "string", -9223372036854775808: "formatToPlainString", 0: "construct", -9223372036854775808: "y", 0: "isArray", backgroundColor: color.accentBackground };
+  const obj11 = { "Null": "isArray", "Null": "c", tintColor: color.sentryLogo };
+  return { container, title, label: { color: color.foreground }, input: { "Bool(false)": 994646476524920100000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002287004876938074, "Bool(false)": -397126963025532700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031098327256182, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682771943, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013449746413467823, "Bool(false)": 13336028915440288000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, textArea: obj2, screenshotButton: { backgroundColor: color.background, borderColor: color.border }, screenshotContainer: { 1617952772: null, 1605500932: "\u{1F43F}\uFE0F", 509280260: 7, 1638727684: 370 }, screenshotThumbnail: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, screenshotText: obj4, takeScreenshotButton: { backgroundColor: color.background, borderColor: color.border }, takeScreenshotText: { color: color.foreground, fontSize: 16 }, submitButton: obj7, submitText: { color: color.accentForeground, fontSize: 18 }, cancelButton: { backgroundColor: color.background, borderColor: color.border }, cancelText: { color: color.foreground, fontSize: 16 }, titleContainer: { marginRight: "valueCallback", justifyContent: "<string:2754756864>" }, sentryLogo: obj11 };
 };
 arg5.defaultButtonStyles = defaultButtonStyles;
 arg5.defaultScreenshotButtonStyles = defaultButtonStyles;
-arg5.modalWrapper = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+arg5.modalWrapper = { left: "center", backgroundColor: -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" };
 arg5.modalSheetContainer = function modalSheetContainer(theme) {
-  return { backgroundColor: theme.background, shadowOffset: { "Null": "<string:3712090113>", "Null": "<string:2667578108>" } };
+  const obj = { 9223372036854775807: null, -9223372036854775808: null, 9223372036854775807: null, 0: null, -9223372036854775808: null, -9223372036854775808: null, -1243407: null, -9223372036854775808: null, -9223372036854775808: null, -9223372036854775808: null, -298758358963: null, backgroundColor: theme.background, shadowOffset: {} };
+  return obj;
 };
 arg5.topSpacer = { height: 64 };

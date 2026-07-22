@@ -1,5 +1,5 @@
 // Module ID: 7513
-// Function ID: 60172
+// Function ID: 60183
 // Name: TableRadioRow
 // Dependencies: []
 // Exports: TableRadioRow
@@ -23,7 +23,7 @@ export const TableRadioRow = function TableRadioRow(value) {
     disabled = false;
   }
   ({ legacyCompat_selected, legacyCompat_onPress: closure_1 } = value);
-  let obj = { name: true, padding: "/assets/design/components/Icon/native/redesign/generated/images", string: 24, track: 24, body: null, start: "99274532ad7fe616c031212e677b32e8", nm: "ThreadLockIcon" };
+  let obj = { name: "ThreadLockIcon", rawSpec: "png", spec: true, type: "/assets/design/components/Icon/native/redesign/generated/images", quality: 24, latestId: 24, invokeId: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let React;

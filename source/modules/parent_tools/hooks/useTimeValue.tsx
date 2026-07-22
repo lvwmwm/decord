@@ -1,10 +1,10 @@
-// Module ID: 13717
-// Function ID: 103789
+// Module ID: 13724
+// Function ID: 103822
 // Name: useTimeValue
 // Dependencies: []
 // Exports: default
 
-// Module 13717 (useTimeValue)
+// Module 13724 (useTimeValue)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/parent_tools/hooks/useTimeValue.tsx");
 

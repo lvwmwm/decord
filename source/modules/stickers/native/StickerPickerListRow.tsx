@@ -1,10 +1,10 @@
-// Module ID: 9606
-// Function ID: 74833
+// Module ID: 9607
+// Function ID: 74846
 // Name: STICKER_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 9606 (STICKER_SIZE)
+// Module 9607 (STICKER_SIZE)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,9 +14,8 @@ const tmp3 = arg1(dependencyMap[5]);
 const STICKER_SIZE = tmp3.STICKER_SIZE;
 const PADDING_VERTICAL = arg1(dependencyMap[6]).PADDING_VERTICAL;
 const jsx = arg1(dependencyMap[7]).jsx;
-let obj = arg1(dependencyMap[8]);
-obj = { 9223372036854775807: -1661796349, -9223372036854775808: -1371340797, -4328168773: -1275067531, 9223372036854775807: -1258290315, 0: 1124074357, height: tmp3.ROW_HEIGHT };
-let closure_10 = obj.createStyles({ row: obj, stickerImage: { height: STICKER_SIZE, width: STICKER_SIZE } });
+let closure_10 = arg1(dependencyMap[8]).createStyles({ row: { height: tmp3.ROW_HEIGHT }, stickerImage: { height: STICKER_SIZE, width: STICKER_SIZE } });
+const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/stickers/native/StickerPickerListRow.tsx");
 
 export default function StickerPickerListRow(stickers) {

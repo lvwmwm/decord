@@ -1,10 +1,10 @@
-// Module ID: 11699
-// Function ID: 90850
+// Module ID: 11700
+// Function ID: 90863
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: removeLastUserContactsUpload
 
-// Module 11699 (_isNativeReflectConstruct)
+// Module 11700 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

@@ -1,8 +1,8 @@
-// Module ID: 10153
-// Function ID: 78493
+// Module ID: 10154
+// Function ID: 78506
 // Dependencies: []
 
-// Module 10153
+// Module 10154
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId) =
     let tmp33 = null;
     if (tmp15) {
       const obj3 = { onPress: memo.clear, accessibilityRole: "button" };
-      const obj4 = { delete: false, dispatch: false, raw: false, style: tmp.iconClear };
+      const obj4 = { "Null": 1091694070, "Null": 141842, alignItems: 6258, style: tmp.iconClear };
       const intl = arg1(dependencyMap[15]).intl;
       obj4.children = intl.string(arg1(dependencyMap[15]).t.uY+Nk/);
       obj3.children = callback(arg1(dependencyMap[20]).Text, obj4);

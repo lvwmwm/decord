@@ -1,9 +1,9 @@
-// Module ID: 14302
-// Function ID: 108062
+// Module ID: 14310
+// Function ID: 108105
 // Name: route
 // Dependencies: []
 
-// Module 14302 (route)
+// Module 14310 (route)
 const _module = require(dependencyMap[2]);
 let obj = {
   useTitle() {

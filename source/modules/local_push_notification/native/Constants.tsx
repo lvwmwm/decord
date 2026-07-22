@@ -1,9 +1,9 @@
-// Module ID: 12520
-// Function ID: 96061
+// Module ID: 12525
+// Function ID: 96089
 // Name: LocalNotificationTypes
 // Dependencies: []
 
-// Module 12520 (LocalNotificationTypes)
+// Module 12525 (LocalNotificationTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/local_push_notification/native/Constants.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 13655
-// Function ID: 103446
+// Module ID: 13662
+// Function ID: 103479
 // Name: FamilyCenterParentalConsentNotice
 // Dependencies: []
 // Exports: default
 
-// Module 13655 (FamilyCenterParentalConsentNotice)
+// Module 13662 (FamilyCenterParentalConsentNotice)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

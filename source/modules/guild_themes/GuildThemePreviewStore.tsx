@@ -1,5 +1,5 @@
 // Module ID: 4011
-// Function ID: 33298
+// Function ID: 33300
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -26,7 +26,7 @@ function handleEnd() {
   let flag = !tmp;
   if (!tmp) {
     clearAwaitingGuildUpdateTimeout();
-    closure_10 = {};
+    closure_10 = { <string:1650222250>: "<string:16777808>", <string:1510626900>: "<string:39321667>", "Null": "<string:39321344>", "Null": "<string:30645248>", "Null": "<string:668094720>", "Null": "<string:844173569>", "Null": "<string:2404450702>", "Null": "<string:438059421>", "Null": "<string:285278209>", "Null": "<string:38817601>" };
     flag = true;
   }
   return flag;
@@ -39,7 +39,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
 ({ GuildThemePreviewOrigin, GuildThemePreviewOwner } = arg1(dependencyMap[6]));
 const timeout = new arg1(dependencyMap[7]).Timeout();
-let closure_10 = {};
+let closure_10 = { <string:1650222250>: "<string:16777808>", <string:1510626900>: "<string:39321667>", "Null": "<string:39321344>", "Null": "<string:30645248>", "Null": "<string:668094720>", "Null": "<string:844173569>", "Null": "<string:2404450702>", "Null": "<string:438059421>", "Null": "<string:285278209>", "Null": "<string:38817601>" };
 let tmp4 = (Store) => {
   class GuildThemePreviewStore {
     constructor() {

@@ -1,10 +1,10 @@
-// Module ID: 10209
-// Function ID: 78879
+// Module ID: 10210
+// Function ID: 78892
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, getShortDayLabels, sortRulesByStartTime, toTimeProto
 
-// Module 10209 (_createForOfIteratorHelperLoose)
+// Module 10210 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -85,7 +85,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function formatTime(hours) {
-  const dateTimeFormat = new Intl.DateTimeFormat(require(dependencyMap[1]).intl.currentLocale, { state: false, sk: false });
+  const dateTimeFormat = new Intl.DateTimeFormat(require(dependencyMap[1]).intl.currentLocale, { -17117184: true, 0: true });
   return dateTimeFormat.format(new Date(2025, 0, 1, hours.hours, hours.minutes));
 }
 function setsEqual(set, set2) {

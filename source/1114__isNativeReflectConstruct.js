@@ -142,14 +142,14 @@ const tmp3 = (Component) => {
   };
   return callback2(Profiler, items);
 }(_module.Component);
-const merged = Object.assign(tmp3, { defaultProps: { EducationIcon: "hidden", explicitContentGuilds: "all", explicitContentFriendDm: true } });
+const merged = Object.assign(tmp3, { defaultProps: {} });
 
 export const Profiler = tmp3;
 export const UNKNOWN_COMPONENT = "unknown";
 export const useProfiler = function useProfiler(arg0) {
   const require = arg0;
   if (arguments.length > 1) {
-    let closure_1 = {};
+    let closure_1 = { EdgeRuntime: 1766088043, explicitContentGuilds: 827788593 };
     const callback = callback(_module.useState(() => {
       let obj = arg0(disabled[8]);
       obj = { name: "<" + arg0 + ">", onlyIfParent: true, op: arg0(disabled[9]).REACT_MOUNT_OP, attributes: callback(callback({}, arg0(disabled[10]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.react.profiler"), "ui.component_name", arg0) };

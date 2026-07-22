@@ -1,5 +1,5 @@
 // Module ID: 3913
-// Function ID: 32343
+// Function ID: 32345
 // Name: CameraRive
 // Dependencies: []
 
@@ -8,8 +8,8 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Icon Camera: { "Bool(false)": "<string:2066808836>", "Bool(false)": "<string:3779571220>", "Bool(false)": "<string:1094716538>" }, Animation Main: {} };
-let closure_8 = { Icon Camera: ["<string:307167234>", "<string:1318518786>"], Animation Main: [] };
+let closure_7 = { Icon Camera: { "Bool(false)": "BG_GRADIENT_SUNRISE_1", "Bool(false)": 8.62, "Bool(false)": "BG_GRADIENT_SUNRISE_2" }, Animation Main: {} };
+let closure_8 = { Icon Camera: [], Animation Main: [] };
 let closure_9 = {
   Icon Camera: function IconCameraBindings(reducedMotionEnabled) {
     let dataBinding;

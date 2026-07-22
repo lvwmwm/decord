@@ -1,16 +1,15 @@
-// Module ID: 5680
-// Function ID: 48878
+// Module ID: 5679
+// Function ID: 48886
 // Name: getForumPostReadStates
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 5680 (getForumPostReadStates)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { ForumTimestampFormats } from "result";
-import { ChannelFlags } from "result";
-import result from "result";
+// Module 5679 (getForumPostReadStates)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { ForumTimestampFormats } from "__exportStarResult1";
+import { ChannelFlags } from "__exportStarResult1";
 
 function getForumPostReadStates(channel, guild, items) {
   let obj;
@@ -35,7 +34,7 @@ function getCreationDefaultFormatter() {
   obj.month = intl.string(arg1(dependencyMap[5]).t.nBNJ/L);
   return obj;
 }
-result = result.fileFinishedImporting("modules/forums/ForumUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/forums/ForumUtils.tsx");
 
 export { getForumPostReadStates };
 export const getForumPostReadStatesById = function getForumPostReadStatesById(channelId) {
@@ -44,7 +43,7 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(ch
   let tmp5;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_2, closure_3, closure_4];
+    const items = [__exportStarResult1, closure_3, closure_4];
     tmp = items;
   }
   [obj, obj2, tmp5] = tmp;

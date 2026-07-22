@@ -1,9 +1,9 @@
-// Module ID: 10478
-// Function ID: 81171
+// Module ID: 10479
+// Function ID: 81184
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10478 (_isNativeReflectConstruct)
+// Module 10479 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -172,7 +172,7 @@ let tmp5 = (arg0) => {
       applicationId = applicationId.applicationId;
       let obj = callback(closure_2[20]);
       obj.stopFrame({ applicationId });
-      obj = { valid: null, dnsWarn: null, rfc5321: null, cfws: null, applicationId };
+      obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, applicationId };
       callback(closure_2[21]).dispatch(obj);
     }
   };

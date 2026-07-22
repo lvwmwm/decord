@@ -1,14 +1,13 @@
 // Module ID: 13171
-// Function ID: 99602
+// Function ID: 99608
 // Dependencies: []
 
 // Module 13171
-const _module = require(dependencyMap[0]);
-let _moduleResult = _module(require(dependencyMap[1]).WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  _moduleResult = /native code/.test(String(require(dependencyMap[1]).WeakMap));
-  const obj = /native code/;
+let _module = require(dependencyMap[0]);
+if (_module) {
+  _module = require(dependencyMap[1])(() => 42 !== Object.defineProperty(() => {
+
+  }, "prototype", {}).prototype);
 }
 
-export default _moduleResult;
+export default _module;

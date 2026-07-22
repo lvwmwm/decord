@@ -1,10 +1,10 @@
-// Module ID: 5320
-// Function ID: 45284
+// Module ID: 5047
+// Function ID: 43694
 // Name: openQuarantineModeInfoModal
 // Dependencies: []
 // Exports: default
 
-// Module 5320 (openQuarantineModeInfoModal)
+// Module 5047 (openQuarantineModeInfoModal)
 importAll(dependencyMap[0]);
 const Keyboard = arg1(dependencyMap[1]).Keyboard;
 const jsx = arg1(dependencyMap[2]).jsx;

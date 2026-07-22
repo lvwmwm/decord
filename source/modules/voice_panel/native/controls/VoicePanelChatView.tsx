@@ -1,9 +1,9 @@
-// Module ID: 11366
-// Function ID: 88375
+// Module ID: 11367
+// Function ID: 88388
 // Name: updateChatOpen
 // Dependencies: []
 
-// Module 11366 (updateChatOpen)
+// Module 11367 (updateChatOpen)
 function updateChatOpen(arg0, arg1) {
   importDefault(dependencyMap[6]).updateChatOpen(arg0, arg1);
 }
@@ -14,8 +14,7 @@ const CONTROLS_DRAWER_HEADER_SIZE = arg1(dependencyMap[2]).CONTROLS_DRAWER_HEADE
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-const obj = { Č: 10, accessibilityDismiss: 10, paddingTop: CONTROLS_DRAWER_HEADER_SIZE };
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: obj, gradientWrapper: { top: CONTROLS_DRAWER_HEADER_SIZE }, titleBlur: { opacity: 0 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { top: CONTROLS_DRAWER_HEADER_SIZE }, titleBlur: { opacity: 0 } });
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 const obj2 = arg1(dependencyMap[5]);
 let closure_10 = importAllResult.memo(() => {
@@ -116,7 +115,7 @@ const memoResult1 = importAllResult.memo(function VoicePanelChatView(shown) {
   obj2.disablePill = true;
   obj2.blurStyle = tmp.titleBlur;
   items3[1] = callback(importDefault(dependencyMap[26]), obj2);
-  const obj3 = { 0: true, 0: true, 9223372036854775807: true };
+  const obj3 = { borderColor: "y", borderWidth: "isArray", boxSizing: "Reflect" };
   const tmp12 = importDefault(dependencyMap[26]);
   if (null == guildId) {
     guildId = closure_5;

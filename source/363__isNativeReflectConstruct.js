@@ -1,13 +1,9 @@
 // Module ID: 363
 // Function ID: 5380
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 0]
+// Dependencies: []
 
 // Module 363 (_isNativeReflectConstruct)
-import result from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -34,6 +30,9 @@ function _superPropGet(arg0, arg1, arg2, arg3) {
   }
   return fn;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
@@ -42,7 +41,7 @@ export default (arg0) => {
   class AnimatedDivision {
     constructor(arg0, arg1, arg2) {
       self = this;
-      tmp = result(this, AnimatedDivision);
+      tmp = closure_2(this, AnimatedDivision);
       items = [];
       items[0] = arg2;
       obj = closure_5(AnimatedDivision);

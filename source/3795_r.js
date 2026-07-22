@@ -177,7 +177,7 @@ const fn = () => {
         return !tmp2;
       };
     },
-    { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001092662051426, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001103437811564, <string:3750547948>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011670976853, <string:2262967719>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001230757559037, <string:150164119>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000127319747487 }
+    {}
   ];
   const items5 = [
     (arg0, arg1, arg2) => {
@@ -281,7 +281,7 @@ const fn = () => {
         return isMatch;
       };
     },
-    { ./dist/is-chrome-os: 0.00000000000000000000000000002524355423328707, dup: 0.00000000000000000010842024107846067 }
+    {}
   ];
   const items11 = [
     (arg0, arg1, arg2) => {
@@ -844,7 +844,7 @@ const fn = () => {
         return element;
       };
     },
-    {}
+    { "Null": false, "Null": false, "Null": false }
   ];
   const items32 = [
     (arg0, arg1, arg2) => {
@@ -875,7 +875,7 @@ const fn = () => {
   ];
   const items33 = [
     (arg0, arg1, arg2) => {
-      arg2.defaultAttributes = { 0: null, 0: null, 0: null, 0: null };
+      arg2.defaultAttributes = { EMPTY: null, _lastFetchedAttempted: null, replacementId: null, en-LC: null };
     },
     {}
   ];
@@ -1037,7 +1037,7 @@ const fn = () => {
       };
       module.exports = wrapPromise;
     },
-    {}
+    { 0: true, "Null": true, "Null": true }
   ];
   const items40 = [
     function(arg0, arg1, arg2) {
@@ -1207,7 +1207,7 @@ const fn = () => {
             });
             return promise;
           } else {
-            obj = { src };
+            obj = { position: "scales", top: "Array", right: "isArray", src };
             return loadScript$1(obj);
           }
         }
@@ -1260,10 +1260,10 @@ const fn = () => {
           }
         };
         let closure_2 = "fastlane";
-        obj = { AXO_ASSET_NAME: {}, AXO_ASSET_PATH: "connect-boba", LOCALE_PATH: "".concat("connect-boba", "/locales/"), CDNX_PROD: "https://www.paypalobjects.com" };
+        obj = { AXO_ASSET_NAME: { "Bool(false)": "APPLE_PAY_NOT_ENABLED", "Bool(false)": "Apple Pay is not enabled for this merchant." }, AXO_ASSET_PATH: "connect-boba", LOCALE_PATH: "".concat("connect-boba", "/locales/"), CDNX_PROD: "https://www.paypalobjects.com" };
         obj = { client: "client", hostedFields: "hosted-fields" };
         const obj1 = {};
-        const obj2 = {};
+        const obj2 = { "Null": "APPLE_PAY_VALIDATION_URL_REQUIRED", "Null": "performValidation must be called with a validationURL." };
         const obj3 = {};
         const combined = "".concat("braintree", "/");
         obj3.unminified = combined.concat(obj.client);
@@ -1272,7 +1272,7 @@ const fn = () => {
         obj2.amdModule = obj3;
         obj2.script = { unminified: "".concat(obj.client, ".js"), minified: "".concat(obj.client, ".min.js") };
         obj1.client = obj2;
-        const obj5 = { <string:2876810395>: "A network error occurred when processing the Apple Pay payment.", <string:283421561>: null };
+        const obj5 = { "Null": "tokenize must be called with a payment token.", "Null": null };
         const obj6 = {};
         const combined2 = "".concat("braintree", "/");
         obj6.unminified = combined2.concat(obj.hostedFields);
@@ -1393,7 +1393,7 @@ const fn = () => {
       let closure_4 = global("./lib/find-best-match");
       const globalResult = global("./lib/clone");
       let closure_6 = {};
-      const obj = {};
+      const obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
       const items = [, , , , , , , , , , , ];
       ({ VISA: arr[0], MASTERCARD: arr[1], AMERICAN_EXPRESS: arr[2], DINERS_CLUB: arr[3], DISCOVER: arr[4], JCB: arr[5], UNIONPAY: arr[6], MAESTRO: arr[7], ELO: arr[8], MIR: arr[9], HIPER: arr[10], HIPERCARD: arr[11] } = obj);
       let closure_8 = globalResult.clone(items);
@@ -1472,15 +1472,43 @@ const fn = () => {
   ];
   const items43 = [
     (arg0, arg1, arg2) => {
-      const items = [[], [true, true], [null, null], ["length", "prototype"], ["<string:1912604603>", "<string:506779>"], 2720];
+      let obj = { paddingHorizontal: false, accessible: false };
+      const items = [["isArray", "isArray"], [null, null], [], [], [null, null], 2720];
+      obj.patterns = items;
+      obj.gaps = [1072462972, 369, -14994944];
+      obj.lengths = [null];
+      obj.code = {};
+      obj = { paddingHorizontal: "Solo", accessible: "UK Maestro", patterns: [null, null], gaps: [false, false], lengths: [true], code: { accessibilityHint: "message_previews", variant: "message" } };
       const items1 = [[0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000264586350186, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002970794108], 36, 38, 39];
+      obj = { paddingHorizontal: true, accessible: true };
       const items2 = [, [], 65];
+      obj.patterns = items2;
+      obj.gaps = [1072462972, 369, -14994944];
+      obj.lengths = [];
+      obj.code = { accessibilityHint: null, variant: null };
+      const obj1 = { paddingHorizontal: "location", accessible: "Array" };
       const items3 = [, , [false, false]];
-      const items4 = [-5274396850859547000000000000000000000000, ["<string:130559744>", "<string:3945755136>"], ["isArray", "LIGHT"], ["isArray", "WireType"], ["isArray", "options"], ["isArray", "HTTP"], 622018, ["isArray", "channelId"], [], 6270, 6272, 6276, ["isArray", "slice"], ["isArray", "style"], ["isArray", "sr"], 6291, 6292, 810, [166829824, -23563776], [167684864, -22187520], [167694848, 144208384], [null, null]];
-      const items5 = [null, [null, null], [null, null], [null, null], [], 63, 67, 6];
-      const items6 = [-0.00000000000000000000000000000000000000000008971968326531819, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005616388538215783, -45023027809255430000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000654301519730164, 0, 0, 0, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006662949912491275, 4538018037391271000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, [], [], 627780, 636297, 636368, [], [8, 152], [67108864, -1728053248], [], [], [], [], [], [null, null], [false, false], ["WATCH_VIDEO", "WATCH_VIDEO_ON_MOBILE"]];
-      const items7 = [[null, null]];
-      module.exports = { visa: { patterns: ["%Math%"], gaps: ["y", "expiredImage", "PbULong"], lengths: [], code: { 0: "<string:1908422910>", 42: "a" } }, mastercard: { patterns: items, gaps: ["y", "expiredImage", "PbULong"], lengths: ["Array"], code: { 0: "google_sku_ids", 42: "r" } }, american-express: { patterns: ["<string:1912604612>", "ct"], gaps: [-331340691140688250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006901700131209], lengths: [true], code: { 0: "message_previews", 42: "message" } }, diners-club: { patterns: items1, gaps: [-331340691140688250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006901700131209], lengths: [null, null, null], code: { 0: "<string:1908422910>", 42: "a" } }, discover: { patterns: items2, gaps: ["y", "expiredImage", "PbULong"], lengths: [], code: { 0: null, 42: null } }, jcb: { patterns: items3, gaps: ["y", "expiredImage", "PbULong"], lengths: ["isArray", "length", "warn", "apply"], code: { 0: "<string:1908422910>", 42: "a" } }, unionpay: { patterns: items4, gaps: ["y", "expiredImage", "PbULong"], lengths: [-17268353450222796000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008454144864388582, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008470271626079527, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000982033894815424, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001433732009829347, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003155641161031735], code: { 0: "<string:70471936>", 42: "<string:39822657>" } }, maestro: { patterns: items5, gaps: ["y", "expiredImage", "PbULong"], lengths: ["time", false, false, false, false, false, false, false], code: { 0: "google_sku_ids", 42: "r" } }, elo: { patterns: items6, gaps: ["y", "expiredImage", "PbULong"], lengths: ["Array"], code: { 0: 0, 42: null } }, mir: { patterns: items7, gaps: ["y", "expiredImage", "PbULong"], lengths: ["isArray", "length", "warn", "apply"], code: { 0: true, 42: true } }, hiper: { patterns: ["Array", "../shared/errors", "r", "localpart", "Array", null, null], gaps: ["y", "expiredImage", "PbULong"], lengths: ["Array"], code: { 0: "google_sku_ids", 42: "r" } }, hipercard: { patterns: [false], gaps: ["y", "expiredImage", "PbULong"], lengths: ["Array"], code: { 0: "google_sku_ids", 42: "r" } } };
+      obj1.patterns = items3;
+      obj1.gaps = [1072462972, 369, -14994944];
+      obj1.lengths = ["isArray", "left", "warn", "apply"];
+      obj1.code = {};
+      const items4 = [-5274396850859547000000000000000000000000, ["<string:130559744>", "<string:3945755136>"], ["isArray", "LIGHT"], ["isArray", "WireType"], ["isArray", "options"], ["isArray", "HTTP"], 622018, ["isArray", "channelId"], [32768000, -210632704], 6270, 6272, 6276, ["isArray", "slice"], ["isArray", "style"], ["isArray", "sr"], 6291, 6292, 810, [166829824, -23563776], [167684864, -22187520], [167694848, 144208384], [null, null]];
+      const obj2 = { paddingHorizontal: "<string:1156269291>", accessible: "construct" };
+      const items5 = [null, [null, null], [], [null, null], [], 63, 67, 6];
+      obj2.patterns = items5;
+      obj2.gaps = [1072462972, 369, -14994944];
+      obj2.lengths = [820443348498212100000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002845987416527242, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013020121192913218, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013018298412409602, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004242772928056463, 0.000000000000000000000000000000000000000000000000000000000012605522945284223, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002507486535907966, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002555865311443];
+      obj2.code = {};
+      const obj3 = { paddingHorizontal: "16", accessible: "17" };
+      const items6 = [, , , , , , , , , [], [], 627780, 636297, 636368, [], [], [], [], [], [], [], [], [], ["guildId", "IconComponent"], [false, false]];
+      obj3.patterns = items6;
+      obj3.gaps = [1072462972, 369, -14994944];
+      obj3.lengths = [null];
+      obj3.code = {};
+      const items7 = [[44043330, 35649792]];
+      const obj4 = { paddingHorizontal: null, accessible: null, patterns: [], gaps: [1072462972, 369, -14994944], lengths: [null], code: {} };
+      const obj5 = { paddingHorizontal: false, accessible: false, patterns: [], gaps: [1072462972, 369, -14994944], lengths: [null], code: {} };
+      module.exports = { visa: { patterns: [true], gaps: [1072462972, 369, -14994944], lengths: [true, true, true], code: {} }, mastercard: obj, american-express: obj, diners-club: { patterns: items1, gaps: [false, false], lengths: [null, null, null], code: {} }, discover: obj, jcb: obj1, unionpay: { patterns: items4, gaps: [1072462972, 369, -14994944], lengths: [-17268353450222796000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008454144864388582, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008470271626079527, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021900087664599393, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000139385962602653, 14234034176.282259], code: { accessibilityHint: "<string:71258368>", variant: "<string:39842625>" } }, maestro: obj2, elo: obj3, mir: { patterns: items7, gaps: [1072462972, 369, -14994944], lengths: ["isArray", "left", "warn", "apply"], code: {} }, hiper: obj4, hipercard: obj5 };
     },
     {}
   ];
@@ -2447,7 +2475,7 @@ const fn = () => {
       const first = arguments[4][14][0];
       first(...arguments);
     },
-    { "Null": 143, "Null": 154 }
+    { "Bool(true)": 143, "Bool(true)": 154 }
   ];
   const items75 = [
     (arg0, arg1, arg2) => {
@@ -2482,7 +2510,7 @@ const fn = () => {
       const first = arguments[4][20][0];
       first(...arguments);
     },
-    {}
+    { "Null": "isArray", "Null": "allowFileAccess" }
   ];
   const items80 = [
     (arg0, arg1, arg2) => {
@@ -2509,7 +2537,7 @@ const fn = () => {
       const first = arguments[4][27][0];
       first(...arguments);
     },
-    {}
+    { style: null, variant: null }
   ];
   const items84 = [
     (arg0, arg1, arg2) => {
@@ -2538,7 +2566,7 @@ const fn = () => {
             delete r4.nonce;
             self = this;
             _client = this._client;
-            obj2 = { 0: false, 0: false };
+            obj2 = {};
             obj2.data = tmp11;
             requestResult = _client.request(obj2);
             catchPromise = requestResult.catch((originalError) => {
@@ -2686,7 +2714,7 @@ const fn = () => {
           if (applePayWeb) {
             tmp = globalThis;
             _Object = Object;
-            obj = { "Null": "absolute", "Null": -1, "Null": -1 };
+            obj = { "Null": "HTTP", "Null": "Date", "Null": "HTTP" };
             obj.value = applePayWeb.merchantIdentifier;
             str = "merchantIdentifier";
             definePropertyResult = Object.defineProperty(this, "merchantIdentifier", obj);
@@ -2722,7 +2750,7 @@ const fn = () => {
                   return str;
                 })
           };
-          tmp = applePayWeb.merchantCapabilities || [];
+          tmp = applePayWeb.merchantCapabilities || [158592389983735350000000000000];
           supportedNetworks = applePayWeb.supportedNetworks;
           return Object.assign({}, obj, global);
         }
@@ -2734,25 +2762,23 @@ const fn = () => {
             if (global.validationURL) {
               _waitForClientResult = self._waitForClient();
               nextPromise = _waitForClientResult.then((self) => {
-                let obj = { validationUrl: self.validationURL };
+                const applePayWebSession = { validationUrl: self.validationURL };
                 let hostname = self.domainName;
                 if (!hostname) {
                   const _window = window;
                   hostname = window.location.hostname;
                 }
-                obj.domainName = hostname;
+                applePayWebSession.domainName = hostname;
                 let merchantIdentifier = self.merchantIdentifier;
                 if (!merchantIdentifier) {
                   merchantIdentifier = self.merchantIdentifier;
                 }
-                obj.merchantIdentifier = merchantIdentifier;
+                applePayWebSession.merchantIdentifier = merchantIdentifier;
                 if (null != self.displayName) {
-                  obj.displayName = self.displayName;
+                  applePayWebSession.displayName = self.displayName;
                 }
                 const _client = self._client;
-                obj = { 0: "query ClientConfiguration {   clientConfiguration {     analyticsUrl     environment     merchantId     assetsUrl     clientApiUrl     creditCard {       supportedCardBrands       challenges       threeDSecureEnabled       threeDSecure {         cardinalAuthenticationJWT       }     }     applePayWeb {       countryCode       currencyCode       merchantIdentifier       supportedCardBrands     }     fastlane {       enabled     }     googlePay {       displayName       supportedCardBrands       environment       googleAuthorization       paypalClientId     }     ideal {       routeId       assetsUrl     }     kount {       merchantId     }     masterpass {       merchantCheckoutId       supportedCardBrands     }     paypal {       displayName       clientId       assetsUrl       environment       environmentNoNetwork       unvettedMerchant       braintreeClientId       billingAgreementsEnabled       merchantAccountId       currencyCode       payeeEmail     }     unionPay {       merchantAccountId     }     usBankAccount {       routeId       plaidPublicKey     }     venmo {       merchantId       accessToken       environment       enrichedCustomerDataEnabled    }     visaCheckout {       apiKey       externalClientId       supportedCardBrands     }     braintreeApi {       accessToken       url     }     supportedFeatures   } }", 0: "ClientConfiguration" };
-                obj.data = { _meta: { source: "apple-pay" }, applePayWebSession: obj };
-                return _client.request(obj);
+                return _client.request({ data: { _meta: { source: "apple-pay" }, applePayWebSession } });
               });
               nextPromise1 = nextPromise.then((arg0) => {
                 self.sendEvent(self._client, "applepay.performValidation.succeeded");
@@ -2792,7 +2818,7 @@ const fn = () => {
             _waitForClientResult = self._waitForClient();
             nextPromise = _waitForClientResult.then(() => {
               const _client = self._client;
-              let obj = { 0: null, 0: null };
+              let obj = {};
               obj = { _meta: { source: "apple-pay" } };
               obj = { paymentData: btoa(JSON.stringify(arg0.token.paymentData)) };
               obj.applePaymentToken = Object.assign({}, arg0.token, obj);
@@ -2840,12 +2866,10 @@ const fn = () => {
   const items89 = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../lib/braintree-error");
-      let obj = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.MERCHANT };
+      let obj = { 0: "y", 0: "absoluteX", 0: "Array", type: globalResult.types.MERCHANT };
+      obj = { 0: null, 0: null, 0: null, type: globalResult.types.MERCHANT };
       obj = { type: globalResult.types.NETWORK };
-      const obj2 = { placeholder: 0.7187510760704756, live-guild-stage: 41813922387048243000000000000000000000000000, guild-event: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005307471300244092, type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.NETWORK };
-      module.exports = { APPLE_PAY_NOT_ENABLED: obj, APPLE_PAY_VALIDATION_URL_REQUIRED: obj, APPLE_PAY_MERCHANT_VALIDATION_NETWORK: obj, APPLE_PAY_MERCHANT_VALIDATION_FAILED: { type: globalResult.types.MERCHANT }, APPLE_PAY_PAYMENT_TOKEN_REQUIRED: obj2, APPLE_PAY_TOKENIZATION: obj3 };
+      module.exports = { APPLE_PAY_NOT_ENABLED: obj, APPLE_PAY_VALIDATION_URL_REQUIRED: obj, APPLE_PAY_MERCHANT_VALIDATION_NETWORK: obj, APPLE_PAY_MERCHANT_VALIDATION_FAILED: { type: globalResult.types.MERCHANT }, APPLE_PAY_PAYMENT_TOKEN_REQUIRED: { type: globalResult.types.MERCHANT }, APPLE_PAY_TOKENIZATION: { type: globalResult.types.NETWORK } };
     },
     { ../lib/braintree-error: 143 }
   ];
@@ -3240,11 +3264,10 @@ const fn = () => {
       let obj = { type: globalResult.types.MERCHANT, code: "CLIENT_GATEWAY_CONFIGURATION_INVALID_DOMAIN" };
       obj = { type: globalResult.types.MERCHANT, code: "CLIENT_OPTION_REQUIRED" };
       obj = { type: globalResult.types.MERCHANT, code: "CLIENT_OPTION_INVALID" };
-      const obj3 = { placeholder: "_createV1PaymentDataRequest", live-guild-stage: "_createV2PaymentDataRequest", guild-event: "focus", type: globalResult.types.NETWORK };
-      const obj4 = { placeholder: "focus", live-guild-stage: "blur", guild-event: "empty", type: globalResult.types.NETWORK };
-      const obj5 = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.NETWORK };
-      const obj9 = { placeholder: "braintree-hosted-fields-focused", live-guild-stage: "braintree-hosted-fields-invalid", guild-event: "braintree-hosted-fields-valid", type: globalResult.types.MERCHANT };
-      module.exports = { CLIENT_GATEWAY_CONFIGURATION_INVALID_DOMAIN: obj, CLIENT_OPTION_REQUIRED: obj, CLIENT_OPTION_INVALID: obj, CLIENT_MISSING_GATEWAY_CONFIGURATION: { type: globalResult.types.INTERNAL }, CLIENT_INVALID_AUTHORIZATION: { type: globalResult.types.MERCHANT }, CLIENT_GATEWAY_NETWORK: obj3, CLIENT_REQUEST_TIMEOUT: obj4, CLIENT_REQUEST_ERROR: obj5, CLIENT_GRAPHQL_REQUEST_ERROR: { type: globalResult.types.NETWORK }, CLIENT_RATE_LIMITED: { type: globalResult.types.MERCHANT }, CLIENT_AUTHORIZATION_INSUFFICIENT: { type: globalResult.types.MERCHANT }, CLIENT_AUTHORIZATION_INVALID: obj9 };
+      const obj2 = { 0: "isArray", 0: "ip", 0: "status", type: globalResult.types.MERCHANT };
+      const obj7 = { 0: "r", 0: "isArray", 0: "position", type: globalResult.types.MERCHANT };
+      const obj8 = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001112536929883728, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000278134232540054, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004172013485996166, type: globalResult.types.MERCHANT };
+      module.exports = { CLIENT_GATEWAY_CONFIGURATION_INVALID_DOMAIN: obj, CLIENT_OPTION_REQUIRED: obj, CLIENT_OPTION_INVALID: obj, CLIENT_MISSING_GATEWAY_CONFIGURATION: { type: globalResult.types.INTERNAL }, CLIENT_INVALID_AUTHORIZATION: obj2, CLIENT_GATEWAY_NETWORK: { type: globalResult.types.NETWORK }, CLIENT_REQUEST_TIMEOUT: { type: globalResult.types.NETWORK }, CLIENT_REQUEST_ERROR: { type: globalResult.types.NETWORK }, CLIENT_GRAPHQL_REQUEST_ERROR: { type: globalResult.types.NETWORK }, CLIENT_RATE_LIMITED: obj7, CLIENT_AUTHORIZATION_INSUFFICIENT: obj8, CLIENT_AUTHORIZATION_INVALID: { type: globalResult.types.MERCHANT } };
     },
     { ../lib/braintree-error: 143 }
   ];
@@ -3279,7 +3302,7 @@ const fn = () => {
               if (self.graphQL) {
                 if (callback(self.graphQL.date, closure_8)) {
                   obj = {};
-                  const obj1 = { url: self.graphQL.url, features: [null] };
+                  const obj1 = { url: self.graphQL.url, features: [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022442677570583367] };
                   obj.graphQL = obj1;
                   const prototype2 = ctor.prototype;
                   const tmp20 = new ctor(obj);
@@ -3319,7 +3342,7 @@ const fn = () => {
             }
             if (attrs.tokenizationKey) {
               const obj2 = {};
-              const obj3 = { url: closure_6[closure_0.environment], features: [null] };
+              const obj3 = { url: closure_6[closure_0.environment], features: [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022442677570583367] };
               obj2.graphQL = obj3;
               const prototype = ctor.prototype;
               const tmp10 = new ctor(obj2);
@@ -3529,9 +3552,9 @@ const fn = () => {
       const assign = global("../../../../lib/assign").assign;
       let closure_2 = {};
       let closure_3 = {};
-      let closure_4 = {};
+      let closure_4 = { "Null": "<string:822084656>", "Null": "<string:515396076>", "Null": null, "Null": null };
       let closure_5 = {};
-      let closure_6 = { cvv: true, postal-code: true, border: true, display: true, height: true, left: true, opacity: true };
+      let closure_6 = {};
       module.exports = function configurationResponseAdapter(data, _graphQL) {
         if (data.data) {
           if (!data.errors) {
@@ -3629,8 +3652,8 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       let closure_0 = global("./error");
-      let closure_1 = {};
-      let closure_2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+      let closure_1 = { -9223372036854775808: null, 0: null, 4962520: null, -9223372036854775808: null, accessibilityRole: null, createStyles: null, guild_id: null, unsafe_rawColors: null, values: null, spriteIndex: null, op: null, url: null };
+      let closure_2 = { <string:1711539715>: "createChildSpanJSON", "Bool(false)": "RouteParam", "Bool(false)": "%Function%" };
       let closure_3 = { PSDTWO: "psd2" };
       module.exports = function creditCardTokenizationFastlaneResponseAdapter(data) {
         if (data.data) {
@@ -3645,7 +3668,7 @@ const fn = () => {
               }
               const binData = details.binData;
               if (binData) {
-                const items = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008649006011193397, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008969343599667368, -441671388477542750000000000000000000, 0.000000000000000000000000000000000000000000009809094802573727, -10775049755396236000000000000000, "outline"];
+                const items = [];
                 const item = items.forEach((arg0) => {
                   if (binData[arg0]) {
                     tmp[arg0] = closure_2[tmp[arg0]];
@@ -3653,7 +3676,7 @@ const fn = () => {
                     tmp[arg0] = "Unknown";
                   }
                 });
-                const items1 = [];
+                const items1 = [true, true, true];
                 const item1 = items1.forEach((arg0) => {
                   if (!binData[arg0]) {
                     binData[arg0] = "Unknown";
@@ -3696,8 +3719,8 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       let closure_0 = global("./error");
-      let closure_1 = {};
-      let closure_2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+      let closure_1 = { -9223372036854775808: null, 0: null, 4962520: null, -9223372036854775808: null, accessibilityRole: null, createStyles: null, guild_id: null, unsafe_rawColors: null, values: null, spriteIndex: null, op: null, url: null };
+      let closure_2 = { <string:1711539715>: "createChildSpanJSON", "Bool(false)": "RouteParam", "Bool(false)": "%Function%" };
       let closure_3 = { PSDTWO: "psd2" };
       module.exports = function creditCardTokenizationResponseAdapter(data) {
         if (data.data) {
@@ -3712,7 +3735,7 @@ const fn = () => {
               }
               const binData = creditCard.binData;
               if (binData) {
-                const items = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008649006011193397, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008969343599667368, -441671388477542750000000000000000000, 0.000000000000000000000000000000000000000000009809094802573727, -10775049755396236000000000000000, "outline"];
+                const items = [];
                 const item = items.forEach((arg0) => {
                   if (binData[arg0]) {
                     tmp[arg0] = closure_2[tmp[arg0]];
@@ -3720,7 +3743,7 @@ const fn = () => {
                     tmp[arg0] = "Unknown";
                   }
                 });
-                const items1 = [];
+                const items1 = [true, true, true];
                 const item1 = items1.forEach((arg0) => {
                   if (!binData[arg0]) {
                     binData[arg0] = "Unknown";
@@ -3837,7 +3860,7 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       module.exports = function configuration() {
-        return {};
+        return { <string:2035416044>: "string", <string:3775975578>: "cc-name" };
       };
     },
     {}
@@ -4157,8 +4180,8 @@ const fn = () => {
           return Boolean(this._config);
         }
       }
-      let closure_0 = { 9223372036854775807: 0.6, -9223372036854775808: "BounceInLeft" };
-      let closure_1 = [null];
+      let closure_0 = { -518991718: null, -216207332: null };
+      let closure_1 = [1825641549279607300];
       module.exports = GraphQL;
     },
     {}
@@ -4427,9 +4450,9 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../lib/braintree-error");
-      let obj = { type: globalResult.types.MERCHANT };
+      let obj = { 0: 259574.22096976297, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000020740633197472243, 0: 2354858091880788400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, type: globalResult.types.MERCHANT };
       obj = { type: globalResult.types.MERCHANT, code: "DATA_COLLECTOR_KOUNT_ERROR" };
-      obj = { type: globalResult.types.MERCHANT };
+      obj = { 0: "Element already contains a Braintree iframe.", 0: null, 0: "HOSTED_FIELDS_TOKENIZATION_NETWORK_ERROR", type: globalResult.types.MERCHANT };
       module.exports = { DATA_COLLECTOR_KOUNT_NOT_ENABLED: obj, DATA_COLLECTOR_KOUNT_ERROR: obj, DATA_COLLECTOR_REQUIRES_CREATE_OPTIONS: obj };
     },
     { ../lib/braintree-error: 143 }
@@ -4522,7 +4545,7 @@ const fn = () => {
         }
       };
     },
-    {}
+    { "Null": null, "Null": null }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -4712,7 +4735,7 @@ const fn = () => {
       }
       let closure_0 = global("./vendor/sjcl");
       let closure_1 = global("../lib/camel-case-to-snake-case");
-      let obj = {};
+      let obj = { 530259841: null, 1472026561: "HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED", 886724552: "CVV verification failed during tokenization.", 477191524: null };
       let closure_3 = {};
       obj = {
         setup(arg0) {
@@ -4755,7 +4778,7 @@ const fn = () => {
           }
           let tmp3 = arg1[num4] ^ arr2[3];
           const diff = arr2.length / 4 - 2;
-          const items = ["<string:1014759426>", "<string:340852738>", "<string:1612335631>", "<string:1612447746>"];
+          const items = [139348659563046800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000118231045220236, 0.00000000000000000000000000000000000000000000000000002089509649731851, -0.000000000000000000000000000000000000000000000000000000000000000000000000000017285410812612244];
           [tmp5, tmp6, tmp7, tmp8, tmp9] = arg0.l[arg2];
           let tmp10 = tmp28;
           let tmp11 = tmp;
@@ -5494,8 +5517,8 @@ const fn = () => {
         this.j = 0;
         this.f = 0;
         this.L = 0;
-        this.b = [];
-        this.g = ["<string:1014759426>", "<string:340852738>", "<string:1612335631>", "<string:1612447746>"];
+        this.b = [null, null, null, null, null, null, null, null];
+        this.g = [139348659563046800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000118231045220236, 0.00000000000000000000000000000000000000000000000000002089509649731851, -0.000000000000000000000000000000000000000000000000000000000000000000000000000017285410812612244];
         this.C = undefined;
         this.D = D;
         this.s = false;
@@ -5505,7 +5528,7 @@ const fn = () => {
         this.w = 1;
         this.A = 2;
         this.O = 65536;
-        this.I = ["<string:1442261319>", "<string:124666765>", "<string:1047141467>", "<string:42473292>", "<string:21020672>", "<string:36716032>", "<string:42472192>", "<string:21211392>", "<string:28802816>", "<string:56018432>", "<string:33858048>"];
+        this.I = [];
         this.P = 30000;
         this.N = 80;
       };
@@ -6165,7 +6188,7 @@ const fn = () => {
     (arg0, arg1, arg2) => {
       const globalResult = global("../lib/braintree-error");
       let obj = { type: globalResult.types.MERCHANT };
-      obj = { enabled: "<string:1902313473>", channel_id: "<string:3611557889>", type: globalResult.types.UNKNOWN };
+      obj = { -1179595444: false, 1376044464: false, type: globalResult.types.UNKNOWN };
       obj = { code: "GOOGLE_PAYMENT_UNSUPPORTED_VERSION", type: globalResult.types.MERCHANT };
       module.exports = { GOOGLE_PAYMENT_NOT_ENABLED: obj, GOOGLE_PAYMENT_GATEWAY_ERROR: obj, GOOGLE_PAYMENT_UNSUPPORTED_VERSION: obj };
     },
@@ -6345,7 +6368,7 @@ const fn = () => {
       let closure_5 = global("../lib/braintree-error");
       let closure_6 = global("./errors");
       let closure_7 = global("../lib/methods");
-      let closure_8 = { skuId: "<string:1157628375>", apply: "<string:1090519511>" };
+      let closure_8 = {};
       module.exports = global("@braintree/wrap-promise").wrapPrototype(GooglePayment);
     },
     {}
@@ -6391,7 +6414,7 @@ const fn = () => {
         VERSION: "3.112.1"
       };
     },
-    {}
+    { ./braintree-error: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200452245221483, ./errors: 83978806188049420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, number: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000105826602955644, total: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034030000619715578, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000011331899917529484, -9223372036854775808: 0.5215686274509804, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200452246420015 }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -6446,7 +6469,7 @@ const fn = () => {
         return text + "/html/hosted-fields-frame" + callback(arg2) + ".html#" + arg1;
       };
     },
-    {}
+    { FOREST: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004841760728578395, getFastListGuildFolders: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005980998544929831 }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -6476,8 +6499,8 @@ const fn = () => {
       let closure_1 = global("../shared/browser-detection");
       let closure_2 = global("../shared/focus-intercept");
       let closure_3 = global("../shared/find-parent-tags");
-      let closure_4 = [null, null, null];
-      let closure_5 = [];
+      let closure_4 = [true, true, true];
+      let closure_5 = ["trackOnInitialLoad", "presentPostIdCopied", "categoryCollapse", "TOS_UPDATE_FEB_2022", "letterSpacing", "STICKER_ASSET", "sub"];
       module.exports = {
         removeExtraFocusElements(first, fn) {
           const navigationDirections = fn;
@@ -6732,7 +6755,7 @@ const fn = () => {
                           closure_5[arg0] = arg0;
                         });
                         items.push(promise);
-                        const obj7 = { EpisodeBadge: null, ClydeShieldSpotIllustration: null, STREAM_FEEDBACK_MODAL: "start", "Bool(true)": "experimental_premium-primary", container: element };
+                        const obj7 = { "Bool(true)": "<string:1732396267>", "Bool(true)": "<string:1728053515>", "Bool(true)": "<string:1358954763>", "Bool(true)": "<string:2168541123>", container: element };
                         self._state.fields[fieldKey] = obj7;
                         const _setTimeout = setTimeout;
                         const timerId = setTimeout(() => {
@@ -7585,24 +7608,21 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult1 = global("./errors");
-      const obj = { "Null": "isArray", "Null": "key", externalEvents: { scrolling: 131072.97677803042, height: 58732941586179230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, width: -23359743342250077000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: 216210102068770900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, title: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010385870445933191, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000807390794495646 }, defaultMaxLengths: { -9223372036854775808: true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, externalClasses: { 1261008781: true, 2005931140: true, 78286913: true }, navigationDirections: {}, defaultIFrameStyle: { "Null": null, "Null": "\u{1F44E}\u{1F3FE}", "Null": true, "Null": null }, tokenizationErrorCodes: { [81724]: globalResult1.HOSTED_FIELDS_TOKENIZATION_FAIL_ON_DUPLICATE, [81736]: globalResult1.HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED }, allowedStyles: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], allowedFields: { cardholderName: {}, number: { "Null": -19018633055177936000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293677432139991 }, cvv: { "Null": "trackNsfwSpaceWarningModalClicked", "Null": "VIDEO_EFFECTS" }, expirationDate: { "Null": -0.0000000000000000000000000008584778844267997, "Null": 21714766409155640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, expirationMonth: { "Null": "CLIENT_SCRIPT_FAILED_TO_LOAD", "Null": "Braintree client script could not be loaded." }, expirationYear: { "Null": 1979712610, "Null": 0 }, postalCode: {} }, allowedAttributes: {}, allowedBillingAddressFields: [1095192037, 120436, 1371432034, -700380263, 1358955237, 1700122310, 620198609, -1449693283, 409223586, 1682112514, 872415768, 285213343], allowedShippingAddressFields: [1095192037, 120436, 1371432034, -700380263, 1358955237, 1700122310, 620198609, -1449693283, 409223586, 1682112514, 872415768, 285213343], autocompleteMappings: {}, events: global("../../lib/enumerate")([], "hosted-fields:") };
+      const obj = { <string:2700864611>: true, <string:2985086053>: null, externalEvents: {}, defaultMaxLengths: {}, externalClasses: { 0: "BRAINTREE_SIGNIN", 170207360: "fnparams-dede7cc5-15fd-4c75-a9f4-36c430ee3a99", 9223372036854775807: "https://c.paypal.com/da/r/fb.js" }, navigationDirections: { <string:4083592898>: false, <string:1683140291>: false }, defaultIFrameStyle: { Visa: 693305345, MasterCard: 721992524, American Express: null, Diners Club: null }, tokenizationErrorCodes: { [81724]: globalResult1.HOSTED_FIELDS_TOKENIZATION_FAIL_ON_DUPLICATE, [81736]: globalResult1.HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED }, allowedStyles: [], allowedFields: { cardholderName: {}, number: {}, cvv: {}, expirationDate: {}, expirationMonth: {}, expirationYear: {}, postalCode: {} }, allowedAttributes: { <string:1480732843>: null, <string:2751464517>: null, <string:1090520160>: null, allowPaymentRequest: null }, allowedBillingAddressFields: [null, null, null, null, null, null, null, null, null, null, null, null], allowedShippingAddressFields: [null, null, null, null, null, null, null, null, null, null, null, null], autocompleteMappings: {}, events: global("../../lib/enumerate")([true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true], "hosted-fields:") };
       module.exports = obj;
     },
-    { width: false, height: false }
+    { 0: false, "Null": false }
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000406163389, live-guild-stage: 187907176775098770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, guild-event: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012416371051953502, type: globalResult.types.UNKNOWN };
+      let obj = { type: globalResult.types.UNKNOWN };
       obj = { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_INVALID_FIELD_KEY" };
       obj = { type: globalResult.types.MERCHANT };
-      const obj4 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.NETWORK };
-      const obj5 = { placeholder: "braintree-dispatch-frame", live-guild-stage: "resizable,scrollbars", guild-event: 450, type: globalResult.types.CUSTOMER };
-      const obj6 = { placeholder: 450, live-guild-stage: 535, guild-event: 100, type: globalResult.types.CUSTOMER };
-      const obj7 = { placeholder: "isArray", live-guild-stage: "isArray", guild-event: "isArray", type: globalResult.types.CUSTOMER };
-      const obj8 = { placeholder: 1724662103, live-guild-stage: 1359020033, guild-event: -750707512, type: globalResult.types.CUSTOMER };
-      const obj9 = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.CUSTOMER };
-      module.exports = { HOSTED_FIELDS_TIMEOUT: obj, HOSTED_FIELDS_INVALID_FIELD_KEY: obj, HOSTED_FIELDS_INVALID_FIELD_SELECTOR: obj, HOSTED_FIELDS_FIELD_DUPLICATE_IFRAME: { type: globalResult.types.MERCHANT }, HOSTED_FIELDS_FIELD_INVALID: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_FIELD_INVALID" }, HOSTED_FIELDS_FIELD_NOT_PRESENT: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_FIELD_NOT_PRESENT" }, HOSTED_FIELDS_TOKENIZATION_NETWORK_ERROR: obj4, HOSTED_FIELDS_TOKENIZATION_FAIL_ON_DUPLICATE: obj5, HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED: obj6, HOSTED_FIELDS_FAILED_TOKENIZATION: obj7, HOSTED_FIELDS_FIELDS_EMPTY: obj8, HOSTED_FIELDS_FIELDS_INVALID: obj9, HOSTED_FIELDS_ATTRIBUTE_NOT_SUPPORTED: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_ATTRIBUTE_NOT_SUPPORTED" }, HOSTED_FIELDS_ATTRIBUTE_VALUE_NOT_ALLOWED: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_ATTRIBUTE_VALUE_NOT_ALLOWED" }, HOSTED_FIELDS_FIELD_PROPERTY_INVALID: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_FIELD_PROPERTY_INVALID" } };
+      const obj1 = { 0: null, 0: null, 0: null, type: globalResult.types.MERCHANT };
+      const obj5 = { 0: 1, 0: "100%", 0: "100%", type: globalResult.types.CUSTOMER };
+      const obj7 = { 0: "VIDEO_BITRATE_ENHANCED", 0: "client_sdk", 0: "Buffer", type: globalResult.types.CUSTOMER };
+      module.exports = { HOSTED_FIELDS_TIMEOUT: obj, HOSTED_FIELDS_INVALID_FIELD_KEY: obj, HOSTED_FIELDS_INVALID_FIELD_SELECTOR: obj, HOSTED_FIELDS_FIELD_DUPLICATE_IFRAME: obj1, HOSTED_FIELDS_FIELD_INVALID: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_FIELD_INVALID" }, HOSTED_FIELDS_FIELD_NOT_PRESENT: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_FIELD_NOT_PRESENT" }, HOSTED_FIELDS_TOKENIZATION_NETWORK_ERROR: { type: globalResult.types.NETWORK }, HOSTED_FIELDS_TOKENIZATION_FAIL_ON_DUPLICATE: obj5, HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED: { type: globalResult.types.CUSTOMER }, HOSTED_FIELDS_FAILED_TOKENIZATION: obj7, HOSTED_FIELDS_FIELDS_EMPTY: { type: globalResult.types.CUSTOMER }, HOSTED_FIELDS_FIELDS_INVALID: { type: globalResult.types.CUSTOMER }, HOSTED_FIELDS_ATTRIBUTE_NOT_SUPPORTED: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_ATTRIBUTE_NOT_SUPPORTED" }, HOSTED_FIELDS_ATTRIBUTE_VALUE_NOT_ALLOWED: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_ATTRIBUTE_VALUE_NOT_ALLOWED" }, HOSTED_FIELDS_FIELD_PROPERTY_INVALID: { type: globalResult.types.MERCHANT, code: "HOSTED_FIELDS_FIELD_PROPERTY_INVALID" } };
     },
     { ../../lib/braintree-error: 143 }
   ];
@@ -7652,8 +7672,8 @@ const fn = () => {
           const attr2 = element.setAttribute("data-braintree-direction", arg2);
           const attr3 = element.setAttribute("data-braintree-type", arg1);
           const attr4 = element.setAttribute("id", `bt-${arg1}-${arg2}-${arg0}`);
-          const str = JSON.stringify({});
-          const attr5 = element.setAttribute("style", JSON.stringify({}).replace(/[{}"]/g, "").replace(/,/g, ";"));
+          const str = JSON.stringify({ right: "FRAME_SERVICE_FRAME_CLOSED", left: "Frame closed before tokenization could occur.", height: null, width: "FRAME_SERVICE_FRAME_OPEN_FAILED", accessibilityRole: "Frame failed to open.", createStyles: 20, guild_id: "uppercase", body: null });
+          const attr5 = element.setAttribute("style", JSON.stringify({ right: "FRAME_SERVICE_FRAME_CLOSED", left: "Frame closed before tokenization could occur.", height: null, width: "FRAME_SERVICE_FRAME_OPEN_FAILED", accessibilityRole: "Frame failed to open.", createStyles: 20, guild_id: "uppercase", body: null }).replace(/[{}"]/g, "").replace(/,/g, ";"));
           const classList = element.classList;
           classList.add("focus-intercept");
           const listener = element.addEventListener("focus", (arg0) => {
@@ -7714,7 +7734,7 @@ const fn = () => {
       };
       module.exports = obj;
     },
-    { "Bool(false)": true, "Bool(false)": true }
+    { "Null": true, "Null": true }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -7754,7 +7774,7 @@ const fn = () => {
       const globalResult18 = global("./visa-checkout");
       module.exports = { fastlane: globalResult3, americanExpress: globalResult, applePay: globalResult1, client: globalResult2, dataCollector: globalResult4, hostedFields: globalResult5, localPayment: globalResult6, masterpass: globalResult7, googlePayment: globalResult11, paymentRequest: globalResult8, paypal: globalResult9, paypalCheckout: globalResult10, threeDSecure: globalResult13, unionpay: globalResult14, usBankAccount: globalResult15, vaultManager: globalResult16, venmo: globalResult17, visaCheckout: global("./visa-checkout"), sepa: globalResult12, preferredPaymentMethods: global("./preferred-payment-methods"), VERSION: "3.112.1" };
     },
-    { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, ./external/local-payment: true, ./shared/errors: true, @braintree/wrap-promise: true, lastShownAtMs: true, numTimesShown: true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }
+    {}
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -7815,7 +7835,7 @@ const fn = () => {
         }
       };
     },
-    {}
+    { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -7862,7 +7882,7 @@ const fn = () => {
       const globalResult = global("@braintree/asset-loader/load-script");
       module.exports = { loadScript: global("@braintree/asset-loader/load-script"), loadFastlane: global("@paypal/accelerated-checkout-loader").loadAxo };
     },
-    { ../lib/basic-component-verification: null, ../lib/create-assets-url: null }
+    { "Bool(false)": null, "Bool(false)": null }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -8041,7 +8061,7 @@ const fn = () => {
       }
       BraintreeError.prototype = Object.create(Error.prototype);
       BraintreeError.prototype.constructor = BraintreeError;
-      BraintreeError.types = global("./enumerate")(["toString", "r", "isArray", "WireType", "toString"]);
+      BraintreeError.types = global("./enumerate")([272627257395571200000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002826604493908225, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000220354408954676, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000205793826763052, 10592056717747079000000000000000000000000000000000]);
       module.exports = BraintreeError;
     },
     { ./enumerate: 153 }
@@ -8088,7 +8108,7 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = { ASSETS_URLS: { zIndex: null, width: "LOCAL_PAYMENT_START_PAYMENT_FAILED" }, CLIENT_API_URLS: { zIndex: 1359020033, width: -398365612 }, GRAPHQL_URLS: { zIndex: 1359020033, width: 1480679288 } };
+      module.exports = { ASSETS_URLS: { alpha2: "Text", phoneCountryCode: "__workletHash" }, CLIENT_API_URLS: {}, GRAPHQL_URLS: { alpha2: "<string:24624449>", phoneCountryCode: "<string:2991653120>" } };
     },
     {}
   ];
@@ -8294,7 +8314,7 @@ const fn = () => {
       let obj = { type: globalResult.types.INTERNAL, code: "INVALID_USE_OF_INTERNAL_FUNCTION" };
       obj = { type: globalResult.types.MERCHANT, code: "INSTANTIATION_OPTION_REQUIRED" };
       obj = { type: globalResult.types.MERCHANT, code: "INCOMPATIBLE_VERSIONS" };
-      const obj1 = { placeholder: "Array", live-guild-stage: null, guild-event: "LOCAL_PAYMENT_INVALID_PAYMENT_OPTION", type: globalResult.types.NETWORK };
+      const obj1 = { 0: "Text", 0: "location", 0: "createStyles", type: globalResult.types.NETWORK };
       module.exports = { INVALID_USE_OF_INTERNAL_FUNCTION: obj, INSTANTIATION_OPTION_REQUIRED: obj, INCOMPATIBLE_VERSIONS: obj, CLIENT_SCRIPT_FAILED_TO_LOAD: obj1, METHOD_CALLED_AFTER_TEARDOWN: { type: globalResult.types.MERCHANT, code: "METHOD_CALLED_AFTER_TEARDOWN" } };
     },
     { ./braintree-error: 143 }
@@ -8396,7 +8416,7 @@ const fn = () => {
         }
         _writeDispatchFrame() {
           text = `${closure_6.DISPATCH_FRAME_NAME}_${this._serviceId}`;
-          obj = { aria-hidden: true, name: text, title: text, src: this._options.dispatchFrameUrl, class: closure_6.DISPATCH_FRAME_CLASS, height: 0, width: 0, style: { position: 1359020035, shadowRadius: 208863798 } };
+          obj = { aria-hidden: true, name: text, title: text, src: this._options.dispatchFrameUrl, class: closure_6.DISPATCH_FRAME_CLASS, height: 0, width: 0, style: {} };
           this._dispatchFrame = closure_8(obj);
           body = document.body;
           appendChildResult = body.appendChild(this._dispatchFrame);
@@ -8592,10 +8612,10 @@ const fn = () => {
       let closure_10 = global("../shared/browser-detection");
       const assign = global("./../../assign").assign;
       let closure_12 = global("../../constants").BUS_CONFIGURATION_REQUEST_EVENT;
-      let closure_13 = [true, true, true];
+      let closure_13 = ["SOCIAL_LAYER_STOREFRONTS_ALL", "resolvingGradientEnd", "CARDINAL_SCRIPT_SOURCE"];
       module.exports = FrameService;
     },
-    { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008787286022329628, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023763657237975366, "Null": -0.0000000000000000000000016543621495524287, "Null": -0.00003051759961181233, "Null": 1277337988440385000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002970794108033, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003098113855516, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000371349263502, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004116671835367, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000679038653257, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000848798316564, sgn-BE-NL: -26815615859885490000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, embedded_activity_config: -36537540933273410000000000000000000000000000000 }
+    { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008787286022329628, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023763657237975366, "Null": -0.0000000000000000000000016543621495524287, "Null": -0.00003051759961181233, "Null": 1277337988440385000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002970794108033, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003098113855516, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000371349263502, <string:3490771721>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004116671835367, <string:1427381538>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000679038653257, <string:507511317>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000848798316564, "Null": -26815615859885490000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -36537540933273410000000000000000000000000000000 }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -8638,10 +8658,7 @@ const fn = () => {
         }
         open() {
           self = this;
-          obj = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005003167947119002, "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003750912039366003, "Null": 823114898545675900000000000000000000000000000000000000000000000, "Null": 187809123758219500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000012248202846988487, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009532406124, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008487983165 };
-          obj.src = this._options.openFrameUrl;
-          obj.name = this._options.name;
-          obj.style = assign({}, closure_3);
+          obj = { src: this._options.openFrameUrl, name: this._options.name, style: assign({}, closure_3) };
           if (closure_2.isIos()) {
             tmp3 = closure_2;
             if (closure_2.isIosWKWebview()) {
@@ -8654,7 +8671,7 @@ const fn = () => {
             self._el = document.createElement("div");
             tmp6 = assign;
             tmp7 = closure_3;
-            tmp8 = assign(self._el.style, closure_3, { y: "Text", isArray: "_oneway", y: "accessibilityRole", IS_GUEST: "Array" });
+            tmp8 = assign(self._el.style, closure_3, { hideWhenScrolling: "Text", autoCapitalize: "h", placeholder: "accessible", placement: "Array" });
             tmp9 = closure_0;
             self._frame = closure_0(obj);
             _el = self._el;
@@ -8712,7 +8729,7 @@ const fn = () => {
       let closure_0 = global("@braintree/iframer");
       const assign = global("../../../assign").assign;
       let closure_2 = global("../../shared/browser-detection");
-      let closure_3 = { <string:702697358>: -900661247, <string:1636690513>: -1831845481, <string:2656129297>: -717160447, <string:1422352681>: 1912602917, "Null": 450, "Null": 660, "Null": "v6", "Null": null, "Null": "MASTERPASS_BROWSER_NOT_SUPPORTED", "Null": "Browser is not supported." };
+      let closure_3 = {};
       Modal.prototype.initialize = noop;
       Modal.prototype.focus = noop;
       module.exports = Modal;
@@ -8797,7 +8814,7 @@ const fn = () => {
         return items.join(",");
       };
     },
-    { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080398176545984, 11783966218: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000104300337136497 }
+    { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080398176545984, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000104300337136497 }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -8905,15 +8922,15 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../braintree-error");
-      let obj = { placeholder: "MASTERPASS_POPUP_MISSING_REQUIRED_PARAMETERS", live-guild-stage: "Masterpass popup failed to return all required parameters needed to continue tokenization.", guild-event: null, type: globalResult.types.INTERNAL };
-      obj = { placeholder: "MASTERPASS_POPUP_CLOSED", live-guild-stage: "Customer closed Masterpass popup before authorizing.", guild-event: null, type: globalResult.types.INTERNAL };
+      let obj = { 0: null, 0: "MASTERPASS_FLOW_FAILED", 0: "Could not initialize Masterpass flow.", type: globalResult.types.INTERNAL };
+      obj = { 0: "visa", 0: "mastercard", 0: "amex", type: globalResult.types.INTERNAL };
       module.exports = { FRAME_SERVICE_FRAME_CLOSED: obj, FRAME_SERVICE_FRAME_OPEN_FAILED: obj };
     },
     { ../../braintree-error: 143 }
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = global("../../enumerate")(["captureStackTrace", "%Function.prototype.apply%"], "frameService:");
+      module.exports = global("../../enumerate")([], "frameService:");
     },
     { ../../enumerate: 153 }
   ];
@@ -8921,8 +8938,9 @@ const fn = () => {
     (arg0, arg1, arg2) => {
       function generateTokenizationParameters(analyticsMetadata, arg1) {
         analyticsMetadata = analyticsMetadata.analyticsMetadata;
-        let obj = { braintree:merchantId: analyticsMetadata.gatewayConfiguration.merchantId, braintree:metadata: JSON.stringify(obj) };
+        let obj = { hideDefaultDiscountBadges: 217054453172844400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, getSelectedChannelIds: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003919870896397297, useValidOrderedFilterTokens: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045867750867854, obscureBackground: -0.000000000000000000000000001716563651556313, braintree:merchantId: analyticsMetadata.gatewayConfiguration.merchantId };
         obj = { source: analyticsMetadata.source, integration: analyticsMetadata.integration, sessionId: analyticsMetadata.sessionId, version: "3.112.1", platform: analyticsMetadata.platform };
+        obj.braintree:metadata = JSON.stringify(obj);
         return assign({}, obj, arg1);
       }
       global("./assign").assign;
@@ -8933,9 +8951,9 @@ const fn = () => {
           str = "PRODUCTION";
         }
         if (2 === apiVersion) {
-          let obj = { getCellMetrics: "MASTERPASS_FLOW_FAILED", showChannel: "Could not initialize Masterpass flow.", environment: str };
+          let obj = { <string:193441284>: "y", <string:3426853836>: "isArray", environment: str };
           obj = { type: "CARD" };
-          obj = { allowedAuthMethods: [274202625, -1135542271] };
+          obj = { allowedAuthMethods: [null, null] };
           const supportedNetworks = androidPay.supportedNetworks;
           obj.allowedCardNetworks = supportedNetworks.map((str) => str.toUpperCase());
           obj.parameters = obj;
@@ -8971,7 +8989,7 @@ const fn = () => {
             tmp = obj;
           }
         } else {
-          const obj11 = { environment: str, allowedPaymentMethods: [true, true] };
+          const obj11 = { environment: str, allowedPaymentMethods: ["therapy", "treatment"] };
           const obj12 = { tokenizationType: "PAYMENT_GATEWAY" };
           const obj13 = { braintree:authorizationFingerprint: androidPay.googleAuthorizationFingerprint };
           obj12.parameters = generateTokenizationParameters(gatewayConfiguration, obj13);
@@ -9052,7 +9070,7 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      let closure_1 = {};
+      let closure_1 = { <string:2060692634>: false, <string:2513130124>: false, <string:2237758076>: false, <string:1740417617>: false };
       module.exports = function isVerifiedDomain(str) {
         const formatted = str.toLowerCase();
         const tmp2 = !/^https:/.test(formatted);
@@ -9372,7 +9390,7 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = { REQUIRED_OPTIONS_FOR_START_PAYMENT: [true, true, true, true, true, true], REQUIRED_OPTIONS_FOR_PAY_UPON_INVOICE_PAYMENT_TYPE: ["<string:2386624516>", "<string:1124074594>", "HOSTED_FIELDS_FETCH_CAPABILITIES", "HOSTED_FIELDS_ENROLL", "HOSTED_FIELDS_TOKENIZE", "<string:38120516>", "<string:38569216>", "<string:17296896>", "<string:38237184>", "<string:563036416>", "<string:2420178945>", "<string:1090519619>", "+355", "<string:17544513>", "<string:1283145984>", "<string:2302738434>"], REQUIRED_OPTIONS_FOR_ADDRESS: [true, true, true, true], REQUIRED_OPTIONS_FOR_LINE_ITEMS: [], REQUIRED_OPTIONS_FOR_BLIK_SEAMLESS_PAYMENT_TYPE: [null, null, null, null, null], REQUIRED_OPTIONS_FOR_BLIK_OPTIONS_LEVEL_0: [null], REQUIRED_OPTIONS_FOR_BLIK_OPTIONS_ONE_CLICK_FIRST: [], REQUIRED_OPTIONS_FOR_BLIK_OPTIONS_ONE_CLICK_SUBSEQUENT: [true, true] };
+      module.exports = { REQUIRED_OPTIONS_FOR_START_PAYMENT: [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031458784541812233, -14730271703375825000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006022420775752013, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000584087829582348, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006430114087101, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018017089607213853], REQUIRED_OPTIONS_FOR_PAY_UPON_INVOICE_PAYMENT_TYPE: [], REQUIRED_OPTIONS_FOR_ADDRESS: [], REQUIRED_OPTIONS_FOR_LINE_ITEMS: ["HOSTED_FIELDS_FETCH_CAPABILITIES", "HOSTED_FIELDS_ENROLL", "HOSTED_FIELDS_TOKENIZE", "781323769960202280", "809209266556764241"], REQUIRED_OPTIONS_FOR_BLIK_SEAMLESS_PAYMENT_TYPE: [true, true, true, true, true], REQUIRED_OPTIONS_FOR_BLIK_OPTIONS_LEVEL_0: ["<string:1530986498>"], REQUIRED_OPTIONS_FOR_BLIK_OPTIONS_ONE_CLICK_FIRST: [], REQUIRED_OPTIONS_FOR_BLIK_OPTIONS_ONE_CLICK_SUBSEQUENT: ["+376", "+244"] };
     },
     {}
   ];
@@ -9684,7 +9702,7 @@ const fn = () => {
               openResult = _frameService.open(obj6, self._startPaymentCallback);
             }
             _client = self._client;
-            obj7 = { 0: null, 0: null };
+            obj7 = {};
             obj7.data = obj;
             requestResult = _client.request(obj7);
             nextPromise = requestResult.then((paymentResource) => {
@@ -9964,7 +9982,7 @@ const fn = () => {
           }
           let hasItem = hasOwnPropertyResult;
         } else {
-          const items = ["+61", "+43", "+994"];
+          const items = [];
           hasItem = items.includes(paymentType);
         }
         return hasItem;
@@ -10019,7 +10037,7 @@ const fn = () => {
       globalResult.suppressUnhandledPromiseMessage = true;
       module.exports = global("@braintree/wrap-promise").wrapPrototype(LocalPayment);
     },
-    {}
+    { "Null": 141, "Null": 198, "Null": 40, "Null": 138, "Null": 140, "Null": 143, ../lib/use-min: 144, ../paypal/shared/constants: 145, ./errors: 146, @braintree/extended-promise: 147, @braintree/wrap-promise: 148, ../../lib/analytics: 149, ../../lib/braintree-error: 150, ../../lib/constants: 158 }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -10083,17 +10101,12 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: false, live-guild-stage: false, guild-event: false, type: globalResult.types.MERCHANT };
+      let obj = { type: globalResult.types.MERCHANT };
+      obj = { type: globalResult.types.MERCHANT };
       obj = { type: globalResult.types.CUSTOMER };
-      const obj1 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_NO_VALID_SUPPORTED_PAYMENT_METHODS", guild-event: "There are no supported payment methods associated with this account.", type: globalResult.types.CUSTOMER };
-      const obj2 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_CANCELED", guild-event: "Payment request was canceled.", type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED", guild-event: "Something went wrong when configuring the payment request.", type: globalResult.types.NETWORK };
-      const obj4 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_CAN_MAKE_PAYMENT_FAILED", guild-event: "Something went wrong when calling `canMakePayment`", type: globalResult.types.MERCHANT };
-      const obj5 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_CAN_MAKE_PAYMENT_NOT_ALLOWED", guild-event: "Something went wrong when calling `canMakePayment`. Most likely, `canMakePayment` was called multiple times with different supportedMethods configurations.", type: globalResult.types.UNKNOWN };
-      const obj6 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_GOOGLE_PAYMENT_FAILED_TO_TOKENIZE", guild-event: "Something went wrong when tokenizing the Google Pay card.", type: globalResult.types.NETWORK };
-      const obj7 = { placeholder: null, live-guild-stage: "PAYMENT_REQUEST_GOOGLE_PAYMENT_PARSING_ERROR", guild-event: "Something went wrong when tokenizing the Google Pay card.", type: globalResult.types.MERCHANT };
-      module.exports = { LOCAL_PAYMENT_NOT_ENABLED: obj, LOCAL_PAYMENT_ALREADY_IN_PROGRESS: obj, LOCAL_PAYMENT_CANCELED: obj, LOCAL_PAYMENT_WINDOW_CLOSED: obj1, LOCAL_PAYMENT_WINDOW_OPEN_FAILED: obj2, LOCAL_PAYMENT_START_PAYMENT_FAILED: obj3, LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION: obj4, LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED: obj5, LOCAL_PAYMENT_TOKENIZATION_FAILED: obj6, LOCAL_PAYMENT_INVALID_PAYMENT_OPTION: obj7 };
+      const obj6 = { 0: null, 0: "PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_MUST_INCLUDE_TYPE", 0: "createSupportedPaymentMethodsConfiguration must include a type parameter.", type: globalResult.types.NETWORK };
+      const obj7 = { 0: null, 0: "PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_TYPE_NOT_ENABLED", 0: "createSupportedPaymentMethodsConfiguration type parameter must be valid or enabled.", type: globalResult.types.MERCHANT };
+      module.exports = { LOCAL_PAYMENT_NOT_ENABLED: obj, LOCAL_PAYMENT_ALREADY_IN_PROGRESS: obj, LOCAL_PAYMENT_CANCELED: obj, LOCAL_PAYMENT_WINDOW_CLOSED: { type: globalResult.types.CUSTOMER }, LOCAL_PAYMENT_WINDOW_OPEN_FAILED: { type: globalResult.types.MERCHANT }, LOCAL_PAYMENT_START_PAYMENT_FAILED: { type: globalResult.types.NETWORK }, LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION: { type: globalResult.types.MERCHANT }, LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED: { type: globalResult.types.UNKNOWN }, LOCAL_PAYMENT_TOKENIZATION_FAILED: obj6, LOCAL_PAYMENT_INVALID_PAYMENT_OPTION: obj7 };
     },
     { ../../lib/braintree-error: 143 }
   ];
@@ -10210,7 +10223,7 @@ const fn = () => {
           closure_1 = this;
           this._authInProgress = true;
           _client = this._client;
-          obj = { 0: "PAYMENT_REQUEST_NOT_COMPLETED", 0: "Payment request could not be completed." };
+          obj = { variant: null, border: "PAYPAL_NOT_ENABLED" };
           obj = { originUrl: `${window.location.protocol}//${window.location.hostname}`, subtotal: global.subtotal, currencyCode: global.currencyCode, callbackUrl: this._callbackUrl };
           obj.data = { requestToken: obj };
           requestResult = _client.request(obj);
@@ -10476,24 +10489,23 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      const obj = { "Bool(false)": null, "Bool(false)": "PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_MUST_INCLUDE_TYPE", "Bool(false)": "createSupportedPaymentMethodsConfiguration must include a type parameter.", "Bool(false)": null, REQUIRED_OPTIONS_FOR_TOKENIZE: [] };
-      module.exports = obj;
+      module.exports = { REQUIRED_OPTIONS_FOR_TOKENIZE: [true, true] };
     },
     {}
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: "PAYPAL_NOT_ENABLED", live-guild-stage: "PayPal is not enabled for this merchant.", guild-event: null, type: globalResult.types.CUSTOMER };
-      obj = { placeholder: "PAYPAL_SANDBOX_ACCOUNT_NOT_LINKED", live-guild-stage: "A linked PayPal Sandbox account is required to use PayPal Checkout in Sandbox. See https://developer.paypal.com/braintree/docs/guides/paypal/testing-go-live#linked-paypal-testing for details on linking your PayPal sandbox with Braintree.", guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: "PAYPAL_ACCOUNT_TOKENIZATION_FAILED", live-guild-stage: "Could not tokenize user's PayPal account.", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj1 = { placeholder: "PAYPAL_FLOW_FAILED", live-guild-stage: "Could not initialize PayPal flow.", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj2 = { placeholder: "PAYPAL_FLOW_OPTION_REQUIRED", live-guild-stage: "PayPal flow property is invalid or missing.", guild-event: null, type: globalResult.types.NETWORK };
-      const obj3 = { placeholder: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED", live-guild-stage: "Something went wrong when setting up the checkout workflow.", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj4 = { placeholder: null, live-guild-stage: "PAYPAL_INVALID_PAYMENT_OPTION", guild-event: "PayPal payment options are invalid.", type: globalResult.types.MERCHANT };
-      const obj5 = { placeholder: null, live-guild-stage: "PAYPAL_MISSING_REQUIRED_OPTION", guild-event: "Missing required option.", type: globalResult.types.CUSTOMER };
-      const obj6 = { placeholder: "create_payment_resource", live-guild-stage: "setup_billing_agreement", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj7 = { placeholder: null, live-guild-stage: "PAYPAL_TOKENIZATION_REQUEST_ACTIVE", guild-event: "Another tokenization request is active.", type: globalResult.types.NETWORK };
+      let obj = { 0: null, 0: "PAYPAL_FLOW_FAILED", 0: "Could not initialize PayPal flow.", type: globalResult.types.CUSTOMER };
+      obj = { 0: null, 0: "PAYPAL_FLOW_OPTION_REQUIRED", 0: "PayPal flow property is invalid or missing.", type: globalResult.types.MERCHANT };
+      obj = { 0: null, 0: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED", 0: "Something went wrong when setting up the checkout workflow.", type: globalResult.types.MERCHANT };
+      const obj1 = { 0: null, 0: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_POPUP_OPEN_FAILED", 0: "PayPal popup failed to open, make sure to initiate the vault checkout in response to a user action.", type: globalResult.types.MERCHANT };
+      const obj2 = { 0: null, 0: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_CANCELED", 0: "Customer closed PayPal popup before authorizing.", type: globalResult.types.NETWORK };
+      const obj3 = { 0: null, 0: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_IN_PROGRESS", 0: "Vault initiated checkout already in progress.", type: globalResult.types.MERCHANT };
+      const obj4 = { 0: null, 0: "PAYPAL_INVALID_PAYMENT_OPTION", 0: "PayPal payment options are invalid.", type: globalResult.types.MERCHANT };
+      const obj5 = { 0: null, 0: "PAYPAL_MISSING_REQUIRED_OPTION", 0: "Missing required option.", type: globalResult.types.CUSTOMER };
+      const obj6 = { 0: "create_payment_resource", 0: "setup_billing_agreement", 0: null, type: globalResult.types.MERCHANT };
+      const obj7 = { 0: null, 0: "PAYPAL_TOKENIZATION_REQUEST_ACTIVE", 0: "Another tokenization request is active.", type: globalResult.types.NETWORK };
       module.exports = { MASTERPASS_BROWSER_NOT_SUPPORTED: obj, MASTERPASS_NOT_ENABLED: obj, MASTERPASS_TOKENIZE_MISSING_REQUIRED_OPTION: obj, MASTERPASS_TOKENIZATION_ALREADY_IN_PROGRESS: obj1, MASTERPASS_ACCOUNT_TOKENIZATION_FAILED: obj2, MASTERPASS_POPUP_OPEN_FAILED: obj3, MASTERPASS_POPUP_MISSING_REQUIRED_PARAMETERS: obj4, MASTERPASS_POPUP_CLOSED: obj5, MASTERPASS_INVALID_PAYMENT_OPTION: obj6, MASTERPASS_FLOW_FAILED: obj7 };
     },
     { ../../lib/braintree-error: 143 }
@@ -10568,8 +10580,8 @@ const fn = () => {
           _client = this._client;
           closure_0 = _client.getConfiguration();
           assign = this;
-          obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-          obj.style = { position: 1359020035, shadowRadius: 208863798 };
+          obj = { <: null, >: null, &: null, ": null, ': null, /: null, `: null };
+          obj.style = {};
           this._frame = closure_5(obj);
           if (0 === this._defaultSupportedPaymentMethods.length) {
             tmp5 = globalThis;
@@ -10926,7 +10938,7 @@ const fn = () => {
       let closure_10 = global("../../lib/braintree-error");
       const globalResult1 = global("../shared/constants");
       ({ events: closure_12, errors: closure_13 } = globalResult1);
-      let closure_14 = { "Bool(true)": null, "Bool(true)": "PAYPAL_POPUP_OPEN_FAILED", "Bool(true)": "PayPal popup failed to open, make sure to tokenize in response to a user action.", "Bool(true)": null, "Bool(true)": "PAYPAL_POPUP_CLOSED", "Bool(true)": "Customer closed PayPal popup before authorizing.", "Bool(true)": "clientApi", "Bool(true)": "post" };
+      let closure_14 = { 328181852: null, 1177394577: "PAYPAL_POPUP_OPEN_FAILED", -326126965: "PayPal popup failed to open, make sure to tokenize in response to a user action.", -1481969508: null, 1482235693: "PAYPAL_POPUP_CLOSED", 1315368818: "Customer closed PayPal popup before authorizing.", "Null": "clientApi", "Null": "post" };
       const child = globalResult.createChild(PaymentRequestComponent);
       module.exports = global("@braintree/wrap-promise").wrapPrototype(PaymentRequestComponent);
     },
@@ -10957,9 +10969,9 @@ const fn = () => {
     (arg0, arg1, arg2) => {
       const obj = {};
       const globalResult = global("../../lib/enumerate");
-      obj.events = globalResult([], "payment-request:");
+      obj.events = globalResult(["<string:3678470146>", "<string:1090519628>", "+297", "<string:38585665>", "<string:328614144>", "<string:3225485313>", "<string:1090519316>", "+1 242"], "payment-request:");
       obj.errors = global("./errors");
-      obj.SUPPORTED_METHODS = { 1557685196: null, -1432290462: null };
+      obj.SUPPORTED_METHODS = { "Bool(false)": null, "Bool(false)": null };
       module.exports = obj;
     },
     {}
@@ -10967,34 +10979,33 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: "User canceled SEPA authorization", live-guild-stage: "customer-canceled", guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: null, live-guild-stage: "SEPA_INVALID_MANDATE_TYPE", guild-event: "SEPA mandate type is invalid", type: globalResult.types.CUSTOMER };
-      obj = { placeholder: null, live-guild-stage: "SEPA_TOKENIZATION_FAILED", guild-event: "SEPA encountered a problem", type: globalResult.types.MERCHANT };
-      const obj1 = { placeholder: false, live-guild-stage: false, guild-event: false, type: globalResult.types.UNKNOWN };
-      const obj2 = { placeholder: 1359020033, live-guild-stage: -1086160942, guild-event: 1358954831, type: globalResult.types.MERCHANT };
-      const obj4 = { placeholder: 14169555525878416000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, live-guild-stage: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008487983165837, guild-event: 38241977507830670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, type: globalResult.types.MERCHANT };
-      const obj5 = { placeholder: 400, live-guild-stage: 400, guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj6 = { placeholder: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002871124056445369, live-guild-stage: 16125685661271263000000000000000000000000000000000000000000000000000000000000000000, guild-event: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293102510613146, type: globalResult.types.MERCHANT };
-      const obj7 = { placeholder: true, live-guild-stage: "<string:18714945>", guild-event: "<string:1582366976>", type: globalResult.types.MERCHANT };
-      module.exports = { PAYMENT_REQUEST_NO_VALID_SUPPORTED_PAYMENT_METHODS: obj, PAYMENT_REQUEST_CANCELED: obj, PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED: obj, PAYMENT_REQUEST_CAN_MAKE_PAYMENT_FAILED: obj1, PAYMENT_REQUEST_CAN_MAKE_PAYMENT_NOT_ALLOWED: obj2, PAYMENT_REQUEST_UNSUPPORTED_PAYMENT_METHOD: { type: globalResult.types.MERCHANT, code: "PAYMENT_REQUEST_UNSUPPORTED_PAYMENT_METHOD" }, PAYMENT_REQUEST_GOOGLE_PAYMENT_FAILED_TO_TOKENIZE: obj4, PAYMENT_REQUEST_GOOGLE_PAYMENT_PARSING_ERROR: obj5, PAYMENT_REQUEST_NOT_COMPLETED: { enabled: null, channel_id: "3D Secure Authorization Frame" }, PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_MUST_INCLUDE_TYPE: obj6, PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_TYPE_NOT_ENABLED: obj7 };
+      let obj = { 0: "User canceled SEPA authorization", 0: "customer-canceled", 0: null, type: globalResult.types.MERCHANT };
+      obj = { 0: null, 0: "SEPA_INVALID_MANDATE_TYPE", 0: "SEPA mandate type is invalid", type: globalResult.types.CUSTOMER };
+      obj = { 0: null, 0: "SEPA_TOKENIZATION_FAILED", 0: "SEPA encountered a problem", type: globalResult.types.MERCHANT };
+      const obj1 = { 0: null, 0: null, 0: null, type: globalResult.types.UNKNOWN };
+      const obj2 = { 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008727329542036449, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007294599593791883, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002172923690454925, type: globalResult.types.MERCHANT };
+      const obj4 = { 0: null, 0: null, 0: "Array", type: globalResult.types.MERCHANT };
+      const obj5 = { 0: 400, 0: 400, 0: null, type: globalResult.types.UNKNOWN };
+      const obj6 = { 0: -4735065507793708000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 16125685710522120000000000000000000000000000000000000000000000000000000000000000000, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729310873060739, type: globalResult.types.MERCHANT };
+      const obj7 = { 0: "Text", 0: "concat", 0: "s", type: globalResult.types.MERCHANT };
+      module.exports = { PAYMENT_REQUEST_NO_VALID_SUPPORTED_PAYMENT_METHODS: obj, PAYMENT_REQUEST_CANCELED: obj, PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED: obj, PAYMENT_REQUEST_CAN_MAKE_PAYMENT_FAILED: obj1, PAYMENT_REQUEST_CAN_MAKE_PAYMENT_NOT_ALLOWED: obj2, PAYMENT_REQUEST_UNSUPPORTED_PAYMENT_METHOD: { type: globalResult.types.MERCHANT, code: "PAYMENT_REQUEST_UNSUPPORTED_PAYMENT_METHOD" }, PAYMENT_REQUEST_GOOGLE_PAYMENT_FAILED_TO_TOKENIZE: obj4, PAYMENT_REQUEST_GOOGLE_PAYMENT_PARSING_ERROR: obj5, PAYMENT_REQUEST_NOT_COMPLETED: { -1179595444: null, 1376044464: "3D Secure Authorization Frame" }, PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_MUST_INCLUDE_TYPE: obj6, PAYMENT_REQUEST_CREATE_SUPPORTED_PAYMENT_METHODS_CONFIGURATION_TYPE_NOT_ENABLED: obj7 };
     },
     { ../../lib/braintree-error: 143 }
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../lib/braintree-error");
-      let obj = { placeholder: "useDueInString", live-guild-stage: "_user", guild-event: "Array", type: globalResult.types.MERCHANT };
-      obj = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: true, live-guild-stage: true, guild-event: "<string:19854401>", type: globalResult.types.NETWORK };
-      const obj1 = { placeholder: "Text", live-guild-stage: "from", guild-event: "default", type: globalResult.types.NETWORK };
-      const obj2 = { placeholder: "mutedBackground", live-guild-stage: "%ArrayProto_values%", guild-event: "isArrayBuffer", type: globalResult.types.MERCHANT };
-      const obj4 = { placeholder: 16125687773536794000000000000000000000000000000000000000000000000000000000000000000, live-guild-stage: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293182365559334, guild-event: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000163273262130048, type: globalResult.types.NETWORK };
-      const obj5 = { placeholder: "<string:19418945>", live-guild-stage: "<string:4266721536>", guild-event: "<string:747585828>", type: globalResult.types.MERCHANT };
-      const obj6 = { placeholder: 19697473, live-guild-stage: 1934688512, guild-event: 1112949052, type: globalResult.types.CUSTOMER };
-      const obj7 = { placeholder: 1112949052, live-guild-stage: 1359020033, guild-event: -2092876662, type: globalResult.types.MERCHANT };
-      const obj8 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      const obj9 = { placeholder: -27377348, live-guild-stage: 1359020033, guild-event: 490803807, type: globalResult.types.MERCHANT };
-      module.exports = { PAYPAL_NOT_ENABLED: obj, PAYPAL_SANDBOX_ACCOUNT_NOT_LINKED: obj, PAYPAL_ACCOUNT_TOKENIZATION_FAILED: obj, PAYPAL_FLOW_FAILED: obj1, PAYPAL_FLOW_OPTION_REQUIRED: obj2, PAYPAL_START_VAULT_INITIATED_CHECKOUT_PARAM_REQUIRED: { type: globalResult.types.MERCHANT, code: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_PARAM_REQUIRED" }, PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED: obj4, PAYPAL_START_VAULT_INITIATED_CHECKOUT_POPUP_OPEN_FAILED: obj5, PAYPAL_START_VAULT_INITIATED_CHECKOUT_CANCELED: obj6, PAYPAL_START_VAULT_INITIATED_CHECKOUT_IN_PROGRESS: obj7, PAYPAL_INVALID_PAYMENT_OPTION: obj8, PAYPAL_MISSING_REQUIRED_OPTION: obj9 };
+      let obj = { 0: "<string:18724929>", 0: "<string:3713073408>", 0: "<string:522010943>", type: globalResult.types.MERCHANT };
+      obj = { 0: "FIGHTING", 0: "EvalError", 0: "isArrayBuffer", type: globalResult.types.MERCHANT };
+      obj = { 0: "Text", 0: "applicationId", 0: "h", type: globalResult.types.NETWORK };
+      const obj1 = { 0: "<string:2159362365>", 0: "<string:1359020033>", 0: "<string:3460382016>", type: globalResult.types.NETWORK };
+      const obj4 = { 0: 1138311458, 0: 1359020033, 0: -1002357469, type: globalResult.types.NETWORK };
+      const obj5 = { 0: false, 0: false, 0: false, type: globalResult.types.MERCHANT };
+      const obj6 = { 0: "<string:581714236>", 0: "<string:1359020033>", 0: "<string:893464768>", type: globalResult.types.CUSTOMER };
+      const obj7 = { 0: "<string:21181761>", 0: "<string:3612410112>", 0: "<string:562184508>", type: globalResult.types.MERCHANT };
+      const obj8 = { 0: "SearchNavigatorScreens", 0: "%Error.prototype%", 0: "isArrayBuffer", type: globalResult.types.MERCHANT };
+      const obj9 = { 0: "<string:33426241>", 0: "<string:4098949376>", 0: "<string:553992457>", type: globalResult.types.MERCHANT };
+      module.exports = { PAYPAL_NOT_ENABLED: obj, PAYPAL_SANDBOX_ACCOUNT_NOT_LINKED: obj, PAYPAL_ACCOUNT_TOKENIZATION_FAILED: obj, PAYPAL_FLOW_FAILED: obj1, PAYPAL_FLOW_OPTION_REQUIRED: { type: globalResult.types.MERCHANT }, PAYPAL_START_VAULT_INITIATED_CHECKOUT_PARAM_REQUIRED: { type: globalResult.types.MERCHANT, code: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_PARAM_REQUIRED" }, PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED: obj4, PAYPAL_START_VAULT_INITIATED_CHECKOUT_POPUP_OPEN_FAILED: obj5, PAYPAL_START_VAULT_INITIATED_CHECKOUT_CANCELED: obj6, PAYPAL_START_VAULT_INITIATED_CHECKOUT_IN_PROGRESS: obj7, PAYPAL_INVALID_PAYMENT_OPTION: obj8, PAYPAL_MISSING_REQUIRED_OPTION: obj9 };
     },
     { ../lib/braintree-error: 143 }
   ];
@@ -11189,10 +11200,7 @@ const fn = () => {
                 str3 = "paypal-checkout.updatePayment";
                 sendEventResult = sendEvent(_clientPromise, "paypal-checkout.updatePayment");
                 _clientPromise = self._clientPromise;
-                nextPromise = _clientPromise.then((request) => {
-                  const obj = { month: true, dayOfYear: true, data: self._formatUpdatePaymentData(request) };
-                  return request.request(obj);
-                });
+                nextPromise = _clientPromise.then((request) => request.request({ data: self._formatUpdatePaymentData(request) }));
                 catchPromise = nextPromise.catch((details) => {
                   if (422 === tmp) {
                     details.sendEvent(self._clientPromise, "paypal-checkout.updatePayment.invalid");
@@ -11895,7 +11903,7 @@ const fn = () => {
       let closure_14 = global("../lib/querystring");
       let closure_15 = global("../lib/camel-case-to-snake-case");
       const INTEGRATION_TIMEOUT_MS = global("../lib/constants").INTEGRATION_TIMEOUT_MS;
-      let closure_17 = [null, null, null];
+      let closure_17 = [];
       globalResult.suppressUnhandledPromiseMessage = true;
       module.exports = global("@braintree/wrap-promise").wrapPrototype(PayPalCheckout);
     },
@@ -12294,7 +12302,7 @@ const fn = () => {
       });
       module.exports = PayPal;
     },
-    { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }
+    {}
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -12335,22 +12343,21 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = { LANDING_FRAME_NAME: "braintreepaypallanding", FLOW_ENDPOINTS: { "Bool(false)": "NEW_THREAD_PERMISSIONS", "Bool(false)": "APPLICATION_DIRECTORY_SIMILAR" }, REQUIRED_OPTIONS: [false, false] };
+      module.exports = { LANDING_FRAME_NAME: "braintreepaypallanding", FLOW_ENDPOINTS: { "Bool(false)": 18941249, "Bool(false)": 558956800 }, REQUIRED_OPTIONS: ["+973", "+880"] };
     },
     {}
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: "useDueInString", live-guild-stage: "_user", guild-event: "Array", type: globalResult.types.MERCHANT };
-      obj = { placeholder: false, live-guild-stage: false, guild-event: false, type: globalResult.types.MERCHANT };
-      obj = { placeholder: true, live-guild-stage: true, guild-event: "<string:19854401>", type: globalResult.types.NETWORK };
-      const obj1 = { placeholder: "Text", live-guild-stage: "from", guild-event: "default", type: globalResult.types.NETWORK };
-      const obj2 = { placeholder: "mutedBackground", live-guild-stage: "%ArrayProto_values%", guild-event: "isArrayBuffer", type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: "_cardinalEvents", live-guild-stage: "%ArrayProto_values%", guild-event: "isArrayBuffer", type: globalResult.types.MERCHANT };
-      const obj4 = { placeholder: true, live-guild-stage: true, guild-event: "<string:21395009>", type: globalResult.types.CUSTOMER };
-      const obj5 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      module.exports = { PAYPAL_NOT_ENABLED: obj, PAYPAL_TOKENIZATION_REQUEST_ACTIVE: obj, PAYPAL_ACCOUNT_TOKENIZATION_FAILED: obj, PAYPAL_FLOW_FAILED: obj1, PAYPAL_FLOW_OPTION_REQUIRED: obj2, PAYPAL_POPUP_OPEN_FAILED: obj3, PAYPAL_POPUP_CLOSED: obj4, PAYPAL_INVALID_PAYMENT_OPTION: obj5 };
+      let obj = { 0: "<string:18724929>", 0: "<string:3713073408>", 0: "<string:522010943>", type: globalResult.types.MERCHANT };
+      obj = { 0: false, 0: 0.0000000000000000000000000000000000001998799582575989, 0: 16125687789217570000000000000000000000000000000000000000000000000000000000000000000, type: globalResult.types.MERCHANT };
+      obj = { 0: "Text", 0: "applicationId", 0: "h", type: globalResult.types.NETWORK };
+      const obj1 = { 0: "<string:2159362365>", 0: "<string:1359020033>", 0: "<string:3460382016>", type: globalResult.types.NETWORK };
+      const obj3 = { 0: 16125687789217570000000000000000000000000000000000000000000000000000000000000000000, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729300641306587, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001897727465278646, type: globalResult.types.MERCHANT };
+      const obj4 = { 0: "x", 0: "Text", 0: "Array", type: globalResult.types.CUSTOMER };
+      const obj5 = { 0: "SearchNavigatorScreens", 0: "%Error.prototype%", 0: "isArrayBuffer", type: globalResult.types.MERCHANT };
+      module.exports = { PAYPAL_NOT_ENABLED: obj, PAYPAL_TOKENIZATION_REQUEST_ACTIVE: obj, PAYPAL_ACCOUNT_TOKENIZATION_FAILED: obj, PAYPAL_FLOW_FAILED: obj1, PAYPAL_FLOW_OPTION_REQUIRED: { type: globalResult.types.MERCHANT }, PAYPAL_POPUP_OPEN_FAILED: obj3, PAYPAL_POPUP_CLOSED: obj4, PAYPAL_INVALID_PAYMENT_OPTION: obj5 };
     },
     { ../../lib/braintree-error: 143 }
   ];
@@ -12402,7 +12409,7 @@ const fn = () => {
               let rejectResult = Promise.reject(self._setupError);
             } else {
               closure_0.sendEvent(closure_0, "preferred-payment-methods.api-error");
-              rejectResult = { <string:3355571494>: null, <string:1644761997>: null };
+              rejectResult = { justifyContent: true, alignItems: true };
             }
             return rejectResult;
           });
@@ -12421,7 +12428,7 @@ const fn = () => {
         let closure_0 = last_4;
         let obj = { sepa_debit_account: obj, merchant_account_id: last_4.merchantAccountId };
         obj = { last_4: last_4.last4, merchant_or_partner_customer_id: last_4.customerId, bank_reference_token: last_4.bankReferenceToken, mandate_type: last_4.mandateType };
-        obj = { <string:291637523>: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", <string:3693498740>: "emailToken", <string:720431191>: "Array" };
+        obj = { push: false, st: false, t: false };
         obj.data = obj;
         const requestResult = _client.request(obj);
         return _client.request(obj).then((nonce) => {
@@ -12461,9 +12468,8 @@ const fn = () => {
               }
             });
           }
-          const obj1 = { <string:291637523>: 1359020033, <string:3693498740>: -1639892594, <string:720431191>: 16777488, data: obj };
-          const requestResult = _client.request(obj1);
-          return _client.request(obj1).then((message) => {
+          const requestResult = _client.request({ data: obj });
+          return _client.request({ data: obj }).then((message) => {
             const sepaDebitAccount = message.message.body.sepaDebitAccount;
             if (sepaDebitAccount) {
               const obj = {};
@@ -12503,15 +12509,15 @@ const fn = () => {
         handleApprovalForFullPageRedirect(client, closure_0) {
           closure_0 = client;
           let closure_1 = closure_0;
-          const obj = { endpoint: `sepa_debit/${closure_0.cart_id}` };
-          const requestResult = client.request({ endpoint: `sepa_debit/${closure_0.cart_id}` });
-          const nextPromise = client.request({ endpoint: `sepa_debit/${closure_0.cart_id}` }).then((sepaDebitMandateDetail) => {
+          const obj = { "Null": null, "Null": null, endpoint: `sepa_debit/${closure_0.cart_id}` };
+          const requestResult = client.request(obj);
+          const nextPromise = client.request(obj).then((sepaDebitMandateDetail) => {
             sepaDebitMandateDetail = sepaDebitMandateDetail.sepaDebitMandateDetail;
             closure_3.sendEvent(sepaDebitMandateDetail, "sepa.redirect.mandate.approved");
             callback(arg1, { last4: sepaDebitMandateDetail.last4, customerId: sepaDebitMandateDetail.merchantOrPartnerCustomerId, mandateType: sepaDebitMandateDetail.mandateType, bankReferenceToken: sepaDebitMandateDetail.bankReferenceToken });
             return callback2(sepaDebitMandateDetail, arg1);
           });
-          return client.request({ endpoint: `sepa_debit/${closure_0.cart_id}` }).then((sepaDebitMandateDetail) => {
+          return client.request(obj).then((sepaDebitMandateDetail) => {
             sepaDebitMandateDetail = sepaDebitMandateDetail.sepaDebitMandateDetail;
             closure_3.sendEvent(sepaDebitMandateDetail, "sepa.redirect.mandate.approved");
             callback(arg1, { last4: sepaDebitMandateDetail.last4, customerId: sepaDebitMandateDetail.merchantOrPartnerCustomerId, mandateType: sepaDebitMandateDetail.mandateType, bankReferenceToken: sepaDebitMandateDetail.bankReferenceToken });
@@ -12691,7 +12697,7 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = { REQUIRED_OPTIONS: [null, null, null, null, null, null], BILLING_ADDRESS_OPTIONS: ["<string:37814274>", "<string:1090519629>", "+359", "<string:22341697>", "<string:2062303488>"], MANDATE_TYPE_ENUM: [-499056639, 1090519360] };
+      module.exports = { REQUIRED_OPTIONS: [], BILLING_ADDRESS_OPTIONS: ["+880", "+1 246", "+375", "+32", "+501"], MANDATE_TYPE_ENUM: ["+501", "+229"] };
     },
     {}
   ];
@@ -12699,11 +12705,11 @@ const fn = () => {
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
       let obj = { type: globalResult.types.MERCHANT };
-      obj = { placeholder: "y", live-guild-stage: "calculateJaroWinklerSimilarity", guild-event: "Array", active-channel: "headers", type: globalResult.types.CUSTOMER };
-      obj = { placeholder: 1359020033, live-guild-stage: -968812073, guild-event: 16777592, type: globalResult.types.MERCHANT };
-      const obj1 = { placeholder: "<string:1359020033>", live-guild-stage: "<string:3644934955>", guild-event: "<string:16777663>", active-channel: "<string:1099382353>", type: globalResult.types.UNKNOWN };
-      const obj2 = { placeholder: null, live-guild-stage: "UNIONPAY_NOT_ENABLED", guild-event: "UnionPay is not enabled for this merchant.", type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: null, live-guild-stage: "UNIONPAY_HOSTED_FIELDS_INSTANCE_INVALID", guild-event: "Found an invalid Hosted Fields instance. Please use a valid Hosted Fields instance.", active-channel: null, type: globalResult.types.UNKNOWN };
+      obj = { 0: 1103118627, 0: 1359020033, 0: -2092885470, 0: 16777593, type: globalResult.types.CUSTOMER };
+      obj = { 0: 1359020033, 0: -2109650165, 0: 16777663, type: globalResult.types.MERCHANT };
+      const obj1 = { 0: 69900784983212740000000000000000000000000000000000000000000000000000000, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013417563267411316, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046895986491592833, 0: 0.001037836079632648, type: globalResult.types.UNKNOWN };
+      const obj2 = { 0: "UNIONPAY_HOSTED_FIELDS_INSTANCE_INVALID", 0: "Found an invalid Hosted Fields instance. Please use a valid Hosted Fields instance.", 0: null, type: globalResult.types.MERCHANT };
+      const obj3 = { 0: "UNIONPAY_HOSTED_FIELDS_INSTANCE_REQUIRED", 0: "Could not find the Hosted Fields instance.", 0: null, 0: "UNIONPAY_CARD_OR_HOSTED_FIELDS_INSTANCE_REQUIRED", type: globalResult.types.UNKNOWN };
       module.exports = { SEPA_CREATE_MANDATE_FAILED: obj, SEPA_CUSTOMER_CANCELED: obj, SEPA_INVALID_MANDATE_TYPE: obj, SEPA_TOKENIZATION_FAILED: obj1, SEPA_TOKENIZE_MISSING_REQUIRED_OPTION: obj2, SEPA_TRANSACTION_FAILED: obj3 };
     },
     { ../../lib/braintree-error: 143 }
@@ -13120,7 +13126,9 @@ const fn = () => {
           return obj2;
         }
         _setupV1Iframe(arg0) {
-          obj = { src: `${`${this._assetsUrl}/html/three-d-secure-bank-frame`}${closure_12(this._isDebug)}.html?showLoader=${global.showLoader}`, name: `${closure_9.LANDING_FRAME_NAME}_${this._v1Bus.channel}` };
+          obj = { 1474041169: "A card or a Hosted Fields instance is required. Please supply a card or a Hosted Fields instance.", -384044859: null, -1824930324: "UNIONPAY_CARD_AND_HOSTED_FIELDS_INSTANCES", -467412108: "Please supply either a card or a Hosted Fields instance, not both.", "Bool(true)": null };
+          obj.src = `${`${this._assetsUrl}/html/three-d-secure-bank-frame`}${closure_12(this._isDebug)}.html?showLoader=${global.showLoader}`;
+          obj.name = `${closure_9.LANDING_FRAME_NAME}_${this._v1Bus.channel}`;
           return closure_7(obj);
         }
         _setupV1Elements(arg0) {
@@ -13251,7 +13259,7 @@ const fn = () => {
       const globalResult2 = global("./bootstrap3-modal");
       module.exports = { legacy: globalResult, cardinal-modal: globalResult1, bootstrap3-modal: global("./bootstrap3-modal"), inline-iframe: global("./inline-iframe") };
     },
-    { datetime-local: true, ENTITY_TYPES_REQUIRED_CHANNEL_ID: true, animated: true, getPasskeyAuthenticator: true }
+    { "Null": true, "Null": true, "Null": true, "Null": true }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -13351,7 +13359,7 @@ const fn = () => {
       let closure_1 = global("../../../lib/braintree-error");
       let closure_2 = global("../../shared/errors");
       InlineIframeFramework.prototype = Object.create(globalResult.prototype, { constructor: globalResult });
-      InlineIframeFramework.events = global("../../../lib/enumerate")(["Array"], "inline-iframe-framework:");
+      InlineIframeFramework.events = global("../../../lib/enumerate")([], "inline-iframe-framework:");
       module.exports = InlineIframeFramework;
     },
     {}
@@ -14062,11 +14070,11 @@ const fn = () => {
       const globalResult2 = global("@braintree/extended-promise");
       const INTEGRATION_TIMEOUT_MS = global("../../../lib/constants").INTEGRATION_TIMEOUT_MS;
       const PLATFORM = global("../../../lib/constants").PLATFORM;
-      let closure_12 = ["sledge", "sleigh", "snow", "toboggan", "ice_skate"];
+      let closure_12 = [];
       let closure_13 = [];
       globalResult2.suppressUnhandledPromiseMessage = true;
       SongbirdFramework.prototype = Object.create(globalResult.prototype, { constructor: SongbirdFramework });
-      SongbirdFramework.events = global("../../../lib/enumerate")(["hand", "like", "thumb", "up", "yes", "+238", "+1 345"], "songbird-framework:");
+      SongbirdFramework.events = global("../../../lib/enumerate")([], "songbird-framework:");
       module.exports = SongbirdFramework;
     },
     {}
@@ -14232,39 +14240,39 @@ const fn = () => {
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = { LANDING_FRAME_NAME: "braintreethreedsecurelanding", CARDINAL_SCRIPT_SOURCE: { zIndex: "UNIONPAY_CARD_AND_HOSTED_FIELDS_INSTANCES", width: "Please supply either a card or a Hosted Fields instance, not both." } };
+      module.exports = { LANDING_FRAME_NAME: "braintreethreedsecurelanding", CARDINAL_SCRIPT_SOURCE: { alpha2: 22666049, phoneCountryCode: 1330708736 } };
     },
     {}
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: "UNIONPAY_EXPIRATION_DATE_INCOMPLETE", live-guild-stage: "You must supply expiration month and year or neither.", guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: "UNIONPAY_ENROLLMENT_CUSTOMER_INPUT_INVALID", live-guild-stage: "Enrollment failed due to user input error.", guild-event: null, type: globalResult.types.MERCHANT };
-      obj = { placeholder: "UNIONPAY_ENROLLMENT_NETWORK_ERROR", live-guild-stage: "Could not enroll UnionPay card.", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj1 = { placeholder: "UNIONPAY_FETCH_CAPABILITIES_NETWORK_ERROR", live-guild-stage: "Could not fetch card capabilities.", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: "UNIONPAY_TOKENIZATION_NETWORK_ERROR", live-guild-stage: "A tokenization network error occurred.", guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj4 = { placeholder: "UNIONPAY_MISSING_MOBILE_PHONE_DATA", live-guild-stage: "A `mobile` with `countryCode` and `number` is required.", guild-event: null, type: globalResult.types.NETWORK };
-      const obj5 = { placeholder: "UNIONPAY_FAILED_TOKENIZATION", live-guild-stage: "The supplied card data failed tokenization.", guild-event: "payment_methods", type: globalResult.types.UNKNOWN };
-      const obj6 = { placeholder: "<string:2506162177>", live-guild-stage: "<string:29740865>", guild-event: "<string:2546618624>", type: globalResult.types.UNKNOWN };
-      const obj9 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj10 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.CUSTOMER };
-      const obj11 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      const obj12 = { placeholder: 0.000000000000000000000000000000013099332940581592, live-guild-stage: 16125686437800756000000000000000000000000000000000000000000000000000000000000000000, guild-event: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293646121829153, type: globalResult.types.MERCHANT };
-      const obj14 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj15 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      const obj16 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.CUSTOMER };
-      const obj17 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj19 = { placeholder: "NavigationRoute", live-guild-stage: "isArray", guild-event: "displayNameAccessibilityHint", type: globalResult.types.MERCHANT };
-      const obj21 = { placeholder: 0.000000000000007107211129578996, live-guild-stage: 0.000030525239367309004, guild-event: 338546918044753000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, type: globalResult.types.INTERNAL };
-      const obj22 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.MERCHANT };
-      module.exports = { THREEDS_NOT_ENABLED: obj, THREEDS_CAN_NOT_USE_TOKENIZATION_KEY: obj, THREEDS_HTTPS_REQUIRED: obj, THREEDS_NOT_ENABLED_FOR_V2: obj1, THREEDS_UNRECOGNIZED_VERSION: { type: globalResult.types.MERCHANT, code: "THREEDS_UNRECOGNIZED_VERSION" }, THREEDS_CARDINAL_SDK_SETUP_FAILED: obj3, THREEDS_CARDINAL_SDK_SCRIPT_LOAD_FAILED: obj4, THREEDS_CARDINAL_SDK_SETUP_TIMEDOUT: obj5, THREEDS_CARDINAL_SDK_RESPONSE_TIMEDOUT: obj6, THREEDS_CARDINAL_SDK_BAD_CONFIG: { type: globalResult.types.MERCHANT }, THREEDS_CARDINAL_SDK_BAD_JWT: { type: globalResult.types.MERCHANT }, THREEDS_CARDINAL_SDK_ERROR: obj9, THREEDS_CARDINAL_SDK_CANCELED: obj10, THREEDS_VERIFY_CARD_CANCELED_BY_MERCHANT: obj11, THREEDS_AUTHENTICATION_IN_PROGRESS: obj12, THREEDS_MISSING_VERIFY_CARD_OPTION: { type: globalResult.types.MERCHANT, code: "THREEDS_MISSING_VERIFY_CARD_OPTION" }, THREEDS_JWT_AUTHENTICATION_FAILED: obj14, THREEDS_LOOKUP_TOKENIZED_CARD_NOT_FOUND_ERROR: obj15, THREEDS_LOOKUP_VALIDATION_ERROR: obj16, THREEDS_LOOKUP_ERROR: obj17, THREEDS_INLINE_IFRAME_DETAILS_INCORRECT: { type: globalResult.types.UNKNOWN }, THREEDS_NO_VERIFICATION_PAYLOAD: obj19, THREEDS_TERM_URL_REQUIRES_BRAINTREE_DOMAIN: { type: globalResult.types.INTERNAL }, THREEDS_FRAMEWORK_METHOD_NOT_IMPLEMENTED: obj21, THREEDS_REQUESTED_EXEMPTION_TYPE_INVALID: obj22, THREEDS_UNSUPPORTED_VERSION: { type: globalResult.types.MERCHANT } };
+      let obj = { 0: "<string:2074362216>", 0: "<string:1359020033>", 0: "<string:4148266816>", type: globalResult.types.MERCHANT };
+      obj = { type: globalResult.types.MERCHANT };
+      obj = { 0: "<string:1375355271>", 0: "<string:1359020033>", 0: "<string:2218886984>", type: globalResult.types.MERCHANT };
+      const obj1 = { 0: "<string:696533383>", 0: "<string:1359020033>", 0: "<string:1145127011>", type: globalResult.types.MERCHANT };
+      const obj3 = { 0: "String", 0: "Text", 0: "__closure", type: globalResult.types.UNKNOWN };
+      const obj5 = { 0: "<string:1100308736>", 0: "payment_methods/credit_cards/capabilities", 0: "<string:1097169489>", type: globalResult.types.UNKNOWN };
+      const obj7 = { 0: "post", 0: "payment_methods/credit_cards", 0: null, type: globalResult.types.MERCHANT };
+      const obj8 = { 0: "Bank login flow failed to load.", 0: null, 0: "US_BANK_ACCOUNT_LOGIN_CLOSED", type: globalResult.types.MERCHANT };
+      const obj9 = { 0: "Customer closed bank login flow before authorizing.", 0: null, 0: "US_BANK_ACCOUNT_LOGIN_REQUEST_ACTIVE", type: globalResult.types.UNKNOWN };
+      const obj10 = { 0: "Another bank login tokenization request is active.", 0: null, 0: "US_BANK_ACCOUNT_TOKENIZATION_NETWORK_ERROR", type: globalResult.types.CUSTOMER };
+      const obj11 = { 0: "A tokenization network error occurred.", 0: null, 0: "US_BANK_ACCOUNT_FAILED_TOKENIZATION", type: globalResult.types.MERCHANT };
+      const obj12 = { 0: "The supplied data failed tokenization.", 0: null, 0: "US_BANK_ACCOUNT_NOT_ENABLED", type: globalResult.types.MERCHANT };
+      const obj14 = { 0: "US bank account is not enabled.", 0: null, 0: "US_BANK_ACCOUNT_BANK_LOGIN_NOT_ENABLED", type: globalResult.types.UNKNOWN };
+      const obj15 = { 0: "Bank login is not enabled.", 0: null, 0: "VAULT_MANAGER_DELETE_PAYMENT_METHOD_NONCE_REQUIRES_CLIENT_TOKEN", type: globalResult.types.MERCHANT };
+      const obj16 = { 0: "A client token with a customer id must be used to delete a payment method nonce.", 0: "mutation DeletePaymentMethodFromSingleUseToken($input: DeletePaymentMethodFromSingleUseTokenInput!) {  deletePaymentMethodFromSingleUseToken(input: $input) {    clientMutationId  }}", 0: null, type: globalResult.types.CUSTOMER };
+      const obj18 = { 0: true, 0: true, 0: true, type: globalResult.types.UNKNOWN };
+      const obj19 = { 0: 5, 0: 2, 0: 0, type: globalResult.types.MERCHANT };
+      const obj20 = { 0: true, 0: true, 0: true, type: globalResult.types.INTERNAL };
+      const obj23 = { 0: 65536000, 0: 943915008, 0: 838861241, type: globalResult.types.MERCHANT };
+      module.exports = { THREEDS_NOT_ENABLED: obj, THREEDS_CAN_NOT_USE_TOKENIZATION_KEY: obj, THREEDS_HTTPS_REQUIRED: obj, THREEDS_NOT_ENABLED_FOR_V2: obj1, THREEDS_UNRECOGNIZED_VERSION: { type: globalResult.types.MERCHANT, code: "THREEDS_UNRECOGNIZED_VERSION" }, THREEDS_CARDINAL_SDK_SETUP_FAILED: obj3, THREEDS_CARDINAL_SDK_SCRIPT_LOAD_FAILED: { type: globalResult.types.NETWORK }, THREEDS_CARDINAL_SDK_SETUP_TIMEDOUT: obj5, THREEDS_CARDINAL_SDK_RESPONSE_TIMEDOUT: { type: globalResult.types.UNKNOWN }, THREEDS_CARDINAL_SDK_BAD_CONFIG: obj7, THREEDS_CARDINAL_SDK_BAD_JWT: obj8, THREEDS_CARDINAL_SDK_ERROR: obj9, THREEDS_CARDINAL_SDK_CANCELED: obj10, THREEDS_VERIFY_CARD_CANCELED_BY_MERCHANT: obj11, THREEDS_AUTHENTICATION_IN_PROGRESS: obj12, THREEDS_MISSING_VERIFY_CARD_OPTION: { type: globalResult.types.MERCHANT, code: "THREEDS_MISSING_VERIFY_CARD_OPTION" }, THREEDS_JWT_AUTHENTICATION_FAILED: obj14, THREEDS_LOOKUP_TOKENIZED_CARD_NOT_FOUND_ERROR: obj15, THREEDS_LOOKUP_VALIDATION_ERROR: obj16, THREEDS_LOOKUP_ERROR: { type: globalResult.types.UNKNOWN }, THREEDS_INLINE_IFRAME_DETAILS_INCORRECT: obj18, THREEDS_NO_VERIFICATION_PAYLOAD: obj19, THREEDS_TERM_URL_REQUIRES_BRAINTREE_DOMAIN: obj20, THREEDS_FRAMEWORK_METHOD_NOT_IMPLEMENTED: { type: globalResult.types.INTERNAL }, THREEDS_REQUESTED_EXEMPTION_TYPE_INVALID: { type: globalResult.types.MERCHANT }, THREEDS_UNSUPPORTED_VERSION: obj23 };
     },
     { ../../lib/braintree-error: 143 }
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = global("../../lib/enumerate")(["+1 345"], "threedsecure:");
+      module.exports = global("../../lib/enumerate")(["+238"], "threedsecure:");
     },
     { ../../lib/enumerate: 153 }
   ];
@@ -14299,29 +14307,21 @@ const fn = () => {
         VERSION: "3.112.1"
       };
     },
-    { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, <string:2437386343>: true, <string:1717136993>: true, <string:2307925892>: true, <string:1028231033>: true, <string:2028229464>: true }
+    { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }
   ];
   items = [
     (arg0, arg1, arg2) => {
-      module.exports = { events: global("../../lib/enumerate")(["+236", "+235", "+56"], "union-pay:"), HOSTED_FIELDS_FRAME_NAME: "braintreeunionpayhostedfields" };
+      module.exports = { events: global("../../lib/enumerate")(["+1 345", "+236", "+235"], "union-pay:"), HOSTED_FIELDS_FRAME_NAME: "braintreeunionpayhostedfields" };
     },
     { ../../lib/enumerate: 153 }
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { type: globalResult.types.MERCHANT };
-      obj = { type: globalResult.types.MERCHANT };
-      obj = { type: globalResult.types.MERCHANT };
-      const obj1 = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.MERCHANT };
-      const obj2 = { placeholder: -30815656131510185000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, live-guild-stage: 52283936.12500439, guild-event: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000265886814988778, type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: "r", live-guild-stage: "isArray", guild-event: "Array", type: globalResult.types.MERCHANT };
-      const obj4 = { placeholder: false, live-guild-stage: false, guild-event: false, type: globalResult.types.CUSTOMER };
-      const obj5 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.NETWORK };
-      const obj6 = { placeholder: false, live-guild-stage: false, guild-event: false, type: globalResult.types.NETWORK };
-      const obj7 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.NETWORK };
-      const obj8 = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.MERCHANT };
-      module.exports = { UNIONPAY_NOT_ENABLED: obj, UNIONPAY_HOSTED_FIELDS_INSTANCE_INVALID: obj, UNIONPAY_HOSTED_FIELDS_INSTANCE_REQUIRED: obj, UNIONPAY_CARD_OR_HOSTED_FIELDS_INSTANCE_REQUIRED: obj1, UNIONPAY_CARD_AND_HOSTED_FIELDS_INSTANCES: obj2, UNIONPAY_EXPIRATION_DATE_INCOMPLETE: obj3, UNIONPAY_ENROLLMENT_CUSTOMER_INPUT_INVALID: obj4, UNIONPAY_ENROLLMENT_NETWORK_ERROR: obj5, UNIONPAY_FETCH_CAPABILITIES_NETWORK_ERROR: obj6, UNIONPAY_TOKENIZATION_NETWORK_ERROR: obj7, UNIONPAY_MISSING_MOBILE_PHONE_DATA: obj8, UNIONPAY_FAILED_TOKENIZATION: { type: globalResult.types.CUSTOMER } };
+      let obj = { 0: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004200439186583502, 0: 12847752.031250622, 0: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008781772717038859, type: globalResult.types.MERCHANT };
+      obj = { 0: "<string:1359020033>", 0: "<string:3007408257>", 0: "<string:16777806>", type: globalResult.types.MERCHANT };
+      obj = { 0: "<string:1359020034>", 0: "<string:1447135516>", 0: "<string:16777526>", type: globalResult.types.MERCHANT };
+      module.exports = { UNIONPAY_NOT_ENABLED: obj, UNIONPAY_HOSTED_FIELDS_INSTANCE_INVALID: obj, UNIONPAY_HOSTED_FIELDS_INSTANCE_REQUIRED: obj, UNIONPAY_CARD_OR_HOSTED_FIELDS_INSTANCE_REQUIRED: { type: globalResult.types.MERCHANT }, UNIONPAY_CARD_AND_HOSTED_FIELDS_INSTANCES: { type: globalResult.types.MERCHANT }, UNIONPAY_EXPIRATION_DATE_INCOMPLETE: { type: globalResult.types.MERCHANT }, UNIONPAY_ENROLLMENT_CUSTOMER_INPUT_INVALID: { type: globalResult.types.CUSTOMER }, UNIONPAY_ENROLLMENT_NETWORK_ERROR: { type: globalResult.types.NETWORK }, UNIONPAY_FETCH_CAPABILITIES_NETWORK_ERROR: { type: globalResult.types.NETWORK }, UNIONPAY_TOKENIZATION_NETWORK_ERROR: { type: globalResult.types.NETWORK }, UNIONPAY_MISSING_MOBILE_PHONE_DATA: { type: globalResult.types.MERCHANT }, UNIONPAY_FAILED_TOKENIZATION: { type: globalResult.types.CUSTOMER } };
     },
     { ../../lib/braintree-error: 143 }
   ];
@@ -14359,7 +14359,7 @@ const fn = () => {
             return rejectResult;
           }
           if (number) {
-            obj = { 0: "VENMO_DESKTOP_UNKNOWN_ERROR", 0: "Something went wrong with the Venmo Desktop flow." };
+            obj = { variant: 19783745, border: 1028718848 };
             obj = {};
             obj1 = {};
             str = "unionpay";
@@ -14517,7 +14517,7 @@ const fn = () => {
                     tmp21 = tmp20;
                     return Promise.reject(tmp20);
                   }
-                  obj2 = {};
+                  obj2 = { variant: "VENMO_MOBILE_POLLING_TOKENIZATION_NETWORK_ERROR", border: "Something went wrong during mobile polling." };
                   obj2.data = obj;
                   requestResult = client.request(obj2);
                   nextPromise = requestResult.then((enrollmentId) => {
@@ -14620,7 +14620,7 @@ const fn = () => {
             if (global.card.cvv) {
               obj.creditCard.cvv = global.card.cvv;
             }
-            obj4 = {};
+            obj4 = { variant: null, border: "VENMO_MOBILE_POLLING_TOKENIZATION_EXPIRED" };
             obj4.data = obj;
             requestResult = client.request(obj4);
             nextPromise = requestResult.then((arg0) => {
@@ -14770,14 +14770,13 @@ const fn = () => {
       const globalResult = global("../lib/braintree-error");
       let obj = { type: globalResult.types.MERCHANT, code: "US_BANK_ACCOUNT_OPTION_REQUIRED" };
       obj = { type: globalResult.types.MERCHANT, code: "US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS" };
-      obj = { placeholder: 22002241, live-guild-stage: -733871872, guild-event: -570424251, type: globalResult.types.NETWORK };
-      const obj1 = { placeholder: "<string:1776156676>", live-guild-stage: "<string:1359020033>", guild-event: "<string:1346468979>", type: globalResult.types.CUSTOMER };
-      const obj2 = { placeholder: 709902716, live-guild-stage: 1359020033, guild-event: -1975439769, type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: "IconComponent", live-guild-stage: "Text", guild-event: "duration", type: globalResult.types.NETWORK };
-      const obj4 = { placeholder: -1124072344, live-guild-stage: true, guild-event: true, type: globalResult.types.CUSTOMER };
-      const obj5 = { placeholder: "VENMO_INVALID_PROFILE_ID", live-guild-stage: "Venmo profile ID is invalid.", guild-event: null, type: globalResult.types.MERCHANT };
-      const obj6 = { placeholder: "VENMO_INVALID_DEEP_LINK_RETURN_URL", live-guild-stage: "Venmo deep link return URL is invalid.", guild-event: null, type: globalResult.types.MERCHANT };
-      module.exports = { US_BANK_ACCOUNT_OPTION_REQUIRED: obj, US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS: obj, US_BANK_ACCOUNT_LOGIN_LOAD_FAILED: obj, US_BANK_ACCOUNT_LOGIN_CLOSED: obj1, US_BANK_ACCOUNT_LOGIN_REQUEST_ACTIVE: obj2, US_BANK_ACCOUNT_TOKENIZATION_NETWORK_ERROR: obj3, US_BANK_ACCOUNT_FAILED_TOKENIZATION: obj4, US_BANK_ACCOUNT_NOT_ENABLED: obj5, US_BANK_ACCOUNT_BANK_LOGIN_NOT_ENABLED: obj6 };
+      obj = { type: globalResult.types.NETWORK };
+      const obj1 = { 0: "The Venmo authorization was canceled", 0: null, 0: "VENMO_MOBILE_POLLING_TOKENIZATION_TIMEOUT", type: globalResult.types.CUSTOMER };
+      const obj2 = { 0: "Customer took too long to authorize Venmo payment.", 0: null, 0: "VENMO_MOBILE_POLLING_TOKENIZATION_FAILED", type: globalResult.types.MERCHANT };
+      const obj3 = { 0: null, 0: null, 0: null, type: globalResult.types.NETWORK };
+      const obj5 = { 0: "compositeInstanceId", 0: "Float64Array", 0: "isArrayBuffer", type: globalResult.types.MERCHANT };
+      const obj6 = { 0: null, 0: null, 0: null, type: globalResult.types.MERCHANT };
+      module.exports = { US_BANK_ACCOUNT_OPTION_REQUIRED: obj, US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS: obj, US_BANK_ACCOUNT_LOGIN_LOAD_FAILED: obj, US_BANK_ACCOUNT_LOGIN_CLOSED: obj1, US_BANK_ACCOUNT_LOGIN_REQUEST_ACTIVE: obj2, US_BANK_ACCOUNT_TOKENIZATION_NETWORK_ERROR: obj3, US_BANK_ACCOUNT_FAILED_TOKENIZATION: { type: globalResult.types.CUSTOMER }, US_BANK_ACCOUNT_NOT_ENABLED: obj5, US_BANK_ACCOUNT_BANK_LOGIN_NOT_ENABLED: obj6 };
     },
     { ../lib/braintree-error: 143 }
   ];
@@ -14811,7 +14810,7 @@ const fn = () => {
         VERSION: "3.112.1"
       };
     },
-    { scrolling: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002848094544824175, minified: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003075942108207193, unminified: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035316372345355675, id: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004101256148732448, module: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004556951275113873, call: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006675221577529107, id: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004576713829021219 }
+    { ../lib/json-clone: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002848094544824175, ../lib/methods: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003075942108207193, ./errors: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035316372345355675, @braintree/wrap-promise: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004101256148732448, src: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004556951275113873, frameBorder: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006675221577529107, allowtransparency: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004576713829021219 }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -15151,7 +15150,7 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../lib/braintree-error");
-      let obj = { placeholder: "VENMO_TOKENIZATION_FAILED", live-guild-stage: "Venmo encountered a problem", guild-event: null, type: globalResult.types.MERCHANT };
+      let obj = { 0: "Array", 0: "isArray", 0: "<string:16777534>", type: globalResult.types.MERCHANT };
       obj = { type: globalResult.types.MERCHANT, code: "VAULT_MANAGER_PAYMENT_METHOD_NONCE_NOT_FOUND" };
       obj = { type: globalResult.types.UNKNOWN, code: "VAULT_MANAGER_DELETE_PAYMENT_METHOD_UNKNOWN_ERROR" };
       module.exports = { VAULT_MANAGER_DELETE_PAYMENT_METHOD_NONCE_REQUIRES_CLIENT_TOKEN: obj, VAULT_MANAGER_PAYMENT_METHOD_NONCE_NOT_FOUND: obj, VAULT_MANAGER_DELETE_PAYMENT_METHOD_UNKNOWN_ERROR: obj };
@@ -15199,10 +15198,8 @@ const fn = () => {
           closure_0 = num;
           _createPromise = self._createPromise;
           nextPromise = _createPromise.then((request) => {
-            let obj = { month: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013394127751764505, dayOfYear: 20206864.062501427 };
-            obj = { defaultFirst: num };
-            obj.data = obj;
-            return request.request(obj);
+            const data = { defaultFirst: num };
+            return request.request({ data });
           });
           fn = function(paymentMethods) {
             num.sendEvent(this._createPromise, "vault-manager.fetch-payment-methods.succeeded");
@@ -15217,7 +15214,7 @@ const fn = () => {
           return _createPromise.then((getConfiguration) => {
             if ("CLIENT_TOKEN" === getConfiguration.getConfiguration().authorizationType) {
               let obj = { api: "graphQLApi" };
-              obj = {};
+              obj = { <string:18753008>: "done", <string:19398656>: "Text", <string:20054016>: "s" };
               obj = {};
               const obj1 = { singleUseTokenId: getConfiguration };
               obj.input = obj1;
@@ -15809,7 +15806,7 @@ const fn = () => {
         VERSION: "3.112.1"
       };
     },
-    {}
+    { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -15876,7 +15873,7 @@ const fn = () => {
         }
       };
     },
-    {}
+    { VISA: "hcf", MASTERCARD: "hostedFields", DISCOVER: "visa", AMERICAN_EXPRESS: "mastercard", INTERNATIONAL_MAESTRO: "american-express", ELO: "diners-club" }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -15887,23 +15884,22 @@ const fn = () => {
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../../lib/braintree-error");
-      let obj = { placeholder: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032007272748454555, live-guild-stage: 8364225937081637000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, guild-event: 49691156643452330000000000000000000000000000000000, type: globalResult.types.MERCHANT };
+      let obj = { 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011814704759009063, 0: -145247292355073460000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022864614961753887, type: globalResult.types.MERCHANT };
       obj = { type: globalResult.types.MERCHANT };
-      obj = { placeholder: false, live-guild-stage: false, guild-event: false, type: globalResult.types.MERCHANT };
-      const obj3 = { placeholder: "+213", live-guild-stage: "American Samoa", guild-event: "AS", type: globalResult.types.CUSTOMER };
-      const obj5 = { placeholder: "Andorra", live-guild-stage: "AD", guild-event: "+376", type: globalResult.types.NETWORK };
-      const obj6 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.CUSTOMER };
-      const obj7 = { placeholder: "AO", live-guild-stage: "+244", guild-event: "Anguilla", type: globalResult.types.MERCHANT };
-      const obj8 = { placeholder: null, live-guild-stage: null, guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj9 = { placeholder: true, live-guild-stage: true, guild-event: true, type: globalResult.types.NETWORK };
-      const obj10 = { placeholder: "CONTACT_SYNC_MODAL", live-guild-stage: "initialStack", guild-event: "Array", type: globalResult.types.UNKNOWN };
-      const obj11 = { placeholder: "r", live-guild-stage: "GRADIENT_EASING_CONFIG", guild-event: "fr-NE", type: globalResult.types.CUSTOMER };
-      const obj13 = { placeholder: "+374", live-guild-stage: "Aruba", guild-event: "AW", type: globalResult.types.CUSTOMER };
-      const obj15 = { placeholder: 1358954801, live-guild-stage: -1186918205, guild-event: 1090519628, type: globalResult.types.MERCHANT };
-      const obj16 = { placeholder: "<string:3074490370>", live-guild-stage: "<string:1358954906>", guild-event: "<string:4181791570>", type: globalResult.types.MERCHANT };
-      const obj17 = { placeholder: "CONSOLE_STATUS_HEIGHT", live-guild-stage: "tab", guild-event: null, type: globalResult.types.UNKNOWN };
-      const obj18 = { placeholder: "<string:1100080420>", live-guild-stage: "Austria", guild-event: "<string:1091615569>", type: globalResult.types.MERCHANT };
-      module.exports = { VENMO_NOT_ENABLED: obj, VENMO_TOKENIZATION_REQUEST_ACTIVE: obj, VENMO_TOKENIZATION_REQUEST_NOT_ACTIVE: obj, VENMO_APP_FAILED: { type: globalResult.types.UNKNOWN }, VENMO_APP_CANCELED: { type: globalResult.types.CUSTOMER }, VENMO_CANCELED: obj3, VENMO_CUSTOMER_CANCELED: { type: globalResult.types.CUSTOMER }, VENMO_NETWORK_ERROR: obj5, VENMO_DESKTOP_CANCELED: obj6, VENMO_TOKENIZATION_CANCELED_BY_MERCHANT: obj7, VENMO_DESKTOP_UNKNOWN_ERROR: obj8, VENMO_MOBILE_PAYMENT_CONTEXT_SETUP_FAILED: obj9, VENMO_MOBILE_POLLING_TOKENIZATION_NETWORK_ERROR: obj10, VENMO_MOBILE_POLLING_TOKENIZATION_EXPIRED: obj11, VENMO_MOBILE_POLLING_TOKENIZATION_CANCELED: { type: globalResult.types.CUSTOMER }, VENMO_MOBILE_POLLING_TOKENIZATION_TIMEOUT: obj13, VENMO_MOBILE_POLLING_TOKENIZATION_FAILED: { type: globalResult.types.UNKNOWN }, VENMO_INVALID_PROFILE_ID: obj15, VENMO_INVALID_DEEP_LINK_RETURN_URL: obj16, VENMO_TOKENIZATION_FAILED: obj17, VENMO_ECD_DISABLED: obj18 };
+      obj = { 0: false, 0: false, 0: false, type: globalResult.types.MERCHANT };
+      const obj3 = { 0: "+213", 0: "American Samoa", 0: "AS", type: globalResult.types.CUSTOMER };
+      const obj5 = { 0: "Andorra", 0: "AD", 0: "+376", type: globalResult.types.NETWORK };
+      const obj6 = { 0: "r", 0: "isArray", 0: "Text", type: globalResult.types.CUSTOMER };
+      const obj7 = { 0: "AO", 0: "+244", 0: "Anguilla", type: globalResult.types.MERCHANT };
+      const obj8 = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004498894535020292, 0: 15181482967902643000000000000000000000000000000000000000000000000000000000000000000, 0: 131130.40442111786, type: globalResult.types.UNKNOWN };
+      const obj9 = { 0: true, 0: true, 0: true, type: globalResult.types.NETWORK };
+      const obj10 = { 0: true, 0: true, 0: true, type: globalResult.types.UNKNOWN };
+      const obj11 = { 0: "r", 0: "appVersionSettings", 0: "SETTINGS_PREMIUM_MANAGE_PLAN", type: globalResult.types.CUSTOMER };
+      const obj13 = { 0: "+54", 0: null, 0: "es-AR", type: globalResult.types.CUSTOMER };
+      const obj14 = { 0: 257, 0: null, 0: 1, type: globalResult.types.UNKNOWN };
+      const obj16 = { 0: "+374", 0: "Aruba", 0: "AW", type: globalResult.types.MERCHANT };
+      const obj18 = { 0: "Ascension", 0: "AC", 0: "+247", type: globalResult.types.MERCHANT };
+      module.exports = { VENMO_NOT_ENABLED: obj, VENMO_TOKENIZATION_REQUEST_ACTIVE: obj, VENMO_TOKENIZATION_REQUEST_NOT_ACTIVE: obj, VENMO_APP_FAILED: { type: globalResult.types.UNKNOWN }, VENMO_APP_CANCELED: { type: globalResult.types.CUSTOMER }, VENMO_CANCELED: obj3, VENMO_CUSTOMER_CANCELED: { type: globalResult.types.CUSTOMER }, VENMO_NETWORK_ERROR: obj5, VENMO_DESKTOP_CANCELED: obj6, VENMO_TOKENIZATION_CANCELED_BY_MERCHANT: obj7, VENMO_DESKTOP_UNKNOWN_ERROR: obj8, VENMO_MOBILE_PAYMENT_CONTEXT_SETUP_FAILED: obj9, VENMO_MOBILE_POLLING_TOKENIZATION_NETWORK_ERROR: obj10, VENMO_MOBILE_POLLING_TOKENIZATION_EXPIRED: obj11, VENMO_MOBILE_POLLING_TOKENIZATION_CANCELED: { type: globalResult.types.CUSTOMER }, VENMO_MOBILE_POLLING_TOKENIZATION_TIMEOUT: obj13, VENMO_MOBILE_POLLING_TOKENIZATION_FAILED: obj14, VENMO_INVALID_PROFILE_ID: { type: globalResult.types.MERCHANT }, VENMO_INVALID_DEEP_LINK_RETURN_URL: obj16, VENMO_TOKENIZATION_FAILED: { type: globalResult.types.UNKNOWN }, VENMO_ECD_DISABLED: obj18 };
     },
     { ../../lib/braintree-error: 143 }
   ];
@@ -16007,7 +16003,7 @@ const fn = () => {
         }
       };
     },
-    {}
+    { "Bool(true)": false, "Bool(true)": false }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -16149,7 +16145,7 @@ const fn = () => {
         POPUP_HEIGHT: 570
       };
     },
-    {}
+    { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }
   ];
   items = [
     (arg0, arg1, arg2) => {
@@ -17101,16 +17097,15 @@ const fn = () => {
       globalResult1.suppressUnhandledPromiseMessage = true;
       module.exports = global("@braintree/wrap-promise").wrapPrototype(Venmo);
     },
-    { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006086695779856985, "Bool(false)": 5617988.000260661, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002897671965886611, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006239241862261386, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000012366376085466472, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010197978816486513, "Bool(false)": 0.0000000000000000000000562484893769025, "Bool(false)": 3256565336949607000000000000000000000000000000000000000, "Bool(false)": 4621992662091949000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 131216.26123050135, "Bool(false)": 4366004125744.1357, "Bool(false)": "<string:1712193537>", "Bool(false)": "<string:3460431876>", "Bool(false)": "<string:251658583>", "Bool(false)": "<string:1090520166>", AMERICAN_EXPRESS: "clientApi", DINERS: "<string:4215379297>", DISCOVER: "<string:1090519429>", ELO: "payment_methods/paypal_accounts" }
+    { "Bool(false)": "American Express", "Bool(false)": "Discover", "Bool(false)": "Discover", "Bool(false)": "Elo", "Bool(false)": "Hiper", "Bool(false)": "Hipercard", "Bool(false)": "Maestro", "Bool(false)": "JCB", "Bool(false)": "MasterCard", "Bool(false)": "Maestro", "Bool(false)": "UnionPay", "Bool(false)": "Visa", "Bool(false)": "visa", "Bool(false)": "Mastercard", "Bool(false)": "mastercard", "Bool(false)": "American Express", "Bool(false)": "american-express", "Bool(false)": "Diners Club", "Bool(false)": "diners-club" }
   ];
   items = [
     (arg0, arg1, arg2) => {
       const globalResult = global("../lib/braintree-error");
-      let obj = { placeholder: 21533591574028651000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, live-guild-stage: 0.0000000000000000000000000000000000000000000000000000000000000000000000014329465194136353, guild-event: 15182289950563622000000000000000000000000000000000000000000000000000000000000000000, type: globalResult.types.MERCHANT };
-      obj = { placeholder: "r", live-guild-stage: "topCriticRatingCount", guild-event: "INVITES_HELP", type: globalResult.types.MERCHANT };
-      obj = { type: globalResult.types.MERCHANT };
-      const obj1 = { placeholder: "Bahrain", live-guild-stage: "BH", guild-event: "+973", type: globalResult.types.NETWORK };
-      module.exports = { VISA_CHECKOUT_NOT_ENABLED: obj, VISA_CHECKOUT_INIT_OPTIONS_REQUIRED: obj, VISA_CHECKOUT_PAYMENT_REQUIRED: obj, VISA_CHECKOUT_TOKENIZATION: obj1 };
+      let obj = { 0: "<string:1128333314>", 0: "<string:1358954852>", 0: "<string:2520847207>", type: globalResult.types.MERCHANT };
+      obj = { 0: "forEach", 0: "Text", 0: "getChannel", type: globalResult.types.MERCHANT };
+      obj = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017534271222175898, 0: 15185869441369098000000000000000000000000000000000000000000000000000000000000000000, 0: 131106.5938742092, type: globalResult.types.MERCHANT };
+      module.exports = { VISA_CHECKOUT_NOT_ENABLED: obj, VISA_CHECKOUT_INIT_OPTIONS_REQUIRED: obj, VISA_CHECKOUT_PAYMENT_REQUIRED: obj, VISA_CHECKOUT_TOKENIZATION: { type: globalResult.types.NETWORK } };
     },
     { ../lib/braintree-error: 143 }
   ];
@@ -17202,7 +17197,7 @@ const fn = () => {
             if (global.encKey) {
               if (global.encPaymentData) {
                 _client = tmp._client;
-                obj = { 0: "+880", 0: "Barbados" };
+                obj = { variant: "REMOTE_SESSION_DISCONNECT", border: "trolleybus" };
                 obj = {};
                 obj1 = {};
                 str = "visa-checkout";
@@ -17242,10 +17237,10 @@ const fn = () => {
       let closure_3 = global("../lib/json-clone");
       let closure_4 = global("../lib/methods");
       let closure_5 = global("../lib/convert-methods-to-error");
-      let closure_6 = {};
+      let closure_6 = { paddingVertical: true, paddingHorizontal: true, paddingTop: true, position: true };
       module.exports = global("@braintree/wrap-promise").wrapPrototype(VisaCheckout);
     },
-    { 1092507985: "get", 303816: "payment_methods/amex_rewards_balance", -334195117: "payment_methods/paypal_accounts", 1126243613: "post", 277906: "apple_pay_web/sessions", 277751: "payment_methods/masterpass_cards", 275362: "post" }
+    { active: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001805675533993879, hoverIndex: 2124555433158668400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, updateSubscriptionsSettings: 1758045309633116600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, MAX_DAYS_AHEAD_AN_EVENT_CAN_END: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004039825116773627, VERY_HIGH: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006308011027678812, executeSync: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004001304311200235, y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400128312409746 }
   ];
   return fn({ [1]: items, [2]: items1, [3]: items2, [4]: items3, [5]: items4, [6]: items5, [7]: items6, [8]: items7, [9]: items8, [10]: items9, [11]: items10, [12]: items11, [13]: items12, [14]: items13, [15]: items14, [16]: items15, [17]: items16, [18]: items17, [19]: items18, [20]: items19, [21]: items20, [22]: items21, [23]: items22, [24]: items23, [25]: items24, [26]: items25, [27]: items26, [28]: items27, [29]: items28, [30]: items29, [31]: items30, [32]: items31, [33]: items32, [34]: items33, [35]: items34, [36]: items35, [37]: items36, [38]: items37, [39]: items38, [40]: items39, [41]: items40, [42]: items41, [43]: items42, [44]: items43, [45]: items44, [46]: items45, [47]: items46, [48]: items47, [49]: items48, [50]: items49, [51]: items50, [52]: items51, [53]: items52, [54]: items53, [55]: items54, [56]: items55, [57]: items56, [58]: items57, [59]: items58, [60]: items59, [61]: items60, [62]: items61, [63]: items62, [64]: items63, [65]: items64, [66]: items65, [67]: items66, [68]: items67, [69]: items68, [70]: items69, [71]: items70, [72]: items71, [73]: items72, [74]: items73, [75]: items74, [76]: items75, [77]: items76, [78]: items77, [79]: items78, [80]: items79, [81]: items80, [82]: items81, [83]: items82, [84]: items83, [85]: items84, [86]: items85, [87]: items86, [88]: items87, [89]: items88, [90]: items89, [91]: items90, [92]: items91, [93]: items92, [94]: items93, [95]: items94, [96]: items95, [97]: items96, [98]: items97, [99]: items98, [100]: items, [101]: items, [102]: items, [103]: items, [104]: items, [105]: items, [106]: items, [107]: items, [108]: items, [109]: items, [110]: items, [111]: items, [112]: items, [113]: items, [114]: items, [115]: items, [116]: items, [117]: items, [118]: items, [119]: items, [120]: items, [121]: items, [122]: items, [123]: items, [124]: items, [125]: items, [126]: items, [127]: items, [128]: items, [129]: items, [130]: items, [131]: items, [132]: items, [133]: items, [134]: items, [135]: items, [136]: items, [137]: items, [138]: items, [139]: items, [140]: items, [141]: items, [142]: items, [143]: items, [144]: items, [145]: items, [146]: items, [147]: items, [148]: items, [149]: items, [150]: items, [151]: items, [152]: items, [153]: items, [154]: items, [155]: items, [156]: items, [157]: items, [158]: items, [159]: items, [160]: items, [161]: items, [162]: items, [163]: items, [164]: items, [165]: items, [166]: items, [167]: items, [168]: items, [169]: items, [170]: items, [171]: items, [172]: items, [173]: items, [174]: items, [175]: items, [176]: items, [177]: items, [178]: items, [179]: items, [180]: items, [181]: items, [182]: items, [183]: items, [184]: items, [185]: items, [186]: items, [187]: items, [188]: items, [189]: items, [190]: items, [191]: items, [192]: items, [193]: items, [194]: items, [195]: items, [196]: items, [197]: items, [198]: items, [199]: items, [200]: items, [201]: items, [202]: items, [203]: items, [204]: items, [205]: items, [206]: items, [207]: items, [208]: items, [209]: items, [210]: items, [211]: items, [212]: items, [213]: items, [214]: items, [215]: items, [216]: items, [217]: items, [218]: items, [219]: items, [220]: items, [221]: items, [222]: items, [223]: items, [224]: items, [225]: items, [226]: items, [227]: items, [228]: items, [229]: items, [230]: items, [231]: items, [232]: items, [233]: items, [234]: items, [235]: items, [236]: items, [237]: items, [238]: items, [239]: items, [240]: items, [241]: items, [242]: items, [243]: items, [244]: items, [245]: items, [246]: items, [247]: items, [248]: items }, {}, [])(136);
 };

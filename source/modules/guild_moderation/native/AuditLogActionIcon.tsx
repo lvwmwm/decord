@@ -1,10 +1,10 @@
-// Module ID: 16112
-// Function ID: 124251
+// Module ID: 16120
+// Function ID: 124293
 // Name: AuditIcons
 // Dependencies: []
 // Exports: default
 
-// Module 16112 (AuditIcons)
+// Module 16120 (AuditIcons)
 let APPLICATION_COMMAND;
 let AUTO_MODERATION_RULE;
 let AuditLogTargetTypes;
@@ -71,7 +71,7 @@ const tmp4 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { actionImageContainer: {} };
-obj = { marginStart: "Array", textAlignVertical: "isArray", flex: "key", marginVertical: "Text", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "Text", "Bool(false)": "loadJsonAsset", borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.actionImageOverlay = obj;
 obj.iconComponent = {};
 obj.actionImage = { position: "absolute" };

@@ -1,10 +1,10 @@
-// Module ID: 15370
-// Function ID: 117082
+// Module ID: 15378
+// Function ID: 117125
 // Name: styles
 // Dependencies: []
 // Exports: getChannelSettingsScreens
 
-// Module 15370 (styles)
+// Module 15378 (styles)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ ChannelSettingsSections: closure_4, SearchTypes: closure_5, WebhookTypes: closure_6 } = arg1(dependencyMap[2]));

@@ -1,18 +1,10 @@
 // Module ID: 7888
-// Function ID: 62808
+// Function ID: 62818
 // Name: GridAvatar
-// Dependencies: [22, 7899, 4126, 689, 7629, 5444, 5504, 1395, 2, 4325, 7900]
+// Dependencies: []
 // Exports: default
 
 // Module 7888 (GridAvatar)
-import "apply";
-import { View } from "normal";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import frozen from "frozen";
-import module_5444 from "module_5444";
-import PollLayoutTypes from "PollLayoutTypes";
-
 function GridAvatar(user) {
   let guildId;
   let pendingAvatarDecoration;
@@ -27,7 +19,7 @@ function GridAvatar(user) {
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus(user.id));
   let obj1 = arg1(dependencyMap[7]);
-  const items1 = [_createForOfIteratorHelperLoose];
+  const items1 = [closure_3];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   obj = {};
   if (undefined === pendingAvatarDecoration) {
@@ -39,7 +31,7 @@ function GridAvatar(user) {
     tmp4 = stateFromStores;
   }
   obj.status = tmp4;
-  obj.statusStyle = module_5444().avatarStatusStyle;
+  obj.statusStyle = callback3().avatarStatusStyle;
   obj.size = size;
   if (undefined !== pendingAvatarSrc) {
     obj = {};
@@ -53,16 +45,22 @@ function GridAvatar(user) {
   }
   return closure_5(arg1(dependencyMap[8]).Avatar, obj1);
 }
-({ jsx: closure_5, jsxs: closure_6 } = frozen);
-module_5444 = { avatarRow: {} };
-module_5444 = { backgroundColor: require("module_5504").colors.BACKGROUND_SURFACE_HIGH };
-module_5444.avatarStatusStyle = module_5444;
-module_5444.gridContainer = { -2146320533: "FrameEffect_01-2_Out", 1244786459: 0, -871786476: 149.75, -2045645503: 3 };
-module_5444 = module_5444.createStyles(module_5444);
-const result = PollLayoutTypes.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarGrid.tsx");
+importAll(dependencyMap[0]);
+const View = arg1(dependencyMap[1]).View;
+let closure_3 = importDefault(dependencyMap[2]);
+let closure_4 = importDefault(dependencyMap[3]);
+({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[4]));
+let obj = arg1(dependencyMap[5]);
+obj = { avatarRow: { 9223372036854775807: "<string:2940442816>", 9223372036854775807: "<string:1577058573>", 0: "<string:1577059357>" } };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj.avatarStatusStyle = obj;
+obj.gridContainer = { REMEDIATION_ELEMENT_TYPES: "FrameEffect_01-2_Out", "Null": 0, "Null": 149.75, "Null": 3 };
+let closure_7 = obj.createStyles(obj);
+const tmp3 = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarGrid.tsx");
 
 export default function AvatarGrid(arg0) {
-  const tmp = module_5444();
+  const tmp = callback3();
   let obj = { style: tmp.gridContainer };
   obj = { style: tmp.avatarRow };
   obj = { size: arg1(dependencyMap[8]).AvatarSizes.NORMAL };

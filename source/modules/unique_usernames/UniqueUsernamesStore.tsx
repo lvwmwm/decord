@@ -1,9 +1,9 @@
-// Module ID: 13544
-// Function ID: 102747
+// Module ID: 13551
+// Function ID: 102780
 // Name: _isNativeReflectConstruct
 // Dependencies: [31, 27, 7656, 653, 33, 4126, 689, 7530, 1920, 4124]
 
-// Module 13544 (_isNativeReflectConstruct)
+// Module 13551 (_isNativeReflectConstruct)
 import module_31 from "module_31";
 import getActivityIndicator from "get ActivityIndicator";
 import MobileSetting from "MobileSetting";
@@ -21,11 +21,11 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let obj = { "Null": null, "Null": 16, "Null": 5, error: undefined };
-obj = {};
+let obj = { guildInfoIcon: null, responsive: null, webhook_id: null, error: undefined };
+obj = { 1386241122: null, 39563001: null, 1677985361: null };
 importDefaultResult = new importDefaultResult({});
 obj.validations = importDefaultResult;
-obj = { "Bool(false)": "absolute", "Bool(false)": -1, "Bool(false)": -1, suggestion: { username: undefined } };
+obj = { "Bool(false)": "HTTP", "Bool(false)": "Date", "Bool(false)": "HTTP", suggestion: { username: undefined } };
 obj.suggestions = { migration: obj, registration: { suggestion: { username: undefined }, source: undefined, fetched: false } };
 let tmp4 = (Store) => {
   class UniqueUsernamesStore {
@@ -134,7 +134,7 @@ tmp4 = new tmp4(require("wrapURL"), {
     ({ username, error, retryAfter } = statusCode);
     if (429 === statusCode.statusCode) {
       let validations = obj.validations;
-      let obj = { "Null": null, "Null": 16, "Null": 5, error };
+      let obj = { guildInfoIcon: null, responsive: null, webhook_id: null, error };
       let num = 7;
       if (null != retryAfter) {
         num = retryAfter;
@@ -152,13 +152,13 @@ tmp4 = new tmp4(require("wrapURL"), {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    const obj = { "Bool(false)": "absolute", "Bool(false)": -1, "Bool(false)": -1, suggestion: { username: undefined } };
+    const obj = { "Bool(false)": "HTTP", "Bool(false)": "Date", "Bool(false)": "HTTP", suggestion: { username: undefined } };
     obj.suggestions.migration = obj;
     obj.suggestions.registration = { suggestion: { username: undefined }, source: undefined, fetched: false };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;
-    const obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, suggestion };
+    const obj = { "Bool(false)": 1567300603, "Bool(false)": 221342020, "Bool(false)": 822948183, suggestion };
     obj.suggestions.migration = obj;
     let prop;
     if (null != suggestion) {

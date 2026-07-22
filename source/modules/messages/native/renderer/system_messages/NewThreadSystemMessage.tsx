@@ -1,5 +1,5 @@
 // Module ID: 7692
-// Function ID: 61366
+// Function ID: 61376
 // Name: createNewThreadSystemMessage
 // Dependencies: []
 // Exports: createNewThreadSystemMessage
@@ -30,7 +30,7 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
     content = message.content;
   }
   obj.threadName = content;
-  const obj1 = {};
+  const obj1 = { workAccounts: true, personalAccounts: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", hashKey: null };
   const messageReference2 = message.messageReference;
   let channel_id1;
   if (null != messageReference2) {

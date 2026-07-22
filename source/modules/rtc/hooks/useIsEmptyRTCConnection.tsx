@@ -1,10 +1,10 @@
-// Module ID: 8911
-// Function ID: 70305
+// Module ID: 8912
+// Function ID: 70318
 // Name: isEmpty
 // Dependencies: [57, 31, 27, 33, 4126]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 8911 (isEmpty)
+// Module 8912 (isEmpty)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
 import getActivityIndicator from "get ActivityIndicator";

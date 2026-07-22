@@ -1,5 +1,5 @@
 // Module ID: 7833
-// Function ID: 62424
+// Function ID: 62434
 // Name: EditAvatarDecorationInner
 // Dependencies: []
 // Exports: default
@@ -157,12 +157,12 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
-const tmp2 = arg1(dependencyMap[7]);
-obj.title = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.avatarDisplayContainer = { <string:2505157206>: "ILLO_GREEN_50", <string:2583126653>: 0.25, <string:2036930899>: "ILLO_GREEN_50", <string:1628470960>: 0.3, <string:4140716519>: "ILLO_NITRO_BLUE" };
+obj.bounceOffset = { "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "flex-start", "Bool(false)": 40, "Bool(false)": null };
+const obj1 = { width: "isArray", height: "AGE_VERIFICATION_GET_STARTED_MODAL_KEY", pointerEvents: 28928, color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.title = obj1;
+obj.avatarDisplayContainer = {};
 let closure_13 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const tmp2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/user_profile/native/EditAvatarDecorationActionSheet.tsx");
 
 export default function EditAvatarDecorationActionSheet(arg0) {
@@ -206,7 +206,7 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   const obj2 = { scrollable: true, ref: obj3.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true };
   obj3 = { style: tmp.container };
   const items1 = [callback2(View, { style: tmp.bounceOffset }), , ];
-  const obj5 = { "Null": "<string:552206337>", "Null": "<string:621281281>", "Null": "<string:1643511809>", style: tmp.title };
+  const obj5 = { <string:3339517956>: "<string:567803905>", <string:3335454724>: "<string:631111681>", <string:2271412228>: "<string:1649868801>", style: tmp.title };
   const intl = arg1(dependencyMap[19]).intl;
   obj5.children = intl.string(arg1(dependencyMap[19]).t.HykynS);
   items1[1] = callback2(arg1(dependencyMap[18]).Text, obj5);

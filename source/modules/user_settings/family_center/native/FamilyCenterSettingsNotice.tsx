@@ -1,10 +1,10 @@
-// Module ID: 13598
-// Function ID: 103050
+// Module ID: 13605
+// Function ID: 103083
 // Name: FamilyCenterSettingsParentalControlsNotice
 // Dependencies: []
 // Exports: default
 
-// Module 13598 (FamilyCenterSettingsParentalControlsNotice)
+// Module 13605 (FamilyCenterSettingsParentalControlsNotice)
 importAll(dependencyMap[0]);
 const SafetySettingsNoticeType = arg1(dependencyMap[1]).SafetySettingsNoticeType;
 const jsx = arg1(dependencyMap[2]).jsx;

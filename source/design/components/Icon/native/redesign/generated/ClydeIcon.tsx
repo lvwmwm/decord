@@ -1,10 +1,10 @@
-// Module ID: 9734
-// Function ID: 75733
+// Module ID: 9735
+// Function ID: 75746
 // Name: ClydeIcon
 // Dependencies: []
 // Exports: ClydeIcon
 
-// Module 9734 (ClydeIcon)
+// Module 9735 (ClydeIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClydeIcon.tsx");

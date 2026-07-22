@@ -1,10 +1,10 @@
-// Module ID: 5696
-// Function ID: 49045
+// Module ID: 5695
+// Function ID: 49053
 // Name: getNumLurkedGuilds
 // Dependencies: []
 // Exports: trackGuildIconClicked, trackJoinClicked, trackLeavePromptLeaveClicked, trackLongPressLeaveClicked, trackLurkStarted
 
-// Module 5696 (getNumLurkedGuilds)
+// Module 5695 (getNumLurkedGuilds)
 function getNumLurkedGuilds() {
   return closure_2.lurkingGuildIds().length;
 }

@@ -1,10 +1,10 @@
-// Module ID: 10679
-// Function ID: 83242
+// Module ID: 10680
+// Function ID: 83255
 // Name: ApplicationStreamPresets
 // Dependencies: []
 // Exports: showMobileGoLiveActionSheet
 
-// Module 10679 (ApplicationStreamPresets)
+// Module 10680 (ApplicationStreamPresets)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -25,9 +25,9 @@ obj.wrapper = obj;
 obj.header = { textAlign: "center" };
 obj1 = { marginHorizontal: importDefault(dependencyMap[14]).space.PX_16 };
 obj.section = obj1;
-const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[14]).space.PX_4 };
+const obj2 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[14]).space.PX_4 };
 obj.highQualityLabel = obj2;
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { options: "100%", body: null, transform: null };
 let closure_17 = obj1.createStyles(obj);
 const items = [{ preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true }, , ];
 const obj4 = { preset: ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE };
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
     obj[getTableRadioRowConfig.PRESET_MOBILE_PERFORMANCE] = obj2;
     const obj3 = { icon: callback(user(callback[32]).ImageSparkleIcon, {}) };
     const obj4 = { style: tmp8.highQualityLabel };
-    const obj5 = {};
+    const obj5 = { cachedAt: false, edpbxy: 700 };
     const intl5 = user(callback[29]).intl;
     obj5.children = intl5.string(guildPremiumTier(callback[30]).nMcXo1);
     const items = [callback(user(callback[34]).Text, obj5), ];
@@ -291,7 +291,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
     const obj15 = { style: tmp8.section };
     const tmp43 = importDefault(dependencyMap[33]);
     if (isStreaming) {
-      const obj16 = {};
+      const obj16 = { <string:1986169986>: "sortType", <string:2487833047>: "ENABLE_EMOTICONS" };
       const intl7 = arg1(dependencyMap[29]).intl;
       obj16.text = intl7.string(importDefault(dependencyMap[30]).OsS9Ll);
       obj16.onPress = function onPress() {
@@ -301,7 +301,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
       };
       let obj17 = obj16;
     } else {
-      obj17 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
+      obj17 = { <string:1986169986>: true, <string:2487833047>: true };
       const intl6 = arg1(dependencyMap[29]).intl;
       obj17.text = intl6.string(importDefault(dependencyMap[30]).3wwZ/Q);
       obj17.onPress = function onPress() {

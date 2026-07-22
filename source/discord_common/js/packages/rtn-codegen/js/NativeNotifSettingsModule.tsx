@@ -1,9 +1,9 @@
-// Module ID: 13261
-// Function ID: 100644
+// Module ID: 13268
+// Function ID: 100677
 // Name: NativeNotifSettingsModule
 // Dependencies: []
 
-// Module 13261 (NativeNotifSettingsModule)
+// Module 13268 (NativeNotifSettingsModule)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativeNotifSettingsModule");
 const _module = require(dependencyMap[1]);

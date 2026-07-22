@@ -1,5 +1,5 @@
 // Module ID: 7559
-// Function ID: 60476
+// Function ID: 60487
 // Name: GetStartedScreen
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const SafetyHubLinks = arg1(dependencyMap[4]).SafetyHubLinks;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { loadingIndicator: { 978739812: true, 1676108714: "/assets/modules/stage_channels/native/images", 1675125740: 25, 1365027414: 24, 979455537: null, 1677983569: "b252f7dc065300671ba9347414eb0bad" } };
+obj = { loadingIndicator: { MULTI_ACCOUNT_TOOLTIP: true, getImageSourcesFromImageProps: "/assets/modules/stage_channels/native/images", EMOJI_PICKER_EMOJI_CLICKED: 24, shouldOpenGameProfile: 24, bitrateHistogram: null, maskEmptyElevation: "adb011bbeb7f189fa87848559cc4fbc7" } };
 obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, flex: 1 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
@@ -90,7 +90,7 @@ export default function GetStartedScreen(modalSessionId) {
   obj2 = { style: tmp.container };
   const obj3 = { style: tmp.headerContainer };
   const items2 = [callback(arg1(dependencyMap[14]).ShieldSpotIllustration, {}), , ];
-  const obj4 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.centerText, children: stringResult };
+  const obj4 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp.centerText, children: stringResult };
   items2[1] = callback(arg1(dependencyMap[15]).Text, obj4);
   obj5 = { style: tmp.centerText, children: intl2.string(arg1(dependencyMap[11]).t.JNK1ue) };
   items2[2] = callback(arg1(dependencyMap[15]).Text, obj5);
@@ -107,7 +107,7 @@ export default function GetStartedScreen(modalSessionId) {
     })
   };
   items3[1] = callback(arg1(dependencyMap[16]).TableRowGroup, obj6);
-  const obj7 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+  const obj7 = { cachedAt: "center", edpbxy: "center" };
   const items4 = [, ];
   ({ centerText: arr6[0], helpLink: arr6[1] } = tmp);
   obj7.style = items4;

@@ -1,10 +1,10 @@
-// Module ID: 10571
-// Function ID: 82539
+// Module ID: 10572
+// Function ID: 82552
 // Name: result
 // Dependencies: []
 // Exports: default
 
-// Module 10571 (result)
+// Module 10572 (result)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let result = null;

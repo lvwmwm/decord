@@ -1,10 +1,10 @@
-// Module ID: 8458
-// Function ID: 67477
+// Module ID: 8459
+// Function ID: 67489
 // Name: useGuildEventRecurrences
 // Dependencies: []
 // Exports: default
 
-// Module 8458 (useGuildEventRecurrences)
+// Module 8459 (useGuildEventRecurrences)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

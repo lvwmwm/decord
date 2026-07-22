@@ -1,15 +1,15 @@
-// Module ID: 9999
-// Function ID: 77302
+// Module ID: 10000
+// Function ID: 77315
 // Name: UserProfileSection
 // Dependencies: []
 // Exports: default
 
-// Module 9999 (UserProfileSection)
+// Module 10000 (UserProfileSection)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { titleContainer: { 0: false, 9223372036854775807: false, -9223372036854775808: false }, title: { flexDirection: "row" }, section: {} };
+obj = { titleContainer: { accessible: false, ti: false, <string:140650294>: false }, title: { flexDirection: "row" }, section: {} };
 obj = { borderWidth: 1, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.contentContainer = obj;
 let closure_5 = obj.createStyles(obj);
@@ -23,7 +23,7 @@ export default function UserProfileSection(title) {
   let style;
   let trailingIcon;
   title = title.title;
-  let obj = { nm: true, T: true, ip: true, items: true, body: true, style: true };
+  let obj = { 9223372036854775807: "Text", 9223372036854775807: "resizeMode", 0: "from", 9223372036854775807: "Array", -9223372036854775808: "isArray", 9223372036854775807: "braintreemasterpasslanding" };
   ({ headerIcon, trailingIcon, showContainer, children, style } = title);
   Object.setPrototypeOf(null);
   const merged = Object.assign(title, obj);
@@ -49,7 +49,7 @@ export default function UserProfileSection(title) {
     if (null != title) {
       obj1 = { style: tmp3.titleContainer };
       obj2 = { style: tmp3.title };
-      const obj3 = { children: title };
+      const obj3 = { tooltipText: 14823369851983368000000000000000000000000000000000000000000000000000000000000000000, contain: 0.000000000000000000000000000000000000000000000000000000000000000000000000000017272340227376847, children: title };
       const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), headerIcon];
       obj2.children = items1;
       const items2 = [callback2(View, obj2), trailingIcon];

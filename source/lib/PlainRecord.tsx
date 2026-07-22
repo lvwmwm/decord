@@ -1,10 +1,13 @@
 // Module ID: 1388
 // Function ID: 16565
 // Name: constructInPlace
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 0, 0]
 // Exports: copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
 // Module 1388 (constructInPlace)
+import { TypeTag } from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+
 function constructInPlace(GuildRoleRecordTypeTag, arg1) {
   arg1[TypeTag] = GuildRoleRecordTypeTag;
   return arg1;
@@ -63,9 +66,7 @@ function isPlainRecordDataEqual(arg0, arg1) {
     return true;
   }
 }
-const TypeTag = arg1(dependencyMap[0]).TypeTag;
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("lib/PlainRecord.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("lib/PlainRecord.tsx");
 
 export default importDefaultResult;
 export { TypeTag };

@@ -1,10 +1,10 @@
-// Module ID: 11650
-// Function ID: 90382
+// Module ID: 11651
+// Function ID: 90395
 // Name: ApplicationIconAndName
 // Dependencies: []
 // Exports: default
 
-// Module 11650 (ApplicationIconAndName)
+// Module 11651 (ApplicationIconAndName)
 const _module = require(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[1]);

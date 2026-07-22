@@ -1,5 +1,5 @@
 // Module ID: 7087
-// Function ID: 56826
+// Function ID: 56837
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
 // Dependencies: []
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch

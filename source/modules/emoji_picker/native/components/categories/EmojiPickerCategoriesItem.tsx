@@ -1,9 +1,9 @@
-// Module ID: 9399
-// Function ID: 73245
+// Module ID: 9400
+// Function ID: 73258
 // Name: NODE_SIZE
 // Dependencies: []
 
-// Module 9399 (NODE_SIZE)
+// Module 9400 (NODE_SIZE)
 let CATEGORY_ICON_SIZE;
 let NODE_SIZE;
 let closure_3 = importDefault(dependencyMap[0]);
@@ -15,13 +15,13 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
 let obj = { itemInner: obj };
-obj = { margin: null, backgroundColor: null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
+obj = { "Bool(false)": null, "Bool(false)": null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.ICON_TRANSPARENT };
 obj.fadedItem = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.activeItem = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.guildItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
-const obj3 = { <string:1401708816>: 0.000000000000000000000000000000000000000001525050860536844, <string:2085500511>: 0.00000000000000000000000000000000000000000000000000000000000004665176389013498, <string:3635438091>: 141317.275, <string:1330024018>: false, <string:2356957445>: false, <string:80489538>: "isArray", <string:80491008>: "key", <string:1284003840>: "Array", <string:277479363>: "construct", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
+const obj3 = { "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", mountSheet: "construct", ChoiceOrder: "View", SEND_ANALYTICS_EVENT: "isArray", maxValueLength: "isArray", time_to_full_display: "isArray", firstProposalsFinishedTime: "Array", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.lockContainer = obj3;
 const obj4 = { "Null": null, "Null": 1, tintColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.lock = obj4;

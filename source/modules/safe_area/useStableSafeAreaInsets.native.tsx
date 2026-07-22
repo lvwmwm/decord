@@ -1,10 +1,10 @@
-// Module ID: 10597
-// Function ID: 82706
+// Module ID: 10598
+// Function ID: 82719
 // Name: getStableSafeAreaInsets
 // Dependencies: []
 // Exports: default
 
-// Module 10597 (getStableSafeAreaInsets)
+// Module 10598 (getStableSafeAreaInsets)
 function getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
     DEFAULT_APP_ENTRY_KEY = arg1(dependencyMap[2]).DEFAULT_APP_ENTRY_KEY;

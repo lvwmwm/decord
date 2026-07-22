@@ -1,14 +1,10 @@
 // Module ID: 6681
-// Function ID: 51405
+// Function ID: 51416
 // Name: useGetTrialOffer
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: usePremiumTrialOffer
 
 // Module 6681 (useGetTrialOffer)
-import closure_2 from "result";
-import result from "result";
-import result from "result";
-
 function useGetTrialOffer(closure_3, offerIds) {
   const trialOffer = offerIds(dependencyMap[2]).useTrialOffer(closure_3);
   const values = Object.values(offerIds(dependencyMap[3]).TrialIdToProductOfferId[closure_3]);
@@ -18,8 +14,10 @@ function useGetTrialOffer(closure_3, offerIds) {
   }
   return tmp2;
 }
-({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: closure_3, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_4, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: closure_5, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: closure_6, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_7, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: closure_8 } = result);
-result = result.fileFinishedImporting("modules/premium/hooks/usePremiumTrialOffer.native.tsx");
+let closure_2 = importDefault(dependencyMap[0]);
+({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: closure_3, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_4, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: closure_5, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: closure_6, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_7, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: closure_8 } = arg1(dependencyMap[1]));
+const tmp2 = arg1(dependencyMap[1]);
+const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/hooks/usePremiumTrialOffer.native.tsx");
 
 export const usePremiumTrialOffer = function usePremiumTrialOffer() {
   const items = [closure_2];

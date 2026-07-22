@@ -1,10 +1,10 @@
-// Module ID: 10525
-// Function ID: 82212
+// Module ID: 10526
+// Function ID: 82225
 // Name: isAgeRestrictedClassificationReference
 // Dependencies: []
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 10525 (isAgeRestrictedClassificationReference)
+// Module 10526 (isAgeRestrictedClassificationReference)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");
 

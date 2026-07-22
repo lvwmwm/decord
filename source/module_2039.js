@@ -4,6 +4,6 @@
 
 // Module 2039
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "en-GU", format: "en", View: "default", accessibilityRole: "444_other", surrogates: null, url: true, scales: [null] };
+const obj = { 296374: null, 1102560849: null, 288807: null, 1103760465: null, 288241: null, 1120538193: null, scales: [false] };
 
 export default _module.registerAsset(obj);

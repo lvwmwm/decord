@@ -1,10 +1,10 @@
-// Module ID: 11098
-// Function ID: 86355
+// Module ID: 11099
+// Function ID: 86368
 // Name: getChatInputMaxHeight
 // Dependencies: []
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputMinHeight
 
-// Module 11098 (getChatInputMaxHeight)
+// Module 11099 (getChatInputMaxHeight)
 function getChatInputMaxHeight() {
   let systemKeyboardHeight = arg1(dependencyMap[4]).getSystemKeyboardHeight();
   const obj = arg1(dependencyMap[4]);

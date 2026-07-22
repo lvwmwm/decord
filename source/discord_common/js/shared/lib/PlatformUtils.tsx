@@ -1,10 +1,10 @@
 // Module ID: 4364
-// Function ID: 38728
+// Function ID: 38736
 // Name: isTablet
 // Dependencies: []
 
 // Module 4364 (isTablet)
-const set = new Set([]);
+const set = new Set(["updatePermissionOverwrite", null, null, null, null]);
 let platform;
 if (null != window) {
   const _navigator = window.navigator;
@@ -68,7 +68,7 @@ if (null != importDefault(dependencyMap[0])) {
     family2 = os3.family;
   }
 }
-const set1 = new Set(["count", "Array", "isArray"]);
+const set1 = new Set(["obscureBackground", "hideNavigationBar", "onFocus"]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/lib/PlatformUtils.tsx");
 
 export const isTablet = tmp6;

@@ -112,7 +112,7 @@ const fn = function n(moment) {
     weekdays: "vas\u00E1rnap_h\u00E9tf\u0151_kedd_szerda_cs\u00FCt\u00F6rt\u00F6k_p\u00E9ntek_szombat".split("_"),
     weekdaysShort: "vas_h\u00E9t_kedd_sze_cs\u00FCt_p\u00E9n_szo".split("_"),
     weekdaysMin: "v_h_k_sze_cs_p_szo".split("_"),
-    longDateFormat: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null },
+    longDateFormat: {},
     meridiemParse: /de|du/i,
     isPM(str) {
       return "u" === str.charAt(1).toLowerCase();
@@ -136,15 +136,9 @@ const fn = function n(moment) {
     relativeTime: obj,
     dayOfMonthOrdinalParse: /\d{1,2}\./,
     ordinal: "%d.",
-    week: { "Bool(true)": null, "Bool(true)": null }
+    week: { emoji: false, me: false }
   };
   obj = {
-    intl: "Array",
-    flex: "isArray",
-    getChannel: "transform",
-    PX_8: "key",
-    textAlign: "Array",
-    unicodeVersion: "isArray",
     nextWeek() {
       return week.call(this, true);
     },
@@ -152,7 +146,7 @@ const fn = function n(moment) {
       return week.call(this, false);
     }
   };
-  obj = { 9223372036854775807: null, 0: null, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
+  obj = { COZY_DRAWER: null, rootContainer: null, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
   return moment.defineLocale("hu", obj);
 };
 if ("object" === typeof exports) {
@@ -164,7 +158,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

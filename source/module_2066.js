@@ -4,6 +4,5 @@
 
 // Module 2066
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "md", format: null, View: true, accessibilityRole: "primary", surrogates: null, url: "lg", scales: [null] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [false] });

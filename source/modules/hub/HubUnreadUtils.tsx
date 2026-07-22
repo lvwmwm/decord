@@ -1,10 +1,10 @@
-// Module ID: 14913
-// Function ID: 112331
+// Module ID: 14921
+// Function ID: 112374
 // Name: useHubUnreadCount
-// Dependencies: [31, 27, 14921, 1838, 33, 689]
+// Dependencies: [31, 27, 14929, 1838, 33, 689]
 // Exports: useHubUnreadCount
 
-// Module 14913 (useHubUnreadCount)
+// Module 14921 (useHubUnreadCount)
 import module_31 from "module_31";
 import getActivityIndicator from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

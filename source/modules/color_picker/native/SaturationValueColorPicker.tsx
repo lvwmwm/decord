@@ -1,10 +1,10 @@
-// Module ID: 13451
-// Function ID: 102146
+// Module ID: 13458
+// Function ID: 102179
 // Name: ColorBox
 // Dependencies: []
 // Exports: default
 
-// Module 13451 (ColorBox)
+// Module 13458 (ColorBox)
 function ColorBox(hue) {
   let colorBoxInnerStyle;
   let colorBoxStyle;
@@ -18,7 +18,7 @@ function ColorBox(hue) {
   class S {
     constructor() {
       obj = hue(closure_2[7]);
-      obj = { "Null": 255, "Null": 4293643775, "Null": 65535 };
+      obj = { "Null": 16777215, "Null": 2147472639, "Null": 4043309055 };
       obj.h = hue.get();
       return obj.hslToRgbWorklet(obj);
     }
@@ -40,10 +40,10 @@ function ColorBox(hue) {
   fn.__workletHash = 14688428173537;
   fn.__initData = closure_10;
   const animatedReaction = obj.useAnimatedReaction(S, fn);
-  const obj1 = { style: items, colors: items1, start: {}, end: {} };
+  const obj1 = { style: items, colors: items1, start: {}, end: { 0: -721485569, 0: 3375103 } };
   const items = [tmp.colorBox, colorBoxStyle];
   const items1 = [, tmp2[0]];
-  const obj2 = { colors: [] };
+  const obj2 = { colors: [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009277667960432105, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050835165] };
   const items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
   const tmp5 = importDefault(dependencyMap[8]);
   obj2.children = callback2(View, { style: items2 });
@@ -56,11 +56,11 @@ const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {} };
-obj = { padding: "M7 1v1h2V1H7Z", ks: "<string:1414594560>", bind: "<string:1907712401>", shapes: "apply", width: "<string:1638344529>", Object: "<string:8483257>", now: "<string:1895890944>", borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { accessible: "center", cursor: 2, done: "guild_id", kind: "scalar", key: 6, accessible: "header_localized", call: "message", borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.selector = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.colorBox = { overflow: "hidden", borderRadius: importDefault(dependencyMap[5]).radii.xs };
-obj.colorBoxInner = {};
+obj.colorBoxInner = { "Null": null, "Null": null };
 let closure_8 = obj.createStyles(obj);
 let closure_9 = { code: "function SaturationValueColorPickerTsx1(){const{hslToRgbWorklet,hue}=this.__closure;return hslToRgbWorklet({h:hue.get(),s:1,l:0.5});}" };
 let closure_10 = { code: "function SaturationValueColorPickerTsx2(result,previous){const{runOnJS,setColor}=this.__closure;if(result!==previous)runOnJS(setColor)(\"rgb(\"+result[0]+\", \"+result[1]+\", \"+result[2]+\")\");}" };

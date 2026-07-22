@@ -1,5 +1,5 @@
 // Module ID: 4118
-// Function ID: 34086
+// Function ID: 34088
 // Name: combineAndInjectMentionRule
 // Dependencies: []
 
@@ -10,8 +10,8 @@ function combineAndInjectMentionRule(RULES, items, arg2) {
   items[HermesBuiltin.arraySpread(items, 1)] = {};
   return tmp(items);
 }
-let closure_3 = [1558511797, 1828651236, 1114964107, 2113994386, 1191196141];
-let obj = {};
+let closure_3 = [];
+let obj = { "Bool(false)": 1766088043, "Bool(false)": 827788593 };
 let closure_5 = importDefault(dependencyMap[2]).once(() => {
   const items = [importDefault(dependencyMap[0])({ enableBuildOverrides: true })];
   return combineAndInjectMentionRule(importDefault(dependencyMap[3]).RULES, items);

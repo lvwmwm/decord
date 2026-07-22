@@ -1,10 +1,10 @@
-// Module ID: 10308
-// Function ID: 79585
+// Module ID: 10309
+// Function ID: 79598
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getAttachments
 
-// Module 10308 (_createForOfIteratorHelperLoose)
+// Module 10309 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

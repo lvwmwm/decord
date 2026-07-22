@@ -1,15 +1,14 @@
-// Module ID: 12909
-// Function ID: 98479
+// Module ID: 12916
+// Function ID: 98512
 // Name: PassthroughTouchView
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 12909 (PassthroughTouchView)
-import "result";
-import { jsx } from "result";
-import result from "result";
+// Module 12916 (PassthroughTouchView)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/void/PassthroughTouchView/native/PassthroughTouchView.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/void/PassthroughTouchView/native/PassthroughTouchView.tsx");
 
 export default function PassthroughTouchView(onTouchDown) {
   let obj = Object.create(null);

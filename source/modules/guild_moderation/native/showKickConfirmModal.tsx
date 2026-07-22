@@ -1,10 +1,10 @@
-// Module ID: 10989
-// Function ID: 85530
+// Module ID: 10990
+// Function ID: 85543
 // Name: showKickConfirmModal
 // Dependencies: []
 // Exports: default
 
-// Module 10989 (showKickConfirmModal)
+// Module 10990 (showKickConfirmModal)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/guild_moderation/native/showKickConfirmModal.tsx");
 

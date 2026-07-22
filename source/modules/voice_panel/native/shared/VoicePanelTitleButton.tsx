@@ -1,9 +1,9 @@
-// Module ID: 15664
-// Function ID: 119683
+// Module ID: 15672
+// Function ID: 119726
 // Name: ChannelButtonIcons
 // Dependencies: []
 
-// Module 15664 (ChannelButtonIcons)
+// Module 15672 (ChannelButtonIcons)
 function ChannelButtonIcons() {
   let obj = { style: callback3().channelButtons };
   obj = { size: "xs" };

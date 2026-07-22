@@ -1,9 +1,9 @@
-// Module ID: 10563
-// Function ID: 82487
+// Module ID: 10564
+// Function ID: 82500
 // Name: resetIOSScrollZoom
 // Dependencies: []
 
-// Module 10563 (resetIOSScrollZoom)
+// Module 10564 (resetIOSScrollZoom)
 function resetIOSScrollZoom(scrollResponderZoomTo, width, height) {
   if (!tmp) {
     const obj = { width, height };
@@ -17,7 +17,7 @@ const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ spinner: { y: false, isArray: false }, center: { "Null": null, "Null": null }, zoomLayoutAndroid: { flex: 1 } });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ spinner: { hideWhenScrolling: true, autoCapitalize: true }, center: { <string:3596066964>: null, <string:3638417373>: null }, zoomLayoutAndroid: { flex: 1 } });
 const obj = { COVER: 0, [0]: "COVER", CONTAIN: 1, [1]: "CONTAIN", AUTO: 2, [2]: "AUTO" };
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((gestureEnabled) => {
@@ -83,7 +83,7 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
   obj = ref;
   const ref1 = React.useRef(null);
   resetIOSScrollZoom = ref1;
-  closure_13 = React.useRef({ "Null": -536870861, "Null": -299892737 });
+  closure_13 = React.useRef({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
   const items = [tmp10, tmp13];
   callback = React.useCallback((nativeEvent) => {
     let height;

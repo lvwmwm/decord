@@ -1,10 +1,10 @@
-// Module ID: 15111
-// Function ID: 114033
+// Module ID: 15119
+// Function ID: 114076
 // Name: AddEmojiButton
 // Dependencies: []
 // Exports: default, getStatusReplyContent
 
-// Module 15111 (AddEmojiButton)
+// Module 15119 (AddEmojiButton)
 function AddEmojiButton(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -16,7 +16,7 @@ function AddEmojiButton(channel) {
   const callback = React.useCallback(() => {
     onOpenPicker();
     let obj = channel(onPressEmoji[10]);
-    obj = { flex: "absolute", height: -1, overflow: -1, pickerIntention: constants.REACTION, onPressEmoji, channel, reactionType: channel(onPressEmoji[11]).ReactionTypes.NORMAL };
+    obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: constants.REACTION, onPressEmoji, channel, reactionType: channel(onPressEmoji[11]).ReactionTypes.NORMAL };
     const result = obj.openEmojiPickerActionSheet(obj);
   }, items);
   const obj = { onPress: callback, style: items1, accessible: true };
@@ -203,7 +203,7 @@ function ReactActionSheetBase(content) {
         onOpenPicker() {
               let obj = onPressEmoji(sendMessage[15]);
               obj.itemInteracted(content.id, closure_6, "press_reply_reaction_picker");
-              obj = { itemId: content.id, itemType: closure_6, actionParameters: { <string:2204214729>: null, <string:1672982865>: 0, <string:1370399429>: false, <string:3949021540>: "swf" } };
+              obj = { itemId: content.id, itemType: closure_6, actionParameters: {} };
               onPressEmoji(sendMessage[15]).feedItemActioned(obj);
             },
         channel,
@@ -214,7 +214,7 @@ function ReactActionSheetBase(content) {
       obj12.children = items8;
       const items9 = [callback4(closure_6, obj12), ];
       const obj14 = { style: tmp.inputRow };
-      const obj15 = { Wp9bEl: null, PremiumSKUPreview: null, RowButtonIconProps: null, containerStyle: tmp.input };
+      const obj15 = { GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED: null, GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: null, EmojiDisabledReasons: null, containerStyle: tmp.input };
       const intl3 = arg1(dependencyMap[7]).intl;
       const obj16 = { username: arg1(dependencyMap[30]).getName(author) };
       obj15.placeholder = intl3.formatToPlainString(arg1(dependencyMap[7]).t.m3dK5W, obj16);
@@ -261,7 +261,7 @@ const EmojiIntention = arg1(dependencyMap[5]).EmojiIntention;
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[8]);
 obj = { header: {}, container: { gap: 12 } };
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.md, borderColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[9]).radii.md, borderColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG };
 obj.preview = obj;
 obj.loading = { opacity: 0.5 };
 obj.base = { position: "relative" };
@@ -270,13 +270,13 @@ obj.contentContainer = { backgroundColor: importDefault(dependencyMap[9]).colors
 obj.inputRow = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.input = { flex: 1, borderRadius: importDefault(dependencyMap[9]).radii.round };
-obj.emojis = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
+obj.emojis = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" };
 obj.submitting = { opacity: 0.6 };
 const obj2 = { flex: 1, borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.emoji = { padding: 8, borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.defaultEmoji = {};
-obj.emojiImage = {};
-obj.emojiText = { paddingVertical: 0, paddingHorizontal: 53.614, flexGrow: 3, justifyContent: "colors" };
+obj.emojiImage = { "Null": "<string:16777581>", "Null": "<string:34766659>", "Null": "<string:17605120>" };
+obj.emojiText = { -1398941826: 0, 541046124: 53.614, 1600327841: 3, -343421673: "colors" };
 let closure_12 = obj.createStyles(obj);
 const obj3 = { padding: 8, borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/icymi/native/content_inventory/ReactActionSheet.tsx");

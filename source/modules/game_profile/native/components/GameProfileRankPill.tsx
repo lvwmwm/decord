@@ -1,15 +1,15 @@
-// Module ID: 8624
-// Function ID: 68334
+// Module ID: 8625
+// Function ID: 68346
 // Name: GameProfileRankPill
 // Dependencies: []
 // Exports: default
 
-// Module 8624 (GameProfileRankPill)
+// Module 8625 (GameProfileRankPill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Null": true, "Null": true, "Null": true } };
+obj = { container: {} };
 obj = { flexDirection: "row", backgroundColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.round, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, alignItems: "center", gap: importDefault(dependencyMap[4]).space.PX_4 };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj.gameRankPill = obj;
@@ -29,7 +29,7 @@ export default function GameProfileRankPill(arg0) {
   obj = { style: tmp.gameRankPill };
   obj = { size: "xxs", color: importDefault(dependencyMap[4]).colors.BLACK };
   const items = [callback(arg1(dependencyMap[5]).TrophyIcon, obj), ];
-  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  const obj1 = { cachedAt: -8364227942806830000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011321089135097987 };
   const intl = arg1(dependencyMap[7]).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = arg1(dependencyMap[7]).t;

@@ -1,10 +1,10 @@
-// Module ID: 13707
-// Function ID: 103702
+// Module ID: 13714
+// Function ID: 103735
 // Name: FamilyCenterModalAcceptScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13707 (FamilyCenterModalAcceptScreen)
+// Module 13714 (FamilyCenterModalAcceptScreen)
 function FamilyCenterModalAcceptScreen(otherUser) {
   otherUser = otherUser.otherUser;
   const arg1 = otherUser;
@@ -38,7 +38,7 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   items1[2] = callback(importDefault(dependencyMap[15]), { user: otherUser });
   obj1.children = items1;
   const items2 = [callback2(View, obj1), callback(importDefault(dependencyMap[16]), {}), ];
-  const obj4 = { delete: 24, dispatch: 24, raw: null, style: tmp.disclaimer };
+  const obj4 = { "Null": 24, "Null": 24, alignItems: null, style: tmp.disclaimer };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj4.children = intl2.format(importDefault(dependencyMap[14]).snlFqR, { username: otherUser.username });
   items2[2] = callback(arg1(dependencyMap[13]).Text, obj4);

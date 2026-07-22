@@ -1,10 +1,10 @@
-// Module ID: 5518
-// Function ID: 46988
+// Module ID: 5517
+// Function ID: 46996
 // Name: useNavigatorShouldCrossfade
 // Dependencies: []
 // Exports: useNavigatorShouldCrossfade
 
-// Module 5518 (useNavigatorShouldCrossfade)
+// Module 5517 (useNavigatorShouldCrossfade)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/Navigator/native/useNavigatorShouldCrossfade.native.tsx");
 

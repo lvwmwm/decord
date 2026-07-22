@@ -1,9 +1,9 @@
-// Module ID: 8174
-// Function ID: 64517
+// Module ID: 8175
+// Function ID: 64529
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8174 (_isNativeReflectConstruct)
+// Module 8175 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -36,7 +36,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-let obj = { -1437178970: "T", -1701227572: "r", -815960339: "isArray", 1559747154: "paddingHorizontal", -931638285: "color", entrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, lastShownEntrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, closeReason: arg1(dependencyMap[5]).AppLauncherCloseReason.DISMISSED, initialState: undefined };
+let obj = { disableControlsUpdate: -1, useIsWindowSmall: -901701121, LevelInfo: 285213327, handleToggleSelfMute: 560390225, showCreateBenefitModal: 343188561, entrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, lastShownEntrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, closeReason: arg1(dependencyMap[5]).AppLauncherCloseReason.DISMISSED, initialState: undefined };
 let tmp2 = (Store) => {
   class AppLauncherStore {
     constructor() {

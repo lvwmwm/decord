@@ -1,21 +1,20 @@
 // Module ID: 5794
-// Function ID: 49526
+// Function ID: 49537
 // Name: useGiftCardMobileConsumptionHalfsheet
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
 // Module 5794 (useGiftCardMobileConsumptionHalfsheet)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import { ContentDismissActionType } from "result";
-import { PaymentSourceTypes } from "result";
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { ContentDismissActionType } from "__exportStarResult1";
+import { PaymentSourceTypes } from "__exportStarResult1";
 
 const obj = { Idle: "idle", Opening: "opening", Opened: "opened" };
 const Idle = obj.Idle;
-result = result.fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
   const enabled = arg1(dependencyMap[6]).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;

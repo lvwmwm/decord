@@ -1,10 +1,10 @@
-// Module ID: 12031
-// Function ID: 92967
+// Module ID: 12035
+// Function ID: 92993
 // Name: trackFriendsListItemAction
 // Dependencies: [670, 2, 6]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote
 
-// Module 12031 (trackFriendsListItemAction)
+// Module 12035 (trackFriendsListItemAction)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

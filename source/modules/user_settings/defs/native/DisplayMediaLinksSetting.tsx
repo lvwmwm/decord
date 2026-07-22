@@ -1,9 +1,9 @@
-// Module ID: 14170
-// Function ID: 107312
+// Module ID: 14178
+// Function ID: 107355
 // Name: toggle
 // Dependencies: []
 
-// Module 14170 (toggle)
+// Module 14178 (toggle)
 const _module = require(dependencyMap[1]);
 const toggle = _module.createToggle({
   useTitle() {

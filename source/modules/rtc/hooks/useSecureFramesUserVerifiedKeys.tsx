@@ -1,10 +1,10 @@
-// Module ID: 14395
-// Function ID: 108613
+// Module ID: 14403
+// Function ID: 108656
 // Name: useSecureFramesUserVerifiedKeys
 // Dependencies: []
 // Exports: useSecureFramesUserVerifiedKeys
 
-// Module 14395 (useSecureFramesUserVerifiedKeys)
+// Module 14403 (useSecureFramesUserVerifiedKeys)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
 

@@ -1,12 +1,16 @@
 // Module ID: 565
 // Function ID: 6820
 // Name: APIError
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 565 (APIError)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("../discord_common/js/packages/http-utils/V6OrEarlierAPIError.tsx");
+
+export const APIError = () => {
   class APIError {
     constructor(arg0, arg1) {
       str = arg2;
@@ -98,6 +102,3 @@ const tmp2 = () => {
   ];
   return callback(APIError, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/http-utils/V6OrEarlierAPIError.tsx");
-
-export const APIError = tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 15336
-// Function ID: 116782
+// Module ID: 15344
+// Function ID: 116825
 // Name: UsernameSearchScreen
-// Dependencies: []
+// Dependencies: [126746624, 292814848, 40894464, 450756608, 249102336, 984743936, 450822144, 1376256, 357892096, 359202816, 44236800, 784728064, 358285312, 1005977600, 41680896, 556138496]
 // Exports: default
 
-// Module 15336 (UsernameSearchScreen)
+// Module 15344 (UsernameSearchScreen)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -21,11 +21,11 @@ const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.
 obj.iosPaddingThemeAdjust = { paddingTop: importDefault(dependencyMap[5]).space.PX_40 };
 const obj2 = { paddingTop: importDefault(dependencyMap[5]).space.PX_40 };
 obj.container = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-const obj4 = { "Bool(true)": 631504900, "Bool(true)": -991821820, "Bool(true)": -760741887, marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-obj.inputContainer = obj4;
+const obj3 = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+obj.inputContainer = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
 obj.headerText = { textTransform: "none" };
 let closure_10 = obj.createStyles(obj);
-const obj3 = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+const obj4 = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/UsernameSearchScreen.tsx");
 
 export default function UsernameSearchScreen(navigation) {
@@ -71,7 +71,7 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: items1 };
   const items1 = [tmp.content, clientThemesOverride];
   const items2 = [callback(importDefault(dependencyMap[12]), { absolute: true }), ];
-  obj1 = { useIsMobileGameCollectionExperimentEnabled: true, openSafetyFlow: true };
+  obj1 = { okQonm: 469507067, GET_GUILD: 469508166 };
   const items3 = [tmp.container, prop, ];
   const tmp7 = importDefault(dependencyMap[11]);
   items3[2] = { paddingBottom: insets.bottom + importDefault(dependencyMap[5]).space.PX_16 };

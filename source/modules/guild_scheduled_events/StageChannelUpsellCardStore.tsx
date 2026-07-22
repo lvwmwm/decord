@@ -1,10 +1,10 @@
-// Module ID: 8399
-// Function ID: 66854
+// Module ID: 8400
+// Function ID: 66866
 // Name: useStageChannelUpsellCardStore
 // Dependencies: []
 // Exports: useStageChannelUpsellCardStore
 
-// Module 8399 (useStageChannelUpsellCardStore)
+// Module 8400 (useStageChannelUpsellCardStore)
 let closure_2 = require(dependencyMap[0]).GUILD_EVENT_STAGE_UPSELL_CARD_KEY;
 const _module = require(dependencyMap[1]);
 let closure_3 = _module.createWithEqualityFn((arg0) => {

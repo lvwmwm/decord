@@ -1,9 +1,9 @@
-// Module ID: 8582
-// Function ID: 68154
+// Module ID: 8583
+// Function ID: 68166
 // Name: GameFlags
 // Dependencies: []
 
-// Module 8582 (GameFlags)
+// Module 8583 (GameFlags)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameFlags.tsx");
 

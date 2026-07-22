@@ -1,5 +1,5 @@
 // Module ID: 6019
-// Function ID: 49950
+// Function ID: 49961
 // Name: DisplayNameStylesV2AbstractUI
 // Dependencies: []
 // Exports: DisplayNameStylesV2AbstractUI

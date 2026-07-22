@@ -1,9 +1,17 @@
 // Module ID: 422
 // Function ID: 5921
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 422 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,15 +22,8 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 let closure_2 = [];
-let closure_3 = [null];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
+let closure_3 = [];
+({ jsx: closure_10, jsxs: closure_11 } = require("__exportStarResult1"));
 let closure_12 = (Component) => {
   class TouchableOpacity {
     constructor() {
@@ -373,7 +374,7 @@ let closure_12 = (Component) => {
 }(importAllResult.Component);
 class Touchable {
   constructor(arg0) {
-    return jsx(f5925, Object.assign({}, closure_4(global, _isNativeReflectConstruct), { hostRef: global.ref }));
+    return jsx(f5925, Object.assign({}, __exportStarResult1(global, _isNativeReflectConstruct), { hostRef: global.ref }));
   }
 }
 Touchable.displayName = "TouchableOpacity";

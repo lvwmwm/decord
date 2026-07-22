@@ -1,10 +1,10 @@
-// Module ID: 14619
-// Function ID: 110256
+// Module ID: 14627
+// Function ID: 110299
 // Name: _scorePassword
 // Dependencies: []
 // Exports: default, registerPhone, scorePassword
 
-// Module 14619 (_scorePassword)
+// Module 14627 (_scorePassword)
 function _scorePassword() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

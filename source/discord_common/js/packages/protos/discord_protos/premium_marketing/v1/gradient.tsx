@@ -1,5 +1,5 @@
 // Module ID: 7138
-// Function ID: 57517
+// Function ID: 57528
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -27,7 +27,7 @@ let tmp2 = (MessageType) => {
       items = [, ];
       items[0] = {};
       items[1] = {};
-      items1 = [-1765435666];
+      items1 = ["getAnchorIdFromIndex"];
       items1[1] = items;
       obj = closure_6(Gradient$Type);
       tmp2 = closure_5;

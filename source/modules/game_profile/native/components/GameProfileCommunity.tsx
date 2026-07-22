@@ -1,10 +1,10 @@
-// Module ID: 8642
-// Function ID: 68404
+// Module ID: 8643
+// Function ID: 68416
 // Name: GameProfileCommunityServer
 // Dependencies: []
 // Exports: default
 
-// Module 8642 (GameProfileCommunityServer)
+// Module 8643 (GameProfileCommunityServer)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,10 +19,10 @@ const tmp2 = arg1(dependencyMap[5]);
 obj.headerText = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
 obj.card = { borderRadius: importDefault(dependencyMap[7]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.guildBanner = { direction: false, style: false, borderWidth: false };
+obj.guildBanner = { GifAutoPlay: false, lavender: false, useShouldShowWishlistInDMGifting: false };
 const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.guildContent = { flexDirection: "column", padding: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_16 };
-const obj4 = { "Null": "ab7bfd0490af9a9d0729fca1ff2529c0", "Null": "HeartIcon", "Null": "png", "Null": null, borderRadius: importDefault(dependencyMap[7]).radii.md, borderWidth: importDefault(dependencyMap[7]).space.PX_4, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, marginLeft: -importDefault(dependencyMap[7]).space.PX_4 };
+const obj4 = { skuId: "ab7bfd0490af9a9d0729fca1ff2529c0", product: "HeartIcon", onPress: "png", onTrackPress: null, borderRadius: importDefault(dependencyMap[7]).radii.md, borderWidth: importDefault(dependencyMap[7]).space.PX_4, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, marginLeft: -importDefault(dependencyMap[7]).space.PX_4 };
 obj.guildIcon = obj4;
 const obj3 = { flexDirection: "column", padding: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.guildIconWithBanner = { marginTop: -importDefault(dependencyMap[7]).space.PX_48 };
@@ -32,18 +32,18 @@ const obj6 = { borderRadius: importDefault(dependencyMap[7]).radii.none };
 obj.guildInfo = { flex: 1, gap: importDefault(dependencyMap[7]).space.PX_16 };
 const obj7 = { flex: 1, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.guildNameDescriptionContainer = { gap: importDefault(dependencyMap[7]).space.PX_4 };
-const obj9 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4 };
+const obj9 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.guildNameRow = obj9;
 const obj8 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.memberCountsContainer = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_16 };
-const obj11 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4 };
+const obj11 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.memberCountContainer = obj11;
-const obj10 = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.onlineEllipse = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
-const obj12 = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
-obj.membersEllipse = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
+const obj12 = { "Null": 800, "Null": 16, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
+obj.onlineEllipse = obj12;
+const obj13 = { "Null": 800, "Null": 16, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
+obj.membersEllipse = obj13;
 let closure_10 = obj.createStyles(obj);
-const obj13 = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
+const obj10 = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_16 };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/game_profile/native/components/GameProfileCommunity.tsx");
 
 export default function GameProfileCommunityServer(game) {
@@ -126,7 +126,7 @@ export default function GameProfileCommunityServer(game) {
         approximate_presence_count = first.guild.approximate_presence_count;
       }
       obj = { style: tmp.container };
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.headerText };
+      obj = { cachedAt: "polite", edpbxy: "column", style: tmp.headerText };
       const intl = arg1(dependencyMap[18]).intl;
       obj.children = intl.string(arg1(dependencyMap[18]).t.U2N+ci);
       const items5 = [stateFromStores(arg1(dependencyMap[17]).Text, obj), ];
@@ -161,7 +161,7 @@ export default function GameProfileCommunityServer(game) {
       const obj6 = { style: tmp.guildInfo };
       const obj7 = { style: tmp.guildNameDescriptionContainer };
       const obj8 = { style: tmp.guildNameRow };
-      const obj9 = { children: fromInviteGuildResult.name };
+      const obj9 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>", children: fromInviteGuildResult.name };
       const items9 = [stateFromStores(arg1(dependencyMap[17]).Text, obj9), ];
       const obj10 = { guild: fromInviteGuildResult };
       const tmp28 = importDefault(dependencyMap[21]);
@@ -169,7 +169,7 @@ export default function GameProfileCommunityServer(game) {
       items9[1] = stateFromStores(importDefault(dependencyMap[22]), obj10);
       obj8.children = items9;
       const items10 = [callback2(closure_6, obj8), ];
-      const obj11 = { <string:1643205302>: null, <string:1415816450>: "APPLE_PAY_VALIDATION_URL_REQUIRED", <string:4283523744>: "performValidation must be called with a validationURL.", children: fromInviteGuildResult.description };
+      const obj11 = { 803799044: -527220480, 1269170180: null, 711589892: null, children: fromInviteGuildResult.description };
       items10[1] = stateFromStores(arg1(dependencyMap[17]).Text, obj11);
       obj7.children = items10;
       const items11 = [callback2(closure_6, obj7), ];
@@ -179,7 +179,7 @@ export default function GameProfileCommunityServer(game) {
         const obj13 = { style: tmp.memberCountContainer };
         const obj14 = { style: tmp.onlineEllipse };
         const items12 = [stateFromStores(closure_6, obj14), ];
-        const obj15 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+        const obj15 = { cachedAt: true, edpbxy: true };
         const intl2 = arg1(dependencyMap[18]).intl;
         const obj16 = { membersOnline: approximate_presence_count };
         obj15.children = intl2.formatToPlainString(arg1(dependencyMap[18]).t.LC+S+m, obj16);
@@ -193,7 +193,7 @@ export default function GameProfileCommunityServer(game) {
         const obj17 = { style: tmp.memberCountContainer };
         const obj18 = { style: tmp.membersEllipse };
         const items14 = [stateFromStores(closure_6, obj18), ];
-        const obj19 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+        const obj19 = { cachedAt: true, edpbxy: true };
         const intl3 = arg1(dependencyMap[18]).intl;
         const obj20 = { count: approximate_member_count };
         obj19.children = intl3.formatToPlainString(arg1(dependencyMap[18]).t.zRl6XR, obj20);
@@ -206,7 +206,7 @@ export default function GameProfileCommunityServer(game) {
       items11[1] = callback2(closure_6, obj12);
       obj6.children = items11;
       items8[1] = callback2(closure_6, obj6);
-      const obj21 = { "Bool(true)": null, "Bool(true)": null };
+      const obj21 = {};
       const intl4 = arg1(dependencyMap[18]).intl;
       const string = intl4.string;
       const t = arg1(dependencyMap[18]).t;

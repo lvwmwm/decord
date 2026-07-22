@@ -1,10 +1,10 @@
-// Module ID: 11014
-// Function ID: 85690
+// Module ID: 11015
+// Function ID: 85703
 // Name: ClassificationHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11014 (ClassificationHeader)
+// Module 11015 (ClassificationHeader)
 function ClassificationHeader(classificationTypeText) {
   classificationTypeText = classificationTypeText.classificationTypeText;
   const arg1 = classificationTypeText;
@@ -156,7 +156,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj.children = callback(arg1(dependencyMap[16]).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent };
-  const obj3 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
+  const obj3 = {};
   const intl = arg1(dependencyMap[11]).intl;
   obj3.children = intl.format(arg1(dependencyMap[11]).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
   obj2.children = callback(arg1(dependencyMap[9]).Text, obj3);
@@ -173,11 +173,11 @@ function AppealStatus() {
 }
 function LetUsKnow(arg0) {
   const arg1 = arg0;
-  let obj = {};
+  let obj = { cachedAt: 400, edpbxy: 20 };
   const intl = arg1(dependencyMap[11]).intl;
   obj = {
     letUsKnowHook(children) {
-      const obj = { -1398216365: "no-hide-descendants", 1403823626: "text-xs/semibold", -1397974005: 1, onPress: children.onPressLetUsKnow, children };
+      const obj = { "Null": "no-hide-descendants", "Null": "text-xs/semibold", "Null": 1, onPress: children.onPressLetUsKnow, children };
       return callback(children(closure_2[9]).Text, obj, arg1);
     }
   };
@@ -218,29 +218,29 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.root = obj;
-const obj1 = { -2036989357: "<string:354549762>", 996371416: "<string:3477209090>", 5330602: "<string:587203104>", paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
-obj.container = obj1;
 const tmp4 = arg1(dependencyMap[6]);
-obj.header = { gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-obj.headerText = { overflow: 40, flexWrap: "center" };
-const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
+obj.container = { paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
+const obj2 = { getChannelsGameShopPrefix: "Array", zero: null, marketing: null, INVALID_INVITE: null, gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
+obj.header = obj2;
+obj.headerText = {};
+const obj1 = { paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
 obj.sectionContainer = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj4 = { alignSelf: "4ae27cd370cebdaa94f014645ce27672", margin: "ic_feedback", height: "png", paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
+const obj4 = { "Bool(true)": 1107158353, "Bool(true)": 135924, "Bool(true)": 36604738, paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.actionsTaken = obj4;
-const obj5 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[8]).space.PX_32 };
+const obj5 = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, location: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[8]).space.PX_32 };
 obj.classificationDetailContainer = obj5;
-obj.letUsKnowContainer = { <string:29557293>: true, <string:45941405>: true };
-const obj6 = { d: null, useMemo: null, keys: null, hasDiversityParent: null, gap: importDefault(dependencyMap[8]).space.PX_12, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: importDefault(dependencyMap[8]).space.PX_4, flexShrink: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+obj.letUsKnowContainer = { "Null": true, "Null": true };
+const obj6 = { "Null": null, "Null": null, "Null": null, "Null": null, gap: importDefault(dependencyMap[8]).space.PX_12, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: importDefault(dependencyMap[8]).space.PX_4, flexShrink: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.classificationPolicyCard = obj6;
-const obj3 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.classificationPolicyCardIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
+const obj7 = { GiftingBadgeExperiment: null, addWindow: null, viewIsDescendantOf: null, getPlanIdForGift: null, addWindow: null, responsesApiToolCalls: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
+obj.classificationPolicyCardIcon = obj7;
 obj.classificationPolicyCardContent = { flex: 1 };
-const obj7 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
+const obj3 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.classificationActionDescription = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj9 = { 9223372036854775807: 1974796291, 0: -180158461, marginTop: importDefault(dependencyMap[8]).space.PX_32 };
-obj.redirectButtonWrapper = obj9;
-let closure_16 = obj.createStyles(obj);
 const obj8 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.redirectButtonWrapper = { marginTop: importDefault(dependencyMap[8]).space.PX_32 };
+let closure_16 = obj.createStyles(obj);
+const obj9 = { marginTop: importDefault(dependencyMap[8]).space.PX_32 };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/safety_hub/native/ClassificationDetail.tsx");
 
 export default function ConnectedClassificationDetail(classificationId) {

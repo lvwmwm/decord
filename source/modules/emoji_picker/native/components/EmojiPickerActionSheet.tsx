@@ -1,10 +1,10 @@
-// Module ID: 9320
-// Function ID: 72808
+// Module ID: 9321
+// Function ID: 72821
 // Name: EmojiPickerActionSheet
-// Dependencies: [1849, 5261, 5264, 9325, 2, 653, 3963, 686, 507, 2, 5261, 1852, 624, 2, 31, 5265, 2, 57, 31, 5261, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7650, 3829, 9331, 2, 31]
+// Dependencies: [1849, 4988, 4991, 9326, 2, 653, 3963, 686, 507, 2, 4988, 1852, 624, 2, 31, 4992, 2, 57, 31, 4988, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7650, 3829, 9332, 2, 31]
 // Exports: default
 
-// Module 9320 (EmojiPickerActionSheet)
+// Module 9321 (EmojiPickerActionSheet)
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { View } from "_isNativeReflectConstruct";
@@ -23,9 +23,9 @@ _isNativeReflectConstruct.searchContainer = _isNativeReflectConstruct;
 _isNativeReflectConstruct.content = { paddingHorizontal: require("result2").space.PX_8, backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
 const obj1 = { paddingHorizontal: require("result2").space.PX_8, backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
 _isNativeReflectConstruct.background = { backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+const obj3 = { <string:3814666730>: 8, <string:1280564396>: 18, marginBottom: require("result2").space.PX_16 };
+_isNativeReflectConstruct.headerText = obj3;
 const obj2 = { backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-_isNativeReflectConstruct.headerText = { marginBottom: require("result2").space.PX_16 };
-const obj3 = { marginBottom: require("result2").space.PX_16 };
 _isNativeReflectConstruct.headerSpacer = { marginTop: require("result2").space.PX_8 };
 const obj4 = { marginTop: require("result2").space.PX_8 };
 _isNativeReflectConstruct.burstReaction = { borderColor: require("result2").colors.BACKGROUND_BRAND };
@@ -159,11 +159,11 @@ export default function EmojiPickerActionSheet(onClose) {
     let tmp = null;
     if (pickerIntention === closure_9.DEFAULT_REACT_EMOJI) {
       let obj = { style: tmp.headerText };
-      obj = {};
+      obj = { cachedAt: true, edpbxy: true };
       const intl = onClose(pickerIntention[23]).intl;
       obj.children = intl.string(onClose(pickerIntention[23]).t.wHTk2C);
       const items = [ref(onClose(pickerIntention[22]).Text, obj), ];
-      obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+      obj = { cachedAt: "y", edpbxy: "isArray" };
       const intl2 = onClose(pickerIntention[23]).intl;
       obj.children = intl2.string(onClose(pickerIntention[23]).t.VrWSNn);
       items[1] = ref(onClose(pickerIntention[22]).Text, obj);
@@ -184,7 +184,7 @@ export default function EmojiPickerActionSheet(onClose) {
     }
     items1[1] = headerSpacer;
     obj.style = items1;
-    obj = { -9223372036854775808: 40, 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
+    obj = { 0: 40, 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
     const items2 = [ref(onClose(pickerIntention[24]).SearchField, obj), ];
     let tmp5 = pickerIntention === closure_9.REACTION;
     if (tmp5) {
@@ -226,7 +226,7 @@ export default function EmojiPickerActionSheet(onClose) {
   const tmp25 = memo1;
   let isIOSResult = arg1(dependencyMap[15]).isIOS();
   if (isIOSResult) {
-    obj = { GiftCodeModalStates: 15187286127396292000000000000000000000000000000000000000000000000000000000000000000, guildDirectoryEntryFromServer: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001904963455117194, currencySpacing: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003476677904935, animatedSheetIndex: sharedValue1 };
+    obj = { type: "<string:4143972934>", text: "<string:1358955199>", description: "<string:1091694070>", animatedSheetIndex: sharedValue1 };
     isIOSResult = callback2(importDefault(dependencyMap[31]), obj);
   }
   const items7 = [isIOSResult, ];

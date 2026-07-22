@@ -1,10 +1,10 @@
-// Module ID: 11213
-// Function ID: 87317
+// Module ID: 11214
+// Function ID: 87330
 // Name: CommandRowIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11213 (CommandRowIcon)
+// Module 11214 (CommandRowIcon)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

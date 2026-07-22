@@ -1,10 +1,13 @@
 // Module ID: 856
 // Function ID: 9607
 // Name: setLogAttribute
-// Dependencies: []
+// Dependencies: [57, 77, 804, 799, 841, 807, 800, 801, 825, 5, 800, 801, 840, 855]
 // Exports: _INTERNAL_captureLog
 
 // Module 856 (setLogAttribute)
+import _slicedToArray from "_slicedToArray";
+import _defineProperty from "_defineProperty";
+
 function setLogAttribute(arg0, arg1, arg2) {
   const tmp = arguments.length > 3 && undefined !== arguments[3];
   let tmp2 = !tmp;
@@ -33,7 +36,7 @@ function _INTERNAL_captureSerializedLog(closure_0) {
   } else {
     const items2 = [];
     const items3 = [arg1];
-    const result2 = obj.set(closure_0, items2.concat(callback2(arr), items3));
+    const result2 = obj.set(closure_0, items2.concat(_defineProperty(arr), items3));
   }
 }
 function _INTERNAL_flushLogsBuffer(closure_0, arr) {
@@ -66,8 +69,6 @@ function _getBufferMap() {
     return weakMap;
   });
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const _INTERNAL_captureLog = function _INTERNAL_captureLog(attributes, arg1) {
@@ -108,7 +109,7 @@ export const _INTERNAL_captureLog = function _INTERNAL_captureLog(attributes, ar
         const require = beforeSendLog;
         if (tmp12) {
           let tmp13Result = tmp13(tmp14[5]);
-          const tmp19 = callback(tmp13Result._getTraceInfoFromScope(client, currentScope), 2)[1];
+          const tmp19 = _slicedToArray(tmp13Result._getTraceInfoFromScope(client, currentScope), 2)[1];
           const _Object = Object;
           const merged = Object.assign({}, attributes.attributes);
           const dependencyMap = merged;
@@ -175,7 +176,7 @@ export const _INTERNAL_captureLog = function _INTERNAL_captureLog(attributes, ar
           const _Object2 = Object;
           let obj = { attributes: merged };
           let merged1 = Object.assign({}, attributes, obj);
-          const callback = merged1;
+          const _slicedToArray = merged1;
           client.emit("beforeCaptureLog", merged1);
           if (beforeSendLog) {
             merged1 = require(dependencyMap[4]).consoleSandbox(() => beforeSendLog(merged1));

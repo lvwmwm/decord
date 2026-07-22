@@ -1,5 +1,5 @@
 // Module ID: 7312
-// Function ID: 58967
+// Function ID: 58978
 // Name: extractUserData
 // Dependencies: []
 // Exports: addNormalizedRequestDataToEvent, addRequestDataToEvent, extractPathForTransaction, httpRequestToRequestData, winterCGRequestToRequestData
@@ -183,8 +183,8 @@ function extractQueryParamsFromUrl(arg0) {
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 let closure_4 = {};
-let closure_5 = ["isArray", "isArray", "container", "apply", "isArray", "isArray"];
-const items = ["defaultTagSetting", "iconEmoji", "themeColor"];
+let closure_5 = [27, 2, "8", "billar", "bola", "bola negra billar"];
+const items = ["<string:33451776>", "<string:1508788224>", "<string:3196780546>"];
 
 export const DEFAULT_USER_INCLUDES = items;
 export const addNormalizedRequestDataToEvent = function addNormalizedRequestDataToEvent(request, headers, user, include) {

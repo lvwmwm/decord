@@ -1,9 +1,9 @@
-// Module ID: 14767
-// Function ID: 111321
+// Module ID: 14775
+// Function ID: 111364
 // Name: PreviewItem
 // Dependencies: []
 
-// Module 14767 (PreviewItem)
+// Module 14775 (PreviewItem)
 function PreviewItem(dragRegion) {
   let draggedNode;
   let dropComplete;
@@ -257,7 +257,7 @@ function AnimatedItemPreview(cleanUp) {
       obj.opacity = transitionState(sharedValue[7]).withSpring(num, closure_8, "animate-always");
       return obj;
     }
-    obj = { smsInfoContainer: -536870861, shouldShowExpressiveModal: -299892737 };
+    obj = { order: "%FunctionPrototype%", match: "paddingStart" };
   };
   obj = { isFolder: tmp3, visible: sharedValue, withSpring: arg1(dependencyMap[7]).withSpring, DRAG_SPRING_PHYSICS: closure_8, transitionState, TransitionStates: arg1(dependencyMap[9]).TransitionStates, runOnJS: arg1(dependencyMap[6]).runOnJS, cleanUp };
   fn.__closure = obj;
@@ -297,7 +297,7 @@ const importAllResult = importAll(dependencyMap[0]);
 const GuildsNodeType = arg1(dependencyMap[1]).GuildsNodeType;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ dragPreview: { position: null, shadowRadius: null }, animatedPreviewStyle: { position: "absolute" }, dragPreviewHome: { right: 0 }, animatedPreviewStyleHome: { <string:1413519603>: -536870861, <string:1189478959>: -299892737 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ dragPreview: {}, animatedPreviewStyle: { position: "absolute" }, dragPreviewHome: { right: 0 }, animatedPreviewStyleHome: { -9223372036854775808: "%FunctionPrototype%", -9223372036854775808: "paddingStart" } });
 let closure_8 = {};
 let closure_9 = { code: "function GuildsBarDragPreviewTsx1(){const{scrollPosition,dragRegion,listInsets}=this.__closure;return Math.max(scrollPosition.get()<dragRegion.get().min?dragRegion.get().min-scrollPosition.get():0,listInsets.get().start);}" };
 let closure_10 = { code: "function GuildsBarDragPreviewTsx2(){const{scrollPosition,windowSize,listInsets,dragRegion,draggedHeight}=this.__closure;return Math.min(scrollPosition.get()+(windowSize-listInsets.get().end)>dragRegion.get().max?dragRegion.get().max-draggedHeight-scrollPosition.get():windowSize-listInsets.get().end-draggedHeight,windowSize-listInsets.get().end-draggedHeight);}" };

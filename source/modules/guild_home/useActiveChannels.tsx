@@ -1,10 +1,10 @@
-// Module ID: 14805
-// Function ID: 111608
+// Module ID: 14813
+// Function ID: 111651
 // Name: getActiveTextChannels
 // Dependencies: []
 // Exports: getActiveTextChannels
 
-// Module 14805 (getActiveTextChannels)
+// Module 14813 (getActiveTextChannels)
 const isTextChannel = require(dependencyMap[0]).isTextChannel;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

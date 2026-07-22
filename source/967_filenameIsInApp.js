@@ -1,7 +1,7 @@
 // Module ID: 967
 // Function ID: 10440
 // Name: filenameIsInApp
-// Dependencies: []
+// Dependencies: [1056965592]
 
 // Module 967 (filenameIsInApp)
 function filenameIsInApp(str) {
@@ -139,6 +139,6 @@ Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.filenameIsInApp = filenameIsInApp;
 arg5.node = node;
 arg5.nodeStackLineParser = function nodeStackLineParser(arg0) {
-  const items = [, node(arg0)];
+  const items = ["<string:176378432>", node(arg0)];
   return items;
 };

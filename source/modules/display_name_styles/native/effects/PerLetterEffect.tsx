@@ -1,10 +1,10 @@
-// Module ID: 8513
-// Function ID: 67902
+// Module ID: 8514
+// Function ID: 67914
 // Name: PerLetterEffect
 // Dependencies: []
 // Exports: default
 
-// Module 8513 (PerLetterEffect)
+// Module 8514 (PerLetterEffect)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Text: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

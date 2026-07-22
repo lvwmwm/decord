@@ -1,9 +1,9 @@
-// Module ID: 8982
-// Function ID: 70776
+// Module ID: 8983
+// Function ID: 70789
 // Name: CrunchyrollLinkModalScenes
 // Dependencies: []
 
-// Module 8982 (CrunchyrollLinkModalScenes)
+// Module 8983 (CrunchyrollLinkModalScenes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkConstants.tsx");
 

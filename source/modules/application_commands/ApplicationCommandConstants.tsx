@@ -1,11 +1,11 @@
 // Module ID: 4562
-// Function ID: 40005
+// Function ID: 40013
 // Name: TRUE_OPTION_NAME
 // Dependencies: []
 // Exports: getValidationErrorText
 
 // Module 4562 (TRUE_OPTION_NAME)
-const items = [{ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, {}];
+const items = [{ 0: 24, 0: 24, 0: null }, {}];
 const frozen = Object.freeze([]);
 const frozen1 = Object.freeze([]);
 const _module = require(dependencyMap[2]);

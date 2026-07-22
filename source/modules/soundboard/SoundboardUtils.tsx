@@ -1,5 +1,5 @@
 // Module ID: 5734
-// Function ID: 49301
+// Function ID: 49312
 // Name: hasPermissionToPlaySound
 // Dependencies: []
 // Exports: getAmplitudinalSoundboardVolume, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes

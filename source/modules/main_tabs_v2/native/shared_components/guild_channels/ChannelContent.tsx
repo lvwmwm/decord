@@ -1,10 +1,10 @@
-// Module ID: 15230
-// Function ID: 115003
+// Module ID: 15238
+// Function ID: 115046
 // Name: ChannelContentComponent
 // Dependencies: []
 // Exports: renderChannelContent
 
-// Module 15230 (ChannelContentComponent)
+// Module 15238 (ChannelContentComponent)
 function ChannelContentComponent(arg0) {
   let channel;
   let connected;
@@ -54,7 +54,7 @@ function ChannelContentComponent(arg0) {
   items[1] = obj2;
   obj1.style = items;
   const obj3 = {};
-  const obj4 = {};
+  const obj4 = { <string:1509384864>: "text-lg/normal", <string:1335723603>: "text-default", <string:1637180967>: true };
   let num2 = 0;
   if (tmp9) {
     num2 = 30;
@@ -146,7 +146,7 @@ function ChannelContentComponent(arg0) {
   }
   const items7 = [tmp38, , ];
   const obj17 = {};
-  const items8 = [{ "Bool(false)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(false)": 160 }, ];
+  const items8 = [{ "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 160 }, ];
   if (tmp8) {
     const obj18 = { marginTop: 5 };
     tmp8 = obj18;
@@ -182,11 +182,11 @@ if (obj4.isIOS()) {
 }
 obj.marginTop = num;
 obj.channelContent = obj;
-obj.channelContainer = { d: null, useMemo: null, keys: null, hasDiversityParent: null };
+obj.channelContainer = { "Null": null, "Null": null, "Null": null, "Null": null };
 obj.leftBox = {};
-obj.rightBox = { "Null": "<string:1459617792>", "Null": "<string:1275068417>" };
-obj.rightContentAbsolute = { <string:3250345558>: 3375103, <string:553825121>: -8192, <string:1935339265>: 4320799 };
-obj.channelTraits = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj.rightBox = { <string:3814666730>: "<string:1459617792>", <string:1280564396>: "<string:1275068417>" };
+obj.rightContentAbsolute = {};
+obj.channelTraits = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
 const obj1 = { opacity: arg1(dependencyMap[2]).SUBTITLE_OPACITY_NORMAL, marginRight: 4 };
 const obj4 = arg1(dependencyMap[6]);
 let num2 = 0;

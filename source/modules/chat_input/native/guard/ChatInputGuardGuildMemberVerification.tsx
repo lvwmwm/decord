@@ -1,15 +1,15 @@
-// Module ID: 11478
-// Function ID: 89386
+// Module ID: 11479
+// Function ID: 89399
 // Dependencies: []
 
-// Module 11478
+// Module 11479
 const Image = arg1(dependencyMap[1]).Image;
 let closure_4 = importDefault(dependencyMap[2]);
 const TextAreaCta = arg1(dependencyMap[3]).TextAreaCta;
 const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
 const jsx = arg1(dependencyMap[5]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let closure_8 = arg1(dependencyMap[6]).createStyles({ noticeIcon: {}, lottieAnimation: {} });
+let closure_8 = arg1(dependencyMap[6]).createStyles({ noticeIcon: {}, lottieAnimation: { hideWhenScrolling: 0, autoCapitalize: -1048576 } });
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;

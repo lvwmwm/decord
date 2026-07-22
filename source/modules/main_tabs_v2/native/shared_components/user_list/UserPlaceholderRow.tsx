@@ -1,9 +1,9 @@
-// Module ID: 8484
-// Function ID: 67748
+// Module ID: 8485
+// Function ID: 67760
 // Name: placeholderRowWidth
 // Dependencies: []
 
-// Module 8484 (placeholderRowWidth)
+// Module 8485 (placeholderRowWidth)
 function placeholderRowWidth(arg0) {
   const result = 10000 * Math.sin(arg0);
   return 40 * (result - Math.floor(result)) + 40;
@@ -15,11 +15,11 @@ let closure_5 = importDefault(dependencyMap[2]);
 const tmp2 = arg1(dependencyMap[3]);
 let closure_8 = arg1(dependencyMap[4]).createStyles((height) => {
   let obj = {};
-  obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, height };
+  obj = { "Bool(false)": "<string:1912603085>", "Bool(false)": true, "Bool(false)": true, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, height };
   obj.row = obj;
   obj = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_16, flex: 1 };
   obj.rowInner = obj;
-  obj.rowHeaderWrapper = {};
+  obj.rowHeaderWrapper = { width: true, marginHorizontal: true };
   obj.placeholderAvatar = { width: importDefault(dependencyMap[5]).space.PX_32, height: importDefault(dependencyMap[5]).space.PX_32, borderRadius: importDefault(dependencyMap[5]).radii.lg, overflow: "hidden", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
   const obj1 = { width: importDefault(dependencyMap[5]).space.PX_32, height: importDefault(dependencyMap[5]).space.PX_32, borderRadius: importDefault(dependencyMap[5]).radii.lg, overflow: "hidden", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
   obj.placeholderText = { height: 20, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };

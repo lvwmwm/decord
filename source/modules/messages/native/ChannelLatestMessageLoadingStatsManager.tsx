@@ -1,9 +1,9 @@
-// Module ID: 10851
-// Function ID: 84300
+// Module ID: 10852
+// Function ID: 84313
 // Name: ChannelLatestMessageLoadingStatsManager
 // Dependencies: []
 
-// Module 10851 (ChannelLatestMessageLoadingStatsManager)
+// Module 10852 (ChannelLatestMessageLoadingStatsManager)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

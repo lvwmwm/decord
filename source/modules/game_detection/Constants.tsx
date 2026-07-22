@@ -1,9 +1,9 @@
-// Module ID: 11861
-// Function ID: 91853
+// Module ID: 11862
+// Function ID: 91867
 // Name: detectableCDNUrl
 // Dependencies: []
 
-// Module 11861 (detectableCDNUrl)
+// Module 11862 (detectableCDNUrl)
 function detectableCDNUrl(arg0, GAMES_DETECTABLE) {
   let combined = GAMES_DETECTABLE;
   if (null != CDN_HOST) {

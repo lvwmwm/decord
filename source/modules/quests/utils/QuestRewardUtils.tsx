@@ -1,10 +1,10 @@
-// Module ID: 9455
-// Function ID: 73654
+// Module ID: 9456
+// Function ID: 73667
 // Name: getCollectiblesQuestReward
 // Dependencies: []
 // Exports: getCollectibleQuestRewardDuration, getCollectibleQuestRewardExtendableExpirationDate, getCollectiblesQuestRewardItem, getDefaultPlatform, getDefaultRewardName, getDefaultRewardNameWithArticle, getInGameQuestReward, getPlatformString, getQuestOrbMultiplierForUser, getQuestPrimaryReward, getRewardCodeQuestReward, getVirtualCurrencyRewardPremiumOrbQuantity, hasCollectiblesQuestReward, hasInGameQuestReward, hasQuestRewardCode, isCollectibleQuestRewardPermanentWithPremiumSubscription, isTieredRewardCodeQuest
 
-// Module 9455 (getCollectiblesQuestReward)
+// Module 9456 (getCollectiblesQuestReward)
 function getCollectiblesQuestReward(rewardsConfig) {
   const rewards = rewardsConfig.rewardsConfig.rewards;
   const found = rewards.find((type) => type.type === callback(closure_1[2]).QuestRewardTypes.COLLECTIBLE);

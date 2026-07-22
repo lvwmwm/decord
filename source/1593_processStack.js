@@ -28,7 +28,7 @@ function processStack(stack) {
           }
         }
         if (!first) {
-          let items = ["swh", "sw", null];
+          let items = [-967644319, 1359289069, "assign"];
           const tmp12 = callback(items, 3);
           const sum = tmp2 + tmp12[2] + replace;
           tmp2 = str;

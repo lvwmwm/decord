@@ -1,14 +1,14 @@
-// Module ID: 11790
-// Function ID: 91534
+// Module ID: 11791
+// Function ID: 91547
 // Dependencies: []
 
-// Module 11790
+// Module 11791
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, image: {}, title: {}, subtext: {} });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { 0: true, 0: null, -9223372036854775808: null, 0: null }, image: {}, title: {}, subtext: {} });
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo((topViewHeight) => {
   let num = topViewHeight.topViewHeight;

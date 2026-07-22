@@ -1,10 +1,10 @@
-// Module ID: 8254
-// Function ID: 65116
+// Module ID: 8255
+// Function ID: 65128
 // Name: ProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 8254 (ProfileBanner)
+// Module 8255 (ProfileBanner)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const BANNER_HEIGHT = arg1(dependencyMap[2]).BANNER_HEIGHT;

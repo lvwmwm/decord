@@ -1,5 +1,5 @@
 // Module ID: 7131
-// Function ID: 57412
+// Function ID: 57423
 // Name: _callSuper
 // Dependencies: []
 
@@ -38,8 +38,10 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, LocalizedString$Type);
       items = [, ];
       items[0] = {};
-      items[1] = { V: {} };
-      items1 = ["CAROUSEL_SECTION_NAME_4"];
+      obj = { -111020099: "body", 1351895378: "scalar", 1456955659: 9, -1801654842: 0 };
+      obj.V = {};
+      items[1] = obj;
+      items1 = [null];
       items1[1] = items;
       return closure_8(this, LocalizedString$Type, items1);
     }
@@ -217,9 +219,11 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, LocalizedSnowflake$Type);
       items = [, ];
-      items[0] = { 1347510942: "PKLITE compressed ZIP archive (see also PKZIP)", 1678385745: "NEUTRAL_25", 1364379111: 1, 140698458: "stretch" };
-      items[1] = { V: {} };
-      items1 = [false];
+      items[0] = {};
+      obj = { -111020099: "body", 1351895378: "scalar", 1456955659: 9, -1801654842: 0 };
+      obj.V = { 0: "Array", -9223372036854775808: "isArray" };
+      items[1] = obj;
+      items1 = [null];
       items1[1] = items;
       return closure_8(this, LocalizedSnowflake$Type, items1);
     }

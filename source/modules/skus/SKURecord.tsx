@@ -1,5 +1,5 @@
 // Module ID: 4165
-// Function ID: 35340
+// Function ID: 35342
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -303,7 +303,7 @@ const tmp4 = (importDefaultResult) => {
         obj.exclusive = id.exclusive || false;
         let locales = id.locales;
         if (null == locales) {
-          locales = ["<string:31881793>"];
+          locales = [true];
         }
         obj.locales = locales;
         ({ flags: obj.flags, external_purchase_url: obj.externalPurchaseUrl, deleted } = id);

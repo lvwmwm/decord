@@ -1,10 +1,10 @@
-// Module ID: 8229
-// Function ID: 64990
+// Module ID: 8230
+// Function ID: 65002
 // Name: useProfileTheme
 // Dependencies: []
 // Exports: default
 
-// Module 8229 (useProfileTheme)
+// Module 8230 (useProfileTheme)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const useEffectiveThemeOverride = arg1(dependencyMap[2]).useEffectiveThemeOverride;
@@ -44,7 +44,7 @@ export default function useProfileTheme(arg0) {
   } else {
     if (null == displayProfile) {
       if (!isPreview) {
-        obj = { from: false, has: false, justifyContent: null, theme: tmp };
+        obj = { <string:3431066467>: "mn", <string:1646814289>: "description", <string:2589056999>: "Array", theme: tmp };
         return obj;
       }
     }

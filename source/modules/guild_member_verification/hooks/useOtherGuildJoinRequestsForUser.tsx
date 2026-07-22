@@ -1,10 +1,10 @@
-// Module ID: 15185
-// Function ID: 114543
+// Module ID: 15193
+// Function ID: 114586
 // Name: useOtherGuildJoinRequestsForUser
 // Dependencies: []
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 15185 (useOtherGuildJoinRequestsForUser)
+// Module 15193 (useOtherGuildJoinRequestsForUser)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_member_verification/hooks/useOtherGuildJoinRequestsForUser.tsx");

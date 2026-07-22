@@ -1,10 +1,10 @@
-// Module ID: 10823
-// Function ID: 84039
+// Module ID: 10824
+// Function ID: 84052
 // Name: SuccessResultModal
 // Dependencies: []
 // Exports: default
 
-// Module 10823 (SuccessResultModal)
+// Module 10824 (SuccessResultModal)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -22,11 +22,11 @@ obj.container = obj;
 obj.scrollView = { flex: 1 };
 const tmp4 = arg1(dependencyMap[7]);
 obj.scrollViewContentContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
-obj.inner = { duration: "2ec8d4d40c93ceea32933ae4e505df6e", channel: "ChatPlusIcon", jsx: "png", pos: true };
+obj.inner = { <string:3023162607>: 24, <string:2937120107>: 24, <string:2781144925>: null, <string:775504923>: "2ec8d4d40c93ceea32933ae4e505df6e" };
 obj.text = {};
-obj.footer = { scales: "order", paddingHorizontal: "scalar", resizeMode: 13, Button: "user_id_range" };
+obj.footer = { "Bool(true)": null, "Bool(true)": 0.3, "Bool(true)": "PinwheelOut", "Bool(true)": null };
 obj.footerLandscape = {};
-obj.footerPortrait = {};
+obj.footerPortrait = { "Null": "safety_state", "Null": "message" };
 let closure_16 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/oauth2/native/SuccessResult.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 3976
-// Function ID: 32984
+// Function ID: 32986
 // Name: createPresetAppearance
 // Dependencies: []
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSingleColorGuildThemeGradientColors
@@ -28,7 +28,7 @@ function getToneAdjustedColor(arg0, arg1) {
   return result.hex();
 }
 function getGuildThemeToneRange(theme) {
-  return theme === ThemeTypes.LIGHT ? { sk: true, Text: true } : { sk: false, Text: false };
+  return theme === ThemeTypes.LIGHT ? { supportsOutOfProcessOverlay: "<string:1358954803>", flex: "<string:2556527973>" } : { supportsOutOfProcessOverlay: true, flex: true };
 }
 function getThemeAdjustedToneColor(first, theme) {
   const tmp = getGuildThemeToneRange(theme);
@@ -38,7 +38,7 @@ function getThemeAdjustedToneColor(first, theme) {
   return result.hex();
 }
 const ThemeTypes = require(dependencyMap[0]).ThemeTypes;
-let obj = {};
+let obj = { enabled: "allowTouches", gatesApex: "prefixTag", compatibilityHook: "l", warn: "isArray", enabled: "%ObjProto_valueOf%", enabledOOP: "isArray", allowHook: "CONNECTIONS_STEP", supportsOutOfProcessOverlay: "allowTouches", flex: "prefixTag", gap: "l" };
 const items = [, , , , , , , , , ];
 ({ TWILIGHT: arr[0], DENIM: arr[1], OCEAN: arr[2], BLURPLE: arr[3], OBSIDIAN: arr[4], PLUM: arr[5], FIRE: arr[6], GOLD_DUST: arr[7], MOSS: arr[8], JADE: arr[9] } = obj);
 obj = {};

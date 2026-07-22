@@ -1,10 +1,10 @@
-// Module ID: 12266
-// Function ID: 94055
+// Module ID: 12271
+// Function ID: 94083
 // Name: useMaybeFetchTieredTenureBadgeData
 // Dependencies: []
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 12266 (useMaybeFetchTieredTenureBadgeData)
+// Module 12271 (useMaybeFetchTieredTenureBadgeData)
 let closure_3 = importDefault(dependencyMap[0]);
 const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");

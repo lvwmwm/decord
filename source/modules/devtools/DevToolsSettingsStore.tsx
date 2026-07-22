@@ -1,5 +1,5 @@
 // Module ID: 6955
-// Function ID: 55568
+// Function ID: 55579
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,7 +19,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = { devWidgetPosition: {}, sortedScreenKeys: [] };
+let closure_8 = { devWidgetPosition: { 0: "%FunctionPrototype%", 0: "paddingStart" }, sortedScreenKeys: [] };
 let tmp2 = (DeviceSettingsStore) => {
   class DevToolsSettingsStore {
     constructor() {

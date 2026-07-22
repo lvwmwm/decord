@@ -1,9 +1,9 @@
-// Module ID: 10975
-// Function ID: 85441
+// Module ID: 10976
+// Function ID: 85454
 // Name: items
 // Dependencies: []
 
-// Module 10975 (items)
+// Module 10976 (items)
 let DisableCommunicationDuration;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);

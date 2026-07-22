@@ -1,10 +1,10 @@
-// Module ID: 11895
-// Function ID: 92096
+// Module ID: 11896
+// Function ID: 92110
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [6851, 566, 2, 31, 27, 5510, 33, 4126, 1450, 2, 5, 57, 31, 7914, 653]
+// Dependencies: [6851, 566, 2, 31, 27, 5509, 33, 4126, 1450, 2, 5, 57, 31, 7914, 653]
 // Exports: default
 
-// Module 11895 (UserProfileCustomStatusActionSheet)
+// Module 11896 (UserProfileCustomStatusActionSheet)
 import "_isNativeReflectConstruct";
 import { View } from "initialize";
 import result2 from "result2";
@@ -20,7 +20,8 @@ ARBITRARY_LARGE_OFFSET = { flexDirection: "row", columnGap: module_31.AVATAR_CUS
 ARBITRARY_LARGE_OFFSET.statusPreviewContainer = ARBITRARY_LARGE_OFFSET;
 ARBITRARY_LARGE_OFFSET.avatarContainer = { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" };
 ARBITRARY_LARGE_OFFSET.avatarStatus = { backgroundColor: require("module_33").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-ARBITRARY_LARGE_OFFSET.customStatusBubble = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10 };
+const obj2 = { "Bool(false)": "password", "Bool(false)": "email", "Bool(false)": "name-prefix", marginTop: AVATAR_CONTAINER_SIZE / 2 + 10 };
+ARBITRARY_LARGE_OFFSET.customStatusBubble = obj2;
 ARBITRARY_LARGE_OFFSET = ARBITRARY_LARGE_OFFSET.createStyles(ARBITRARY_LARGE_OFFSET);
 const result = ME.fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
 
@@ -58,7 +59,9 @@ export default function UserProfileCustomStatusActionSheet(user) {
   const obj2 = { style: tmp.avatarContainer };
   const tmp3 = importDefault(dependencyMap[8])(user.id);
   obj2.children = callback(importDefault(dependencyMap[12]), { user, statusStyle: tmp.avatarStatus });
-  const items2 = [callback(View, obj2), callback(importDefault(dependencyMap[13]), { customStatusActivity: tmp3, style: tmp.customStatusBubble, previewEmoji, previewText })];
+  const items2 = [callback(View, obj2), ];
+  const obj4 = { "Null": 60, "Null": 0, "Null": 0, customStatusActivity: tmp3, style: tmp.customStatusBubble, previewEmoji, previewText };
+  items2[1] = callback(importDefault(dependencyMap[13]), obj4);
   obj1.children = items2;
   obj.children = callback2(View, obj1);
   return callback(importDefault(dependencyMap[11]), obj);

@@ -1,10 +1,10 @@
-// Module ID: 16197
-// Function ID: 125160
+// Module ID: 16205
+// Function ID: 125202
 // Name: RoleGradientPickerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16197 (RoleGradientPickerActionSheet)
+// Module 16205 (RoleGradientPickerActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6 } = arg1(dependencyMap[2]));
@@ -14,21 +14,21 @@ const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { justifyContent: false, alignItems: false, flexDirection: false, marginRight: false, flexDirection: false, paddingVertical: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_12, gap: importDefault(dependencyMap[6]).space.PX_16 };
+obj = { 9223372036854775807: false, 0: false, 0: false, 9223372036854775807: false, 9223372036854775807: false, paddingVertical: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_12, gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.body = obj;
+const obj1 = { borderRadius: "O", display: "l", flexDirection: "\u0596", justifyContent: "\u0598", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+obj.gradientContainer = obj1;
 const tmp4 = arg1(dependencyMap[4]);
-obj.gradientContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.dropperContainer = { left: importDefault(dependencyMap[6]).space.PX_24, right: importDefault(dependencyMap[6]).space.PX_24 };
+const obj3 = { 1549861467: true, 1661208145: true, 1688251195: true, -1420380357: true, -883759263: true, padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj.dropper = obj3;
 const obj2 = { left: importDefault(dependencyMap[6]).space.PX_24, right: importDefault(dependencyMap[6]).space.PX_24 };
-obj.dropper = { padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.round };
-const obj3 = { padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.gradient = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-const obj5 = { "Null": "Array", "Null": "isArray", "Null": "rejectWithError", "Bool(true)": "fill", "Bool(true)": "Array", "Bool(true)": "isArray", gap: importDefault(dependencyMap[6]).space.PX_8 };
-obj.optionContainer = obj5;
-const obj6 = { "Null": 1.512, "Null": 5, "Null": "country_scores", "Null": "map", "Null": 9, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.pressable = obj6;
 const obj4 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj.optionContainer = { gap: importDefault(dependencyMap[6]).space.PX_8 };
+const obj6 = { skuId: false, product: false, onPress: false, onTrackPress: false, position: false, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj.pressable = obj6;
+const obj5 = { gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.selected = { borderWidth: 2, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND };
 const obj7 = { borderWidth: 2, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND };
 obj.option = { flex: 1, borderRadius: importDefault(dependencyMap[6]).radii.sm };
@@ -111,7 +111,7 @@ export default function RoleGradientPickerActionSheet(arg0) {
   obj = {};
   const intl = arg1(dependencyMap[13]).intl;
   obj.title = intl.string(arg1(dependencyMap[13]).t.XpWmJz);
-  const obj1 = { "Bool(true)": null, "Bool(true)": null };
+  const obj1 = {};
   const intl2 = arg1(dependencyMap[13]).intl;
   obj1.text = intl2.string(arg1(dependencyMap[13]).t.R3BPH+);
   obj1.onPress = callback;
@@ -119,19 +119,19 @@ export default function RoleGradientPickerActionSheet(arg0) {
   obj.header = callback2(arg1(dependencyMap[12]).BottomSheetTitleHeader, obj);
   const obj2 = { style: tmp.body };
   const obj3 = { style: tmp.gradientContainer };
-  const items3 = [callback2(importDefault(dependencyMap[15]), { style: tmp.gradient, colors: found, start: {}, end: {} }), ];
+  const items3 = [callback2(importDefault(dependencyMap[15]), { style: tmp.gradient, colors: found, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } }), ];
   const obj5 = { style: tmp.dropperContainer };
   const obj6 = { style: tmp.dropper, onPress: callback2 };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj6.accessibilityLabel = intl3.string(arg1(dependencyMap[13]).t.QPqIEx);
   obj6.accessibilityRole = "button";
-  obj6.children = callback2(arg1(dependencyMap[16]).EyeDropperIcon, { "Null": 12, "Null": 4 });
+  obj6.children = callback2(arg1(dependencyMap[16]).EyeDropperIcon, {});
   const items4 = [callback2(closure_6, obj6), ];
   const obj7 = { style: tmp.dropper, onPress: callback3 };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj7.accessibilityLabel = intl4.string(arg1(dependencyMap[13]).t.fLMusI);
   obj7.accessibilityRole = "button";
-  obj7.children = callback2(arg1(dependencyMap[16]).EyeDropperIcon, { "Null": 12, "Null": 4 });
+  obj7.children = callback2(arg1(dependencyMap[16]).EyeDropperIcon, {});
   items4[1] = callback2(closure_6, obj7);
   obj5.children = items4;
   items3[1] = callback3(closure_5, obj5);
@@ -170,8 +170,8 @@ export default function RoleGradientPickerActionSheet(arg0) {
         const obj3 = onSelect(first[18]);
         items1[1] = onSelect(first[18]).int2hex(tmp[1]);
         obj.colors = items1;
-        obj.start = {};
-        obj.end = {};
+        obj.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+        obj.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
         obj.children = callback2(tmp7, obj);
         return tmp4(onSelect(first[17]).PressableOpacity, obj, colors.name);
       })

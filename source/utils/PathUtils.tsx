@@ -1,5 +1,5 @@
 // Module ID: 4182
-// Function ID: 35997
+// Function ID: 36004
 // Name: pathBasename
 // Dependencies: []
 // Exports: pathFilenameWithoutExt, pathJoin

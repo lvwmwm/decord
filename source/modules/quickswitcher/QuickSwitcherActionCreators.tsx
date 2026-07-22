@@ -1,10 +1,10 @@
-// Module ID: 9877
-// Function ID: 76489
+// Module ID: 9878
+// Function ID: 76502
 // Name: getQuickSwitcherOptions
 // Dependencies: []
 // Exports: search, selectResult, switchToResult, toggle
 
-// Module 9877 (getQuickSwitcherOptions)
+// Module 9878 (getQuickSwitcherOptions)
 let Layers;
 function getQuickSwitcherOptions(str) {
   const GameProfileInQuickswitcherExperiment = arg1(dependencyMap[13]).GameProfileInQuickswitcherExperiment;

@@ -1,10 +1,10 @@
-// Module ID: 10678
-// Function ID: 83227
+// Module ID: 10679
+// Function ID: 83240
 // Name: handleCloseScreenshare
 // Dependencies: []
 // Exports: default, tryStartScreenShare
 
-// Module 10678 (handleCloseScreenshare)
+// Module 10679 (handleCloseScreenshare)
 function handleCloseScreenshare() {
   const currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {

@@ -1,5 +1,5 @@
 // Module ID: 7134
-// Function ID: 57450
+// Function ID: 57461
 // Name: _callSuper
 // Dependencies: []
 
@@ -38,20 +38,20 @@ let tmp2 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, MarketingPageBanner$Type);
       items = [, , , , , , , , ];
-      items[0] = { 1347510942: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004780256688701622, 1678385745: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473800797, 1364379111: 131072.00412178785, 140698458: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034032482983877397 };
-      items[1] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
+      items[0] = {};
+      items[1] = {};
       items[2] = {};
-      items[3] = { 1347510942: "rgba(0, 0, 0, 0.7)", 1678385745: 16, 1364379111: "row", 140698458: "center" };
-      obj = { 9223372036854775807: "filter_snapshot_name", 9223372036854775807: "scalar", 0: 9 };
+      items[3] = {};
+      obj = { -111020099: null, 1351895378: null, 1456955659: null };
       obj.T = function T() {
         return closure_9;
       };
       items[4] = obj;
-      obj = { 9223372036854775807: "#E6E6E7", 9223372036854775807: "OPACITY_BLUE_52", 0: 0.5215686274509804 };
-      obj.T = function T() {
-        return callback(closure_1[6]).HelpArticle;
+      items[5] = {
+        T() {
+              return callback(closure_1[6]).HelpArticle;
+            }
       };
-      items[5] = obj;
       items[6] = {
         T() {
               return callback(closure_1[7]).LocalizedString;
@@ -64,11 +64,11 @@ let tmp2 = (MessageType) => {
       };
       items[8] = {
         T() {
-              const items = ["about:blank", closure_8, "MARKETING_PAGE_BANNER_BUTTON_VARIANT_"];
+              const items = [1022464664, closure_8, "MARKETING_PAGE_BANNER_BUTTON_VARIANT_"];
               return items;
             }
       };
-      items1 = [];
+      items1 = ["channelId"];
       items1[1] = items;
       return closure_10(this, MarketingPageBanner$Type, items1);
     }
@@ -275,25 +275,25 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, MarketingPageBannerButton$Type);
       items = [, , , , ];
-      items[0] = { 1347510942: "YELLOW_NEW_72", 1678385745: 1, 1364379111: "light_url", 140698458: "scalar" };
+      items[0] = {};
       items[1] = {
         T() {
-              const items = [6965542329722403000000000000000000000000000000000000000000000000000000000000000000000000000000, callback(closure_1[9]).ButtonAction, "BUTTON_ACTION_"];
+              const items = ["http://*", callback(closure_1[9]).ButtonAction, "BUTTON_ACTION_"];
               return items;
             }
       };
       items[2] = {};
-      obj = { 9223372036854775807: 190359829595963920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000015072128512635997, 0: 0.95 };
+      obj = { -111020099: "w", 1351895378: "Array", 1456955659: "isArray" };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj = { -111020099: null, 1351895378: null, 1456955659: null };
       obj.T = function T() {
         return callback(closure_1[10]).UInt64Value;
       };
       items[4] = obj;
-      items1 = ["reason:user_cancelled"];
+      items1 = [-504227794686164840000000];
       items1[1] = items;
       return closure_10(this, MarketingPageBannerButton$Type, items1);
     }
@@ -303,7 +303,7 @@ let tmp4 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { listenersCollapsed: "r", SETTINGS_VOICE_AND_VIDEO: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", getGlobalDismissTimestamp: "Array" };
+      let obj = { "Null": 24, "Null": 8, "Null": 3 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, MarketingPageBannerButton$Type(closure_1[8]).MESSAGE_TYPE, obj);

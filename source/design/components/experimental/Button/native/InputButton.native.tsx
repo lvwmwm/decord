@@ -1,15 +1,15 @@
-// Module ID: 8369
-// Function ID: 66693
+// Module ID: 8370
+// Function ID: 66705
 // Name: InputButton
 // Dependencies: []
 
-// Module 8369 (InputButton)
+// Module 8370 (InputButton)
 let closure_2 = [];
 let closure_3 = importDefault(dependencyMap[0]);
 const Text = arg1(dependencyMap[2]).Text;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
-let obj = { buttonText: { "Null": "100%", "Null": null, "Null": null } };
+let obj = { buttonText: {} };
 obj = { color: importDefault(dependencyMap[5]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.buttonTextPlaceholder = obj;
 obj1 = { color: importDefault(dependencyMap[5]).colors.REDESIGN_BUTTON_TERTIARY_TEXT };

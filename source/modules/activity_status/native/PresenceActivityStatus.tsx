@@ -1,10 +1,10 @@
-// Module ID: 9066
-// Function ID: 71142
+// Module ID: 9067
+// Function ID: 71155
 // Name: PresenceActivityStatus
 // Dependencies: []
 // Exports: default
 
-// Module 9066 (PresenceActivityStatus)
+// Module 9067 (PresenceActivityStatus)
 importAll(dependencyMap[0]);
 const ActivityTypes = arg1(dependencyMap[1]).ActivityTypes;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

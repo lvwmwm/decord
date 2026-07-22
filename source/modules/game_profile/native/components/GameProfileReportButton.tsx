@@ -1,10 +1,10 @@
-// Module ID: 11858
-// Function ID: 91819
+// Module ID: 11859
+// Function ID: 91833
 // Name: GameProfileReportButton
 // Dependencies: []
 // Exports: default
 
-// Module 11858 (GameProfileReportButton)
+// Module 11859 (GameProfileReportButton)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/game_profile/native/components/GameProfileReportButton.tsx");
@@ -23,7 +23,7 @@ export default function GameProfileReportButton(applicationId) {
     const obj2 = trackAction(paths[4]);
     obj2.pushLazy(applicationId(paths[6])(paths[5], paths.paths), obj, applicationId(paths[7]).MODAL_KEY);
   }, items);
-  const obj = { "Bool(true)": null, "Bool(true)": null };
+  const obj = {};
   const intl = arg1(dependencyMap[9]).intl;
   obj.text = intl.string(arg1(dependencyMap[9]).t.qP2cXd);
   obj.onPress = callback;

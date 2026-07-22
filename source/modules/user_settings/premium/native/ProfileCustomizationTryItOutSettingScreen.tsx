@@ -1,10 +1,10 @@
-// Module ID: 14347
-// Function ID: 108342
+// Module ID: 14355
+// Function ID: 108385
 // Name: ProfileCustomizationTryItOutSettingScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14347 (ProfileCustomizationTryItOutSettingScreen)
+// Module 14355 (ProfileCustomizationTryItOutSettingScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ View: closure_4, ActivityIndicator: closure_5 } = tmp2);
@@ -17,7 +17,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj.container = obj;
-obj.activityIndicator = { "Bool(true)": null, "Bool(true)": null, 266603034: null };
+obj.activityIndicator = { -9223372036854775808: "getEmbeddedActivityParticipantId", -9223372036854775808: "_enabledPaymentMethods", -9223372036854775808: "GAME_CLAIM" };
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
@@ -80,7 +80,7 @@ export default function ProfileCustomizationTryItOutSettingScreen() {
   } else if (tmp5.isFetching) {
     obj = { style: tmp.activityIndicator };
     tmp = visibleFontOrder;
-    obj.children = <visibleFontOrder font={397} dx={97} />;
+    obj.children = <visibleFontOrder />;
     let tmp18 = <setPendingAvatarDecoration {...obj} />;
   } else if (undefined !== pendingAvatarDecoration) {
     obj = { value: analyticsLocations };

@@ -1,13 +1,13 @@
-// Module ID: 10090
-// Function ID: 78146
+// Module ID: 10091
+// Function ID: 78159
 // Name: NewBadge
 // Dependencies: []
 // Exports: ConversationCoachmark
 
-// Module 10090 (NewBadge)
+// Module 10091 (NewBadge)
 function NewBadge() {
   let obj = { style: callback2().badge };
-  obj = { hasMaxConnections: null, isBoostOnlySubscription: null };
+  obj = { cachedAt: "<string:191316381>", edpbxy: "<string:3094478849>" };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.c2GSIl);
   obj.children = jsx(arg1(dependencyMap[8]).Text, obj);

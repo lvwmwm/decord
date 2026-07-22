@@ -1,15 +1,15 @@
-// Module ID: 8937
-// Function ID: 70438
+// Module ID: 8938
+// Function ID: 70451
 // Name: XboxLinkPreConnect
 // Dependencies: []
 // Exports: default
 
-// Module 8937 (XboxLinkPreConnect)
+// Module 8938 (XboxLinkPreConnect)
 let closure_3 = importAll(dependencyMap[0]);
 const XboxLinkModalScenes = arg1(dependencyMap[1]).XboxLinkModalScenes;
 const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ image: { "Null": true, "Null": true } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ image: { "Null": "surrogates", "Null": "isArray" } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
 

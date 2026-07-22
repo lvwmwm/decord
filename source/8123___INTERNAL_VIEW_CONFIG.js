@@ -1,11 +1,11 @@
 // Module ID: 8123
-// Function ID: 64339
+// Function ID: 64349
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 8123 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "RNSVGSvgView" };
-obj = { lineClamp: null, style: null, accessibilityLabel: null, accessibilityRole: 2.5, maxFontSizeMultiplier: "80%", style: true, variant: "/assets/images/native/premium/logos", color: 163.5, lineClamp: 20, ellipsizeMode: null, variant: "cd3f012d84fd9fd0e06d08e5556058d7" };
+obj = { dragOffsetX: null, FLING_MIN_DISTANCE: "cd3f012d84fd9fd0e06d08e5556058d7", INITIAL_OPEN_WIDTH: "img_logo_nitro_tier_0_horizontal_dark", "Bool(false)": "png", "Bool(false)": "absolute", "Bool(false)": 22, "Bool(false)": 22, "Bool(false)": 90, "Bool(false)": true, "Bool(false)": "/assets/images/native/premium/illustrations", "Bool(false)": 188.5 };
 obj = { process: require(dependencyMap[0]).default };
 obj.color = obj;
 obj.validAttributes = obj;

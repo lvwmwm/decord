@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 91621
+// Module ID: 11809
+// Function ID: 91635
 // Name: GiftBackgroundSelectTile
 // Dependencies: []
 // Exports: default
 
-// Module 11808 (GiftBackgroundSelectTile)
+// Module 11809 (GiftBackgroundSelectTile)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Pressable: closure_4 } = arg1(dependencyMap[1]));
 const PremiumGiftStyles = arg1(dependencyMap[2]).PremiumGiftStyles;
@@ -28,14 +28,14 @@ obj[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: importDefault(dependencyMa
 const obj3 = { uri: importDefault(dependencyMap[13]) };
 let closure_9 = arg1(dependencyMap[14]).createStyles((arg0) => {
   let obj = {};
-  obj = { -2146320533: true, 1244786459: true, -871786476: true, marginEnd: importDefault(dependencyMap[15]).space.PX_8 };
+  obj = { REMEDIATION_ELEMENT_TYPES: true, "Null": true, "Null": true, marginEnd: importDefault(dependencyMap[15]).space.PX_8 };
   let num = 0;
   if (0 === arg0) {
     num = 20;
   }
   obj.marginStart = num;
   obj.container = obj;
-  obj = { gap: 24, alignSelf: 24, flexDirection: null, alignItems: "b04e363869889767a126da0fcdcaf9c8", justifyContent: "AppleNeutralIcon", flexGrow: "png", maxWidth: true, borderColor: importDefault(dependencyMap[15]).colors.TEXT_BRAND, borderRadius: importDefault(dependencyMap[15]).radii.sm };
+  obj = { delete: 24, channel: 24, position: null, top: "b04e363869889767a126da0fcdcaf9c8", left: "AppleNeutralIcon", bottom: "png", right: true, borderColor: importDefault(dependencyMap[15]).colors.TEXT_BRAND, borderRadius: importDefault(dependencyMap[15]).radii.sm };
   obj.selected = obj;
   obj.image = {};
   return obj;

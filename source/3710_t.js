@@ -988,7 +988,7 @@ const fn = function t() {
       let num2 = 0;
       do {
         let tmp3 = closure_64;
-        let items = ["x", num2];
+        let items = [false, num2];
         let tmp4 = closure_64(items);
         let monthsShortResult = tmp.monthsShort(tmp4, "");
         tmp._shortMonthsParse[num2] = monthsShortResult.toLocaleLowerCase();
@@ -1086,7 +1086,7 @@ const fn = function t() {
     let num = 0;
     do {
       let tmp = closure_64;
-      let items3 = ["x", num];
+      let items3 = [false, num];
       let tmp2 = closure_64(items3);
       let arr = items.push(self.monthsShort(tmp2, ""));
       arr = items1.push(self.months(tmp2, ""));
@@ -2371,7 +2371,7 @@ const fn = function t() {
     } else {
       const tmp = match[match.length - 1] || [];
       const text = `${tmp}`;
-      const tmp4 = `${tmp}`.match(closure_48) || [true, true, true];
+      const tmp4 = `${tmp}`.match(closure_48) || ["translation", "r", "ACCOUNT_USERNAME"];
       const result = 60 * tmp4[1];
       const sum = result + toInt(tmp4[2]);
       let num4 = 0;
@@ -2476,9 +2476,9 @@ const fn = function t() {
                 }
               }
             }
-            ({ milliseconds: obj5.ms, months: obj5.M } = { 1365358575: -536870861, 2051081631: -299892737 });
+            ({ milliseconds: obj5.ms, months: obj5.M } = { names: "%FunctionPrototype%", jsx: "paddingStart" });
             obj = {};
-            const obj3 = { 1365358575: -536870861, 2051081631: -299892737 };
+            const obj3 = { names: "%FunctionPrototype%", jsx: "paddingStart" };
             const obj4 = {};
           }
         }
@@ -2507,7 +2507,7 @@ const fn = function t() {
     return num * arg1;
   }
   function positiveMomentsDifference(month, month2) {
-    const obj = { 1365358575: -536870861, 2051081631: -299892737 };
+    const obj = { names: "%FunctionPrototype%", jsx: "paddingStart" };
     const diff = month2.month() - month.month();
     const monthResult = month2.month();
     obj.months = diff + 12 * (month2.year() - month.year());
@@ -3597,12 +3597,12 @@ const fn = function t() {
     }
     return text;
   });
-  addFormatToken(0, ["HH:mm", "HHmmss.SSSS"], 0, function() {
+  addFormatToken(0, ["HHmmss,SSSS", "HHmmss"], 0, function() {
     return this.year() % 100;
   });
-  addFormatToken(0, [], 0, "year");
+  addFormatToken(0, [true, true], 0, "year");
   addFormatToken(0, ["op", "isArray"], 0, "year");
-  const items1 = [1090519489, 80992, true];
+  const items1 = ["discord_protos.discord_users.v1.ProfileVisibility", "discord_protos.discord_users.v1.DebugSettings", true];
   addFormatToken(0, items1, 0, "year");
   addUnitAlias("year", "y");
   addUnitPriority("year", 1);
@@ -4001,10 +4001,10 @@ const fn = function t() {
   addRegexToken("MM", tmp6, tmp2);
   addRegexToken("MMM", (arg0, monthsShortRegex) => monthsShortRegex.monthsShortRegex(arg0));
   addRegexToken("MMMM", (arg0, monthsRegex) => monthsRegex.monthsRegex(arg0));
-  addParseToken([true, true], (arg0, arg1) => {
+  addParseToken(["DDD", "DDDD"], (arg0, arg1) => {
     arg1[closure_18] = toInt(arg0) - 1;
   });
-  addParseToken([2, "DDD"], (invalidMonth, arg1, _locale) => {
+  addParseToken(["Array", "frecencyCommands"], (invalidMonth, arg1, _locale) => {
     _locale = _locale._locale;
     const monthsParseResult = _locale.monthsParse(invalidMonth, arg3, _locale._strict);
     if (null != monthsParseResult) {
@@ -4017,7 +4017,7 @@ const fn = function t() {
   const parts = "January_February_March_April_May_June_July_August_September_October_November_December".split("_");
   const parts1 = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_");
   addFormatToken("w", [], "wo", "week");
-  addFormatToken("W", [], "Wo", "isoWeek");
+  addFormatToken("W", [null, null], "Wo", "isoWeek");
   addUnitAlias("week", "w");
   addUnitAlias("isoWeek", "W");
   addUnitPriority("week", 5);
@@ -4054,7 +4054,7 @@ const fn = function t() {
   addRegexToken("dd", (arg0, weekdaysMinRegex) => weekdaysMinRegex.weekdaysMinRegex(arg0));
   addRegexToken("ddd", (arg0, weekdaysShortRegex) => weekdaysShortRegex.weekdaysShortRegex(arg0));
   addRegexToken("dddd", (arg0, weekdaysRegex) => weekdaysRegex.weekdaysRegex(arg0));
-  addWeekParseToken([], (invalidWeekday, arg1, _locale) => {
+  addWeekParseToken([null, null, null], (invalidWeekday, arg1, _locale) => {
     _locale = _locale._locale;
     const weekdaysParseResult = _locale.weekdaysParse(invalidWeekday, arg3, _locale._strict);
     if (null != weekdaysParseResult) {
@@ -4063,14 +4063,14 @@ const fn = function t() {
       getParsingFlags(_locale).invalidWeekday = invalidWeekday;
     }
   });
-  addWeekParseToken([null, null, null], (arg0, arg1, arg2, arg3) => {
+  addWeekParseToken([true, true, true], (arg0, arg1, arg2, arg3) => {
     arg1[arg3] = toInt(arg0);
   });
   const parts2 = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_");
   const parts3 = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_");
   const parts4 = "Su_Mo_Tu_We_Th_Fr_Sa".split("_");
   addFormatToken("H", [true, true], 0, "hour");
-  addFormatToken("h", [true, true], 0, hFormat);
+  addFormatToken("h", [], 0, hFormat);
   addFormatToken("k", [], 0, function kFormat() {
     return this.hours() || 24;
   });
@@ -4108,7 +4108,7 @@ const fn = function t() {
   addRegexToken("hmmss", tmp8);
   addRegexTokenResult29 = addRegexToken("Hmm", tmp7);
   addRegexTokenResult29 = addRegexToken("Hmmss", tmp8);
-  addRegexTokenResult29 = addParseToken([true, true], 3);
+  addRegexTokenResult29 = addParseToken([], 3);
   addRegexTokenResult29 = addParseToken([], (arg0, arg1, arg2) => {
     const tmp = toInt(arg0);
     let num = 0;
@@ -4117,12 +4117,12 @@ const fn = function t() {
     }
     arg1[closure_20] = num;
   });
-  addRegexTokenResult29 = addParseToken([], (_meridiem, arg1, _locale) => {
+  addRegexTokenResult29 = addParseToken([true, true], (_meridiem, arg1, _locale) => {
     _locale = _locale._locale;
     _locale._isPm = _locale.isPM(_meridiem);
     _locale._meridiem = _meridiem;
   });
-  addRegexTokenResult29 = addParseToken([true, true], (arg0, arg1, _pf) => {
+  addRegexTokenResult29 = addParseToken([], (arg0, arg1, _pf) => {
     arg1[closure_20] = toInt(arg0);
     getParsingFlags(_pf).bigHour = true;
   });
@@ -4153,23 +4153,23 @@ const fn = function t() {
     arg1[closure_22] = toInt(str.substr(diff1));
   });
   addRegexTokenResult29 = makeGetSet("Hours", true);
-  let obj = { calendar: { intl: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009919227068201119, flex: 859756496762131800000000000000000000000000000000000000000000000000000000000000000000000000000, getChannel: 146589387140.0136, PX_8: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000094246457044, textAlign: 0.00000000000000000000000000000000000000000000000000000000000000002763230690774519, unicodeVersion: 59711461306563985000000000000000000 }, longDateFormat: { "Bool(false)": 4, "Bool(false)": "staff", "Bool(false)": "message", "Bool(false)": "filter", height: null, status: null }, invalidDate: "Invalid date", ordinal: "%d", dayOfMonthOrdinalParse: /\d{1,2}/, relativeTime: {}, months: parts, monthsShort: parts1, week: {}, weekdays: parts2, weekdaysMin: parts4, weekdaysShort: parts3, meridiemParse: /[ap]\.?m?\.?/i };
+  let obj = { calendar: {}, longDateFormat: { me_vote: "[v\u010Dera v] LT", PIN_MESSAGES: null, %ArrayProto_entries%: "L", IS_IOS: 20, backShouldLeaveGuild: 1, onPressEdit: 14 }, invalidDate: "Invalid date", ordinal: "%d", dayOfMonthOrdinalParse: /\d{1,2}/, relativeTime: {}, months: parts, monthsShort: parts1, week: {}, weekdays: parts2, weekdaysMin: parts4, weekdaysShort: parts3, meridiemParse: /[ap]\.?m?\.?/i };
   let closure_37 = {};
   let closure_38 = {};
   let closure_39 = /^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/;
   let closure_40 = /^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/;
   let closure_41 = /Z|[+-]\d\d(?::?\d\d)?/;
-  const items2 = [null, /[+-]\d{6}-\d\d-\d\d/];
+  const items2 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043785504178856467, /[+-]\d{6}-\d\d-\d\d/];
   const items3 = [items2, , , , , , , , , , ];
   const items4 = [, /\d{4}-\d\d-\d\d/];
   items3[1] = items4;
-  const items5 = [, /\d{4}-W\d\d-\d/];
+  const items5 = ["r", /\d{4}-W\d\d-\d/];
   items3[2] = items5;
-  const items6 = ["r", /\d{4}-W\d\d/, false];
+  const items6 = [, /\d{4}-W\d\d/, false];
   items3[3] = items6;
-  const items7 = [, /\d{4}-\d{3}/];
+  const items7 = ["r", /\d{4}-\d{3}/];
   items3[4] = items7;
-  const items8 = ["r", /\d{4}-\d\d/, false];
+  const items8 = [, /\d{4}-\d\d/, false];
   items3[5] = items8;
   const items9 = [, /[+-]\d{10}/];
   items3[6] = items9;
@@ -4223,7 +4223,7 @@ const fn = function t() {
     }
     tmp = createInvalid();
   });
-  let closure_47 = [true, true, true, true, true, true, true, true, true];
+  let closure_47 = [];
   addRegexTokenResult29 = deprecate("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
     let self = this;
     const applyResult = createLocal(...arguments);
@@ -4269,7 +4269,7 @@ const fn = function t() {
   addRegexTokenResult29 = addFormatToken(0, [], 0, function() {
     return this.weekYear() % 100;
   });
-  addRegexTokenResult29 = addFormatToken(0, [1070050836, 1149957713], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, [1070050836, 1116414801], 0, function() {
     return this.isoWeekYear() % 100;
   });
   addRegexTokenResult29 = addWeekYearFormatToken("gggg", "weekYear");
@@ -4288,11 +4288,11 @@ const fn = function t() {
   addRegexTokenResult29 = addRegexToken("gggg", tmp10, tmp4);
   addRegexTokenResult29 = addRegexToken("GGGGG", tmp11, tmp5);
   addRegexTokenResult29 = addRegexToken("ggggg", tmp11, tmp5);
-  addRegexTokenResult29 = addWeekParseToken(["Buchstabe", "eingekreist", "Gro\u00DFbuchstabe", "Kreis"], (arg0, arg1, arg2, str) => {
+  addRegexTokenResult29 = addWeekParseToken(["elektrisk guitar", "elguitar", "guitar", "instrument"], (arg0, arg1, arg2, str) => {
     const substr = str.substr(0, 2);
     arg1[substr] = toInt(arg0);
   });
-  addRegexTokenResult29 = addWeekParseToken(["M", "\u4E38"], (arg0, arg1, arg2, arg3) => {
+  addRegexTokenResult29 = addWeekParseToken([], (arg0, arg1, arg2, arg3) => {
     arg1[arg3] = hooks.parseTwoDigitYear(arg0);
   });
   addRegexTokenResult29 = addFormatToken("Q", 0, "Qo", "quarter");
@@ -4302,7 +4302,7 @@ const fn = function t() {
   addRegexTokenResult29 = addParseToken("Q", (arg0, arg1) => {
     arg1[closure_18] = 3 * (toInt(arg0) - 1);
   });
-  addRegexTokenResult29 = addFormatToken("D", ["isArray", "PX_16"], "Do", "date");
+  addRegexTokenResult29 = addFormatToken("D", [], "Do", "date");
   addRegexTokenResult29 = addUnitAlias("date", "D");
   addRegexTokenResult29 = addUnitPriority("date", 9);
   addRegexTokenResult29 = addRegexToken("D", tmp6);
@@ -4316,56 +4316,56 @@ const fn = function t() {
     }
     return _dayOfMonthOrdinalParseLenient;
   });
-  addRegexTokenResult29 = addParseToken([null, null], 2);
+  addRegexTokenResult29 = addParseToken([true, true], 2);
   addRegexTokenResult29 = addParseToken("Do", (arg0, arg1) => {
     arg1[closure_19] = toInt(arg0.match(tmp6)[0]);
   });
   addRegexTokenResult29 = makeGetSet("Date", true);
-  addRegexTokenResult29 = addFormatToken("DDD", [-53946150300215520000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000007090599685785658], "DDDo", "dayOfYear");
+  addRegexTokenResult29 = addFormatToken("DDD", [], "DDDo", "dayOfYear");
   addRegexTokenResult29 = addUnitAlias("dayOfYear", "DDD");
   addRegexTokenResult29 = addUnitPriority("dayOfYear", 4);
   addRegexTokenResult29 = addRegexToken("DDD", tmp9);
   addRegexTokenResult29 = addRegexToken("DDDD", tmp3);
-  addRegexTokenResult29 = addParseToken([false, false], (arg0, arg1, arg2) => {
+  addRegexTokenResult29 = addParseToken([], (arg0, arg1, arg2) => {
     arg2._dayOfYear = toInt(arg0);
   });
-  addRegexTokenResult29 = addFormatToken("m", ["<string:2763915265>", "<string:1413611522>"], 0, "minute");
+  addRegexTokenResult29 = addFormatToken("m", [], 0, "minute");
   addRegexTokenResult29 = addUnitAlias("minute", "m");
   addRegexTokenResult29 = addUnitPriority("minute", 14);
   addRegexTokenResult29 = addRegexToken("m", tmp6);
   addRegexTokenResult29 = addRegexToken("mm", tmp6, tmp2);
-  addRegexTokenResult29 = addParseToken(["ein Tag", "einem Tag"], 4);
+  addRegexTokenResult29 = addParseToken([], 4);
   addRegexTokenResult29 = makeGetSet("Minutes", false);
-  addRegexTokenResult29 = addFormatToken("s", [], 0, "second");
+  addRegexTokenResult29 = addFormatToken("s", ["r", "isArray"], 0, "second");
   addRegexTokenResult29 = addUnitAlias("second", "s");
   addRegexTokenResult29 = addUnitPriority("second", 15);
   addRegexTokenResult29 = addRegexToken("s", tmp6);
   addRegexTokenResult29 = addRegexToken("ss", tmp6, tmp2);
-  addRegexTokenResult29 = addParseToken([1107296710, 147494], 5);
+  addRegexTokenResult29 = addParseToken([null, null], 5);
   addRegexTokenResult29 = makeGetSet("Seconds", false);
   addRegexTokenResult29 = addFormatToken("S", 0, 0, function() {
     return ~~this.millisecond() / 100;
   });
-  addRegexTokenResult29 = addFormatToken(0, ["nolla", "yhden"], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, [], 0, function() {
     return ~~this.millisecond() / 10;
   });
   addRegexTokenResult29 = addFormatToken(0, [], 0, "millisecond");
-  addRegexTokenResult29 = addFormatToken(0, ["getAppGradientColors", "shouldBeUseWeb"], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, ["<string:2601406976>", "<string:3553838530>"], 0, function() {
     return 10 * this.millisecond();
   });
-  addRegexTokenResult29 = addFormatToken(0, ["y", "isArray"], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, [], 0, function() {
     return 100 * this.millisecond();
   });
-  addRegexTokenResult29 = addFormatToken(0, [], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, ["Array", "isArray"], 0, function() {
     return 1000 * this.millisecond();
   });
-  addRegexTokenResult29 = addFormatToken(0, ["<string:1224737436>", "<string:1375731995>"], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, [], 0, function() {
     return 10000 * this.millisecond();
   });
-  addRegexTokenResult29 = addFormatToken(0, [], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, [true, true], 0, function() {
     return 100000 * this.millisecond();
   });
-  addRegexTokenResult29 = addFormatToken(0, ["r", "MI"], 0, function() {
+  addRegexTokenResult29 = addFormatToken(0, [-412969147, -1554165143], 0, function() {
     return 1000000 * this.millisecond();
   });
   addRegexTokenResult29 = addUnitAlias("millisecond", "ms");
@@ -5660,7 +5660,7 @@ const fn = function t() {
       }
       while (true) {
         let tmp = createUTC;
-        let items = ["x", num];
+        let items = [false, num];
         let tmp2 = createUTC(items);
         let tmp3 = num;
         let tmp4 = arg2;
@@ -6212,13 +6212,13 @@ const fn = function t() {
       const tmp15 = round(absResult.as("y"));
       let tmp17 = tmp5 <= closure_53.ss;
       if (tmp17) {
-        const items = [1107296710, tmp5];
+        const items = [null, tmp5];
         tmp17 = items;
       }
       if (!tmp17) {
         let tmp19 = tmp5 < closure_53.s;
         if (tmp19) {
-          const items1 = [null, tmp5];
+          const items1 = ["r", tmp5];
           tmp19 = items1;
         }
         tmp17 = tmp19;
@@ -6230,26 +6230,26 @@ const fn = function t() {
       if (!tmp17) {
         let tmp22 = tmp7 < closure_53.m;
         if (tmp22) {
-          const items2 = ["<string:2763915265>", tmp7];
+          const items2 = [, tmp7];
           tmp22 = items2;
         }
         tmp17 = tmp22;
       }
       if (!tmp17) {
-        tmp17 = tmp9 <= 1 && [];
-        const tmp23 = tmp9 <= 1 && [];
+        tmp17 = tmp9 <= 1 && [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+        const tmp23 = tmp9 <= 1 && [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
       }
       if (!tmp17) {
         let tmp25 = tmp9 < closure_53.h;
         if (tmp25) {
-          const items3 = [true, tmp9];
+          const items3 = [, tmp9];
           tmp25 = items3;
         }
         tmp17 = tmp25;
       }
       if (!tmp17) {
-        tmp17 = tmp11 <= 1 && [-1016070142];
-        const tmp26 = tmp11 <= 1 && [-1016070142];
+        tmp17 = tmp11 <= 1 && [];
+        const tmp26 = tmp11 <= 1 && [];
       }
       if (!tmp17) {
         let tmp28 = tmp11 < closure_53.d;
@@ -6260,8 +6260,8 @@ const fn = function t() {
         tmp17 = tmp28;
       }
       if (!tmp17) {
-        tmp17 = tmp13 <= 1 && [];
-        const tmp29 = tmp13 <= 1 && [];
+        tmp17 = tmp13 <= 1 && [null];
+        const tmp29 = tmp13 <= 1 && [null];
       }
       if (!tmp17) {
         let tmp31 = tmp13 < closure_53.M;
@@ -6272,8 +6272,8 @@ const fn = function t() {
         tmp17 = tmp31;
       }
       if (!tmp17) {
-        tmp17 = tmp15 <= 1 && [];
-        const tmp32 = tmp15 <= 1 && [];
+        tmp17 = tmp15 <= 1 && [true];
+        const tmp32 = tmp15 <= 1 && [true];
       }
       if (!tmp17) {
         const items6 = [, tmp15];

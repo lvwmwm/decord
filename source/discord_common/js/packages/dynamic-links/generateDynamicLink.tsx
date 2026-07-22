@@ -1,10 +1,10 @@
-// Module ID: 12239
-// Function ID: 93890
+// Module ID: 12244
+// Function ID: 93918
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 12239 (_createForOfIteratorHelperLoose)
+// Module 12244 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -84,7 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = [null, null, null];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("../discord_common/js/packages/dynamic-links/generateDynamicLink.tsx");

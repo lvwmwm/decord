@@ -1,10 +1,10 @@
-// Module ID: 15015
-// Function ID: 113049
+// Module ID: 15023
+// Function ID: 113092
 // Name: isHoisted
 // Dependencies: []
 // Exports: NotificationCenterForYou
 
-// Module 15015 (isHoisted)
+// Module 15023 (isHoisted)
 let RootNavigatorScreen;
 let YouBarNavigatorScreens;
 function isHoisted(type) {
@@ -316,7 +316,7 @@ export const NotificationCenterForYou = (panelVariant) => {
       const items4 = [];
       const height = items4;
       if (friendSuggestions.length > 0) {
-        obj = { <string:3060159136>: 2018574338, <string:3856097814>: -918482477, showDivider: items1.length > 0 };
+        obj = { showDivider: items1.length > 0 };
         items4.push(obj);
         let num7 = 2;
         if (friendSuggestions.length <= 3) {
@@ -328,7 +328,7 @@ export const NotificationCenterForYou = (panelVariant) => {
           items4.push({ kind: "suggested-friends-row", id: id.user.id, suggestedFriend: id });
         });
         if (friendSuggestions.length > 3) {
-          const obj1 = { <string:3060159136>: "<string:410124289>", <string:3856097814>: "<string:402653184>", suggestedFriends: friendSuggestions };
+          const obj1 = { accessibilityRole: "<string:1912602980>", s: "toString", suggestedFriends: friendSuggestions };
           items4.push(obj1);
         }
       }
@@ -356,11 +356,11 @@ export const NotificationCenterForYou = (panelVariant) => {
         }
       }
       if (errored) {
-        items5.push({ <string:3060159136>: true, <string:3856097814>: true });
+        items5.push({ accessibilityRole: true, s: true });
       }
       const obj3 = {};
       if (items1.length > 0) {
-        items1.unshift({ <string:3060159136>: "/assets/modules/notification_center/native/images", <string:3856097814>: 24 });
+        items1.unshift({ accessibilityRole: "/assets/modules/notification_center/native/images", s: 24 });
       }
       const items6 = [];
       if (items1.length > 0) {

@@ -1,14 +1,14 @@
-// Module ID: 11169
-// Function ID: 86871
+// Module ID: 11170
+// Function ID: 86884
 // Name: SubmittingOverlay
-// Dependencies: []
+// Dependencies: [37093376, 535691264, 732626944, 732758016, 131072, 108658688, 117440512, 251658240]
 // Exports: SubmittingOverlay
 
-// Module 11169 (SubmittingOverlay)
+// Module 11170 (SubmittingOverlay)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[1]);
 let obj = {};
-obj = { "Bool(false)": "number", "Bool(false)": "number", "Bool(false)": "mY3Y38", backgroundColor: importDefault(dependencyMap[2]).colors.BACKGROUND_SCRIM };
+obj = { __v_isVNode: "string", _$esjava$I_x: "string", EmbeddedActivitiesStore: "color", backgroundColor: importDefault(dependencyMap[2]).colors.BACKGROUND_SCRIM };
 obj.ellipsis = obj;
 let closure_4 = _module.createStyles(obj);
 let closure_5 = { code: "function SubmittingOverlayTsx1(){const{withSpring,submitting,SUBTLE_SPRING}=this.__closure;return{opacity:withSpring(submitting?1:0,SUBTLE_SPRING,'animate-always')};}" };
@@ -39,7 +39,7 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   obj = { style: items };
   const items = [submitting.style, callback().ellipsis, animatedStyle];
   if (submitting) {
-    submitting = jsx(require(dependencyMap[6]).Ellipsis, { "Bool(true)": "91bf4676f91f3249d115fc7ec52b2a3b", "Bool(true)": "en-GB.messages.91bf4676f91f3249d115fc7ec52b2a3b.compiled.messages" });
+    submitting = jsx(require(dependencyMap[6]).Ellipsis, {});
   }
   obj.children = submitting;
   return jsx(importDefault(dependencyMap[3]).View, obj);

@@ -1,9 +1,9 @@
-// Module ID: 14883
-// Function ID: 112101
+// Module ID: 14891
+// Function ID: 112144
 // Name: metadata
 // Dependencies: []
 
-// Module 14883 (metadata)
+// Module 14891 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/powerups/guild_tag_badge_packs_wave_two_powerup_2x.png.js");
 

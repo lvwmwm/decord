@@ -1,10 +1,10 @@
-// Module ID: 14547
-// Function ID: 109615
+// Module ID: 14555
+// Function ID: 109658
 // Name: OrbCheckoutMenu
 // Dependencies: []
 // Exports: default
 
-// Module 14547 (OrbCheckoutMenu)
+// Module 14555 (OrbCheckoutMenu)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -27,14 +27,14 @@ export default function OrbCheckoutMenu() {
         skuId: first,
         analyticsLocations: [],
         onCheckoutSuccess() {
-            callback(closure_2[7]).open({ <string:1435656464>: false, <string:4081432990>: false });
+            callback(closure_2[7]).open({ stateMachine: true, fit: true });
           }
       };
       obj.pushLazy(first(paths[6])(paths[5], paths.paths), obj);
     }
   }, items);
   let obj = {};
-  obj = { 16667904: 1, 16668160: "[Android] Bypass Google SKU sync in collectibles shop", 16668416: "bypass_google_sku_sync", style: tmp.title };
+  obj = { UNKNOWN_EMOJI: 1, paddingVertical: "[Android] Bypass Google SKU sync in collectibles shop", getChangeTitle: "bypass_google_sku_sync", style: tmp.title };
   const items1 = [callback2(arg1(dependencyMap[9]).Text, obj), , , ];
   obj = {
     containerStyle: tmp.textInput,
@@ -46,8 +46,10 @@ export default function OrbCheckoutMenu() {
     isClearable: true
   };
   items1[1] = callback2(arg1(dependencyMap[10]).TextInput, obj);
-  items1[2] = callback2(arg1(dependencyMap[9]).Text, { style: tmp.title });
-  items1[3] = callback2(arg1(dependencyMap[11]).Button, { onPress: callback, disabled: null == first });
+  const obj1 = { UNKNOWN_EMOJI: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000305865856, paddingVertical: -11572258990496976000000000000000000000000, getChangeTitle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002881824211717445, style: tmp.title };
+  items1[2] = callback2(arg1(dependencyMap[9]).Text, obj1);
+  const obj2 = { "Bool(true)": null, "Bool(true)": "Row Button", onPress: callback, disabled: null == first };
+  items1[3] = callback2(arg1(dependencyMap[11]).Button, obj2);
   obj.children = items1;
   return callback3(arg1(dependencyMap[8]).Card, obj);
 };

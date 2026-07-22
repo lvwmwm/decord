@@ -1,10 +1,10 @@
-// Module ID: 12736
-// Function ID: 97683
+// Module ID: 12743
+// Function ID: 97716
 // Name: handleSupportedURL
 // Dependencies: []
 // Exports: default
 
-// Module 12736 (handleSupportedURL)
+// Module 12743 (handleSupportedURL)
 let closure_4 = [];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);

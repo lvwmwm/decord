@@ -1,10 +1,10 @@
-// Module ID: 16249
-// Function ID: 125546
+// Module ID: 16257
+// Function ID: 125588
 // Name: useGuildApplication
 // Dependencies: []
 // Exports: default
 
-// Module 16249 (useGuildApplication)
+// Module 16257 (useGuildApplication)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

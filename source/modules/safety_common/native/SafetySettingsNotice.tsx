@@ -1,17 +1,17 @@
-// Module ID: 13529
-// Function ID: 102653
+// Module ID: 13536
+// Function ID: 102686
 // Name: SafetySettingsNotice
 // Dependencies: []
 // Exports: default
 
-// Module 13529 (SafetySettingsNotice)
+// Module 13536 (SafetySettingsNotice)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).SafetySettingsNoticeAction;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { ty: 8, c: null, o: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[5]).space.PX_8, padding: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: importDefault(dependencyMap[5]).colors.TEXT_LINK, borderWidth: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_INFO };
+obj = { id: 8, title: null, options: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[5]).space.PX_8, padding: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: importDefault(dependencyMap[5]).colors.TEXT_LINK, borderWidth: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_INFO };
 obj.blockedIgnoredRedirect = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -41,8 +41,7 @@ export default function SafetySettingsNotice(noticeType) {
     const intl2 = arg1(dependencyMap[9]).intl;
     obj = {
       hook(children) {
-          const obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, onPress: closure_2, children };
-          return callback(labelHook(noticeType[8]).Text, obj);
+          return callback(labelHook(noticeType[8]).Text, { onPress: closure_2, children });
         },
       count
     };
@@ -51,8 +50,7 @@ export default function SafetySettingsNotice(noticeType) {
     const intl = arg1(dependencyMap[9]).intl;
     const obj1 = {
       hook(children) {
-          const obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, onPress: closure_2, children };
-          return callback(labelHook(noticeType[8]).Text, obj);
+          return callback(labelHook(noticeType[8]).Text, { onPress: closure_2, children });
         }
     };
     formatResult = intl.format(label, obj1);

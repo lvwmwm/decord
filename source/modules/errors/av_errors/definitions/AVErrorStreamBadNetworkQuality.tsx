@@ -1,9 +1,9 @@
-// Module ID: 16410
-// Function ID: 126760
+// Module ID: 16418
+// Function ID: 126802
 // Name: AVErrorStreamBadNetworkQualityDefinition
 // Dependencies: []
 
-// Module 16410 (AVErrorStreamBadNetworkQualityDefinition)
+// Module 16418 (AVErrorStreamBadNetworkQualityDefinition)
 let closure_2 = importDefault(dependencyMap[0]);
 const RTCConnectionQuality = arg1(dependencyMap[1]).RTCConnectionQuality;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamBadNetworkQuality.tsx");

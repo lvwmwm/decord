@@ -1,5 +1,5 @@
 // Module ID: 7548
-// Function ID: 60416
+// Function ID: 60427
 // Name: nativeEventEmitter
 // Dependencies: []
 

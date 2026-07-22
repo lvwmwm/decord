@@ -1,10 +1,10 @@
-// Module ID: 16347
-// Function ID: 126132
+// Module ID: 16355
+// Function ID: 126174
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16347 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 16355 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
@@ -34,7 +34,7 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   const intl = arg1(dependencyMap[10]).intl;
   obj1.children = intl.string(arg1(dependencyMap[10]).t.Y0PTc0);
   const items = [callback(arg1(dependencyMap[9]).Text, obj1), callback(arg1(dependencyMap[11]).Spacer, { size: 12 }), , , ];
-  const obj2 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+  const obj2 = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[10]).t.YSI/1/);
   items[2] = callback(arg1(dependencyMap[9]).Text, obj2);

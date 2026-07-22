@@ -1,5 +1,5 @@
 // Module ID: 6902
-// Function ID: 55006
+// Function ID: 55017
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 12853
-// Function ID: 98231
+// Module ID: 12860
+// Function ID: 98264
 // Name: CommunityPill
 // Dependencies: []
 // Exports: default
 
-// Module 12853 (CommunityPill)
+// Module 12860 (CommunityPill)
 function CommunityPill(guildVisibility) {
   let arg1;
   const tmp = callback3();
@@ -28,7 +28,7 @@ function CommunityPill(guildVisibility) {
   };
   obj = { style: tmp.communityPillIcon, source: tmp2, disableColor: true };
   const items = [callback(arg1(dependencyMap[17]).Icon, obj), ];
-  obj = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: tmp.communityPillText };
+  obj = { cachedAt: true, edpbxy: true, style: tmp.communityPillText };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj.children = intl3.string(arg1(dependencyMap[10]).t.K7iRig);
   items[1] = callback(arg1(dependencyMap[18]).Text, obj);
@@ -44,26 +44,26 @@ const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { content: { padding: 16 }, avatar: { <string:827548257>: true, <string:4257773646>: "/assets/images/native/status", <string:1364418947>: 16 } };
+obj = { content: { padding: 16 }, avatar: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.headerContainer = obj;
-const tmp3 = arg1(dependencyMap[6]);
-obj.avatarBackground = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj1 = { position: 1978859523, bottom: 155385859, left: 335545205, right: 218104693, paddingHorizontal: 1124074357, paddingBottom: "context", alignItems: "a", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.avatarBackground = obj1;
 obj.description = { marginTop: 8 };
-obj.memberInfo = {};
+obj.memberInfo = { getMentionIconType: "%Function.prototype.call%", scoreMethod: "GAME_CLAIM", popoutData: "%Function%", ANIMATE_EMOJI: "GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS", APP_LAUNCHER_APPLICATION_VIEW: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014384657508269811 };
 obj.nameRow = {};
-const obj2 = { maxStep: 35924067117589830000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, RowButtonIconProps: 13342917637145718000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, channelInfo: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000339519326633, accessibilityRole: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009294231272659009, LIGHT: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030781944676106564, <string:2654739408>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000348968841734, <string:698785341>: 1120152885994357600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER, borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.communityPill = obj2;
-obj.communityPillIcon = {};
+obj.communityPillIcon = { -9223372036854775808: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032845925667465, 9223372036854775807: 38837723605893773000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 38837723605894187000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 const obj3 = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const tmp3 = arg1(dependencyMap[6]);
 let num;
 if (obj7.isAndroid()) {
   num = 14;
 }
 obj3.lineHeight = num;
 obj.communityPillText = obj3;
-obj.guildBanner = {};
+obj.guildBanner = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 let closure_12 = obj.createStyles(obj);
 const obj7 = arg1(dependencyMap[9]);
 const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetHeader.tsx");
@@ -212,7 +212,7 @@ export default function GuildActionSheetHeader(guild) {
   const obj9 = { style: tmp.nameRow };
   obj10 = { guild };
   const items9 = [callback(importDefault(dependencyMap[31]), obj10), ];
-  const obj11 = { "Bool(true)": 2, "Bool(true)": "asset_hash", "Bool(true)": "scalar", "Bool(true)": 9, variant: token, children: guild.name };
+  const obj11 = { sessionData: 2, NINE: "asset_hash", reportSubmit: "scalar", emojiColons: 9, variant: token, children: guild.name };
   items9[1] = callback(arg1(dependencyMap[18]).Text, obj11);
   obj9.children = items9;
   items8[1] = callback2(result, obj9);
@@ -229,7 +229,7 @@ export default function GuildActionSheetHeader(guild) {
     tmp53 = callback(CommunityPill, obj14);
   }
   const items10 = [tmp53, ];
-  obj15 = { style: {} };
+  obj15 = { style: { "Null": null, "Null": null } };
   let tmp58 = null != tmp9;
   if (tmp58) {
     obj16 = { type: "online", count: tmp9 };

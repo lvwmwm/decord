@@ -1,10 +1,10 @@
-// Module ID: 14321
-// Function ID: 108164
+// Module ID: 14329
+// Function ID: 108207
 // Name: contextMenuItems
 // Dependencies: []
 // Exports: default
 
-// Module 14321 (contextMenuItems)
+// Module 14329 (contextMenuItems)
 function contextMenuItems(length) {
   const arg1 = length;
   let obj = arg1(closure_1[13]);
@@ -83,10 +83,10 @@ let closure_2 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const items = [importDefault(dependencyMap[3]), importDefault(dependencyMap[4]), importDefault(dependencyMap[5]), importDefault(dependencyMap[6]), importDefault(dependencyMap[7]), importDefault(dependencyMap[8]), importDefault(dependencyMap[9]), importDefault(dependencyMap[10])];
-let closure_8 = ["diversity", "Symbol", "kind", "accessible", "children", "Boolean", "ct", "call", "Promise", "channel", "map"];
+let closure_8 = [1390093252, 89394287, 332162417, 329846097, 101790488, 192482089, 311494650, 521409946, 289560943, 309732474, 251138482];
 let obj = arg1(dependencyMap[11]);
 obj = { container: {}, card: { gap: 12 } };
-obj = { textAlign: "/assets/images/native/community", fontSize: 62, marginBottom: 65, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
+obj = { -9223372036854775808: "/assets/images/native/community", -9223372036854775808: 62, 9223372036854775807: 65, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
 obj.divider = obj;
 let closure_9 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
@@ -97,27 +97,27 @@ export default function UserSettingsDesignSystemAlertModal() {
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.card };
-  const items = [callback(arg1(dependencyMap[17]).Text, { <string:1749439162>: true, <string:140675621>: "/assets/images/native/icons" }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { label: "Open Menu" })];
+  const items = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000340856967874354, <string:1446667417>: 0.000000000000000000000000000022341490065414857 }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { label: "Open Menu" })];
   obj.children = items;
   const items1 = [callback2(arg1(dependencyMap[16]).Card, obj), , , , , ];
   const obj1 = { style: tmp.card };
-  const items2 = [callback(arg1(dependencyMap[17]).Text, { <string:1749439162>: 2018574338, <string:140675621>: 1362780627 }), callback(arg1(dependencyMap[17]).Text, { deer: "row", Ufm9XX: null, playstationVersion: "wrap" }), callback(DemoContextMenu, { "Null": 0.0000000000000000000000000000000000000000000021895311079773908, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003488860420505554 })];
+  const items2 = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: "Map", <string:1446667417>: "hd" }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, {})];
   obj1.children = items2;
   items1[1] = callback2(arg1(dependencyMap[16]).Card, obj1);
   const obj2 = { style: tmp.card };
-  const items3 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { "Null": "Array", "Null": "isArray", "Null": "x" })];
+  const items3 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, { category: false, position: false, top: false }), callback(DemoContextMenu, { 1012184796: "%DataView%", 1956802875: "EXPRESSION_PICKER_EXPRESSION_FOCUS", 1389037218: "assignmentMode" })];
   obj2.children = items3;
   items1[2] = callback2(arg1(dependencyMap[16]).Card, obj2);
   const obj3 = { style: tmp.card };
-  const items4 = [callback(arg1(dependencyMap[17]).Text, { <string:1749439162>: "<string:695009281>", <string:140675621>: "<string:1312948225>" }), callback(arg1(dependencyMap[17]).Text, { deer: "<string:3875537318>", Ufm9XX: "<string:1107296717>", playstationVersion: "text-md/normal" }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { "Bool(false)": "braintree:merchantId", "Bool(false)": "<string:3024158976>" })];
+  const items4 = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: false, <string:1446667417>: false }), callback(arg1(dependencyMap[17]).Text, { category: true, position: true, top: true }), callback(DemoContextMenu, { markerStart: "large", markerMid: "premium_month_tier_1.1" }), callback(closure_3, { style: tmp.divider }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { <string:103961426>: "construct", <string:1386504698>: "values" })];
   obj3.children = items4;
   items1[3] = callback2(arg1(dependencyMap[16]).Card, obj3);
   const obj5 = { style: tmp.card };
-  const items5 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, { deer: "<string:180682753>", Ufm9XX: "<string:3410100226>", playstationVersion: "<string:3288334697>" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { "Null": -83740493256455500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000326560837047163, "Null": 100 }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { Map: false, Symbol: false, gap: false, resolve: false })];
+  const items5 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, { category: false, position: false, top: false }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {})];
   obj5.children = items5;
   items1[4] = callback2(arg1(dependencyMap[16]).Card, obj5);
   const obj10 = { style: tmp.card };
-  const items6 = [callback(arg1(dependencyMap[17]).Text, { <string:1749439162>: "heading-lg/bold", <string:140675621>: "Clearable" }), callback(arg1(dependencyMap[17]).Text, { deer: "text-md/normal", Ufm9XX: "Inputs can use the isClearable prop to let users immediately empty the input value with a button. The button is automatically rendered when the input contains a non-empty value. When pressed, the onClear callback is called, as well as the onChange with the new empty value.", playstationVersion: "text-md/normal" }), callback(DemoContextMenu, {})];
+  const items6 = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: 104988674, <string:1446667417>: -520093273 }), callback(arg1(dependencyMap[17]).Text, { category: "<string:2755788801>", position: "<string:1761608042>", top: "<string:1107296611>" }), callback(DemoContextMenu, {})];
   obj10.children = items6;
   items1[5] = callback2(arg1(dependencyMap[16]).Card, obj10);
   obj.children = items1;

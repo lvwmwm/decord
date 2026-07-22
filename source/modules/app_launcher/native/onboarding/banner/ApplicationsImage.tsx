@@ -1,10 +1,10 @@
-// Module ID: 11159
-// Function ID: 86771
+// Module ID: 11160
+// Function ID: 86784
 // Name: ApplicationsImage
 // Dependencies: []
 // Exports: default
 
-// Module 11159 (ApplicationsImage)
+// Module 11160 (ApplicationsImage)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -17,10 +17,10 @@ obj.appIconLeftContainer = { transform: items };
 const tmp3 = arg1(dependencyMap[2]);
 const items1 = [{ rotate: "15deg" }];
 obj.appIconRightContainer = { left: importDefault(dependencyMap[4]).space.PX_32, transform: items1 };
-const obj1 = { left: importDefault(dependencyMap[4]).space.PX_32, transform: items1 };
-obj.appIcon = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const obj2 = { "Null": "Group 7", "Null": 1, "Null": 2, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj.appIcon = obj2;
 let closure_7 = obj.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const obj1 = { left: importDefault(dependencyMap[4]).space.PX_32, transform: items1 };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ApplicationsImage.tsx");
 
 export default function ApplicationsImage(arg0) {

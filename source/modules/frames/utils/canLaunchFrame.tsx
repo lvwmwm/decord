@@ -1,10 +1,10 @@
-// Module ID: 10471
-// Function ID: 81079
+// Module ID: 10472
+// Function ID: 81092
 // Name: canLaunchFrame
 // Dependencies: []
 // Exports: canLaunchFrame
 
-// Module 10471 (canLaunchFrame)
+// Module 10472 (canLaunchFrame)
 const ApplicationFlags = require(dependencyMap[0]).ApplicationFlags;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/frames/utils/canLaunchFrame.tsx");

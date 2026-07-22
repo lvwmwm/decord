@@ -1,5 +1,5 @@
 // Module ID: 7771
-// Function ID: 61696
+// Function ID: 61706
 // Name: InstagramNeutralIcon
 // Dependencies: []
 // Exports: InstagramNeutralIcon

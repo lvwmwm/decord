@@ -1,10 +1,10 @@
-// Module ID: 13460
-// Function ID: 102211
+// Module ID: 13467
+// Function ID: 102244
 // Name: ChangeAvatarActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13460 (ChangeAvatarActionSheet)
+// Module 13467 (ChangeAvatarActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

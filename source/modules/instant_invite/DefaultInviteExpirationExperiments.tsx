@@ -1,10 +1,10 @@
-// Module ID: 8478
-// Function ID: 67703
+// Module ID: 8479
+// Function ID: 67715
 // Name: getDefaultInviteExpiration
 // Dependencies: []
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 8478 (getDefaultInviteExpiration)
+// Module 8479 (getDefaultInviteExpiration)
 function getDefaultInviteExpiration(arg0) {
   let experimentConfig;
   let guild;
@@ -47,16 +47,16 @@ let closure_3 = importDefault(dependencyMap[0]);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, GuildFeatures: closure_5 } = arg1(dependencyMap[1]));
 const value = importDefault(dependencyMap[2]).INVITE_OPTIONS_7_DAYS.value;
 let obj = arg1(dependencyMap[3]);
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "column", 炖锅: "flex-start", config: { defaultMaxAge: 1209600 } };
+obj = { displayNameStylesEnabled: "render_embeds", submitButtonEnabled: "message", config: { defaultMaxAge: 1209600 } };
 const items = [obj, { config: { defaultMaxAge: 2592000 } }, ];
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: true, 炖锅: true, config: { defaultMaxAge: 5184000 } };
+obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: { defaultMaxAge: 5184000 } };
 items[2] = obj;
 const experiment = obj.createExperiment({ defaultConfig: { defaultMaxAge: 604800 }, treatments: items });
 let obj3 = arg1(dependencyMap[3]);
-const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, defaultConfig: { defaultMaxAge: 604800 } };
-const obj2 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "column", 炖锅: "flex-start", config: { defaultMaxAge: 1209600 } };
+const obj1 = { shapes: "Array", flex: "isArray", sk: "construct", defaultConfig: { defaultMaxAge: 604800 } };
+const obj2 = { displayNameStylesEnabled: "render_embeds", submitButtonEnabled: "message", config: { defaultMaxAge: 1209600 } };
 const items1 = [obj2, { config: { defaultMaxAge: 2592000 } }, ];
-obj3 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: true, 炖锅: true, config: { defaultMaxAge: 5184000 } };
+obj3 = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: { defaultMaxAge: 5184000 } };
 items1[2] = obj3;
 obj1.treatments = items1;
 const experiment1 = obj3.createExperiment(obj1);

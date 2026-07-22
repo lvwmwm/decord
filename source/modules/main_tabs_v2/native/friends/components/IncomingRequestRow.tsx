@@ -1,10 +1,10 @@
-// Module ID: 15332
-// Function ID: 116746
+// Module ID: 15340
+// Function ID: 116789
 // Name: IncomingRequestRow
 // Dependencies: []
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15332 (IncomingRequestRow)
+// Module 15340 (IncomingRequestRow)
 function IncomingRequestRow(user) {
   let acceptedRequestAccessibilityLabel;
   let acceptedRequestLabel;

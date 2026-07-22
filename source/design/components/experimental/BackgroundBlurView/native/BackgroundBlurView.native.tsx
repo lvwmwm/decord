@@ -1,5 +1,5 @@
 // Module ID: 7494
-// Function ID: 60102
+// Function ID: 60113
 // Name: BackgroundBlurView
 // Dependencies: []
 
@@ -17,7 +17,7 @@ const forwardRefResult = importAllResult.forwardRef(function BackgroundBlurViewC
   let pressed;
   let style;
   ({ blurTheme, pressed, android_blurTargetViewNativeId } = arg0);
-  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+  let obj = {};
   ({ children, style } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

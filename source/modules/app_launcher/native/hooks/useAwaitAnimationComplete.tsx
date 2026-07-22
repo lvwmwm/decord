@@ -1,10 +1,10 @@
-// Module ID: 11274
-// Function ID: 87747
+// Module ID: 11275
+// Function ID: 87760
 // Name: AwaitAnimationContext
 // Dependencies: []
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion
 
-// Module 11274 (AwaitAnimationContext)
+// Module 11275 (AwaitAnimationContext)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAllResult.createContext(null);

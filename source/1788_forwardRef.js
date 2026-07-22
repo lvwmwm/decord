@@ -5,13 +5,13 @@
 
 // Module 1788 (forwardRef)
 let forwardRef;
-let closure_3 = [];
+let closure_3 = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild", "PL", "TR"];
 let closure_4 = importDefault(dependencyMap[0]);
 ({ useCallback: closure_5, useMemo: closure_6, forwardRef } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_10 = { dispatch: "ERROR", split: "ERROR", location: "NOT_RESPONDER", __initData: "NOT_RESPONDER" };
+let closure_10 = { "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" };
 let closure_11 = { code: "function pnpm_indexTsx1(){const{initialFrame,defaultLayout}=this.__closure;return initialFrame.value||defaultLayout;}" };
 let closure_12 = { code: "function pnpm_indexTsx2(){const{screenHeight,keyboard,keyboardVerticalOffset,frame}=this.__closure;const keyboardY=screenHeight-keyboard.heightWhenOpened.value-keyboardVerticalOffset;return Math.max(frame.value.y+frame.value.height-keyboardY,0);}" };
 let closure_13 = { code: "function pnpm_indexTsx3(value){const{interpolate,relativeKeyboardHeight}=this.__closure;return interpolate(value,[0,1],[0,relativeKeyboardHeight()]);}" };

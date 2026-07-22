@@ -1,10 +1,10 @@
-// Module ID: 9684
-// Function ID: 75363
+// Module ID: 9685
+// Function ID: 75376
 // Name: PremiumFeaturesPromotionalLogo
 // Dependencies: []
 // Exports: default
 
-// Module 9684 (PremiumFeaturesPromotionalLogo)
+// Module 9685 (PremiumFeaturesPromotionalLogo)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 11676
-// Function ID: 90590
+// Module ID: 11677
+// Function ID: 90603
 // Name: useWelcomeScreenEnabled
 // Dependencies: []
 // Exports: default
 
-// Module 11676 (useWelcomeScreenEnabled)
+// Module 11677 (useWelcomeScreenEnabled)
 const isGuildTextChannelType = require(dependencyMap[0]).isGuildTextChannelType;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

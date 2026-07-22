@@ -1,10 +1,10 @@
-// Module ID: 11074
-// Function ID: 86141
+// Module ID: 11075
+// Function ID: 86154
 // Name: getContentClassificationVisibility
 // Dependencies: []
 // Exports: useContentClassificationVisibility
 
-// Module 11074 (getContentClassificationVisibility)
+// Module 11075 (getContentClassificationVisibility)
 function getContentClassificationVisibility(contentClassification, channel, nsfwAllowed) {
   if (null != contentClassification) {
     let obj = channel(dependencyMap[1]);

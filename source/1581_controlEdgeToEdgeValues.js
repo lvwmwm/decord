@@ -5,18 +5,18 @@
 // Exports: controlEdgeToEdgeValues, isEdgeToEdge
 
 // Module 1581 (controlEdgeToEdgeValues)
-import result from "result";
-import result from "result";
+import "__exportStarResult1";
+import "__exportStarResult1";
 
 
 export function controlEdgeToEdgeValues(arg0) {
 
 }
 export const isEdgeToEdge = function isEdgeToEdge() {
-  const TurboModuleRegistry = result.TurboModuleRegistry;
+  const TurboModuleRegistry = __exportStarResult1.TurboModuleRegistry;
   let tmp = null != TurboModuleRegistry.get("RNEdgeToEdge");
   if (!tmp) {
-    const TurboModuleRegistry2 = result.TurboModuleRegistry;
+    const TurboModuleRegistry2 = __exportStarResult1.TurboModuleRegistry;
     const value = TurboModuleRegistry2.get("DeviceInfo");
     let getConstants;
     if (null != value) {

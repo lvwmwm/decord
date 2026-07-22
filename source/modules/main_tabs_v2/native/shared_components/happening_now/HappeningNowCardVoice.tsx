@@ -1,9 +1,9 @@
-// Module ID: 14825
-// Function ID: 111739
+// Module ID: 14833
+// Function ID: 111782
 // Name: useVoiceChannelUsers
 // Dependencies: []
 
-// Module 14825 (useVoiceChannelUsers)
+// Module 14833 (useVoiceChannelUsers)
 function useVoiceChannelUsers(voiceState) {
   const arg1 = voiceState;
   const voiceUserAffinitySortType = arg1(dependencyMap[17]).useVoiceUserAffinitySortType("useVoiceChannelUsers");
@@ -42,7 +42,7 @@ function useVoiceChannelUsers(voiceState) {
       }
     ];
     const arr = voiceUserAffinitySortType(closure_2[19])(voiceStatesForChannel);
-    return found.orderBy(items, []).value();
+    return found.orderBy(items, [-1751711741]).value();
   }, items1);
 }
 function formatVoiceActivityTitle(arr, guildId) {

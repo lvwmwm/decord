@@ -1,14 +1,14 @@
-// Module ID: 15201
-// Function ID: 114740
+// Module ID: 15209
+// Function ID: 114783
 // Name: CalendarMinusIcon
-// Dependencies: [0, 0, 0, 0, 0, 4294967295]
+// Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: CalendarMinusIcon
 
-// Module 15201 (CalendarMinusIcon)
-import "result";
-import { jsx } from "result";
+// Module 15209 (CalendarMinusIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarMinusIcon.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarMinusIcon.tsx");
 
 export const CalendarMinusIcon = function CalendarMinusIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

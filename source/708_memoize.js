@@ -1,7 +1,7 @@
 // Module ID: 708
 // Function ID: 8721
 // Name: memoize
-// Dependencies: [591]
+// Dependencies: []
 
 // Module 708 (memoize)
 function memoize(arg0, arg1) {
@@ -37,6 +37,6 @@ function memoize(arg0, arg1) {
   const typeError = new TypeError("Expected a function");
   throw typeError;
 }
-memoize.Cache = require("module_591");
+memoize.Cache = require(dependencyMap[0]);
 
 export default memoize;

@@ -1,9 +1,9 @@
-// Module ID: 13337
-// Function ID: 101362
+// Module ID: 13344
+// Function ID: 101395
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13337 (_isNativeReflectConstruct)
+// Module 13344 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -41,14 +41,14 @@ let obj = arg1(dependencyMap[17]);
 obj = obj.create((arg0) => {
   const arg1 = arg0;
   const obj = {
-    alignItems: "<string:1124139010>",
-    justifyContent: "843d42ee8ccb539c61b4f45fba39870a",
-    position: "en-GB.messages.843d42ee8ccb539c61b4f45fba39870a.compiled.messages",
-    left: "jsona",
-    right: "<string:58302274>",
-    marginBottom: "<string:40371712>",
-    height: "<string:38031872>",
-    width: "<string:1091672672>",
+    "Bool(true)": null,
+    "Bool(true)": "de0c5291417ca85ca49b63cd365d8403",
+    "Bool(true)": "en-GB.messages.de0c5291417ca85ca49b63cd365d8403.compiled.messages",
+    "Bool(true)": "jsona",
+    "Bool(true)": "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC",
+    "Bool(true)": "Greek",
+    "Bool(true)": "el",
+    "Bool(true)": "simple",
     activeMediaPlayerSource: undefined,
     mediaSourceMessage: undefined,
     progress: undefined,
@@ -217,7 +217,7 @@ let tmp7 = (arg0) => {
   items[5] = {
     key: "userDidClosePip",
     value() {
-      MediaPlayerManager(closure_2[18]).batchUpdates(() => state.setState({ backgroundColor: null, width: null }));
+      MediaPlayerManager(closure_2[18]).batchUpdates(() => state.setState({ "Bool(false)": "<string:1040334421>", "Bool(false)": "<string:1040334338>" }));
     }
   };
   items[6] = {
@@ -226,7 +226,7 @@ let tmp7 = (arg0) => {
       const MediaPlayerManager = this;
       MediaPlayerManager(closure_2[18]).batchUpdates(() => {
         self.pauseCurrentPlayer();
-        state.setState({ backgroundColor: null, width: null });
+        state.setState({ "Bool(false)": "<string:1040334421>", "Bool(false)": "<string:1040334338>" });
       });
     }
   };
@@ -263,7 +263,7 @@ let tmp7 = (arg0) => {
         let isPlaying;
         let wasPipClosedByUser;
         if (null == lib) {
-          store.setState({ LIVE_ACTIVITY_SETTINGS_UPDATED: 1715544575, paddingBottom: 1409286699 });
+          store.setState({ "Null": "absolute", "Null": -1 });
         }
         let id;
         if (null != lib) {
@@ -366,7 +366,7 @@ let tmp7 = (arg0) => {
           tmp8 = source;
         }
         if (!tmp6(tmp7, tmp8)) {
-          const obj = {};
+          const obj = { height: -1, width: "Not Eligible", position: "Not Eligible", top: "long-animation-frame", display: true, borderRadius: "onunhandledrejection" };
           let tmp11;
           if (null != source) {
             tmp11 = source;

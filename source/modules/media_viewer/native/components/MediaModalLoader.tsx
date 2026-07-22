@@ -1,8 +1,8 @@
-// Module ID: 12130
-// Function ID: 93438
+// Module ID: 12134
+// Function ID: 93464
 // Dependencies: []
 
-// Module 12130
+// Module 12134
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     num = 0;
   }
   const source = onLoad.source;
-  let obj = { isEnabled: true, _responseType: "/assets/design/components/Icon/native/redesign/generated/images", afterMs: 24, enableGameUpdateNotifications: 24, FEED_SESSION_STARTED: null, overScrollMode: "99274532ad7fe616c031212e677b32e8", enabled: "ThreadLockIcon" };
+  let obj = { fontSize: "ThreadLockIcon", lineHeight: "png", fontFamily: true, textAlign: "/assets/design/components/Icon/native/redesign/generated/images", marginTop: 24, alignItems: 24, paddingHorizontal: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onLoad, obj);
   let callback;

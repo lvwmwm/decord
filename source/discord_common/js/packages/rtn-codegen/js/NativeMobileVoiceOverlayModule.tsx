@@ -1,9 +1,9 @@
-// Module ID: 13336
-// Function ID: 101361
+// Module ID: 13343
+// Function ID: 101394
 // Name: enforcing
 // Dependencies: []
 
-// Module 13336 (enforcing)
+// Module 13343 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMobileVoiceOverlayModule");
 const _module = require(dependencyMap[1]);

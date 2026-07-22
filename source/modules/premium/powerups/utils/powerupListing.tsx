@@ -1,10 +1,10 @@
-// Module ID: 11538
-// Function ID: 89848
+// Module ID: 11539
+// Function ID: 89861
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useBuildGuildPowerupsSections
 
-// Module 11538 (_createForOfIteratorHelperLoose)
+// Module 11539 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

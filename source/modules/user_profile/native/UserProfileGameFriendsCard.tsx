@@ -1,10 +1,10 @@
-// Module ID: 11996
-// Function ID: 92689
+// Module ID: 12000
+// Function ID: 92715
 // Name: UserProfileGameFriendsCard
 // Dependencies: []
 // Exports: default
 
-// Module 11996 (UserProfileGameFriendsCard)
+// Module 12000 (UserProfileGameFriendsCard)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles({ card: { flexDirection: "column" } });
@@ -63,7 +63,7 @@ export default function UserProfileGameFriendsCard(arg0) {
     obj1.style = items;
     const intl3 = arg1(closure_2[4]).intl;
     obj1.title = intl3.string(arg1(closure_2[4]).t.Uv/eTx);
-    const obj2 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: formatResult };
+    const obj2 = { cachedAt: 1, edpbxy: 1, children: formatResult };
     obj1.children = jsx(arg1(closure_2[7]).Text, obj2);
     return jsx(importDefault(closure_2[6]), obj1);
   }

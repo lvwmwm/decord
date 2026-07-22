@@ -1,30 +1,25 @@
-// Module ID: 15934
-// Function ID: 122222
+// Module ID: 15942
+// Function ID: 122264
 // Name: getSpatialAudioPointFromGuildRoomPosition
 // Dependencies: [42795008, 44236800, 44957696, 131072, 125239296, 100663296, 251658240]
 // Exports: livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 15934 (getSpatialAudioPointFromGuildRoomPosition)
-function getSpatialAudioPointFromGuildRoomPosition(arg0) {
-  let aspectRatio;
-  let listenerHeight;
+// Module 15942 (getSpatialAudioPointFromGuildRoomPosition)
+function getSpatialAudioPointFromGuildRoomPosition(arg0, arg1, aspectRatio) {
   let point = arg1;
-  ({ aspectRatio, listenerHeight } = arg2);
   if (null == arg1) {
     point = closure_7;
   }
-  const result = (arg0.y - point.y) / 100;
-  const obj = { worldX: (arg0.x - point.x) / 100 * aspectRatio * 8, worldY: listenerHeight - 4 * result, worldZ: 8 * result };
+  const obj = { worldX: (arg0.x - point.x) / 100 * aspectRatio.aspectRatio * 8, worldY: 0, worldZ: 8 * ((arg0.y - point.y) / 100) };
   return obj;
 }
-function computeLivingRoomWorldPoints(listenerHeight) {
+function computeLivingRoomWorldPoints(arg0) {
   let currentUserId;
   let users;
-  ({ users, currentUserId } = listenerHeight);
+  ({ users, currentUserId } = arg0);
   const arg1 = currentUserId;
-  const importDefault = listenerHeight.listenerHeight;
+  let importDefault;
   let dependencyMap;
-  let aspectRatio;
   const value = users.get(currentUserId);
   let position;
   if (null != value) {
@@ -34,12 +29,12 @@ function computeLivingRoomWorldPoints(listenerHeight) {
   if (null != position) {
     tmp3 = position;
   }
-  dependencyMap = tmp3;
-  aspectRatio = closure_5[closure_0(undefined, closure_2[3]).GuildRoomBackgrounds.DEFAULT].aspectRatio;
+  importDefault = tmp3;
+  dependencyMap = closure_5[closure_0(undefined, closure_2[3]).GuildRoomBackgrounds.DEFAULT].aspectRatio;
   const items = [...users.values()];
   const found = items.filter((userId) => userId.userId !== currentUserId);
   return Object.fromEntries(found.map((userId) => {
-    const items = [userId.userId, callback(userId.position, tmp3, { aspectRatio, listenerHeight })];
+    const items = [userId.userId, callback(userId.position, tmp3, { aspectRatio })];
     return items;
   }));
 }
@@ -55,17 +50,14 @@ export const livingRoomWorldPointToMediaEnginePoint = function livingRoomWorldPo
   return { x: worldX.worldX, y: worldX.worldY, z: worldX.worldZ };
 };
 export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channelId) {
-  let guildId;
-  let listenerHeight;
   channelId = channelId.channelId;
   const arg1 = channelId;
-  ({ guildId, listenerHeight } = channelId);
-  const importDefault = listenerHeight;
-  let closure_3;
+  const guildId = channelId.guildId;
+  let dependencyMap;
   let obj = arg1(dependencyMap[4]);
   const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp3.getId());
-  const dependencyMap = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
+  const importDefault = stateFromStores;
   let experimental = importDefault(dependencyMap[5]).useExperiment({ guildId, location: "SpatialAudioPanel" }).experimental;
   if (experimental) {
     experimental = null != guildId;
@@ -74,15 +66,15 @@ export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channe
   if (experimental) {
     tmp3 = channelId.mode === closure_6;
   }
-  closure_3 = tmp3;
+  dependencyMap = tmp3;
   obj = { available: experimental };
   const obj2 = importDefault(dependencyMap[5]);
   const items1 = [closure_4];
-  const items2 = [tmp3, channelId, stateFromStores, listenerHeight];
+  const items2 = [tmp3, channelId, stateFromStores];
   obj.worldPoints = arg1(dependencyMap[4]).useStateFromStores(items1, () => {
     if (tmp3) {
       if (null != channelId) {
-        const obj = { users: roomUsers.getRoomUsers(channelId), currentUserId: stateFromStores, listenerHeight };
+        const obj = { users: roomUsers.getRoomUsers(channelId), currentUserId: stateFromStores };
         const tmp3 = callback(obj);
       }
       return {};

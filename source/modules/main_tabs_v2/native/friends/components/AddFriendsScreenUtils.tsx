@@ -1,10 +1,10 @@
-// Module ID: 14788
-// Function ID: 111456
+// Module ID: 14796
+// Function ID: 111499
 // Name: _sendWave
 // Dependencies: []
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 14788 (_sendWave)
+// Module 14796 (_sendWave)
 function _sendWave() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

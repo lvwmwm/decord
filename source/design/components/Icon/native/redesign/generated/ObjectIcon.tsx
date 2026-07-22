@@ -1,10 +1,10 @@
-// Module ID: 9407
-// Function ID: 73263
+// Module ID: 9408
+// Function ID: 73276
 // Name: ObjectIcon
 // Dependencies: []
 // Exports: ObjectIcon
 
-// Module 9407 (ObjectIcon)
+// Module 9408 (ObjectIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ObjectIcon.tsx");

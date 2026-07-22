@@ -1,10 +1,10 @@
-// Module ID: 12896
-// Function ID: 98443
+// Module ID: 12903
+// Function ID: 98476
 // Name: getStatusSource
 // Dependencies: []
 // Exports: StatusWithTyping, default
 
-// Module 12896 (getStatusSource)
+// Module 12903 (getStatusSource)
 function getStatusSource(status, streaming, flag, flag2) {
   if (streaming) {
     return importDefault(dependencyMap[10]);

@@ -1,10 +1,10 @@
-// Module ID: 9030
-// Function ID: 70953
+// Module ID: 9031
+// Function ID: 70966
 // Name: XboxLinkDiscordError
 // Dependencies: []
 // Exports: default
 
-// Module 9030 (XboxLinkDiscordError)
+// Module 9031 (XboxLinkDiscordError)
 importAll(dependencyMap[0]);
 const XboxLinkModalScenes = arg1(dependencyMap[1]).XboxLinkModalScenes;
 const jsx = arg1(dependencyMap[2]).jsx;

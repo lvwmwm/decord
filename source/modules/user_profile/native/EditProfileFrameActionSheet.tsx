@@ -1,10 +1,10 @@
-// Module ID: 13477
-// Function ID: 102299
+// Module ID: 13484
+// Function ID: 102332
 // Name: EditProfileFrameInner
 // Dependencies: []
 // Exports: default
 
-// Module 13477 (EditProfileFrameInner)
+// Module 13484 (EditProfileFrameInner)
 function EditProfileFrameInner(user) {
   let selectedProfileFrame;
   let setSelectedProfileFrame;
@@ -47,7 +47,7 @@ function EditProfileFrameInner(user) {
       isNonUserBotResult = user.isNonUserBot();
     }
     if (!isNonUserBotResult) {
-      setSelectedProfileFrame(guildId[23])(user.id, user.getAvatarURL(null, 80), { "Bool(false)": null, "Bool(false)": null });
+      setSelectedProfileFrame(guildId[23])(user.id, user.getAvatarURL(null, 80), { <string:2875327494>: null, <string:2591641942>: null });
       const tmp5 = setSelectedProfileFrame(guildId[23]);
     }
   }, items1);
@@ -149,17 +149,17 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
-const tmp3 = arg1(dependencyMap[6]);
-obj.title = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.previewContainer = { header: null, raw: null, borderRadius: null };
+obj.bounceOffset = { "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "flex-start", "Bool(false)": 40, "Bool(false)": null };
+const obj1 = { width: "isArray", height: "AGE_VERIFICATION_GET_STARTED_MODAL_KEY", pointerEvents: 28928, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.title = obj1;
+obj.previewContainer = {};
 const obj2 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj2["bottom"] = -1;
 obj2["color"] = importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND;
 obj.previewGradient = obj2;
 let closure_12 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const tmp3 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/user_profile/native/EditProfileFrameActionSheet.tsx");
 
 export default function EditProfileFrameActionSheet(arg0) {

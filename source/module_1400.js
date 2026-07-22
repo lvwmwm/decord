@@ -4,6 +4,6 @@
 
 // Module 1400
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": "/assets/images/provisional_account_avatars", "Bool(false)": 320, "Bool(false)": 320, "Bool(false)": null, "Bool(false)": "9aedf52dcd9c6fec7c1074de40f17b88", "Bool(false)": "default_provisional_avatar_0", "Bool(false)": "png", scales: [null] };
+const obj = { 1358955657: true, 1279501871: "/assets/images/provisional_account_avatars", -100662186: 320, -134216521: 320, 1375732845: null, -1598249400: "9aedf52dcd9c6fec7c1074de40f17b88", -117286062: "default_provisional_avatar_0", 978739886: "png", scales: [false] };
 
 export default _module.registerAsset(obj);

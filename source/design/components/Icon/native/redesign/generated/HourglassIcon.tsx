@@ -1,10 +1,10 @@
-// Module ID: 11914
-// Function ID: 92220
+// Module ID: 11915
+// Function ID: 92234
 // Name: HourglassIcon
 // Dependencies: []
 // Exports: HourglassIcon
 
-// Module 11914 (HourglassIcon)
+// Module 11915 (HourglassIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HourglassIcon.tsx");

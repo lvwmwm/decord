@@ -1,8 +1,8 @@
-// Module ID: 9036
-// Function ID: 70996
+// Module ID: 9037
+// Function ID: 71009
 // Dependencies: []
 
-// Module 9036
+// Module 9037
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).GAME_CONSOLE_ALERT_MODAL_LOCATION;

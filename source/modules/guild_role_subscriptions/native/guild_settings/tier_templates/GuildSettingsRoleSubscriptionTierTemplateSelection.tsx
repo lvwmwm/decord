@@ -1,10 +1,10 @@
-// Module ID: 16352
-// Function ID: 126158
+// Module ID: 16360
+// Function ID: 126200
 // Name: TierTemplatesRenderer
 // Dependencies: []
 // Exports: default
 
-// Module 16352 (TierTemplatesRenderer)
+// Module 16360 (TierTemplatesRenderer)
 function TierTemplatesRenderer(groupListingId) {
   let error;
   let guildId;
@@ -17,8 +17,8 @@ function TierTemplatesRenderer(groupListingId) {
     let obj = { color: tmp.activityIndicator.color };
     let tmp3 = callback2(closure_6, obj);
   } else if (null != error) {
-    obj = { hasMaxConnections: null, isBoostOnlySubscription: null };
-    const items = [true, error.message];
+    obj = { cachedAt: null, edpbxy: null };
+    const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002307613602567088, error.message];
     obj.children = items;
     tmp3 = callback3(arg1(dependencyMap[9]).Text, obj);
   } else {
@@ -123,7 +123,7 @@ function GuildSettingsRoleSubscriptionTierTemplateSelectionComponent(guildId) {
         obj = { color: closure_1.editIcon.color, size: "xs" };
         const items = [callback2(closure_8, obj), ];
         const obj1 = {};
-        const obj2 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+        const obj2 = { cachedAt: "fill", edpbxy: "track" };
         const intl = callback(closure_3[22]).intl;
         obj2.children = intl.string(callback(closure_3[22]).t.WNWtkB);
         obj1.children = callback2(callback(closure_3[9]).Text, obj2);
@@ -190,7 +190,7 @@ let obj = arg1(dependencyMap[7]);
 obj = { container: { marginTop: 16 } };
 obj = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.text = {};
+obj.text = { <string:4224476331>: null, <string:1415819756>: null };
 const tmp4 = arg1(dependencyMap[6]);
 obj.activityIndicator = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj1 = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };

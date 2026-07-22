@@ -1,10 +1,10 @@
-// Module ID: 10703
-// Function ID: 83331
+// Module ID: 10704
+// Function ID: 83344
 // Name: VoiceSensitivity
 // Dependencies: []
 // Exports: default
 
-// Module 10703 (VoiceSensitivity)
+// Module 10704 (VoiceSensitivity)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -16,8 +16,8 @@ const AppStates = arg1(dependencyMap[7]).AppStates;
 const NativePermissionTypes = arg1(dependencyMap[8]).NativePermissionTypes;
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { sensitivity: { "Bool(false)": "help_article", "Bool(false)": "message" }, sensitivityBar: {} };
-obj = { "Bool(false)": "MicrophoneIcon", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/icons/voice_calls/light_theme", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.WHITE };
+obj = { sensitivity: { flex: true, justifyContent: true }, sensitivityBar: {} };
+obj = { 0: "MicrophoneIcon", 9223372036854775807: "png", 9223372036854775807: true, 9223372036854775807: "/assets/images/native/icons/voice_calls/light_theme", 9223372036854775807: 24, 0: 24, CONTROLS_BUTTON_SIZE_LARGE: null, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.WHITE };
 obj.sensitivityFill = obj;
 obj.sensitivityCommon = {};
 const tmp2 = arg1(dependencyMap[9]);
@@ -30,7 +30,7 @@ obj3.backgroundColor = arg1(dependencyMap[12]).hexWithOpacity(importDefault(depe
 obj.sensitivityDefault = obj3;
 const obj7 = arg1(dependencyMap[12]);
 obj.sensitivitySpeaking = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
-obj.sensitivitySlider = {};
+obj.sensitivitySlider = { -9223372036854775808: null, 9223372036854775807: null, 9223372036854775807: null };
 let closure_14 = obj.createStyles(obj);
 const obj4 = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("components_native/common/VoiceSensitivity.tsx");
@@ -148,7 +148,7 @@ export default function VoiceSensitivity(auto) {
   }, items4);
   if (auto) {
     obj = {};
-    obj = { -9223372036854775808: "png", 0: true, 0: "/assets/images/native/icons/voice_calls/light_theme", 0: 24, 9223372036854775807: 24, 9223372036854775807: null };
+    obj = { -1604029722: "png", -1212652805: true, -363534495: "/assets/images/native/icons/voice_calls/light_theme", 682132920: 24, 1429694692: 24, -1467631382: null };
     const intl = arg1(dependencyMap[18]).intl;
     obj.aria-label = intl.string(arg1(dependencyMap[18]).t.yZcOjo);
     let num5 = 0;
@@ -216,12 +216,12 @@ export default function VoiceSensitivity(auto) {
     obj10.style = items11;
     items10[1] = callback(View, obj10);
     const obj12 = {
-      "Bool(false)": 410124289,
-      "Bool(false)": 402653184,
-      "Bool(false)": 16777216,
-      "Bool(false)": 37836098,
-      "Bool(false)": 20302848,
-      "Bool(false)": -747089664,
+      jumpType: "isArray",
+      skipMessageFetch: "constructor",
+      type: "toString",
+      nonce: "isArray",
+      fill: "isArray",
+      d: "isArray",
       style: tmp.sensitivitySlider,
       value: sum,
       onValueChange: callback1,

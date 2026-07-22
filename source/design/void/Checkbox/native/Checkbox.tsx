@@ -1,10 +1,10 @@
-// Module ID: 12877
-// Function ID: 98365
+// Module ID: 12884
+// Function ID: 98398
 // Name: Checkbox
 // Dependencies: []
 // Exports: default
 
-// Module 12877 (Checkbox)
+// Module 12884 (Checkbox)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;

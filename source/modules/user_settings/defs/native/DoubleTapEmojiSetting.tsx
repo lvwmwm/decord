@@ -1,9 +1,9 @@
-// Module ID: 14427
-// Function ID: 108792
+// Module ID: 14435
+// Function ID: 108835
 // Name: SettingsEmoji
 // Dependencies: []
 
-// Module 14427 (SettingsEmoji)
+// Module 14435 (SettingsEmoji)
 function SettingsEmoji(emoji) {
   emoji = emoji.emoji;
   if (null != emoji.id) {

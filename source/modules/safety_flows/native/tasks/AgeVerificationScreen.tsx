@@ -1,10 +1,10 @@
-// Module ID: 16445
-// Function ID: 127025
+// Module ID: 16453
+// Function ID: 127067
 // Name: AgeVerificationScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16445 (AgeVerificationScreen)
+// Module 16453 (AgeVerificationScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -68,7 +68,7 @@ export default function AgeVerificationScreen() {
       onTaskComplete(stateFromStores[21]).logout("age_verification_screen");
     }
   };
-  const obj4 = { style: tmp2.helpLink };
+  const obj4 = { cachedAt: "<string:3344105473>", edpbxy: "<string:3465102384>", style: tmp2.helpLink };
   const intl3 = arg1(dependencyMap[15]).intl;
   obj4.children = intl3.string(arg1(dependencyMap[15]).t.2jxGer);
   obj3.children = jsx(arg1(dependencyMap[22]).Text, obj4);

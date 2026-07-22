@@ -1,10 +1,10 @@
-// Module ID: 9546
-// Function ID: 74421
+// Module ID: 9547
+// Function ID: 74434
 // Name: PostComposerInputs
 // Dependencies: []
 // Exports: useFocusHandlers
 
-// Module 9546 (PostComposerInputs)
+// Module 9547 (PostComposerInputs)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 const obj = { TITLE: 0, [0]: "TITLE", CONTENT: 1, [1]: "CONTENT" };

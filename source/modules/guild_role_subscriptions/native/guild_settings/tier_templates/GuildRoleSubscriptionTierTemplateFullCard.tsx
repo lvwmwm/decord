@@ -1,10 +1,10 @@
-// Module ID: 16354
-// Function ID: 126184
+// Module ID: 16362
+// Function ID: 126226
 // Name: SectionSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 16354 (SectionSeparator)
+// Module 16362 (SectionSeparator)
 function SectionSeparator() {
   let obj = {};
   const items = [callback(arg1(dependencyMap[5]).Spacer, { size: 24 }), , ];
@@ -47,22 +47,22 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { sendableWithPremium: -93192191, LevelCardPosition: 2013265920, useRivePlayback: 16777216, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.subscriptionPlanTextStyle = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const obj2 = { "Null": true, 160498172: true, 1090782306: true, color: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };
+const obj2 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006835717854823887, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000563, "Null": 203623697495444500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };
 obj.descriptionPlanTextStyle = obj2;
 obj.content = { paddingTop: 24 };
-const obj3 = { GameIconImageSize: "<string:1358643473>", EmbeddedActivityLaunchability: "<string:3748724738>", subtitle: "<string:822083584>", borderColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.separator = obj3;
+const obj1 = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.separator = { borderColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.benefitRowContainer = {};
-obj.benefitTextContainer = {};
+obj.benefitTextContainer = { "Null": "heading-md/semibold", "Null": "display", "Null": false };
 obj.benefitDescription = { marginTop: 2 };
-obj.channelTitle = { "Null": 7, "Null": 370 };
+obj.channelTitle = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.channelIcon = { marginEnd: 8 };
 let closure_7 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { borderColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_BACKGROUND_HOVER };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateFullCard.tsx");
 
 export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
@@ -80,21 +80,21 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   const first = template.listings[0];
   ({ channels, additional_perks } = first);
   ({ image, name, role_color } = first);
-  let obj = { ind: null, PX_8: null };
+  let obj = { openDisableCommunication: null, freezeEnabled: null };
   obj = { style: tmp.container };
   obj = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
   const items = [callback(arg1(dependencyMap[11]).GuildRoleSubscriptionTierTemplateBasicInfo, obj), callback(View, { style: tmp.separator }), ];
   const obj2 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj3 };
-  const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: { textTransform: "uppercase" } };
+  const obj4 = { cachedAt: "<string:191316381>", edpbxy: "<string:3094478849>", style: { textTransform: "uppercase" } };
   const intl = arg1(dependencyMap[13]).intl;
   obj4.children = intl.string(arg1(dependencyMap[13]).t.CjC5XZ);
   const items1 = [callback(arg1(dependencyMap[7]).Text, obj4), callback(arg1(dependencyMap[5]).Spacer, { size: 4 }), , , , , , , , , ];
-  const obj5 = {};
+  const obj5 = { cachedAt: 400, edpbxy: 20 };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj5.children = intl2.string(arg1(dependencyMap[13]).t.bCb3c8);
   items1[2] = callback(arg1(dependencyMap[7]).Text, obj5);
   items1[3] = callback(arg1(dependencyMap[5]).Spacer, { size: 24 });
-  const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: { textTransform: "uppercase" } };
+  const obj6 = { cachedAt: true, edpbxy: true, style: { textTransform: "uppercase" } };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj6.children = intl3.string(arg1(dependencyMap[13]).t.ZKyfEo);
   items1[4] = callback(arg1(dependencyMap[7]).Text, obj6);

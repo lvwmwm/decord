@@ -1,5 +1,5 @@
 // Module ID: 7527
-// Function ID: 60228
+// Function ID: 60239
 // Name: CardSection
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
+obj = { container: { -9223372036854775808: null, 9223372036854775807: null } };
 const tmp3 = arg1(dependencyMap[3]);
 obj.title = importDefault(dependencyMap[5])(arg1(dependencyMap[2]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[6]).colors.TEXT_SUBTLE, 12, {});
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, overflow: "hidden", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };

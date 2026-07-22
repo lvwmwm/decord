@@ -1,10 +1,10 @@
-// Module ID: 9466
-// Function ID: 73726
+// Module ID: 9467
+// Function ID: 73739
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 9466 (_createForOfIteratorHelperLoose)
+// Module 9467 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

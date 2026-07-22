@@ -1,18 +1,18 @@
-// Module ID: 9665
-// Function ID: 75270
+// Module ID: 9666
+// Function ID: 75283
 // Name: FOOTER_HEIGHT
 // Dependencies: []
 
-// Module 9665 (FOOTER_HEIGHT)
+// Module 9666 (FOOTER_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Null": "r", "Null": 300.5, "Null": 175, padding: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.label = { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.label = { memo: 52881784.83212474, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_32, height: importDefault(dependencyMap[4]).space.PX_48 };
 obj.buttonWrapper = obj1;
 const tmp3 = arg1(dependencyMap[2]);

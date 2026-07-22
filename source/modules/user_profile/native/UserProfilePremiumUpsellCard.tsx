@@ -1,10 +1,10 @@
-// Module ID: 13489
-// Function ID: 102374
+// Module ID: 13496
+// Function ID: 102407
 // Name: UserProfilePremiumUpsellCard
 // Dependencies: []
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13489 (UserProfilePremiumUpsellCard)
+// Module 13496 (UserProfilePremiumUpsellCard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ AnalyticsObjects: closure_4, AnalyticsPages: closure_5, AnalyticsSections: closure_6, UserSettingsSections: closure_7 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -14,7 +14,7 @@ let closure_9 = arg1(dependencyMap[3]).createStyles((bottom) => {
   return { container };
 });
 const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_profile/native/UserProfilePremiumUpsellCard.tsx");
+const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/user_profile/native/UserProfilePremiumUpsellCard.tsx");
 
 export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCard(isTryItOut) {
   isTryItOut = isTryItOut.isTryItOut;
@@ -36,23 +36,22 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   }, items1);
   const items2 = [analyticsLocations];
   const callback1 = React.useCallback(() => {
-    let obj = analyticsLocations(paths[10]);
-    obj = { analyticsLocation: obj, analyticsLocations };
-    obj = { page: constants2.USER_SETTINGS, section: constants3.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT, object: constants.BUTTON_CTA, premiumFeatureCardOrder: navigation(paths[13]).PremiumFeatureCardOrder.TIER_2_LEADING };
-    obj.pushLazy(navigation(paths[12])(paths[11], paths.paths), obj);
+    let obj = { analyticsLocation: obj, analyticsLocations };
+    obj = { page: constants2.USER_SETTINGS, section: constants3.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT, object: constants.BUTTON_CTA, premiumFeatureCardOrder: navigation(closure_2[11]).PremiumFeatureCardOrder.TIER_2_LEADING };
+    analyticsLocations(closure_2[10])(obj);
   }, items2);
   obj = { style: tmp.container };
   const tmp4 = importDefault(dependencyMap[7]);
   const tmp8 = jsx;
   if (isTryItOut) {
     if (null == nitroTrialCtaOverride) {
-      const intl2 = arg1(dependencyMap[15]).intl;
-      nitroTrialCtaOverride = intl2.string(arg1(dependencyMap[15]).t.pj0XBN);
+      const intl2 = arg1(dependencyMap[13]).intl;
+      nitroTrialCtaOverride = intl2.string(arg1(dependencyMap[13]).t.pj0XBN);
     }
     let stringResult = nitroTrialCtaOverride;
   } else {
-    const intl = arg1(dependencyMap[15]).intl;
-    stringResult = intl.string(arg1(dependencyMap[15]).t.PxUx8e);
+    const intl = arg1(dependencyMap[13]).intl;
+    stringResult = intl.string(arg1(dependencyMap[13]).t.PxUx8e);
   }
   obj.ctaText = stringResult;
   obj.showLinearGradient = true;
@@ -61,15 +60,15 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   }
   obj.onPress = callback;
   obj = {};
-  const intl3 = arg1(dependencyMap[15]).intl;
+  const intl3 = arg1(dependencyMap[13]).intl;
   const string = intl3.string;
-  const t = arg1(dependencyMap[15]).t;
+  const t = arg1(dependencyMap[13]).t;
   if (isTryItOut) {
     let stringResult1 = string(t.ZFR9LF);
   } else {
     stringResult1 = string(t.Tii53U);
   }
   obj.children = stringResult1;
-  obj.children = jsx(arg1(dependencyMap[16]).Text, obj);
-  return tmp8(importDefault(dependencyMap[14]), obj);
+  obj.children = jsx(arg1(dependencyMap[14]).Text, obj);
+  return tmp8(importDefault(dependencyMap[12]), obj);
 };

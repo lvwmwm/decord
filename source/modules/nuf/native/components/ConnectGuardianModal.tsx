@@ -1,10 +1,10 @@
-// Module ID: 16010
-// Function ID: 122860
+// Module ID: 16018
+// Function ID: 122902
 // Name: ConnectGuardianModal
 // Dependencies: []
 // Exports: default
 
-// Module 16010 (ConnectGuardianModal)
+// Module 16018 (ConnectGuardianModal)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -80,7 +80,7 @@ export default function ConnectGuardianModal(route) {
     obj1.children = items2;
     const items3 = [callback2(View, obj1), , , ];
     const obj5 = { style: tmp.cardSection };
-    const obj6 = { delete: "contain", dispatch: 8, raw: 4, style: tmp.scanPrompt };
+    const obj6 = { "Null": "<string:1895908587>", "Null": "r", alignItems: "<string:44592193>", style: tmp.scanPrompt };
     const intl3 = arg1(closure_2[12]).intl;
     obj6.children = intl3.string(importDefault(closure_2[13]).Mi60fm);
     const items4 = [callback(arg1(closure_2[11]).Text, obj6), ];
@@ -96,7 +96,7 @@ export default function ConnectGuardianModal(route) {
     const obj10 = { paddingBottom: importDefault(closure_2[7])().bottom + importDefault(closure_2[6]).space.PX_16 };
     items5[1] = obj10;
     obj9.style = items5;
-    const obj11 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+    const obj11 = {};
     const intl4 = arg1(closure_2[12]).intl;
     obj11.text = intl4.string(arg1(closure_2[12]).t.3PatSz);
     obj11.onPress = function onPress() {

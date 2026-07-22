@@ -1,10 +1,10 @@
-// Module ID: 11436
-// Function ID: 89007
+// Module ID: 11437
+// Function ID: 89020
 // Name: ChatInputNotificationNudgeImpl
 // Dependencies: []
 // Exports: default
 
-// Module 11436 (ChatInputNotificationNudgeImpl)
+// Module 11437 (ChatInputNotificationNudgeImpl)
 function ChatInputNotificationNudgeImpl(onDismiss) {
   let surface;
   ({ promptType: closure_0, location: closure_1, surface } = onDismiss);
@@ -70,9 +70,6 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
   obj2.children = items3;
   items2[1] = closure_18(View, obj2);
   const obj6 = {
-    -1011446930: null,
-    31071: 8,
-    65536: "absolute",
     onPress() {
       let obj = callback(surface[19]);
       const result = obj.setPushPermissionReactivationSeen(callback);
@@ -104,7 +101,7 @@ const tmp4 = arg1(dependencyMap[8]);
 const tmp5 = arg1(dependencyMap[9]);
 let closure_19 = arg1(dependencyMap[10]).createStyles((arg0) => {
   let obj = {};
-  obj = { "Bool(false)": "d69e45ebad9f40b8957190ed86104514", "Bool(false)": "ic_application_command_24px", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/emoji", padding: importDefault(dependencyMap[11]).space.PX_12, backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderTopWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH, borderColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, borderRadius: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, marginBottom: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM };
+  obj = { 33837506: "d69e45ebad9f40b8957190ed86104514", 1471013480: "ic_application_command_24px", 1310491355: "png", -404790432: true, -1756080938: "/assets/images/native/emoji", padding: importDefault(dependencyMap[11]).space.PX_12, backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderTopWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH, borderColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, borderRadius: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, marginBottom: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM };
   let num;
   if (arg0) {
     num = 12;

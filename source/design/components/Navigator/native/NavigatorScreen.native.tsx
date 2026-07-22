@@ -1,9 +1,9 @@
-// Module ID: 5579
-// Function ID: 47367
+// Module ID: 5578
+// Function ID: 47375
 // Name: NavigatorScreen
 // Dependencies: []
 
-// Module 5579 (NavigatorScreen)
+// Module 5578 (NavigatorScreen)
 const jsxs = arg1(dependencyMap[1]).jsxs;
 const importAllResult = importAll(dependencyMap[0]);
 const memoResult = importAll(dependencyMap[0]).memo((arg0) => {

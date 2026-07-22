@@ -1,10 +1,10 @@
-// Module ID: 13396
-// Function ID: 101835
+// Module ID: 13403
+// Function ID: 101868
 // Name: CacheLogEntry
 // Dependencies: []
 // Exports: default
 
-// Module 13396 (CacheLogEntry)
+// Module 13403 (CacheLogEntry)
 function CacheLogEntry(entry) {
   entry = entry.entry;
   const before = entry.before;
@@ -82,8 +82,8 @@ export default function DevToolsLocalMessageCache() {
   const obj4 = { label: "Incomplete Fetches", subLabel: importDefault(dependencyMap[8]).channelsFetchStarted.size - importDefault(dependencyMap[8]).channelsFetchedNetwork.size };
   items[3] = callback(require(dependencyMap[5]).TableRow, obj4);
   obj.children = items;
-  const items1 = [callback2(require(dependencyMap[7]).TableRowGroup, obj), callback(require(dependencyMap[9]).Text, {}), ];
-  const obj5 = { "Bool(false)": "fa8fba4f08666ddc130e1c29719257b7", "Bool(false)": "PawPrintIcon" };
+  const items1 = [callback2(require(dependencyMap[7]).TableRowGroup, obj), callback(require(dependencyMap[9]).Text, { category: false, position: false, top: false }), ];
+  const obj5 = { -9223372036854775808: "fa8fba4f08666ddc130e1c29719257b7", 9223372036854775807: "PawPrintIcon" };
   const fetchLogs = importDefault(dependencyMap[8]).fetchLogs;
   const reversed = Array.from(fetchLogs.values()).reverse();
   obj5.children = reversed.map((entry) => callback(closure_8, { entry }, arg1));

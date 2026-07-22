@@ -1,10 +1,10 @@
-// Module ID: 9186
-// Function ID: 71940
+// Module ID: 9187
+// Function ID: 71953
 // Name: ConfirmEmailCode
 // Dependencies: []
 // Exports: default
 
-// Module 9186 (ConfirmEmailCode)
+// Module 9187 (ConfirmEmailCode)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -56,7 +56,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
     obj = {};
     ({ background: obj2.style, contentContainer: obj2.contentContainerStyle } = tmp2);
     obj = {};
-    const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title, children: headerText };
+    const obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp2.title, children: headerText };
     const items2 = [callback4(arg1(dependencyMap[11]).Text, obj1), , , ];
     const obj2 = { style: tmp2.prompt };
     const intl = arg1(dependencyMap[12]).intl;

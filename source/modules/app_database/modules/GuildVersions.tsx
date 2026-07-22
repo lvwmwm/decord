@@ -1,5 +1,5 @@
 // Module ID: 6891
-// Function ID: 54817
+// Function ID: 54828
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [125632512, 246743040, 42795008, 120061952, 259981312, 131072, 108855296, 117440512, 251658240]
 
@@ -93,7 +93,7 @@ importDefaultResult = new importDefaultResult("GuildVersions");
 let tmp4 = () => {
   class GuildVersions {
     constructor() {
-      f54836 = this;
+      f54847 = this;
       tmp = closure_5(this, GuildVersions);
       map = new Map();
       this.pending = map;

@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 74960
+// Module ID: 9625
+// Function ID: 74973
 // Name: useStickerPickerListData
 // Dependencies: []
 // Exports: default
 
-// Module 9624 (useStickerPickerListData)
+// Module 9625 (useStickerPickerListData)
 let closure_3 = importAll(dependencyMap[0]);
 const useStickerPickerStore = arg1(dependencyMap[1]).useStickerPickerStore;
 const tmp2 = arg1(dependencyMap[2]);

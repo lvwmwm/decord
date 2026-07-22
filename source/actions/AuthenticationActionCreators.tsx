@@ -1,9 +1,9 @@
-// Module ID: 5588
-// Function ID: 47406
+// Module ID: 5587
+// Function ID: 47414
 // Name: dispatchLogout
 // Dependencies: []
 
-// Module 5588 (dispatchLogout)
+// Module 5587 (dispatchLogout)
 function dispatchLogout(arg0) {
   let obj = importDefault(dependencyMap[7]);
   const result = obj.clearNavigationHistory();
@@ -199,7 +199,7 @@ obj = {
     ({ isMultiAccount: closure_1, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
     let obj = importDefault(dependencyMap[12]);
-    obj = { "Null": "<string:410124289>", "Null": "<string:402653184>", "Null": "<string:16777216>", "Null": "<string:21861186>", "Null": "<string:46090496>", "Null": "<string:3547877632>", url: closure_9.LOGIN_MFA(mfaType) };
+    obj = { url: closure_9.LOGIN_MFA(mfaType) };
     obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId };
     if (null == loginInstanceId) {
       loginInstanceId = authStore.getLoginInstanceId();
@@ -429,7 +429,7 @@ obj = {
     }
     const importDefault = DEFAULT_LOGGED_OUT;
     const HTTP = arg1(dependencyMap[14]).HTTP;
-    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_9.ME };
+    const obj = { y: null, isArray: null, accessible: null, url: closure_9.ME };
     const value = HTTP.get(obj);
     return value.catch(() => {
       callback(arg0, DEFAULT_LOGGED_OUT);
@@ -550,10 +550,10 @@ obj = {
       clearTimeout(timeout);
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        callback(closure_3[8]).dispatch({ <string:4279193856>: 4, <string:80853057>: 4 });
+        callback(closure_3[8]).dispatch({});
       }, 5000);
       const HTTP = arg1(dependencyMap[14]).HTTP;
-      const obj = { toValue: true, duration: true, useNativeDriver: true, visible: true, url: closure_9.AUTH_LOCATION_METADATA };
+      const obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, url: closure_9.AUTH_LOCATION_METADATA };
       const value = HTTP.get(obj);
       nextPromise = value.then((body) => {
         clearTimeout(closure_4);
@@ -599,7 +599,7 @@ obj = {
         }
       }, () => {
         clearTimeout(closure_4);
-        callback(closure_3[8]).dispatch({ <string:4279193856>: 4, <string:80853057>: 4 });
+        callback(closure_3[8]).dispatch({});
         let closure_17 = null;
       });
       closure_17 = nextPromise;

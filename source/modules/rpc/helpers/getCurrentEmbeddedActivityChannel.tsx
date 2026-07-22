@@ -1,10 +1,10 @@
-// Module ID: 13274
-// Function ID: 100830
+// Module ID: 13281
+// Function ID: 100863
 // Name: getCurrentEmbeddedActivityChannel
 // Dependencies: []
 // Exports: default
 
-// Module 13274 (getCurrentEmbeddedActivityChannel)
+// Module 13281 (getCurrentEmbeddedActivityChannel)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedActivityChannel.tsx");

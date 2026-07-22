@@ -1,10 +1,10 @@
-// Module ID: 10394
-// Function ID: 80111
+// Module ID: 10395
+// Function ID: 80124
 // Name: useIsMessageRequest
 // Dependencies: []
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 10394 (useIsMessageRequest)
+// Module 10395 (useIsMessageRequest)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");

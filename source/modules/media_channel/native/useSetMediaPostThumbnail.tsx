@@ -1,10 +1,10 @@
-// Module ID: 9817
-// Function ID: 76169
+// Module ID: 9818
+// Function ID: 76182
 // Name: useSetMediaPostThumbnail
 // Dependencies: []
 // Exports: default
 
-// Module 9817 (useSetMediaPostThumbnail)
+// Module 9818 (useSetMediaPostThumbnail)
 let closure_3 = importAll(dependencyMap[0]);
 const DraftType = arg1(dependencyMap[1]).DraftType;
 let closure_5 = importDefault(dependencyMap[2]);

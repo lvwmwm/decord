@@ -1,9 +1,9 @@
-// Module ID: 10763
-// Function ID: 83661
+// Module ID: 10764
+// Function ID: 83674
 // Name: getSizeStyle
 // Dependencies: []
 
-// Module 10763 (getSizeStyle)
+// Module 10764 (getSizeStyle)
 function getSizeStyle(size, speakerTileStyles) {
   if (speakerTileStyles(dependencyMap[8]).StageTileSize.FULL === size) {
     return speakerTileStyles.full;
@@ -46,22 +46,22 @@ let obj = { FULL: 212, [212]: "FULL", HALF: 112, [112]: "HALF", THIRD: 112, [112
 const result = obj.FULL * 1.7777777777777777;
 const result1 = obj.HALF * 1.7777777777777777;
 let obj2 = arg1(dependencyMap[5]);
-obj = { container: {}, full: obj1, half: obj2, third: obj3 };
+obj = { container: { "Bool(true)": "BG_GRADIENT_CITRUS_SHERBERT_1", "Bool(true)": 31.1, "Bool(true)": "BG_GRADIENT_CITRUS_SHERBERT_2", "Bool(true)": 67.09 }, full: obj1, half: obj2, third: obj3 };
 obj2 = { height: obj.HALF };
 const obj1 = { height: obj.FULL };
 const obj3 = { height: obj.THIRD };
 const tmp2 = arg1(dependencyMap[4]);
 obj.avatarContainer = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.imageBackground = {};
-const obj5 = {};
+obj.imageBackground = { "Bool(true)": false, "Bool(false)": "auto", "Bool(false)": "none", "Bool(false)": true };
+const obj5 = { 1012087393: "/assets/images/native/icons", -880776023: 32, -1420401754: 32, -1347553197: null, 1724085899: "4231d943574087a463ee922a711ec0bb", -1604561349: "ic_mobile_device", 140796500: "png", 1401660095: true, -1015722160: "/assets/images/native/icons", 979439893: 24 };
 const obj4 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj5.backgroundColor = arg1(dependencyMap[7]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.BLACK, 0.3);
 obj.nameplateContainer = obj5;
 const obj10 = arg1(dependencyMap[7]);
 obj.nameplateText = { color: importDefault(dependencyMap[6]).colors.WHITE };
+const obj7 = { -1703345573: null, 1381164898: null, -1649041997: null, 1646846801: null, 1901158891: null, 782582495: null, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj.restricted = obj7;
 const obj6 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.restricted = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-const obj7 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.blocked = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
 const styles = obj2.createStyles(obj);
 const obj8 = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
@@ -140,7 +140,7 @@ const memoResult = importAllResult.memo((channel) => {
         const tmp24 = View;
       }
       const items8 = [tmp23Result, ];
-      const obj10 = { style: tmp.nameplateText, children: tmp8 };
+      const obj10 = { -9223372036854775808: "w", 9223372036854775807: "Array", 9223372036854775807: "isArray", 9223372036854775807: "accessibilityRole", style: tmp.nameplateText, children: tmp8 };
       items8[1] = callback(arg1(dependencyMap[21]).Text, obj10);
       obj6.children = items8;
       items5[1] = closure_8(View, obj6);

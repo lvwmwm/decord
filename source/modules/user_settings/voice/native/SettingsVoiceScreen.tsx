@@ -1,10 +1,10 @@
-// Module ID: 14015
-// Function ID: 106600
+// Module ID: 14022
+// Function ID: 106640
 // Name: KrispLogo
 // Dependencies: []
 // Exports: default
 
-// Module 14015 (KrispLogo)
+// Module 14022 (KrispLogo)
 function KrispLogo() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[9]);
@@ -22,7 +22,7 @@ function KrispLogo() {
   const intl2 = arg1(dependencyMap[12]).intl;
   obj1.accessibilityLabel = intl2.string(arg1(dependencyMap[12]).t.hvVgAZ);
   obj1.onPress = arg1(dependencyMap[14]).handleKrispLinkPressed;
-  const obj2 = {};
+  const obj2 = { cachedAt: "<string:3344105473>", edpbxy: "<string:3465102384>" };
   const intl3 = arg1(dependencyMap[12]).intl;
   obj2.children = intl3.string(arg1(dependencyMap[12]).t.hvVgAZ);
   obj1.children = callback(arg1(dependencyMap[15]).Text, obj2);
@@ -57,7 +57,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[5]);
 let closure_12 = "" + importDefault(dependencyMap[6]).getArticleURL(HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
 const importDefaultResult = importDefault(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ krisp: { position: false, top: false, marginBottom: false }, logo: {} });
+let closure_13 = arg1(dependencyMap[7]).createStyles({ krisp: {}, logo: {} });
 const obj2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/user_settings/voice/native/SettingsVoiceScreen.tsx");
 

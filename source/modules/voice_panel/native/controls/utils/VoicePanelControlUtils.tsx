@@ -1,9 +1,9 @@
-// Module ID: 15725
-// Function ID: 120305
+// Module ID: 15733
+// Function ID: 120348
 // Name: getDrawerSpec
 // Dependencies: []
 
-// Module 15725 (getDrawerSpec)
+// Module 15733 (getDrawerSpec)
 let closure_2 = { code: "function getDrawerSpec_VoicePanelControlUtilsTsx1(height,top){const{roundToNearestPixel}=this.__closure;const maxHeight=height-top;return{minHeight:roundToNearestPixel(maxHeight*0.65),maxHeight:maxHeight};}" };
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/voice_panel/native/controls/utils/VoicePanelControlUtils.tsx");

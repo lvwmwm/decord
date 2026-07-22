@@ -1,10 +1,10 @@
-// Module ID: 8557
-// Function ID: 68019
+// Module ID: 8558
+// Function ID: 68031
 // Name: renderTooltipItem
-// Dependencies: [31, 27, 33, 4126, 5232, 3840, 3938, 2, 31, 27]
+// Dependencies: [31, 27, 33, 4126, 5082, 3840, 3938, 2, 31, 27]
 // Exports: AnimatedTooltip
 
-// Module 8557 (renderTooltipItem)
+// Module 8558 (renderTooltipItem)
 import module_31 from "module_31";
 import getActivityIndicator from "get ActivityIndicator";
 import { StyleSheet } from "module_33";

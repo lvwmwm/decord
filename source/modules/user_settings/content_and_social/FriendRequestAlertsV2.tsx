@@ -1,12 +1,12 @@
-// Module ID: 9051
-// Function ID: 71090
+// Module ID: 9052
+// Function ID: 71103
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: []
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9051 (useIsFriendRequestAlertsV2Enabled)
+// Module 9052 (useIsFriendRequestAlertsV2Enabled)
 const _module = require(dependencyMap[0]);
-const obj = { bottom: null, name: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { "Bool(false)": 9, "Bool(false)": 18, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/user_settings/content_and_social/FriendRequestAlertsV2.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9605
-// Function ID: 74828
+// Module ID: 9606
+// Function ID: 74841
 // Name: generateListData
 // Dependencies: []
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9605 (generateListData)
+// Module 9606 (generateListData)
 function generateListData(stickerPack) {
   const items = [];
   let obj = arg1(dependencyMap[5]);
@@ -22,13 +22,13 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { -980630533: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022156620246, 546434899: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001825255899558517, 1369873737: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013440594549659658, 996475903: 2720930.0078125, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.xs, shadowColor: importDefault(dependencyMap[4]).colors.BLACK, shadowOffset: { "Null": null, "Null": null }, shadowOpacity: 0.25, shadowRadius: 5 };
+obj = { location: null, hash: 1, Reflect: "row", type: "stretch", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.xs, shadowColor: importDefault(dependencyMap[4]).colors.BLACK, shadowOffset: { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" }, shadowOpacity: 0.25, shadowRadius: 5 };
 obj.informationContainer = obj;
 obj.headerContainer = {};
 obj.informationHeader = { lineHeight: 20 };
 obj.informationContentContainer = { flexDirection: "row" };
 obj.informationContent = { lineHeight: 20 };
-obj.informationContentDescription = {};
+obj.informationContentDescription = { flexGrow: "Array", zIndex: "isArray" };
 let closure_6 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stickers/native/StickerPackInformationPopout.tsx");
@@ -43,7 +43,7 @@ export default function StickerPackInformationPopout(stickerPack) {
   let obj = { style: items };
   const items = [tmp.informationContainer, style];
   obj = { style: tmp.headerContainer };
-  obj = { delete: null, dispatch: null, raw: null, style: tmp.informationHeader };
+  obj = { "Null": true, "Null": true, alignItems: true, style: tmp.informationHeader };
   const intl = arg1(dependencyMap[6]).intl;
   obj.children = intl.format(arg1(dependencyMap[6]).t.XDm6yN, { stickerPackName: stickerPack.name });
   const items1 = [callback(arg1(dependencyMap[7]).Text, obj), ];

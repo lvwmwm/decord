@@ -1,5 +1,5 @@
 // Module ID: 7472
-// Function ID: 59967
+// Function ID: 59978
 // Name: connectToStage
 // Dependencies: []
 // Exports: connectOrLurkStage, showUserProfile

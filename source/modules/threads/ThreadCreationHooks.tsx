@@ -1,5 +1,5 @@
 // Module ID: 7929
-// Function ID: 63302
+// Function ID: 63312
 // Name: getIsPrivate
 // Dependencies: []
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode

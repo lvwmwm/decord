@@ -1,10 +1,10 @@
-// Module ID: 10565
-// Function ID: 82508
+// Module ID: 10566
+// Function ID: 82521
 // Name: useVideoSpinnerTimer
 // Dependencies: []
 // Exports: default
 
-// Module 10565 (useVideoSpinnerTimer)
+// Module 10566 (useVideoSpinnerTimer)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/useVideoSpinnerTimer.tsx");

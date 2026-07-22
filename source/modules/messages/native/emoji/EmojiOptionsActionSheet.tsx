@@ -1,10 +1,10 @@
-// Module ID: 9391
-// Function ID: 73205
+// Module ID: 9392
+// Function ID: 73218
 // Name: EmojiOptionsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9391 (EmojiOptionsActionSheet)
+// Module 9392 (EmojiOptionsActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9989
-// Function ID: 77231
+// Module ID: 9990
+// Function ID: 77244
 // Name: isNearBottom
 // Dependencies: []
 // Exports: default
 
-// Module 9989 (isNearBottom)
+// Module 9990 (isNearBottom)
 function isNearBottom(contentOffset) {
   contentOffset = contentOffset.contentOffset;
   if (contentOffset === undefined) {
@@ -20,15 +20,15 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { fill: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
+obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
 obj.scrollView = obj;
-obj.scrollViewContentLandscape = { grow: null, width: null, height: true, borderRadius: null, overflow: "" };
-obj.scrollViewContentPortrait = { "Null": "<string:17552193>", "Null": "<string:493961472>", "Null": "<string:72417282>", "Null": "<string:1283408144>" };
+obj.scrollViewContentLandscape = { channel: "enabled", ref: "scalar", style: 8, accessibilityRole: "vertical", variant: false };
+obj.scrollViewContentPortrait = {};
 obj.header = { paddingTop: 24 };
-obj.bodyContainer = {};
+obj.bodyContainer = { "Bool(true)": null, "Bool(true)": null, "Null": null };
 const tmp3 = arg1(dependencyMap[3]);
 obj.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.footerPortrait = {};
+obj.footerPortrait = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 const obj1 = { marginHorizontal: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.separator = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 let closure_9 = obj.createStyles(obj);

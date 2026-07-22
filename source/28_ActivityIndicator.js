@@ -57,11 +57,11 @@ class ActivityIndicator {
     tmp8 = importDefault(dependencyMap[4]);
     obj5 = importDefault(dependencyMap[5]);
     obj2.style = obj5.compose(closure_6.container, global.style);
-    obj2.children = jsx(closure_5, Object.assign({}, merged, { y: true, createMode: true }));
+    obj2.children = jsx(closure_5, Object.assign({}, merged, {}));
     return jsx(tmp8, obj2);
   }
 }
 ActivityIndicator.displayName = "ActivityIndicator";
-let closure_6 = importDefault(dependencyMap[5]).create({ container: { "Null": null, "Null": null }, sizeSmall: { "Null": 0, "Null": -1048576 }, sizeLarge: {} });
+let closure_6 = importDefault(dependencyMap[5]).create({ container: { <string:3596066964>: null, <string:3638417373>: null }, sizeSmall: {}, sizeLarge: { "Null": 0, "Null": -1048576 } });
 
 export default ActivityIndicator;

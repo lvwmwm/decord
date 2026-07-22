@@ -1,10 +1,10 @@
-// Module ID: 9300
-// Function ID: 72631
+// Module ID: 9301
+// Function ID: 72644
 // Name: ConversationFocusScreen
 // Dependencies: []
 // Exports: default
 
-// Module 9300 (ConversationFocusScreen)
+// Module 9301 (ConversationFocusScreen)
 let closure_2 = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_3, ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -73,7 +73,7 @@ export default function ConversationFocusScreen() {
     }
   }
   if (fullyHydrated) {
-    obj = { <string:1446656868>: true, <string:67064212>: true, <string:2857778020>: true, contentContainerStyle: ChatPreview.container };
+    obj = { "Bool(true)": "y", "Bool(true)": "isArray", "Bool(true)": "Reflect", contentContainerStyle: ChatPreview.container };
     ChatPreview = arg1(dependencyMap[12]).ChatPreview;
     obj1 = { channelId, messages: stateFromStores, jumpTargetId: startMessageId, initialScrollToTop: true, allowReactions: true };
     obj.children = callback(ChatPreview, obj1);

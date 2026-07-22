@@ -1,66 +1,18 @@
 // Module ID: 15815
-// Function ID: 120918
+// Function ID: 120944
 // Dependencies: []
 
 // Module 15815
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "uk",
+  locale: "no",
   pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    const first = parts[0];
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr1) {
-      const first1 = parts[0];
-      substr = first1.slice(-1);
-    }
-    if (substr1) {
-      const first2 = parts[0];
-      substr1 = first2.slice(-2);
-    }
-    const substr2 = first.slice(-1);
-    const substr3 = first.slice(-2);
-    if (arg1) {
-      let str8 = "other";
-      if (3 == substr) {
-        str8 = "other";
-        if (13 != substr1) {
-          str8 = "few";
-        }
+    let str = "other";
+    let str2 = "other";
+    if (!arg1) {
+      if (1 == arg0) {
+        str = "one";
       }
-      let str2 = str8;
-    } else {
-      if (tmp2) {
-        if (1 == substr2) {
-          str2 = "one";
-        }
-      }
-      if (tmp2) {
-        if (substr2 >= 2) {
-          if (substr2 <= 4) {
-            let str4 = "few";
-            if (substr3 >= 12) {
-              str4 = "few";
-            }
-          }
-          str2 = str4;
-        }
-      }
-      if (!tmp2) {
-        if (tmp2) {
-          if (substr2 >= 5) {
-            str4 = str6;
-          }
-        }
-        let str6 = "other";
-        if (tmp2) {
-          str6 = "other";
-          if (substr3 >= 11) {
-            str6 = "other";
-          }
-        }
-      }
-      str6 = "many";
+      str2 = str;
     }
     return str2;
   }

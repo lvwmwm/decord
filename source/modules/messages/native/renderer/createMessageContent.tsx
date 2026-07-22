@@ -1,5 +1,5 @@
 // Module ID: 7622
-// Function ID: 61055
+// Function ID: 61065
 // Name: createThreadEmbed
 // Dependencies: []
 
@@ -51,7 +51,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                       if (!mostRecentMessage.ignored) {
                         obj1 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
                         const obj2 = { state: ReferencedMessageRowState.LOADED };
-                        const obj3 = { 671033087: false, 704588031: false, 738142975: false, -882096641: false, -882245628: false, -773521404: false, -773390332: false, -881524732: false, message: mostRecentMessage, roleStyle, options };
+                        const obj3 = { 721365503: "title", 1174350847: "__closure", 314254: "x", 314252: "channel_id", 315911: "w", 315913: "Array", 314263: "isArray", 1140796497: "channel_id", message: mostRecentMessage, roleStyle, options };
                         obj2.message = createMessageContent(obj3);
                         obj1.referencedMessage = obj2;
                         obj1.backgroundColor = backgroundColor;
@@ -485,7 +485,7 @@ function createMessageContent(message) {
                         tmp96 = obj15;
                       } else {
                         merged = createMessageContent;
-                        obj16 = { t: false, createStyles: false, mn: false, get: false, it: false, surrogates: false, Text: false, useStateFromStores: false, message: message3, messageForward: merged, roleStyle };
+                        obj16 = { bind: "title", getCurrentUser: "__closure", mode: "x", valueOf: "channel_id", message: message3, push: "Array", fileFinishedImporting: "isArray", a: "channel_id", messageForward: merged, roleStyle };
                         let obj17 = {};
                         merged = obj17;
                         merged = options;
@@ -1357,7 +1357,7 @@ function createMessageContent(message) {
         applicationIconSource = author.getAvatarSource(undefined);
         const tmp57 = message.state !== constants2.SEND_FAILED || message.isCommandType();
       }
-      parseMessageMarkupResult = { 0: "absolute", -9223372036854775808: -1, -9223372036854775808: -1, content: undefined };
+      parseMessageMarkupResult = { 357452015: "HTTP", 1585572706: "Date", -1172652393: "HTTP", content: undefined };
     }
   }
 }

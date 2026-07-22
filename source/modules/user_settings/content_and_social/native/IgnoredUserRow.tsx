@@ -1,10 +1,10 @@
-// Module ID: 13591
-// Function ID: 103012
+// Module ID: 13598
+// Function ID: 103045
 // Name: handleUnignoreUser
 // Dependencies: []
 // Exports: default
 
-// Module 13591 (handleUnignoreUser)
+// Module 13598 (handleUnignoreUser)
 function handleUnignoreUser(closure_3) {
   importDefault(dependencyMap[3]).unignoreUser(closure_3, "ignored-users-list-mobile");
 }
@@ -12,7 +12,7 @@ function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   const arg1 = userRecord;
   const importDefault = importDefault(dependencyMap[4])().analyticsLocations;
-  let obj = { 9223372036854775807: "REMOTE_AUTH_CANCEL", -9223372036854775808: "SOLID", -9223372036854775808: "isUnicodeVariantSubtag", 0: "r", 9223372036854775807: "DEFAULT_PROFILE_EFFECT_WH_RATIO", 0: "y" };
+  let obj = {};
   obj = { source: userRecord.getAvatarSource(undefined), size: arg1(dependencyMap[6]).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.icon = jsx(arg1(dependencyMap[6]).Avatar, obj);
   let tmp2 = null != userRecord;

@@ -1,10 +1,10 @@
-// Module ID: 11932
-// Function ID: 92275
+// Module ID: 11933
+// Function ID: 92289
 // Name: UserProfileActivityTimebar
 // Dependencies: []
 // Exports: default
 
-// Module 11932 (UserProfileActivityTimebar)
+// Module 11933 (UserProfileActivityTimebar)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const Fonts = arg1(dependencyMap[2]).Fonts;

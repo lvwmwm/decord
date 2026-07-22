@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 66000
+// Module ID: 8326
+// Function ID: 66012
 // Name: showShareActionSheet
 // Dependencies: []
 // Exports: showShareActionSheet
 
-// Module 8325 (showShareActionSheet)
+// Module 8326 (showShareActionSheet)
 const NativeEventEmitter = require(dependencyMap[0]).NativeEventEmitter;
 const _module = require(dependencyMap[1]);
 if (_module.isAndroid()) {

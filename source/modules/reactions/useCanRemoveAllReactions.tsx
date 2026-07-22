@@ -1,10 +1,10 @@
-// Module ID: 9424
-// Function ID: 73356
+// Module ID: 9425
+// Function ID: 73369
 // Name: useCanRemoveAllReactions
 // Dependencies: []
 // Exports: default
 
-// Module 9424 (useCanRemoveAllReactions)
+// Module 9425 (useCanRemoveAllReactions)
 let closure_2 = importDefault(dependencyMap[0]);
 const Permissions = arg1(dependencyMap[1]).Permissions;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");

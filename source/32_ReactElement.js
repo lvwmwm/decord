@@ -354,14 +354,14 @@ PureComponent.prototype = componentDummy;
 componentDummy.constructor = PureComponent;
 let obj = assign(componentDummy, Component.prototype);
 componentDummy.isPureReactComponent = true;
-obj = {};
+obj = { "Null": 1, "Null": "100%", "Null": "absolute", "Null": 0, "Null": 0 };
 let closure_14 = /\/+/g;
 let closure_15 = "function" === typeof reportError ? reportError : (message) => {
   if ("object" === typeof window) {
     const _window = window;
     if ("function" === typeof window.ErrorEvent) {
       const _window2 = window;
-      const obj = { "Null": null, "Null": null };
+      const obj = {};
       if ("object" === typeof message) {
         if (null !== message) {
           if ("string" === typeof message.message) {
@@ -486,7 +486,8 @@ arg5.cloneElement = (props, ref, children) => {
   }
 };
 arg5.createContext = (_currentValue) => {
-  let obj = { $$typeof: closure_3, _currentValue, _currentValue2: _currentValue, Provider: obj };
+  let obj = { KIDS: 30, textInputRef: 300, _monthsRegex: 68, standardDeviation: 68, MAX_GROUP_DM_STAFF_PARTICIPANTS: "absolute", č: "50%", $$typeof: closure_3, _currentValue, _currentValue2: _currentValue };
+  obj.Provider = obj;
   obj = { $$typeof: closure_2, _context: obj };
   obj.Consumer = obj;
   return obj;

@@ -1,10 +1,10 @@
-// Module ID: 16458
-// Function ID: 127182
+// Module ID: 16466
+// Function ID: 127224
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [646840323, 899088385]
+// Dependencies: []
 // Exports: initialize
 
-// Module 16458 (_createForOfIteratorHelperLoose)
+// Module 16466 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -174,7 +174,7 @@ function handleAction(type) {
   }
   return false;
 }
-new Set([956242431, 469703423, 503258367]);
+new Set([452933887, 486480895, 520035839]);
 let closure_2 = {};
 let closure_3 = false;
 const _module = require(dependencyMap[1]);

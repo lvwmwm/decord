@@ -1,10 +1,10 @@
-// Module ID: 14207
-// Function ID: 107477
+// Module ID: 14215
+// Function ID: 107520
 // Name: onGoLiveNotificationSettingsChanged
 // Dependencies: []
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 14207 (onGoLiveNotificationSettingsChanged)
+// Module 14215 (onGoLiveNotificationSettingsChanged)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 let closure_4 = require(dependencyMap[1]).NotificationSettingsUpdateType;
 const _module = require(dependencyMap[4]);

@@ -1,10 +1,10 @@
-// Module ID: 14868
-// Function ID: 112006
+// Module ID: 14876
+// Function ID: 112049
 // Name: GuildThemeNuxActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14868 (GuildThemeNuxActionSheet)
+// Module 14876 (GuildThemeNuxActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -117,7 +117,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   const intl3 = arg1(closure_2[15]).intl;
   obj.children = intl3.string(arg1(closure_2[15]).t.Q9zFy9);
   items7[1] = callback3(arg1(closure_2[18]).Text, obj);
-  obj1 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
+  obj1 = { cachedAt: 1, edpbxy: 1, style: tmp.description };
   const intl4 = arg1(closure_2[15]).intl;
   obj1.children = intl4.string(arg1(closure_2[15]).t.XLpBLj);
   items7[2] = callback3(arg1(closure_2[18]).Text, obj1);

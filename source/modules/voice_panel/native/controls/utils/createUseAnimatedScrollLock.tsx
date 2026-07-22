@@ -1,10 +1,10 @@
-// Module ID: 11211
-// Function ID: 87273
+// Module ID: 11212
+// Function ID: 87286
 // Name: context
 // Dependencies: []
 // Exports: createUseAnimatedScrollLock
 
-// Module 11211 (context)
+// Module 11212 (context)
 const importAllResult = importAll(dependencyMap[0]);
 let closure_2 = arg1(dependencyMap[1]).isAndroid();
 let closure_3 = { code: "function onBeginDrag_createUseAnimatedScrollLockTsx1(_,context){const{isDragScrolling}=this.__closure;context.momentumEndCount=0;isDragScrolling.set(true);}" };

@@ -1,10 +1,10 @@
-// Module ID: 10990
-// Function ID: 85532
+// Module ID: 10991
+// Function ID: 85545
 // Name: KickConfirmModal
 // Dependencies: []
 // Exports: default
 
-// Module 10990 (KickConfirmModal)
+// Module 10991 (KickConfirmModal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_moderation/native/KickConfirmModal.tsx");

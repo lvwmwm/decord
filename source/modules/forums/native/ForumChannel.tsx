@@ -1,10 +1,10 @@
-// Module ID: 11784
-// Function ID: 91434
+// Module ID: 11785
+// Function ID: 91447
 // Name: forumKeyExtractor
 // Dependencies: []
 // Exports: default
 
-// Module 11784 (forumKeyExtractor)
+// Module 11785 (forumKeyExtractor)
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
   if (arg0 === closure_22) {
@@ -19,7 +19,7 @@ function ArchivedSection() {
   obj = {};
   const items = [tmp.section, obj.useClientThemesOverride()];
   obj.style = items;
-  obj = { delete: "Array", dispatch: "isArray", raw: "constructor", style: tmp.divider };
+  obj = { "Null": "Array", "Null": "isArray", alignItems: "constructor", style: tmp.divider };
   const intl = arg1(dependencyMap[18]).intl;
   obj.children = intl.string(arg1(dependencyMap[18]).t.3+LO1w);
   obj.children = callback(arg1(dependencyMap[17]).Text, obj);
@@ -29,7 +29,7 @@ function SearchSection(numPosts) {
   numPosts = numPosts.numPosts;
   const tmp = callback3();
   let obj = { style: tmp.section };
-  obj = { delete: "Array", dispatch: "isArray", raw: "constructor", style: tmp.divider };
+  obj = { "Null": "Array", "Null": "isArray", alignItems: "constructor", style: tmp.divider };
   if (0 === numPosts) {
     const intl2 = arg1(dependencyMap[18]).intl;
     let stringResult = intl2.string(arg1(dependencyMap[18]).t.DbgHxi);
@@ -45,7 +45,7 @@ function SearchSection(numPosts) {
 function ArchivedMissingReadHistoryPermission(channelName) {
   const tmp = callback3();
   let obj = { style: tmp.missingPermissionContainer };
-  obj = { delete: null, dispatch: null, raw: null, style: tmp.missingPermissionText };
+  obj = { style: tmp.missingPermissionText };
   const intl = arg1(dependencyMap[18]).intl;
   obj.children = intl.format(arg1(dependencyMap[18]).t.TycmzM, { channelName: channelName.channelName });
   obj.children = callback(arg1(dependencyMap[17]).Text, obj);
@@ -54,7 +54,7 @@ function ArchivedMissingReadHistoryPermission(channelName) {
 function SearchMissingReadHistoryPermission(channelName) {
   const tmp = callback3();
   let obj = { style: tmp.section };
-  obj = { delete: null, dispatch: null, raw: null, style: tmp.missingPermissionText };
+  obj = { style: tmp.missingPermissionText };
   const intl = arg1(dependencyMap[18]).intl;
   obj.children = intl.format(arg1(dependencyMap[18]).t.OWZJdS, { channelName: channelName.channelName });
   obj.children = callback(arg1(dependencyMap[17]).Text, obj);
@@ -163,7 +163,7 @@ function TagFilter(channel) {
     let tmp7 = tagFilter.size > 0;
     if (tmp7) {
       const obj2 = { style: tmp.countContainer };
-      const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.countText, children: tagFilter.size };
+      const obj3 = { cachedAt: "absolute", edpbxy: -3, style: tmp.countText, children: tagFilter.size };
       obj2.children = callback(arg1(dependencyMap[17]).Text, obj3);
       tmp7 = callback(View, obj2);
     }
@@ -230,7 +230,7 @@ function ForumChannelContent(channel) {
   const effect = React.useEffect(() => {
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
+      current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
     }
   }, items);
   const tmp6 = function useForumData(channel, sortOrder, tagFilter, tagSetting) {
@@ -320,7 +320,7 @@ function ForumChannelContent(channel) {
   let obj4 = arg1(dependencyMap[16]);
   const items1 = [archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, tmp6.searchResults];
   const clientThemesOverride = obj4.useClientThemesOverride();
-  const items2 = [, archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, tmp6.searchResults];
+  const items2 = [false, archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, tmp6.searchResults];
   const callback = React.useCallback(() => {
     let tmp = null == searchResults && canViewArchivedPosts;
     if (tmp) {
@@ -444,7 +444,7 @@ function ForumChannelContent(channel) {
     obj2.viewabilityConfig = closure_25;
     obj1.children = callback(arg1(dependencyMap[40]).FlashList, obj2);
     obj4 = {};
-    const items6 = [callback(importDefault(dependencyMap[42]), { "Bool(false)": null, "Bool(false)": null }), tmp16(View, obj1)];
+    const items6 = [callback(importDefault(dependencyMap[42]), { 9223372036854775807: null, 0: null }), tmp16(View, obj1)];
     obj4.children = items6;
     return callback2(closure_17, obj4);
   }
@@ -485,15 +485,15 @@ obj.background = obj;
 obj.headerRow = {};
 const tmp3 = arg1(dependencyMap[11]);
 obj.headerDivider = { backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.container = {};
+obj.container = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 obj.noHeight = { height: 0 };
-obj.list = { 0: null, 9223372036854775807: null, 9223372036854775807: true, 0: true, 0: 0 };
-obj.section = { "Null": true, "Null": true };
+obj.list = { flexDirection: null, alignItems: null, gap: true, overflow: true, x: 0 };
+obj.section = { <string:3596066964>: true, <string:3638417373>: true };
 const obj1 = { backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 const obj2 = {};
-const merged = Object.assign(importDefault(dependencyMap[14])(Fonts.PRIMARY_BOLD, importDefault(dependencyMap[13]).colors.TEXT_MUTED, 12, { id: null, timestamp: "b6fd36c944e99d3f382fa528595dc2ff" }));
+const merged = Object.assign(importDefault(dependencyMap[14])(Fonts.PRIMARY_BOLD, importDefault(dependencyMap[13]).colors.TEXT_MUTED, 12, { "Null": null, "Null": null }));
 obj.divider = obj2;
-const obj3 = { accessibilityRole: "number", LIGHT: "number", <string:3159534177>: "mY3Y38", <string:1722585004>: "woman_student", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
+const obj3 = { "Bool(true)": "string", "Bool(true)": "string", "Bool(true)": "color", "Bool(true)": "alignItems", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 obj.missingPermissionContainer = obj3;
 const importDefaultResult = importDefault(dependencyMap[14]);
 const obj4 = {};
@@ -506,7 +506,7 @@ obj.optionsPill = { backgroundColor: importDefault(dependencyMap[13]).colors.BAC
 const obj6 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST };
 obj.sortOptionsIcon = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 4 };
 obj.sortOptionsText = { marginHorizontal: 4 };
-const obj8 = { 0: "/assets/modules/nuf/native/images", 0: 221, 9223372036854775807: 195, 9223372036854775807: null, 0: "3a31ec2d5aeb0eedce9411671227bdc1", 0: "discoverability-header", 9223372036854775807: "png", -9223372036854775808: true, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BRAND };
+const obj8 = { <string:3217081256>: "/assets/modules/nuf/native/images", <string:3742876909>: 221, <string:2433045373>: 195, <string:758617586>: null, <string:1107847270>: "3a31ec2d5aeb0eedce9411671227bdc1", <string:1369504516>: "discoverability-header", <string:3429014137>: "png", <string:1314541923>: true, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BRAND };
 obj.countContainer = obj8;
 const obj9 = {};
 const obj7 = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 4 };
@@ -517,7 +517,7 @@ if (obj13.isAndroid()) {
 obj9.lineHeight = num;
 obj.countText = obj9;
 let closure_24 = obj.createStyles(obj);
-let closure_25 = { 1694760785: null, 1420449339: null, -1396944286: null };
+let closure_25 = {};
 const obj13 = arg1(dependencyMap[15]);
 const result = arg1(dependencyMap[63]).fileFinishedImporting("modules/forums/native/ForumChannel.tsx");
 

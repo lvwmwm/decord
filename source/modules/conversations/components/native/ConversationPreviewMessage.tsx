@@ -1,10 +1,10 @@
-// Module ID: 9284
-// Function ID: 72544
+// Module ID: 9285
+// Function ID: 72557
 // Name: modifyRow
 // Dependencies: []
 // Exports: default
 
-// Module 9284 (modifyRow)
+// Module 9285 (modifyRow)
 function modifyRow(arg0) {
   arg0.contextType = arg1(dependencyMap[6]).MessageContextType.SEARCH;
   arg0.renderContentOnly = true;
@@ -16,14 +16,14 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult();
-importDefaultResult.setOptions({ "Bool(true)": null, "Bool(true)": null });
+importDefaultResult.setOptions({ "Bool(true)": true, "Bool(true)": true });
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { gap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.container = obj;
-obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.header = obj1;
-const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[8]).space.PX_4 };
+const obj2 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.authorRow = obj2;
 obj.headerTimestamp = { flex: 1 };
 let closure_10 = obj1.createStyles(obj);
@@ -99,7 +99,7 @@ export default function ConversationPreviewMessage(message) {
     items4[2] = callback(arg1(dependencyMap[15]).Text, obj6);
     obj1.children = items4;
     const items6 = [closure_8(View, obj1), ];
-    const obj7 = { i: true, apply: true, modifyRow, message, rowGenerator: importDefaultResult };
+    const obj7 = { modifyRow, message, rowGenerator: importDefaultResult };
     items6[1] = callback(importDefault(dependencyMap[16]), obj7);
     obj.children = items6;
     return closure_8(View, obj);

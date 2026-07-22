@@ -1,9 +1,7 @@
 // Module ID: 12070
-// Function ID: 93167
+// Function ID: 93186
 // Dependencies: []
 
 // Module 12070
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, scales: ["Set", "ml"] };
 
-export default _module.registerAsset(obj);
+export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";

@@ -1,16 +1,16 @@
-// Module ID: 12591
-// Function ID: 96803
+// Module ID: 12596
+// Function ID: 96831
 // Name: VoiceEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 12591 (VoiceEmptyState)
+// Module 12596 (VoiceEmptyState)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const Fonts = arg1(dependencyMap[2]).Fonts;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { justifyContent: "center" }, button: { "Bool(true)": "166185917b52ede00e3e20d3f1f7faeb", "Bool(true)": "CheckmarkSmallIcon" } };
+obj = { container: { justifyContent: "center" }, button: {} };
 obj = {};
 const tmp3 = arg1(dependencyMap[3]);
 const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
@@ -42,7 +42,7 @@ export default function VoiceEmptyState(channel) {
   obj.lightSource = importDefault(dependencyMap[10]);
   obj.darkSource = importDefault(dependencyMap[10]);
   ({ emptyTitle: obj3.titleStyle, emptyBody: obj3.bodyStyle } = tmp);
-  obj.imageStyle = { "Null": null, "Null": null };
+  obj.imageStyle = {};
   const items1 = [callback(arg1(dependencyMap[8]).ThemedEmptyState, obj), callback(importDefault(dependencyMap[11]), { channel: channel.channel, style: tmp.button })];
   obj.children = items1;
   return callback2(View, obj);

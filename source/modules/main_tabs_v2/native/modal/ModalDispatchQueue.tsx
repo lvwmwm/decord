@@ -1,11 +1,13 @@
 // Module ID: 4336
-// Function ID: 38266
+// Function ID: 38274
 // Name: ModalDispatchQueue
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 4336 (ModalDispatchQueue)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 let tmp2 = () => {
   class ModalDispatchQueue {
     constructor() {
@@ -42,6 +44,6 @@ let tmp2 = () => {
   return callback(ModalDispatchQueue, items);
 }();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalDispatchQueue.tsx");
+const result = items.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalDispatchQueue.tsx");
 
 export default tmp2;

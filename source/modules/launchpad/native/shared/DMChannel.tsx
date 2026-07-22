@@ -1,15 +1,9 @@
-// Module ID: 15548
-// Function ID: 118636
+// Module ID: 15556
+// Function ID: 118679
 // Name: usePrivateChannelPressEvents
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 15548 (usePrivateChannelPressEvents)
-import importAllResult from "result";
-import { UnreadSetting } from "result";
-import { jsx } from "result";
-import result from "result";
-import result from "result";
-
+// Module 15556 (usePrivateChannelPressEvents)
 function usePrivateChannelPressEvents(channel, flag) {
   flag = channel;
   const importDefault = flag;
@@ -24,13 +18,15 @@ function usePrivateChannelPressEvents(channel, flag) {
     onLongPress: importAllResult.useCallback(() => arg0(closure_2[4]).openChannelLongPressActionSheet(arg0.id), items1)
   };
 }
+const importAllResult = importAll(dependencyMap[0]);
+const UnreadSetting = arg1(dependencyMap[1]).UnreadSetting;
+const jsx = arg1(dependencyMap[2]).jsx;
 let obj = { pressable: { flex: 1 } };
-obj = { backgroundColor: require("result").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.pressableUnderlayColor = obj;
-let closure_6 = result.createStyles(obj);
-result = result.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
-
-export default importAllResult.memo(function DMChannel(navigationReplace) {
+let closure_6 = arg1(dependencyMap[5]).createStyles(obj);
+const obj2 = arg1(dependencyMap[5]);
+const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
   let channel;
   let muted;
   ({ channel, muted } = navigationReplace);
@@ -81,3 +77,6 @@ export default importAllResult.memo(function DMChannel(navigationReplace) {
   obj["children"] = importDefault(dependencyMap[14])(obj);
   return tmp9(tmp10(arg1(dependencyMap[13]).PressableHighlight, obj));
 });
+const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
+
+export default memoResult;

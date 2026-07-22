@@ -1,15 +1,15 @@
-// Module ID: 9421
-// Function ID: 73348
+// Module ID: 9422
+// Function ID: 73361
 // Name: DiscordTag
 // Dependencies: []
 // Exports: default
 
-// Module 9421 (DiscordTag)
+// Module 9422 (DiscordTag)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Null": null, "Null": "Shape 2", "Null": 3 } };
+obj = { container: { typeAttr: "<string:1900043246>", Galaxy S4: "View", TRACEPARENT_REGEXP: "container" } };
 obj = { marginLeft: importDefault(dependencyMap[4]).space.PX_4 };
 obj.botTag = obj;
 let closure_6 = obj.createStyles(obj);
@@ -36,12 +36,12 @@ export default function DiscordTag(arg0) {
   } else {
     tmp4Result = null;
     if (null != user) {
-      obj = { style: usernameStyle };
+      obj = { <string:1234295407>: null, <string:1325308068>: "end", <string:328797103>: null, <string:1391485314>: "secondary", style: usernameStyle };
       const items = [user.toString(), ];
       let tmp7 = !user.hasUniqueUsername();
       if (tmp7) {
         const obj1 = { style: discriminatorStyle };
-        const items1 = [null, user.discriminator];
+        const items1 = ["Array", user.discriminator];
         obj1.children = items1;
         tmp7 = callback2(arg1(dependencyMap[5]).Text, obj1);
       }

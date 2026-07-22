@@ -1,10 +1,10 @@
-// Module ID: 9378
-// Function ID: 73134
+// Module ID: 9379
+// Function ID: 73147
 // Name: Emoji
 // Dependencies: []
 // Exports: default
 
-// Module 9378 (Emoji)
+// Module 9379 (Emoji)
 function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
@@ -33,7 +33,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { emojiSurrogate: { lastResponse: null, width: null, height: null } };
+obj = { emojiSurrogate: { -833398867: null, -187763759: null, 214891214: null } };
 obj = { paddingTop: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ctaContainer = obj;
 let closure_9 = obj.createStyles(obj);
@@ -61,7 +61,7 @@ export default function StandardEmojiContent(nonce) {
   obj1 = { surrogate: emojiNode.surrogate };
   const items1 = [callback(Emoji, obj1), ];
   obj2 = { style: obj.emojiDescriptionWrapper };
-  obj3 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: importDefault(dependencyMap[13])(emojiNode.content) };
+  obj3 = { cachedAt: 1231704321, edpbxy: 32296513, children: importDefault(dependencyMap[13])(emojiNode.content) };
   const items2 = [callback(arg1(dependencyMap[9]).Text, obj3), ];
   const obj4 = { variant: "text-sm/medium" };
   const intl = arg1(dependencyMap[14]).intl;

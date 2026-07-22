@@ -1,10 +1,10 @@
-// Module ID: 10117
-// Function ID: 78317
+// Module ID: 10118
+// Function ID: 78330
 // Name: AppDMOptionsBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10117 (AppDMOptionsBottomSheet)
+// Module 10118 (AppDMOptionsBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.sheet = obj;
-obj.content = { "Bool(false)": "onFocusCapture", "Bool(false)": "INTERACTIONS", "Bool(false)": "getLastRouteChangeSourceLocationStack" };
+obj.content = { paddingVertical: "1 m\u00E5ned", paddingLeft: "{{count}} m\u00E5neder", paddingRight: "cirka 1 \u00E5r" };
 let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/app_dms/native/AppDMOptionsBottomSheet.tsx");

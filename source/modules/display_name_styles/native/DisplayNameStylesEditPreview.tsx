@@ -1,10 +1,10 @@
-// Module ID: 14118
-// Function ID: 107196
+// Module ID: 14126
+// Function ID: 107239
 // Name: ChatPreview
 // Dependencies: []
 // Exports: default
 
-// Module 14118 (ChatPreview)
+// Module 14126 (ChatPreview)
 function ChatPreview(arg0) {
   let displayName;
   let displayNameStyles;
@@ -24,11 +24,11 @@ function ChatPreview(arg0) {
   const obj1 = { style: tmp.chatHeader };
   const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: arg1(dependencyMap[14]).EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles };
   const items1 = [callback(importDefault(dependencyMap[13]), obj2), ];
-  const obj3 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.chatTimestamp, children: memo };
+  const obj3 = { cachedAt: "center", edpbxy: "center", style: tmp.chatTimestamp, children: memo };
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
   obj1.children = items1;
   const items2 = [callback2(View, obj1), ];
-  const obj4 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.chatMessageText };
+  const obj4 = { cachedAt: 1, edpbxy: 1, style: tmp.chatMessageText };
   const intl = arg1(dependencyMap[8]).intl;
   obj4.children = intl.string(importDefault(dependencyMap[9]).h5Cuej);
   items2[1] = callback(arg1(dependencyMap[15]).Text, obj4);
@@ -42,15 +42,15 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": true, "Null": "/assets/modules/premium/native/images/perks", cp: 300, cq: 175, cr: null, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
+obj = { 0: true, 0: "/assets/modules/premium/native/images/perks", 9223372036854775807: 300, 9223372036854775807: 175, 0: null, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
 obj.previewSection = obj;
-const obj1 = { disabled: null, sequence: "Group 9", description: 1, offset: 2, length: 0, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+const obj1 = { -2124314034: null, 529464659: "Group 9", 1406988894: 1, -1895997921: 2, -1788748558: 0, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.chatPreviewWrapper = obj1;
 obj.nameplatePreviewWrapper = {};
 const tmp2 = arg1(dependencyMap[2]);
 obj.chatContainer = { flexDirection: "row", borderRadius: importDefault(dependencyMap[4]).radii.sm, padding: importDefault(dependencyMap[4]).space.PX_16, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, gap: importDefault(dependencyMap[4]).space.PX_12 };
 obj.chatContent = { flex: 1 };
-obj.chatHeader = {};
+obj.chatHeader = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 obj.chatTimestamp = { marginTop: -8 };
 obj.chatMessageText = {};
 let closure_7 = obj.createStyles(obj);

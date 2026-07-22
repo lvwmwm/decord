@@ -1,10 +1,10 @@
-// Module ID: 11414
-// Function ID: 88759
+// Module ID: 11415
+// Function ID: 88772
 // Name: TouchableBackground
 // Dependencies: []
 // Exports: default
 
-// Module 11414 (TouchableBackground)
+// Module 11415 (TouchableBackground)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 ({ View: closure_2, Pressable: closure_3 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ export default function TouchableBackground(onPressOut) {
   let callback = onPressIn;
   onPressOut = onPressOut.onPressOut;
   const React = onPressOut;
-  let obj = { 0: true, 0: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, -9223372036854775808: true };
+  let obj = { withMutualGuilds: "Text", withMutualFriendsCount: "resizeMode", icon: "from", label: "Array", arrow: "isArray", accessibilityRole: "braintreemasterpasslanding" };
   ({ pressableStyle, style, children } = onPressOut);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);

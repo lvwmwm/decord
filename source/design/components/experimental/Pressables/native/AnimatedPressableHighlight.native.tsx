@@ -1,9 +1,9 @@
-// Module ID: 5431
-// Function ID: 46529
+// Module ID: 5165
+// Function ID: 44966
 // Name: AnimatedPressableHighlight
 // Dependencies: []
 
-// Module 5431 (AnimatedPressableHighlight)
+// Module 5165 (AnimatedPressableHighlight)
 let closure_3 = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 const jsx = arg1(dependencyMap[2]).jsx;

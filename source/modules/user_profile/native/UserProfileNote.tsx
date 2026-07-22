@@ -1,10 +1,10 @@
-// Module ID: 11961
-// Function ID: 92460
+// Module ID: 11962
+// Function ID: 92474
 // Name: UserProfileNote
 // Dependencies: []
 // Exports: default
 
-// Module 11961 (UserProfileNote)
+// Module 11962 (UserProfileNote)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles({ title: { justifyContent: "space-between" } });
@@ -69,9 +69,9 @@ export default function UserProfileNote(style) {
   }
   items[1] = tmp10;
   obj.titleStyle = items;
-  obj.titleIcon = <PaperPlusIcon accessibilityRole={4} ={1} />;
+  obj.titleIcon = <PaperPlusIcon />;
   if (tmp2) {
-    const obj2 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: note };
+    const obj2 = { cachedAt: 1, edpbxy: 1, children: note };
     tmp2 = jsx(arg1(dependencyMap[12]).Text, obj2);
   }
   obj.children = tmp2;

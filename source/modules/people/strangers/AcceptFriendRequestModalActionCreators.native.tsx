@@ -1,10 +1,10 @@
-// Module ID: 9052
-// Function ID: 71093
+// Module ID: 9053
+// Function ID: 71106
 // Name: openAcceptFriendRequestConfirmModal
 // Dependencies: []
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9052 (openAcceptFriendRequestConfirmModal)
+// Module 9053 (openAcceptFriendRequestConfirmModal)
 let closure_3 = require(dependencyMap[0]).ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const jsx = require(dependencyMap[2]).jsx;

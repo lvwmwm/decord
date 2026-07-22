@@ -1,5 +1,5 @@
 // Module ID: 4124
-// Function ID: 34311
+// Function ID: 34313
 // Name: Text
 // Dependencies: []
 
@@ -58,7 +58,7 @@ let closure_12 = arg1(dependencyMap[8]).createStyles((arg0, arg1) => {
   obj.color = tmp;
   let items;
   if (arg1) {
-    items = [true];
+    items = [];
   }
   obj.fontVariant = items;
   obj.text = obj;
@@ -84,7 +84,7 @@ const forwardRefResult = importAllResult.forwardRef((animated, ref) => {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = { <string:140626379>: null, <string:1654247761>: 0.6, <string:140684040>: "BounceOutRight", <string:3913699723>: null, <string:71391811>: 0.6, <string:70496768>: "BounceOutLeft", <string:74826240>: null, <string:4116861440>: 0.6 };
+  let obj = { bitrate: 0.6, framerate: "BounceOut", type: null, settings: 0.6, type: "BounceOutRight", kind: null, type: 0.6, enabled: "BounceOutLeft" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(animated, obj);
   let str = "text-default";

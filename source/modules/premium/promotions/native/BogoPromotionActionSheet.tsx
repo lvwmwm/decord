@@ -1,10 +1,10 @@
-// Module ID: 15488
-// Function ID: 118206
+// Module ID: 15496
+// Function ID: 118249
 // Name: BogoPromotionActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15488 (BogoPromotionActionSheet)
+// Module 15496 (BogoPromotionActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -17,13 +17,13 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
 obj.container = obj;
-const obj1 = { "Bool(true)": 255, "Bool(true)": 812777728, "Bool(true)": 805306368, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
+const obj1 = { padding: 255, spriteIndex: 812777728, Date: 805306368, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 obj.buttonContainer = obj1;
 obj.header = {};
 obj.subheader = { textAlign: "center" };
 const tmp3 = arg1(dependencyMap[6]);
 obj.image = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { options: "100%", body: null, transform: null };
 let closure_15 = obj.createStyles(obj);
 const obj2 = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/premium/promotions/native/BogoPromotionActionSheet.tsx");
@@ -57,7 +57,7 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   const intl = arg1(dependencyMap[15]).intl;
   obj2.children = intl.string(arg1(dependencyMap[15]).t.6Jjfk8);
   items4[1] = callback(arg1(dependencyMap[14]).Text, obj2);
-  const obj3 = { "Bool(true)": 12, "Bool(true)": 4, "Bool(true)": 16 };
+  const obj3 = { -9223372036854775808: null, 9223372036854775807: null, 0: null };
   const items6 = [tmp.subheader];
   obj3.style = items6;
   const intl2 = arg1(dependencyMap[15]).intl;

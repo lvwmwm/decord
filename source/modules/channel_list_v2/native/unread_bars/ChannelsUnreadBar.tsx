@@ -1,8 +1,8 @@
-// Module ID: 14886
-// Function ID: 112124
+// Module ID: 14894
+// Function ID: 112167
 // Dependencies: []
 
-// Module 14886
+// Module 14894
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ getScaledSearchBarHeight: closure_5, VIEWABILITY_CONFIG: closure_6 } = arg1(dependencyMap[3]));
@@ -30,13 +30,13 @@ let closure_11 = arg1(dependencyMap[7]).createStyles((arg0, arg1) => {
   }
   obj.backgroundColor = RED_400;
   obj.shadowColor = importDefault(dependencyMap[8]).colors.BLACK;
-  obj.shadowOffset = { "Null": null, "Null": null };
+  obj.shadowOffset = {};
   obj.shadowOpacity = 0.08;
   obj.shadowRadius = 4;
   obj.borderWidth = 1;
   obj.borderColor = importDefault(dependencyMap[8]).colors.BORDER_SUBTLE;
   obj.unreadBar = obj;
-  obj = {};
+  obj = { alignItems: "<string:1788936193>", justifyContent: "<string:913440772>", flexGrow: "<string:2320564228>", flexDirection: "maestro" };
   let num2 = 0;
   if (obj4.isAndroid()) {
     num2 = -1;
@@ -231,9 +231,9 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
         num12 = 6;
         obj9 = position(onPress[6]);
         tmp32 = closure_13;
-        items1 = [null];
+        items1 = [false];
         items1[1] = num7;
-        interpolateResult = obj9.interpolate(closure_13.get(), ["replace", "then"], items1);
+        interpolateResult = obj9.interpolate(closure_13.get(), [77601039, 1612144654], items1);
         obj3.scale = obj8.withSpring(interpolateResult, position(onPress[16]).ON_PRESS_SPRING);
         items[2] = obj3;
         obj.transform = items;

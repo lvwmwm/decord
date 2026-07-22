@@ -1,10 +1,10 @@
-// Module ID: 14386
-// Function ID: 108565
+// Module ID: 14394
+// Function ID: 108608
 // Name: DebugLogView
 // Dependencies: []
 // Exports: default
 
-// Module 14386 (DebugLogView)
+// Module 14394 (DebugLogView)
 let closure_2 = importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4, TouchableOpacity: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsxs: closure_9, jsx: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { debugLogContainer: { 1490895445: true, -628391667: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", 1407137526: null, -153449599: "3adffc9213a038d780795feb55d27139", -413016266: "cs.messages.3adffc9213a038d780795feb55d27139.compiled.messages", nativeID: "jsona", collapsableChildren: true, presentation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", gestureEnabled: null, presentation: "c9bfed678edd340afd56ab86412945dd", animation: "da.messages.c9bfed678edd340afd56ab86412945dd.compiled.messages" }, debugLogHeader: { paddingVertical: false, paddingHorizontal: 0, flexDirection: 0, alignItems: false }, debugLogText: { onFocus: "en-001", onBlur: "en", ref: false, allowsInlineMediaPlayback: false } };
+obj = { debugLogContainer: { label: true, subLabel: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", subLabelLineClamp: null, color: "3adffc9213a038d780795feb55d27139", textAlign: "cs.messages.3adffc9213a038d780795feb55d27139.compiled.messages", fontSize: "jsona", marginTop: true, marginBottom: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", logPerf: null, stalePurchasesOK: "c9bfed678edd340afd56ab86412945dd", type: "da.messages.c9bfed678edd340afd56ab86412945dd.compiled.messages" }, debugLogHeader: { <string:2053078637>: false, <string:1471013570>: 0, <string:1310491355>: 0, <string:1532125240>: false }, debugLogText: { bottom: "GAME_CLICKED_LANDING", padding: "lockedBadges", flex: "isEarlyAccess", justifyContent: "Array" } };
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.clearButton = obj;
 obj.clearButtonText = {};
@@ -56,7 +56,7 @@ export default function DebugLogView() {
             },
         style: tmp.clearButton
       };
-      const obj4 = { EMPTY_SOUND_LIST: "Array", paddingTop: "isArray", HAPPENING_NOW_PANELS_CONTAINER_PADDING: "key", style: tmp.clearButtonText };
+      const obj4 = { borderRadius: "SET_AUDIO_DEVICE_BY_ID", left: "INTERACTION_RESPONSE", top: "mi", style: tmp.clearButtonText };
       obj3.children = callback3(arg1(closure_1[8]).Text, obj4);
       items3[1] = callback3(closure_5, obj3);
       obj.children = items3;

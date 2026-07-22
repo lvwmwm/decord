@@ -1,8 +1,8 @@
-// Module ID: 12122
-// Function ID: 93362
+// Module ID: 12126
+// Function ID: 93388
 // Dependencies: []
 
-// Module 12122
+// Module 12126
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[2]).createStyles((arg0) => {
@@ -35,7 +35,7 @@ const memoResult = importAllResult.memo(function MediaModalOverlayAltTextButton(
             },
         hitSlop: {}
       };
-      obj = {};
+      obj = { cachedAt: null, edpbxy: "none" };
       const intl = arg1(dependencyMap[9]).intl;
       obj.children = intl.string(arg1(dependencyMap[9]).t.Q5VqrN);
       obj.children = jsx(arg1(dependencyMap[8]).Text, obj);

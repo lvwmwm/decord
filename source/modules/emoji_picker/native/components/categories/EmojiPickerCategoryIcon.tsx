@@ -1,8 +1,8 @@
-// Module ID: 9400
-// Function ID: 73252
+// Module ID: 9401
+// Function ID: 73265
 // Dependencies: []
 
-// Module 9400
+// Module 9401
 const EmojiCategories = arg1(dependencyMap[1]).EmojiCategories;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

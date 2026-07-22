@@ -1,10 +1,10 @@
-// Module ID: 11544
-// Function ID: 89888
+// Module ID: 11545
+// Function ID: 89901
 // Name: BoostGem
 // Dependencies: []
 // Exports: default
 
-// Module 11544 (BoostGem)
+// Module 11545 (BoostGem)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -20,7 +20,7 @@ export default function BoostGem(width) {
     num2 = 66;
   }
   const obj = { width: num, height: num2, viewBox: "0 0 39 66", fill: "none", style: width.style };
-  const items = [callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {})];
+  const items = [callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": "Array", "Bool(true)": "isArray" }), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": false, "Bool(true)": false }), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": 1627390535, "Bool(true)": 306254327 }), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": true, "Bool(true)": true })];
   obj.children = items;
   return callback2(importDefault(dependencyMap[2]), obj);
 };

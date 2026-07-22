@@ -1,10 +1,10 @@
-// Module ID: 9008
-// Function ID: 70882
+// Module ID: 9009
+// Function ID: 70895
 // Name: AuthorizeFormSeparator
 // Dependencies: []
 // Exports: AuthorizeFormSeparator
 
-// Module 9008 (AuthorizeFormSeparator)
+// Module 9009 (AuthorizeFormSeparator)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);

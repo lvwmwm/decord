@@ -1,10 +1,10 @@
-// Module ID: 9319
-// Function ID: 72805
+// Module ID: 9320
+// Function ID: 72818
 // Name: toggleGuildExpandedState
-// Dependencies: [646840323, 899088385]
+// Dependencies: []
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 9319 (toggleGuildExpandedState)
+// Module 9320 (toggleGuildExpandedState)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");
 

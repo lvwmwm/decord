@@ -1,10 +1,10 @@
-// Module ID: 9031
-// Function ID: 70955
+// Module ID: 9032
+// Function ID: 70968
 // Name: _beginConsoleTransfer
 // Dependencies: []
 // Exports: beginConsoleTransfer
 
-// Module 9031 (_beginConsoleTransfer)
+// Module 9032 (_beginConsoleTransfer)
 function _beginConsoleTransfer() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

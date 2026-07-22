@@ -1,15 +1,16 @@
-// Module ID: 8943
-// Function ID: 70462
+// Module ID: 8944
+// Function ID: 70475
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: []
+// Dependencies: [0, 0, 4294967295, 0]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 8943 (TwoWayLinkDiscordConsent)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
+// Module 8944 (TwoWayLinkDiscordConsent)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 let closure_5 = importAll(dependencyMap[2]);
-({ View: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
+({ View: closure_6, ScrollView: closure_7 } = require("__exportStarResult1"));
 ({ jsxs: closure_8, jsx: closure_9 } = arg1(dependencyMap[4]));
 let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("TwoWayLinkDiscordConsentNative");
@@ -49,7 +50,7 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
       return callback(...arguments);
     };
   }(), items);
-  obj = { "Null": "<string:2126592>", "Null": "<string:2097152>", "Null": "<string:524288>", "Null": "<string:1375797248>", "Null": "<string:1153582274>", "Null": "'kl'. HH:mm:ss zzzz", clientId, scopes, callback, redirectUri, withBackPressHandler: false };
+  obj = { GuildRoleSubscriptionTierDetailsTab: false, CURRENT_USER_DISCONNECTED: false, gifIcon: false, NPC_COMPANION: false, : "Array", topTransitionProgress: "isArray", clientId, scopes, callback, redirectUri, withBackPressHandler: false };
   const tmp6 = importDefault(dependencyMap[9])(obj);
   const sendAuthorize = tmp6.sendAuthorize;
   const items1 = [sendAuthorize];
@@ -75,7 +76,7 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
   let tmp13 = null != sendAuthorize;
   if (tmp13) {
     const obj6 = { style: twoWayLinkStyles.footerButton };
-    const obj7 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
+    const obj7 = { <string:1986169986>: true, <string:2487833047>: true };
     const intl = arg1(dependencyMap[14]).intl;
     obj7.text = intl.string(arg1(dependencyMap[14]).t.ZN4hkc);
     obj7.onPress = callback1;

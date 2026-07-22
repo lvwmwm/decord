@@ -1,16 +1,10 @@
 // Module ID: 1002
 // Function ID: 10734
 // Name: mergeOptions
-// Dependencies: [1019, 1019, 1015, 1018, 1021, 1014]
+// Dependencies: []
 // Exports: buildFeedbackIntegration, feedbackModalIntegration, feedbackScreenshotIntegration, getFeedback
 
 // Module 1002 (mergeOptions)
-import getNavigationEntry from "getNavigationEntry";
-import getNavigationEntry from "getNavigationEntry";
-import WINDOW from "WINDOW";
-import getActivationStart from "getActivationStart";
-import generateUniqueID from "generateUniqueID";
-
 function mergeOptions(tags, tags2) {
   const require = tags;
   const dependencyMap = tags2;
@@ -60,9 +54,9 @@ function mergeOptions(tags, tags2) {
     themeLight: Object.assign({}, tags.themeLight, tags2.themeLight)
   });
 }
-function setAttributesNS(elementNS, activationStart) {
+function setAttributesNS(elementNS, arg1) {
   const require = elementNS;
-  const entries = Object.entries(activationStart);
+  const entries = Object.entries(arg1);
   const item = entries.forEach((arg0) => {
     const tmp = callback(arg0, 2);
     arg0.setAttributeNS(null, tmp[0], tmp[1]);
@@ -92,7 +86,7 @@ function Actor(arg0) {
       return _document.createElementNS("http://www.w3.org/2000/svg", clipPath);
     }
     const elementNS = createElementNS("svg");
-    callback2(elementNS, { "Null": "16", "Null": "16", "Null": "white", "Null": "translate(0 0.5)" });
+    callback2(elementNS, { "Null": "screenshot", "Null": "form__label", "Null": null, "Null": "center" });
     const elementNS1 = createElementNS("g");
     callback2(elementNS1, { clipPath: "url(#clip0_57_80)" });
     const elementNS2 = createElementNS("path");
@@ -120,7 +114,7 @@ function Actor(arg0) {
   if (styleNonce) {
     const attr = element2.setAttribute("nonce", styleNonce);
   }
-  const getNavigationEntry = element2;
+  let closure_2 = element2;
   return {
     el: element,
     appendToDom() {
@@ -1125,9 +1119,9 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
           v$1(obj2.__s, type.getDerivedStateFromProps(props, obj2.__s));
         }
         const props2 = obj2.props;
-        let getNavigationEntry = props2;
+        let closure_2 = props2;
         const state = obj2.state;
-        getNavigationEntry = state;
+        let closure_3 = state;
         obj2.__v = componentWillMountResult;
         if (flag) {
           componentWillMountResult = type;
@@ -1827,8 +1821,8 @@ const fn2 = function y(arg0) {
       };
       const dependencyMap = fn;
       closure_27.u = true;
-      let getNavigationEntry = closure_27.shouldComponentUpdate;
-      getNavigationEntry = closure_27.componentWillUpdate;
+      let closure_2 = closure_27.shouldComponentUpdate;
+      const componentWillUpdate = closure_27.componentWillUpdate;
       closure_27.componentWillUpdate = function(arg0, arg1, arg2) {
         const self = this;
         if (this.__e) {
@@ -1963,7 +1957,7 @@ function DialogHeader(options) {
     const elementNS = createElementNS("svg");
     callback(elementNS, {});
     const elementNS1 = createElementNS("path");
-    callback(elementNS1, { y: null, isArray: null });
+    callback(elementNS1, { 9223372036854775807: "exclude", 0: "useAutoSearchPeopleTab" });
     elementNS.appendChild(elementNS1);
     obj.__html = elementNS.outerHTML;
     return obj;
@@ -1971,7 +1965,7 @@ function DialogHeader(options) {
   const tmp2 = y$1;
   let tmp4 = null;
   if (options.showBranding) {
-    obj = { <string:1096325461>: -990555871, data-test-id: 80564753, <string:1673571153>: -364657419, <string:1392222353>: -2013265660, <string:1371753963>: -2013265664, dangerouslySetInnerHTML: tmp };
+    obj = { dangerouslySetInnerHTML: tmp };
     tmp4 = y$1("a", obj);
   }
   return tmp2("h2", obj, y$1("span", { class: "dialog__title" }, options.formTitle), tmp4);
@@ -2005,13 +1999,13 @@ function Form(onSubmitError) {
   ({ options, defaultEmail, defaultName, onSubmit: closure_0, onSubmitSuccess } = onSubmitError);
   const dependencyMap = onSubmitSuccess;
   onSubmitError = onSubmitError.onSubmitError;
-  let getNavigationEntry = onSubmitError;
+  let closure_2 = onSubmitError;
   let screenshotInput = onSubmitError.screenshotInput;
-  getNavigationEntry = screenshotInput;
+  let closure_3 = screenshotInput;
   ({ tags: closure_4, addScreenshotButtonLabel, emailLabel } = options);
-  const getActivationStart = emailLabel;
+  let closure_5 = emailLabel;
   const isEmailRequired = options.isEmailRequired;
-  const generateUniqueID = isEmailRequired;
+  const callback3 = isEmailRequired;
   const isNameRequired = options.isNameRequired;
   let closure_7 = isNameRequired;
   const messageLabel = options.messageLabel;
@@ -2021,11 +2015,11 @@ function Form(onSubmitError) {
   const isRequiredLabel = options.isRequiredLabel;
   ({ onFormClose, showEmail, showName } = onSubmitError);
   ({ removeScreenshotButtonLabel, cancelButtonLabel, emailPlaceholder, messagePlaceholder, namePlaceholder, submitButtonLabel } = options);
-  const tmp = generateUniqueID(fn(false), 2);
+  const tmp = callback3(fn(false), 2);
   const disabled = tmp[0];
   let closure_10 = tmp[1];
-  [tmp4, closure_11] = generateUniqueID(fn(null), 2);
-  const tmp5 = generateUniqueID(fn(false), 2);
+  [tmp4, closure_11] = callback3(fn(null), 2);
+  const tmp5 = callback3(fn(false), 2);
   const first1 = tmp5[0];
   let closure_12 = first1;
   let closure_13 = tmp5[1];
@@ -2033,11 +2027,11 @@ function Form(onSubmitError) {
   if (null != screenshotInput) {
     input = screenshotInput.input;
   }
-  const tmp3 = generateUniqueID(fn(null), 2);
-  [tmp9, closure_14] = generateUniqueID(fn(null), 2);
+  const tmp3 = callback3(fn(null), 2);
+  [tmp9, closure_14] = callback3(fn(null), 2);
   const items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
   const tmp10 = fn4;
-  const tmp8 = generateUniqueID(fn(null), 2);
+  const tmp8 = callback3(fn(null), 2);
   let closure_15 = fn4((name) => {
     const obj = { emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel };
     const items = [];
@@ -2117,7 +2111,7 @@ function Form(onSubmitError) {
       tmp14 = y$1(input, obj);
     }
   }
-  obj = { "Bool(false)": "<string:1363279874>", "Null": "<string:1862271398>", disabled };
+  obj = { backgroundColor: "IEMobile", shadowColor: "IE", disabled };
   let tmp17 = null;
   if (tmp4) {
     const obj2 = { class: "form__error-container" };
@@ -2125,20 +2119,20 @@ function Form(onSubmitError) {
   }
   if (showName) {
     const obj3 = { label: nameLabel, isRequiredLabel, isRequired: isNameRequired };
-    const obj4 = { maxStep: true, 9223372036854775807: true, 0: true, 0: true, -9223372036854775808: true, -9223372036854775808: true, 0: true, defaultValue: defaultName, placeholder: namePlaceholder, required: isNameRequired };
+    const obj4 = { defaultValue: defaultName, placeholder: namePlaceholder, required: isNameRequired };
     let tmp19Result = tmp19(LabelText, obj3);
-    tmp19Result = tmp19("label", {}, tmp19Result, tmp19("input", obj4));
+    tmp19Result = tmp19("label", { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026084971913313856, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000837324121520983 }, tmp19Result, tmp19("input", obj4));
   } else {
-    const obj5 = { y: null, isArray: null, react: null, react-native: null, value: defaultName };
+    const obj5 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, value: defaultName };
     tmp19Result = tmp19("input", obj5);
   }
   if (showEmail) {
     const obj6 = { label: emailLabel, isRequiredLabel, isRequired: isEmailRequired };
-    const obj7 = { maxStep: null, 9223372036854775807: "screenshot.png", 0: "application/png", 0: "replay", -9223372036854775808: "replay-canvas", -9223372036854775808: "feedback", 0: "feedback-modal", defaultValue: defaultEmail, placeholder: emailPlaceholder, required: isEmailRequired };
+    const obj7 = { defaultValue: defaultEmail, placeholder: emailPlaceholder, required: isEmailRequired };
     let tmp23Result = tmp23(LabelText, obj6);
-    tmp23Result = tmp23("label", { "Bool(false)": true, "Bool(false)": true }, tmp23Result, tmp23("input", obj7));
+    tmp23Result = tmp23("label", { "Null": false, "Null": false }, tmp23Result, tmp23("input", obj7));
   } else {
-    const obj8 = { y: null, isArray: null, react: false, react-native: false, value: defaultEmail };
+    const obj8 = { value: defaultEmail };
     tmp23Result = tmp23("input", obj8);
   }
   const obj1 = { class: "form__top" };
@@ -2202,12 +2196,13 @@ function Form(onSubmitError) {
       const obj10 = { class: "form__error-container" };
       tmp32 = y$1("div", obj10, tmp9.message);
     }
-    tmp30Result = tmp30("label", { "Bool(false)": false, "Bool(false)": false }, tmp30Result, tmp32);
+    tmp30Result = tmp30("label", {}, tmp30Result, tmp32);
   }
-  const tmp28 = y$1("label", { "Bool(false)": 256, "Bool(false)": 256 }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder }));
+  const tmp28 = y$1("label", {}, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder }));
+  const obj12 = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018437789434861197, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005961061916478577, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002563193955611289, disabled };
   const obj11 = { class: "btn-group" };
-  const tmp16Result = y$1("div", obj1, tmp17, tmp19Result, tmp23Result, y$1("label", { "Bool(false)": 256, "Bool(false)": 256 }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder })), tmp30Result);
-  return tmp13("form", obj, tmp14, y$1("fieldset", obj, tmp16Result, y$1("div", obj11, y$1("button", { disabled }, submitButtonLabel), y$1("button", { disabled, onClick }, cancelButtonLabel))));
+  const tmp16Result = y$1("div", obj1, tmp17, tmp19Result, tmp23Result, y$1("label", {}, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder })), tmp30Result);
+  return tmp13("form", obj, tmp14, y$1("fieldset", obj, tmp16Result, y$1("div", obj11, y$1("button", obj12, submitButtonLabel), y$1("button", { disabled, onClick }, cancelButtonLabel))));
 }
 function LabelText(arg0) {
   let isRequired;
@@ -2226,11 +2221,11 @@ function SuccessIcon() {
     return _document.createElementNS("http://www.w3.org/2000/svg", path);
   }
   const elementNS = createElementNS("svg");
-  setAttributesNS(elementNS, { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015577559335509103, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000232666775577691, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013206514693722212, "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003288980154136311 });
+  setAttributesNS(elementNS, {});
   const elementNS1 = createElementNS("g");
   setAttributesNS(elementNS1, { clipPath: "url(#clip0_57_156)" });
   const elementNS2 = createElementNS("path");
-  setAttributesNS(elementNS2, getActivationStart(getActivationStart(getActivationStart({}, "fill-rule", "evenodd"), "clip-rule", "evenodd"), "d", "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z"));
+  setAttributesNS(elementNS2, callback2(callback2(callback2({}, "fill-rule", "evenodd"), "clip-rule", "evenodd"), "d", "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z"));
   const elementNS3 = createElementNS("path");
   setAttributesNS(elementNS3, { d: "M6.68775 12.4297C6.78586 12.4745 6.89218 12.4984 7 12.5C7.11275 12.4955 7.22315 12.4664 7.32337 12.4145C7.4236 12.3627 7.51121 12.2894 7.58 12.2L12 5.63999C12.0848 5.47724 12.1071 5.28902 12.0625 5.11098C12.0178 4.93294 11.9095 4.77744 11.7579 4.67392C11.6064 4.57041 11.4221 4.52608 11.24 4.54931C11.0579 4.57254 10.8907 4.66173 10.77 4.79999L6.88 10.57L5.13 8.56999C5.06508 8.49566 4.98613 8.43488 4.89768 8.39111C4.80922 8.34735 4.713 8.32148 4.61453 8.31498C4.51605 8.30847 4.41727 8.32147 4.32382 8.35322C4.23038 8.38497 4.14413 8.43484 4.07 8.49999C3.92511 8.63217 3.83692 8.81523 3.82387 9.01092C3.81083 9.2066 3.87393 9.39976 4 9.54999L6.43 12.24C6.50187 12.3204 6.58964 12.385 6.68775 12.4297Z" });
   elementNS.appendChild(elementNS1).append(elementNS3, elementNS2);
@@ -2238,7 +2233,7 @@ function SuccessIcon() {
   const elementNS5 = createElementNS("clipPath");
   setAttributesNS(elementNS5, { id: "clip0_57_156" });
   const elementNS6 = createElementNS("rect");
-  setAttributesNS(elementNS6, { 0: "shapes", -9223372036854775808: "Array", 0: "isArray", 0: "x" });
+  setAttributesNS(elementNS6, {});
   elementNS5.appendChild(elementNS6);
   elementNS4.appendChild(elementNS5);
   const appendChildResult = elementNS.appendChild(elementNS1);
@@ -2249,13 +2244,13 @@ function SuccessIcon() {
 function Dialog(onFormSubmitted) {
   onFormSubmitted = onFormSubmitted.onFormSubmitted;
   const require = onFormSubmitted;
-  const tmp = getNavigationEntry(onFormSubmitted, closure_7);
+  const tmp = callback(onFormSubmitted, closure_7);
   const dependencyMap = tmp;
   const options = tmp.options;
-  const tmp3 = generateUniqueID(fn(null), 2);
+  const tmp3 = callback3(fn(null), 2);
   const first = tmp3[0];
-  let getNavigationEntry = first;
-  getNavigationEntry = tmp3[1];
+  let closure_2 = first;
+  const callback = tmp3[1];
   const items = [first];
   [][0] = onFormSubmitted;
   const tmp2 = fn3(() => ({ __html: callback2().outerHTML }), []);
@@ -2313,7 +2308,7 @@ function useTakeScreenshotFactory(hooks) {
           let closure_1;
           callback();
           const mediaDevices = mediaDevices.mediaDevices;
-          let obj = { header: null, ti: null, jsxs: null, resizeMode: null, getChannel: null, resizeMode: null };
+          let obj = {};
           obj = { width: callback(closure_1[5]).GLOBAL_OBJ.innerWidth * closure_4, height: callback(closure_1[5]).GLOBAL_OBJ.innerHeight * closure_4 };
           obj.video = obj;
           callback = yield mediaDevices.getDisplayMedia(obj);
@@ -2372,7 +2367,7 @@ function ScreenshotEditorFactory(h) {
   const hooks = h.hooks;
   const dependencyMap = hooks;
   ({ outputBuffer: closure_2, options } = h);
-  const getNavigationEntry = options;
+  let closure_3 = options;
   let closure_4 = useTakeScreenshotFactory({ hooks });
   let closure_5 = function ToolbarFactory(h) {
     h = h.h;
@@ -2414,7 +2409,7 @@ function ScreenshotEditorFactory(h) {
   let closure_6 = function IconCloseFactory(h) {
     h = h.h;
     return function IconClose() {
-      const tmp = h("circle", { "Null": null, "Null": null, "Null": null, "Null": null });
+      const tmp = h("circle", {});
       const tmp2 = h("path", {});
       return h("svg", {}, tmp, tmp2, h("path", {}), h("path", {}));
     };
@@ -2639,10 +2634,15 @@ function ScreenshotEditorFactory(h) {
     return tmp4Result;
   };
 }
-let closure_7 = [];
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
+let closure_4 = require(dependencyMap[2]);
+let closure_5 = require(dependencyMap[3]);
+let closure_6 = require(dependencyMap[4]);
+let closure_7 = [1796924755, 1178978089];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const document = require("whenActivated").GLOBAL_OBJ.document;
-const navigator = require("whenActivated").GLOBAL_OBJ.navigator;
+const document = require(dependencyMap[5]).GLOBAL_OBJ.document;
+const navigator = require(dependencyMap[5]).GLOBAL_OBJ.navigator;
 let closure_10 = "Report a Bug";
 function sendFeedback(message) {
   if (arguments.length > 1) {
@@ -2711,8 +2711,8 @@ function sendFeedback(message) {
   }
 }
 let closure_12 = "undefined" === typeof globalThis.__SENTRY_DEBUG__ || globalThis.__SENTRY_DEBUG__;
-let closure_13 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-let closure_14 = { "Bool(false)": "message", "Bool(false)": "btn btn--default", "Bool(false)": null, "Bool(false)": "button", "Bool(false)": 12, "Bool(false)": "btn btn--primary", "Bool(false)": null, "Bool(false)": "submit", "Bool(false)": "screenshot", "Bool(false)": "form__label" };
+let closure_13 = { guild: false, monocolored: false, size: false, strokeWidth: false, d: false, fillRule: false, clipRule: false, d: false, fill: false, fillRule: false };
+let closure_14 = {};
 let closure_22 = {};
 const items = [];
 let closure_24 = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
@@ -2790,21 +2790,21 @@ let closure_32 = [];
 ({ __b: closure_34, __r: closure_35, diffed: closure_36, __c: closure_37, unmount: closure_38, __: closure_39 } = obj);
 obj.__b = (arg0) => {
   let closure_27 = null;
-  if (callback) {
-    callback(arg0);
+  if (callback4) {
+    callback4(arg0);
   }
 };
 obj.__ = (arg0, __k) => {
   if (tmp) {
     arg0.__m = __k.__k.__m;
   }
-  if (callback6) {
-    callback6(arg0, __k);
+  if (callback9) {
+    callback9(arg0, __k);
   }
 };
 obj.__r = (__c) => {
-  if (callback2) {
-    callback2(__c);
+  if (callback5) {
+    callback5(__c);
   }
   let closure_26 = 0;
   __c = __c.__c;
@@ -2834,8 +2834,8 @@ obj.__r = (__c) => {
   closure_28 = __c;
 };
 obj.diffed = (__c) => {
-  if (callback3) {
-    callback3(__c);
+  if (callback6) {
+    callback6(__c);
   }
   __c = __c.__c;
   let __H = __c;
@@ -2884,13 +2884,13 @@ obj.__c = (arg0, arr) => {
       return !arg0.__;
     });
   });
-  if (callback4) {
-    callback4(arg0, require);
+  if (callback7) {
+    callback7(arg0, require);
   }
 };
 obj.unmount = (__c) => {
-  if (callback5) {
-    callback5(__c);
+  if (callback8) {
+    callback8(__c);
   }
   __c = __c.__c;
   let __H = __c;
@@ -3003,7 +3003,7 @@ obj.useId = function g() {
     }
     let __m = tmp5.__m;
     if (!__m) {
-      const items = ["<string:53040003>", "<string:806589490>"];
+      const items = ["placeholder", "aria-label"];
       tmp5.__m = items;
       __m = items;
     }

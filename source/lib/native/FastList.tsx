@@ -1,5 +1,5 @@
 // Module ID: 7582
-// Function ID: 60609
+// Function ID: 60619
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: getItemSizeOverrideKey
@@ -105,7 +105,7 @@ function getBatchSize(rounded) {
 }
 function computeBlock(endImportTime) {
   if (0 === endImportTime) {
-    return { isSystemDM: false, isInlineReplyPreview: false, acTL: false };
+    return { burst_count: "spring", me_burst: 0.4, action: 1 };
   } else {
     const _Math = Math;
     const rounded = Math.ceil(endImportTime);
@@ -132,7 +132,7 @@ function FastListIosFabricGestureWorkaround(children) {
   }
   return tmp2;
 }
-let closure_3 = ["discord_protos.discord_experimentation.v1.Experiment.UnitType", "discord_protos.discord_experimentation.v1.Phase", "discord_protos.discord_experimentation.v1.Experiment.Surface", "discord_protos.discord_experimentation.v1.Experiment.ExposureTracking", "discord_protos.discord_experimentation.v1.Experiment.AssignmentMode", "discord_protos.discord_experimentation.v1.Experiment.Type", "discord_protos.discord_experimentation.v1.Experiment.CustomUnitPrefix", "discord_protos.discord_experimentation.v1.Experiment.ExposurePointId", "discord_protos.discord_experimentation.v1.Experiment.EligibilityPersistence", "discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings", "discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings.Mode", "discord_protos.discord_experimentation.v1.Variation", "discord_protos.discord_experimentation.v1.Variation.Type", "discord_protos.discord_experimentation.v1.Bucket", "discord_protos.discord_experimentation.v1.Bucket.Type", "discord_protos.discord_experimentation.v1.DebugConfig", "discord_protos.discord_experimentation.v1.Rule", "discord_protos.discord_experimentation.v1.Rule.Type", "discord_protos.discord_experimentation.v1.Rule.Subtype", "discord_protos.discord_experimentation.v1.Override", "discord_protos.discord_experimentation.v1.Filter", "discord_protos.discord_experimentation.v1.StaffUsers", "discord_protos.discord_experimentation.v1.UserInGuild", "discord_protos.discord_experimentation.v1.UserIds", "discord_protos.discord_experimentation.v1.UserLocale", "discord_protos.discord_experimentation.v1.ClientLocale", "discord_protos.discord_experimentation.v1.ClientSystemLocale", "discord_protos.discord_experimentation.v1.ClientLocation", "discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientPlatform", "discord_protos.discord_experimentation.v1.PlatformVersion", "discord_protos.discord_experimentation.v1.PlatformVersionRange", "discord_protos.discord_experimentation.v1.PlatformVersionRangeBound"];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -145,7 +145,7 @@ const importAllResult = importAll(dependencyMap[7]);
 const tmp2 = arg1(dependencyMap[8]);
 ({ jsxs: closure_15, jsx: closure_16, Fragment: closure_17 } = arg1(dependencyMap[9]));
 const map = new Map();
-let obj = { SPACER: "SPACER", HEADER: "HEADER", FOOTER: "FOOTER", SECTION: "SECTION", ITEM: "ITEM", SECTION_FOOTER: "SECTION_FOOTER" };
+const obj = { SPACER: "SPACER", HEADER: "HEADER", FOOTER: "FOOTER", SECTION: "SECTION", ITEM: "ITEM", SECTION_FOOTER: "SECTION_FOOTER" };
 const tmp5 = () => {
   class FastListItemRecycler {
     constructor(arg0) {
@@ -1312,7 +1312,7 @@ const tmp6 = () => {
           self.fullCompute();
         }
         if (arg1 < 0) {
-          return { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+          return {};
         } else {
           const tmp9 = callback3(tmp2);
           const iter5 = tmp9();
@@ -1481,7 +1481,7 @@ let closure_23 = importAllResult.memo(function FastListStickySectionRendererComp
   ({ fastListInstance, section, debug, recyclerKey } = children);
   const items = [-1, 0];
   const dependencyMap = items;
-  const items1 = ["<string:53040003>", "<string:806589490>"];
+  const items1 = ["placeholder", "aria-label"];
   let closure_3 = items1;
   items.push(layoutStart);
   items1.push(0);
@@ -1540,7 +1540,7 @@ let closure_23 = importAllResult.memo(function FastListStickySectionRendererComp
     }
   }
   const items2 = [style, , ];
-  obj1 = { "Bool(false)": 10, "Bool(false)": "sh" };
+  obj1 = { alignItems: 10, paddingTop: "sh" };
   let tmp15;
   if (!horizontal) {
     tmp15 = layoutSize;
@@ -1579,7 +1579,7 @@ let closure_24 = importAllResult.memo(function _FastListSectionRenderer(disableW
       return callback3(closure_17, obj);
     }
   }
-  obj = { oldFormErrors: null, retries: null, rejectWithError: "k" };
+  obj = { 0: "L", 0: "L", -247322323966561376: "L" };
   obj = {};
   if (horizontal) {
     obj.width = layoutSize;
@@ -1671,7 +1671,7 @@ let closure_27 = importAllResult.memo(function _FastListHeaderFooterRenderer(dis
       return callback3(closure_17, obj);
     }
   }
-  obj = { oldFormErrors: null, retries: null, rejectWithError: "k" };
+  obj = { 0: "L", 0: "L", -247322323966561376: "L" };
   obj = {};
   if (horizontal) {
     obj.width = layoutSize;
@@ -1997,7 +1997,7 @@ const tmp7 = (PureComponent) => {
           obj = current;
         }
         if (!tmp) {
-          obj = { animated: flag };
+          obj = { 0: "%FunctionPrototype%", 0: "paddingStart", animated: flag };
           obj.scrollTo(obj);
         }
       };
@@ -2368,7 +2368,7 @@ const tmp7 = (PureComponent) => {
           const tmp8 = callback10(arg0, tmp3, props.batchesToRender);
         }
         if (null == point) {
-          point = {};
+          point = { 0: "%FunctionPrototype%", 0: "paddingStart" };
         }
         const tmp9 = tmp ? point.x : point.y;
         self.scrollPos = tmp9;
@@ -2432,7 +2432,7 @@ const tmp7 = (PureComponent) => {
       fn.__closure = { horizontal: tmp, workletMounted, scrollPosValue, onScrollWorklet };
       fn.__workletHash = 16225357996403;
       fn.__initData = closure_30;
-      self.worklet = new FastList(tmp[15]).WorkletEventHandler(fn, []);
+      self.worklet = new FastList(tmp[15]).WorkletEventHandler(fn, [null]);
       self.viewTag = callback5(self.scrollView.current);
       const worklet = self.worklet;
       worklet.registerForEvents(self.viewTag);
@@ -2987,8 +2987,7 @@ const tmp7 = (PureComponent) => {
   ];
   return callback2(FastList, items, items1);
 }(importAllResult.PureComponent);
-obj = { message: 9, messageForward: null, roleStyle: "\u{1F926}\u{1F3FD}", isFirst: true, isEditing: null, contentInset: { "Null": "ERROR", "Null": "ERROR", "Null": "NOT_RESPONDER", "Null": "NOT_RESPONDER" } };
-tmp7.defaultProps = obj;
+tmp7.defaultProps = { contentInset: { width: -24, height: null, float: 1, size: "Malaysia" } };
 const tmp3 = arg1(dependencyMap[9]);
 const animatedComponent = importDefault(dependencyMap[15]).createAnimatedComponent(tmp7);
 const importDefaultResult = importDefault(dependencyMap[15]);

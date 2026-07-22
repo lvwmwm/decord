@@ -1,10 +1,10 @@
-// Module ID: 14908
-// Function ID: 112300
+// Module ID: 14916
+// Function ID: 112343
 // Name: GuildHomeChannelRow
 // Dependencies: []
 // Exports: default
 
-// Module 14908 (GuildHomeChannelRow)
+// Module 14916 (GuildHomeChannelRow)
 let closure_3 = importAll(dependencyMap[0]);
 const Routes = arg1(dependencyMap[1]).Routes;
 const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;

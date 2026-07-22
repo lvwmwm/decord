@@ -1,15 +1,15 @@
-// Module ID: 14343
-// Function ID: 108314
+// Module ID: 14351
+// Function ID: 108357
 // Name: Radio
 // Dependencies: []
 // Exports: default
 
-// Module 14343 (Radio)
+// Module 14351 (Radio)
 function Radio() {
   let obj = {};
-  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: true, <string:140675621>: true }), callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: false, <string:140675621>: false }), ];
-  obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, onChange: NOOP };
-  const items1 = [callback2(arg1(dependencyMap[8]).TableRadioRow, { <string:2048437162>: 13341348115668932000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:2887950716>: NaN }), callback2(arg1(dependencyMap[8]).TableRadioRow, { <string:2048437162>: -458753, <string:2887950716>: 410189823 }), callback2(arg1(dependencyMap[8]).TableRadioRow, { <string:2048437162>: true, <string:2887950716>: true }), callback2(arg1(dependencyMap[8]).TableRadioRow, { accessible: true, variant: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", r: null, 1674994086: "e48043bf745ca0395ac959c7415a3757" })];
+  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: "text-md/medium", <string:1446667417>: "text-subtle" }), callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: 1107296668, <string:1446667417>: 131135 }), ];
+  obj = { enableAnimation: null, resizeMode: null, style: null, onChange: NOOP };
+  const items1 = [callback2(arg1(dependencyMap[8]).TableRadioRow, {}), callback2(arg1(dependencyMap[8]).TableRadioRow, { "Null": true, "Null": true }), callback2(arg1(dependencyMap[8]).TableRadioRow, { "Null": -458753, "Null": 410189823 }), callback2(arg1(dependencyMap[8]).TableRadioRow, { 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", 0: null, 9223372036854775807: "fe4b97b436254fc7acefb2a09ad076de" })];
   obj.children = items1;
   items[2] = callback3(arg1(dependencyMap[7]).TableRadioGroup, obj);
   obj.children = items;
@@ -35,8 +35,8 @@ function Switch() {
   const tmp2 = useSwitchState(false);
   const tmp3 = useSwitchState();
   let obj = {};
-  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: true, <string:140675621>: true }), callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: "text-sm/normal", <string:140675621>: "control-overlay-secondary-text-default" }), , ];
-  obj = { "Bool(false)": "absolute", "Bool(false)": 0 };
+  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: true, <string:1446667417>: true }), callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: "text-lg/bold", <string:1446667417>: "control-overlay-secondary-text-default" }), , ];
+  obj = { -9223372036854775808: "text-sm/normal", 9223372036854775807: "control-overlay-secondary-text-default" };
   obj = {};
   const merged = Object.assign(tmp);
   obj.children = callback2(arg1(dependencyMap[10]).TableSwitchRow, obj);
@@ -83,19 +83,17 @@ function InlineCheckbox(startChecked) {
 }
 function InlineCheckboxDemo() {
   const obj = {};
-  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: "construct", <string:140675621>: "isArray" }), callback2(InlineCheckbox, {}), callback2(InlineCheckbox, { label: "Trust google.com links from now on" }), callback2(InlineCheckbox, {})];
+  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: "MenuAlign", <string:1446667417>: "<string:457310208>" }), callback2(InlineCheckbox, {}), callback2(InlineCheckbox, { label: "Trust google.com links from now on" }), callback2(InlineCheckbox, {})];
   obj.children = items;
   return callback3(closure_8, obj);
 }
 function CheckboxRowDemo() {
   let obj = {};
-  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: "invalid_palette", <string:140675621>: "" }), callback2(arg1(dependencyMap[6]).Text, { <string:1749439162>: false, <string:140675621>: false }), ];
+  const items = [callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: 1866596355, <string:1446667417>: -587201805 }), callback2(arg1(dependencyMap[6]).Text, { <string:2807142664>: false, <string:1446667417>: false }), ];
   obj = {};
   obj = { onPress: NOOP };
-  const items1 = [callback2(arg1(dependencyMap[12]).TableCheckboxRow, obj), , ];
-  const obj1 = { display: null, GUILD_BOOSTING_FAQ: null, animatedContentGestureState: null, onPress: NOOP };
-  items1[1] = callback2(arg1(dependencyMap[12]).TableCheckboxRow, obj1);
-  const obj2 = { display: "<string:16777748>", GUILD_BOOSTING_FAQ: "<string:35348547>", animatedContentGestureState: "<string:35348224>", onPress: NOOP };
+  const items1 = [callback2(arg1(dependencyMap[12]).TableCheckboxRow, obj), callback2(arg1(dependencyMap[12]).TableCheckboxRow, { onPress: NOOP }), ];
+  const obj2 = { <string:2748076974>: true, <string:4151042911>: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", label: null, onPress: NOOP };
   items1[2] = callback2(arg1(dependencyMap[12]).TableCheckboxRow, obj2);
   obj.children = items1;
   items[2] = callback3(arg1(dependencyMap[9]).TableRowGroup, obj);
@@ -105,7 +103,7 @@ function CheckboxRowDemo() {
 function SliderDemo() {
   let obj = {};
   const items = [callback2(arg1(dependencyMap[6]).Text, {}), ];
-  obj = {};
+  obj = { user: "bijna 1 jaar", body: "bijna {{count}} jaar", label: 32 };
   obj = { startIcon: callback2(arg1(dependencyMap[15]).VoiceXIcon, {}), endIcon: callback2(arg1(dependencyMap[16]).VoiceNormalIcon, {}), onValueChange: NOOP };
   obj.subLabel = callback2(arg1(dependencyMap[14]).Slider, obj);
   items[1] = callback2(arg1(dependencyMap[13]).TableRow, obj);
@@ -118,7 +116,7 @@ const ScrollView = arg1(dependencyMap[2]).ScrollView;
 const NOOP = arg1(dependencyMap[3]).NOOP;
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: {} });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { <string:2839314540>: null, <string:172088541>: null } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemFormPrimitives.tsx");
 

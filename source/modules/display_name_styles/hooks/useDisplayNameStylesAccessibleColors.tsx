@@ -1,10 +1,10 @@
-// Module ID: 8510
-// Function ID: 67891
+// Module ID: 8511
+// Function ID: 67903
 // Name: useDisplayNameStylesAccessibleColors
 // Dependencies: []
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 8510 (useDisplayNameStylesAccessibleColors)
+// Module 8511 (useDisplayNameStylesAccessibleColors)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");

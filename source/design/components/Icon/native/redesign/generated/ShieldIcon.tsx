@@ -1,10 +1,10 @@
-// Module ID: 8166
-// Function ID: 64495
+// Module ID: 8167
+// Function ID: 64507
 // Name: ShieldIcon
 // Dependencies: [247005184, 86966272, 458162176, 510722048, 463405056, 510656512]
 // Exports: ShieldIcon
 
-// Module 8166 (ShieldIcon)
+// Module 8167 (ShieldIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ShieldIcon.tsx");

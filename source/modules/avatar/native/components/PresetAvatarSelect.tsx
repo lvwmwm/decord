@@ -1,10 +1,10 @@
-// Module ID: 15992
-// Function ID: 122748
+// Module ID: 16000
+// Function ID: 122790
 // Name: DefaultAvatarButton
 // Dependencies: []
 // Exports: default
 
-// Module 15992 (DefaultAvatarButton)
+// Module 16000 (DefaultAvatarButton)
 function DefaultAvatarButton(selected) {
   let accessibilityLabel;
   let onSelect;
@@ -123,13 +123,7 @@ items1[7] = {
   }
 };
 let obj8 = arg1(dependencyMap[12]);
-const obj6 = { container: { <string:2824056786>: "<string:141856807>", <string:2151834189>: "<string:134217728>", <string:2855952948>: "<string:134217728>" }, buttonsContainer: { x: "/assets/design/components/Icon/native/redesign/generated/images", delete: 24, 9223372036854775807: 24, 9223372036854775807: null } };
-const obj7 = { y: "row", isArray: "center", borderRadius: importDefault(dependencyMap[13]).radii.xl };
-obj6.defaultAvatarButton = obj7;
-obj6.defaultAvatarContainer = {};
-obj8 = { borderColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj6.defaultAvatarSelected = obj8;
-let closure_7 = obj8.createStyles(obj6);
+const obj6 = { container: {}, buttonsContainer: { EducationIcon: "/assets/design/components/Icon/native/redesign/generated/images", lieTqU: 24, allowInAppNotifications: 24, marginInlineStart: null } };
 const obj5 = {
   avatar: importDefault(dependencyMap[10]),
   label() {
@@ -137,6 +131,12 @@ const obj5 = {
     return intl.string(arg1(dependencyMap[11]).t.zpfUeg);
   }
 };
+obj6.defaultAvatarButton = { borderRadius: importDefault(dependencyMap[13]).radii.xl };
+obj6.defaultAvatarContainer = { y: true, submitHeadlessReport: true, disableContentWrappers: true, defaultImageAndTextContainer: true, _startMs: true, cold_face: true, WRESTLING: true, LIVE_GUILD_EVENT: true, NUM_GUILDS_EXTENDED_ONBOARDING: true, FEEDBACK_FORM_VIEWED: true };
+obj8 = { borderColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj6.defaultAvatarSelected = obj8;
+let closure_7 = obj8.createStyles(obj6);
+const obj7 = { borderRadius: importDefault(dependencyMap[13]).radii.xl };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/avatar/native/components/PresetAvatarSelect.tsx");
 
 export default function PresetAvatarSelect(arg0) {
@@ -167,7 +167,7 @@ export default function PresetAvatarSelect(arg0) {
   };
   const items1 = [];
   items[1] = callback(View, obj);
-  const items2 = [null, true, true, true];
+  const items2 = ["<string:77320448>", "<string:3733213440>", "<string:1369907281>", "<string:1129440336>"];
   items[2] = callback(View, {
     style: tmp.buttonsContainer,
     children: items2.map((arg0) => {

@@ -1,12 +1,15 @@
 // Module ID: 8071
-// Function ID: 64014
+// Function ID: 64024
 // Name: _callSuper
-// Dependencies: [0, 5, 11]
+// Dependencies: [0, 5, 11, 29, 6, 7, 15]
 
 // Module 8071 (_callSuper)
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import checkLogForPII from "checkLogForPII";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _classCallCheck from "_classCallCheck";
+import tmp2 from "_possibleConstructorReturn";
 
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
@@ -30,41 +33,12 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
-  class FeComponentTransferFunction {
-    constructor() {
-      tmp = result(this, FeComponentTransferFunction);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      items = [];
-      tmp3 = closure_7(this, FeComponentTransferFunction, items.concat(array));
-      tmp3.channel = "UNKNOWN";
-      return tmp3;
-    }
-  }
-  const arg1 = FeComponentTransferFunction;
-  callback3(FeComponentTransferFunction, arg0);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const result = FeComponentTransferFunction(closure_1[5]).warnUnimplementedFilter();
-        return null;
-      }
-    }
-  ];
-  return callback(FeComponentTransferFunction, items);
-}(importDefault(dependencyMap[6]));
-tmp2.defaultProps = { tableValues: [] };
+const obj = { "Null": -1966325487, "Null": 259129345, "Null": -1560281087, "Null": 16777216, "Null": 28660034, "Null": 46146560, "Null": -302624512, tableValues: [] };
+tmp2.defaultProps = obj;
 const tmp3 = (arg0) => {
   class FeFuncR {
     constructor() {
-      tmp = result(this, FeFuncR);
+      tmp = __exportStarResult1(this, FeFuncR);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -84,7 +58,7 @@ tmp3.displayName = "FeFuncR";
 const tmp4 = (arg0) => {
   class FeFuncG {
     constructor() {
-      tmp = result(this, FeFuncG);
+      tmp = __exportStarResult1(this, FeFuncG);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -104,7 +78,7 @@ tmp4.displayName = "FeFuncG";
 const tmp5 = (arg0) => {
   class FeFuncB {
     constructor() {
-      tmp = result(this, FeFuncB);
+      tmp = __exportStarResult1(this, FeFuncB);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -124,7 +98,7 @@ tmp5.displayName = "FeFuncB";
 const tmp6 = (arg0) => {
   class FeFuncA {
     constructor() {
-      tmp = result(this, FeFuncA);
+      tmp = __exportStarResult1(this, FeFuncA);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {

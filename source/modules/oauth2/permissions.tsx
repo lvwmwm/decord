@@ -1,10 +1,10 @@
-// Module ID: 8956
-// Function ID: 70626
+// Module ID: 8957
+// Function ID: 70639
 // Name: Permissions
 // Dependencies: []
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 8956 (Permissions)
+// Module 8957 (Permissions)
 let ADD_REACTIONS;
 let ADMINISTRATOR;
 let ATTACH_FILES;

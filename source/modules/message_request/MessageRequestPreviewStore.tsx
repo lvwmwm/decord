@@ -1,9 +1,9 @@
-// Module ID: 11618
-// Function ID: 90224
+// Module ID: 11619
+// Function ID: 90237
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11618 (_isNativeReflectConstruct)
+// Module 11619 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -172,7 +172,7 @@ let tmp3 = (Store) => {
     key: "getMessageRequestPreview",
     value(arg0) {
       if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { 1451512429: "ERROR", 1399185011: "SETTINGS_AGE_GROUP_RESET_ALERT_ID", -78206406: "IS_QUEST_RELEASE" };
+        closure_10[arg0] = {};
       }
       return closure_10[arg0];
     }
@@ -244,7 +244,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   },
   MESSAGE_DELETE: function handleMessageDelete(channelId) {
     if (isMessagePreviewEnabledForChannel(channelId.channelId)) {
-      closure_10[channelId.channelId] = { 1451512429: null, 1399185011: null, -78206406: null };
+      closure_10[channelId.channelId] = { marginTop: "<string:1040334421>", marginRight: "<string:1040334338>", borderColor: "<string:1694645762>" };
     } else {
       return false;
     }

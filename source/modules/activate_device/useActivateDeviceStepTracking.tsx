@@ -1,10 +1,10 @@
-// Module ID: 12762
-// Function ID: 97856
+// Module ID: 12769
+// Function ID: 97889
 // Name: useActivateDeviceStepTracking
-// Dependencies: [31, 27, 33, 4126, 12776, 4962]
+// Dependencies: [31, 27, 33, 4126, 12783, 5184]
 // Exports: useActivateDeviceStepTracking
 
-// Module 12762 (useActivateDeviceStepTracking)
+// Module 12769 (useActivateDeviceStepTracking)
 import module_31 from "module_31";
 import { AnalyticEvents } from "get ActivityIndicator";
 import Background from "Background";

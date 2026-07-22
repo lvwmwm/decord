@@ -1,9 +1,9 @@
-// Module ID: 5472
-// Function ID: 46749
+// Module ID: 5471
+// Function ID: 46757
 // Name: GameIcon
 // Dependencies: []
 
-// Module 5472 (GameIcon)
+// Module 5471 (GameIcon)
 class GameIcon {
   constructor(arg0) {
     ({ game, skuId, size } = global);
@@ -89,7 +89,7 @@ const jsx = arg1(dependencyMap[3]).jsx;
 let obj = { SIZE_24: "size_24", SMALL: "small", NORMAL: "normal", LARGE: "large" };
 obj = { [obj.SIZE_24]: 24, [obj.SMALL]: 32, [obj.NORMAL]: 48, [obj.LARGE]: 80 };
 let obj2 = arg1(dependencyMap[4]);
-obj = { gameIcon: { margin: null, backgroundColor: null } };
+obj = { gameIcon: { "Bool(false)": null, "Bool(false)": null } };
 const tmp3 = arg1(dependencyMap[1]);
 obj.size24 = { width: obj.size_24, height: obj.size_24, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj2 = { width: obj.small, height: obj.small, borderRadius: importDefault(dependencyMap[5]).radii.sm };

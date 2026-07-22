@@ -1,10 +1,10 @@
-// Module ID: 12002
-// Function ID: 92762
+// Module ID: 12006
+// Function ID: 92788
 // Name: useUserProfileConnections
 // Dependencies: []
 // Exports: default
 
-// Module 12002 (useUserProfileConnections)
+// Module 12006 (useUserProfileConnections)
 const useMemo = require(dependencyMap[0]).useMemo;
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = [];

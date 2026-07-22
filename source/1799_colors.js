@@ -9,4 +9,4 @@ let PlatformColor;
 const _module = require(dependencyMap[0]);
 ({ Platform, PlatformColor } = _module);
 
-export const colors = { light: {}, dark: { y: null, isArray: null, guildId: null, props: null } };
+export const colors = { light: {}, dark: {} };

@@ -1,10 +1,10 @@
-// Module ID: 13790
-// Function ID: 104291
+// Module ID: 13797
+// Function ID: 104324
 // Name: useBountySwipeUpNux
 // Dependencies: []
 // Exports: useBountySwipeUpNux
 
-// Module 13790 (useBountySwipeUpNux)
+// Module 13797 (useBountySwipeUpNux)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/quests/native/BountiesModal/useBountySwipeUpNux.tsx");
 

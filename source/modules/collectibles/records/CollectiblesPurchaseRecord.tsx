@@ -1,5 +1,5 @@
 // Module ID: 6798
-// Function ID: 53660
+// Function ID: 53671
 // Name: CollectiblesPurchaseRecord
 // Dependencies: []
 
@@ -41,7 +41,7 @@ const tmp2 = () => {
         sku_id = sku_id.sku_id;
         const CollectiblesPurchaseRecord = sku_id;
         ({ premium_type, bundled_products, variants, purchased_at, expires_at } = sku_id);
-        let obj = { thermalState: "mobile-text-heading-primary", batteryLevel: "header", isLowPowerMode: null, timestampSec: 1, maxTimestampSec: "absolute", duration: "100%", intensity: "100%", archived: null, sort_by: "row", sort_order: 4, paddingHorizontal: "relative", height: "100%", justifyContent: "center", alignItems: "center", get: 120 };
+        let obj = {};
         ({ type, name, category_sku_id, prices, base_variant_name, base_variant_sku_id, variant_label, variant_value, purchase_type } = sku_id);
         Object.setPrototypeOf(null);
         const merged = Object.assign(sku_id, obj);

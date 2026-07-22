@@ -1,10 +1,10 @@
-// Module ID: 9649
-// Function ID: 75178
+// Module ID: 9650
+// Function ID: 75191
 // Name: AttachmentIcon
 // Dependencies: []
 // Exports: AttachmentIcon
 
-// Module 9649 (AttachmentIcon)
+// Module 9650 (AttachmentIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AttachmentIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10874
-// Function ID: 84571
+// Module ID: 10875
+// Function ID: 84584
 // Name: useDefaultAppLauncherWidth
 // Dependencies: []
 // Exports: useDefaultAppLauncherWidth
 
-// Module 10874 (useDefaultAppLauncherWidth)
+// Module 10875 (useDefaultAppLauncherWidth)
 const ACTION_SHEET_MAX_WIDTH = require(dependencyMap[0]).ACTION_SHEET_MAX_WIDTH;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/app_launcher/native/hooks/useDefaultAppLauncherWidth.tsx");

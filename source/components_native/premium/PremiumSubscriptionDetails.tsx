@@ -1,5 +1,5 @@
 // Module ID: 7371
-// Function ID: 59437
+// Function ID: 59448
 // Name: getHeaderBackground
 // Dependencies: []
 // Exports: default
@@ -388,19 +388,19 @@ const tmp2 = arg1(dependencyMap[3]);
 const SubscriptionPlanInfo = arg1(dependencyMap[7]).SubscriptionPlanInfo;
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[8]));
-let obj = { imageTier2: { y: 411, isArray: 134 }, imageTier1: { y: "png", isArray: true }, imageTier0: { y: "5dd914546a21d2f37ba762b2209e8ec8", isArray: "img_bundle_mobile" }, imageBundle: { y: "png", isArray: true }, imagePremiumNonActive: { y: "png", isArray: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { y: 51, isArray: 33 }, logoPremiumTier0: { y: null, isArray: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
+let obj = { imageTier2: { hideWhenScrolling: 411, autoCapitalize: 134 }, imageTier1: { hideWhenScrolling: "png", autoCapitalize: true }, imageTier0: { hideWhenScrolling: "5dd914546a21d2f37ba762b2209e8ec8", autoCapitalize: "img_bundle_mobile" }, imageBundle: { hideWhenScrolling: "png", autoCapitalize: true }, imagePremiumNonActive: { hideWhenScrolling: "png", autoCapitalize: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { hideWhenScrolling: 51, autoCapitalize: 33 }, logoPremiumTier0: { hideWhenScrolling: null, autoCapitalize: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
 obj = {};
 obj = { color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
 obj.price = obj;
 const tmp4 = arg1(dependencyMap[8]);
 obj.priceDark = { color: importDefault(dependencyMap[9]).unsafe_rawColors.BLACK };
 let obj4 = arg1(dependencyMap[10]);
-const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: { "Null": 7, "Null": 370 } };
-const obj3 = { accessibilityRole: null, "": "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
+const obj3 = { -1604222868: null, 1520073042: "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj2.container = obj3;
-obj2.buttonContainer = { "Null": 24541952, "Null": 24541952 };
+obj2.buttonContainer = { duration: "alrededor de 1 semana", dampingRatio: "alrededor de {{count}} semanas" };
 obj2.buttonWrapper = {};
-obj2.cancelLink = { height: "center", alignSelf: 16, flexDirection: 20, justifyContent: null };
+obj2.cancelLink = { lottieComponent: "center", PREMIUM_UPSELL_ACTION_SHEET_KEY: 16, display: 20, sv-FI: null };
 obj2.desktopSubtext = { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 let closure_18 = obj4.createStyles(obj2);
 obj4 = { ACTIVE: "active", RESUB: "resub", ERROR: "error" };
@@ -505,7 +505,7 @@ export default function PremiumSubscriptionDetails(subscription) {
   let tmp4Result = null;
   if (null != first) {
     obj = { style };
-    const obj1 = { Opened: -918482477, marginVertical: 1912603017, marginStart: 51, marginEnd: 36, style: tmp.title };
+    const obj1 = { alignSelf: -1966325487, justifyContent: 863109121, alignItems: 603979776, backgroundColor: 16777216, style: tmp.title };
     const intl = arg1(dependencyMap[60]).intl;
     obj1.children = intl.string(arg1(dependencyMap[60]).t.ITurwY);
     const items = [callback3(arg1(dependencyMap[61]).Text, obj1), , , , ];

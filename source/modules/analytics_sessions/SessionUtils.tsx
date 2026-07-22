@@ -1,5 +1,5 @@
 // Module ID: 6700
-// Function ID: 51877
+// Function ID: 51888
 // Name: result
 // Dependencies: []
 // Exports: isSessionExpired, timestampOrZero

@@ -1,8 +1,8 @@
-// Module ID: 14288
-// Function ID: 107937
+// Module ID: 14296
+// Function ID: 107980
 // Dependencies: []
 
-// Module 14288
+// Module 14296
 let closure_2 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[2]);
 obj = {

@@ -1,10 +1,10 @@
-// Module ID: 10508
-// Function ID: 82048
+// Module ID: 10509
+// Function ID: 82061
 // Name: handlePressJoinActivity
 // Dependencies: []
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10508 (handlePressJoinActivity)
+// Module 10509 (handlePressJoinActivity)
 function handlePressJoinActivity(arg0) {
   let embeddedActivityJoinability;
   let handleCanJoin;

@@ -1,5 +1,5 @@
 // Module ID: 7688
-// Function ID: 61355
+// Function ID: 61365
 // Name: createGuildStreamSystemMessage
 // Dependencies: []
 // Exports: createGuildStreamSystemMessage

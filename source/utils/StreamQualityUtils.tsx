@@ -1,10 +1,10 @@
-// Module ID: 8848
-// Function ID: 69835
+// Module ID: 8849
+// Function ID: 69848
 // Name: isPremiumRequirement
 // Dependencies: []
 // Exports: getFPSText, getResolutionText, isPremiumFPS, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 8848 (isPremiumRequirement)
+// Module 8849 (isPremiumRequirement)
 function isPremiumRequirement(quality) {
   return null != quality.quality || null != quality.guildPremiumTier;
 }

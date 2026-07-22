@@ -1,10 +1,10 @@
-// Module ID: 10395
-// Function ID: 80116
+// Module ID: 10396
+// Function ID: 80129
 // Name: useChannelSafetyWarning
 // Dependencies: []
 // Exports: useChannelSafetyWarning
 
-// Module 10395 (useChannelSafetyWarning)
+// Module 10396 (useChannelSafetyWarning)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/hooks/useChannelSafetyWarning.tsx");
 

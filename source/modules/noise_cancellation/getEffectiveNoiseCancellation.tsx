@@ -1,11 +1,11 @@
-// Module ID: 10714
-// Function ID: 83393
+// Module ID: 10715
+// Function ID: 83406
 // Name: set
 // Dependencies: []
 // Exports: default
 
-// Module 10714 (set)
-const set = new Set([-6089071917064488000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.000000000000000000000000000000000000000000000011802744873097726]);
+// Module 10715 (set)
+const set = new Set(["disableStaticBackground", "EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE"]);
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/noise_cancellation/getEffectiveNoiseCancellation.tsx");
 

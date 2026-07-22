@@ -1,10 +1,10 @@
-// Module ID: 8715
-// Function ID: 68956
+// Module ID: 8716
+// Function ID: 68968
 // Name: useFetchVirtualCurrencyBalance
 // Dependencies: []
 // Exports: useFetchVirtualCurrencyBalance
 
-// Module 8715 (useFetchVirtualCurrencyBalance)
+// Module 8716 (useFetchVirtualCurrencyBalance)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[4]);

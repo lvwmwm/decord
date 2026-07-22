@@ -1,9 +1,9 @@
-// Module ID: 15709
-// Function ID: 120054
+// Module ID: 15717
+// Function ID: 120097
 // Name: StreamIcon
 // Dependencies: []
 
-// Module 15709 (StreamIcon)
+// Module 15717 (StreamIcon)
 let Platform;
 let Pressable;
 function StreamIcon(voicePlatform) {
@@ -120,24 +120,24 @@ const importDefaultResult = importDefault(dependencyMap[12]);
 let closure_20 = importDefault(dependencyMap[12]).createAnimatedComponent(Pressable);
 const importDefaultResult1 = importDefault(dependencyMap[12]);
 let closure_21 = arg1(dependencyMap[14]).createStyles((arg0) => {
-  let obj = { labelPositionContainer: { _monthsRegex: true, borderWidth: "/assets/images/native/icons", barStyle: 24, partitionKey: 24, unzoom: null, snowballStem: "467a8f409d631a3f8d45e79495764df7", isSameOrAfter: "ic_mic_neutral" } };
+  let obj = { labelPositionContainer: { EMOJI_PICKER_EMOJI_CLICKED: true, borderWidth: "/assets/images/native/icons", mutationCb: 24, backgroundHeroAsset: 24, unsubscribeFromMemberUpdates: null, portraitSafeAreasConfig: "467a8f409d631a3f8d45e79495764df7", _formatUpdatePaymentData: "ic_mic_neutral" } };
   obj = { variant: null, lineClamp: null, ellipsizeMode: null, spacing: null, speed: null, style: null, size: null, width: null, horizontal: null, style: null };
   const radii = importDefault(dependencyMap[15]).radii;
   obj.borderRadius = arg0 ? radii.sm : radii.round;
   obj.backgroundColor = importDefault(dependencyMap[15]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
   obj.labelOuterContainer = obj;
-  obj.initialIcons = { horizontal: -1663348269, style: 116, pointerEvents: 0, channelId: 0 };
-  obj = { "Null": "<string:2552889346>", "Null": "<string:2938503170>", tintColor: importDefault(dependencyMap[15]).colors.WHITE };
+  obj.initialIcons = { horizontal: 1956465745, style: 0, pointerEvents: 0, channelId: 0 };
+  obj = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[15]).colors.WHITE };
   obj.icon = obj;
-  obj.iconWithoutBackground = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
-  const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, <string:903611347>: null, borderRadius: importDefault(dependencyMap[15]).radii.round };
-  obj.iconContainer = obj2;
+  const obj1 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[15]).colors.WHITE };
+  obj.iconWithoutBackground = obj1;
+  obj.iconContainer = { borderRadius: importDefault(dependencyMap[15]).radii.round };
   obj.speakerMuteIcon = { marginRight: 4 };
-  obj.floatingContainer = { isPreload: true, skipLocalFetch: "/assets/images/native", type: 18, value: 18, description: null };
+  obj.floatingContainer = {};
   obj.floatingText = { line: null, column: null, seenCR: null, locale: null, parentLocale: null };
-  const obj3 = { 0: null, 9223372036854775807: null, -9223372036854775808: null, -9223372036854775808: null, borderRadius: importDefault(dependencyMap[15]).radii.round, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH };
+  const obj3 = { 0: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, borderRadius: importDefault(dependencyMap[15]).radii.round, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH };
   obj.ringingIconContainer = obj3;
-  const obj1 = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
+  const obj2 = { borderRadius: importDefault(dependencyMap[15]).radii.round };
   obj.ringingIcon = { tintColor: importDefault(dependencyMap[15]).colors.STATUS_POSITIVE };
   obj.secureFramesIcon = { marginEnd: -2 };
   return obj;
@@ -284,7 +284,7 @@ let closure_26 = importAllResult.memo((participantId) => {
   const obj1 = { icon: importDefault(dependencyMap[36]), onPress: callback, style: animatedStyle, layout, accessibilityLabel: stringResult };
   return callback(importDefault(dependencyMap[34]), obj1);
 });
-let closure_27 = { "Bool(false)": "message", "Bool(false)": "PLUM_10", "Bool(false)": 1 };
+let closure_27 = { "Bool(false)": "scalar", "Bool(false)": 8, "Bool(false)": "asset" };
 let closure_28 = { code: "function VoicePanelCardFloatingControlsTsx4(){const{flip}=this.__closure;return flip.get();}" };
 let closure_29 = { code: "function VoicePanelCardFloatingControlsTsx5(flipped){const{angle,withSpring,getRandomNumberInRange,RING_PHYSICS,flip}=this.__closure;if(flipped){angle.set(withSpring(getRandomNumberInRange(45-10,45+10),RING_PHYSICS,'respect-motion-settings',function(finished){if(!finished)return;flip.set(!flip.get());}));}else{angle.set(withSpring(getRandomNumberInRange(0-10,0+10),RING_PHYSICS,'respect-motion-settings',function(finished){if(!finished)return;flip.set(!flip.get());}));}}" };
 let closure_30 = { code: "function VoicePanelCardFloatingControlsTsx6(finished){const{flip}=this.__closure;if(!finished)return;flip.set(!flip.get());}" };

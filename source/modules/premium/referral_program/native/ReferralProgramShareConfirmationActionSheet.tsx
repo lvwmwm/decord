@@ -1,10 +1,10 @@
-// Module ID: 12254
-// Function ID: 94006
+// Module ID: 12259
+// Function ID: 94034
 // Name: SharedUser
 // Dependencies: []
 // Exports: default
 
-// Module 12254 (SharedUser)
+// Module 12259 (SharedUser)
 function SharedUser(user) {
   user = user.user;
   const require = user;
@@ -27,9 +27,9 @@ function SharedUser(user) {
   const items1 = [callback(require(dependencyMap[7]).Avatar, obj), , ];
   if (tmp3) {
     const obj1 = {};
-    const obj2 = { style: tmp.recipientDisplayName, children: name };
+    const obj2 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, style: tmp.recipientDisplayName, children: name };
     const items2 = [callback(require(dependencyMap[8]).Text, obj2), ];
-    const obj3 = {};
+    const obj3 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
     const intl = require(dependencyMap[9]).intl;
     const obj4 = { userName: name };
     obj3.children = intl.format(require(dependencyMap[9]).t.RO3T4B, obj4);
@@ -37,11 +37,11 @@ function SharedUser(user) {
     obj1.children = items2;
     let tmp10 = callback2(closure_6, obj1);
   } else {
-    const obj5 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, style: tmp.recipientDisplayName, children: name };
+    const obj5 = { cachedAt: null, edpbxy: null, style: tmp.recipientDisplayName, children: name };
     tmp10 = callback(require(dependencyMap[8]).Text, obj5);
   }
   items1[1] = tmp10;
-  const obj6 = { "Bool(true)": null, "Bool(true)": null };
+  const obj6 = {};
   const intl2 = require(dependencyMap[9]).intl;
   obj6.text = intl2.string(require(dependencyMap[9]).t.g33r/P);
   const obj7 = { size: "xs", color: importDefault(dependencyMap[4]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
@@ -70,11 +70,11 @@ const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_16, alignSelf
 obj.subheader = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 const obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 obj.recipientContainer = { gap: importDefault(dependencyMap[4]).space.PX_16, marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: 21 };
-const obj4 = { "Null": 7, "Null": 370, padding: importDefault(dependencyMap[4]).space.PX_12, gap: importDefault(dependencyMap[4]).space.PX_12, borderRadius: importDefault(dependencyMap[4]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+const obj4 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", padding: importDefault(dependencyMap[4]).space.PX_12, gap: importDefault(dependencyMap[4]).space.PX_12, borderRadius: importDefault(dependencyMap[4]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 obj.recipientRow = obj4;
 obj.recipientDisplayName = { flex: 1 };
 obj.erroredAvatar = { opacity: 0.5 };
-obj.avatarContainer = { "Null": null, "Null": null };
+obj.avatarContainer = { "Bool(true)": null, "Bool(true)": null };
 let closure_8 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[20]);
 const result = _module2.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareConfirmationActionSheet.tsx");
@@ -98,7 +98,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   obj = {};
   obj1 = { style: tmp.headerAsset, children: callback(require(dependencyMap[18]).FistBumpSpotIllustration, {}) };
   const items = [callback(View, obj1), , , ];
-  const obj2 = { style: tmp.header, children: stringResult };
+  const obj2 = { cachedAt: true, edpbxy: true, style: tmp.header, children: stringResult };
   items[1] = callback(require(dependencyMap[8]).Text, obj2);
   const formatResult = intl3.format(require(dependencyMap[9]).t.AwGSWl, obj);
   items[2] = callback(require(dependencyMap[19]).TextWithIOSLinkWorkaround, { style: tmp.subheader, children: intl3.format(require(dependencyMap[9]).t.AwGSWl, obj) });

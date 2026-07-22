@@ -1,5 +1,5 @@
 // Module ID: 7493
-// Function ID: 60094
+// Function ID: 60105
 // Name: RowButtonWrapper
 // Dependencies: []
 
@@ -19,7 +19,7 @@ class RowButton {
       str = "secondary";
     }
     ({ icon, experimental_withBlurBackground } = global);
-    obj = { fetchGroupListingsForGuild: true, useIsMobileGameCollectionExperimentEnabled: true, GIFS_SEARCH: true, marginVertical: true, useId: true, getMaxTotalAttachmentSize: true };
+    obj = { formatToPlainString: "Text", jsx: "resizeMode", ix: "from", -73374748: "Array", -1359392420: "isArray", 1386281826: "braintreemasterpasslanding" };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     tmp3 = importDefault(dependencyMap[4])("RowButton");
@@ -79,7 +79,7 @@ function RowButtonWrapper(isRefreshEnabled) {
     flag = false;
   }
   ({ onPress, disabled, children } = isRefreshEnabled);
-  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  let obj = { "Null": false, height: false, width: false, style: false, title: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(isRefreshEnabled, obj);
   const arg1 = merged;
@@ -100,6 +100,10 @@ function RowButtonWrapper(isRefreshEnabled) {
   }, items1);
   if (isRefreshEnabled.experimental_withBlurBackground) {
     obj = {
+      "Bool(false)": true,
+      "Bool(false)": true,
+      "Bool(false)": true,
+      "Bool(false)": true,
       onPress,
       onPressIn(arg0) {
           if (null != merged.onPressIn) {

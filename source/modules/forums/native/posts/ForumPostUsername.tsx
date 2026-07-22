@@ -1,10 +1,10 @@
-// Module ID: 11118
-// Function ID: 86550
+// Module ID: 11119
+// Function ID: 86563
 // Name: ForumPostUsername
 // Dependencies: []
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11118 (ForumPostUsername)
+// Module 11119 (ForumPostUsername)
 function ForumPostUsername(arg0) {
   let authorColor;
   let authorColors;
@@ -63,7 +63,7 @@ function ForumPostUsername(arg0) {
         tmp23 = callback(View, obj3);
       }
       const items3 = [tmp23, ];
-      const obj5 = { 0: "r", 0: "accessibilityRole", 0: "name", -9223372036854775808: "error" };
+      const obj5 = { 276823: true, 285451: true, -1230751656: true, 1570975106: true };
       let tmp32;
       if (tmp17) {
         tmp32 = processColorStringsArray;
@@ -89,7 +89,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 const useForumChannelStore = arg1(dependencyMap[3]).useForumChannelStore;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ authorContainer: {}, roleDotContainer: { ty: 24388025, bm: 0, hd: 0, mn: 16777216 }, authorName: { ty: null, bm: null } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ authorContainer: { 419998037: "content", -1318619413: "Array", 1639156690: "isArray", -936160966: "isArray" }, roleDotContainer: {}, authorName: { "Bool(true)": true, "Bool(true)": true } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");
 

@@ -1,13 +1,10 @@
 // Module ID: 1092
 // Function ID: 12521
 // Name: startProfiling
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8065, 8050, 8051]
+// Dependencies: []
 // Exports: hermesProfilingIntegration
 
 // Module 1092 (startProfiling)
-import _classCallCheck from "_classCallCheck";
-import { Platform } from "_defineProperties";
-
 function startProfiling(arg0) {
   const NATIVE = arg1(dependencyMap[8]).NATIVE;
   let result = null;
@@ -82,7 +79,7 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
   profile.thread_metadata = Object.assign(Object.assign({}, profile2.thread_metadata), profile.thread_metadata);
   profile.queue_metadata = Object.assign(Object.assign({}, profile2.queue_metadata), profile.queue_metadata);
   const dependencyMap = profile.frames.length;
-  let _classCallCheck = profile.stacks.length;
+  let closure_2 = profile.stacks.length;
   if (profile2.frames) {
     let frames = profile2.frames;
     for (const item10032 of frames) {
@@ -103,24 +100,26 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
   if (!stacks1) {
     stacks1 = [];
   }
-  profile.stacks = items.concat(_classCallCheck(stacks), _classCallCheck(stacks1.map((arr) => arr.map((arg0) => arg0 + closure_1))));
+  profile.stacks = items.concat(closure_2(stacks), closure_2(stacks1.map((arr) => arr.map((arg0) => arg0 + closure_1))));
   const items1 = [];
   let samples = tmp.samples;
   if (!samples) {
     samples = [];
   }
   let samples1 = profile2.samples;
-  const tmp5 = _classCallCheck;
-  const tmp5Result = _classCallCheck(stacks);
-  const tmp7 = _classCallCheck;
-  const tmp8 = _classCallCheck;
+  const tmp5 = closure_2;
+  const tmp5Result = closure_2(stacks);
+  const tmp7 = closure_2;
+  const tmp8 = closure_2;
   if (!samples1) {
     samples1 = [];
   }
   const found = samples1.filter((thread_id) => thread_id.thread_id !== arg2);
-  profile.samples = items1.concat(_classCallCheck(samples), _classCallCheck(found.map((stack_id) => Object.assign(Object.assign({}, stack_id), { stack_id: length + stack_id.stack_id }))));
+  profile.samples = items1.concat(closure_2(samples), closure_2(found.map((stack_id) => Object.assign(Object.assign({}, stack_id), { stack_id: length + stack_id.stack_id }))));
   return profile;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+const Platform = arg1(dependencyMap[1]).Platform;
 let closure_3 = 1000000;
 let closure_4 = { platformProfilers: true };
 
@@ -130,7 +129,7 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
       let first = arguments[0];
     }
     const platformProfilers = first.platformProfilers;
-    let _classCallCheck = null === platformProfilers || undefined === platformProfilers || platformProfilers;
+    let closure_2 = null === platformProfilers || undefined === platformProfilers || platformProfilers;
     let closure_3 = false;
     function _startCurrentProfileForActiveTransaction() {
       if (!lib) {
@@ -195,7 +194,7 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
       const spanIsSampledResult = lib(closure_1[3]).spanIsSampled(startTimestampNs);
     }
     function _startNewProfile(spanContext) {
-      const tmp = _startCurrentProfile(_classCallCheck);
+      const tmp = _startCurrentProfile(closure_2);
       if (tmp) {
         const obj = { span_id: spanContext.spanContext().spanId };
         obj.profile_id = obj(closure_1[3]).uuid4();

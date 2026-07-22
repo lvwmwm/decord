@@ -1,10 +1,10 @@
-// Module ID: 15739
-// Function ID: 120400
+// Module ID: 15747
+// Function ID: 120443
 // Name: VoicePanelNoJoinPermissionsAlert
 // Dependencies: []
 // Exports: default
 
-// Module 15739 (VoicePanelNoJoinPermissionsAlert)
+// Module 15747 (VoicePanelNoJoinPermissionsAlert)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoJoinPermissionsAlert.tsx");

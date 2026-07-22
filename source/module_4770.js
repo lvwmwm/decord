@@ -1,9 +1,9 @@
 // Module ID: 4770
-// Function ID: 41454
+// Function ID: 41463
 // Dependencies: []
 
 // Module 4770
-let obj = { <string:1683032161>: 1018905360, <string:1359503836>: -261881855, <string:2338431214>: -1111621631, <string:1632440657>: -364773375 };
+let obj = { "Bool(false)": "<string:1191182832>", "Bool(false)": "<string:1107296701>", "Bool(false)": "Noninterlaced", "Bool(false)": "Adam7 Interlace" };
 obj = {
   name: "MPFVersion",
   description(value) {

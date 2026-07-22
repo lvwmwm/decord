@@ -1,10 +1,10 @@
-// Module ID: 13787
-// Function ID: 104272
+// Module ID: 13794
+// Function ID: 104305
 // Name: BountiesScrollPromptFooter
-// Dependencies: [57, 31, 27, 6646, 653, 33, 689, 8141, 4126, 666, 3989, 4538, 4542]
+// Dependencies: [57, 31, 27, 6646, 653, 33, 689, 8142, 4126, 666, 3989, 4538, 4542]
 // Exports: default
 
-// Module 13787 (BountiesScrollPromptFooter)
+// Module 13794 (BountiesScrollPromptFooter)
 import _slicedToArray from "_slicedToArray";
 import { StyleSheet } from "module_31";
 import getActivityIndicator from "get ActivityIndicator";
@@ -14,8 +14,8 @@ import SUBTLE_SPRING from "SUBTLE_SPRING";
 
 ({ jsx: closure_6, jsxs: closure_7 } = _isNativeReflectConstruct);
 let closure_8 = ME.createStyles(() => {
-  let obj = { root: { channelId: "<string:3082955202>", selectedAnswerIds: "<string:103629460>", submitting: "<string:3630497793>", editing: "<string:961609729>" } };
-  obj = { frameId: "genAdds", syncRow: "BasicWorkScheduler", GroupPlusIcon: "<string:3952297984>", VANITY_URL_POWERUP_DCS: "<string:287834115>", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+  let obj = { root: { canAnimate: 131420590, style: -1717986767, url: -644245095, isStageCall: 94527 } };
+  obj = { "Bool(true)": "tintTransparency", "Bool(true)": "GAME_CLAIM", "Bool(true)": "containsMessageType", "Bool(true)": "memoizedProps", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
   obj.content = obj;
   obj = {};
   const merged = Object.assign(StyleSheet.absoluteFillObject);

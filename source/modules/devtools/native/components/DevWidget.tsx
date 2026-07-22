@@ -1,16 +1,16 @@
-// Module ID: 14586
-// Function ID: 109919
+// Module ID: 14594
+// Function ID: 109962
 // Name: DraggableContainer
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14586 (DraggableContainer)
-import importAllResult from "result";
-import closure_4 from "result";
-import { DEV_WIDGET_SIZE } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 14594 (DraggableContainer)
+import importAllResult from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { DEV_WIDGET_SIZE } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function DraggableContainer(children) {
   const x = children.x;
@@ -129,12 +129,12 @@ function DraggableContainer(children) {
   obj2.children = sharedValue(importDefault(dependencyMap[6]).View, { style: items1, children: children.children });
   return sharedValue(arg1(dependencyMap[9]).GestureDetector, obj2);
 }
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = result);
+({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = __exportStarResult1);
 let obj = { widgetContainer: { position: "absolute" } };
-obj = { "Bool(false)": "number", "Bool(false)": "number", "Bool(false)": "mY3Y38", backgroundColor: require("result").colors.BACKGROUND_BRAND, height: DEV_WIDGET_SIZE, width: DEV_WIDGET_SIZE, borderRadius: require("result").radii.xl };
-const merged = Object.assign(require("result").shadows.SHADOW_MOBILE_NAVIGATOR_X);
+obj = { __v_isVNode: "string", _$esjava$I_x: "string", EmbeddedActivitiesStore: "color", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BRAND, height: DEV_WIDGET_SIZE, width: DEV_WIDGET_SIZE, borderRadius: require("__exportStarResult1").radii.xl };
+const merged = Object.assign(require("__exportStarResult1").shadows.SHADOW_MOBILE_NAVIGATOR_X);
 obj.widget = obj;
-let closure_9 = result.createStyles(obj);
+let closure_9 = __exportStarResult1.createStyles(obj);
 let closure_10 = { code: "function DevWidgetTsx1(x,y){const{windowDimensionsSharedValue,insetsSharedValue,clamp,dragBoundsPadding,contentWidth,contentHeight}=this.__closure;const{width:windowWidth,height:windowHeight}=windowDimensionsSharedValue.get();const insets=insetsSharedValue.get();return{x:clamp(x,insets.left+dragBoundsPadding,windowWidth-insets.right-contentWidth-dragBoundsPadding),y:clamp(y,insets.top+dragBoundsPadding,windowHeight-insets.bottom-contentHeight-dragBoundsPadding)};}" };
 let closure_11 = { code: "function DevWidgetTsx2(){const{runOnJS,onChangePosition,x,y}=this.__closure;runOnJS(onChangePosition)({x:x.get(),y:y.get()});}" };
 let closure_12 = { code: "function DevWidgetTsx3(event){const{getClampedPosition,originalX,originalY,x,y}=this.__closure;const{x:xClamped,y:yClamped}=getClampedPosition(originalX.get()+event.translationX,originalY.get()+event.translationY);x.set(xClamped);y.set(yClamped);}" };
@@ -148,11 +148,11 @@ let closure_15 = importAllResult.memo(() => {
       return callback(closure_2[13]).navigateToDevTools();
     },
     activeOpacity: 0.5,
-    children: callback(arg1(dependencyMap[14]).StaffBadgeIcon, { accessibilityRole: null, "": "sm" })
+    children: callback(arg1(dependencyMap[14]).StaffBadgeIcon, { "Bool(false)": "event", "Bool(false)": "events" })
   };
   return callback(arg1(dependencyMap[12]).PressableOpacity, obj);
 });
-result = result.fileFinishedImporting("modules/devtools/native/components/DevWidget.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/devtools/native/components/DevWidget.tsx");
 
 export default function DevWidget() {
   let obj = arg1(dependencyMap[6]);

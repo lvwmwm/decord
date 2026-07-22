@@ -1,9 +1,9 @@
-// Module ID: 16120
-// Function ID: 124263
+// Module ID: 16128
+// Function ID: 124305
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16120 (_isNativeReflectConstruct)
+// Module 16128 (_isNativeReflectConstruct)
 let Fonts;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -52,7 +52,7 @@ function ApplicationHook(applicationId) {
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId);
   let tmp2 = null;
   if (null != getOrFetchApplication) {
-    obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: getOrFetchApplication.name };
+    obj = { cachedAt: 1, edpbxy: 1, children: getOrFetchApplication.name };
     tmp2 = callback3(arg1(dependencyMap[20]).Text, obj);
   }
   return tmp2;
@@ -72,11 +72,11 @@ let closure_14 = importDefault(dependencyMap[10]);
 const tmp4 = arg1(dependencyMap[11]);
 ({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[12]));
 let obj = arg1(dependencyMap[13]);
-obj = { container: { accessibilityElementsHidden: -197062189, importantForAccessibility: 1912603177, children: 272 }, rowContainer: { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true }, titleContainer: { "Bool(false)": null, "Bool(false)": null }, title: { marginHorizontal: 8 } };
-obj = { 9223372036854775807: "<string:11497792>", 0: "<string:1107361792>", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
+obj = { container: { 0: 1350123793, 0: 275906562, 0: -738197503 }, rowContainer: { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true }, titleContainer: { "Bool(false)": null, "Bool(false)": null }, title: { marginHorizontal: 8 } };
+obj = { color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
 obj.discriminator = obj;
-obj.avatar = { flexDirection: "isArray", gap: "CONTROL_RADIO_ICON_SIZE_DEFAULT", flex: "tagInverted" };
-const obj1 = { y: "OrientationLockState", ESCAPE: "FIN", y: "ERNhYf", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
+obj.avatar = { ti: "isArray", scales: "FOCUS_EXPANDED_CONTROLS", flexDirection: "COLLECTIBLES_SHOP_CARD_HEIGHT" };
+const obj1 = { y: "accessibilityRole", openConversationNavigator: "filter", y: "memo", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
 obj.timestamp = obj1;
 const tmp5 = arg1(dependencyMap[12]);
 obj.arrow = { tintColor: importDefault(dependencyMap[14]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -86,16 +86,16 @@ const obj2 = { tintColor: importDefault(dependencyMap[14]).colors.INTERACTIVE_TE
 obj.changesContainer = { marginTop: importDefault(dependencyMap[14]).space.PX_4, padding: importDefault(dependencyMap[14]).space.PX_8, borderRadius: importDefault(dependencyMap[14]).radii.md, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_MOD_MUTED };
 obj.changeRow = {};
 obj.changeNumberText = { fontFamily: Fonts.CODE_BOLD };
-const obj4 = { "Null": false, "Null": false, "Bool(false)": false, color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
+const obj4 = { flexWrap: "isArray", columnGap: "accessibilityRole", rowGap: "useStateFromStores", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
 obj.changeItemText = obj4;
-const obj5 = { 2122157199: "Array", -2108594079: "fr-NE", 1371431202: "isStaticChannelRoute", borderColor: importDefault(dependencyMap[14]).unsafe_rawColors.TRANSPARENT };
+const obj5 = { "Null": "Array", "Null": "isArray", "Null": "key", borderColor: importDefault(dependencyMap[14]).unsafe_rawColors.TRANSPARENT };
 obj.colorHook = obj5;
 obj.colorsHook = { fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.changeItemContent = {};
-obj.changeItemTextContainer = { "Null": "md", "Null": "submitHamReportForFirstDM", "Null": "getChannelIconComponent" };
-obj.forumTag = { <string:151424082>: null, <string:1374314758>: "#000000", <string:3429202876>: 0.13 };
-obj.imageEmoji = { y: false, isArray: false };
-obj.textEmoji = { 9223372036854775807: "<string:1854755072>", 0: "construct" };
+obj.changeItemTextContainer = { "Null": "ref", "Null": "t", "Null": "Text" };
+obj.forumTag = { "Null": null, "Null": null, "Null": null };
+obj.imageEmoji = { hideWhenScrolling: "<string:1912602975>", autoCapitalize: "height" };
+obj.textEmoji = {};
 let closure_21 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {
   class AuditLog {
@@ -139,7 +139,7 @@ const tmp6 = (PureComponent) => {
       if (null == changeTitle) {
         return null;
       } else {
-        obj = { Opened: null, marginVertical: null, marginStart: null, marginEnd: null, style: tmp.title };
+        obj = { alignSelf: 278528.4455614287, justifyContent: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001327944972994, alignItems: -87816669682240180000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: -508692516418188600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.title };
         const intl = AuditLog(target[22]).intl;
         obj = {
           user,
@@ -240,7 +240,7 @@ const tmp6 = (PureComponent) => {
       let mapped = null;
       if (Array.isArray(newValue)) {
         mapped = newValue.map((name) => {
-          const obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: name.name };
+          const obj = { cachedAt: "y", edpbxy: "isArray", children: name.name };
           return callback2(callback(closure_3[20]).Text, obj, name.id);
         });
       }
@@ -256,7 +256,7 @@ const tmp6 = (PureComponent) => {
       let mapped = null;
       if (Array.isArray(newValue)) {
         mapped = newValue.map((arg0) => {
-          const obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: callback(closure_3[21]).getStringForPermission(arg0, self.props.log) };
+          const obj = { cachedAt: "y", edpbxy: "isArray", children: callback(closure_3[21]).getStringForPermission(arg0, self.props.log) };
           return callback2(self(closure_3[20]).Text, obj, arg0);
         });
       }

@@ -1,10 +1,10 @@
-// Module ID: 13893
-// Function ID: 105052
+// Module ID: 13900
+// Function ID: 105092
 // Name: maybeRefreshAd
 // Dependencies: []
 // Exports: default
 
-// Module 13893 (maybeRefreshAd)
+// Module 13900 (maybeRefreshAd)
 function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, callerSource) {
   let obj = require(dependencyMap[3]);
   let isEligibleForQuests = obj.getIsEligibleForQuests();

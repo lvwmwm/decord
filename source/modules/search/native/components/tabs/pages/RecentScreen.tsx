@@ -1,9 +1,9 @@
-// Module ID: 15211
-// Function ID: 114798
+// Module ID: 15219
+// Function ID: 114841
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15211 (_createForOfIteratorHelperLoose)
+// Module 15219 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -86,26 +86,26 @@ function _arrayLikeToArray(arg0, arg1) {
 function ClearAllHistory(searchContext) {
   const arg1 = searchContext.searchContext;
   let obj = {
-    122814468: 0,
-    1158220809: 3.896,
-    301575: 5,
+    "Null": 0,
+    "Null": 3.896,
+    "Null": 5,
     onPress() {
       return callback(closure_2[12]).clearSearchHistory(searchContext);
     }
   };
   const intl = arg1(dependencyMap[13]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.LFTAUp);
-  obj = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
+  obj = { cachedAt: "png", edpbxy: "absolute" };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj.children = intl2.string(arg1(dependencyMap[13]).t.LFTAUp);
   obj.children = jsx(arg1(dependencyMap[14]).Text, obj);
   return jsx(arg1(dependencyMap[11]).PressableHighlight, obj);
 }
 function ViewAll(onJumpToMedia) {
-  let obj = { 122814468: 0, 1158220809: 3.896, 301575: 5, onPress: onJumpToMedia.onJumpToMedia };
+  let obj = { "Null": 0, "Null": 3.896, "Null": 5, onPress: onJumpToMedia.onJumpToMedia };
   const intl = arg1(dependencyMap[13]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.Ofpgwh);
-  obj = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
+  obj = { cachedAt: "png", edpbxy: "absolute" };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj.children = intl2.string(arg1(dependencyMap[13]).t.Ofpgwh);
   obj.children = jsx(arg1(dependencyMap[14]).Text, obj);
@@ -274,7 +274,10 @@ let closure_17 = importAllResult.memo((searchContext) => {
   const ListFooterComponent = importAllResult.useMemo(() => {
     let fn = null;
     if (isLoadingMediaGrid) {
-      fn = () => callback2(callback(closure_2[28]).RecentsMediaGridPlaceholder, { size: closure_7 });
+      fn = () => {
+        const obj = { "Null": "100%", "Null": 16, size: closure_7 };
+        return callback2(callback(closure_2[28]).RecentsMediaGridPlaceholder, obj);
+      };
     }
     return fn;
   }, items4);
@@ -286,7 +289,8 @@ let closure_18 = importAllResult.memo((searchContext) => {
   const merged = Object.assign(searchContext);
   obj["suggestedData"] = function useSuggestedUsersData(searchContext) {
     searchContext = searchContext.searchContext;
-    const tmp = tmp(onPressDMItem[15])({ query: closure_10 });
+    const obj = { guild_theme_enabled: -1677721254, guild_theme_is_custom: 16777683, marginBottom: 31022145, flexDirection: 2034307328, justifyContent: 16777601, width: "82cd94dca8a838d23aaebf9a3dc4aae4", type: "no.messages.82cd94dca8a838d23aaebf9a3dc4aae4.compiled.messages", channelId: "jsona", messages: "flex", isBefore: null, query: closure_10 };
+    const tmp = tmp(onPressDMItem[15])(obj);
     const onPressDMItem = searchContext(onPressDMItem[16]).useOnPressDMItem({ searchContext });
     const items = [onPressDMItem, searchContext];
     const callback = React.useCallback(() => {

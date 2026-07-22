@@ -1,9 +1,11 @@
 // Module ID: 52
 // Function ID: 1366
 // Name: _getConstants
-// Dependencies: []
+// Dependencies: [77, 57, 44, 80, 80]
 
 // Module 52 (_getConstants)
+import merged from "_defineProperty";
+
 function _getConstants() {
   if (!closure_7) {
     const constants = importDefault(dependencyMap[0]).getConstants();
@@ -109,23 +111,9 @@ let closure_4 = {};
 const set = new Set();
 let closure_6 = {};
 let closure_7 = false;
-const merged = Object.assign({}, importDefault(dependencyMap[0]), {
-  createView(arg0, arg1, arg2, arg3) {
-    const view = importDefault(dependencyMap[0]).createView(arg0, arg1, arg2, arg3);
-  },
-  getConstants() {
-    return _getConstants();
-  },
-  getViewManagerConfig(arg0) {
-    return _getViewManagerConfig(arg0);
-  },
-  hasViewManagerConfig(arg0) {
-    return null != _getViewManagerConfig(arg0);
-  }
-});
-importDefault(dependencyMap[0]).getViewManagerConfig = merged.getViewManagerConfig;
+require("_defineProperty").getViewManagerConfig = merged.getViewManagerConfig;
 if (_getConstants().ViewManagerNames) {
-  const ViewManagerNames = importDefault(dependencyMap[0]).getConstants().ViewManagerNames;
+  const ViewManagerNames = require("_defineProperty").getConstants().ViewManagerNames;
   const item = ViewManagerNames.forEach((defaultResult2) => {
     const global = defaultResult2;
     let obj = arg1(dependencyMap[2]);
@@ -136,7 +124,7 @@ if (_getConstants().ViewManagerNames) {
     };
     obj.default(importDefault(dependencyMap[0]), defaultResult2, obj);
   });
-  const importDefaultResult = importDefault(dependencyMap[0]);
+  const importDefaultResult = require("_defineProperty");
 }
 if (!global.nativeCallSyncHook) {
   const _Object = Object;

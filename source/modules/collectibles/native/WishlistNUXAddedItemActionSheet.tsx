@@ -1,10 +1,10 @@
-// Module ID: 8663
-// Function ID: 68555
+// Module ID: 8664
+// Function ID: 68567
 // Name: WishlistNUXAddedItemActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8663 (WishlistNUXAddedItemActionSheet)
+// Module 8664 (WishlistNUXAddedItemActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -80,7 +80,7 @@ export default function WishlistNUXAddedItemActionSheet(product) {
   const intl = arg1(dependencyMap[17]).intl;
   obj2.children = intl.string(arg1(dependencyMap[17]).t.3T2jbf);
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj2), ];
-  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.subtitle };
+  const obj3 = { cachedAt: 1, edpbxy: 1, style: tmp.subtitle };
   const intl2 = arg1(dependencyMap[17]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[17]).t.SXb73A);
   items5[1] = callback(arg1(dependencyMap[16]).Text, obj3);
@@ -92,7 +92,7 @@ export default function WishlistNUXAddedItemActionSheet(product) {
   obj5.text = intl3.string(arg1(dependencyMap[17]).t.tM4PUv);
   obj5.onPress = callback;
   const items6 = [callback(arg1(dependencyMap[19]).Button, obj5), ];
-  const obj6 = { "Bool(false)": "<string:16777594>", "Bool(false)": "<string:39349315>", "Bool(false)": "<string:39348992>", "Bool(false)": "<string:23841536>", color: "<string:2906718464>" };
+  const obj6 = { getNextAssetPage: false, trackFeedEmptyLoadingSeen: false, addWindow: false, questDockHeaderActionDisclosures: false, EMOJI_PICKER_EMOJI_CLICKED: false };
   const intl4 = arg1(dependencyMap[17]).intl;
   obj6.text = intl4.string(arg1(dependencyMap[17]).t.TxBQzD);
   obj6.onPress = callback1;

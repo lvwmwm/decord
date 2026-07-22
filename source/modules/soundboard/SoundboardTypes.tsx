@@ -1,5 +1,5 @@
 // Module ID: 4581
-// Function ID: 40162
+// Function ID: 40170
 // Name: SoundButtonOverlay
 // Dependencies: []
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
@@ -18,7 +18,7 @@ export const soundboardSoundFromAPI = function soundboardSoundFromAPI(body, guil
   let sound_id;
   let user_id;
   const available = body.available;
-  let obj = { height: null, color: null, constructor: null, i: null, height: null };
+  let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
   ({ sound_id, emoji_id, emoji_name, user_id } = body);
   Object.setPrototypeOf(null);
   obj = {};
@@ -37,7 +37,7 @@ export const soundboardSoundToAPI = function soundboardSoundToAPI(arg0) {
   let guildId;
   let soundId;
   let userId;
-  let obj = { partial: null, local: null, PollMediaUploadAttachmentStatus: null, AudioInputInitialized: null, VBwkUf: null };
+  let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
   ({ soundId, guildId, emojiId, emojiName, userId } = arg0);
   Object.setPrototypeOf(null);
   obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 12281
-// Function ID: 94143
+// Module ID: 12286
+// Function ID: 94171
 // Name: PremiumPromotionCard
 // Dependencies: []
 // Exports: default
 
-// Module 12281 (PremiumPromotionCard)
+// Module 12286 (PremiumPromotionCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -18,7 +18,7 @@ obj = { paddingBottom: importDefault(dependencyMap[7]).space.PX_16, paddingHoriz
 obj.card = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.image = { alignSelf: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_24, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[7]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.none, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.none, width: "110%", height: 95 };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { options: "100%", body: null, transform: null };
 let closure_13 = obj.createStyles(obj);
 const obj1 = { alignSelf: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_24, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[7]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.none, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.none, width: "110%", height: 95 };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/premium/native/PremiumPromotionCard.tsx");
@@ -47,11 +47,11 @@ export default function PremiumPromotionCard(applicationId) {
     onPaymentSuccess(onPaymentDismiss[10])(obj);
   }, items1);
   const items4 = [callback(importDefault(dependencyMap[11]), { source: { uri: "https://cdn.discordapp.com/assets/content/da4c50f6fba3cf58b484571ef1a57c355fbd31636683792858fa41d1ab027520.png" }, style: tmp.image }), , , ];
-  const obj2 = {};
+  const obj2 = { "Null": null, "Null": null };
   const intl = arg1(dependencyMap[13]).intl;
   obj2.children = intl.string(arg1(dependencyMap[13]).t.6Jjfk8);
   items4[1] = callback(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = { "Null": "<string:1358955170>", "Null": "<string:1091687288>" };
+  const obj3 = { "Null": true, "Null": null };
   const intl2 = arg1(dependencyMap[13]).intl;
   const obj4 = {};
   let obj7 = importDefault(dependencyMap[14]);

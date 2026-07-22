@@ -1,21 +1,21 @@
-// Module ID: 9044
-// Function ID: 71040
+// Module ID: 9045
+// Function ID: 71053
 // Name: getXboxURIForChannel
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 9044 (getXboxURIForChannel)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 9045 (getXboxURIForChannel)
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ XBOX_HANDOFF_SEARCH_PARAMS: closure_6, XBOX_URL_BASE: closure_7 } = result);
-({ Endpoints: closure_8, ZERO_STRING_GUILD_ID: closure_9 } = result);
-result = result.fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
+({ XBOX_HANDOFF_SEARCH_PARAMS: closure_6, XBOX_URL_BASE: closure_7 } = __exportStarResult1);
+({ Endpoints: closure_8, ZERO_STRING_GUILD_ID: closure_9 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
 
 export default function getXboxURIForChannel(getGuildId) {
   let forQRCode;

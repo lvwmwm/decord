@@ -1,10 +1,10 @@
-// Module ID: 11627
-// Function ID: 90286
+// Module ID: 11628
+// Function ID: 90299
 // Name: getMutualGuildsLabel
 // Dependencies: []
 // Exports: default
 
-// Module 11627 (getMutualGuildsLabel)
+// Module 11628 (getMutualGuildsLabel)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/user_profile/utils/getMutualGuildsLabel.tsx");
 

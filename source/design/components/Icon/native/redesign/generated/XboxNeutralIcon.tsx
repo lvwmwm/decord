@@ -1,10 +1,10 @@
-// Module ID: 8615
-// Function ID: 68300
+// Module ID: 8616
+// Function ID: 68312
 // Name: XboxNeutralIcon
 // Dependencies: []
 // Exports: XboxNeutralIcon
 
-// Module 8615 (XboxNeutralIcon)
+// Module 8616 (XboxNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/XboxNeutralIcon.tsx");

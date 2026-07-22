@@ -1,16 +1,16 @@
-// Module ID: 8760
-// Function ID: 69256
+// Module ID: 8761
+// Function ID: 69268
 // Name: VariantOption
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 8760 (VariantOption)
-import "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 8761 (VariantOption)
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function VariantOption(onSelect) {
   let isSelected;
@@ -48,17 +48,17 @@ function VariantCheckmark(variant) {
   obj.size = "md";
   return closure_4(arg1(dependencyMap[9]).CheckmarkSmallIcon, obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = result);
-result = {};
-result = { flexGrow: "badges", flexShrink: "message", display: 1, marginTop: require("result").space.PX_16, marginHorizontal: require("result").space.PX_16, gap: require("result").space.PX_8 };
-result.container = result;
-const obj1 = { "Null": 7, "Null": 370, gap: require("result").space.PX_12 };
-result.headerRow = obj1;
-const obj2 = { 0: false, 9223372036854775807: false, 0: false, -9223372036854775808: false, gap: require("result").space.PX_12 };
-result.variantsContainer = obj2;
-result.text = { display: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001269552746331968, flexShrink: 131072.0009765625, type: -162747862984233670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-result = result.createStyles(result);
-let closure_7 = result.createStyles((arg0) => {
+({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { borderRadius: true, display: null, flexDirection: 12, marginTop: require("__exportStarResult1").space.PX_16, marginHorizontal: require("__exportStarResult1").space.PX_16, gap: require("__exportStarResult1").space.PX_8 };
+__exportStarResult1.container = __exportStarResult1;
+const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: require("__exportStarResult1").space.PX_12 };
+__exportStarResult1.headerRow = obj1;
+const obj2 = { 0: null, 9223372036854775807: null, 0: null, -9223372036854775808: null, gap: require("__exportStarResult1").space.PX_12 };
+__exportStarResult1.variantsContainer = obj2;
+__exportStarResult1.text = { display: null, flexShrink: "Group 3", type: 4 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+let closure_7 = __exportStarResult1.createStyles((arg0) => {
   let obj = {};
   obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
   const colors = importDefault(dependencyMap[4]).colors;
@@ -68,7 +68,7 @@ let closure_7 = result.createStyles((arg0) => {
   obj.variantOptionInner = obj;
   return obj;
 });
-result = result.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetVariants.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetVariants.tsx");
 
 export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   let product;
@@ -76,19 +76,19 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   ({ product, selectedVariantIndex } = onVariantSelect);
   const arg1 = selectedVariantIndex;
   const importDefault = onVariantSelect.onVariantSelect;
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[10]);
   let tmp3Result = null;
   if (obj.getIsVariantProduct(product)) {
     obj = { style: tmp.container };
     obj = { style: tmp.headerRow };
-    const obj1 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray" };
+    const obj1 = { cachedAt: 1231704321, edpbxy: 32296513 };
     const intl = arg1(dependencyMap[7]).intl;
     obj1.children = intl.string(arg1(dependencyMap[7]).t.wbgaj6);
     const items = [callback(arg1(dependencyMap[11]).Text, obj1), ];
     let tmp9 = product.variants.length > selectedVariantIndex;
     if (tmp9) {
-      const obj2 = { style: tmp.text, children: product.variants[selectedVariantIndex].variantLabel };
+      const obj2 = { 803799044: true, 1269170180: true, 711589892: true, style: tmp.text, children: product.variants[selectedVariantIndex].variantLabel };
       tmp9 = callback(arg1(dependencyMap[11]).Text, obj2);
     }
     items[1] = tmp9;

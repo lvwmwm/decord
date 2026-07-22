@@ -1,5 +1,5 @@
 // Module ID: 7529
-// Function ID: 60232
+// Function ID: 60243
 // Name: StageChannelAgeVerificationNoticeContent
 // Dependencies: []
 // Exports: default
@@ -70,7 +70,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     const items = [Text(WarningIcon, obj), ];
     tmp12 = callback;
     Text = arg1(dependencyMap[8]).Text;
-    const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.contentText };
+    const obj1 = { cachedAt: true, edpbxy: true, style: tmp.contentText };
     tmp13 = callback;
     tmp = StageChannelAgeVerificationNoticeContent;
     const obj2 = { onConfirmPress };
@@ -101,7 +101,7 @@ const tmp3 = arg1(dependencyMap[3]);
 obj.containerWithDivider = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 obj.divider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.noticeContainer = obj3;
 obj.icon = { flexShrink: 0 };
 obj.linkText = { textDecorationLine: "underline" };

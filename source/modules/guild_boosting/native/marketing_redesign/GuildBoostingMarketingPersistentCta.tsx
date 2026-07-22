@@ -1,5 +1,5 @@
 // Module ID: 6634
-// Function ID: 50942
+// Function ID: 50953
 // Name: GuildBoostingMarketingPersistentCta
 // Dependencies: []
 // Exports: default
@@ -10,20 +10,20 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const AnalyticsSections = arg1(dependencyMap[3]).AnalyticsSections;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let closure_8 = { margin: 20, height: null };
+let closure_8 = { <string:1367076492>: null, <string:2690843973>: null };
 let obj = arg1(dependencyMap[5]);
-obj = { wrapper: { "Null": -60383565033014200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -71705452309988800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001780063987237985, "Null": -64157527458588310000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1635620433: -75479414735689030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 2107003140: -2392540624912385 } };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
+obj = { wrapper: {} };
+obj = { <string:2897007698>: 705839377, <string:1415733932>: 410124290, <string:1661140049>: 402653184, <string:1370614988>: 16777216, <string:3428948601>: 38282561, <string:1638706257>: 1507152384, <string:2899595618>: 1091694070, <string:1369504610>: 141842, <string:1751190210>: 6258, <string:2900704596>: 6144, <string:1244210097>: 658571520, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
 obj.innerWraper = obj;
-obj.guildInfoContainer = { positionBottom: "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 1 \u03CE\u03C1\u03B1", positionRight: "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 {{count}} \u03CE\u03C1\u03B5\u03C2", text: "1 \u03CE\u03C1\u03B1", state: "{{count}} \u03CE\u03C1\u03B5\u03C2", cutouts: "1 \u03B7\u03BC\u03AD\u03C1\u03B1" };
-const obj1 = { "Null": "isArray", "Null": "String", "Null": "delete", "Null": "Array", "Null": "isArray", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.guildIcon = obj1;
+obj.guildInfoContainer = {};
 const tmp3 = arg1(dependencyMap[4]);
+obj.guildIcon = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guildIconText = { color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.guildName = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+obj.guildName = {};
 obj.buttonContainer = { height: 40 };
 obj.button = { minWidth: 100 };
-obj.border = { 9223372036854775807: null, 9223372036854775807: null };
+obj.border = { username: "\u{1F468}\u200D\u{1F468}\u200D\u{1F467}", discriminator: 6 };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function GuildBoostingMarketingPersistentCtaTsx1(){const{useReducedMotion,VISIBILITY_OFFSET,withSpring,isVisible,SPRING_CONFIG}=this.__closure;return{transform:[{translateY:useReducedMotion?-VISIBILITY_OFFSET:withSpring(isVisible?-VISIBILITY_OFFSET:VISIBILITY_OFFSET,SPRING_CONFIG)}],opacity:withSpring(isVisible?1:0,SPRING_CONFIG)};}" };
 const obj2 = { color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -73,10 +73,10 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { style: items1 };
   const items1 = [tmp.wrapper, animatedStyle];
-  obj1 = { angle: 45, angleCenter: {} };
+  obj1 = { angle: 45, angleCenter: { 0: false, 0: false } };
   const items2 = [importDefault(dependencyMap[6]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[6]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj1.colors = items2;
-  obj1.locations = ["replace", "then"];
+  obj1.locations = [77601039, 1612144654];
   obj1.style = tmp.border;
   obj1.useAngle = true;
   const obj2 = { style: tmp.innerWraper };

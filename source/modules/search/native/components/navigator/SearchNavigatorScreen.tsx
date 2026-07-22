@@ -1,10 +1,10 @@
-// Module ID: 15424
-// Function ID: 117717
+// Module ID: 15432
+// Function ID: 117760
 // Name: SearchNavigatorScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15424 (SearchNavigatorScreen)
+// Module 15432 (SearchNavigatorScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
@@ -47,7 +47,7 @@ export default function SearchNavigatorScreen(navigation) {
     obj.children = callback(navigation(closure_2[8]).PressableOpacity, obj);
     return callback(closure_4, obj);
   }, items);
-  const items1 = [callback(importDefault(dependencyMap[11]), { returnKeyType: "Small", ref: "sm", onChange: "Placeholder" }), ];
+  const items1 = [callback(importDefault(dependencyMap[11]), {}), ];
   obj = { gesture };
   const obj1 = { style: items2 };
   const items2 = [tmp.wrapper, { paddingTop: importDefault(dependencyMap[7])() }];

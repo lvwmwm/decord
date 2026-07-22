@@ -1,8 +1,8 @@
-// Module ID: 15722
-// Function ID: 120257
-// Dependencies: [9883, 2, 4140, 4141, 8926, 624, 15727, 9046, 15728, 15729, 2, 57, 31, 1348, 10006, 10009, 482, 33, 1324, 689, 4126, 4537, 7493, 3840, 10005, 15618, 5798, 624, 15614, 3989, 11367, 4472, 9883, 4538, 7583, 9634, 2, 31, 10006, 10009, 10004, 33, 4126, 689, 10005, 15726, 3989, 4472, 15732, 4538, 5515, 1273, 4124]
+// Module ID: 15730
+// Function ID: 120300
+// Dependencies: [9884, 2, 4140, 4141, 8927, 624, 15735, 9047, 15736, 15737, 2, 57, 31, 1348, 10007, 10010, 482, 33, 1324, 689, 4126, 4537, 7493, 3840, 10006, 15626, 5798, 624, 15622, 3989, 11368, 4472, 9884, 4538, 7583, 9635, 2, 31, 10007, 10010, 10005, 33, 4126, 689, 10006, 15734, 3989, 4472, 15740, 4538, 5514, 1273, 4124]
 
-// Module 15722
+// Module 15730
 import closure_3 from "t";
 import importAllResult from "result2";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -28,11 +28,11 @@ obj = {};
 const merged = Object.assign(_isNativeReflectConstruct.StyleSheet.absoluteFillObject);
 obj["zIndex"] = 1;
 obj.accessibilityWrapper = obj;
-getConsoleColor = { borderRadius: require("result2").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
+getConsoleColor = { -1618180014: -1761607108, 51532684: 1107296545, 765996464: 83172, 1224853329: 68780, 277786: 37992770, 277787: 21111040, 270556: 1077690880, borderRadius: require("result2").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
 obj.wrapper = getConsoleColor;
-const obj2 = { trackForumPostLinkCopied: false, isStreamInfoOverlayEnabled: false, _monthsRegex: false, borderColor: false, NONE_MONTH: "CANCELLATION_FLOW_STEP", alertWrapper: "generateNonce", useIsMobileGameCollectionExperimentEnabled: "Array", marginHorizontal: require("result2").space.PX_16 };
+const obj2 = { GUILD_TAG_BADGE_PALETTE_PRESETS: "<string:3435331585>", EXPERIMENTAL_AUDIO_SUBSYSTEM: "<string:3550216193>", paddingLeft: "<string:1091633153>", marginVertical: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", messageCacheAgeSeconds: "<string:666911489>", isInQuestBottomSheet: "<string:666828802>", Galaxy S: "<string:3550216194>", marginHorizontal: require("result2").space.PX_16 };
 obj.buttonsWrapper = obj2;
-obj.actionSheetDragHandleWrapper = { display: true, flexDirection: true, rowGap: true, padding: true, alignItems: true };
+obj.actionSheetDragHandleWrapper = { variant: true, size: true, text: true, onPress: true, grow: true };
 let closure_21 = getConsoleColor.createStyles(obj);
 if (_slicedToArray.isMetaQuest()) {
   num = 15;
@@ -378,7 +378,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
     const safeArea = context.safeArea;
     const useReducedMotion = safeArea;
     let obj = gestureState(tmp2[15]);
-    const gestureSpecs = obj.useSharedValue({ "Null": 0.124, "Null": 1, "Null": "Enable Application Identity Linked Roles", flexDirection: 0, justifyContent: 40, alignItems: 4, paddingVertical: "Star", paddingHorizontal: 1, paddingVertical: 1 });
+    const gestureSpecs = obj.useSharedValue({ 9223372036854775807: 0.124, 0: 1, 0: "flex-start", 9223372036854775807: "flex-start", 0: 0, 0: 40, 0: 4, 9223372036854775807: "Star", 9223372036854775807: 1 });
     first = gestureSpecs;
     sharedValue1 = gestureState(sharedValue1[15]).useSharedValue(0);
     let closure_9 = sharedValue1;
@@ -705,7 +705,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
               } else if (null != currentControlsMode) {
                 obj1 = self(tmp2[27]);
               }
-              let obj3 = {};
+              let obj3 = { "Bool(true)": 278528.28133010876, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001327944972994, "Bool(true)": -5057019220790702000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -506635178124047100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027161546131253, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002716154613068 };
               obj3 = self(tmp2[22]);
               obj3.width = obj3.getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
               obj3.height = minHeight;
@@ -743,7 +743,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
     const safeArea = context.safeArea;
     const useReducedMotion = safeArea;
     let obj = gestureState(tmp2[15]);
-    const gestureSpecs = obj.useSharedValue({ "Null": 0.124, "Null": 1, "Null": "Enable Application Identity Linked Roles", flexDirection: 0, justifyContent: 40, alignItems: 4, paddingVertical: "Star", paddingHorizontal: 1, paddingVertical: 1 });
+    const gestureSpecs = obj.useSharedValue({ 9223372036854775807: 0.124, 0: 1, 0: "flex-start", 9223372036854775807: "flex-start", 0: 0, 0: 40, 0: 4, 9223372036854775807: "Star", 9223372036854775807: 1 });
     first = gestureSpecs;
     sharedValue1 = gestureState(sharedValue1[15]).useSharedValue(0);
     let closure_9 = sharedValue1;

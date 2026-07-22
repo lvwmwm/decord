@@ -1,12 +1,11 @@
 // Module ID: 881
 // Function ID: 9760
 // Name: getTraceMetaTags
-// Dependencies: [57, 65]
+// Dependencies: []
 // Exports: getTraceMetaTags
 
 // Module 881 (getTraceMetaTags)
-import _slicedToArray from "_slicedToArray";
-
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const getTraceMetaTags = function getTraceMetaTags(arg0) {

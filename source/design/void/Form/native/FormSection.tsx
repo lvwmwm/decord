@@ -1,5 +1,5 @@
 // Module ID: 7185
-// Function ID: 57842
+// Function ID: 57853
 // Name: hasTrailingError
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(true)": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Bool(true)": true, "Bool(true)": null, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { <string:4149313547>: false, <string:1374118212>: false, <string:3881940428>: false, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.titledSectionHeader = obj;
 obj.titledSectionNoBorder = { marginTop: 24 };
 obj.titledSectionNoBorderOrMargin = {};

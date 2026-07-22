@@ -1,10 +1,10 @@
-// Module ID: 12231
-// Function ID: 93867
+// Module ID: 12236
+// Function ID: 93895
 // Name: openStageChannelAudienceNoticeModal
 // Dependencies: []
 // Exports: openStageChannelAudienceNoticeModal
 
-// Module 12231 (openStageChannelAudienceNoticeModal)
+// Module 12236 (openStageChannelAudienceNoticeModal)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/stage_channels/StageChannelAlertActionCreators.tsx");
 

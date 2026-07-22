@@ -1,10 +1,10 @@
-// Module ID: 9777
-// Function ID: 76008
+// Module ID: 9778
+// Function ID: 76021
 // Name: _saveGuildIdentityChanges
 // Dependencies: []
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 9777 (_saveGuildIdentityChanges)
+// Module 9778 (_saveGuildIdentityChanges)
 function _saveGuildIdentityChanges() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

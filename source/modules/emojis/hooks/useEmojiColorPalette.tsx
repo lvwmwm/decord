@@ -1,10 +1,10 @@
-// Module ID: 9423
-// Function ID: 73352
+// Module ID: 9424
+// Function ID: 73365
 // Name: useEmojiColorPalette
 // Dependencies: []
 // Exports: useEmojiColorPalette
 
-// Module 9423 (useEmojiColorPalette)
+// Module 9424 (useEmojiColorPalette)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/emojis/hooks/useEmojiColorPalette.tsx");

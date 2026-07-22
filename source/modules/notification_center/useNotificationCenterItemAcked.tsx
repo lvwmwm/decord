@@ -1,10 +1,10 @@
-// Module ID: 15023
-// Function ID: 113198
+// Module ID: 15031
+// Function ID: 113241
 // Name: useNotificationCenterItemAcked
 // Dependencies: []
 // Exports: useNotificationCenterItemAcked
 
-// Module 15023 (useNotificationCenterItemAcked)
+// Module 15031 (useNotificationCenterItemAcked)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/notification_center/useNotificationCenterItemAcked.tsx");
 

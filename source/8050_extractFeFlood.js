@@ -1,5 +1,5 @@
 // Module ID: 8050
-// Function ID: 63883
+// Function ID: 63893
 // Name: extractFeFlood
 // Dependencies: []
 // Exports: default, extractFeBlend, extractFeColorMatrix, extractFeComposite, extractFeGaussianBlur, extractFeMerge, extractFilter, extractIn
@@ -83,7 +83,7 @@ export const extractFeComposite = function extractFeComposite(props) {
   const importDefault = props;
   const obj = { in1: tmp, in2: tmp2, operator1: tmp3 };
   const dependencyMap = obj;
-  const items = [true, true, true, true];
+  const items = [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019334619397578395, "isArray", "id", "backgroundColor"];
   const item = items.forEach((arg0) => {
     if (undefined !== arg0[arg0]) {
       const _Number = Number;

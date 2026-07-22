@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 88972
+// Module ID: 11433
+// Function ID: 88985
 // Name: ApplicationCommandItem
 // Dependencies: []
 // Exports: default
 
-// Module 11432 (ApplicationCommandItem)
+// Module 11433 (ApplicationCommandItem)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,13 +13,13 @@ const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[3]).AUTOCOMPLETE_ROW_HEIGHT;
 const tmp2 = arg1(dependencyMap[4]);
 let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { borderWidth: null, position: null, top: null, left: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
+  obj = { position: null, left: null, right: null, top: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj.applicationCommandItem = obj;
   obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
   obj.highlightedApplicationCommandItem = obj;
   obj.applicationCommandIcon = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-  obj.applicationCommandDescriptionWrapper = {};
-  obj.applicationCommandSectionName = { padding: 1799880706, borderRadius: 2097152571 };
+  obj.applicationCommandDescriptionWrapper = { body: "onAnimationFinishCapture", flexDirection: "onAnimationFinish", accessible: "onAnimationFailureCapture" };
+  obj.applicationCommandSectionName = { 0: "Array", 9223372036854775807: "FullProfile" };
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -87,13 +87,11 @@ export default function ApplicationCommandItem(highlighted) {
   }
   const items2 = [showIcon, , ];
   const obj3 = { style: tmp.applicationCommandDescriptionWrapper };
-  const obj4 = { "Null": true, "Null": 15.1, "Null": 253, children: `/ ${command.displayName}` };
-  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), ];
-  const obj5 = { "Null": null, "Null": null, "Null": null, children: command.displayDescription };
-  items3[1] = callback(arg1(dependencyMap[13]).Text, obj5);
+  const obj4 = { children: `/ ${command.displayName}` };
+  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), callback(arg1(dependencyMap[13]).Text, { children: command.displayDescription })];
   obj3.children = items3;
   items2[1] = callback2(View, obj3);
-  const obj6 = { delete: false, dispatch: false, raw: false, style: tmp.applicationCommandSectionName, children: name };
+  const obj6 = { "Null": false, "Null": false, alignItems: false, style: tmp.applicationCommandSectionName, children: name };
   items2[2] = callback(arg1(dependencyMap[13]).Text, obj6);
   obj.children = items2;
   return callback2(arg1(dependencyMap[10]).PressableOpacity, obj);

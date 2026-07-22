@@ -1,10 +1,10 @@
-// Module ID: 14730
-// Function ID: 111111
+// Module ID: 14738
+// Function ID: 111154
 // Name: MentionSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14730 (MentionSubtitle)
+// Module 14738 (MentionSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -30,7 +30,7 @@ export default function MentionSubtitle(channel) {
   obj = { style: subtitleStyles.subtitleRow };
   obj = { style: subtitleStyles.channelIcon };
   const items = [callback(channelIconComponentWithGuild, obj), ];
-  obj1 = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, style: subtitleStyles.subtitleText };
+  obj1 = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821, style: subtitleStyles.subtitleText };
   const intl = arg1(dependencyMap[7]).intl;
   obj1.children = intl.format(arg1(dependencyMap[7]).t.L9YdGH, {
     channelName,

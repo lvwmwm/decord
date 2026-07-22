@@ -1,10 +1,10 @@
-// Module ID: 11475
-// Function ID: 89376
+// Module ID: 11476
+// Function ID: 89389
 // Name: ChatWarningIcon
-// Dependencies: [553648135, 3690987520, 3456106540, 3942645804, 3154116650, 33554436]
+// Dependencies: [553648135, 3707764736, 3472883756, 3959423020, 3154116650, 33554436]
 // Exports: ChatWarningIcon
 
-// Module 11475 (ChatWarningIcon)
+// Module 11476 (ChatWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChatWarningIcon.tsx");

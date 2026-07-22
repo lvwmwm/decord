@@ -1,10 +1,10 @@
-// Module ID: 9568
-// Function ID: 74551
+// Module ID: 9569
+// Function ID: 74564
 // Name: trackSearchStart
 // Dependencies: []
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, initializeSearch, removeFavoriteGIF, search, trackSelectGIF
 
-// Module 9568 (trackSearchStart)
+// Module 9569 (trackSearchStart)
 function trackSearchStart(arg0) {
   if (null != arg0) {
     let obj = {};
@@ -28,7 +28,7 @@ function trackSearchResultViewed(arg0, type) {
   obj = Object.create(null);
   obj.startTime = 0;
   const merged = Object.assign(obj, obj);
-  obj = { <string:520483923>: 180, <string:1688739144>: null, totalResults: arg0.length };
+  obj = { "Null": "angle", "Null": 180, totalResults: arg0.length };
   let obj2 = type(dependencyMap[6]);
   const obj1 = {};
   const analyticsID = store.getAnalyticsID();
@@ -76,7 +76,7 @@ function doSearchRequest(q, arg1, limit) {
   });
 }
 function resetSearch() {
-  importDefault(dependencyMap[8]).dispatch({ 9223372036854775807: "properties", 9223372036854775807: 72 });
+  importDefault(dependencyMap[8]).dispatch({});
 }
 function gifUrlKey(uri) {
   let str = uri;

@@ -1,12 +1,13 @@
-// Module ID: 12997
-// Function ID: 98896
+// Module ID: 13004
+// Function ID: 98929
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isZoomedExperimentEnabled
 
-// Module 12997 (apexExperiment)
+// Module 13004 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+const obj = { "Bool(false)": true, "Bool(false)": true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/telemetry_ring/native/ZoomedInAnalyticsExperiment.tsx");
 

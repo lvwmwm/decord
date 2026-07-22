@@ -1,9 +1,9 @@
-// Module ID: 10922
-// Function ID: 84946
+// Module ID: 10923
+// Function ID: 84959
 // Name: metadata
 // Dependencies: []
 
-// Module 10922 (metadata)
+// Module 10923 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/static_idle_orb.png.js");
 

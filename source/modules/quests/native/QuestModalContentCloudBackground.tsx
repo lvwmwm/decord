@@ -1,10 +1,10 @@
-// Module ID: 13902
-// Function ID: 105152
+// Module ID: 13909
+// Function ID: 105192
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 13902 (items)
+// Module 13909 (items)
 importAll(dependencyMap[0]);
 ({ View: closure_3, StyleSheet: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 10347
-// Function ID: 79851
+// Module ID: 10348
+// Function ID: 79864
 // Name: MessageRequestInAppNotification
 // Dependencies: []
 // Exports: default
 
-// Module 10347 (MessageRequestInAppNotification)
+// Module 10348 (MessageRequestInAppNotification)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/in_app_notifications/native/MessageRequestNotification.tsx");

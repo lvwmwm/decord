@@ -1,5 +1,5 @@
 // Module ID: 7278
-// Function ID: 58642
+// Function ID: 58653
 // Name: dsnFromString
 // Dependencies: []
 // Exports: dsnToString, makeDsn
@@ -103,7 +103,7 @@ export const makeDsn = function makeDsn(arg0) {
       let protocol;
       if (arg0(closure_1[2]).DEBUG_BUILD) {
         ({ port, projectId, protocol } = arg0);
-        const items = ["<string:503316930>", "<string:2197815627>", "<string:3707765097>", "<string:3741319623>"];
+        const items = [];
         const found = items.find((arg0) => {
           let flag = !arg0[arg0];
           if (flag) {

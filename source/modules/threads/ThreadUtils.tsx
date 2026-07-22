@@ -1,5 +1,5 @@
 // Module ID: 7018
-// Function ID: 56333
+// Function ID: 56344
 // Name: getAccessibilityLabelFormatter
 // Dependencies: []
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
@@ -11,7 +11,7 @@ function getAccessibilityLabelFormatter() {
   obj.month = intl.string(arg1(dependencyMap[6]).t.P7Gygz);
   return obj;
 }
-let closure_3 = [true, true];
+let closure_3 = ["<string:117899265>", "<string:748617730>"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

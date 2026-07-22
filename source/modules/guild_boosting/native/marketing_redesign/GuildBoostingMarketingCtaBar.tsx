@@ -1,10 +1,10 @@
-// Module ID: 12389
-// Function ID: 94705
+// Module ID: 12394
+// Function ID: 94733
 // Name: useBoostCountAnimatedStyles
 // Dependencies: []
 // Exports: default
 
-// Module 12389 (useBoostCountAnimatedStyles)
+// Module 12394 (useBoostCountAnimatedStyles)
 function useBoostCountAnimatedStyles(first) {
   const arg1 = first;
   let obj = arg1(dependencyMap[12]);
@@ -34,17 +34,17 @@ const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let closure_14 = 10 * importDefault(dependencyMap[8]).Millis.SECOND;
 let obj = arg1(dependencyMap[9]);
-obj = { heading: {}, headerContent: { TimeStampProducer: "isArray", MIN_HEADER_HEIGHT: "accessibilityRole", afterMs: "shapes", thumbHashToApproximateAspectRatio: "hasDiversityParent" } };
-obj = { MiniaturesSpotIllustration: 24, US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS: "recent_games_enabled", currentSize: "message", origin_channel_id: "NEUTRAL_60", discordTag: 1, origin_channel_id: "status", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
+obj = { heading: {}, headerContent: { <string:3093511522>: null, <string:2174309947>: null, <string:3575435380>: "center", <string:3257109136>: "center" } };
+obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.guildIcon = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.guildIconText = { color: importDefault(dependencyMap[10]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.guildName = { 0: 10495, 9223372036854775807: 10240, 0: 5120 };
 obj.guildBoostCountWrapper = { position: "relative" };
-obj.totalBoostCountWrapper = { marginRight: null, opacity: null, position: null, top: null, left: null, right: null, bottom: null };
-obj.guildBoostCountIcon = {};
-obj.guildBoostCount = {};
-obj.guildBoostCurrentUserCountWrapper = { Z_FINISH: false, Z_BLOCK: false, Z_TREES: false };
+obj.totalBoostCountWrapper = { right: -62782977, top: 637534577, height: 1929380122, width: 56, fontSize: 16, lineHeight: 8, color: -352205486 };
+obj.guildBoostCountIcon = { "Bool(false)": "k", "Bool(false)": "Text", "Bool(false)": "_distance" };
+obj.guildBoostCount = { "Null": null, "Null": null, "Null": null };
+obj.guildBoostCurrentUserCountWrapper = {};
 obj.guildBoostCurrentUserCount = { alignSelf: "center" };
 const obj1 = { color: importDefault(dependencyMap[10]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.cta = { borderRadius: importDefault(dependencyMap[10]).radii.xl };
@@ -55,13 +55,13 @@ obj.ctaPrimary = obj3;
 obj.ctaSecondary = { marginTop: 10 };
 obj.giftIcon = { marginRight: 8 };
 obj.gradient = { overflow: "visible" };
-obj.headerWave = { <string:2412838916>: "<string:17514305>", <string:3897753604>: "<string:29249792>", <string:2240539019>: "getInviteInstanceId", <string:487015223>: "EXYNOS", <string:2364145668>: "<string:4235264256>", <string:1734803460>: "<string:1375731711>" };
+obj.headerWave = {};
 obj.headerStars = {};
 obj.boostingUnavailablePill = {};
 let closure_15 = obj.createStyles(obj);
 let closure_16 = { code: "function GuildBoostingMarketingCtaBarTsx1(){const{withTiming,isVisible}=this.__closure;return{opacity:withTiming(isVisible?1:0,{duration:250})};}" };
 const obj7 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[41]).fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingCtaBar.tsx");
+const result = arg1(dependencyMap[39]).fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingCtaBar.tsx");
 
 export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   let fractionalPremiumInfo;
@@ -131,19 +131,19 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
     }
   }
   obj1 = {};
-  obj2 = { onLayout, angle: 160, angleCenter: {} };
+  obj2 = { onLayout, angle: 160, angleCenter: { 0: false, 0: false } };
   const isPremiumResult = obj3.isPremium(stateFromStores);
   const tmp23 = callback3;
   const items4 = [importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_1, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_2, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_3, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_4, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_5];
   obj2.colors = items4;
-  obj2.locations = [];
+  obj2.locations = ["onFastRefresh", "NOTIFICATION_CENTER_ITEM_CREATE", "DEVICE_VOIP_TOKEN", "GuildIconSizes", "MedalIcon"];
   obj2.useAngle = true;
   obj2.style = tmp.gradient;
-  obj3 = { angle: 0, angleCenter: {}, colors: [null, null], locations: [null, null], useAngle: true, style: tmp.gradient };
+  obj3 = { angle: 0, angleCenter: { 0: false, 0: false }, colors: [null, null], locations: [null, null], useAngle: true, style: tmp.gradient };
   const tmp26 = importDefault(closure_2[24]);
   const items5 = [callback2(importDefault(closure_2[25]), { guild }), , , ];
   const obj4 = { style: tmp.headerContent };
-  const obj5 = { "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003908191865142266, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014916683265352973, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011162314119832734, style: tmp.heading };
+  const obj5 = { -9223372036854775808: false, 9223372036854775807: false, 0: null, style: tmp.heading };
   const intl = arg1(closure_2[27]).intl;
   obj5.children = intl.string(arg1(closure_2[27]).t.AF+Tyh);
   const items6 = [callback2(arg1(closure_2[26]).Text, obj5), , , , ];
@@ -154,7 +154,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   const obj7 = {
     onPress() {
       window.clearTimeout(ref.current);
-      lib((arg0) => !arg0);
+      callback((arg0) => !arg0);
     }
   };
   const items7 = [callback2(arg1(closure_2[26]).Text, { style: tmp.guildName, children: guild.name }), ];
@@ -216,10 +216,9 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
     const intl4 = arg1(closure_2[27]).intl;
     obj21.text = intl4.string(arg1(closure_2[27]).t.pj0XBN);
     obj21.onPress = function onPress() {
-      let obj = first(lib[38]);
-      obj = { analyticsLocation: obj, analyticsLocations };
+      let obj = { analyticsLocation: obj, analyticsLocations };
       obj = { page: constants2.PREMIUM_GUILD_USER_MODAL, section: constants3.HEADER, object: constants.BUTTON_CTA };
-      obj.pushLazy(guild(lib[40])(lib[39], lib.paths), obj);
+      first(closure_2[38])(obj);
     };
     obj21.grow = true;
   }

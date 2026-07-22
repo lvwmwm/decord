@@ -1,10 +1,10 @@
-// Module ID: 14895
-// Function ID: 112233
+// Module ID: 14903
+// Function ID: 112276
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: default
 
-// Module 14895 (importDefaultResult1)
+// Module 14903 (importDefaultResult1)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -25,13 +25,13 @@ const importDefaultResult2Result = importDefault(dependencyMap[4])(importDefault
 const alphaResult2 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.BRAND_500).alpha(0.35);
 const hexResult2 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.BRAND_500).alpha(0.35).hex();
 let obj = {};
-obj = { position: -769, height: -769, width: -769, backgroundColor: 1153585919, paddingTop: importDefault(dependencyMap[3]).space.PX_12, paddingBottom: importDefault(dependencyMap[3]).space.PX_16 + 4 };
+obj = { paddingTop: importDefault(dependencyMap[3]).space.PX_12, paddingBottom: importDefault(dependencyMap[3]).space.PX_16 + 4 };
 obj.container = obj;
 const obj7 = arg1(dependencyMap[5]);
 const items = [{ rotate: "-6deg" }];
 obj.gameCard = { borderRadius: importDefault(dependencyMap[3]).radii.xs, transform: items, shadowColor: importDefault(dependencyMap[3]).colors.BLACK, shadowOffset: { "Null": "0 0 4px 0 hsl(none 0% 0% / 0.08)", "Null": "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
 obj.gameImage = {};
-const obj2 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[3]).radii.xs };
+const obj2 = { borderBottomWidth: "b", kind: "hideBackground", type: "Uint16Array", id: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", local_id: "relative", acked: "auto", tab: "constructor", borderRadius: importDefault(dependencyMap[3]).radii.xs };
 const items1 = [{ rotate: "6deg" }];
 obj2.transform = items1;
 obj2.borderColor = hexResult;

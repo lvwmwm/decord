@@ -1,24 +1,23 @@
-// Module ID: 12499
-// Function ID: 95793
+// Module ID: 12504
+// Function ID: 95821
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 12499 (apexExperiment)
+// Module 12504 (apexExperiment)
 const _module = require(dependencyMap[1]);
-let obj = { bottom: 1904843910, name: 6, defaultConfig: { 9223372036854775807: null, -9223372036854775808: null }, variations: { [0]: { 9223372036854775807: null, -9223372036854775808: null } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { "Null": null, "Null": null }, variations: { [0]: { "Null": true, "Null": true } } });
 const _module1 = require(dependencyMap[2]);
-obj = { "Bool(false)": 16, "Bool(false)": 16, "Bool(false)": null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
-const obj1 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "Group 5", 炖锅: 1, config: {} };
-const items = [obj1, ];
-const obj2 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: 24, 炖锅: -60, config: {} };
-items[1] = obj2;
+let obj = { shapes: null, flex: null, sk: null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
+obj = { displayNameStylesEnabled: null, submitButtonEnabled: "Group 5", config: {} };
+const items = [obj, ];
+const obj1 = { displayNameStylesEnabled: 24, submitButtonEnabled: -60, config: {} };
+items[1] = obj1;
 obj.treatments = items;
 const experiment = _module1.createExperiment(obj);
 const _module2 = require(dependencyMap[1]);
-const obj3 = { 844175713: 1912603312, 1387159956: 128, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = _module2.createApexExperiment(obj3);
+const obj2 = { y: "<string:2154954753>", DateToSystemTimezoneSetter: "<string:2080374784>", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment1 = _module2.createApexExperiment(obj2);
 const _module3 = require(dependencyMap[4]);
 const result = _module3.fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
 

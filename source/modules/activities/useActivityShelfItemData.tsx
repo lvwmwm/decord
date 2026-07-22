@@ -1,10 +1,10 @@
-// Module ID: 15700
-// Function ID: 120020
+// Module ID: 15708
+// Function ID: 120063
 // Name: useActivityShelfItemData
 // Dependencies: []
 // Exports: useActivityShelfItemData
 
-// Module 15700 (useActivityShelfItemData)
+// Module 15708 (useActivityShelfItemData)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/useActivityShelfItemData.tsx");
 

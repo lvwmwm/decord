@@ -1,10 +1,10 @@
-// Module ID: 9352
-// Function ID: 73014
+// Module ID: 9353
+// Function ID: 73027
 // Name: PremiumUpsellSectionDivider
 // Dependencies: []
 // Exports: default
 
-// Module 9352 (PremiumUpsellSectionDivider)
+// Module 9353 (PremiumUpsellSectionDivider)
 importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const Gradients = arg1(dependencyMap[2]).Gradients;
@@ -25,13 +25,13 @@ let closure_8 = obj.createStyles((arg0) => {
   }
   obj.marginBottom = num2;
   obj.container = obj;
-  obj = { margin: null, backgroundColor: null };
+  obj = { "Bool(false)": null, "Bool(false)": null };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj.lockContainer = obj;
   obj.lockGradient = { borderRadius: importDefault(dependencyMap[5]).radii.round };
-  obj.lock = { backgroundColor: "<string:3192994401>", borderRadius: "<string:684289>", height: "<string:141754368>" };
+  obj.lock = { "Null": "jsx", "Null": "r", "Null": "isArray" };
   obj.divider = { height: 1 };
-  const obj2 = { EMOJI_REACTIONS_ON_MESSAGES: null, paddingVertical: false, isInitial: false, ModalActionCreators: false, YOUTUBE: null };
+  const obj2 = { textTransform: "<string:1491026465>", textTransform: "<string:3140485122>", marginLeft: "<string:1464926209>", fontFamily: "<string:7406222>", lineHeight: "<string:16777216>" };
   let num3;
   if (arg0 === obj.START) {
     num3 = 0;

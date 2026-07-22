@@ -1,5 +1,5 @@
 // Module ID: 3972
-// Function ID: 32904
+// Function ID: 32906
 // Name: hexToRgb
 // Dependencies: []
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgbArray, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
@@ -593,7 +593,7 @@ export const findColorByHsv = function findColorByHsv(colors) {
     let obj = { hex };
     obj = callback(hex);
     if (null == obj) {
-      obj = { 1213267972: false, -1808113090: false, 1654752849: false };
+      obj = { 100504674: "spring", 9223372036854775807: 0.4, 9223372036854775807: 1 };
     }
     obj.hsv = obj;
     return obj;

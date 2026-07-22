@@ -1,9 +1,9 @@
-// Module ID: 5318
-// Function ID: 45184
+// Module ID: 5045
+// Function ID: 43594
 // Name: showTooManyUserGuildsAlert
 // Dependencies: []
 
-// Module 5318 (showTooManyUserGuildsAlert)
+// Module 5045 (showTooManyUserGuildsAlert)
 function showTooManyUserGuildsAlert(quantity) {
   let obj = importDefault(dependencyMap[12]);
   obj = {};
@@ -145,7 +145,7 @@ function waitForGuild(id) {
     return flag;
   }));
 }
-let closure_4 = [null, null];
+let closure_4 = [false, false];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);
@@ -366,7 +366,7 @@ const obj = {
         if (null != closure_3) {
           obj = closure_3;
         } else {
-          obj = { <string:996344831>: false, <string:4132547158>: false, <string:1375429038>: null };
+          obj = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array" };
           let num2 = 0;
           if (null != callback3) {
             num2 = callback3;
@@ -431,7 +431,7 @@ const obj = {
   deleteRole(id, id2) {
     id2 = id;
     const HTTP = id2(dependencyMap[16]).HTTP;
-    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_16.GUILD_ROLE(id, id2) };
+    const obj = { y: null, isArray: null, accessible: null, url: closure_16.GUILD_ROLE(id, id2) };
     HTTP.del(obj).then(() => {
       const result = callback(closure_3[30]).checkGuildTemplateDirty(arg0);
     });
@@ -601,10 +601,10 @@ const obj = {
           }
           const obj6 = arg1(dependencyMap[34]);
         }
-        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, {});
+        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { borderRadius: 1766088043, height: 827788593 });
         const obj5 = arg1(dependencyMap[17]);
       } else {
-        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, {});
+        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { borderRadius: 1766088043, height: 827788593 });
         const obj2 = arg1(dependencyMap[17]);
       }
     } else {

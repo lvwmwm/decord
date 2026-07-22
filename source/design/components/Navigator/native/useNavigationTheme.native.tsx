@@ -1,10 +1,10 @@
-// Module ID: 5586
-// Function ID: 47394
+// Module ID: 5585
+// Function ID: 47402
 // Name: useNavigationTheme
 // Dependencies: []
 // Exports: useNavigationTheme
 
-// Module 5586 (useNavigationTheme)
+// Module 5585 (useNavigationTheme)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Navigator/native/useNavigationTheme.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 14966
-// Function ID: 112653
+// Module ID: 14974
+// Function ID: 112696
 // Name: fetchMobileGameCommunities
 // Dependencies: []
 // Exports: dismissGuild, fetchMobileGameCommunities
 
-// Module 14966 (fetchMobileGameCommunities)
+// Module 14974 (fetchMobileGameCommunities)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesActionCreators.tsx");

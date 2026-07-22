@@ -1,9 +1,9 @@
-// Module ID: 5652
-// Function ID: 48357
+// Module ID: 5651
+// Function ID: 48365
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5652 (_isNativeReflectConstruct)
+// Module 5651 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -104,7 +104,7 @@ function handleLoadThreadsSuccess(firstMessages) {
     if (!iter2.done) {
       do {
         let tmp2 = closure_10;
-        closure_10[iter2.value.id] = { <string:4279785472>: 131122.52832032426, <string:4279959321>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
+        closure_10[iter2.value.id] = {};
         let iter = tmp8();
         iter2 = iter;
         done = iter.done;
@@ -218,7 +218,7 @@ let tmp2 = (Store) => {
     key: "getMessage",
     value(arg0) {
       if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { <string:4279785472>: null, <string:4279959321>: null };
+        closure_10[arg0] = { "Bool(true)": "L", "Bool(true)": "L" };
       }
       return closure_10[arg0];
     }
@@ -268,7 +268,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     if (id.id !== obj.castChannelIdAsMessageId(id.channelId)) {
       return false;
     } else {
-      closure_10[id.channelId] = { <string:4279785472>: 131122.52832032426, <string:4279959321>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
+      closure_10[id.channelId] = {};
     }
     const obj = importDefault(dependencyMap[7]);
   },
@@ -277,7 +277,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     if (tmp) {
       const tmp3 = !subscribedToThreads.isSubscribedToThreads(channel.channel.guild_id);
       if (!tmp3) {
-        closure_10[channel.channel.id] = { <string:4279785472>: 131122.52832032426, <string:4279959321>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
+        closure_10[channel.channel.id] = {};
       }
       tmp = !tmp3;
       const tmp4 = !tmp3;

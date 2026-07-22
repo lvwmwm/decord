@@ -1,15 +1,14 @@
-// Module ID: 8892
-// Function ID: 70174
+// Module ID: 8893
+// Function ID: 70187
 // Name: savePersistentCodesEnabled
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 8892 (savePersistentCodesEnabled)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_6 from "result";
-import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_7 } from "result";
-import { ChannelTypes } from "result";
-import result from "result";
+// Module 8893 (savePersistentCodesEnabled)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_7 } from "__exportStarResult1";
+import { ChannelTypes } from "__exportStarResult1";
 
 function savePersistentCodesEnabled() {
   return _savePersistentCodesEnabled(...arguments);
@@ -27,7 +26,7 @@ function _updatePersistentCodesEnabled() {
   return obj(...arguments);
 }
 let closure_5 = importDefault(dependencyMap[2]);
-result = result.fileFinishedImporting("modules/rtc/SecureFramesActionCreators.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/rtc/SecureFramesActionCreators.tsx");
 
 export default {
   clearUploadedKeyVersions() {

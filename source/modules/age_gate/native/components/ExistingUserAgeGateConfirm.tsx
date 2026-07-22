@@ -1,10 +1,10 @@
-// Module ID: 15860
-// Function ID: 121384
+// Module ID: 15868
+// Function ID: 121427
 // Name: ExistingUserAgeGateConfirm
 // Dependencies: []
 // Exports: default
 
-// Module 15860 (ExistingUserAgeGateConfirm)
+// Module 15868 (ExistingUserAgeGateConfirm)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -37,7 +37,7 @@ export default function ExistingUserAgeGateConfirm(age) {
   const intl = arg1(closure_2[10]).intl;
   obj.children = intl.format(arg1(closure_2[10]).t.wumolR, { age: age.age });
   const items = [callback2(arg1(closure_2[9]).Text, obj), , ];
-  const obj1 = { delete: 1, dispatch: 1, raw: null, style: tmp.body };
+  const obj1 = { "Null": -1493172224, "Null": 1962934272, alignItems: 0, style: tmp.body };
   const intl2 = arg1(closure_2[10]).intl;
   const obj2 = { helpURL: importDefault(closure_2[12]).getArticleURL(HelpdeskArticles.AGE_GATE) };
   obj1.children = intl2.format(arg1(closure_2[10]).t.n3QjDE, obj2);

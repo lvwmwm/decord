@@ -1,5 +1,5 @@
 // Module ID: 8103
-// Function ID: 64194
+// Function ID: 64204
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -87,6 +87,6 @@ const tmp3 = (arg0) => {
   return callback(RadialGradient, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "RadialGradient";
-tmp3.defaultProps = { v: null, Reflect: null, jsxs: null };
+tmp3.defaultProps = { <string:629464489>: null, <string:380965795>: null, <string:116544181>: null };
 
 export default tmp3;

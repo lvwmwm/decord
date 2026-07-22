@@ -1,5 +1,5 @@
 // Module ID: 7603
-// Function ID: 60969
+// Function ID: 60979
 // Name: REMEDIATION_ELEMENT_TYPES
 // Dependencies: []
 
@@ -7,4 +7,4 @@
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/in_app_reports/MenuConstants.tsx");
 
-export const REMEDIATION_ELEMENT_TYPES = ["discord_protos.discord_experimentation.v1.PlatformVersionRange", "discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", "discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientRequiredChanges", "discord_protos.discord_experimentation.v1.UserIsBot", "discord_protos.discord_experimentation.v1.UserAgeRange"];
+export const REMEDIATION_ELEMENT_TYPES = [];

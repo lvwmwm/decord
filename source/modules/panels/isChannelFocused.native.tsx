@@ -1,10 +1,17 @@
-// Module ID: 10216
-// Function ID: 78937
+// Module ID: 10217
+// Function ID: 78950
 // Name: getFocusedChannelId
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
 // Exports: isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10216 (getFocusedChannelId)
+// Module 10217 (getFocusedChannelId)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { CHANNEL_PREFIX } from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+
 function getFocusedChannelId() {
   const rootNavigationRef = arg1(dependencyMap[7]).getRootNavigationRef();
   const obj = arg1(dependencyMap[7]);
@@ -142,14 +149,8 @@ function getFocusedChannelId() {
 function isChannelFocused() {
   return null != getFocusedChannelId();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const CHANNEL_PREFIX = arg1(dependencyMap[3]).CHANNEL_PREFIX;
-let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = null;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
 
 export { getFocusedChannelId };
 export { isChannelFocused };

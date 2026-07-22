@@ -1,10 +1,10 @@
-// Module ID: 14958
-// Function ID: 112561
+// Module ID: 14966
+// Function ID: 112604
 // Name: useIsGameServerTabAlwaysOnEnabled
 // Dependencies: []
 // Exports: useIsGameServerTabAlwaysOnEnabled
 
-// Module 14958 (useIsGameServerTabAlwaysOnEnabled)
+// Module 14966 (useIsGameServerTabAlwaysOnEnabled)
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

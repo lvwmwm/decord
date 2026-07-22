@@ -1,9 +1,9 @@
-// Module ID: 15581
-// Function ID: 118905
+// Module ID: 15589
+// Function ID: 118948
 // Name: useBaseActivityPanelHeaderContent
 // Dependencies: []
 
-// Module 15581 (useBaseActivityPanelHeaderContent)
+// Module 15589 (useBaseActivityPanelHeaderContent)
 let StyleSheet;
 function useBaseActivityPanelHeaderContent(landscape) {
   let pipState;
@@ -182,8 +182,8 @@ obj["flexDirection"] = "row";
 obj["gap"] = 8;
 obj.panelHeader = obj;
 obj.panelLandscape = { flexDirection: "column-reverse" };
-obj.headerContainer = { force: null, trackAnalytics: null };
-obj1 = { 1446733789: "<string:327708980>", 1404461660: "<string:406913024>", -398372460: "<string:1627390549>", 22137953: "<string:617501431>", -25538045: 219038247, -397232566: -918421502, 1656695610: 1091633153, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.headerContainer = { 10360: 40, 10496: 40 };
+obj1 = { marginTop: true, padding: true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.pullIndicator = obj1;
 let closure_14 = obj1.createStyles(obj);
 let closure_15 = { code: "function ActivityPanelHeaderTsx1(){const{runOnJS,setMode,ActivityPanelModes}=this.__closure;runOnJS(setMode)(ActivityPanelModes.PIP);}" };

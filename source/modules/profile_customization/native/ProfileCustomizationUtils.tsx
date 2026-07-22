@@ -1,5 +1,5 @@
 // Module ID: 7877
-// Function ID: 62709
+// Function ID: 62719
 // Name: useEditBannerSource
 // Dependencies: [6, 7, 1851, 6853]
 // Exports: getAvatarSource, useEditBannerSource, useUserProfileBannerBackgroundColor
@@ -25,7 +25,7 @@ export const useEditBannerSource = function useEditBannerSource(arg0) {
       if (null != guildId) {
         let bannerURL;
         if (null != displayProfile) {
-          bannerURL = displayProfile.getBannerURL({ "Bool(false)": null, "Bool(false)": null });
+          bannerURL = displayProfile.getBannerURL({ butt: null, square: null });
         }
         source = require(dependencyMap[1]).makeSource(bannerURL);
         const obj2 = require(dependencyMap[1]);

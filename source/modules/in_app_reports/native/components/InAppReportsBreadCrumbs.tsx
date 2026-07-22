@@ -1,15 +1,15 @@
-// Module ID: 12213
-// Function ID: 93774
+// Module ID: 12218
+// Function ID: 93802
 // Name: Breadcrumbs
 // Dependencies: []
 // Exports: default
 
-// Module 12213 (Breadcrumbs)
+// Module 12218 (Breadcrumbs)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { justifyContent: 1375732375, flexDirection: 168038687, marginRight: 37403206, columnGap: 26103040 }, title: {}, breadCrumbItemContainer: {} };
+obj = { container: {}, title: {}, breadCrumbItemContainer: { "Bool(true)": 4095, alignSelf: 259064320, minHeight: 1358954496, flexDirection: 979450364, paddingHorizontal: 1649 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
 obj.breadCrumbDot = obj;
 const tmp3 = arg1(dependencyMap[2]);
@@ -35,7 +35,7 @@ export default function Breadcrumbs(element) {
         let tmp;
         [tmp] = destination.destination;
         const multiSelect = destination.multiSelect;
-        const items = [true, true];
+        const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
         let state;
         if (null != multiSelect) {
           state = multiSelect.state;
@@ -58,7 +58,7 @@ export default function Breadcrumbs(element) {
       } else {
         obj = { style: tmp3.container };
         let map = arg1(dependencyMap[6]).Text;
-        let obj1 = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp3.title };
+        let obj1 = { 9223372036854775807: true, 0: true, 0: true, style: tmp3.title };
         const REPORT_TO_MOD = arg1(dependencyMap[7]).ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(element.menuName);
         const intl = arg1(dependencyMap[8]).intl;
@@ -98,7 +98,7 @@ export default function Breadcrumbs(element) {
         let tmp;
         [tmp] = destination.destination;
         const multiSelect = destination.multiSelect;
-        const items = [true, true];
+        const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
         let state;
         if (null != multiSelect) {
           state = multiSelect.state;

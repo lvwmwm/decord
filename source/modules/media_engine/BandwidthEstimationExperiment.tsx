@@ -1,9 +1,9 @@
-// Module ID: 12634
-// Function ID: 97238
+// Module ID: 12639
+// Function ID: 97266
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12634 (_createForOfIteratorHelperLoose)
+// Module 12639 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let closure_0 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -84,14 +84,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 const _module = require(dependencyMap[0]);
-let obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { "Null": "<string:2991652865>", "Null": "<string:1262555420>", "Null": "<string:16777600>" } };
-const items = [obj, { config: {} }, { config: {} }, , , ];
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: false, 炖锅: false, config: {} };
-items[3] = obj;
-items[4] = { config: { "Null": "URLSearchParams", "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" } };
-const obj1 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000170814807357726, 炖锅: -0.000000000000000000000000000000026192696286423567, config: {} };
+let obj = { shapes: null, flex: null, sk: null, defaultConfig: {} };
+obj = { displayNameStylesEnabled: "isArray", submitButtonEnabled: "useActionState", config: { textInputRef: "URL", recomputeLayouts: true, addWindow: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" } };
+const items = [obj, { config: {} }, { config: {} }, { config: { textInputRef: false, recomputeLayouts: false, addWindow: false } }, { config: { textInputRef: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", recomputeLayouts: null, addWindow: "27ab9102761827eca8b7549277a16631" } }, ];
+const obj1 = { displayNameStylesEnabled: "comp_1", submitButtonEnabled: "+MAIN", config: { textInputRef: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", recomputeLayouts: null, addWindow: "0c6f358ef2734a5db0ebdc4f2c7ef135" } };
 items[5] = obj1;
-let closure_0 = _module.createExperiment({ defaultConfig: {}, treatments: items });
+obj.treatments = items;
+let closure_0 = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/media_engine/BandwidthEstimationExperiment.tsx");
 

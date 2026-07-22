@@ -1,10 +1,10 @@
-// Module ID: 10002
-// Function ID: 77312
+// Module ID: 10003
+// Function ID: 77325
 // Name: GatedContent
 // Dependencies: []
 // Exports: default
 
-// Module 10002 (GatedContent)
+// Module 10003 (GatedContent)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
@@ -13,7 +13,7 @@ obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_
 obj.container = obj;
 obj.title = { textAlign: "center" };
 obj.description = { textAlign: "center" };
-obj.buttonGroup = { 0: 0, 0: 8 };
+obj.buttonGroup = { 0: null, 0: null };
 let closure_5 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("components_native/warnings/GatedContent.tsx");
@@ -65,7 +65,9 @@ export default function GatedContent(onAgree) {
   let obj = { spacing: 16, style: tmp.container };
   obj = { align: "center" };
   obj = { style: tmp.title, children: title };
-  const items3 = [channelId(arg1(dependencyMap[6]).Text, obj), subtitle, channelId(arg1(dependencyMap[6]).Text, { style: tmp.description, children: description })];
+  const items3 = [channelId(arg1(dependencyMap[6]).Text, obj), subtitle, ];
+  const obj1 = { margin: true, paddingHorizontal: true, height: true, alignItems: true, style: tmp.description, children: description };
+  items3[2] = channelId(arg1(dependencyMap[6]).Text, obj1);
   obj.children = items3;
   const items4 = [guildId(arg1(dependencyMap[5]).Stack, obj), ];
   const obj2 = { style: tmp.buttonGroup };

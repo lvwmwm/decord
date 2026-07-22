@@ -1,5 +1,5 @@
 // Module ID: 6895
-// Function ID: 54899
+// Function ID: 54910
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 5, 6910, 3986, 2, 6, 7, 15, 17, 18, 27, 6913]
 
@@ -99,7 +99,7 @@ let closure_12 = false;
 let tmp4 = () => {
   class UserSearchItems {
     constructor() {
-      f54906 = this;
+      f54917 = this;
       tmp = asyncGeneratorStep(this, UserSearchItems);
       this.actions = {
         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,

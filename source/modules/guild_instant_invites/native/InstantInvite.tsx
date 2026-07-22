@@ -1,10 +1,10 @@
-// Module ID: 10159
-// Function ID: 78555
+// Module ID: 10160
+// Function ID: 78568
 // Name: LinkedChannelInvite
 // Dependencies: []
 // Exports: LinkedChannelInvite
 
-// Module 10159 (LinkedChannelInvite)
+// Module 10160 (LinkedChannelInvite)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).createChannelRecordFromInvite;
@@ -35,8 +35,8 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   }, items1);
   let tmp5 = memo1.length > 0 && null != id;
   obj = {};
-  obj = { 0: true, -9223372036854775808: true };
-  const obj1 = { Set: null, Icon: null, children: invite.code };
+  obj = { "Null": true, "Null": true };
+  const obj1 = { "Bool(false)": null, "Bool(false)": null, children: invite.code };
   const items2 = [
     callback(arg1(dependencyMap[17]).Text, obj1),
     callback(arg1(dependencyMap[18]).ContextMenu, {
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   }
   let tmp15Result = null;
   if (null != id1) {
-    const obj7 = { bind: null, cursor: null };
+    const obj7 = { 400888199: null, 2091392542: null };
     const inviter2 = invite.inviter;
     let id2;
     if (null != inviter2) {
@@ -163,7 +163,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
     return items;
   }, items1);
   obj = {};
-  obj = { 0: true, -9223372036854775808: true };
+  obj = { "Null": true, "Null": true };
   obj1 = { style: tmp.gameWrapper };
   const obj2 = { game: getOrFetchApplication };
   const tmp12 = View;
@@ -202,7 +202,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   const obj6 = { style: tmp.creatorWrapper };
   let tmp18 = null;
   if (null != linked_by) {
-    const obj7 = { bind: null, cursor: null, userId: linked_by, guildId: channel.guild_id };
+    const obj7 = { 400888199: null, 2091392542: null, userId: linked_by, guildId: channel.guild_id };
     tmp18 = callback(importDefault(dependencyMap[21]), obj7);
   }
   obj6.children = tmp18;

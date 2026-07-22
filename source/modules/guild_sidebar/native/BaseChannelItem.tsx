@@ -1,10 +1,10 @@
-// Module ID: 11413
-// Function ID: 88750
+// Module ID: 11414
+// Function ID: 88763
 // Name: BaseChannelSubtitle
 // Dependencies: []
 // Exports: BaseChannelIcon, BaseChannelName, default
 
-// Module 11413 (BaseChannelSubtitle)
+// Module 11414 (BaseChannelSubtitle)
 class BaseChannelSubtitle {
   constructor(arg0) {
     subtitle = global.subtitle;
@@ -35,14 +35,14 @@ function useChannelNameTextProps(channelMode) {
   if (channelMode !== obj.UNREAD_IMPORTANT) {
     if (channelMode !== obj.RELEVANT) {
       if (channelMode === obj.UNREAD_LESS_IMPORTANT) {
-        let obj = { hasMaxConnections: "<string:544378919>", isBoostOnlySubscription: "<string:536870912>" };
+        let obj = { cachedAt: "track", edpbxy: "from" };
       } else if (channelMode === obj.MUTED) {
-        obj = {};
+        obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
       } else {
-        obj = channelMode === obj.SELECTED ? {} : { hasMaxConnections: "<string:544378919>", isBoostOnlySubscription: "<string:536870912>" };
+        obj = channelMode === obj.SELECTED ? {} : { cachedAt: "track", edpbxy: "from" };
       }
     }
-    return { hasMaxConnections: "Group 8", isBoostOnlySubscription: 1 };
+    return { cachedAt: "Group 8", edpbxy: 1 };
   }
 }
 function getChannelSubtitleTextProps(channelMode) {
@@ -50,7 +50,7 @@ function getChannelSubtitleTextProps(channelMode) {
     if (channelMode !== obj.RELEVANT) {
       if (channelMode !== obj.SELECTED) {
         const MUTED = obj.MUTED;
-        const obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+        const obj = { cachedAt: "center", edpbxy: "center" };
       }
       return {};
     }
@@ -68,7 +68,7 @@ let closure_9 = obj.createStyles((arg0) => {
   obj.rowSelected = obj;
   obj = { left: -importDefault(dependencyMap[6]).space.PX_8 };
   obj.unreadIndicator = obj;
-  const obj1 = { <string:1549954009>: "usePubSub", <string:67064148>: "Array", <string:2018617953>: "ERNhYf" };
+  const obj1 = { -9223372036854775808: 24, 9223372036854775807: 24, 0: null };
   let num = 1;
   let num2 = 1;
   if (arg0 === obj.MUTED) {
@@ -88,9 +88,9 @@ let closure_9 = obj.createStyles((arg0) => {
   obj.channelIconUnread = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
   const obj4 = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
   obj.channelIconMuted = { tintColor: importDefault(dependencyMap[6]).colors.ICON_MUTED };
-  obj.channel = { style: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, type: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054740875319, activeOpacity: 15.1, underlayColor: null, innerRef: "\u{1F9D1}\u{1F3FE}\u200D\u{1F9BD}\u200D\u27A1\uFE0F" };
-  obj.channelNameContainer = { 1962313087: "Array", 1104954998: "isArray", 290881: "r", 1250711380: "padding" };
-  const obj6 = { lineHeight: CHANNEL_TITLE_LINE_HEIGHT };
+  obj.channel = { 1331449251: "\u{1F937}\u{1F3FF}", 195802716: true, 141664590: null, -252920092: 9, 49536296: null };
+  obj.channelNameContainer = {};
+  const obj6 = { 0: null, 9223372036854775807: 60, lineHeight: CHANNEL_TITLE_LINE_HEIGHT };
   if (arg0 === obj.MUTED) {
     num = 0.5;
   }
@@ -121,7 +121,7 @@ export default function BaseChannelItem(mode) {
   if (unread === undefined) {
     unread = false;
   }
-  let obj = {};
+  let obj = { forEach: 0.6, PX_8: "BounceOut", transform: null, next: 0.6, body: "BounceOutRight", color: null, accessibilityRole: 0.6, space: "BounceOutLeft" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(mode, obj);
   let dependencyMap;

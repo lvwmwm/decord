@@ -1,10 +1,10 @@
-// Module ID: 11622
-// Function ID: 90255
+// Module ID: 11623
+// Function ID: 90268
 // Name: MuteAppDMActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11622 (MuteAppDMActionSheet)
+// Module 11623 (MuteAppDMActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -13,14 +13,14 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.sheet = obj;
 obj.iconContainer = {};
-obj.iconBackground = { "Null": "row", "Null": "center" };
+obj.iconBackground = {};
 obj.content = { padding: 16 };
 obj.headerText = {};
-obj.infoText = { unicodeVersion: "<string:2255552513>", TypeError: "<string:16777216>", body: "%MapPrototype%" };
+obj.infoText = {};
 obj.dismissButtonContainer = { marginTop: 8 };
-const obj1 = { "Null": 17891330, "Null": -1002126767, "Null": -167771276, "Null": -167771414, "Null": -167771414, "Null": 1912603370, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+const obj1 = { Text: null, a: "center", Set: "center", url: -352059390, children: -353173502, Object: -352059390, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 obj.mutedNotificationContainer = obj1;
-obj.mutedNotification = {};
+obj.mutedNotification = { "Null": null, "Null": null };
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/notifications/settings/native/MuteAppDmActionSheet.tsx");
@@ -37,11 +37,11 @@ export default function MuteAppDMActionSheet(channel) {
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.uAmAiL);
   obj.children = callback(importDefault(dependencyMap[6]), obj1);
   const items = [callback(View, obj), , , , ];
-  const obj2 = { style: tmp.headerText };
+  const obj2 = { cachedAt: true, edpbxy: true, style: tmp.headerText };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[8]).t.uAmAiL);
   items[1] = callback(arg1(dependencyMap[9]).Text, obj2);
-  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.infoText };
+  const obj3 = { cachedAt: 1, edpbxy: 1, style: tmp.infoText };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[8]).t.mscFJU);
   items[2] = callback(arg1(dependencyMap[9]).Text, obj3);

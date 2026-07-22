@@ -1,14 +1,13 @@
-// Module ID: 10128
-// Function ID: 78404
+// Module ID: 10129
+// Function ID: 78417
 // Name: useShouldShowHelplineLink
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: useShouldShowThroughlineLink
 
-// Module 10128 (useShouldShowHelplineLink)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
+// Module 10129 (useShouldShowHelplineLink)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
 function useShouldShowHelplineLink() {
   const tmp = importDefault(dependencyMap[3])();
@@ -39,7 +38,7 @@ function useShouldShowHelplineLink() {
 }
 const set = new Set([]);
 const set1 = new Set([0, 5]);
-result = result.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
 
 export { useShouldShowHelplineLink };
 export const useShouldShowThroughlineLink = function useShouldShowThroughlineLink() {

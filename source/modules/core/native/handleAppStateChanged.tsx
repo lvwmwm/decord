@@ -1,10 +1,10 @@
-// Module ID: 16464
-// Function ID: 127210
+// Module ID: 16472
+// Function ID: 127252
 // Name: handleAppStateChanged
-// Dependencies: []
+// Dependencies: [4294967295]
 // Exports: default
 
-// Module 16464 (handleAppStateChanged)
+// Module 16472 (handleAppStateChanged)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ AnalyticEvents: closure_5, AppStates: closure_6 } = arg1(dependencyMap[2]));

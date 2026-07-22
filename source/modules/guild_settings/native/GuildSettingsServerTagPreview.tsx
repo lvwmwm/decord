@@ -1,10 +1,10 @@
-// Module ID: 12799
-// Function ID: 98093
+// Module ID: 12806
+// Function ID: 98126
 // Name: GuildSettingsServerTagPreview
 // Dependencies: []
 // Exports: default
 
-// Module 12799 (GuildSettingsServerTagPreview)
+// Module 12806 (GuildSettingsServerTagPreview)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -22,13 +22,13 @@ obj.notice = { marginBottom: importDefault(dependencyMap[8]).space.PX_12 };
 const obj1 = { marginBottom: importDefault(dependencyMap[8]).space.PX_12 };
 obj.message = { columnGap: importDefault(dependencyMap[8]).space.PX_12 };
 obj.unfocused = { opacity: 0.5 };
-const obj2 = { columnGap: importDefault(dependencyMap[8]).space.PX_12 };
-obj.avatar = { borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj3 = { "Null": "isArray", "Null": "c", borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj.avatar = obj3;
 obj.messageBody = { flex: 1 };
-const obj4 = { "Null": 7, "Null": 370, columnGap: importDefault(dependencyMap[8]).space.PX_4 };
+const obj4 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", columnGap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.usernameRow = obj4;
 let closure_13 = obj.createStyles(obj);
-const obj3 = { borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj2 = { columnGap: importDefault(dependencyMap[8]).space.PX_12 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPreview.tsx");
 
 export default function GuildSettingsServerTagPreview(guildId) {
@@ -83,7 +83,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const items1 = [guildId, onAdopted];
   obj = {};
   const callback = React.useCallback(callback(tmp), items1);
-  obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp2.notice };
+  obj = { cachedAt: "y", edpbxy: "isArray", style: tmp2.notice };
   const intl = arg1(closure_2[14]).intl;
   const string = intl.string;
   const t = arg1(closure_2[14]).t;
@@ -102,7 +102,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const items4 = [callback3(closure_6, obj3), ];
   const obj4 = { style: tmp2.messageBody };
   const items5 = [callback3(arg1(closure_2[13]).Text, {}), ];
-  const obj5 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+  const obj5 = { cachedAt: 1, edpbxy: 1 };
   const intl2 = arg1(closure_2[14]).intl;
   obj5.children = intl2.string(arg1(closure_2[14]).t.KZQ4mF);
   items5[1] = callback3(arg1(closure_2[13]).Text, obj5);
@@ -114,7 +114,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const items7 = [callback3(closure_6, { source, style: tmp2.avatar, importantForAccessibility: "no" }), ];
   const obj8 = { style: tmp2.messageBody };
   const obj9 = { style: tmp2.usernameRow };
-  const obj10 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: name };
+  const obj10 = { cachedAt: null, edpbxy: "Array", children: name };
   const items8 = [callback3(arg1(closure_2[13]).Text, obj10), ];
   let tmp18Result = null != tag;
   if (tmp18Result) {
@@ -146,7 +146,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   items8[1] = tmp18Result;
   obj9.children = items8;
   const items9 = [callback4(closure_7, obj9), ];
-  const obj13 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+  const obj13 = { cachedAt: 1, edpbxy: 1 };
   const intl3 = arg1(closure_2[14]).intl;
   obj13.children = intl3.string(arg1(closure_2[14]).t.LKsPRe);
   items9[1] = callback3(arg1(closure_2[13]).Text, obj13);
@@ -159,8 +159,8 @@ export default function GuildSettingsServerTagPreview(guildId) {
   ({ message: arr11[0], unfocused: arr11[1] } = tmp2);
   const items11 = [callback3(closure_6, { source: importDefault(closure_2[19]), style: tmp2.avatar, importantForAccessibility: "no" }), ];
   const obj16 = { style: tmp2.messageBody };
-  const items12 = [callback3(arg1(closure_2[13]).Text, { deer: "va", Ufm9XX: "textDecoder", playstationVersion: "PRESS_ADD_WISHLIST_ITEM" }), ];
-  const obj17 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+  const items12 = [callback3(arg1(closure_2[13]).Text, { category: "<string:2013266308>", position: "<string:1107296828>", top: "M4 1H3v1h1V1ZM3 2H2v1h1V2Z" }), ];
+  const obj17 = { cachedAt: 1, edpbxy: 1 };
   const intl4 = arg1(closure_2[14]).intl;
   obj17.children = intl4.string(arg1(closure_2[14]).t.vtCg11);
   items12[1] = callback3(arg1(closure_2[13]).Text, obj17);

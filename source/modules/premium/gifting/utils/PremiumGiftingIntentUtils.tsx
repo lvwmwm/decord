@@ -1,10 +1,10 @@
-// Module ID: 10949
-// Function ID: 85149
+// Module ID: 10950
+// Function ID: 85162
 // Name: GiftIntentType
 // Dependencies: []
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 10949 (GiftIntentType)
+// Module 10950 (GiftIntentType)
 const GiftIntentType = require(dependencyMap[0]).GiftIntentType;
 const AnalyticsLocations = require(dependencyMap[1]).AnalyticsLocations;
 const items = [AnalyticsLocations.FRIEND_ANNIVERSARIES_CHAT, GiftIntentType.FRIEND_ANNIVERSARY];

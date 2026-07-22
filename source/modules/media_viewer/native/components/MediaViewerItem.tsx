@@ -1,9 +1,9 @@
-// Module ID: 12134
-// Function ID: 93484
+// Module ID: 12138
+// Function ID: 93510
 // Name: MediaViewerItem
 // Dependencies: []
 
-// Module 12134 (MediaViewerItem)
+// Module 12138 (MediaViewerItem)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo((index) => {
       const current2 = ref.current;
       ({ width, height } = obj);
       const scrollResponder = current2.getScrollResponder();
-      obj = { width, height, animated: flag };
+      obj = { 0: "%FunctionPrototype%", 0: "paddingStart", width, height, animated: flag };
       const result = scrollResponder.scrollResponderZoomTo(obj);
     } else if (null !== ref1.current) {
       const current = ref1.current;

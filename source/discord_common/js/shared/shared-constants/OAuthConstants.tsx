@@ -1,9 +1,9 @@
-// Module ID: 12768
-// Function ID: 97880
+// Module ID: 12775
+// Function ID: 97913
 // Name: OAuthConstants
 // Dependencies: []
 
-// Module 12768 (OAuthConstants)
+// Module 12775 (OAuthConstants)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/OAuthConstants.tsx");
 

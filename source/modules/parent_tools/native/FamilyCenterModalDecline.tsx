@@ -1,10 +1,10 @@
-// Module ID: 13708
-// Function ID: 103712
+// Module ID: 13715
+// Function ID: 103745
 // Name: FamilyCenterModalDeclineScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13708 (FamilyCenterModalDeclineScreen)
+// Module 13715 (FamilyCenterModalDeclineScreen)
 function FamilyCenterModalDeclineScreen(otherUser) {
   otherUser = otherUser.otherUser;
   const arg1 = otherUser;
@@ -46,7 +46,7 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   const intl2 = arg1(dependencyMap[8]).intl;
   obj5.children = intl2.string(importDefault(dependencyMap[16]).cXgKMD);
   const items3 = [callback(arg1(dependencyMap[15]).Text, obj5), ];
-  const obj6 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+  const obj6 = {};
   const intl3 = arg1(dependencyMap[8]).intl;
   obj6.children = intl3.string(importDefault(dependencyMap[16]).LcM8BS);
   items3[1] = callback(arg1(dependencyMap[15]).Text, obj6);

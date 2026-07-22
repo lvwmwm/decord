@@ -1,18 +1,17 @@
-// Module ID: 16308
-// Function ID: 125846
+// Module ID: 16316
+// Function ID: 125888
 // Name: pushTierEditScene
 // Dependencies: [0, 0, 0, 0]
 // Exports: pushTierEditScene, pushTierTemplateSelectionScene
 
-// Module 16308 (pushTierEditScene)
-import closure_2 from "result";
-import { GuildSettingsSections } from "result";
-import result from "result";
+// Module 16316 (pushTierEditScene)
+import __exportStarResult1 from "__exportStarResult1";
+import { GuildSettingsSections } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/native/GuildRoleSettingsActionCreators.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_role_subscriptions/native/GuildRoleSettingsActionCreators.tsx");
 
 export const pushTierEditScene = function pushTierEditScene(arr, arg1) {
-  closure_2.resetImperatively();
+  __exportStarResult1.resetImperatively();
   arr.push(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_EDIT, arg1);
   importDefault(dependencyMap[2]).setSection(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_EDIT);
 };

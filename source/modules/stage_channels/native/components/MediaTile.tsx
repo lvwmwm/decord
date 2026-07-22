@@ -1,14 +1,14 @@
-// Module ID: 10772
-// Function ID: 83692
+// Module ID: 10773
+// Function ID: 83705
 // Dependencies: []
 
-// Module 10772
+// Module 10773
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const ParticipantTypes = arg1(dependencyMap[3]).ParticipantTypes;
 const jsx = arg1(dependencyMap[4]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let obj = { container: { call: "getDebugMetadata", header: "getAudioMixerSettings", replace: "getChannelPermissionSpecMap" } };
+let obj = { container: {} };
 obj = { flex: 1, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.media = obj;
 let closure_7 = arg1(dependencyMap[5]).createStyles(obj);
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo((channel) => {
       const obj5 = arg1(dependencyMap[7]);
       items2[2] = arg1(dependencyMap[7]).getTileWidthStyle(size, importDefault(dependencyMap[8])().width, isScreenLandscape);
       obj.style = items2;
-      obj = { QUEST_HOME_SEARCH_ENTERED: false, sort: false, isSameDay: false, opened: false, participant: stateFromStores };
+      obj = { accessibilityElementsHidden: false, importantForAccessibility: null, Illustration: false, title: false, participant: stateFromStores };
       const obj6 = arg1(dependencyMap[7]);
       obj.avatarSize = arg1(dependencyMap[12]).AvatarSizes.XLARGE;
       obj.channel = channel;

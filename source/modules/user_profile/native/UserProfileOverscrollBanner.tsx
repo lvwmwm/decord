@@ -1,10 +1,10 @@
-// Module ID: 8503
-// Function ID: 67857
+// Module ID: 8504
+// Function ID: 67869
 // Name: UserProfileOverscrollBanner
 // Dependencies: []
 // Exports: default
 
-// Module 8503 (UserProfileOverscrollBanner)
+// Module 8504 (UserProfileOverscrollBanner)
 importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -19,7 +19,7 @@ export default function UserProfileOverscrollBanner(arg0) {
   let blurAnimatedProps;
   let privateBanner;
   let showBlur;
-  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+  let obj = { SAR: false, enableContentProtection: false, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: false, alignSelf: false, margin: false };
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur, privateBanner } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

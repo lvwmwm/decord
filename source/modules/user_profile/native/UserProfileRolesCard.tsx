@@ -1,10 +1,10 @@
-// Module ID: 5485
-// Function ID: 46802
+// Module ID: 5484
+// Function ID: 46810
 // Name: RoleDot
 // Dependencies: []
 // Exports: default
 
-// Module 5485 (RoleDot)
+// Module 5484 (RoleDot)
 function RoleDot(color) {
   color = color.color;
   let obj = {};
@@ -165,10 +165,10 @@ let closure_6 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { roleContainer: { stiffness: false, damping: false, mass: false } };
-obj = { 9223372036854775807: 410124289, 9223372036854775807: 402653184, 0: 16777216, 0: 21989186, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { roleContainer: {} };
+obj = { -871710126: 65535, -1878764875: 1912668160, -1956545097: 1, 76486723: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.role = obj;
-const obj1 = { <string:827548257>: "r", <string:4257773646>: "_randomPrefix", <string:1364418947>: "r", borderRadius: importDefault(dependencyMap[7]).radii.round };
+const obj1 = { "Bool(false)": "headerChannelContainer", "Bool(false)": "targetFrames", "Bool(false)": "jest", borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.roleDot = obj1;
 let closure_12 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);

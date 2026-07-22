@@ -1,10 +1,10 @@
-// Module ID: 11520
-// Function ID: 89763
+// Module ID: 11521
+// Function ID: 89776
 // Name: usePowerupsActiveStatuses
 // Dependencies: []
 // Exports: default, isPowerupActiveStatusActive
 
-// Module 11520 (usePowerupsActiveStatuses)
+// Module 11521 (usePowerupsActiveStatuses)
 function usePowerupsActiveStatuses(guildId, powerups) {
   powerups = guildId;
   function getPowerupActiveStatus(skuId) {

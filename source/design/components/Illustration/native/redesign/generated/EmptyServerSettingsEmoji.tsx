@@ -1,10 +1,10 @@
-// Module ID: 16134
-// Function ID: 124395
+// Module ID: 16142
+// Function ID: 124437
 // Name: getEmptyServerSettingsEmojiSource
 // Dependencies: []
 // Exports: EmptyServerSettingsEmoji
 
-// Module 16134 (getEmptyServerSettingsEmojiSource)
+// Module 16142 (getEmptyServerSettingsEmojiSource)
 function getEmptyServerSettingsEmojiSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

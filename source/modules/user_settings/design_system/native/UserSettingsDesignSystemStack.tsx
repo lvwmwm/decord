@@ -1,10 +1,10 @@
-// Module ID: 14333
-// Function ID: 108230
+// Module ID: 14341
+// Function ID: 108273
 // Name: StackBlock
 // Dependencies: []
 // Exports: default
 
-// Module 14333 (StackBlock)
+// Module 14341 (StackBlock)
 function StackBlock() {
   return callback(closure_2, { style: callback3().block });
 }
@@ -13,7 +13,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+obj = { container: { split: true, pos: true, borderRadius: true } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, height: 80, flex: 1 };
 obj.block = obj;
 let closure_6 = obj.createStyles(obj);
@@ -26,7 +26,7 @@ export default function UserSettingsDesignSystemStack() {
   obj = { spacing: 16 };
   const obj1 = {};
   const obj2 = {};
-  const items = [callback(arg1(dependencyMap[7]).Text, { <string:1749439162>: true, <string:140675621>: "/assets/images/native/icons" }), callback(arg1(dependencyMap[7]).Text, { deer: "heading-lg/bold", Ufm9XX: "Switch", playstationVersion: "text-md/normal" }), ];
+  const items = [callback(arg1(dependencyMap[7]).Text, { <string:2807142664>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000340856967874354, <string:1446667417>: 0.000000000000000000000000000022341490065414857 }), callback(arg1(dependencyMap[7]).Text, { category: true, position: true, top: true }), ];
   const obj3 = {};
   const items1 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj3.children = items1;
@@ -36,7 +36,7 @@ export default function UserSettingsDesignSystemStack() {
   const items2 = [callback(arg1(dependencyMap[6]).Card, obj1), , ];
   const obj4 = {};
   const obj5 = {};
-  const items3 = [callback(arg1(dependencyMap[7]).Text, {}), callback(arg1(dependencyMap[7]).Text, { deer: "Display images, videos, and lolcats", Ufm9XX: false, playstationVersion: "Disabled switch item" }), ];
+  const items3 = [callback(arg1(dependencyMap[7]).Text, { <string:2807142664>: true, <string:1446667417>: true }), callback(arg1(dependencyMap[7]).Text, { category: true, position: true, top: true }), ];
   const obj6 = { spacing: 24 };
   const items4 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj6.children = items4;
@@ -46,7 +46,7 @@ export default function UserSettingsDesignSystemStack() {
   items2[1] = callback(arg1(dependencyMap[6]).Card, obj4);
   const obj7 = {};
   const obj8 = {};
-  const items5 = [callback(arg1(dependencyMap[7]).Text, { <string:1749439162>: 554762241, <string:140675621>: 27676226 }), callback(arg1(dependencyMap[7]).Text, {}), ];
+  const items5 = [callback(arg1(dependencyMap[7]).Text, { <string:2807142664>: "Don't show role colors", <string:1446667417>: "no-color" }), callback(arg1(dependencyMap[7]).Text, { category: "heading-lg/bold", position: "Switch", top: "text-md/normal" }), ];
   const obj9 = { direction: "horizontal" };
   const items6 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj9.children = items6;

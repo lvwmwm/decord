@@ -1,10 +1,10 @@
-// Module ID: 15515
-// Function ID: 118390
+// Module ID: 15523
+// Function ID: 118433
 // Name: updateTheme
 // Dependencies: []
 // Exports: updateTheme
 
-// Module 15515 (updateTheme)
+// Module 15523 (updateTheme)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/themes/native/updateTheme.tsx");

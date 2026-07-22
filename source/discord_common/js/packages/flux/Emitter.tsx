@@ -1,10 +1,11 @@
 // Module ID: 570
 // Function ID: 6917
 // Name: logger
-// Dependencies: []
+// Dependencies: [0, 4294967295, 4294967295, 4294967295, 0]
 
 // Module 570 (logger)
-let closure_2 = importDefault(dependencyMap[0]);
+import __exportStarResult1 from "__exportStarResult1";
+
 let closure_3 = importDefault(dependencyMap[1]);
 const logger = new arg1(dependencyMap[2]).Logger("Flux");
 function batchEmitChanges(arg0) {
@@ -13,7 +14,7 @@ function batchEmitChanges(arg0) {
 let tmp3 = () => {
   class Emitter {
     constructor() {
-      tmp = closure_2(this, Emitter);
+      tmp = __exportStarResult1(this, Emitter);
       set = new Set();
       this.changedStores = set;
       set1 = new Set();
@@ -243,6 +244,6 @@ let tmp3 = () => {
   return callback(Emitter, items);
 }();
 tmp3 = new tmp3();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("../discord_common/js/packages/flux/Emitter.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/flux/Emitter.tsx");
 
 export default tmp3;

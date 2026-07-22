@@ -1,5 +1,5 @@
 // Module ID: 6717
-// Function ID: 52210
+// Function ID: 52221
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -93,7 +93,7 @@ importDefaultResult = new importDefaultResult("ReadStates");
 let tmp4 = () => {
   class ReadStates {
     constructor() {
-      f52221 = this;
+      f52232 = this;
       tmp = closure_3(this, ReadStates);
       this.readStateVersion = null;
       this.actions = {

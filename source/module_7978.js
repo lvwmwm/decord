@@ -1,9 +1,9 @@
 // Module ID: 7978
-// Function ID: 63506
+// Function ID: 63516
 // Dependencies: []
 
 // Module 7978
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "arrows_clockwise", "Bool(false)": "getBlockedUsersForVoiceChannel", "Bool(false)": "SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_FRIENDS", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "consumedInboundPromotionId", "Bool(false)": "REACTION_BACKGROUND_DEFAULT", "Bool(false)": "_removeIframe", scales: ["Set", "ml"] };
+const obj = { 1358955657: "Text", 1279501871: "messageId", -100662186: "i", -134216521: "r", 1375732845: "isArray", -1598249400: "LIGHT", -117286062: "isArray", 978739886: "isArray", scales: ["<string:24264687>", "isArray"] };
 
 export default _module.registerAsset(obj);

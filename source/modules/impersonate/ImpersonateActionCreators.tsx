@@ -1,10 +1,10 @@
-// Module ID: 5334
-// Function ID: 45461
+// Module ID: 5061
+// Function ID: 43871
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5334 (_createForOfIteratorHelperLoose)
+// Module 5061 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

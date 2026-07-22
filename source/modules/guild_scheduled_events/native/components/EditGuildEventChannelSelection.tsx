@@ -1,10 +1,10 @@
-// Module ID: 8397
-// Function ID: 66839
+// Module ID: 8398
+// Function ID: 66851
 // Name: EditGuildEventChannelSelection
 // Dependencies: []
 // Exports: default
 
-// Module 8397 (EditGuildEventChannelSelection)
+// Module 8398 (EditGuildEventChannelSelection)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = { container: { flexDirection: "column" } };
-obj = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+obj = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.channelSelectorButton = obj;
 obj.channelIcon = { marginRight: 8 };
-obj.channelTypeText = {};
+obj.channelTypeText = { "Null": "<string:2126337>", "Null": "<string:2097152>" };
 obj.channelNameText = { flex: 1 };
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
@@ -73,7 +73,7 @@ export default function EditGuildEventChannelSelection(guild) {
   }
   obj = { style: items3 };
   const items3 = [tmp.container, guild.style];
-  obj = { delete: "content", dispatch: "isArray", raw: "isArray", style: tmp.channelTypeText, children: stringResult };
+  obj = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp.channelTypeText, children: stringResult };
   const items4 = [callback(arg1(dependencyMap[19]).Text, obj), ];
   obj1 = { accessibilityLabel: stringResult };
   const intl2 = arg1(dependencyMap[18]).intl;
@@ -158,7 +158,7 @@ export default function EditGuildEventChannelSelection(guild) {
     tmp21 = callback(arg1(dependencyMap[27]).Icon, obj4);
   }
   const items6 = [tmp21, , ];
-  obj5 = { style: tmp.channelNameText, children: tmp4 };
+  obj5 = { "Null": 0.236, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184698513646185, alignItems: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000007170012376140887, style: tmp.channelNameText, children: tmp4 };
   items6[1] = callback(arg1(dependencyMap[19]).Text, obj5);
   obj6 = { source: importDefault(dependencyMap[28]) };
   items6[2] = callback(arg1(dependencyMap[27]).Icon, obj6);

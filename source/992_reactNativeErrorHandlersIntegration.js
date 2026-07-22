@@ -142,7 +142,7 @@ arg5.reactNativeErrorHandlersIntegration = function reactNativeErrorHandlersInte
                       const obj4 = callback(closure_1[3]);
                     }
                     obj.syntheticException = syntheticError;
-                    obj.mechanism = {};
+                    obj.mechanism = { priority: 8592083592.218447, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001669204329980604 };
                     obj.captureException(originalException, obj);
                   });
                   const obj9 = callback(closure_1[2]);
@@ -184,7 +184,7 @@ arg5.reactNativeErrorHandlersIntegration = function reactNativeErrorHandlersInte
                 }
               }();
             }
-          }(Object.assign({ "Bool(false)": "Small", "Bool(false)": "sm", "Bool(false)": "Placeholder" }, closure_0));
+          }(Object.assign({}, closure_0));
         }
     };
     return obj;

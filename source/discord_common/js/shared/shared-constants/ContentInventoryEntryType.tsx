@@ -1,5 +1,5 @@
 // Module ID: 7804
-// Function ID: 62263
+// Function ID: 62273
 // Name: ContentInventoryEntryType
 // Dependencies: []
 

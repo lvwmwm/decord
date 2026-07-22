@@ -95,7 +95,7 @@ const tmp2 = () => {
         const _JSON2 = JSON;
         const text1 = `${`Don't know how to get asset via provided resolver: ${resolver}`}
       Asset: ${JSON.stringify(self.asset, null, "\t")}`;
-        const error = new Error(text1 + "\nPossible resolvers are:" + JSON.stringify([-1638361583, -1084710056], null, "\t"));
+        const error = new Error(text1 + "\nPossible resolvers are:" + JSON.stringify(["r", "isArray"], null, "\t"));
         throw error;
       }
     }

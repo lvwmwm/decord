@@ -1,10 +1,10 @@
-// Module ID: 8623
-// Function ID: 68325
+// Module ID: 8624
+// Function ID: 68337
 // Name: GameGenres
 // Dependencies: []
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8623 (GameGenres)
+// Module 8624 (GameGenres)
 let closure_3 = importDefault(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const GameGenres = tmp2.GameGenres;
@@ -19,7 +19,7 @@ const item = keys.forEach((str) => {
   closure_8[replaced] = frozen[str];
   closure_9[frozen[str]] = replaced;
 });
-const items = [[true, true], ["<string:3573412790>", "<string:2167488456>"], [true, true], ["memo", "s"], ["<string:3573412790>", "<string:1580351432>"]];
+const items = [[0.872, 0.705], [null, null], [true, true], ["<string:3573412790>", "<string:2167488456>"], [null, null]];
 const result = arg1(dependencyMap[7]).fileFinishedImporting("utils/SKUUtils.tsx");
 
 export const getSKUIdFromURL = function getSKUIdFromURL(pathname) {

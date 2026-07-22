@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 78933
+// Module ID: 10216
+// Function ID: 78946
 // Name: computeThreadNotificationSetting
 // Dependencies: []
 // Exports: useThreadNotificationSetting
 
-// Module 10215 (computeThreadNotificationSetting)
+// Module 10216 (computeThreadNotificationSetting)
 function computeThreadNotificationSetting(channel) {
   let obj = arg1;
   let obj2 = arg2;

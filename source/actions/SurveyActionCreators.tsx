@@ -1,10 +1,10 @@
-// Module ID: 9270
-// Function ID: 72456
+// Module ID: 9271
+// Function ID: 72469
 // Name: overrideSurvey
 // Dependencies: []
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 9270 (overrideSurvey)
+// Module 9271 (overrideSurvey)
 let closure_3 = importDefault(dependencyMap[0]);
 const SURVEY_REFETCH_INTERVAL = arg1(dependencyMap[0]).SURVEY_REFETCH_INTERVAL;
 ({ AnalyticEvents: closure_5, NoticeTypes: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[1]));
@@ -83,7 +83,7 @@ export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_see
     }
     return survey1;
   }, () => {
-    callback2(closure_2[2]).dispatch({ "Bool(false)": null, "Bool(false)": null });
+    callback2(closure_2[2]).dispatch({ <string:2700829327>: "{0} a\u00A0{1}", <string:1638794321>: "{0}, {1}" });
   });
 };
 export const surveySeen = function surveySeen(key) {

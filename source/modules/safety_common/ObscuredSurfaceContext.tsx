@@ -1,10 +1,10 @@
-// Module ID: 8620
-// Function ID: 68310
+// Module ID: 8621
+// Function ID: 68322
 // Name: context
 // Dependencies: []
 // Exports: useObscuredSurface
 
-// Module 8620 (context)
+// Module 8621 (context)
 const importAllResult = importAll(dependencyMap[0]);
 const context = importAllResult.createContext({ obscured: false });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/safety_common/ObscuredSurfaceContext.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 15225
-// Function ID: 114982
+// Module ID: 15233
+// Function ID: 115025
 // Name: GuildVoiceChannelSubtitle
 // Dependencies: []
 
-// Module 15225 (GuildVoiceChannelSubtitle)
+// Module 15233 (GuildVoiceChannelSubtitle)
 function GuildVoiceChannelSubtitle(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -99,7 +99,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = arg1(dependencyMap[8]).createStyles({ users: { marginTop: 4 }, subtitle: { marginEnd: 16 }, trailing: { 0: true, 0: true, 9223372036854775807: true } });
+let closure_8 = arg1(dependencyMap[8]).createStyles({ users: { marginTop: 4 }, subtitle: { marginEnd: 16 }, trailing: {} });
 const obj2 = arg1(dependencyMap[8]);
 const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
   let onPress;

@@ -1,5 +1,5 @@
 // Module ID: 7203
-// Function ID: 58011
+// Function ID: 58022
 // Name: enhancedFetch
 // Dependencies: []
 
@@ -18,7 +18,7 @@ export const enhancedFetch = () => {
       str = method;
     }
     obj.method = str;
-    obj.headers = { 268438398: "r", 313070216: "PAYMENT_GATEWAY" };
+    obj.headers = { "Bool(false)": "a_20", "Bool(false)": "rect" };
     if (null != arg1) {
       if (arg1.body) {
         obj = {};

@@ -1,19 +1,20 @@
-// Module ID: 8374
-// Function ID: 66709
+// Module ID: 8375
+// Function ID: 66721
 // Name: ActionSheetDragHandle
-// Dependencies: []
+// Dependencies: [2, 8386, 31]
 
-// Module 8374 (ActionSheetDragHandle)
+// Module 8375 (ActionSheetDragHandle)
+import importAllResult from "result2";
+import module_31 from "module_31";
+import useStableCallback from "useStableCallback";
+
 let DRAG_HANDLE_BAR_HEIGHT;
 let DRAG_HANDLE_HEIGHT;
 let DRAG_HANDLE_PADDING;
-const importAllResult = importAll(dependencyMap[0]);
-({ TouchableWithoutFeedback: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = arg1(dependencyMap[2]));
+({ TouchableWithoutFeedback: closure_3, View: closure_4 } = require("useStableCallback"));
+({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = module_31);
 const jsx = arg1(dependencyMap[3]).jsx;
-const tmp3 = arg1(dependencyMap[2]);
-let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
+let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
 obj.bar = obj;
 let closure_6 = arg1(dependencyMap[4]).createStyles(obj);

@@ -1,10 +1,10 @@
-// Module ID: 8904
-// Function ID: 70275
+// Module ID: 8905
+// Function ID: 70288
 // Name: SecureFramesStreamVerificationBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8904 (SecureFramesStreamVerificationBottomSheet)
+// Module 8905 (SecureFramesStreamVerificationBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticsSections = arg1(dependencyMap[2]).AnalyticsSections;

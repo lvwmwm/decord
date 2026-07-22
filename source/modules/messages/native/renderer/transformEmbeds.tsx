@@ -1,5 +1,5 @@
 // Module ID: 7781
-// Function ID: 62101
+// Function ID: 62111
 // Name: getURL
 // Dependencies: []
 // Exports: default

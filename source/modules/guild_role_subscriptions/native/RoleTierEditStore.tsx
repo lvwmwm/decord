@@ -1,10 +1,10 @@
-// Module ID: 16299
-// Function ID: 125754
+// Module ID: 16307
+// Function ID: 125796
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16299 (_createForOfIteratorHelperLoose)
+// Module 16307 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -120,7 +120,7 @@ function usePriceTiers(guildId) {
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const obj = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
-let closure_7 = Object.freeze({ position: false, bottom: false, right: false, left: false });
+let closure_7 = Object.freeze({ placeholder: 199051673509235200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, maxLength: 206081226602725000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, returnKeyType: 220140332372954660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, variant: 271571397450565000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
 const withEqualityFn = arg1(dependencyMap[3]).createWithEqualityFn((arg0) => {
   const arg1 = arg0;
   const obj = {};

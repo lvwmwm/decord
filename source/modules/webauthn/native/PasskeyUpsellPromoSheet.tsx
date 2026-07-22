@@ -1,10 +1,10 @@
-// Module ID: 13511
-// Function ID: 102526
+// Module ID: 13518
+// Function ID: 102559
 // Name: PasswordlessUpsellPromoSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13511 (PasswordlessUpsellPromoSheet)
+// Module 13518 (PasswordlessUpsellPromoSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const Image = arg1(dependencyMap[2]).Image;
@@ -20,7 +20,7 @@ export default function PasswordlessUpsellPromoSheet() {
     const obj = callback(onRegisterSuccess[6]);
     const result1 = callback(onRegisterSuccess[6]).openPasskeyUpsellPromoModal(closure_2);
   }
-  let obj = { source: callback(onRegisterSuccess[5]), style: { direction: "checkIsOnChannelNavigationRoute", style: "<string:3844887040>", borderWidth: "<string:158435740>" } };
+  let obj = { source: callback(onRegisterSuccess[5]), style: { GifAutoPlay: "construct", lavender: "r", useShouldShowWishlistInDMGifting: "isArray" } };
   const tmp = callback3;
   const tmp2 = callback3(Image, obj);
   const callback = callback2(React.useState(""), 2)[1];
@@ -66,6 +66,8 @@ export default function PasswordlessUpsellPromoSheet() {
   obj1.disabled = tmp5;
   const items = [callback3(callback(onRegisterSuccess[12]).Button, obj1), ];
   obj2 = {
+    <string:1986169986>: null,
+    <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7",
     onPress() {
       callback(onRegisterSuccess[10]).markDismissed(constants.USER_DISMISS);
       const obj = callback(onRegisterSuccess[10]);

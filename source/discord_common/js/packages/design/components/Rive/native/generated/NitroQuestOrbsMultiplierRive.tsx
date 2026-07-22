@@ -1,12 +1,12 @@
 // Module ID: 3929
-// Function ID: 32426
+// Function ID: 32428
 // Name: NitroQuestOrbsMultiplierRive
 // Dependencies: [0, 0, 0, 0, 0, 0, 4294967295]
 
 // Module 3929 (NitroQuestOrbsMultiplierRive)
-import result from "result";
-import importAllResult from "result";
-import { jsx } from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 let closure_3 = [];
 let closure_7 = { Torbs_Multiply: { reducedMotion: "boolean" }, Shards_All_Nitro: { reducedMotion: "boolean" }, Orb Mid Shine: { reducedMotion: "boolean" }, Torbs_Shine: { reducedMotion: "boolean" } };

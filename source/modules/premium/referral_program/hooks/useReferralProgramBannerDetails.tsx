@@ -1,10 +1,10 @@
-// Module ID: 12249
-// Function ID: 93943
+// Module ID: 12254
+// Function ID: 93971
 // Name: MAX_REFERRALS_SENT
 // Dependencies: []
 // Exports: useReferralProgramBannerDetails
 
-// Module 12249 (MAX_REFERRALS_SENT)
+// Module 12254 (MAX_REFERRALS_SENT)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

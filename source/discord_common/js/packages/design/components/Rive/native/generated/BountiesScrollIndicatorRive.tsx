@@ -1,5 +1,5 @@
 // Module ID: 3911
-// Function ID: 32337
+// Function ID: 32339
 // Name: BountiesScrollIndicatorRive
 // Dependencies: []
 
@@ -8,7 +8,7 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Bounties Scroll Indicator: { <string:3786904667>: true, <string:930133999>: true, <string:3580810598>: true } };
+let closure_7 = { Bounties Scroll Indicator: { -9223372036854775808: true, 0: true, 0: true } };
 let closure_8 = { Bounties Scroll Indicator: [] };
 let closure_9 = {
   Bounties Scroll Indicator: function BountiesScrollIndicatorBindings(arg0) {

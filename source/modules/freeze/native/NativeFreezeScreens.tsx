@@ -1,15 +1,15 @@
-// Module ID: 14768
-// Function ID: 111336
+// Module ID: 14776
+// Function ID: 111379
 // Name: NativeFreezeScreens
 // Dependencies: []
 // Exports: NativeFreezeScreens
 
-// Module 14768 (NativeFreezeScreens)
+// Module 14776 (NativeFreezeScreens)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const StyleSheet = arg1(dependencyMap[2]).StyleSheet;
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[6]).createStyles({ screens: { Č: 10, accessibilityDismiss: 10 } });
+let closure_7 = arg1(dependencyMap[6]).createStyles({ screens: {} });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/freeze/native/NativeFreezeScreens.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 16083
-// Function ID: 123663
+// Module ID: 16091
+// Function ID: 123705
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16083 (_isNativeReflectConstruct)
+// Module 16091 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -128,7 +128,7 @@ function setupSortLists() {
     let closure_18 = arr.map((channel) => channel.channel.id);
   }
 }
-let closure_2 = [];
+let closure_2 = ["<string:2963512464>", "<string:2801594173>"];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

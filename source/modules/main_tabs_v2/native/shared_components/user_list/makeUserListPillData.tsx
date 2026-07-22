@@ -1,10 +1,10 @@
-// Module ID: 8814
-// Function ID: 69517
+// Module ID: 8815
+// Function ID: 69529
 // Name: makeUserListPillData
 // Dependencies: []
 // Exports: default
 
-// Module 8814 (makeUserListPillData)
+// Module 8815 (makeUserListPillData)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/makeUserListPillData.tsx");

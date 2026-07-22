@@ -1,10 +1,10 @@
-// Module ID: 14119
-// Function ID: 107201
+// Module ID: 14127
+// Function ID: 107244
 // Name: useValue
 // Dependencies: []
 // Exports: onValueChange, useValue
 
-// Module 14119 (useValue)
+// Module 14127 (useValue)
 function useValue() {
   const items = [closure_3];
   return arg1(dependencyMap[2]).useStateFromStores(items, () => obj.displayNameStylesEnabled);

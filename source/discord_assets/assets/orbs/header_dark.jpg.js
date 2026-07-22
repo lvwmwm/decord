@@ -1,9 +1,9 @@
-// Module ID: 14364
-// Function ID: 108464
+// Module ID: 14372
+// Function ID: 108507
 // Name: metadata
 // Dependencies: []
 
-// Module 14364 (metadata)
+// Module 14372 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/header_dark.jpg.js");
 

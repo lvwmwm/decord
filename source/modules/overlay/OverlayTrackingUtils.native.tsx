@@ -1,5 +1,5 @@
 // Module ID: 5799
-// Function ID: 49609
+// Function ID: 49620
 // Name: useOverlayTrackedGames
 // Dependencies: []
 // Exports: useAnyOverlayRendering, useAnyOverlayRenderingLocked, useOverlayTrackedGames

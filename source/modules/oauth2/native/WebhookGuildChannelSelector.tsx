@@ -1,10 +1,10 @@
-// Module ID: 9011
-// Function ID: 70897
+// Module ID: 9012
+// Function ID: 70910
 // Name: styles
 // Dependencies: []
 // Exports: default
 
-// Module 9011 (styles)
+// Module 9012 (styles)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,7 +14,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { selectorGroup: {} };
+obj = { selectorGroup: { 9223372036854775807: "<string:1126170625>", 9223372036854775807: "<string:1598160898>" } };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[9]).radii.xs };
 obj.select = obj;
 const tmp2 = arg1(dependencyMap[7]);
@@ -110,7 +110,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       found = channels.find((id) => id.id === selectedChannelId);
     }
     let obj = { style: tmp.selectorGroup };
-    obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+    obj = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
     const intl = arg1(dependencyMap[13]).intl;
     obj.children = intl.string(arg1(dependencyMap[13]).t.8qKd+J);
     const items3 = [callback2(arg1(dependencyMap[16]).Text, obj), , , ];

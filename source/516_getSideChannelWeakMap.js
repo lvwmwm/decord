@@ -1,7 +1,7 @@
 // Module ID: 516
 // Function ID: 6605
 // Name: getSideChannelWeakMap
-// Dependencies: []
+// Dependencies: [36241408, 1097924608, 822083584, 2130303779, 1078942826]
 
 // Module 516 (getSideChannelWeakMap)
 const tmp = require(dependencyMap[0])("%WeakMap%", true);

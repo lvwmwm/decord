@@ -1,10 +1,10 @@
-// Module ID: 8828
-// Function ID: 69607
+// Module ID: 8829
+// Function ID: 69619
 // Name: _handleToggleVideo
 // Dependencies: []
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
-// Module 8828 (_handleToggleVideo)
+// Module 8829 (_handleToggleVideo)
 function _handleToggleVideo() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);

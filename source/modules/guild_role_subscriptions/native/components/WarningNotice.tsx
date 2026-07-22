@@ -1,19 +1,19 @@
-// Module ID: 16253
-// Function ID: 125571
+// Module ID: 16261
+// Function ID: 125613
 // Name: WarningNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16253 (WarningNotice)
+// Module 16261 (WarningNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { paddingHorizontal: null, paddingBottom: null, paddingTop: null, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { "Null": "y", "Null": "isArray", "Null": "tts", borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.container = obj;
-obj.horizontalContainer = { "Null": 7, "Null": 370 };
-obj.message = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+obj.horizontalContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+obj.message = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 obj.actionButtonWrapper = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.containerYellow = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING };

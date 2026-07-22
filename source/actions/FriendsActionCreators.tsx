@@ -1,9 +1,9 @@
-// Module ID: 16039
-// Function ID: 123155
+// Module ID: 16047
+// Function ID: 123197
 // Name: setSection
 // Dependencies: []
 
-// Module 16039 (setSection)
+// Module 16047 (setSection)
 function setSection(section) {
   let obj = importDefault(dependencyMap[1]);
   obj = { type: "FRIENDS_SET_SECTION", section };

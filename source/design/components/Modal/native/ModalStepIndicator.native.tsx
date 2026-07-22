@@ -1,10 +1,10 @@
-// Module ID: 12966
-// Function ID: 98650
+// Module ID: 12973
+// Function ID: 98683
 // Name: StepPill
 // Dependencies: []
 // Exports: ModalStepIndicator
 
-// Module 12966 (StepPill)
+// Module 12973 (StepPill)
 function StepPill(isActive) {
   isActive = isActive.isActive;
   const arg1 = isActive;
@@ -50,17 +50,17 @@ function StepPill(isActive) {
     constructor() {
       obj = {};
       obj2 = isActive(closure_2[5]);
-      obj.width = obj2.interpolate(closure_2.get(), ["replace", "then"], [false, false]);
+      obj.width = obj2.interpolate(closure_2.get(), [77601039, 1612144654], []);
       obj3 = isActive(closure_2[5]);
       items = [, ];
       items[0] = BACKGROUND_MOD_STRONG;
       items[1] = closure_3;
-      obj.backgroundColor = obj3.interpolateColor(closure_2.get(), ["replace", "then"], items);
+      obj.backgroundColor = obj3.interpolateColor(closure_2.get(), [77601039, 1612144654], items);
       obj4 = isActive(closure_2[5]);
       items1 = [, ];
       items1[0] = closure_1;
       items1[1] = 1;
-      obj.opacity = obj4.interpolate(closure_2.get(), ["replace", "then"], items1);
+      obj.opacity = obj4.interpolate(closure_2.get(), [77601039, 1612144654], items1);
       return obj;
     }
   }
@@ -76,7 +76,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_6 = { overshootClamping: true };
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, stepPill: { "Bool(true)": 657391618, "Bool(true)": 1934688258 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, stepPill: {} });
 let closure_8 = { code: "function ModalStepIndicatorNativeTsx1(){const{interpolate,sharedValue,WIDTH_INACTIVE,WIDTH_ACTIVE,interpolateColor,inactiveColor,activeColor,inactiveOpacity}=this.__closure;return{width:interpolate(sharedValue.get(),[0,1],[WIDTH_INACTIVE,WIDTH_ACTIVE]),backgroundColor:interpolateColor(sharedValue.get(),[0,1],[inactiveColor,activeColor]),opacity:interpolate(sharedValue.get(),[0,1],[inactiveOpacity,1])};}" };
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/Modal/native/ModalStepIndicator.native.tsx");

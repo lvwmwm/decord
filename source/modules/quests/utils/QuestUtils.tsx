@@ -1,5 +1,5 @@
 // Module ID: 6958
-// Function ID: 55601
+// Function ID: 55612
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters

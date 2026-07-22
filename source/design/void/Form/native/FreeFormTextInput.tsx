@@ -1,11 +1,11 @@
-// Module ID: 8994
-// Function ID: 70823
+// Module ID: 8995
+// Function ID: 70836
 // Name: ClearButton
 // Dependencies: []
 
-// Module 8994 (ClearButton)
+// Module 8995 (ClearButton)
 function ClearButton(onPress) {
-  let obj = { style: { "057": "<string:410124289>", UPVOTE: "<string:402653184>" }, accessibilityRole: "button" };
+  let obj = { style: {}, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[6]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[6]).t.VkKicb);
   obj.onPress = onPress.onPress;
@@ -20,7 +20,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, marginBottom: true, marginTop: true, justifyContent: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.container = obj;
 obj.onPress = { flexDirection: "row" };
 obj1 = { flex: 1, color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -61,7 +61,7 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   if (WITH_CONTENT === undefined) {
     WITH_CONTENT = arg1(dependencyMap[7]).ClearButtonVisibility.WITH_CONTENT;
   }
-  let obj = { "Bool(false)": "mobile-text-heading-primary", "Bool(false)": "header", "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "absolute", "Bool(false)": "100%", "Bool(false)": "100%", "Bool(false)": null, "Bool(false)": "row", "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": 120 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(editable, obj);
   let ref;

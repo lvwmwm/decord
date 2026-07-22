@@ -1,8 +1,8 @@
-// Module ID: 11088
-// Function ID: 86218
+// Module ID: 11089
+// Function ID: 86231
 // Dependencies: []
 
-// Module 11088
+// Module 11089
 const _module = require(dependencyMap[0]);
 ({ InviteStates: closure_2, MessageEmbedTypes: closure_3 } = _module);
 const GuildTemplateStates = require(dependencyMap[1]).GuildTemplateStates;

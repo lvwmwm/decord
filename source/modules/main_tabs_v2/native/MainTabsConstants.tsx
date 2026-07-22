@@ -1,9 +1,9 @@
-// Module ID: 8764
-// Function ID: 69290
+// Module ID: 8765
+// Function ID: 69302
 // Name: MODE_CHANGE_PHYSICS
 // Dependencies: []
 
-// Module 8764 (MODE_CHANGE_PHYSICS)
+// Module 8765 (MODE_CHANGE_PHYSICS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/MainTabsConstants.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 13484
-// Function ID: 102346
+// Module ID: 13491
+// Function ID: 102379
 // Name: memoResult1
 // Dependencies: []
 
-// Module 13484 (memoResult1)
+// Module 13491 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isNameplateRecord = arg1(dependencyMap[2]).isNameplateRecord;
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, paddingHorizontal: arg1(dependencyMap[5]).GUTTER_SIZE };
+obj = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", paddingHorizontal: arg1(dependencyMap[5]).GUTTER_SIZE };
 obj.row = obj;
 obj1 = { height: arg1(dependencyMap[5]).GUTTER_SIZE };
 obj.rowSpacer = obj1;
@@ -70,7 +70,7 @@ const memoResult1 = importAllResult.memo((nameplate) => {
     setSelectedNameplate(nameplate);
   }, items1);
   let obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label };
-  obj = { display: null, flexDirection: null, alignItems: null, nameplate: memo };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, nameplate: memo };
   const items2 = [callback3().nameplate, { borderRadius: 6 }];
   obj.style = items2;
   obj.children = callback(importDefault(dependencyMap[10]), obj);

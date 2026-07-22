@@ -1,5 +1,5 @@
 // Module ID: 7845
-// Function ID: 62554
+// Function ID: 62564
 // Name: VideoFilterType
 // Dependencies: []
 
@@ -23,5 +23,5 @@ export const DefaultVideoBackground = obj;
 export const ANIMATED_DEFAULT_VIDEO_BACKGROUNDS = items;
 export const DEFAULT_VIDEO_BACKGROUND_SORT = reduced;
 export const BLUR_BACKGROUND_OPTION = "blur";
-export const BACKGROUND_REPLACEMENT_SIZE = { "Null": -1457739492, "Null": -1065151951 };
+export const BACKGROUND_REPLACEMENT_SIZE = { "Null": -1454790327, "Null": 486609040 };
 export const MAX_BACKGROUND_IMAGE_UPLOAD_FILESIZE_BYTES = 10485760;

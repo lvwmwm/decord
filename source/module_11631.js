@@ -1,9 +1,9 @@
 // Module ID: 11631
-// Function ID: 90297
+// Function ID: 90309
 // Dependencies: []
 
 // Module 11631
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": 64, "Bool(false)": 64, "Bool(false)": 16, "Bool(false)": null, "Bool(false)": "heading-xl/extrabold", "Bool(false)": "text-default", "Bool(false)": true, "Bool(false)": "/assets/modules/age_gate/native/images", scales: ["Set", "ml"] };
+const obj = { 1358955657: true, 1279501871: true, -100662186: true, -134216521: true, 1375732845: true, -1598249400: true, -117286062: true, 978739886: true, scales: ["<string:24264687>", "isArray"] };
 
 export default _module.registerAsset(obj);

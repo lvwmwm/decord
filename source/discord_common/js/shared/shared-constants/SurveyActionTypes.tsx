@@ -1,9 +1,9 @@
-// Module ID: 9275
-// Function ID: 72486
+// Module ID: 9276
+// Function ID: 72499
 // Name: SurveyActionTypes
 // Dependencies: []
 
-// Module 9275 (SurveyActionTypes)
+// Module 9276 (SurveyActionTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionTypes.tsx");
 

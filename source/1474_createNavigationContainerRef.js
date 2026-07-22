@@ -10,7 +10,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 
 export default function createNavigationContainerRef() {
   const items = [];
-  const combined = items.concat(callback2(Object.keys(callback(removeListener[2]).CommonActions)), []);
+  const combined = items.concat(callback2(Object.keys(callback(removeListener[2]).CommonActions)), [null, "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array", "BigInt64Array", "BigUint64Array", "DataView", "QuestCardPreview"]);
   const callback = {};
   function removeListener(arg0, arg1) {
     let closure_0 = arg1;

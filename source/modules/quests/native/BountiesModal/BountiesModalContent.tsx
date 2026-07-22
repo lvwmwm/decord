@@ -1,10 +1,10 @@
-// Module ID: 13838
-// Function ID: 104594
+// Module ID: 13845
+// Function ID: 104634
 // Name: BountiesModalContentInner
 // Dependencies: []
 // Exports: default
 
-// Module 13838 (BountiesModalContentInner)
+// Module 13845 (BountiesModalContentInner)
 function BountiesModalContentInner(bounty) {
   let handleBufferAnalytics;
   let handleLoadStartAnalytics;
@@ -19,6 +19,7 @@ function BountiesModalContentInner(bounty) {
   let handleVideoProgress;
   let handleVideoResumed;
   let handleVideoResumedAnalytics;
+  let handleVideoTracksAnalytics;
   let initialProgress;
   let isCtaVisible;
   let normalizedProgress;
@@ -133,7 +134,7 @@ function BountiesModalContentInner(bounty) {
     const handleVideoProgressAnalytics = bountiesModalVideoAnalytics.handleVideoProgressAnalytics;
     QuestsExperimentLocations = handleVideoProgressAnalytics;
     const items5 = [handleVideoProgressAnalytics, handleProgress];
-    ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
+    ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleVideoTracksAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
     const callback1 = React.useCallback((arg0, arg1, arg2) => {
       handleVideoProgressAnalytics(arg0, arg1, arg2);
       handleProgress(arg0, arg1, arg2);
@@ -211,6 +212,7 @@ function BountiesModalContentInner(bounty) {
       onLoadStart: handleLoadStartAnalytics,
       onBuffer: handleBufferAnalytics,
       onFirstFrame: handleReadyForDisplayAnalytics,
+      onVideoTracks: handleVideoTracksAnalytics,
       rewardRemainingSeconds,
       rewardTotalSeconds,
       normalizedProgress,

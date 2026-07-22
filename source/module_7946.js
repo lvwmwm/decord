@@ -1,9 +1,8 @@
 // Module ID: 7946
-// Function ID: 63394
+// Function ID: 63404
 // Dependencies: []
 
 // Module 7946
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, scales: [null] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [false] });

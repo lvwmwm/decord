@@ -1,10 +1,10 @@
-// Module ID: 8469
-// Function ID: 67571
+// Module ID: 8470
+// Function ID: 67583
 // Name: useStagePrivacyLevelSettings
 // Dependencies: []
 // Exports: default
 
-// Module 8469 (useStagePrivacyLevelSettings)
+// Module 8470 (useStagePrivacyLevelSettings)
 let closure_4 = importDefault(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 let closure_6 = arg1(dependencyMap[2]).GuildScheduledEventPrivacyLevel;

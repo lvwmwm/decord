@@ -1,10 +1,10 @@
-// Module ID: 11943
-// Function ID: 92356
+// Module ID: 11944
+// Function ID: 92370
 // Name: getActivityChannelId
 // Dependencies: []
 // Exports: default
 
-// Module 11943 (getActivityChannelId)
+// Module 11944 (getActivityChannelId)
 const isTextChannel = require(dependencyMap[0]).isTextChannel;
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

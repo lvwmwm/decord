@@ -1,8 +1,8 @@
-// Module ID: 14998
-// Function ID: 112960
+// Module ID: 15006
+// Function ID: 113003
 // Dependencies: []
 
-// Module 14998
+// Module 15006
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = arg1(dependencyMap[3]).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
@@ -10,7 +10,7 @@ const GUILD_LIST_WIDTH = arg1(dependencyMap[4]).GUILD_LIST_WIDTH;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { channelId: "<string:3082955202>", selectedAnswerIds: "<string:103629460>", submitting: "<string:3630497793>", editing: "<string:961609729>" } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { canAnimate: 131420590, style: -1717986767, url: -644245095, isStageCall: 94527 } });
 let closure_11 = { code: "function YouBarFloatingShadeTsx1(){const{gradientHeight,drawerWidth}=this.__closure;return{height:gradientHeight,opacity:1,width:drawerWidth};}" };
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function YouBarFloatingShade() {
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo(function YouBarFloatingShade() {
   obj1 = { bottom: sum / 2, height: sum / 2, width };
   items2[1] = obj1;
   const items3 = [str, str2];
-  items1[1] = callback(importDefault(dependencyMap[17]), { style: items2, colors: items3, start: {}, end: {}, locations: ["replace", "then"], pointerEvents: "none" });
+  items1[1] = callback(importDefault(dependencyMap[17]), { style: items2, colors: items3, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, locations: [77601039, 1612144654], pointerEvents: "none" });
   const items4 = [tmp.container, ];
   const obj2 = { width, height: sum / 2, backgroundColor: str2 };
   items4[1] = obj2;

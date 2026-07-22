@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 83420
+// Module ID: 10724
+// Function ID: 83433
 // Name: VoicePanelRiveMicButton
 // Dependencies: []
 // Exports: VoicePanelRiveMicButton
 
-// Module 10723 (VoicePanelRiveMicButton)
+// Module 10724 (VoicePanelRiveMicButton)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

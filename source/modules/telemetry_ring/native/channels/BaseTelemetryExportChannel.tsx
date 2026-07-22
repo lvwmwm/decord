@@ -1,9 +1,9 @@
-// Module ID: 12999
-// Function ID: 98921
+// Module ID: 13006
+// Function ID: 98954
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12999 (_isNativeReflectConstruct)
+// Module 13006 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -104,7 +104,7 @@ const tmp2 = (arg0) => {
       if (shouldRunResult) {
         self._kick({ "Null": "30", "Null": "true" });
         const _setInterval = setInterval;
-        self._timer = setInterval(() => self._kick({ "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001440373691426996, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020110551208604013 }), self.getIntervalMs());
+        self._timer = setInterval(() => self._kick({ "Null": null, "Null": null }), self.getIntervalMs());
       }
     }
   };

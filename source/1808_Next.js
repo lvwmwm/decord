@@ -1,13 +1,14 @@
 // Module ID: 1808
 // Function ID: 19934
 // Name: Next
-// Dependencies: []
+// Dependencies: [27, 477, 1821, 2, 648, 2, 1212]
 // Exports: default
 
 // Module 1808 (Next)
-importDefault(dependencyMap[0]);
-arg1(dependencyMap[0]).useCallback;
-const jsx = arg1(dependencyMap[1]).jsx;
+import "get ActivityIndicator";
+import { jsx } from "module_477";
+
+require("get ActivityIndicator").useCallback;
 
 export default function Next(icon) {
   let button;

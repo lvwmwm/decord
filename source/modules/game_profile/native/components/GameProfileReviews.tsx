@@ -1,10 +1,10 @@
-// Module ID: 8628
-// Function ID: 68370
+// Module ID: 8629
+// Function ID: 68382
 // Name: SteamReviewRow
 // Dependencies: []
 // Exports: default
 
-// Module 8628 (SteamReviewRow)
+// Module 8629 (SteamReviewRow)
 function SteamReviewRow(url) {
   let isRecentRating;
   let rating;
@@ -42,35 +42,33 @@ function SteamReviewRow(url) {
   obj.style = items1;
   obj = { style: tmp.steamNameContainer };
   obj1 = { size: "sm", color: importDefault(dependencyMap[4]).colors.ICON_STRONG };
-  const items2 = [callback(arg1(dependencyMap[11]).SteamNeutralIcon, obj1), ];
-  const obj2 = { hasMaxConnections: "kind", isBoostOnlySubscription: "ix", children: title };
-  items2[1] = callback(arg1(dependencyMap[12]).Text, obj2);
+  const items2 = [callback(arg1(dependencyMap[11]).SteamNeutralIcon, obj1), callback(arg1(dependencyMap[12]).Text, { children: title })];
   obj.children = items2;
   const items3 = [callback2(closure_4, obj), ];
-  const obj3 = { style: tmp.steamRatingContainer };
-  const obj4 = { variant: "text-sm/medium", color: steamReviewScoreDescriptionColor };
+  const obj2 = { style: tmp.steamRatingContainer };
+  const obj3 = { variant: "text-sm/medium", color: steamReviewScoreDescriptionColor };
   const tmp2 = importDefault(dependencyMap[5]);
   const tmp6 = callback2;
   const tmp7 = closure_5;
   const tmp8 = callback2;
   const tmp9 = closure_4;
-  obj4.children = arg1(dependencyMap[8]).getSteamReviewScoreDescriptionIntl(result);
-  const items4 = [callback(arg1(dependencyMap[12]).Text, obj4), ];
+  obj3.children = arg1(dependencyMap[8]).getSteamReviewScoreDescriptionIntl(result);
+  const items4 = [callback(arg1(dependencyMap[12]).Text, obj3), ];
   let tmp10 = null != ratingCount;
   if (tmp10) {
     tmp10 = result !== arg1(dependencyMap[13]).SteamReviewScoreDescription.NO_USER_REVIEWS;
   }
   if (tmp10) {
-    const obj5 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    const obj4 = { cachedAt: true, edpbxy: true };
     const intl2 = arg1(dependencyMap[10]).intl;
-    const obj6 = { rating_count: ratingCount.toLocaleString() };
-    obj5.children = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj6).toString();
-    tmp10 = callback(arg1(dependencyMap[12]).Text, obj5);
-    const str = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj6);
+    const obj5 = { rating_count: ratingCount.toLocaleString() };
+    obj4.children = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj5).toString();
+    tmp10 = callback(arg1(dependencyMap[12]).Text, obj4);
+    const str = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj5);
   }
   items4[1] = tmp10;
-  obj3.children = items4;
-  items3[1] = tmp8(tmp9, obj3);
+  obj2.children = items4;
+  items3[1] = tmp8(tmp9, obj2);
   obj.children = items3;
   return tmp6(tmp7, obj);
 }
@@ -120,14 +118,14 @@ function OpenCriticReview(url) {
     let obj3 = arg1(dependencyMap[14]);
     let openCriticCircleRatingColor = obj3.getOpenCriticCircleRatingColor(tier);
   } else {
-    openCriticCircleRatingColor = { -926844321: null, -2108183326: null };
+    openCriticCircleRatingColor = { "Bool(true)": "Normal", "Bool(true)": true };
   }
   obj = { onPress: callback, accessibilityRole: "link" };
   ({ foregroundColor, backgroundColor } = openCriticCircleRatingColor);
   const intl = arg1(dependencyMap[10]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.aLNBAw);
   obj.style = tmp.reviewRow;
-  obj = { hasMaxConnections: "kind", isBoostOnlySubscription: "ix" };
+  obj = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj.children = intl2.string(arg1(dependencyMap[10]).t.UxvER+);
   const items1 = [callback(arg1(dependencyMap[12]).Text, obj), ];
@@ -164,7 +162,7 @@ function OpenCriticReview(url) {
         const obj7 = { rating: num2, strokeColor: foregroundColor, size: 32 };
         const items4 = [callback(importDefault(dependencyMap[15]), obj7), ];
         const obj8 = { style: tmp.opencriticTopCriticRatingContainer };
-        const obj9 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+        const obj9 = { cachedAt: "absolute", edpbxy: -3 };
         const _Math = Math;
         obj9.children = Math.floor(num2);
         obj8.children = callback(arg1(dependencyMap[12]).Text, obj9);
@@ -205,20 +203,20 @@ const tmp3 = arg1(dependencyMap[2]);
 obj.headerText = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
 obj.reviewContainer = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, overflow: "hidden" };
-const obj3 = { 9223372036854775807: false, -9223372036854775808: false, -4328168773: false, 9223372036854775807: false, padding: importDefault(dependencyMap[4]).space.PX_12 };
-obj.reviewRow = obj3;
 const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, overflow: "hidden" };
+obj.reviewRow = { padding: importDefault(dependencyMap[4]).space.PX_12 };
+const obj3 = { padding: importDefault(dependencyMap[4]).space.PX_12 };
 obj.reviewRowNotLast = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-const obj5 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj5 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.steamNameContainer = obj5;
-const obj6 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": "E, M/d", paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
-obj.steamRatingContainer = obj6;
-const obj7 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_12 };
-obj.opencriticRightContainer = obj7;
 const obj4 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj.steamRatingContainer = { paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
+const obj7 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_12 };
+obj.opencriticRightContainer = obj7;
+const obj6 = { paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
 obj.opencriticTopCriticContainer = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.opencriticTopCriticImage = { "Null": false, "Null": false };
-obj.opencriticTopCriticRatingContainer = {};
+obj.opencriticTopCriticImage = { "Null": true, "Null": true };
+obj.opencriticTopCriticRatingContainer = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000304209316664174, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011747791549251514, "Null": 9126805506, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001564950676549964, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000543230925073, "Null": 16381034594465807000000000000000000000000000000000000000000000000000000000000000000, "Null": true };
 let closure_9 = obj.createStyles(obj);
 const obj8 = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/game_profile/native/components/GameProfileReviews.tsx");
@@ -290,7 +288,7 @@ export default function GameProfileReviews(arg0) {
       return tmp26Result;
     }
     obj = { style: tmp.container };
-    obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.headerText };
+    obj = { cachedAt: "polite", edpbxy: "column", style: tmp.headerText };
     const intl = arg1(dependencyMap[10]).intl;
     obj.children = intl.string(arg1(dependencyMap[10]).t.GaAQXP);
     const items = [callback(arg1(dependencyMap[12]).Text, obj), ];

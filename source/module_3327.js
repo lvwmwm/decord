@@ -10,8 +10,8 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: { "Bool(false)": "dd", "Bool(false)": "SOLID", "Bool(false)": "GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE", "Bool(false)": "Array" }, defaultWidth: "full" });
-obj.time = obj.default({ formats: {}, defaultWidth: "full" });
+obj.date = obj.default({ formats: {}, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Null": true, "Null": true, "Null": true, "Null": true }, defaultWidth: "full" });
 obj.dateTime = obj.default({ formats: { any: "{{date}}, {{time}}" }, defaultWidth: "any" });
 
 export default obj;

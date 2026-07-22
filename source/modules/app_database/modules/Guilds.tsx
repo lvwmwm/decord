@@ -1,5 +1,5 @@
 // Module ID: 6888
-// Function ID: 54724
+// Function ID: 54735
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -96,7 +96,7 @@ importDefaultResult = new importDefaultResult("Guilds");
 let tmp4 = () => {
   class Guilds {
     constructor() {
-      f54743 = this;
+      f54754 = this;
       tmp = closure_4(this, Guilds);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {

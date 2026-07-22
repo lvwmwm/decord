@@ -1,10 +1,10 @@
-// Module ID: 14850
-// Function ID: 111917
+// Module ID: 14858
+// Function ID: 111960
 // Name: AudienceItem
 // Dependencies: []
 // Exports: default, getAudienceItemHeight
 
-// Module 14850 (AudienceItem)
+// Module 14858 (AudienceItem)
 function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
@@ -18,7 +18,7 @@ function AudienceItem(arg0) {
   }
   obj = { style: collapsed ? tmp.listenersCollapsed : tmp.listeners };
   obj = { style: tmp.listenersIconWrapper, children: callback(arg1(dependencyMap[12]).HeadphonesIcon, obj1) };
-  const obj1 = { "Null": true, "Null": true, style: tmp.headphonesIcon };
+  const obj1 = { GuildBadgeSnail: true, EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: true, style: tmp.headphonesIcon };
   const items = [callback(View, obj), ];
   const obj2 = { style: tmp.listenersText, variant: closure_7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
   items[1] = callback(arg1(dependencyMap[13]).Text, obj2);
@@ -35,7 +35,7 @@ let closure_8 = arg1(dependencyMap[4]).createStyles((arg0) => {
   const colors = importDefault(dependencyMap[5]).colors;
   const tmp = arg0 ? colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT : colors.BACKGROUND_BASE_LOWEST;
   const round = importDefault(dependencyMap[5]).radii.round;
-  let obj = { listeners: { keyboard: "<string:40825153>", updateAccount: "<string:617500928>", NEW_USER_INTENT_START: "<string:27410755>", GET_ENTITLEMENT_TICKET: "<string:40968960>", lineClamp: "<string:18973696>", getCategoryRecord: "<string:2722185984>" }, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
+  let obj = { listeners: { highestAncestorCache: false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
   obj = { backgroundColor: tmp, borderRadius: round };
   const merged = Object.assign(arg1(dependencyMap[6]).makeSizeStyle(20));
   obj.listenersIconWrapper = obj;

@@ -1,11 +1,11 @@
-// Module ID: 5694
-// Function ID: 49036
+// Module ID: 5693
+// Function ID: 49044
 // Name: MobileLurkerServerPreviewExperiment
 // Dependencies: []
 // Exports: getMobileLurkerServerPreview, useMobileLurkerServerPreview
 
-// Module 5694 (MobileLurkerServerPreviewExperiment)
-const obj = { 844175713: 7, 1387159956: 6, defaultConfig: { 314181: null, 314231: null }, variations: { [1]: { 314181: null, 314231: null }, [2]: { 314181: null, 314231: null } } };
+// Module 5693 (MobileLurkerServerPreviewExperiment)
+const obj = { y: 7, DateToSystemTimezoneSetter: 6, defaultConfig: { ầ: true, ằ: true }, variations: { [1]: { ầ: "<string:1040334421>", ằ: "<string:1040334338>" }, [2]: { ầ: null, ằ: null } } };
 const tmp2 = importDefault(dependencyMap[0])(obj);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/lurker_mode/experiments/MobileLurkerServerPreviewExperiment.tsx");
 

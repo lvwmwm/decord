@@ -1,17 +1,17 @@
 // Module ID: 7528
-// Function ID: 60230
+// Function ID: 60241
 // Dependencies: [0, 0, 0, 0, 0, 0]
 
 // Module 7528
-import { Text } from "result";
-import { jsx } from "result";
-import result from "result";
-import importAllResult from "result";
-import result from "result";
+import { Text } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-let closure_2 = result.createStyles({ text: { fontFamily: require("result").Fonts.PRIMARY_MEDIUM, includeFontPadding: false } });
-const obj = { fontFamily: require("result").Fonts.PRIMARY_MEDIUM, includeFontPadding: false };
-result = result.fileFinishedImporting("design/void/LegacyText/native/LegacyText.tsx");
+let closure_2 = __exportStarResult1.createStyles({ text: { fontFamily: require("__exportStarResult1").Fonts.PRIMARY_MEDIUM, includeFontPadding: false } });
+const obj = { fontFamily: require("__exportStarResult1").Fonts.PRIMARY_MEDIUM, includeFontPadding: false };
+const result = __exportStarResult1.fileFinishedImporting("design/void/LegacyText/native/LegacyText.tsx");
 
 export default importAllResult.forwardRef((arg0, ref) => {
   let children;

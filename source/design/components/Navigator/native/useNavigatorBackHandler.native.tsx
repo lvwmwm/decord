@@ -1,10 +1,10 @@
-// Module ID: 9102
-// Function ID: 71323
+// Module ID: 9103
+// Function ID: 71336
 // Name: useNavigatorBackHandler
 // Dependencies: []
 // Exports: default
 
-// Module 9102 (useNavigatorBackHandler)
+// Module 9103 (useNavigatorBackHandler)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = {};
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/Navigator/native/useNavigatorBackHandler.native.tsx");

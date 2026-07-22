@@ -1,9 +1,9 @@
-// Module ID: 15174
-// Function ID: 114427
+// Module ID: 15182
+// Function ID: 114470
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15174 (_createForOfIteratorHelperLoose)
+// Module 15182 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -103,7 +103,7 @@ obj = { paddingHorizontal: importDefault(dependencyMap[15]).space.PX_12, flex: 1
 obj.containerInner = obj;
 obj1 = { paddingVertical: importDefault(dependencyMap[15]).space.PX_12 };
 obj.searchFieldContainer = obj1;
-obj.roleList = {};
+obj.roleList = { flexDirection: false, alignItems: false, accessible: false, s: false };
 let closure_19 = obj1.createStyles(obj);
 let closure_20 = importAllResult.memo((guild) => {
   let end;

@@ -1,7 +1,7 @@
 // Module ID: 740
 // Function ID: 8783
 // Name: toString
-// Dependencies: [4294967295, 4294967295, 0, 0]
+// Dependencies: []
 
 // Module 740 (toString)
 let prototype;

@@ -1,17 +1,17 @@
-// Module ID: 12027
-// Function ID: 92939
+// Module ID: 12031
+// Function ID: 92965
 // Name: UserProfileMutuals
 // Dependencies: []
 // Exports: default
 
-// Module 12027 (UserProfileMutuals)
+// Module 12031 (UserProfileMutuals)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UserProfileSections = arg1(dependencyMap[2]).UserProfileSections;
 const DIVIDER_DOT = arg1(dependencyMap[3]).DIVIDER_DOT;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { width: 0.001, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001451768941948057, padding: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000103977827559 }, section: { 9223372036854775807: -747089664, 9223372036854775807: 4211, 0: 4096 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: {}, section: {} });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_profile/native/UserProfileMutuals.tsx");
 
@@ -110,7 +110,7 @@ export default function UserProfileMutuals(user) {
       tmp4 = tmp5;
     }
     if (tmp4) {
-      obj = { children: DIVIDER_DOT };
+      obj = { AUD: "<string:1255014401>", shouldNotify: "<string:425787394>", CONTROLS_BUTTON_SIZE_LARGE: "<string:22442305>", ActivityCard: "<string:452609536>", children: DIVIDER_DOT };
       tmp4 = mutualGuilds(arg1(dependencyMap[17]).Text, obj);
     }
     items[1] = tmp4;

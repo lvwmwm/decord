@@ -1,13 +1,13 @@
-// Module ID: 11735
-// Function ID: 91167
+// Module ID: 11736
+// Function ID: 91180
 // Dependencies: []
 
-// Module 11735
+// Module 11736
 const View = arg1(dependencyMap[1]).View;
 const InviteSendStates = arg1(dependencyMap[2]).InviteSendStates;
 const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[4]).createStyles({ buttonWrapper: { -699293445: 16777216, 1365401894: 18931266 } });
+let closure_5 = arg1(dependencyMap[4]).createStyles({ buttonWrapper: { accessibilityRole: 16777216, ti: 22041922 } });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function InviteButton(onPressSend) {
   let disabled;
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function InviteButton(onPressSend) {
     flag = false;
   }
   let obj = { style: callback().buttonWrapper };
-  obj = { "Null": "braintree:merchantId", "Null": "<string:188695040>", "Null": "<string:3963224065>", text: stringResult1, onPress: onPressSend.onPressSend };
+  obj = { justifyContent: "9Oq93m", width: "<string:191316480>", height: "<string:2196570113>", text: stringResult1, onPress: onPressSend.onPressSend };
   if (!disabled) {
     disabled = flag;
   }

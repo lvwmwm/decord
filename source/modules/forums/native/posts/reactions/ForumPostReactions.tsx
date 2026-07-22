@@ -1,10 +1,10 @@
-// Module ID: 10419
-// Function ID: 80285
+// Module ID: 10420
+// Function ID: 80298
 // Name: MaxForumPostReactions
 // Dependencies: []
 // Exports: ForumPostActionBarReactions, MaxForumPostReactions, MostCommonForumPostReaction
 
-// Module 10419 (MaxForumPostReactions)
+// Module 10420 (MaxForumPostReactions)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

@@ -1,10 +1,10 @@
-// Module ID: 11837
-// Function ID: 91744
+// Module ID: 11838
+// Function ID: 91758
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 8208, 33, 5232, 4126, 689, 44, 1876]
+// Dependencies: [31, 27, 8194, 33, 5082, 4126, 689, 44, 1876]
 // Exports: useFetchCollectiblesProducts
 
-// Module 11837 (_createForOfIteratorHelperLoose)
+// Module 11838 (_createForOfIteratorHelperLoose)
 import module_31 from "module_31";
 import { useEffect } from "get ActivityIndicator";
 import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO";

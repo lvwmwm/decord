@@ -1,10 +1,10 @@
-// Module ID: 12397
-// Function ID: 94750
+// Module ID: 12402
+// Function ID: 94778
 // Name: ProgressBarMarkerInnerContent
 // Dependencies: []
 // Exports: default
 
-// Module 12397 (ProgressBarMarkerInnerContent)
+// Module 12402 (ProgressBarMarkerInnerContent)
 function ProgressBarMarkerInnerContent(arg0) {
   let isCurrentTier;
   let isDisabled;
@@ -77,7 +77,7 @@ function ProgressBarMarkerInnerContent(arg0) {
     const tmp17 = closure_4;
     const tmp18 = closure_7;
   } else if (isDisabled) {
-    let tmp27Result = tmp27(arg1(dependencyMap[12]).BoostGemSlashIcon, { accessibilityRole: null, "": null });
+    let tmp27Result = tmp27(arg1(dependencyMap[12]).BoostGemSlashIcon, { "Bool(false)": false, "Bool(false)": false });
   } else {
     const obj2 = { source: obj[tier] };
     const items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
@@ -98,21 +98,21 @@ const tmp2 = arg1(dependencyMap[1]);
 let obj = { [BoostedGuildTiers.NONE]: 0, [BoostedGuildTiers.TIER_1]: 0.3333333333333333, [BoostedGuildTiers.TIER_2]: 0.6666666666666666, [BoostedGuildTiers.TIER_3]: 1 };
 obj = { [BoostedGuildTiers.TIER_1]: importDefault(dependencyMap[4]), [BoostedGuildTiers.TIER_2]: importDefault(dependencyMap[5]), [BoostedGuildTiers.TIER_3]: importDefault(dependencyMap[6]) };
 let obj2 = arg1(dependencyMap[7]);
-obj = { progressBarMarkerInnerCircle: {}, progressBarMarkerInnerCircleBackground: { paddingBottom: "Masterpass is not enabled for this merchant.", paddingTop: null, position: "MASTERPASS_TOKENIZE_MISSING_REQUIRED_OPTION", display: "Missing required option for tokenize." }, progressBarMarkerInnerCircleIcon: {} };
+obj = { progressBarMarkerInnerCircle: {}, progressBarMarkerInnerCircleBackground: { replace: "Masterpass is not enabled for this merchant.", kind: null, source: "MASTERPASS_TOKENIZE_MISSING_REQUIRED_OPTION", parent: "Missing required option for tokenize." }, progressBarMarkerInnerCircleIcon: { "Null": null, "Null": null } };
 const tmp3 = arg1(dependencyMap[3]);
 obj.progressBarMarkerInnerCircleIconUnlocked = { tintColor: importDefault(dependencyMap[8]).colors.WHITE };
 let closure_11 = obj2.createStyles(obj);
 let closure_12 = {};
 let closure_13 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx1(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
 const obj1 = { tintColor: importDefault(dependencyMap[8]).colors.WHITE };
-obj2 = { progressBarMarker: { transform: items }, progressBarMarkerBackground: { -9223372036854775808: true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+obj2 = { progressBarMarker: { transform: items }, progressBarMarkerBackground: {} };
 const items = [{ translateX: -14 }];
-const obj3 = { <string:3623879720>: null, <string:436208727>: null, <string:1375732823>: null, <string:2502607827>: null, <string:1449564514>: null, <string:57275418>: null, <string:3999169191>: null, <string:4265471583>: null, <string:140612193>: null, <string:1016864594>: null, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { EmojiReactionRowButton: "p\u00F3\u0142 minuty", CHECKPOINT_PERSONA_SEVEN_SECONDARY: "p\u00F3\u0142 minuty", 1376280978: "p\u00F3\u0142 minuty", 766942332: null, 598351956: "mniej ni\u017C {{count}} minuty", 1898640879: "mniej ni\u017C {{count}} minut", -131509629: "mniej ni\u017C minuta", -1956539411: "mniej ni\u017C minut\u0119", 1373414737: "mniej ni\u017C minut\u0119", -1906207285: null, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.progressBarMarkerLabel = obj3;
 const items1 = [{ translateX: -7 }];
 obj2.progressBarMarkerLabelWithIcon = { transform: items1 };
 obj2.progressBarMarkerLabelLocked = { opacity: 0.4 };
-const obj4 = { 0: null, 0: null, 0: null, tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj4 = { "Null": 20, "Null": "relative", -9223372036854775808: 10, tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.progressBarMarkerUnlockedIcon = obj4;
 let closure_14 = arg1(dependencyMap[7]).createStyles(obj2);
 let closure_15 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx2(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };

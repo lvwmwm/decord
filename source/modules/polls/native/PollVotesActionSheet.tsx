@@ -1,10 +1,10 @@
-// Module ID: 9928
-// Function ID: 76813
+// Module ID: 9929
+// Function ID: 76826
 // Name: PollEmoji
 // Dependencies: []
 // Exports: default
 
-// Module 9928 (PollEmoji)
+// Module 9929 (PollEmoji)
 function PollEmoji(emoji) {
   emoji = emoji.emoji;
   const arg1 = emoji;
@@ -52,7 +52,7 @@ function PollVotesHeader(message) {
   }, items1);
   if (null != message.poll) {
     let obj = {};
-    obj = { <string:4003527526>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028884705511197864, <string:2924932188>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017597528069374953, <string:1546256390>: 994646613622753800000000000000000000000000000000000000000000000000000000000000000000000, <string:2324728136>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000105617429970054, style: tmp.headerText, children: message.poll.question.text };
+    obj = { "Null": "GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS", "Null": "classification_ids", "Null": "h", "Null": "isArray", style: tmp.headerText, children: message.poll.question.text };
     const items2 = [callback2(arg1(dependencyMap[17]).Text, obj), , ];
     obj = { style: tmp.subheaderText };
     const intl = arg1(dependencyMap[15]).intl;
@@ -60,7 +60,7 @@ function PollVotesHeader(message) {
     obj.children = intl.format(arg1(dependencyMap[15]).t.XRkuof, obj1);
     items2[1] = callback2(arg1(dependencyMap[17]).Text, obj);
     const obj2 = { gesture: tmp6 };
-    const obj3 = { ref };
+    const obj3 = { color: "<string:1091694070>", variant: "/assets/design/components/Icon/native/redesign/generated/images", style: "MODAL_CAROUSEL_PREV", maxFontSizeMultiplier: "VOICE_CHANNEL_EFFECTS_COACH_MARK", lineClamp: "<string:2319515904>", variant: "<string:1375732287>", ref };
     ({ answerScroll: obj6.style, answerScrollContainer: obj6.contentContainerStyle } = tmp);
     const intl2 = arg1(dependencyMap[15]).intl;
     obj3.accessibilityLabel = intl2.string(arg1(dependencyMap[15]).t.qbir+4);
@@ -176,7 +176,7 @@ function VotersList(channelId) {
   const obj4 = arg1(dependencyMap[31]);
   class I {
     constructor() {
-      obj = { position: "RollOutRight", top: "apply", left: "description" };
+      obj = { "Null": 73427120752611450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 56506539556899830000000000000000000000000000000000000000000000000000000000000, "Null": 150534668563885770000000000000000000000000000000 };
       obj.opacity = channelId.get();
       return obj;
     }
@@ -227,19 +227,19 @@ let closure_13 = importDefault(dependencyMap[8]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { headerText: { "Bool(true)": 52881784.83212474, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, subheaderText: {}, answerScroll: { marginTop: 24 }, answerScrollContainer: {}, answerName: {}, list: { paddingHorizontal: 16 } };
-obj = { paths: false, category: false, paths: false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[11]).radii.xs };
+let obj = { headerText: { "Bool(true)": 52881784.83212474, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, subheaderText: {}, answerScroll: { marginTop: 24 }, answerScrollContainer: {}, answerName: { "Null": 24, "Null": 24, "Null": null }, list: { paddingHorizontal: 16 } };
+obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs };
 obj.answerButton = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
 obj.answerSelected = obj1;
 obj.answerEmoji = { marginRight: 8 };
 obj.answerText = { flexShrink: 1 };
 obj.emojiText = { fontSize: 16 };
-obj.emojiImage = {};
-obj.noResultsContainer = { "Null": 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, "Null": 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 };
-obj.noResultsImage = { "Bool(false)": "PinIcon", "Bool(false)": "png" };
+obj.emojiImage = { flex: "6adfcc7a553215ee3085ec15a5a3e3a4", padding: "ClockXIcon", alignItems: "png" };
+obj.noResultsContainer = { flexGrow: 0.0000000000000000000000000000000000000000000000000000000009659784425801879, flexShrink: 15177101141243970000000000000000000000000000000000000000000000000000000000000000000, alignItems: 15186806633716527000000000000000000000000000000000000000000000000000000000000000000 };
+obj.noResultsImage = { name: false, opacity: false };
 obj.noResultsTitle = {};
-obj.noResultsSubtitle = {};
+obj.noResultsSubtitle = { MINIMAL: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, currentScreenId: 131072.0007038191 };
 let closure_16 = obj1.createStyles(obj);
 let closure_17 = importAllResult.forwardRef((answer, ref) => {
   let reaction;
@@ -294,7 +294,7 @@ let closure_17 = importAllResult.forwardRef((answer, ref) => {
     tmp10 = callback2(ref(dependencyMap[17]).Text, obj1);
   }
   items2[1] = tmp10;
-  const obj2 = { color: str };
+  const obj2 = { 803799044: true, 1269170180: true, 711589892: true, color: str };
   const items3 = [true, true, num.toLocaleString(), ")"];
   obj2.children = items3;
   items2[2] = callback3(ref(dependencyMap[17]).Text, obj2);

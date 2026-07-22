@@ -1,10 +1,10 @@
-// Module ID: 11869
-// Function ID: 91887
+// Module ID: 11870
+// Function ID: 91901
 // Name: GuildProfileGameRow
 // Dependencies: []
 // Exports: default
 
-// Module 11869 (GuildProfileGameRow)
+// Module 11870 (GuildProfileGameRow)
 function GuildProfileGameRow(activityLevel) {
   let clickable;
   let game;
@@ -26,7 +26,7 @@ function GuildProfileGameRow(activityLevel) {
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[7]).createStyles({ container: {} });
+let closure_6 = arg1(dependencyMap[7]).createStyles({ container: { <string:2839314540>: "isArray", <string:172088541>: "isArray" } });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");
 

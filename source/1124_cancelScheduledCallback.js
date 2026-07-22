@@ -78,9 +78,9 @@ function shouldSkipNavigation(locationKey, arg1, routeName) {
       obj.shouldUpdate = !tmp18;
       return obj;
     }
-    return { 820108214: null, -1597926610: null };
+    return { body: true, duration: true };
   } else {
-    return { 820108214: null, -1597926610: null };
+    return { body: true, duration: true };
   }
 }
 function addResolvedRoutesToParent(arr, children) {
@@ -819,7 +819,7 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
   const require = instrumentPageLoad;
   const dependencyMap = _6;
   let obj = require(dependencyMap[5]);
-  const result = obj.browserTracingIntegration(Object.assign({}, instrumentPageLoad, { gap: null, ao: null }));
+  const result = obj.browserTracingIntegration(Object.assign({}, instrumentPageLoad, { "Null": true, "Null": true }));
   let closure_2 = result;
   ({ useEffect: closure_3, useLocation: closure_4, useNavigationType: closure_5, createRoutesFromChildren: closure_6, matchRoutes: closure_7, stripBasename: closure_8, enableAsyncRouteHandlers } = instrumentPageLoad);
   let closure_9 = undefined !== enableAsyncRouteHandlers && enableAsyncRouteHandlers;

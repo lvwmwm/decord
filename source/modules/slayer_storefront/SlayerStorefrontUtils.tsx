@@ -1,10 +1,10 @@
-// Module ID: 5607
-// Function ID: 47658
+// Module ID: 5606
+// Function ID: 47666
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformSocialLayerStorefrontAffinityServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5607 (_createForOfIteratorHelperLoose)
+// Module 5606 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -582,7 +582,7 @@ export const canSeeGameShop = function canSeeGameShop(guildId) {
 export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrPopularRecommendations(arr) {
   const importDefault = arg2;
   if (0 === arr.length) {
-    let obj = { "Bool(true)": null, "Bool(true)": null };
+    let obj = { roundedCard: true, reflectionLongConvert: true };
   } else {
     obj = {
       hasWishlist: arr.some((arg0) => {

@@ -1,5 +1,5 @@
 // Module ID: 7338
-// Function ID: 59180
+// Function ID: 59191
 // Name: captureFeedback
 // Dependencies: []
 
@@ -20,7 +20,7 @@ arg5.captureFeedback = function captureFeedback(arg0) {
       if (undefined !== arguments[2]) {
         let currentScope = arguments[2];
       }
-      obj = {};
+      obj = { "Null": null, "Null": null, "Null": null };
       obj = {};
       ({ message, name, email, url, source, associatedEventId, tags } = arg0);
       let obj1 = { contact_email: email, name, message, url, source, associated_event_id: associatedEventId };

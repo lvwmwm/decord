@@ -1,8 +1,8 @@
-// Module ID: 14954
-// Function ID: 112551
+// Module ID: 14962
+// Function ID: 112594
 // Dependencies: []
 
-// Module 14954
+// Module 14962
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -10,7 +10,7 @@ const Permissions = arg1(dependencyMap[3]).Permissions;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
-let obj = { wrapper: { 314319: "y", 315874: "isArray" }, content: { easing: null, isInteraction: null, useNativeDriver: null, size: null } };
+let obj = { wrapper: { "Null": null, "Null": null }, content: {} };
 obj = {};
 const merged = Object.assign(arg1(dependencyMap[6]).TextStyleSheet.heading-md/bold);
 obj["fontSize"] = 18;
@@ -19,9 +19,9 @@ obj["marginBottom"] = 8;
 obj.headerText = obj;
 obj.text = { textAlign: "center" };
 obj.buttonWrapper = { marginTop: 24 };
-obj1 = { "Bool(true)": 291136, "Bool(true)": 1514209280, "Bool(true)": 1358955595, borderRadius: importDefault(dependencyMap[7]).radii.xl };
+obj1 = { "Null": 291136, "Null": 1111556096, "Null": 1358955568, borderRadius: importDefault(dependencyMap[7]).radii.xl };
 obj.buttonPill = obj1;
-obj.personalizeButtonWrapper = { <string:80547328>: "<string:2552889346>", <string:80609280>: "<string:2938503170>" };
+obj.personalizeButtonWrapper = { -840892412: null, -840761340: null };
 let closure_10 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
   obj5.children = stringResult;
   items6[1] = callback(arg1(dependencyMap[6]).Text, obj5);
-  const obj6 = { style: tmp.text, children: string2Result };
+  const obj6 = { "Null": "row", "Null": "center", style: tmp.text, children: string2Result };
   items6[2] = callback(arg1(dependencyMap[6]).Text, obj6);
   if (canCreateChannel) {
     const obj7 = { style: tmp.buttonWrapper };

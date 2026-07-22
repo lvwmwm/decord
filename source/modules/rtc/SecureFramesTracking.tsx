@@ -1,10 +1,10 @@
-// Module ID: 8899
-// Function ID: 70240
+// Module ID: 8900
+// Function ID: 70253
 // Name: getGuildId
 // Dependencies: []
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 8899 (getGuildId)
+// Module 8900 (getGuildId)
 function getGuildId(channelId) {
   const channel = channel.getChannel(channelId);
   let guild_id;

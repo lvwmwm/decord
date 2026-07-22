@@ -1,10 +1,10 @@
-// Module ID: 9986
-// Function ID: 77223
+// Module ID: 9987
+// Function ID: 77236
 // Name: OAuth2AuthorizeModal
 // Dependencies: []
 // Exports: default
 
-// Module 9986 (OAuth2AuthorizeModal)
+// Module 9987 (OAuth2AuthorizeModal)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -14,14 +14,14 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.contentContainer = { flex: 1 };
-obj.titleContainer = { accessibilityRole: null, forEach: 11, p: "modal_top_pill" };
-const obj1 = { "Bool(true)": "key", "Bool(true)": "to", "Bool(true)": "Array", "Bool(true)": "Reflect", "Bool(true)": "Array", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.titleContainerBorder = obj1;
-const obj2 = { value: true, start: true, end: true, label: true, disabled: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
-obj.title = obj2;
+obj.titleContainer = { numDms: null, numGroupDms: 11, numChannels: "modal_top_pill" };
+const tmp2 = arg1(dependencyMap[2]);
+obj.titleContainerBorder = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj.title = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 let closure_8 = obj.createStyles(obj);
 let closure_9 = { code: "function OAuth2AuthorizeModalTsx1(){const{borderOpacity}=this.__closure;var _borderOpacity$get;return{opacity:(_borderOpacity$get=borderOpacity.get())!==null&&_borderOpacity$get!==void 0?_borderOpacity$get:1};}" };
-const tmp2 = arg1(dependencyMap[2]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeModal.tsx");
 
 export default function OAuth2AuthorizeModal(arg0) {
@@ -85,7 +85,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   obj2.children = tmp18;
   const items2 = [callback(arg1(dependencyMap[9]).PressableOpacity, obj2), , ];
   const obj5 = { style: tmp.title };
-  const obj6 = {};
+  const obj6 = { tooltipText: 800, contain: 32 };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj6.children = intl3.string(arg1(dependencyMap[10]).t.y+/PE9);
   obj5.children = callback(arg1(dependencyMap[13]).Text, obj6);

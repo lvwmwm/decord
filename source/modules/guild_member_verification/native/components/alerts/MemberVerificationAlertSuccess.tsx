@@ -1,17 +1,17 @@
-// Module ID: 9145
-// Function ID: 71713
+// Module ID: 9146
+// Function ID: 71726
 // Name: MemberVerificationAlertSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 9145 (MemberVerificationAlertSuccess)
+// Module 9146 (MemberVerificationAlertSuccess)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ alert: { marginTop: 120 }, header: {}, text: {}, illustrationContainer: { fontSize: true, lineHeight: true, nodeName: true, ElYQFS: true, forceRefresh: true, PUSH_NOTIFICATION_REACTIVATION_PROMPT: true, FLOW_TYPE: true }, illustration: {} });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ alert: { marginTop: 120 }, header: {}, text: {}, illustrationContainer: { <string:3912260673>: true, <string:2855813743>: true, <string:698810372>: true, <string:1549991940>: true, <string:4065416864>: true, <string:1413178017>: true, overflow: true }, illustration: {} });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertSuccess.tsx");
 
@@ -55,7 +55,7 @@ export default function MemberVerificationAlertSuccess(guildId) {
     obj2.style = tmp3.illustration;
     obj1.children = callback(importDefault(dependencyMap[9]), obj2);
     const items2 = [callback(View, obj1), , ];
-    const obj3 = { delete: false, dispatch: 0, raw: 4, style: tmp3.header };
+    const obj3 = { "Null": false, "Null": 0, alignItems: 4, style: tmp3.header };
     const intl2 = arg1(dependencyMap[8]).intl;
     const obj4 = { guildName: stateFromStores.name };
     obj3.children = intl2.format(arg1(dependencyMap[8]).t.7hhNEn, obj4);

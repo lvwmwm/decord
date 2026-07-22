@@ -1,10 +1,10 @@
-// Module ID: 14101
-// Function ID: 107072
+// Module ID: 14109
+// Function ID: 107115
 // Name: useDisplayNameStylesPendingName
 // Dependencies: []
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14101 (useDisplayNameStylesPendingName)
+// Module 14109 (useDisplayNameStylesPendingName)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9823
-// Function ID: 76201
+// Module ID: 9824
+// Function ID: 76214
 // Name: measureView
 // Dependencies: []
 // Exports: measureViewRef, measureViewRefInView, measureViewRefInWindow
 
-// Module 9823 (measureView)
+// Module 9824 (measureView)
 function measureView(current) {
   const measureView = current;
   return new Promise((arg0) => {

@@ -1,10 +1,10 @@
-// Module ID: 11297
-// Function ID: 87905
+// Module ID: 11298
+// Function ID: 87918
 // Name: EmptyStateWithSnowflakeQuery
 // Dependencies: []
 // Exports: default
 
-// Module 11297 (EmptyStateWithSnowflakeQuery)
+// Module 11298 (EmptyStateWithSnowflakeQuery)
 function EmptyStateWithSnowflakeQuery(onPressRow) {
   const arg1 = onPressRow.onPressRow;
   const tmp = callback();

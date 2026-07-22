@@ -1,18 +1,17 @@
-// Module ID: 11345
-// Function ID: 88212
+// Module ID: 11346
+// Function ID: 88225
 // Name: GiftIconTrinketsAnimation
 // Dependencies: []
 
-// Module 11345 (GiftIconTrinketsAnimation)
+// Module 11346 (GiftIconTrinketsAnimation)
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let closure_6 = arg1(dependencyMap[4]).createStyles((width) => {
-  const sum = arg1(dependencyMap[5]).SMALL_BUTTON_HEIGHT + arg1(dependencyMap[5]).SMALL_BUTTON_PADDING + 2;
-  const container = { includeFrecency: "<string:3193044996>", lastUsedCommandId: "<string:1917108737>", lastUsedTimeMs: "type", alignItems: "apply", flexDirection: "<string:1348682001>", gap: "<string:410124290>", position: "<string:402653184>", padding: "<string:16777216>", width: sum, height: sum };
+  width = arg1(dependencyMap[5]).SMALL_BUTTON_HEIGHT + arg1(dependencyMap[5]).SMALL_BUTTON_PADDING + 2;
   const containerRefresh = { width, height: width };
-  return { container, containerRefresh, trinkets: { "Bool(false)": "<string:1602305>", "Bool(false)": "<string:1572864>", "Bool(false)": "<string:2359296>", "Bool(false)": "<string:822149120>", "Bool(false)": "<string:2576980378>", "Bool(false)": "<string:1070176665>", "Bool(false)": "<string:296462929>" }, trinketsRefresh: {} };
+  return { container: { width, height: width }, containerRefresh, trinkets: { alignItems: "Array", paddingTop: "container", paddingBottom: "toString", paddingHorizontal: "isArray", paddingVertical: "isArray", borderRadius: "isArray", overflow: "toString" }, trinketsRefresh: {} };
 });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((trinketsAnimationUrl) => {

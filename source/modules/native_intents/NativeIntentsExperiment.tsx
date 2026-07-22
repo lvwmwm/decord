@@ -1,18 +1,20 @@
-// Module ID: 16428
-// Function ID: 126917
-// Name: experiment
+// Module ID: 16436
+// Function ID: 126959
+// Name: items
 // Dependencies: []
 
-// Module 16428 (experiment)
+// Module 16436 (items)
 const _module = require(dependencyMap[0]);
-let obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: 0, 炖锅: 51, config: { "Null": "Small", "Null": "sm", d: "Placeholder" } };
+let obj = { shapes: "4e1581119cf1ddaae8c3aa4ebdd90f99", flex: "StickerIcon", sk: "png", defaultConfig: { "Bool(false)": true, "Bool(false)": false, "Bool(false)": false } };
+obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: {} };
 const items = [obj, , , ];
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { "Null": 500, "Null": 1000, d: 60000 } };
-items[1] = obj;
-items[2] = { config: { "Null": null, "Null": null, d: null } };
-const obj1 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: "9344f1089c1146b314e038ef9542fb46", config: { "Null": "hidden", "Null": "all", d: true } };
-items[3] = obj1;
-const experiment = _module.createExperiment({ defaultConfig: { "Null": "#ffa813", "Null": "absolute", d: null }, treatments: items });
+const obj1 = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: {} };
+items[1] = obj1;
+const obj2 = { displayNameStylesEnabled: "Array", submitButtonEnabled: "PREMIUM_TIER_2_DISCOUNT_ENDING", config: { "Bool(false)": "<string:37639497>", "Bool(false)": "<string:37618238>", "Bool(false)": "<string:37618238>" } };
+items[2] = obj2;
+items[3] = { config: {} };
+obj.treatments = items;
+const experiment = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/native_intents/NativeIntentsExperiment.tsx");
 

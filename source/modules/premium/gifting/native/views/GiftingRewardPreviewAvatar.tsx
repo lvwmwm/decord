@@ -1,10 +1,10 @@
-// Module ID: 9758
-// Function ID: 75911
+// Module ID: 9759
+// Function ID: 75924
 // Name: GiftingRewardPreviewAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 9758 (GiftingRewardPreviewAvatar)
+// Module 9759 (GiftingRewardPreviewAvatar)
 importAll(dependencyMap[0]);
 let closure_2 = importDefault(dependencyMap[1]);
 let closure_3 = importDefault(dependencyMap[2]);

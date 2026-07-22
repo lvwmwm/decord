@@ -1,7 +1,7 @@
 // Module ID: 962
 // Function ID: 10419
 // Name: _isFetchSupported
-// Dependencies: [981, 793, 983]
+// Dependencies: []
 
 // Module 962 (_isFetchSupported)
 function _isFetchSupported() {

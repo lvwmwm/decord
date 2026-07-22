@@ -1,10 +1,10 @@
-// Module ID: 12224
-// Function ID: 93829
+// Module ID: 12229
+// Function ID: 93857
 // Name: ExternalLinkItem
 // Dependencies: []
 // Exports: default
 
-// Module 12224 (ExternalLinkItem)
+// Module 12229 (ExternalLinkItem)
 function ExternalLinkItem(data) {
   data = data.data;
   const require = data.url;
@@ -26,7 +26,7 @@ const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[2]);
-let closure_6 = _module1.createStyles({ linksContainer: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, headerText: { marginBottom: 8 } });
+let closure_6 = _module1.createStyles({ linksContainer: { "Bool(false)": "LIGHT", "Bool(false)": "DARK", "Bool(false)": "backgroundColor" }, headerText: { marginBottom: 8 } });
 const _module2 = require(dependencyMap[9]);
 const result = _module2.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
 
@@ -39,7 +39,7 @@ export default function ExternalLinksElement(elements) {
         let obj = { style: tmp.linksContainer };
         let tmp5 = !elements.some((data) => data.data.is_header_hidden);
         if (tmp5) {
-          obj = { <string:4003527526>: 180, <string:2924932188>: 180, <string:1546256390>: null, <string:2324728136>: "7d7d766e7ebb30cec66584e69b89634d", style: tmp.headerText };
+          obj = { "Null": 180, "Null": 180, "Null": null, "Null": "7d7d766e7ebb30cec66584e69b89634d", style: tmp.headerText };
           const intl = require(dependencyMap[4]).intl;
           obj.children = intl.string(require(dependencyMap[4]).t.hvVgAZ).toUpperCase();
           tmp5 = callback(require(dependencyMap[3]).Text, obj);

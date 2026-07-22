@@ -1,8 +1,8 @@
-// Module ID: 14973
-// Function ID: 112711
+// Module ID: 14981
+// Function ID: 112754
 // Dependencies: []
 
-// Module 14973
+// Module 14981
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -19,10 +19,10 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_20, jsxs: closure_21 } = arg1(dependencyMap[11]));
 let obj1 = arg1(dependencyMap[12]);
 let obj = {};
-obj = { getAmplitudinalSoundboardVolume: 6.5, UMWBZr: 6.5, paddingRight: null, flexDirection: null, flexWrap: 1, alignItems: 0.7, overflow: true };
+obj = { "Null": 6.5, "Null": 6.5, "Null": null, "Null": null, "Null": 1, "Bool(true)": 0.7, "Bool(true)": true };
 const merged = Object.assign(importDefault(dependencyMap[13]).shadows.SHADOW_HIGH);
 obj.youRow = obj;
-obj.youRowRight = { stiffness: false, damping: false };
+obj.youRowRight = {};
 obj1 = { flex: 1, marginRight: importDefault(dependencyMap[13]).space.PX_12, borderRadius: importDefault(dependencyMap[13]).modules.mobile.YOU_BAR_BORDER_RADIUS };
 obj.youPressable = obj1;
 let closure_22 = obj1.createStyles(obj);
@@ -210,7 +210,7 @@ let closure_27 = importAllResult.memo(() => {
       const result1 = closure_5.set(false);
       const obj3 = callback(closure_2[32]);
     }
-  }, 500, { -809188780: null, 163101889: null });
+  }, 500, { flex: "<string:1040334421>", marginRight: "<string:1040334338>" });
   const memo2 = importAllResult.useMemo(fn2, items4);
   // CreateGeneratorClosureLongIndex (0x67)
   const items5 = [sharedValue];

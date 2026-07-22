@@ -1,5 +1,5 @@
 // Module ID: 7773
-// Function ID: 61699
+// Function ID: 61709
 // Name: getInitialParserStateFromMessage
 // Dependencies: []
 // Exports: default, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
@@ -130,7 +130,7 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
     let content;
     let guildId;
     let messageId;
-    const obj = { crystal_ball: null, channels: "custom", POLL_ALERT: 60, friendIcon: 60, enableGameUpdateNotifications: 0.8, containerSize: null, serializeHost: true, accessibilityRole: "contain", GuildBadgeFrog: null, NONE_MONTH: true, GiftingTier3SmallBadge: "no-hide-descendants", ExpoRandom: false, paddingTop: true, position: "/assets/.cache/intl/ZGVzaWdu", mentionChannels: [] };
+    const obj = { borderColor: null, Oppo: "custom", video_game: 60, EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: 60, isSelected: 0.8, isTryItOut: null, initialPlaybackTimeSec: true, FILTER_LINK_FROM: "contain", GIFTING_BADGE_COACHMARK: null, useImminentUpcomingGuildEvents: true, triggeredByStatusChange: "no-hide-descendants", reviewRow: false, GET_GUILDS: true, isEncryptionAvailable: "/assets/.cache/intl/ZGVzaWdu", mentionChannels: [] };
     ({ content, guildId, channelId, messageId, authorId } = arg1);
     obj.mentionGames = new Map();
     obj.soundboardSounds = [];

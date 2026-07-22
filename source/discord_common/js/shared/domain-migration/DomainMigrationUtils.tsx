@@ -1,10 +1,10 @@
-// Module ID: 5410
-// Function ID: 46414
+// Module ID: 5140
+// Function ID: 44835
 // Name: DomainMigrationEventType
 // Dependencies: []
 // Exports: extractMessage, sendPostMessage
 
-// Module 5410 (DomainMigrationEventType)
+// Module 5140 (DomainMigrationEventType)
 const obj = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/domain-migration/DomainMigrationUtils.tsx");

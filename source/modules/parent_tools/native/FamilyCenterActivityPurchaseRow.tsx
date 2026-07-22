@@ -1,16 +1,16 @@
-// Module ID: 13683
-// Function ID: 103581
+// Module ID: 13690
+// Function ID: 103614
 // Name: FamilyCenterActivityPurchaseRow
 // Dependencies: []
 // Exports: default
 
-// Module 13683 (FamilyCenterActivityPurchaseRow)
+// Module 13690 (FamilyCenterActivityPurchaseRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": "<string:208749762>", "Null": "<string:1107296256>", "Null": "text-default", "Null": "text-sm/medium", "Null": "<string:3877871443>", "Null": "<string:1361289113>", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { <string:1291358328>: "title", <string:2381877063>: "__closure", <string:115617528>: "construct", <string:112989421>: "Boolean", <string:2629566652>: "isArray", <string:213651783>: "isArray", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj.textContainer = {};
 let closure_6 = obj.createStyles(obj);
@@ -67,9 +67,9 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.subscriptionPlanId = subscriptionPlanId;
     const items = [tmp8(importDefault(dependencyMap[8]), obj), ];
     const obj1 = { style: tmp.textContainer };
-    const obj2 = { "Null": 0.706, "Null": 0.000000000000000018217984681379375, "Null": -0.000030517578125, "Null": 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: combined };
+    const obj2 = { children: combined };
     const items1 = [callback(arg1(dependencyMap[9]).Text, obj2), ];
-    const obj3 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children: formatPriceResult };
+    const obj3 = { cachedAt: "center", edpbxy: "center", children: formatPriceResult };
     items1[1] = callback(arg1(dependencyMap[9]).Text, obj3);
     obj1.children = items1;
     items[1] = callback2(View, obj1);

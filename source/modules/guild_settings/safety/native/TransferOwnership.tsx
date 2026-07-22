@@ -1,10 +1,10 @@
-// Module ID: 10981
-// Function ID: 85488
+// Module ID: 10982
+// Function ID: 85501
 // Name: TransferOwnership
 // Dependencies: []
 // Exports: default
 
-// Module 10981 (TransferOwnership)
+// Module 10982 (TransferOwnership)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,16 +19,16 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-const obj1 = { -821772205: 52881784.83212474, 1103288997: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { "Null": 52881784.83212474, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj1;
 obj.arrow = {};
 obj.avatarsWrapper = {};
-const obj2 = { borderRadius: "png", borderWidth: "text-xs/semibold", padding: "text-brand", paddingRight: "flex", overflow: "center", count: "center", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { -9223372036854775808: "png", 9223372036854775807: "text-xs/semibold", 9223372036854775807: "text-brand", 9223372036854775807: "flex", 0: "center", 0: "center", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.avatarFauxBorder = obj2;
-obj.otherUserAvatar = { extraChildStyle: true, extraUnderlayStyle: true };
+obj.otherUserAvatar = { Hover: null, extractCaptchaPropsFromResponse: null };
 obj.aka = { flex: 1 };
-obj.miniAvatar = { <string:3261296306>: true, <string:223456190>: true, <string:1689870850>: true };
-obj.miniGuildIcon = { <string:1410301238>: 657391618, <string:1359503744>: 1934688258, <string:743816013>: -2091384830, <string:241989511>: null };
+obj.miniAvatar = {};
+obj.miniGuildIcon = {};
 let closure_16 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnership.tsx");
@@ -113,7 +113,7 @@ export default function TransferOwnership(guild) {
   items2[1] = callback2(hasAvatarForGuildResult, obj6);
   obj4.children = items2;
   items1[1] = callback3(hasAvatarForGuildResult, obj4);
-  const obj8 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: guild.name };
+  const obj8 = { cachedAt: true, edpbxy: true, children: guild.name };
   items1[2] = callback2(arg1(closure_2[19]).Text, obj8);
   const obj9 = {};
   if (null == nickname) {
@@ -223,7 +223,7 @@ export default function TransferOwnership(guild) {
     AKAHook: function NicknameAKA() {
       const tmp = callback4();
       let obj = {};
-      obj = { delete: false, dispatch: false, raw: false, style: tmp.aka, children: [null, null] };
+      obj = { "Null": "absolute", "Null": "100%", alignItems: 440, style: tmp.aka, children: ["onHoverChange", "createChild"] };
       const items = [callback3(guild(closure_2[19]).Text, obj), , ];
       let tmp4 = null;
       if (hasAvatarForGuildResult) {

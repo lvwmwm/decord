@@ -1,10 +1,10 @@
-// Module ID: 14860
-// Function ID: 111964
+// Module ID: 14868
+// Function ID: 112007
 // Name: GuildInfoHeader
 // Dependencies: []
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 14860 (GuildInfoHeader)
+// Module 14868 (GuildInfoHeader)
 function GuildInfoHeader(bannerHeight) {
   let guild;
   let scrollPosition;
@@ -43,7 +43,7 @@ function GuildInfoHeader(bannerHeight) {
   const tmp = callback5();
   obj = { style: animatedStyle1 };
   const tmp5 = importDefault(dependencyMap[21]);
-  obj.children = callback(importDefault(dependencyMap[22]), { "Bool(true)": null, "Bool(true)": null });
+  obj.children = callback(importDefault(dependencyMap[22]), { "Bool(false)": null, "Bool(false)": null });
   const items1 = [callback(importDefault(dependencyMap[21]), obj), ];
   obj1 = { style: tmp.headerWrapper, children: callback(importDefault(dependencyMap[23]), obj2) };
   obj2 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
@@ -94,7 +94,7 @@ function ReanimatedGuildBanner(guild) {
     const value = scrollPosition.get();
     let obj = {};
     const items = [0.229, bannerHeight];
-    obj.opacity = guild(bannerHeight[20]).interpolate(value, items, [], "clamp");
+    obj.opacity = guild(bannerHeight[20]).interpolate(value, items, [true, true], "clamp");
     obj = {};
     if (value >= 0) {
       const obj4 = guild(bannerHeight[20]);
@@ -125,7 +125,7 @@ function ReanimatedGuildBanner(guild) {
     constructor() {
       obj = {};
       obj2 = guild(bannerHeight[20]);
-      obj.opacity = obj2.interpolate(closure_7.get(), ["replace", "then"], [-520405018, 1431658495]);
+      obj.opacity = obj2.interpolate(closure_7.get(), [77601039, 1612144654], [-520405018, 1431658495]);
       return obj;
     }
   }

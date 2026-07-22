@@ -864,7 +864,7 @@ _exports.agent = () => {
   return tmp;
 };
 let closure_6 = 0;
-const items = [null, null, null, null, null, null];
+const items = [];
 if (0 < items.length) {
   do {
     let tmp5 = function _loop() {

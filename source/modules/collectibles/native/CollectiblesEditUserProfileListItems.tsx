@@ -1,5 +1,5 @@
 // Module ID: 7860
-// Function ID: 62632
+// Function ID: 62642
 // Name: EditCollectibleListItem
 // Dependencies: []
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
@@ -57,10 +57,10 @@ const tmp2 = arg1(dependencyMap[4]);
 obj.item = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.selected = { borderColor: importDefault(dependencyMap[6]).colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
-obj.optionCell = { margin: null, backgroundColor: null };
+obj.optionCell = { "Bool(false)": null, "Bool(false)": null };
 obj.optionCellText = { marginTop: 4 };
-obj.newIcon = { "Bool(false)": -87683965523282670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -72920860119297050000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003183015448278953 };
-obj.lockIcon = { "Bool(false)": "secondaryButton", "Bool(false)": true, "Bool(false)": "showVotes" };
+obj.newIcon = {};
+obj.lockIcon = { convertShortcutToName: "remove", hasUnreadMessages: null, CreatorMonetizationRestrictions: "secondaryButton" };
 let closure_9 = obj.createStyles(obj);
 const obj2 = { borderColor: importDefault(dependencyMap[6]).colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx");
@@ -122,7 +122,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   let isSelected;
   let isTryItOut;
   skuId = skuId.skuId;
-  let obj = { "Null": "ERROR", "Null": "ERROR", "Null": "NOT_RESPONDER", "Null": "NOT_RESPONDER" };
+  let obj = { onSwipeableCloseStartDrag: -24, didSelfVote: null, isExpired: 1, NBSP: "Malaysia" };
   ({ isSelected, isTryItOut, children } = skuId);
   Object.setPrototypeOf(null);
   const merged = Object.assign(skuId, obj);

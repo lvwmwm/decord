@@ -1,9 +1,9 @@
-// Module ID: 10431
-// Function ID: 80440
+// Module ID: 10432
+// Function ID: 80453
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10431 (_isNativeReflectConstruct)
+// Module 10432 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -122,7 +122,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       }
       let userViewInfo = tmp3.userViewInfo;
       if (null == userViewInfo) {
-        userViewInfo = { 9223372036854775807: -536870861, 9223372036854775807: -299892737 };
+        userViewInfo = { schema: "%FunctionPrototype%", multiple: "paddingStart" };
       }
       ({ eligibleAt, viewCount } = userViewInfo);
       const _Date = Date;

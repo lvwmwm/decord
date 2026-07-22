@@ -1,5 +1,5 @@
 // Module ID: 7990
-// Function ID: 63518
+// Function ID: 63528
 // Name: getUserMaxFileSize
 // Dependencies: []
 // Exports: getUserMaxFileSize

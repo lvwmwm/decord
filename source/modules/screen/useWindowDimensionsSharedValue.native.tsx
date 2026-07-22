@@ -1,10 +1,10 @@
-// Module ID: 14587
-// Function ID: 109930
+// Module ID: 14595
+// Function ID: 109973
 // Name: getWindowDimensionsWorklet
 // Dependencies: []
 // Exports: default
 
-// Module 14587 (getWindowDimensionsWorklet)
+// Module 14595 (getWindowDimensionsWorklet)
 const _module = require(dependencyMap[0]);
 let obj = {};
 const _module1 = require(dependencyMap[1]);

@@ -1,5 +1,5 @@
 // Module ID: 4669
-// Function ID: 40590
+// Function ID: 40599
 // Name: DefaultHttpClient
 // Dependencies: []
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload

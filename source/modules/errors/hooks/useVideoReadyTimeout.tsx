@@ -1,10 +1,10 @@
-// Module ID: 10567
-// Function ID: 82517
+// Module ID: 10568
+// Function ID: 82530
 // Name: useVideoReadyTimeout
 // Dependencies: []
 // Exports: default
 
-// Module 10567 (useVideoReadyTimeout)
+// Module 10568 (useVideoReadyTimeout)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = 20 * importDefault(dependencyMap[1]).Millis.SECOND;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/errors/hooks/useVideoReadyTimeout.tsx");

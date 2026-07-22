@@ -1,10 +1,10 @@
-// Module ID: 5502
-// Function ID: 46892
+// Module ID: 5501
+// Function ID: 46900
 // Name: TableSwitchRow
 // Dependencies: []
 // Exports: TableSwitchRow
 
-// Module 5502 (TableSwitchRow)
+// Module 5501 (TableSwitchRow)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -26,7 +26,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
     disabled = false;
   }
   const variant = value.variant;
-  let obj = { "Bool(true)": null, "Bool(true)": 0.6, "Bool(true)": "BounceOutRight", "Bool(true)": null, "Bool(true)": 0.6, "Bool(true)": "BounceOutLeft", "Bool(true)": null, "Bool(true)": 0.6 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let callback;

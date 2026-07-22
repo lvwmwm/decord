@@ -1,21 +1,20 @@
-// Module ID: 13211
-// Function ID: 100159
+// Module ID: 13218
+// Function ID: 100192
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: resetGlobalState
 
-// Module 13211 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import closure_11 from "result";
-import result from "result";
+// Module 13218 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import closure_11 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -618,7 +617,7 @@ let tmp4 = (Store) => {
       self = this;
       tmp = closure_5(this, ICYMISessionStore);
       obj = closure_3(ICYMISessionStore);
-      tmp2 = closure_2;
+      tmp2 = __exportStarResult1;
       if (closure_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
@@ -657,8 +656,8 @@ let tmp4 = (Store) => {
   };
   items[2] = obj;
   return callback2(ICYMISessionStore, items);
-}(require("result").Store);
-tmp4 = new tmp4(require("result"), {
+}(require("__exportStarResult1").Store);
+tmp4 = new tmp4(require("__exportStarResult1"), {
   ICYMI_TAB_OPENED: handleTabOpened,
   ICYMI_TAB_CLOSED: function handleTabClosed() {
     return endCurrentSession();
@@ -779,7 +778,7 @@ tmp4 = new tmp4(require("result"), {
     return true;
   }
 });
-result = result.fileFinishedImporting("modules/icymi/ICYMISessionStore.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/icymi/ICYMISessionStore.tsx");
 
 export default tmp4;
 export const resetGlobalState = function resetGlobalState() {

@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    "Bool(false)": "o",
-    "Bool(false)": "o",
+    accessibilityRole: "o",
+    HermesInternal: "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -80,7 +80,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         obj.message = str4;
         setStatus.setStatus(obj);
         let obj1 = require(dependencyMap[4]);
-        obj = { mechanism: { id: -37057201859176220000000000000000000000000000000000000000000000000000000000000000000000000000, gameId: 219408260989583100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
+        obj = { mechanism: {} };
         obj1.captureException(type.error, obj);
         flag = true;
       }

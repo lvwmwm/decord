@@ -1,10 +1,10 @@
-// Module ID: 11926
-// Function ID: 92258
+// Module ID: 11927
+// Function ID: 92272
 // Name: PlatformTypes
 // Dependencies: []
 // Exports: default
 
-// Module 11926 (PlatformTypes)
+// Module 11927 (PlatformTypes)
 const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
 const items = [, , , ];
 ({ LEAGUE_OF_LEGENDS: arr[0], ROBLOX: arr[1], TWITCH: arr[2], YOUTUBE: arr[3] } = PlatformTypes);

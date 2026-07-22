@@ -1,9 +1,9 @@
-// Module ID: 8751
-// Function ID: 69198
+// Module ID: 8752
+// Function ID: 69210
 // Name: roundIfClose
 // Dependencies: []
 
-// Module 8751 (roundIfClose)
+// Module 8752 (roundIfClose)
 let closure_0 = { code: "function roundIfClose_MathUtilsTsx1(num,precision){const decimalPart=num-Math.floor(num);if(decimalPart>=1-precision){return Math.ceil(num);}if(decimalPart<=precision){return Math.floor(num);}return num;}" };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/MathUtils.tsx");

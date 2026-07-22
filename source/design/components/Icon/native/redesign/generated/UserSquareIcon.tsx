@@ -1,5 +1,5 @@
 // Module ID: 8009
-// Function ID: 63594
+// Function ID: 63604
 // Name: UserSquareIcon
 // Dependencies: []
 // Exports: UserSquareIcon

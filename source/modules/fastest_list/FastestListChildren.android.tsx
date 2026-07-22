@@ -1,14 +1,14 @@
-// Module ID: 9247
-// Function ID: 72280
+// Module ID: 9248
+// Function ID: 72293
 // Name: map
 // Dependencies: []
 
-// Module 9247 (map)
+// Module 9248 (map)
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ portal: { GameIconImageSize: "<string:3082955202>", GET_ENTITLEMENT_TICKET: "<string:103629460>", loading: "<string:3630497793>", SoundPlayer: "<string:961609729>" } });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ portal: { delete: 131420590, pos: -1717986767, items: -644245095, channel: 94527 } });
 const obj = { items: [] };
 const obj2 = arg1(dependencyMap[4]);
 obj.keys = new Map();

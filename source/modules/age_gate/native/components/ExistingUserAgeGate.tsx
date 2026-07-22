@@ -1,10 +1,10 @@
-// Module ID: 15858
-// Function ID: 121360
+// Module ID: 15866
+// Function ID: 121403
 // Name: ExistingUserAgeGate
 // Dependencies: []
 // Exports: default
 
-// Module 15858 (ExistingUserAgeGate)
+// Module 15866 (ExistingUserAgeGate)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -18,7 +18,7 @@ const tmp2 = arg1(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 const tmp4 = arg1(dependencyMap[9]);
-let closure_16 = arg1(dependencyMap[10]).createStyles({ container: { <string:743828640>: "construct", <string:3482404964>: "isArray", <string:1940311795>: "isArray", <string:3335284451>: "isArray" }, header: { "Null": null, "Null": null }, body: {}, inputGroup: {}, buttonWrapper: { width: "100%" } });
+let closure_16 = arg1(dependencyMap[10]).createStyles({ container: {}, header: { value: null, on: null }, body: {}, inputGroup: { "Bool(false)": "column", "Bool(false)": "flex-end" }, buttonWrapper: { width: "100%" } });
 const obj = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGate.tsx");
 
@@ -149,7 +149,7 @@ export default function ExistingUserAgeGate(onSuccess) {
       obj = { top: true, style: tmp.container };
       obj1 = { style: tmp.header, children: stringResult1 };
       const items5 = [callback2(arg1(dependencyMap[22]).Text, obj1), , , ];
-      obj2 = { delete: 1, dispatch: 1, raw: null, style: tmp.body, children: stringResult };
+      obj2 = { "Null": -1493172224, "Null": 1962934272, alignItems: 0, style: tmp.body, children: stringResult };
       items5[1] = callback2(arg1(dependencyMap[22]).Text, obj2);
       const obj3 = { style: tmp.inputGroup, ref };
       const intl5 = arg1(dependencyMap[14]).intl;

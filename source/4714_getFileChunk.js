@@ -1,5 +1,5 @@
 // Module ID: 4714
-// Function ID: 41004
+// Function ID: 41013
 // Name: getFileChunk
 // Dependencies: []
 
@@ -79,7 +79,7 @@ arg5.findMatroskaDocTypeElements = function findMatroskaDocTypeElements(fileChun
   return str;
 };
 arg5.isftypStringIncluded = function isftypStringIncluded(fileChunk) {
-  const items = [];
+  const items = ["isArray", "TOO_MANY_CONNECTIONS", "isArray", "device_platform"];
   let num = 0;
   if (0 < fileChunk.length - items.length) {
     while (true) {

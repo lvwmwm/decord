@@ -1,5 +1,5 @@
 // Module ID: 7952
-// Function ID: 63435
+// Function ID: 63445
 // Name: usePremiumFeatureUpsellGetNitro
 // Dependencies: []
 // Exports: default

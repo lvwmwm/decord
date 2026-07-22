@@ -1,5 +1,5 @@
 // Module ID: 4400
-// Function ID: 38826
+// Function ID: 38834
 // Name: shimStringTrim
 // Dependencies: []
 

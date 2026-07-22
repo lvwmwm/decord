@@ -1,10 +1,10 @@
-// Module ID: 10688
-// Function ID: 83285
+// Module ID: 10689
+// Function ID: 83298
 // Name: ImageSparkleIcon
 // Dependencies: []
 // Exports: ImageSparkleIcon
 
-// Module 10688 (ImageSparkleIcon)
+// Module 10689 (ImageSparkleIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ImageSparkleIcon.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 5736
-// Function ID: 49326
+// Function ID: 49337
 // Name: _getCancellationSlowConnection
 // Dependencies: []
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect

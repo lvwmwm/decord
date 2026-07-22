@@ -1,13 +1,12 @@
-// Module ID: 8631
-// Function ID: 68382
+// Module ID: 8632
+// Function ID: 68394
 // Name: getOpenCriticTierText
-// Dependencies: [297467904, 131072, 2068905984, 1194, 1838, 6974, 653]
+// Dependencies: [297467904, 131072, 2860187648, 771751940, 1040187399, 2365587483, 1023410178]
 // Exports: getOpenCriticCircleRatingColor, getOpenCriticTierImage, getOpenCriticTierText
 
-// Module 8631 (getOpenCriticTierText)
-import ME from "ME";
-
-const result = ME.fileFinishedImporting("modules/game_profile/hooks/useGameProfileOpenCritic.tsx");
+// Module 8632 (getOpenCriticTierText)
+const _module = require(dependencyMap[6]);
+const result = _module.fileFinishedImporting("modules/game_profile/hooks/useGameProfileOpenCritic.tsx");
 
 export const getOpenCriticTierText = function getOpenCriticTierText(tier) {
   if (require(dependencyMap[0]).OpenCriticTier.MIGHTY === tier) {

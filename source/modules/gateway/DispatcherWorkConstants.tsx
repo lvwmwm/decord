@@ -1,12 +1,26 @@
-// Module ID: 12454
-// Function ID: 95120
+// Module ID: 12459
+// Function ID: 95148
 // Name: WorkIdleDeadline
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 12454 (WorkIdleDeadline)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 12459 (WorkIdleDeadline)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/gateway/DispatcherWorkConstants.tsx");
+
+export const DISPATCHER_STANDARD_TIMEOUT_MS = 50;
+export const DISPATCHER_IDEAL_TIME_LIMIT_MS = 50;
+export const DISPATCHER_MIN_DEADLINE_TIME_MS = 2.0833333333333335;
+export const DISPATCHER_DEADLINE_OVERHEAD_MS = 3.3333333333333335;
+export const NATIVE_WORK_DEADLINE_MS = 5.555555555555556;
+export const NATIVE_WORK_BACKOFF_MS = 4.166666666666667;
+export const DISPATCHER_LONG_TIMEOUT_MS = 200;
+export const MAX_DISPATCHER_TIMEOUT_MS = 1000;
+export const MAX_DISPATCHER_FLUSH_DEADLINE_TRIES = 2;
+export const DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS = 50;
+export const WorkIdleDeadline = () => {
   class WorkIdleDeadline {
     constructor(arg0) {
       flag = arg1;
@@ -56,16 +70,3 @@ const tmp2 = () => {
   };
   return callback(WorkIdleDeadline, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/gateway/DispatcherWorkConstants.tsx");
-
-export const DISPATCHER_STANDARD_TIMEOUT_MS = 50;
-export const DISPATCHER_IDEAL_TIME_LIMIT_MS = 50;
-export const DISPATCHER_MIN_DEADLINE_TIME_MS = 2.0833333333333335;
-export const DISPATCHER_DEADLINE_OVERHEAD_MS = 3.3333333333333335;
-export const NATIVE_WORK_DEADLINE_MS = 5.555555555555556;
-export const NATIVE_WORK_BACKOFF_MS = 4.166666666666667;
-export const DISPATCHER_LONG_TIMEOUT_MS = 200;
-export const MAX_DISPATCHER_TIMEOUT_MS = 1000;
-export const MAX_DISPATCHER_FLUSH_DEADLINE_TRIES = 2;
-export const DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS = 50;
-export const WorkIdleDeadline = tmp2;

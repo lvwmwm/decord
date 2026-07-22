@@ -1,5 +1,5 @@
 // Module ID: 4189
-// Function ID: 36029
+// Function ID: 36036
 // Name: useIsClipsSettingsRedesignEnabled
 // Dependencies: []
 // Exports: isClipsSettingsRedesignEnabled, useDisabledWhenAutoclippingOff
@@ -16,9 +16,8 @@ function useDisabledWhenClippingOff() {
   return tmp;
 }
 let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[1]);
-obj = { bottom: null, name: null, defaultConfig: { enableRedesign: false }, variations: { [1]: { enableRedesign: true } } };
-const apexExperiment = obj.createApexExperiment(obj);
+const apexExperiment = arg1(dependencyMap[1]).createApexExperiment({ defaultConfig: { enableRedesign: false }, variations: { [1]: { enableRedesign: true } } });
+const obj = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/clips/ClipsSettingsRedesignExperiment.tsx");
 
 export const ClipsSettingsRedesignExperiment = apexExperiment;

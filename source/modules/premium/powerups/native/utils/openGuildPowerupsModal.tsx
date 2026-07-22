@@ -1,10 +1,10 @@
-// Module ID: 11501
-// Function ID: 89621
+// Module ID: 11502
+// Function ID: 89634
 // Name: openGuildPowerupsModal
 // Dependencies: []
 // Exports: default
 
-// Module 11501 (openGuildPowerupsModal)
+// Module 11502 (openGuildPowerupsModal)
 let closure_3 = 0;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsModal.tsx");

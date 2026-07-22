@@ -1,10 +1,10 @@
-// Module ID: 5673
-// Function ID: 48734
+// Module ID: 5672
+// Function ID: 48742
 // Name: getShouldObscureForSetting
 // Dependencies: []
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 5673 (getShouldObscureForSetting)
+// Module 5672 (getShouldObscureForSetting)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 13474
-// Function ID: 102282
+// Module ID: 13481
+// Function ID: 102315
 // Name: useProfileEffectSections
 // Dependencies: []
 // Exports: default
 
-// Module 13474 (useProfileEffectSections)
+// Module 13481 (useProfileEffectSections)
 let closure_2 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 let closure_4 = importDefault(dependencyMap[2]);

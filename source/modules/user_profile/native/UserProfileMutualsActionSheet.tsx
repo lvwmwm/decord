@@ -1,10 +1,10 @@
-// Module ID: 11632
-// Function ID: 90298
+// Module ID: 11633
+// Function ID: 90311
 // Name: MutualFriendRow
 // Dependencies: []
 // Exports: default
 
-// Module 11632 (MutualFriendRow)
+// Module 11633 (MutualFriendRow)
 function MutualFriendRow(mutualFriend) {
   let end;
   let isMobileOnline;
@@ -70,7 +70,7 @@ class MutualGuildRow {
       tmp13 = arg1;
       tmp14 = dependencyMap;
       num2 = 15;
-      obj3 = {};
+      obj3 = { cachedAt: null, edpbxy: null };
       obj3.children = nick;
       tmp11 = jsx(arg1(dependencyMap[15]).Text, obj3);
     }
@@ -81,7 +81,7 @@ class MutualGuildRow {
       tmp17 = arg1;
       tmp18 = dependencyMap;
       num3 = 15;
-      obj4 = {};
+      obj4 = { cachedAt: null, edpbxy: null };
       obj4.children = user.username;
       tmp15 = jsx(arg1(dependencyMap[15]).Text, obj4);
     }
@@ -109,7 +109,7 @@ obj.loadingState = { paddingTop: importDefault(dependencyMap[7]).space.PX_8, ali
 obj.emptyState = { alignItems: "center" };
 const obj1 = { paddingTop: importDefault(dependencyMap[7]).space.PX_8, alignItems: "center" };
 obj.activityStatusText = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4 };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.mutualGuildSubLabel = obj3;
 let closure_11 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };

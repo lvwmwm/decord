@@ -1,5 +1,5 @@
 // Module ID: 7871
-// Function ID: 62672
+// Function ID: 62682
 // Name: EditCollectiblesPreviewDescription
 // Dependencies: []
 // Exports: default
@@ -59,7 +59,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       let toLocaleDateStringResult;
       if (null != purchase) {
         const purchasedAt = purchase.purchasedAt;
-        toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { paddingTop: null, paddingBottom: null });
+        toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, {});
       }
       obj3.date = toLocaleDateStringResult;
       obj2.children = intl2.format(arg1(dependencyMap[10]).t.gW9R4B, obj3);
@@ -74,7 +74,7 @@ function EditCollectiblesPreviewDescription(arg0) {
         const intl3 = arg1(dependencyMap[10]).intl;
         obj5 = {};
         expiresAt = purchase.expiresAt;
-        obj5.date = expiresAt.toLocaleDateString(stateFromStores, {});
+        obj5.date = expiresAt.toLocaleDateString(stateFromStores, { alignItems: "-1", position: "shrug", flexDirection: "shrug", marginTop: "-2", marginBottom: "tableflip" });
         obj4.children = intl3.format(arg1(dependencyMap[10]).t.eZSTa5, obj5);
         tmp29 = callback(arg1(dependencyMap[9]).Text, obj4);
       }
@@ -114,7 +114,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ productDetailsContainer: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ productDetailsContainer: { pageIndictor: 1392509218, width: 40960407, paddingTop: 1413970339, paddingBottom: -134217057 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/EditCollectiblesPreviewDetails.tsx");
 
@@ -132,7 +132,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
   if (null != previewSkuId) {
     if (null != product) {
       let obj = { style: tmp.productDetailsContainer };
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
+      obj = {};
       let name;
       if (null != product) {
         name = product.name;

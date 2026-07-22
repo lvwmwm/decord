@@ -1,10 +1,10 @@
-// Module ID: 9006
-// Function ID: 70879
+// Module ID: 9007
+// Function ID: 70892
 // Name: ChatSmileIcon
 // Dependencies: []
 // Exports: ChatSmileIcon
 
-// Module 9006 (ChatSmileIcon)
+// Module 9007 (ChatSmileIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChatSmileIcon.tsx");

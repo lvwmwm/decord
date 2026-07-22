@@ -1,10 +1,10 @@
-// Module ID: 11962
-// Function ID: 92464
+// Module ID: 11963
+// Function ID: 92478
 // Name: _fetchNote
 // Dependencies: []
 // Exports: default
 
-// Module 11962 (_fetchNote)
+// Module 11963 (_fetchNote)
 function _fetchNote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -31,7 +31,7 @@ export default function useNote(arg0) {
     }
   }, items1);
   if (null == stateFromStores) {
-    stateFromStores = { "Null": 131122.52832032426, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
+    stateFromStores = {};
   }
   return stateFromStores;
 };

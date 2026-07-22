@@ -1,10 +1,10 @@
-// Module ID: 15310
-// Function ID: 116457
+// Module ID: 15318
+// Function ID: 116500
 // Name: FriendsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15310 (FriendsScreen)
+// Module 15318 (FriendsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,8 +16,8 @@ obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_8, flex: 1 };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.requestsButtonContainer = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderRadius: importDefault(dependencyMap[6]).radii.lg, overflow: "hidden" };
-obj.emptyContainer = { position: null, alignSelf: null };
-const obj2 = { marginEnd: 1665208787, width: 1912603216, height: 24, marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
+obj.emptyContainer = {};
+const obj2 = { -9223372036854775808: 705839377, 9223372036854775807: 410124290, 0: 402653184, marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
 obj.buttonContainer = obj2;
 let closure_9 = obj.createStyles(obj);
 const obj1 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderRadius: importDefault(dependencyMap[6]).radii.lg, overflow: "hidden" };
@@ -120,7 +120,7 @@ export default function FriendsScreen() {
       return tmp(tmp2, obj);
     } else {
       const obj3 = { style: tmp2.requestsButtonContainer };
-      let obj4 = { bind: null, cursor: null };
+      let obj4 = { 400888199: null, 2091392542: null };
       const obj5 = { source: tmp2(analyticsLocations[17]) };
       obj4.icon = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Icon, obj5);
       obj4.trailing = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Arrow, {});

@@ -1,20 +1,20 @@
-// Module ID: 11757
-// Function ID: 91289
+// Module ID: 11758
+// Function ID: 91302
 // Name: HubEmailConnectionWaitlist
 // Dependencies: []
 // Exports: default
 
-// Module 11757 (HubEmailConnectionWaitlist)
+// Module 11758 (HubEmailConnectionWaitlist)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {}, header: { marginBottom: 16 } };
-obj = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj = { 1936959572: "Array", -823869256: "handleActivityItemSelected", -1717677639: "dotSeparator", 1884411745: "mic", 1390895600: "handleReduceTransparencyChanged", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.description = { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-obj.redesignButton = {};
+obj.description = { memo: 52881784.83212474, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.redesignButton = { "Bool(false)": "column", "Bool(false)": "flex-end" };
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionWaitlist.tsx");

@@ -1,16 +1,15 @@
-// Module ID: 11556
-// Function ID: 89919
+// Module ID: 11557
+// Function ID: 89932
 // Name: useCanGuildPowerupBeToggled
 // Dependencies: [0, 0, 0, 4294967295, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11556 (useCanGuildPowerupBeToggled)
-import closure_3 from "result";
-import closure_4 from "result";
-import { PowerupActiveStatusType } from "result";
-import result from "result";
+// Module 11557 (useCanGuildPowerupBeToggled)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { PowerupActiveStatusType } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");
 
 export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
   arg1 = arg0;

@@ -1,9 +1,9 @@
-// Module ID: 12505
-// Function ID: 95830
+// Module ID: 12510
+// Function ID: 95858
 // Name: enforcing
 // Dependencies: []
 
-// Module 12505 (enforcing)
+// Module 12510 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppRatingRequestModule");
 const _module = require(dependencyMap[1]);

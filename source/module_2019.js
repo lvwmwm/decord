@@ -4,6 +4,6 @@
 
 // Module 2019
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: true, format: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", View: null, accessibilityRole: "2635ccff9c48c5e264e397f8e02fcba6", surrogates: "th.messages.2635ccff9c48c5e264e397f8e02fcba6.compiled.messages", url: "jsona", scales: [null] };
+const obj = { 296374: null, 1102560849: null, 288807: null, 1103760465: null, 288241: null, 1120538193: null, scales: [false] };
 
 export default _module.registerAsset(obj);

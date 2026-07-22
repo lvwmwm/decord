@@ -1,10 +1,10 @@
-// Module ID: 15080
-// Function ID: 113521
+// Module ID: 15088
+// Function ID: 113564
 // Name: WordTopic
 // Dependencies: []
 // Exports: default
 
-// Module 15080 (WordTopic)
+// Module 15088 (WordTopic)
 function WordTopic(categoryid) {
   let selected;
   categoryid = categoryid.categoryid;
@@ -71,9 +71,9 @@ let obj = arg1(dependencyMap[21]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[22]).colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj.container = obj;
+const obj1 = { <string:765737181>: 40, <string:1382441379>: 40, left: importDefault(dependencyMap[22]).space.PX_24, right: importDefault(dependencyMap[22]).space.PX_24, paddingBottom: importDefault(dependencyMap[22]).space.PX_8 };
+obj.footer = obj1;
 const tmp3 = arg1(dependencyMap[6]);
-obj.footer = { left: importDefault(dependencyMap[22]).space.PX_24, right: importDefault(dependencyMap[22]).space.PX_24, paddingBottom: importDefault(dependencyMap[22]).space.PX_8 };
-const obj1 = { left: importDefault(dependencyMap[22]).space.PX_24, right: importDefault(dependencyMap[22]).space.PX_24, paddingBottom: importDefault(dependencyMap[22]).space.PX_8 };
 obj.title = { marginTop: importDefault(dependencyMap[22]).space.PX_24, marginBottom: importDefault(dependencyMap[22]).space.PX_8, marginHorizontal: importDefault(dependencyMap[22]).space.PX_24 };
 const obj2 = { marginTop: importDefault(dependencyMap[22]).space.PX_24, marginBottom: importDefault(dependencyMap[22]).space.PX_8, marginHorizontal: importDefault(dependencyMap[22]).space.PX_24 };
 obj.subtitle = { marginBottom: importDefault(dependencyMap[22]).space.PX_24, marginHorizontal: importDefault(dependencyMap[22]).space.PX_24 };
@@ -124,11 +124,11 @@ export default function ICYMITopicsScreen() {
     }
   }, items2);
   obj = {};
-  obj = { hasMaxConnections: false, isBoostOnlySubscription: false, style: tmp.title };
+  obj = { cachedAt: false, edpbxy: false, style: tmp.title };
   const intl = arg1(closure_2[31]).intl;
   obj.children = intl.string(arg1(closure_2[31]).t.Y5d99L);
   const items3 = [callback3(arg1(closure_2[34]).Text, obj), , , , ];
-  const obj1 = { style: tmp.subtitle };
+  const obj1 = { cachedAt: 400, edpbxy: 20, style: tmp.subtitle };
   const intl2 = arg1(closure_2[31]).intl;
   obj1.children = intl2.string(arg1(closure_2[31]).t.MGZsfv);
   items3[1] = callback3(arg1(closure_2[34]).Text, obj1);

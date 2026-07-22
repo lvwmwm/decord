@@ -1,10 +1,10 @@
-// Module ID: 10381
-// Function ID: 80046
+// Module ID: 10382
+// Function ID: 80059
 // Name: ChatViewWrapperAnimatedKeyboard
 // Dependencies: []
 // Exports: default
 
-// Module 10381 (ChatViewWrapperAnimatedKeyboard)
+// Module 10382 (ChatViewWrapperAnimatedKeyboard)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

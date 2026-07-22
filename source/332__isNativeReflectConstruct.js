@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = ["useTriggerBinding", false, false, false, false, false, false];
+let closure_2 = [true, true, true, true, true, true, true];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

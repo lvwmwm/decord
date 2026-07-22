@@ -1,10 +1,10 @@
-// Module ID: 14198
-// Function ID: 107447
+// Module ID: 14206
+// Function ID: 107490
 // Name: onChange
 // Dependencies: []
 // Exports: onChange
 
-// Module 14198 (onChange)
+// Module 14206 (onChange)
 function onChange(custom_status_push_notifications) {
   const CustomStatusPushNotifications = require(dependencyMap[3]).CustomStatusPushNotifications;
   const CustomStatusPushNotificationType = require(dependencyMap[4]).CustomStatusPushNotificationType;

@@ -1,5 +1,5 @@
 // Module ID: 7590
-// Function ID: 60743
+// Function ID: 60753
 // Name: init
 // Dependencies: []
 // Exports: deleteChannel, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
@@ -183,7 +183,7 @@ function deleteChannel() {
 async function _deleteChannel(channelId, arg1) {
   const channel = channel.getChannel(channelId);
   const HTTP = callback(closure_2[7]).HTTP;
-  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_6.CHANNEL(channelId) };
+  const obj = { y: null, isArray: null, accessible: null, url: closure_6.CHANNEL(channelId) };
   yield HTTP.del(obj);
   let guildId;
   if (null != channel) {

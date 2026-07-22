@@ -1,10 +1,10 @@
-// Module ID: 9824
-// Function ID: 76215
+// Module ID: 9825
+// Function ID: 76228
 // Name: SpoilerIcon
 // Dependencies: []
 // Exports: SpoilerIcon
 
-// Module 9824 (SpoilerIcon)
+// Module 9825 (SpoilerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SpoilerIcon.tsx");

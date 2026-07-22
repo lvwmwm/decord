@@ -1,5 +1,5 @@
 // Module ID: 7953
-// Function ID: 63441
+// Function ID: 63451
 // Name: BetaTag
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const Gradients = arg1(dependencyMap[2]).Gradients;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj = { XgH9eh: false, incidentDateNew: 800, getPremiumTypeDisplayName: 16, STAGE_VIDEO_LIMIT: 20, EmojiInteractionPoint: "heading-lg/normal", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.container = obj;
 obj.text = { textTransform: "uppercase" };
 let closure_6 = obj.createStyles(obj);

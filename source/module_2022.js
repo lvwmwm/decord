@@ -4,6 +4,6 @@
 
 // Module 2022
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "<string:16777600>", format: "<string:30689859>", View: "<string:30689536>", accessibilityRole: "<string:23841536>", surrogates: "interactionId", url: "<string:287440896>", scales: [null] };
+const obj = { 296374: "0c6f358ef2734a5db0ebdc4f2c7ef135", 1102560849: "vi.messages.0c6f358ef2734a5db0ebdc4f2c7ef135.compiled.messages", 288807: "jsona", 1103760465: "Intl.ListFormat", 288241: false, 1120538193: false, scales: [false] };
 
 export default _module.registerAsset(obj);

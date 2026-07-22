@@ -1,10 +1,10 @@
-// Module ID: 15719
-// Function ID: 120238
+// Module ID: 15727
+// Function ID: 120281
 // Name: VoicePanelPIPPushToTalkOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 15719 (VoicePanelPIPPushToTalkOverlay)
+// Module 15727 (VoicePanelPIPPushToTalkOverlay)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const PUSH_TO_TALK_PIP_PHYSICS = arg1(dependencyMap[3]).PUSH_TO_TALK_PIP_PHYSICS;
@@ -16,7 +16,7 @@ let closure_10 = importDefault(dependencyMap[5]).createAnimatedComponent(arg1(de
 let closure_11 = {};
 const importDefaultResult1 = importDefault(dependencyMap[5]);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.round };
+obj = { status: "r", constructor: "6MwJo/", borderRadius: importDefault(dependencyMap[9]).radii.round, position: null, top: null };
 obj.iconContainer = obj;
 const obj1 = {};
 const merged = Object.assign(arg1(dependencyMap[2]).StyleSheet.absoluteFillObject);

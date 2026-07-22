@@ -1,10 +1,10 @@
-// Module ID: 15541
-// Function ID: 118611
+// Module ID: 15549
+// Function ID: 118654
 // Name: renderChannelBadge
 // Dependencies: []
 // Exports: default
 
-// Module 15541 (renderChannelBadge)
+// Module 15549 (renderChannelBadge)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/launchpad/native/shared/renderChannelBadge.tsx");
@@ -34,7 +34,7 @@ export default function renderChannelBadge(newChannel) {
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
-        obj = { hasMaxConnections: null, isBoostOnlySubscription: null };
+        obj = { cachedAt: null, edpbxy: null };
         const intl = arg1(dependencyMap[5]).intl;
         const obj1 = { count: arg1(dependencyMap[6]).humanizeValue(newPostCount, newChannel.locale) };
         obj.children = intl.format(arg1(dependencyMap[5]).t.GkAbqY, obj1);

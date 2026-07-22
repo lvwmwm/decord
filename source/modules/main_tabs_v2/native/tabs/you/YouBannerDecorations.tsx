@@ -1,9 +1,9 @@
-// Module ID: 15353
-// Function ID: 116942
+// Module ID: 15361
+// Function ID: 116985
 // Name: useHasSettingsBadge
 // Dependencies: []
 
-// Module 15353 (useHasSettingsBadge)
+// Module 15361 (useHasSettingsBadge)
 function useHasSettingsBadge() {
   let tmp = arg1(dependencyMap[10]).useUnseenOutboundPromotions().length > 0;
   const obj = arg1(dependencyMap[10]);
@@ -66,9 +66,9 @@ let closure_13 = arg1(dependencyMap[6]).createStyles((paddingTop, arg1, arg2, ar
   obj.containerFloating = obj2;
   const obj7 = arg1(dependencyMap[9]);
   obj.buttons = { top: importDefault(dependencyMap[8]).space.PX_4, right: importDefault(dependencyMap[8]).space.PX_12, paddingTop };
-  const obj4 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[8]).space.PX_16 };
+  const obj4 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[8]).space.PX_16 };
   obj.buttonsFloating = obj4;
-  obj.loading = { "Bool(true)": null, "Bool(true)": null, 266603034: null };
+  obj.loading = { -9223372036854775808: "getEmbeddedActivityParticipantId", -9223372036854775808: "_enabledPaymentMethods", -9223372036854775808: "GAME_CLAIM" };
   return obj;
 });
 const obj2 = arg1(dependencyMap[6]);
@@ -249,7 +249,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     ContentDismissActionType = color;
     const items7 = [color];
     const memo = importAllResult.useMemo(() => {
-      const obj = { start: {}, end: {} };
+      const obj = { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {} };
       const obj2 = navigateToPremium(gradientSecondaryBackground[19])(color);
       const items = [navigateToPremium(gradientSecondaryBackground[19])(color).alpha(0).hex(), ];
       const alphaResult = navigateToPremium(gradientSecondaryBackground[19])(color).alpha(0);

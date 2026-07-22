@@ -48,8 +48,8 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
-export default function createApexExperiment(result) {
-  return importDefault(dependencyMap[3])(result, closure_5, getUnitId, useUnitId);
+export default function createApexExperiment(__exportStarResult1) {
+  return importDefault(dependencyMap[3])(__exportStarResult1, closure_5, getUnitId, useUnitId);
 };
 export const ApexExperiment = arg1(dependencyMap[3]).ApexExperiment;
 export { getUnitId };

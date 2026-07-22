@@ -1,9 +1,9 @@
-// Module ID: 8675
-// Function ID: 68697
+// Module ID: 8676
+// Function ID: 68709
 // Name: extraWishlistParams
 // Dependencies: []
 
-// Module 8675 (extraWishlistParams)
+// Module 8676 (extraWishlistParams)
 function extraWishlistParams() {
   const obj = {};
   if (null != closure_7.ipCountryCode) {

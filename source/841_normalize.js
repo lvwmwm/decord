@@ -43,7 +43,7 @@ function visit(arg0, __sentry_skip_normalization__) {
     }
     callback(tmp2, 2);
     if (null != __sentry_skip_normalization__) {
-      const items = ["Array", "isArray"];
+      const items = [];
       if (!items.includes(typeof __sentry_skip_normalization__)) {
         if ("number" === tmp34) {
           const _Number = Number;

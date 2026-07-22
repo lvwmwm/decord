@@ -1,5 +1,5 @@
 // Module ID: 7365
-// Function ID: 59354
+// Function ID: 59365
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,8 +19,8 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const ApplicationFlags = arg1(dependencyMap[5]).ApplicationFlags;
-let closure_8 = { lastUsedObject: {} };
-let obj = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
+let obj = { "Null": "long_press", "Null": "item_header", justifyContent: "open", gap: null, lastUsedObject: {} };
+obj = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
 const INITIALIZED = obj.INITIALIZED;
 let closure_11 = [];
 let tmp2 = (PersistedStore) => {
@@ -50,7 +50,7 @@ let tmp2 = (PersistedStore) => {
     key: "initialize",
     value(arg0) {
       let obj = arg0;
-      obj = { lastUsedObject: {} };
+      obj = { "Null": "long_press", "Null": "item_header", justifyContent: "open", gap: null, lastUsedObject: {} };
       if (null == arg0) {
         obj = {};
       }
@@ -150,15 +150,15 @@ const items = [
 tmp2.migrations = items;
 obj = {
   LOGOUT: function reset() {
-    let closure_8 = { lastUsedObject: {} };
+    const obj = { "Null": "long_press", "Null": "item_header", justifyContent: "open", gap: null, lastUsedObject: {} };
     const INITIALIZED = obj.INITIALIZED;
     let closure_11 = [];
   },
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: function handleToggleUseActivityUrlOverride() {
-    closure_8.useActivityUrlOverride = !closure_8.useActivityUrlOverride;
+    obj.useActivityUrlOverride = !obj.useActivityUrlOverride;
   },
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: function handleSetActivityUrlOverride(activityUrlOverride) {
-    closure_8.activityUrlOverride = activityUrlOverride.activityUrlOverride;
+    obj.activityUrlOverride = activityUrlOverride.activityUrlOverride;
   },
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function handleMarkActivityUsed(applicationId) {
     applicationId = applicationId.applicationId;
@@ -166,7 +166,7 @@ obj = {
     if (null == closure_11.find((id) => id.id === applicationId)) {
       return false;
     } else {
-      closure_8.lastUsedObject[applicationId] = applicationId.timestamp;
+      obj.lastUsedObject[applicationId] = applicationId.timestamp;
     }
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
@@ -181,7 +181,7 @@ obj = {
     const INITIALIZED = obj.ERROR;
   },
   DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: function handleUpdateFilter(arg0) {
-    closure_8.filter = arg0.filter;
+    obj.filter = arg0.filter;
   },
   USER_SETTINGS_PROTO_UPDATE() {
 

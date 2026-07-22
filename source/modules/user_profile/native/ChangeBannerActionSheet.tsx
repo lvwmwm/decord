@@ -1,10 +1,10 @@
-// Module ID: 13444
-// Function ID: 102104
+// Module ID: 13451
+// Function ID: 102137
 // Name: ChangeBannerColorRow
 // Dependencies: []
 // Exports: default
 
-// Module 13444 (ChangeBannerColorRow)
+// Module 13451 (ChangeBannerColorRow)
 function ChangeBannerColorRow(user) {
   user = user.user;
   let arg1;
@@ -61,7 +61,7 @@ function ChangeBannerColorRow(user) {
   const obj2 = { style: tmp.selectedColor };
   obj3 = { style: tmp.bannerColor, color: num2 };
   const items2 = [callback(importDefault(closure_2[27]), obj3), , ];
-  obj4 = { delete: 1, dispatch: 1, raw: null, style: tmp.selectedColorHex };
+  obj4 = { "Null": -1493172224, "Null": 1962934272, alignItems: 0, style: tmp.selectedColorHex };
   const memoizedImageSourceResult = obj3.memoizedImageSource(pendingAvatarSrc);
   obj4.children = arg1(closure_2[24]).int2hex(num2);
   items2[1] = callback(arg1(closure_2[28]).Text, obj4);
@@ -83,7 +83,7 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { FDSSia: null, communityPermissions: null, isLoading: null, color: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj = { handleMessages: null, INVALID_INDEX: 0, isDm: null, color: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.label = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.sublabel = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
@@ -91,7 +91,7 @@ const obj1 = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.nitroWheel = { marginLeft: importDefault(dependencyMap[7]).space.PX_8 };
 const obj2 = { marginLeft: importDefault(dependencyMap[7]).space.PX_8 };
 obj.bannerColor = { borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xs };
-obj.selectedColor = { "Null": 7, "Null": 370 };
+obj.selectedColor = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.selectedColorHex = { textTransform: "uppercase" };
 obj.rowArrow = {};
 const obj3 = { borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xs };

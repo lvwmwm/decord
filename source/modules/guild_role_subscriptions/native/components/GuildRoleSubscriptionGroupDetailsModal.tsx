@@ -1,10 +1,10 @@
-// Module ID: 16298
-// Function ID: 125751
+// Module ID: 16306
+// Function ID: 125793
 // Name: Content
 // Dependencies: []
 // Exports: default
 
-// Module 16298 (Content)
+// Module 16306 (Content)
 class Content {
   constructor(arg0) {
     ({ cover, setCover, description, setDescription } = global);
@@ -60,7 +60,7 @@ const UPLOAD_BANNER_SIZE = arg1(dependencyMap[5]).UPLOAD_BANNER_SIZE;
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ coverPhoto: {}, coverDescription: { marginTop: 16 }, paddedContainer: { paddingHorizontal: 16 } });
+let closure_12 = arg1(dependencyMap[7]).createStyles({ coverPhoto: { hideWhenScrolling: "jsx", autoCapitalize: "r" }, coverDescription: { marginTop: 16 }, paddedContainer: { paddingHorizontal: 16 } });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionGroupDetailsModal.tsx");
 

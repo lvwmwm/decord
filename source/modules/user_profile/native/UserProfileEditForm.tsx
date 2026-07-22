@@ -1,10 +1,10 @@
-// Module ID: 13440
-// Function ID: 102087
+// Module ID: 13447
+// Function ID: 102120
 // Name: EditUserProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 13440 (EditUserProfileBanner)
+// Module 13447 (EditUserProfileBanner)
 function EditUserProfileBanner(user) {
   let disabled;
   let isTryItOut;
@@ -301,7 +301,7 @@ export default function UserProfileEditForm(arg0) {
     tmp46 = null;
     if ("" !== stringResult) {
       const obj17 = { style: tmp2.errorContainer };
-      const obj18 = { children: stringResult };
+      const obj18 = { cachedAt: "/assets/.cache/intl/ZGVzaWdu", edpbxy: null, children: stringResult };
       obj17.children = callback2(callback(dependencyMap[36]).Text, obj18);
       tmp46 = callback2(closure_5, obj17);
     }

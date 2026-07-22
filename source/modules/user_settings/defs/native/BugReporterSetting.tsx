@@ -1,10 +1,10 @@
-// Module ID: 14285
-// Function ID: 107930
+// Module ID: 14293
+// Function ID: 107973
 // Name: useBugReporterExperimentSettingPredicate
-// Dependencies: []
+// Dependencies: [33554484, 1929379840, 13631, 9880, 2, 1960053, 167168, 2582272, 3661824]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 14285 (useBugReporterExperimentSettingPredicate)
+// Module 14293 (useBugReporterExperimentSettingPredicate)
 function useBugReporterExperimentSettingPredicate() {
   return importDefault(dependencyMap[4]).useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }

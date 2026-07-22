@@ -1,10 +1,10 @@
-// Module ID: 12424
-// Function ID: 94899
+// Module ID: 12429
+// Function ID: 94927
 // Name: getThemedImageSource
 // Dependencies: []
 // Exports: default
 
-// Module 12424 (getThemedImageSource)
+// Module 12429 (getThemedImageSource)
 function getThemedImageSource(arg0, arg1, arg2) {
   let tmp = arg2;
   if (obj.isThemeDark(arg0)) {
@@ -42,18 +42,18 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { error: 29695, fetchState: 1048576, foundMembers: 524288, borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { <string:2215036979>: 29695, <string:1700857997>: 1048576, <string:589872210>: 524288, borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guild = obj;
 obj.guildInfo = { marginLeft: 16 };
-const obj1 = { 9223372036854775807: null, 0: null, color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_BLACK_500 };
-obj.guildName = obj1;
-const obj2 = { "Null": "/assets/images/native/premium/guild_boosting", "Null": 203, "Null": 120, "Null": null, "Null": "4cb64ea1ce49f760ec2c14cca07c9930", "Null": "guild_subscription_removal_dark", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+const tmp4 = arg1(dependencyMap[4]);
+obj.guildName = { color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_BLACK_500 };
+const obj2 = { position: "/assets/images/native/premium/guild_boosting", inset: 203, alignItems: 120, justifyContent: null, isPurchased: "4cb64ea1ce49f760ec2c14cca07c9930", isPartiallyOwnedBundle: "guild_subscription_removal_dark", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.tierPill = obj2;
-obj.tierPillImage = {};
-const obj3 = { "Null": "sensitivityMin", "Null": "getChannelIconComponentWithGuild", "Null": "MiniaturesSpotIllustration", color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+obj.tierPillImage = { "Null": null, "Null": null };
+const obj3 = { "Null": "Text", "Null": "createStyles", "Null": "accessibilityLabel", color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
 obj.tierPillText = obj3;
 let closure_9 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[4]);
+const obj1 = { color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_BLACK_500 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildPreview.tsx");
 
 export default function PremiumGuildPreview(guild) {

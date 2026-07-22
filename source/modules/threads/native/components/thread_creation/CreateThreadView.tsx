@@ -1,9 +1,9 @@
-// Module ID: 15188
-// Function ID: 114560
+// Module ID: 15196
+// Function ID: 114603
 // Name: CreateThreadViewInner
 // Dependencies: []
 
-// Module 15188 (CreateThreadViewInner)
+// Module 15196 (CreateThreadViewInner)
 function CreateThreadViewInner(screenIndex) {
   const threadSettingsDraft = screenIndex.threadSettingsDraft;
   const arg1 = threadSettingsDraft;
@@ -56,7 +56,7 @@ function CreateThreadViewInner(screenIndex) {
         const obj6 = threadSettingsDraft(setNameError[27]);
       }
       if (null != navigation) {
-        obj = {};
+        obj = { "Bool(true)": "cf5de2318a88a970dc053388278c5a16", "Bool(true)": "lt.messages.cf5de2318a88a970dc053388278c5a16.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "lg" };
         obj1 = {};
         ({ guild_id: obj5.guildId, id: obj5.channelId } = guild_id);
         obj1.showCreateThread = false;
@@ -96,7 +96,7 @@ function CreateThreadViewInner(screenIndex) {
   obj = { value: tmp6(importDefault(dependencyMap[13]).CREATE_THREAD).analyticsLocations };
   const items1 = [callback2(importDefault(dependencyMap[16]), { absolute: true }), ];
   const obj1 = { style: items2 };
-  const items2 = [tmp.container, { marginBottom: importDefault(dependencyMap[15])({}).insets.bottom - tmp7.bottom }];
+  const items2 = [tmp.container, { marginBottom: importDefault(dependencyMap[15])({ "Bool(false)": 1766088043, "Bool(false)": 827788593 }).insets.bottom - tmp7.bottom }];
   const items3 = [callback2(closure_6, { style: tmp.expander }), , , , ];
   const obj3 = { style: tmp.containerContent };
   const obj4 = { style: tmp.options };
@@ -115,7 +115,7 @@ function CreateThreadViewInner(screenIndex) {
       tmp21 = null;
       if (privateThreadMode !== arg1(dependencyMap[10]).PrivateThreadMode.Disabled) {
         const obj7 = { style: tmp.optionPrivateThread };
-        const obj8 = { bind: null, cursor: null, disabled: privateThreadMode !== arg1(dependencyMap[10]).PrivateThreadMode.Enabled };
+        const obj8 = { 400888199: null, 2091392542: null, disabled: privateThreadMode !== arg1(dependencyMap[10]).PrivateThreadMode.Enabled };
         const intl = arg1(dependencyMap[20]).intl;
         obj8.label = intl.string(arg1(dependencyMap[20]).t.F1zyvU);
         const intl2 = arg1(dependencyMap[20]).intl;

@@ -7,7 +7,7 @@
 // Module 1779 (getLatestState)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ useEffect: closure_3, useState: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = [];
+let closure_5 = [false, false];
 function getLatestState() {
   const KeyboardController = arg1(dependencyMap[2]).KeyboardController;
   const obj = {};

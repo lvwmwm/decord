@@ -1,10 +1,10 @@
-// Module ID: 9242
-// Function ID: 72263
+// Module ID: 9243
+// Function ID: 72276
 // Name: createNativePlaceholderConfig
 // Dependencies: []
 // Exports: default
 
-// Module 9242 (createNativePlaceholderConfig)
+// Module 9243 (createNativePlaceholderConfig)
 function createNativePlaceholderConfig(type) {
   let labelPaddingInnerRatio;
   let labelSecondarySize;

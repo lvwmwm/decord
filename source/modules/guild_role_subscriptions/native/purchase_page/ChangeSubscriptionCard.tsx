@@ -1,10 +1,10 @@
-// Module ID: 15152
-// Function ID: 114314
+// Module ID: 15160
+// Function ID: 114357
 // Name: emphasisHook
 // Dependencies: []
 // Exports: default
 
-// Module 15152 (emphasisHook)
+// Module 15160 (emphasisHook)
 function emphasisHook(children) {
   return callback2(arg1(dependencyMap[7]).Text, { children });
 }
@@ -41,7 +41,7 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const intl = arg1(dependencyMap[12]).intl;
   obj2.children = intl.format(arg1(dependencyMap[12]).t.l3uCCX, { activeListingName: first });
   const items1 = [callback2(arg1(dependencyMap[7]).Text, obj2), callback2(arg1(dependencyMap[13]).Spacer, { size: 16 }), , ];
-  const obj3 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+  const obj3 = {};
   const intl2 = arg1(dependencyMap[12]).intl;
   const formatResult = obj2.format("MMMM Do");
   const tmp4 = callback2;

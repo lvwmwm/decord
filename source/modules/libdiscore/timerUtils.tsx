@@ -1,10 +1,10 @@
-// Module ID: 16489
-// Function ID: 127346
+// Module ID: 16497
+// Function ID: 127388
 // Name: flushDelayLogs
 // Dependencies: []
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 16489 (flushDelayLogs)
+// Module 16497 (flushDelayLogs)
 function flushDelayLogs() {
   if (0 !== arr.length) {
     const _HermesInternal = HermesInternal;

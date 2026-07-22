@@ -1,5 +1,5 @@
 // Module ID: 6263
-// Function ID: 50316
+// Function ID: 50327
 // Name: HoldingGemSpotIllustration
 // Dependencies: []
 // Exports: HoldingGemSpotIllustration

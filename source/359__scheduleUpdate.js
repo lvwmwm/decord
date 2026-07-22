@@ -57,7 +57,7 @@ function _processUpdate() {
 let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult();
 let _default1 = {
-  Events: {},
+  Events: { go: 42977857, next: -531558144 },
   runAfterInteractions(arg0) {
     const arg1 = arg0;
     let closure_1 = [];

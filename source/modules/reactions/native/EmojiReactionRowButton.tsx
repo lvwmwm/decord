@@ -1,15 +1,14 @@
-// Module ID: 9938
-// Function ID: 76880
+// Module ID: 9939
+// Function ID: 76893
 // Name: EmojiPickerRowButton
 // Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 9938 (EmojiPickerRowButton)
-import closure_3 from "result";
-import { Platform } from "result";
-import { EMOJI_URL_BASE_SIZE } from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 9939 (EmojiPickerRowButton)
+import __exportStarResult1 from "__exportStarResult1";
+import { Platform } from "__exportStarResult1";
+import { EMOJI_URL_BASE_SIZE } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 let closure_6 = arg1(dependencyMap[4]).createStyles((width) => {
   let obj = {};
@@ -30,7 +29,8 @@ let closure_7 = arg1(dependencyMap[4]).createStyles((width, fontSize, lineHeight
   obj.emojiText = obj;
   return obj;
 });
-result = result.fileFinishedImporting("modules/reactions/native/EmojiReactionRowButton.tsx");
+const obj2 = arg1(dependencyMap[4]);
+const result = require("__exportStarResult1").fileFinishedImporting("modules/reactions/native/EmojiReactionRowButton.tsx");
 
 export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
   let onPress;
@@ -42,7 +42,7 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
   const obj2 = arg1(dependencyMap[6]);
   const unsafe_rawColors = importDefault(dependencyMap[5]).unsafe_rawColors;
   const isThemeLightResult = arg1(dependencyMap[6]).isThemeLight(obj.useThemeContext().theme);
-  obj = { label: "PRIMARY_460", days: 1, enabled: "last_impression_time", chatInputFloating: "message" };
+  obj = { claimableRewards: "PRIMARY_460", isSelected: 1, variant: "emoji_id", border: "message" };
   const intl = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.lfIHs4);
   obj.onPress = onPress;
@@ -68,7 +68,7 @@ export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiConta
   ({ emojiFontSize, emojiLineHeight, onPress, styles } = emojiContainerSize);
   const tmp = callback(emojiContainerSize.emojiContainerSize);
   const memo = React.useMemo(() => ({ foreground: true }), []);
-  let obj = { paddingHorizontal: false, height: false, borderRadius: false, display: false, justifyContent: false, minWidth: false, androidRippleConfig: memo };
+  let obj = { androidRippleConfig: memo };
   const intl = arg1(dependencyMap[8]).intl;
   obj = {};
   let name;

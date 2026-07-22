@@ -1,9 +1,9 @@
-// Module ID: 11864
-// Function ID: 91864
+// Module ID: 11865
+// Function ID: 91878
 // Name: ClanGameplayActivity
 // Dependencies: []
 
-// Module 11864 (ClanGameplayActivity)
+// Module 11865 (ClanGameplayActivity)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ClanGameplayActivity.tsx");
 

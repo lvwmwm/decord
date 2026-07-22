@@ -404,7 +404,7 @@ function computePermissionsForRoles(excludeGuildPermissions) {
   if (null == tmp3) {
     return deserializeResult;
   } else {
-    const obj1 = { userId: closure_22, guildId: tmp3.id, roles: importDefault(dependencyMap[17]).keys(forceRoles) };
+    const obj1 = { [object Int8Array]: "<string:20137472>", contextUri: "<string:2543931648>", hexOpacityToRgba: null, dismissed: "navigation", lastDismissedVersion: true, soft: null, GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: "email", EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "hidden", isDismissed: "form__input", lastDismissedAtMs: null, userId: closure_22, guildId: tmp3.id, roles: importDefault(dependencyMap[17]).keys(forceRoles) };
     const _Date = Date;
     const date = new Date();
     obj1.joinedAt = date.toISOString();

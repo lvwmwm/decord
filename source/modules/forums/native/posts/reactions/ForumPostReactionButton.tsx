@@ -1,10 +1,10 @@
-// Module ID: 10324
-// Function ID: 79709
+// Module ID: 10325
+// Function ID: 79722
 // Name: BurstReactionButton
 // Dependencies: []
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10324 (BurstReactionButton)
+// Module 10325 (BurstReactionButton)
 class BurstReactionButton {
   constructor(arg0) {
     ({ colors, emoji, onPress, onLongPress, containerStyle, count, emojiSize, selected, animate, animateCount, accessible } = global);
@@ -137,7 +137,7 @@ obj.container = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.selected = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };
 obj.textEmoji = { fontSize: 12 };
-obj.imageEmoji = {};
+obj.imageEmoji = { hideWhenScrolling: null, autoCapitalize: null };
 obj.countContainer = { paddingStart: 4 };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };

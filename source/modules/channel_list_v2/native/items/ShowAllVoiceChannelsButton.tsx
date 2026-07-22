@@ -1,8 +1,8 @@
-// Module ID: 14900
-// Function ID: 112270
+// Module ID: 14908
+// Function ID: 112313
 // Dependencies: []
 
-// Module 14900
+// Module 14908
 const importAllResult = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -25,7 +25,7 @@ const memoResult = importAllResult.memo((guildId) => {
       const timerId = setTimeout(() => {
         const current = ref.current;
         if (null != current) {
-          const obj = { section: closure_1 };
+          const obj = { category: true, backgroundColor: true, height: true, section: closure_1 };
           const _Math = Math;
           obj.paddingStart = Math.round(0.3 * callback(closure_1[5]).getWindowDimensions().height);
           current.scrollToLocation(obj);

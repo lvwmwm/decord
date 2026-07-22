@@ -1,10 +1,10 @@
-// Module ID: 15085
-// Function ID: 113685
+// Module ID: 15093
+// Function ID: 113728
 // Name: PaintbrushThinIcon
 // Dependencies: []
 // Exports: PaintbrushThinIcon
 
-// Module 15085 (PaintbrushThinIcon)
+// Module 15093 (PaintbrushThinIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PaintbrushThinIcon.tsx");

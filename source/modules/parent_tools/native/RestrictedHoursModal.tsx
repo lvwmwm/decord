@@ -1,10 +1,10 @@
-// Module ID: 15844
-// Function ID: 121115
+// Module ID: 15852
+// Function ID: 121158
 // Name: RestrictedHoursLogoutBlockingLayer
 // Dependencies: []
 // Exports: default
 
-// Module 15844 (RestrictedHoursLogoutBlockingLayer)
+// Module 15852 (RestrictedHoursLogoutBlockingLayer)
 let StyleSheet;
 function RestrictedHoursLogoutBlockingLayer(visible) {
   let tmp2 = null;
@@ -135,12 +135,12 @@ function RestrictedHoursScreen(visible) {
   obj5.children = items6;
   items3[2] = callback3(importDefault(dependencyMap[11]).View, obj5);
   const obj8 = { style: tmp.footer };
-  const obj9 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.description };
+  const obj9 = { cachedAt: true, edpbxy: true, style: tmp.description };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj9.children = intl3.format(importDefault(dependencyMap[14]).iqeKDz, {
     username: stateFromStores,
     loginHook(children) {
-      const obj = { hasMaxConnections: false, isBoostOnlySubscription: false, onPress: onLogin, children };
+      const obj = { cachedAt: true, edpbxy: true, onPress: onLogin, children };
       return callback(onLogin(sharedValue1[18]).Text, obj, arg1);
     }
   });
@@ -173,7 +173,7 @@ obj2["zIndex"] = 1;
 obj.assetLayers = obj2;
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj.sunbeamGradient = {};
-obj.riveContainer = { ind: "accessibilityLabel", y: "r", isArray: "isArray" };
+obj.riveContainer = { blurTheme: true, pressed: true, width: false };
 const obj3 = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.content = { gap: importDefault(dependencyMap[6]).space.PX_16 };
@@ -225,8 +225,8 @@ export default function RestrictedHoursModal() {
     const items = [closure_4, arg1];
     return closure_4(closure_2[19]).useNavigatorScreens(() => {
       const obj = {
-        "Null": null,
-        "Null": null,
+        <string:810684769>: true,
+        <string:1631906702>: true,
         render() {
           return callback(closure_16, { onLogin: closure_0, logoutRequestInFlight: closure_1 });
         }
@@ -253,8 +253,8 @@ export default function RestrictedHoursModal() {
       const items = [closure_4, arg1];
       return closure_4(closure_2[19]).useNavigatorScreens(() => {
         const obj = {
-          "Null": null,
-          "Null": null,
+          <string:810684769>: true,
+          <string:1631906702>: true,
           render() {
             return callback(closure_16, { onLogin: closure_0, logoutRequestInFlight: closure_1 });
           }

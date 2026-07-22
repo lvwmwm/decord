@@ -1,5 +1,5 @@
 // Module ID: 4139
-// Function ID: 34700
+// Function ID: 34702
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -232,7 +232,7 @@ function getHasSelectedParticipant(channelId) {
 }
 function updateElapsedSelectedParticipantStats(currentVoiceChannelId) {
   if (null == closure_34[currentVoiceChannelId]) {
-    closure_34[currentVoiceChannelId] = { "Null": "ERROR", "Null": "ERROR", "Null": "NOT_RESPONDER", "Null": "NOT_RESPONDER" };
+    closure_34[currentVoiceChannelId] = { "Bool(false)": -24, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "Malaysia" };
   }
   const nowResult = performance.now();
   if (closure_34[currentVoiceChannelId].lastUpdate > 0) {

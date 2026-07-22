@@ -1,10 +1,10 @@
-// Module ID: 5331
-// Function ID: 45424
+// Module ID: 5058
+// Function ID: 43834
 // Name: replaceFlagIconAndFlagColor
 // Dependencies: []
 // Exports: default
 
-// Module 5331 (replaceFlagIconAndFlagColor)
+// Module 5058 (replaceFlagIconAndFlagColor)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_onboarding/LandingAssetUtils.tsx");
 

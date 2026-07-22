@@ -1,10 +1,10 @@
-// Module ID: 11263
-// Function ID: 87599
+// Module ID: 11264
+// Function ID: 87612
 // Name: ArrowsUpDownIcon
 // Dependencies: []
 // Exports: ArrowsUpDownIcon
 
-// Module 11263 (ArrowsUpDownIcon)
+// Module 11264 (ArrowsUpDownIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowsUpDownIcon.tsx");

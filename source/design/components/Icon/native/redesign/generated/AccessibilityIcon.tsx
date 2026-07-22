@@ -1,10 +1,10 @@
-// Module ID: 14093
-// Function ID: 107013
+// Module ID: 14101
+// Function ID: 107056
 // Name: AccessibilityIcon
 // Dependencies: []
 // Exports: AccessibilityIcon
 
-// Module 14093 (AccessibilityIcon)
+// Module 14101 (AccessibilityIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AccessibilityIcon.tsx");

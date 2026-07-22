@@ -1,17 +1,18 @@
 // Module ID: 437
 // Function ID: 5999
 // Name: AppStateImpl
-// Dependencies: []
+// Dependencies: [468, 469, 31, 390, 31]
 
 // Module 437 (AppStateImpl)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import module_468 from "module_468";
+import ToastAndroid from "ToastAndroid";
+
 let tmp2 = () => {
   class AppStateImpl {
     constructor() {
       self = this;
       AppStateImpl = this;
-      tmp = closure_2(this, AppStateImpl);
+      tmp = module_468(this, AppStateImpl);
       this.currentState = null;
       if (null == AppStateImpl(closure_1[2])) {
         flag = false;
@@ -34,17 +35,17 @@ let tmp2 = () => {
         obj2 = AppStateImpl(closure_1[2]);
         self.currentState = obj2.getConstants().initialAppState;
         flag3 = false;
-        closure_2 = false;
+        module_468 = false;
         str = "appStateDidChange";
         addListenerResult = tmp4.addListener("appStateDidChange", (app_state) => {
-          let closure_2 = true;
+          let module_468 = true;
           self.currentState = app_state.app_state;
         });
         obj3 = AppStateImpl(closure_1[2]);
         num2 = 4;
         currentAppState = obj3.getCurrentAppState((app_state) => {
-          let tmp = closure_2;
-          if (!closure_2) {
+          let tmp = module_468;
+          if (!module_468) {
             tmp = self.currentState === app_state.app_state;
           }
           if (!tmp) {

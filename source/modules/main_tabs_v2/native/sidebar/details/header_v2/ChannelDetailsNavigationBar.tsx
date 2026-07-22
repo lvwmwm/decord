@@ -1,9 +1,9 @@
-// Module ID: 15295
-// Function ID: 116307
+// Module ID: 15303
+// Function ID: 116350
 // Name: navigateToChannelDetailsScreen
 // Dependencies: []
 
-// Module 15295 (navigateToChannelDetailsScreen)
+// Module 15303 (navigateToChannelDetailsScreen)
 function navigateToChannelDetailsScreen(navigate, screen, channelId) {
   navigate.navigate("sidebar", { screen, channelId, source: "channel-details-navigation-bar" });
 }
@@ -235,7 +235,7 @@ const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
 let obj1 = arg1(dependencyMap[11]);
 let obj = {};
-obj = { 1365423970: true, 996475903: true, height: arg1(dependencyMap[12]).SEARCH_BAR_HEIGHT, marginTop: importDefault(dependencyMap[13]).space.PX_8 };
+obj = { height: arg1(dependencyMap[12]).SEARCH_BAR_HEIGHT, marginTop: importDefault(dependencyMap[13]).space.PX_8 };
 obj.container = obj;
 obj1 = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingVertical: importDefault(dependencyMap[13]).space.PX_4, height: arg1(dependencyMap[12]).SEARCH_BAR_HEIGHT };
 obj.navigationHeader = obj1;

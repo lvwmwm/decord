@@ -1,10 +1,10 @@
-// Module ID: 16305
-// Function ID: 125811
+// Module ID: 16313
+// Function ID: 125853
 // Name: DraftBadge
 // Dependencies: []
 // Exports: default
 
-// Module 16305 (DraftBadge)
+// Module 16313 (DraftBadge)
 function DraftBadge() {
   const tmp = callback4();
   let obj = { style: tmp.draftBadge };
@@ -103,7 +103,7 @@ function EditListingButton(editStateId) {
     }
     const items1 = [tmp20, , ];
     obj3 = { style: tmp.tierColumn };
-    const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: callback(obj1.useName(editStateId), 1)[0] };
+    const obj4 = { children: callback(obj1.useName(editStateId), 1)[0] };
     const items2 = [callback2(arg1(dependencyMap[18]).Text, obj4), ];
     let obj5 = { style: tmp.detailsRow };
     if (tmp7) {
@@ -299,7 +299,7 @@ function GuildSettingsRoleSubscriptionsTiersInner(guildId) {
     const tmp29 = importDefault(dependencyMap[36]);
     obj6.source = importDefault(dependencyMap[37]);
     const items5 = [callback2(importDefault(dependencyMap[22]), obj6), ];
-    const obj7 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.createTierLabel };
+    const obj7 = { style: tmp.createTierLabel };
     const intl3 = arg1(dependencyMap[15]).intl;
     obj7.children = intl3.string(arg1(dependencyMap[15]).t.PiFnny);
     items5[1] = callback2(arg1(dependencyMap[18]).Text, obj7);
@@ -327,10 +327,10 @@ const SubscriptionIntervalTypes = arg1(dependencyMap[8]).SubscriptionIntervalTyp
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { container: { height: "100%" }, tierManagementDescription: {} };
-obj = { GuildEvent: false, stack: false, "Null": false, "Bool(false)": false, "Null": false, "Bool(false)": false, "Bool(false)": false, "Bool(true)": false, "Bool(false)": false, "Null": false, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.sm };
+obj = { container: { height: "100%" }, tierManagementDescription: { __workletHash: null, ind: null } };
+obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.sm };
 obj.tierManagementButton = obj;
-obj.tierColumn = {};
+obj.tierColumn = { GuildEvent: "isArray", stack: "key", "Null": "Array", "Bool(false)": "construct" };
 const tmp4 = arg1(dependencyMap[9]);
 obj.tierIcon = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
 obj.tierPrice = { marginStart: 6 };

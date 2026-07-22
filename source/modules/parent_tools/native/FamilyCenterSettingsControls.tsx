@@ -1,10 +1,10 @@
-// Module ID: 13688
-// Function ID: 103603
+// Module ID: 13695
+// Function ID: 103636
 // Name: SpendingLimitRow
 // Dependencies: []
 // Exports: default
 
-// Module 13688 (SpendingLimitRow)
+// Module 13695 (SpendingLimitRow)
 function SpendingLimitRow(teenId) {
   let subLabel;
   let trailing;
@@ -14,7 +14,8 @@ function SpendingLimitRow(teenId) {
   const tmp = callback3();
   ({ trailing, subLabel } = function getSpendingLimitRowProps(kind, subLabelWarning) {
     function renderTrailing(monthlyText) {
-      return callback2(callback(closure_2[7]).Text, { children: monthlyText });
+      const obj = { cachedAt: 400, edpbxy: 20, children: monthlyText };
+      return callback2(callback(closure_2[7]).Text, obj);
     }
     function renderSubLabel(intl2, subLabelCritical) {
       return callback2(callback(closure_2[7]).Text, { variant: "text-sm/normal", style: subLabelCritical, children: intl2 });
@@ -99,11 +100,12 @@ function FamilyCenterSettingsTeenControls() {
   const intl = arg1(handleOpenSettings[8]).intl;
   obj1.children = intl.string(importDefault(handleOpenSettings[9]).ahKIJO);
   const items = [callback(arg1(handleOpenSettings[7]).Text, obj1), ];
-  obj2 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+  obj2 = { cachedAt: "y", edpbxy: "isArray" };
   const intl2 = arg1(handleOpenSettings[8]).intl;
   obj3 = {
     openSettingsHook(children) {
-      return callback(activeLinkUserIds(handleOpenSettings[7]).Text, { onPress: handleOpenSettings, children }, arg1);
+      const obj = { cachedAt: "<string:3344105473>", edpbxy: "<string:3465102384>", onPress: handleOpenSettings, children };
+      return callback(activeLinkUserIds(handleOpenSettings[7]).Text, obj, arg1);
     }
   };
   obj2.children = intl2.format(importDefault(handleOpenSettings[9]).X9rW0j, obj3);
@@ -138,7 +140,7 @@ function FamilyCenterSettingsTeenControls() {
     const tmp9 = callback2;
   }
   items1[1] = isFamilyCenterV3Enabled;
-  const obj8 = { __initData: "accessibilityLabel", marginBottom: "r", np: "isArray", replace: 24, header: 24, channelId: null };
+  const obj8 = { "Null": true, "Null": true, "Null": false, "Null": false, "Null": false, "Bool(false)": false };
   const intl4 = arg1(handleOpenSettings[8]).intl;
   obj8.text = intl4.formatToPlainString(importDefault(handleOpenSettings[9]).w0JA3P, { count: activeLinkUserIds.length });
   obj8.onPress = function onPress() {
@@ -206,7 +208,7 @@ function FamilyCenterSettingsParentalControls() {
   const intl = arg1(closure_2[8]).intl;
   obj.children = intl.string(importDefault(closure_2[9]).ahKIJO);
   const items1 = [callback(arg1(closure_2[7]).Text, obj), , ];
-  obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+  obj1 = { cachedAt: "y", edpbxy: "isArray" };
   const intl2 = arg1(closure_2[8]).intl;
   obj1.children = intl2.string(importDefault(closure_2[9]).Sv236e);
   items1[1] = callback(arg1(closure_2[7]).Text, obj1);

@@ -1,9 +1,9 @@
-// Module ID: 9125
-// Function ID: 71462
+// Module ID: 9126
+// Function ID: 71475
 // Name: SearchEntrypointAnalyticsLocations
 // Dependencies: []
 
-// Module 9125 (SearchEntrypointAnalyticsLocations)
+// Module 9126 (SearchEntrypointAnalyticsLocations)
 let SearchHistoryItemTypes;
 let SearchTabs;
 const _module = require(dependencyMap[0]);

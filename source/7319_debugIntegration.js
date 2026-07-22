@@ -1,5 +1,5 @@
 // Module ID: 7319
-// Function ID: 59015
+// Function ID: 59026
 // Name: debugIntegration
 // Dependencies: []
 
@@ -12,7 +12,7 @@ export const debugIntegration = _module.defineIntegration(function _debugIntegra
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ accessibilityRole: null, "": null }, {});
+    let closure_0 = Object.assign({ zIndex: true, display: true }, {});
     const obj = {
       name: "Debug",
       setup(on) {

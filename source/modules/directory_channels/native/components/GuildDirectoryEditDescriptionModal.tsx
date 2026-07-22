@@ -1,10 +1,10 @@
-// Module ID: 10036
-// Function ID: 77552
+// Module ID: 10037
+// Function ID: 77565
 // Name: GuildDirectoryEditDescription
 // Dependencies: []
 // Exports: default
 
-// Module 10036 (GuildDirectoryEditDescription)
+// Module 10037 (GuildDirectoryEditDescription)
 function GuildDirectoryEditDescription(entry) {
   entry = entry.entry;
   const arg1 = entry;
@@ -18,7 +18,7 @@ function GuildDirectoryEditDescription(entry) {
   let obj = { top: true, style: tmp.safeArea };
   obj = { style: tmp.container, keyboardShouldPersistTaps: "handled" };
   obj = { style: tmp.header };
-  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(dependencyMap[10]).intl;
   obj1.children = intl.format(arg1(dependencyMap[10]).t.w9tsNk, { guildName: entry.name });
   obj.children = callback(arg1(dependencyMap[9]).Text, obj1);
@@ -64,8 +64,8 @@ obj = {};
 obj = { marginTop: arg1(dependencyMap[5]).NAV_BAR_HEIGHT, flex: 1 };
 obj.safeArea = obj;
 obj.container = { flex: 1 };
-obj.title = { "Null": null, "Null": null };
-obj.header = {};
+obj.title = { value: null, on: null };
+obj.header = { 0: null, 9223372036854775807: null, 0: null };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = "EDIT_DESCRIPTION";
 const tmp4 = arg1(dependencyMap[3]);

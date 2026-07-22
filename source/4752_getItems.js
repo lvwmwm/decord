@@ -1,5 +1,5 @@
 // Module ID: 4752
-// Function ID: 41280
+// Function ID: 41289
 // Name: getItems
 // Dependencies: []
 
@@ -90,7 +90,7 @@ arg5.parseItemLocationBox = function parseItemLocationBox(getUint8, uint8, arg2,
   let sizes;
   const sum = arg2 + 3;
   let obj = { item: obj };
-  obj = { LONG: null, UNKNOWN_QUEST: null, extent: {} };
+  obj = { "Bool(false)": "GeoTiffDirectory", "Bool(false)": "GeoTiffDoubleParams", extent: {} };
   if (uint8 < 2) {
     obj.itemCount = 2;
     obj.item.itemId = 2;

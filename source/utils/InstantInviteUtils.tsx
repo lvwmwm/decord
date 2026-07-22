@@ -1,10 +1,10 @@
-// Module ID: 8476
-// Function ID: 67637
+// Module ID: 8477
+// Function ID: 67649
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8476 (_createForOfIteratorHelperLoose)
+// Module 8477 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -220,7 +220,7 @@ let closure_9 = importDefault(dependencyMap[6]);
 const ChannelTypes = arg1(dependencyMap[7]).ChannelTypes;
 const InviteTargetTypes = arg1(dependencyMap[8]).InviteTargetTypes;
 let obj = { GROUP_DM: "GROUP_DM", DM: "DM", FRIEND: "FRIEND", CHANNEL: "CHANNEL" };
-let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { "Bool(false)": true, "Bool(false)": true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: { "Bool(false)": "useCallback", "Bool(false)": "httpServerLocation" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: { "Bool(false)": 1, "Bool(false)": 20 }, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { "Bool(false)": "denied", "Bool(false)": "never_ask_again" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { "Bool(false)": "<string:2523987969>", "Bool(false)": "<string:822083584>" } };
+let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { "Bool(false)": true, "Bool(false)": true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: { "Bool(false)": "collapsed_in_inbox", "Bool(false)": "scalar" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { "Bool(false)": "png", "Bool(false)": "heading-xl/bold" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { "Bool(false)": true, "Bool(false)": true } };
 const items = [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(maxAge) {
@@ -299,7 +299,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
   ({ suggestedChannelIds, maxRowsWithoutQuery, omitGuildId } = arg0);
   const set = new Set();
   rows = [];
-  counts = {};
+  counts = { tooltipX: false, tooltipY: false, adjustmentX: false, display: false, flexDirection: false };
   if ("" === query) {
     let obj = { omitUserIds, maxRowsWithoutQuery, omitGuildId, shownUserIds: set, rows, counts };
     if (inviteTargetType === InviteTargetTypes.EMBEDDED_APPLICATION) {
@@ -542,9 +542,8 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     }(obj10);
     function addQueriedGroupDms(query) {
       ({ rows: closure_0, counts: closure_1 } = query);
-      let obj = callback(closure_2[9]);
-      obj = { marginTop: true, paddingBottom: "/assets/images/native", marginBottom: 24, query: query.query };
-      const item = obj.queryGroupDMs(obj).forEach((item) => {
+      const obj = callback(closure_2[9]);
+      const item = callback(closure_2[9]).queryGroupDMs({ query: query.query }).forEach((item) => {
         numGroupDms.numGroupDms = numGroupDms.numGroupDms + 1;
       });
     }(obj7);
@@ -555,7 +554,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     function addQueriedFriends(query) {
       ({ rows: closure_0, counts: closure_1, omitUserIds: closure_2, shownUserIds: closure_3 } = query);
       let obj = callback(closure_2[9]);
-      obj = { "Bool(false)": 141623300, "Bool(false)": 1107296256, "Bool(false)": 108110, query: query.query };
+      obj = { padding: 8589934862.125008, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000288181882437125, justifyContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032593855370027, query: query.query };
       const item = obj.queryFriends(obj).forEach((record) => {
         record = record.record;
         let hasItem = set.has(record.id);

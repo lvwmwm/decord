@@ -274,5 +274,6 @@ class tmp {
   }
 }
 arg5.DepGraphCycleError = tmp;
-tmp.prototype = Object.create(Error.prototype, { constructor: { value: Error } });
+const obj = { 1837105156: 1, 894631940: "column", 65904547: 200, 1233076609: "", value: Error };
+tmp.prototype = Object.create(Error.prototype, { constructor: obj });
 Object.setPrototypeOf(tmp, Error);

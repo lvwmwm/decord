@@ -1,9 +1,9 @@
-// Module ID: 12995
-// Function ID: 98878
+// Module ID: 13002
+// Function ID: 98911
 // Name: enforcing
 // Dependencies: []
 
-// Module 12995 (enforcing)
+// Module 13002 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTelemetryRingModule");
 const _module = require(dependencyMap[1]);

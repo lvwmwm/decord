@@ -1,10 +1,10 @@
-// Module ID: 15278
-// Function ID: 115348
+// Module ID: 15286
+// Function ID: 115391
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createASTHighlighter
 
-// Module 15278 (_createForOfIteratorHelperLoose)
+// Module 15286 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

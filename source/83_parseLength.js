@@ -39,7 +39,7 @@ arg5.default = function processBoxShadow(str) {
         const found = mapped.filter((arg0) => "" !== arg0);
         const iter = found[Symbol.iterator]();
         while (iter !== undefined) {
-          let obj = { -1768816636: -536870861, 1653014532: -299892737 };
+          let obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
           let tmp22;
           let flag = false;
           let num = 0;
@@ -155,7 +155,7 @@ arg5.default = function processBoxShadow(str) {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp47 = nextResult;
-      let obj = { -1768816636: -536870861, 1653014532: -299892737 };
+      let obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
       let tmp48 = nextResult;
       for (const key10025 in nextResult) {
         let tmp49 = key10025;

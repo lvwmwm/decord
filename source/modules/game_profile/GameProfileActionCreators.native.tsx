@@ -1,9 +1,9 @@
-// Module ID: 8586
-// Function ID: 68161
+// Module ID: 8587
+// Function ID: 68173
 // Name: clearGameProfilePendingReturn
 // Dependencies: []
 
-// Module 8586 (clearGameProfilePendingReturn)
+// Module 8587 (clearGameProfilePendingReturn)
 function clearGameProfilePendingReturn(gameId) {
   let obj = importDefault(dependencyMap[4]);
   obj = { type: "GAME_PROFILE_CLEAR_PENDING_RETURN", gameId };

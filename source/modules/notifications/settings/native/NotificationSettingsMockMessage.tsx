@@ -1,10 +1,10 @@
-// Module ID: 10283
-// Function ID: 79424
+// Module ID: 10284
+// Function ID: 79437
 // Name: NotificationSettingsMockMessage
 // Dependencies: []
 // Exports: default
 
-// Module 10283 (NotificationSettingsMockMessage)
+// Module 10284 (NotificationSettingsMockMessage)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,11 +12,11 @@ const UserNotificationSettings = arg1(dependencyMap[3]).UserNotificationSettings
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { 9223372036854775807: null, 9223372036854775807: "r", 9223372036854775807: "constructor", 9223372036854775807: "call", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.card = obj;
 obj.cardContent = {};
-obj.cardMessage = { "Null": "<string:57737218>", "Null": "<string:1090519040>" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+obj.cardMessage = { -1949126297: "r", 1362780595: "hi" };
+const obj1 = { left: "center", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" };
 obj.overlay = obj1;
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function NotificationSettingsMockMessageTsx1(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
@@ -62,7 +62,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   } else {
     obj1 = {};
     obj2 = {};
-    obj3 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+    obj3 = { cachedAt: true, edpbxy: true };
     const items1 = [null, str, " "];
     obj3.children = items1;
     const items2 = [callback2(arg1(dependencyMap[12]).Text, obj3), ];

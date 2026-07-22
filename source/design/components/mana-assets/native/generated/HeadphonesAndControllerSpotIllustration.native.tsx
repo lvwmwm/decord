@@ -1,5 +1,5 @@
 // Module ID: 6247
-// Function ID: 50292
+// Function ID: 50303
 // Name: HeadphonesAndControllerSpotIllustration
 // Dependencies: []
 // Exports: HeadphonesAndControllerSpotIllustration

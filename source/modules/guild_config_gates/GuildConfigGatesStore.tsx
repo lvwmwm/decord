@@ -1,9 +1,9 @@
-// Module ID: 16210
-// Function ID: 125302
+// Module ID: 16218
+// Function ID: 125344
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16210 (_isNativeReflectConstruct)
+// Module 16218 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -54,7 +54,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let obj = closure_5[arg0];
       if (null == obj) {
-        obj = {};
+        obj = { EXPANDED_DRAWER_SHOW_POSITION: true, borderBottomStartRadius: true };
       }
       return obj;
     }

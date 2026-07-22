@@ -1,9 +1,9 @@
-// Module ID: 5661
-// Function ID: 48628
+// Module ID: 5660
+// Function ID: 48636
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 5661 (_createForOfIteratorHelperLoose)
+// Module 5660 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -139,7 +139,7 @@ const tmp2 = () => {
       if (null == tmp) {
         const tmp4 = GuildThreadSubscriptions(closure_1[2]);
         const prototype = tmp4.prototype;
-        tmp = new tmp4({});
+        tmp = new tmp4({ "Null": "100%", "Null": 16 });
       }
       return tmp;
     }

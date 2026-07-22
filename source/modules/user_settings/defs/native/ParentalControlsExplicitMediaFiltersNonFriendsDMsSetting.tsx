@@ -1,10 +1,13 @@
-// Module ID: 14437
-// Function ID: 108844
+// Module ID: 14445
+// Function ID: 108887
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: []
+// Dependencies: [2382364728, 1728053255, 33554471, 1929379840, 1428, 11997, 2, 31, 33, 13640]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14437 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14445 (useObscuredContentNonFriendsDmSettingValue)
+import module_33 from "module_33";
+import getPermissiveness from "getPermissiveness";
+
 function useObscuredContentNonFriendsDmSettingValue() {
   const parentalControlledExplicitContentSettings = arg1(dependencyMap[2]).useParentalControlledExplicitContentSettings();
   let prop;
@@ -43,11 +46,10 @@ function getTitle() {
   return intl.string(arg1(dependencyMap[5]).t.Yh+HX1);
 }
 let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[8]);
-obj = { useTitle: getTitle, parent: arg1(dependencyMap[1]).MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS, useTrailing: useObscuredContentNonFriendsDmSettingValue, onPress: onObscuredContentNonFriendsDmOnPress, unsearchable: true };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting.tsx");
+module_33 = { useTitle: getTitle, parent: arg1(dependencyMap[1]).MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS, useTrailing: useObscuredContentNonFriendsDmSettingValue, onPress: onObscuredContentNonFriendsDmOnPress, unsearchable: true };
+module_33 = module_33.createPressable(module_33);
+const result = getPermissiveness.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting.tsx");
 
-export default pressable;
+export default module_33;
 export { useObscuredContentNonFriendsDmSettingValue };
 export { onObscuredContentNonFriendsDmOnPress };

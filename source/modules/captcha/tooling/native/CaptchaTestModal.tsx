@@ -1,10 +1,10 @@
-// Module ID: 14533
-// Function ID: 109444
+// Module ID: 14541
+// Function ID: 109487
 // Name: CaptchaTestScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14533 (CaptchaTestScreen)
+// Module 14541 (CaptchaTestScreen)
 function CaptchaTestScreen(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
@@ -94,7 +94,7 @@ const View = arg1(dependencyMap[3]).View;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(true)": 0.129, "Bool(true)": 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { "Null": 0.129, "Null": 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.separator = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[6]).space.PX_24 };

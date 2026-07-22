@@ -1,16 +1,16 @@
-// Module ID: 13687
-// Function ID: 103601
+// Module ID: 13694
+// Function ID: 103634
 // Name: FamilyCenterActivityGiftRow
 // Dependencies: []
 // Exports: default
 
-// Module 13687 (FamilyCenterActivityGiftRow)
+// Module 13694 (FamilyCenterActivityGiftRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": "<string:208749762>", "Null": "<string:1107296256>", "Null": "text-default", "Null": "text-sm/medium", "Null": "<string:3877871443>", "Null": "<string:1361289113>", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { <string:1291358328>: "title", <string:2381877063>: "__closure", <string:115617528>: "construct", <string:112989421>: "Boolean", <string:2629566652>: "isArray", <string:213651783>: "isArray", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj.textContainer = {};
 let closure_6 = obj.createStyles(obj);
@@ -75,9 +75,9 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj1.subscriptionPlanId = subscriptionPlanId;
     const items = [tmp11(importDefault(dependencyMap[10]), obj1), ];
     obj2 = { style: tmp.textContainer };
-    const obj3 = { "Null": 0.706, "Null": 0.000000000000000018217984681379375, "Null": -0.000030517578125, "Null": 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: displayName };
+    const obj3 = { children: displayName };
     const items1 = [callback(arg1(dependencyMap[11]).Text, obj3), ];
-    const obj4 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children: giftSubtext };
+    const obj4 = { cachedAt: "center", edpbxy: "center", children: giftSubtext };
     items1[1] = callback(arg1(dependencyMap[11]).Text, obj4);
     obj2.children = items1;
     items[1] = callback2(View, obj2);

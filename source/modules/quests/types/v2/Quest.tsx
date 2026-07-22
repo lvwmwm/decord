@@ -1,5 +1,5 @@
 // Module ID: 6945
-// Function ID: 55505
+// Function ID: 55516
 // Name: questCosponsorMetadataFromServer
 // Dependencies: []
 // Exports: questFromServerV2

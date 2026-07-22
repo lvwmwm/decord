@@ -1,14 +1,14 @@
 // Module ID: 6111
-// Function ID: 50088
+// Function ID: 50099
 // Name: GameDiversityTier10SmallBadge
-// Dependencies: [131072, 561250304, 1879048192, 20]
+// Dependencies: [131072, 561250304, 3657433088, 19]
 // Exports: GameDiversityTier10SmallBadge
 
 // Module 6111 (GameDiversityTier10SmallBadge)
-import AppStartPerformance from "AppStartPerformance";
+import _setPrototypeOf from "_setPrototypeOf";
 
 const jsx = require(dependencyMap[0]).jsx;
-const result = AppStartPerformance.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier10SmallBadge.native.tsx");
+const result = _setPrototypeOf.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier10SmallBadge.native.tsx");
 
 export const GameDiversityTier10SmallBadge = function GameDiversityTier10SmallBadge(width) {
   let accessibilityLabel;

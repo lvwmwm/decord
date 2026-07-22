@@ -1,10 +1,10 @@
-// Module ID: 5255
-// Function ID: 44542
+// Module ID: 4982
+// Function ID: 42954
 // Name: normalizeSection
 // Dependencies: []
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 5255 (normalizeSection)
+// Module 4982 (normalizeSection)
 function normalizeSection(str) {
   str = "";
   if (null != str) {
@@ -79,10 +79,11 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
   obj[UserSettingsPath.NOTIFICATIONS] = arg1(dependencyMap[4]).WebUserSettings.NOTIFICATIONS_PANEL;
   obj[UserSettingsPath.EMAILS] = arg1(dependencyMap[4]).WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY;
   obj[UserSettingsPath.NOTIFICATIONS_EMAILS] = arg1(dependencyMap[4]).WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY;
-  obj[UserSettingsPath.KEYBINDS] = arg1(dependencyMap[4]).WebUserSettings.KEYBINDS_PANEL;
+  obj[UserSettingsPath.KEYBINDS] = arg1(dependencyMap[4]).WebUserSettings.SYSTEM_CUSTOM_KEYBINDS_CATEGORY;
+  obj[UserSettingsPath.SYSTEM] = arg1(dependencyMap[4]).WebUserSettings.SYSTEM_PANEL;
   obj[UserSettingsPath.LANGUAGE] = arg1(dependencyMap[4]).WebUserSettings.LANGUAGE_AND_TIME_PANEL;
-  obj[UserSettingsPath.WINDOWS] = arg1(dependencyMap[4]).WebUserSettings.WINDOWS_PANEL;
-  obj[UserSettingsPath.LINUX] = arg1(dependencyMap[4]).WebUserSettings.LINUX_PANEL;
+  obj[UserSettingsPath.WINDOWS] = arg1(dependencyMap[4]).WebUserSettings.SYSTEM_PANEL;
+  obj[UserSettingsPath.LINUX] = arg1(dependencyMap[4]).WebUserSettings.SYSTEM_PANEL;
   obj[UserSettingsPath.STREAMER_MODE] = arg1(dependencyMap[4]).WebUserSettings.STREAMER_MODE_CATEGORY;
   obj[UserSettingsPath.ADVANCED] = arg1(dependencyMap[4]).WebUserSettings.DEVELOPER_PANEL;
   obj[UserSettingsPath.ACTIVITY_PRIVACY] = arg1(dependencyMap[4]).WebUserSettings.ACTIVITY_PRIVACY_PANEL;

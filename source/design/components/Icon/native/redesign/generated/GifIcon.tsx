@@ -1,10 +1,10 @@
-// Module ID: 9586
-// Function ID: 74668
+// Module ID: 9587
+// Function ID: 74681
 // Name: GifIcon
 // Dependencies: []
 // Exports: GifIcon
 
-// Module 9586 (GifIcon)
+// Module 9587 (GifIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GifIcon.tsx");

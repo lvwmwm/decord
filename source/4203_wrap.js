@@ -1,5 +1,5 @@
 // Module ID: 4203
-// Function ID: 36514
+// Function ID: 36521
 // Name: wrap
 // Dependencies: []
 
@@ -152,7 +152,7 @@ if (!tmp) {
   }
   function defineIteratorMethods(prototype) {
     const hasOwnProperty = prototype;
-    const items = ["REWARD", "disableTouchLogging", "taqkwK"];
+    const items = ["to", "borderRadius", "children"];
     const item = items.forEach((arg0) => {
       arg0[arg0] = function(arg0) {
         return this._invoke(arg0, arg0);

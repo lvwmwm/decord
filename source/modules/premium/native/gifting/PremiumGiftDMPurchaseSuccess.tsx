@@ -1,10 +1,10 @@
-// Module ID: 9762
-// Function ID: 75928
+// Module ID: 9763
+// Function ID: 75941
 // Name: PremiumGiftDMSuccessBody
 // Dependencies: []
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 9762 (PremiumGiftDMSuccessBody)
+// Module 9763 (PremiumGiftDMSuccessBody)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));

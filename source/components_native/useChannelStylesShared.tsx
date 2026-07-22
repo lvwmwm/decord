@@ -1,9 +1,9 @@
-// Module ID: 10357
-// Function ID: 79940
+// Module ID: 10358
+// Function ID: 79953
 // Name: styles
 // Dependencies: []
 
-// Module 10357 (styles)
+// Module 10358 (styles)
 const _module = require(dependencyMap[0]);
 let obj = { container: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
@@ -15,14 +15,14 @@ const obj2 = { flex: 1, backgroundColor: importDefault(dependencyMap[1]).colors.
 obj1.forumChannelStyles = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH, borderBottomColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH };
 obj1.headerLeftContainer = { position: "relative" };
 obj1.headerTitleContainer = {};
-obj1.headerRightContainer = {};
+obj1.headerRightContainer = { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "5715cd5806fb4cacae2f3e063eb62255", "Null": "hr.messages.5715cd5806fb4cacae2f3e063eb62255.compiled.messages" };
 const styles1 = _module1.createStyles(obj1);
 const _module2 = require(dependencyMap[0]);
-const obj4 = { navbarLeft: { ICON_VOICE_MUTED: true, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: true }, menuIcon: { marginHorizontal: 2 } };
-const obj5 = { -1731343402: "9c2cfd53ed0ab3abd70ee33b26a982e5", -731786967: "channel_following_success_2", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
-obj4.mentionBadge = obj5;
-const obj6 = { -1731343402: "9c2cfd53ed0ab3abd70ee33b26a982e5", -731786967: "channel_following_success_2", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH };
-obj4.mentionBadgeAlternate = obj6;
+const obj4 = { navbarLeft: { <string:4224476331>: null, <string:1415819756>: null }, menuIcon: { marginHorizontal: 2 } };
+const obj3 = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH, borderBottomColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH };
+obj4.mentionBadge = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
+const obj5 = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
+obj4.mentionBadgeAlternate = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH };
 const styles2 = _module2.createStyles(obj4);
 const _module3 = require(dependencyMap[2]);
 const result = _module3.fileFinishedImporting("components_native/useChannelStylesShared.tsx");

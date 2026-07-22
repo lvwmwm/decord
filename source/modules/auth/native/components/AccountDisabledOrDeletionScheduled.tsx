@@ -1,10 +1,10 @@
-// Module ID: 14639
-// Function ID: 110410
+// Module ID: 14647
+// Function ID: 110453
 // Name: AccountDisabledOrDeletionScheduled
 // Dependencies: []
 // Exports: default
 
-// Module 14639 (AccountDisabledOrDeletionScheduled)
+// Module 14647 (AccountDisabledOrDeletionScheduled)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -32,9 +32,9 @@ let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   }
   obj.justifyContent = str2;
   obj.container = obj;
-  obj.image = { SCROLLING_MOMENTUM: "user", GuildRoomBackgrounds: "row" };
+  obj.image = { 9223372036854775807: 43691329, 0: 1869037824 };
   obj.title = {};
-  obj.description = { hour: "r", minute: "isArray", second: "warn" };
+  obj.description = {};
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -109,7 +109,7 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   obj = { style: tmp6.container };
   obj1 = {};
   const items4 = [callback(arg1(dependencyMap[13]).WumpTrash, { style: tmp6.image }), , ];
-  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp6.title, children: stringResult };
+  const obj3 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp6.title, children: stringResult };
   items4[1] = callback(arg1(dependencyMap[14]).Text, obj3);
   const obj4 = { style: tmp6.description, children: string2Result };
   items4[2] = callback(arg1(dependencyMap[14]).Text, obj4);

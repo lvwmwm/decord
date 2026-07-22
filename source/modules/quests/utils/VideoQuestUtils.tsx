@@ -1,10 +1,10 @@
-// Module ID: 10463
-// Function ID: 81015
+// Module ID: 10464
+// Function ID: 81028
 // Name: sendVideoProgress
 // Dependencies: []
 // Exports: computeMaxSeekableTime, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing
 
-// Module 10463 (sendVideoProgress)
+// Module 10464 (sendVideoProgress)
 function sendVideoProgress(quest, currentTime) {
   let isQuestExpiredResult = currentTime(dependencyMap[4]).isQuestExpired(quest);
   if (!isQuestExpiredResult) {

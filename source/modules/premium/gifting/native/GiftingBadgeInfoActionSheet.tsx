@@ -1,10 +1,10 @@
-// Module ID: 9677
-// Function ID: 75339
+// Module ID: 9678
+// Function ID: 75352
 // Name: GiftingBadgeInfoActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9677 (GiftingBadgeInfoActionSheet)
+// Module 9678 (GiftingBadgeInfoActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -22,11 +22,11 @@ const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
 obj.title = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj.description = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-const obj4 = { -9223372036854775808: null, 7741: null, rowGap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj4 = { "Bool(true)": null, "Bool(true)": null, rowGap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.tierCards = obj4;
-const obj5 = { @braintree/wrap-promise: "accessibilityLabel", onPress: "r", padding: importDefault(dependencyMap[7]).space.PX_8 };
-obj.tierCard = obj5;
 const obj3 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
+obj.tierCard = { padding: importDefault(dependencyMap[7]).space.PX_8 };
+const obj5 = { padding: importDefault(dependencyMap[7]).space.PX_8 };
 obj.iconWrapper = { paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
 let closure_11 = obj.createStyles(obj);
 const obj6 = { paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
@@ -44,14 +44,14 @@ export default function GiftingBadgeInfoActionSheet() {
   const effect = React.useEffect(() => {
     callback(closure_2[11]).track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
   }, []);
-  obj = {};
+  obj = { openDisableCommunication: 1766088043, freezeEnabled: 827788593 };
   obj = {};
   const items2 = [tmp.container, ];
   obj1 = { paddingBottom: importDefault(dependencyMap[8])().bottom + importDefault(dependencyMap[7]).space.PX_16 };
   items2[1] = obj1;
   obj.style = items2;
   const obj2 = { style: tmp.headerContainer };
-  const obj3 = { <string:4003527526>: null, <string:2924932188>: "9dd37f954b23d7c3c7ed4428be93436f", <string:1546256390>: "ClydeIcon", <string:2324728136>: "png", style: tmp.title };
+  const obj3 = { "Null": null, "Null": "9dd37f954b23d7c3c7ed4428be93436f", "Null": "ClydeIcon", "Null": "png", style: tmp.title };
   const intl = arg1(dependencyMap[14]).intl;
   obj3.children = intl.string(importDefault(dependencyMap[15]).0MB2C6);
   const items3 = [callback(arg1(dependencyMap[13]).Text, obj3), ];
@@ -92,7 +92,7 @@ export default function GiftingBadgeInfoActionSheet() {
           tmp6 = callback3(closure_4, obj);
         }
         const items = [tmp6, , ];
-        const obj1 = { hasMaxConnections: "<string:3704409292>", isBoostOnlySubscription: "<string:32796991>", children: complex_icon_static_url.name };
+        const obj1 = { cachedAt: "<string:3704409292>", edpbxy: "<string:32796991>", children: complex_icon_static_url.name };
         items[1] = callback3(tmp(closure_2[13]).Text, obj1);
         let tmp12 = null != tmp3;
         if (tmp12) {

@@ -1,10 +1,10 @@
-// Module ID: 10862
-// Function ID: 84523
+// Module ID: 10863
+// Function ID: 84536
 // Name: ChatGDMUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10862 (ChatGDMUpsellActionSheet)
+// Module 10863 (ChatGDMUpsellActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -17,13 +17,13 @@ obj.footer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUN
 obj.body = { textAlign: "center" };
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.noticeContainer = { borderRadius: importDefault(dependencyMap[4]).radii.sm, marginVertical: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.innerContainer = { alignItems: "center", flexDirection: "center", justifyContent: "100%" };
-obj.secondInnerContainer = { "Null": 7, "Null": 370 };
+obj.innerContainer = { "Bool(false)": 930167211465604600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000007836384246803317, "Bool(false)": 28788265.235748198 };
+obj.secondInnerContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.text = { flex: 1 };
 obj.titleImage = {};
+const obj3 = { value: true, onPress: true, editable: true, accessibilityLabel: true, accessibilityHint: true, forceAccessibleContainer: true, clearButtonVisibility: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
+obj.item = obj3;
 const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.sm, marginVertical: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.item = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
-const obj3 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
 obj.button = { paddingTop: importDefault(dependencyMap[4]).space.PX_16 };
 let closure_7 = obj.createStyles(obj);
 const obj4 = { paddingTop: importDefault(dependencyMap[4]).space.PX_16 };
@@ -40,7 +40,7 @@ export default function ChatGDMUpsellActionSheet(onClick) {
     callback(closure_2[8]).hideActionSheet();
     onClick();
   }, items);
-  let obj = { "Bool(false)": "Small", "Bool(false)": "sm", "Bool(false)": "Placeholder" };
+  let obj = {};
   obj = { style: tmp.titleImage };
   obj = { source: importDefault(dependencyMap[11]), resizeMode: "contain" };
   obj.children = callback(importDefault(dependencyMap[10]), obj);
@@ -67,11 +67,11 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   obj1.children = items2;
   obj.footer = callback2(View, obj1);
   const obj6 = {};
-  const obj7 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, style: tmp.title };
+  const obj7 = { vy: false, numberActiveTouches: false, _accountsForMovesUpTo: false, style: tmp.title };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj7.children = intl3.string(arg1(dependencyMap[13]).t.bkqux/);
   const items3 = [callback(arg1(dependencyMap[15]).Text, obj7), , ];
-  const obj8 = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: tmp.body };
+  const obj8 = { style: tmp.body };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj8.children = intl4.string(arg1(dependencyMap[13]).t.N6TdqN);
   items3[1] = callback(arg1(dependencyMap[15]).Text, obj8);

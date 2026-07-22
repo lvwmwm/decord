@@ -1,5 +1,5 @@
 // Module ID: 4945
-// Function ID: 42396
+// Function ID: 42405
 // Name: createOrUpdateModeratorOverwrite
 // Dependencies: []
 // Exports: canLurkerListen, createModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators

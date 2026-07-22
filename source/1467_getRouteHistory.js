@@ -84,7 +84,7 @@ arg5.default = function TabRouter(arg0) {
         const obj = { name, key: "" + name + "-" + callback(closure_2[1]).nanoid(), params: callback[name] };
         return obj;
       });
-      const obj = {};
+      const obj = { mcpTransport: 570425343, networkTransport: 42977857 };
       const tmp4 = callback2(mapped, num, str, callback);
       obj.key = "tab-" + callback(closure_2[1]).nanoid();
       obj.index = num;
@@ -146,7 +146,7 @@ arg5.default = function TabRouter(arg0) {
         if (null == found) {
           found = [];
         }
-        const obj = {};
+        const obj = { mcpTransport: 570425343, networkTransport: 42977857 };
         const _HermesInternal = HermesInternal;
         str = "tab-";
         obj.key = "tab-" + callback(mapped[1]).nanoid();

@@ -1,10 +1,16 @@
-// Module ID: 14339
-// Function ID: 108282
+// Module ID: 14347
+// Function ID: 108325
 // Name: SampleCard
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14339 (SampleCard)
+// Module 14347 (SampleCard)
+import "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function SampleCard(arg0) {
   let children;
   let noScroll;
@@ -22,18 +28,14 @@ function SampleCard(arg0) {
   obj.children = items;
   return closure_6(arg1(dependencyMap[7]).Card, obj);
 }
-importAll(dependencyMap[0]);
-({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, card: { gap: 12 } });
+({ View: closure_3, ScrollView: closure_4 } = __exportStarResult1);
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+let closure_7 = __exportStarResult1.createStyles({ container: {}, card: { gap: 12 } });
 const items = [arg1(dependencyMap[4]).AvatarSizes.XSMALL, arg1(dependencyMap[4]).AvatarSizes.REFRESH_MEDIUM_32, arg1(dependencyMap[4]).AvatarSizes.NORMAL, arg1(dependencyMap[4]).AvatarSizes.LARGE_48, arg1(dependencyMap[4]).AvatarSizes.XLARGE];
-const items1 = [arg1(dependencyMap[5]).GuildIconSizes.XSMALL, arg1(dependencyMap[5]).GuildIconSizes.SMALL_32, arg1(dependencyMap[5]).GuildIconSizes.NORMAL, arg1(dependencyMap[5]).GuildIconSizes.LARGE, arg1(dependencyMap[5]).GuildIconSizes.XLARGE];
-let closure_10 = [225579656, 873073126, 241766718];
-let closure_11 = ["Array", "getIndexingErrorText", "a", "MESSAGE_ACTIONS_MENU", "order", "generateNonce"];
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemPile.tsx");
+const items1 = [require("__exportStarResult1").GuildIconSizes.XSMALL, require("__exportStarResult1").GuildIconSizes.SMALL_32, require("__exportStarResult1").GuildIconSizes.NORMAL, require("__exportStarResult1").GuildIconSizes.LARGE, require("__exportStarResult1").GuildIconSizes.XLARGE];
+let closure_10 = ["toString", "prototype", "default"];
+let closure_11 = ["Array", "isArray", "application", "paddingHorizontal", "a", "isArray"];
+const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemPile.tsx");
 
 export default function UserSettingsDesignSystemPile() {
   let obj = {};
@@ -42,7 +44,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Pile",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: closure_10, totalCount: children(closure_2[10]).DEFAULT_AVATARS.length };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -57,7 +59,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Pile (with overflow)",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: closure_10, totalCount: 9500 };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -71,7 +73,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Pile (with overflow)",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: closure_10, totalCount: 9500 };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -85,7 +87,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: arr.slice(0, 2) };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -100,7 +102,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: arr.slice(0, 2) };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -115,7 +117,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile (different sizes)",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(callback(closure_2[8]).Text, obj), ];
       obj = {};
       const items1 = [children, callback(closure_2[4]).AvatarSizes.NORMAL];
@@ -135,7 +137,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile (different sizes)",
     children: items.map((children) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
+      obj = { cachedAt: 3, edpbxy: null, children };
       const items = [callback2(callback(closure_2[8]).Text, obj), ];
       obj = {};
       const items1 = [children, callback(closure_2[4]).AvatarSizes.NORMAL];
@@ -155,7 +157,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Guild Icon Pile (with overflow)",
     children: items1.map((size) => {
       let obj = {};
-      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children: size.toLowerCase() };
+      obj = { cachedAt: 3, edpbxy: null, children: size.toLowerCase() };
       const items = [callback2(size(closure_2[8]).Text, obj), ];
       obj = { size, names: closure_11, totalCount: 128, children: closure_11.map((value) => callback2(callback(closure_2[5]), { value, size: value }, arg1)) };
       items[1] = callback2(size(closure_2[12]).GuildIconPile, obj);
@@ -163,22 +165,22 @@ export default function UserSettingsDesignSystemPile() {
       return callback3(size(closure_2[6]).Stack, obj, size);
     })
   });
-  const obj5 = { 9223372036854775807: "r", 0: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD" };
-  const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: "md", children: [null, null, null] };
+  const obj5 = { 0: false, 0: false };
+  const obj6 = { cachedAt: 3, edpbxy: null, children: [null, null, null] };
   const items1 = [callback2(arg1(dependencyMap[8]).Text, obj6), ];
-  const items2 = [[], [242.896, 0], [], [], [null, null], ["GroupPlusIcon", "afterMs"], ["<string:53040003>", "<string:806589490>"]];
+  const items2 = [[], [0, 6.571], [null, null], [true, true], [-447601326, 1659789871], ["borderRadius", "transform"], ["placeholder", "aria-label"]];
   items1[1] = items2.map((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
     let obj = {};
-    obj = { hasMaxConnections: true, isBoostOnlySubscription: "md" };
+    obj = { cachedAt: 3, edpbxy: null };
     let str = "null";
     let str2 = "null";
     if (null != tmp) {
       str2 = tmp;
     }
-    const items = [true, str2, ", depthY="];
+    const items = [false, str2, ", depthY="];
     if (null != tmp2) {
       str = tmp2;
     }

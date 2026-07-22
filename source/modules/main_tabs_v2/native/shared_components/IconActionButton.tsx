@@ -1,17 +1,17 @@
-// Module ID: 10091
-// Function ID: 78153
+// Module ID: 10092
+// Function ID: 78166
 // Name: ButtonBadge
 // Dependencies: []
 // Exports: default
 
-// Module 10091 (ButtonBadge)
+// Module 10092 (ButtonBadge)
 class ButtonBadge {
   constructor(arg0) {
     str = global.badgePosition;
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78155(false);
+    tmp = f78168(false);
     tmp2 = jsx;
     obj = {};
     tmp3 = importDefault(dependencyMap[10]);
@@ -26,7 +26,7 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
-  let obj = { actionIconButtonPressable: { 0: null, -9223372036854775808: null, 9223372036854775807: null, 0: "isArray", 0: "LengthDelimited", 0: "start", -9223372036854775808: "r", -9223372036854775808: "isArray", 0: "s", 9223372036854775807: "end" }, withoutMargin: { marginEnd: 0 } };
+  let obj = { actionIconButtonPressable: { <string:2104241004>: 0.000000000000000000000000000025261340779372826, <string:143479472>: -0.00000000000000000000000000000000000000000008971708424961389, <string:1449329397>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012347486809543077, <string:2103730859>: 69269383559347000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1630826065>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014924179216646993, <string:2131317000>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640959344055744, <string:1627653713>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002753581674325211, <string:3359199547>: "isArray", <string:2622925666>: "Error", <string:3332623508>: "start" }, withoutMargin: { marginEnd: 0 } };
   obj = {};
   let prop;
   if (!arg0) {
@@ -37,7 +37,7 @@ let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
   obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.INPUT_BACKGROUND_DEFAULT };
   const merged = Object.assign(importDefault(dependencyMap[3]).shadows.SHADOW_LOW);
   obj.outlined = obj;
-  obj.roundButton = { "Bool(false)": false, "Bool(false)": false };
+  obj.roundButton = { nm: true, View: true };
   const obj1 = {};
   const colors = importDefault(dependencyMap[3]).colors;
   obj1.tintColor = arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT;
@@ -49,8 +49,8 @@ let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
   }
   obj2.marginTop = num2;
   obj.actionText = obj2;
-  obj.unreadBadgeLeft = { "Null": true, "Null": true, "Null": true };
-  obj.unreadBadgeRight = { <string:3250345558>: true, <string:553825121>: true, <string:1935339265>: true };
+  obj.unreadBadgeLeft = {};
+  obj.unreadBadgeRight = {};
   const obj6 = arg1(dependencyMap[4]);
   obj.unreadBadgeMask = { color: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW };
   const obj3 = { color: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW };

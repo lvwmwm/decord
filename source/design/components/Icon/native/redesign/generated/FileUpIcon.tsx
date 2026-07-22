@@ -1,10 +1,10 @@
-// Module ID: 13423
-// Function ID: 101925
+// Module ID: 13430
+// Function ID: 101958
 // Name: FileUpIcon
 // Dependencies: []
 // Exports: FileUpIcon
 
-// Module 13423 (FileUpIcon)
+// Module 13430 (FileUpIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FileUpIcon.tsx");

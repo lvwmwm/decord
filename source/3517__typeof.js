@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -164,7 +164,7 @@ export const LocalWeekYearParser = (Parser) => {
         tmp17 = closure_10(applyResult, "priority", 130);
         tmp18 = closure_8(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_10(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_10(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, false, false, false, false, false]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -208,7 +208,7 @@ export const LocalWeekYearParser = (Parser) => {
           tmp17 = closure_10(applyResult, "priority", 130);
           tmp18 = closure_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_10(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_10(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, false, false, false, false, false]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -227,7 +227,7 @@ export const LocalWeekYearParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: LocalWeekYearParser };
+  let obj = { "": null, children: null, "": null, value: LocalWeekYearParser };
   LocalWeekYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class LocalWeekYearParser {
@@ -258,7 +258,7 @@ export const LocalWeekYearParser = (Parser) => {
           tmp17 = closure_10(applyResult, "priority", 130);
           tmp18 = closure_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_10(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_10(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, false, false, false, false, false]);
           return applyResult;
         } else {
           _TypeError = TypeError;

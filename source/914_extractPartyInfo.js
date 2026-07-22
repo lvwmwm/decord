@@ -1,7 +1,7 @@
 // Module ID: 914
 // Function ID: 10022
 // Name: extractPartyInfo
-// Dependencies: [4294967295, 4294967295, 0, 0]
+// Dependencies: []
 // Exports: buildClientAttributesFromInfo, buildServerAttributesFromInfo, buildTransportAttributes, extractSessionDataFromInitializeRequest, extractSessionDataFromInitializeResponse
 
 // Module 914 (extractPartyInfo)
@@ -152,7 +152,7 @@ function getTransportTypes(transport) {
       return obj;
     }
   }
-  return { width: "user", height: "assistant" };
+  return { backgroundColor: "isArrayBuffer", borderColor: "onMomentumEnd" };
 }
 let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });

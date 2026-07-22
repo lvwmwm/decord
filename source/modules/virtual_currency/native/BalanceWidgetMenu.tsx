@@ -1,10 +1,10 @@
-// Module ID: 14545
-// Function ID: 109599
+// Module ID: 14553
+// Function ID: 109642
 // Name: BalanceWidget
 // Dependencies: []
 // Exports: default
 
-// Module 14545 (BalanceWidget)
+// Module 14553 (BalanceWidget)
 function BalanceWidget(arg0) {
   let accessibilityLabel;
   let accessibilityState;
@@ -15,7 +15,7 @@ function BalanceWidget(arg0) {
   const tmp = callback3(importDefault(dependencyMap[7])("BalanceWidgetMenu"));
   let obj = { onPress, style: items, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8 };
   const items = [tmp.pressable, style];
-  obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum", style: tmp.label };
+  obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", style: tmp.label };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.gGtZpz);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj), ];
@@ -126,7 +126,7 @@ const tmp2 = arg1(dependencyMap[4]);
 const tmp3 = arg1(dependencyMap[6]);
 let closure_12 = arg1(dependencyMap[26]).createStyles((arg0) => {
   let obj = {};
-  obj = { <string:4250031786>: "<string:1639977058>", <string:1640528003>: "<string:24183104>", <string:3085591210>: "<string:1090519040>", <string:1387841873>: "30%", gap: importDefault(dependencyMap[27]).space.PX_8 };
+  obj = { gap: importDefault(dependencyMap[27]).space.PX_8 };
   if (arg0) {
     obj = { paddingHorizontal: importDefault(dependencyMap[27]).space.PX_8, paddingVertical: importDefault(dependencyMap[27]).space.PX_8 };
     let obj1 = obj;
@@ -139,7 +139,7 @@ let closure_12 = arg1(dependencyMap[26]).createStyles((arg0) => {
   obj.pressable = obj;
   obj.label = { flex: 1 };
   obj.pill = { alignItems: "center" };
-  obj.loadingContainer = {};
+  obj.loadingContainer = { "Bool(false)": null, "Bool(false)": null };
   return obj;
 });
 const obj = arg1(dependencyMap[26]);

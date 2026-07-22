@@ -10,9 +10,9 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: {}, narrow: {}, short: {} };
+    obj = { long: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 }, narrow: {}, short: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 } };
     obj.conjunction = obj;
-    const obj1 = { long: { application: "{0}, {1}", Set: "{0}, {1}", Icon: "{0} y {1}", id: "{0}, {1}" }, narrow: { application: "{0}, {1}", Set: "{0}, {1}", Icon: "{0} y {1}", id: "{0}, {1}" }, short: { application: "{0}, {1}", Set: "{0}, {1}", Icon: "{0} y {1}", id: "{0}, {1}" } };
+    const obj1 = { long: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, narrow: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, short: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true } };
     obj.disjunction = obj1;
     const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: "{0}, {1}", Set: "{0}, {1}", Icon: "{0} y {1}", id: "{0}, {1}" }, narrow: { application: "{0}, {1}", Set: "{0}, {1}", Icon: "{0} y {1}", id: "{0}, {1}" }, short: { application: "{0}, {1}", Set: "{0}, {1}", Icon: "{0} y {1}", id: "{0}, {1}" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "el" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 }, narrow: {}, short: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 } }, disjunction: { long: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, narrow: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, short: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "el" });

@@ -1,9 +1,9 @@
-// Module ID: 14840
-// Function ID: 111847
+// Module ID: 14848
+// Function ID: 111890
 // Name: CategoryChannel
 // Dependencies: []
 
-// Module 14840 (CategoryChannel)
+// Module 14848 (CategoryChannel)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/channel_list_v2/native/items/index.tsx");
 

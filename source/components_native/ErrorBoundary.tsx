@@ -1,9 +1,9 @@
-// Module ID: 13373
-// Function ID: 101663
+// Module ID: 13380
+// Function ID: 101696
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13373 (_isNativeReflectConstruct)
+// Module 13380 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -58,7 +58,7 @@ let closure_13 = importDefault(dependencyMap[9]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[10]));
 const tmp4 = arg1(dependencyMap[10]);
-let closure_16 = arg1(dependencyMap[11]).createLegacyClassComponentStyles({ buttons: {}, debugLogsContainer: { <string:3250345558>: false, <string:553825121>: false, <string:1935339265>: false, <string:3495584001>: false, <string:3842455059>: false, <string:1801652740>: false, <string:4244922114>: false }, error: {}, text: { textAlign: "center" } });
+let closure_16 = arg1(dependencyMap[11]).createLegacyClassComponentStyles({ buttons: { alignItems: false, textAlign: false, paddingBottom: false, display: false, marginTop: false }, debugLogsContainer: { st: false, sv: false, sw: false, ta: false, te: false, tg: false, th: false }, error: { MINIMAL: true, currentScreenId: null }, text: { textAlign: "center" } });
 const tmp5 = (PureComponent) => {
   class ErrorBoundary {
     constructor(arg0) {
@@ -77,7 +77,7 @@ const tmp5 = (PureComponent) => {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.state = { bottom: "o", y: "o" };
+      tmp2Result.state = { "Null": "o", "Null": "o" };
       tmp2Result.discordErrorsSet = false;
       return tmp2Result;
     }

@@ -1,8 +1,8 @@
-// Module ID: 15993
-// Function ID: 122763
+// Module ID: 16001
+// Function ID: 122805
 // Dependencies: []
 
-// Module 15993
+// Module 16001
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/avatar/images/defaultAvatar1.tsx");
 

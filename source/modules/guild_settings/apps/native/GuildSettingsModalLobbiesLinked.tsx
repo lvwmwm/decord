@@ -1,10 +1,10 @@
-// Module ID: 16166
-// Function ID: 124598
+// Module ID: 16174
+// Function ID: 124640
 // Name: SyncingToGamesItem
 // Dependencies: []
 // Exports: default
 
-// Module 16166 (SyncingToGamesItem)
+// Module 16174 (SyncingToGamesItem)
 function SyncingToGamesItem(channels) {
   channels = channels.channels;
   const arg1 = channels;

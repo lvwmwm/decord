@@ -1,10 +1,10 @@
-// Module ID: 11802
-// Function ID: 91578
+// Module ID: 11803
+// Function ID: 91591
 // Name: ProfileEffectAssetPreview
 // Dependencies: []
 // Exports: default
 
-// Module 11802 (ProfileEffectAssetPreview)
+// Module 11803 (ProfileEffectAssetPreview)
 function ProfileEffectAssetPreview(item) {
   const tmp = callback5();
   const tmp2 = importDefault(dependencyMap[7])(item.item.skuId);
@@ -78,26 +78,27 @@ function BundleAssetPreview(height) {
     const items = [tmp.bundlePreviewContainer, { width, height }];
     return items;
   }, items);
+  const items2 = [width, height];
+  const memo1 = React.useMemo(() => {
+    const items = [tmp.bundlePreviewScale, ];
+    let obj = { width: bundleWidth, height: rounded, transform: items1 };
+    obj = { scale: result };
+    const items1 = [obj];
+    items[1] = obj;
+    return items;
+  }, items1);
   obj = { style: memo };
-  obj = {
-    style: React.useMemo(() => {
-      const items = [tmp.bundlePreviewScale, ];
-      let obj = { width: bundleWidth, height: rounded, transform: items1 };
-      obj = { scale: result };
-      const items1 = [obj];
-      items[1] = obj;
-      return items;
-    }, items1),
-    children: callback(importDefault(dependencyMap[14]), obj1)
-  };
-  obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", exposureLocation: "CollectiblesShopCheckoutDetails" };
+  obj = { style: memo1 };
+  const memo2 = React.useMemo(() => ({ width, height }), items2);
+  obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2, exposureLocation: "CollectiblesShopCheckoutDetails" };
+  obj.children = callback(importDefault(dependencyMap[14]), obj1);
   obj.children = callback(View, obj);
   return callback(View, obj);
 }
 function NameplateAssetPreview(item) {
   let obj = arg1(dependencyMap[15]);
   const nameplateData = obj.getNameplateData(item.item);
-  obj = { display: null, flexDirection: null, alignItems: null, nameplate: nameplateData, style: callback6().nameplate };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, nameplate: nameplateData, style: callback6().nameplate };
   return callback(importDefault(dependencyMap[16]), obj);
 }
 function CollectibleProductPreview(arg0) {
@@ -262,15 +263,15 @@ const BUNDLE_PREVIEW_CONFIG = tmp2.BUNDLE_PREVIEW_CONFIG;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { externalProductImage: {} };
-obj = { "Bool(false)": 0, "Bool(false)": -245.426, "Bool(false)": 3, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { "Bool(false)": "<string:29705451>", "Bool(false)": "UM", "Bool(false)": "ButtonLooks", borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.bundlePreviewContainer = obj;
-obj.bundlePreviewScale = {};
+obj.bundlePreviewScale = { 71460343: 68.78, 1402052859: null, -436061645: null };
 const tmp3 = arg1(dependencyMap[4]);
 obj.productContainer = { borderRadius: importDefault(dependencyMap[6]).radii.lg, flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-const obj2 = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
+const obj2 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
 obj.productDetailsContainer = obj2;
-obj.productPreviewContainer = { margin: null, backgroundColor: null };
-const obj3 = { ty: 8, c: null, o: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj.productPreviewContainer = { "Bool(false)": null, "Bool(false)": null };
+const obj3 = { id: 8, title: null, options: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.productDetails = obj3;
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.productDetailsTextContainer = { gap: importDefault(dependencyMap[6]).space.PX_4 };
@@ -290,17 +291,16 @@ let closure_10 = obj8.createStyles((arg0) => {
 });
 let obj9 = arg1(dependencyMap[5]);
 const obj6 = {};
-const obj7 = { "Bool(false)": "PlaystationNeutralIcon", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+const obj7 = { FITNESS: "PlaystationNeutralIcon", unstable_UserBlockingPriority: "png", APPEAL_INGESTION_REQUEST_REVIEW: true, T8sBLJ: "/assets/design/components/Icon/native/redesign/generated/images", GENERIC_REGEX: 24, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj6.profileEffectContainer = obj7;
-obj8 = { y: true, isArray: true, string: true, raw: true, aspectRatio: tmp2.SAMPLE_PROFILE_ASPECT_RATIO };
-obj6.profileEffect = obj8;
+obj6.profileEffect = { aspectRatio: tmp2.SAMPLE_PROFILE_ASPECT_RATIO };
 let closure_11 = obj9.createStyles(obj6);
 const obj5 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
-obj9 = {};
-const obj14 = arg1(dependencyMap[5]);
-obj9.nameplate = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
-let closure_12 = obj14.createStyles(obj9);
-const obj10 = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj8 = {};
+obj9 = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj8.nameplate = obj9;
+let closure_12 = arg1(dependencyMap[5]).createStyles(obj8);
+const obj13 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopCheckoutDetails.tsx");
 
 export default function CollectiblesShopCheckoutDetails(recipientUser) {

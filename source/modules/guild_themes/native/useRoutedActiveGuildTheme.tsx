@@ -1,5 +1,5 @@
 // Module ID: 3978
-// Function ID: 33003
+// Function ID: 33005
 // Name: getGuildIdFromNavigationState
 // Dependencies: []
 // Exports: default

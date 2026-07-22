@@ -1,10 +1,10 @@
-// Module ID: 8211
-// Function ID: 64901
+// Module ID: 8212
+// Function ID: 64913
 // Name: usePreloadProfileEffect
 // Dependencies: []
 // Exports: default
 
-// Module 8211 (usePreloadProfileEffect)
+// Module 8212 (usePreloadProfileEffect)
 function usePreloadProfileEffect(arg0) {
   const arg1 = arg0;
   const items = [arg0];
@@ -85,7 +85,7 @@ function StaticEffect(useThumbnail) {
     let obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
   } else {
     obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
-    const obj1 = {};
+    const obj1 = { flexWrap: true, alignItems: true, marginTop: true };
     const obj2 = {};
     if (useThumbnail) {
       reducedMotionSrc = thumbnailPreviewSrc;
@@ -112,7 +112,7 @@ let closure_7 = importDefault(dependencyMap[3]);
 let closure_8 = importDefault(dependencyMap[4]);
 const jsx = arg1(dependencyMap[5]).jsx;
 const tmp2 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ profileEffects: {}, effect: { position: "absolute" } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ profileEffects: { transparent: "text-sm/semibold", animationType: "text-link", visible: "True", onRequestClose: "True", statusBarTranslucent: "true", source: 424, index: 424, key: 100 }, effect: { position: "absolute" } });
 function ProfileEffect(profileEffect) {
   let replayOnNavigationFocus;
   let style;

@@ -1,10 +1,12 @@
 // Module ID: 958
 // Function ID: 10376
 // Name: extractToolCalls
-// Dependencies: []
+// Dependencies: [57, 27, 978]
 // Exports: extractToolsFromCompiledGraph, setResponseAttributes
 
 // Module 958 (extractToolCalls)
+import _slicedToArray from "_slicedToArray";
+
 function extractToolCalls(substr) {
   if (substr) {
     if (0 !== substr.length) {
@@ -28,9 +30,9 @@ function extractToolCalls(substr) {
             if (isArray) {
               let tmp9 = items;
               let push = items.push;
-              let tmp10 = callback;
+              let tmp10 = _slicedToArray;
               let tmp11 = tool_calls;
-              let applyResult = push.apply(items, callback(tmp6));
+              let applyResult = push.apply(items, _slicedToArray(tmp6));
             }
           }
         }
@@ -128,7 +130,6 @@ function extractModelMetadata(setAttribute, response_metadata) {
     }
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { extractModelMetadata };

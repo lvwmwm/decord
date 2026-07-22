@@ -1,10 +1,10 @@
-// Module ID: 10919
-// Function ID: 84909
+// Module ID: 10920
+// Function ID: 84922
 // Name: CancelButton
 // Dependencies: []
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 10919 (CancelButton)
+// Module 10920 (CancelButton)
 function CancelButton() {
   const tmp = callback4();
   const arg1 = tmp;
@@ -131,20 +131,20 @@ let closure_19 = arg1(dependencyMap[14]).createStyles(() => {
   obj = { flex: 1, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
   obj.root = obj;
   obj.background = closure_7.absoluteFillObject;
-  obj = { margin: null, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
+  obj = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
   const merged = Object.assign(closure_7.absoluteFillObject);
   obj.loading = obj;
-  obj.header = { <string:1334598284>: false, <string:3229045644>: false, <string:2213734789>: false };
+  obj.header = { 9223372036854775807: "%ArrayProto_values%", 9223372036854775807: "useUpcomingServerEventExperiment", 0: "ct" };
   obj.main = { flex: 2 };
   obj.animation = { flex: 3 };
-  const obj1 = { padding: null, Date: null, apply: null, gap: importDefault(dependencyMap[15]).space.PX_16 };
-  obj.body = obj1;
+  obj.body = { gap: importDefault(dependencyMap[15]).space.PX_16 };
+  const obj1 = { gap: importDefault(dependencyMap[15]).space.PX_16 };
   obj.title = { textAlign: "center", marginHorizontal: importDefault(dependencyMap[15]).space.PX_32 };
   const obj2 = { textAlign: "center", marginHorizontal: importDefault(dependencyMap[15]).space.PX_32 };
   obj.buttonsContainer = { padding: importDefault(dependencyMap[15]).space.PX_24, gap: importDefault(dependencyMap[15]).space.PX_16 };
   const items = [{ translateY: 3 }];
   obj.orbsIconAndroid = { transform: items };
-  obj.orbsIconIOS = { iconPosition: 2, style: "text-sm/semibold" };
+  obj.orbsIconIOS = { <string:2343141277>: 2, <string:259581577>: "text-sm/semibold" };
   return obj;
 });
 let closure_20 = importAllResult.memo((uri) => {
@@ -194,7 +194,7 @@ let closure_22 = importAllResult.memo((animate) => {
     flag = true;
   }
   let obj = arg1(dependencyMap[21]);
-  obj = { <string:1707113641>: null, <string:1403672123>: null, <string:1311855202>: null, style };
+  obj = { <string:1850961868>: null, <string:1027274021>: null, <string:3662041617>: null, style };
   obj = { uri, onLoad, animate: flag };
   obj.children = callback3(obj.isAndroid() ? closure_21 : closure_20, obj);
   return callback3(closure_8, obj);
@@ -386,7 +386,7 @@ export default function QuestOrbsRewardModal(quest) {
     obj6.children = tmp39Result;
     items6[1] = callback3(closure_8, obj6);
     const obj8 = { style: tmp.body };
-    const obj9 = { hasMaxConnections: "png", isBoostOnlySubscription: 1, style: tmp.title };
+    const obj9 = { cachedAt: "png", edpbxy: "md", style: tmp.title };
     const intl = arg1(dependencyMap[18]).intl;
     const obj10 = {};
     let num6 = 0;
@@ -396,7 +396,7 @@ export default function QuestOrbsRewardModal(quest) {
     obj10.count = num6;
     obj9.children = intl.format(arg1(dependencyMap[18]).t.FIilK5, obj10);
     const items7 = [callback3(arg1(dependencyMap[39]).Heading, obj9), ];
-    const obj11 = { style: tmp.title };
+    const obj11 = { cachedAt: "position", edpbxy: "scalar", style: tmp.title };
     const intl2 = arg1(dependencyMap[18]).intl;
     const format = intl2.format;
     const t = arg1(dependencyMap[18]).t;
@@ -419,7 +419,7 @@ export default function QuestOrbsRewardModal(quest) {
               return closure_16(variant.Fragment, obj, "balance");
             },
         profileDecoHook() {
-              const obj = { hasMaxConnections: "<string:3362914305>", isBoostOnlySubscription: "<string:2018574337>" };
+              const obj = {};
               const intl = balance(closure_2[18]).intl;
               obj.children = intl.string(balance(closure_2[18]).t.pGDUH9);
               return callback3(balance(closure_2[39]).Text, obj, "profileDeco");
@@ -452,13 +452,13 @@ export default function QuestOrbsRewardModal(quest) {
     obj8.children = items7;
     items6[2] = closure_16(closure_8, obj8);
     const obj14 = { style: tmp.buttonsContainer };
-    const obj15 = { paddingVertical: true, display: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", flexDirection: null, onPress: memo.primary.handler };
+    const obj15 = { enlargeSquare: "83f73ec48da0fa384732b494e560b028", fillAspectRatio: "nl.messages.83f73ec48da0fa384732b494e560b028.compiled.messages", <string:1650710705>: "jsona", onPress: memo.primary.handler };
     const intl3 = arg1(dependencyMap[18]).intl;
     obj15.text = intl3.string(memo.primary.text);
     const items8 = [callback3(arg1(dependencyMap[41]).Button, obj15), ];
     let tmp59 = null != memo.secondary;
     if (tmp59) {
-      const obj16 = { paddingVertical: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882297944488606, display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000076436369851344, flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002134690713675183, onPress: memo.secondary.handler };
+      const obj16 = { enlargeSquare: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882297944488626, fillAspectRatio: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000076439139005289, <string:1650710705>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000214020790273169, onPress: memo.secondary.handler };
       const intl4 = arg1(dependencyMap[18]).intl;
       obj16.text = intl4.string(memo.secondary.text);
       tmp59 = callback3(arg1(dependencyMap[41]).Button, obj16);

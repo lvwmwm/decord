@@ -411,8 +411,8 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 const logger = new arg1(dependencyMap[6]).Logger("HTTPUtils");
-const set = new Set([null, null, null, null, null, null, null, "Int16Array"]);
-const set1 = new Set([true, true]);
+const set = new Set(["isArray", "isArray", "resolve", "ct", "code", "from", "top", "Text"]);
+const set1 = new Set([-1331045302, -108471716]);
 const tmp6 = (arg0) => {
   class HTTPResponseError {
     constructor(arg0, arg1) {
@@ -458,7 +458,7 @@ let bindResult3 = makeRequest.bind(null, "del");
 const obj = { get: noop, post: bindResult, put: bindResult1, patch: bindResult2, del: bindResult3 };
 if (global.isServerRendering) {
   noop = function noop() {
-    const obj = { 9223372036854775807: "<string:1112997890>", 0: "<string:2782242238>", 0: "<string:2780709589>", 9223372036854775807: "<string:1121297877>", 9223372036854775807: "Firefox", headers: {} };
+    const obj = { visible: true, hardwareAccelerated: true, textAlign: true, flex: true, lineHeight: true, headers: {} };
     return Promise.resolve(obj);
   };
   bindResult = noop;

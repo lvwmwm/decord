@@ -16,7 +16,7 @@ function getReactNativeTracingIntegration(client) {
   return client.getIntegrationByName(closure_2);
 }
 let closure_2 = "ReactNativeTracing";
-const obj = { <string:1011635180>: null, <string:1636459989>: null, <string:2898022715>: null };
+const obj = { -664548248: null, -1419619492: null, -1037871786: null };
 const _module = require(dependencyMap[0]);
 obj.traceFetch = _module.isWeb();
 

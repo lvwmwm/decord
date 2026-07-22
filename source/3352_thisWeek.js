@@ -15,7 +15,7 @@ if (!_module) {
 } else {
   tmp3 = _module;
 }
-let closure_3 = [true, true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = {
   lastWeek: function lastWeekFormat(arg0, defaultResult2, date) {
     const toDateResult = require(dependencyMap[1]).toDate(arg0);

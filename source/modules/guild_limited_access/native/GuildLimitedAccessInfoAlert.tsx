@@ -1,10 +1,10 @@
-// Module ID: 12720
-// Function ID: 97620
+// Module ID: 12727
+// Function ID: 97653
 // Name: GuildLimitedAccessInfoAlert
 // Dependencies: []
 // Exports: default
 
-// Module 12720 (GuildLimitedAccessInfoAlert)
+// Module 12727 (GuildLimitedAccessInfoAlert)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).GUILD_LIMITED_ACCESS_HC_LINK;

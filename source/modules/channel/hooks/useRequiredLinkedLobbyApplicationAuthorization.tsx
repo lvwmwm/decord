@@ -1,10 +1,10 @@
-// Module ID: 11456
-// Function ID: 89257
+// Module ID: 11457
+// Function ID: 89270
 // Name: useRequiredLinkedLobbyApplicationAuthorization
 // Dependencies: []
 // Exports: default
 
-// Module 11456 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 11457 (useRequiredLinkedLobbyApplicationAuthorization)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,5 +1,5 @@
 // Module ID: 6774
-// Function ID: 53342
+// Function ID: 53353
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: isAvatarDecorationRecord

@@ -1,5 +1,5 @@
 // Module ID: 4482
-// Function ID: 39571
+// Function ID: 39579
 // Name: isIndexInClosedRange
 // Dependencies: []
 // Exports: assertDetentsArrayIsSorted, resolveSheetAllowedDetents, resolveSheetInitialDetentIndex, resolveSheetLargestUndimmedDetent
@@ -17,9 +17,9 @@ function isIndexInClosedRange(SHEET_DIMMED_ALWAYS, arg1, arg2) {
 }
 const Platform = require(dependencyMap[0]).Platform;
 const items = [-1];
-const items1 = [null];
-const items2 = ["GroupPlusIcon"];
-const items3 = ["codeBlock", "br"];
+const items1 = [false];
+const items2 = ["borderRadius"];
+const items3 = [null, null];
 
 export const SHEET_FIT_TO_CONTENTS = items;
 export const SHEET_COMPAT_LARGE = items1;

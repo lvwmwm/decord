@@ -1,17 +1,19 @@
-// Module ID: 11743
-// Function ID: 91220
+// Module ID: 11744
+// Function ID: 91233
 // Name: InviteRolesList
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11743 (InviteRolesList)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ rolesRow: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/accept_invite/native/InviteRolesList.tsx");
+// Module 11744 (InviteRolesList)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+let closure_7 = __exportStarResult1.createStyles({ rolesRow: { marginBottom: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000041429461884185393, alignSelf: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051300060092725, textAlignVertical: -0.0000000000000000000000000000000000000000015246127293407848, width: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061780589495861 } });
+const result = __exportStarResult1.fileFinishedImporting("modules/accept_invite/native/InviteRolesList.tsx");
 
 export default function InviteRolesList(invite) {
   invite = invite.invite;
@@ -38,7 +40,7 @@ export default function InviteRolesList(invite) {
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style: invite.style };
-      obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+      obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
       const intl = arg1(dependencyMap[7]).intl;
       obj.children = intl.string(arg1(dependencyMap[7]).t.stcSfI);
       const items1 = [callback(arg1(dependencyMap[6]).Text, obj), ];

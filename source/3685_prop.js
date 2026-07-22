@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { application: 120, Set: 80, Icon: "center", id: "r" }, narrow: { application: 120, Set: 80, Icon: "center", id: "r" }, short: { application: 120, Set: 80, Icon: "center", id: "r" } };
+    obj = { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, short: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" } };
     obj.conjunction = obj;
-    const obj1 = { long: { application: true, Set: true, Icon: true, id: true }, narrow: { application: true, Set: true, Icon: true, id: true }, short: { application: true, Set: true, Icon: true, id: true } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { application: 120, Set: 80, Icon: "center", id: "r" }, narrow: {}, short: { application: 1958150146, Set: -352714749, Icon: 1090584578, id: 321693 } };
+    const obj2 = { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: {}, short: { accessibilityHint: "isArray", legacyCompat_selected: "accessible", legacyCompat_onPress: "height", eventTarget: "a" } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "es";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { application: 120, Set: 80, Icon: "center", id: "r" }, narrow: { application: 120, Set: 80, Icon: "center", id: "r" }, short: { application: 120, Set: 80, Icon: "center", id: "r" } }, disjunction: { long: { application: true, Set: true, Icon: true, id: true }, narrow: { application: true, Set: true, Icon: true, id: true }, short: { application: true, Set: true, Icon: true, id: true } }, unit: { long: { application: 120, Set: 80, Icon: "center", id: "r" }, narrow: {}, short: { application: 1958150146, Set: -352714749, Icon: 1090584578, id: 321693 } } }, locale: "es" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, short: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: {}, short: { accessibilityHint: "isArray", legacyCompat_selected: "accessible", legacyCompat_onPress: "height", eventTarget: "a" } } }, locale: "es" });

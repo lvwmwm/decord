@@ -1,10 +1,10 @@
-// Module ID: 12165
-// Function ID: 93583
+// Module ID: 12169
+// Function ID: 93609
 // Name: createInviteEmbed
 // Dependencies: []
 // Exports: createInviteEmbed
 
-// Module 12165 (createInviteEmbed)
+// Module 12169 (createInviteEmbed)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ InviteStates: closure_4, AbortCodes: closure_5 } = arg1(dependencyMap[2]));

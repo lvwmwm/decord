@@ -1,10 +1,10 @@
-// Module ID: 10201
-// Function ID: 78745
+// Module ID: 10202
+// Function ID: 78758
 // Name: useIsConnectedToVoiceChannelForId
 // Dependencies: []
 // Exports: useIsConnectedToVoiceChannel
 
-// Module 10201 (useIsConnectedToVoiceChannelForId)
+// Module 10202 (useIsConnectedToVoiceChannelForId)
 function useIsConnectedToVoiceChannelForId(arg0) {
   const arg1 = arg0;
   const items = [closure_3, closure_2];

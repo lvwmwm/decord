@@ -1,5 +1,5 @@
 // Module ID: 7752
-// Function ID: 61590
+// Function ID: 61600
 // Name: _sendGiftMessage
 // Dependencies: []
 // Exports: sendGiftMessage, unhandledGiftIntent

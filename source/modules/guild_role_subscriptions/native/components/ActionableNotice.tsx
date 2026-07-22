@@ -1,15 +1,15 @@
-// Module ID: 16346
-// Function ID: 126130
+// Module ID: 16354
+// Function ID: 126172
 // Name: ActionableNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16346 (ActionableNotice)
+// Module 16354 (ActionableNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { "Null": true, "Null": true, "Null": true }, message: { "Bool(false)": "Activities and Clear", "Bool(false)": "email_verification" }, actionButton: {} });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { platformIconContainer: true, platformIconContainer: true, platformIconContainer: true }, message: { "Null": "Activities and Clear", "Null": "email_verification" }, actionButton: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
 

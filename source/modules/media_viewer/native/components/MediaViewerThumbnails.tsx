@@ -1,10 +1,10 @@
-// Module ID: 12115
-// Function ID: 93333
+// Module ID: 12119
+// Function ID: 93359
 // Name: ObscuredView
 // Dependencies: []
 // Exports: default
 
-// Module 12115 (ObscuredView)
+// Module 12119 (ObscuredView)
 let THUMBNAIL_HEIGHT;
 let THUMBNAIL_MARGIN;
 function ObscuredView(source) {
@@ -71,7 +71,7 @@ let closure_11 = importAllResult.memo((onSelect) => {
   const callback = importAllResult.useCallback(() => onSelect(index), items);
   let obj = { style: items1 };
   const items1 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
-  obj = { "Bool(true)": "OPACITY_BLURPLE_12", "Bool(true)": 0.12156862745098039, "Bool(true)": "OPACITY_BLURPLE_20", "Bool(true)": 0.2, "Bool(true)": "OPACITY_YELLOW_4", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityState: { selected: selectedIndex === index }, onPress: callback };
+  obj = { ef: "<string:1899974754>", w: "Map", h: "<string:18647105>", ip: "<string:1371169024>", op: "<string:1215481027>", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityState: { selected: selectedIndex === index }, onPress: callback };
   obj = { style: tmp.thumbnailImagePortrait };
   const thumbnail = first.thumbnail;
   let tmp10 = first;
@@ -162,6 +162,6 @@ export default function MediaViewerThumbnails(syncer) {
   const items5 = [index];
   const callback2 = importAllResult.useCallback(() => useThumbnailStyle(index(variableWidthThumbnailsEnabled[14]), { style: footerBufferStyle }), items4);
   const memo2 = importAllResult.useMemo(() => index.get(), items5);
-  obj = { bottom: "Placeholder", sr: "Click", ks: false, ao: false, accessibilityRole: false, __d: false, call: false, channelId: false, w: false, ref, style: tmp.containerPortrait, sections: memo1, initialScrollItem: memo2, itemSize, renderItem: callback, onScroll, horizontal: true, headerSize: headerBufferSize, footerSize: footerBufferSize, renderHeader: callback1, renderFooter: callback2, onEndReached, endReachedThreshold: onEndReachedThreshold, chunkBase: screenWidth, snapToOffsets: memo, animatedProps };
+  obj = { ref, style: tmp.containerPortrait, sections: memo1, initialScrollItem: memo2, itemSize, renderItem: callback, onScroll, horizontal: true, headerSize: headerBufferSize, footerSize: footerBufferSize, renderHeader: callback1, renderFooter: callback2, onEndReached, endReachedThreshold: onEndReachedThreshold, chunkBase: screenWidth, snapToOffsets: memo, animatedProps };
   return useThumbnailStyle(arg1(dependencyMap[15]).AnimatedFastList, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8981
-// Function ID: 70761
+// Module ID: 8982
+// Function ID: 70774
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 8981 (CloseButton)
+// Module 8982 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[5]),
@@ -48,7 +48,7 @@ export default function CrunchyrollLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 });
       },
       render() {
         return callback2(callback(closure_2[10]), {});
@@ -59,7 +59,7 @@ export default function CrunchyrollLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" });
       },
       render(arg0) {
         let callbackCode;

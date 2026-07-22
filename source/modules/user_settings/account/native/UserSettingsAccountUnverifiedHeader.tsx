@@ -1,10 +1,10 @@
-// Module ID: 9226
-// Function ID: 72155
+// Module ID: 9227
+// Function ID: 72168
 // Name: handleOpenEmailVerification
 // Dependencies: []
 // Exports: default
 
-// Module 9226 (handleOpenEmailVerification)
+// Module 9227 (handleOpenEmailVerification)
 function handleOpenEmailVerification() {
   importDefault(dependencyMap[5]).open();
 }
@@ -35,9 +35,9 @@ let closure_3 = importDefault(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { renderReplies: "r\u016F\u017Eov\u00E9 srdce", renderReactions: "<string:2471624704>", position: "<string:1904843953>", bottom: "o", height: "<string:2680059697>", width: true, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
+obj = { animated: "p\u011Bkn\u011B pros\u00EDm", hasHandledScroll: "<string:2891055104>", isNearBottom: "<string:1904855985>", isAtBottom: "o", isNearTop: "<string:2680059697>", decelerating: true, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
 obj.accountWarning = obj;
-obj.accountWarningText = { "Bool(true)": "<string:4083789493>", "Bool(true)": "<string:3209801398>" };
+obj.accountWarningText = { 1643693300: "vertical", 33902873: false };
 const tmp3 = arg1(dependencyMap[2]);
 obj.accountWarningButton = { borderColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 let closure_6 = obj.createStyles(obj);
@@ -52,7 +52,7 @@ export default function UserSettingsAccountUnverifiedHeader() {
   let tmp3 = null;
   if (null != tmp2) {
     obj = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification };
-    obj = { delete: 369098752, dispatch: 16777216, raw: 882, style: tmp.accountWarningText, children: tmp2.title };
+    obj = { style: tmp.accountWarningText, children: tmp2.title };
     const items1 = [callback(arg1(dependencyMap[9]).Text, obj), ];
     const obj1 = { style: tmp.accountWarningButton, children: tmp2.button };
     items1[1] = callback(arg1(dependencyMap[9]).Text, obj1);

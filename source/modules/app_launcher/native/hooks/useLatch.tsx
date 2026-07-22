@@ -1,10 +1,10 @@
-// Module ID: 11271
-// Function ID: 87723
+// Module ID: 11272
+// Function ID: 87736
 // Name: useLatch
 // Dependencies: []
 // Exports: default
 
-// Module 11271 (useLatch)
+// Module 11272 (useLatch)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/app_launcher/native/hooks/useLatch.tsx");
 

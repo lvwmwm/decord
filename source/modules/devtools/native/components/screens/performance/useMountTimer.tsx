@@ -1,10 +1,10 @@
-// Module ID: 14578
-// Function ID: 109888
+// Module ID: 14586
+// Function ID: 109931
 // Name: useMountTimer
 // Dependencies: []
 // Exports: default
 
-// Module 14578 (useMountTimer)
+// Module 14586 (useMountTimer)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/native/components/screens/performance/useMountTimer.tsx");

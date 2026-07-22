@@ -1,10 +1,10 @@
-// Module ID: 10247
-// Function ID: 79219
+// Module ID: 10248
+// Function ID: 79232
 // Name: hairlineWidth
 // Dependencies: []
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 10247 (hairlineWidth)
+// Module 10248 (hairlineWidth)
 const _module = require(dependencyMap[1]);
 let num = 20;
 if (_module.isIOS()) {
@@ -13,7 +13,7 @@ if (_module.isIOS()) {
 let closure_3 = "text-sm/semibold";
 let closure_4 = "text-sm/semibold";
 const hairlineWidth = require(dependencyMap[0]).StyleSheet.hairlineWidth;
-const frozen = Object.freeze({});
+const frozen = Object.freeze({ position: 404, top: -15, right: 0 });
 const _module1 = require(dependencyMap[3]);
 const result = _module1.fileFinishedImporting("modules/channel_list_v2/native/RedesignChannelListConstants.tsx");
 

@@ -431,7 +431,7 @@ const fn = function t() {
           if (0 === arg0) {
             tmp23 = Color;
             num4 = 3;
-            items = [null, null, null];
+            items = [];
             items[3] = self._rgb[3];
             prototype5 = Color.prototype;
             tmp24 = new.target;
@@ -481,7 +481,7 @@ const fn = function t() {
                 prototype2 = Color.prototype;
                 tmp8 = new.target;
                 tmp9 = new.target;
-                tmp10 = new Color([null, null, null]);
+                tmp10 = new Color([]);
                 tmp11 = tmp10;
                 isMatch = test(tmp10, self);
               } else {
@@ -719,7 +719,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [427697983247262640000000000000000000000000000000000000000000000000000000000000000000000]));
+    let applyResult = bind.apply(Color, items1.concat(items, [0.0000000000000000000000000000000000000000000000000000000000000000000000011324704898856095]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -742,7 +742,7 @@ const fn = function t() {
       num = arr2[4];
     }
     if (1 === arr2[3]) {
-      const items1 = [null, null, null, num];
+      const items1 = [, , , num];
       let items2 = items1;
     } else {
       let num2 = 0;
@@ -905,8 +905,8 @@ const fn = function t() {
         return items2;
       }
     } else {
-      const items3 = [null, null, null];
-      const items4 = [null, null, null];
+      const items3 = [];
+      const items4 = [];
       if (tmp4 < 0.5) {
         let result1 = tmp4 * (1 + num2);
       } else {
@@ -1121,7 +1121,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["memo"]));
+    let applyResult = bind.apply(Color, items1.concat(items, []));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1243,7 +1243,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["successRedirect"]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["p"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1457,7 +1457,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.907]));
+    let applyResult = bind.apply(Color, items1.concat(items, [true]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1479,7 +1479,7 @@ const fn = function t() {
       }
       if (!items.length) {
         if ("string" === type(arg0)) {
-          const items1 = [];
+          const items1 = ["formatToPlainString", "it", "bind", "message", "k", "Boolean", "textAlign"];
           if (items1.indexOf(arg0.length) >= 0) {
             return "hex";
           }
@@ -1539,7 +1539,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [-697050769076513100000000000000000000000000000000000000000000000000000000]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["marginBottom"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1640,7 +1640,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["<string:3819299667>"]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["passthroughCount"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1731,7 +1731,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [1279000806]));
+    let applyResult = bind.apply(Color, items1.concat(items, []));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1947,7 +1947,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["guild_id"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [false]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2081,7 +2081,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, []));
+    let applyResult = bind.apply(Color, items1.concat(items, ["<string:3819299667>"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2098,7 +2098,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [true]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["start"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2117,7 +2117,7 @@ const fn = function t() {
     }
     return lch2rgb$1.apply(undefined, unpack(items, "hcl").reverse());
   };
-  const items1 = [null, null];
+  const items1 = ["<string:1225129986>", "<string:121634818>"];
   const item = items1.forEach((arg0) => {
     const limit$2 = arg0;
     const autodetect = obj.autodetect;
@@ -2211,7 +2211,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["settingsFromServer"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [0.3]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2268,7 +2268,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014224785586748537]));
+    let applyResult = bind.apply(Color, items1.concat(items, [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000495295569660755]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2388,7 +2388,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["<string:73487360>"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [false]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2466,7 +2466,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["isBoostOnly"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [1795817476]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2830,7 +2830,7 @@ const fn = function t() {
   atan2 = Math.atan2;
   function _average_lrgb(mapped1, arg1) {
     let length;
-    const items = ["<string:1014759426>", "<string:340852738>", "<string:1612335631>", "<string:1612447746>"];
+    const items = [139348659563046800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000118231045220236, 0.00000000000000000000000000000000000000000000000000002089509649731851, -0.000000000000000000000000000000000000000000000000000000000000000000000000000017285410812612244];
     let num = 0;
     if (0 < mapped1.length) {
       do {
@@ -2861,9 +2861,9 @@ const fn = function t() {
     let closure_0 = "rgb";
     let closure_1 = chroma$k("#ccc");
     let closure_2 = 0;
-    let closure_3 = ["replace", "then"];
+    let closure_3 = [77601039, 1612144654];
     let closure_4 = [];
-    let closure_5 = ["<string:53040003>", "<string:806589490>"];
+    let closure_5 = ["placeholder", "aria-label"];
     let closure_6 = false;
     let closure_7 = [];
     let closure_8 = false;
@@ -3644,7 +3644,7 @@ const fn = function t() {
   cos = Math.cos;
   sin = Math.sin;
   PI = Math.PI;
-  const obj19 = { OrRd: [], PuBu: [false, false, false, false, false, false, false, false, false], BuPu: [], Oranges: ["r", "isArray", "replace", "__packager_asset", "r", "isArray", "marginTop", "__packager_asset", "r"], BuGn: [], YlOrBr: [], YlGn: ["#ffffd9", "#edf8b1", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#253494", "#081d58"], Reds: [], RdPu: [], Greens: [], YlGnBu: ["Array", "Lq9Set", "r", "getQuestUrl", "r", "LOG10E", "GiftCardLeft3dIllustration", "mi", "AccountAgeTier6LargeBadge"], Purples: [false, false, false, false, false, false, false, false, false], GnBu: ["<string:4127195400>", "<string:973079103>", "<string:1224737175>", "#440154", "#482777", "#3f4a8a", "#31678e", "#26838f", null], Greys: [], YlOrRd: [], PuRd: [], Blues: [], PuBuGn: [], Viridis: [true, true, true, true, true, true, true, "<string:1204682753>", "<string:3572367362>"], Spectral: [true, true, true, true, true, true, true, true, true, true, "<string:1184563202>"], RdYlGn: [], RdBu: ["<string:822280194>", "<string:3635412993>", "<string:1055719425>", "<string:1229324290>", false, false, false, false, false, false, false], PiYG: ["<string:594739202>", "<string:1149370370>", "<string:1629945858>", "<string:83820545>", "<string:2722496514>", "<string:2315256201>", "<string:3388997911>", null, null, null, null], PRGn: [], RdYlBu: ["<string:3042330712>", "<string:1218838529>", "<string:1152450562>", "<string:1204944898>", "<string:209584130>", "<string:144113665>", "<string:1203634177>", "<string:3050700802>", "<string:2017525761>", "<string:1375732058>", "<string:1213757925>"], BrBG: [], RdGy: [], PuOr: [], Set2: [], Accent: [], Set1: [], Set3: [true, true, true, true, true, true, true, true, true, true, true, true], Dark2: [], Paired: ["<string:36133191>", "<string:18246656>", "<string:29002752>", "<string:33302016>", "<string:33415424>", "<string:30052352>", "<string:25937664>", "<string:1465663744>", "<string:122748929>", "<string:1135632645>", "left-pointing", "magnifying"], Pastel2: ["num", "rgb", "temp", "oklab", "oklch", 255, 255, 255], Pastel1: [] };
+  const obj19 = { OrRd: [], PuBu: [], BuPu: [], Oranges: [], BuGn: [false, false, false, false, false, false, false, false, false], YlOrBr: ["r", "createData", "Array", "moderator", "r", "PREMIUM_TENURE_6_MONTH", "r", "createEnvelope", "Array"], YlGn: [115236278171727350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -69282988691254510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -11035964431286800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 44647099200363820000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240409391215744, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003177794797185073, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001871366868834094, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000142956734515382, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011703658028104815], Reds: [null, null, null, null, null, null, null, null, null], RdPu: [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010166856212623937, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009144952599996552, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000662728470758104, -1115038800979469700000000000000000000000000000, -246143254895054400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -6246958736926196000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018833757561274483, 0.000000000000000000000000000000000000000000000000000000000000000000000000000017281828434252443, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000318333925678093], Greens: [149906924695325670000000000, 790801674005289400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 20.000034397933636, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002781346143969783, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001239469346457, -3755773863282015000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 598337861878674600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9129892832391740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002912721133557865], YlGnBu: [true, true, true, true, true, true, true, true, true], Purples: [null, null, null, null, null, null, null, null, null], GnBu: [], Greys: [], YlOrRd: [-1224736340, 1275068716, -452984272, 1996489091, -16776633, "<string:1134690306>", "<string:1087504386>", "<string:160366594>", "<string:289734657>"], PuRd: [true, false, false, false, false, false, false, false, null], Blues: [], PuBuGn: [], Viridis: [null, null, null, null, null, null, null, null, null], Spectral: [false, false, false, false, false, false, false, false, false, false, false], RdYlGn: [], RdBu: [], PiYG: [], PRGn: [], RdYlBu: [null, null, null, null, null, null, null, null, null, null, null], BrBG: [], RdGy: ["r", "handleStreamWatch", "Array", "PrivateThreadMode", "Array", "screenshare", "r", "JOIN_ATTEMPTS", "Array", "createData", "Array"], PuOr: ["onCLS", "UZ", "showDoubleTapEmojiUpdatedToast", "ActivityJoiningRestrictedGuilds", "TP", "VOICE_CHANNEL_EFFECTS_COACH_MARK", "al", "call_count", "%Promise%", "guildRoomToggleLayout", "et"], Set2: [], Accent: [], Set1: [], Set3: ["cmyk", "css", null, null, null, null, null, null, null, null, null, null], Dark2: [1090519896, 956302145, 1358955350, -1656149522, 167772838, 218104208, -570424687, -100662860], Paired: [], Pastel2: [], Pastel1: [] };
   const keys = Object.keys(obj19);
   let num2 = 0;
   if (0 < keys.length) {
@@ -3885,7 +3885,7 @@ const fn = function t() {
       closure_3 = 1;
     }
     if (undefined === items) {
-      items = ["replace", "then"];
+      items = [77601039, 1612144654];
     }
     let closure_6 = 0;
     if ("array" === callback37(items)) {

@@ -1,9 +1,9 @@
-// Module ID: 15657
-// Function ID: 119620
+// Module ID: 15665
+// Function ID: 119663
 // Name: MusicMuteButton
 // Dependencies: []
 
-// Module 15657 (MusicMuteButton)
+// Module 15665 (MusicMuteButton)
 function MusicMuteButton(channelId) {
   channelId = channelId.channelId;
   let arg1;
@@ -69,26 +69,26 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_23, jsxs: closure_24 } = arg1(dependencyMap[17]));
 let closure_25 = { duration: 300 };
 let obj1 = arg1(dependencyMap[18]);
-let obj = { headerWrapper: obj };
-obj = { 247658690: 255, 446060483: 29440, -1774851201: 1900544, 1538995952: 262144, -923887889: -348061696, 2038693202: 1912602931, 109859784: 1, paddingBottom: EDGE_GUTTER };
-obj1 = {};
+let obj = { headerWrapper: { paddingBottom: EDGE_GUTTER } };
+obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj1["opacity"] = 0.7;
-obj.blurStyles = obj1;
+obj["opacity"] = 0.7;
+obj.blurStyles = obj;
 obj.leftWrapper = {};
-obj.rightWrapper = { position: false, width: false, height: false, overflow: false };
-obj.headerOuter = { "Null": 7, "Null": 370 };
-obj.headerInner = { stageInfoTopic: "png", marginRight: true, customNavbar: "/assets/images/channel_following/light", getOrFetchLinkedUsers: 280 };
+obj.rightWrapper = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.headerOuter = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+obj.headerInner = { "Bool(true)": "png", "Bool(true)": null, "Bool(true)": "text-md/medium", "Bool(true)": "text-muted" };
 obj.headerContentWrapper = { position: "relative" };
-obj.stroke = { height: StyleSheet.hairlineWidth, opacity: 0.2 };
+obj1 = { height: StyleSheet.hairlineWidth, opacity: 0.2 };
+obj.stroke = obj1;
 obj.strokeAlt = { height: StyleSheet.hairlineWidth, opacity: 0.8 };
-obj.strokeContainer = { height: StyleSheet.hairlineWidth };
-const obj4 = { <string:391295075>: "body", <string:2691281788>: "message", <string:3972814506>: "LIGHT", <string:1413208240>: "messageId", borderRadius: importDefault(dependencyMap[19]).radii.round };
-obj.focusedSpeakingDotWrapper = obj4;
-const obj2 = { height: StyleSheet.hairlineWidth, opacity: 0.2 };
-const obj3 = { height: StyleSheet.hairlineWidth, opacity: 0.8 };
+const obj3 = { <string:80590080>: 131420590, <string:80590336>: -1717986767, <string:80597504>: -644245095, <string:80624128>: 94527, height: StyleSheet.hairlineWidth };
+obj.strokeContainer = obj3;
+const obj2 = { height: StyleSheet.hairlineWidth, opacity: 0.8 };
 const tmp4 = arg1(dependencyMap[17]);
-obj.focusedSpeakingDot = { borderRadius: importDefault(dependencyMap[19]).radii.round };
+obj.focusedSpeakingDotWrapper = { borderRadius: importDefault(dependencyMap[19]).radii.round };
+const obj5 = { "Null": 800, "Null": 16, borderRadius: importDefault(dependencyMap[19]).radii.round };
+obj.focusedSpeakingDot = obj5;
 obj.shieldIconMargin = { marginLeft: -8 };
 let closure_26 = obj1.createStyles(obj);
 let closure_27 = { DOWN: 0, [0]: "DOWN", LEFT: 1, [1]: "LEFT" };
@@ -155,7 +155,7 @@ let closure_32 = importAllResult.memo((isHeaderHidden) => {
   const animatedStyle = obj3.useAnimatedStyle(fn3);
   obj1 = { style: items, pointerEvents: "none" };
   const items = [StyleSheet.absoluteFill, animatedStyle];
-  const obj2 = { alignItems: -983041, justifyContent: 2162687, position: 2097152, style: tmp.blurStyles, animatedProps };
+  const obj2 = { 72406082: -983041, 72406272: 2162687, -1594137600: 2097152, style: tmp.blurStyles, animatedProps };
   const items1 = [callback2(importDefault(dependencyMap[23]), obj2), ];
   obj3 = { style: tmp.strokeContainer };
   const tmp5 = importDefault(dependencyMap[22]);
@@ -234,7 +234,7 @@ let closure_39 = { code: "function VoicePanelHeaderTsx9(){const{calculateVoicePa
 let closure_40 = { code: "function VoicePanelHeaderTsx10(){const{controlsSpecs,VoicePanelControlsModes,isScreenReaderEnabled}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN&&!isScreenReaderEnabled;}" };
 let closure_41 = { code: "function VoicePanelHeaderTsx11(){const{calculateVoicePanelHeaderSpecs,safeArea,edgeGutter,withTiming,isHeaderHidden,OPACITY_TIMING,withSpring,MODE_CHANGE_PHYSICS}=this.__closure;const{height:height}=calculateVoicePanelHeaderSpecs(safeArea.get(),edgeGutter);return{opacity:withTiming(isHeaderHidden.get()?0:1,OPACITY_TIMING),transform:[{translateY:withSpring(isHeaderHidden.get()?-height:0,MODE_CHANGE_PHYSICS)}]};}" };
 let closure_42 = { code: "function VoicePanelHeaderTsx12(){const{isHeaderHidden}=this.__closure;return{pointerEvents:isHeaderHidden.get()?'none':'box-none',importantForAccessibility:isHeaderHidden.get()?'no-hide-descendants':'auto',accessibilityElementsHidden:isHeaderHidden.get()};}" };
-const obj5 = { borderRadius: importDefault(dependencyMap[19]).radii.round };
+const obj4 = { borderRadius: importDefault(dependencyMap[19]).radii.round };
 const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset) {
   let channelType;
   let guildId;

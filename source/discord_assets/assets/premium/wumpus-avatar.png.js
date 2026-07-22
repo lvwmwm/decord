@@ -1,8 +1,8 @@
-// Module ID: 16200
-// Function ID: 125181
+// Module ID: 16208
+// Function ID: 125223
 // Dependencies: []
 
-// Module 16200
+// Module 16208
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/wumpus-avatar.png.js");
 

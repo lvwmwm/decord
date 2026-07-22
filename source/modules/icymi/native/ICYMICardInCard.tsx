@@ -1,10 +1,10 @@
-// Module ID: 15097
-// Function ID: 113819
+// Module ID: 15105
+// Function ID: 113862
 // Name: truncateUsername
 // Dependencies: []
 // Exports: default
 
-// Module 15097 (truncateUsername)
+// Module 15105 (truncateUsername)
 function truncateUsername(arr) {
   let combined = arr;
   if (arr.length > 20) {
@@ -15,7 +15,7 @@ function truncateUsername(arr) {
 }
 function CutoutGuildIconWithUserCustom(guild) {
   guild = guild.guild;
-  let obj = { style: {} };
+  let obj = { style: { "Null": "isArray", "Null": "c" } };
   obj = {};
   obj = {};
   const tmp = callback3();
@@ -41,27 +41,27 @@ const DEFAULT_ROLE_COLOR_HEX = arg1(dependencyMap[5]).DEFAULT_ROLE_COLOR_HEX;
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
 let closure_12 = arg1(dependencyMap[7]).createICYMIStyles((margin) => {
-  let obj = { container: obj, content: { Č: 10, accessibilityDismiss: 10 } };
+  let obj = { container: obj, content: {} };
   obj = { marginTop: margin.margin };
-  obj = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
+  obj = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
   obj.channelNameAndAccessory = obj;
   obj.channelNameAndAccessoryLarge = { flexDirection: "column", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
-  obj.header = {};
-  const obj2 = { isArray: null, diversity: null, marginLeft: importDefault(dependencyMap[8]).space.PX_12 };
+  obj.header = { "Bool(false)": "REDESIGN_INPUT_CONTROL_ACTIVE_BG", "Bool(false)": "CAN" };
+  const obj2 = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>", marginLeft: importDefault(dependencyMap[8]).space.PX_12 };
   obj.headerInfo = obj2;
-  obj.title = { 1650211683: 0, 1644363857: "", -77441452: 0, 67064224: 0 };
-  obj.titleLeft = {};
+  obj.title = { "Null": 0, "Null": "", paddingHorizontal: 0, alignItems: 0 };
+  obj.titleLeft = { error: "values", phone: "isArray", phoneToken: "isArray", name: "isArray", isNameFromContactBook: "values" };
   const obj3 = { "Bool(false)": false, "Bool(false)": 0, borderRadius: importDefault(dependencyMap[8]).radii.sm };
   obj.subTitleContainer = obj3;
-  obj.subtitle = { customNavbar: true, getOrFetchLinkedUsers: true, encoderQualityStats: true };
-  obj.genContentSubtitle = { "Null": false, "Null": false, "Bool(false)": false };
+  obj.subtitle = {};
+  obj.genContentSubtitle = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
   obj.genContentSubtitleChannel = {};
   obj.subtitleTrailing = { paddingVertical: 1 };
-  const obj4 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+  const obj4 = { hideWhenScrolling: false, autoCapitalize: false, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
   obj.separator = obj4;
   const obj1 = { flexDirection: "column", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
   obj.normalContent = { borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG };
-  obj.authorAvatar = { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 };
+  obj.authorAvatar = {};
   return obj;
 });
 const obj = arg1(dependencyMap[7]);
@@ -358,7 +358,7 @@ export default function ICYMICardInCard(message) {
   const items12 = [memo1, ];
   let tmp38 = !hideTimestamp;
   if (tmp38) {
-    const obj7 = { "Null": 0, "Null": 5.566, "Null": 10, children: arg1(dependencyMap[24]).getRelativeTimestamp(timestamp) };
+    const obj7 = { children: arg1(dependencyMap[24]).getRelativeTimestamp(timestamp) };
     tmp38 = stateFromStores(arg1(dependencyMap[17]).Text, obj7);
     const obj15 = arg1(dependencyMap[24]);
   }

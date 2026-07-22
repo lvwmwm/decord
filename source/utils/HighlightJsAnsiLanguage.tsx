@@ -1,5 +1,5 @@
 // Module ID: 4123
-// Function ID: 34302
+// Function ID: 34304
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -86,7 +86,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function makeAnsiRuleCategory(arg0, arg1, arg2, arg3) {
   let closure_0 = arg0;
-  const items = ["PREMIUM_UPSELL_VALENTINES_GIFTING_CAMPAIGN"];
+  const items = [-1140850158];
   HermesBuiltin.arraySpread(arg2, 1);
   let closure_1 = items;
   if (arg3) {
@@ -138,9 +138,9 @@ function makeAnsiRuleCategory(arg0, arg1, arg2, arg3) {
     }(arg0, tmp2, tmp, items);
   });
 }
-let closure_0 = { "Bool(true)": true, "Bool(true)": true };
-let closure_1 = {};
-let closure_2 = {};
+let closure_0 = { "Bool(true)": "<string:1358955197>", "Bool(true)": "<string:1931543558>" };
+let closure_1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+let closure_2 = { 792434375: null, 79248961: null, 1227707392: null, -2105366619: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 const tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
 const regExp = new RegExp("(?=" + tmp2.source + ")");
 const _module = require(dependencyMap[0]);
@@ -148,7 +148,7 @@ const result = _module.fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx"
 
 export default function highlightJsAnsiLanguage() {
   let length;
-  const items = [...closure_7("foreground", closure_1, [true, true], true), ...closure_7("background", closure_2, ["<string:650138383>", "text-md/bold"], true), ...closure_7("style", closure_0, [], false), obj];
+  const items = [...closure_7("foreground", closure_1, [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003770625841432059, 1410880087704264000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000], true), ...closure_7("background", closure_2, [null, null], true), ...closure_7("style", closure_0, [], false), obj];
   let num = 0;
   let obj = { className: "ansi-control-sequence", begin: tmp2, starts: obj };
   obj = { end: regExp, endsParent: true };

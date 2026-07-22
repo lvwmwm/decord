@@ -1,18 +1,17 @@
 // Module ID: 1724
 // Function ID: 19369
 // Name: AnimatedScrollView
-// Dependencies: [57, 31, 1585, 1690, 1619, 1610, 1613]
+// Dependencies: []
 
 // Module 1724 (AnimatedScrollView)
-import _slicedToArray from "_slicedToArray";
-import "module_31";
-import { jsx } from "findNodeHandle";
-import checkInvalidReadDuringRender from "checkInvalidReadDuringRender";
+let closure_2 = [];
+let closure_3 = importDefault(dependencyMap[0]);
+importDefault(dependencyMap[1]);
+const jsx = arg1(dependencyMap[3]).jsx;
+let closure_5 = arg1(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[2]).ScrollView);
+const obj = arg1(dependencyMap[4]);
 
-let closure_2 = [2478319141321596300000000000000000000000000000000000000000000000000000000000000000000];
-let closure_5 = checkInvalidReadDuringRender.createAnimatedComponent(require("isJest").ScrollView);
-
-export const AnimatedScrollView = require("getShadowNodeWrapperFromRef").componentWithRef((scrollViewOffset) => {
+export const AnimatedScrollView = arg1(dependencyMap[5]).componentWithRef((scrollViewOffset) => {
   let animatedRef = arg1;
   scrollViewOffset = scrollViewOffset.scrollViewOffset;
   const tmp2 = callback(scrollViewOffset, closure_2);

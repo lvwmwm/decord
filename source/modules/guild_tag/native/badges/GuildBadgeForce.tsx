@@ -1,18 +1,18 @@
-// Module ID: 12816
-// Function ID: 98135
+// Module ID: 12823
+// Function ID: 98168
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeForce
 
-// Module 12816 (items)
+// Module 12823 (items)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = [];
 let closure_6 = [];
-let closure_7 = [0.6, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002562422606566584, -0.0000000000000000000000000000000000000000000000000000000000000000000009417915449788479];
-const items = [{ "Null": null, "Null": null }, { "Null": "Array", "Null": "isArray" }, { "Null": "\u{1F4A0}", "Null": 6 }];
+let closure_7 = [0.6, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015213727711600939, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005017231290751296];
+const items = [{ accessibilityRole: null, s: null }, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "\u{1F4A0}", s: 6 }];
 let closure_9 = [];
-const items1 = [{ "Null": null, "Null": null }, { "Null": "Array", "Null": "isArray" }, { "Null": "\u{1F4A0}", "Null": 6 }];
+const items1 = [{ accessibilityRole: null, s: null }, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "\u{1F4A0}", s: 6 }];
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeForce.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeForce = function GuildBadgeForce(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

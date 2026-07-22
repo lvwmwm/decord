@@ -1,15 +1,15 @@
-// Module ID: 13808
-// Function ID: 104430
+// Module ID: 13815
+// Function ID: 104463
 // Name: useBountyVideoProgressPersistence
 // Dependencies: []
 // Exports: useBountyVideoProgressPersistence
 
-// Module 13808 (useBountyVideoProgressPersistence)
+// Module 13815 (useBountyVideoProgressPersistence)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 const QuestsExperimentLocations = arg1(dependencyMap[3]).QuestsExperimentLocations;
-let closure_6 = { ao: false, w: false, h: false };
+let closure_6 = { -1341453009: "spring", 2120573107: 0.4, -926778785: 1 };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/BountiesModal/useBountyVideoProgressPersistence.tsx");
 
 export const useBountyVideoProgressPersistence = function useBountyVideoProgressPersistence(bountyId) {

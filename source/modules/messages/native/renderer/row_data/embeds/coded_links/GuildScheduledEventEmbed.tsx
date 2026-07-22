@@ -1,10 +1,10 @@
-// Module ID: 12170
-// Function ID: 93598
+// Module ID: 12174
+// Function ID: 93624
 // Name: createGuildScheduledEventEmbed
 // Dependencies: []
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 12170 (createGuildScheduledEventEmbed)
+// Module 12174 (createGuildScheduledEventEmbed)
 function createGuildScheduledEventEmbed(type) {
   let acceptLabelActiveBackgroundColor;
   let acceptLabelGreenColor;

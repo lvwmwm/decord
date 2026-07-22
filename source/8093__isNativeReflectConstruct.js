@@ -1,5 +1,5 @@
 // Module ID: 8093
-// Function ID: 64145
+// Function ID: 64155
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -93,6 +93,6 @@ const tmp3 = (arg0) => {
   return callback(Mask, items);
 }(importDefault(dependencyMap[11]));
 tmp3.displayName = "Mask";
-tmp3.defaultProps = { dispatch: "r", split: "isArray", location: "accessibilityRole", __initData: "create" };
+tmp3.defaultProps = {};
 
 export default tmp3;

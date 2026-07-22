@@ -1,5 +1,5 @@
 // Module ID: 7332
-// Function ID: 59115
+// Function ID: 59126
 // Name: sanitizeTagKey
 // Dependencies: []
 // Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash
@@ -27,7 +27,7 @@ function sanitizeTagValue(arg0) {
 }
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
-const items = [["twoFriends", "8"], ["application", "first_dm"], [true, true], [true, true], ["SEXUALLY_EXPLICIT_TEXT", "_index"], [null, null]];
+const items = [["<string:1792496273>", "<string:2671917114>"], ["user", "widget"], [null, null], [true, true], [], ["y", "viewHolderCollectionRef"]];
 
 export const getBucketKey = function getBucketKey(metricType, sanitizeMetricKeyResult, sanitizeUnitResult, sanitizeTagsResult) {
   const entries = Object.entries(require(dependencyMap[2]).dropUndefinedKeys(sanitizeTagsResult));

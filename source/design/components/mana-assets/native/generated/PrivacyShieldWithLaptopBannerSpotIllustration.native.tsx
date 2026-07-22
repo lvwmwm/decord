@@ -1,5 +1,5 @@
 // Module ID: 6417
-// Function ID: 50547
+// Function ID: 50558
 // Name: PrivacyShieldWithLaptopBannerSpotIllustration
 // Dependencies: []
 // Exports: PrivacyShieldWithLaptopBannerSpotIllustration

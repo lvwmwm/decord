@@ -1,10 +1,10 @@
-// Module ID: 11919
-// Function ID: 92247
+// Module ID: 11920
+// Function ID: 92261
 // Name: NewUserIcon
 // Dependencies: []
 // Exports: NewUserIcon
 
-// Module 11919 (NewUserIcon)
+// Module 11920 (NewUserIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/NewUserIcon.tsx");

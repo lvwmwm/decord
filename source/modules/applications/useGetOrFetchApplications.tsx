@@ -1,10 +1,10 @@
-// Module ID: 5468
-// Function ID: 46712
+// Module ID: 5467
+// Function ID: 46720
 // Name: useGetOrFetchApplications
 // Dependencies: [5, 31, 4809, 566, 4935, 2, 31, 27]
 // Exports: useGetOrFetchApplication
 
-// Module 5468 (useGetOrFetchApplications)
+// Module 5467 (useGetOrFetchApplications)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import module_31 from "module_31";
 import get ActivityIndicator from "get ActivityIndicator";

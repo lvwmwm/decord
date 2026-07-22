@@ -1,5 +1,5 @@
 // Module ID: 6331
-// Function ID: 50418
+// Function ID: 50429
 // Name: NitroOpalBadgeLargeBadge
 // Dependencies: []
 // Exports: NitroOpalBadgeLargeBadge

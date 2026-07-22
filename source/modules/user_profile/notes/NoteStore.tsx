@@ -1,9 +1,9 @@
-// Module ID: 11963
-// Function ID: 92472
+// Module ID: 11964
+// Function ID: 92486
 // Name: _isNativeReflectConstruct
-// Dependencies: [2382364718, 1895825415, 1828716590, 1124073518, 1442840608, 3539992597, 2130706466]
+// Dependencies: [2382364718, 1912602631, 1845493806, 1140850734, 1426063392, 3556769813, 2130706466, 1426063375]
 
-// Module 11963 (_isNativeReflectConstruct)
+// Module 11964 (_isNativeReflectConstruct)
 let TypeTag;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -80,7 +80,7 @@ tmp3 = new tmp3({
     const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
   },
   USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", { "Null": 131122.52832032426, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 }));
+    const result = set.set(userId.userId, callback3("Note", {}));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
 const obj = {
@@ -100,7 +100,7 @@ const obj = {
     const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
   },
   USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", { "Null": 131122.52832032426, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 }));
+    const result = set.set(userId.userId, callback3("Note", {}));
   }
 };
 const tmp2 = arg1(dependencyMap[5]);

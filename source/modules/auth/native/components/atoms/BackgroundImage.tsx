@@ -1,10 +1,10 @@
-// Module ID: 9214
-// Function ID: 72085
+// Module ID: 9215
+// Function ID: 72098
 // Name: BackgroundImage
 // Dependencies: []
 // Exports: default
 
-// Module 9214 (BackgroundImage)
+// Module 9215 (BackgroundImage)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5, StyleSheet: closure_6 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

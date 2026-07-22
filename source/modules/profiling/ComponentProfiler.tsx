@@ -1,10 +1,10 @@
-// Module ID: 10316
-// Function ID: 79644
+// Module ID: 10317
+// Function ID: 79657
 // Name: formatString
 // Dependencies: []
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 10316 (formatString)
+// Module 10317 (formatString)
 function formatString(length2) {
   let length = arg1;
   if (length2.length <= arg1) {

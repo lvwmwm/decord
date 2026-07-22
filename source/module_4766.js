@@ -1,5 +1,5 @@
 // Module ID: 4766
-// Function ID: 41397
+// Function ID: 41406
 // Dependencies: [6, 7, 15]
 
 // Module 4766
@@ -274,7 +274,7 @@ obj[37386] = { name: "FocalLength", description: require("_defineProperties").Fo
 obj[37394] = {
   name: "SecurityClassification",
   description(arg0) {
-    return {}[arg0] || "Unknown";
+    return { handleSensitiveMediaFilterPress: "%TypedArray%", QR_CODE: "mostRecentSubscription", inverted: "isFinite", animateEmoji: "paddingStart", HACK_fixModalInteraction: "%ArrayIteratorPrototype%" }[arg0] || "Unknown";
   }
 };
 obj[37396] = {
@@ -306,7 +306,7 @@ const obj13 = { name: "FocalLength", description: require("_defineProperties").F
 const obj14 = {
   name: "SecurityClassification",
   description(arg0) {
-    return {}[arg0] || "Unknown";
+    return { handleSensitiveMediaFilterPress: "%TypedArray%", QR_CODE: "mostRecentSubscription", inverted: "isFinite", animateEmoji: "paddingStart", HACK_fixModalInteraction: "%ArrayIteratorPrototype%" }[arg0] || "Unknown";
   }
 };
 const obj15 = {
@@ -704,7 +704,7 @@ obj[42034] = {
 obj[42080] = {
   name: "CompositeImage",
   description(arg0) {
-    return { -349215301: true, 2115606444: true, -1437386140: true }[arg0] || "Unknown";
+    return { title: "25%", Math: "center", label: "center" }[arg0] || "Unknown";
   }
 };
 

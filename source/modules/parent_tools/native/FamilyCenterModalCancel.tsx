@@ -1,10 +1,10 @@
-// Module ID: 13709
-// Function ID: 103722
+// Module ID: 13716
+// Function ID: 103755
 // Name: FamilyCenterModalCancelScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13709 (FamilyCenterModalCancelScreen)
+// Module 13716 (FamilyCenterModalCancelScreen)
 function FamilyCenterModalCancelScreen(otherUser) {
   otherUser = otherUser.otherUser;
   const arg1 = otherUser;

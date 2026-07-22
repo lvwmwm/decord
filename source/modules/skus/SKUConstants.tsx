@@ -1,5 +1,5 @@
 // Module ID: 4166
-// Function ID: 35362
+// Function ID: 35364
 // Name: set
 // Dependencies: []
 
@@ -7,4 +7,4 @@
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/skus/SKUConstants.tsx");
 
-export const THE_GAME_AWARD_WINNER_SKUS = new Set([1644167654, 91684863, -1862270976, 1929379840]);
+export const THE_GAME_AWARD_WINNER_SKUS = new Set([]);

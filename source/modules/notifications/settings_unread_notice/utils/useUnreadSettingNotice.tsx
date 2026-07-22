@@ -1,10 +1,10 @@
-// Module ID: 10416
-// Function ID: 80251
+// Module ID: 10417
+// Function ID: 80264
 // Name: useUnreadSettingNotice
 // Dependencies: []
 // Exports: default
 
-// Module 10416 (useUnreadSettingNotice)
+// Module 10417 (useUnreadSettingNotice)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[2]).CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING;

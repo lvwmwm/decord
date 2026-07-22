@@ -1,10 +1,10 @@
-// Module ID: 10684
-// Function ID: 83279
+// Module ID: 10685
+// Function ID: 83292
 // Name: canUseStreamSetting
 // Dependencies: []
 // Exports: default
 
-// Module 10684 (canUseStreamSetting)
+// Module 10685 (canUseStreamSetting)
 const StreamQualities = require(dependencyMap[0]).StreamQualities;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");

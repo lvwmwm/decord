@@ -1,9 +1,9 @@
-// Module ID: 12078
-// Function ID: 93175
+// Module ID: 12082
+// Function ID: 93201
 // Name: ImageButton
 // Dependencies: []
 
-// Module 12078 (ImageButton)
+// Module 12082 (ImageButton)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -25,11 +25,11 @@ let closure_8 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   }
   obj.flexGrow = num;
   obj.labelPressable = obj;
-  obj = { MKTG_HYPESQUAD_FORM_SUBMITTED: -536870861, marginInlineEnd: -299892737, minHeight: sum, minWidth: sum, borderRadius: importDefault(dependencyMap[5]).radii.round };
+  obj = { "Bool(false)": "%FunctionPrototype%", "Bool(false)": "paddingStart", minHeight: sum, minWidth: sum, borderRadius: importDefault(dependencyMap[5]).radii.round };
   obj.pill = obj;
   obj.imageWrapper = { width: sum, height: sum, position: "relative" };
   obj.image = { width: sum, height: sum };
-  const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[5]).radii.round, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+  const obj1 = { left: "center", backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia", borderRadius: importDefault(dependencyMap[5]).radii.round };
   obj.imageDim = obj1;
   return obj;
 });
@@ -50,7 +50,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
   ref = onPressIn;
   const onPressOut = size.onPressOut;
   const importDefault = onPressOut;
-  let obj = { getApplication: null, setBarStyle: 0.6, strokeContainer: "BounceOutRight", getFramesFromEvent: null, geta79: 0.6, mutate: "BounceOutLeft", SUB_SPAM: null, GUILD_SETTINGS_OVERVIEW: 0.6 };
+  let obj = { accessibilityRole: 0.6, ct: "BounceOut", r: null, category: 0.6, ty: "BounceOutRight", nm: null, mn: 0.6, ix: "BounceOutLeft" };
   ({ grow, image } = size);
   Object.setPrototypeOf(null);
   const merged = Object.assign(size, obj);
@@ -113,7 +113,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
     obj3["onPressOut"] = callback1;
     obj3["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
     const items4 = [callback(ref(dependencyMap[11]).BaseIconButton, obj3), ];
-    const obj4 = { maxFontSizeMultiplier, children: label };
+    const obj4 = { cachedAt: "he", edpbxy: "<string:105791744>", maxFontSizeMultiplier, children: label };
     items4[1] = callback(ref(dependencyMap[12]).Text, obj4);
     obj2["children"] = items4;
     let tmp19 = callback2(ref(dependencyMap[10]).BaseButton, obj2);

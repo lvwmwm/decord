@@ -1,15 +1,14 @@
-// Module ID: 14742
-// Function ID: 111158
+// Module ID: 14750
+// Function ID: 111201
 // Name: usePreloadedGuildAsset
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14742 (usePreloadedGuildAsset)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
+// Module 14750 (usePreloadedGuildAsset)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/guilds_bar/native/hooks/usePreloadedGuildAsset.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guilds_bar/native/hooks/usePreloadedGuildAsset.tsx");
 
 export default function usePreloadedGuildAsset(guildId, icon, asset) {
   const importDefault = guildId;
@@ -41,7 +40,7 @@ export default function usePreloadedGuildAsset(guildId, icon, asset) {
             }
             if (tmp) {
               closure_4.current.icon = closure_1;
-              closure_4.current.asset = closure_2;
+              closure_4.current.asset = __exportStarResult1;
               callback({});
             }
           });

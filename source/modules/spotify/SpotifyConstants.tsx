@@ -1,10 +1,10 @@
-// Module ID: 8304
-// Function ID: 65739
+// Module ID: 8305
+// Function ID: 65751
 // Name: spotifyUtmParams
 // Dependencies: []
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8304 (spotifyUtmParams)
+// Module 8305 (spotifyUtmParams)
 function spotifyUtmParams(desktop) {
   return "?utm_source=discord&utm_medium=" + desktop;
 }
@@ -76,7 +76,7 @@ export const isSpotifyParty = function isSpotifyParty(id) {
 };
 export const SpotifyResourceTypes = obj;
 export const SpotifyActionTypes = { USER_ACTIVITY_PLAY: "user_activity_play", USER_ACTIVITY_SYNC: "user_activity_sync", EMBED_SYNC: "embed_sync" };
-export const SPOTIFY_HOSTNAMES = ["text", "value"];
+export const SPOTIFY_HOSTNAMES = ["dtstart", "wkst"];
 export const SpotifyEndpoints = frozen;
 export const getSpotifyResourceType = function getSpotifyResourceType(arg0) {
   if ("string" !== typeof arg0) {

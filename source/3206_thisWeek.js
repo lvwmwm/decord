@@ -15,7 +15,7 @@ function thisWeek(arg0) {
 }
 let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
 let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
-let closure_2 = [null, null, null, null, null, null, null];
+let closure_2 = ["<string:1224737041>", "<string:1358955155>", "<string:3418441616>", "<string:3418554372>", "<string:3418292228>", "<string:3418095620>", "<string:2397044740>"];
 let closure_3 = {
   lastWeek: function lastWeekFormatToken(defaultResult1, defaultResult2, date) {
     const defaultResult = closure_0.default(defaultResult1);

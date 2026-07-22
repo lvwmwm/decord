@@ -1,10 +1,10 @@
-// Module ID: 9585
-// Function ID: 74662
+// Module ID: 9586
+// Function ID: 74675
 // Name: GIFPickerItemActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9585 (GIFPickerItemActionSheet)
+// Module 9586 (GIFPickerItemActionSheet)
 let num = 0;
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -18,11 +18,11 @@ if (obj3.isAndroid()) {
 }
 obj.paddingBottom = num;
 obj.contentWrapper = obj;
+const obj1 = { <string:3814666730>: 8, <string:1280564396>: 18, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
+obj.gifContainer = obj1;
 const tmp2 = arg1(dependencyMap[2]);
-obj.gifContainer = { marginTop: importDefault(dependencyMap[4]).space.PX_8 };
-const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 obj.gifImage = { borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj3 = { marginTop: importDefault(dependencyMap[4]).space.PX_16 };
+obj3 = { positionOffsetY: "hidden", RowButtonIconProps: 1, canPostPolls: true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", marginTop: importDefault(dependencyMap[4]).space.PX_16 };
 obj.favoriteButtonContainer = obj3;
 let closure_7 = obj.createStyles(obj);
 const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };

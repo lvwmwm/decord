@@ -1,16 +1,16 @@
-// Module ID: 8420
-// Function ID: 67110
+// Module ID: 8421
+// Function ID: 67122
 // Name: VoidTextInput
 // Dependencies: []
 
-// Module 8420 (VoidTextInput)
+// Module 8421 (VoidTextInput)
 const TextInput = arg1(dependencyMap[1]).TextInput;
 const tmp2 = arg1(dependencyMap[2]);
 const KeyboardThemes = tmp2.KeyboardThemes;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { "Null": "center", "Null": "center", fontFamily: tmp2.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
+obj = { fontFamily: tmp2.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
 obj.input = obj;
 obj1 = { color: importDefault(dependencyMap[5]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.placeholderTextColor = obj1;

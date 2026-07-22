@@ -4,6 +4,6 @@
 
 // Module 1240
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: true, format: false, View: true, accessibilityRole: true, surrogates: true, url: 0, scales: [null] };
+const obj = { 296374: 1, 1102560849: "tail", 288807: true, 1103760465: true, 288241: true, 1120538193: true, scales: [false] };
 
 export default _module.registerAsset(obj);

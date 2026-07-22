@@ -1,8 +1,8 @@
-// Module ID: 5406
-// Function ID: 46143
+// Module ID: 5136
+// Function ID: 44564
 // Dependencies: []
 
-// Module 5406
+// Module 5136
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("lib/spellcheck/fallbackLocales.tsx");
 

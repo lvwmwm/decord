@@ -1,5 +1,5 @@
 // Module ID: 7491
-// Function ID: 60085
+// Function ID: 60096
 // Name: FormCTA
 // Dependencies: []
 // Exports: default
@@ -109,7 +109,7 @@ export default function FormCTA(arg0) {
     obj1.icon = tmp3Result;
     let tmp21Result = tmp16(arg1(dependencyMap[9]).RowButton, obj1);
   } else {
-    const obj4 = { bind: null, cursor: null, variant, onPress, onLongPress };
+    const obj4 = { 400888199: null, 2091392542: null, variant, onPress, onLongPress };
     const items4 = [tmp.form, style];
     obj4.DEPRECATED_style = items4;
     const obj5 = { checked: completed };

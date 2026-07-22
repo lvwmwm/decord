@@ -1,17 +1,16 @@
-// Module ID: 10231
-// Function ID: 79049
+// Module ID: 10232
+// Function ID: 79062
 // Name: playInAppMessageSound
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: playInAppMessageSound
 
-// Module 10231 (playInAppMessageSound)
-import closure_2 from "result";
-import { isInAppMessageSoundsEnabled as closure_3 } from "result";
-import { InAppNotificationTypes } from "result";
-import result from "result";
+// Module 10232 (playInAppMessageSound)
+import __exportStarResult1 from "__exportStarResult1";
+import { isInAppMessageSoundsEnabled as closure_3 } from "__exportStarResult1";
+import { InAppNotificationTypes } from "__exportStarResult1";
 
 let closure_5 = 0;
-result = result.fileFinishedImporting("modules/notifications/native/playInAppMessageSound.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/notifications/native/playInAppMessageSound.tsx");
 
 export const playInAppMessageSound = function playInAppMessageSound(notification) {
   if (notification.type === InAppNotificationTypes.MESSAGE) {

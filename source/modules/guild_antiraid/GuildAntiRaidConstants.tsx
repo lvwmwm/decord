@@ -1,5 +1,5 @@
 // Module ID: 7697
-// Function ID: 61387
+// Function ID: 61397
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
 // Dependencies: []
 // Exports: getTimeframes
@@ -14,15 +14,15 @@ export const GUILD_REPORT_RAID_MOBILE_KEY = "guild_report_raid_mobile";
 export const NAGBAR_DISPLAY_MAX_HOURS = 2;
 export const DEFAULT_LOCKDOWN_DURATION = 2;
 export const getTimeframes = () => {
-  let obj = {};
+  let obj = { "Null": "jsx", "Null": "r" };
   const intl = require(dependencyMap[1]).intl;
   obj.label = intl.string(require(dependencyMap[1]).t.GA/d4I);
   const items = [obj, , , , , ];
-  obj = {};
+  obj = { "Null": "log", "Null": null };
   const intl2 = require(dependencyMap[1]).intl;
   obj.label = intl2.string(require(dependencyMap[1]).t.+rHFej);
   items[1] = obj;
-  obj = {};
+  obj = { "Null": null, "Null": null };
   const intl3 = require(dependencyMap[1]).intl;
   obj.label = intl3.string(require(dependencyMap[1]).t.5CNt/M);
   items[2] = obj;
@@ -30,7 +30,7 @@ export const getTimeframes = () => {
   const intl4 = require(dependencyMap[1]).intl;
   obj1.label = intl4.string(require(dependencyMap[1]).t.oQ4PNE);
   items[3] = obj1;
-  const obj2 = {};
+  const obj2 = { "Null": "<string:6225920>", "Null": "<string:1107361792>" };
   const intl5 = require(dependencyMap[1]).intl;
   obj2.label = intl5.string(require(dependencyMap[1]).t.LOQ0j6);
   items[4] = obj2;

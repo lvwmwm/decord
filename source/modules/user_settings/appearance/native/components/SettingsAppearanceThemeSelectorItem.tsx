@@ -1,10 +1,10 @@
-// Module ID: 14041
-// Function ID: 106768
+// Module ID: 14048
+// Function ID: 106808
 // Name: GradientThemeBackground
 // Dependencies: []
 // Exports: default
 
-// Module 14041 (GradientThemeBackground)
+// Module 14048 (GradientThemeBackground)
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
@@ -51,13 +51,13 @@ function DefaultThemeBackground(item) {
   const token1 = obj1.useToken(importDefault(dependencyMap[7]).colors.BORDER_STRONG, theme);
   let obj2 = arg1(dependencyMap[14]);
   obj = {};
-  obj = { 1996080484: "png", -104503849: true, 1369626486: "/assets/images/native/avatars", 575790138: 161, 1370382635: 160, backgroundColor: token, borderColor: token1 };
+  obj = { variant: "png", text: true, grow: "/assets/images/native/avatars", onPress: 161, icon: 160, backgroundColor: token, borderColor: token1 };
   const token2 = obj2.useToken(importDefault(dependencyMap[7]).colors.ICON_STRONG, theme);
   obj.borderRadius = importDefault(dependencyMap[7]).radii.sm;
   obj.style = obj;
   let tmp9 = null;
   if ("system" === item.theme) {
-    obj1 = { style: { GE: 1946157560, GH: 4, GM: 2 } };
+    obj1 = { style: { "Bool(true)": "ADBE Vector Group", "Bool(true)": false, "Bool(true)": 2 } };
     obj2 = { fill: token2 };
     obj1.children = callback(importDefault(dependencyMap[15]), obj2);
     tmp9 = callback(View, obj1);
@@ -109,12 +109,12 @@ obj.rippleColor = obj;
 obj.themeSelectorItemContainer = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT };
 const tmp4 = arg1(dependencyMap[5]);
 obj.themeSelectorItem = { borderRadius: importDefault(dependencyMap[7]).radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
-const obj2 = { reason: "r", preventWritingCachesAgainThisSession: "_randomPrefix", resetSocket: "r", variant: "callCount", accessibilityLabel: "Array", onPress: "BrowserMetricsAggregator", variant: "Array", backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.RED_430, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { image: "headerChannelContainer", label: "targetFrames", showLabel: "jest", variant: "isMessageComponentsV2", text: "%AsyncGeneratorPrototype%", grow: "scissors", onPress: 4, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.RED_430, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.newRedCircle = obj2;
 let closure_8 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
 let closure_9 = arg1(dependencyMap[6]).createStyles((arg0) => {
-  let obj = { themeSelectorGradientBackground: {} };
+  let obj = { themeSelectorGradientBackground: { "Null": "<string:570425661>", "Null": "<string:705839377>", "Null": null } };
   obj = {};
   const internal = importDefault(dependencyMap[7]).internal;
   const resolveSemanticColor = internal.resolveSemanticColor;

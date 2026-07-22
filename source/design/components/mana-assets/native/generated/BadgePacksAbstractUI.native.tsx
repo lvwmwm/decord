@@ -1,5 +1,5 @@
 // Module ID: 5887
-// Function ID: 49752
+// Function ID: 49763
 // Name: BadgePacksAbstractUI
 // Dependencies: []
 // Exports: BadgePacksAbstractUI

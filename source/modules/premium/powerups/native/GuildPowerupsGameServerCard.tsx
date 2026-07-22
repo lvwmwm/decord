@@ -1,10 +1,10 @@
-// Module ID: 11596
-// Function ID: 90130
+// Module ID: 11597
+// Function ID: 90143
 // Name: GuildPowerupsGameServerCard
 // Dependencies: []
 // Exports: default
 
-// Module 11596 (GuildPowerupsGameServerCard)
+// Module 11597 (GuildPowerupsGameServerCard)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

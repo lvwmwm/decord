@@ -1,9 +1,9 @@
-// Module ID: 12722
-// Function ID: 97623
+// Module ID: 12729
+// Function ID: 97656
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12722 (_isNativeReflectConstruct)
+// Module 12729 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,7 +17,7 @@ function getWindowIdState(windowId) {
   let value = map.get(windowId);
   if (null == value) {
     const hasItem = set.has(windowId);
-    const obj = { 0: "ERROR", 0: "SETTINGS_AGE_GROUP_RESET_ALERT_ID", 0: "IS_QUEST_RELEASE", <string:1879793747>: "cancelButtonTintColor", windowSize: { "Null": -536870861, "Null": -299892737 } };
+    const obj = { windowSize: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
     value = obj;
   }
   return value;

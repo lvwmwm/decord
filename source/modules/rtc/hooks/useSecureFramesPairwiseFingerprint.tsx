@@ -1,10 +1,10 @@
-// Module ID: 8895
-// Function ID: 70211
+// Module ID: 8896
+// Function ID: 70224
 // Name: useSecureFramesPairwiseFingerprint
 // Dependencies: []
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 8895 (useSecureFramesPairwiseFingerprint)
+// Module 8896 (useSecureFramesPairwiseFingerprint)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

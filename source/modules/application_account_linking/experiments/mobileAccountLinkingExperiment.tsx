@@ -1,12 +1,12 @@
-// Module ID: 14899
-// Function ID: 112269
+// Module ID: 14907
+// Function ID: 112312
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 14899 (apexExperiment)
+// Module 14907 (apexExperiment)
 let obj = { MEDIUM: "medium", LARGE: "large" };
 const _module = require(dependencyMap[0]);
-obj = { 844175713: "r", 1387159956: 148, defaultConfig: { enabled: false } };
+obj = { y: 9728512, DateToSystemTimezoneSetter: 7012352, defaultConfig: { enabled: false } };
 obj = { enabled: true, bannerSize: obj.LARGE };
 obj.variations = { [0]: { enabled: false }, [1]: obj, [2]: { enabled: true, bannerSize: obj.MEDIUM } };
 const apexExperiment = _module.createApexExperiment(obj);

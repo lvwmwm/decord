@@ -1,12 +1,10 @@
-// Module ID: 15141
-// Function ID: 114261
+// Module ID: 15149
+// Function ID: 114304
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [992935936, 325386240, 79429632, 917831680, 131072, 468713472, 5, 57, 31]
+// Dependencies: []
 // Exports: default
 
-// Module 15141 (_createForOfIteratorHelperLoose)
-import module_31 from "module_31";
-
+// Module 15149 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -91,7 +89,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 const SubscriptionTypes = arg1(dependencyMap[4]).SubscriptionTypes;
-const result = module_31.fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
 
 export default function useActiveSubscriptionListingForGroup(arg0) {
   const arg1 = arg0;

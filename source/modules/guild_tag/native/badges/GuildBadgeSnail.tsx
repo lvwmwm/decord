@@ -1,18 +1,18 @@
-// Module ID: 12841
-// Function ID: 98187
+// Module ID: 12848
+// Function ID: 98220
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeSnail
 
-// Module 12841 (items)
+// Module 12848 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [];
-let closure_5 = [null, null];
-const items = [{}, { "Null": "Array", "Null": "isArray" }];
-let closure_7 = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006409224968877366, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006116943237807347];
-let closure_8 = ["<string:1599143937>", "<string:3408642233>"];
-const items1 = [{}, { "Null": "Array", "Null": "isArray" }];
+let closure_4 = [null, null];
+let closure_5 = [];
+const items = [{}, { accessibilityRole: "Array", s: "isArray" }];
+let closure_7 = [false, false];
+let closure_8 = [-2569494770938722700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 22186884415329157000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+const items1 = [{}, { accessibilityRole: "Array", s: "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeSnail.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeSnail = function GuildBadgeSnail(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -43,7 +43,7 @@ export const GuildBadgeSnail = function GuildBadgeSnail(width) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
-  const items = [callback(arg1(dependencyMap[3]).Path, {}), , , , , , , ];
+  const items = [callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "cry", "Bool(true)": "cry" }), , , , , , , ];
   obj1 = { d: "M8 13h-1v-1h1v1ZM12 12v-1h1v-1h1V7h-1v-1h-1v-1H8v-1h5v1h1v1h1v6h-2v1H9v-1h3ZM7 12h-1v-1h1v1Z", fill: primaryColorsTransformed[1] };
   items[1] = callback(arg1(dependencyMap[3]).Path, obj1);
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M10 10h2v1H8v-2h1v-1h1v2ZM13 10h-1v-1h1v1Z", fill: primaryColorsTransformed[1] });
@@ -69,7 +69,7 @@ export const GuildBadgeSnail = function GuildBadgeSnail(width) {
   }
   obj6.fill = first;
   items[6] = callback(arg1(dependencyMap[3]).Path, obj6);
-  items[7] = callback(arg1(dependencyMap[3]).Path, {});
+  items[7] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "<string:214568138>", "Bool(true)": "<string:3851675082>" });
   obj["children"] = items;
   return closure_3(arg1(dependencyMap[3]).Svg, obj);
 };

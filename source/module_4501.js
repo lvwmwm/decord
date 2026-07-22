@@ -1,17 +1,17 @@
 // Module ID: 4501
-// Function ID: 39670
+// Function ID: 39678
 // Dependencies: []
 
 // Module 4501
 let StyleSheet;
-let closure_3 = [];
+let closure_3 = [1241963093, 675846148, 1643299990, -1339992987, -144148774, -1504593446, -100214189, 302271147, 1022099459, 1022164995, 196739075];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ Platform: closure_6, StyleSheet } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-const styles = StyleSheet.create({ container: { flex: 1 }, absoluteWithNoBottom: { "Bool(false)": "<string:3082955202>", "Bool(false)": "<string:103629460>", "Bool(false)": "<string:3630497793>", "Bool(false)": "<string:961609729>" } });
+const styles = StyleSheet.create({ container: { flex: 1 }, absoluteWithNoBottom: { aspectRatio: 131420590, backgroundColor: -1717986767, margin: -644245095, padding: 94527 } });
 
 export default importAllResult.forwardRef(function ScreenStackItem(unstable_sheetFooter) {
   let activityState;
@@ -106,9 +106,9 @@ export default importAllResult.forwardRef(function ScreenStackItem(unstable_shee
   obj.children = items1;
   children = closure_9(closure_8, obj);
   const obj3 = {
-    accessibilityRole: null,
-    current: null,
-    "Bool(false)": null,
+    margin: null,
+    padding: null,
+    flexGrow: null,
     ref(current) {
       closure_1.current = current;
       if (null !== closure_2) {

@@ -1,10 +1,10 @@
-// Module ID: 10288
-// Function ID: 79438
+// Module ID: 10289
+// Function ID: 79451
 // Name: NotificationSettingsMessageUnread
 // Dependencies: []
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 10288 (NotificationSettingsMessageUnread)
+// Module 10289 (NotificationSettingsMessageUnread)
 function NotificationSettingsMessageUnread(onPress) {
   const arg1 = onPress;
   const tmp = callback3();
@@ -13,11 +13,11 @@ function NotificationSettingsMessageUnread(onPress) {
   const found = unreadSelectOptions.find((value) => value.value === value.setting);
   obj = { style: onPress.style };
   obj = { style: tmp.header };
-  const obj1 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum", style: tmp.headerTitle };
+  const obj1 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", style: tmp.headerTitle };
   const intl = arg1(dependencyMap[7]).intl;
   obj1.children = intl.string(arg1(dependencyMap[7]).t.Tqd1Af);
   const items = [callback(arg1(dependencyMap[6]).Text, obj1), ];
-  const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images" };
+  const obj2 = {};
   const intl2 = arg1(dependencyMap[7]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[7]).t.RpQgm5);
   items[1] = callback(arg1(dependencyMap[6]).Text, obj2);
@@ -55,10 +55,10 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { ip: false, op: false, w: false, h: false, nm: false, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.card = obj;
-obj.cta = {};
-obj.label = {};
+obj.cta = { MINIMAL: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, currentScreenId: 131072.0007038191 };
+obj.label = { MINIMAL: null, currentScreenId: null };
 obj.header = { marginBottom: 8 };
 obj.headerTitle = { marginBottom: 4 };
 let closure_6 = obj.createStyles(obj);

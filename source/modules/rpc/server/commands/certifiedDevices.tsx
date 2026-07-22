@@ -1,9 +1,9 @@
-// Module ID: 13275
-// Function ID: 100832
+// Module ID: 13282
+// Function ID: 100865
 // Name: RPC_LOCAL_SCOPE
 // Dependencies: []
 
-// Module 13275 (RPC_LOCAL_SCOPE)
+// Module 13282 (RPC_LOCAL_SCOPE)
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
 const _module = require(dependencyMap[0]);

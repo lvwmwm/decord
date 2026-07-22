@@ -1,10 +1,10 @@
-// Module ID: 14570
-// Function ID: 109799
+// Module ID: 14578
+// Function ID: 109842
 // Name: IntroScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14570 (IntroScreen)
+// Module 14578 (IntroScreen)
 function IntroScreen(arg0) {
   ({ warningId: closure_0, senderId: closure_1, trackAnalyticsEvent: closure_2 } = arg0);
   const tmp = callback5();
@@ -29,14 +29,14 @@ function IntroScreen(arg0) {
   obj.children = items2;
   items1[1] = callback4(closure_7, obj);
   const obj3 = { style: tmp.ctaContainer };
-  const obj4 = { body: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", hasDiversityParent: null, padding: "06ce787c33fd0c9cd370f243d3462ef5", View: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages" };
+  const obj4 = { left: false, startAndEndHeight: false, transform: false, topOffset: false };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[13]).t.+o4Q7e);
   obj4.onPress = function onPress() {
     callback2(callback(callback2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_TAKE_ACTION);
   };
   const items3 = [callback3(arg1(dependencyMap[14]).Button, obj4), ];
-  const obj5 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
+  const obj5 = { left: "row", startAndEndHeight: 8, transform: 16, topOffset: "center" };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj5.text = intl4.string(arg1(dependencyMap[13]).t.xLkGzP);
   obj5.onPress = function onPress() {
@@ -101,7 +101,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   obj.children = items1;
   items[1] = callback4(closure_7, obj);
   const obj2 = { style: tmp.ctaContainer };
-  const obj3 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
+  const obj3 = { left: "row", startAndEndHeight: 8, transform: 16, topOffset: "center" };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj3.text = intl3.string(arg1(dependencyMap[13]).t.lkUb4S);
   obj3.onPress = function onPress() {
@@ -109,7 +109,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     trackAnalyticsEvent(trackAnalyticsEvent(closure_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
   };
   const items2 = [callback3(arg1(dependencyMap[14]).Button, obj3), ];
-  const obj4 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
+  const obj4 = { left: "row", startAndEndHeight: 8, transform: 16, topOffset: "center" };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj4.text = intl4.string(arg1(dependencyMap[13]).t.ogLlvy);
   obj4.onPress = function onPress() {
@@ -124,7 +124,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
 }
 function getScreens(arg0) {
   ({ warningId: closure_0, senderId: closure_1, channelId: closure_2, isReported: closure_3, setReported: closure_4, handleDismiss: closure_5, trackAnalyticsEvent: closure_6 } = arg0);
-  let obj = {};
+  let obj = { "Null": "r", "Null": "snapToOffsets" };
   let obj1 = arg1(dependencyMap[18]);
   obj.headerRight = obj1.getHeaderCloseButton(() => callback());
   let obj2 = arg1(dependencyMap[18]);
@@ -172,9 +172,9 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[7]).space.PX_32, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
+const obj1 = { -262844838: true, -1467267414: true, -1859278961: true, marginBottom: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_4 };
+obj.warningText = obj1;
 const tmp4 = arg1(dependencyMap[5]);
-obj.warningText = { marginBottom: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_4 };
-const obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.ctaContainer = { gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.takeoverHeader = {};
 obj.takeoverDescription = { textAlign: "center" };

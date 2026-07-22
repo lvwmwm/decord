@@ -1,10 +1,10 @@
-// Module ID: 11542
-// Function ID: 89882
+// Module ID: 11543
+// Function ID: 89895
 // Name: getGuildPowerupBannerImage
 // Dependencies: []
 // Exports: default
 
-// Module 11542 (getGuildPowerupBannerImage)
+// Module 11543 (getGuildPowerupBannerImage)
 function getGuildPowerupBannerImage(found, closure_4, arg2, arg3) {
   if (null != found) {
     if (!closure_4) {

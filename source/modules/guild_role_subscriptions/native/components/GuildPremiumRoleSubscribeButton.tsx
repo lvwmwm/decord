@@ -1,10 +1,10 @@
-// Module ID: 16336
-// Function ID: 126060
+// Module ID: 16344
+// Function ID: 126102
 // Name: GuildPremiumRoleSubscribeButton
 // Dependencies: []
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 16336 (GuildPremiumRoleSubscribeButton)
+// Module 16344 (GuildPremiumRoleSubscribeButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_3 = arg1(dependencyMap[2]).createStyles({ crButton: { marginVertical: 16 } });

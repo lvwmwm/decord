@@ -1,9 +1,9 @@
-// Module ID: 9781
-// Function ID: 76032
+// Module ID: 9782
+// Function ID: 76045
 // Name: OrbLottieAnimation
 // Dependencies: [270270464, 297467904, 270401536, 31260672, 131072, 527958016, 452984832]
 
-// Module 9781 (OrbLottieAnimation)
+// Module 9782 (OrbLottieAnimation)
 let closure_2 = importAll(dependencyMap[0]);
 const obj = arg1(dependencyMap[0]);
 ({ useRef: closure_3, useEffect: closure_4 } = obj);
@@ -40,7 +40,7 @@ const forwardRefResult = obj.forwardRef((animationType) => {
   } else {
     SpendEarnOrbsLottie = tmp6(tmp7[5]).SpendEarnOrbsLottie;
   }
-  obj = { -9223372036854775808: 2020671489, 9223372036854775807: 1808465921, 9223372036854775807: 759300097, 0: 1644167430, 0: 1358955057, 9223372036854775807: 553718385, -9223372036854775808: 1985135201, ref: tmp3 };
+  obj = { top: "/assets/.cache/intl/ZGVzaWdu", height: null, "Bool(false)": "5f04c21abd854e1d4807aa7a2c0d0454", "Bool(false)": "sv-SE.messages.5f04c21abd854e1d4807aa7a2c0d0454.compiled.messages", "Bool(false)": "jsona", "Bool(false)": "primary", "Bool(false)": "sm", ref: tmp3 };
   let str = "spend";
   if (null != animationType) {
     str = animationType;

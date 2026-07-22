@@ -1,8 +1,8 @@
-// Module ID: 10968
-// Function ID: 85317
+// Module ID: 10969
+// Function ID: 85330
 // Dependencies: []
 
-// Module 10968
+// Module 10969
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -11,7 +11,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 const Permissions = arg1(dependencyMap[5]).Permissions;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ container: {}, memberRoles: { justifyContent: "flex-start" } });
+let closure_11 = arg1(dependencyMap[7]).createStyles({ container: { paddingTop: null, flex: null }, memberRoles: { justifyContent: "flex-start" } });
 const obj2 = arg1(dependencyMap[7]);
 const memoResult = importAllResult.memo((user) => {
   let canBanUser;

@@ -1,10 +1,10 @@
-// Module ID: 9222
-// Function ID: 72115
+// Module ID: 9223
+// Function ID: 72128
 // Name: saveProfileAndAccountRequest
 // Dependencies: []
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 9222 (saveProfileAndAccountRequest)
+// Module 9223 (saveProfileAndAccountRequest)
 function saveProfileAndAccountRequest(arg0, arg1) {
   return _saveProfileAndAccountRequest(...arguments);
 }

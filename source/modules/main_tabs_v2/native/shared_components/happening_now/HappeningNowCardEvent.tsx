@@ -1,9 +1,9 @@
-// Module ID: 14826
-// Function ID: 111749
+// Module ID: 14834
+// Function ID: 111792
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
 // Dependencies: []
 
-// Module 14826 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 14834 (HAPPENING_NOW_CONTENT_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -15,17 +15,17 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { info: { -9223372036854775808: 1107427327, 0: 115907, 0: 133758, 0: 1348682001 } };
+let obj = { info: {} };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED, height: HAPPENING_NOW_CONTENT_HEIGHT, borderTopRightRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.infoNoImage = obj;
 obj1 = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm, alignSelf: "center", width: tmp3.HAPPENING_NOW_EVENT_BANNER_WIDTH, height: HAPPENING_NOW_CONTENT_HEIGHT };
 obj.decorationImage = obj1;
-obj.dottedLineContainer = { "Bool(false)": -3841, "Bool(false)": 1340159, "Bool(false)": 655360, "Bool(false)": 74711040, "Bool(false)": 134217728, "Bool(false)": 134217728, "Bool(false)": 402653184 };
-const obj2 = { "Bool(false)": 1, "Bool(false)": "classification_types", "Bool(false)": "enum", "Bool(false)": 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
-obj.shortDottedLineSegment = obj2;
+obj.dottedLineContainer = { humanizeValue: -3841, displayTypeFromString: 1340159, render: 655360, lastShownChannelActive: 74711040, unsupportedColor: 134217728, szl: 134217728, EMOJI_SEARCH: 402653184 };
 const tmp4 = arg1(dependencyMap[6]);
+obj.shortDottedLineSegment = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
+const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.dottedLineSegment = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
-obj.interestedUsersContainer = { margin: null, backgroundColor: null };
+obj.interestedUsersContainer = { "Bool(false)": null, "Bool(false)": null };
 const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.interestedUsersIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 const obj4 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo((event) => {
   const items7 = [callback(arg1(dependencyMap[20]).GroupIcon, { style: tmp.interestedUsersIcon, size: "xxs" }), ];
   let tmp30 = tmp8 > 0;
   if (tmp30) {
-    const obj7 = { children: arg1(dependencyMap[22]).humanizeValue(tmp8, stateFromStores) };
+    const obj7 = { "Null": "424c540aff53032ef3cdcb5f4766723e", "Null": "ic_rulebook_16px", children: arg1(dependencyMap[22]).humanizeValue(tmp8, stateFromStores) };
     tmp30 = callback(arg1(dependencyMap[21]).Text, obj7);
     const obj16 = arg1(dependencyMap[22]);
   }
@@ -169,7 +169,8 @@ const memoResult = importAllResult.memo((event) => {
   }
   items9[1] = tmp38;
   const obj10 = { style: null == source ? tmp.infoNoImage : tmp.info };
-  const items10 = [callback(arg1(dependencyMap[19]).HappeningNowCardHeader, { children: event.name }), ];
+  const obj11 = { 760324726: "100%", 1446733020: 16, children: event.name };
+  const items10 = [callback(arg1(dependencyMap[19]).HappeningNowCardHeader, obj11), ];
   const obj12 = {};
   let str3;
   if (isLive) {

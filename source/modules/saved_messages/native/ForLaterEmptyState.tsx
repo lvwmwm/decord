@@ -1,16 +1,16 @@
-// Module ID: 9924
-// Function ID: 76755
+// Module ID: 9925
+// Function ID: 76768
 // Name: ForLaterEmptyState
 // Dependencies: []
 // Exports: ForLaterEmptyState
 
-// Module 9924 (ForLaterEmptyState)
+// Module 9925 (ForLaterEmptyState)
 const _module = require(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4, ScrollView: closure_5 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = _module1);
 const _module2 = require(dependencyMap[2]);
-let closure_8 = _module2.createStyles({ scrollView: { flex: 1 }, pageContainer: { dateTimeObject: "{0} \u0430\u0431\u043E {1}", getUnreadDisplayItems: "{0}, {1}", zoom: "{0} \u0430\u0431\u043E {1}", GET_ENTITLEMENT_TICKET: "{0}, {1}", maxFontSizeMultiplier: "<string:1090633297>" }, container: {}, image: {}, textContainer: { maxFontSizeMultiplier: "<string:1091687288>", lineClamp: "/assets/design/components/Icon/native/redesign/generated/images" }, text: { textAlign: "center" } });
+let closure_8 = _module2.createStyles({ scrollView: { flex: 1 }, pageContainer: { position: "props", width: "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "y" }, container: {}, image: { "Null": false, "Null": false }, textContainer: {}, text: { textAlign: "center" } });
 const _module3 = require(dependencyMap[6]);
 const result = _module3.fileFinishedImporting("modules/saved_messages/native/ForLaterEmptyState.tsx");
 

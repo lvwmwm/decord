@@ -1,19 +1,19 @@
-// Module ID: 9685
-// Function ID: 75368
+// Module ID: 9686
+// Function ID: 75381
 // Name: GiftingBadgeProgressBanner
 // Dependencies: []
 // Exports: default
 
-// Module 9685 (GiftingBadgeProgressBanner)
+// Module 9686 (GiftingBadgeProgressBanner)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": 1, "Null": 58, "Null": 58, flexDirection: "row", flexWrap: 15, justifyContent: "center", nameplate: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj = { -9223372036854775808: 1, 0: 58, 9223372036854775807: 58, 9223372036854775807: "row", -9223372036854775808: 15, -9223372036854775808: "center", 0: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj.container = obj;
-const obj1 = { "Null": null, "Null": null, padding: importDefault(dependencyMap[4]).space.PX_8, marginInlineEnd: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { <string:3596066964>: null, <string:3638417373>: null, padding: importDefault(dependencyMap[4]).space.PX_8, marginInlineEnd: importDefault(dependencyMap[4]).space.PX_8 };
 obj.iconContainer = obj1;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

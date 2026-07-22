@@ -1,8 +1,8 @@
-// Module ID: 14828
-// Function ID: 111760
+// Module ID: 14836
+// Function ID: 111803
 // Dependencies: []
 
-// Module 14828
+// Module 14836
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,7 +15,7 @@ let closure_10 = arg1(dependencyMap[6]).HappeningNowCardTrackingType;
 const tmp2 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 const tmp3 = arg1(dependencyMap[8]);
-let closure_15 = arg1(dependencyMap[9]).createStyles({ content: {}, avatarsWrapper: { marginBottom: 2 } });
+let closure_15 = arg1(dependencyMap[9]).createStyles({ content: { <string:3024947456>: "<string:1229062147>", <string:757573325>: "<string:2751464179>", <string:2068908129>: "<string:1107297092>" }, avatarsWrapper: { marginBottom: 2 } });
 const obj2 = arg1(dependencyMap[9]);
 const memoResult = importAllResult.memo((index) => {
   index = index.index;

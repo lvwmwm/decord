@@ -1,10 +1,10 @@
-// Module ID: 12090
-// Function ID: 93240
+// Module ID: 12094
+// Function ID: 93266
 // Name: EndEventActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12090 (EndEventActionSheet)
+// Module 12094 (EndEventActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).EXPLICIT_END_EVENT_SHEET_KEY;
@@ -13,9 +13,9 @@ let obj = arg1(dependencyMap[5]);
 obj = { container: {} };
 obj = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.subtitle = {};
-obj.cancelButtonContainer = { disabled: 600, sequence: 16 };
-obj.confirmButtonContainer = { disabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017920918199, sequence: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000543230922545 };
+obj.subtitle = { MINIMAL: null, currentScreenId: null };
+obj.cancelButtonContainer = {};
+obj.confirmButtonContainer = { -2124314034: "intlMessage", 529464659: "prefixTag" };
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EndEventActionSheet.tsx");
@@ -55,7 +55,7 @@ export default function EndEventActionSheet(channel) {
     obj3.children = callback(arg1(dependencyMap[14]).Button, obj4);
     items[2] = callback(View, obj3);
     const obj5 = { style: tmp.confirmButtonContainer };
-    const obj6 = { ddd: "<string:1091633153>", ind: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", ty: "<string:1430864641>" };
+    const obj6 = { "Bool(true)": "8321c7573efa1c0254c4a9b939ac0953", "Bool(true)": "ko.messages.8321c7573efa1c0254c4a9b939ac0953.compiled.messages", "Bool(true)": "jsona" };
     const intl4 = arg1(dependencyMap[12]).intl;
     obj6.text = intl4.string(arg1(dependencyMap[12]).t.mjB9pd);
     obj6.onPress = function onPress() {

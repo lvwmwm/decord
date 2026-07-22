@@ -1,10 +1,10 @@
-// Module ID: 14688
-// Function ID: 110763
+// Module ID: 14696
+// Function ID: 110806
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14688 (_createForOfIteratorHelperLoose)
+// Module 14696 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -321,13 +321,13 @@ let closure_15 = importDefault(dependencyMap[8])((intl) => {
 const importDefaultResult1 = importDefault(dependencyMap[8]);
 let closure_16 = arg1(dependencyMap[11]).throttle((data) => {
   let obj = importDefault(dependencyMap[12]);
-  obj = { <string:1768156336>: true, <string:483457390>: true, data };
+  obj = { style: true, textStyle: true, data };
   obj.addBreadcrumb(obj);
 }, 2000);
 const obj5 = arg1(dependencyMap[11]);
 let closure_17 = arg1(dependencyMap[11]).throttle((data) => {
   let obj = importDefault(dependencyMap[12]);
-  obj = { <string:1768156336>: "ce5302624e28acc38af07d238a4e16fe", <string:483457390>: "BellZIcon", data };
+  obj = { style: "ce5302624e28acc38af07d238a4e16fe", textStyle: "BellZIcon", data };
   obj.addBreadcrumb(obj);
 }, 3000);
 let closure_18;
@@ -476,7 +476,7 @@ export default function useGuildsBarGesture() {
       callback3(obj);
     } else {
       let obj1 = tmp(token[12]);
-      obj = { <string:1768156336>: "ce5302624e28acc38af07d238a4e16fe", <string:483457390>: "BellZIcon" };
+      obj = { style: "ce5302624e28acc38af07d238a4e16fe", textStyle: "BellZIcon" };
       obj1 = { event, dragSpecs, overSpecs, gestureState: gestureState.get() };
       obj.data = obj1;
       obj1.addBreadcrumb(obj);
@@ -660,7 +660,7 @@ export default function useGuildsBarGesture() {
     const state = dragRegion.getState();
     ({ dragSpecs, scrollPosition, gestureState, dragDropInProgress, setStateShallow } = state);
     let obj = tmp(token[12]);
-    obj = { <string:1768156336>: "__packager_asset", <string:483457390>: "isArray", data: { absoluteX, absoluteY } };
+    obj = { style: "__packager_asset", textStyle: "isArray", data: { absoluteX, absoluteY } };
     obj.addBreadcrumb(obj);
     ({ item, node } = callback2(absoluteY, false, fastListRef));
     if (null != item) {

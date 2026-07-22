@@ -1,7 +1,7 @@
 // Module ID: 1259
 // Function ID: 14219
 // Name: parseSignificantPrecision
-// Dependencies: [1442840593, 1476395058]
+// Dependencies: [1560281105, 1593835570]
 
 // Module 1259 (parseSignificantPrecision)
 function parseSignificantPrecision(first) {
@@ -51,14 +51,14 @@ function parseSign(stem) {
                         return obj;
                       }
                     }
-                    return { no: null, name: null };
+                    return { 0: false, 0: false };
                   }
                 }
                 obj = { signDisplay: "exceptZero" };
                 return obj;
               }
             }
-            return { no: 1090584578, name: 297216 };
+            return {};
           }
         }
         const obj1 = { signDisplay: "always" };

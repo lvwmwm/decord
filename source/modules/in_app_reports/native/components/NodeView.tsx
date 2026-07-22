@@ -1,23 +1,22 @@
 // Module ID: 7602
-// Function ID: 60925
+// Function ID: 60935
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 4294967295, 0, 0, 0, 0]
 // Exports: default
 
 // Module 7602 (_createForOfIteratorHelperLoose)
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import { REMEDIATION_ELEMENT_TYPES } from "result";
-import { IN_APP_REPORTS_NODE } from "result";
-import result from "result";
-import { Permissions } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import { REMEDIATION_ELEMENT_TYPES } from "__exportStarResult1";
+import { IN_APP_REPORTS_NODE } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { Permissions } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -103,14 +102,14 @@ function HeaderView(node) {
   let header;
   let subheader;
   ({ header, subheader, description } = node.node);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = { style: tmp.headerContainer };
   let tmp5 = null != header;
   if (tmp5) {
     tmp5 = "" !== header;
   }
   if (tmp5) {
-    obj = { ref: node.headerRef, style: tmp.header, children: header };
+    obj = { "Bool(false)": "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 1 \u03CE\u03C1\u03B1", "Bool(false)": "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 {{count}} \u03CE\u03C1\u03B5\u03C2", "Bool(false)": "1 \u03CE\u03C1\u03B1", "Bool(false)": "{{count}} \u03CE\u03C1\u03B5\u03C2", "Bool(false)": "1 \u03B7\u03BC\u03AD\u03C1\u03B1", ref: node.headerRef, style: tmp.header, children: header };
     tmp5 = callback2(arg1(dependencyMap[15]).Text, obj);
   }
   const items = [tmp5, , ];
@@ -127,7 +126,7 @@ function HeaderView(node) {
   if (null != description) {
     tmp13 = null;
     if (description.length > 0) {
-      const obj1 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.description, children: description };
+      const obj1 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.description, children: description };
       tmp13 = callback2(arg1(dependencyMap[15]).Text, obj1);
     }
   }
@@ -137,7 +136,7 @@ function HeaderView(node) {
 }
 function InfoView(node) {
   const info = node.node.info;
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let tmp3 = null;
   if (null != info) {
     let obj = {};
@@ -147,7 +146,7 @@ function InfoView(node) {
     obj.style = items;
     obj = { size: "md", color: tmp.infoBox.backgroundColor };
     const items1 = [callback2(arg1(dependencyMap[17]).CircleInformationIcon, obj), ];
-    const obj1 = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001191393554252316, dispatch: 557056.0015292466, raw: 1112527108802911800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.infoBoxText, children: tmp2(info) };
+    const obj1 = { style: tmp.infoBoxText, children: tmp2(info) };
     items1[1] = callback2(arg1(dependencyMap[15]).Text, obj1);
     obj.children = items1;
     tmp3 = callback3(closure_6, obj);
@@ -164,7 +163,7 @@ function ChildItem(child) {
   obj.child = 0;
   obj.nodeMap = 0;
   const importDefault = Object.assign(child, obj);
-  const tmp2 = result();
+  const tmp2 = __exportStarResult1();
   [tmp4, tmp5] = callback(child, 2);
   obj = arg1(dependencyMap[18]);
   const items = [closure_8];
@@ -175,13 +174,13 @@ function ChildItem(child) {
   obj = { style: tmp2.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0] };
   const obj1 = { style: tmp2.childContainer };
   const obj2 = { style: tmp2.childContent };
-  const obj3 = { delete: null, dispatch: null, raw: null, style: tmp2.childButtonText, children: tmp4 };
+  const obj3 = { "Null": true, "Null": true, alignItems: true, style: tmp2.childButtonText, children: tmp4 };
   const items1 = [callback2(arg1(dependencyMap[15]).Text, obj3), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
-    const obj4 = { delete: null, dispatch: null, raw: null, style: tmp2.debugText, children: report_type };
+    const obj4 = { style: tmp2.debugText, children: report_type };
     stateFromStores = callback2(arg1(dependencyMap[15]).Text, obj4);
   }
   items1[1] = stateFromStores;
@@ -226,29 +225,30 @@ function hasAnyRemediationElement(node) {
 function NullComponent() {
   return null;
 }
-({ View: closure_6, ScrollView: closure_7 } = result);
-({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = result);
-({ jsx: closure_16, jsxs: closure_17 } = result);
-result = {};
-result = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
-result.container = result;
-result.scrollView = { duration: true, dampingRatio: true, stiffness: true };
-result.childrenContainer = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
-result.headerContainer = { 0: "<string:1908422942>", 0: "a", 0: "<string:37392705>" };
-result.header = { "Null": null, "Null": null };
-result.subheader = { hour: "<string:410124289>", minute: "<string:402653184>", second: "<string:16777216>" };
-result.description = {};
-const obj1 = { 1895788287: 32, 1962898175: 32, 2046785279: "flex-start", 2080340735: "center", 2113895679: "flex", -2097184513: "row", -2030074625: 10, -2113961985: 8, -2046852097: 56, backgroundColor: require("result").unsafe_rawColors.BLUE_345, borderRadius: require("result").radii.xs, borderColor: require("result").unsafe_rawColors.BLUE_345 };
-result.infoBox = obj1;
-result.infoBoxText = {};
-result.childButton = { marginBottom: 8, borderRadius: require("result").radii.xs };
-const obj2 = { marginBottom: 8, borderRadius: require("result").radii.xs };
-result.childContainer = { backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("result").radii.xs };
-result.childContent = { flex: 1 };
-result.childButtonText = { lineHeight: 20 };
-result.debugText = {};
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
+({ View: closure_6, ScrollView: closure_7 } = __exportStarResult1);
+let closure_9 = importDefault(dependencyMap[4]);
+({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = __exportStarResult1);
+({ jsx: closure_16, jsxs: closure_17 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { -1395371693: null, -1403887007: null, 1644431020: null, -865752234: null, -323880032: null, 1359659601: null, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1.scrollView = { responsesApiToolCalls: true, shouldListenToVisibleIndices: true, _totalAmount: true };
+__exportStarResult1.childrenContainer = { "Bool(false)": "LIGHT", "Bool(false)": "DARK", "Bool(false)": "backgroundColor" };
+__exportStarResult1.headerContainer = { 1262610906: "<string:1908422942>", 1442841695: "a", -1313882688: "<string:37390401>" };
+__exportStarResult1.header = { value: null, on: null };
+__exportStarResult1.subheader = {};
+__exportStarResult1.description = {};
+const obj1 = { payload: "center", action: "center", next: null, isTransition: 32, status: 32, value: "flex-start", reason: "center", title: "flex", description: "row", backgroundColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345, borderRadius: require("__exportStarResult1").radii.xs, borderColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345 };
+__exportStarResult1.infoBox = obj1;
+__exportStarResult1.infoBoxText = {};
+__exportStarResult1.childButton = { marginBottom: 8, borderRadius: require("__exportStarResult1").radii.xs };
+const obj3 = { format_type: "<string:3212574722>", description: "<string:4132503554>", name: "<string:306254317>", action: "<string:1912603178>", messageReference: "toString", medium: true, action: true, threadId: true, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.xs };
+__exportStarResult1.childContainer = obj3;
+__exportStarResult1.childContent = { flex: 1 };
+__exportStarResult1.childButtonText = { lineHeight: 20 };
+__exportStarResult1.debugText = {};
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
 
 export default function NodeView(node) {
   let history;
@@ -256,7 +256,7 @@ export default function NodeView(node) {
   let reportId;
   let reportSubType;
   const arg1 = node;
-  let should_submit_data = callback4();
+  let should_submit_data = __exportStarResult1();
   let obj = arg1(dependencyMap[21]);
   const navigation = obj.useNavigation();
   const importDefault = navigation;
@@ -332,7 +332,6 @@ export default function NodeView(node) {
   const first2 = tmp15[0];
   let closure_17 = tmp15[1];
   const tmp17 = callback(React.useState(false), 2);
-  const callback4 = tmp17[1];
   const items2 = [node, tmp7, first2];
   callback = React.useCallback((destination) => {
     let obj = { nodeRef: node.id, destination };
@@ -393,7 +392,7 @@ export default function NodeView(node) {
     if (is_auto_submit) {
       lib(true);
       const obj = { nodeRef: node.id };
-      const items = ["<string:2246337460>", node.id];
+      const items = [2060509169, node.id];
       obj.destination = items;
       onSubmit(obj);
     }
@@ -410,7 +409,7 @@ export default function NodeView(node) {
           type = button.type;
         }
         if ("next" === type) {
-          const items = ["<string:2246337460>", tmp2.button.target];
+          const items = [2060509169, tmp2.button.target];
           return callback1(items);
         }
       }
@@ -498,10 +497,10 @@ export default function NodeView(node) {
   if (userIsTeen) {
     userIsTeen = null != getElementForType(node, "share_with_parents");
   }
-  obj = { sections: null, count: null, countMessages: null, style: should_submit_data.container };
+  obj = { isInlineReplyPreview: null, hasSpoilerEmbeds: null, hasBailedAst: null, style: should_submit_data.container };
   obj = { style: should_submit_data.scrollView };
   obj1 = { element: getElementForType(node, "success") };
-  const items8 = [first2(importDefault(dependencyMap[32]), obj1), first2(HeaderView, { node, headerRef: ref }), first2(InfoView, { node }), , , , , , , , , , , , , , ];
+  const items8 = [first2(importDefault(dependencyMap[32]), obj1), first2(HeaderView, { node, headerRef: ref }), first2(InfoView, { node }), , , , , , , , , , , , , , , ];
   let tmp34 = null;
   if (null != tmp8) {
     obj2 = { element: tmp8 };
@@ -535,114 +534,125 @@ export default function NodeView(node) {
   }
   items8[6] = tmp46;
   let tmp50 = null;
-  if (null != getElementForType(node, "channel_preview")) {
+  if (null != getElementForType(node, "widget_preview")) {
     tmp50 = null;
-    if ("stage_channel" === reportType.name) {
-      const obj6 = { stageInstance: reportType.record };
-      tmp50 = first2(importDefault(dependencyMap[37]), obj6);
+    if ("widget" === reportType.name) {
+      ({ widget: obj13.widget, user_id: obj13.userId } = reportType);
+      tmp50 = first2(importDefault(dependencyMap[37]), {});
+      const obj6 = {};
     }
   }
   items8[7] = tmp50;
   let tmp54 = null;
-  if (null != getElementForType(node, "guild_preview")) {
+  if (null != getElementForType(node, "channel_preview")) {
     tmp54 = null;
-    if ("guild" === reportType.name) {
-      const obj7 = { guild: reportType.record };
+    if ("stage_channel" === reportType.name) {
+      const obj7 = { stageInstance: reportType.record };
       tmp54 = first2(importDefault(dependencyMap[38]), obj7);
     }
   }
   items8[8] = tmp54;
   let tmp58 = null;
-  if (null != getElementForType(node, "guild_scheduled_event_preview")) {
+  if (null != getElementForType(node, "guild_preview")) {
     tmp58 = null;
-    if ("guild_scheduled_event" === reportType.name) {
-      const obj8 = { event: reportType.record };
+    if ("guild" === reportType.name) {
+      const obj8 = { guild: reportType.record };
       tmp58 = first2(importDefault(dependencyMap[39]), obj8);
     }
   }
   items8[9] = tmp58;
   let tmp62 = null;
-  if (null != getElementForType(node, "guild_discovery_preview")) {
+  if (null != getElementForType(node, "guild_scheduled_event_preview")) {
     tmp62 = null;
-    if ("guild_discovery" === reportType.name) {
-      const obj9 = { guild: reportType.record };
+    if ("guild_scheduled_event" === reportType.name) {
+      const obj9 = { event: reportType.record };
       tmp62 = first2(importDefault(dependencyMap[40]), obj9);
     }
   }
   items8[10] = tmp62;
-  const obj10 = {};
+  let tmp66 = null;
+  if (null != getElementForType(node, "guild_discovery_preview")) {
+    tmp66 = null;
+    if ("guild_discovery" === reportType.name) {
+      const obj10 = { guild: reportType.record };
+      tmp66 = first2(importDefault(dependencyMap[41]), obj10);
+    }
+  }
+  items8[11] = tmp66;
+  const obj11 = {};
+  const __exportStarResult1 = tmp17[1];
   const tmp30 = closure_17;
   const tmp31 = closure_17;
   const tmp32 = history;
   const tmp33 = importDefault(dependencyMap[32]);
-  obj10.element = getElementForType(node, "breadcrumbs");
-  obj10.menuName = reportType.name;
-  obj10.history = history;
-  items8[11] = first2(importDefault(dependencyMap[41]), obj10);
-  let tmp68Result = hasAnyRemediationElement(node);
-  if (tmp68Result) {
-    const obj11 = {};
+  obj11.element = getElementForType(node, "breadcrumbs");
+  obj11.menuName = reportType.name;
+  obj11.history = history;
+  items8[12] = first2(importDefault(dependencyMap[42]), obj11);
+  let tmp72Result = hasAnyRemediationElement(node);
+  if (tmp72Result) {
+    const obj12 = {};
     if (!tmp26) {
       const items9 = [tmp26, , , , , ];
       if (userIsTeen) {
-        const obj12 = { parents: activeLinkUsers };
-        userIsTeen = first2(importDefault(dependencyMap[44]), obj12);
+        const obj13 = { parents: activeLinkUsers };
+        userIsTeen = first2(importDefault(dependencyMap[45]), obj13);
       }
       items9[1] = userIsTeen;
-      let tmp82 = null != getElementForType(node, "block_users");
-      if (tmp82) {
-        let tmp83 = "message" === reportType.name;
-        if (!tmp83) {
-          tmp83 = "first_dm" === reportType.name;
+      let tmp86 = null != getElementForType(node, "block_users");
+      if (tmp86) {
+        let tmp87 = "message" === reportType.name;
+        if (!tmp87) {
+          tmp87 = "first_dm" === reportType.name;
         }
-        if (!tmp83) {
-          tmp83 = "user" === reportType.name;
+        if (!tmp87) {
+          tmp87 = "user" === reportType.name;
         }
-        if (!tmp83) {
-          tmp83 = "report_to_mod_message" === reportType.name;
+        if (!tmp87) {
+          tmp87 = "report_to_mod_message" === reportType.name;
         }
-        tmp82 = tmp83;
+        tmp86 = tmp87;
       }
-      if (!tmp82) {
-        items9[2] = tmp82;
-        let tmp89 = !tmp26;
+      if (!tmp86) {
+        items9[2] = tmp86;
+        let tmp93 = !tmp26;
         if (!tmp26) {
-          tmp89 = null != getElementForType(node, "mute_users");
+          tmp93 = null != getElementForType(node, "mute_users");
         }
-        if (tmp89) {
-          let tmp91 = "message" === reportType.name;
-          if (!tmp91) {
-            tmp91 = "first_dm" === reportType.name;
+        if (tmp93) {
+          let tmp95 = "message" === reportType.name;
+          if (!tmp95) {
+            tmp95 = "first_dm" === reportType.name;
           }
-          if (!tmp91) {
-            tmp91 = "user" === reportType.name;
+          if (!tmp95) {
+            tmp95 = "user" === reportType.name;
           }
-          if (!tmp91) {
-            tmp91 = "report_to_mod_message" === reportType.name;
+          if (!tmp95) {
+            tmp95 = "report_to_mod_message" === reportType.name;
           }
-          tmp89 = tmp91;
+          tmp93 = tmp95;
         }
-        if (!tmp89) {
-          items9[3] = tmp89;
-          let callback2Result = null != getElementForType(node, "delete_message");
-          if (callback2Result) {
-            let tmp99 = "message" === reportType.name;
-            if (!tmp99) {
-              tmp99 = "report_to_mod_message" === reportType.name;
+        if (!tmp93) {
+          items9[3] = tmp93;
+          should_submit_data = getElementForType;
+          should_submit_data = null != getElementForType(node, "delete_message");
+          if (should_submit_data) {
+            should_submit_data = "message" === reportType.name;
+            if (!should_submit_data) {
+              should_submit_data = "report_to_mod_message" === reportType.name;
             }
-            callback2Result = tmp99;
           }
-          if (callback2Result) {
-            callback2Result = callback2(reportType.record);
+          if (should_submit_data) {
+            should_submit_data = callback2(reportType.record);
           }
-          if (callback2Result) {
+          if (should_submit_data) {
             should_submit_data = first2;
             should_submit_data = importDefault;
             should_submit_data = dependencyMap;
-            const obj13 = { message: reportType.record, reportId };
-            callback2Result = first2(importDefault(dependencyMap[47]), obj13);
+            const obj14 = { message: reportType.record, reportId };
+            should_submit_data = first2(importDefault(dependencyMap[48]), obj14);
           }
-          items9[4] = callback2Result;
+          items9[4] = should_submit_data;
           should_submit_data = getElementForType;
           should_submit_data = null != getElementForType(node, "leave_guild");
           if (should_submit_data) {
@@ -652,57 +662,57 @@ export default function NodeView(node) {
             should_submit_data = first2;
             should_submit_data = importDefault;
             should_submit_data = dependencyMap;
-            const obj14 = { guild: reportType.record, reportId, addCallback: node.addOnCloseCallback };
-            should_submit_data = first2(importDefault(dependencyMap[48]), obj14);
+            const obj15 = { guild: reportType.record, reportId, addCallback: node.addOnCloseCallback };
+            should_submit_data = first2(importDefault(dependencyMap[49]), obj15);
           }
           items9[5] = should_submit_data;
-          obj11.children = items9;
-          tmp68Result = tmp68(tmp71, obj11);
+          obj12.children = items9;
+          tmp72Result = tmp72(tmp75, obj12);
         } else {
-          const obj15 = {};
+          const obj16 = {};
           if ("user" === reportType.name) {
             let author3 = reportType.record;
           } else {
             author3 = reportType.record.author;
           }
-          obj15.user = author3;
-          obj15.channelId = memo;
-          obj15.reportId = reportId;
-          first2(importDefault(dependencyMap[46]), obj15);
-          const tmp92 = first2;
-          const tmp95 = importDefault(dependencyMap[46]);
+          obj16.user = author3;
+          obj16.channelId = memo;
+          obj16.reportId = reportId;
+          should_submit_data = first2(importDefault(dependencyMap[47]), obj16);
+          const tmp96 = first2;
+          const tmp99 = importDefault(dependencyMap[47]);
         }
       } else {
-        const obj16 = {};
+        const obj17 = {};
         if ("user" === reportType.name) {
           let author2 = reportType.record;
         } else {
           author2 = reportType.record.author;
         }
-        obj16.user = author2;
-        obj16.channelId = memo;
-        obj16.reportId = reportId;
-        first2(importDefault(dependencyMap[45]), obj16);
-        const tmp84 = first2;
-        const tmp87 = importDefault(dependencyMap[45]);
+        obj17.user = author2;
+        obj17.channelId = memo;
+        obj17.reportId = reportId;
+        first2(importDefault(dependencyMap[46]), obj17);
+        const tmp88 = first2;
+        const tmp91 = importDefault(dependencyMap[46]);
       }
     } else {
-      const obj17 = {};
+      const obj18 = {};
       if ("user" === reportType.name) {
         let author = reportType.record;
       } else {
         author = reportType.record.author;
       }
-      obj17.user = author;
-      obj17.channelId = memo;
-      obj17.reportId = reportId;
-      first2(importDefault(dependencyMap[43]), obj17);
-      const tmp73 = first2;
-      const tmp76 = importDefault(dependencyMap[43]);
+      obj18.user = author;
+      obj18.channelId = memo;
+      obj18.reportId = reportId;
+      first2(importDefault(dependencyMap[44]), obj18);
+      const tmp77 = first2;
+      const tmp80 = importDefault(dependencyMap[44]);
     }
-    const tmp68 = closure_17;
+    const tmp72 = closure_17;
   }
-  items8[12] = tmp68Result;
+  items8[13] = tmp72Result;
   should_submit_data = null != getElementForType(node, "settings_upsells");
   if (should_submit_data) {
     should_submit_data = "message" === reportType.name;
@@ -717,11 +727,11 @@ export default function NodeView(node) {
     should_submit_data = first2;
     should_submit_data = importDefault;
     should_submit_data = dependencyMap;
-    const obj18 = { settingsUpsells: iarReportSettingsUpsells, channelId: reportType.record.channel_id, reportId, reportType, reportSubType };
-    should_submit_data = first2(importDefault(dependencyMap[49]), obj18);
+    const obj19 = { settingsUpsells: iarReportSettingsUpsells, channelId: reportType.record.channel_id, reportId, reportType, reportSubType };
+    should_submit_data = first2(importDefault(dependencyMap[50]), obj19);
   }
-  items8[13] = should_submit_data;
-  items8[14] = first2(importDefault(dependencyMap[50]), {
+  items8[14] = should_submit_data;
+  items8[15] = first2(importDefault(dependencyMap[51]), {
     element: tmp7,
     state: first2,
     onPress(arg0, arg1) {
@@ -735,24 +745,24 @@ export default function NodeView(node) {
       callback(obj);
     }
   });
-  items8[15] = first2(ChildrenView, { node, onSelectChild: callback1, nodeMap });
+  items8[16] = first2(ChildrenView, { node, onSelectChild: callback1, nodeMap });
   should_submit_data = null;
   if (null != getElementForType(node, "external_link")) {
     should_submit_data = first2;
     should_submit_data = importDefault;
     should_submit_data = dependencyMap;
-    const obj20 = {};
+    const obj21 = {};
     should_submit_data = getElementsForType;
-    should_submit_data = importDefault(dependencyMap[51]);
-    obj20.elements = getElementsForType(node, "external_link");
-    should_submit_data = first2(should_submit_data, obj20);
+    should_submit_data = importDefault(dependencyMap[52]);
+    obj21.elements = getElementsForType(node, "external_link");
+    should_submit_data = first2(should_submit_data, obj21);
   }
-  items8[16] = should_submit_data;
+  items8[17] = should_submit_data;
   obj.children = items8;
   const items10 = [tmp31(tmp32, obj), ];
   should_submit_data = first2;
-  const obj21 = { isModeratorReport: hasItem };
-  should_submit_data = importDefault(dependencyMap[52]);
+  const obj22 = { isModeratorReport: hasItem };
+  should_submit_data = importDefault(dependencyMap[53]);
   if (!first) {
     should_submit_data = undefined;
     if (null != tmp7) {
@@ -766,20 +776,20 @@ export default function NodeView(node) {
     }
     first = should_submit_data;
   }
-  obj21.disabled = first;
-  obj21.button = node.button;
-  obj21.hasError = tmp17[0];
-  obj21.onPress = function onPress(type) {
+  obj22.disabled = first;
+  obj22.button = node.button;
+  obj22.hasError = tmp17[0];
+  obj22.onPress = function onPress(type) {
     type = type.type;
     if ("done" !== type) {
       if ("cancel" !== type) {
         if ("next" === type) {
-          const items = ["<string:2246337460>", type.target];
+          const items = [2060509169, type.target];
           callback1(items);
         } else if ("submit" === type) {
           function handleSubmit() {
             callback2(true);
-            const items = ["<string:2246337460>"];
+            const items = [2060509169];
             items[1] = items.successNodeId;
             const promise = callback(callback3(items));
             const nextPromise = callback(callback3(items)).then(() => {
@@ -814,10 +824,10 @@ export default function NodeView(node) {
         }
       }
     }
-    const items1 = ["<string:2246337460>", -1];
+    const items1 = [2060509169, -1];
     callback1(items1);
   };
-  items10[1] = should_submit_data(should_submit_data, obj21);
+  items10[1] = should_submit_data(should_submit_data, obj22);
   obj.children = items10;
   return tmp30(arg1(dependencyMap[31]).SafeAreaPaddingView, obj);
 };

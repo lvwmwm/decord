@@ -1,5 +1,5 @@
 // Module ID: 7079
-// Function ID: 56667
+// Function ID: 56678
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -118,7 +118,7 @@ const tmp4 = (EventEmitter) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      f56700 = tmp2Result;
+      f56711 = tmp2Result;
       tmp2Result._aborted = false;
       tmp2Result._errored = false;
       tmp2Result.files = [];
@@ -184,9 +184,9 @@ const tmp4 = (EventEmitter) => {
         tmp2Result.emit("complete", tmp2Result._file, arg0);
         tmp2Result.removeAllListeners();
       };
-      obj2 = f56685(UploaderBase[10]);
+      obj2 = f56696(UploaderBase[10]);
       tmp2Result.id = obj2.uniqueId("Uploader");
-      obj = { "Bool(false)": "Reflect", "Bool(false)": "left", "Bool(false)": "constructor", "Bool(false)": "id", "Bool(false)": "fill", "Bool(false)": "track", "Bool(false)": "state", "Bool(false)": "formatToPlainString", "Bool(false)": "LengthDelimited" };
+      obj = { flex: "Reflect", justifyContent: "lc", alignItems: "constructor", alignSelf: "id", marginTop: "fill", width: "track", height: "state", alignSelf: "formatToPlainString", justifyContent: "LengthDelimited" };
       obj.id = tmp2Result.id;
       obj.items = undefined;
       tmp2Result._file = obj;
@@ -453,7 +453,7 @@ const tmp4 = (EventEmitter) => {
         const _Date = Date;
         self._lastUpdate = Date.now();
         self._loaded = 0;
-        const obj = { "Bool(false)": "Reflect", "Bool(false)": "left", "Bool(false)": "constructor", "Bool(false)": "id", "Bool(false)": "fill", "Bool(false)": "track", "Bool(false)": "state", "Bool(false)": "formatToPlainString", "Bool(false)": "LengthDelimited", id: self.id, items };
+        const obj = { flex: "Reflect", justifyContent: "lc", alignItems: "constructor", alignSelf: "id", marginTop: "fill", width: "track", height: "state", alignSelf: "formatToPlainString", justifyContent: "LengthDelimited", id: self.id, items };
         self._file = obj;
       }
     }

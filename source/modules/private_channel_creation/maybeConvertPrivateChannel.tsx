@@ -1,5 +1,5 @@
 // Module ID: 6992
-// Function ID: 55900
+// Function ID: 55911
 // Name: maybeConvertPrivateChannel
 // Dependencies: []
 // Exports: default

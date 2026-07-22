@@ -1,9 +1,9 @@
-// Module ID: 15377
-// Function ID: 117224
+// Module ID: 15385
+// Function ID: 117267
 // Name: AutoArchiveDurationOptions
 // Dependencies: []
 
-// Module 15377 (AutoArchiveDurationOptions)
+// Module 15385 (AutoArchiveDurationOptions)
 const ChannelFlags = arg1(dependencyMap[1]).ChannelFlags;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

@@ -1,16 +1,16 @@
-// Module ID: 11136
-// Function ID: 86636
+// Module ID: 11137
+// Function ID: 86649
 // Name: ForumPostListBody
 // Dependencies: []
 // Exports: default
 
-// Module 11136 (ForumPostListBody)
+// Module 11137 (ForumPostListBody)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ForumTimestampFormats = arg1(dependencyMap[2]).ForumTimestampFormats;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ body: {}, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: { -9223372036854775808: -747089664, "Null": 4211, "Null": 4096 }, newTagContainer: { marginEnd: 8 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ body: {}, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: {}, newTagContainer: { marginEnd: 8 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/list/ForumPostListBody.tsx");
 

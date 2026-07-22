@@ -21,7 +21,7 @@ export function makeOfflineTransport(arg0) {
     if (arg0(log[1]).DEBUG_BUILD) {
       const debug = arg0(log[2]).debug;
       const log = debug.log;
-      const items = [];
+      const items = [1636143953];
       log.apply(debug, items.concat(array));
     }
   }
@@ -65,7 +65,7 @@ export function makeOfflineTransport(arg0) {
     }
     async function _send(arg0, arg1) {
       if (!tmp) {
-        if (obj.envelopeContainsItemType(arg0, ["clock", "o\u2019clock"])) {
+        if (obj.envelopeContainsItemType(arg0, ["error", "warning"])) {
           yield closure_3.push(arg0);
           callback(100);
           return {};

@@ -1,10 +1,10 @@
-// Module ID: 11951
-// Function ID: 92392
+// Module ID: 11952
+// Function ID: 92406
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 11951 (_createForOfIteratorHelperLoose)
+// Module 11952 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

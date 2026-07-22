@@ -1,5 +1,5 @@
 // Module ID: 7650
-// Function ID: 61199
+// Function ID: 61209
 // Name: getFallbackDoubleTapDisambiguatedEmoji
 // Dependencies: []
 // Exports: areEmojisEqual, handleAddDefaultDoubleTapReaction

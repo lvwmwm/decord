@@ -1,16 +1,15 @@
-// Module ID: 8434
-// Function ID: 67316
+// Module ID: 8435
+// Function ID: 67328
 // Name: canUseMobileServerTagSettings
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 8434 (canUseMobileServerTagSettings)
-import closure_3 from "result";
-import closure_4 from "result";
-import { Permissions } from "result";
-import result from "result";
+// Module 8435 (canUseMobileServerTagSettings)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { Permissions } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
 
 export const canUseMobileServerTagSettings = function canUseMobileServerTagSettings(guildId) {
   const guild = store.getGuild(guildId);

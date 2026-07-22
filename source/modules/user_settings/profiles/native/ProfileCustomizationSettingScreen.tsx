@@ -1,11 +1,11 @@
-// Module ID: 13438
-// Function ID: 102059
+// Module ID: 13445
+// Function ID: 102092
 // Name: ProfileCustomizationSubsection
 // Dependencies: []
 
-// Module 13438 (ProfileCustomizationSubsection)
-let closure_3 = ["<string:993083397>"];
-let closure_4 = [false, false];
+// Module 13445 (ProfileCustomizationSubsection)
+let closure_3 = [1077651832];
+let closure_4 = [-0.0000000000000000000000000000000000000000000000000000000000000000006398718284889051, 0.000000000000000000000000000000000000000000000000000000000000000000000018134775577771325];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);

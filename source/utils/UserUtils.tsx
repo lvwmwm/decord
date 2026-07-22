@@ -1,5 +1,5 @@
 // Module ID: 3967
-// Function ID: 32833
+// Function ID: 32835
 // Name: conceal
 // Dependencies: []
 // Exports: ageEligibleForPremiumUpsell, getFormattedName, getName, getUserIsStaff, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
@@ -257,7 +257,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 ({ NON_USER_BOT_DISCRIMINATOR: closure_4, StatusTypes: closure_5 } = arg1(dependencyMap[2]));
 let closure_6 = 86400000;
 let closure_7 = "???";
-let closure_8 = { np: "pe", kind: "_headers", map: "open" };
+let closure_8 = { "Null": false, "Null": false, "Null": false };
 const obj = {
   getName,
   useName,
@@ -288,7 +288,7 @@ export { getFormattedName };
 export { humanizeStatus };
 export { accountAgeInRange };
 export const ageEligibleForPremiumUpsell = function ageEligibleForPremiumUpsell(stateFromStores) {
-  return !accountAgeInRange(stateFromStores, { 1404633092: "2 Weeks", -1956577276: "3weeks" });
+  return !accountAgeInRange(stateFromStores, {});
 };
 export const isNewUser = function isNewUser(createdAt) {
   return accountAgeInRange(createdAt, {});

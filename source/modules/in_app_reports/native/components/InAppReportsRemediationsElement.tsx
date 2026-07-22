@@ -1,10 +1,10 @@
-// Module ID: 12214
-// Function ID: 93779
+// Module ID: 12219
+// Function ID: 93807
 // Name: RemediationsElement
 // Dependencies: []
 // Exports: default
 
-// Module 12214 (RemediationsElement)
+// Module 12219 (RemediationsElement)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

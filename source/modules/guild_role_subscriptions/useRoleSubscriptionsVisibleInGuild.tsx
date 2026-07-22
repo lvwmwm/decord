@@ -1,10 +1,10 @@
-// Module ID: 5627
-// Function ID: 48009
+// Module ID: 5626
+// Function ID: 48017
 // Name: computeCanEveryoneInGuildSeeRoleSubscriptions
 // Dependencies: []
 // Exports: areRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList
 
-// Module 5627 (computeCanEveryoneInGuildSeeRoleSubscriptions)
+// Module 5626 (computeCanEveryoneInGuildSeeRoleSubscriptions)
 function computeCanEveryoneInGuildSeeRoleSubscriptions(guildId) {
   let obj;
   let obj2;

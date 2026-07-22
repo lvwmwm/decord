@@ -1,8 +1,8 @@
-// Module ID: 9206
-// Function ID: 72053
+// Module ID: 9207
+// Function ID: 72066
 // Dependencies: []
 
-// Module 9206
+// Module 9207
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -18,7 +18,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
   const dependencyMap = onPressCountrySelector;
   const forceMode = onChange.forceMode;
   let callback = forceMode;
-  let obj = { state: null, body: null, type: null, accessibilityRole: null, __closure: null };
+  let obj = { -391257196: false, 106052193: false, 1627583876: false, -1397992901: false, 1650633940: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onChange, obj);
   let combined;

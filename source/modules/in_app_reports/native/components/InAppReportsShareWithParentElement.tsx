@@ -1,10 +1,10 @@
-// Module ID: 12217
-// Function ID: 93789
+// Module ID: 12222
+// Function ID: 93817
 // Name: parents
 // Dependencies: []
 // Exports: default
 
-// Module 12217 (parents)
+// Module 12222 (parents)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

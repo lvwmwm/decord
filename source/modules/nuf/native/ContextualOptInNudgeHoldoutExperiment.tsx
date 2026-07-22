@@ -1,11 +1,12 @@
-// Module ID: 14191
-// Function ID: 107422
+// Module ID: 14199
+// Function ID: 107465
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 14191 (apexExperiment)
+// Module 14199 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { inHoldout: false }, variations: { [0]: { inHoldout: false }, [1]: { inHoldout: true } } });
+const obj = { y: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025902897998457448, DateToSystemTimezoneSetter: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003399539130864655, defaultConfig: { inHoldout: false }, variations: { [0]: { inHoldout: false }, [1]: { inHoldout: true } } };
+const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/nuf/native/ContextualOptInNudgeHoldoutExperiment.tsx");
 

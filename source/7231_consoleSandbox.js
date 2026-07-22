@@ -1,5 +1,5 @@
 // Module ID: 7231
-// Function ID: 58212
+// Function ID: 58223
 // Name: consoleSandbox
 // Dependencies: []
 
@@ -22,7 +22,7 @@ function consoleSandbox(arg0) {
     return arg0();
   }
 }
-const items = [];
+const items = ["\u00D7", "annuleren", "teken", "vermenigvuldigen", "x", "Array", "UB2gG2"];
 const obj = {};
 const _module = require(dependencyMap[0]);
 

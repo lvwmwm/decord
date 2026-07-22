@@ -1,8 +1,8 @@
-// Module ID: 14713
-// Function ID: 110997
+// Module ID: 14721
+// Function ID: 111040
 // Dependencies: []
 
-// Module 14713
+// Module 14721
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[2]).EMPTY_STRING_SNOWFLAKE_ID;
@@ -17,7 +17,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   ({ expanded, childNodes } = id);
   let obj = arg1(dependencyMap[4]);
   const importDefault = importDefault(dependencyMap[5])();
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ <string:3577514597>: null, <string:3965960815>: null });
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: "<string:1040334421>", 996494938: "<string:1040334338>" });
   const items = [closure_4];
   const items1 = [id];
   const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => {

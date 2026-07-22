@@ -1,9 +1,9 @@
-// Module ID: 11885
-// Function ID: 92001
+// Module ID: 11886
+// Function ID: 92015
 // Name: getClampedMaxLines
 // Dependencies: []
 
-// Module 11885 (getClampedMaxLines)
+// Module 11886 (getClampedMaxLines)
 function getClampedMaxLines() {
   return Math.ceil(2 * fontScale.getFontScale());
 }
@@ -155,24 +155,23 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.borderColor = arg0 ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE;
   obj.borderWidth = 1;
   obj.bubble = obj;
-  obj = { cix: 24, np: 24, channel_id: null, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+  obj = { ty: 24, bm: 24, hd: null, borderRadius: importDefault(dependencyMap[7]).radii.lg };
   const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
   obj["top"] = -14;
   obj.statusBubble = obj;
-  obj.statusBubbleMeasureable = { "Bool(false)": "<string:3082955202>", "Bool(false)": "<string:103629460>", "Bool(false)": "<string:3630497793>", "Bool(false)": "<string:961609729>" };
-  const obj1 = { flexDirection: "NewUserIcon", flexWrap: "png", gap: true, isEnabled: "/assets/design/components/Icon/native/redesign/generated/images", borderRadius: importDefault(dependencyMap[7]).radii.round };
+  obj.statusBubbleMeasureable = { backgroundColor: 131420590, borderRadius: -1717986767, borderWidth: -644245095, borderColor: 94527 };
+  const obj1 = { "Null": "NewUserIcon", "Null": "png", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", borderRadius: importDefault(dependencyMap[7]).radii.round };
   const merged1 = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
   obj.smallCircle = obj1;
-  const obj2 = { includeFrecency: true, lastUsedCommandId: true, lastUsedTimeMs: true, alignItems: true, flexDirection: true, borderRadius: importDefault(dependencyMap[7]).radii.round };
+  const obj2 = { -9223372036854775808: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, -9223372036854775808: true, borderRadius: importDefault(dependencyMap[7]).radii.round };
   const merged2 = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
   obj.largeCircle = obj2;
-  const obj3 = { gap: true, isEnabled: true, isRoadblocksEnabled: true, position: true, top: true, right: true, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.round, borderTopRightRadius: importDefault(dependencyMap[7]).radii.round };
-  obj.largeCircleInner = obj3;
+  obj.largeCircleInner = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.round, borderTopRightRadius: importDefault(dependencyMap[7]).radii.round };
   obj.addStatusIconSpacer = { width: 6 };
   obj.statusBubbleLeftAligned = { alignItems: "flex-start" };
   return obj;
 });
-let closure_12 = {};
+let closure_12 = { it: null, ddd: "245a1c93543c3efa179c5c568a81ab81", y: "HourglassIcon", isArray: "png", body: 20 };
 let closure_13 = { [arg1(dependencyMap[3]).UserProfileThemeTypes.PREVIEW]: {} };
 const obj2 = arg1(dependencyMap[6]);
 let closure_14 = arg1(dependencyMap[6]).createStyles(() => ({ container: { alignItems: "center" } }));

@@ -1,9 +1,9 @@
-// Module ID: 11346
-// Function ID: 88216
+// Module ID: 11347
+// Function ID: 88229
 // Name: ChatInputNativeComponent
 // Dependencies: []
 
-// Module 11346 (ChatInputNativeComponent)
+// Module 11347 (ChatInputNativeComponent)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[3]);

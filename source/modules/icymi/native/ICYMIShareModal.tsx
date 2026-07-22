@@ -1,10 +1,10 @@
-// Module ID: 15106
-// Function ID: 113960
+// Module ID: 15114
+// Function ID: 114003
 // Name: Screenshot
 // Dependencies: []
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15106 (Screenshot)
+// Module 15114 (Screenshot)
 function Screenshot(setUri) {
   setUri = setUri.setUri;
   const arg1 = setUri;
@@ -28,7 +28,7 @@ function Screenshot(setUri) {
     }, 500);
   }, items);
   let obj = arg1(dependencyMap[19]);
-  obj = { style: { flexWrap: "<string:659619840>", overflow: "<string:1774928528>", paddingTop: "<string:687276033>" } };
+  obj = { style: { flexWrap: "<string:3981508608>", overflow: "<string:1789149843>", paddingTop: "<string:690225153>" } };
   obj = { style: items1 };
   const items1 = [tmp.preview, { width: importDefault(dependencyMap[17])().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
@@ -93,7 +93,7 @@ function GravityShareFooter(arg0) {
     obj = { style: tmp12 };
     const obj1 = { inputRef: textInputRef, text: first, onChange: tmp4, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend: callback, disabled: isSending };
     const items2 = [callback2(importDefault(dependencyMap[26]), obj1), ];
-    const obj2 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", text: stringResult, disabled: tmp13 };
+    const obj2 = { text: stringResult, disabled: tmp13 };
     let tmp22;
     if (!isSending) {
       tmp22 = callback;
@@ -223,10 +223,10 @@ let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_8 };
 obj.headerContainer = obj;
-const tmp2 = arg1(dependencyMap[10]);
-obj.preview = { borderRadius: importDefault(dependencyMap[12]).radii.md, borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[12]).radii.md, borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
+obj.preview = obj1;
 obj.base = { position: "relative" };
-const obj1 = { borderRadius: importDefault(dependencyMap[12]).radii.md, borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
+const tmp2 = arg1(dependencyMap[10]);
 obj.contentContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 obj.footer = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingVertical: importDefault(dependencyMap[12]).space.PX_12, gap: importDefault(dependencyMap[12]).space.PX_12, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };

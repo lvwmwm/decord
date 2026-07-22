@@ -1,9 +1,9 @@
-// Module ID: 9853
-// Function ID: 76269
+// Module ID: 9854
+// Function ID: 76282
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 9853 (_isNativeReflectConstruct)
+// Module 9854 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -67,7 +67,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     closure_6[stats.channelId] = { loadingStatus: constants.SUCCEEDED, lastFetched: Date.now() };
   },
   CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function handleFollowerStatsFetchFailure(channelId) {
-    const obj = { onTapShowAltText: true, serializeHost: true, flexGrow: true, flexShrink: true, alignSelf: true, overflow: true, had_cache_at_startup: true, useTopCommands: true, loadingStatus: constants.FAILED, lastFetched: Date.now() };
+    const obj = { "Null": true, "Null": true, "Null": true, variant: true, lineClamp: true, maxFontSizeMultiplier: true, isFullscreen: true, channelId: true, loadingStatus: constants.FAILED, lastFetched: Date.now() };
     closure_6[channelId.channelId] = obj;
   }
 });

@@ -1,9 +1,9 @@
-// Module ID: 5714
-// Function ID: 49115
+// Module ID: 5713
+// Function ID: 49123
 // Name: map
-// Dependencies: []
+// Dependencies: [3154116625, 1660944388]
 
-// Module 5714 (map)
+// Module 5713 (map)
 const _module = require(dependencyMap[0]);
 ({ Endpoints: closure_3, AnalyticEvents: closure_4 } = _module);
 const map = new Map();
@@ -21,7 +21,7 @@ function resolveGuildTemplate(code) {
       obj = { type: "GUILD_TEMPLATE_RESOLVE", code };
       importDefault(dependencyMap[1]).dispatch(obj);
       const HTTP = require(dependencyMap[2]).HTTP;
-      obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_3.UNRESOLVED_GUILD_TEMPLATE(code) };
+      obj = { y: null, isArray: null, accessible: null, url: closure_3.UNRESOLVED_GUILD_TEMPLATE(code) };
       value = HTTP.get(obj);
       const obj2 = importDefault(dependencyMap[1]);
       const cleanupPromise = value.then((body) => {

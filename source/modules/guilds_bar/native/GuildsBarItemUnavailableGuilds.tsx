@@ -1,15 +1,15 @@
-// Module ID: 14754
-// Function ID: 111235
+// Module ID: 14762
+// Function ID: 111278
 // Dependencies: []
 
-// Module 14754
+// Module 14762
 const importAllResult = importAll(dependencyMap[0]);
 ({ Image: closure_3, Pressable: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { onScreenshot: "number", roundedBenefitsContainer: "number", withReducedMotion: "mY3Y38", marginTop: importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_PADDING };
+obj = { flex: "string", display: "string", alignItems: "color", marginTop: importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_PADDING };
 obj.unavailableGuilds = obj;
 obj1 = { width: importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_SIZE, height: importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.unavailableGuildsIcon = obj1;

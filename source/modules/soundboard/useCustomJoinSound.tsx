@@ -1,5 +1,5 @@
 // Module ID: 5764
-// Function ID: 49379
+// Function ID: 49390
 // Name: _getCustomJoinSound
 // Dependencies: []
 // Exports: getCustomJoinSound, useCustomJoinSound

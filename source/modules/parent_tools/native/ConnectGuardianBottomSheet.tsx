@@ -1,10 +1,10 @@
-// Module ID: 13661
-// Function ID: 103476
+// Module ID: 13668
+// Function ID: 103509
 // Name: ConnectGuardianBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13661 (ConnectGuardianBottomSheet)
+// Module 13668 (ConnectGuardianBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -67,7 +67,7 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
   const items3 = [closure_8(View, obj1), , ];
   const obj6 = { linkCode, expiresAt, onRefresh: onRefresh.onRefresh };
   items3[1] = callback(View, { style: tmp.cardContainer, children: callback(arg1(dependencyMap[15]).ConnectGuardianCard, obj6) });
-  const obj7 = { "Bool(true)": null, "Bool(true)": null };
+  const obj7 = {};
   const intl3 = arg1(dependencyMap[12]).intl;
   obj7.text = intl3.string(importDefault(dependencyMap[13]).Hsm5IF);
   obj7.onPress = callback;

@@ -1,10 +1,10 @@
-// Module ID: 11040
-// Function ID: 85955
+// Module ID: 11041
+// Function ID: 85968
 // Name: AppealIngestionRequestSent
 // Dependencies: []
 // Exports: default
 
-// Module 11040 (AppealIngestionRequestSent)
+// Module 11041 (AppealIngestionRequestSent)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp5 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ container: {}, actionsHeader: { size: false, progress: false }, checkboxPng: { "Bool(false)": "Next", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ container: { backgroundColor: "<string:2126337>", paddingVertical: "<string:2097152>" }, actionsHeader: { y: false, channelId: false }, checkboxPng: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 

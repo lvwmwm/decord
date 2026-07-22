@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: {}, narrow: {}, short: {} };
+    obj = { long: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, narrow: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, short: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null } };
     obj.conjunction = obj;
     const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: {}, narrow: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "ja";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: {} } }, locale: "ja" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, narrow: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, short: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, short: {} } }, locale: "ja" });

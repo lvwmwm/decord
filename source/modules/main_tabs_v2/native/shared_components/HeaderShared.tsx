@@ -1,10 +1,10 @@
-// Module ID: 9114
-// Function ID: 71381
+// Module ID: 9115
+// Function ID: 71394
 // Name: GenericHeaderTitle
-// Dependencies: [31, 27, 5310, 1352, 1348, 4142, 9124, 653, 9125, 33, 4126, 9077, 689, 9126, 9128, 9129, 9135, 566, 5646, 22, 9136, 9262, 4337]
+// Dependencies: [31, 27, 5037, 1352, 1348, 4142, 9125, 653, 9126, 33, 4126, 9078, 689, 9127, 9129, 9130, 9136, 566, 5645, 22, 9137, 9263, 4337]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9114 (GenericHeaderTitle)
+// Module 9115 (GenericHeaderTitle)
 import importAllResult from "module_31";
 import get ActivityIndicator from "get ActivityIndicator";
 import { MIN_HEADER_HEIGHT } from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ class GenericHeaderTitle {
       maxFontSizeMultiplier = 2;
     }
     closure_3 = maxFontSizeMultiplier;
-    obj = { useTopCommands: true, esrb: true, MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: true, GEN_AI_CONVERSATION_ID_ATTRIBUTE: true, disclosureType: true, y: true };
+    obj = { emptyStateContentContainer: "Text", integrationTextRowContainer: "resizeMode", lastProposalsFinishedTime: "from", sy: "Array", parseExtraDataFromInviteKey: "isArray", USD: "braintreemasterpasslanding" };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     View = undefined;
     closure_5 = undefined;
@@ -77,7 +77,7 @@ class GenericHeaderTitle {
       tmp10 = arg1;
       tmp11 = dependencyMap;
       num = 6;
-      obj1 = { y: null, isArray: null };
+      obj1 = { "Bool(false)": null, "Bool(false)": null };
       obj1.color = str;
       obj1.style = tmp4.subtitleText;
       obj1.maxFontSizeMultiplier = maxFontSizeMultiplier;
@@ -138,7 +138,7 @@ function HeaderChannelActions(arg0) {
 ({ View: closure_4, Platform } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: closure_7 } = _callSuper);
 let obj = { headerRightContainer: { marginRight: 16 } };
-obj = { errors: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, emailToken: 0.000000000000000000000000000000000000000000000000000000000000000000000001207405473971004, style: 15.1, keyboardShouldPersistTaps: null, alwaysBounceVertical: "\u{1F469}\u{1F3FC}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", flex: true, padding: null, backgroundColor: require("_isNativeReflectConstruct").colors.BACKGROUND_BASE_LOW, borderColor: require("_isNativeReflectConstruct").colors.MOBILE_HEADER_BORDER };
+obj = { backgroundColor: require("_isNativeReflectConstruct").colors.BACKGROUND_BASE_LOW, borderColor: require("_isNativeReflectConstruct").colors.MOBILE_HEADER_BORDER };
 obj.headerWrapper = obj;
 obj.actionButtonPressable = {};
 _isNativeReflectConstruct = { tintColor: require("_isNativeReflectConstruct").colors.MOBILE_HEADER_ICON_DEFAULT };
@@ -149,7 +149,7 @@ const obj2 = {};
 const merged = Object.assign(require("createChannelState").TextStyleSheet.text-md/semibold);
 obj2["color"] = require("_isNativeReflectConstruct").colors.TEXT_BRAND;
 obj.backButtonLabel = obj2;
-const obj3 = { "Null": 7, "Null": 370, gap: require("_isNativeReflectConstruct").space.PX_8 };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: require("_isNativeReflectConstruct").space.PX_8 };
 obj.titleContainer = obj3;
 let closure_8 = _isNativeReflectConstruct.createStyles(obj);
 const memoResult = importAllResult.memo(function HeaderInner(style) {
@@ -231,7 +231,7 @@ const memoResult = importAllResult.memo(function HeaderInner(style) {
   obj.children = items1;
   return tmp10(tmp11, obj);
 }, (back, back2) => {
-  const tmp = !importDefault(dependencyMap[17])(back, back2, ["yellow_circle"]);
+  const tmp = !importDefault(dependencyMap[17])(back, back2, ["CLIENT_PORT_ATTRIBUTE"]);
   let tmp5Result = !tmp;
   if (!tmp) {
     back = back.back;

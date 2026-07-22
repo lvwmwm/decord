@@ -1,10 +1,10 @@
-// Module ID: 12084
-// Function ID: 93209
+// Module ID: 12088
+// Function ID: 93235
 // Name: getGuildScheduledEventHeaderProps
 // Dependencies: []
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 12084 (getGuildScheduledEventHeaderProps)
+// Module 12088 (getGuildScheduledEventHeaderProps)
 const _module = require(dependencyMap[0]);
 ({ isGuildEventEnded: closure_3, isGuildScheduledEventActive: closure_4 } = _module);
 let closure_5 = require(dependencyMap[1]).GuildScheduledEventEntityTypes;

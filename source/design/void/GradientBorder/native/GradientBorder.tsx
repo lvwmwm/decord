@@ -1,9 +1,9 @@
-// Module ID: 12882
-// Function ID: 98382
+// Module ID: 12889
+// Function ID: 98415
 // Name: GradientBorder
 // Dependencies: []
 
-// Module 12882 (GradientBorder)
+// Module 12889 (GradientBorder)
 class GradientBorder {
   constructor(arg0) {
     ({ children, borderWidth } = global);
@@ -19,7 +19,7 @@ class GradientBorder {
       num2 = 1;
       borderRadius = importDefault(dependencyMap[5]).radii.sm + 1;
     }
-    obj = { "Null": null, "Null": null, "Null": null, flexDirection: null, justifyContent: null };
+    obj = { position: false, top: false, left: false, right: false, bottom: false };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     tmp5 = function getStartEnd(direction) {
@@ -27,8 +27,8 @@ class GradientBorder {
       const str = callback(closure_2[4]);
       const withResult = match.with(constants.HORIZONTAL, () => closure_5);
       const withResult1 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6);
-      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: {}, END: {} }));
-      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: {}, END: {} })).with(constants.ANTI_DIAGONAL, () => ({ START: {}, END: {} })).exhaustive();
+      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { 0: "%FunctionPrototype%", 0: "paddingStart" }, END: { 0: "<string:2491613185>", 0: "<string:2941583362>" } }));
+      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { 0: "%FunctionPrototype%", 0: "paddingStart" }, END: { 0: "<string:2491613185>", 0: "<string:2941583362>" } })).with(constants.ANTI_DIAGONAL, () => ({ START: {}, END: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } })).exhaustive();
     }(direction);
     tmp8 = null;
     if (null != children) {

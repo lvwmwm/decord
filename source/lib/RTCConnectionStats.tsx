@@ -1,9 +1,9 @@
-// Module ID: 12613
-// Function ID: 96918
+// Module ID: 12618
+// Function ID: 96946
 // Name: StateHistory
 // Dependencies: []
 
-// Module 12613 (StateHistory)
+// Module 12618 (StateHistory)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const RTCConnectionStates = arg1(dependencyMap[2]).RTCConnectionStates;

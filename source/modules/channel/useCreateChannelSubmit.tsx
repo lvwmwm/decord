@@ -1,10 +1,10 @@
-// Module ID: 8403
-// Function ID: 66890
+// Module ID: 8404
+// Function ID: 66902
 // Name: useCreateChannelSubmit
 // Dependencies: []
 // Exports: default
 
-// Module 8403 (useCreateChannelSubmit)
+// Module 8404 (useCreateChannelSubmit)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

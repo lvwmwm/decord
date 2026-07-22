@@ -1,10 +1,10 @@
-// Module ID: 11705
-// Function ID: 90938
+// Module ID: 11706
+// Function ID: 90951
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [57, 31, 27, 33, 4126, 689, 5225, 1212, 4124, 1273, 4539, 11712, 2]
+// Dependencies: [57, 31, 27, 33, 4126, 689, 5157, 1212, 4124, 1273, 4539, 11713, 2]
 // Exports: default
 
-// Module 11705 (ContactSyncSettingsActionSheet)
+// Module 11706 (ContactSyncSettingsActionSheet)
 import "_slicedToArray";
 import { View } from "module_31";
 import get ActivityIndicator from "get ActivityIndicator";
@@ -64,7 +64,7 @@ export default function ContactSyncSettingsActionSheet() {
   const intl4 = arg1(dependencyMap[8]).intl;
   obj4.children = intl4.format(arg1(dependencyMap[8]).t.eswIfi, {
     learnMoreHook(children) {
-      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, children };
+      const obj = { "Null": "business", "Null": "cached", "Null": "cancel", onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, children };
       return callback4(allowPhone(allowEmail[9]).Text, obj, arg1);
     }
   });

@@ -1,10 +1,10 @@
-// Module ID: 11911
-// Function ID: 92211
+// Module ID: 11912
+// Function ID: 92225
 // Name: UnknownGameIcon
 // Dependencies: []
 // Exports: UnknownGameIcon
 
-// Module 11911 (UnknownGameIcon)
+// Module 11912 (UnknownGameIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UnknownGameIcon.tsx");

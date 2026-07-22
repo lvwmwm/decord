@@ -1,10 +1,10 @@
-// Module ID: 16341
-// Function ID: 126083
+// Module ID: 16349
+// Function ID: 126125
 // Name: StepNode
 // Dependencies: []
 // Exports: default
 
-// Module 16341 (StepNode)
+// Module 16349 (StepNode)
 function StepNode(isCurrent) {
   let isDone;
   let label;
@@ -34,12 +34,12 @@ function StepNode(isCurrent) {
     obj = { duration: num2 };
     const Easing = isCurrent(num2[6]).Easing;
     obj.easing = Easing.out(isCurrent(num2[6]).Easing.ease);
-    const interpolateResult = obj.interpolate(sharedValue.get(), ["replace", "then"], [0.3, 1]);
-    const withTimingResult = obj1.withTiming(obj.interpolate(sharedValue.get(), ["replace", "then"], [0.3, 1]), obj);
+    const interpolateResult = obj.interpolate(sharedValue.get(), [77601039, 1612144654], []);
+    const withTimingResult = obj1.withTiming(obj.interpolate(sharedValue.get(), [77601039, 1612144654], []), obj);
     const items = [-2, 6];
     obj = {};
     const obj4 = isCurrent(num2[6]);
-    const interpolateResult1 = isCurrent(num2[6]).interpolate(sharedValue.get(), ["replace", "then"], items);
+    const interpolateResult1 = isCurrent(num2[6]).interpolate(sharedValue.get(), [77601039, 1612144654], items);
     obj1 = { duration: num2 };
     const Easing2 = isCurrent(num2[6]).Easing;
     obj1.easing = Easing2.out(isCurrent(num2[6]).Easing.ease);
@@ -69,7 +69,7 @@ function StepNode(isCurrent) {
     const items1 = [tmp.node, animatedStyle, filledNode];
     obj.style = items1;
     if (isCurrent) {
-      obj1 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: label };
+      obj1 = { cachedAt: null, edpbxy: null, children: label };
       isCurrent = jsx(arg1(dependencyMap[8]).Text, obj1);
     }
     obj.children = isCurrent;
@@ -83,7 +83,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = { container: {}, node: {} };
-obj = { EMPTY_SOUND_LIST: "number", alignContent: "number", containerSizeStyle: "mY3Y38", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, padding: "string", borderRadius: "color" };
 obj.filledNode = obj;
 obj.emptyNode = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL };
 let closure_7 = obj.createStyles(obj);

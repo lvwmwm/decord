@@ -1,9 +1,9 @@
-// Module ID: 13905
-// Function ID: 105157
+// Module ID: 13912
+// Function ID: 105197
 // Name: importDefaultResult1
 // Dependencies: []
 
-// Module 13905 (importDefaultResult1)
+// Module 13912 (importDefaultResult1)
 import alphaResult1 from "module_0";
 import alphaResult2 from "module_0";
 
@@ -14,7 +14,7 @@ const QuestsExperimentLocations = arg1(dependencyMap[3]).QuestsExperimentLocatio
 const ThemeTypes = arg1(dependencyMap[4]).ThemeTypes;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let closure_12 = {};
+let closure_12 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
 let closure_13 = {};
 const tmp3 = arg1(dependencyMap[5]);
 const importDefaultResult = importDefault(dependencyMap[6]);
@@ -44,11 +44,11 @@ let closure_18 = arg1(dependencyMap[9]).createStyles((arg0) => {
   }
   obj.justifyContent = str;
   obj.wrapperPortrait = obj;
-  obj.videoLandscape = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001642175594148554, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044582052657937646 };
+  obj.videoLandscape = {};
   obj.videoLandscape9by16 = {};
   obj.landscapeContentScroll = { flex: 1 };
   obj.landscapeContentScrollContent = { flexGrow: 1 };
-  obj.videoLandscapeFullscreen = { isArray: null, diversity: null };
+  obj.videoLandscapeFullscreen = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" };
   obj.videoWrapper = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
   const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
   obj.videoWrapperLandscape = { flexGrow: 1, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.none, borderTopRightRadius: importDefault(dependencyMap[7]).radii.none };
@@ -59,7 +59,7 @@ let closure_18 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj.videoContentWrapperLandscape = { padding: 0 };
   const merged = Object.assign(closure_6.absoluteFillObject);
   obj.videoContentWrapperPortrait = {};
-  obj.rewardContainer = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001133920888858181, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018115528053891478, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018115528007917002 };
+  obj.rewardContainer = { <string:2035472561>: 178168180748486300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1695203994>: 0.00000000000000000000000000000000000000000000000000000000000004667261458271638, <string:3635504108>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006448559637668164 };
   const obj4 = { padding: importDefault(dependencyMap[7]).space.PX_16 };
   const obj5 = {};
   obj.rewardContentCentered = { position: "absolute", top: importDefault(dependencyMap[7]).space.PX_16, left: importDefault(dependencyMap[7]).space.PX_16, right: importDefault(dependencyMap[7]).space.PX_16, bottom: importDefault(dependencyMap[7]).space.PX_16, alignItems: "center", justifyContent: "center" };
@@ -67,8 +67,8 @@ let closure_18 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj.modalBackground = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
   const obj7 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
   obj.questDetailsLandscape = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24 };
-  obj.questDetailsPrimary = { isArray: null, diversity: null };
-  obj.questDetailsSecondary = { isArray: -536870861, diversity: -299892737 };
+  obj.questDetailsPrimary = {};
+  obj.questDetailsSecondary = { nestedScrollEnabled: "%FunctionPrototype%", scrollEventThrottle: "paddingStart" };
   const obj8 = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24 };
   obj.footer = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
   const obj9 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
@@ -88,11 +88,11 @@ let closure_18 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj14["height"] = 150;
   obj.gradientBottom = obj14;
   const obj12 = { position: "absolute", top: importDefault(dependencyMap[7]).space.PX_16, left: importDefault(dependencyMap[7]).space.PX_16 };
-  obj.textShadow = { textShadowColor: importDefault(dependencyMap[7]).colors.BLACK, textShadowOffset: { "Null": -536870861, "Null": -299892737 } };
-  const obj15 = { textShadowColor: importDefault(dependencyMap[7]).colors.BLACK, textShadowOffset: { "Null": -536870861, "Null": -299892737 } };
-  obj.ctaPrimary = { borderRadius: importDefault(dependencyMap[7]).radii.round };
+  obj.textShadow = { textShadowColor: importDefault(dependencyMap[7]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
+  const obj16 = { animated: "password", hasHandledScroll: "email", isAtBottom: "name-prefix", borderRadius: importDefault(dependencyMap[7]).radii.round };
+  obj.ctaPrimary = obj16;
   obj.viewRewardBtn = { marginRight: "auto" };
-  const obj16 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
+  const obj15 = { textShadowColor: importDefault(dependencyMap[7]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
   obj.playerThumbnail = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
   obj.cloudsBackground = { zIndex: -1 };
   obj.questDetailsSubheader = { opacity: 0.6 };
@@ -354,11 +354,11 @@ let closure_23 = importAllResult.memo((quest) => {
     const obj16 = { align: "top", style: tmp.cloudsBackground };
     items14[1] = callback2(importDefault(dependencyMap[24]), obj16);
     const obj17 = { direction: "vertical", spacing: importDefault(dependencyMap[7]).space.PX_24, style: tmp.questDetailsLandscape };
-    const obj18 = { 0: true, -9223372036854775808: true, spacing: importDefault(dependencyMap[7]).space.PX_8 };
+    const obj18 = { "Null": true, "Null": true, spacing: importDefault(dependencyMap[7]).space.PX_8 };
     const obj19 = { style: tmp.questDetailsPrimary, onPress: handlePrimaryCtaPress };
     const obj20 = { children: quest.config.messages.gameTitle };
     const items15 = [callback2(arg1(dependencyMap[28]).Text, obj20), ];
-    obj21 = { hasMaxConnections: "accessibilityLabel", isBoostOnlySubscription: "r", children: quest.config.messages.gamePublisher };
+    obj21 = { cachedAt: true, edpbxy: true, children: quest.config.messages.gamePublisher };
     items15[1] = callback2(arg1(dependencyMap[28]).Text, obj21);
     obj19.children = items15;
     const items16 = [callback3(arg1(dependencyMap[27]).PressableOpacity, obj19), ];
@@ -509,9 +509,9 @@ let closure_24 = importAllResult.memo((arg0) => {
   const obj9 = { closeButtonIconColor: importDefault(dependencyMap[7]).colors.WHITE, onClose: handleClose, showCurrentVideoTime: true, withTextShadow: true };
   const items6 = [callback2(importDefault(dependencyMap[40]), obj9), ];
   const obj10 = { direction: "vertical", spacing: importDefault(dependencyMap[7]).space.PX_24 };
-  const obj11 = { 0: true, -9223372036854775808: true, spacing: importDefault(dependencyMap[7]).space.PX_8 };
+  const obj11 = { "Null": true, "Null": true, spacing: importDefault(dependencyMap[7]).space.PX_8 };
   const obj12 = { style: icon.questDetailsPrimary, onPress: handlePrimaryCtaPress };
-  const obj13 = { style: icon.textShadow, children: quest.config.messages.gameTitle };
+  const obj13 = { "Null": "absolute", "Null": -40, paddingHorizontal: 8, backgroundColor: "flex", style: icon.textShadow, children: quest.config.messages.gameTitle };
   const items7 = [callback2(arg1(dependencyMap[28]).Text, obj13), ];
   const items8 = [, ];
   ({ textShadow: arr9[0], questDetailsSubheader: arr9[1] } = icon);
@@ -536,7 +536,7 @@ let closure_24 = importAllResult.memo((arg0) => {
   let tmp18 = tmp3;
   if (null != completedAt) {
     const obj19 = { style: icon.viewRewardBtn };
-    const obj20 = { 1379573858: "y", 67044096: "getRoundingMethod", 1453996900: "isArray", 919426140: "isArrayBuffer", 101346265: "fr-NE" };
+    const obj20 = { "Bool(false)": "y", "Bool(false)": "ApplicationTypes", "Bool(false)": "isArray", "Bool(false)": "isArrayBuffer", "Bool(false)": "SETTINGS_PREMIUM_MANAGE_PLAN" };
     obj21 = { size: "sm" };
     obj20.icon = callback2(arg1(dependencyMap[42]).ArrowSmallRightIcon, obj21);
     obj20.onPress = onNavigateToPostWatchVideo;

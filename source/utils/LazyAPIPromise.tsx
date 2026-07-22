@@ -1,10 +1,10 @@
-// Module ID: 8352
-// Function ID: 66537
+// Module ID: 8353
+// Function ID: 66549
 // Name: useLazyAPIPromise
 // Dependencies: []
 // Exports: default
 
-// Module 8352 (useLazyAPIPromise)
+// Module 8353 (useLazyAPIPromise)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 15752
-// Function ID: 120445
+// Module ID: 15760
+// Function ID: 120488
 // Name: MobilePhoneShareIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15752 (MobilePhoneShareIcon)
+// Module 15760 (MobilePhoneShareIcon)
 let closure_3 = importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -20,7 +20,7 @@ const tmp2 = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.circle = obj;
-obj.iconContainer = { <string:1446693987>: null, <string:1666068817>: "no-hide-descendants", <string:1370110668>: true, <string:1549880881>: "/assets/.cache/intl/ZGVzaWdu", <string:1638698833>: null };
+obj.iconContainer = { 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/ZGVzaWdu", -9223372036854775808: null, 9223372036854775807: "89c1f821400ffcc75deeeab8c6315a88", -9223372036854775808: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages" };
 obj.icon = {};
 let closure_10 = arg1(dependencyMap[8]).createStyles(obj);
 const obj2 = arg1(dependencyMap[8]);

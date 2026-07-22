@@ -1,10 +1,10 @@
-// Module ID: 12036
-// Function ID: 92997
+// Module ID: 12040
+// Function ID: 93023
 // Name: usePrivateChannelCall
 // Dependencies: []
 // Exports: default
 
-// Module 12036 (usePrivateChannelCall)
+// Module 12040 (usePrivateChannelCall)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

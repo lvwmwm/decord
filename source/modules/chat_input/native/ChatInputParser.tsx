@@ -1,10 +1,10 @@
-// Module ID: 11423
-// Function ID: 88902
+// Module ID: 11424
+// Function ID: 88915
 // Name: ChatInputParser
 // Dependencies: []
 // Exports: convertToNativeStyle
 
-// Module 11423 (ChatInputParser)
+// Module 11424 (ChatInputParser)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const processColor = arg1(dependencyMap[2]).processColor;
@@ -73,7 +73,7 @@ export const convertToNativeStyle = (color) => {
   let backgroundColor;
   let borderRadius;
   ({ backgroundColor, borderRadius } = color);
-  let obj = { __d: false, start: false, get: false };
+  let obj = { flex: "spring", paddingVertical: 0.4, paddingRight: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   let tmp3 = null;

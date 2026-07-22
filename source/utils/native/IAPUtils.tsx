@@ -1,5 +1,5 @@
 // Module ID: 7198
-// Function ID: 57925
+// Function ID: 57936
 // Name: serializePurchaseResponse
 // Dependencies: []
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP

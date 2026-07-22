@@ -1,12 +1,12 @@
-// Module ID: 10337
-// Function ID: 79804
+// Module ID: 10338
+// Function ID: 79817
 // Name: apexExperiment
 // Dependencies: []
 // Exports: useFavoritesGuildConfig
 
-// Module 10337 (apexExperiment)
+// Module 10338 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: "<string:3547877632>", 1387159956: "<string:2977382673>", defaultConfig: { <string:1408262439>: null, <string:1359021556>: null }, variations: { [1]: { <string:1408262439>: null, <string:1359021556>: null }, [2]: { <string:1408262439>: null, <string:1359021556>: null } } };
+const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { done: true, body: true }, variations: { [1]: { done: null, body: null }, [2]: { done: "<string:1040334421>", body: "<string:1040334338>" } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/favorites/FavoritesGuildExperiment.tsx");

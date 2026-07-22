@@ -1,10 +1,10 @@
-// Module ID: 13611
-// Function ID: 103147
+// Module ID: 13618
+// Function ID: 103180
 // Name: useObscuredContentNonFriendsDmSettingValue
 // Dependencies: []
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 13611 (useObscuredContentNonFriendsDmSettingValue)
+// Module 13618 (useObscuredContentNonFriendsDmSettingValue)
 function useObscuredContentNonFriendsDmSettingValue() {
   const obj = require(dependencyMap[1]);
   return require(dependencyMap[2]).redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();

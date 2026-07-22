@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 94424
+// Module ID: 12339
+// Function ID: 94452
 // Name: FEATURES_PREMIUM_GUILD_USER
 // Dependencies: []
 // Exports: default
 
-// Module 12334 (FEATURES_PREMIUM_GUILD_USER)
+// Module 12339 (FEATURES_PREMIUM_GUILD_USER)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ View: closure_3, Image: closure_4 } = tmp3);
@@ -12,8 +12,8 @@ let closure_5 = importDefault(dependencyMap[2]);
 const FractionalPremiumStates = arg1(dependencyMap[3]).FractionalPremiumStates;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { root: { MKTG_HYPESQUAD_FORM_SUBMITTED: "isArray", marginInlineEnd: "accessibilityRole" }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: { startExpanded: "<string:410124289>", scrollable: "<string:402653184>", handleDisabled: "<string:16777216>" }, guildList: { marginTop: 16 }, logoPremiumGuild: { "Bool(false)": 50, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "text-md/semibold", "Bool(false)": "interactive-text-active" }, imgPremiumGuild: { "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 177 }, imgNoGuilds: {}, header: { alignItems: "center" } };
-obj = { display: -0.000000015832525233992072, flexDirection: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001855055024309289, borderTopWidth: 2 * tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { root: { "Bool(false)": null, "Bool(false)": null }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: {}, guildList: { marginTop: 16 }, logoPremiumGuild: { "Null": 50, "Null": null, "Null": 1, "Null": "text-md/semibold", "Null": "interactive-text-active" }, imgPremiumGuild: { "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 177 }, imgNoGuilds: {}, header: { alignItems: "center" } };
+obj = { 105999969: "a", 995517444: "oldRule", borderTopWidth: 2 * tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.upsell = obj;
 obj.subscriptionUpsell = { marginTop: 32 };
 let closure_9 = obj.createStyles(obj);

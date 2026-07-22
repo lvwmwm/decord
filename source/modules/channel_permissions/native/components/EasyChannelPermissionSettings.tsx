@@ -1,10 +1,10 @@
-// Module ID: 15382
-// Function ID: 117248
+// Module ID: 15390
+// Function ID: 117291
 // Name: ChannelPermissionSettingsBasicView
 // Dependencies: []
 // Exports: default
 
-// Module 15382 (ChannelPermissionSettingsBasicView)
+// Module 15390 (ChannelPermissionSettingsBasicView)
 function ChannelPermissionSettingsBasicView(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -184,9 +184,9 @@ const tmp3 = arg1(dependencyMap[13]);
 let closure_25 = { BASIC: 0, [0]: "BASIC", ADVANCED: 1, [1]: "ADVANCED", MODERATORS: 2, [2]: "MODERATORS" };
 let obj = arg1(dependencyMap[15]);
 obj = {};
-obj = { 314319: "<string:4083789493>", 315874: "<string:3209801398>", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWER };
+obj = { "Null": "vertical", "Null": false, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.content = { "Bool(false)": "Group 11", "Bool(false)": 2 };
+obj.content = { __workletHash: null, messageId: "Group 11" };
 const tmp4 = arg1(dependencyMap[14]);
 obj.adminWarning = { marginTop: importDefault(dependencyMap[16]).space.PX_12 };
 let closure_26 = obj.createStyles(obj);

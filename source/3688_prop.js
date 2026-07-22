@@ -12,7 +12,7 @@ if (Intl.ListFormat) {
     obj = {};
     obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { application: null, Set: null, Icon: null, id: null }, narrow: { application: null, Set: null, Icon: null, id: null }, short: { application: null, Set: null, Icon: null, id: null } };
+    const obj1 = { long: { accessibilityHint: "{0} \uBC0F {1}", legacyCompat_selected: "{0}, {1}", legacyCompat_onPress: "{0} \uBC0F {1}", eventTarget: "{0}, {1}" }, narrow: { accessibilityHint: "{0} \uBC0F {1}", legacyCompat_selected: "{0}, {1}", legacyCompat_onPress: "{0} \uBC0F {1}", eventTarget: "{0}, {1}" }, short: { accessibilityHint: "{0} \uBC0F {1}", legacyCompat_selected: "{0}, {1}", legacyCompat_onPress: "{0} \uBC0F {1}", eventTarget: "{0}, {1}" } };
     obj.disjunction = obj1;
     const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: null, Set: null, Icon: null, id: null }, narrow: { application: null, Set: null, Icon: null, id: null }, short: { application: null, Set: null, Icon: null, id: null } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "hr" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { accessibilityHint: "{0} \uBC0F {1}", legacyCompat_selected: "{0}, {1}", legacyCompat_onPress: "{0} \uBC0F {1}", eventTarget: "{0}, {1}" }, narrow: { accessibilityHint: "{0} \uBC0F {1}", legacyCompat_selected: "{0}, {1}", legacyCompat_onPress: "{0} \uBC0F {1}", eventTarget: "{0}, {1}" }, short: { accessibilityHint: "{0} \uBC0F {1}", legacyCompat_selected: "{0}, {1}", legacyCompat_onPress: "{0} \uBC0F {1}", eventTarget: "{0}, {1}" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "hr" });

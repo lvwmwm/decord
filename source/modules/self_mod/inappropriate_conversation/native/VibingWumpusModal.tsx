@@ -1,19 +1,19 @@
-// Module ID: 10137
-// Function ID: 78449
+// Module ID: 10138
+// Function ID: 78462
 // Name: VibingWumpusScreen
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 10137 (VibingWumpusScreen)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import closure_7 from "result";
-import { VIBING_WUMPUS_MODAL_KEY } from "result";
-import result from "result";
-import { AnalyticEvents } from "result";
-import result from "result";
-import result from "result";
+// Module 10138 (VibingWumpusScreen)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { VIBING_WUMPUS_MODAL_KEY } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { AnalyticEvents } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 class VibingWumpusScreen {
   constructor() {
@@ -24,7 +24,7 @@ class VibingWumpusScreen {
     closure_1 = tmp2[1];
     ref = importAll.useRef(null);
     dependencyMap = ref;
-    obj = require("result");
+    obj = require("__exportStarResult1");
     items = [];
     items[0] = closure_7;
     stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -48,7 +48,7 @@ class VibingWumpusScreen {
       };
     }, []);
     obj = {};
-    obj1 = { source: require("result"), style: tmp.rings };
+    obj1 = { source: require("__exportStarResult1"), style: tmp.rings };
     tmp7 = jsxs;
     tmp8 = Fragment;
     items1 = [, ];
@@ -58,8 +58,8 @@ class VibingWumpusScreen {
     tmp10 = View;
     tmp11 = jsx;
     obj3 = {};
-    tmp12 = require("result");
-    obj3.source = require("result");
+    tmp12 = require("__exportStarResult1");
+    obj3.source = require("__exportStarResult1");
     obj3.ref = ref;
     obj3.autoPlay = !stateFromStores;
     obj3.loop = true;
@@ -73,22 +73,22 @@ class VibingWumpusScreen {
     items2[0] = tmp11(tmp12, obj3);
     obj4 = { style: tmp.warningText };
     obj5 = { style: tmp.takeoverHeader };
-    intl = require("result").intl;
-    obj5.children = intl.string(require("result").t.L4ifkZ);
+    intl = require("__exportStarResult1").intl;
+    obj5.children = intl.string(require("__exportStarResult1").t.L4ifkZ);
     items3 = [, ];
-    items3[0] = jsx(require("result").Text, obj5);
+    items3[0] = jsx(require("__exportStarResult1").Text, obj5);
     obj6 = { variant: "text-md/medium", style: tmp.takeoverDescription };
-    intl2 = require("result").intl;
-    obj6.children = intl2.string(require("result").t.R8LCMZ);
-    items3[1] = jsx(require("result").Text, obj6);
+    intl2 = require("__exportStarResult1").intl;
+    obj6.children = intl2.string(require("__exportStarResult1").t.R8LCMZ);
+    items3[1] = jsx(require("__exportStarResult1").Text, obj6);
     obj4.children = items3;
     items2[1] = jsxs(View, obj4);
     obj7 = { style: tmp.ctaContainer };
     tmp13 = jsxs;
     tmp14 = View;
-    obj8 = { body: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", hasDiversityParent: null, padding: "06ce787c33fd0c9cd370f243d3462ef5", View: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages" };
-    intl3 = require("result").intl;
-    obj8.text = intl3.string(require("result").t.8eKkaf);
+    obj8 = { left: false, startAndEndHeight: false, transform: false, topOffset: false };
+    intl3 = require("__exportStarResult1").intl;
+    obj8.text = intl3.string(require("__exportStarResult1").t.8eKkaf);
     obj8.onPress = function onPress() {
       let obj = callback(ref[12]);
       obj = { action: constants.BACK_TO_CONVERSATION };
@@ -96,12 +96,12 @@ class VibingWumpusScreen {
       callback(ref[19]).popWithKey(closure_8);
     };
     items4 = [, ];
-    items4[0] = jsx(require("result").Button, obj8);
+    items4[0] = jsx(require("__exportStarResult1").Button, obj8);
     tmp15 = jsx;
-    obj9 = {};
-    intl4 = require("result").intl;
+    obj9 = { left: "SpoilerIcon", startAndEndHeight: "png", transform: true, topOffset: "/assets/design/components/Icon/native/redesign/generated/images" };
+    intl4 = require("__exportStarResult1").intl;
     string = intl4.string;
-    t = require("result").t;
+    t = require("__exportStarResult1").t;
     if (first) {
       stringResult = string(t.RscU7I);
     } else {
@@ -144,14 +144,14 @@ class VibingWumpusScreen {
     tmp17 = jsx;
     if (first) {
       num3 = 20;
-      PauseIcon = require("result").PlayIcon;
+      PauseIcon = require("__exportStarResult1").PlayIcon;
     } else {
       num2 = 21;
-      PauseIcon = require("result").PauseIcon;
+      PauseIcon = require("__exportStarResult1").PauseIcon;
     }
-    obj10 = { size: "md", color: require("result").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
+    obj10 = { size: "md", color: require("__exportStarResult1").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
     obj9.icon = tmp17(PauseIcon, obj10);
-    items4[1] = tmp15(require("result").Button, obj9);
+    items4[1] = tmp15(require("__exportStarResult1").Button, obj9);
     obj7.children = items4;
     items2[2] = tmp13(tmp14, obj7);
     obj2.children = items2;
@@ -160,25 +160,28 @@ class VibingWumpusScreen {
     return tmp7(tmp8, obj);
   }
 }
-({ Image: closure_5, View: closure_6 } = result);
-({ VibingWumpusAction: closure_9, VibingWumpusSource: closure_10 } = result);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = result);
+({ Image: closure_5, View: closure_6 } = __exportStarResult1);
+({ VibingWumpusAction: closure_9, VibingWumpusSource: closure_10 } = __exportStarResult1);
+({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = __exportStarResult1);
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { padding: require("result").space.PX_32, gap: require("result").space.PX_16 };
+obj = { padding: require("__exportStarResult1").space.PX_32, gap: require("__exportStarResult1").space.PX_16 };
 obj.container = obj;
-obj.warningText = { marginBottom: require("result").space.PX_16, gap: require("result").space.PX_4 };
-const obj1 = { marginBottom: require("result").space.PX_16, gap: require("result").space.PX_4 };
-obj.ctaContainer = { gap: require("result").space.PX_16 };
+obj.warningText = { marginBottom: require("__exportStarResult1").space.PX_16, gap: require("__exportStarResult1").space.PX_4 };
+const obj1 = { marginBottom: require("__exportStarResult1").space.PX_16, gap: require("__exportStarResult1").space.PX_4 };
+obj.ctaContainer = { gap: require("__exportStarResult1").space.PX_16 };
 obj.takeoverHeader = { textAlign: "center" };
 obj.takeoverDescription = { textAlign: "center" };
 obj.wumpus = { height: 187 };
-obj.rings = { backgroundColor: 0, marginLeft: 4, backgroundColor: 4, paddingVertical: "eye L" };
+obj.rings = { "Bool(false)": 0, "Bool(false)": 4, "Bool(false)": 4, "Bool(false)": "eye L" };
 let closure_15 = obj.createStyles(obj);
-result = result.fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/VibingWumpusModal.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/VibingWumpusModal.tsx");
 
 export default function VibingWumpusModal() {
   const VIBING_WUMPUS = {
+    <string:1366689890>: "r",
+    <string:89313878>: "snapToOffsets",
+    <string:1104131009>: "soundsByRow",
     render() {
       return callback(closure_16, {});
     }

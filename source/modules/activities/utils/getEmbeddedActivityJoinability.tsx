@@ -1,10 +1,10 @@
-// Module ID: 10509
-// Function ID: 82059
+// Module ID: 10510
+// Function ID: 82072
 // Name: getEmbeddedActivityJoinability
 // Dependencies: []
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10509 (getEmbeddedActivityJoinability)
+// Module 10510 (getEmbeddedActivityJoinability)
 function getEmbeddedActivityJoinability(arg0) {
   let ChannelStore;
   let GuildStore;

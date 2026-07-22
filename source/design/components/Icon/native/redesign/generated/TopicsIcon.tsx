@@ -1,10 +1,10 @@
-// Module ID: 10882
-// Function ID: 84591
+// Module ID: 10883
+// Function ID: 84604
 // Name: TopicsIcon
 // Dependencies: []
 // Exports: TopicsIcon
 
-// Module 10882 (TopicsIcon)
+// Module 10883 (TopicsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TopicsIcon.tsx");

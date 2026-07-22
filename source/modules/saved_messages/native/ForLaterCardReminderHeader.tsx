@@ -1,18 +1,18 @@
-// Module ID: 9921
-// Function ID: 76743
+// Module ID: 9922
+// Function ID: 76756
 // Name: ForLaterCardReminderHeader
 // Dependencies: []
 // Exports: ForLaterCardReminderHeader
 
-// Module 9921 (ForLaterCardReminderHeader)
+// Module 9922 (ForLaterCardReminderHeader)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, borderTopLeftRadius: importDefault(dependencyMap[3]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { padding: 29183, flexDirection: 1680932864, gap: -1924145349, flex: 1908425207, justifyContent: 10, alignItems: 115, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, marginEnd: 1024, flexDirection: 1962950912, alignItems: 24182786, width: 16777216, borderTopLeftRadius: importDefault(dependencyMap[3]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.container = obj;
-const obj1 = { 0: null, 0: "494d75fe739ed4a36d195ab8193847fa", 9223372036854775807: "alert", 0: "png", -9223372036854775808: true, 9223372036854775807: "/assets/modules/stickers/native/images", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
+const obj1 = { "Null": "$", "Null": "prefixTag", "Null": "ti", "Null": "isArray", "Bool(false)": "ti", "Bool(false)": "isArray", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
 obj.icon = obj1;
 obj.actionsContainer = {};
 let closure_6 = _module1.createStyles(obj);

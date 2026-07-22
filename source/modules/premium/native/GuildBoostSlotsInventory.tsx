@@ -1,10 +1,10 @@
-// Module ID: 12312
-// Function ID: 94354
+// Module ID: 12317
+// Function ID: 94382
 // Name: GuildBoostSlotCooldown
 // Dependencies: []
 // Exports: default
 
-// Module 12312 (GuildBoostSlotCooldown)
+// Module 12317 (GuildBoostSlotCooldown)
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   let days;
   let hours;
@@ -91,7 +91,7 @@ function GuildBoostSlot(guildBoostSlot) {
               return guildBoostSlot(closure_3[16]).openTransferModal({ guildBoostSlots });
             }
       };
-      const obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, isBoostOnlySubscription: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002342370524951205 };
+      const obj3 = { cachedAt: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, edpbxy: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000234275248419358 };
       const intl2 = arg1(dependencyMap[13]).intl;
       obj3.children = intl2.string(arg1(dependencyMap[13]).t.jqqLb6);
       obj2.children = callback(arg1(dependencyMap[12]).Text, obj3);
@@ -180,12 +180,12 @@ function BoostedGuildInfo(guild) {
     obj.children = callback(importDefault(dependencyMap[17]), obj);
     const items = [callback(closure_5, obj), ];
     const obj1 = {};
-    const obj2 = { delete: "nose", dispatch: 5, raw: 1, style: tmp.guildInfoName, children: guild.name };
+    const obj2 = { style: tmp.guildInfoName, children: guild.name };
     const items1 = [callback(arg1(dependencyMap[12]).Text, obj2), ];
     const obj3 = { style: tmp.guildInfoRowBottom };
     const obj4 = { source: importDefault(dependencyMap[18]), style: tmp.guildInfoRowIcon };
     const items2 = [callback(closure_6, obj4), ];
-    const obj5 = { delete: null, dispatch: null, raw: null, style: tmp.guildInfoSubscriptionCount };
+    const obj5 = { "Null": null, "Null": null, alignItems: null, style: tmp.guildInfoSubscriptionCount };
     const intl = arg1(dependencyMap[13]).intl;
     const obj6 = { numSubscriptions: guild.numGuildBoostSlots };
     obj5.children = intl.format(arg1(dependencyMap[13]).t.bexfNy, obj6);
@@ -260,14 +260,14 @@ let closure_10 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { inventory: { marginBottom: 32 }, header: {} };
+obj = { inventory: { marginBottom: 32 }, header: { -840892412: null, -840761340: null } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.xs, marginBottom: 16 };
 obj.boostedGuild = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.subscriptionBody = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { "Bool(false)": "<string:1247281155>", "Bool(false)": "<string:1107361795>", "Bool(false)": "{{count}} minuty", "Bool(false)": "{{count}} minut", "Bool(false)": "<string:17309763>", "Bool(false)": "<string:51533568>", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL };
+const obj2 = { offset: true, stopColor: true, stopOpacity: true, x: true, y: true, width: true, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL };
 obj.subscriptionImageView = obj2;
-obj.subscriptionImage = {};
+obj.subscriptionImage = { "Null": null, "Null": null, "Null": null };
 obj.subscriptionImageFallback = { opacity: 0.4 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj.subscriptionImageOverlay = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
@@ -278,15 +278,15 @@ const obj3 = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
 const merged = Object.assign(importDefault(dependencyMap[10])(arg1(dependencyMap[6]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_ACTIVE, 20));
 obj4["marginBottom"] = 4;
 obj.guildInfoName = obj4;
-obj.guildInfoRowBottom = { "Null": 7, "Null": 370 };
+obj.guildInfoRowBottom = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.guildInfoRowIcon = {};
 obj.guildInfoSubscriptionCount = { lineHeight: 16 };
 const importDefaultResult = importDefault(dependencyMap[10]);
 obj.subscriptionSlot = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
-obj.subscriptionSlotInner = { borderRadius: null, alignItems: null, marginBottom: null, marginHorizontal: null };
+obj.subscriptionSlotInner = { zIndex: 293757.57910159277, overflow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000697754656326324, borderRadius: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013944356355981188, borderColor: 15182763564301030000000000000000000000000000000000000000000000000000000000000000000 };
 const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
 obj.subscriptionSlotBorder = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, height: 1 };
-obj.subscriptionSlotInfo = { "Null": null, "Null": null };
+obj.subscriptionSlotInfo = { createStyles: "<string:2491613185>", guild_id: "<string:2941583362>" };
 obj.subscriptionSlotInfoTitle = { lineHeight: 24 };
 obj.subscriptionSlotInfoCooldown = { lineHeight: 16 };
 obj.unusedSlots = { marginBottom: 32 };
@@ -336,7 +336,7 @@ export default function GuildBoostSlotsInventory() {
       let tmp13 = null;
       if (found.length > 0) {
         obj1 = {};
-        obj2 = { style: tmp.header };
+        obj2 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.header };
         const intl = arg1(dependencyMap[13]).intl;
         obj2.children = intl.string(arg1(dependencyMap[13]).t.gB9oQ7);
         const items3 = [callback(arg1(dependencyMap[12]).Text, obj2), found.map((guildId) => callback2(closure_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];

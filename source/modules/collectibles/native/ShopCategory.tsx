@@ -1,10 +1,10 @@
-// Module ID: 14356
-// Function ID: 108415
+// Module ID: 14364
+// Function ID: 108458
 // Name: Spacing
 // Dependencies: []
 // Exports: ShopCategory
 
-// Module 14356 (Spacing)
+// Module 14364 (Spacing)
 function Spacing() {
   return callback(View, { style: { width: 12 } });
 }
@@ -69,7 +69,7 @@ export const ShopCategory = function ShopCategory(category) {
   const recyclingState = obj4.useRecyclingState(null, items, () => {
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
+      current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
     }
   });
   let obj5 = arg1(closure_2[13]);
@@ -151,7 +151,7 @@ export const ShopCategory = function ShopCategory(category) {
     obj6.style = tmp.imageBackground;
     tmp14 = ref(importDefault(closure_2[21]), obj6);
   }
-  const items4 = [tmp14, ref(View, { style: tmp.viewAllIcon, children: ref(arg1(closure_2[22]).ChevronSmallRightIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) })];
+  const items4 = [tmp14, ref(View, { style: tmp.viewAllIcon, children: ref(arg1(closure_2[22]).ChevronSmallRightIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) })];
   obj3.children = items4;
   const items5 = [collectiblesAnalyticsContext(arg1(closure_2[19]).PressableOpacity, obj3, category.storeListingId), ];
   const obj9 = { ref, horizontal: true };

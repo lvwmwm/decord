@@ -41,7 +41,8 @@ function _inherits(value) {
   if (arg1) {
     prototype = arg1.prototype;
   }
-  value.prototype = Object.create(prototype, { constructor: { value } });
+  const obj = { "": null, children: null, "": null, value };
+  value.prototype = Object.create(prototype, { constructor: obj });
   if (arg1) {
     _setPrototypeOf(value, arg1);
   }
@@ -155,7 +156,7 @@ function _createClass(arg0, arg1, arg2) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;

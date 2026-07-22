@@ -1,10 +1,10 @@
-// Module ID: 11704
-// Function ID: 90936
+// Module ID: 11705
+// Function ID: 90949
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [31, 33, 4126, 689, 1212, 9114, 2]
+// Dependencies: [31, 33, 4126, 689, 1212, 9115, 2]
 // Exports: default
 
-// Module 11704 (RedesignContactSyncDiscoverabilityFooter)
+// Module 11705 (RedesignContactSyncDiscoverabilityFooter)
 import { HelpdeskArticles } from "module_31";
 import { jsx } from "module_33";
 import result2 from "result2";

@@ -1,12 +1,12 @@
 // Module ID: 6837
-// Function ID: 53994
+// Function ID: 54005
 // Name: set
 // Dependencies: []
 
 // Module 6837 (set)
 const obj = { ALL: new Set([]) };
 const set = new Set([]);
-obj.DEPRECATED = new Set(["<string:1103101954>", "<string:1413677058>", "<string:1151926274>"]);
+obj.DEPRECATED = new Set(["<string:1103298562>", "<string:1417150466>", "<string:1153433602>"]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/MetricEvents.tsx");
 

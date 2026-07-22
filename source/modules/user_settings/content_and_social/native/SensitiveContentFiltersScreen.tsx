@@ -1,10 +1,10 @@
-// Module ID: 13596
-// Function ID: 103038
+// Module ID: 13603
+// Function ID: 103071
 // Name: UserSettingsSensitiveContentFilters
 // Dependencies: []
 // Exports: default
 
-// Module 13596 (UserSettingsSensitiveContentFilters)
+// Module 13603 (UserSettingsSensitiveContentFilters)
 let closure_3 = importAll(dependencyMap[0]);
 const MobileSetting = arg1(dependencyMap[1]).MobileSetting;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));

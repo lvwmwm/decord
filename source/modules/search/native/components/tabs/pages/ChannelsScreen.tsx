@@ -1,9 +1,11 @@
-// Module ID: 15258
-// Function ID: 115191
+// Module ID: 15266
+// Function ID: 115234
 // Name: getVoiceStates
-// Dependencies: []
+// Dependencies: [2818572332, 2835349563, 1895825467, 2080374843, 33554491, 1979711488, 7, 6, 31, 11388, 5447, 2, 31, 1921, 9096, 33, 4126, 10068, 5164]
 
-// Module 15258 (getVoiceStates)
+// Module 15266 (getVoiceStates)
+import getCardBackgroundToken from "getCardBackgroundToken";
+
 function getVoiceStates(guildId) {
   let tmp = arg1;
   if (guildId.isGuildStageVoice()) {
@@ -22,7 +24,9 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_9 = arg1(dependencyMap[4]).SearchResultContentEntityTypes;
 const jsx = arg1(dependencyMap[5]).jsx;
 const tmp2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function ChannelsScreen(searchContext) {
+const result = getCardBackgroundToken.fileFinishedImporting("modules/search/native/components/tabs/pages/ChannelsScreen.tsx");
+
+export default importAllResult.memo(function ChannelsScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const arg1 = searchContext;
   let obj = arg1(dependencyMap[6]);
@@ -185,6 +189,3 @@ const memoResult = importAllResult.memo(function ChannelsScreen(searchContext) {
   }
   return tmp18;
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/search/native/components/tabs/pages/ChannelsScreen.tsx");
-
-export default memoResult;

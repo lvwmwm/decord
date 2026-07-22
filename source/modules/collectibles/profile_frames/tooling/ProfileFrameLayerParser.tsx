@@ -1,10 +1,10 @@
-// Module ID: 8239
-// Function ID: 65056
+// Module ID: 8240
+// Function ID: 65068
 // Name: isValidAnchor
 // Dependencies: []
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8239 (isValidAnchor)
+// Module 8240 (isValidAnchor)
 function isValidAnchor(first1) {
   return set1.has(first1);
 }

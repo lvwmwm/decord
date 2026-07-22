@@ -1,11 +1,11 @@
 // Module ID: 8097
-// Function ID: 64164
+// Function ID: 64174
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 8097 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "RNSVGPath", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
-obj = { useEffect: "}", "": "]", a: ")", next: "", View: "CIColorInvert", borderRadius: "CIColorMonochrome", color: "CIColorPosterize", fill: "CIFalseColor", backgroundColor: "CIMaximumComponent", flags: "CIMinimumComponent", getCurrentUser: "CIPhotoEffectChrome", options: "CIPhotoEffectFade", resizeMode: "CIPhotoEffectInstant", registerAsset: "CIPhotoEffectMono", p: "CIPhotoEffectNoir", user: "CIPhotoEffectProcess", LIGHT: "CIPhotoEffectTonal", -421285988: "CIPhotoEffectTransfer", 796444832: "CISepiaTone", 985169655: 4, 1497850186: 20, 1594361353: 14, -391529294: "center", -33075736: null, 50451446: null, -1100824424: null, -411608378: null, -1457420187: null };
+obj = { $link: "}", evergreen_tree: "]", "Null": ")", "Null": "", "Null": "CIColorInvert", "Null": "CIColorMonochrome", "Null": "CIColorPosterize", "Null": "CIFalseColor", "Null": "CIMaximumComponent", "Null": "CIMinimumComponent", "Null": "CIPhotoEffectChrome", "Null": "CIPhotoEffectFade", color: "CIPhotoEffectInstant", fill: "CIPhotoEffectMono", fillOpacity: "CIPhotoEffectNoir", fillRule: "CIPhotoEffectProcess", stroke: "CIPhotoEffectTonal", strokeOpacity: "CIPhotoEffectTransfer", strokeWidth: "CISepiaTone", strokeLinecap: 8, strokeLinejoin: 6, strokeDasharray: 4, strokeDashoffset: "center", strokeMiterlimit: 518717441, vectorEffect: 87425026, propList: -1818165246, filter: -683474943, fontSize: 855638500 };
 obj = { process: require(dependencyMap[0]).default };
 obj.color = obj;
 const _module = require(dependencyMap[1]);

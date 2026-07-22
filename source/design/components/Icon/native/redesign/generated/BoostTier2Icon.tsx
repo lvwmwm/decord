@@ -1,10 +1,10 @@
-// Module ID: 14918
-// Function ID: 112351
+// Module ID: 14926
+// Function ID: 112394
 // Name: BoostTier2Icon
 // Dependencies: []
 // Exports: BoostTier2Icon
 
-// Module 14918 (BoostTier2Icon)
+// Module 14926 (BoostTier2Icon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BoostTier2Icon.tsx");

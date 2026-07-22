@@ -1,5 +1,5 @@
 // Module ID: 7657
-// Function ID: 61226
+// Function ID: 61236
 // Name: hasReplyPermission
 // Dependencies: []
 // Exports: canReplyToMessage, useCanReplyToMessage

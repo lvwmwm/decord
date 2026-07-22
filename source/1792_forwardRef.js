@@ -5,7 +5,7 @@
 
 // Module 1792 (forwardRef)
 let forwardRef;
-let closure_3 = ["cursor", "space", "scales", "toString", "isArray", "code", "start", "TypeError", "isArray"];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 ({ useCallback: closure_6, useEffect: closure_7, useImperativeHandle: closure_8, useMemo: closure_9, forwardRef } = arg1(dependencyMap[2]));

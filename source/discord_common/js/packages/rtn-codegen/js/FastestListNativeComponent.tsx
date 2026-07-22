@@ -1,11 +1,11 @@
-// Module ID: 9237
-// Function ID: 72248
+// Module ID: 9238
+// Function ID: 72261
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 9237 (__INTERNAL_VIEW_CONFIG)
+// Module 9238 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "FastestList", directEventTypes: { topLayout: { registrationName: "onLayout" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topVisibleItemsChanged: { registrationName: "onVisibleItemsChanged" }, topUnexpectedItemSize: { registrationName: "onUnexpectedItemSize" } } };
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": null, "Bool(false)": null };
+obj = {};
 const _module = require(dependencyMap[0]);
 const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({}));
 obj.validAttributes = obj;

@@ -1,10 +1,10 @@
-// Module ID: 10878
-// Function ID: 84579
+// Module ID: 10879
+// Function ID: 84592
 // Name: PublicGuildAnnouncementProfile
 // Dependencies: []
 // Exports: default
 
-// Module 10878 (PublicGuildAnnouncementProfile)
+// Module 10879 (PublicGuildAnnouncementProfile)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ let obj = arg1(dependencyMap[3]);
 obj = { content: { padding: 16 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.avatar = obj;
-obj.nameWrapper = { "Null": 7, "Null": 370 };
+obj.nameWrapper = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.headerText = { marginLeft: 8 };
 obj.description = { marginTop: 8 };
 let closure_6 = obj.createStyles(obj);

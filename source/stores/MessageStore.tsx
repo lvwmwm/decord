@@ -1,5 +1,5 @@
 // Module ID: 4345
-// Function ID: 38438
+// Function ID: 38446
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -116,7 +116,7 @@ function reinjectEphemerals(channelId, truncateResult) {
 }
 function handleConnectionOpen() {
   const item = importDefault(dependencyMap[24]).forEach((mutate) => {
-    callback(closure_2[24]).commit(mutate.mutate({ isNewBackTitleImplementation: null, usesHeaderFlexboxImplementation: null }));
+    callback(closure_2[24]).commit(mutate.mutate({ 0: true, 9223372036854775807: true }));
   });
   set.clear();
 }
@@ -685,7 +685,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[39]), {
   LOAD_MESSAGES_FAILURE: function handleLoadMessagesFailure(channelId) {
     const orCreate = importDefault(dependencyMap[24]).getOrCreate(channelId.channelId);
     const obj = importDefault(dependencyMap[24]);
-    importDefault(dependencyMap[24]).commit(orCreate.mutate({}));
+    importDefault(dependencyMap[24]).commit(orCreate.mutate({ "Bool(false)": 1766088043, "Bool(false)": 827788593 }));
   },
   LOAD_MESSAGES_SUCCESS_CACHED: function handleLoadMessagesSuccessCached(truncate) {
     let after;
@@ -1001,7 +1001,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[39]), {
   THREAD_CREATE_LOCAL: function handleThreadCreateLocal(channelId) {
     let obj = importDefault(dependencyMap[24]);
     const orCreate = obj.getOrCreate(channelId.channelId);
-    obj = { 0: "absolute", 9223372036854775807: -1, 9223372036854775807: -1, newMessages: [] };
+    obj = { marginLeft: "HTTP", padding: "Date", avatarMarginRight: "HTTP", newMessages: [] };
     const complete = orCreate.loadComplete(obj);
     importDefault(dependencyMap[24]).commit(complete);
   },
@@ -1239,7 +1239,7 @@ const obj = {
   LOAD_MESSAGES_FAILURE: function handleLoadMessagesFailure(channelId) {
     const orCreate = importDefault(dependencyMap[24]).getOrCreate(channelId.channelId);
     const obj = importDefault(dependencyMap[24]);
-    importDefault(dependencyMap[24]).commit(orCreate.mutate({}));
+    importDefault(dependencyMap[24]).commit(orCreate.mutate({ "Bool(false)": 1766088043, "Bool(false)": 827788593 }));
   },
   LOAD_MESSAGES_SUCCESS_CACHED: function handleLoadMessagesSuccessCached(truncate) {
     let after;
@@ -1555,7 +1555,7 @@ const obj = {
   THREAD_CREATE_LOCAL: function handleThreadCreateLocal(channelId) {
     let obj = importDefault(dependencyMap[24]);
     const orCreate = obj.getOrCreate(channelId.channelId);
-    obj = { 0: "absolute", 9223372036854775807: -1, 9223372036854775807: -1, newMessages: [] };
+    obj = { marginLeft: "HTTP", padding: "Date", avatarMarginRight: "HTTP", newMessages: [] };
     const complete = orCreate.loadComplete(obj);
     importDefault(dependencyMap[24]).commit(complete);
   },

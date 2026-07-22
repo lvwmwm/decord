@@ -1,21 +1,21 @@
-// Module ID: 12144
-// Function ID: 93556
+// Module ID: 12148
+// Function ID: 93582
 // Name: GiftCodeRedeemError
 // Dependencies: []
 // Exports: default
 
-// Module 12144 (GiftCodeRedeemError)
+// Module 12148 (GiftCodeRedeemError)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(true)": 0.129, "Bool(true)": 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj = { "Null": 0.129, "Null": 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.body = { voiceCategoryExpand: true, GEN_AI_SYSTEM_ATTRIBUTE: true, EXPRESSION_FOOTER_HEIGHT: true, marginHorizontal: true, alignContent: true, updateErrors: true };
-obj.header = {};
-obj.message = {};
+obj.body = {};
+obj.header = { MINIMAL: 43691329, currentScreenId: 1869037824 };
+obj.message = { MINIMAL: null, currentScreenId: null };
 obj.footer = { paddingHorizontal: 24 };
 let closure_8 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);

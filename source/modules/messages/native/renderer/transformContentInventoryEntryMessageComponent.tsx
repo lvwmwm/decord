@@ -1,5 +1,5 @@
 // Module ID: 7803
-// Function ID: 62258
+// Function ID: 62268
 // Name: getMissingIconURL
 // Dependencies: []
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
@@ -42,7 +42,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 const ImageSizes = require(dependencyMap[4]).ImageSizes;
-const items = [{ isArray: false, fileFinishedImporting: false, string: false, y: false }, { isArray: false, fileFinishedImporting: false, string: false, y: false }];
+const items = [{ 9223372036854775807: "always", 0: false, -9223372036854775808: "list", 0: true }, { 9223372036854775807: "always", 0: false, -9223372036854775808: "list", 0: true }];
 const _module = require(dependencyMap[22]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformContentInventoryEntryMessageComponent.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 15693
-// Function ID: 119969
+// Module ID: 15701
+// Function ID: 120012
 // Name: useTapGestures
 // Dependencies: []
 // Exports: default
 
-// Module 15693 (useTapGestures)
+// Module 15701 (useTapGestures)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = { code: "function useTapGesturesTsx1(){const{runOnJS,handleEvent}=this.__closure;return runOnJS(handleEvent)('double');}" };
 let closure_5 = { code: "function useTapGesturesTsx2(event,manager){const{isFocusedVideoZoomed}=this.__closure;if(isFocusedVideoZoomed.get()){manager.fail();}}" };

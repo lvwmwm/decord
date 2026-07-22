@@ -1,5 +1,5 @@
 // Module ID: 5765
-// Function ID: 49384
+// Function ID: 49395
 // Name: canChannelUseSoundboard
 // Dependencies: []
 // Exports: canSelectedVoiceChannelUseSoundboard, useCanChannelUseSoundboard

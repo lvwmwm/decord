@@ -1,5 +1,5 @@
 // Module ID: 6883
-// Function ID: 54605
+// Function ID: 54616
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -89,7 +89,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("AppDatabaseManager");
-const set = new Set([true]);
+const set = new Set([]);
 const tmp5 = () => {
   class AppDatabaseManager {
     constructor(arg0, arg1, arg2) {

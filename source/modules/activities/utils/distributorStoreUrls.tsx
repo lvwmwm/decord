@@ -1,10 +1,10 @@
-// Module ID: 8591
-// Function ID: 68241
+// Module ID: 8592
+// Function ID: 68253
 // Name: XBOX_DISCORD_OCID
 // Dependencies: []
 // Exports: buildXboxGamePassStoreDeepLinkUrl, buildXboxGamePassStoreUrl
 
-// Module 8591 (XBOX_DISCORD_OCID)
+// Module 8592 (XBOX_DISCORD_OCID)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/activities/utils/distributorStoreUrls.tsx");
 

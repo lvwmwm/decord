@@ -1,10 +1,10 @@
-// Module ID: 8559
-// Function ID: 68030
+// Module ID: 8560
+// Function ID: 68042
 // Name: useTooltipPosition
 // Dependencies: []
 // Exports: default
 
-// Module 8559 (useTooltipPosition)
+// Module 8560 (useTooltipPosition)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");
 
@@ -41,6 +41,6 @@ export default function useTooltipPosition(arg0, arg1, arg2, arg3) {
         return obj;
       }
     }
-    return { -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false };
+    return { <string:67523032>: "spring", <string:1364605794>: 0.4, <string:996246534>: 1 };
   }, items);
 };

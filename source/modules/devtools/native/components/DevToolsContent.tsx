@@ -1,9 +1,9 @@
-// Module ID: 13383
-// Function ID: 101741
+// Module ID: 13390
+// Function ID: 101774
 // Name: DevToolsContentSortButtons
 // Dependencies: []
 
-// Module 13383 (DevToolsContentSortButtons)
+// Module 13390 (DevToolsContentSortButtons)
 function DevToolsContentSortButtons(arg0) {
   let end;
   let start;
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let label;
   let value;
   ({ label, value } = arg0);
-  const obj = {};
+  const obj = { cachedAt: null, edpbxy: null };
   const items = [label, callback3(arg1(dependencyMap[12]).Text, { variant: "text-xs/semibold", children: value })];
   obj.children = items;
   return callback4(arg1(dependencyMap[12]).Text, obj);

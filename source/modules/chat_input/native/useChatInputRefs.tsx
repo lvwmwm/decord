@@ -1,10 +1,10 @@
-// Module ID: 11102
-// Function ID: 86374
+// Module ID: 11103
+// Function ID: 86387
 // Name: useChatInputRefs
 // Dependencies: []
 // Exports: default
 
-// Module 11102 (useChatInputRefs)
+// Module 11103 (useChatInputRefs)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const DraftType = arg1(dependencyMap[2]).DraftType;
@@ -59,7 +59,7 @@ export default function useChatInputRefs(chatInputProps) {
     };
   }, items2);
   let closure_14 = React.useRef(importDefault(closure_2[10])(() => ({ text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldHeight: chatInputTextFieldHeight })));
-  closure_15 = React.useRef({ ty: null, nm: null });
+  closure_15 = React.useRef({ <string:2124317212>: true, <string:3650900320>: true });
   const items3 = [tmp2];
   const memo = React.useMemo(() => {
     let obj = chatInputTextFieldHeight(closure_2[12]);

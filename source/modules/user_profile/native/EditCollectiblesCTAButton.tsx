@@ -1,5 +1,5 @@
 // Module ID: 7850
-// Function ID: 62579
+// Function ID: 62589
 // Dependencies: []
 
 // Module 7850
@@ -8,7 +8,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[2]).CollectiblesMobileShopScreen;
 let closure_6 = arg1(dependencyMap[3]).MEDIA_PICKER_SEND_BUTTON_SPRING;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = arg1(dependencyMap[5]).createStyles({ buttonRowContainer: { alignSelf: "resolve", flexDirection: "isArray", justifyContent: "values", rowGap: "isArray", flexDirection: "Map" }, buttonContainer: {} });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ buttonRowContainer: {}, buttonContainer: { canAnimate: "<string:1912602886>", style: "Boolean", url: "Boolean", isStageCall: "see-Latn-US", avatarStyle: "<string:3678535680>", user: "<string:1291845935>", guildId: "<string:16777581>", renderVideoDetails: "UNREADS_ALL_MESSAGES" } });
 let closure_9 = { code: "function EditCollectiblesCTAButtonTsx1(){const{shouldShowButton,APPLY_BUTTON_BOUNCE_DISTANCE,APPLY_BUTTON_SCALE_TRANSITION,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetTranslateY=shouldShowButton.get()?0:APPLY_BUTTON_BOUNCE_DISTANCE;const targetScale=shouldShowButton.get()?1:APPLY_BUTTON_SCALE_TRANSITION;return{transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}]};}" };
 let closure_10 = { code: "function EditCollectiblesCTAButtonTsx2(){const{shouldShowButton}=this.__closure;return{pointerEvents:shouldShowButton.get()?'box-none':'none'};}" };
 let closure_11 = { code: "function EditCollectiblesCTAButtonTsx3(){const{shouldShowButton,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=shouldShowButton.get()?1:0;return{opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,{...MEDIA_PICKER_SEND_BUTTON_SPRING,overshootClamping:true})};}" };
@@ -84,7 +84,7 @@ const memoResult = importAllResult.memo((user) => {
       return obj;
     }
   }
-  obj = { presentation: 117955, enabled: 883835137, type: 1091633153, shouldShowButton: sharedValue, reducedMotion: stateFromStores, withSpring: arg1(dependencyMap[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: closure_6 };
+  obj = { hasVoted: 82030, showResults: 102726, isInteractive: 1207976193, shouldShowButton: sharedValue, reducedMotion: stateFromStores, withSpring: arg1(dependencyMap[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: closure_6 };
   O.__closure = obj;
   O.__workletHash = 15594859424201;
   O.__initData = closure_9;

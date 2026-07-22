@@ -1,10 +1,10 @@
-// Module ID: 10950
-// Function ID: 85153
+// Module ID: 10951
+// Function ID: 85166
 // Name: _sendGiftIntentGif
 // Dependencies: []
 // Exports: default
 
-// Module 10950 (_sendGiftIntentGif)
+// Module 10951 (_sendGiftIntentGif)
 function _sendGiftIntentGif() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);
@@ -112,13 +112,13 @@ function GiftIntentGifModalBody(channelId) {
   obj2.children = tmp13(importDefault(dependencyMap[19]), obj3);
   items3[1] = tmp11(tmp12, obj2);
   obj4 = { style: tmp.footer };
-  const obj5 = { FINISH: "d5c9201b5d59debfcddeffefede24edc", hasMediaOptions: "lt.messages.d5c9201b5d59debfcddeffefede24edc.compiled.messages" };
+  const obj5 = { PresetNothing: "d7825c8630cb00012f54beafd65fb181", ThemedNotifications: "nl.messages.d7825c8630cb00012f54beafd65fb181.compiled.messages" };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj5.text = intl3.string(arg1(dependencyMap[17]).t.TXNS7S);
   obj5.onPress = callback1;
   obj5.disabled = null == first;
   const items4 = [callback3(arg1(dependencyMap[20]).Button, obj5), ];
-  const obj6 = { FINISH: true, hasMediaOptions: true };
+  const obj6 = {};
   const intl4 = arg1(dependencyMap[17]).intl;
   obj6.text = intl4.string(arg1(dependencyMap[17]).t.ETE/oC);
   obj6.onPress = onClose;

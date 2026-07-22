@@ -1,12 +1,10 @@
 // Module ID: 480
 // Function ID: 6188
 // Name: isThrottled
-// Dependencies: [1917911040, 32768000, 4084334592, 3992977409, 1929379841, 502, 493, 494, 127602]
+// Dependencies: []
 // Exports: trackMaker
 
 // Module 480 (isThrottled)
-import randomUUID from "randomUUID";
-
 function isThrottled(TEXT_AREA_CTA_CLICKED) {
   let tmp = null != closure_4[TEXT_AREA_CTA_CLICKED];
   if (tmp) {
@@ -17,15 +15,16 @@ function isThrottled(TEXT_AREA_CTA_CLICKED) {
 }
 let closure_4 = {};
 let closure_5 = {};
-const result = randomUUID.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsUtils.tsx");
+const _module = require(dependencyMap[5]);
+const result = _module.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsUtils.tsx");
 
-export const encodeProperties = require("uint8Array").encodeProperties;
+export const encodeProperties = require(dependencyMap[6]).encodeProperties;
 export const analyticsTrackingStoreMaker = require(dependencyMap[0]).analyticsTrackingStoreMaker;
 export const AnalyticsActionHandlers = require(dependencyMap[0]).AnalyticsActionHandlers;
 export const ImpressionTypes = require(dependencyMap[1]).ImpressionTypes;
 export const ImpressionGroups = require(dependencyMap[1]).ImpressionGroups;
-export const ImpressionNames = require("unsafeStringify").ImpressionNames;
-export const NetworkActionNames = require("unsafeStringify").NetworkActionNames;
+export const ImpressionNames = require(dependencyMap[7]).ImpressionNames;
+export const NetworkActionNames = require(dependencyMap[7]).NetworkActionNames;
 export const getSuperProperties = require(dependencyMap[8]).getSuperProperties;
 export const getSuperPropertiesBase64 = require(dependencyMap[8]).getSuperPropertiesBase64;
 export const extendSuperProperties = require(dependencyMap[8]).extendSuperProperties;

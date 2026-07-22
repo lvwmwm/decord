@@ -1,5 +1,5 @@
 // Module ID: 7670
-// Function ID: 61281
+// Function ID: 61291
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: astToString
@@ -318,7 +318,7 @@ function flattenAst(isSlate, content, content) {
 function constrainAst(content, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = {};
+    obj = { "Null": "Text", "Null": "keys" };
   }
   let closure_0 = obj;
   if (Array.isArray(content)) {

@@ -1,5 +1,5 @@
 // Module ID: 4489
-// Function ID: 39610
+// Function ID: 39618
 // Name: ScreenStackHeaderSubview
 // Dependencies: []
 // Exports: ScreenStackHeaderBackButtonImage, ScreenStackHeaderCenterView, ScreenStackHeaderLeftView, ScreenStackHeaderRightView, ScreenStackHeaderSearchBarView
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({ headerSubview: {}, headerSubviewCenter: {}, h
 export const ScreenStackHeaderSubview = importDefault(dependencyMap[10]);
 export const ScreenStackHeaderConfig = forwardRefResult;
 export const ScreenStackHeaderBackButtonImage = function ScreenStackHeaderBackButtonImage(arg0) {
-  const obj = { type: "back", style: closure_10.headerSubview, synchronousShadowStateUpdatesEnabled: importDefault(dependencyMap[9]).experiment.synchronousHeaderSubviewUpdatesEnabled, children: <closure_8 {...Object.assign({}, arg0)} /> };
+  const obj = { type: "back", style: closure_10.headerSubview, synchronousShadowStateUpdatesEnabled: importDefault(dependencyMap[9]).experiment.synchronousHeaderSubviewUpdatesEnabled, children: <closure_8 {...Object.assign({ usePlaceholderAnimatedStyle: "isArray", shareInviteFailed: "isArray" }, arg0)} /> };
   return jsx(importDefault(dependencyMap[10]), obj);
 };
 export const ScreenStackHeaderRightView = function ScreenStackHeaderRightView(style) {

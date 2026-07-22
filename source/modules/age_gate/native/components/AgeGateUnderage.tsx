@@ -1,10 +1,10 @@
-// Module ID: 14648
-// Function ID: 110458
+// Module ID: 14656
+// Function ID: 110501
 // Name: AgeGateUnderage
 // Dependencies: []
 // Exports: default
 
-// Module 14648 (AgeGateUnderage)
+// Module 14656 (AgeGateUnderage)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
@@ -12,7 +12,7 @@ const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
 const tmp2 = arg1(dependencyMap[3]);
 let closure_9 = arg1(dependencyMap[4]).createStyles((arg0) => {
   let obj = {};
-  obj = { "Bool(false)": "<string:141689278>", "Bool(false)": "<string:134217728>", "Bool(false)": "<string:1627389952>", "Bool(false)": "<string:967463482>", "Bool(false)": "braintree:merchantId" };
+  obj = { GappedList: "<string:141689285>", "Bool(false)": "<string:134217728>", "Bool(false)": "<string:1627389952>", "Bool(false)": "<string:972837434>", "Bool(false)": "construct" };
   let num = 0;
   if (arg0) {
     num = 80;
@@ -87,7 +87,7 @@ export default function AgeGateUnderage(onClose) {
   const items1 = [tmp9, callback(importDefault(dependencyMap[12]), {}), callback(arg1(dependencyMap[13]).ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp2.header, children: stringResult };
   items1[3] = callback(importDefault(dependencyMap[14]), obj);
-  obj1 = { delete: 1, dispatch: 1, raw: null, style: tmp2.body };
+  obj1 = { "Null": -1493172224, "Null": 1962934272, alignItems: 0, style: tmp2.body };
   const intl2 = arg1(dependencyMap[10]).intl;
   if (flag) {
     let stringResult1 = intl2.string(tmp14(tmp15[10]).t.GDQgHL);
@@ -107,7 +107,7 @@ export default function AgeGateUnderage(onClose) {
   let tmp22 = null;
   if (existingUser) {
     const obj3 = {};
-    const obj4 = { delete: 1, dispatch: 1, raw: null, style: tmp2.body };
+    const obj4 = { "Null": -1493172224, "Null": 1962934272, alignItems: 0, style: tmp2.body };
     const intl4 = arg1(dependencyMap[10]).intl;
     const obj5 = { days: 30 };
     obj4.children = intl4.format(arg1(dependencyMap[10]).t.3axQdB, obj5);

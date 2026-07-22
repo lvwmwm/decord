@@ -1,10 +1,10 @@
-// Module ID: 10223
-// Function ID: 78997
+// Module ID: 10224
+// Function ID: 79010
 // Name: hasMedia
 // Dependencies: []
 // Exports: generateInAppNotificationId, getMessagePreviewTextVariant, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
 
-// Module 10223 (hasMedia)
+// Module 10224 (hasMedia)
 function hasMedia(hasFlag) {
   let hasFlagResult = hasFlag.hasFlag(constants4.IS_VOICE_MESSAGE);
   if (!hasFlagResult) {

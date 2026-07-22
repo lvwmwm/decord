@@ -1,5 +1,5 @@
 // Module ID: 4112
-// Function ID: 34014
+// Function ID: 34016
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: findCodedLink, isSuspiciousCodedLink, remainingPathFromDiscordHostMatch
@@ -86,7 +86,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getHost(GUILD_TEMPLATE_HOST) {
   if (null == GUILD_TEMPLATE_HOST) {
-    return { "Bool(false)": "o", "Bool(false)": "o" };
+    return {};
   } else if (GUILD_TEMPLATE_HOST.indexOf("/") >= 0) {
     const parsed = arg1(dependencyMap[4]).parse(GUILD_TEMPLATE_HOST, undefined, true);
     let obj = {};
@@ -152,7 +152,7 @@ function getPathsFromURL(target) {
     }
     return obj;
   }
-  obj = {};
+  obj = { "Bool(true)": true, "Bool(true)": 5, "Bool(true)": true, "Bool(true)": true };
 }
 function findCodedLinks(sanitizeUrlResult) {
   if (null == sanitizeUrlResult) {

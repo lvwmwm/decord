@@ -1,10 +1,10 @@
-// Module ID: 9218
-// Function ID: 72092
+// Module ID: 9219
+// Function ID: 72105
 // Name: OrSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 9218 (OrSeparator)
+// Module 9219 (OrSeparator)
 class OrSeparator {
   constructor() {
     tmp = closure_11();
@@ -12,7 +12,7 @@ class OrSeparator {
     obj = { style: tmp.innerSeparator };
     items = [, , ];
     items[0] = jsx(View, obj);
-    obj1 = { delete: 1404174337, dispatch: null, raw: null };
+    obj1 = { "Null": false, "Null": false, alignItems: false };
     obj1.style = tmp.orText;
     intl = arg1(dependencyMap[7]).intl;
     obj1.children = intl.string(arg1(dependencyMap[7]).t.HEuagM);
@@ -37,18 +37,18 @@ const tmp4 = arg1(dependencyMap[3]);
 obj.container = { flexGrow: 2, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 const obj1 = { flexGrow: 2, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.textInput = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-const obj3 = { onPress: null, name: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj3 = { 9223372036854775807: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -9223372036854775808: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.innerSeparator = obj3;
-obj.separator = { 1453996901: null, -1973307556: "\u{1F937}\u{1F3FF}", 1654826833: true, -699287860: null };
-const obj4 = { flex: "press", accessible: "toggle_existing_reaction_button", withSpring: "react", marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
-obj.orText = obj4;
+obj.separator = { alignItems: null, justifyContent: "\u{1F937}\u{1F3FC}", margin: true, paddingHorizontal: null };
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj.orText = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
 obj.header = { textAlign: "center" };
 obj.description = {};
 obj.exampleText = { marginTop: 8 };
 let closure_11 = obj.createStyles(obj);
-const items = [null, null, null];
+const items = [];
 let closure_13 = items[0];
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
+const obj4 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/accept_invite/native/JoinServer.tsx");
 
 export default function JoinServer(arg0) {
@@ -130,7 +130,7 @@ export default function JoinServer(arg0) {
   obj10.onPress = onDone;
   items5[1] = callback(arg1(dependencyMap[12]).Button, obj10);
   items5[2] = callback(OrSeparator, {});
-  const obj11 = {};
+  const obj11 = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7" };
   const intl8 = arg1(dependencyMap[7]).intl;
   obj11.text = intl8.string(arg1(dependencyMap[7]).t.MOqX/G);
   const intl9 = arg1(dependencyMap[7]).intl;

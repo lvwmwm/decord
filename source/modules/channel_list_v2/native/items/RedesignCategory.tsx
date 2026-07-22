@@ -1,10 +1,10 @@
-// Module ID: 14841
-// Function ID: 111848
+// Module ID: 14849
+// Function ID: 111891
 // Name: renderCategoryItem
 // Dependencies: []
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 14841 (renderCategoryItem)
+// Module 14849 (renderCategoryItem)
 function renderCategoryItem(arg0) {
   let accessibilityState;
   let icon;
@@ -42,7 +42,7 @@ function renderCategoryItem(arg0) {
   items[1] = obj;
   let tmp3Result = name;
   if ("string" === typeof name) {
-    obj = { 9223372036854775807: 0, -9223372036854775808: null, 0: 0, 0: 96 };
+    obj = { UP_RIGHT: 0.931, DOWN_RIGHT: 0, UP_LEFT: null, DOWN_LEFT: 1 };
     let str = "text-subtle";
     if (muted) {
       str = "text-muted";
@@ -135,7 +135,7 @@ const styles = obj.createStyles(() => {
     flag = false;
   }
   let obj = { categoryWrapper: obj };
-  obj = { experimental_useNativeText: -1437532158, lineClamp: -1032896085, backgroundColor: -12517375, borderRadius: 1358955119, display: 1598139306, paddingVertical: closure_10 };
+  obj = { EMOJI_PICKER_EMOJI_CLICKED: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004199297784429531, display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000339131540112926, useFramePreviewOverrideStore: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001447439992483183, GuildEventShareAction: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010511712973401546, useCustomBackgroundGradient: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010511712949619592, paddingVertical: closure_10 };
   obj = {};
   const obj1 = {};
   if (flag) {
@@ -165,7 +165,7 @@ const styles = obj.createStyles(() => {
   obj.iconWrapperStyles = {};
   return obj;
 });
-obj = { "Null": -536870861, "Null": -299892737 };
+obj = { createStyles: "%FunctionPrototype%", guild_id: "paddingStart" };
 obj = {};
 const merged = Object.assign(obj);
 const items = [{ rotate: "-90deg" }];
@@ -223,7 +223,7 @@ export const SuggestedCategory = function SuggestedCategory(guildId) {
   const obj = {};
   const callback = React.useCallback(() => {
     let obj = guildId(closure_2[20]);
-    obj = { position: true, width: true, aspectRatio: true };
+    obj = { 0: "r", 9223372036854775807: "ru-UA", 9223372036854775807: "Array" };
     obj = {};
     const intl = guildId(closure_2[19]).intl;
     obj.label = intl.string(guildId(closure_2[19]).t.VkKicb);

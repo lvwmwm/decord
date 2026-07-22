@@ -1,10 +1,10 @@
-// Module ID: 11846
-// Function ID: 91797
+// Module ID: 11847
+// Function ID: 91811
 // Name: NintendoSwitchNeutralIcon
 // Dependencies: [57, 31, 27, 33, 4126, 689]
 // Exports: NintendoSwitchNeutralIcon
 
-// Module 11846 (NintendoSwitchNeutralIcon)
+// Module 11847 (NintendoSwitchNeutralIcon)
 import "_slicedToArray";
 import { jsx } from "module_31";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

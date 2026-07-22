@@ -1,13 +1,13 @@
-// Module ID: 10672
-// Function ID: 83186
+// Module ID: 10673
+// Function ID: 83199
 // Dependencies: []
 
-// Module 10672
+// Module 10673
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ container: {} });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ container: { explicitContentGuilds: "\u{1F9D1}\u{1F3FC}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", CHANNEL_ICON_EMOJIS_GENERATED: true, questDockHeaderActionDisclosures: null, savedMessageDeleteObjectToClient: 15.1, FJD: null } });
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;

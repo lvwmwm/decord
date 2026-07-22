@@ -1,10 +1,13 @@
-// Module ID: 15510
-// Function ID: 118352
+// Module ID: 15518
+// Function ID: 118395
 // Name: AnimatedToast
-// Dependencies: [680460288, 656015360, 131072, 3363176448, 1258291240, 3707764738, 1224736769, 2852126738, 33554437, 2063597568, 31, 10440, 3979, 1557, 4993, 477, 14587, 10010, 3989, 4097]
+// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
 
-// Module 15510 (AnimatedToast)
-import getAndroidLightImpactEffect from "getAndroidLightImpactEffect";
+// Module 15518 (AnimatedToast)
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 function AnimatedToast(toast) {
   toast = toast.toast;
@@ -24,7 +27,7 @@ function AnimatedToast(toast) {
   const sharedValue = obj.useSharedValue(0);
   const size = importDefault(dependencyMap[7])();
   const width = size.width;
-  let closure_4 = width;
+  let __exportStarResult1 = width;
   const height = size.height;
   let closure_5 = height;
   let obj1 = arg1(dependencyMap[8]);
@@ -33,7 +36,7 @@ function AnimatedToast(toast) {
   const top = importDefault(dependencyMap[9])().top;
   const callback = top;
   let obj2 = arg1(dependencyMap[10]);
-  let items = [closure_4];
+  let items = [__exportStarResult1];
   const stateFromStores = obj2.useStateFromStores(items, () => {
     let disableAnimations = width.useReducedMotion;
     if (!disableAnimations) {
@@ -162,25 +165,19 @@ function getItemKey(key) {
 function wrapChildren(children) {
   return jsx(arg1(dependencyMap[17]).NonExpandingOverlayView, { children });
 }
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { shadowColor: arg1(dependencyMap[5]).TOAST_CONTAINER_SHADOW_COLOR };
+obj = { shadowColor: require("__exportStarResult1").TOAST_CONTAINER_SHADOW_COLOR };
 obj.container = obj;
 let closure_7 = obj1.createStyles(obj);
 obj1 = { START: 0, [0]: "START", END: 1, [1]: "END" };
 const items = [, ];
 ({ START: arr[0], END: arr[1] } = obj1);
 let closure_10 = {};
-let closure_11 = { style: 1358954496, blurStyle: 24354011, blurTintRgba: -67108864, android_fallbackColor: -50331649, blurAmount: 33554431 };
+let closure_11 = { style: 1358954496, blurStyle: 24354124, blurTintRgba: -67108864, android_fallbackColor: -50331649, blurAmount: 33554431 };
 let closure_12 = { code: "function ToastContainerTsx1(){const{position,safeAreaTop,CONTAINER_DISTANCE_VERTICAL,screenHeight,toastHeight,bottomTabsHeight,youBarHeight,interpolate,animationState,ANIMATION_STATE_INPUT,CONTAINER_TOP_POSITION_START,isReducedMotion,withSpring,OPACITY_SPRING_PHYSICS,TOAST_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,screenWidth,CONTAINER_DISTANCE_SIDES}=this.__closure;const verticalPositionEnd=position==='top'?safeAreaTop+CONTAINER_DISTANCE_VERTICAL:screenHeight-toastHeight.get()-bottomTabsHeight-CONTAINER_DISTANCE_VERTICAL-youBarHeight;const translateY=interpolate(animationState.get(),ANIMATION_STATE_INPUT,[position==='top'?CONTAINER_TOP_POSITION_START:screenHeight-bottomTabsHeight-toastHeight.get()-youBarHeight,verticalPositionEnd]);return{opacity:!isReducedMotion?withSpring(animationState.get(),OPACITY_SPRING_PHYSICS):animationState.get(),transform:[{translateY:!isReducedMotion?withSpring(translateY,TOAST_SPRING_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}):translateY}],maxWidth:screenWidth-CONTAINER_DISTANCE_SIDES*2};}" };
 let closure_13 = { code: "function ToastContainerTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
-const result = getAndroidLightImpactEffect.fileFinishedImporting("modules/toast/native/ToastContainer.tsx");
-
-export default importAllResult.memo(() => {
+const memoResult = importAllResult.memo(() => {
   let obj = arg1(dependencyMap[10]);
   const items = [closure_5];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -208,3 +205,6 @@ export default importAllResult.memo(() => {
   obj = { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren };
   return jsx(arg1(dependencyMap[14]).TransitionGroup, obj);
 });
+const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/toast/native/ToastContainer.tsx");
+
+export default memoResult;

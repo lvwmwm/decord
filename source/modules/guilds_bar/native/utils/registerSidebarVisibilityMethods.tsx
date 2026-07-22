@@ -1,10 +1,10 @@
-// Module ID: 14766
-// Function ID: 111312
+// Module ID: 14774
+// Function ID: 111355
 // Name: registerGuildVisibilityMethod
 // Dependencies: []
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 14766 (registerGuildVisibilityMethod)
+// Module 14774 (registerGuildVisibilityMethod)
 const _module = require(dependencyMap[0]);
 ({ setGetVisibleChannelIds: closure_0, setGetVisibleGuildIds: closure_1 } = _module);
 let closure_2 = importDefault(dependencyMap[1]);

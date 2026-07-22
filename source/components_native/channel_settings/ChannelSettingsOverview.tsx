@@ -1,10 +1,10 @@
-// Module ID: 15371
-// Function ID: 117101
+// Module ID: 15379
+// Function ID: 117144
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15371 (_isNativeReflectConstruct)
+// Module 15379 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -86,7 +86,7 @@ obj2.slider = { marginHorizontal: 15 };
 obj4 = { paddingHorizontal: importDefault(dependencyMap[28]).modules.mobile.TABLE_ROW_PADDING };
 obj2.stackPadding = obj4;
 obj2.alertText = { marginTop: 16 };
-obj2.tagsWrapper = { 979464370: true, 1637975633: true, 50352554: true };
+obj2.tagsWrapper = { position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, location: 0.000000007919535119815975, body: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164 };
 const obj3 = { flex: 1, backgroundColor: importDefault(dependencyMap[28]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingTop: importDefault(dependencyMap[28]).space.PX_16 };
 obj2.addTagIconButtonWrapper = { justifyContent: "center", margin: importDefault(dependencyMap[28]).space.PX_4 };
 const obj5 = { justifyContent: "center", margin: importDefault(dependencyMap[28]).space.PX_4 };
@@ -580,19 +580,21 @@ const tmp7 = (PureComponent) => {
       }
       obj = { helperText: stringResult, hasIcons: false };
       obj = { border: "none" };
-      const obj1 = { style: { "Null": false, "Null": false, "Null": false, "Null": false } };
-      const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", style: { flexShrink: 1 } };
+      const obj1 = { style: { "Null": -504174744899997300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003696267499710345, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011865276442541145, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015865757 } };
+      const obj2 = { style: { flexShrink: 1 } };
       const intl4 = ChannelSettingsOverview(closure_2[36]).intl;
       obj2.children = intl4.string(ChannelSettingsOverview(closure_2[36]).t.piZgKF);
-      const items1 = [callback6(ChannelSettingsOverview(closure_2[45]).Text, obj2), callback6(ChannelSettingsOverview(closure_2[45]).Text, { children: secondsSliderLabel })];
+      const items1 = [callback6(ChannelSettingsOverview(closure_2[45]).Text, obj2), ];
+      const obj3 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, children: secondsSliderLabel };
+      items1[1] = callback6(ChannelSettingsOverview(closure_2[45]).Text, obj3);
       obj1.children = items1;
       const items2 = [callback7(closure_10, obj1), ];
-      const obj3 = { style: items3, value: self._cooldown, minimumValue: 0, maximumValue: length.length - 1, onValueChange: self.handleSlowmodeChange };
+      const obj4 = { style: items3, value: self._cooldown, minimumValue: 0, maximumValue: length.length - 1, onValueChange: self.handleSlowmodeChange };
       const items3 = [callback8(this.context).slider, {}];
       const intl5 = ChannelSettingsOverview(closure_2[36]).intl;
-      obj3.accessibilityLabel = intl5.string(ChannelSettingsOverview(closure_2[36]).t.piZgKF);
-      obj3.accessibilityValue = { text: secondsSliderLabel };
-      items2[1] = callback6(ChannelSettingsOverview(closure_2[63]).Slider, obj3);
+      obj4.accessibilityLabel = intl5.string(ChannelSettingsOverview(closure_2[36]).t.piZgKF);
+      obj4.accessibilityValue = { text: secondsSliderLabel };
+      items2[1] = callback6(ChannelSettingsOverview(closure_2[63]).Slider, obj4);
       obj.children = items2;
       obj.children = callback7(ChannelSettingsOverview(closure_2[62]).Card, obj);
       items.push(callback6(ChannelSettingsOverview(closure_2[59]).TableRowGroup, obj, "slowmode-section"));
@@ -831,14 +833,14 @@ const tmp7 = (PureComponent) => {
           obj.description = intl.format(ChannelSettingsOverview(closure_2[36]).t.SbQJk5, obj);
           obj.hasIcons = false;
           const obj1 = {};
-          const obj2 = { style: { "Null": false, "Null": false, "Null": false, "Null": false } };
-          const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+          const obj2 = { style: { "Null": -504174744899997300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003696267499710345, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011865276442541145, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015865757 } };
+          const obj3 = {};
           const obj4 = { flexShrink: 1 };
           obj3.style = obj4;
           const intl2 = ChannelSettingsOverview(closure_2[36]).intl;
           obj3.children = intl2.string(ChannelSettingsOverview(closure_2[36]).t.w2d0vU);
           const items1 = [callback6(ChannelSettingsOverview(closure_2[45]).Text, obj3), ];
-          const obj5 = {};
+          const obj5 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
           const _Math = Math;
           const _HermesInternal = HermesInternal;
           obj5.children = "" + Math.round(channel.bitrate / 1000) + "kbps";
@@ -931,14 +933,14 @@ const tmp7 = (PureComponent) => {
           obj.description = formatResult;
           obj.hasIcons = false;
           obj = {};
-          const obj1 = { style: { "Null": false, "Null": false, "Null": false, "Null": false } };
-          const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+          const obj1 = { style: { "Null": -504174744899997300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003696267499710345, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011865276442541145, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015865757 } };
+          const obj2 = {};
           const obj3 = { flexShrink: 1 };
           obj2.style = obj3;
           const intl4 = ChannelSettingsOverview(closure_2[36]).intl;
           obj2.children = intl4.string(ChannelSettingsOverview(closure_2[36]).t./AoSGN);
           const items1 = [callback6(ChannelSettingsOverview(closure_2[45]).Text, obj2), ];
-          const obj4 = { children: stringResult };
+          const obj4 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, children: stringResult };
           items1[1] = callback6(ChannelSettingsOverview(closure_2[45]).Text, obj4);
           obj1.children = items1;
           const items2 = [callback7(closure_10, obj1), ];
@@ -1485,7 +1487,7 @@ const tmp7 = (PureComponent) => {
             style: tmp.createTagButton,
             accessibilityRole: "button"
           };
-          const obj6 = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute", style: tmp.createTagButtonText };
+          const obj6 = { cachedAt: "png", edpbxy: "absolute", style: tmp.createTagButtonText };
           const intl4 = ChannelSettingsOverview(closure_2[36]).intl;
           obj6.children = intl4.string(ChannelSettingsOverview(closure_2[36]).t.F4is7L);
           obj5.children = callback6(ChannelSettingsOverview(closure_2[45]).Text, obj6);
@@ -1494,7 +1496,7 @@ const tmp7 = (PureComponent) => {
         items1[1] = tmp27;
         let tmp32 = null != error && error.length > 0;
         if (tmp32) {
-          const obj7 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: error };
+          const obj7 = { cachedAt: "GESTURE_FULL", edpbxy: "Int8Array", children: error };
           tmp32 = callback6(ChannelSettingsOverview(closure_2[45]).Text, obj7);
         }
         items1[2] = tmp32;

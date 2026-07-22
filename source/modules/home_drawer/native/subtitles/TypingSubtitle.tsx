@@ -1,10 +1,10 @@
-// Module ID: 14732
-// Function ID: 111115
+// Module ID: 14740
+// Function ID: 111158
 // Name: TypingSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14732 (TypingSubtitle)
+// Module 14740 (TypingSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -35,7 +35,7 @@ export default function TypingSubtitle(arg0) {
     tmp9 = callback(channelIconComponentWithGuild, obj);
   }
   const items = [tmp9, ];
-  obj1 = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, style: subtitleStyles.subtitleText };
+  obj1 = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821, style: subtitleStyles.subtitleText };
   let tmp12 = null;
   if (null != channelName) {
     const obj2 = { variant: "text-xs/medium" };

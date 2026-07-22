@@ -1,10 +1,10 @@
-// Module ID: 14286
-// Function ID: 107934
+// Module ID: 14294
+// Function ID: 107977
 // Name: BugIcon
 // Dependencies: []
 // Exports: BugIcon
 
-// Module 14286 (BugIcon)
+// Module 14294 (BugIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BugIcon.tsx");

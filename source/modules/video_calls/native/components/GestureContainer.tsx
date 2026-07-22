@@ -1,10 +1,10 @@
-// Module ID: 10740
-// Function ID: 83468
+// Module ID: 10741
+// Function ID: 83481
 // Name: GestureContainer
 // Dependencies: []
 // Exports: default
 
-// Module 10740 (GestureContainer)
+// Module 10741 (GestureContainer)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const useChannelCallStore = arg1(dependencyMap[2]).useChannelCallStore;
@@ -65,11 +65,11 @@ export default function GestureContainer(children) {
     let obj = { flex: 1 };
     obj = {};
     const items = [0.229, 0.06 * height];
-    obj.translateY = height(closure_2[8]).interpolate(sharedValue.get(), ["replace", "then"], items);
+    obj.translateY = height(closure_2[8]).interpolate(sharedValue.get(), [77601039, 1612144654], items);
     const items1 = [obj, ];
     obj = {};
     const obj3 = height(closure_2[8]);
-    obj.scale = height(closure_2[8]).interpolate(sharedValue.get(), ["replace", "then"], ["channelId", "channelId"]);
+    obj.scale = height(closure_2[8]).interpolate(sharedValue.get(), [77601039, 1612144654], [false, false]);
     items1[1] = obj;
     obj.transform = items1;
     return obj;

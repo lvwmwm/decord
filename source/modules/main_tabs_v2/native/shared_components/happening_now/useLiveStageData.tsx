@@ -1,10 +1,10 @@
-// Module ID: 14810
-// Function ID: 111644
+// Module ID: 14818
+// Function ID: 111687
 // Name: useLiveStageData
 // Dependencies: []
 // Exports: useLiveStageData
 
-// Module 14810 (useLiveStageData)
+// Module 14818 (useLiveStageData)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

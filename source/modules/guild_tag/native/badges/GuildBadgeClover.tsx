@@ -1,15 +1,15 @@
-// Module ID: 12835
-// Function ID: 98175
+// Module ID: 12842
+// Function ID: 98208
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeClover
 
-// Module 12835 (items)
+// Module 12842 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [0.45, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001532559681246835, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006324];
+let closure_4 = [0.45, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016094582337974406, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006324];
 let closure_5 = [];
-const items = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
+const items = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeClover.tsx");
 
@@ -22,7 +22,7 @@ export const GuildBadgeClover = function GuildBadgeClover(primaryTintColor) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false };
+  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
   let obj1 = arg1(dependencyMap[2]);
@@ -39,8 +39,8 @@ export const GuildBadgeClover = function GuildBadgeClover(primaryTintColor) {
   items[1] = callback(arg1(dependencyMap[3]).Path, obj1);
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M7 15h-2v-1h2v1ZM10 14v-2h1v3h-2v-1h1ZM10 12h-1v-1h1v1ZM4 11H2v-1h2v1ZM9 11h-2v-1h2v1ZM15 11h-1v-2h1v2ZM6 9h-1v-2h1v2ZM14 9h-1v-2h1v2ZM15 7h-1v-2h1v2ZM9 6h-2v-1h2v1ZM10 5h-1v-1h1v1ZM11 4h-1V2h1v2Z", fill: primaryColorsTransformed[1] });
   items[3] = callback(arg1(dependencyMap[3]).Path, { d: "M15 15h-1v-1h1v1ZM14 14h-1v-1h1v1ZM13 13h-1v-1h1v1ZM5 12h-1v-1h1v1ZM12 12h-1v-1h1v1ZM6 11h-1v-1h1v1ZM11 11h-1v-1h1v1ZM7 10h-1v-1h1v1ZM10 10h-1v-1h1v1ZM9 9h-2v-2h2v2ZM7 7h-1v-1h1v1ZM10 7h-1v-1h1v1ZM6 6h-1v-1h1v1ZM11 6h-1v-1h1v1ZM5 5h-1v-1h1v1ZM12 5h-1v-1h1v1Z", fill: primaryColorsTransformed[0] });
-  items[4] = callback(arg1(dependencyMap[3]).Path, {});
-  items[5] = callback(arg1(dependencyMap[3]).Path, {});
+  items[4] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "<string:1358954797>", "Bool(true)": "<string:1091677133>" });
+  items[5] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "/assets/images/native/avatars", "Bool(true)": 161 });
   obj["children"] = items;
   return callback2(arg1(dependencyMap[3]).Svg, obj);
 };

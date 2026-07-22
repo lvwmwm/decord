@@ -1,5 +1,5 @@
 // Module ID: 7129
-// Function ID: 57330
+// Function ID: 57341
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,13 +25,13 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PremiumMarketingComponentProperties$Type);
       items = [, , , , , , , , , , , , , , , , , , , ];
-      items[0] = {};
-      items[1] = {
-        T() {
-              return callback(closure_1[6]).AnnouncementModalVariant1Properties;
-            }
+      items[0] = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+      obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+      obj.T = function T() {
+        return callback(closure_1[6]).AnnouncementModalVariant1Properties;
       };
-      obj = { 9223372036854775807: "message", 0: "PLUM_9", 0: 1, 0: "emoji_id" };
+      items[1] = obj;
+      obj = { "Bool(false)": "PLUM_9", "Bool(false)": 1, "Bool(false)": "in_app_feedback_states", "Bool(false)": "map" };
       obj.T = function T() {
         return callback(closure_1[7]).PremiumTab;
       };
@@ -41,26 +41,26 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).MarketingPageBanner;
             }
       };
-      obj = { 9223372036854775807: true, 0: true, 0: true, 0: true };
-      obj.T = function T() {
+      obj1 = { "Bool(false)": 608255924, "Bool(false)": 822084747, "Bool(false)": 515396076, "Bool(false)": 1069673349 };
+      obj1.T = function T() {
         return callback(closure_1[9]).PaymentModalBanner;
       };
-      items[4] = obj;
-      obj1 = { 9223372036854775807: "a", 0: "<string:27087169>", 0: "<string:2308722944>", 0: "GROUP_AVATAR_SIZE" };
-      obj1.T = function T() {
+      items[4] = obj1;
+      obj2 = { "Bool(false)": -40415, "Bool(false)": 113, "Bool(false)": 1477456128, "Bool(false)": 1992864825 };
+      obj2.T = function T() {
         return callback(closure_1[10]).MobileBottomSheet;
       };
-      items[5] = obj1;
+      items[5] = obj2;
       items[6] = {
         T() {
               return callback(closure_1[11]).GiftIcon;
             }
       };
-      items[7] = {
-        T() {
-              return callback(closure_1[12]).GiftIconCoachmark;
-            }
+      obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+      obj3.T = function T() {
+        return callback(closure_1[12]).GiftIconCoachmark;
       };
+      items[7] = obj3;
       items[8] = {
         T() {
               return callback(closure_1[13]).GiftPlanSelectionCardBanner;
@@ -76,54 +76,54 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[15]).BillingSettingsNitroGiftBanner;
             }
       };
-      items[11] = {
-        T() {
-              return callback(closure_1[16]).GiftReminderNagbar;
-            }
+      obj4 = { "Bool(false)": 0, "Bool(false)": -58.546, "Bool(false)": 4, "Bool(false)": "sticker_frecency" };
+      obj4.T = function T() {
+        return callback(closure_1[16]).GiftReminderNagbar;
       };
-      obj2 = { 9223372036854775807: null, 0: null, 0: null, 0: null };
-      obj2.T = function T() {
+      items[11] = obj4;
+      obj5 = { "Bool(false)": "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FE}", "Bool(false)": true, "Bool(false)": null, "Bool(false)": 14 };
+      obj5.T = function T() {
         return callback(closure_1[17]).GiftReminderCoachmark;
       };
-      items[12] = obj2;
-      obj3 = { 9223372036854775807: "message", 0: "properties", 0: null, 0: "\u{1F918}\u{1F3FB}" };
-      obj3.T = function T() {
+      items[12] = obj5;
+      obj6 = { "Bool(false)": "message", "Bool(false)": "properties", "Bool(false)": null, "Bool(false)": "\u{1F918}\u{1F3FB}" };
+      obj6.T = function T() {
         return callback(closure_1[18]).PremiumTabTooltip;
       };
-      items[13] = obj3;
-      obj4 = { 9223372036854775807: "isArray", 0: "__initData", 0: "transform", 0: "r" };
-      obj4.T = function T() {
-        return callback(closure_1[19]).PremiumTabPopover;
+      items[13] = obj6;
+      items[14] = {
+        T() {
+              return callback(closure_1[19]).PremiumTabPopover;
+            }
       };
-      items[14] = obj4;
-      obj5 = { 9223372036854775807: null, 0: null, 0: null, 0: null };
-      obj5.T = function T() {
+      obj7 = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000136748596114, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006662755665995182, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032509228543886622, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000094380275836 };
+      obj7.T = function T() {
         return callback(closure_1[20]).Nagbar;
       };
-      items[15] = obj5;
+      items[15] = obj7;
       items[16] = {
         T() {
               return callback(closure_1[21]).PlanSelectCardBanner;
             }
       };
-      obj6 = { 9223372036854775807: "scalar", 0: 8, 0: 2, 0: "disclaimer_help_article" };
-      obj6.T = function T() {
-        return callback(closure_1[22]).BillingSettingsBanner;
+      items[17] = {
+        T() {
+              return callback(closure_1[22]).BillingSettingsBanner;
+            }
       };
-      items[17] = obj6;
       items[18] = {};
       items[19] = {};
-      items1 = [];
+      items1 = ["minimumValue"];
       items1[1] = items;
-      obj9 = closure_6(PremiumMarketingComponentProperties$Type);
+      obj10 = closure_6(PremiumMarketingComponentProperties$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj9, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj10, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj9.apply(self, items1);
+        constructResult = obj10.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -133,7 +133,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 1548827489: "isArray", 1387684266: "pos", 1594361353: "ix", properties: { oneofKind: undefined } };
+      let obj = { transform: false, width: false, flex: false, properties: { oneofKind: undefined } };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumMarketingComponentProperties$Type(closure_1[23]).MESSAGE_TYPE, obj);

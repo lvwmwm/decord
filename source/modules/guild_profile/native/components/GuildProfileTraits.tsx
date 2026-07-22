@@ -1,10 +1,10 @@
-// Module ID: 11870
-// Function ID: 91893
+// Module ID: 11871
+// Function ID: 91907
 // Name: TraitEmoji
 // Dependencies: []
 // Exports: default
 
-// Module 11870 (TraitEmoji)
+// Module 11871 (TraitEmoji)
 function TraitEmoji(emoji) {
   emoji = emoji.emoji;
   if (null == emoji) {
@@ -38,9 +38,9 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { container: {} };
-obj = { accessibilityRole: 0, name: 3, error: 4, borderRadius: importDefault(dependencyMap[4]).radii.lg, top: 7, bottom: 1, accessibilityRole: null, HTTP: 0, surrogates: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { "Null": 0, "Null": 3, "Null": 4, "Null": "line_pinky", "Null": 7, "Null": 1, "Null": null, "Null": 0, "Null": null, borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.trait = obj;
-obj.emojiImage = {};
+obj.emojiImage = { "Null": null, "Null": null };
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileTraits.tsx");

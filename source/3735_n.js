@@ -35,14 +35,14 @@ const fn = function n(moment) {
       }
       return str;
     },
-    longDateFormat: {},
-    calendar: {},
-    relativeTime: {},
+    longDateFormat: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": 49255168, "Bool(true)": 49556480 },
+    calendar: { variant: "BigUint64Array", r: "SenderStopped", now: -771486882855030200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Symbol: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028984361940497333, Symbol: -771486948408405400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, enabled: null },
+    relativeTime: { COZY_DRAWER: "%s\u5167", rootContainer: "%s\u524D", imgWumpus: "\u5E7E\u79D2", VoicePanelPIPModes: "%d \u79D2", textAlign: "1 \u5206\u9418", st: "%d \u5206\u9418", registerAsset: "1 \u5C0F\u6642", then: "%d \u5C0F\u6642", httpServerLocation: "1 \u5929", application: "%d \u5929", Reflect: "1 \u500B\u6708", keys: "%d \u500B\u6708", uri: "1 \u5E74", Set: "%d \u5E74" },
     dayOfMonthOrdinalParse: /\d{1,2}/,
     ordinal(arg0) {
       return arg0;
     },
-    week: { "Bool(true)": null, "Bool(true)": null }
+    week: { emoji: false, me: false }
   });
 };
 if ("object" === typeof exports) {
@@ -54,7 +54,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

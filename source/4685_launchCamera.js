@@ -1,12 +1,12 @@
 // Module ID: 4685
-// Function ID: 40807
+// Function ID: 40816
 // Name: launchCamera
 // Dependencies: []
 // Exports: launchCamera, launchImageLibrary
 
 // Module 4685 (launchCamera)
 const NativeModules = require(dependencyMap[0]).NativeModules;
-let closure_1 = { <string:1402859834>: "favorite_emojis", <string:1680741042>: "message", <string:4199756461>: 7, <string:651109841>: "application_command_frecency", <string:1036987599>: "message", <string:1653660367>: null, <string:3290348494>: "\u{1F44F}\u{1F3FE}", <string:2324749638>: true, <string:399093966>: null, <string:3364107822>: 8, <string:1911964082>: "row" };
+let closure_1 = {};
 for (const key10020 in arg1(arg6[1])) {
   let tmp2 = key10020;
   arg5[key10020] = arg1(arg6[1])[key10020];

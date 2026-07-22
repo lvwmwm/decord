@@ -1,12 +1,16 @@
 // Module ID: 4526
-// Function ID: 39761
+// Function ID: 39769
 // Name: LifecycleManager
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 4526 (LifecycleManager)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("lib/LifecycleManager.tsx");
+
+export default () => {
   class LifecycleManager {
     constructor() {
       tmp = LifecycleManager(this, LifecycleManager);
@@ -43,6 +47,3 @@ const tmp2 = () => {
   items[1] = obj;
   return callback(LifecycleManager, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("lib/LifecycleManager.tsx");
-
-export default tmp2;

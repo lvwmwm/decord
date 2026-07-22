@@ -1,18 +1,9 @@
-// Module ID: 5307
-// Function ID: 44989
+// Module ID: 5034
+// Function ID: 43399
 // Name: _isNativeReflectConstruct
-// Dependencies: [1838, 1849, 1362, 664, 5318, 3967, 1212, 2, 29, 5, 5319]
+// Dependencies: []
 
-// Module 5307 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_3 from "_isNativeReflectConstruct";
-import priv from "priv";
-import module_664 from "module_664";
-import showTooManyUserGuildsAlert from "showTooManyUserGuildsAlert";
-import conceal from "conceal";
-import { TypeTag } from "getSystemLocale";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 5034 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -137,9 +128,16 @@ function ingestStickerPack(pack, packStickersDatabase, packsDatabase, premiumPac
   }
   packStickersDatabase.setPartition(pack.id, obj);
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+let closure_7 = importDefault(dependencyMap[5]);
+const TypeTag = arg1(dependencyMap[6]).TypeTag;
 let closure_9 = false;
 let closure_10 = null;
-const HOUR = require("_objectWithoutProperties").Millis.HOUR;
+const HOUR = importDefault(dependencyMap[8]).Millis.HOUR;
 let tmp2 = (LibdiscoreStore) => {
   class StickersPackStore {
     constructor(arg0) {
@@ -147,13 +145,13 @@ let tmp2 = (LibdiscoreStore) => {
       items = [...arguments];
       tmp = closure_3(this, StickersPackStore);
       items1 = [...items];
-      obj = showTooManyUserGuildsAlert(StickersPackStore);
-      tmp2 = module_664;
+      obj = closure_6(StickersPackStore);
+      tmp2 = closure_5;
       if (closure_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = showTooManyUserGuildsAlert;
-        constructResult = Reflect.construct(obj, items1, showTooManyUserGuildsAlert(self).constructor);
+        tmp5 = closure_6;
+        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -186,8 +184,8 @@ let tmp2 = (LibdiscoreStore) => {
             continue;
           } else {
             do {
-              let tmp = _createForOfIteratorHelperLoose;
-              let tmp2 = _createForOfIteratorHelperLoose(entries[num], 2);
+              let tmp = closure_2;
+              let tmp2 = closure_2(entries[num], 2);
               let tmp3 = closure_0;
               let packsDatabase = closure_0.packsDatabase;
               let tmp4 = closure_16;
@@ -268,7 +266,7 @@ let tmp2 = (LibdiscoreStore) => {
     }
   };
   return callback(StickersPackStore, items);
-}(require("result2").LibdiscoreStore);
+}(arg1(dependencyMap[7]).LibdiscoreStore);
 tmp2.displayName = "StickersPackStore";
 tmp2 = new tmp2({
   LOGOUT(arg0, clearAllDBs) {
@@ -315,6 +313,6 @@ tmp2 = new tmp2({
     packStickersDatabase.setRecord(pack_id, id, parseServerPackSticker(sticker));
   }
 });
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/stickers/StickersPackStore.tsx");
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stickers/StickersPackStore.tsx");
 
 export default tmp2;

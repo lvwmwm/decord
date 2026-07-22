@@ -1,10 +1,10 @@
-// Module ID: 14798
-// Function ID: 111521
+// Module ID: 14806
+// Function ID: 111564
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getAffinityProperties
 
-// Module 14798 (_createForOfIteratorHelperLoose)
+// Module 14806 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

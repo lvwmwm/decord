@@ -1,10 +1,10 @@
-// Module ID: 11294
-// Function ID: 87890
+// Module ID: 11295
+// Function ID: 87903
 // Name: UsernameText
 // Dependencies: []
 // Exports: default
 
-// Module 11294 (UsernameText)
+// Module 11295 (UsernameText)
 importAll(dependencyMap[0]);
 ({ jsxs: closure_2, Fragment: closure_3, jsx: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -32,7 +32,7 @@ export default function UsernameText(color) {
     obj = {};
     const merged = Object.assign(obj);
     obj["color"] = "text-muted";
-    const items1 = [null, user.discriminator];
+    const items1 = ["Array", user.discriminator];
     obj["children"] = items1;
     items[1] = callback(arg1(dependencyMap[3]).Text, obj);
     obj.children = items;

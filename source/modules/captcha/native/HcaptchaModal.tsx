@@ -1,9 +1,9 @@
-// Module ID: 15841
-// Function ID: 121103
+// Module ID: 15849
+// Function ID: 121146
 // Name: HcaptchaModal
 // Dependencies: []
 
-// Module 15841 (HcaptchaModal)
+// Module 15849 (HcaptchaModal)
 class HcaptchaModal {
   constructor(arg0) {
     onMessage = global.onMessage;
@@ -123,7 +123,7 @@ class HcaptchaModal {
     return tmp13(tmp14, obj);
   }
 }
-let closure_3 = [null, null];
+let closure_3 = ["VOICE_STATE_UPDATES", "VOICE_CHANNEL_SELECT"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_6, View: closure_7, StyleSheet: closure_8 } = arg1(dependencyMap[2]));

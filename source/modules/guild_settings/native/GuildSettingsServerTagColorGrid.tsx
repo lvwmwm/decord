@@ -1,10 +1,10 @@
-// Module ID: 16158
-// Function ID: 124540
+// Module ID: 16166
+// Function ID: 124582
 // Name: GuildSettingsServerTagColorGrid
 // Dependencies: []
 // Exports: default
 
-// Module 16158 (GuildSettingsServerTagColorGrid)
+// Module 16166 (GuildSettingsServerTagColorGrid)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ GUILD_TAG_BADGE_PALETTE_PRESETS: closure_4, GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: closure_5, GuildTagBadgeSize: closure_6 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[5]);
 obj = { grid: obj };
-obj = { -9223372036854775808: null, 7741: null, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { "Bool(true)": null, "Bool(true)": null, gap: importDefault(dependencyMap[4]).space.PX_8 };
 const tmp4 = arg1(dependencyMap[3]);
 obj.defaultIcon = { position: "absolute", right: importDefault(dependencyMap[4]).space.PX_4, bottom: importDefault(dependencyMap[4]).space.PX_4 };
 let closure_9 = obj.createStyles(obj);
@@ -75,7 +75,7 @@ export default function GuildSettingsServerTagColorGrid(badge) {
     formatToPlainStringResult = formatToPlainString(t.7BFCRR, obj);
   }
   obj = { spacing: importDefault(dependencyMap[4]).space.PX_8 };
-  const obj1 = { handleMessageFocus: true, enableHome: "md", afterMs: "secondary" };
+  const obj1 = { gauge: 3, onLayerLoaded: null, ExpressiveGradient: true };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[6]).t.Fg/TNW);
   const items = [callback(arg1(dependencyMap[8]).Text, obj1), ];

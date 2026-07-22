@@ -1,10 +1,10 @@
-// Module ID: 16438
-// Function ID: 126988
+// Module ID: 16446
+// Function ID: 127030
 // Name: getScreensForTaskType
 // Dependencies: []
 // Exports: useOnTaskComplete
 
-// Module 16438 (getScreensForTaskType)
+// Module 16446 (getScreensForTaskType)
 function getScreensForTaskType(task_type) {
   const tmp = arg1(dependencyMap[3]).TASK_TYPE_TO_SCREENS[task_type];
   let tmp2 = null;

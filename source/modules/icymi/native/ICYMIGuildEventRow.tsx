@@ -1,10 +1,10 @@
-// Module ID: 15120
-// Function ID: 114098
+// Module ID: 15128
+// Function ID: 114141
 // Name: ICYMIGuildEventRow
 // Dependencies: []
 // Exports: default
 
-// Module 15120 (ICYMIGuildEventRow)
+// Module 15128 (ICYMIGuildEventRow)
 function ICYMIGuildEventRow(event) {
   let channel;
   let guild;
@@ -41,7 +41,7 @@ function ICYMIGuildEventRow(event) {
   const callback = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { <string:2204214729>: true, <string:1672982865>: "/assets/modules/guild_role_subscriptions/native/images", <string:1370399429>: 84.5, <string:3949021540>: 90.5 } };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": true, "Bool(false)": "/assets/modules/guild_role_subscriptions/native/images", "Bool(false)": 84.5, "Bool(false)": 90.5 } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     obj = { eventId: event.id, event };
@@ -50,7 +50,7 @@ function ICYMIGuildEventRow(event) {
   const callback1 = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { <string:2204214729>: "errExpectingATEXT", <string:1672982865>: "j", <string:1370399429>: "MiniaturesSpotIllustration", <string:3949021540>: "toString" } };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": "Text", "Bool(false)": "keys", "Bool(false)": "HTTP", "Bool(false)": "r" } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     event(tmp3[16]).transitionToGuild(guild.id);
@@ -131,7 +131,7 @@ function ICYMIGuildEventRow(event) {
   const obj7 = { style: tmp.infoContainer };
   const obj8 = { style: tmp.locationContainer };
   const items4 = [callback3(arg1(dependencyMap[22]).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
-  const obj10 = { "Null": 0, "Null": 5.566, "Null": 10 };
+  const obj10 = {};
   const intl2 = arg1(dependencyMap[9]).intl;
   obj10.children = intl2.format(arg1(dependencyMap[9]).t.+DLsD8, { count: tmp12Result });
   items4[1] = callback3(arg1(dependencyMap[20]).Text, obj10);
@@ -183,14 +183,14 @@ let closure_13 = arg1(dependencyMap[6]).createICYMIStyles((margin) => {
   obj.title = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
   const obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
   obj.timeAndUserPillContainer = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-  const obj3 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
+  const obj3 = { hideWhenScrolling: false, autoCapitalize: false, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
   obj.separator = obj3;
   const obj2 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
   obj.eventsChannelIcon = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
   const obj4 = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.infoContainer = { gap: importDefault(dependencyMap[7]).space.PX_4 };
-  const obj5 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
-  obj.locationContainer = { gap: importDefault(dependencyMap[7]).space.PX_8 };
+  const obj6 = { width: true, marginHorizontal: true, gap: importDefault(dependencyMap[7]).space.PX_8 };
+  obj.locationContainer = obj6;
   return obj;
 });
 const obj = arg1(dependencyMap[6]);

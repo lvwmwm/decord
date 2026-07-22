@@ -95,10 +95,10 @@ const fn = function n(moment) {
     }
   }
   const parts = "nolla yksi kaksi kolme nelj\u00E4 viisi kuusi seitsem\u00E4n kahdeksan yhdeks\u00E4n".split(" ");
-  const items = [, , , , , , , parts[7], parts[8], parts[9]];
-  let obj = { months: "tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kes\u00E4kuu_hein\u00E4kuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu".split("_"), monthsShort: "tammi_helmi_maalis_huhti_touko_kes\u00E4_hein\u00E4_elo_syys_loka_marras_joulu".split("_"), weekdays: "sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai".split("_"), weekdaysShort: "su_ma_ti_ke_to_pe_la".split("_"), weekdaysMin: "su_ma_ti_ke_to_pe_la".split("_"), longDateFormat: { "Bool(true)": -318766811, "Bool(true)": 1107296579, "Bool(true)": 164080, "Bool(true)": 164074, "Bool(true)": -2129444607, "Bool(true)": 1359020034, "Bool(true)": -1873739210, "Bool(true)": 554828111, "Bool(true)": 768115, "Bool(true)": 3840 }, calendar: {}, relativeTime: obj, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { "Bool(true)": null, "Bool(true)": null } };
+  const items = [1579089.0000180062, 0.00000000000000000000000000000000000017670871376566086, 0.0000000006402853945216485, 4007171611226403000000000000000000000000000, -115846373176109560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.00000000000000000000000000000000000000000000008758125665110542, 75075235879810700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, parts[7], parts[8], parts[9]];
+  let obj = { months: "tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kes\u00E4kuu_hein\u00E4kuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu".split("_"), monthsShort: "tammi_helmi_maalis_huhti_touko_kes\u00E4_hein\u00E4_elo_syys_loka_marras_joulu".split("_"), weekdays: "sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai".split("_"), weekdaysShort: "su_ma_ti_ke_to_pe_la".split("_"), weekdaysMin: "su_ma_ti_ke_to_pe_la".split("_"), longDateFormat: {}, calendar: { variant: "<string:3550216194>", r: "<string:1698758657>", now: "<string:285213281>", Symbol: "<string:38376001>", Symbol: "<string:1665335552>", enabled: "<string:1644167653>" }, relativeTime: obj, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { emoji: false, me: false } };
   ({ split, split: split2 } = "su_ma_ti_ke_to_pe_la");
-  obj = { 9223372036854775807: null, 0: null, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
+  obj = { COZY_DRAWER: null, rootContainer: null, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
   return moment.defineLocale("fi", obj);
 };
 if ("object" === typeof exports) {
@@ -110,7 +110,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

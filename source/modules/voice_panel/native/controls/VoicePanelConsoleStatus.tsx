@@ -1,10 +1,10 @@
-// Module ID: 15731
-// Function ID: 120333
+// Module ID: 15739
+// Function ID: 120376
 // Name: VoicePanelConsoleStatus
 // Dependencies: []
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 15731 (VoicePanelConsoleStatus)
+// Module 15739 (VoicePanelConsoleStatus)
 class VoicePanelConsoleStatus {
   constructor(arg0) {
     state = global.state;
@@ -141,7 +141,7 @@ obj = { consoleParentContainer: {} };
 obj = { borderRadius: importDefault(dependencyMap[6]).modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS, overflow: "hidden" };
 obj.consoleContainer = obj;
 obj.consoleItemContainer = {};
-obj.consoleText = {};
+obj.consoleText = { borderRadius: 1, flex: -1, position: "https://assets.braintreegateway.com" };
 const tmp2 = arg1(dependencyMap[4]);
 obj.blockingControlCover = { borderRadius: importDefault(dependencyMap[6]).modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS, height: CONTROLS_HEIGHT };
 let closure_8 = obj.createStyles(obj);

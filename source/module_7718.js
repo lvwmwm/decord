@@ -1,9 +1,9 @@
 // Module ID: 7718
-// Function ID: 61427
+// Function ID: 61437
 // Dependencies: []
 
 // Module 7718
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "GifIcon", "Bool(false)": "png", "Bool(false)": 7, "Bool(false)": 7, "Bool(false)": 3.5, "Bool(false)": 13, "Bool(false)": 7, "Bool(false)": null, scales: [null] };
+const obj = { 1358955657: "GifIcon", 1279501871: "png", -100662186: 7, -134216521: 7, 1375732845: 3.5, -1598249400: 13, -117286062: 7, 978739886: null, scales: [false] };
 
 export default _module.registerAsset(obj);

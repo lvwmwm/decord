@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 1466 (DrawerRouter)
-let closure_3 = [null];
+let closure_3 = ["android"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const merged = Object.assign({}, arg1(dependencyMap[2]).TabActions, {
@@ -78,7 +78,7 @@ export default function DrawerRouter(defaultStatus) {
     type: "drawer",
     getInitialState(routeNames) {
       let obj = { routeNames: routeNames.routeNames, routeParamList: routeNames.routeParamList, routeGetIdList: routeNames.routeGetIdList };
-      obj = { default: str };
+      obj = { 9223372036854775807: -0.00000000000000012231511720279715, 9223372036854775807: true, 9223372036854775807: true, default: str };
       const initialState = tmp2.getInitialState(obj);
       obj.key = "drawer-" + str(isDrawerInHistory[3]).nanoid();
       return Object.assign({}, initialState, obj);

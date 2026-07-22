@@ -1,10 +1,10 @@
-// Module ID: 10774
-// Function ID: 83707
+// Module ID: 10775
+// Function ID: 83720
 // Name: StreamPreviewContainer
 // Dependencies: []
 // Exports: default
 
-// Module 10774 (StreamPreviewContainer)
+// Module 10775 (StreamPreviewContainer)
 function StreamPreviewContainer(disableTransition) {
   disableTransition = disableTransition.disableTransition;
   const arg1 = disableTransition;
@@ -98,7 +98,7 @@ function StreamPreviewContainer(disableTransition) {
   obj = { style: tmp.ctaWrapper };
   obj1 = { style: tmp.ctaBackground };
   const obj5 = arg1(dependencyMap[15]);
-  obj2 = { delete: null, dispatch: null, raw: null, style: tmp.ctaText, children: stringResult1 };
+  obj2 = { "Null": null, "Null": null, alignItems: null, style: tmp.ctaText, children: stringResult1 };
   obj1.children = jsx(arg1(dependencyMap[24]).Text, obj2);
   obj.children = <View {...obj1} />;
   obj.children = <View {...obj} />;

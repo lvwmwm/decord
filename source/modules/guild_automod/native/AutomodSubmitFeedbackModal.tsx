@@ -1,10 +1,10 @@
-// Module ID: 11000
-// Function ID: 85572
+// Module ID: 11001
+// Function ID: 85585
 // Name: Navbar
 // Dependencies: []
 // Exports: default
 
-// Module 11000 (Navbar)
+// Module 11001 (Navbar)
 function Navbar(onClose) {
   const tmp = callback4();
   let obj = { top: true, style: tmp.header };
@@ -22,7 +22,7 @@ function SubmitFeedbackScreen(onSubmit) {
   ({ feedback: closure_0, onChange: closure_1 } = onSubmit);
   let dependencyMap;
   function label(children) {
-    const obj = { delete: "<string:1340029796>", dispatch: "<string:1072076685>", raw: "<string:16821057>", style: tmp.formRow, children };
+    const obj = { "Null": "isArray", "Null": "isArray", alignItems: "isArray", style: tmp.formRow, children };
     return callback2(callback(tmp[13]).Text, obj);
   }
   const tmp = callback4();
@@ -104,7 +104,7 @@ const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { surrogates: "absolute", paths: 2, data: 10, flags: -12, start: 3, names: 31, surrogates: 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { "Null": "absolute", "Null": 2, "Null": 10, "Null": -12, "Null": 3, "Null": 31, "Null": 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.header = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
@@ -134,8 +134,8 @@ export default function AutomodSubmitFeedbackModal(onCloseModal) {
   const screens = React.useMemo(() => function getScreens(arg0) {
     ({ onCloseModal: closure_0, feedback: closure_1, onChange: closure_2, onSubmit: closure_3 } = arg0);
     const obj = {
-      resizeMode: "<string:503578626>",
-      Button: "<string:2018574338>",
+      "Bool(false)": "<string:498401282>",
+      "Bool(false)": "<string:4132503554>",
       customNavbar() {
         return callback(closure_10, { onClose: closure_0 });
       },

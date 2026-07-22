@@ -1,5 +1,5 @@
 // Module ID: 7615
-// Function ID: 61017
+// Function ID: 61027
 // Name: RowManager
 // Dependencies: []
 
@@ -8,7 +8,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 ({ RowType: closure_6, SeparatorType: closure_7, LoadingType: closure_8 } = arg1(dependencyMap[3]));
-const obj = { <string:1445889125>: null, <string:2116980062>: null, <string:1645524270>: null, <string:156410107>: null, <string:1627819014>: null };
+const obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
 const merged = Object.assign(arg1(dependencyMap[4]).DEFAULT_OPTIONS);
 const tmp2 = arg1(dependencyMap[3]);
 const tmp4 = () => {

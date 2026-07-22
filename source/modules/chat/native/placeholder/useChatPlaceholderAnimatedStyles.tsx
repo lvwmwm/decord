@@ -1,10 +1,10 @@
-// Module ID: 11660
-// Function ID: 90437
+// Module ID: 11661
+// Function ID: 90450
 // Name: useChatPlaceholderAnimatedStyles
 // Dependencies: []
 // Exports: default
 
-// Module 11660 (useChatPlaceholderAnimatedStyles)
+// Module 11661 (useChatPlaceholderAnimatedStyles)
 let closure_2 = importDefault(dependencyMap[0]);
 const obj = { duration: 1300, easing: arg1(dependencyMap[1]).STANDARD_EASING };
 let closure_4 = { code: "function useChatPlaceholderAnimatedStylesTsx1(){const{visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG}=this.__closure;if(!visible){return{opacity:0};}else if(!animated||useReducedMotion){return{opacity:0.7};}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};}" };

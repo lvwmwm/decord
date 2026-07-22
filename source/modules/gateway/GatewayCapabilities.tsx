@@ -1,10 +1,10 @@
-// Module ID: 12481
-// Function ID: 95363
+// Module ID: 12486
+// Function ID: 95391
 // Name: getClientCapabilities
 // Dependencies: []
 // Exports: getClientCapabilities
 
-// Module 12481 (getClientCapabilities)
+// Module 12486 (getClientCapabilities)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/gateway/GatewayCapabilities.tsx");
 

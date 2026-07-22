@@ -1,42 +1,42 @@
-// Module ID: 8179
-// Function ID: 64599
+// Module ID: 8180
+// Function ID: 64611
 // Name: numberParts
 // Dependencies: []
 
-// Module 8179 (numberParts)
+// Module 8180 (numberParts)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("intl/number-parts.tsx");
 const obj = Object.create(null);
-obj.bg = {};
-obj.cs = {};
-obj.da = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.de = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.el = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.en-GB = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.en-US = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.es-ES = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.es-419 = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.fi = {};
-obj.fr = {};
-obj.hi = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.hr = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.hu = {};
-obj.it = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.ja = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.ko = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.lt = {};
-obj.nl = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.no = {};
-obj.pl = {};
-obj.pt-BR = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.ro = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.ru = {};
-obj.sv-SE = {};
-obj.th = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.tr = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.uk = {};
-obj.vi = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
-obj.zh-CN = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
-obj.zh-TW = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.bg = { optimistic: false, flexGrow: false };
+obj.cs = { optimistic: false, flexGrow: false };
+obj.da = { optimistic: null, flexGrow: null };
+obj.de = { optimistic: null, flexGrow: null };
+obj.el = { optimistic: null, flexGrow: null };
+obj.en-GB = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.en-US = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.es-ES = { optimistic: null, flexGrow: null };
+obj.es-419 = { optimistic: null, flexGrow: null };
+obj.fi = { optimistic: false, flexGrow: false };
+obj.fr = { optimistic: 6, flexGrow: 6 };
+obj.hi = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.hr = { optimistic: null, flexGrow: null };
+obj.hu = { optimistic: false, flexGrow: false };
+obj.it = { optimistic: null, flexGrow: null };
+obj.ja = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.ko = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.lt = { optimistic: false, flexGrow: false };
+obj.nl = { optimistic: null, flexGrow: null };
+obj.no = { optimistic: false, flexGrow: false };
+obj.pl = { optimistic: false, flexGrow: false };
+obj.pt-BR = { optimistic: null, flexGrow: null };
+obj.ro = { optimistic: null, flexGrow: null };
+obj.ru = { optimistic: false, flexGrow: false };
+obj.sv-SE = { optimistic: false, flexGrow: false };
+obj.th = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.tr = { optimistic: null, flexGrow: null };
+obj.uk = { optimistic: false, flexGrow: false };
+obj.vi = { optimistic: null, flexGrow: null };
+obj.zh-CN = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.zh-TW = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
 
 export const numberParts = obj;

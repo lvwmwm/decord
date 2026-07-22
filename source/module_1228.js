@@ -4,6 +4,6 @@
 
 // Module 1228
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: 1476263938, format: 1808465922, View: 1950482433, accessibilityRole: 805307278, surrogates: 1375732117, url: -1704951800, scales: [null] };
+const obj = { 296374: -990773247, 1102560849: -744751103, 288807: 2118254593, 1103760465: 754975630, 288241: 1375732118, 1120538193: -1630764982, scales: [false] };
 
 export default _module.registerAsset(obj);

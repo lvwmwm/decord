@@ -1,10 +1,10 @@
-// Module ID: 15705
-// Function ID: 120040
+// Module ID: 15713
+// Function ID: 120083
 // Name: ParticipantsSummary
 // Dependencies: []
 // Exports: default
 
-// Module 15705 (ParticipantsSummary)
+// Module 15713 (ParticipantsSummary)
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
@@ -22,8 +22,8 @@ importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { ongoingActivityContainer: {} };
-obj = { errUnclosedQuotedString: null, animatedScrollableContentOffsetY: null, user-id-token: null, VENMO_APP_OR_MOBILE_AUTH_URL: null, embed: null, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { ongoingActivityContainer: { <string:1382275249>: "<string:1959478507>", <string:2899594842>: "<string:3942907907>", <string:2985086053>: "<string:1959460866>", <string:1515299067>: "<string:3942907907>", <string:3972817998>: null, <string:3562103379>: null } };
+obj = { MAX_GROUP_DM_STAFF_PARTICIPANTS: true, Uuqbcm: true, 	: true, ReverseOrderedTiers: true, embed: true, borderRadius: importDefault(dependencyMap[5]).radii.round };
 const tmp3 = arg1(dependencyMap[3]);
 obj.backgroundColor = arg1(dependencyMap[6]).hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.BLACK, 0.64);
 obj.overlayActivityName = obj;
@@ -52,7 +52,7 @@ export default function ActivityShelfItemSummary(submitting) {
   const obj2 = { style: items1 };
   const items1 = [tmp.ellipsis, callback(obj.useLoadingStyles(flag, "md"), 2)[1]];
   if (flag) {
-    flag = callback2(arg1(dependencyMap[13]).Ellipsis, { "Bool(true)": "91bf4676f91f3249d115fc7ec52b2a3b", "Bool(true)": "en-GB.messages.91bf4676f91f3249d115fc7ec52b2a3b.compiled.messages" });
+    flag = callback2(arg1(dependencyMap[13]).Ellipsis, {});
   }
   obj2.children = flag;
   items[1] = callback2(importDefault(dependencyMap[12]).View, obj2);

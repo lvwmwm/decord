@@ -1,10 +1,10 @@
-// Module ID: 8359
-// Function ID: 66644
+// Module ID: 8360
+// Function ID: 66656
 // Name: EditGuildEventRecurrenceModal
 // Dependencies: []
 // Exports: default
 
-// Module 8359 (EditGuildEventRecurrenceModal)
+// Module 8360 (EditGuildEventRecurrenceModal)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

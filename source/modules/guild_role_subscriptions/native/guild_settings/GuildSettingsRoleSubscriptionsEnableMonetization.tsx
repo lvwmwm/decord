@@ -1,10 +1,10 @@
-// Module ID: 16288
-// Function ID: 125719
+// Module ID: 16296
+// Function ID: 125761
 // Name: GuildSubscriptionEnableMonetization
 // Dependencies: []
 // Exports: default
 
-// Module 16288 (GuildSubscriptionEnableMonetization)
+// Module 16296 (GuildSubscriptionEnableMonetization)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

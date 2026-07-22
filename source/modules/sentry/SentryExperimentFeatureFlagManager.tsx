@@ -1,9 +1,9 @@
-// Module ID: 16455
-// Function ID: 127110
+// Module ID: 16463
+// Function ID: 127152
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16455 (_isNativeReflectConstruct)
+// Module 16463 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -193,7 +193,7 @@ function syncAllExperimentFlags() {
     obj[closure_8.getHash(key10071)] = key10071;
   }
   const evaluatedExperiments = store.getState().evaluatedExperiments;
-  const tmp16 = _createForOfIteratorHelperLoose([null, null]);
+  const tmp16 = _createForOfIteratorHelperLoose([false, false]);
   const iter3 = tmp16();
   let iter4 = iter3;
   if (!iter3.done) {

@@ -1,10 +1,10 @@
-// Module ID: 8685
-// Function ID: 68835
+// Module ID: 8686
+// Function ID: 68847
 // Name: set
 // Dependencies: []
 // Exports: useWishlistGiftableItems
 
-// Module 8685 (set)
+// Module 8686 (set)
 let closure_0 = importAll(dependencyMap[0]);
 const items = [, , ];
 ({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = arg1(dependencyMap[1]).SKUProductLines);

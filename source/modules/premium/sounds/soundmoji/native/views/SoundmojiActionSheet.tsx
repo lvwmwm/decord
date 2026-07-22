@@ -1,10 +1,10 @@
-// Module ID: 11067
-// Function ID: 86101
+// Module ID: 11068
+// Function ID: 86114
 // Name: SoundmojiActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11067 (SoundmojiActionSheet)
+// Module 11068 (SoundmojiActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.soundmojiContainer = { "Null": 7, "Null": 370 };
+obj.soundmojiContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 const obj1 = {};
 const tmp2 = arg1(dependencyMap[2]);
 let num;
@@ -22,7 +22,7 @@ if (obj5.isIOS()) {
 obj1.fontSize = num;
 obj1.marginEnd = importDefault(dependencyMap[4]).space.PX_16;
 obj.emoji = obj1;
-const obj2 = { "Null": "<string:275054593>", "Null": "<string:724697089>", "Null": "<string:1719009284>", gap: importDefault(dependencyMap[4]).space.PX_4 };
+const obj2 = { <string:2441657369>: "<string:306642945>", <string:3661480206>: "<string:736821249>", <string:3989761345>: "<string:1724383236>", gap: importDefault(dependencyMap[4]).space.PX_4 };
 obj.textContainer = obj2;
 let closure_7 = obj.createStyles(obj);
 const obj5 = arg1(dependencyMap[5]);

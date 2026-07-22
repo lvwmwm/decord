@@ -1,10 +1,10 @@
-// Module ID: 13730
-// Function ID: 103868
+// Module ID: 13737
+// Function ID: 103901
 // Name: UserSettingsSessions
-// Dependencies: [266338304, 102039552, 441057280, 358350848, 325189632, 357105664, 79429632, 325386240, 355729408, 268435456, 587333632, 91226112, 260440064, 358154240, 357957632, 359268352, 131072, 435159040, 31, 27, 5336, 1194, 4809, 1921, 653, 33, 4126, 689, 4064, 566, 11999]
+// Dependencies: [266338304, 102039552, 441057280, 358285312, 339738624, 339673088, 79429632, 339869696, 338296832, 268435456, 587399168, 91226112, 260440064, 358088704, 357892096, 359202816, 131072, 435159040, 31, 27, 5063, 1194, 4809, 1921, 653, 33, 4126, 689, 4064, 566, 12003]
 // Exports: default
 
-// Module 13730 (UserSettingsSessions)
+// Module 13737 (UserSettingsSessions)
 import useConnectionFilteredAppIdentities from "useConnectionFilteredAppIdentities";
 
 function UserSettingsSessions() {
@@ -55,7 +55,7 @@ function UserSettingsSessions() {
       items1[1] = tmp9;
       let tmp15 = null;
       if (otherSessions.length > 0) {
-        const obj3 = { ENTERED: 218906881, display: -1621032958, ORBS_SHOP_ONBOARDING_COACHMARK: 27676226 };
+        const obj3 = { borderBottomColor: false, borderBottomWidth: false, paddingVertical: false };
         const intl2 = arg1(dependencyMap[14]).intl;
         obj3.label = intl2.string(arg1(dependencyMap[14]).t.cLmmeY);
         const intl3 = arg1(dependencyMap[14]).intl;
@@ -154,7 +154,7 @@ function SessionInfo(session) {
         obj1.onPress = function onPress() {
           return session(closure_2[11]).logOutSessions(session.id_hash);
         };
-        obj1.hitSlop = { flexGrow: "useStickerPackCategories", flexShrink: "%Boolean%", height: "MiniaturesSpotIllustration", left: "add" };
+        obj1.hitSlop = { useManaTypeConsolidationExperiment: "Text", notification_center_id: "options", bdt: "to", animatedContainerHeight: "Array" };
         const obj2 = { style: tmp.logoutButton, source: importDefault(dependencyMap[21]) };
         obj1.children = callback3(arg1(dependencyMap[20]).Icon, obj2);
         tmp20 = callback3(arg1(dependencyMap[19]).PressableOpacity, obj1);
@@ -166,7 +166,7 @@ function SessionInfo(session) {
       let tmp33 = found.length > 1;
       if (tmp33) {
         const obj6 = {};
-        const obj7 = { justifyContent: "f2b2ae790fb60abfa40be44fab4eb6fc", position: "ps_relink_upsell", width: "png", flexDirection: true, style: tmp.sessionInfoRowSpacing };
+        const obj7 = { 9223372036854775807: "f2b2ae790fb60abfa40be44fab4eb6fc", 9223372036854775807: "ps_relink_upsell", 9223372036854775807: "png", 0: true, style: tmp.sessionInfoRowSpacing };
         const items2 = [callback3(arg1(dependencyMap[17]).Text, obj7), ];
         const obj8 = { variant: "text-md/semibold", children: found[1] };
         items2[1] = callback3(arg1(dependencyMap[17]).Text, obj8);
@@ -184,7 +184,7 @@ function SessionInfo(session) {
       let tmp47 = null != _location;
       if (tmp47) {
         const obj12 = { style: tmp.sessionInfoRow };
-        const obj13 = { style: tmp.detailsText, children: _location };
+        const obj13 = { cachedAt: null, edpbxy: null, style: tmp.detailsText, children: _location };
         obj12.children = callback3(arg1(dependencyMap[17]).Text, obj13);
         tmp47 = callback3(closure_6, obj12);
       }
@@ -192,7 +192,7 @@ function SessionInfo(session) {
       let tmp53 = null != formatDateResult;
       if (tmp53) {
         const obj14 = { style: tmp.sessionInfoRow };
-        const obj15 = { style: tmp.detailsText, children: formatDateResult };
+        const obj15 = { cachedAt: null, edpbxy: null, style: tmp.detailsText, children: formatDateResult };
         obj14.children = callback3(arg1(dependencyMap[17]).Text, obj15);
         tmp53 = callback3(closure_6, obj14);
       }
@@ -245,7 +245,7 @@ obj.detailsText = obj;
 obj.container = {};
 obj.loading = { marginTop: 16 };
 obj.sessionInfo = { display: "flex" };
-obj.sessionInfoRow = { 979464370: true, 1637975633: true, 50352554: true };
+obj.sessionInfoRow = { position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, location: 0.000000007919535119815975, body: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164 };
 obj.sessionInfoRowSpacing = { marginHorizontal: 4 };
 const importDefaultResult = importDefault(dependencyMap[7]);
 obj.logoutButton = { marginRight: 10, tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };

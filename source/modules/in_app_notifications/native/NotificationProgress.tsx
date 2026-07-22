@@ -1,10 +1,10 @@
-// Module ID: 10300
-// Function ID: 79513
+// Module ID: 10301
+// Function ID: 79526
 // Name: useProgressAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 10300 (useProgressAnimation)
+// Module 10301 (useProgressAnimation)
 function useProgressAnimation(percent) {
   const arg1 = percent;
   const tmp = callback(React.useState(0), 2);

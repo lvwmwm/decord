@@ -1,12 +1,14 @@
-// Module ID: 11281
-// Function ID: 87798
+// Module ID: 11282
+// Function ID: 87811
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: []
+// Dependencies: [2, 8420, 31]
 // Exports: useAnimationDelayedAutoFocus
 
-// Module 11281 (useAnimationDelayedAutoFocus)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
+// Module 11282 (useAnimationDelayedAutoFocus)
+import result2 from "result2";
+import module_31 from "module_31";
+
+const result = module_31.fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
 
 export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
   onPress = autoFocus;

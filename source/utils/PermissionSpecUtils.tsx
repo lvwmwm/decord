@@ -1,9 +1,9 @@
-// Module ID: 15389
-// Function ID: 117408
+// Module ID: 15397
+// Function ID: 117451
 // Name: getPermissionOptions
-// Dependencies: [31, 33, 689, 3831, 15399, 2, 6, 7, 15, 17, 18, 5, 31, 27, 1348, 1907, 1838, 3756]
+// Dependencies: [31, 33, 689, 3831, 15407, 2, 6, 7, 15, 17, 18, 5, 31, 27, 1348, 1907, 1838, 3756]
 
-// Module 15389 (getPermissionOptions)
+// Module 15397 (getPermissionOptions)
 import { VOICE_THREAD_PARENT_CHANNEL_TYPES as closure_4 } from "module_31";
 import module_33 from "module_33";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -113,7 +113,7 @@ export default {
       items[1] = importAll(dependencyMap[14]).generateChannelMembershipSection(tmp3, intl22.string(require(dependencyMap[8]).t.Ny49TN));
       const obj35 = importAll(dependencyMap[14]);
       const intl23 = require(dependencyMap[8]).intl;
-      const obj1 = { handleSyncNoMultiAccountOnLoginSuccess: null, bzd: null, inSoundmojiExperiment };
+      const obj1 = { <string:1814837058>: null, <string:113783634>: null, inSoundmojiExperiment };
       items[2] = importAll(dependencyMap[14]).generateChannelTextSection(tmp3, intl23.string(require(dependencyMap[8]).t.cKobO5), obj1);
       const obj36 = importAll(dependencyMap[14]);
       const intl24 = require(dependencyMap[8]).intl;
@@ -243,7 +243,7 @@ export default {
       const intl3 = require(dependencyMap[8]).intl;
       items4[1] = obj8.generateChannelMembershipSection(tmp3, intl3.string(require(dependencyMap[8]).t.Ny49TN));
       obj9 = importAll(dependencyMap[14]);
-      const obj10 = { handleSyncNoMultiAccountOnLoginSuccess: null, bzd: null };
+      const obj10 = { <string:1814837058>: true, <string:113783634>: true };
       let formatResult2;
       if (result) {
         const intl4 = require(dependencyMap[8]).intl;

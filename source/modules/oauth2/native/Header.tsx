@@ -1,26 +1,26 @@
-// Module ID: 9023
-// Function ID: 70939
+// Module ID: 9024
+// Function ID: 70952
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 9023 (Header)
+// Module 9024 (Header)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UserFlags = arg1(dependencyMap[2]).UserFlags;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.header = obj;
 obj.applicationNameWrapper = { flexDirection: "row" };
-obj.headerIcons = { "Bool(false)": 4, "Bool(false)": "version", "Bool(false)": "scalar", "Bool(false)": 6 };
-obj.ellipseGroup = { TypeError: "02b1067b85b45dd047c8c944ed8c1d6e", bottom: "devices_not_found", style: "png" };
-const obj1 = { 9223372036854775807: "applications", 9223372036854775807: "message", 0: "en-AS", 9223372036854775807: "en", 0: false, 9223372036854775807: false, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.ellipse = obj1;
+obj.headerIcons = { "Bool(false)": "flac", "Bool(false)": "audio/x-flac", "Bool(false)": "Free Lossless Audio Codec file", "Bool(false)": "m4a" };
+obj.ellipseGroup = { <string:1366227281>: "02b1067b85b45dd047c8c944ed8c1d6e", <string:3882034350>: "devices_not_found", <string:3176296185>: "png" };
+const tmp3 = arg1(dependencyMap[3]);
+obj.ellipse = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.botTag = {};
 let closure_7 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
+const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/oauth2/native/Header.tsx");
 
 export default function Header(accountScopes) {

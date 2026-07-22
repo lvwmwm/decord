@@ -1,15 +1,14 @@
-// Module ID: 10045
-// Function ID: 77640
+// Module ID: 10046
+// Function ID: 77653
 // Name: ListSelectionItem
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 10045 (ListSelectionItem)
-import "result";
-import { jsx } from "result";
-import result from "result";
+// Module 10046 (ListSelectionItem)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/create_guild/native/components/ListSelectionItem.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/create_guild/native/components/ListSelectionItem.tsx");
 
 export default function ListSelectionItem(arg0) {
   let Icon;

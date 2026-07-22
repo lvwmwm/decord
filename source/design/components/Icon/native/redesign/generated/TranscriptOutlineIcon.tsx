@@ -1,10 +1,10 @@
-// Module ID: 13798
-// Function ID: 104406
+// Module ID: 13805
+// Function ID: 104439
 // Name: TranscriptOutlineIcon
 // Dependencies: []
 // Exports: TranscriptOutlineIcon
 
-// Module 13798 (TranscriptOutlineIcon)
+// Module 13805 (TranscriptOutlineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TranscriptOutlineIcon.tsx");

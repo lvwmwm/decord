@@ -1,8 +1,8 @@
-// Module ID: 13305
-// Function ID: 101110
-// Dependencies: [4031, 653, 10488, 13315, 10485, 2, 1348]
+// Module ID: 13312
+// Function ID: 101143
+// Dependencies: [4031, 653, 10489, 13322, 10486, 2, 1348]
 
-// Module 13305
+// Module 13312
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

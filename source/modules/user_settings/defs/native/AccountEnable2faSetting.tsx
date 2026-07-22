@@ -1,10 +1,11 @@
-// Module ID: 13562
-// Function ID: 102857
+// Module ID: 13569
+// Function ID: 102890
 // Name: pressable
-// Dependencies: []
+// Dependencies: [0]
 
-// Module 13562 (pressable)
-let closure_3 = importDefault(dependencyMap[0]);
+// Module 13569 (pressable)
+import __exportStarResult1 from "__exportStarResult1";
+
 let obj = arg1(dependencyMap[6]);
 obj = {
   useTitle() {

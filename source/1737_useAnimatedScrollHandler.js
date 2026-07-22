@@ -1,7 +1,7 @@
 // Module ID: 1737
 // Function ID: 19473
 // Name: useAnimatedScrollHandler
-// Dependencies: [31, 1585]
+// Dependencies: [31, 27]
 
 // Module 1737 (useAnimatedScrollHandler)
 let closure_2 = { code: "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}" };
@@ -15,7 +15,7 @@ arg5.useAnimatedScrollHandler = function useAnimatedScrollHandler(A, items) {
   const handler = items(arg6[0]).useHandler(tmp, items);
   const context = handler.context;
   const arg6 = context;
-  items = [];
+  items = [null];
   if (undefined !== tmp.onBeginDrag) {
     items.push("onScrollBeginDrag");
   }

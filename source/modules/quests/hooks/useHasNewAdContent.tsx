@@ -1,10 +1,15 @@
-// Module ID: 15354
-// Function ID: 116953
+// Module ID: 15362
+// Function ID: 116996
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15354 (_createForOfIteratorHelperLoose)
+// Module 15362 (_createForOfIteratorHelperLoose)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { QuestsExperimentLocations } from "__exportStarResult1";
+
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -84,12 +89,8 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const QuestsExperimentLocations = arg1(dependencyMap[3]).QuestsExperimentLocations;
-const DAY = importDefault(dependencyMap[4]).Millis.DAY;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/quests/hooks/useHasNewAdContent.tsx");
+const DAY = require("__exportStarResult1").Millis.DAY;
+const result = require("__exportStarResult1").fileFinishedImporting("modules/quests/hooks/useHasNewAdContent.tsx");
 
 export default function useHasNewAdContent() {
   const MobileQuestHomeRedDotNotificationExperiment = arg1(dependencyMap[5]).MobileQuestHomeRedDotNotificationExperiment;

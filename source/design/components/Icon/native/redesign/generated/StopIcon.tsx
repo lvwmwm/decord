@@ -1,10 +1,10 @@
-// Module ID: 14599
-// Function ID: 110048
+// Module ID: 14607
+// Function ID: 110091
 // Name: StopIcon
 // Dependencies: []
 // Exports: StopIcon
 
-// Module 14599 (StopIcon)
+// Module 14607 (StopIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StopIcon.tsx");

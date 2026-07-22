@@ -1,10 +1,10 @@
-// Module ID: 15716
-// Function ID: 120131
+// Module ID: 15724
+// Function ID: 120174
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 15716 (_createForOfIteratorHelperLoose)
+// Module 15724 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -90,7 +90,7 @@ const result = _module.fileFinishedImporting("modules/voice_panel/native/prejoin
 export const areVoicePanelPreJoinContentPropsEqual = function areVoicePanelPreJoinContentPropsEqual(streamingMembers) {
   if (null != streamingMembers) {
     if (null != arg1) {
-      if (importDefault(dependencyMap[0])(streamingMembers, arg1, [-1894301184])) {
+      if (importDefault(dependencyMap[0])(streamingMembers, arg1, [-1894694400])) {
         const tmp2 = _createForOfIteratorHelperLoose(streamingMembers.streamingMembers);
         const iter = tmp2();
         let iter2 = iter;

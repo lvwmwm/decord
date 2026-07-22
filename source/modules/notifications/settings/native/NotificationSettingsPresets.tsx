@@ -1,10 +1,10 @@
-// Module ID: 10277
-// Function ID: 79397
+// Module ID: 10278
+// Function ID: 79410
 // Name: NotificationSettingsPresets
 // Dependencies: []
 // Exports: NotificationSettingsChannelPresets, NotificationSettingsGuildPresets
 
-// Module 10277 (NotificationSettingsPresets)
+// Module 10278 (NotificationSettingsPresets)
 function NotificationSettingsPresets(preset) {
   const arg1 = preset;
   let num = 0;
@@ -84,7 +84,7 @@ function NotificationSettingsPresets(preset) {
   }, items1);
   if (preset.preset === arg1(dependencyMap[4]).Presets.CUSTOM) {
     const obj3 = { style: tmp.customContainer };
-    const obj4 = { style: {} };
+    const obj4 = { style: { WEBP_RE_IOS: "<string:2126337>", kkk: "<string:2097152>" } };
     const obj5 = { variant: "text-sm/semibold" };
     const intl4 = arg1(dependencyMap[3]).intl;
     obj5.children = intl4.string(arg1(dependencyMap[3]).t.32yow9);
@@ -115,7 +115,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { textDecorationLine: "expiration-year", fontFamily: "Expiration Year", textAlignVertical: "postal-code", fontVariant: "Postal Code", textDecorationStyle: "boolean", textTransform: "boolean", borderRadius: importDefault(dependencyMap[9]).radii.lg + 8, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[9]).radii.lg + 8, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
 obj.customContainer = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

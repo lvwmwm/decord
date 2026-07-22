@@ -1,10 +1,10 @@
-// Module ID: 14043
-// Function ID: 106776
+// Module ID: 14050
+// Function ID: 106816
 // Name: SynchronizeIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14043 (SynchronizeIcon)
+// Module 14050 (SynchronizeIcon)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -12,8 +12,8 @@ const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/client_them
 
 export default function SynchronizeIcon(iconStyles) {
   const fill = iconStyles.fill;
-  let obj = { 978428631: false, 723669468: false, -749621663: false, 1996055172: false, 1705264465: false, -103308603: false, style: iconStyles.iconStyles, fill };
-  obj = { id: "Frame_-_24px", children: callback(arg1(dependencyMap[2]).Rect, { "Bool(false)": 23710529, "Bool(false)": 1090588928, "Bool(false)": 69556, "Bool(false)": 1674133777 }) };
+  let obj = { GestureState: false, unstable_LowPriority: false, unsupported: false, canJoin: false, GUILD_ROOM_SPATIAL_AUDIO_MODE: false, parentMessage: false, style: iconStyles.iconStyles, fill };
+  obj = { id: "Frame_-_24px", children: callback(arg1(dependencyMap[2]).Rect, { "Bool(false)": 23766081, "Bool(false)": 1090588928, "Bool(false)": 69604, "Bool(false)": 1682653457 }) };
   const items = [callback(arg1(dependencyMap[2]).G, obj), ];
   obj = { id: "Filled_Icons" };
   const obj1 = {};

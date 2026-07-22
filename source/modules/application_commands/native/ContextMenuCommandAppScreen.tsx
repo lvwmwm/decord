@@ -1,10 +1,10 @@
-// Module ID: 15429
-// Function ID: 117760
+// Module ID: 15437
+// Function ID: 117803
 // Name: ContextMenuCommandAppScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15429 (ContextMenuCommandAppScreen)
+// Module 15437 (ContextMenuCommandAppScreen)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

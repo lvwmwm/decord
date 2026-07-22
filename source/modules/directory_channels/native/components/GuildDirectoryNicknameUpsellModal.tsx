@@ -1,10 +1,10 @@
-// Module ID: 11683
-// Function ID: 90643
+// Module ID: 11684
+// Function ID: 90656
 // Name: GuildDirectoryNicknameUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 11683 (GuildDirectoryNicknameUpsell)
+// Module 11684 (GuildDirectoryNicknameUpsell)
 function GuildDirectoryNicknameUpsell(arg0) {
   ({ guildId: closure_0, handleClose: closure_1 } = arg0);
   let closure_2;
@@ -36,7 +36,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: arg1(closure_2[14]).GuildIconSizes.XLARGE };
   const items2 = [callback2(importDefault(closure_2[14]), obj1), , , , ];
   const obj2 = { style: tmp.header };
-  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(closure_2[16]).intl;
   const obj4 = {};
   let name;
@@ -113,12 +113,12 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { SDK_VERSION: null, numberOfLines: null, marginTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
+obj = { "Bool(true)": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892, marginTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
 obj.container = obj;
-obj.guildIcon = { dampingRatio: 52881784.83212474, stiffness: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-obj.title = { "Null": null, "Null": null };
+obj.guildIcon = { 1817312097: 52881784.83212474, 1386242432: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.title = { value: null, on: null };
 obj.description = { textAlign: "center" };
-obj.header = {};
+obj.header = { 0: null, 9223372036854775807: null, 0: null };
 obj.input = { marginHorizontal: 16 };
 const tmp3 = arg1(dependencyMap[6]);
 obj.redesignTextInput = { borderRadius: importDefault(dependencyMap[9]).radii.lg };

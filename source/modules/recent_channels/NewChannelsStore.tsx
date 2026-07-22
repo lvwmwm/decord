@@ -1,26 +1,9 @@
 // Module ID: 6759
-// Function ID: 52933
+// Function ID: 52944
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1318, 1282, 566, 686, 2, 5, 4661, 1921, 6769, 6784, 6785, 6786, 6787, 6792, 6771, 6798]
+// Dependencies: []
 
 // Module 6759 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _callSuper from "_callSuper";
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_12 } from "dispatcher";
-import result2 from "result2";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -210,7 +193,21 @@ function pruneNewChannels() {
     closure_21[arg0] = new Set(items.filter((arg0) => !channelOrParentOptedIn.isChannelOrParentOptedIn(arg0, arg0)));
   });
 }
-({ AnalyticsObjects: closure_17, AnalyticsObjectTypes: closure_18, GuildFeatures: closure_19 } = _isNativeReflectConstruct);
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
+let closure_11 = importDefault(dependencyMap[8]);
+let closure_12 = arg1(dependencyMap[8]).GUILD_SELECTABLE_CHANNELS_KEY;
+let closure_13 = importDefault(dependencyMap[9]);
+let closure_14 = importDefault(dependencyMap[10]);
+let closure_15 = importDefault(dependencyMap[11]);
+let closure_16 = importDefault(dependencyMap[12]);
+({ AnalyticsObjects: closure_17, AnalyticsObjectTypes: closure_18, GuildFeatures: closure_19 } = arg1(dependencyMap[13]));
 const set = new Set();
 let closure_21 = {};
 let closure_22 = {};
@@ -219,15 +216,15 @@ let tmp5 = (Store) => {
   class NewChannelsStore {
     constructor() {
       self = this;
-      tmp = _classCallCheck(this, NewChannelsStore);
-      obj = _getPrototypeOf(NewChannelsStore);
-      tmp2 = _possibleConstructorReturn;
+      tmp = closure_3(this, NewChannelsStore);
+      obj = closure_6(NewChannelsStore);
+      tmp2 = closure_5;
       if (closure_24()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = _getPrototypeOf;
+        tmp7 = closure_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, _getPrototypeOf(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -241,7 +238,7 @@ let tmp5 = (Store) => {
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(_callSuper, initialize, dispatcher, result2, asyncGeneratorStep, closure_15, closure_16, _createForOfIteratorHelperLoose);
+      this.waitFor(closure_9, closure_10, closure_11, closure_13, closure_14, closure_15, closure_16, closure_8);
       const items = [closure_16];
       this.syncWith(items, closure_30);
     }
@@ -300,9 +297,9 @@ let tmp5 = (Store) => {
   };
   items[2] = obj;
   return callback(NewChannelsStore, items);
-}(require("_callSuper").Store);
+}(importDefault(dependencyMap[19]).Store);
 tmp5.displayName = "NewChannelsStore";
-tmp5 = new tmp5(require("_isNativeReflectConstruct"), {
+tmp5 = new tmp5(importDefault(dependencyMap[16]), {
   BULK_CLEAR_RECENTS: function handleBulkClearRecents(guildId) {
     guildId = guildId.guildId;
     const arg1 = guildId;
@@ -424,6 +421,129 @@ tmp5 = new tmp5(require("_isNativeReflectConstruct"), {
     }
   }
 });
-const result = CollectiblesPurchaseRecord.fileFinishedImporting("modules/recent_channels/NewChannelsStore.tsx");
+const obj = {
+  BULK_CLEAR_RECENTS: function handleBulkClearRecents(guildId) {
+    guildId = guildId.guildId;
+    const arg1 = guildId;
+    const channelIds = guildId.channelIds;
+    if (null == closure_21[guildId]) {
+      return false;
+    } else {
+      const item = channelIds.forEach((arg0) => closure_21[closure_0].delete(arg0));
+      if (0 === closure_21[guildId].size) {
+        delete r0[r1];
+      }
+    }
+  },
+  CHANNEL_ACK() {
+    return true;
+  },
+  CHANNEL_SELECT: function handleChannelSelect(arg0) {
+    let channelId;
+    let guildId;
+    ({ guildId, channelId } = arg0);
+    if (null == guildId) {
+      return tmp;
+    } else {
+      if (null != closure_21[guildId]) {
+        const _Date = Date;
+        const timestamp = Date.now();
+        if (closure_22[guildId] >= timestamp - importDefault(dependencyMap[14]).Millis.HOUR) {
+          let flag = false;
+          if (null != channelId) {
+            maybeAckViewedChannel(guildId, channelId);
+            flag = false;
+          }
+        }
+      }
+      initializeNewChannels(guildId);
+      flag = true;
+    }
+  },
+  SIDEBAR_VIEW_CHANNEL: function handleSidebarViewChannel(guildId) {
+    guildId = guildId.guildId;
+    let tmp2 = null == guildId;
+    if (!tmp2) {
+      tmp2 = tmp !== arg1(dependencyMap[15]).SidebarType.VIEW_CHANNEL;
+    }
+    if (!tmp2) {
+      maybeAckViewedChannel(guildId, guildId.channelId);
+    }
+    return false;
+  },
+  SIDEBAR_VIEW_GUILD: function handleSidebarViewGuild(guildId) {
+    guildId = guildId.guildId;
+    if (null != guildId) {
+      maybeAckViewedChannel(guildId, tmp);
+    }
+    return false;
+  },
+  CONNECTION_OPEN: seedCommunityBaseline,
+  CACHE_LOADED: seedCommunityBaseline,
+  GUILD_CREATE: function handleGuildCreate(guild) {
+    guild = guild.guild;
+    if (guildHasCommunity(guild.id)) {
+      set1.add(guild.id);
+    }
+    return false;
+  },
+  GUILD_UPDATE: function handleGuildUpdate(guild) {
+    guild = guild.guild;
+    let arg1;
+    let importDefault;
+    const tmp = guildHasCommunity(guild.id);
+    if (tmp) {
+      if (!set1.has(guild.id)) {
+        set1.add(guild.id);
+        arg1 = tmp6;
+        guild = store.getGuild(guild.id);
+        const _Set = Set;
+        const set = new Set();
+        importDefault = set;
+        if (tmp15) {
+          const items = [, ];
+          ({ rulesChannelId: arr[0], publicUpdatesChannelId: arr[1] } = guild);
+          const item = items.forEach((arg0) => {
+            let hasItem = null != arg0;
+            if (hasItem) {
+              hasItem = tmp6.has(arg0);
+            }
+            if (hasItem) {
+              set.add(arg0);
+            }
+          });
+        }
+        closure_21[guild.id] = set;
+        const _Date = Date;
+        closure_22[guild.id] = Date.now();
+        return true;
+      }
+    }
+    if (!tmp) {
+      set1.delete(guild.id);
+    }
+    return false;
+  },
+  GUILD_DELETE: function handleGuildDelete(guild) {
+    delete r3[r2];
+    set1.delete(guild.guild.id);
+  },
+  CHANNEL_CREATE: function handleChannelCreate(channel) {
+    channel = channel.channel;
+    if (!channel.isVocal()) {
+      let set = closure_21[channel.guild_id];
+      if (null == set) {
+        const _Set = Set;
+        set = new Set();
+      }
+      closure_21[channel.guild_id] = set;
+      closure_21[channel.guild_id].add(channel.id);
+      const obj = closure_21[channel.guild_id];
+      const tmp = closure_21;
+    }
+  }
+};
+const tmp2 = arg1(dependencyMap[13]);
+const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/recent_channels/NewChannelsStore.tsx");
 
 export default tmp5;

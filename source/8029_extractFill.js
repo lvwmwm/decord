@@ -1,10 +1,10 @@
 // Module ID: 8029
-// Function ID: 63758
+// Function ID: 63768
 // Name: extractFill
 // Dependencies: []
 
 // Module 8029 (extractFill)
-let closure_2 = { parent: null, create: null };
+let closure_2 = {};
 const obj = { type: 0, payload: arg1(arg6[0]).processColor("black") };
 arg5.default = function extractFill(arg0, arg1, arr) {
   let fill;

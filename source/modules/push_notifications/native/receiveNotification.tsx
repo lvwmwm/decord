@@ -1,10 +1,10 @@
-// Module ID: 16465
-// Function ID: 127212
+// Module ID: 16473
+// Function ID: 127254
 // Name: onStageConnectionError
 // Dependencies: []
 // Exports: default
 
-// Module 16465 (onStageConnectionError)
+// Module 16473 (onStageConnectionError)
 function onStageConnectionError() {
   let obj = importDefault(dependencyMap[12]);
   obj = { key: "STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC" };
@@ -284,12 +284,12 @@ function receiveNotification_(type) {
       }
       _true(closure_3[49]).popAll();
       const obj7 = _true(closure_3[49]);
-      obj1 = { "Bool(false)": null, "Bool(false)": null, skipMessageFetch: _true };
+      obj1 = { borderRadius: null, height: null, skipMessageFetch: _true };
       self(closure_3[50]).transitionTo(closure_14.CHANNEL(self.guild_id, self.channel_id, self.message_id), obj1);
       const obj8 = self(closure_3[50]);
     } else if ("FORUM_THREAD_CREATED" === type) {
       callback().then(() => {
-        lib(closure_3[50]).transitionTo(closure_14.CHANNEL(lib.guild_id, lib.channel_id), { "Bool(false)": null, "Bool(false)": null });
+        lib(closure_3[50]).transitionTo(closure_14.CHANNEL(lib.guild_id, lib.channel_id), { borderRadius: null, height: null });
       });
       const promise = callback();
     } else if ("RELATIONSHIP_ADD" === type) {

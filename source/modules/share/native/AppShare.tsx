@@ -1,10 +1,10 @@
-// Module ID: 16493
-// Function ID: 127356
+// Module ID: 16501
+// Function ID: 127398
 // Name: AppShare
 // Dependencies: []
 // Exports: default
 
-// Module 16493 (AppShare)
+// Module 16501 (AppShare)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ BackHandler: closure_5, NativeModules: closure_6 } = arg1(dependencyMap[2]));

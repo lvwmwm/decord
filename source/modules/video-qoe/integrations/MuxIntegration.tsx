@@ -1,12 +1,16 @@
-// Module ID: 13915
-// Function ID: 105317
+// Module ID: 13922
+// Function ID: 105357
 // Name: MuxIntegration
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 13915 (MuxIntegration)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 13922 (MuxIntegration)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
+
+export const MuxIntegration = () => {
   class MuxIntegration {
     constructor() {
       tmp = MuxIntegration(this, MuxIntegration);
@@ -18,7 +22,7 @@ const tmp2 = () => {
     key: "mapDiscordToMuxMetadata",
     value(contentMetadata, session_id) {
       const self = this;
-      const obj = { ENTER_PRESS_RECT: true, withRewardTileAnimation: true, NONE: true, GUILD_POWERUPS_MARKETING: true, session_id, video_id: contentMetadata.contentMetadata.contentId, video_title: contentMetadata.contentMetadata.title };
+      const obj = { session_id, video_id: contentMetadata.contentMetadata.contentId, video_title: contentMetadata.contentMetadata.title };
       let durationMs = contentMetadata.contentMetadata.durationMs;
       if (null == durationMs) {
         let result;
@@ -60,7 +64,7 @@ const tmp2 = () => {
   obj = {
     key: "getAppVersion",
     value() {
-      return "6046";
+      return "6051";
     }
   };
   items[1] = obj;
@@ -81,6 +85,3 @@ const tmp2 = () => {
   items[2] = obj;
   return callback(MuxIntegration, null, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
-
-export const MuxIntegration = tmp2;

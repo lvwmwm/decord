@@ -1,10 +1,10 @@
-// Module ID: 9865
-// Function ID: 76376
+// Module ID: 9866
+// Function ID: 76389
 // Name: trackForwardStart
 // Dependencies: []
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 9865 (trackForwardStart)
+// Module 9866 (trackForwardStart)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

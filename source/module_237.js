@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 237
-let closure_3 = { accessibilityLabel: true, 1286240338: true, 2018080851: true, 2018342987: true, 1750476691: true };
+let closure_3 = { -1971745879: true, 671055773: true, -1468792494: true, color: true, accessibilityRole: true };
 let closure_4 = null;
 const obj = {
   logIfNoNativeHook(arg0) {

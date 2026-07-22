@@ -1,5 +1,5 @@
 // Module ID: 7069
-// Function ID: 56510
+// Function ID: 56521
 // Name: getStepwiseValue
 // Dependencies: []
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
@@ -40,7 +40,7 @@ function getStepwiseValue(userCombo, items, arg2) {
 }
 const _module = require(dependencyMap[0]);
 ({ ShakeLevel: closure_2, SHAKE_STEPS: closure_3, SHAKE_STEP_DIVIDER: closure_4 } = _module);
-const items = [[null, null], [false, false], ["subtext", "soundboard"], [true, true], [null, null], [0.000000000000000000000000000000000000000000000000002779675298488545, 0.000000000000000000000000000000000000000000000000000000000000000000074184150771745], ["subscriptionId", "rgba(218, 187, 249, 0.5)"]];
+const items = [[], [null, null], [-1176832152, 46415683], [true, true], [null, null], [0.000000000000000000000000000000000000000000000000002779675298488545, 0.000000000000000000000000000000000000000000000000000000000000000000074184150771745], []];
 let closure_5 = items.map((arg0) => {
   let tmp;
   [tmp] = arg0;

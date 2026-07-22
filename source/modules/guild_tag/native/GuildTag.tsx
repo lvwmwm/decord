@@ -1,9 +1,9 @@
-// Module ID: 8569
-// Function ID: 68086
+// Module ID: 8570
+// Function ID: 68098
 // Name: memoResult1
 // Dependencies: []
 
-// Module 8569 (memoResult1)
+// Module 8570 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -129,7 +129,7 @@ const memoResult2 = importAllResult.memo((primaryGuild) => {
   if (SIZE_12 === undefined) {
     SIZE_12 = GuildTagBadgeSize.SIZE_12;
   }
-  let obj = { with_expiration: "ERROR", position: "ERROR", left: "NOT_RESPONDER", right: "NOT_RESPONDER" };
+  let obj = { marginTop: -24, padding: null, paddingRight: 1, alignSelf: "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryGuild, obj);
   let dependencyMap;

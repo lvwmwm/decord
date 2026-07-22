@@ -1,5 +1,5 @@
 // Module ID: 6613
-// Function ID: 50841
+// Function ID: 50852
 // Name: WhiteboardAbstractUI
 // Dependencies: []
 // Exports: WhiteboardAbstractUI

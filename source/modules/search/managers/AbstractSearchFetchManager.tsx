@@ -1,12 +1,16 @@
-// Module ID: 10079
-// Function ID: 78050
+// Module ID: 10080
+// Function ID: 78063
 // Name: AbstractSearchFetchManager
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 10079 (AbstractSearchFetchManager)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 10080 (AbstractSearchFetchManager)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
+
+export const AbstractSearchFetchManager = () => {
   class AbstractSearchFetchManager {
     constructor() {
       tmp = AbstractSearchFetchManager(this, AbstractSearchFetchManager);
@@ -59,6 +63,3 @@ const tmp2 = () => {
   };
   return callback(AbstractSearchFetchManager, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
-
-export const AbstractSearchFetchManager = tmp2;

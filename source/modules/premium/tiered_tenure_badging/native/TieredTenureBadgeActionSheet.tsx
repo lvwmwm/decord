@@ -1,10 +1,10 @@
-// Module ID: 8523
-// Function ID: 67926
+// Module ID: 8524
+// Function ID: 67938
 // Name: TieredTenureBadgeItem
 // Dependencies: []
 // Exports: default
 
-// Module 8523 (TieredTenureBadgeItem)
+// Module 8524 (TieredTenureBadgeItem)
 function TieredTenureBadgeItem(arg0) {
   let badge;
   let isUsersBadge;
@@ -34,7 +34,7 @@ function TieredTenureBadgeItem(arg0) {
     obj.style = items;
     obj = { resizeMode: "contain", source: small };
     const items1 = [callback(importDefault(dependencyMap[11]), obj), , , ];
-    obj1 = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.badgeName };
+    obj1 = { "Null": "String", "Null": "justifyContent", alignItems: "np", style: tmp.badgeName };
     const intl = arg1(dependencyMap[13]).intl;
     obj1.children = intl.string(tieredTenureBadgeData.nameUnformatted);
     items1[1] = callback(arg1(dependencyMap[12]).Text, obj1);
@@ -44,7 +44,7 @@ function TieredTenureBadgeItem(arg0) {
       isUsersBadge = null != premiumSince;
     }
     if (isUsersBadge) {
-      const obj3 = { delete: null, dispatch: null, raw: null, style: tmp.badgePremiumSince };
+      const obj3 = { style: tmp.badgePremiumSince };
       const intl2 = arg1(dependencyMap[13]).intl;
       const obj4 = {};
       const _Date = Date;
@@ -70,7 +70,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { headerContainer: { y: null, GuildThemePreviewOwner: null }, title: { "Null": false, "Null": false, "Null": false }, subtitle: {}, container: {}, rowContainer: { GiftCardStack3dIllustration: null, fetchGroupListingsForGuild: 15, useIsMobileGameCollectionExperimentEnabled: "activity_joining_restricted_guild_ids", getMenu: "scalar", afterMs: 1, friendIcon: 6, canSort: 17 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: { overflow: true, xxs: true, xs: true, sm: true, md: true } };
+obj = { headerContainer: { space: true, TypeError: null }, title: {}, subtitle: { MINIMAL: null, currentScreenId: null }, container: {}, rowContainer: { getChangeSentinel: null, addGlobalUnhandledRejectionInstrumentationHandler: 15, handleDefaultAutoArchiveDurationChange: "activity_joining_restricted_guild_ids", useInAppMessageSoundsEnabled: "scalar", GiftPromotionReminderExperiment: 1, EMOJI_PICKER: 6, overflow: 17 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: { flexDirection: 20, maxWidth: null, alignItems: null, paddingBottom: null, shadowEnabled: null } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderWidth: 1.2, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.usersBadgeContainer = obj;
 obj.badgeName = { marginTop: 8 };
@@ -165,7 +165,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     return items;
   }, []);
   obj2 = { style: tmp.headerContainer };
-  obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.title };
+  obj3 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   const string = intl.string;
   const t = arg1(dependencyMap[13]).t;
@@ -203,7 +203,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     obj6.children = tmp25(Button, obj7);
     let tmp31 = obj6;
   } else {
-    const obj8 = { 0: "<string:188678146>", borderRadius: "<string:3260153857>" };
+    const obj8 = {};
     const intl3 = arg1(dependencyMap[13]).intl;
     const string2 = intl3.string;
     const t2 = arg1(dependencyMap[13]).t;
@@ -221,7 +221,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
   const tmp14Result = callback2(View, obj2);
   const tmp23 = closure_10;
   const tmp24 = View;
-  const obj9 = { ind: null, PX_8: null };
+  const obj9 = { openDisableCommunication: null, freezeEnabled: null };
   let tmp34;
   if (flag) {
     tmp34 = tmp23Result;

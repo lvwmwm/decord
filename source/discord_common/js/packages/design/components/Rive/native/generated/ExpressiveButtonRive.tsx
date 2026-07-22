@@ -1,5 +1,5 @@
 // Module ID: 3923
-// Function ID: 32403
+// Function ID: 32405
 // Name: ExpressiveButtonRive
 // Dependencies: []
 
@@ -8,7 +8,7 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Mobile Expressive Button Lightmode: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" }, Ambient_Lightmode: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" }, Mobile Expressive Button Dark Mode: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" }, Ambient: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" } };
+let closure_7 = { Mobile Expressive Button Lightmode: {}, Ambient_Lightmode: {}, Mobile Expressive Button Dark Mode: {}, Ambient: {} };
 let closure_8 = { Mobile Expressive Button Lightmode: [], Ambient_Lightmode: [], Mobile Expressive Button Dark Mode: [], Ambient: [] };
 let closure_9 = {
   Mobile Expressive Button Lightmode: function MobileExpressiveButtonLightmodeBindings(arg0) {

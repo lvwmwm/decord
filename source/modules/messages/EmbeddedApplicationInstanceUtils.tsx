@@ -1,10 +1,10 @@
-// Module ID: 12183
-// Function ID: 93647
+// Module ID: 12187
+// Function ID: 93673
 // Name: getJoinOrStartButtonState
 // Dependencies: []
 // Exports: useJoinOrStartButtonState
 
-// Module 12183 (getJoinOrStartButtonState)
+// Module 12187 (getJoinOrStartButtonState)
 function getJoinOrStartButtonState(channel) {
   let currentEmbeddedActivity;
   let embeddedActivity;

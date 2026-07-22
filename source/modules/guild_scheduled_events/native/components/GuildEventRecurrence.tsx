@@ -1,10 +1,10 @@
-// Module ID: 8460
-// Function ID: 67487
+// Module ID: 8461
+// Function ID: 67499
 // Name: GuildEventRecurrence
 // Dependencies: []
 // Exports: default
 
-// Module 8460 (GuildEventRecurrence)
+// Module 8461 (GuildEventRecurrence)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,11 +12,11 @@ let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: { NONE_MONTH: "<string:1153579434>", analyticsData: "<string:1509311682>", lineHeight: "<string:1164378113>", startupPath: "<string:309395458>" }, eventHeader: {} };
+obj = { container: { useFramePreviewOverrideStore: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008691694761874, stickerOpaque: -53728521742446590000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lineHeight: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020451186863600537, youtube_video_id: -139311843875643900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, eventHeader: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.active = obj;
-obj.actions = {};
-const obj1 = { <string:3229045644>: "/assets/images/native/icons", <string:2213734789>: 24, <string:377789268>: 24, <string:2578848111>: null, <string:2889504644>: "d7e806908635ad007fa68ad7fb2ccc9f", borderRadius: importDefault(dependencyMap[7]).radii.xs };
+obj.actions = { -9223372036854775808: true, 9223372036854775807: true, 0: true };
+const obj1 = { "Null": "/assets/images/native/icons", "Null": 24, "Null": 24, "Null": null, "Null": "d7e806908635ad007fa68ad7fb2ccc9f", borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.secondarySmallButton = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.secondarySmallIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_STRONG };
@@ -117,8 +117,8 @@ export default function GuildEventRecurrence(recurrenceId) {
     items4[1] = active;
     obj.style = items4;
     const obj1 = {
-      fontFamily: null,
-      fontSize: null,
+      marginBottom: null,
+      borderWidth: null,
       accessibilityLabel: sum1,
       onPress(stopPropagation) {
           stopPropagation.stopPropagation();
@@ -143,7 +143,7 @@ export default function GuildEventRecurrence(recurrenceId) {
       tmp10 = callback(arg1(dependencyMap[16]).Text, obj4);
     }
     const items6 = [tmp10, ];
-    obj5 = { fontFamily: null, fontSize: null };
+    obj5 = { marginBottom: null, borderWidth: null };
     const intl3 = arg1(dependencyMap[13]).intl;
     const _HermesInternal3 = HermesInternal;
     obj5.accessibilityLabel = "" + intl3.string(arg1(dependencyMap[13]).t.HIgA5a) + ", " + sum1;

@@ -1,10 +1,10 @@
-// Module ID: 11311
-// Function ID: 87998
+// Module ID: 11312
+// Function ID: 88011
 // Name: createPollCreationImageForMedia
 // Dependencies: []
 // Exports: default
 
-// Module 11311 (createPollCreationImageForMedia)
+// Module 11312 (createPollCreationImageForMedia)
 function createPollCreationImageForMedia(mediaURL, status) {
   const mediaAttachmentState = { status, mediaURL };
   return { mediaAttachmentState, emoji: undefined, stickerId: undefined };

@@ -1,13 +1,13 @@
-// Module ID: 8992
-// Function ID: 70819
+// Module ID: 8993
+// Function ID: 70832
 // Dependencies: []
 
-// Module 8992
+// Module 8993
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: {}, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: { mode: "<string:2126337>", icon: "<string:2097152>" }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const obj2 = arg1(dependencyMap[3]);
 const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
   let clearButtonVisibility;

@@ -1,10 +1,10 @@
-// Module ID: 11160
-// Function ID: 86773
+// Module ID: 11161
+// Function ID: 86786
 // Name: handleApplicationSelected
 // Dependencies: []
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11160 (handleApplicationSelected)
+// Module 11161 (handleApplicationSelected)
 let closure_4 = importAll(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -160,7 +160,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items3;
             }
-            items3 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
+            items3 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.USER === type) {
             if (null != found) {
               const _String3 = String;
@@ -173,7 +173,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items5;
             }
-            items5 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
+            items5 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
               if ("string" === typeof found.value) {
@@ -185,7 +185,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 return items7;
               }
             }
-            items7 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
+            items7 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.MENTIONABLE === type) {
             if (null != found) {
               if (found.value === option.guildId) {
@@ -209,10 +209,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 }
               }
             }
-            const items11 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
+            const items11 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
             return items11;
           } else {
-            const items12 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
+            const items12 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
             return items12;
           }
         }
@@ -236,7 +236,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
         }
       }
     }
-    const items15 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
+    const items15 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
     return items15;
   }
 };

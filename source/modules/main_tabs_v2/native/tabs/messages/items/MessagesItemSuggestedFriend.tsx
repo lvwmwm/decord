@@ -1,10 +1,10 @@
-// Module ID: 14786
-// Function ID: 111442
+// Module ID: 14794
+// Function ID: 111485
 // Name: getMessagesItemSuggestedFriendHeight
 // Dependencies: []
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 14786 (getMessagesItemSuggestedFriendHeight)
+// Module 14794 (getMessagesItemSuggestedFriendHeight)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,7 +16,7 @@ let obj1 = arg1(dependencyMap[6]);
 let obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
-obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.md, padding: importDefault(dependencyMap[7]).space.PX_8 };
+obj1 = { "Bool(false)": "<string:1912603085>", "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[7]).radii.md, padding: importDefault(dependencyMap[7]).space.PX_8 };
 obj.pressable = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.textContainer = { marginRight: importDefault(dependencyMap[7]).space.PX_8 };
@@ -101,9 +101,9 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
   obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: undefined, size: arg1(dependencyMap[18]).AvatarSizes.REFRESH_MEDIUM_32 };
   const items5 = [callback2(arg1(dependencyMap[18]).Avatar, obj), , ];
   const obj1 = { style: tmp.textContainer };
-  const obj2 = { y: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002004548661020507, isArray: 4224255044333687000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, _oneway: 7981012062864596000000000000000000000000000000000000000000000000000, applicationId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009918777548243116, children: memo1.suggestionName };
+  const obj2 = { "Bool(false)": "String", "Bool(false)": "Array", "Bool(false)": 1, "Bool(false)": "center", children: memo1.suggestionName };
   const items6 = [callback2(arg1(dependencyMap[19]).Text, obj2), ];
-  const obj3 = { text: false, selectionStart: false, selectionEnd: false, canMentionEveryone: false };
+  const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   if (first) {
     const intl = arg1(dependencyMap[12]).intl;
     userStatusLabel = intl.string(arg1(dependencyMap[12]).t.Kzyxm9);
@@ -118,7 +118,7 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
     obj4.style = obj5;
     let tmp13Result = tmp13(tmp14(tmp15[21]).SendMessageIcon, obj4);
   } else {
-    const obj6 = { "Bool(true)": null, "Bool(true)": null };
+    const obj6 = {};
     const intl2 = tmp14(tmp15[12]).intl;
     obj6.text = intl2.string(tmp14(tmp15[12]).t.OYkgVk);
     obj6.onPress = callback1;

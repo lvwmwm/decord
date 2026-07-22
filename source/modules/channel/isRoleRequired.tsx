@@ -1,5 +1,5 @@
 // Module ID: 4619
-// Function ID: 40257
+// Function ID: 40265
 // Name: isRoleRequired
 // Dependencies: []
 // Exports: default

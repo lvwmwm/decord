@@ -1,10 +1,10 @@
-// Module ID: 15603
-// Function ID: 119050
+// Module ID: 15611
+// Function ID: 119093
 // Name: FrameWebView
-// Dependencies: [655753216, 655622144, 42795008, 272039936, 669319168]
+// Dependencies: [655818752, 655687680, 42795008, 272039936, 669384704]
 // Exports: default
 
-// Module 15603 (FrameWebView)
+// Module 15611 (FrameWebView)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/frames/native/FrameWebView.tsx");

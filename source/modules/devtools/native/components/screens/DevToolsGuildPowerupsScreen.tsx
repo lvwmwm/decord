@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 109632
+// Module ID: 14559
+// Function ID: 109675
 // Name: setWarningBoosts
 // Dependencies: []
 // Exports: default
 
-// Module 14551 (setWarningBoosts)
+// Module 14559 (setWarningBoosts)
 function setWarningBoosts() {
   return _setWarningBoosts(...arguments);
 }
@@ -144,7 +144,7 @@ export default function DevToolsGuildPowerupsScreen() {
     };
     obj2.children = callback4(arg1(closure_2[25]).TableRow, obj3);
     const items6 = [callback4(arg1(closure_2[24]).TableRowGroup, obj2), , , , , , ];
-    const obj4 = { "Bool(false)": false, "Bool(false)": false };
+    const obj4 = { -9223372036854775808: true, 9223372036854775807: true };
     const obj5 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
@@ -161,15 +161,15 @@ export default function DevToolsGuildPowerupsScreen() {
     items7[1] = callback4(arg1(closure_2[25]).TableRow, obj6);
     obj4.children = items7;
     items6[1] = callback5(arg1(closure_2[24]).TableRowGroup, obj4);
-    const obj7 = { "Bool(false)": false, "Bool(false)": false, children: closure_13.map((dc) => callback(closure_24, { dc }, dc)) };
+    const obj7 = { -9223372036854775808: "LIGHT", 9223372036854775807: "Array", children: closure_13.map((dc) => callback(closure_24, { dc }, dc)) };
     items6[2] = callback4(arg1(closure_2[24]).TableRowGroup, obj7);
-    const obj8 = { "Bool(false)": "NATIVE_REQUIRED_ASSETS_ICONS", "Bool(false)": "SOCIAL_LAYER_CONNECTIONS", children: closure_11.map((dc) => callback(closure_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
+    const obj8 = { -9223372036854775808: 1090584577, 9223372036854775807: 82415, children: closure_11.map((dc) => callback(closure_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
     items6[3] = callback4(arg1(closure_2[24]).TableRowGroup, obj8);
-    const obj9 = { children: closure_12.map((dc) => callback(closure_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
+    const obj9 = { -9223372036854775808: "<string:928055297>", 9223372036854775807: "CONNECTIONS_STEP", children: closure_12.map((dc) => callback(closure_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
     items6[4] = callback4(arg1(closure_2[24]).TableRowGroup, obj9);
-    const obj10 = { "Bool(false)": null, "Bool(false)": "Loading products...", children: closure_14.map((dc) => callback(closure_24, { dc }, dc)) };
+    const obj10 = { -9223372036854775808: null, 9223372036854775807: "Primary Product SKU ID", children: closure_14.map((dc) => callback(closure_24, { dc }, dc)) };
     items6[5] = callback4(arg1(closure_2[24]).TableRowGroup, obj10);
-    const obj11 = { "Bool(false)": "text-md/normal", "Bool(false)": null };
+    const obj11 = { -9223372036854775808: "text-xs/normal", 9223372036854775807: null };
     const obj12 = {
       label: "Send Powerups System Message",
       onPress() {

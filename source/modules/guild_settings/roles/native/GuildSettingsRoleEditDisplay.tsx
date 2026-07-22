@@ -1,10 +1,10 @@
-// Module ID: 16195
-// Function ID: 125149
+// Module ID: 16203
+// Function ID: 125191
 // Name: GuildSettingsRoleEditDisplay
 // Dependencies: []
 // Exports: default
 
-// Module 16195 (GuildSettingsRoleEditDisplay)
+// Module 16203 (GuildSettingsRoleEditDisplay)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isEveryoneRole = arg1(dependencyMap[2]).isEveryoneRole;
@@ -16,7 +16,7 @@ let closure_11 = arg1(dependencyMap[6]).DEFAULT_GRADIENT_ROLE_COLORS;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { roleIcon: { 0: true, 0: true }, trailingColorContainer: {}, colorBlock: {} };
+obj = { roleIcon: { "Null": -680565368796178500000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000867050025842914 }, trailingColorContainer: {}, colorBlock: {} };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_FEEDBACK_INFO, padding: importDefault(dependencyMap[9]).space.PX_8, marginHorizontal: importDefault(dependencyMap[9]).space.PX_12, marginTop: -1 * importDefault(dependencyMap[9]).space.PX_12, marginBottom: importDefault(dependencyMap[9]).space.PX_12, display: "flex", flexDirection: "row", gap: importDefault(dependencyMap[9]).space.PX_8, justifyContent: "center", alignItems: "center", borderRadius: importDefault(dependencyMap[9]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[9]).colors.ICON_FEEDBACK_INFO };
 obj.holographicInfo = obj;
 let closure_15 = obj.createStyles(obj);
@@ -249,8 +249,8 @@ export default function GuildSettingsRoleEditDisplay(guild) {
         items7[2] = tertiary_color;
         const found1 = items7.filter(arg1(dependencyMap[28]).isNotNullish);
         obj17.colors = found1.map((color) => guild(id[29]).int2hex(color));
-        obj17.start = {};
-        obj17.end = {};
+        obj17.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+        obj17.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
         obj17.style = tmp.colorBlock;
         let tmp48Result = callback(importDefault(dependencyMap[27]), obj17);
         const tmp48 = callback;

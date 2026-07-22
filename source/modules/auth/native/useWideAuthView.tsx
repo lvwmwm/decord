@@ -1,10 +1,10 @@
-// Module ID: 9189
-// Function ID: 71987
+// Module ID: 9190
+// Function ID: 72000
 // Name: useWideAuthView
 // Dependencies: []
 // Exports: default
 
-// Module 9189 (useWideAuthView)
+// Module 9190 (useWideAuthView)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/auth/native/useWideAuthView.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 13776
-// Function ID: 104099
+// Module ID: 13783
+// Function ID: 104132
 // Name: QuestsIcon
 // Dependencies: []
 // Exports: QuestsIcon
 
-// Module 13776 (QuestsIcon)
+// Module 13783 (QuestsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/QuestsIcon.tsx");

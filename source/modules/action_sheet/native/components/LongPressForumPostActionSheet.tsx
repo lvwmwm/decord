@@ -1,23 +1,23 @@
-// Module ID: 10327
-// Function ID: 79730
+// Module ID: 10328
+// Function ID: 79743
 // Name: ForumPostLongPressActionSheet
 // Dependencies: [0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 10327 (ForumPostLongPressActionSheet)
-import "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import result from "result";
-import { ChannelFlags } from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 10328 (ForumPostLongPressActionSheet)
+import "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { ChannelFlags } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let closure_5 = importDefault(dependencyMap[3]);
-({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticsSections: closure_10, ChannelSettingsSections: closure_11 } = result);
-result = result.fileFinishedImporting("modules/action_sheet/native/components/LongPressForumPostActionSheet.tsx");
+({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticsSections: closure_10, ChannelSettingsSections: closure_11 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/action_sheet/native/components/LongPressForumPostActionSheet.tsx");
 
 export default function ForumPostLongPressActionSheet(thread) {
   let parentChannel;

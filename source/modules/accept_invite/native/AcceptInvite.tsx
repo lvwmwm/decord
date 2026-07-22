@@ -1,10 +1,10 @@
-// Module ID: 11740
-// Function ID: 91198
+// Module ID: 11741
+// Function ID: 91211
 // Name: getInviteState
 // Dependencies: []
 // Exports: default
 
-// Module 11740 (getInviteState)
+// Module 11741 (getInviteState)
 function getInviteState(invite) {
   let state;
   if (null != invite) {
@@ -98,9 +98,9 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { EMPTY_SOUND_LIST: "number", alignContent: "number", containerSizeStyle: "mY3Y38", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, padding: "string", borderRadius: "color" };
 obj.parentContainer = obj;
-obj.imageStyle = { "Null": "confetti", "Null": "png" };
+obj.imageStyle = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.cardContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.cardContent = {};

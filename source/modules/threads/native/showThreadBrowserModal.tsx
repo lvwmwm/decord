@@ -1,10 +1,10 @@
-// Module ID: 10089
-// Function ID: 78144
+// Module ID: 10090
+// Function ID: 78157
 // Name: showThreadBrowserModal
 // Dependencies: []
 // Exports: default
 
-// Module 10089 (showThreadBrowserModal)
+// Module 10090 (showThreadBrowserModal)
 let closure_2 = require(dependencyMap[0]).ChannelDetailsNavigatorScreens;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/threads/native/showThreadBrowserModal.tsx");

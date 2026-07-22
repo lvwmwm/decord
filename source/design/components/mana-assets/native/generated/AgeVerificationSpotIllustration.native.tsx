@@ -1,7 +1,7 @@
 // Module ID: 5847
-// Function ID: 49692
+// Function ID: 49703
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [131072, 561250304, 1879048192, 4160749588]
+// Dependencies: [131072, 561250304, 3657433088, 4160749587]
 // Exports: AgeVerificationSpotIllustration
 
 // Module 5847 (AgeVerificationSpotIllustration)

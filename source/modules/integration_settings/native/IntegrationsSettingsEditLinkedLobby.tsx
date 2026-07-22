@@ -1,10 +1,10 @@
-// Module ID: 15411
-// Function ID: 117602
+// Module ID: 15419
+// Function ID: 117645
 // Name: EditLinkedLobby
 // Dependencies: []
 // Exports: default
 
-// Module 15411 (EditLinkedLobby)
+// Module 15419 (EditLinkedLobby)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
 obj.screenContainer = obj;
 obj.header = {};
-const obj1 = { y: -600, isArray: 700, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
+const obj1 = { hideWhenScrolling: -600, autoCapitalize: 700, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.divider = obj1;
 let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -129,7 +129,7 @@ export default function EditLinkedLobby(channel) {
       const obj7 = {};
       const obj8 = { style: tmp2.divider };
       const items5 = [callback1(View, obj8), ];
-      const obj9 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: memo };
+      const obj9 = { cachedAt: true, edpbxy: true, children: memo };
       items5[1] = callback1(arg1(dependencyMap[16]).Text, obj9);
       obj7.children = items5;
       tmp23 = callback(closure_7, obj7);
@@ -137,7 +137,7 @@ export default function EditLinkedLobby(channel) {
     items4[2] = tmp23;
     obj3.children = items4;
     const items6 = [callback(View, obj3), , ];
-    obj10 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+    obj10 = {};
     const intl = arg1(dependencyMap[15]).intl;
     const obj11 = { channelName: tmp7 };
     obj10.children = intl.format(arg1(dependencyMap[15]).t.DA9v5F, obj11);

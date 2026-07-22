@@ -5,7 +5,7 @@
 
 // Module 1012 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [];
+const items = ["ApplicationCache", "AudioTrackList"];
 arg5.CLSThresholds = items;
 arg5.onCLS = function onCLS(arg0, arg1) {
   arg1 = arg0;

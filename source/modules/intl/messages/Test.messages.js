@@ -1,11 +1,14 @@
-// Module ID: 14471
-// Function ID: 109070
+// Module ID: 14479
+// Function ID: 109113
 // Name: messagesProxy
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 14471 (messagesProxy)
-const _module = require(dependencyMap[32]);
-const loader = _module.createLoader({
+// Module 14479 (messagesProxy)
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+const loader = __exportStarResult1.createLoader({
   bg() {
     const jsonAsset = require(dependencyMap[0]).loadJsonAsset(require(dependencyMap[1]));
     return jsonAsset.then((arg0) => ({ default: arg0 }));
@@ -131,10 +134,8 @@ const loader = _module.createLoader({
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const _module1 = require(dependencyMap[32]);
-const messagesProxy = _module1.makeMessagesProxy(loader);
-const _module2 = require(dependencyMap[33]);
-const result = _module2.fileFinishedImporting("modules/intl/messages/Test.messages.js");
+const messagesProxy = __exportStarResult1.makeMessagesProxy(loader);
+const result = __exportStarResult1.fileFinishedImporting("modules/intl/messages/Test.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

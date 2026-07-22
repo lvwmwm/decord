@@ -1,10 +1,13 @@
-// Module ID: 13584
-// Function ID: 102984
+// Module ID: 13591
+// Function ID: 103017
 // Name: getBlockedSource
-// Dependencies: []
+// Dependencies: [0, 0, 4294967295, 4294967295, 4294967295]
 // Exports: Blocked
 
-// Module 13584 (getBlockedSource)
+// Module 13591 (getBlockedSource)
+import "__exportStarResult1";
+import { Image } from "__exportStarResult1";
+
 function getBlockedSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {
@@ -23,8 +26,6 @@ function getBlockedSource(theme) {
 function useBlockedSource() {
   return getBlockedSource(arg1(dependencyMap[7]).useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
 

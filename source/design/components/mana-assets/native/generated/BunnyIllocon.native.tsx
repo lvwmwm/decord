@@ -1,14 +1,12 @@
 // Module ID: 5919
-// Function ID: 49800
+// Function ID: 49811
 // Name: BunnyIllocon
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: BunnyIllocon
 
 // Module 5919 (BunnyIllocon)
-import result from "result";
-
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
 
 export const BunnyIllocon = function BunnyIllocon(size) {
   let accessibilityLabel;

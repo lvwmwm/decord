@@ -1,5 +1,5 @@
 // Module ID: 6875
-// Function ID: 54437
+// Function ID: 54448
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -163,7 +163,7 @@ function handleSetRecentMentionsFilters(value) {
   const arg1 = {};
   const obj = {};
   const obj2 = importDefault(dependencyMap[19]);
-  closure_28 = obj2.defaults(importDefault(dependencyMap[19]).pick(value, []), closure_28);
+  closure_28 = obj2.defaults(importDefault(dependencyMap[19]).pick(value, [false, false, false]), closure_28);
   const Storage = arg1(dependencyMap[15]).Storage;
   const result = Storage.set(closure_22, closure_28);
   let changesToResult = changesTo("guildFilter", RecentMentionsFilters.THIS_SERVER);
@@ -253,7 +253,7 @@ let closure_25 = {};
 let closure_26 = false;
 let closure_27 = true;
 const Storage = arg1(dependencyMap[15]).Storage;
-let obj = { ATTENUATION: null, RNIapModule: null, teenIdentity: null, guildFilter: RecentMentionsFilters.ALL_SERVERS };
+let obj = { guildFilter: RecentMentionsFilters.ALL_SERVERS };
 let closure_28 = Storage.get("recentMentionFilterSettings", obj);
 let closure_29 = false;
 let closure_30 = 0;

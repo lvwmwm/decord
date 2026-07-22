@@ -1,8 +1,8 @@
-// Module ID: 12743
-// Function ID: 97765
+// Module ID: 12750
+// Function ID: 97798
 // Dependencies: []
 
-// Module 12743
+// Module 12750
 const dismissUpsellCTA = arg1(dependencyMap[1]).dismissUpsellCTA;
 const importAllResult = importAll(dependencyMap[0]);
 ({ AnalyticEvents: closure_4, AnalyticsSections: closure_5 } = arg1(dependencyMap[2]));
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
     },
     onLongPress() {
       let obj = location(closure_2[9]);
-      obj = { position: false, width: false, aspectRatio: false };
+      obj = { 0: "<string:1912602975>", 9223372036854775807: "accessibilityLabel", 9223372036854775807: "String" };
       obj = {};
       const intl = location(closure_2[10]).intl;
       obj.label = intl.string(location(closure_2[10]).t.WAI6xu);

@@ -1,13 +1,15 @@
-// Module ID: 10229
-// Function ID: 79046
-// Name: experiment
+// Module ID: 10230
+// Function ID: 79059
+// Name: items
 // Dependencies: []
 
-// Module 10229 (experiment)
+// Module 10230 (items)
 const _module = require(dependencyMap[0]);
-const obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { enabled: true } };
+let obj = { shapes: null, flex: null, sk: null, defaultConfig: { enabled: false } };
+obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: { enabled: true } };
 const items = [obj];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
+obj.treatments = items;
+const experiment = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/guild_automod/AutomodExperiment.tsx");
 

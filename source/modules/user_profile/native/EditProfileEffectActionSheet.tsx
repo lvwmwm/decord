@@ -1,10 +1,10 @@
-// Module ID: 13473
-// Function ID: 102271
+// Module ID: 13480
+// Function ID: 102304
 // Name: EditProfileEffectInner
 // Dependencies: []
 // Exports: default
 
-// Module 13473 (EditProfileEffectInner)
+// Module 13480 (EditProfileEffectInner)
 function EditProfileEffectInner(user) {
   let selectedProfileEffect;
   let setSelectedProfileEffect;
@@ -52,7 +52,7 @@ function EditProfileEffectInner(user) {
       isNonUserBotResult = user.isNonUserBot();
     }
     if (!isNonUserBotResult) {
-      setSelectedProfileEffect(guildId[24])(user.id, user.getAvatarURL(null, 80), { "Bool(false)": null, "Bool(false)": null });
+      setSelectedProfileEffect(guildId[24])(user.id, user.getAvatarURL(null, 80), { <string:2875327494>: null, <string:2591641942>: null });
       const tmp5 = setSelectedProfileEffect(guildId[24]);
     }
   }, items1);
@@ -154,17 +154,17 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
-const tmp3 = arg1(dependencyMap[6]);
-obj.title = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.previewContainer = { header: null, raw: null, borderRadius: null };
+obj.bounceOffset = { "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "flex-start", "Bool(false)": 40, "Bool(false)": null };
+const obj1 = { width: "isArray", height: "AGE_VERIFICATION_GET_STARTED_MODAL_KEY", pointerEvents: 28928, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.title = obj1;
+obj.previewContainer = {};
 const obj2 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj2["bottom"] = -1;
 obj2["color"] = importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND;
 obj.previewGradient = obj2;
 let closure_12 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const tmp3 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/user_profile/native/EditProfileEffectActionSheet.tsx");
 
 export default function EditProfileEffectActionSheet(isTryItOut) {
@@ -239,7 +239,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   obj = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true };
   const obj1 = { style: tmp.container };
   const items3 = [callback2(View, { style: tmp.bounceOffset }), , ];
-  const obj3 = { "Null": "<string:552206337>", "Null": "<string:621281281>", "Null": "<string:1643511809>", style: tmp.title };
+  const obj3 = { <string:3339517956>: "<string:567803905>", <string:3335454724>: "<string:631111681>", <string:2271412228>: "<string:1649868801>", style: tmp.title };
   const intl = arg1(dependencyMap[18]).intl;
   obj3.children = intl.string(arg1(dependencyMap[18]).t./6nv6N);
   items3[1] = callback2(arg1(dependencyMap[17]).Text, obj3);

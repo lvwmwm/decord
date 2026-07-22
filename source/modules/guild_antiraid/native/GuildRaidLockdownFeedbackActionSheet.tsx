@@ -1,16 +1,16 @@
-// Module ID: 10966
-// Function ID: 85305
+// Module ID: 10967
+// Function ID: 85318
 // Name: GuildRaidLockdownFeedbackActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10966 (GuildRaidLockdownFeedbackActionSheet)
+// Module 10967 (GuildRaidLockdownFeedbackActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { overflow: true, position: true } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_antiraid/native/GuildRaidLockdownFeedbackActionSheet.tsx");
 
@@ -71,7 +71,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
       const obj = {
         onPress() {
           function onCheckboxChange(value) {
-            callback(closure_1.includes(value) ? (arr) => arr.filter(/* F85311 */ function() { ... }) : (arg0) => {
+            callback(closure_1.includes(value) ? (arr) => arr.filter(/* F85324 */ function() { ... }) : (arg0) => {
               const items = [...arg0, arg0];
               return items;
             });

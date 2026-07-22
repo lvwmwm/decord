@@ -1,8 +1,8 @@
-// Module ID: 9236
-// Function ID: 72240
+// Module ID: 9237
+// Function ID: 72253
 // Dependencies: []
 
-// Module 9236
+// Module 9237
 importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

@@ -1,5 +1,5 @@
 // Module ID: 7808
-// Function ID: 62299
+// Function ID: 62309
 // Name: getFallbackHeroColor
 // Dependencies: []
 // Exports: getFallbackHeroColor

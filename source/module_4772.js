@@ -1,9 +1,9 @@
 // Module ID: 4772
-// Function ID: 41458
+// Function ID: 41467
 // Dependencies: []
 
 // Module 4772
-let obj = { <string:2338453377>: "flex", <string:2236420434>: "column" };
+let obj = { afk: "4kp0AB", enabled: "<string:1446396416>" };
 obj = {
   name: "PentaxVersion",
   description(join) {

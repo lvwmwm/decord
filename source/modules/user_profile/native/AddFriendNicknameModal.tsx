@@ -1,10 +1,10 @@
-// Module ID: 12026
-// Function ID: 92929
+// Module ID: 12030
+// Function ID: 92955
 // Name: AddFriendNicknameModal
 // Dependencies: []
 // Exports: default
 
-// Module 12026 (AddFriendNicknameModal)
+// Module 12030 (AddFriendNicknameModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,7 +14,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { "Null": "isArray", "Null": "Array", "Null": "constructor", "Null": "values", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
 obj.container = obj;
 obj.title = { textAlign: "center" };
 obj.description = {};
@@ -82,13 +82,13 @@ export default function AddFriendNicknameModal(arg0) {
   const intl4 = arg1(closure_2[10]).intl;
   obj1.cancelText = intl4.string(arg1(closure_2[10]).t.ETE/oC);
   obj1.onCancel = callback1;
-  const obj2 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title, children: stringResult };
+  const obj2 = { style: tmp.title, children: stringResult };
   const items3 = [callback2(arg1(closure_2[15]).Text, obj2), , ];
   const obj3 = { style: tmp.description };
   const intl5 = arg1(closure_2[10]).intl;
   obj3.children = intl5.string(arg1(closure_2[10]).t.NdQ+lP);
   items3[1] = callback2(arg1(closure_2[15]).Text, obj3);
-  const obj4 = { "Bool(false)": true, "Bool(false)": "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(false)": null, "Bool(false)": "40cd9620e427817088a46c48972f0fe6", onChange: callback };
+  const obj4 = { onChange: callback };
   const tmp15 = importDefault(closure_2[14]);
   obj4.placeholder = importDefault(closure_2[17]).getName(stateFromStores1);
   obj4.defaultValue = stateFromStores;

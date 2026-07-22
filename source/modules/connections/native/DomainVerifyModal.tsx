@@ -1,10 +1,10 @@
-// Module ID: 8991
-// Function ID: 70796
+// Module ID: 8992
+// Function ID: 70809
 // Name: DomainScreen
 // Dependencies: []
 // Exports: default
 
-// Module 8991 (DomainScreen)
+// Module 8992 (DomainScreen)
 function DomainScreen(onClose) {
   const arg1 = onClose.onClose;
   let importDefault;
@@ -74,7 +74,7 @@ function DomainScreen(onClose) {
   const tmp5 = callback(React.useState(false), 2);
   React = tmp5[1];
   obj = { bottom: true, style: tmp.container };
-  obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
+  obj = { cachedAt: 1, edpbxy: 1, style: tmp.description };
   const intl = arg1(dependencyMap[11]).intl;
   obj.children = intl.string(arg1(dependencyMap[11]).t.NxPUqY);
   const items = [callback2(arg1(dependencyMap[10]).Text, obj), , ];
@@ -119,7 +119,7 @@ function DNSProofScreen(proof) {
   const intl2 = arg1(dependencyMap[11]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[11]).t.GL3q7k);
   const items1 = [callback2(arg1(dependencyMap[10]).Text, obj2), , , , , ];
-  const obj3 = { "Null": true, "Null": true, style: tmp.code };
+  const obj3 = { body: 24, type: 24, style: tmp.code };
   let obj6 = arg1(dependencyMap[13]);
   obj3.children = obj6.getDnsName(domain);
   items1[1] = callback2(arg1(dependencyMap[10]).Text, obj3);
@@ -127,13 +127,13 @@ function DNSProofScreen(proof) {
   const intl3 = arg1(dependencyMap[11]).intl;
   obj4.children = intl3.string(arg1(dependencyMap[11]).t.Ccmixu);
   items1[2] = callback2(arg1(dependencyMap[10]).Text, obj4);
-  const obj5 = { "Null": true, "Null": true, "Null": true, "Null": true, style: tmp.code };
+  const obj5 = { body: 24, type: 24, accessibilityRole: null, flex: "21db92a27b93246affffebffc643fa50", style: tmp.code };
   items1[3] = callback2(arg1(dependencyMap[10]).Text, obj5);
   obj6 = { variant: "text-md/normal" };
   const intl4 = arg1(dependencyMap[11]).intl;
   obj6.children = intl4.string(arg1(dependencyMap[11]).t.PVLriT);
   items1[4] = callback2(arg1(dependencyMap[10]).Text, obj6);
-  const obj7 = { "Null": true, "Null": true, style: tmp.code, children: proof };
+  const obj7 = { body: 24, type: 24, style: tmp.code, children: proof };
   items1[5] = callback2(arg1(dependencyMap[10]).Text, obj7);
   obj1.children = items1;
   items[1] = callback3(closure_5, obj1);
@@ -228,7 +228,7 @@ function HTTPProofScreen(proof) {
   const intl2 = arg1(closure_2[11]).intl;
   obj2.children = intl2.string(arg1(closure_2[11]).t.GL3q7k);
   const items1 = [callback2(arg1(closure_2[10]).Text, obj2), , , ];
-  const obj3 = { "Null": true, "Null": true, style: tmp.code };
+  const obj3 = { body: 24, type: 24, style: tmp.code };
   let obj6 = arg1(closure_2[13]);
   obj3.children = obj6.getHttpName(domain);
   items1[1] = callback2(arg1(closure_2[10]).Text, obj3);
@@ -236,7 +236,7 @@ function HTTPProofScreen(proof) {
   const intl3 = arg1(closure_2[11]).intl;
   obj4.children = intl3.string(arg1(closure_2[11]).t.PVLriT);
   items1[2] = callback2(arg1(closure_2[10]).Text, obj4);
-  const obj5 = { "Null": true, "Null": true, style: tmp.code, children: proof.proof };
+  const obj5 = { body: 24, type: 24, style: tmp.code, children: proof.proof };
   items1[3] = callback2(arg1(closure_2[10]).Text, obj5);
   obj1.children = items1;
   items[1] = callback3(View, obj1);
@@ -316,11 +316,11 @@ const View = arg1(dependencyMap[2]).View;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { padding: 16 }, description: { textAlign: "center" }, input: { "Bool(true)": 16, "Bool(true)": 20, "Bool(true)": null } };
+obj = { container: { padding: 16 }, description: { textAlign: "center" }, input: { "Null": 16, "Null": 20, "Null": null } };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[6]).radii.xs, padding: 8, marginTop: 16 };
 obj.dns = obj;
 obj.error = { marginTop: 16 };
-obj.code = {};
+obj.code = { -1320090558: true, -1309881241: true };
 obj.button = { marginTop: 16 };
 let closure_10 = obj.createStyles(obj);
 let closure_11 = { DOMAIN: "DOMAIN", PROOF_DNS: "PROOF_DNS", PROOF_HTTP: "PROOF_HTTP" };

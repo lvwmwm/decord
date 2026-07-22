@@ -1,10 +1,10 @@
-// Module ID: 15823
-// Function ID: 120987
+// Module ID: 15831
+// Function ID: 121030
 // Name: setUpdateRules
 // Dependencies: []
 // Exports: getMessage
 
-// Module 15823 (setUpdateRules)
+// Module 15831 (setUpdateRules)
 function setUpdateRules(arg0) {
   let closure_3 = function parserFor(rules, arg1) {
     let closure_0 = callback(closure_2[5]).parserFor(arg1(rules));

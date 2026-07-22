@@ -1,11 +1,11 @@
 // Module ID: 7199
-// Function ID: 57963
+// Function ID: 57974
 // Dependencies: [7221, 2, 4096, 7223, 1934, 2, 31]
 
 // Module 7199
-for (const key10015 in require("items3")) {
+for (const key10015 in require("items1")) {
   let tmp2 = key10015;
-  arg5[key10015] = require("items3")[key10015];
+  arg5[key10015] = require("items1")[key10015];
 }
 for (const key10020 in require("result2")) {
   let tmp3 = key10020;

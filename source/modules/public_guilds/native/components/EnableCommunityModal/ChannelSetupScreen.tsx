@@ -1,10 +1,10 @@
-// Module ID: 16246
-// Function ID: 125523
+// Module ID: 16254
+// Function ID: 125565
 // Name: ChannelSetupScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16246 (ChannelSetupScreen)
+// Module 16254 (ChannelSetupScreen)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -138,9 +138,9 @@ export default function ChannelSetupScreen() {
   }, items4);
   obj = { headerRef: ref, disableNextStep: false, currentStep: arg1(dependencyMap[21]).EnableCommunityModalSteps.STEP_2 };
   obj = { style: enableCommunitySharedStyles.content };
-  obj1 = { "Bool(false)": 2137542913, "Bool(false)": 1359050337, "Bool(false)": 507643607, "Bool(false)": 2113930363, ref };
+  obj1 = { "Bool(false)": -1480503039, "Bool(false)": 1359050337, "Bool(false)": -1136523533, "Bool(false)": 989856819, ref };
   const intl3 = arg1(dependencyMap[15]).intl;
-  obj1.children = intl3.formatToPlainString(arg1(dependencyMap[15]).t.tInpJj, { constructor: -1450377214, height: 2018574338 });
+  obj1.children = intl3.formatToPlainString(arg1(dependencyMap[15]).t.tInpJj, { "Bool(false)": -1448017918, "Bool(false)": -162463742 });
   const items5 = [callback(arg1(dependencyMap[22]).Text, obj1), , , ];
   obj2 = { resizeMode: "contain", source: importDefault(dependencyMap[16])().channelSetup };
   items5[1] = callback(closure_4, obj2);
@@ -148,7 +148,7 @@ export default function ChannelSetupScreen() {
   const intl4 = arg1(dependencyMap[15]).intl;
   obj3.children = intl4.string(arg1(dependencyMap[15]).t.YtXpEh);
   items5[2] = callback(arg1(dependencyMap[22]).Heading, obj3);
-  const obj4 = { delete: true, dispatch: true, raw: true, style: enableCommunitySharedStyles.description };
+  const obj4 = { "Null": null, "Null": 3, alignItems: null, style: enableCommunitySharedStyles.description };
   const intl5 = arg1(dependencyMap[15]).intl;
   obj4.children = intl5.string(arg1(dependencyMap[15]).t.J/fYR8);
   items5[3] = callback(arg1(dependencyMap[22]).Text, obj4);

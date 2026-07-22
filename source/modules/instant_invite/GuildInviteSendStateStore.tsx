@@ -1,10 +1,10 @@
-// Module ID: 12020
-// Function ID: 92902
+// Module ID: 12024
+// Function ID: 92928
 // Name: setSendState
 // Dependencies: []
 // Exports: setSendState
 
-// Module 12020 (setSendState)
+// Module 12024 (setSendState)
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => ({}));
 const _module1 = require(dependencyMap[2]);

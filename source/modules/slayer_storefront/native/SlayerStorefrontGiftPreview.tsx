@@ -1,10 +1,10 @@
-// Module ID: 8203
-// Function ID: 64870
+// Module ID: 8205
+// Function ID: 64883
 // Name: WarningBox
 // Dependencies: []
 // Exports: default
 
-// Module 8203 (WarningBox)
+// Module 8205 (WarningBox)
 function WarningBox(application) {
   let canStartAuthorization;
   let hasAccountLinked;

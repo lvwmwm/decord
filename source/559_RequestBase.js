@@ -1,7 +1,7 @@
 // Module ID: 559
 // Function ID: 6734
 // Name: RequestBase
-// Dependencies: []
+// Dependencies: [580, 581]
 
 // Module 559 (RequestBase)
 class RequestBase {
@@ -45,7 +45,7 @@ class RequestBase {
           tmp4 = key10004;
           tmp5 = closure_0;
           tmp6 = closure_1;
-          obj = closure_0(closure_1[0]);
+          obj = require("module_580");
           if (!obj.hasOwn(arg0, key10004)) {
             continue;
           } else {
@@ -280,14 +280,14 @@ class RequestBase {
   }
   set(arg0, arg1) {
     self = this;
-    obj = require(dependencyMap[0]);
+    obj = require("module_580");
     if (obj.isObject(global)) {
       tmp = global;
       for (const key10017 in arg0) {
         tmp3 = key10017;
         tmp4 = closure_0;
         tmp5 = closure_1;
-        obj2 = closure_0(closure_1[0]);
+        obj2 = require("module_580");
         if (!obj2.hasOwn(arg0, key10017)) {
           continue;
         } else {
@@ -335,14 +335,14 @@ class RequestBase {
       tmp = require;
       tmp2 = dependencyMap;
       num = 0;
-      obj = require(dependencyMap[0]);
+      obj = require("module_580");
       if (obj.isObject(global)) {
         tmp14 = global;
         for (const key10041 in arg0) {
           tmp29 = key10041;
           tmp30 = closure_0;
           tmp31 = closure_1;
-          obj3 = closure_0(closure_1[0]);
+          obj3 = require("module_580");
           if (!obj3.hasOwn(arg0, key10041)) {
             continue;
           } else {
@@ -361,7 +361,7 @@ class RequestBase {
             tmp26 = key10035;
             tmp27 = closure_0;
             tmp28 = closure_1;
-            obj2 = closure_0(closure_1[0]);
+            obj2 = require("module_580");
             if (!obj2.hasOwn(arg1, key10035)) {
               continue;
             } else {
@@ -414,14 +414,14 @@ class RequestBase {
         tmp2 = require;
         tmp3 = dependencyMap;
         num = 1;
-        obj = require(dependencyMap[1]);
+        obj = require("module_581");
         tmp4 = globalThis;
         _process = process;
         str = "v13.0.0";
         if (obj.gte(process.version, "v13.0.0")) {
           tmp5 = require;
           tmp6 = dependencyMap;
-          obj2 = require(dependencyMap[1]);
+          obj2 = require("module_581");
           _process2 = process;
           str2 = "v14.0.0";
           if (obj2.lt(process.version, "v14.0.0")) {
@@ -511,7 +511,7 @@ class RequestBase {
   }
   send(arg0) {
     self = this;
-    obj = require(dependencyMap[0]);
+    obj = require("module_580");
     isObjectResult = obj.isObject(global);
     content-type = this._header.content-type;
     if (this._formData) {
@@ -538,7 +538,7 @@ class RequestBase {
         if (isObjectResult) {
           tmp4 = require;
           tmp5 = dependencyMap;
-          obj2 = require(dependencyMap[0]);
+          obj2 = require("module_580");
           if (obj2.isObject(self._data)) {
             tmp19 = global;
             str9 = "bigint";
@@ -564,7 +564,7 @@ class RequestBase {
                 }
                 tmp27 = require;
                 tmp28 = dependencyMap;
-                obj3 = require(dependencyMap[0]);
+                obj3 = require("module_580");
                 if (!obj3.hasOwn(global, tmp21)) {
                   continue;
                 } else {
@@ -682,7 +682,7 @@ class RequestBase {
           sorted1 = parts.sort();
         }
         url2 = self.url;
-        str2 = require("module_0") + str2;
+        str2 = require("module_580") + str2;
         self.url = str2 + parts.join("&");
       }
     }
@@ -741,8 +741,8 @@ class RequestBase {
     return;
   }
 }
-const set = new Set(["Presto", "Blink", "COLD_START", 3187, 3188, 3189, 3190, 3191]);
-const set1 = new Set([null, null, null, null, null, null, null, null, null, null]);
+const set = new Set([]);
+const set1 = new Set([]);
 RequestBase.prototype.getHeader = RequestBase.prototype.get;
 
 export default RequestBase;

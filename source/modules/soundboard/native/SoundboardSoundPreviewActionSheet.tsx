@@ -1,10 +1,10 @@
-// Module ID: 15633
-// Function ID: 119384
+// Module ID: 15641
+// Function ID: 119427
 // Name: SoundboardSoundPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15633 (SoundboardSoundPreviewActionSheet)
+// Module 15641 (SoundboardSoundPreviewActionSheet)
 let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
@@ -16,7 +16,7 @@ const AnalyticsObjects = arg1(dependencyMap[5]).AnalyticsObjects;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, marginTop: importDefault(dependencyMap[8]).space.PX_16 };
+obj = { padding: 615852536560708200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, spriteIndex: 615852536558870400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Date: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009914420742454073, h: -419189923638918240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginTop: importDefault(dependencyMap[8]).space.PX_16 };
 obj.emoji = obj;
 obj.emojiFastImage = {};
 const obj1 = {};
@@ -32,9 +32,9 @@ const tmp3 = arg1(dependencyMap[6]);
 obj.text = { marginTop: importDefault(dependencyMap[8]).space.PX_16, alignSelf: "center" };
 const obj2 = { marginTop: importDefault(dependencyMap[8]).space.PX_16, alignSelf: "center" };
 obj.buttonContainer = { gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-obj4 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
+obj4 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.star = obj4;
-const obj5 = { "Null": "50%", "Null": "hidden", "Null": "50%", "Null": 60, borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj5 = { "Bool(true)": "50%", "Bool(true)": "hidden", "Bool(true)": "50%", "Bool(true)": 60, borderRadius: importDefault(dependencyMap[8]).radii.round };
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj.border = obj5;
 const obj3 = { gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_24 };

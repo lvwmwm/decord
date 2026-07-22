@@ -1,11 +1,11 @@
 // Module ID: 8115
-// Function ID: 64260
+// Function ID: 64270
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 8115 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "RNSVGTextPath", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
-obj = { <string:976827415>: "Array", <string:811145288>: "ICYMI_ONBOARDING_GUILD_TOGGLED", "Null": "r", "Null": "triggerCompleted", "Null": "r", "Null": "BWD8fs", "Null": "Array", "Null": "commandsDisabled", "Null": "Array", "Null": "LOCAL_PAYMENT_TOKENIZATION_FAILED", "Null": "r", "Null": "ClipsIcon", "Null": "Array", "Null": "CREATE_INCODE_SESSION", "Null": "r", "Null": "selectedItem", "Null": "Array", "Null": "pageLoadEndTime", "Null": "r", "Null": "HERO_VIDEO", "Null": "r", "Null": "apd", "Null": "r", "Null": "FRIENDS_LIST", "Null": "Array", "Null": "GUILD_PROFILE_UPDATE", "Null": "r", "Null": "badgeSurfaceDarkMode", "Null": "isArray", "Null": "BUTTON_BORDER_WIDTH", "Null": "isArray", "Null": "stackSymbols", "Null": "isArray", "Null": "_headers", "Null": "center", "Null": "onPressExpression", "Null": "Array", "Null": "BWA", "Null": "r", "Null": "Seconds", "Null": "r", "Null": "getUser", "Null": "Array", "Null": "ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING", "Null": "ImageTextIcon", "Null": "PRIMARY_400", "Null": "%decodeURIComponent%" };
+obj = { <string:873890576>: true, <string:3509875252>: true, <string:156410487>: true, <string:1932209713>: true, <string:2203407668>: true, <string:2687791426>: true, <string:3558378810>: true, <string:455123248>: true, <string:289166464>: true, <string:1050089903>: true, <string:3780320093>: true, <string:555006988>: true, <string:2053078637>: true, <string:2917320898>: true, <string:1310491223>: true, <string:2002083896>: true, <string:3429028250>: true, <string:3667867876>: true, <string:531126430>: true, <string:1745425267>: true, <string:564663722>: true, <string:564077401>: true, <string:3578929568>: true, <string:1377943317>: true, <string:2403504922>: true, <string:1459618857>: true, <string:1358955696>: true, <string:4182372366>: true, <string:2583692345>: true, <string:1811940446>: true, <string:3103786159>: true, <string:1795163293>: true, <string:1761608879>: true, <string:973079646>: true, <string:2332034247>: true, <string:1493173306>: true, <string:1644168376>: true, <string:541177096>: true, <string:1358955672>: true, <string:557934560>: true, <string:1358955672>: true, <string:4222314463>: true, <string:3333549260>: true, <string:4224476320>: true, <string:1449503574>: true, <string:3439042731>: true, <string:3868883282>: true };
 obj = { process: require(dependencyMap[0]).default };
 obj.color = obj;
 const _module = require(dependencyMap[1]);

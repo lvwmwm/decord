@@ -1,5 +1,5 @@
 // Module ID: 7474
-// Function ID: 59994
+// Function ID: 60005
 // Name: setIsOnStartStageScreen
 // Dependencies: []
 // Exports: useUpdateIsOnStartStageScreenEffect

@@ -1,12 +1,15 @@
-// Module ID: 5227
-// Function ID: 44204
+// Module ID: 5159
+// Function ID: 44940
 // Name: DeprecatedLayoutAnimation
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0]
 // Exports: DeprecatedLayoutAnimationKeyboard
 
-// Module 5227 (DeprecatedLayoutAnimation)
+// Module 5159 (DeprecatedLayoutAnimation)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 import obj from "module_150";
 import obj from "module_150";
+import __exportStarResult1 from "__exportStarResult1";
 
 let LayoutAnimation;
 class DeprecatedLayoutAnimation {
@@ -16,7 +19,7 @@ class DeprecatedLayoutAnimation {
       tmp = require;
       tmp2 = dependencyMap;
       num = 2;
-      obj = require(dependencyMap[2]);
+      obj = require("__exportStarResult1");
       useReducedMotion = obj.isAndroid();
     }
     if (!useReducedMotion) {
@@ -32,11 +35,8 @@ class DeprecatedLayoutAnimation {
     return;
   }
 }
-const _module = require(dependencyMap[0]);
-({ Keyboard: closure_2, LayoutAnimation } = _module);
-let closure_4 = importDefault(dependencyMap[1]);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
+({ Keyboard: closure_2, LayoutAnimation } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
 
 export const CONFIG_GUILD_FOLDER_OPACITY = obj;
 export const CONFIG_GUILD_FOLDER_SCALEXY = obj;

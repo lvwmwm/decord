@@ -1,5 +1,5 @@
 // Module ID: 6657
-// Function ID: 51198
+// Function ID: 51209
 // Name: hasRelevantTrialOfferForOrder
 // Dependencies: []
 // Exports: default
@@ -57,7 +57,7 @@ function Header(arg0) {
   ({ orderRequired, orderRecord } = useNativeCheckoutStore((orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord })));
   if (null == premiumType) {
     if (!isPaymentSuccess) {
-      let obj = { <string:4003527526>: "contain", <string:2924932188>: 8, <string:1546256390>: 4, <string:2324728136>: "row", style: tmp.headerText };
+      let obj = { "Null": "<string:1895908587>", "Null": "r", "Null": "<string:44592193>", "Null": "<string:29708800>", style: tmp.headerText };
       const intl = arg1(dependencyMap[19]).intl;
       obj.children = intl.string(arg1(dependencyMap[19]).t.vLz3Zs);
       return callback4(arg1(dependencyMap[18]).Text, obj);
@@ -198,7 +198,7 @@ function PlanOption(premiumItem) {
     const intl = arg1(closure_2[19]).intl;
     obj = {};
     let obj7 = arg1(closure_2[25]);
-    obj.price = obj7.formatPrice(0, USD, { "Null": -536870861, "Null": -299892737 });
+    obj.price = obj7.formatPrice(0, USD, { type: "%FunctionPrototype%", reason: "paddingStart" });
     let formatToPlainStringResult = intl.formatToPlainString(arg1(closure_2[19]).t.hXcaLT, obj);
   } else {
     formatToPlainStringResult = discountedPriceString;
@@ -391,13 +391,13 @@ function PremiumPlanSelectionActionSheetCTA(isPaymentSuccess) {
   ({ onStartPayment: closure_0, shouldUseMobileWebRedirectCheckout } = isPaymentSuccess);
   const importDefault = shouldUseMobileWebRedirectCheckout;
   if (isPaymentSuccess.isPaymentSuccess) {
-    let obj = { b: 40, q: true, w: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+    let obj = { month: 40, day: true, year: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
     const intl = arg1(dependencyMap[19]).intl;
     obj.text = intl.string(arg1(dependencyMap[19]).t.WAI6xu);
     obj.onPress = tmp;
     return callback4(arg1(dependencyMap[26]).Button, obj);
   } else {
-    const tmp5 = shouldUseMobileWebRedirectCheckout ? { text: true, size: "/assets/.cache/intl/ZGVzaWdu" } : { text: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014569453526561823, size: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001668805394236571 };
+    const tmp5 = shouldUseMobileWebRedirectCheckout ? { <string:1986169986>: true, <string:2487833047>: true } : { <string:1986169986>: 1156269291, <string:2487833047>: 369 };
     obj = { text: tmp2 };
     const merged = Object.assign(tmp5);
     obj["grow"] = true;
@@ -773,7 +773,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
                 }
                 const obj2 = { style: callback.contentSelectPlan };
                 if (tmp11) {
-                  const obj3 = { hasMaxConnections: 8, isBoostOnlySubscription: 32, style: tmp.trialDisclaimer };
+                  const obj3 = { cachedAt: 8, edpbxy: 32, style: tmp.trialDisclaimer };
                   const intl2 = callback(premiumItems[19]).intl;
                   obj3.children = intl2.string(callback(premiumItems[19]).t.u95Dt4);
                   let tmp11 = getActivatedText(callback(premiumItems[18]).Text, obj3);
@@ -785,7 +785,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
                       tmp11 = null;
                       if (null != premiumType) {
                         const obj4 = {};
-                        const obj5 = { hasMaxConnections: 8, isBoostOnlySubscription: 32, style: tmp.discountDisclaimer };
+                        const obj5 = { cachedAt: 8, edpbxy: 32, style: tmp.discountDisclaimer };
                         const intl = callback(premiumItems[19]).intl;
                         const obj6 = { regularPrice: _undefined.priceString, discountedPrice: discountedPriceString };
                         obj5.children = intl.format(callback(premiumItems[19]).t.yBn7uz, obj6);
@@ -950,7 +950,7 @@ const tmp6 = arg1(dependencyMap[12]);
 const tmp7 = arg1(dependencyMap[13]);
 ({ jsx: closure_34, jsxs: closure_35, Fragment: closure_36 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { body: { padding: 16 }, headerText: {}, contentSelectPlan: { marginBottom: 16 }, contentActivated: { "Null": 225600, "Null": -799997952, "Null": 2130325781 }, contentActivatedText: {}, formTitle: { "Bool(true)": -536870861, "Bool(true)": -299892737 }, formSectionBody: { backgroundColor: "none" }, formSectionBodyWithNoTitle: { marginTop: -24 }, planOptionRowContainer: { paddingHorizontal: 10 }, planOptionContainer: { ty: 8, c: null, o: "\u270A\u{1F3FF}" }, planOptionPriceContainer: { 0: null, 9223372036854775807: "flex", 9223372036854775807: "row", -9223372036854775808: "center", -9223372036854775808: "relative" }, planOptionDiscountContainer: {} };
+obj = { body: { padding: 16 }, headerText: { -9223372036854775808: "startLocalAudioRecording", 9223372036854775807: "isArrayBuffer" }, contentSelectPlan: { marginBottom: 16 }, contentActivated: { <string:4178783607>: "a", <string:199936531>: "<string:1896160337>", <string:3260308108>: "memo" }, contentActivatedText: {}, formTitle: { backgroundColor: "%FunctionPrototype%", accessibilityRole: "paddingStart" }, formSectionBody: { backgroundColor: "none" }, formSectionBodyWithNoTitle: { marginTop: -24 }, planOptionRowContainer: { paddingHorizontal: 10 }, planOptionContainer: { id: 8, title: null, options: "\u270A\u{1F3FF}" }, planOptionPriceContainer: { "Bool(false)": null, "Bool(false)": "flex", "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "relative" }, planOptionDiscountContainer: { display: null, flexDirection: null, alignItems: null } };
 obj = { borderRadius: importDefault(dependencyMap[16]).radii.lg, backgroundColor: importDefault(dependencyMap[16]).unsafe_rawColors.GREEN_360 };
 obj.planOptionDiscount = obj;
 const tmp8 = arg1(dependencyMap[14]);
@@ -958,7 +958,7 @@ obj.planOptionDiscountWhite = { backgroundColor: importDefault(dependencyMap[16]
 obj.planOptionDiscountText = { textTransform: "uppercase" };
 obj.blockedPaymentContainer = { marginVertical: 40 };
 obj.legalDisclaimerText = { marginTop: 16 };
-const obj2 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+const obj2 = { hideWhenScrolling: false, autoCapitalize: false, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.divider = obj2;
 obj.offerDividerMargin = { marginBottom: 8 };
 obj.trialDisclaimer = { marginBottom: 8 };

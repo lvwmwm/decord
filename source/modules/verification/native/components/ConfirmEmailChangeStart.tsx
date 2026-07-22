@@ -1,10 +1,10 @@
-// Module ID: 9182
-// Function ID: 71918
+// Module ID: 9183
+// Function ID: 71931
 // Name: ConfirmEmailChangeStart
 // Dependencies: []
 // Exports: default
 
-// Module 9182 (ConfirmEmailChangeStart)
+// Module 9183 (ConfirmEmailChangeStart)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_9 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-let closure_12 = arg1(dependencyMap[6]).createStyles({ container: { <string:743828640>: "construct", <string:3482404964>: "isArray", <string:1940311795>: "isArray", <string:3335284451>: "isArray" }, image: { direction: "checkIsOnChannelNavigationRoute", style: "<string:3844887040>", borderWidth: "<string:158435740>" }, title: {}, body: {}, button: {} });
+let closure_12 = arg1(dependencyMap[6]).createStyles({ container: {}, image: { GifAutoPlay: "construct", lavender: "r", useShouldShowWishlistInDMGifting: "isArray" }, title: {}, body: {}, button: { name: "column", opacity: "flex-end" } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeStart.tsx");
 
@@ -35,11 +35,11 @@ export default function ConfirmEmailChangeStart() {
   } else {
     const intl = arg1(closure_2[13]).intl;
     obj = { oldEmail: stateFromStores.email };
-    obj = { onUnexpectedItemSize: null, minResolutionHeight: null };
+    obj = { "Bool(true)": true, "Bool(true)": true };
     obj1 = { style: tmp.container };
     const obj2 = { style: tmp.image, source: importDefault(closure_2[14]) };
     const items1 = [callback2(closure_7, obj2), , , ];
-    const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj3 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
     const intl2 = arg1(closure_2[13]).intl;
     obj3.children = intl2.string(arg1(closure_2[13]).t.dQ71Wa);
     items1[1] = callback2(arg1(closure_2[15]).Text, obj3);

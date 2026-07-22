@@ -1,7 +1,7 @@
 // Module ID: 3529
 // Function ID: 27274
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3529 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -166,7 +166,7 @@ export const DayOfYearParser = (Parser) => {
         tmp19 = closure_8(applyResult, "subpriority", 1);
         tmp20 = closure_6(applyResult);
         str4 = "incompatibleTokens";
-        tmp21 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+        tmp21 = closure_8(applyResult, "incompatibleTokens", ["<string:2397044740>", "<string:3418882051>", "<string:3418095620>", "<string:3418292228>", "<string:2347368452>", "<string:3418882051>", "<string:3418357764>", "<string:776732676>", "<string:3405775802>", "<string:2566914831>", "<string:50332565>", "<string:2130707349>", "<string:3170894737>", "<string:3338666917>", "<string:2885681935>"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -214,7 +214,7 @@ export const DayOfYearParser = (Parser) => {
           tmp19 = closure_8(applyResult, "subpriority", 1);
           tmp20 = closure_6(applyResult);
           str4 = "incompatibleTokens";
-          tmp21 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+          tmp21 = closure_8(applyResult, "incompatibleTokens", ["<string:2397044740>", "<string:3418882051>", "<string:3418095620>", "<string:3418292228>", "<string:2347368452>", "<string:3418882051>", "<string:3418357764>", "<string:776732676>", "<string:3405775802>", "<string:2566914831>", "<string:50332565>", "<string:2130707349>", "<string:3170894737>", "<string:3338666917>", "<string:2885681935>"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -233,7 +233,7 @@ export const DayOfYearParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: DayOfYearParser };
+  let obj = { "": null, children: null, "": null, value: DayOfYearParser };
   DayOfYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class DayOfYearParser {
@@ -268,7 +268,7 @@ export const DayOfYearParser = (Parser) => {
           tmp19 = closure_8(applyResult, "subpriority", 1);
           tmp20 = closure_6(applyResult);
           str4 = "incompatibleTokens";
-          tmp21 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+          tmp21 = closure_8(applyResult, "incompatibleTokens", ["<string:2397044740>", "<string:3418882051>", "<string:3418095620>", "<string:3418292228>", "<string:2347368452>", "<string:3418882051>", "<string:3418357764>", "<string:776732676>", "<string:3405775802>", "<string:2566914831>", "<string:50332565>", "<string:2130707349>", "<string:3170894737>", "<string:3338666917>", "<string:2885681935>"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -332,4 +332,4 @@ export const DayOfYearParser = (Parser) => {
   };
   _defineProperties(DayOfYearParser.prototype, items);
   return DayOfYearParser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

@@ -1,10 +1,10 @@
-// Module ID: 10438
-// Function ID: 80569
+// Module ID: 10439
+// Function ID: 80582
 // Name: _computeActivityPartyPrivacyFlags
 // Dependencies: []
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10438 (_computeActivityPartyPrivacyFlags)
+// Module 10439 (_computeActivityPartyPrivacyFlags)
 function _computeActivityPartyPrivacyFlags(arg0) {
   const AllowActivityPartyPrivacyFriends = require(dependencyMap[1]).AllowActivityPartyPrivacyFriends;
   const setting = AllowActivityPartyPrivacyFriends.getSetting();

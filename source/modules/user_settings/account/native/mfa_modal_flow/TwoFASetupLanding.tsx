@@ -1,10 +1,10 @@
-// Module ID: 13567
-// Function ID: 102883
+// Module ID: 13574
+// Function ID: 102916
 // Name: TwoFASetupLanding
 // Dependencies: []
 // Exports: default
 
-// Module 13567 (TwoFASetupLanding)
+// Module 13574 (TwoFASetupLanding)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -31,7 +31,7 @@ export default function TwoFASetupLanding() {
   const items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
   const intl2 = arg1(dependencyMap[9]).intl;
-  obj4.children = intl2.format(arg1(dependencyMap[9]).t.A7Aehw, { marginLeft: false, marginRight: false });
+  obj4.children = intl2.format(arg1(dependencyMap[9]).t.A7Aehw, { flexWrap: null, alignItems: null });
   items[2] = callback(arg1(dependencyMap[8]).Text, obj4);
   obj1.children = items;
   obj.children = callback2(arg1(dependencyMap[6]).SafeAreaPaddingView, obj1);

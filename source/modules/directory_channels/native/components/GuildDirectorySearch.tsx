@@ -1,10 +1,10 @@
-// Module ID: 10023
-// Function ID: 77431
+// Module ID: 10024
+// Function ID: 77444
 // Name: DefaultState
 // Dependencies: []
 // Exports: default
 
-// Module 10023 (DefaultState)
+// Module 10024 (DefaultState)
 import ArrayResult from "module_20";
 
 function DefaultState() {
@@ -49,7 +49,7 @@ function EmptyState(channel) {
   obj = { style: tmp.emptyWrapper };
   obj1 = { style: tmp.emptyStateImage, source: importDefault(dependencyMap[9]) };
   const items1 = [callback2(closure_7, obj1), , ];
-  const obj2 = { delete: "primary", dispatch: null, raw: null, style: tmp.emptyStateTitle };
+  const obj2 = { "Null": "auto", "Null": 1, alignItems: 16, style: tmp.emptyStateTitle };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[11]).t.6HXiuE);
   items1[1] = callback2(arg1(dependencyMap[10]).Text, obj2);
@@ -68,13 +68,13 @@ const AnalyticEvents = tmp3.AnalyticEvents;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { flex: { "Null": false, "Null": false }, fauxHeader: { paddingHorizontal: 0 } };
-obj = { paddingTop: false, justifyContent: false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { flex: { backgroundColor: false, borderWidth: false }, fauxHeader: { paddingHorizontal: 0 } };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: false };
 obj.scrollContainer = obj;
-obj.emptyWrapper = { overflow: "isArray", isInitial: "op", Wp9bEl: "start", GemLeftUpwards3dIllustration: "r" };
+obj.emptyWrapper = { onPressEdit: null, borderTopLeftRadius: 50, borderTopRightRadius: 101, overflow: 0 };
 obj.emptyStateImage = { marginBottom: 24 };
 obj.emptyStateText = { textAlign: "center" };
-obj.emptyStateTitle = { "Null": null, "Null": 1 };
+obj.emptyStateTitle = { value: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, on: 131072.0007038191 };
 const tmp4 = arg1(dependencyMap[6]);
 obj.proTip = { fontFamily: tmp3.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
 let closure_14 = obj.createStyles(obj);

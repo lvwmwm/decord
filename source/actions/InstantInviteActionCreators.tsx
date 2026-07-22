@@ -1,5 +1,5 @@
 // Module ID: 7455
-// Function ID: 59814
+// Function ID: 59825
 // Name: generateAcceptInviteOptions
 // Dependencies: []
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite

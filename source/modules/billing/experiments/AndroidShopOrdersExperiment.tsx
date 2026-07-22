@@ -1,13 +1,12 @@
-// Module ID: 8732
-// Function ID: 69075
+// Module ID: 8733
+// Function ID: 69087
 // Name: apexExperiment
 // Dependencies: []
 // Exports: useAndroidShopOrdersEnabled
 
-// Module 8732 (apexExperiment)
+// Module 8733 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: "BILLING_IP_LOCATION_FETCH_ERROR", 1387159956: "<string:2659074560>", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/billing/experiments/AndroidShopOrdersExperiment.tsx");
 

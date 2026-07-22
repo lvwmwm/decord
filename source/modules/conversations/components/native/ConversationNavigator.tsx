@@ -1,10 +1,12 @@
-// Module ID: 9278
-// Function ID: 72490
+// Module ID: 9279
+// Function ID: 72503
 // Name: HeaderWithBorder
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 4294967295]
 // Exports: default, openConversationNavigator
 
-// Module 9278 (HeaderWithBorder)
+// Module 9279 (HeaderWithBorder)
+import "__exportStarResult1";
+
 function HeaderWithBorder(arg0) {
   let obj = arg1(dependencyMap[2]);
   const token = obj.useToken(importDefault(dependencyMap[3]).colors.BORDER_SUBTLE);
@@ -15,7 +17,6 @@ function HeaderWithBorder(arg0) {
   obj["style"] = { borderColor: token };
   return obj2.renderHeader(obj);
 }
-importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[6]).createNativeStackNavigator();

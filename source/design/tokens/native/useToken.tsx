@@ -1,19 +1,17 @@
 // Module ID: 3832
-// Function ID: 31988
+// Function ID: 31990
 // Name: map
-// Dependencies: [3851, 2, 2, 3856, 3909]
+// Dependencies: []
 // Exports: useToken
 
 // Module 3832 (map)
-import BountiesScrollGradientRive from "BountiesScrollGradientRive";
-
 const map = new Map();
-const keys = Object.keys(require("createThemedContext").colors);
+const keys = Object.keys(importDefault(dependencyMap[0]).colors);
 let closure_4 = Object.fromEntries(keys.map((arg0) => {
   const items = [importDefault(dependencyMap[2]).kebabCase(arg0), arg0];
   return items;
 }));
-const result = BountiesScrollGradientRive.fileFinishedImporting("design/tokens/native/useToken.tsx");
+const result = arg1(dependencyMap[4]).fileFinishedImporting("design/tokens/native/useToken.tsx");
 
 export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
   let obj = BACKGROUND_BASE_LOW;

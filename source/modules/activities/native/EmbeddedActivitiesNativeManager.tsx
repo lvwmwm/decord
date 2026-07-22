@@ -1,9 +1,9 @@
-// Module ID: 10514
-// Function ID: 82078
+// Module ID: 10515
+// Function ID: 82091
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10514 (_isNativeReflectConstruct)
+// Module 10515 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -300,7 +300,7 @@ let tmp6 = (arg0) => {
       let obj = EmbeddedActivitiesNativeManager(closure_2[26]);
       obj = { location, applicationId, showFeedback };
       obj.stopEmbeddedActivity(obj);
-      obj = { valid: 503316741, dnsWarn: 503317000, rfc5321: 285213192, cfws: 37004865, applicationId };
+      obj = { applicationId };
       callback(closure_2[24]).dispatch(obj);
     }
   };

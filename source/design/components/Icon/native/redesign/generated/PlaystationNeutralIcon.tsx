@@ -1,10 +1,10 @@
-// Module ID: 11844
-// Function ID: 91794
+// Module ID: 11845
+// Function ID: 91808
 // Name: PlaystationNeutralIcon
 // Dependencies: []
 // Exports: PlaystationNeutralIcon
 
-// Module 11844 (PlaystationNeutralIcon)
+// Module 11845 (PlaystationNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PlaystationNeutralIcon.tsx");

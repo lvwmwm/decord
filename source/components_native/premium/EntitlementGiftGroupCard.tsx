@@ -1,9 +1,9 @@
-// Module ID: 12374
-// Function ID: 94622
+// Module ID: 12379
+// Function ID: 94650
 // Name: _isNativeReflectConstruct
-// Dependencies: [251658240, 131072, 351272960, 31, 27, 6666, 1851, 33, 4126, 689, 5243, 1324, 4550, 668, 3774, 12379, 12380, 7167, 7110, 7111, 7162, 5430, 2, 333040, 2031616, 1769472, 247726080, 368115712, 2162688, 297795584, 270270464, 37093376, 368312320, 471728128, 357957632, 634060800, 292749312, 79429632, 247332864, 633798656, 297533440, 811466752, 131072, 528154624, 452984832, 989855744]
+// Dependencies: [251658240, 131072, 351272960, 31, 27, 6666, 1851, 33, 4126, 689, 4970, 1324, 4550, 668, 3774, 12384, 12385, 7167, 7110, 7111, 7162, 5164, 2, 333040, 2031616, 1769472, 247726080, 368050176, 2162688, 297795584, 270270464, 37093376, 368246784, 471728128, 357892096, 634126336, 292749312, 79429632, 247332864, 633864192, 297533440, 811794432, 131072, 528154624, 452984832, 989855744]
 
-// Module 12374 (_isNativeReflectConstruct)
+// Module 12379 (_isNativeReflectConstruct)
 import module_31 from "module_31";
 import getActivityIndicator from "get ActivityIndicator";
 import importAllResult from "items";
@@ -14,7 +14,7 @@ import importDefaultResult2 from "_createForOfIteratorHelperLoose";
 import importDefaultResult4 from "useIsMobileVisualRefreshExperimentEnabled";
 import DrawerSourceTypes from "DrawerSourceTypes";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import module_12379 from "module_12379";
+import module_12384 from "module_12384";
 import importDefaultResult3 from "result";
 
 function _isNativeReflectConstruct() {
@@ -32,34 +32,34 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ View: closure_9, ActivityIndicator: closure_10, TouchableWithoutFeedback: closure_11 } = GuildFeatures);
 ({ SubscriptionIntervalTypes: closure_16, PremiumSubscriptionSKUs: closure_17, PremiumGiftStyles: closure_18 } = DrawerSourceTypes);
 ({ jsx: closure_19, jsxs: closure_20 } = _createForOfIteratorHelperLoose);
-module_12379 = { giftGroupCard: {} };
-module_12379 = { borderWidth: 1, borderColor: require("module_12380").colors.CARD_BORDER_DEFAULT, borderRadius: require("module_12380").radii.md, backgroundColor: require("module_12380").colors.TABLEROW_BACKGROUND_DEFAULT };
-module_12379.giftGroupCardRefresh = module_12379;
-const obj1 = { 9223372036854775807: null, 0: null, fontFamily: require("LinearGradient").Fonts.PRIMARY_SEMIBOLD, color: require("module_12380").colors.MOBILE_TEXT_HEADING_PRIMARY };
-module_12379.title = obj1;
-module_12379.arrow = { color: require("module_12380").colors.ICON_SUBTLE };
-module_12379.subtitle = {};
-module_12379.titleContainer = { 906602722: null, -1414893631: null };
-module_12379.groupCardHeader = { trackForumPostLinkCopied: -2057813549, GiftReminderNagbar: 1090584580, VANITY_URL_POWERUP_DCS: 110140, spades: 3186 };
-const obj2 = { color: require("module_12380").colors.ICON_SUBTLE };
-module_12379.groupCardHeaderLegacy = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
-module_12379.rowArrow = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009417410814, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200452223535337, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043836185955061994 };
-const obj3 = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
-module_12379.giftIcon = { borderRadius: require("module_12380").radii.xs };
-module_12379.generateGiftRow = {};
-const obj4 = { borderRadius: require("module_12380").radii.xs };
-module_12379.generateGiftRowLegacy = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
-module_12379.generateGiftRowText = { flexShrink: 1 };
-module_12379.generateGiftButton = { marginLeft: 12 };
-module_12379.loading = { marginTop: 8 };
-module_12379.generateButtonContainer = { isArray: null, diversity: null };
-const obj5 = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
-module_12379.groupCardHeaderOpen = { backgroundColor: require("module_12380").colors.BACKGROUND_BASE_LOWEST };
-const obj6 = { backgroundColor: require("module_12380").colors.BACKGROUND_BASE_LOWEST };
-module_12379.groupCardHeaderOpenRefresh = { backgroundColor: require("module_12380").colors.BACKGROUND_MOD_MUTED };
-module_12379.subtitleContainer = { "Null": true, "Null": true, "Bool(false)": true };
-module_12379.socialLayerSubtitleContainer = { marginTop: 2 };
-module_12379 = module_12379.createLegacyClassComponentStyles(module_12379);
+module_12384 = { giftGroupCard: {} };
+module_12384 = { borderWidth: 1, borderColor: require("module_12385").colors.CARD_BORDER_DEFAULT, borderRadius: require("module_12385").radii.md, backgroundColor: require("module_12385").colors.TABLEROW_BACKGROUND_DEFAULT };
+module_12384.giftGroupCardRefresh = module_12384;
+module_12384.title = { fontFamily: require("LinearGradient").Fonts.PRIMARY_SEMIBOLD, color: require("module_12385").colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj1 = { fontFamily: require("LinearGradient").Fonts.PRIMARY_SEMIBOLD, color: require("module_12385").colors.MOBILE_TEXT_HEADING_PRIMARY };
+module_12384.arrow = { color: require("module_12385").colors.ICON_SUBTLE };
+module_12384.subtitle = {};
+module_12384.titleContainer = { NBSP: null, isEndStream: null };
+module_12384.groupCardHeader = {};
+const obj2 = { color: require("module_12385").colors.ICON_SUBTLE };
+module_12384.groupCardHeaderLegacy = { backgroundColor: require("module_12385").colors.BACKGROUND_SURFACE_HIGH };
+module_12384.rowArrow = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009417553737, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200452223566198, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043836185955061994 };
+const obj3 = { backgroundColor: require("module_12385").colors.BACKGROUND_SURFACE_HIGH };
+module_12384.giftIcon = { borderRadius: require("module_12385").radii.xs };
+module_12384.generateGiftRow = {};
+const obj4 = { borderRadius: require("module_12385").radii.xs };
+module_12384.generateGiftRowLegacy = { backgroundColor: require("module_12385").colors.BACKGROUND_SURFACE_HIGH };
+module_12384.generateGiftRowText = { flexShrink: 1 };
+module_12384.generateGiftButton = { marginLeft: 12 };
+module_12384.loading = { marginTop: 8 };
+module_12384.generateButtonContainer = { nestedScrollEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, scrollEventThrottle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+const obj5 = { backgroundColor: require("module_12385").colors.BACKGROUND_SURFACE_HIGH };
+module_12384.groupCardHeaderOpen = { backgroundColor: require("module_12385").colors.BACKGROUND_BASE_LOWEST };
+const obj6 = { backgroundColor: require("module_12385").colors.BACKGROUND_BASE_LOWEST };
+module_12384.groupCardHeaderOpenRefresh = { backgroundColor: require("module_12385").colors.BACKGROUND_MOD_MUTED };
+module_12384.subtitleContainer = { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null };
+module_12384.socialLayerSubtitleContainer = { marginTop: 2 };
+module_12384 = module_12384.createLegacyClassComponentStyles(module_12384);
 const tmp11 = (Component) => {
   class EntitlementGiftGroupCard {
     constructor(arg0) {
@@ -130,7 +130,7 @@ const tmp11 = (Component) => {
       }
       items[1] = prop;
       obj.style = items;
-      obj = { style: tmp.generateGiftRowText };
+      obj = { cachedAt: null, edpbxy: null, style: tmp.generateGiftRowText };
       const intl = EntitlementGiftGroupCard(closure_2[19]).intl;
       obj.children = intl.string(EntitlementGiftGroupCard(closure_2[19]).t.lELyPj);
       const items1 = [callback4(EntitlementGiftGroupCard(closure_2[18]).Text, obj), ];
@@ -194,7 +194,7 @@ const tmp11 = (Component) => {
       }
       const items1 = [tmp11, , ];
       const obj3 = { style: tmp.titleContainer };
-      const obj4 = { handleMessageFocus: true, enableHome: true, afterMs: true, children };
+      const obj4 = { gauge: "polite", onLayerLoaded: "column", ExpressiveGradient: null, children };
       const items2 = [callback4(EntitlementGiftGroupCard(closure_2[18]).Text, obj4), ];
       obj5 = {};
       let socialLayerSubtitleContainer = isGameItemSKUResult;
@@ -381,7 +381,7 @@ const tmp11 = (Component) => {
   return callback(EntitlementGiftGroupCard, items);
 }(importAllResult.Component);
 tmp11.contextType = arg1(dependencyMap[42]).ThemeContext;
-const obj7 = { backgroundColor: require("module_12380").colors.BACKGROUND_MOD_MUTED };
+const obj7 = { backgroundColor: require("module_12385").colors.BACKGROUND_MOD_MUTED };
 const items = [importDefaultResult1, importDefaultResult4, importDefaultResult, importDefaultResult2, importDefaultResult3];
 const importDefaultResult5 = importDefault(dependencyMap[43]);
 const tmp12 = importDefault(dependencyMap[43]).connectStores(items, (arg0) => {

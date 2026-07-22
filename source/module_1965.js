@@ -4,6 +4,6 @@
 
 // Module 1965
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "r", format: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", View: "Array", accessibilityRole: "headers", surrogates: "handled", url: "fr-NE", scales: [null] };
+const obj = { 296374: true, 1102560849: true, 288807: true, 1103760465: true, 288241: true, 1120538193: true, scales: [false] };
 
 export default _module.registerAsset(obj);

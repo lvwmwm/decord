@@ -1,9 +1,9 @@
-// Module ID: 13865
-// Function ID: 104874
+// Module ID: 13872
+// Function ID: 104914
 // Name: metadata
 // Dependencies: []
 
-// Module 13865 (metadata)
+// Module 13872 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/quests/bounties/bounty_banner.mp4.js");
 

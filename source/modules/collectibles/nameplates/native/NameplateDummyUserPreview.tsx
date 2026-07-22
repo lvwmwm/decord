@@ -1,10 +1,10 @@
-// Module ID: 8221
-// Function ID: 64960
+// Module ID: 8222
+// Function ID: 64972
 // Name: NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG
 // Dependencies: []
 // Exports: NameplateDummyUserPreview
 
-// Module 8221 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
+// Module 8222 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -18,7 +18,9 @@ obj[arg1(dependencyMap[4]).AvatarSizes.NORMAL] = obj;
 const tmp3 = arg1(dependencyMap[3]);
 let closure_8 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   let obj = {};
-  obj = { padding: tmp.padding, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+  obj = { paddingVertical: "<string:1912603085>", flexDirection: true, minHeight: true, flex: true, marginHorizontal: true, flexDirection: true };
+  obj.padding = obj[arg0].padding;
+  obj.borderRadius = importDefault(dependencyMap[5]).radii.sm;
   obj.container = obj;
   obj = { borderRadius: importDefault(dependencyMap[5]).radii.round, marginRight: tmp.avatarMarginRight };
   let str = "transparent";

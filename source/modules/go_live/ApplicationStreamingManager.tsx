@@ -1,9 +1,9 @@
-// Module ID: 16425
-// Function ID: 126837
+// Module ID: 16433
+// Function ID: 126879
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16425 (_createForOfIteratorHelperLoose)
+// Module 16433 (_createForOfIteratorHelperLoose)
 let GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT;
 let STREAM_NOTIFY_GUILD_MAX_SIZE;
 function _createForOfIteratorHelperLoose(@@iterator) {

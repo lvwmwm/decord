@@ -1,10 +1,10 @@
-// Module ID: 10189
-// Function ID: 78693
+// Module ID: 10190
+// Function ID: 78706
 // Name: BellSlashIcon
 // Dependencies: []
 // Exports: BellSlashIcon
 
-// Module 10189 (BellSlashIcon)
+// Module 10190 (BellSlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BellSlashIcon.tsx");

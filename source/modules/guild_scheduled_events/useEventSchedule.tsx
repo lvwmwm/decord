@@ -1,10 +1,10 @@
-// Module ID: 8345
-// Function ID: 66461
+// Module ID: 8346
+// Function ID: 66473
 // Name: _getEventSchedule
 // Dependencies: []
 // Exports: default, getEventSchedule, useEventScheduleById
 
-// Module 8345 (_getEventSchedule)
+// Module 8346 (_getEventSchedule)
 function _getEventSchedule(stateFromStores, eventException, nextRecurrenceIdInEvent) {
   let endDate;
   let startDate;

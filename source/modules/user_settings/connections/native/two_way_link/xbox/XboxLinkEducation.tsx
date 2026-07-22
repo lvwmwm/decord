@@ -1,17 +1,17 @@
-// Module ID: 9029
-// Function ID: 70950
+// Module ID: 9030
+// Function ID: 70963
 // Name: XboxLinkEducation
 // Dependencies: []
 // Exports: default
 
-// Module 9029 (XboxLinkEducation)
+// Module 9030 (XboxLinkEducation)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ image: { <string:651579779>: true, <string:4249959009>: true, <string:1446732419>: true } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ image: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
@@ -24,7 +24,7 @@ export default function XboxLinkEducation(onClose) {
   obj = { style: twoWayLinkStyles.content };
   obj1 = { source: React.useMemo(() => ({ uri: callback(closure_2[7]) }), []), style: callback3().image };
   const items = [callback(closure_4, obj1), , ];
-  const obj2 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: twoWayLinkStyles.title };
+  const obj2 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: twoWayLinkStyles.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj2.children = intl.string(arg1(dependencyMap[9]).t.jHytat);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj2);
@@ -36,7 +36,7 @@ export default function XboxLinkEducation(onClose) {
   const items1 = [callback2(closure_5, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj5 = { style: twoWayLinkStyles.footerButton };
-  const obj6 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
+  const obj6 = { <string:1986169986>: true, <string:2487833047>: true };
   const intl3 = arg1(dependencyMap[9]).intl;
   obj6.text = intl3.string(arg1(dependencyMap[9]).t.i4jeWR);
   obj6.onPress = onClose.onClose;

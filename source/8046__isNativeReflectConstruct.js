@@ -1,5 +1,5 @@
 // Module ID: 8046
-// Function ID: 63863
+// Function ID: 63873
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -68,6 +68,6 @@ const tmp3 = (arg0) => {
   return callback(Ellipse, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "Ellipse";
-tmp3.defaultProps = { 9223372036854775807: "ERROR", -9223372036854775808: "ERROR", 9223372036854775807: "NOT_RESPONDER", -9223372036854775808: "NOT_RESPONDER" };
+tmp3.defaultProps = { 0: -24, 87046599363305: null, 9223372036854775807: 1, 0: "Malaysia" };
 
 export default tmp3;

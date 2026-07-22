@@ -1,14 +1,9 @@
 // Module ID: 7562
-// Function ID: 60504
+// Function ID: 60515
 // Name: _isNativeReflectConstruct
-// Dependencies: [496238592, 131072, 401604608, 31, 27, 1353, 4944, 1354, 33, 4126]
+// Dependencies: []
 
 // Module 7562 (_isNativeReflectConstruct)
-import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -92,6 +87,9 @@ function isMissWithinTTL() {
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = 86400000;
 let closure_9 = null;
 let closure_10 = false;
@@ -102,14 +100,14 @@ let tmp2 = (Store) => {
     constructor() {
       self = this;
       tmp = closure_2(this, AgeVerificationStore);
-      obj = module_31(AgeVerificationStore);
+      obj = closure_5(AgeVerificationStore);
       tmp2 = closure_4;
       if (closure_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = module_31;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, module_31(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -123,7 +121,7 @@ let tmp2 = (Store) => {
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(_isNativeReflectConstruct);
+      this.waitFor(closure_7);
     }
   };
   const items = [obj, , , , , , ];
@@ -174,9 +172,9 @@ let tmp2 = (Store) => {
     }
   };
   return callback(AgeVerificationStore, items);
-}(require("GUILD_EVENT_MAX_NAME_LENGTH").Store);
+}(importDefault(dependencyMap[7]).Store);
 tmp2.displayName = "AgeVerificationStore";
-tmp2 = new tmp2(require("module_33"), {
+tmp2 = new tmp2(importDefault(dependencyMap[8]), {
   AGE_VERIFICATION_METHODS_LOAD_START: function handleAgeVerificationMethodsLoadStart() {
     let closure_10 = true;
   },
@@ -207,6 +205,6 @@ tmp2 = new tmp2(require("module_33"), {
     persist();
   }
 });
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/age_assurance/AgeVerificationStore.tsx");
+const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/age_assurance/AgeVerificationStore.tsx");
 
 export default tmp2;

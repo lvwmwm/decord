@@ -1,9 +1,9 @@
-// Module ID: 10005
-// Function ID: 77326
+// Module ID: 10006
+// Function ID: 77339
 // Name: dismissPanel
 // Dependencies: []
 
-// Module 10005 (dismissPanel)
+// Module 10006 (dismissPanel)
 let CONTROLS_HEIGHT;
 let VoicePanelControlsModes;
 const VoicePanelModes = arg1(dependencyMap[1]).VoicePanelModes;
@@ -13,7 +13,7 @@ let obj = { channelId: "context-not-initialized", channelType: undefined };
 const tmp2 = arg1(dependencyMap[2]);
 obj.connected = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const obj3 = arg1(dependencyMap[4]);
-obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ "Null": -536870861, "Null": -299892737 });
+obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
 const obj4 = arg1(dependencyMap[4]);
 obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT, locked: false, height: CONTROLS_HEIGHT, pushToTalk: false };
 obj.controlsSpecs = arg1(dependencyMap[4]).createFakeSharedValue(obj);
@@ -48,7 +48,7 @@ obj.morphablePanelMode = arg1(dependencyMap[4]).createFakeSharedValue(arg1(depen
 const obj11 = arg1(dependencyMap[4]);
 obj.mountedCards = new Set();
 const set = new Set();
-obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ paddingVertical: -536870861, paddingHorizontal: -299892737 });
+obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
 const obj12 = arg1(dependencyMap[4]);
 obj.preJoinContentSize = require("module_0");
 const obj13 = arg1(dependencyMap[4]);
@@ -85,12 +85,12 @@ obj.streamOutputSinkStack = {};
 const obj16 = arg1(dependencyMap[4]);
 obj.windowDimensions = arg1(dependencyMap[4]).createFakeSharedValue({});
 const obj17 = arg1(dependencyMap[4]);
-const obj1 = { 1993865571: true, 1386497361: true, -158093675: true, 1694760785: true, -1806456234: true, -70490976: true, -2041385824: true, mode: VoicePanelModes.PANEL };
+const obj1 = { <string:1654717400>: true, <string:1655395932>: true, <string:1162977531>: true, <string:1446666757>: true, <string:1636042321>: true, <string:1895911739>: true, <string:1621778771>: true, mode: VoicePanelModes.PANEL };
 obj.wrapperDimensions = arg1(dependencyMap[4]).createFakeSharedValue(obj1);
 const obj18 = arg1(dependencyMap[4]);
 obj.useReducedMotion = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const obj20 = arg1(dependencyMap[4]);
-obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({ "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
+obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({ progressViewOffset: true, refreshing: true, id: true });
 const obj21 = arg1(dependencyMap[4]);
 obj.panelCardStillInPIP = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const context = importAllResult.createContext(obj);

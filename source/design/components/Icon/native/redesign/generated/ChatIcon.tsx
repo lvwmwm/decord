@@ -1,5 +1,5 @@
 // Module ID: 4625
-// Function ID: 40264
+// Function ID: 40272
 // Name: ChatIcon
 // Dependencies: []
 // Exports: ChatIcon

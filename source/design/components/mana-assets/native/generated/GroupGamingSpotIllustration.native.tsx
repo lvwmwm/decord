@@ -1,7 +1,7 @@
 // Module ID: 6237
-// Function ID: 50277
+// Function ID: 50288
 // Name: GroupGamingSpotIllustration
-// Dependencies: [33554456, 1946157056, 33, 5232]
+// Dependencies: [33554456, 1946157056, 33, 5082]
 // Exports: GroupGamingSpotIllustration
 
 // Module 6237 (GroupGamingSpotIllustration)

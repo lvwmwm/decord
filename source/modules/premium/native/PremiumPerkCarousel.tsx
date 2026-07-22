@@ -1,10 +1,10 @@
-// Module ID: 12260
-// Function ID: 94018
+// Module ID: 12265
+// Function ID: 94046
 // Name: PremiumPerkCarousel
 // Dependencies: []
 // Exports: default
 
-// Module 12260 (PremiumPerkCarousel)
+// Module 12265 (PremiumPerkCarousel)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

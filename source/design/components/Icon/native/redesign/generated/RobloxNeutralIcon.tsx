@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 68286
+// Module ID: 8606
+// Function ID: 68298
 // Name: RobloxNeutralIcon
 // Dependencies: []
 // Exports: RobloxNeutralIcon
 
-// Module 8605 (RobloxNeutralIcon)
+// Module 8606 (RobloxNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RobloxNeutralIcon.tsx");

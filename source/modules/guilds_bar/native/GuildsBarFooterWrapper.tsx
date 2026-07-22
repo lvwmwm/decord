@@ -1,15 +1,15 @@
-// Module ID: 14753
-// Function ID: 111233
+// Module ID: 14761
+// Function ID: 111276
 // Name: GuildsBarFooterWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 14753 (GuildsBarFooterWrapper)
+// Module 14761 (GuildsBarFooterWrapper)
 const GUILD_ITEM_HIT_SLOP = require(dependencyMap[0]).GUILD_ITEM_HIT_SLOP;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
 let obj = {};
-obj = { alignSelf: "{0} \u00E9s {1}", justifyContent: "{0}, {1}", flexShrink: "{0} \u00E9s {1}", gap: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_PADDING };
+obj = { EXPANDED_DRAWER_SHOW_POSITION: null, lineClamp: null, noMargin: "center", gap: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_PADDING };
 obj.footerWrapper = obj;
 let closure_5 = _module.createStyles(obj);
 const _module1 = require(dependencyMap[7]);

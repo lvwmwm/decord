@@ -1,9 +1,9 @@
-// Module ID: 13296
-// Function ID: 100996
+// Module ID: 13303
+// Function ID: 101029
 // Name: RPC_LOCAL_SCOPE
 // Dependencies: []
 
-// Module 13296 (RPC_LOCAL_SCOPE)
+// Module 13303 (RPC_LOCAL_SCOPE)
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
 let closure_3 = importDefault(dependencyMap[0]);

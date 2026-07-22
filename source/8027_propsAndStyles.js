@@ -1,5 +1,5 @@
 // Module ID: 8027
-// Function ID: 63748
+// Function ID: 63758
 // Name: propsAndStyles
 // Dependencies: []
 // Exports: extract, withoutXY
@@ -145,7 +145,7 @@ function extractProps(markerMid, self) {
   return obj;
 }
 let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = { parent: null, create: null };
+let closure_4 = {};
 
 export default extractProps;
 export { propsAndStyles };
@@ -153,5 +153,5 @@ export const extract = function extract(self, props) {
   return extractProps(propsAndStyles(props), self);
 };
 export const withoutXY = function withoutXY(self, props) {
-  return extractProps(Object.assign({}, propsAndStyles(props), {}), self);
+  return extractProps(Object.assign({}, propsAndStyles(props), { 0: "o", 0: "o" }), self);
 };

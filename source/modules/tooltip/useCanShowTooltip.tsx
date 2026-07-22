@@ -1,10 +1,10 @@
-// Module ID: 10631
-// Function ID: 83011
+// Module ID: 10632
+// Function ID: 83024
 // Name: useCanShowTooltip
 // Dependencies: []
 // Exports: useCanShowTooltip
 
-// Module 10631 (useCanShowTooltip)
+// Module 10632 (useCanShowTooltip)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/tooltip/useCanShowTooltip.tsx");

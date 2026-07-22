@@ -1,21 +1,22 @@
 // Module ID: 3415
 // Function ID: 26636
 // Name: eachMinuteOfInterval
-// Dependencies: [2281701389, 2315255820, 2332033036, 2348810252]
+// Dependencies: [1946157069, 3207, 3210, 3448]
 // Exports: default
 
 // Module 3415 (eachMinuteOfInterval)
+import _typeof from "_typeof";
+import startOfUTCWeek from "startOfUTCWeek";
+import startOfUTCWeekYear from "startOfUTCWeekYear";
+
 let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
-let closure_2 = _interopRequireDefault(require(dependencyMap[2]));
-let closure_3 = _interopRequireDefault(require(dependencyMap[3]));
 
 export default function eachMinuteOfInterval(start, step) {
   let time2;
-  closure_3.default(1, arguments);
-  let defaultResult1 = closure_2.default(closure_1.default(start.start));
+  startOfUTCWeekYear.default(1, arguments);
+  let defaultResult1 = startOfUTCWeek.default(_typeof.default(start.start));
   const time = defaultResult1.getTime();
-  const time1 = closure_1.default(start.end).getTime();
+  const time1 = _typeof.default(start.end).getTime();
   if (time >= time1) {
     const _RangeError2 = RangeError;
     const rangeError = new RangeError("Invalid interval");
@@ -54,6 +55,6 @@ export default function eachMinuteOfInterval(start, step) {
     const rangeError1 = new RangeError("`options.step` must be a number equal to or greater than 1");
     throw rangeError1;
   }
-  const defaultResult2 = closure_1.default(start.end);
+  const defaultResult2 = _typeof.default(start.end);
 };
 export default exports.default;

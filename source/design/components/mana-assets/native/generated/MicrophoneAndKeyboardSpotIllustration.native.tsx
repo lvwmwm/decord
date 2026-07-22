@@ -1,14 +1,13 @@
 // Module ID: 6289
-// Function ID: 50355
+// Function ID: 50366
 // Name: MicrophoneAndKeyboardSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MicrophoneAndKeyboardSpotIllustration
 
 // Module 6289 (MicrophoneAndKeyboardSpotIllustration)
-import { jsx } from "result";
-import result from "result";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneAndKeyboardSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneAndKeyboardSpotIllustration.native.tsx");
 
 export const MicrophoneAndKeyboardSpotIllustration = function MicrophoneAndKeyboardSpotIllustration(width) {
   let accessibilityLabel;

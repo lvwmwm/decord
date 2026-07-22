@@ -1,10 +1,10 @@
-// Module ID: 14103
-// Function ID: 107078
+// Module ID: 14111
+// Function ID: 107121
 // Name: items
 // Dependencies: []
 // Exports: useVisibleFontOrder
 
-// Module 14103 (items)
+// Module 14111 (items)
 let closure_2 = importAll(dependencyMap[0]);
 const items = [arg1(dependencyMap[2]).DisplayNameFont.DEFAULT, arg1(dependencyMap[2]).DisplayNameFont.ZILLA_SLAB, arg1(dependencyMap[2]).DisplayNameFont.CHERRY_BOMB, arg1(dependencyMap[2]).DisplayNameFont.CHICLE, arg1(dependencyMap[2]).DisplayNameFont.MUSEO_MODERNO, arg1(dependencyMap[2]).DisplayNameFont.NEO_CASTEL, arg1(dependencyMap[2]).DisplayNameFont.PIXELIFY, arg1(dependencyMap[2]).DisplayNameFont.SINISTRE];
 const items1 = [...arg1(dependencyMap[1]).FLYWHEEL_FONTS];

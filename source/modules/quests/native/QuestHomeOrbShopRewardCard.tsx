@@ -1,10 +1,10 @@
-// Module ID: 13861
-// Function ID: 104841
+// Module ID: 13868
+// Function ID: 104881
 // Name: QuestHomeOrbShopRewardCard
 // Dependencies: []
 // Exports: default
 
-// Module 13861 (QuestHomeOrbShopRewardCard)
+// Module 13868 (QuestHomeOrbShopRewardCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -34,9 +34,9 @@ export default function QuestHomeOrbShopRewardCard(product) {
   let tmp6 = null;
   if (null != memo) {
     obj = { style: tmp.card, accessibilityLabel: tmp5 };
-    obj = { product };
+    obj = { "Null": 60, "Null": 0, "Null": 0, product };
     const items2 = [callback(importDefault(dependencyMap[11]), obj), ];
-    const obj1 = { "Null": null, "Null": 16, "Null": 5, product };
+    const obj1 = { product };
     items2[1] = callback(importDefault(dependencyMap[12]), obj1);
     obj.children = items2;
     tmp6 = callback2(View, obj);

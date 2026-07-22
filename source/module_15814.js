@@ -1,20 +1,29 @@
 // Module ID: 15814
-// Function ID: 120916
+// Function ID: 120942
 // Dependencies: []
 
 // Module 15814
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "tr",
+  locale: "nl",
   pluralRuleFunction(arg0, arg1) {
+    String(arg0);
     let str = "other";
-    let str2 = "other";
     if (!arg1) {
+      let str2 = "other";
       if (1 == arg0) {
-        str = "one";
+        str2 = "other";
+        if (tmp2) {
+          str2 = "one";
+        }
       }
-      str2 = str;
+      str = str2;
     }
-    return str2;
+    return str;
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: null, deviceWidth: 2 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: true, 0: true });
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ 0: true, 0: "Avatar02/Username" });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: false, 0: false });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: "paddingHorizontal", 0: "construct" });

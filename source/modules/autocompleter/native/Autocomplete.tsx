@@ -1,9 +1,9 @@
-// Module ID: 11420
-// Function ID: 88861
+// Module ID: 11421
+// Function ID: 88874
 // Name: AutocompleteLabel
 // Dependencies: []
 
-// Module 11420 (AutocompleteLabel)
+// Module 11421 (AutocompleteLabel)
 function AutocompleteLabel(text) {
   const tmp = callback();
   return jsx(arg1(dependencyMap[10]).FormRow.Label, { style: callback().leading, text: text.text });
@@ -25,13 +25,13 @@ const obj1 = { fontSize: 16, color: importDefault(dependencyMap[9]).colors.INTER
 obj.trailing = { fontSize: 14, color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 const obj2 = { fontSize: 14, color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 obj.username = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.emoji = { "Null": false, "Null": false };
+obj.emoji = { "Null": true, "Null": true };
 obj.emojiImage = { resizeMode: "contain" };
-const obj4 = { paddingVertical: true, paddingHorizontal: true, flexGrow: true, color: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
+const obj4 = { -1398941826: true, 541046124: false, 1600327841: false, color: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
 obj.emojiText = obj4;
-const obj5 = { "Null": "a", "Null": "isArray", "Null": "paddingHorizontal", "Null": "to", "Null": "a", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+const obj5 = { "Bool(false)": 53965145564882740000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012688740650804652, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778310225153025, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013283776541903, "Bool(false)": -92483392220510860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.stickerContainer = obj5;
-obj.commandChoiceLoadingContainer = { "Bool(true)": "values", "Bool(true)": "Array" };
+obj.commandChoiceLoadingContainer = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
 const obj3 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
 obj.commandChoiceLoadingItem = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: importDefault(dependencyMap[9]).radii.lg, alignSelf: "flex-start" };
 obj.autocompleteIcon = { opacity: 0.6 };

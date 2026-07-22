@@ -1,5 +1,5 @@
 // Module ID: 4031
-// Function ID: 33570
+// Function ID: 33572
 // Name: RPC_SCOPE_CONFIG
 // Dependencies: []
 // Exports: getDynamicLinkType

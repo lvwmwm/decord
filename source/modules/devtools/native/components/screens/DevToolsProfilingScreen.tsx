@@ -1,10 +1,10 @@
-// Module ID: 14508
-// Function ID: 109241
+// Module ID: 14516
+// Function ID: 109284
 // Name: TableRowGroupReactProfiling
 // Dependencies: []
 // Exports: default
 
-// Module 14508 (TableRowGroupReactProfiling)
+// Module 14516 (TableRowGroupReactProfiling)
 function TableRowGroupReactProfiling() {
   let result;
   if (null != importDefault(dependencyMap[7])) {
@@ -58,7 +58,7 @@ export default function DevToolsProfilingScreen() {
   if (tmp5) {
     const obj1 = {};
     const obj2 = {};
-    const obj3 = { display: "postRollDismissTimer", alignItems: "%ArrayProto_entries%", flexDirection: "NATIVE_REQUIRED_ASSETS", onPress: callback };
+    const obj3 = { width: false, bottom: "Reconcile now", width: "Fetch + merge server dismissals into the local store", onPress: callback };
     obj2.children = callback3(callback(dependencyMap[12]).TableRow, obj3);
     const items = [callback3(callback(dependencyMap[8]).TableRowGroup, obj2), ];
     const _Object = Object;
@@ -74,9 +74,9 @@ export default function DevToolsProfilingScreen() {
         stat = stat.stat;
         let obj = {};
         obj = {};
-        obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: closure_1.monospace, children: "Count - " + stat.count };
+        obj = { cachedAt: true, edpbxy: true, style: closure_1.monospace, children: "Count - " + stat.count };
         const items = [callback2(callback(closure_2[13]).Text, obj), ];
-        const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: closure_1.monospace, children: "Mean - " + stat.mean };
+        const obj1 = { cachedAt: true, edpbxy: true, style: closure_1.monospace, children: "Mean - " + stat.mean };
         items[1] = callback2(callback(closure_2[13]).Text, obj1);
         obj.children = items;
         obj.subLabel = callback3(closure_7, obj);
@@ -90,9 +90,9 @@ export default function DevToolsProfilingScreen() {
   } else {
     const obj4 = {};
     const obj5 = { label: "No components rendered yet." };
-    const obj6 = {};
-    const obj7 = { EMPTY_SOUND_LIST: null, paddingTop: null, HAPPENING_NOW_PANELS_CONTAINER_PADDING: null, style: tmp3.monospace };
-    const items1 = ["<string:3507560212>", callback3(callback(dependencyMap[13]).Text, obj7), " to enable measurements."];
+    const obj6 = { cachedAt: null, edpbxy: null };
+    const obj7 = { style: tmp3.monospace };
+    const items1 = ["Map", callback3(callback(dependencyMap[13]).Text, obj7), " to enable measurements."];
     obj6.children = items1;
     obj5.subLabel = callback4(callback(dependencyMap[13]).Text, obj6);
     obj4.children = callback3(callback(dependencyMap[12]).TableRow, obj5);

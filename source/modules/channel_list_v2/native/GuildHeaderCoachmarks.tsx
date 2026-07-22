@@ -1,10 +1,10 @@
-// Module ID: 14863
-// Function ID: 111990
+// Module ID: 14871
+// Function ID: 112033
 // Name: GuildHeaderCoachmarks
 // Dependencies: []
 // Exports: default
 
-// Module 14863 (GuildHeaderCoachmarks)
+// Module 14871 (GuildHeaderCoachmarks)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

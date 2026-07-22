@@ -1,10 +1,10 @@
-// Module ID: 5606
-// Function ID: 47653
+// Module ID: 5605
+// Function ID: 47661
 // Name: _getIsNewMember
 // Dependencies: []
 // Exports: default, getIsNewMember
 
-// Module 5606 (_getIsNewMember)
+// Module 5605 (_getIsNewMember)
 function _getIsNewMember(guildId, closure_4, closure_3) {
   if (closure_3.isFullServerPreview(guildId)) {
     return true;

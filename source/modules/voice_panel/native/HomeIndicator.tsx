@@ -1,9 +1,9 @@
-// Module ID: 10526
-// Function ID: 82214
+// Module ID: 10527
+// Function ID: 82227
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 31, 587, 10530, 2, 57, 31, 27, 10197, 653, 33, 4126]
+// Dependencies: [57, 31, 587, 10531, 2, 57, 31, 27, 10198, 653, 33, 4126]
 
-// Module 10526 (_isNativeReflectConstruct)
+// Module 10527 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
 import Storage from "Storage";
@@ -150,7 +150,7 @@ const tmp4 = (Component) => {
   ];
   return callback(HomeIndicator, items, items1);
 }(require("_slicedToArray").Component);
-tmp4.defaultProps = { y: null, M3VN2U: null };
+tmp4.defaultProps = { subheader: true, videoLink: true };
 tmp4._propsStack = [];
 tmp4._updateImmediate = null;
 const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/voice_panel/native/HomeIndicator.tsx");

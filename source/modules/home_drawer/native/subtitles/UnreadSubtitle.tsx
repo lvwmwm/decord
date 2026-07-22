@@ -1,10 +1,10 @@
-// Module ID: 14733
-// Function ID: 111117
+// Module ID: 14741
+// Function ID: 111160
 // Name: UnreadSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14733 (UnreadSubtitle)
+// Module 14741 (UnreadSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -35,18 +35,18 @@ export default function UnreadSubtitle(channel) {
     channelName,
     count: count - 1,
     labelHook(children) {
-      const obj = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, children };
+      const obj = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821, children };
       return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
     },
     iconHook(arg0, arg1) {
       return callback(channelIconComponentWithGuild, { style: subtitleStyles.unreadChannelIcon }, arg1);
     },
     channelHook(children) {
-      const obj = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, style: subtitleStyles.subtitleText, children };
+      const obj = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821, style: subtitleStyles.subtitleText, children };
       return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
     },
     overflowHook(children) {
-      const obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children };
+      const obj = { cachedAt: "center", edpbxy: "center", children };
       return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
     }
   };

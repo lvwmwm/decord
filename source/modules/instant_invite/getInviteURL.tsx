@@ -1,5 +1,5 @@
 // Module ID: 6996
-// Function ID: 55934
+// Function ID: 55945
 // Name: getInviteURL
 // Dependencies: []
 // Exports: default

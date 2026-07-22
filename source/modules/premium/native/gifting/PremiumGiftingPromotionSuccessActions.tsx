@@ -1,10 +1,10 @@
-// Module ID: 9763
-// Function ID: 75932
+// Module ID: 9764
+// Function ID: 75945
 // Name: PremiumGiftingPromotionSuccessActions
 // Dependencies: []
 // Exports: default
 
-// Module 9763 (PremiumGiftingPromotionSuccessActions)
+// Module 9764 (PremiumGiftingPromotionSuccessActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;
@@ -13,11 +13,11 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { <string:3814666730>: 8, <string:1280564396>: 18, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.nameplateContainer = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj2 = { 1414937445: null, 710171746: null, -1884505083: null, 1632514476: null, -1072868960: null, 1549977185: null, 651579746: null, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { NotificationCenterTabs: null, getUTCMonth: null, borderColor: null, SpoilerRenderSetting: null, WIDGET_ENABLED: null, maskRemainder: null, offsetThreshold: null, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.nameplateWrapper = obj2;
 obj.singleAvatarContainer = {};
 let closure_10 = obj.createStyles(obj);
@@ -79,7 +79,7 @@ export default function PremiumGiftingPromotionSuccessActions(purchase) {
   if (isNameplateRecord(first)) {
     obj = { style: tmp.nameplateContainer };
     obj1 = { style: tmp.nameplateWrapper };
-    obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+    obj2 = { -1930690556: null, -77463548: null, -1436527658: null };
     const tmp23 = importDefault(dependencyMap[15]);
     obj2.nameplate = arg1(dependencyMap[16]).getNameplateData(first);
     obj1.children = callback(tmp23, obj2);

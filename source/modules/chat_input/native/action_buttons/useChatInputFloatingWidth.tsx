@@ -1,10 +1,10 @@
-// Module ID: 11354
-// Function ID: 88314
+// Module ID: 11355
+// Function ID: 88327
 // Name: useChatInputFloatingWidth
 // Dependencies: []
 // Exports: default
 
-// Module 11354 (useChatInputFloatingWidth)
+// Module 11355 (useChatInputFloatingWidth)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };

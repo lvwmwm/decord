@@ -1,8 +1,8 @@
-// Module ID: 14030
-// Function ID: 106690
+// Module ID: 14037
+// Function ID: 106730
 // Dependencies: []
 
-// Module 14030
+// Module 14037
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -65,7 +65,7 @@ const memoResult = importAllResult.memo(() => {
     let obj = callback(closure_2[16]);
     obj = {};
     const items = [constants.MOBILE_VISUAL_REFRESH];
-    const items1 = [{ settings: items }, , , , , , , ];
+    const items1 = [{ settings: items }, , , , , , , , ];
     obj = {};
     const intl = callback(closure_2[10]).intl;
     obj.label = intl.string(callback(closure_2[10]).t.Ksh3ik);
@@ -84,20 +84,22 @@ const memoResult = importAllResult.memo(() => {
     items1[3] = obj1;
     const items5 = [constants.DMS_MESSAGE_PREVIEWS];
     items1[4] = { settings: items5 };
+    const items6 = [constants.GAME_MENTIONS_AUTOCOMPLETE];
+    items1[5] = { settings: items6 };
     const obj2 = {};
     const intl3 = callback(closure_2[10]).intl;
     obj2.label = intl3.string(callback(closure_2[10]).t.lEde7i);
-    const items6 = [constants.DMS_HAPPENING_NOW_CARDS];
-    obj2.settings = items6;
-    items1[5] = obj2;
+    const items7 = [constants.DMS_HAPPENING_NOW_CARDS];
+    obj2.settings = items7;
+    items1[6] = obj2;
     const obj3 = {};
     const intl4 = callback(closure_2[10]).intl;
     obj3.label = intl4.string(callback(closure_2[10]).t.5h0QOP);
-    const items7 = [constants.EXACT_SEARCH_RESULT_COUNTS];
-    obj3.settings = items7;
-    items1[6] = obj3;
-    const items8 = [constants.TIMESTAMP_HOUR_CYCLE];
-    items1[7] = { settings: items8 };
+    const items8 = [constants.EXACT_SEARCH_RESULT_COUNTS];
+    obj3.settings = items8;
+    items1[7] = obj3;
+    const items9 = [constants.TIMESTAMP_HOUR_CYCLE];
+    items1[8] = { settings: items9 };
     obj.sections = items1;
     return obj.createList(obj);
   }, []);

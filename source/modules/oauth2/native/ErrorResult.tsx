@@ -1,20 +1,20 @@
-// Module ID: 8957
-// Function ID: 70683
+// Module ID: 8958
+// Function ID: 70696
 // Name: error
 // Dependencies: []
 // Exports: default
 
-// Module 8957 (error)
+// Module 8958 (error)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { -110960001: -165, -1209052185: 320, -1656971974: -45, 1860687715: 0, 1859609955: "gr", -1903211694: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.inner = { 1962313087: "Array", 1104954998: "textComponentStyle", 290881: "isArray", 1250711380: "STICKER_PACK_VIEW_ALL" };
-obj.text = {};
+obj.inner = { position: "text-xs/medium", location: "text-muted", index: null, sa: 1.75 };
+obj.text = { MINIMAL: true, currentScreenId: null };
 const tmp4 = arg1(dependencyMap[2]);
 obj.image = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
 let closure_7 = obj.createStyles(obj);

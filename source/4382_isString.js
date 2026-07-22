@@ -1,5 +1,5 @@
 // Module ID: 4382
-// Function ID: 38783
+// Function ID: 38791
 // Name: isString
 // Dependencies: []
 

@@ -1,10 +1,10 @@
-// Module ID: 10226
-// Function ID: 79012
+// Module ID: 10227
+// Function ID: 79025
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10226 (_createForOfIteratorHelperLoose)
+// Module 10227 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -271,7 +271,7 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
 };
 export const getDisabledActions = function getDisabledActions(id) {
   if (null == id) {
-    return { onConfirm: null, EU: null };
+    return { accessible: true, right: true };
   } else {
     const guildIncident = store3.getGuildIncident(id.id);
     const obj = {};
@@ -326,7 +326,7 @@ export const useDisabledActions = function useDisabledActions(id) {
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => guildIncident.getGuildIncident(id), items1);
   if (null == id) {
-    obj = { onConfirm: null, EU: null };
+    obj = { accessible: true, right: true };
   } else {
     obj = {};
     let hasItem;

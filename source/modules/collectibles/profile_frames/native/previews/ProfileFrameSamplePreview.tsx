@@ -1,10 +1,10 @@
-// Module ID: 8689
-// Function ID: 68849
+// Module ID: 8690
+// Function ID: 68861
 // Name: filterLayer
 // Dependencies: []
 // Exports: default
 
-// Module 8689 (filterLayer)
+// Module 8690 (filterLayer)
 function filterLayer(responsive) {
   return true !== responsive.responsive;
 }
@@ -15,7 +15,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { profileFrameContainer: { flex: 1 } };
-obj = { 822280274: 10, -1437179314: 10, 1661206353: "premium_tier_0_yearly", borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.profileContainer = obj;
 obj.sampleProfile = { width: "100%", aspectRatio: arg1(dependencyMap[2]).SAMPLE_PROFILE_ASPECT_RATIO };
 let closure_8 = obj.createStyles(obj);
@@ -45,14 +45,13 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   const xs = importDefault(dependencyMap[6]).radii.xs;
   obj = { style: obj1 };
   const obj2 = { style: absoluteFill.absoluteFill };
-  const obj3 = { "Bool(true)": "%MapPrototype%", "Bool(true)": "isArray", "Bool(true)": "isArrayBuffer", "Bool(true)": "GUILD_INCIDENT_ALERT_MODE_DISABLED", "Bool(true)": "MultipleChoicePrompt", "Bool(true)": "isArray", height: overflowTop };
+  const obj3 = { "Bool(false)": "HideMutedChannelsOption", "Bool(false)": "<string:1359020032>", "Bool(false)": "<string:7515243>", "Bool(false)": "<string:50331648>", "Bool(false)": "<string:1358954496>", "Bool(false)": "<string:1296106743>", height: overflowTop };
   const obj1 = { position: "absolute", top: -overflowTop, bottom: -overflowBottom, left: -overflowHorizontal, right: -overflowHorizontal };
   const tmp5 = importDefault(dependencyMap[9]);
-  const items = [callback(closure_4, { style: obj3 }), , , , , , , ];
-  const obj4 = { onTapGiftIntentPrimaryCta: "%MapPrototype%", onTapGiftIntentSecondaryCta: "isArray", onTapAvatar: "isArrayBuffer", onTapSticker: "GUILD_INCIDENT_ALERT_MODE_DISABLED", onLongPressSticker: "MultipleChoicePrompt", soundboardSounds: "isArray", height: overflowBottom };
-  items[1] = callback(closure_4, { style: obj4 });
-  items[2] = callback(closure_4, { style: { top: overflowTop, bottom: overflowBottom, width: overflowHorizontal } });
-  const obj5 = { alignItems: "xs", justifyContent: "mobile-text-heading-primary", display: null, flexDirection: "heading-md/extrabold", justifyContent: 1.75, alignItems: "header", top: overflowTop, bottom: overflowBottom, width: overflowHorizontal };
+  const items = [callback(closure_4, { style: obj3 }), callback(closure_4, { style: { height: overflowBottom } }), , , , , , ];
+  const obj4 = { "Null": "xs", "Null": "mobile-text-heading-primary", "Null": null, "Null": "heading-md/extrabold", "Null": 1.75, 9223372036854775807: "header", top: overflowTop, bottom: overflowBottom, width: overflowHorizontal };
+  items[2] = callback(closure_4, { style: obj4 });
+  const obj5 = { 0: "xs", 9223372036854775807: "mobile-text-heading-primary", -9223372036854775808: null, 0: "heading-md/extrabold", -9223372036854775808: 1.75, -9223372036854775808: "header", top: overflowTop, bottom: overflowBottom, width: overflowHorizontal };
   items[3] = callback(closure_4, { style: obj5 });
   items[4] = callback(closure_4, { style: { position: "absolute", top: overflowTop - xs, left: overflowHorizontal - xs, width: 2 * xs, height: 2 * xs, borderRadius: xs, backgroundColor: "black" } });
   items[5] = callback(closure_4, { style: { position: "absolute", top: overflowTop - xs, right: overflowHorizontal - xs, width: 2 * xs, height: 2 * xs, borderRadius: xs, backgroundColor: "black" } });

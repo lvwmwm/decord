@@ -1,10 +1,10 @@
-// Module ID: 11722
-// Function ID: 91015
+// Module ID: 11723
+// Function ID: 91028
 // Name: _startContactSyncForDiscoverability
 // Dependencies: []
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 11722 (_startContactSyncForDiscoverability)
+// Module 11723 (_startContactSyncForDiscoverability)
 function _startContactSyncForDiscoverability() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -38,7 +38,7 @@ export const nextOnboardingStep = function nextOnboardingStep(skip) {
   obj.dispatch(obj);
 };
 export const previousOnboardingStep = function previousOnboardingStep() {
-  importDefault(dependencyMap[7]).dispatch({ "Bool(false)": 1091633569, "Bool(false)": 98379 });
+  importDefault(dependencyMap[7]).dispatch({});
 };
 export const transitionToNUFGuildTemplatesModal = function transitionToNUFGuildTemplatesModal(SLIDE_IN) {
   const arg1 = SLIDE_IN;

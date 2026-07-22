@@ -1,10 +1,10 @@
-// Module ID: 10290
-// Function ID: 79448
+// Module ID: 10291
+// Function ID: 79461
 // Name: ChannelIndicator
 // Dependencies: []
 // Exports: default
 
-// Module 10290 (ChannelIndicator)
+// Module 10291 (ChannelIndicator)
 const _module = require(dependencyMap[0]);
 const View = _module.View;
 const UnreadSetting = require(dependencyMap[1]).UnreadSetting;
@@ -17,7 +17,7 @@ obj["top"] = 0;
 obj["bottom"] = 0;
 obj["justifyContent"] = "center";
 obj.indicatorContainer = obj;
-const obj1 = { <string:2331675385>: "<string:678642882>", <string:906602722>: "<string:671088640>", <string:2880073665>: "<string:335544320>", <string:2709289496>: "<string:1090519040>", borderRadius: importDefault(dependencyMap[4]).radii.round };
+const obj1 = { with_sku: true, with_application: true, NBSP: true, isEndStream: true, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.indicator = obj1;
 let closure_6 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[6]);

@@ -1,10 +1,10 @@
-// Module ID: 15420
-// Function ID: 117683
+// Module ID: 15428
+// Function ID: 117726
 // Name: SearchNavigatorPreviewScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15420 (SearchNavigatorPreviewScreen)
+// Module 15428 (SearchNavigatorPreviewScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 const SearchTypes = arg1(dependencyMap[2]).SearchTypes;
@@ -46,6 +46,6 @@ export default function SearchNavigatorPreviewScreen() {
       return jsx(importDefault(dependencyMap[8]), obj);
     }
   }
-  obj = { <string:1446656868>: true, <string:67064212>: true, <string:2857778020>: true, contentContainerStyle: tmp.container, children: jsx(importDefault(dependencyMap[8]), { channelId, onBeforeJumpToMessage: callback }) };
+  obj = { "Bool(true)": "y", "Bool(true)": "isArray", "Bool(true)": "Reflect", contentContainerStyle: tmp.container, children: jsx(importDefault(dependencyMap[8]), { channelId, onBeforeJumpToMessage: callback }) };
   return <ScrollView {...obj} />;
 };

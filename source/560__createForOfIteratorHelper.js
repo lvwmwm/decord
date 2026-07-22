@@ -162,7 +162,7 @@ class Agent {
 let num = 0;
 let closure_0 = require(dependencyMap[0]);
 let closure_1 = 0;
-const items = [];
+const items = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
 if (0 < items.length) {
   do {
     let tmp = function _loop() {

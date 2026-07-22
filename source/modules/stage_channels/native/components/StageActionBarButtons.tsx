@@ -1,10 +1,10 @@
-// Module ID: 10634
-// Function ID: 83031
+// Module ID: 10635
+// Function ID: 83044
 // Name: AgeVerificationSpeakerActionSheet
 // Dependencies: []
 // Exports: AnimatedStartStagePrompt, ChatButton, ContinueToStagePrompt, DisconnectStageButton, JoinStagePrompt, MoveToAudienceButton, MusicMuteButton, RequestToSpeakButton, RequestToSpeakListButton
 
-// Module 10634 (AgeVerificationSpeakerActionSheet)
+// Module 10635 (AgeVerificationSpeakerActionSheet)
 class AgeVerificationSpeakerActionSheet {
   constructor(arg0) {
     arg1 = global.onClose;
@@ -19,12 +19,13 @@ class AgeVerificationSpeakerActionSheet {
     obj.header = jsx(View, obj);
     obj1 = { style: tmp.container };
     obj2 = { style: tmp.content };
-    obj3 = { style: tmp.title };
+    obj3 = { cachedAt: true, edpbxy: true };
+    obj3.style = tmp.title;
     intl = arg1(dependencyMap[12]).intl;
     obj3.children = intl.string(arg1(dependencyMap[12]).t.zvubnM);
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[38]).Text, obj3);
-    obj4 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+    obj4 = { cachedAt: 1, edpbxy: 1 };
     obj4.style = tmp.body;
     intl2 = arg1(dependencyMap[12]).intl;
     obj4.children = intl2.string(arg1(dependencyMap[12]).t./wx+J2);
@@ -142,9 +143,9 @@ let obj = arg1(dependencyMap[9]);
 obj = { actionBarCTAContainer: { position: "relative" } };
 obj = { tintColor: importDefault(dependencyMap[10]).colors.WHITE };
 obj.imageStyle = obj;
-const obj1 = { timeRange: "Golive Simulcast without prober 720p@500k", TimeStampProducer: 144.002, GlobalDiscoveryServerTab: null, tintColor: importDefault(dependencyMap[10]).colors.WHITE };
-obj.iconStyle = obj1;
 const tmp2 = arg1(dependencyMap[8]);
+obj.iconStyle = { tintColor: importDefault(dependencyMap[10]).colors.WHITE };
+const obj1 = { tintColor: importDefault(dependencyMap[10]).colors.WHITE };
 obj.iconContainerStyle = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360, borderRadius: importDefault(dependencyMap[10]).radii.lg, padding: 4 };
 obj.continueContainer = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360, borderRadius: importDefault(dependencyMap[10]).radii.lg, padding: 4 };

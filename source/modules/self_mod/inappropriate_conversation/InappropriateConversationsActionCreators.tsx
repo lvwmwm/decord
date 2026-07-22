@@ -1,14 +1,14 @@
-// Module ID: 10139
-// Function ID: 78459
+// Module ID: 10140
+// Function ID: 78472
 // Name: playVibingWumpusMusic
-// Dependencies: [31, 33, 689, 3831, 10151]
+// Dependencies: [31, 33, 689, 3831, 10152]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10139 (playVibingWumpusMusic)
+// Module 10140 (playVibingWumpusMusic)
 import { Endpoints } from "module_31";
-import module_10151 from "module_10151";
+import module_10152 from "module_10152";
 
-const result = module_10151.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");
+const result = module_10152.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");
 
 export const playVibingWumpusMusic = function playVibingWumpusMusic() {
   importDefault(dependencyMap[1]).dispatch({ type: "VIBING_WUMPUS_PLAY_MUSIC" });

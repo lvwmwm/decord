@@ -1,10 +1,10 @@
-// Module ID: 11568
-// Function ID: 89983
+// Module ID: 11569
+// Function ID: 89996
 // Name: openGuildPowerupsMultiPerkBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11568 (openGuildPowerupsMultiPerkBottomSheet)
+// Module 11569 (openGuildPowerupsMultiPerkBottomSheet)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsMultiPerkBottomSheet.tsx");
 

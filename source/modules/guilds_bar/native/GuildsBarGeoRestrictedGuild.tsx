@@ -1,9 +1,9 @@
-// Module ID: 14751
-// Function ID: 111225
+// Module ID: 14759
+// Function ID: 111268
 // Name: GUILD_ITEM_BADGE_SIZE
 // Dependencies: []
 
-// Module 14751 (GUILD_ITEM_BADGE_SIZE)
+// Module 14759 (GUILD_ITEM_BADGE_SIZE)
 const importAllResult = importAll(dependencyMap[0]);
 const GUILD_ITEM_BADGE_SIZE = arg1(dependencyMap[1]).GUILD_ITEM_BADGE_SIZE;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -11,7 +11,7 @@ let obj1 = arg1(dependencyMap[3]);
 let obj = {};
 obj = { width: importDefault(dependencyMap[4]).modules.mobile.GUILD_BAR_ITEM_SIZE, height: importDefault(dependencyMap[4]).modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.guildIcon = obj;
-obj1 = { -9223372036854775808: "/assets/design/components/Icon/native/redesign/generated/images", 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "d6a8eeb03988caf260d6fea57b710519", width: GUILD_ITEM_BADGE_SIZE, height: GUILD_ITEM_BADGE_SIZE };
+obj1 = { <string:1402249308>: "/assets/design/components/Icon/native/redesign/generated/images", <string:2858493750>: 24, <string:996584032>: 24, <string:3973631124>: null, <string:1314541923>: "d6a8eeb03988caf260d6fea57b710519", width: GUILD_ITEM_BADGE_SIZE, height: GUILD_ITEM_BADGE_SIZE };
 obj.geoRestrictedBadge = obj1;
 let closure_5 = obj1.createStyles(obj);
 const items = [importDefault(dependencyMap[5])({ position: "bottom-right" })];
@@ -49,8 +49,8 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
       obj.show(obj);
     }
   }), items);
-  obj = { circle: !tmp, styles: obj.useGuildsBarAnimatedWrapperStyles({ <string:3577514597>: null, <string:3965960815>: null }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: undefined };
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ <string:3577514597>: null, <string:3965960815>: null });
+  obj = { circle: !tmp, styles: obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: undefined };
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null });
   const tmp8 = jsx;
   obj = { style: tmp2.geoRestrictedBadge };
   obj.externalChildren = jsx(importDefault(dependencyMap[13]), obj);
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
     const obj2 = { source: animatableSourceWithFallback, style: tmp2.guildIcon, fadeDuration: 0 };
     let tmp15 = jsx(importDefault(dependencyMap[15]), obj2);
   } else {
-    const obj3 = { "Bool(false)": "absolute", "Bool(false)": -1, "Bool(false)": -1, value: restrictedGuild.name, size: arg1(dependencyMap[9]).GuildIconSizes.LARGE };
+    const obj3 = { 9223372036854775807: "HTTP", 9223372036854775807: "Date", 0: "HTTP", value: restrictedGuild.name, size: arg1(dependencyMap[9]).GuildIconSizes.LARGE };
     tmp15 = jsx(importDefault(dependencyMap[9]), obj3);
     const tmp13 = importDefault(dependencyMap[9]);
   }

@@ -1,10 +1,10 @@
-// Module ID: 11152
-// Function ID: 86728
+// Module ID: 11153
+// Function ID: 86741
 // Name: result
 // Dependencies: []
 // Exports: default
 
-// Module 11152 (result)
+// Module 11153 (result)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -116,7 +116,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   const obj9 = arg1(dependencyMap[12]);
   let result1 = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
   const obj10 = arg1(dependencyMap[12]);
-  const obj3 = { alignItems: 0, justifyContent: null, fill: 5, d: 143, opacity: -23 };
+  const obj3 = { alignItems: null, justifyContent: "rgba(0, 0, 0, 0.251)", placeholderCount: "RFC3986", limit: null, includeFrecency: "RFC1738" };
   let tmp25 = null != stateFromStores1;
   const result2 = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp25) {

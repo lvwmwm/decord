@@ -1,7 +1,7 @@
 // Module ID: 871
 // Function ID: 9688
 // Name: setCurrentClient
-// Dependencies: []
+// Dependencies: [827, 798, 801]
 
 // Module 871 (setCurrentClient)
 function setCurrentClient(arg0) {

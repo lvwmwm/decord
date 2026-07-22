@@ -1,10 +1,10 @@
-// Module ID: 11747
-// Function ID: 91233
+// Module ID: 11748
+// Function ID: 91246
 // Name: getDescriptiveInviteError
 // Dependencies: []
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 11747 (getDescriptiveInviteError)
+// Module 11748 (getDescriptiveInviteError)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ AbortCodes: closure_4, HelpdeskArticles: closure_5, MAX_USER_GUILDS: closure_6, MAX_USER_GUILDS_PREMIUM: closure_7 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

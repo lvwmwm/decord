@@ -1,9 +1,9 @@
-// Module ID: 16420
-// Function ID: 126806
+// Module ID: 16428
+// Function ID: 126848
 // Name: AVErrorCameraSendLowFPSDefinition
 // Dependencies: []
 
-// Module 16420 (AVErrorCameraSendLowFPSDefinition)
+// Module 16428 (AVErrorCameraSendLowFPSDefinition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

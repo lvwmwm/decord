@@ -1,15 +1,15 @@
-// Module ID: 12733
-// Function ID: 97676
+// Module ID: 12740
+// Function ID: 97709
 // Name: MarkupGameMention
 // Dependencies: []
 // Exports: default
 
-// Module 12733 (MarkupGameMention)
+// Module 12740 (MarkupGameMention)
 importAll(dependencyMap[0]);
 ({ jsxs: closure_3, jsx: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { 2018655073: false, 1669594568: false, 1045670548: false, -460645489: false, borderRadius: importDefault(dependencyMap[3]).radii.xs };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[3]).radii.xs };
 obj.icon = obj;
 const tmp3 = arg1(dependencyMap[1]);
 obj.chip = { backgroundColor: importDefault(dependencyMap[3]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[3]).radii.xs, paddingHorizontal: 2 };

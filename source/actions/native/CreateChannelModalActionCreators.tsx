@@ -1,8 +1,8 @@
-// Module ID: 8405
-// Function ID: 66904
+// Module ID: 8406
+// Function ID: 66916
 // Dependencies: []
 
-// Module 8405
+// Module 8406
 let closure_3 = require(dependencyMap[0]).CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES;
 let closure_4 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[6]);

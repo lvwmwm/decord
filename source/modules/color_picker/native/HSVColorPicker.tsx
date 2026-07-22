@@ -1,10 +1,10 @@
-// Module ID: 13450
-// Function ID: 102144
+// Module ID: 13457
+// Function ID: 102177
 // Name: HSVColorPicker
 // Dependencies: []
 // Exports: default
 
-// Module 13450 (HSVColorPicker)
+// Module 13457 (HSVColorPicker)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

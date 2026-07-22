@@ -112,7 +112,7 @@ function instrumentAuthOperation(arg0, arg1) {
                 if (error.error) {
                   let obj = { code: error(closure_1[6]).SPAN_STATUS_ERROR };
                   error.setStatus(obj);
-                  obj = { mechanism: { id: "auto.ai.openai.stream-response", gameId: "repeat" } };
+                  obj = { mechanism: {} };
                   error(closure_1[7]).captureException(error.error, obj);
                   const obj3 = error(closure_1[7]);
                 }
@@ -127,7 +127,7 @@ function instrumentAuthOperation(arg0, arg1) {
           self.setStatus({ code: self(closure_1[6]).SPAN_STATUS_ERROR });
           self.end();
           const obj = { code: self(closure_1[6]).SPAN_STATUS_ERROR };
-          self(closure_1[7]).captureException(self, { mechanism: { id: "auto.ai.openai.stream-response", gameId: "repeat" } });
+          self(closure_1[7]).captureException(self, { mechanism: {} });
           throw self;
         });
         const then = catchPromise.then;
@@ -185,9 +185,9 @@ let closure_4 = require(dependencyMap[2]);
 let closure_5 = require(dependencyMap[3]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_6 = [];
-let closure_7 = [-275578878, -805306367, -1337196543, -989854917, false, false];
-const obj = {};
-const items = [true, true, true, true, true];
+let closure_7 = ["Array", "isArray", "accessibilityRole", "bm", "__closure", "apply"];
+const obj = { "Bool(false)": "info", "Bool(false)": "info", "Bool(false)": "info", "Bool(false)": "debug", "Bool(false)": "trace", "Bool(false)": "debug", "Bool(false)": "fatal", "Bool(false)": "info", "Bool(false)": "fatal", "Bool(false)": "warn", "Bool(false)": "info", "Bool(false)": "info", "Bool(false)": "debug", "Bool(false)": "trace", "Bool(false)": "chat", "Bool(false)": "responses", "Bool(false)": "embeddings", "Bool(false)": "conversations", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": 0, "Bool(false)": false, "Bool(false)": false, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0 };
+const items = [];
 function instrumentSupabaseClient(auth) {
   if (auth) {
     const _Function = Function;

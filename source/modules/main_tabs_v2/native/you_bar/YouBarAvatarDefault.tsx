@@ -1,9 +1,9 @@
-// Module ID: 14990
-// Function ID: 112895
+// Module ID: 14998
+// Function ID: 112938
 // Name: AvatarDefault
 // Dependencies: []
 
-// Module 14990 (AvatarDefault)
+// Module 14998 (AvatarDefault)
 function AvatarDefault() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[7]);
@@ -76,9 +76,9 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { lj: "r", apply: "nxl", __d: "r", index: "emptyImage", body: "%TypeError%", borderRadius: importDefault(dependencyMap[6]).radii.round, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { borderRadius: importDefault(dependencyMap[6]).radii.round, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.placeholderAvatar = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[6]).radii.round, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+obj1 = { left: "center", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia", borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.placeholderAvatarBackground = obj1;
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_MEDIUM);
 obj.avatarShadow = {};

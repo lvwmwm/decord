@@ -1,12 +1,12 @@
 // Module ID: 7629
-// Function ID: 61129
+// Function ID: 61139
 // Name: frozen
 // Dependencies: []
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
 // Module 7629 (frozen)
 const Image = require(dependencyMap[0]).Image;
-const frozen = Object.freeze(new Set(["discord_protos.discord_experimentation.v1.UserAgeRange", "discord_protos.discord_experimentation.v1.Fixed64Value"]));
+const frozen = Object.freeze(new Set([]));
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/EmbedUtils.tsx");
 

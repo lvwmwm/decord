@@ -1,10 +1,10 @@
-// Module ID: 9015
-// Function ID: 70927
+// Module ID: 9016
+// Function ID: 70940
 // Name: GlobeEarthIcon
 // Dependencies: []
 // Exports: GlobeEarthIcon
 
-// Module 9015 (GlobeEarthIcon)
+// Module 9016 (GlobeEarthIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GlobeEarthIcon.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 6746
-// Function ID: 52493
+// Function ID: 52504
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -84,7 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getDefaultSearchState() {
-  const obj = { selectedRoleIds: new Set(), selectedJoinDateOption: {}, selectedAccountAgeOption: {}, selectedJoinSourceType: undefined, selectedSourceInviteCode: undefined, selectedSort: undefined };
+  const obj = { selectedRoleIds: new Set(), selectedJoinDateOption: { <string:3023162607>: true, <string:2937120107>: true, <string:2781144925>: true }, selectedAccountAgeOption: { <string:3023162607>: true, <string:2937120107>: true, <string:2781144925>: true }, selectedJoinSourceType: undefined, selectedSourceInviteCode: undefined, selectedSort: undefined };
   return obj;
 }
 function hasStringMatch(str, str2) {

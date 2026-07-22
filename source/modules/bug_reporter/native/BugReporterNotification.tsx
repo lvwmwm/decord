@@ -1,10 +1,10 @@
-// Module ID: 10305
-// Function ID: 79535
+// Module ID: 10306
+// Function ID: 79548
 // Name: BugReporterNotification
 // Dependencies: []
 // Exports: BugReporterNotification
 
-// Module 10305 (BugReporterNotification)
+// Module 10306 (BugReporterNotification)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { y: "<string:16956481>", isArray: "<string:553216>", borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { hideWhenScrolling: "<string:16961601>", autoCapitalize: "<string:553216>", borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.preview = obj;
 const tmp2 = arg1(dependencyMap[1]);
 obj.rightAccessoryContainer = { marginLeft: importDefault(dependencyMap[6]).space.PX_12 };

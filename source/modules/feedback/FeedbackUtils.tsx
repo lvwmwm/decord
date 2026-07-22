@@ -1,10 +1,10 @@
-// Module ID: 9495
-// Function ID: 73985
+// Module ID: 9496
+// Function ID: 73998
 // Name: filterOptions
 // Dependencies: []
 // Exports: getAudioFeedbackOptions, getConnectionFeedbackOptions, getPeopleFeedbackOptions, getStreamFeedbackOptions, getVideoBackgroundFeedbackOptions, getVideoFeedbackOptions, processOptOut, shuffleProblems
 
-// Module 9495 (filterOptions)
+// Module 9496 (filterOptions)
 function filterOptions(items) {
   const found = items.filter((disabled) => !disabled.disabled);
   return found.map((arg0) => {

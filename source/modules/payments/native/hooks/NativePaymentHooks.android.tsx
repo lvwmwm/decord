@@ -1,5 +1,5 @@
 // Module ID: 7996
-// Function ID: 63556
+// Function ID: 63566
 // Name: notSupported
 // Dependencies: []
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
@@ -73,7 +73,7 @@ let closure_5 = importAll(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("NativePaymentHooks.android.tsx");
-let closure_8 = { "Bool(false)": 131122.52832032426, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
+let closure_8 = {};
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
 
 export default { useNativeIAPPayments, useGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription };

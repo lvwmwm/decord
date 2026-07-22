@@ -1,10 +1,10 @@
-// Module ID: 14912
-// Function ID: 112322
+// Module ID: 14920
+// Function ID: 112365
 // Name: HubItem
 // Dependencies: []
 // Exports: default
 
-// Module 14912 (HubItem)
+// Module 14920 (HubItem)
 function HubItem(arg0) {
   let IconComponent;
   let active;

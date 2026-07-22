@@ -1,10 +1,10 @@
-// Module ID: 16141
-// Function ID: 124417
+// Module ID: 16149
+// Function ID: 124459
 // Name: useLoadGuildStickersWithCreator
 // Dependencies: []
 // Exports: default
 
-// Module 16141 (useLoadGuildStickersWithCreator)
+// Module 16149 (useLoadGuildStickersWithCreator)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

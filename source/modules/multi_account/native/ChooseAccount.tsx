@@ -1,10 +1,10 @@
-// Module ID: 14612
-// Function ID: 110190
+// Module ID: 14620
+// Function ID: 110233
 // Name: ChooseAccount
 // Dependencies: []
 // Exports: default
 
-// Module 14612 (ChooseAccount)
+// Module 14620 (ChooseAccount)
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -18,9 +18,9 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.sm, paddingTop: importDefault(dependencyMap[8]).space.PX_16, margin: importDefault(dependencyMap[8]).space.PX_16 };
 obj.container = obj;
+const obj1 = { flexDirection: "fps", paddingVertical: "frequency", paddingHorizontal: "frame", gap: "fullscreen", maxWidth: "has", alignSelf: "holdback", marginVertical: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.mainCard = obj1;
 const tmp5 = arg1(dependencyMap[6]);
-obj.mainCard = { marginVertical: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.sm };
-const obj1 = { marginVertical: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.addAccountLabel = { color: importDefault(dependencyMap[8]).colors.TEXT_LINK };
 let closure_13 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[8]).colors.TEXT_LINK };
@@ -47,7 +47,7 @@ export default function ChooseAccount() {
     let obj = multiAccountUsers(_handlePressRemove[16]);
     obj.hideActionSheet();
     let obj1 = arr(_handlePressRemove[17]);
-    obj = { position: true, width: true, aspectRatio: true };
+    obj = {};
     obj = {};
     const intl = arr(_handlePressRemove[14]).intl;
     obj.label = intl.string(arg0(_handlePressRemove[14]).t.DSN+hw);

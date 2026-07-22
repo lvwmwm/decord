@@ -1,10 +1,10 @@
-// Module ID: 12363
-// Function ID: 94561
+// Module ID: 12368
+// Function ID: 94589
 // Name: PremiumPlanSelectYearlyUpsellModal
 // Dependencies: []
 // Exports: default
 
-// Module 12363 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12368 (PremiumPlanSelectYearlyUpsellModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -15,7 +15,7 @@ let closure_10 = arg1(dependencyMap[6]).PREMIUM_YEARLY_DISCOUNT_PERCENT;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { marginHorizontal: 26 }, image: { marginBottom: null, alignSelf: null } };
+obj = { container: { marginHorizontal: 26 }, image: { borderWidth: null, flexGrow: null } };
 obj = {};
 const merged = Object.assign(importDefault(dependencyMap[10])(arg1(dependencyMap[7]).Fonts.DISPLAY_EXTRABOLD, undefined, 24));
 obj["alignSelf"] = "center";
@@ -23,11 +23,11 @@ obj["textAlign"] = "center";
 obj["paddingBottom"] = 8;
 obj["color"] = arg1(dependencyMap[11]).DARK_WHITE_500_LIGHT_BLACK_500;
 obj.header = obj;
-const obj1 = { body: "2026-03-private-profiles-strict-gb", ctaLabel: "user", ctaAction: "row", color: arg1(dependencyMap[11]).DARK_WHITE_500_LIGHT_BLACK_500 };
+const obj1 = { lottieComponent: null, GiftBackgroundSelect: null, parserState: null, color: arg1(dependencyMap[11]).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.description = obj1;
 obj.upsellButton = { marginBottom: 16 };
 obj.continueButton = { marginBottom: 4 };
-obj.cancelButton = { size: 1, progress: "comp_0" };
+obj.cancelButton = { y: "Array", channelId: "isArray" };
 let closure_13 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx");

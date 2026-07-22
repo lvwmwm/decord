@@ -1,5 +1,5 @@
 // Module ID: 4146
-// Function ID: 34982
+// Function ID: 34984
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
@@ -272,7 +272,7 @@ export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
     const items = [closure_8, closure_9, closure_7];
   }
-  const obj = { placeholderCount: "<string:1866530817>", preferredCommand: "<string:1358955001>", GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: "<string:2168627938>", UAH: "<string:2164261120>", enableClips: "<string:1124073728>", source: arg1(dependencyMap[8]).OverlayGameStatusSource.UNKNOWN, overlayMethod: arg1(dependencyMap[8]).OverlayMethod.Disabled };
+  const obj = { "Null": "<string:172032001>", "Null": "<string:1358955001>", "Null": "<string:423732022>", "Null": "<string:16778269>", "Null": "<string:33040193>", source: arg1(dependencyMap[8]).OverlayGameStatusSource.UNKNOWN, overlayMethod: arg1(dependencyMap[8]).OverlayMethod.Disabled };
   return obj;
 };
 export function isDetectionEnabled(value) {

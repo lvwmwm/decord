@@ -1,16 +1,15 @@
-// Module ID: 8298
-// Function ID: 65574
+// Module ID: 8299
+// Function ID: 65586
 // Name: useMediaShareActions
-// Dependencies: [0, 0, 0, 0, 0, 0, 653, 8302, 8304, 8305, 8307, 8308, 7809, 2, 8303, 2, 653, 4811, 477, 2, 7804, 8306, 2, 8302, 2, 6, 7, 15, 17, 18, 1838, 8310, 566, 686]
+// Dependencies: [0, 0, 0, 0, 0, 0, 653, 8303, 8305, 8306, 8308, 8309, 7809, 2, 8304, 2, 653, 4811, 477, 2, 7804, 8307, 2, 8303, 2, 6, 7, 15, 17, 18, 1838, 8311, 566, 686]
 // Exports: default
 
-// Module 8298 (useMediaShareActions)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import result from "result";
+// Module 8299 (useMediaShareActions)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
 import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_11 } from "ME";
 import { jsx } from "CRUNCHYROLL_LINK_DEST_ORIGIN";
 import dispatcher from "dispatcher";
@@ -28,9 +27,10 @@ function useMediaShareActions(source) {
   const React = channelId;
   const messageId = source.messageId;
   let closure_4 = messageId;
+  let obj = arg1(dependencyMap[8]);
   const items = [closure_6, closure_4, closure_7];
   const items1 = [channelId, messageId];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let tmp = null;
     if (null != channelId) {
       tmp = null;
@@ -48,10 +48,10 @@ function useMediaShareActions(source) {
     return tmp;
   }, items1);
   let closure_5 = stateFromStores;
-  const obj = arg1(dependencyMap[8]);
   const result = arg1(dependencyMap[9]).shouldAgeVerifyForExplicitMedia();
   const obj2 = arg1(dependencyMap[9]);
-  const obscure = arg1(dependencyMap[10]).getAttachmentObscurityProps({ attachment: source, shouldAgeVerify: result }).obscure;
+  obj = { internalInstanceHandle: null, aliceblue: null, antiquewhite: null, attachment: source, shouldAgeVerify: result };
+  const obscure = arg1(dependencyMap[10]).getAttachmentObscurityProps(obj).obscure;
   closure_6 = obscure;
   const items2 = [source];
   const callback = React.useCallback(() => {
@@ -173,7 +173,7 @@ function useMediaShareActions(source) {
     canForwardMessage = tmp11;
   }
   useMediaShareActions = canForwardMessage;
-  const obj4 = arg1(dependencyMap[23]);
+  const obj5 = arg1(dependencyMap[23]);
   videoSourceType = arg1(dependencyMap[12]).getVideoSourceType(source);
   const items8 = [disableDownload, callback3, callback4, callback2, callback5, callback, callback1, obscure, shareable, canForwardMessage, videoSourceType, , ];
   ({ channelId: arr9[11], messageId: arr9[12] } = source);
@@ -230,8 +230,8 @@ function useMediaShareActions(source) {
     return items;
   }, items8);
 }
-({ AnalyticsSections: closure_8, GIF_RE_IOS: closure_9, MediaType: closure_10 } = result);
-result = dispatcher.fileFinishedImporting("modules/media_viewer/native/components/MediaShareActions.tsx");
+({ AnalyticsSections: closure_8, GIF_RE_IOS: closure_9, MediaType: closure_10 } = require("__exportStarResult1"));
+const result = dispatcher.fileFinishedImporting("modules/media_viewer/native/components/MediaShareActions.tsx");
 
 export default function MediaShareActionSheet(source) {
   let obj = { source: source.source, disableDownload: source.disableDownload, shareable: source.shareable };

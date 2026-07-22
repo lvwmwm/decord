@@ -1,5 +1,5 @@
 // Module ID: 7119
-// Function ID: 57219
+// Function ID: 57230
 // Name: useIsInAdultAgeGroup
 // Dependencies: []
 // Exports: default

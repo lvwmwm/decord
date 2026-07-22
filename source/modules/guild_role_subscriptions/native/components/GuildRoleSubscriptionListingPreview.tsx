@@ -1,10 +1,10 @@
-// Module ID: 16335
-// Function ID: 126050
+// Module ID: 16343
+// Function ID: 126092
 // Name: PriceTier
 // Dependencies: []
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 16335 (PriceTier)
+// Module 16343 (PriceTier)
 function PriceTier(arg0) {
   let currency;
   let price;
@@ -19,7 +19,7 @@ function PriceTier(arg0) {
   let obj2 = arg1(dependencyMap[7]);
   obj.children = obj2.formatPrice(price, currency);
   const items = [callback2(arg1(dependencyMap[6]).Text, obj), ];
-  const obj1 = { style: tmp3.priceInterval };
+  const obj1 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp3.priceInterval };
   const intl = arg1(dependencyMap[8]).intl;
   obj2 = { period: arg1(dependencyMap[9]).formatPlanInterval(merged) };
   obj1.children = intl.format(arg1(dependencyMap[8]).t.isLGyX, obj2);
@@ -36,7 +36,7 @@ function Header(onPress) {
   const first = callback(obj2.useImage(listingId), 1)[0];
   let obj3 = importAll(dependencyMap[10]);
   obj = { style: tmp.header };
-  obj = { hasMaxConnections: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000540036855153, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006365987372896, children: callback(obj1.useName(listingId), 1)[0] };
+  obj = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000540036855153, edpbxy: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006365987372896, children: callback(obj1.useName(listingId), 1)[0] };
   const items = [callback2(arg1(dependencyMap[6]).Text, obj), , , , ];
   obj1 = { style: tmp.image };
   obj2 = {};
@@ -73,13 +73,13 @@ function Content(arg0) {
   obj.children = children;
   return closure_6(View, obj);
 }
-function SectionLabel(children) {
+function SectionLabel(label) {
   let obj = Object.create(null);
   obj.label = 0;
-  const merged = Object.assign(children, obj);
+  const merged = Object.assign(label, obj);
   obj = {};
   const merged1 = Object.assign(merged);
-  obj = { style: callback4().sectionLabel, children: children.label };
+  obj = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: callback4().sectionLabel, children: label.label };
   obj["children"] = callback2(arg1(dependencyMap[6]).Text, obj);
   return callback2(Content, obj);
 }
@@ -175,13 +175,13 @@ let obj = arg1(dependencyMap[4]);
 obj = { container: { padding: 16 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.header = obj;
-obj.image = { "Bool(false)": "isArray", "Bool(false)": "memo", "Bool(false)": "w", "Bool(false)": "isArray" };
+obj.image = { LIGHT: "isArray", exports: "marginBottom", 0: "w", 9223372036854775807: "isArray" };
 obj.priceGroup = {};
 obj.priceInterval = { marginTop: 4 };
 obj.content = { paddingHorizontal: 16 };
 const tmp3 = arg1(dependencyMap[3]);
 obj.contentWithBackground = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-const obj2 = { accessibilityRole: false, padding: "linear", "Null": "opacity", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj2 = { unicodeVersion: 8, y: "vertical", isArray: false, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.separator = obj2;
 obj.sectionLabel = { paddingVertical: 16 };
 obj.benefitSpacing = { marginTop: 16 };

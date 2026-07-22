@@ -1,10 +1,10 @@
-// Module ID: 15900
-// Function ID: 121841
+// Module ID: 15908
+// Function ID: 121884
 // Name: closeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15900 (closeActionSheet)
+// Module 15908 (closeActionSheet)
 function closeActionSheet() {
   importDefault(dependencyMap[7]).hideActionSheet();
 }
@@ -219,7 +219,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
     items2[1] = callback2(importDefault(dependencyMap[16]), obj1);
     let tmp43 = null;
     if (!hideDontShowAgainCheckbox) {
-      const obj2 = { bind: null, cursor: null, checked: first1 };
+      const obj2 = { 400888199: null, 2091392542: null, checked: first1 };
       const intl3 = arg1(dependencyMap[14]).intl;
       obj2.label = intl3.string(arg1(dependencyMap[14]).t.5E9SB9);
       obj2.onPress = function onPress() {
@@ -253,7 +253,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
         };
         obj4.children = callback2(arg1(dependencyMap[18]).TableRowGroup, obj5);
         const items3 = [callback2(View, obj4), ];
-        const obj6 = { "Bool(true)": null, "Bool(true)": null };
+        const obj6 = {};
         const intl2 = arg1(dependencyMap[14]).intl;
         obj6.text = intl2.string(arg1(dependencyMap[14]).t.13/7kX);
         obj6.onPress = function onPress() {
@@ -284,7 +284,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
       });
       obj8.children = callback2(arg1(dependencyMap[18]).TableRowGroup, obj9);
       const items4 = [callback2(View, obj8), ];
-      const obj10 = { "Bool(true)": null, "Bool(true)": null };
+      const obj10 = {};
       const intl = arg1(dependencyMap[14]).intl;
       obj10.text = intl.string(arg1(dependencyMap[14]).t.13/7kX);
       obj10.onPress = function onPress() {

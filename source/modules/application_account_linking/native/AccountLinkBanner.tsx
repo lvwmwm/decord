@@ -1,10 +1,10 @@
-// Module ID: 14898
-// Function ID: 112259
+// Module ID: 14906
+// Function ID: 112302
 // Name: AccountLinkLargeBanner
 // Dependencies: []
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 14898 (AccountLinkLargeBanner)
+// Module 14906 (AccountLinkLargeBanner)
 function AccountLinkLargeBanner(arg0) {
   let application;
   ({ application, markAsDismissed: closure_0, startAuthorization: closure_1 } = arg0);
@@ -57,7 +57,7 @@ function AccountLinkLargeBanner(arg0) {
     obj10.children = intl2.formatToPlainString(arg1(dependencyMap[19]).t.vxvKMm, obj11);
     items1[3] = callback(arg1(dependencyMap[18]).Text, obj10);
     const obj12 = { style: tmp.ctaContainer };
-    const obj13 = { "Bool(true)": null, "Bool(true)": null };
+    const obj13 = {};
     const intl3 = arg1(dependencyMap[19]).intl;
     obj13.text = intl3.string(arg1(dependencyMap[19]).t.0mvtKL);
     obj13.onPress = function onPress() {
@@ -98,7 +98,7 @@ function AccountLinkMediumBanner(arg0) {
       obj.style = tmp.rewardImage;
       obj.resizeMode = "contain";
       const items = [callback(closure_3, obj), , ];
-      const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.bodyText };
+      const obj2 = { cachedAt: "polite", edpbxy: "column", style: tmp.bodyText };
       const intl = arg1(dependencyMap[19]).intl;
       const obj3 = { gameName: application.name, rewardName: reward_name };
       obj2.children = intl.formatToPlainString(arg1(dependencyMap[19]).t.V/C76E, obj3);
@@ -115,7 +115,7 @@ function AccountLinkMediumBanner(arg0) {
       obj.children = items;
       const items1 = [callback2(closure_4, obj), ];
       const obj5 = { style: tmp.ctaContainer };
-      const obj6 = { "Bool(true)": null, "Bool(true)": null };
+      const obj6 = {};
       const intl2 = arg1(dependencyMap[19]).intl;
       obj6.text = intl2.string(arg1(dependencyMap[19]).t.0mvtKL);
       obj6.onPress = function onPress() {
@@ -150,10 +150,10 @@ const PX_162 = importDefault(dependencyMap[5]).space.PX_16;
 const PX_122 = importDefault(dependencyMap[5]).space.PX_12;
 let obj1 = arg1(dependencyMap[10]);
 let obj = { card: { padding: PX_12 } };
-obj = { backgroundColor: "<string:1814167554>", flexDirection: "<string:2018574338>", justifyContent: "<string:1681986003>", alignItems: "<string:1912602897>", overflow: "%ArrayProto_forEach%", zIndex: "%Error%", minHeight: "<string:1175994881>", flex: "<string:82575362>", top: importDefault(dependencyMap[5]).space.PX_12, right: importDefault(dependencyMap[5]).space.PX_12 };
+obj = { backgroundColor: "r", flexDirection: "ConnectionCablesSpotIllustration", justifyContent: "Array", alignItems: "soundshareSession", overflow: "LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST", zIndex: "ViewNsfwCommands", minHeight: "ars", flex: "prefixTag", top: importDefault(dependencyMap[5]).space.PX_12, right: importDefault(dependencyMap[5]).space.PX_12 };
 obj.closeButton = obj;
 obj.imagesContainer = {};
-obj1 = { "Null": 7, "Null": 370, marginHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ellipsisContainer = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.ellipsisDot = { width: importDefault(dependencyMap[5]).space.PX_4, height: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).space.PX_4 / 2, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_MUTED };
@@ -165,7 +165,7 @@ const obj2 = { width: importDefault(dependencyMap[5]).space.PX_4, height: import
 const obj3 = { card: { padding: PX_12 }, closeButton: {} };
 const obj7 = arg1(dependencyMap[10]);
 obj3.contentContainer = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_12 };
-obj3.rewardImage = { "Null": "row", "Null": "center" };
+obj3.rewardImage = {};
 obj3.bodyText = {};
 obj3.ctaContainer = { marginTop: PX_122, width: "100%" };
 let closure_22 = obj7.createStyles(obj3);

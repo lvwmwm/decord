@@ -1,10 +1,10 @@
-// Module ID: 11616
-// Function ID: 90206
+// Module ID: 11617
+// Function ID: 90219
 // Name: useIsRelationshipTypeSpamReportable
 // Dependencies: []
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 11616 (useIsRelationshipTypeSpamReportable)
+// Module 11617 (useIsRelationshipTypeSpamReportable)
 let closure_2 = importDefault(dependencyMap[0]);
 const RelationshipTypes = arg1(dependencyMap[1]).RelationshipTypes;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/useIsRelationshipTypeSpamReportable.tsx");

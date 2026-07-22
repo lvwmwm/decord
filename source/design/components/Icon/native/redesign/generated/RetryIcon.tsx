@@ -1,10 +1,10 @@
-// Module ID: 9940
-// Function ID: 76901
+// Module ID: 9941
+// Function ID: 76914
 // Name: RetryIcon
 // Dependencies: []
 // Exports: RetryIcon
 
-// Module 9940 (RetryIcon)
+// Module 9941 (RetryIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RetryIcon.tsx");

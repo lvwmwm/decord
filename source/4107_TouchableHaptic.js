@@ -1,11 +1,11 @@
 // Module ID: 4107
-// Function ID: 33980
+// Function ID: 33982
 // Name: TouchableHaptic
 // Dependencies: []
 // Exports: TouchableHaptic
 
 // Module 4107 (TouchableHaptic)
-let closure_3 = [];
+let closure_3 = ["pisces", null, null, null, null, null];
 let closure_4 = importDefault(dependencyMap[0]);
 arg1(dependencyMap[1]).useCallback;
 const Pressable = arg1(dependencyMap[2]).Pressable;

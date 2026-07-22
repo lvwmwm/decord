@@ -1,10 +1,10 @@
-// Module ID: 8951
-// Function ID: 70583
+// Module ID: 8952
+// Function ID: 70596
 // Name: getApplicationDetailsText
 // Dependencies: []
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 8951 (getApplicationDetailsText)
+// Module 8952 (getApplicationDetailsText)
 const MarketingURLs = require(dependencyMap[0]).MarketingURLs;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/oauth2/Utils.tsx");

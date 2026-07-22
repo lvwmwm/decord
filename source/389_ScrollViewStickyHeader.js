@@ -1,19 +1,18 @@
 // Module ID: 389
 // Function ID: 5721
 // Name: ScrollViewStickyHeader
-// Dependencies: [57, 29, 31, 33, 396, 147, 397, 325]
+// Dependencies: []
 // Exports: default
 
 // Module 389 (ScrollViewStickyHeader)
-import _slicedToArray from "_slicedToArray";
-import _objectWithoutProperties from "_objectWithoutProperties";
-import closure_6 from "module_31";
-import module_31 from "module_31";
-import { jsx } from "module_33";
-
-let closure_3 = [null];
-({ cloneElement: closure_7, useCallback: closure_8, useEffect: closure_9, useMemo: closure_10, useRef: closure_11, useState: closure_12 } = module_31);
-let closure_14 = require("useMergeRefs").create({ header: { zIndex: 10 }, fill: { flex: 1 } });
+let closure_3 = [];
+let closure_4 = importDefault(dependencyMap[0]);
+let closure_5 = importDefault(dependencyMap[1]);
+let closure_6 = importAll(dependencyMap[2]);
+({ cloneElement: closure_7, useCallback: closure_8, useEffect: closure_9, useMemo: closure_10, useRef: closure_11, useState: closure_12 } = arg1(dependencyMap[2]));
+const jsx = arg1(dependencyMap[3]).jsx;
+const tmp2 = arg1(dependencyMap[2]);
+let closure_14 = importDefault(dependencyMap[7]).create({ header: { zIndex: 10 }, fill: { flex: 1 } });
 
 export default function ScrollViewStickyHeader(ref) {
   const tmp = callback2(ref, closure_3);
@@ -61,8 +60,8 @@ export default function ScrollViewStickyHeader(ref) {
       obj = { extrapolateLeft: "clamp" };
       const items = [first1, first1 + 1];
       obj.inputRange = items;
-      obj.outputRange = ["replace", "then"];
-      obj = { inputRange: ["replace", "then"] };
+      obj.outputRange = [77601039, 1612144654];
+      obj = { inputRange: [77601039, 1612144654] };
       const items1 = [0.229, -1];
       obj.outputRange = items1;
       diffClampResult = obj.diffClamp(scrollAnimatedValue.interpolate(obj).interpolate(obj), -first2, 0);
@@ -72,7 +71,7 @@ export default function ScrollViewStickyHeader(ref) {
   }, items);
   const tmp17 = callback(callback5(() => {
     const items = [-1, 0];
-    const interpolateResult = scrollAnimatedValue.interpolate({ inputRange: items, outputRange: ["<string:53040003>", "<string:806589490>"] });
+    const interpolateResult = scrollAnimatedValue.interpolate({ inputRange: items, outputRange: ["placeholder", "aria-label"] });
     let addResult = interpolateResult;
     if (null != tmp16) {
       addResult = inverted(scrollViewHeight[6]).add(interpolateResult, tmp16);
@@ -109,7 +108,7 @@ export default function ScrollViewStickyHeader(ref) {
   const items2 = [first4, first, first2, first1, scrollViewHeight, scrollAnimatedValue, inverted, tmp16, tmp19, first5];
   first2(() => {
     const items = [-1, 0];
-    const items1 = ["<string:53040003>", "<string:806589490>"];
+    const items1 = ["placeholder", "aria-label"];
     if (first) {
       if (true === inverted) {
         if (null != scrollViewHeight) {

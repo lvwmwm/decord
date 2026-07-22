@@ -1,5 +1,5 @@
 // Module ID: 4138
-// Function ID: 34457
+// Function ID: 34459
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -659,7 +659,7 @@ function handleMessageAck(messageId) {
   } else {
     flag = messageId !== value._ackMessageId;
     if (flag) {
-      const obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, messageId };
+      const obj = { 441815649: 1567300603, 1742097827: 221342020, -1320620172: 822948183, messageId };
       flag = value.ack(obj);
     }
   }
@@ -1465,11 +1465,11 @@ const tmp10 = () => {
       const self = this;
       if (arg1) {
         if (self._lastMessageTimestamp < closure_75) {
-          return {};
+          return { <string:4017383382>: 1900216319, <string:1404547400>: 1895825964, <string:4171792952>: 1090519596 };
         } else if (!closure_38.isChannelRecordOrParentOptedIn(basicPermissions)) {
           if (!self.hasRecentlyVisitedAndRead()) {
             if (self.mentionCount <= 0) {
-              return {};
+              return { <string:4017383382>: 1900216319, <string:1404547400>: 1895825964, <string:4171792952>: 1090519596 };
             }
           }
         }
@@ -1477,11 +1477,11 @@ const tmp10 = () => {
       if ("basicPermissions" in basicPermissions) {
         let obj = callback(closure_2[51]);
         if (!obj.has(basicPermissions.basicPermissions, constants.VIEW_CHANNEL)) {
-          return {};
+          return { <string:4017383382>: 1900216319, <string:1404547400>: 1895825964, <string:4171792952>: 1090519596 };
         }
       } else if (closure_12.isChannelGated(self.guildId, self.channelId)) {
         if (!closure_35.can(constants2.VIEW_CHANNEL, basicPermissions)) {
-          return {};
+          return { <string:4017383382>: 1900216319, <string:1404547400>: 1895825964, <string:4171792952>: 1090519596 };
         }
       }
       if (!arg3) {
@@ -1567,7 +1567,7 @@ const tmp10 = () => {
             self._persisted = true;
             callback(closure_2[46])(() => {
               const HTTP = self(closure_2[47]).HTTP;
-              const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_44.PINS_ACK(self.channelId) };
+              const obj = { y: null, isArray: null, accessible: null, url: closure_44.PINS_ACK(self.channelId) };
               return HTTP.post(obj);
             });
           }
@@ -2028,7 +2028,7 @@ const tmp10 = () => {
       if (rounded !== this.lastViewed) {
         self.lastViewed = rounded;
         if (tmp4) {
-          self.ack({ "Bool(false)": null, "Bool(false)": null });
+          self.ack({ 0: "<string:1040334421>", 0: "<string:1040334338>" });
         }
         const tmp4 = self.canTrackUnreads() && !self.hasUnread();
       }
@@ -2376,7 +2376,7 @@ let tmp13 = (Store) => {
     key: "getGuildChannelUnreadState",
     value(id) {
       const ReadStateStoreClass = id;
-      return store.getValue(id.id, constants.CHANNEL, (getGuildChannelUnreadState) => getGuildChannelUnreadState.getGuildChannelUnreadState(getGuildChannelUnreadState, arg1, arg2, arg3, arg4), {});
+      return store.getValue(id.id, constants.CHANNEL, (getGuildChannelUnreadState) => getGuildChannelUnreadState.getGuildChannelUnreadState(getGuildChannelUnreadState, arg1, arg2, arg3, arg4), { <string:4017383382>: 1900216319, <string:1404547400>: 1895825964, <string:4171792952>: 1090519596 });
     }
   };
   items[12] = {
@@ -3016,7 +3016,7 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
             if (null != currentUser) {
               const obj4 = { rawMessage: message, userId: currentUser.id, suppressEveryone: closure_38.isSuppressEveryoneEnabled(value.guildId), suppressRoles: closure_38.isSuppressRolesEnabled(value.guildId) };
               if (obj8.isRawMessageMentioned(obj4)) {
-                let obj5 = { "Null": null, "Null": null };
+                let obj5 = { -2118757640: "<string:1040334421>", -2007890040: "<string:1040334338>" };
               }
               if (obj5.shouldMention) {
                 value.isMentionLowImportance = obj5.isMentionLowImportance;
@@ -3032,25 +3032,25 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
             }
             const channel = store3.getChannel(message.channel_id);
             if (isNonMutedPrivateMessage(channel)) {
-              obj5 = { "Null": null, "Null": null };
+              obj5 = { -2118757640: "<string:1040334421>", -2007890040: "<string:1040334338>" };
             } else {
               if (closure_38.mentionOnAllMessages) {
                 if (null != channel) {
                   if (channel.isThread()) {
                     if (obj12.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
-                      obj5 = { "Null": null, "Null": null };
+                      obj5 = { -2118757640: null, -2007890040: null };
                     }
                     const obj12 = arg1(dependencyMap[63]);
                   } else if (!channel.isVocal()) {
                     if (!closure_38.isChannelMuted(channel.guild_id, channel.id)) {
                       if (closure_38.resolvedMessageNotifications(channel) === constants9.ALL_MESSAGES) {
-                        obj5 = { "Null": null, "Null": null };
+                        obj5 = { -2118757640: null, -2007890040: null };
                       }
                     }
                   }
                 }
               }
-              obj5 = { "Null": null, "Null": null };
+              obj5 = { -2118757640: true, -2007890040: true };
             }
           } else {
             let type;
@@ -3178,7 +3178,7 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
       const value = tmp10.get(channelId);
       if (!value.hasMentions()) {
         value.oldestUnreadMessageId = null;
-        let obj = { "Null": null, "Null": null };
+        let obj = { "Bool(false)": null, "Bool(false)": null };
         obj = { section: constants3.CHANNEL, object: constants2.ACK_VOICE_CHANNEL_SELECT, objectType: constants.ACK_SEMI_AUTOMATIC };
         obj.location = obj;
         return value.ack(obj);
@@ -3577,7 +3577,7 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
         return false;
       } else {
         value.ackMessageId = ackedId;
-        const obj = { guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, messageId: ackedId };
+        const obj = { backgroundColor: 1567300603, justifyContent: 221342020, alignItems: 822948183, messageId: ackedId };
         value.ack(obj);
       }
     }
@@ -4019,7 +4019,7 @@ const obj = {
             if (null != currentUser) {
               const obj4 = { rawMessage: message, userId: currentUser.id, suppressEveryone: closure_38.isSuppressEveryoneEnabled(value.guildId), suppressRoles: closure_38.isSuppressRolesEnabled(value.guildId) };
               if (obj8.isRawMessageMentioned(obj4)) {
-                let obj5 = { "Null": null, "Null": null };
+                let obj5 = { -2118757640: "<string:1040334421>", -2007890040: "<string:1040334338>" };
               }
               if (obj5.shouldMention) {
                 value.isMentionLowImportance = obj5.isMentionLowImportance;
@@ -4035,25 +4035,25 @@ const obj = {
             }
             const channel = store3.getChannel(message.channel_id);
             if (isNonMutedPrivateMessage(channel)) {
-              obj5 = { "Null": null, "Null": null };
+              obj5 = { -2118757640: "<string:1040334421>", -2007890040: "<string:1040334338>" };
             } else {
               if (closure_38.mentionOnAllMessages) {
                 if (null != channel) {
                   if (channel.isThread()) {
                     if (obj12.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
-                      obj5 = { "Null": null, "Null": null };
+                      obj5 = { -2118757640: null, -2007890040: null };
                     }
                     const obj12 = arg1(dependencyMap[63]);
                   } else if (!channel.isVocal()) {
                     if (!closure_38.isChannelMuted(channel.guild_id, channel.id)) {
                       if (closure_38.resolvedMessageNotifications(channel) === constants9.ALL_MESSAGES) {
-                        obj5 = { "Null": null, "Null": null };
+                        obj5 = { -2118757640: null, -2007890040: null };
                       }
                     }
                   }
                 }
               }
-              obj5 = { "Null": null, "Null": null };
+              obj5 = { -2118757640: true, -2007890040: true };
             }
           } else {
             let type;
@@ -4181,7 +4181,7 @@ const obj = {
       const value = tmp10.get(channelId);
       if (!value.hasMentions()) {
         value.oldestUnreadMessageId = null;
-        let obj = { "Null": null, "Null": null };
+        let obj = { "Bool(false)": null, "Bool(false)": null };
         obj = { section: constants3.CHANNEL, object: constants2.ACK_VOICE_CHANNEL_SELECT, objectType: constants.ACK_SEMI_AUTOMATIC };
         obj.location = obj;
         return value.ack(obj);
@@ -4580,7 +4580,7 @@ const obj = {
         return false;
       } else {
         value.ackMessageId = ackedId;
-        const obj = { guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, messageId: ackedId };
+        const obj = { backgroundColor: 1567300603, justifyContent: 221342020, alignItems: 822948183, messageId: ackedId };
         value.ack(obj);
       }
     }

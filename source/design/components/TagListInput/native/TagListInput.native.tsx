@@ -1,8 +1,8 @@
-// Module ID: 8418
-// Function ID: 67072
+// Module ID: 8419
+// Function ID: 67084
 // Dependencies: []
 
-// Module 8418
+// Module 8419
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6, StyleSheet: closure_7 } = arg1(dependencyMap[2]));
@@ -31,8 +31,8 @@ let closure_10 = arg1(dependencyMap[4]).createStyles(() => {
   return obj;
 });
 let closure_11 = {};
-let closure_12 = {};
-let closure_13 = ["<string:1308623423>", "<string:184549846>"];
+let closure_12 = { 0: -721485569, 0: 3375103 };
+let closure_13 = [null, null];
 const obj2 = arg1(dependencyMap[4]);
 let closure_14 = arg1(dependencyMap[4]).createStyles(() => {
   let obj = { fill: { flex: 1 } };
@@ -45,7 +45,7 @@ let closure_14 = arg1(dependencyMap[4]).createStyles(() => {
   const merged1 = Object.assign(closure_7.absoluteFillObject);
   obj["backgroundColor"] = "black";
   obj.leadingCover = obj;
-  obj.maskRemainder = {};
+  obj.maskRemainder = { -9223372036854775808: null, 9223372036854775807: null };
   return obj;
 });
 let closure_15 = { code: "function TagListInputNativeTsx1(){const{withSpring,scrolled,springStandard}=this.__closure;return{opacity:withSpring(scrolled.get()?0:1,springStandard,'animate-always')};}" };
@@ -232,7 +232,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   inputValueRef = tmp4.inputValueRef;
   inputUpdate = tmp4.inputUpdate;
   const clearButton = tmp4.clearButton;
-  closure_7 = importAllResult.useRef({ bind: -536870861, cursor: -299892737 });
+  closure_7 = importAllResult.useRef({ 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" });
   let obj1 = arg1(dependencyMap[15]);
   const keyboardBlurring = obj1.useKeyboardBlurring(inputRef);
   let obj2 = arg1(dependencyMap[16]);
@@ -460,7 +460,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
             if (null != current2) {
               current2.setSelection(0, 0);
             }
-            closure_7.current = { bind: -536870861, cursor: -299892737 };
+            closure_7.current = { 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" };
           } else if (null != callback) {
             const tmp3 = callback(arg1);
           }
@@ -596,7 +596,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   const tmp35 = focusProps;
   const obj6 = { size: "sm", isDisabled: disabled, isFocused: focus.isFocused };
   if (null == icon) {
-    const obj7 = { Gateway: "lag", communicationDisabledUntilTimestamp: "isArrayBuffer", withMutualGuilds: "<string:2631618816>", style: tmp.iconLeft };
+    const obj7 = { style: tmp.iconLeft };
     icon = focusProps(arg1(dependencyMap[26]).MagnifyingGlassIcon, obj7);
   }
   const items8 = [icon, obj4.wrap(focusProps(BottomSheetScrollView, obj)), ];

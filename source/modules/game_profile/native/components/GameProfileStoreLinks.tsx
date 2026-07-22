@@ -1,22 +1,23 @@
-// Module ID: 8627
-// Function ID: 68365
+// Module ID: 8628
+// Function ID: 68377
 // Name: WebsiteGameStoreLinkButton
 // Dependencies: []
 // Exports: default
 
-// Module 8627 (WebsiteGameStoreLinkButton)
+// Module 8628 (WebsiteGameStoreLinkButton)
 function WebsiteGameStoreLinkButton(data) {
   data = data.data;
   const arg1 = data;
   const importDefault = data.trackAction;
   closure_2 = importDefault(closure_2[5])(importDefault(closure_2[6]).openURL);
-  const obj = { "Bool(true)": null, "Bool(true)": null };
-  ({ title: obj.text, icon: obj.icon } = data);
-  obj.onPress = function onPress() {
-    trackAction(data.action);
-    callback(data.url);
-  };
-  return callback(arg1(closure_2[7]).Button, obj);
+  return callback(arg1(closure_2[7]).Button, {
+    text: data.title,
+    icon: data.icon,
+    onPress() {
+      trackAction(data.action);
+      callback(data.url);
+    }
+  });
 }
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -57,7 +58,7 @@ export default function GameProfileStoreLinks(websiteButtons) {
         obj.children = items;
         return callback2(View, obj);
       } else {
-        const obj3 = { "Bool(true)": null, "Bool(true)": null };
+        const obj3 = {};
         const intl = arg1(dependencyMap[8]).intl;
         obj3.text = intl.string(arg1(dependencyMap[8]).t./hMurx);
         obj3.onPress = function onPress() {

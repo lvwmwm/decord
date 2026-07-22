@@ -1,10 +1,10 @@
-// Module ID: 9542
-// Function ID: 74390
+// Module ID: 9543
+// Function ID: 74403
 // Name: useCreateThread
-// Dependencies: [31, 27, 33, 4126, 689, 4316, 4656, 1212, 5386, 4641, 4124, 4629, 2, 57, 31]
+// Dependencies: [31, 27, 33, 4126, 689, 4316, 4656, 1212, 5116, 4641, 4124, 4629, 2, 57, 31]
 // Exports: default, useCreateForumPost
 
-// Module 9542 (useCreateThread)
+// Module 9543 (useCreateThread)
 import closure_3 from "module_31";
 import getActivityIndicator from "get ActivityIndicator";
 import { DraftType } from "module_33";

@@ -1,29 +1,30 @@
-// Module ID: 10530
-// Function ID: 82287
+// Module ID: 10531
+// Function ID: 82300
 // Name: PictureInPicturePositions
-// Dependencies: []
+// Dependencies: [4101701633, 3089956865, 2611150849, 1985019908, 4139, 10521, 3979, 10518, 566, 2, 14714, 2610688, 2692864, 1021184, 1056512, 325888, 2410496, 1334784, 1161728]
 
-// Module 10530 (PictureInPicturePositions)
+// Module 10531 (PictureInPicturePositions)
+import { PictureInPicturePositions } from "_isNativeReflectConstruct";
+import { jsx } from "isActivityFocused";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ChannelCallCameraPreview from "ChannelCallCameraPreview";
+
 let StyleSheet;
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ StyleSheet, View: closure_5 } = arg1(dependencyMap[2]));
 const toggleFocus = arg1(dependencyMap[3]).toggleFocus;
-const PictureInPicturePositions = arg1(dependencyMap[4]).PictureInPicturePositions;
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj1 = arg1(dependencyMap[6]);
 let obj = {};
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["alignItems"] = "baseline";
 obj.pipOuterContainer = obj;
-obj1 = {};
+_createForOfIteratorHelperLoose = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj1["alignItems"] = "baseline";
-obj.pipInnerContainer = obj1;
-const tmp2 = arg1(dependencyMap[2]);
-obj.elevationShadow = arg1(dependencyMap[7]).generateBoxShadowStyle(arg1(dependencyMap[7]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
-let closure_9 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose["alignItems"] = "baseline";
+obj.pipInnerContainer = _createForOfIteratorHelperLoose;
+obj.elevationShadow = ChannelCallCameraPreview.generateBoxShadowStyle(require("ChannelCallCameraPreview").EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_10 = { code: "function getSpringAnimationConfig_PictureInPictureTsx1(velocity){return{mass:0.2,damping:7.5,stiffness:100,restDisplacementThreshold:0.1,restSpeedThreshold:0.1,overshootClamping:true,velocity:velocity};}" };
 let closure_11 = () => {
   function getSpringAnimationConfig(velocity) {
@@ -35,7 +36,7 @@ let closure_11 = () => {
   return getSpringAnimationConfig;
 }();
 let closure_12 = { code: "function PictureInPictureTsx2(){const{insets,withSpring,getSpringAnimationConfig}=this.__closure;return{marginTop:insets.top,marginBottom:withSpring(insets.bottom,getSpringAnimationConfig())};}" };
-const obj6 = arg1(dependencyMap[7]);
+const tmp2 = arg1(dependencyMap[2]);
 const memoResult = importAllResult.memo((preferredPosition) => {
   let children;
   let draggableGridItemStyles;
@@ -59,7 +60,7 @@ const memoResult = importAllResult.memo((preferredPosition) => {
   arg1 = insets;
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
   const size = importDefault(dependencyMap[11])(obj);
-  obj = { MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: "Array", colorBox: "isArray", GUILD_BOOSTING_FAQ: "isArray", MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: "container", claim: "accessibilityLabel", failNodeId: "isArray", width, height };
+  obj = { GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: "counter", qRaqel: "complete", expoVersion: "creator", DragIcon: "creative", shineStyle: "captions", GuildThemePreviewOwner: "content", width, height };
   const tmp5 = callback(importAllResult.useState(obj), 2);
   const size2 = tmp5[0];
   importDefault = tmp5[1];

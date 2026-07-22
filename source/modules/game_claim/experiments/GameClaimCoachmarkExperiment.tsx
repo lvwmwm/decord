@@ -1,13 +1,13 @@
-// Module ID: 14962
-// Function ID: 112579
+// Module ID: 14970
+// Function ID: 112622
 // Name: items
 // Dependencies: []
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 14962 (items)
+// Module 14970 (items)
 const _module = require(dependencyMap[0]);
-let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, defaultConfig: { enabled: false } };
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { enabled: true } };
+let obj = { shapes: "justifyContent", flex: "shapes", sk: "accessibilityRole", defaultConfig: { enabled: false } };
+obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);

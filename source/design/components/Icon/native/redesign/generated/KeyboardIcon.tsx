@@ -1,10 +1,10 @@
-// Module ID: 9847
-// Function ID: 76247
+// Module ID: 9848
+// Function ID: 76260
 // Name: KeyboardIcon
 // Dependencies: []
 // Exports: KeyboardIcon
 
-// Module 9847 (KeyboardIcon)
+// Module 9848 (KeyboardIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/KeyboardIcon.tsx");

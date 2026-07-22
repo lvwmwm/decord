@@ -1,10 +1,10 @@
-// Module ID: 11562
-// Function ID: 89960
+// Module ID: 11563
+// Function ID: 89973
 // Name: GuildPowerupsDeactivateAlert
 // Dependencies: []
 // Exports: default
 
-// Module 11562 (GuildPowerupsDeactivateAlert)
+// Module 11563 (GuildPowerupsDeactivateAlert)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
@@ -31,7 +31,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(dependencyMap[6]).ModalType.DEACTIVATE);
   obj = {};
   obj = { style: tmp.headerContainer };
-  const obj1 = { color: importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: {} };
+  const obj1 = { color: importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { "Null": "isArray", "Null": "c" } };
   obj.children = callback(require(dependencyMap[8]).CircleErrorIcon, obj1);
   obj.header = callback(View, obj);
   const intl = require(dependencyMap[9]).intl;
@@ -41,7 +41,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const obj4 = {};
   let tmp6 = null != error;
   if (tmp6) {
-    const obj5 = { delete: 240, dispatch: 130, raw: null, style: tmp.warningText, children: error };
+    const obj5 = { "Null": 240, "Null": 130, alignItems: null, style: tmp.warningText, children: error };
     tmp6 = callback(require(dependencyMap[12]).Text, obj5);
   }
   const items = [tmp6, , ];

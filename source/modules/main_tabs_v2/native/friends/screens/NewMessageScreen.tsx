@@ -1,10 +1,10 @@
-// Module ID: 15316
-// Function ID: 116484
+// Module ID: 15324
+// Function ID: 116527
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15316 (_createForOfIteratorHelperLoose)
+// Module 15324 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -248,7 +248,7 @@ function useChannelForParticipants(first) {
     }
     if (tmp) {
       let obj = first(closure_2[18]);
-      obj = { paths: "c8f47b968e51eb4d5f2964cb9e696a2a", Symbol: "ChannelsFollowedIcon", cix: "png", channel: true, backgroundColor: "/assets/design/components/Icon/native/redesign/generated/images", flexDirection: 24, justifyContent: 24, marginTop: null, marginBottom: "b83c9486cfaf14d2dd0ad9edbe75c34d", channel: "WebhookPlusIcon", channelId: stateFromStores.id, messages: [], jump: undefined };
+      obj = { GuildSettingsRoleEditSections: "c8f47b968e51eb4d5f2964cb9e696a2a", updateTeenConsents: "ChannelsFollowedIcon", openSocialLayerStorefrontProductSelfPurchaseSuccessModal: "png", framesBannerTextContainer: true, _isCached: "/assets/design/components/Icon/native/redesign/generated/images", rejectedSyncPromise: 24, fullScreenGestureEnabled: 24, headerTitle: null, headerTitleAlign: "b83c9486cfaf14d2dd0ad9edbe75c34d", Gesture: "WebhookPlusIcon", channelId: stateFromStores.id, messages: [], jump: undefined };
       obj.dispatch(obj);
     }
   }, items4);
@@ -364,7 +364,7 @@ if (obj6.isAndroid()) {
 }
 obj1.alignItems = str;
 obj.header = obj1;
-obj.emptyContainer = { "Null": "values", "Null": "Array" };
+obj.emptyContainer = { alignItems: "<string:3942646034>", justifyContent: "<string:3355444267>" };
 obj.emptyKeyboardView = { flexGrow: 1 };
 const obj6 = arg1(dependencyMap[15]);
 obj.addFriendsButtonContainer = { marginBottom: importDefault(dependencyMap[14]).space.PX_16 };

@@ -1,9 +1,9 @@
-// Module ID: 12922
-// Function ID: 98514
+// Module ID: 12929
+// Function ID: 98547
 // Name: MenuGroup
 // Dependencies: []
 
-// Module 12922 (MenuGroup)
+// Module 12929 (MenuGroup)
 let StyleSheet;
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet, View: closure_1 } = arg1(dependencyMap[1]));

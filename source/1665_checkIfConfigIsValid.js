@@ -61,7 +61,7 @@ let closure_8 = { code: "function scaleZetaToMatchClamps_Pnpm_springUtilsTs4(ani
 const tmp2 = () => {
   function checkIfConfigIsValid(merged) {
     let closure_1 = "";
-    const items = [-1874697984, 738197851, 1358955006, 1768008480, 1635104849, -468954741];
+    const items = ["style", "enabled", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
     const item = items.forEach((arg0) => {
       if (arg0[arg0] <= 0) {
         const _HermesInternal = HermesInternal;
@@ -117,7 +117,7 @@ const tmp4 = () => {
       tmp = arguments[1];
     }
     if (tmp.skipAnimation) {
-      return { resourceTimingToSpanAttributes: false, handleNoiseSuppressionChange: false, nextFocusForward: false };
+      return { alignItems: "spring", width: 0.4, flexDirection: 1 };
     } else if (tmp.useDuration) {
       const dampingRatio = tmp.dampingRatio;
       const _Math4 = Math;

@@ -1,9 +1,9 @@
-// Module ID: 15136
-// Function ID: 114223
+// Module ID: 15144
+// Function ID: 114266
 // Name: Header
 // Dependencies: []
 
-// Module 15136 (Header)
+// Module 15144 (Header)
 let MIDNIGHT_BORDER_WIDTH;
 function Header(channelId) {
   let guildId;
@@ -87,14 +87,14 @@ function Header(channelId) {
   obj.label = intl.string(arg1(dependencyMap[12]).t.WYj55Y);
   obj.action = function action() {
     let obj = channelId(isNavigationScreen[13]);
-    obj = { "Bool(false)": 1094738768, "Bool(false)": 159728, "Bool(false)": "black", "Bool(false)": "0.1", "Bool(false)": "M248.055 0.225335H85.0491V154.266H248.055V0.225335Z", guildId, channelId };
+    obj = { "Bool(false)": 1094738768, "Bool(false)": 159802, "Null": "black", "Null": "0.1", "Null": "M248.055 0.225335H85.0491V154.266H248.055V0.225335Z", guildId, channelId };
     obj.navigateToRootTab(obj);
   };
   const items3 = [obj];
   if (memo1) {
     obj = {
-      afterMs: false,
-      serverQuests: false,
+      addWindow: "/assets/design/components/Icon/native/redesign/generated/images",
+      for: 24,
       items: items3,
       children(ref) {
           let obj = Object.create(null);
@@ -163,15 +163,15 @@ const tmp5 = arg1(dependencyMap[5]);
 obj.midnightContentContainerBorder = { borderLeftWidth: MIDNIGHT_BORDER_WIDTH, borderLeftColor: importDefault(dependencyMap[7]).colors.APP_FRAME_BORDER };
 const obj2 = { borderLeftWidth: MIDNIGHT_BORDER_WIDTH, borderLeftColor: importDefault(dependencyMap[7]).colors.APP_FRAME_BORDER };
 obj.containerEmpty = { backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
-const obj4 = { rowGap: null, padding: 1, alignItems: null, justifyContent: "stretch", 21/9: 16, backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
-obj.headerWrapper = obj4;
+const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
+obj.headerWrapper = { backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
 const obj5 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj5["top"] = undefined;
 obj5["height"] = 1;
 obj5["backgroundColor"] = importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_HEADER_BORDER;
 obj.headerBottomBorder = obj5;
-const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
+const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
 obj.headerWithFadingFrame = { borderTopLeftRadius: importDefault(dependencyMap[7]).modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const obj6 = { borderTopLeftRadius: importDefault(dependencyMap[7]).modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 obj.splitDivider = { borderLeftWidth: importDefault(dependencyMap[7]).modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH, borderLeftColor: importDefault(dependencyMap[7]).colors.APP_FRAME_BORDER };

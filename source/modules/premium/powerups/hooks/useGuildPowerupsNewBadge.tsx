@@ -1,10 +1,10 @@
-// Module ID: 11531
-// Function ID: 89819
+// Module ID: 11532
+// Function ID: 89832
 // Name: useBadgeableMarketingVersion
-// Dependencies: [4096, 11540, 1934, 2, 27, 4120, 4017, 4016, 33, 4126, 689]
+// Dependencies: [4096, 11541, 1934, 2, 27, 4120, 4017, 4016, 33, 4126, 689]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 11531 (useBadgeableMarketingVersion)
+// Module 11532 (useBadgeableMarketingVersion)
 import showActionSheet from "showActionSheet";
 import GuildPowerupsBottomSheetHeader from "GuildPowerupsBottomSheetHeader";
 import maybeLoadBundle from "maybeLoadBundle";

@@ -1,10 +1,10 @@
-// Module ID: 11011
-// Function ID: 85676
+// Module ID: 11012
+// Function ID: 85689
 // Name: useUserIsConsideredAdult
 // Dependencies: []
 // Exports: default
 
-// Module 11011 (useUserIsConsideredAdult)
+// Module 11012 (useUserIsConsideredAdult)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/parent_tools/hooks/useUserIsConsideredAdult.tsx");
 

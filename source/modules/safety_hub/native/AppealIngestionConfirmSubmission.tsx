@@ -1,17 +1,17 @@
-// Module ID: 11038
-// Function ID: 85943
+// Module ID: 11039
+// Function ID: 85956
 // Name: AppealIngestionConfirmSubmission
 // Dependencies: []
 // Exports: default
 
-// Module 11038 (AppealIngestionConfirmSubmission)
+// Module 11039 (AppealIngestionConfirmSubmission)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[3]).EMPTY_STRING_SNOWFLAKE_ID;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { surrogates: "<string:4083789493>", paths: "<string:3209801398>" }, detailsAction: { marginBottom: 16 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { "Null": "vertical", "Null": false }, detailsAction: { marginBottom: 16 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionConfirmSubmission.tsx");
 

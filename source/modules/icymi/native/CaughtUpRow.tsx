@@ -1,10 +1,10 @@
-// Module ID: 15119
-// Function ID: 114085
+// Module ID: 15127
+// Function ID: 114128
 // Name: ExploreServersRow
 // Dependencies: []
 // Exports: default
 
-// Module 15119 (ExploreServersRow)
+// Module 15127 (ExploreServersRow)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -22,13 +22,13 @@ let closure_10 = arg1(dependencyMap[7]).createICYMIStyles((margin) => {
   obj.recommendedGuildsContainer = { flex: 1, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
   const obj1 = { flex: 1, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
   obj.iconWrapper = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  obj.icon = {};
+  obj.icon = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
   const obj2 = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
   obj.headerText = { marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-  obj.subtitleText = { body: null, ctaLabel: null };
-  const obj4 = { paddingTop: false, justifyContent: false, gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: margin.margin };
+  obj.subtitleText = { lottieComponent: null, GiftBackgroundSelect: null };
+  const obj4 = { backgroundColor: false, borderRadius: false, gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: margin.margin };
   obj.buttonContainer = obj4;
-  obj.gradient = { flexBasis: false, gap: false, rowGap: false, display: false, backfaceVisibility: false };
+  obj.gradient = { <string:1373155683>: true, <string:1397987961>: true, <string:31251800>: true, <string:1559979170>: true, <string:1549292374>: true };
   return obj;
 });
 let closure_11 = { code: "function CaughtUpRowTsx1(){const{visibleSharedValue,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withTiming(0,{duration:250,easing:Easing.bezier(0.5,1.8,0.5,1)}):-80}],opacity:visibleSharedValue.get()?withTiming(1,{duration:100,easing:Easing.out(Easing.bezierFn(0.33,1,0.68,1))}):0};}" };
@@ -64,7 +64,7 @@ export default function ExploreServersRow(visible) {
   const callback1 = React.useCallback(() => {
     let obj = sharedValue(tmp5[9]);
     obj.itemInteracted("caught_up", "caught_up", "press_home");
-    obj = { <string:1102018133>: 1091698687, <string:3437916651>: 69988, actionParameters: {} };
+    obj = { <string:766477909>: 1091698687, <string:535451883>: 94602, actionParameters: {} };
     sharedValue(tmp5[9]).feedItemActioned(obj);
     const obj2 = sharedValue(tmp5[9]);
     const rootNavigationRef = visible(tmp5[12]).getRootNavigationRef();
@@ -198,7 +198,7 @@ export default function ExploreServersRow(visible) {
   const obj4 = { style: tmp.textContainer };
   obj5 = { style: items1 };
   const items1 = [tmp.iconWrapper, animatedStyle];
-  const obj6 = { borderColor: "<string:3193101238>", borderRadius: "<string:1900331521>", borderStyle: "<string:4294967292>", style: tmp.icon };
+  const obj6 = { "Bool(false)": "<string:3310541739>", "Bool(false)": "<string:1900342017>", "Bool(false)": "<string:4294967292>", style: tmp.icon };
   obj5.children = callback3(arg1(dependencyMap[15]).FlashIcon, obj6);
   const items2 = [callback3(importDefault(dependencyMap[5]).View, obj5), , ];
   obj7 = { style: items3 };
@@ -206,7 +206,7 @@ export default function ExploreServersRow(visible) {
   const intl = arg1(dependencyMap[16]).intl;
   obj7.children = intl.string(arg1(dependencyMap[16]).t.xjxffq);
   items2[1] = callback3(closure_9, obj7);
-  const obj8 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+  const obj8 = { cachedAt: 1, edpbxy: 1 };
   const items4 = [tmp.subtitleText, animatedStyle2];
   obj8.style = items4;
   const intl2 = arg1(dependencyMap[16]).intl;

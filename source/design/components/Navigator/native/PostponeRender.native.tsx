@@ -1,10 +1,10 @@
-// Module ID: 5581
-// Function ID: 47373
+// Module ID: 5580
+// Function ID: 47381
 // Name: PostponeRender
 // Dependencies: []
 // Exports: PostponeRender
 
-// Module 5581 (PostponeRender)
+// Module 5580 (PostponeRender)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);

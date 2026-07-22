@@ -1,9 +1,9 @@
-// Module ID: 15503
-// Function ID: 118330
+// Module ID: 15511
+// Function ID: 118373
 // Name: metadata
 // Dependencies: []
 
-// Module 15503 (metadata)
+// Module 15511 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/collectibles/frames/announcement_sheet_frame.png.js");
 

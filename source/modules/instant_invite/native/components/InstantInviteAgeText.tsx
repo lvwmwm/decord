@@ -1,16 +1,16 @@
-// Module ID: 11737
-// Function ID: 91170
+// Module ID: 11738
+// Function ID: 91183
 // Name: InstantInviteAgeText
 // Dependencies: []
 // Exports: default
 
-// Module 11737 (InstantInviteAgeText)
+// Module 11738 (InstantInviteAgeText)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
 ({ jsxs: closure_4, jsx: closure_5 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).createStyles({ inviteAgeContainer: { <string:3635438572>: null, <string:1408024149>: null, <string:1708473420>: null } });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ inviteAgeContainer: { <string:1365507020>: "<string:141658571>", <string:1650722957>: "<string:1895825408>", <string:1698387627>: "r" } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/instant_invite/native/components/InstantInviteAgeText.tsx");
 

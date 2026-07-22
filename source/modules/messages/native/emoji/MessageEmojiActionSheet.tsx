@@ -1,10 +1,10 @@
-// Module ID: 9377
-// Function ID: 73128
+// Module ID: 9378
+// Function ID: 73141
 // Name: MessageStandardEmojiActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9377 (MessageStandardEmojiActionSheet)
+// Module 9378 (MessageStandardEmojiActionSheet)
 function MessageStandardEmojiActionSheet(emojiNode) {
   let obj = arg1(dependencyMap[6]);
   const v4Result = obj.v4();

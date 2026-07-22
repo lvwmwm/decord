@@ -1,13 +1,12 @@
-// Module ID: 12725
-// Function ID: 97650
+// Module ID: 12732
+// Function ID: 97683
 // Name: _networkAwareRetry
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 12725 (_networkAwareRetry)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
+// Module 12732 (_networkAwareRetry)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
 function _networkAwareRetry() {
   // CreateGeneratorClosureLongIndex (0x67)
@@ -15,7 +14,7 @@ function _networkAwareRetry() {
   const _networkAwareRetry = obj;
   return obj(...arguments);
 }
-result = result.fileFinishedImporting("modules/network/networkAwareRetry.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/network/networkAwareRetry.tsx");
 
 export default function networkAwareRetry() {
   return _networkAwareRetry(...arguments);

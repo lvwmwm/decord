@@ -1,10 +1,10 @@
-// Module ID: 10716
-// Function ID: 83399
+// Module ID: 10717
+// Function ID: 83412
 // Name: handleKrispLinkPressed
 // Dependencies: []
 // Exports: default
 
-// Module 10716 (handleKrispLinkPressed)
+// Module 10717 (handleKrispLinkPressed)
 function handleKrispLinkPressed() {
   let obj = importDefault(dependencyMap[5]);
   const articleURL = obj.getArticleURL(constants4.NOISE_SUPPRESSION);
@@ -25,7 +25,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9, HelpdeskArticles: closure_10 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[4]));
-let closure_13 = { logo: { flexDirection: "<string:2868904512>", gap: "<string:1358955029>", flex: "<string:3679572856>" }, detailsView: {} };
+let closure_13 = { logo: { ti: 15184817064634068000000000000000000000000000000000000000000000000000000000000000000, scales: NaN, flexDirection: 15185413057925726000000000000000000000000000000000000000000000000000000000000000000 }, detailsView: { getAsyncContextStrategy: "y", videoBackground: "isArray", numUses: "accessible", cardGraphic: "hasDiversityParent", GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED: "IconComponent" } };
 const tmp5 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
 
@@ -48,7 +48,7 @@ export default function KrispLogo() {
   const intl2 = arg1(dependencyMap[7]).intl;
   obj1.accessibilityLabel = intl2.string(arg1(dependencyMap[7]).t.hvVgAZ);
   obj1.onPress = handleKrispLinkPressed;
-  const obj2 = {};
+  const obj2 = { cachedAt: "<string:3344105473>", edpbxy: "<string:3465102384>" };
   const intl3 = arg1(dependencyMap[7]).intl;
   obj2.children = intl3.string(arg1(dependencyMap[7]).t.hvVgAZ);
   obj1.children = callback(arg1(dependencyMap[13]).Text, obj2);

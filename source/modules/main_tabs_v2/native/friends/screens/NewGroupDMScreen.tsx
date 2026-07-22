@@ -1,10 +1,10 @@
-// Module ID: 15328
-// Function ID: 116650
+// Module ID: 15336
+// Function ID: 116693
 // Name: handleOneRecipientInDM
 // Dependencies: []
 // Exports: default
 
-// Module 15328 (handleOneRecipientInDM)
+// Module 15336 (handleOneRecipientInDM)
 function handleOneRecipientInDM() {
   return _handleOneRecipientInDM(...arguments);
 }
@@ -37,12 +37,12 @@ let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.button = obj;
-obj.container = { "Bool(true)": null, "Bool(true)": null };
+obj.container = {};
 const tmp4 = arg1(dependencyMap[10]);
 obj.instantInviteView = { flexShrink: 1, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const obj1 = { flexShrink: 1, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.nameInputContainer = { paddingHorizontal: 16, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
-const obj3 = { "Bool(false)": "accessibilityLabel", "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": 24, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+const obj3 = { gap: true, spriteIndex: true, surrogates: false, apply: false, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
 obj.nameInput = obj3;
 let closure_19 = obj.createStyles(obj);
 const obj2 = { paddingHorizontal: 16, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };

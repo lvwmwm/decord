@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -227,7 +227,7 @@ export const TimestampMillisecondsParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: TimestampMillisecondsParser };
+  let obj = { "": null, children: null, "": null, value: TimestampMillisecondsParser };
   TimestampMillisecondsParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class TimestampMillisecondsParser {

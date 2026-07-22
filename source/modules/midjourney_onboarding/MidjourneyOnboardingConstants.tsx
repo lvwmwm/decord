@@ -1,9 +1,9 @@
-// Module ID: 12746
-// Function ID: 97781
+// Module ID: 12753
+// Function ID: 97814
 // Name: MIDJOURNEY_GUILD_ID
 // Dependencies: []
 
-// Module 12746 (MIDJOURNEY_GUILD_ID)
+// Module 12753 (MIDJOURNEY_GUILD_ID)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingConstants.tsx");
 

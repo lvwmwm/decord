@@ -1,17 +1,17 @@
-// Module ID: 16368
-// Function ID: 126319
+// Module ID: 16376
+// Function ID: 126361
 // Name: SelectInviteRolesActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16368 (SelectInviteRolesActionSheet)
+// Module 16376 (SelectInviteRolesActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ list: { flex: 1 }, label: { "Null": 7, "Null": 370 }, roleDot: { marginEnd: 8 } });
+let closure_10 = arg1(dependencyMap[5]).createStyles({ list: { flex: 1 }, label: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, roleDot: { marginEnd: 8 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/SelectInviteRolesActionSheet.tsx");
 

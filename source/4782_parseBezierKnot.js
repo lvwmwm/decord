@@ -1,5 +1,5 @@
 // Module ID: 4782
-// Function ID: 41578
+// Function ID: 41587
 // Name: parseBezierKnot
 // Dependencies: []
 

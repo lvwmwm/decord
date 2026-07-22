@@ -1,8 +1,8 @@
-// Module ID: 13293
-// Function ID: 100963
+// Module ID: 13300
+// Function ID: 100996
 // Dependencies: []
 
-// Module 13293
+// Module 13300
 let RPCCommands;
 const RPC_LOCAL_SCOPE = require(dependencyMap[0]).RPC_LOCAL_SCOPE;
 const _module = require(dependencyMap[1]);
@@ -11,11 +11,11 @@ let obj = {
   scope: RPC_LOCAL_SCOPE,
   handler() {
     const HTTP = require(dependencyMap[2]).HTTP;
-    let obj = { "Null": 0.35, "Null": 1, "Bool(false)": 0, url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT };
+    let obj = { 9223372036854775807: 0.35, -9223372036854775808: 1, 9223372036854775807: 0, url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT };
     const value = HTTP.get(obj);
     const items = [value.then((body) => body.body.address), ];
     const HTTP2 = require(dependencyMap[2]).HTTP;
-    obj = { toValue: 522584068, duration: 1091633153, useNativeDriver: 103843, visible: -507166463, url: constants.NETWORKING_TOKEN };
+    obj = { "Bool(true)": "y", "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", url: constants.NETWORKING_TOKEN };
     items[1] = HTTP2.post(obj).then((body) => body.body.token);
     const postResult = HTTP2.post(obj);
     return Promise.all(items).then((arg0) => {
@@ -53,8 +53,7 @@ export default {
     scope: RPC_LOCAL_SCOPE,
     handler() {
       const HTTP = require(dependencyMap[2]).HTTP;
-      const obj = { toValue: -0.000001449584960937493, duration: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023536503765317118, useNativeDriver: 1493869773881034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, visible: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024079394459357874, url: constants.NETWORKING_TOKEN };
-      return HTTP.post(obj).then((body) => body.body);
+      return HTTP.post({ url: constants.NETWORKING_TOKEN }).then((body) => body.body);
     }
   }
 };

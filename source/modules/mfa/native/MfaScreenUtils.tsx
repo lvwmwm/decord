@@ -1,8 +1,8 @@
-// Module ID: 14521
-// Function ID: 109364
+// Module ID: 14529
+// Function ID: 109407
 // Dependencies: [5, 57, 31, 27]
 
-// Module 14521
+// Module 14529
 import asyncGeneratorStep from "asyncGeneratorStep";
 import get ActivityIndicator from "get ActivityIndicator";
 
@@ -28,7 +28,7 @@ obj.useScreenStyles = asyncGeneratorStep.createStyles((arg0) => {
   obj.justifyContent = "space-between";
   obj.alignItems = "stretch";
   obj.contentContainer = obj;
-  obj = { paddingBottom: importDefault(dependencyMap[2]).space.PX_24 };
+  obj = { <string:3814666730>: 8, <string:1280564396>: 18, paddingBottom: importDefault(dependencyMap[2]).space.PX_24 };
   obj.mfaContainerHeader = obj;
   const obj1 = {};
   let num = 0;
@@ -45,7 +45,7 @@ obj.useScreenStyles = asyncGeneratorStep.createStyles((arg0) => {
   obj.mfaContainerHeaderText = obj1;
   obj.inputContainer = {};
   obj.smsContainer = {};
-  obj.smsInput = { "Null": "NUX_REVEAL_DURATION_MS", "Null": "%MapPrototype%" };
+  obj.smsInput = {};
   obj.radioItem = { backgroundColor: importDefault(dependencyMap[2]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[2]).radii.md };
   const obj2 = { backgroundColor: importDefault(dependencyMap[2]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[2]).radii.md };
   const tmp = require;

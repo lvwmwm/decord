@@ -1,12 +1,10 @@
 // Module ID: 1264
 // Function ID: 14272
 // Name: _isNativeReflectConstruct
-// Dependencies: [1962934322, 1744830514, 1979711517, 2852126770, 0, 0]
+// Dependencies: [2080374834, 1744830514, 2097152029, 2969567282, 2986344498, 3170893874]
 // Exports: formatToPlainString
 
 // Module 1264 (_isNativeReflectConstruct)
-import result from "result";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,6 +26,7 @@ let closure_0 = require(dependencyMap[0]);
 let closure_1 = require(dependencyMap[1]);
 let closure_2 = require(dependencyMap[2]);
 let closure_3 = require(dependencyMap[3]);
+let closure_4 = require(dependencyMap[4]);
 const tmp2 = (FormatBuilder) => {
   class StringBuilder {
     constructor() {
@@ -52,7 +51,7 @@ const tmp2 = (FormatBuilder) => {
     }
   }
   let closure_0 = StringBuilder;
-  result(StringBuilder, FormatBuilder);
+  callback2(StringBuilder, FormatBuilder);
   let obj = {
     key: "pushRichTextTag",
     value: function pushRichTextTag(arg0, items) {
@@ -92,7 +91,7 @@ const tmp2 = (FormatBuilder) => {
     }
   };
   return callback(StringBuilder, items);
-}(require("result").FormatBuilder);
+}(require(dependencyMap[5]).FormatBuilder);
 
 export { formatToPlainString };
 export const StringBuilder = tmp2;

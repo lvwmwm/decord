@@ -1,5 +1,5 @@
 // Module ID: 7298
-// Function ID: 58884
+// Function ID: 58895
 // Name: eventFromEnvelope
 // Dependencies: []
 // Exports: makeMultiplexedTransport
@@ -55,7 +55,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
                 const tmp = callback(arg0);
                 const arg1 = tmp;
                 const obj = {};
-                const callback = callback2(/* F58892 */ function*() { ... });
+                const callback = callback2(/* F58903 */ function*() { ... });
                 obj.send = function send() { ... };
                 return Object.assign({}, tmp, obj);
               };
@@ -65,7 +65,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
                 const tmp = callback(arg0);
                 const arg1 = tmp;
                 const obj = {};
-                const callback = callback2(/* F58892 */ function*() { ... });
+                const callback = callback2(/* F58903 */ function*() { ... });
                 obj.send = function send() { ... };
                 return Object.assign({}, tmp, obj);
               };
@@ -87,7 +87,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
         getEvent(arg0) {
           let items = arg0;
           if (!arg0) {
-            items = ["TypeError"];
+            items = [null];
           }
           return callback2(arg0, items);
         }
@@ -102,7 +102,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
       const found = mapped.filter((arg0) => arg0);
       let arr4 = found;
       if (!found.length) {
-        const items = ["<string:2246337460>", callback];
+        const items = [2060509169, callback];
         const items1 = [items];
         arr4 = items1;
       }

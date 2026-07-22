@@ -1,10 +1,10 @@
-// Module ID: 9332
-// Function ID: 72931
+// Module ID: 9333
+// Function ID: 72944
 // Name: BurstReactionToggle
 // Dependencies: []
 // Exports: default
 
-// Module 9332 (BurstReactionToggle)
+// Module 9333 (BurstReactionToggle)
 let closure_3 = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ obj.easing = Easing.out(arg1(dependencyMap[5]).Easing.quad);
 let closure_9 = {};
 let closure_10 = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 obj = {};
-obj = { y: true, isArray: "/assets/images/native", k: 80, fileFinishedImporting: 64, y: null, borderRadius: importDefault(dependencyMap[8]).modules.button.BORDER_RADIUS };
+obj = { VANITY_URL_POWERUP_ROLLBACK_MODAL: true, useIsForumChannelSearchActive: "/assets/images/native", trackedType: 80, playWallTimeMs: 64, getChangelog: null, borderRadius: importDefault(dependencyMap[8]).modules.button.BORDER_RADIUS };
 obj.container = obj;
 let closure_11 = arg1(dependencyMap[11]).createStyles(obj);
 const obj2 = arg1(dependencyMap[11]);

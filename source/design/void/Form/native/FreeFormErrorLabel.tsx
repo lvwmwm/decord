@@ -1,15 +1,14 @@
-// Module ID: 8996
-// Function ID: 70832
+// Module ID: 8997
+// Function ID: 70845
 // Name: Label
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 8996 (Label)
-import closure_2 from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 8997 (Label)
+import __exportStarResult1 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
 
 export default function Label(style) {
   const children = style.children;

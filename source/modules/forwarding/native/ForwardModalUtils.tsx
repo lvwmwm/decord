@@ -1,10 +1,10 @@
-// Module ID: 9864
-// Function ID: 76371
+// Module ID: 9865
+// Function ID: 76384
 // Name: FORWARD_MODAL_KEY
 // Dependencies: []
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal
 
-// Module 9864 (FORWARD_MODAL_KEY)
+// Module 9865 (FORWARD_MODAL_KEY)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forwarding/native/ForwardModalUtils.tsx");

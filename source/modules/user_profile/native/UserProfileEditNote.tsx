@@ -1,10 +1,10 @@
-// Module ID: 11968
-// Function ID: 92496
+// Module ID: 11969
+// Function ID: 92510
 // Name: UserProfileEditNote
 // Dependencies: []
 // Exports: default
 
-// Module 11968 (UserProfileEditNote)
+// Module 11969 (UserProfileEditNote)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -93,7 +93,7 @@ export default function UserProfileEditNote(userId) {
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.mQKv+v);
   const items1 = [callback2(arg1(dependencyMap[14]).Text, obj), ];
-  const obj1 = { "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, value: first, onChange: tmp5[1], maxLength: NOTE_MAX_LENGTH };
+  const obj1 = { onPressIn: null, onPressOut: "b49ac54ee052ec8e0d12b9dcde20cf19", throttleMs: "icon-settings", event: "png", style: true, showUserCount: "/assets/design/components/Icon/native/redesign/generated/images", value: first, onChange: tmp5[1], maxLength: NOTE_MAX_LENGTH };
   const intl2 = arg1(dependencyMap[12]).intl;
   const string = intl2.string;
   const t = arg1(dependencyMap[12]).t;

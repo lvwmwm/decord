@@ -1,10 +1,10 @@
-// Module ID: 12019
-// Function ID: 92890
+// Module ID: 12023
+// Function ID: 92916
 // Name: _sendGuildInvite
 // Dependencies: []
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12019 (_sendGuildInvite)
+// Module 12023 (_sendGuildInvite)
 function _sendGuildInvite() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

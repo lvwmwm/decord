@@ -1,5 +1,5 @@
 // Module ID: 4701
-// Function ID: 40913
+// Function ID: 40922
 // Name: getTimeFormat
 // Dependencies: []
 // Exports: getTimeFormat

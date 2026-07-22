@@ -1,9 +1,9 @@
-// Module ID: 14674
-// Function ID: 110651
+// Module ID: 14682
+// Function ID: 110694
 // Name: getGuildsComponent
 // Dependencies: []
 
-// Module 14674 (getGuildsComponent)
+// Module 14682 (getGuildsComponent)
 function getGuildsComponent() {
   return arg1(dependencyMap[7]).default;
 }

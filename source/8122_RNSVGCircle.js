@@ -1,5 +1,5 @@
 // Module ID: 8122
-// Function ID: 64338
+// Function ID: 64348
 // Name: RNSVGCircle
 // Dependencies: []
 

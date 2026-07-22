@@ -1,17 +1,9 @@
 // Module ID: 4569
-// Function ID: 40052
+// Function ID: 40060
 // Name: getGuildIdFromChannelId
-// Dependencies: [4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 4569 (getGuildIdFromChannelId)
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import result from "result";
-import result from "result";
-
 function getGuildIdFromChannelId(channelId) {
   const channel = store.getChannel(channelId);
   let guildId;
@@ -269,11 +261,16 @@ function parseChannel(canViewChannel, messageId, guildIdFromChannelId, first) {
   }
 }
 let closure_3 = importDefault(dependencyMap[0]);
-({ ChannelTypes: closure_9, ME: closure_10 } = result);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+({ ChannelTypes: closure_9, ME: closure_10 } = arg1(dependencyMap[6]));
 let obj = {};
 obj = {
-  order: require("result").order,
-  requiredFirstCharacters: [-0.00000000000000000000000000000000000000000000000000000000031878467929140456],
+  order: importDefault(dependencyMap[15]).order,
+  requiredFirstCharacters: ["threeFriends"],
   match(arg0) {
     return /^<#(\d+)>/.exec(arg0);
   },
@@ -294,8 +291,8 @@ obj = {
 };
 obj.channelMention = obj;
 obj = {
-  order: require("result").defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [],
+  order: importDefault(dependencyMap[16]).defaultRules.url.order - 0.5,
+  requiredFirstCharacters: [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_RE = arg1(dependencyMap[14]).CHANNEL_OR_MESSAGES_URL_RE;
     const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
@@ -331,9 +328,10 @@ obj = {
   }
 };
 obj.channelOrMessageUrl = obj;
+const tmp2 = arg1(dependencyMap[6]);
 obj.mediaPostLink = {
-  order: require("result").defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [],
+  order: importDefault(dependencyMap[16]).defaultRules.url.order - 0.5,
+  requiredFirstCharacters: [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000],
   match(arg0) {
     const MEDIA_POST_URL_RE = arg1(dependencyMap[14]).MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
@@ -359,7 +357,35 @@ obj.mediaPostLink = {
     return makeLink(first);
   }
 };
-result = result.fileFinishedImporting("modules/markup/MarkupChannelMentionRule.tsx");
+const obj1 = {
+  order: importDefault(dependencyMap[16]).defaultRules.url.order - 0.5,
+  requiredFirstCharacters: [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000],
+  match(arg0) {
+    const MEDIA_POST_URL_RE = arg1(dependencyMap[14]).MEDIA_POST_URL_RE;
+    return MEDIA_POST_URL_RE.exec(arg0);
+  },
+  parse(channelId, arg1, channelId) {
+    const first = channelId[0];
+    if (null != channelId[2]) {
+      if (null != tmp4) {
+        const tmp26 = getChannel(tmp4, null);
+        if (null != tmp26) {
+          return parseChannel(tmp26, tmp5, getGuildIdFromChannelId(channelId.channelId), first);
+        } else {
+          const tmp7 = getChannel(tmp3, null);
+          if (null != tmp7) {
+            let tmp14 = parseChannel(tmp7, tmp5, getGuildIdFromChannelId(channelId.channelId), first);
+          } else {
+            tmp14 = handleUnknownChannel(tmp2, tmp3, tmp5, getGuildIdFromChannelId(channelId.channelId), first);
+          }
+          return tmp14;
+        }
+      }
+    }
+    return makeLink(first);
+  }
+};
+const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/markup/MarkupChannelMentionRule.tsx");
 
 export default obj;
 export { getGuildIdFromChannelId };

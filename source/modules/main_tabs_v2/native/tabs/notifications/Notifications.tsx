@@ -1,10 +1,10 @@
-// Module ID: 15004
-// Function ID: 112987
+// Module ID: 15012
+// Function ID: 113030
 // Name: goBack
 // Dependencies: []
 // Exports: ThemedNotificationsModal
 
-// Module 15004 (goBack)
+// Module 15012 (goBack)
 function goBack() {
   const navigation = arg1(dependencyMap[7]).getRootNavigationRef();
   if (null != navigation) {
@@ -120,11 +120,11 @@ obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_
 obj.containerOuterTablet = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[6]).radii.sm, flexGrow: 1 };
 obj.container = obj1;
-obj.headerTitle = { "Bool(true)": null, "Bool(true)": "flex-start", "Bool(true)": "hidden", "Bool(true)": 1 };
+obj.headerTitle = { "Null": null, "Null": "flex-start", "Null": "hidden", "Null": 1 };
 obj.actionButtons = {};
 const tmp2 = arg1(dependencyMap[4]);
 obj.headerClose = { marginRight: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_32, width: importDefault(dependencyMap[6]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.headerText = { right: null, height: null };
+obj.headerText = { loginWebAuthn: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Ŕ: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
 const obj2 = { marginRight: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_32, width: importDefault(dependencyMap[6]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.headerBorder = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 let closure_9 = obj1.createStyles(obj);

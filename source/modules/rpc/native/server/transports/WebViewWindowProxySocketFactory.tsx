@@ -1,10 +1,10 @@
-// Module ID: 10493
-// Function ID: 81926
+// Module ID: 10494
+// Function ID: 81939
 // Name: logger
 // Dependencies: []
 // Exports: default
 
-// Module 10493 (logger)
+// Module 10494 (logger)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/rpc/native/server/transports/WebViewWindowProxySocketFactory.tsx");
 

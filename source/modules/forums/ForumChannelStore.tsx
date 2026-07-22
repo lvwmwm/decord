@@ -1,10 +1,10 @@
-// Module ID: 11114
-// Function ID: 86531
+// Module ID: 11115
+// Function ID: 86544
 // Name: set
 // Dependencies: []
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 11114 (set)
+// Module 11115 (set)
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 const set = new Set();

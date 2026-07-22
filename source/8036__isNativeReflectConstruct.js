@@ -1,5 +1,5 @@
 // Module ID: 8036
-// Function ID: 63778
+// Function ID: 63788
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -90,7 +90,7 @@ const tmp2 = () => {
   obj = {
     key: "translate",
     value: function translate(arg0, f) {
-      const obj = { -9223372036854775808: "/assets/images/native/premium/logos", -9223372036854775808: 163.5, -9223372036854775808: 20, -9223372036854775808: null, e: arg0, f };
+      const obj = { <string:194540254>: "<string:3211265>", <string:1390895599>: "isArray", <string:3493365308>: "<string:1900046224>", <string:1578678544>: "createStyles", e: arg0, f };
       return new SVGMatrix(callback2(this, obj));
     }
   };
@@ -98,14 +98,14 @@ const tmp2 = () => {
   items[3] = {
     key: "scale",
     value: function scale(colors, dpi) {
-      const obj = { -281517147: "white", -83606940: true, 2049331616: true, 1522974306: true, -2006587529: true, -902846175: false, a: colors, d: colors };
+      const obj = { "Null": "white", "Null": 23.5, "Null": 75, "Null": null, "Null": 1, "Null": 0.6, a: colors, d: colors };
       return new SVGMatrix(callback2(this, obj));
     }
   };
   items[4] = {
     key: "scaleNonUniform",
     value: function scaleNonUniform(arg0, d) {
-      const obj = { -281517147: "white", -83606940: true, 2049331616: true, 1522974306: true, -2006587529: true, -902846175: false, a: arg0, d };
+      const obj = { "Null": "white", "Null": 23.5, "Null": 75, "Null": null, "Null": 1, "Null": 0.6, a: arg0, d };
       return new SVGMatrix(callback2(this, obj));
     }
   };
@@ -129,20 +129,20 @@ const tmp2 = () => {
   items[7] = {
     key: "flipX",
     value: function flipX() {
-      return new SVGMatrix(callback2(this, {}));
+      return new SVGMatrix(callback2(this, { "Null": "<string:3729915906>", "Null": "<string:300807811>", "Null": "<string:36311617>", "Null": "<string:1602048>", "Null": "<string:1572864>", "Null": "<string:1090584576>" }));
     }
   };
   items[8] = {
     key: "flipY",
     value: function flipY() {
-      return new SVGMatrix(callback2(this, {}));
+      return new SVGMatrix(callback2(this, { "Null": "GREEN_NEW_1", "Null": 1, "Null": "identity_guild_id", "Null": "message", "Null": "GREEN_NEW_87", "Null": 1 }));
     }
   };
   items[9] = {
     key: "skewX",
     value: function skewX(arg0) {
-      const obj = { -281517147: false, -83606940: false, 2049331616: false, 1522974306: false, -2006587529: false, -902846175: false, c: Math.tan(closure_9 * arg0) };
-      return new SVGMatrix(callback2(this, obj));
+      const obj = { c: Math.tan(closure_9 * arg0) };
+      return new SVGMatrix(callback2(this, { c: Math.tan(closure_9 * arg0) }));
     }
   };
   items[10] = {

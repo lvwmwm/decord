@@ -1,5 +1,5 @@
 // Module ID: 7920
-// Function ID: 63143
+// Function ID: 63153
 // Name: resolveNsfwTogglesWithDefaults
 // Dependencies: []
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault

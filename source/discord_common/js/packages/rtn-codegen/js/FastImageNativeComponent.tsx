@@ -1,9 +1,9 @@
-// Module ID: 5233
-// Function ID: 44241
+// Module ID: 5083
+// Function ID: 44262
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 5233 (__INTERNAL_VIEW_CONFIG)
+// Module 5083 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDFastImageView", directEventTypes: { topLoadStart: { registrationName: "onLoadStart" }, topProgress: { registrationName: "onProgress" }, topError: { registrationName: "onError" }, topLoad: { registrationName: "onLoad" }, topLoadEnd: { registrationName: "onLoadEnd" } } };
 obj = {};
 const _module = require(dependencyMap[0]);

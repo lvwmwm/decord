@@ -1,10 +1,10 @@
-// Module ID: 11030
-// Function ID: 85885
+// Module ID: 11031
+// Function ID: 85898
 // Name: getHeader
 // Dependencies: []
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11030 (getHeader)
+// Module 11031 (getHeader)
 function getHeader(arg0) {
   return callback3(arg1(dependencyMap[10]).Text, { variant: "text-md/normal", children: undefined });
 }
@@ -22,12 +22,12 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.headerContainer = {};
-obj.header = { "Null": null, "Null": null };
-obj.subheader = { hour: "<string:410124289>", minute: "<string:402653184>", second: "<string:16777216>" };
+obj.header = { value: null, on: null };
+obj.subheader = {};
 const tmp3 = arg1(dependencyMap[7]);
 obj.separator = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.footerContainer = { marginBottom: 16 };
-obj.footerText = { "Null": "center", "Null": "center" };
+obj.footerText = {};
 obj.footerButton = { paddingHorizontal: 16 };
 let closure_15 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
@@ -277,7 +277,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
     obj2 = { bottom: true, style: footerText.footerButton };
     if (first1 === constants.CONFIRM_SUBMISSION) {
       obj3 = {};
-      obj4 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: footerText.footerText };
+      obj4 = { cachedAt: true, edpbxy: true, style: footerText.footerText };
       const intl3 = arg1(dependencyMap[19]).intl;
       obj4.children = intl3.string(arg1(dependencyMap[19]).t.d6qgY/);
       const items8 = [callback3(arg1(dependencyMap[10]).Text, obj4), , ];

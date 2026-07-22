@@ -1,9 +1,9 @@
-// Module ID: 13802
-// Function ID: 104413
+// Module ID: 13809
+// Function ID: 104446
 // Name: SkipForwardIcon
 // Dependencies: []
 
-// Module 13802 (SkipForwardIcon)
+// Module 13809 (SkipForwardIcon)
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const forwardRefResult = importAllResult.forwardRef((width) => {
@@ -19,7 +19,7 @@ const forwardRefResult = importAllResult.forwardRef((width) => {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, -9223372036854775808: false };
+  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   obj = {};
@@ -29,7 +29,7 @@ const forwardRefResult = importAllResult.forwardRef((width) => {
   obj["viewBox"] = "0 0 32 32";
   obj["fill"] = "none";
   obj["ref"] = arg1;
-  obj = { fill: str };
+  obj = { "Bool(true)": "cover", "Bool(true)": null, "Bool(true)": true, "Bool(true)": false, fill: str };
   const items = [callback(arg1(dependencyMap[2]).Path, obj), , ];
   const obj1 = { fill: str };
   items[1] = callback(arg1(dependencyMap[2]).Path, obj1);

@@ -1,7 +1,7 @@
 // Module ID: 7535
-// Function ID: 60288
+// Function ID: 60299
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [31, 7531, 33, 7537, 3979, 4343, 7541, 4126, 689, 4333, 5783, 1212, 5517, 2, 31, 33, 4126, 689, 4333]
+// Dependencies: [31, 7531, 33, 7537, 3979, 4343, 7541, 4126, 689, 4333, 5783, 1212, 5516, 2, 31, 33, 4126, 689, 4333]
 // Exports: default
 
 // Module 7535 (AgeVerificationIncodeMethodSelectScreen)
@@ -77,7 +77,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     obj1.children = intl2.string(importDefault(dependencyMap[15]).5yWXmT);
     items1[1] = callback2(arg1(dependencyMap[13]).Text, obj1);
     if (tmp4) {
-      const obj2 = { hasMaxConnections: 1, isBoostOnlySubscription: "center" };
+      const obj2 = { cachedAt: 1, edpbxy: "center" };
       const intl3 = arg1(dependencyMap[14]).intl;
       obj2.children = intl3.string(arg1(dependencyMap[14]).t.c6kn6F);
       tmp4 = callback2(arg1(dependencyMap[13]).Text, obj2);

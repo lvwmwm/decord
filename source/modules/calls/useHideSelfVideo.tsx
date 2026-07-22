@@ -1,18 +1,18 @@
-// Module ID: 15763
-// Function ID: 120537
+// Module ID: 15771
+// Function ID: 120580
 // Name: useHideSelfVideo
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15763 (useHideSelfVideo)
-import closure_3 from "result";
-import closure_4 from "result";
-import { VideoToggleState } from "result";
-import result from "result";
-import result from "result";
+// Module 15771 (useHideSelfVideo)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { VideoToggleState } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ MediaEngineContextTypes: closure_6, Features: closure_7 } = result);
-result = result.fileFinishedImporting("modules/calls/useHideSelfVideo.tsx");
+({ MediaEngineContextTypes: closure_6, Features: closure_7 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/calls/useHideSelfVideo.tsx");
 
 export default function useHideSelfVideo(arg0) {
   let DEFAULT = arg1;

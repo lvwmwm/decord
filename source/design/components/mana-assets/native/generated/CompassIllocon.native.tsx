@@ -1,5 +1,5 @@
 // Module ID: 5959
-// Function ID: 49860
+// Function ID: 49871
 // Name: CompassIllocon
 // Dependencies: []
 // Exports: CompassIllocon

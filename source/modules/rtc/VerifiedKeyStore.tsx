@@ -1,16 +1,9 @@
-// Module ID: 8873
-// Function ID: 69960
+// Module ID: 8874
+// Function ID: 69973
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 8873 (_isNativeReflectConstruct)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import result from "result";
-
+// Module 8874 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,6 +13,11 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = {};
 let tmp2 = (PersistedStore) => {
   class VerifiedKeyStore {
@@ -95,10 +93,10 @@ let tmp2 = (PersistedStore) => {
     }
   };
   return callback(VerifiedKeyStore, items);
-}(require("result").PersistedStore);
+}(importDefault(dependencyMap[7]).PersistedStore);
 tmp2.displayName = "VerifiedKeyStore";
 tmp2.persistKey = "VerifiedKeyStore";
-tmp2 = new tmp2(require("result"), {
+tmp2 = new tmp2(importDefault(dependencyMap[8]), {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function handleSecureFramesVerifiedKeyCreate(arg0) {
     let key;
     let userId;
@@ -137,6 +135,6 @@ tmp2 = new tmp2(require("result"), {
     return null != closure_8[arg0.userId];
   }
 });
-result = result.fileFinishedImporting("modules/rtc/VerifiedKeyStore.tsx");
+const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/rtc/VerifiedKeyStore.tsx");
 
 export default tmp2;

@@ -189,8 +189,8 @@ obj = {
           if (!iter.done) {
             while (true) {
               tmp17 = undefined;
-              if (null != tmp50) {
-                let tmp18 = tmp50[iter2.value];
+              if (null != tmp59) {
+                let tmp18 = tmp59[iter2.value];
                 let tmp19 = tmp18;
                 if (null != tmp18) {
                   tmp17 = tmp18[tmp];
@@ -222,15 +222,15 @@ obj = {
               theme = gradient.theme;
             }
           }
-          let tmp30 = null;
+          let tmp39 = null;
           if (null != theme) {
-            tmp30 = tmp10.userProfileThemes[theme];
+            tmp39 = tmp10.userProfileThemes[theme];
           }
           let tmp23 = tmp14;
           let opacity3 = opacity2;
-          if (null != tmp30) {
-            tmp23 = RawColors[tmp30.raw];
-            opacity3 = tmp30.opacity;
+          if (null != tmp39) {
+            tmp23 = RawColors[tmp39.raw];
+            opacity3 = tmp39.opacity;
           }
         }
         let contrast;
@@ -275,39 +275,84 @@ obj = {
     tmp23 = tmp14;
     opacity3 = opacity2;
     if (null != gradient) {
-      tmp23 = tmp14;
-      opacity3 = opacity2;
+      let gradient1 = null;
       if ("gradient" in tmp10) {
+        gradient1 = tmp10.gradient;
+      }
+      let enabledExperiments1;
+      if (null != semanticColorContextFromThemeContext) {
+        enabledExperiments1 = semanticColorContextFromThemeContext.enabledExperiments;
+      }
+      let tmp26 = gradient1;
+      if (null != enabledExperiments1) {
+        tmp26 = gradient1;
+        if (semanticColorContextFromThemeContext.enabledExperiments.length > 0) {
+          tmp26 = gradient1;
+          if (null != SemanticColorExperiments[TEXT_FEEDBACK_CRITICAL[closure_7]]) {
+            const tmp28 = _createForOfIteratorHelperLoose(semanticColorContextFromThemeContext.enabledExperiments);
+            const iter4 = tmp28();
+            let iter5 = iter4;
+            tmp26 = gradient1;
+            if (!iter4.done) {
+              while (true) {
+                let gradient2;
+                if (null != tmp62) {
+                  let tmp30 = tmp62[iter5.value];
+                  let tmp31 = tmp30;
+                  if (null != tmp30) {
+                    gradient2 = tmp30.gradient;
+                    let tmp32 = tmp30;
+                  }
+                }
+                tmp26 = gradient2;
+                if (null != gradient2) {
+                  break;
+                } else {
+                  let iter6 = tmp28();
+                  iter5 = iter6;
+                  tmp26 = gradient1;
+                  if (iter6.done) {
+                    break;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      let tmp33;
+      if (null != tmp26) {
         let theme1;
         if (null != semanticColorContextFromThemeContext) {
           theme1 = semanticColorContextFromThemeContext.gradient.theme;
         }
-        tmp23 = tmp14;
-        opacity3 = opacity2;
-        if (null != tmp10.gradient[theme1]) {
-          if (tmp25.color in RawColors) {
-            let tmp26 = RawColors[tmp25.color];
-          } else if (null != semanticColorContextFromThemeContext) {
-            tmp26 = semanticColorContextFromThemeContext.gradient.colors[tmp25.color];
-          }
-          const tmp53Result = importDefault(dependencyMap[9])(tmp26);
-          let result2 = tmp53Result;
-          if ("saturation" in tmp25) {
-            result2 = tmp53Result.set("hsl.s", tmp25.saturation);
-          }
-          let result3 = result2;
-          if ("lightness" in tmp25) {
-            result3 = result2.set("hsl.l", tmp25.lightness);
-          }
-          let num = 1;
-          const tmp53 = importDefault(dependencyMap[9]);
-          if ("opacity" in tmp25) {
-            num = tmp25.opacity;
-          }
-          opacity3 = num;
-          tmp23 = result3.hex();
-          const hexResult1 = result3.hex();
+        tmp33 = tmp26[theme1];
+      }
+      tmp23 = tmp14;
+      opacity3 = opacity2;
+      if (null != tmp33) {
+        if (tmp33.color in RawColors) {
+          let tmp35 = RawColors[tmp33.color];
+        } else if (null != semanticColorContextFromThemeContext) {
+          tmp35 = semanticColorContextFromThemeContext.gradient.colors[tmp33.color];
         }
+        const tmp65Result = importDefault(dependencyMap[9])(tmp35);
+        let result2 = tmp65Result;
+        if ("saturation" in tmp33) {
+          result2 = tmp65Result.set("hsl.s", tmp33.saturation);
+        }
+        let result3 = result2;
+        if ("lightness" in tmp33) {
+          result3 = result2.set("hsl.l", tmp33.lightness);
+        }
+        let num = 1;
+        const tmp65 = importDefault(dependencyMap[9]);
+        if ("opacity" in tmp33) {
+          num = tmp33.opacity;
+        }
+        opacity3 = num;
+        tmp23 = result3.hex();
+        const hexResult1 = result3.hex();
       }
     }
   },

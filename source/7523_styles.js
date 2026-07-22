@@ -1,5 +1,5 @@
 // Module ID: 7523
-// Function ID: 60216
+// Function ID: 60227
 // Name: styles
 // Dependencies: []
 
@@ -7,18 +7,18 @@
 let num = 0;
 const _module = require(dependencyMap[0]);
 const StyleSheet = _module.StyleSheet;
-let obj = { stepNumber: { align: false, HighlightColors: false, val: false }, sliderMainContainer: {}, defaultSlideriOS: { height: 40 }, defaultSlider: {} };
-obj = { -9223372036854775808: 8, 0: "OPACITY_BLURPLE_16", 0: 0.1607843137254902, 0: "OPACITY_BLURPLE_12", 0: 0.12156862745098039 };
+let obj = { stepNumber: { paddingTop: null, paddingHorizontal: null, alignItems: null }, sliderMainContainer: { "Null": false, "Null": false }, defaultSlideriOS: { height: 40 }, defaultSlider: {} };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 if ("ios" === _module.Platform.OS) {
   num = 10;
 }
 obj.top = num;
 obj.stepsIndicator = obj;
-obj.trackMarkContainer = { "Bool(true)": "Error", "Bool(true)": "OO.OO", "Bool(true)": "error", "Bool(true)": "interaction_failure", "Bool(true)": 20, "Bool(true)": 4 };
-obj.thumbImageContainer = { 1365423970: "r", 996475903: "elementId", 1398560426: "all", 1023905002: "SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH", 156402486: "%SharedArrayBuffer%" };
-obj.thumbImage = {};
-obj.stepIndicatorElement = { "Null": null, "Null": null };
+obj.trackMarkContainer = { "Bool(true)": "2.302585092994045684017991454684364207601101488628772976033327900967572609677352480235997205089598298341967784042286", "Bool(true)": "premium_month_tier_0.2", "Bool(true)": "premium_year_tier_0", "Bool(true)": "premium_month_tier_1", "Bool(true)": "premium_year_tier_1", "Bool(true)": "premium_month_tier_2" };
+obj.thumbImageContainer = { 0: 12, 0: "btn btn--primary", -9223372036854775808: null, 9223372036854775807: "submit", -9223372036854775808: "screenshot" };
+obj.thumbImage = { "Null": 1, "Null": "100%", "Null": "center" };
+obj.stepIndicatorElement = { "Bool(true)": null, <string:1465717255>: null };
 obj.defaultIndicatorMarked = {};
-obj.defaultIndicatorIdle = { sa: true, Array: true, a: true };
+obj.defaultIndicatorIdle = {};
 
 export const styles = StyleSheet.create(obj);

@@ -1,5 +1,5 @@
 // Module ID: 4660
-// Function ID: 40365
+// Function ID: 40373
 // Name: _callSuper
 // Dependencies: []
 
@@ -26,7 +26,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [102];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -43,7 +43,7 @@ const importDefaultResult1 = importDefault(dependencyMap[9]);
 ({ AbortCodes: closure_16, AnalyticEvents: closure_17 } = arg1(dependencyMap[13]));
 let importDefaultResult2 = importDefault(dependencyMap[14]);
 importDefaultResult2 = new importDefaultResult2("CloudUpload.tsx");
-const set = new Set([]);
+const set = new Set([null]);
 const tmp8 = (arg0) => {
   class ResumableUploadError {
     constructor(arg0) {
@@ -225,11 +225,11 @@ const tmp4 = arg1(dependencyMap[13]);
 const tmp9 = (arg0) => {
   class CloudUpload {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = f40393(this, CloudUpload);
+      tmp = f40401(this, CloudUpload);
       items = [];
       items[0] = arg0;
       tmp2 = closure_23(this, CloudUpload, items);
-      f40447 = tmp2;
+      f40455 = tmp2;
       tmp2.status = closure_21.NOT_STARTED;
       tmp2.loaded = 0;
       tmp2.reactNativeFilePrepped = false;
@@ -267,17 +267,17 @@ const tmp9 = (arg0) => {
       if (null != arg3) {
         tmp2.allowOptimization = arg3;
       }
-      tmp6 = arg0.platform === f40447(f40433[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
+      tmp6 = arg0.platform === f40455(f40441[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
       if (tmp6) {
         tmp2.mimeType = arg0.compressionMetadata.originalContentType;
       }
       abortController = new AbortController();
       tmp2._abortController = abortController;
       if (null == tmp2.origin) {
-        tmp10 = f40447;
-        tmp11 = f40433;
+        tmp10 = f40455;
+        tmp11 = f40441;
         num3 = 17;
-        DefaultHttpClient = f40447(f40433[17]).DefaultHttpClient;
+        DefaultHttpClient = f40455(f40441[17]).DefaultHttpClient;
         prototype = DefaultHttpClient.prototype;
         tmp12 = new.target;
         tmp13 = new.target;
@@ -291,9 +291,9 @@ const tmp9 = (arg0) => {
         if ("string" === typeof tmp2.origin) {
           origin = tmp2.origin;
         } else {
-          tmp8 = f40447;
-          tmp9 = f40433;
-          origin = f40447(f40433[16]).UploadOrigin[tmp2.origin];
+          tmp8 = f40455;
+          tmp9 = f40441;
+          origin = f40455(f40441[16]).UploadOrigin[tmp2.origin];
         }
         tmp2.uploadAnalytics.origin = origin;
       }

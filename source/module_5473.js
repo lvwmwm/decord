@@ -1,8 +1,8 @@
 // Module ID: 5473
-// Function ID: 46751
+// Function ID: 46760
 // Dependencies: []
 
 // Module 5473
 const _module = require(dependencyMap[0]);
 
-export default _module.registerAsset({ scales: ["Set", "ml"] });
+export default _module.registerAsset({ scales: ["<string:24264687>", "isArray"] });

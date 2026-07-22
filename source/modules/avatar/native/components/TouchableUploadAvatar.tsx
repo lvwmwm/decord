@@ -1,19 +1,19 @@
-// Module ID: 16001
-// Function ID: 122771
+// Module ID: 16009
+// Function ID: 122813
 // Name: TouchableUploadAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 16001 (TouchableUploadAvatar)
+// Module 16009 (TouchableUploadAvatar)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { avatarContainer: {} };
+obj = { avatarContainer: { "Null": true, "Null": true } };
 obj = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT, width: 96 };
 obj.defaultLogoStyle = obj;
-obj.uploadedAvatarStyle = { paddingBottom: true, paddingTop: true, position: true, display: true };
-const obj1 = { 1381196118: "b4bc35e77125dd7a659435efd876e4cc", 109870012: "ChannelListIcon", -1135416735: "png", 1384132987: true, 2075919104: "/assets/modules/guild_role_subscriptions/native/images", 1861866083: 24, 1362843234: 24, 1449556925: null, -357062085: "009fbd96b391fb5fe3194dabbc819a91", -2144251397: "ic_premium_info_24px", borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj.uploadedAvatarStyle = {};
+const obj1 = { -61702036: "b4bc35e77125dd7a659435efd876e4cc", 1668474114: "ChannelListIcon", youRow: "png", CURRENT_USER_DISCONNECTED: true, lottieComponent: "/assets/modules/guild_role_subscriptions/native/images", totalSeconds: 24, CURRENT_USER_DISCONNECTED: 24, gifIcon: null, useLongestChannelMessageBeforeReply: "009fbd96b391fb5fe3194dabbc819a91", PREMIUM_MONTH_LEGACY: "ic_premium_info_24px", borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.avatarWrapper = obj1;
 const tmp3 = arg1(dependencyMap[2]);
 obj.uploadAvatarWrapper = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[4]).radii.round, tintColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };

@@ -1,5 +1,5 @@
 // Module ID: 7614
-// Function ID: 61015
+// Function ID: 61025
 // Name: MessagePreview
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+obj = { container: {} };
 obj = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.borderColor = obj;
 obj.title = {};
@@ -26,7 +26,7 @@ export default function MessagePreview(message) {
   const tmp = callback3();
   let obj = arg1(dependencyMap[6]);
   obj = { style: tmp.container };
-  obj = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp.title };
+  obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.string(arg1(dependencyMap[8]).t.iouM3a);
   const items = [callback(arg1(dependencyMap[7]).Text, obj), ];

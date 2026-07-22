@@ -1,5 +1,5 @@
 // Module ID: 4347
-// Function ID: 38554
+// Function ID: 38562
 // Name: createMinimalMessageRecord
 // Dependencies: [31, 1917, 1849, 4358, 566, 4360, 2, 31, 4120, 566, 4359, 2, 1348, 1917, 1838, 2, 5, 57]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
@@ -264,7 +264,7 @@ function transformReactions(arg0, results) {
       mapped = answer_counts.map((me_vote) => {
         let obj = { count_details: obj, me_vote: me_vote.me_voted };
         obj = { vote: me_vote.count };
-        obj = { top: "isArray", right: "pos", left: "ix", id: me_vote.id.toString() };
+        obj = { id: str.toString() };
         obj.emoji = obj;
         obj.me = false;
         obj.me_burst = false;
@@ -326,7 +326,7 @@ function transformMessageSnapshots(message_snapshots) {
 }
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: closure_5 } = _isNativeReflectConstruct);
 ({ MessageFlags: closure_11, MessageTypes: closure_12, MessageTypesSets: closure_13 } = result2);
-importDefaultResult = new importDefaultResult({ 0: "<string:1912603304>", -9223372036854775808: "Map" });
+importDefaultResult = new importDefaultResult({ -70491014: null, 72461115: null });
 const result = _slicedToArray.fileFinishedImporting("modules/messages/MessageRecordUtils.tsx");
 
 export { createMessageRecord };

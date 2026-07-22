@@ -1,10 +1,10 @@
-// Module ID: 10955
-// Function ID: 85200
+// Module ID: 10956
+// Function ID: 85213
 // Name: StringSelectComponentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10955 (StringSelectComponentActionSheet)
+// Module 10956 (StringSelectComponentActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -103,7 +103,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
       if (null != description.description) {
         tmp = null;
         if ("" !== description.description) {
-          const obj = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.selectionOptionItemDescription, children: description.description };
+          const obj = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.selectionOptionItemDescription, children: description.description };
           tmp = memo(selectionActionComponent(tmp[10]).Text, obj);
         }
       }

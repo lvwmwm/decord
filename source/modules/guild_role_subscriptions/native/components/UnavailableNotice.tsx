@@ -1,10 +1,10 @@
-// Module ID: 15138
-// Function ID: 114242
+// Module ID: 15146
+// Function ID: 114285
 // Name: UnavailableNotice
 // Dependencies: []
 // Exports: default
 
-// Module 15138 (UnavailableNotice)
+// Module 15146 (UnavailableNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -15,7 +15,7 @@ obj.container = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.brightTitle = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.unavailableContainer = { justifyContent: "center" };
-obj.unavailableInfo = { "Null": null, "Null": null };
+obj.unavailableInfo = { <string:3596066964>: null, <string:3638417373>: null };
 obj.unavailableDescription = {};
 obj.joinCtaTitle = {};
 let closure_6 = obj.createStyles(obj);

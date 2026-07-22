@@ -1,10 +1,10 @@
-// Module ID: 16339
-// Function ID: 126072
+// Module ID: 16347
+// Function ID: 126114
 // Name: Content
 // Dependencies: []
 // Exports: default
 
-// Module 16339 (Content)
+// Module 16347 (Content)
 function Content() {
   let tmp10;
   let tmp12;
@@ -67,7 +67,7 @@ function Content() {
   const intl3 = arg1(dependencyMap[11]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[11]).t.rJ6Oad);
   items[2] = callback2(importDefault(dependencyMap[10]), obj3);
-  obj4 = { "Null": "absolute", "Null": -1, a: -1, style: tmp.textInput, maxLength: closure_7, value: tmp4 };
+  obj4 = { style: tmp.textInput, maxLength: closure_7, value: tmp4 };
   const intl4 = arg1(dependencyMap[11]).intl;
   obj4.placeholder = intl4.string(arg1(dependencyMap[11]).t.i4/g+E);
   obj4.onChange = tmp5;

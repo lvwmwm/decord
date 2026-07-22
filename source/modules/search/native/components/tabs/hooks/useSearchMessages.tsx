@@ -1,10 +1,10 @@
-// Module ID: 15260
-// Function ID: 115219
+// Module ID: 15268
+// Function ID: 115262
 // Name: useSearchMessages
 // Dependencies: []
 // Exports: useSearchMessages
 
-// Module 15260 (useSearchMessages)
+// Module 15268 (useSearchMessages)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");

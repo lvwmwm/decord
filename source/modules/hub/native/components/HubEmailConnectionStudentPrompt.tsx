@@ -1,10 +1,10 @@
-// Module ID: 11751
-// Function ID: 91258
+// Module ID: 11752
+// Function ID: 91271
 // Name: HubEmailConnectionStudentPrompt
 // Dependencies: []
 // Exports: default
 
-// Module 11751 (HubEmailConnectionStudentPrompt)
+// Module 11752 (HubEmailConnectionStudentPrompt)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const HubEmailConnectionSteps = arg1(dependencyMap[2]).HubEmailConnectionSteps;

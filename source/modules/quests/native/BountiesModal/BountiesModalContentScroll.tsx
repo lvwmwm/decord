@@ -1,10 +1,10 @@
-// Module ID: 13786
-// Function ID: 104211
+// Module ID: 13793
+// Function ID: 104244
 // Name: ItemSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 13786 (ItemSeparator)
+// Module 13793 (ItemSeparator)
 function ItemSeparator(trailingItem) {
   let tmp = null;
   if (null != trailingItem.trailingItem) {
@@ -47,7 +47,7 @@ function BountiesScrollVideoItemContainer(index) {
     }
     const obj = {};
     const items = [, , num];
-    obj.opacity = index(scrollY[11]).interpolate(absolute, [], items, index(scrollY[11]).Extrapolation.CLAMP);
+    obj.opacity = index(scrollY[11]).interpolate(absolute, ["minForce", "maxForce", "feedbackOnActivation"], items, index(scrollY[11]).Extrapolation.CLAMP);
     return obj;
   };
   obj = { scrollY, index, slotHeight, isPeekEnabled, PEEK_OPACITY: 0.8, interpolate: arg1(dependencyMap[11]).interpolate, FADE_DEADBAND: 0.3, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
@@ -663,7 +663,7 @@ function BountiesModalContentScrollInner(arg0) {
       obj = {};
       obj2 = initialBountyId(closure_2[11]);
       value = runOnJS.get();
-      obj.opacity = obj2.interpolate(value, ["replace", "then"], ["replace", "then"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, [77601039, 1612144654], [77601039, 1612144654], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -681,7 +681,7 @@ function BountiesModalContentScrollInner(arg0) {
       items = [, ];
       items[0] = closure_19;
       items[1] = closure_20;
-      obj.opacity = obj2.interpolate(value, items, [], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, items, [true, true], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -711,7 +711,7 @@ function BountiesModalContentScrollInner(arg0) {
       items = [, ];
       items[0] = closure_19;
       items[1] = closure_20;
-      obj.opacity = obj3.interpolate(value, items, [], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj3.interpolate(value, items, [true, true], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -734,7 +734,7 @@ function BountiesModalContentScrollInner(arg0) {
       value = closure_32.get();
       items = [0.229];
       items[1] = closure_15;
-      obj.opacity = obj2.interpolate(value, items, [], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, items, [true, true], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -976,7 +976,7 @@ let closure_14 = arg1(dependencyMap[8]).isAndroid();
 let closure_15 = 3;
 let closure_16 = 0.5625;
 const PX_8 = importDefault(dependencyMap[9]).space.PX_8;
-let closure_18 = [];
+let closure_18 = ["isArray", "<string:2104688640>"];
 let closure_19 = 0.05;
 let closure_20 = 0.1;
 let closure_21 = { code: "function isScrollEventInBounds_BountiesModalContentScrollTsx1(event){const maxOffset=Math.max(0,event.contentSize.height-event.layoutMeasurement.height);return event.contentOffset.y>=0&&event.contentOffset.y<=maxOffset;}" };
@@ -993,7 +993,7 @@ const obj = arg1(dependencyMap[8]);
 let closure_23 = arg1(dependencyMap[10]).createStyles(() => {
   const closeButton = { position: "absolute", zIndex: closure_15 };
   const autoScrollIndicator = { zIndex: closure_15 };
-  return { root: { flex: 1 }, recapPage: { 1365423970: null, 996475903: null }, listWrapper: { maroon: "type", "Bool(true)": "enum", "Bool(true)": 7 }, closeButton, peekGradient: {}, autoScrollIndicator };
+  return { root: { flex: 1 }, recapPage: { 0: 40, 0: 40 }, listWrapper: { maxWidth: 0.0000000000000000000000000004291403324839674, accessible: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012367174144191476, importantForAccessibility: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001452617606585215 }, closeButton, peekGradient: { 0: 131072.00119260637, 0: 9517670400.235872 }, autoScrollIndicator };
 });
 let closure_24 = { code: "function BountiesModalContentScrollTsx2(){const{scrollY,index,slotHeight,isPeekEnabled,PEEK_OPACITY,interpolate,FADE_DEADBAND,Extrapolation}=this.__closure;const signedDistance=(scrollY.get()-index*slotHeight)/slotHeight;const distance=Math.abs(signedDistance);const peekOpacity=isPeekEnabled&&signedDistance<0&&index===1?PEEK_OPACITY:0;const opacity=interpolate(distance,[0,FADE_DEADBAND,1],[1,1,peekOpacity],Extrapolation.CLAMP);return{opacity:opacity};}" };
 let closure_25 = { code: "function BountiesModalContentScrollTsx3(event){const{scrollY,isDraggingSharedValue,isScrollingInBoundsSharedValue,isScrollEventInBounds}=this.__closure;scrollY.set(event.contentOffset.y);if(isDraggingSharedValue.get()){isScrollingInBoundsSharedValue.set(isScrollEventInBounds(event));}}" };

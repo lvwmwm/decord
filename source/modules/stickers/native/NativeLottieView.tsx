@@ -1,5 +1,5 @@
 // Module ID: 7680
-// Function ID: 61335
+// Function ID: 61345
 // Name: NativeLottieView
 // Dependencies: []
 // Exports: default
@@ -15,7 +15,7 @@ if (_module1.isAndroid()) {
 } else {
   importDefaultResult = require(dependencyMap[1]).requireNativeComponent("NativeLottieNode");
 }
-let closure_5 = importDefault(dependencyMap[5])({ supportedCommands: [] });
+let closure_5 = importDefault(dependencyMap[5])({ supportedCommands: [null] });
 const obj = { LOOP: 0, [0]: "LOOP", STILL: 1, [1]: "STILL", ONCE: 2, [2]: "ONCE" };
 const _module2 = require(dependencyMap[6]);
 const result = _module2.fileFinishedImporting("modules/stickers/native/NativeLottieView.tsx");

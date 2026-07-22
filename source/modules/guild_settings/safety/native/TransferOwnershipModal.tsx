@@ -1,10 +1,10 @@
-// Module ID: 10979
-// Function ID: 85473
+// Module ID: 10980
+// Function ID: 85486
 // Name: closeModal
 // Dependencies: []
 // Exports: default
 
-// Module 10979 (closeModal)
+// Module 10980 (closeModal)
 function closeModal() {
   importDefault(dependencyMap[4]).close();
 }

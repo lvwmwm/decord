@@ -1,10 +1,10 @@
-// Module ID: 12847
-// Function ID: 98204
+// Module ID: 12854
+// Function ID: 98237
 // Name: useGuildActionSheetPermissions
-// Dependencies: [555352064, 488570880, 250937344, 131072]
+// Dependencies: [555417600, 488570880, 250937344, 131072]
 // Exports: useGuildActionSheetPermissions
 
-// Module 12847 (useGuildActionSheetPermissions)
+// Module 12854 (useGuildActionSheetPermissions)
 let closure_2 = importDefault(dependencyMap[0]);
 const Permissions = arg1(dependencyMap[1]).Permissions;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
@@ -15,7 +15,7 @@ export const useGuildActionSheetPermissions = function useGuildActionSheetPermis
   const items1 = [guild];
   return arg1(dependencyMap[2]).useStateFromStoresObject(items, () => {
     if (null == arg0) {
-      let obj = { style: "#ffa813", numberOfLines: "absolute", allowFontScaling: null };
+      let obj = { marginBottom: true, padding: false, justifyContent: false };
     } else {
       obj = { canAccessSettings: closure_2.canAccessGuildSettings(arg0) };
       let canResult = closure_2.can(constants.CHANGE_NICKNAME, arg0);

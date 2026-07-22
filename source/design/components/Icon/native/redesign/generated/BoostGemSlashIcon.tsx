@@ -1,10 +1,10 @@
-// Module ID: 11607
-// Function ID: 90176
+// Module ID: 11608
+// Function ID: 90189
 // Name: BoostGemSlashIcon
 // Dependencies: []
 // Exports: BoostGemSlashIcon
 
-// Module 11607 (BoostGemSlashIcon)
+// Module 11608 (BoostGemSlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BoostGemSlashIcon.tsx");

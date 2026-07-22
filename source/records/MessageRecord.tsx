@@ -423,13 +423,13 @@ const tmp8 = (arg0) => {
       });
       if (-1 === closure_4) {
         if (NORMAL === MessageRecord(items[10]).ReactionTypes.BURST) {
-          let obj = { emoji, me_burst: flag, count_details: { <string:1737507435>: null, <string:2701656068>: null }, burst_colors: items };
+          let obj = { emoji, me_burst: flag, count_details: { -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, burst_colors: items };
           mapped.push(obj);
         } else if (NORMAL === MessageRecord(items[10]).ReactionTypes.VOTE) {
-          obj = { emoji, me_vote: flag, count_details: {}, burst_colors: [] };
+          obj = { isArray: "HTTP", marginTop: "Date", string: "HTTP", y: "jsxs", isArray: "rejectWithError", jsx: "Path", string: "status", emoji, me_vote: flag, count_details: {}, burst_colors: [] };
           mapped.push(obj);
         } else {
-          obj = { emoji, me: flag, count_details: { <string:1737507435>: null, <string:2701656068>: null }, burst_colors: [] };
+          obj = { emoji, me: flag, count_details: {}, burst_colors: [] };
           mapped.push(obj);
         }
       }

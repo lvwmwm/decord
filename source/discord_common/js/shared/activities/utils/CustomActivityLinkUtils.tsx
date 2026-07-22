@@ -1,10 +1,10 @@
-// Module ID: 12094
-// Function ID: 93272
+// Module ID: 12098
+// Function ID: 93298
 // Name: CustomLinkType
 // Dependencies: []
 // Exports: decodeCustomActivityLink
 
-// Module 12094 (CustomLinkType)
+// Module 12098 (CustomLinkType)
 let closure_0 = importDefault(dependencyMap[0]);
 const obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
 const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 12446
-// Function ID: 95042
+// Module ID: 12451
+// Function ID: 95070
 // Name: JSONEncoding
 // Dependencies: []
 
-// Module 12446 (JSONEncoding)
+// Module 12451 (JSONEncoding)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const erlpackEncoding = arg1(dependencyMap[2]).getErlpackEncoding();

@@ -1,10 +1,10 @@
-// Module ID: 10826
-// Function ID: 84057
+// Module ID: 10827
+// Function ID: 84070
 // Name: leaveCurrentEmbeddedActivity
 // Dependencies: []
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 10826 (leaveCurrentEmbeddedActivity)
+// Module 10827 (leaveCurrentEmbeddedActivity)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/leaveCurrentEmbeddedActivity.tsx");
 

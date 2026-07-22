@@ -1,12 +1,12 @@
-// Module ID: 10675
-// Function ID: 83223
+// Module ID: 10676
+// Function ID: 83236
 // Name: items
 // Dependencies: []
 
-// Module 10675 (items)
+// Module 10676 (items)
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = ["<string:1070994974>"];
-const items = [{ navigationReplace: "<string:2018574337>", openTextInVoiceIfVoiceChannel: "<string:2252411347>", hideFrame: "<string:1912603184>" }, { navigationReplace: 24, openTextInVoiceIfVoiceChannel: 24, hideFrame: null }];
+let closure_3 = ["<string:3644014606>"];
+const items = [{ DeeplinkSource: "isArray", ModalFloatingActionProps: "accessibilityRole", blacklist: "useStateFromStores" }, { DeeplinkSource: 24, ModalFloatingActionProps: 24, blacklist: null }];
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
   const obj = { dotLottie: ref(dependencyMap[3]), ref, layers: closure_3, markers: items };

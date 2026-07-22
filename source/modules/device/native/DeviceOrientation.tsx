@@ -1,10 +1,10 @@
-// Module ID: 8296
-// Function ID: 65529
+// Module ID: 8297
+// Function ID: 65541
 // Name: handleOrientationChange
 // Dependencies: []
 // Exports: getOrientation, getOrientationLock, handleOrientationChange, restoreDefaultOrientation, toggleOrientation, useOrientation, useOrientationListener
 
-// Module 8296 (handleOrientationChange)
+// Module 8297 (handleOrientationChange)
 function handleOrientationChange(initialOrientation) {
   const obj = arg1(dependencyMap[3]);
   if (obj.isIOS()) {
@@ -121,7 +121,7 @@ function lockOrientationForiOS(PORTRAIT) {
 let closure_3 = importAll(dependencyMap[0]);
 const AppState = arg1(dependencyMap[1]).AppState;
 let obj = { PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
-let closure_5 = [false, false];
+let closure_5 = ["<string:1002831873>", "<string:1779826690>"];
 obj = arg1(dependencyMap[2]).create(() => {
   const obj = { orientation: obj.PORTRAIT, orientationLock: null };
   return obj;

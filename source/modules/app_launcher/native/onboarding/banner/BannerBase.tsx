@@ -1,17 +1,17 @@
-// Module ID: 11170
-// Function ID: 86874
+// Module ID: 11171
+// Function ID: 86887
 // Name: BannerBase
 // Dependencies: []
 // Exports: default
 
-// Module 11170 (BannerBase)
+// Module 11171 (BannerBase)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const PX_12 = importDefault(dependencyMap[5]).space.PX_12;
-let closure_9 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+let closure_9 = {};
 let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, position: "absolute", borderRadius: importDefault(dependencyMap[5]).radii.lg, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingVertical: PX_12, flexDirection: "row", minHeight: arg1(dependencyMap[7]).APP_ICON_SIZE + 2 * PX_12 + 4, bottom: importDefault(dependencyMap[5]).space.PX_16, left: importDefault(dependencyMap[5]).space.PX_16 };
@@ -20,8 +20,8 @@ obj.bannerGradientColor = { backgroundColor: "#7eaaff" };
 const tmp2 = arg1(dependencyMap[4]);
 obj.bannerBackgroundGradient = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.imageContainer = { width: 72 };
-obj.trinketsLottie = {};
-const obj2 = { av: true, bi: true, bn: true, br: true, marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
+obj.trinketsLottie = { gap: 3, position: 1, right: "row", top: "wrap", alignItems: "hidden", justifyContent: 4, ref: "R1" };
+const obj2 = { effectDisplayType: true, es-UY: true, useCustomBackgroundGradient: true, MessageNotificationSettings: true, marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
 obj.bannerTextContainer = obj2;
 obj.bannerText = { width: "100%" };
 let closure_10 = obj.createStyles(obj);
@@ -100,14 +100,13 @@ export default function BannerBase(arg0) {
     }
   };
   const items3 = [tmp.bannerBackgroundGradient, { height: first, width: diff }];
-  const items4 = [callback3(importDefault(dependencyMap[13]), { start: {}, end: {}, colors: items, style: items3 }), , ];
+  const items4 = [callback3(importDefault(dependencyMap[13]), { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, colors: items, style: items3 }), , ];
   obj2 = { style: tmp.imageContainer };
   obj3 = { style: tmp.trinketsLottie, source: callback(dependencyMap[15]), autoPlay: !stateFromStores };
   const items5 = [callback3(importDefault(dependencyMap[14]), obj3), image];
   obj2.children = items5;
   items4[1] = callback4(View, obj2);
   obj4 = { style: tmp.bannerTextContainer, children: callback3(callback(dependencyMap[16]).Text, obj5) };
-  const obj5 = { hasMaxConnections: "<string:3362914305>", isBoostOnlySubscription: "<string:2018574337>", style: tmp.bannerText, children: text };
   items4[2] = callback3(View, obj4);
   obj.children = items4;
   return callback4(importDefault(dependencyMap[8]).View, obj);

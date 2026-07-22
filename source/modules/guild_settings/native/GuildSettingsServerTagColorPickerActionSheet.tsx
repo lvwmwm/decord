@@ -1,10 +1,10 @@
-// Module ID: 16153
-// Function ID: 124504
+// Module ID: 16161
+// Function ID: 124546
 // Name: GuildSettingsServerTagColorPickerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16153 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 16161 (GuildSettingsServerTagColorPickerActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,13 +12,13 @@ const View = arg1(dependencyMap[2]).View;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const PX_16 = importDefault(dependencyMap[5]).space.PX_16;
-let closure_12 = { -809188780: null, 163101889: null };
+let closure_12 = { flex: null, marginRight: null };
 const tmp3 = arg1(dependencyMap[4]);
 let closure_13 = arg1(dependencyMap[6]).createStyles((width) => {
   let obj = {};
   obj = { paddingHorizontal: PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
   obj.container = obj;
-  obj = { "Null": null, "Null": null, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingVertical: importDefault(dependencyMap[5]).space.PX_12, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };
+  obj = { <string:3596066964>: null, <string:3638417373>: null, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingVertical: importDefault(dependencyMap[5]).space.PX_12, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };
   obj.preview = obj;
   obj.previewChiplet = { columnGap: importDefault(dependencyMap[5]).space.PX_8 };
   obj.colorTabs = { alignSelf: "center", width };
@@ -26,15 +26,15 @@ let closure_13 = arg1(dependencyMap[6]).createStyles((width) => {
   const obj1 = { columnGap: importDefault(dependencyMap[5]).space.PX_8 };
   obj.saturationValueColorBox = { borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
   obj.saturationValueColorBoxInner = { width, minWidth: width, height: 160, minHeight: 160 };
-  const obj2 = { borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-  const obj3 = { width, minWidth: width, height: 160, minHeight: 160 };
-  obj.selector = { borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
+  const obj4 = { "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
+  obj.selector = obj4;
   obj.huePicker = { alignSelf: "center" };
   obj.hueColorBarInner = { width, minWidth: width, height: 24 };
-  const obj6 = { "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.INPUT_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
-  obj.hexInput = obj6;
-  const obj4 = { borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
+  const obj2 = { borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+  const obj3 = { width, minWidth: width, height: 160, minHeight: 160 };
   const obj5 = { width, minWidth: width, height: 24 };
+  obj.hexInput = { borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.INPUT_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
+  const obj6 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.INPUT_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
   obj.buttonGroup = { marginTop: importDefault(dependencyMap[5]).space.PX_24 };
   return obj;
 });
@@ -281,11 +281,11 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
     }
   }, items11);
   const memo = React.useMemo(() => {
-    let obj = { 1448913492: 0.57, 1311854946: 0, 1459331175: "center" };
+    let obj = {};
     const intl = primaryColor(onSelectColor[12]).intl;
     obj.label = intl.string(primaryColor(onSelectColor[12]).t.PHT1N2);
     const items = [obj, ];
-    obj = { 1448913492: false, 1311854946: false, 1459331175: false };
+    obj = { -1196727716: "md", -883628191: "secondary", 1815931908: "#f0f8ff" };
     const intl2 = primaryColor(onSelectColor[12]).intl;
     obj.label = intl2.string(primaryColor(onSelectColor[12]).t.9/wzjF);
     items[1] = obj;
@@ -336,7 +336,7 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
     str2 = tag;
   }
   let obj6 = arg1(dependencyMap[8]);
-  obj = { 0: "/assets/modules/guild_settings/roles/native/images", "Null": 660 };
+  obj = { 1895715170: null, -1218643101: null };
   obj = {};
   const intl = arg1(dependencyMap[12]).intl;
   obj.title = intl.string(arg1(dependencyMap[12]).t.T1IxYH);
@@ -377,7 +377,7 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
   }
   items13[1] = tmp46;
   items13[2] = first3(importDefault(dependencyMap[22]), { hue: sharedValue, saturation: sharedValue1, value: sharedValue2, saturationValuePickerStyle: tmp2.saturationValuePicker, saturationValueColorBoxStyle: tmp2.saturationValueColorBox, saturationValueColorBoxInnerStyle: tmp2.saturationValueColorBoxInner, saturationValueSelectorStyle: tmp2.selector, huePickerStyle: tmp2.huePicker, hueColorBarInnerStyle: tmp2.hueColorBarInner, hueSliderStyle: tmp2.selector, onPanUpdate: callback6, onPanFinalize: callback7 });
-  const obj9 = {};
+  const obj9 = { 1448913748: 16, 1314541922: "center", 1459331175: 380, -1196727716: "85%", -883628191: true, 1815931908: "/assets/modules/guild_settings/roles/native/images" };
   const intl3 = arg1(dependencyMap[12]).intl;
   obj9.accessibilityLabel = intl3.string(arg1(dependencyMap[12]).t.ozfa/h);
   obj9.value = first4;
@@ -391,7 +391,7 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
   obj11.onPress = callback11;
   obj11.disabled = null == obj6.hex2rgb2hsv(first4);
   const items14 = [first3(arg1(dependencyMap[24]).Button, obj11), ];
-  const obj12 = { FINISH: true, hasMediaOptions: true };
+  const obj12 = {};
   const intl5 = arg1(dependencyMap[12]).intl;
   obj12.text = intl5.string(arg1(dependencyMap[12]).t.yBZMsQ);
   obj12.onPress = callback9;

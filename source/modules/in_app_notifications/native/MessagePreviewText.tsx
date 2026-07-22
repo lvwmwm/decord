@@ -1,10 +1,10 @@
-// Module ID: 10241
-// Function ID: 79174
+// Module ID: 10242
+// Function ID: 79187
 // Name: NativeMessagePreviewContent
 // Dependencies: []
 // Exports: default
 
-// Module 10241 (NativeMessagePreviewContent)
+// Module 10242 (NativeMessagePreviewContent)
 function NativeMessagePreviewContent(arg0) {
   let lineClamp;
   let maxHeight;
@@ -90,13 +90,13 @@ function EmbedCard(embed) {
   const items2 = [tmp12, , , ];
   let tmp16 = null != name1;
   if (tmp16) {
-    const obj3 = { <string:1643205302>: 1961492483, <string:1415816450>: 1964048387, <string:4283523744>: -398262269, children: name1 };
+    const obj3 = { 803799044: true, 1269170180: true, 711589892: true, children: name1 };
     tmp16 = callback(arg1(dependencyMap[12]).Text, obj3);
   }
   items2[1] = tmp16;
   let tmp21Result = null != rawTitle;
   if (tmp21Result) {
-    const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    const obj4 = {};
     let num5 = 1;
     if (null == name) {
       num5 = 1;
@@ -112,7 +112,7 @@ function EmbedCard(embed) {
   items2[2] = tmp21Result;
   let tmp24 = null != embed.rawDescription;
   if (tmp24) {
-    const obj5 = { <string:1643205302>: null, <string:1415816450>: null, <string:4283523744>: null, children: embed.rawDescription };
+    const obj5 = { 803799044: 17299712, 1269170180: 37646336, 711589892: 21319168, children: embed.rawDescription };
     tmp24 = callback(arg1(dependencyMap[12]).Text, obj5);
   }
   items2[3] = tmp24;
@@ -285,7 +285,7 @@ export default function MessagePreviewText(message) {
       const obj12 = {};
       const obj13 = { text: formatResult1 };
       const items3 = [callback(SystemMessageText, obj13), ];
-      const obj14 = { lineClamp: closure_9, children: message.poll.question.text };
+      const obj14 = { cachedAt: false, edpbxy: false, lineClamp: closure_9, children: message.poll.question.text };
       items3[1] = callback(arg1(dependencyMap[12]).Text, obj14);
       obj12.children = items3;
       return callback2(View, obj12);

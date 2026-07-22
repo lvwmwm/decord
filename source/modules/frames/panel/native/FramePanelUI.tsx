@@ -1,13 +1,12 @@
-// Module ID: 15599
-// Function ID: 119030
+// Module ID: 15607
+// Function ID: 119073
 // Name: renderActivityOrPIP
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15599 (renderActivityOrPIP)
-import closure_3 from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 15607 (renderActivityOrPIP)
+import __exportStarResult1 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
@@ -17,7 +16,7 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   }
   return jsx(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
-result = result.fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
 
 export default function FramePanelUI() {
   const callback = React.useCallback(() => callback2(callback(closure_2[4]), {}), []);

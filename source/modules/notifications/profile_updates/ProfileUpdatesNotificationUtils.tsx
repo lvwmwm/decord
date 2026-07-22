@@ -1,10 +1,10 @@
-// Module ID: 14218
-// Function ID: 107511
+// Module ID: 14226
+// Function ID: 107554
 // Name: onProfileUpdatesNotificationSettingsChanged
 // Dependencies: []
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 14218 (onProfileUpdatesNotificationSettingsChanged)
+// Module 14226 (onProfileUpdatesNotificationSettingsChanged)
 let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[4]);

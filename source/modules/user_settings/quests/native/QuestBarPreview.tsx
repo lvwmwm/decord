@@ -1,10 +1,10 @@
-// Module ID: 13954
-// Function ID: 106062
+// Module ID: 13961
+// Function ID: 106102
 // Name: QuestBarPreview
 // Dependencies: []
 // Exports: QuestBarPreview
 
-// Module 13954 (QuestBarPreview)
+// Module 13961 (QuestBarPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -26,7 +26,7 @@ export const QuestBarPreview = function QuestBarPreview(quest) {
       obj = { style: tmp.questDockContainer };
       obj = {};
       const obj1 = {};
-      const obj2 = { grow: null, value: null, quest };
+      const obj2 = { "Bool(false)": null, "Bool(false)": null, quest };
       obj1.value = obj2;
       obj1.children = jsx(arg1(dependencyMap[7]).QuestDockWithEntranceAnimation, {});
       obj.children = jsx(importDefault(dependencyMap[6]).Provider, obj1);

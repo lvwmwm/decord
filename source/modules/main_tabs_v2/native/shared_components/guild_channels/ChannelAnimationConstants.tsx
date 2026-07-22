@@ -1,11 +1,11 @@
-// Module ID: 11939
-// Function ID: 92325
+// Module ID: 11940
+// Function ID: 92339
 // Name: n
 // Dependencies: []
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 11939 (n)
-let obj = { 9223372036854775807: "flex", 9223372036854775807: "center", 9223372036854775807: "center", 0: 32, 9223372036854775807: "center", 9223372036854775807: 26 };
+// Module 11940 (n)
+let obj = { display: "flex", alignSelf: "center", alignItems: "center", justifyContent: 32, position: "center", MODE_NUMBER: 26 };
 const fn = function n() {
   let obj = { initialValues: { transform: items, opacity: 0 } };
   const items = [{ scale: 0 }];

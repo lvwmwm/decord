@@ -1,10 +1,10 @@
-// Module ID: 9956
-// Function ID: 76925
+// Module ID: 9957
+// Function ID: 76938
 // Name: canEditMessage
 // Dependencies: []
 // Exports: default
 
-// Module 9956 (canEditMessage)
+// Module 9957 (canEditMessage)
 const _module = require(dependencyMap[0]);
 ({ MessageFlags: closure_3, MessageStates: closure_4, MessageTypes: closure_5 } = _module);
 const _module1 = require(dependencyMap[4]);

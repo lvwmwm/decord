@@ -1,9 +1,9 @@
-// Module ID: 15244
-// Function ID: 115083
+// Module ID: 15252
+// Function ID: 115126
 // Name: getLinkNodeAtIndex
 // Dependencies: []
 
-// Module 15244 (getLinkNodeAtIndex)
+// Module 15252 (getLinkNodeAtIndex)
 function getLinkNodeAtIndex(content, arg1, arg2) {
   const importDefault = arg2;
   if (Array.isArray(content)) {
@@ -69,7 +69,7 @@ function LinkParsedGridItem(author) {
       let obj = author(channelId[10]);
       obj = { postProcessor: callback };
       obj = { pointerEvents: "none" };
-      const obj1 = { children: obj.renderMessageMarkupWithParser(author(channelId[11]).NativeSearchResultLinkPreviewParser, stateFromStores, obj).content };
+      const obj1 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>", children: obj.renderMessageMarkupWithParser(author(channelId[11]).NativeSearchResultLinkPreviewParser, stateFromStores, obj).content };
       obj.children = callback(author(channelId[12]).Text, obj1);
       return callback(onPressGuildVoiceChannelMention, obj);
     }
@@ -97,7 +97,7 @@ function LinkParsedGridItem(author) {
         return callback(author(channelId[12]).Text, obj);
       }
     }
-    obj = { <string:1643205302>: "Array", <string:1415816450>: "isArray", <string:4283523744>: "accessible", style: tmp.tapToSee };
+    obj = { 803799044: "Array", 1269170180: "isArray", 711589892: "accessible", style: tmp.tapToSee };
     const intl = author(channelId[9]).intl;
     obj.children = intl.string(author(channelId[9]).t.q2IIoP);
     return callback(author(channelId[12]).Text, obj);
@@ -283,7 +283,7 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ iconContainer: { "Null": null, "Null": null }, tapToSee: { fontStyle: "italic" } });
+let closure_13 = arg1(dependencyMap[7]).createStyles({ iconContainer: { <string:3596066964>: null, <string:3638417373>: null }, tapToSee: { fontStyle: "italic" } });
 const obj2 = arg1(dependencyMap[7]);
 const memoResult = importAllResult.memo(function LinkGridItem(arg0) {
   let containerStyle;

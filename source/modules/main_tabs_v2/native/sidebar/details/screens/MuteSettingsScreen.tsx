@@ -1,9 +1,9 @@
-// Module ID: 15422
-// Function ID: 117689
+// Module ID: 15430
+// Function ID: 117732
 // Name: UnmuteOptions
 // Dependencies: []
 
-// Module 15422 (UnmuteOptions)
+// Module 15430 (UnmuteOptions)
 function UnmuteOptions(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -20,7 +20,7 @@ function UnmuteOptions(channel) {
   obj = {};
   obj = { disableColor: true, source: importDefault(dependencyMap[16]) };
   obj.icon = callback(arg1(dependencyMap[15]).Icon, obj);
-  const obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+  const obj1 = {};
   const intl = arg1(dependencyMap[18]).intl;
   const obj2 = {};
   const tmp = callback3();
@@ -153,7 +153,8 @@ function NotificationSettingsButton(guildMessageNotifications) {
   obj.label = intl.string(arg1(dependencyMap[18]).t.h850Ss);
   obj.onPress = callback;
   const obj1 = { style: tmp.trailing };
-  const items2 = [callback(arg1(dependencyMap[17]).Text, { children: memo }), callback(arg1(dependencyMap[14]).TableRow.Arrow, {})];
+  const obj2 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, children: memo };
+  const items2 = [callback(arg1(dependencyMap[17]).Text, obj2), callback(arg1(dependencyMap[14]).TableRow.Arrow, {})];
   obj1.children = items2;
   obj.trailing = callback2(View, obj1);
   let tmp8 = isMuted;
@@ -177,11 +178,11 @@ const ChannelSettingsSections = arg1(dependencyMap[6]).ChannelSettingsSections;
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { head_shaking_horizontally: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", disappointed: true, pensive: null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
+obj = { "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.options = { marginBottom: 16 };
-obj.trailing = { "Null": 7, "Null": 370 };
-obj.hint = { disablePowerupForGuild: false, Layers: false };
+obj.trailing = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+obj.hint = { flexGrow: null, gap: null };
 let closure_13 = arg1(dependencyMap[8]).createStyles(obj);
 const obj2 = arg1(dependencyMap[8]);
 const memoResult = importAllResult.memo(() => {

@@ -1,10 +1,10 @@
-// Module ID: 11314
-// Function ID: 88051
+// Module ID: 11315
+// Function ID: 88064
 // Name: _downloadPollGif
 // Dependencies: []
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 11314 (_downloadPollGif)
+// Module 11315 (_downloadPollGif)
 function _downloadPollGif() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

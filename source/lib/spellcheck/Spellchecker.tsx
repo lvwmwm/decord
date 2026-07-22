@@ -1,10 +1,10 @@
-// Module ID: 5405
-// Function ID: 46117
+// Module ID: 5135
+// Function ID: 44538
 // Name: normalizeLocale
 // Dependencies: []
 // Exports: install
 
-// Module 5405 (normalizeLocale)
+// Module 5135 (normalizeLocale)
 function normalizeLocale(arg0) {
   let str = arg0;
   const tmp = importDefault(dependencyMap[7])[arg0];

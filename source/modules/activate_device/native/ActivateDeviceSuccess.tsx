@@ -1,15 +1,15 @@
-// Module ID: 12771
-// Function ID: 97887
+// Module ID: 12778
+// Function ID: 97920
 // Name: ActivateDeviceSuccess
 // Dependencies: []
 // Exports: ActivateDeviceSuccess
 
-// Module 12771 (ActivateDeviceSuccess)
+// Module 12778 (ActivateDeviceSuccess)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ image: { backgroundColor: 1977745411, borderRadius: 1978204163, height: -12386301 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ image: { "Null": 36.00010404875504, "Null": 8593534176.000504, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002954688160253023 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/activate_device/native/ActivateDeviceSuccess.tsx");
 
@@ -41,7 +41,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   }
   const items = [tmp9, , ];
   obj = { style: importDefault(dependencyMap[8]).innerContent };
-  const obj1 = { style: importDefault(dependencyMap[8]).centerText };
+  const obj1 = { cachedAt: true, edpbxy: true, style: importDefault(dependencyMap[8]).centerText };
   const intl3 = arg1(dependencyMap[4]).intl;
   obj1.children = intl3.string(arg1(dependencyMap[4]).t.qDtJmD);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj1), ];

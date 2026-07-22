@@ -1,10 +1,10 @@
-// Module ID: 8834
-// Function ID: 69674
+// Module ID: 8835
+// Function ID: 69686
 // Name: useChannelVideoLimit
 // Dependencies: []
 // Exports: default, getChannelVideoLimit
 
-// Module 8834 (useChannelVideoLimit)
+// Module 8835 (useChannelVideoLimit)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const ChannelTypes = arg1(dependencyMap[2]).ChannelTypes;
@@ -18,7 +18,7 @@ export default function useChannelVideoLimit(arg0) {
     const result = closure_3.countVoiceStatesForChannel(self.id);
     const guild = guild.getGuild(self.getGuildId());
     if (null == guild) {
-      let obj = { "Bool(false)": 1, "Bool(false)": "solid" };
+      let obj = {};
     } else if (self.type === constants.GUILD_STAGE_VOICE) {
       obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
     } else {
@@ -31,7 +31,7 @@ export const getChannelVideoLimit = function getChannelVideoLimit(channel) {
   const result = closure_3.countVoiceStatesForChannel(channel.id);
   const guild = guild.getGuild(channel.getGuildId());
   if (null == guild) {
-    let obj = { "Bool(false)": 1, "Bool(false)": "solid" };
+    let obj = {};
   } else if (channel.type === ChannelTypes.GUILD_STAGE_VOICE) {
     obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
   } else {

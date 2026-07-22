@@ -1,10 +1,10 @@
-// Module ID: 9774
-// Function ID: 76000
+// Module ID: 9775
+// Function ID: 76013
 // Name: useOpenProfileSettings
 // Dependencies: []
 // Exports: default
 
-// Module 9774 (useOpenProfileSettings)
+// Module 9775 (useOpenProfileSettings)
 require(dependencyMap[0]).useCallback;
 importDefault(dependencyMap[1]);
 let closure_3 = importDefault(dependencyMap[2]);

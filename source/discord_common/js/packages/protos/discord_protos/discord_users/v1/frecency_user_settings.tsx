@@ -37,10 +37,9 @@ let tmp2 = (MessageType) => {
   class FrecencyUserSettings$Type {
     constructor() {
       tmp = closure_3(this, FrecencyUserSettings$Type);
-      obj = {
-        T() {
-              return callback(closure_1[6]).Versions;
-            }
+      obj = { -111020099: "Array", 1351895378: "isArray", 1456955659: "constructor" };
+      obj.T = function T() {
+        return callback(closure_1[6]).Versions;
       };
       items = [, , , , , , , , , , , , ];
       items[0] = obj;
@@ -49,7 +48,7 @@ let tmp2 = (MessageType) => {
               return closure_9;
             }
       };
-      obj = { 9223372036854775807: "_persisted", 9223372036854775807: "premiumFeatures", 0: "include_google_sku_ids" };
+      obj = { -111020099: "activityEnabled", 1351895378: "premiumImageSource", 1456955659: "isEarlyAccess" };
       obj.T = function T() {
         return closure_11;
       };
@@ -59,7 +58,7 @@ let tmp2 = (MessageType) => {
               return closure_12;
             }
       };
-      obj1 = { 9223372036854775807: 1137, 9223372036854775807: 1369465088, 0: 225544604 };
+      obj1 = { -111020099: 1137, 1351895378: 1369465088, 1456955659: 225544651 };
       obj1.T = function T() {
         return closure_13;
       };
@@ -69,7 +68,7 @@ let tmp2 = (MessageType) => {
               return closure_14;
             }
       };
-      obj2 = { 9223372036854775807: 13, 9223372036854775807: "hash_key", 0: "scalar" };
+      obj2 = { -111020099: 13, 1351895378: "hash_key", 1456955659: "scalar" };
       obj2.T = function T() {
         return closure_15;
       };
@@ -79,7 +78,7 @@ let tmp2 = (MessageType) => {
               return closure_17;
             }
       };
-      obj3 = { 9223372036854775807: "absolute", 9223372036854775807: "100%", 0: "100%" };
+      obj3 = { -111020099: "absolute", 1351895378: "100%", 1456955659: "100%" };
       obj3.T = function T() {
         return closure_20;
       };
@@ -89,21 +88,21 @@ let tmp2 = (MessageType) => {
               return closure_18;
             }
       };
-      obj4 = { 9223372036854775807: 1627390241, 9223372036854775807: 827146743, 0: 860946433 };
+      obj4 = { -111020099: "%Error.prototype%", 1351895378: "pendingCancellationIcon", 1456955659: "%Float64ArrayPrototype%" };
       obj4.T = function T() {
         return closure_19;
       };
       items[10] = obj4;
-      obj5 = { 9223372036854775807: "no-hide-descendants", 9223372036854775807: true, 0: "/assets/images/group_dms" };
-      obj5.T = function T() {
-        return closure_21;
+      items[11] = {
+        T() {
+              return closure_21;
+            }
       };
-      items[11] = obj5;
-      obj6 = { 9223372036854775807: "heading-xxl/bold", 9223372036854775807: 2, 0: "gore_content_friend_dm" };
-      obj6.T = function T() {
+      obj5 = { -111020099: "heading-xxl/bold", 1351895378: 2, 1456955659: "gore_content_friend_dm" };
+      obj5.T = function T() {
         return closure_14;
       };
-      items[12] = obj6;
+      items[12] = obj5;
       items1 = [];
       items1[1] = items;
       return closure_22(this, FrecencyUserSettings$Type, items1);
@@ -236,18 +235,16 @@ let tmp4 = (MessageType) => {
   class FavoriteGIFs$Type {
     constructor() {
       tmp = closure_3(this, FavoriteGIFs$Type);
-      obj = { 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: true };
       obj = {
         kind: "message",
         T() {
               return closure_10;
             }
       };
-      obj.V = obj;
       items = [, ];
-      items[0] = obj;
-      items[1] = { 1347510942: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001498995355582405, 1678385745: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005562684646915585, 1364379111: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147718050534, 140698458: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112203313717 };
-      items1 = [32];
+      items[0] = { V: obj };
+      items[1] = {};
+      items1 = [];
       items1[1] = items;
       return closure_22(this, FavoriteGIFs$Type, items1);
     }
@@ -427,18 +424,18 @@ let tmp6 = (MessageType) => {
   class FavoriteGIF$Type {
     constructor() {
       tmp = closure_3(this, FavoriteGIF$Type);
-      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj = { -111020099: null, 1351895378: null, 1456955659: null };
       obj.T = function T() {
-        const items = [false, closure_8];
+        const items = [36, closure_8];
         return items;
       };
       items = [, , , , ];
       items[0] = obj;
       items[1] = {};
       items[2] = {};
-      items[3] = { 1347510942: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032398192295414106, 1678385745: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001491668148695694, 1364379111: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000321722687194318, 140698458: 469709187263222850000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-      items[4] = { 1347510942: 86400000, 1678385745: "RED_430", 1364379111: 0.2, 140698458: "gradient.bottom" };
-      items1 = [false];
+      items[3] = {};
+      items[4] = {};
+      items1 = [];
       items1[1] = items;
       return closure_22(this, FavoriteGIF$Type, items1);
     }
@@ -584,8 +581,8 @@ let tmp8 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, FavoriteStickers$Type);
       items = [];
-      items[0] = {};
-      items1 = [];
+      items[0] = { 0: false, 0: false, 0: false, 0: false, -9223372036854775808: false };
+      items1 = [false];
       items1[1] = items;
       return closure_22(this, FavoriteStickers$Type, items1);
     }
@@ -734,14 +731,16 @@ let tmp10 = (MessageType) => {
   class StickerFrecency$Type {
     constructor() {
       tmp = closure_3(this, StickerFrecency$Type);
+      obj = { -111020099: "View", 1351895378: "<string:72697921>", 1456955659: "<string:2577019136>", -1801654842: "<string:2576980377>" };
       obj = {
         kind: "message",
         T() {
               return closure_16;
             }
       };
+      obj.V = obj;
       items = [];
-      items[0] = { V: obj };
+      items[0] = obj;
       items1 = [];
       items1[1] = items;
       return closure_22(this, StickerFrecency$Type, items1);
@@ -917,7 +916,7 @@ let tmp12 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, FavoriteEmojis$Type);
       items = [];
-      items[0] = {};
+      items[0] = { 0: false, 0: false, 0: false, 0: false, -9223372036854775808: false };
       items1 = [];
       items1[1] = items;
       return closure_22(this, FavoriteEmojis$Type, items1);
@@ -1040,14 +1039,16 @@ let tmp14 = (MessageType) => {
   class EmojiFrecency$Type {
     constructor() {
       tmp = closure_3(this, EmojiFrecency$Type);
+      obj = { -111020099: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002703618370055375, 1351895378: 0.00000000000000000000000000000000000000000000000000000000000004667261458271344, 1456955659: 36159934991773675000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -1801654842: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033155698721922247 };
       obj = {
         kind: "message",
         T() {
               return closure_16;
             }
       };
+      obj.V = obj;
       items = [];
-      items[0] = { V: obj };
+      items[0] = obj;
       items1 = [];
       items1[1] = items;
       return closure_22(this, EmojiFrecency$Type, items1);
@@ -1220,7 +1221,7 @@ let tmp16 = (MessageType) => {
   class ApplicationCommandFrecency$Type {
     constructor() {
       tmp = closure_3(this, ApplicationCommandFrecency$Type);
-      obj = { 9223372036854775807: "<string:3309371394>", 9223372036854775807: "<string:822084777>", 0: "<string:2492765333>", 0: "<string:1070896276>" };
+      obj = { -111020099: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005198516713810151, 1351895378: 0.00000000000000000000000000000000000000000000000000000000000004667261458271344, 1456955659: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000322666985128256, -1801654842: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033950952727873134 };
       obj = {
         kind: "message",
         T() {
@@ -1403,10 +1404,10 @@ let tmp18 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, FrecencyItem$Type);
       items = [, , , ];
-      items[0] = { 1347510942: true, 1678385745: true, 1364379111: true, 140698458: true };
-      items[1] = {};
+      items[0] = {};
+      items[1] = { 0: null, 0: null, 0: null, 0: null, -9223372036854775808: null };
       items[2] = {};
-      items[3] = { 1347510942: false, 1678385745: false, 1364379111: false, 140698458: false };
+      items[3] = {};
       items1 = [];
       items1[1] = items;
       return closure_22(this, FrecencyItem$Type, items1);
@@ -1417,7 +1418,7 @@ let tmp18 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { position: 180, bottom: null, justifyContent: 1, EMPTY_MEDIA_RESULTS: 0.5, recentUses: [] };
+      let obj = { paths: "angle", registerAsset: 180, st: null, duration: 1, recentUses: [] };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, FrecencyItem$Type(closure_1[7]).MESSAGE_TYPE, obj);
@@ -1584,8 +1585,8 @@ let tmp20 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, FavoriteSoundboardSounds$Type);
       items = [];
-      items[0] = {};
-      items1 = ["<string:1655635970>"];
+      items[0] = { 0: true, 0: true, 0: true, 0: true, -9223372036854775808: true };
+      items1 = [];
       items1[1] = items;
       return closure_22(this, FavoriteSoundboardSounds$Type, items1);
     }
@@ -1734,7 +1735,7 @@ let tmp22 = (MessageType) => {
   class HeardSoundFrecency$Type {
     constructor() {
       tmp = closure_3(this, HeardSoundFrecency$Type);
-      obj = { 9223372036854775807: 0.1, 9223372036854775807: "BLACK_500", 0: 0.3, 0: "PLUM_11" };
+      obj = { -111020099: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188086, 1351895378: -7.718, 1456955659: 0.0000000000000000000000000020451218967860647, -1801654842: null };
       obj = {
         kind: "message",
         T() {
@@ -1744,7 +1745,7 @@ let tmp22 = (MessageType) => {
       obj.V = obj;
       items = [];
       items[0] = obj;
-      items1 = [null];
+      items1 = [];
       items1[1] = items;
       return closure_22(this, HeardSoundFrecency$Type, items1);
     }
@@ -1916,15 +1917,17 @@ let tmp24 = (MessageType) => {
   class PlayedSoundFrecency$Type {
     constructor() {
       tmp = closure_3(this, PlayedSoundFrecency$Type);
+      obj = { -111020099: 0.1, 1351895378: "BLACK_500", 1456955659: 0.3, -1801654842: "PLUM_11" };
       obj = {
         kind: "message",
         T() {
               return closure_16;
             }
       };
+      obj.V = obj;
       items = [];
-      items[0] = { V: obj };
-      items1 = [];
+      items[0] = obj;
+      items1 = ["NOTIFICATIONS_SET_DISABLED_SOUNDS"];
       items1[1] = items;
       return closure_22(this, PlayedSoundFrecency$Type, items1);
     }
@@ -2096,7 +2099,7 @@ let tmp26 = (MessageType) => {
   class ApplicationFrecency$Type {
     constructor() {
       tmp = closure_3(this, ApplicationFrecency$Type);
-      obj = { 9223372036854775807: "<string:289362018>", 9223372036854775807: "<string:38369345>", 0: "<string:1547895040>", 0: "<string:1526727256>" };
+      obj = { -111020099: "<string:1070889697>", 1351895378: "specifications", 1456955659: "keep_popouts_open", -1801654842: "<string:2851877376>" };
       obj = {
         kind: "message",
         T() {
@@ -2106,7 +2109,7 @@ let tmp26 = (MessageType) => {
       obj.V = obj;
       items = [];
       items[0] = obj;
-      items1 = ["Array"];
+      items1 = [null];
       items1[1] = items;
       return closure_22(this, ApplicationFrecency$Type, items1);
     }
@@ -2278,7 +2281,7 @@ let tmp28 = (MessageType) => {
   class GuildAndChannelFrecency$Type {
     constructor() {
       tmp = closure_3(this, GuildAndChannelFrecency$Type);
-      obj = { 9223372036854775807: "channelId", 9223372036854775807: "channelId", 0: "channelId", 0: "channelId" };
+      obj = { -111020099: 1062232653, 1351895378: 1234321681, 1456955659: 1124139010, -1801654842: 170905 };
       obj = {
         kind: "message",
         T() {
@@ -2288,7 +2291,7 @@ let tmp28 = (MessageType) => {
       obj.V = obj;
       items = [];
       items[0] = obj;
-      items1 = ["r"];
+      items1 = [];
       items1[1] = items;
       return closure_22(this, GuildAndChannelFrecency$Type, items1);
     }

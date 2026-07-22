@@ -1,10 +1,10 @@
-// Module ID: 16073
-// Function ID: 123525
+// Module ID: 16081
+// Function ID: 123567
 // Name: getVerifyPhoneSource
 // Dependencies: []
 // Exports: VerifyPhone
 
-// Module 16073 (getVerifyPhoneSource)
+// Module 16081 (getVerifyPhoneSource)
 function getVerifyPhoneSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

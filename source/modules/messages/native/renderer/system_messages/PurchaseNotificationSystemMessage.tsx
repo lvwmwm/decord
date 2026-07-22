@@ -1,5 +1,5 @@
 // Module ID: 7704
-// Function ID: 61396
+// Function ID: 61406
 // Name: createPurchaseNotificationSystemMessage
 // Dependencies: [1348, 1838, 7636]
 // Exports: createPurchaseNotificationSystemMessage

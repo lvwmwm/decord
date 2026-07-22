@@ -1,10 +1,10 @@
-// Module ID: 13920
-// Function ID: 105817
+// Module ID: 13927
+// Function ID: 105857
 // Name: VideoQuestCaptions
 // Dependencies: []
 // Exports: VideoQuestCaptions
 
-// Module 13920 (VideoQuestCaptions)
+// Module 13927 (VideoQuestCaptions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -59,10 +59,10 @@ export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
   if ("success" === videoQuestCaptions.status) {
     tmp4 = null;
     if (null != memo) {
-      obj = { "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole" };
+      obj = {};
       const items1 = [tmp.container, style];
       obj.style = items1;
-      obj = { 1649621859: 0, 1387052113: 0, -550975292: 0, 1370110562: 1000, style: tmp.captionBox };
+      obj = { style: tmp.captionBox };
       const obj1 = { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text };
       obj.children = jsx(arg1(dependencyMap[9]).Text, obj1);
       obj.children = jsx(importDefault(dependencyMap[8]), obj);

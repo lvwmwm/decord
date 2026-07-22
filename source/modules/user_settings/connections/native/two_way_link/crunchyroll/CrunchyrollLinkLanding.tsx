@@ -1,10 +1,10 @@
-// Module ID: 8983
-// Function ID: 70777
+// Module ID: 8984
+// Function ID: 70790
 // Name: CrunchyrollLinkLanding
 // Dependencies: []
 // Exports: default
 
-// Module 8983 (CrunchyrollLinkLanding)
+// Module 8984 (CrunchyrollLinkLanding)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).CrunchyrollLinkModalScenes;
 ({ HelpdeskArticles: closure_5, PlatformTypes: closure_6 } = arg1(dependencyMap[2]));

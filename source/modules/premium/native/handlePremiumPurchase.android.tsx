@@ -1,5 +1,5 @@
 // Module ID: 7114
-// Function ID: 57150
+// Function ID: 57161
 // Name: validatePurchase
 // Dependencies: []
 // Exports: useHandlePremiumPurchase
@@ -36,7 +36,7 @@ async function _validatePurchase(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = ["Kaaba"];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

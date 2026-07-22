@@ -1,10 +1,10 @@
-// Module ID: 8843
-// Function ID: 69797
+// Module ID: 8844
+// Function ID: 69810
 // Name: _fetchVideoFilterAssets
 // Dependencies: []
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 8843 (_fetchVideoFilterAssets)
+// Module 8844 (_fetchVideoFilterAssets)
 function _fetchVideoFilterAssets() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

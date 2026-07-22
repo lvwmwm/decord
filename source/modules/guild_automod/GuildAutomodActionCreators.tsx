@@ -1,10 +1,10 @@
-// Module ID: 11001
-// Function ID: 85586
+// Module ID: 11002
+// Function ID: 85599
 // Name: _transformClientActionToApiAction
 // Dependencies: []
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11001 (_transformClientActionToApiAction)
+// Module 11002 (_transformClientActionToApiAction)
 function _transformClientActionToApiAction(type) {
   const obj = { type: type.type, metadata: arg1(dependencyMap[4])._transformMetadataToSnakeCase(type.metadata) };
   return obj;

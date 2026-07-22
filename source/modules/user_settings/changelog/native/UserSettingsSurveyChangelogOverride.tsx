@@ -1,9 +1,9 @@
-// Module ID: 14555
-// Function ID: 109677
+// Module ID: 14563
+// Function ID: 109720
 // Name: SurveyOverrideInfoActionSheet
 // Dependencies: []
 
-// Module 14555 (SurveyOverrideInfoActionSheet)
+// Module 14563 (SurveyOverrideInfoActionSheet)
 function SurveyOverrideInfoActionSheet(survey) {
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Last Survey Data" }) };
   obj = { hasIcons: true };
@@ -45,7 +45,7 @@ function SurveyOverrideActionSheet() {
   const first = tmp[0];
   const arg1 = first;
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Survey Override" }) };
-  obj = { -12885172: false, -9223372036854775808: false, 0: false, 0: false, 706246040: false, onChange: tmp[1] };
+  obj = { borderRadius: true, np: true, ao: true, disabled: true, props: true, onChange: tmp[1] };
   const items = [callback2(arg1(dependencyMap[13]).TextInput, obj), ];
   obj = {};
   let str = "Fetch Survey";
@@ -82,11 +82,11 @@ function SurveyInfo() {
   const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
   const tmp2 = importDefault(dependencyMap[18])(stateFromStores);
   const arg1 = tmp2;
-  obj = { "Bool(false)": "Hide first # of categories", "Bool(false)": "text-lg/semibold" };
+  obj = { -9223372036854775808: "Loading products...", 9223372036854775807: "text-xs/normal" };
   obj = {
-    9223372036854775807: true,
-    -9223372036854775808: true,
-    0: true,
+    user: true,
+    formatToPlainString: true,
+    jsx: true,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_13 };
@@ -126,7 +126,8 @@ function ChangelogOverrideActionSheet() {
   const first = tmp[0];
   const arg1 = first;
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Changelog Override" }) };
-  const items = [callback2(arg1(dependencyMap[13]).TextInput, { onChange: tmp[1] }), ];
+  obj = { borderRadius: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000171947996336173, np: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254019872184905, ao: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008442543535614326, disabled: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001051468021873797, props: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008090205607797424, onChange: tmp[1] };
+  const items = [callback2(arg1(dependencyMap[13]).TextInput, obj), ];
   obj = {};
   let str = "Fetch Changelog";
   if ("" === first) {
@@ -157,11 +158,11 @@ function ChangelogOverrideActionSheet() {
   return closure_10(arg1(dependencyMap[8]).ActionSheet, obj);
 }
 function ChangelogInfo() {
-  let obj = { "Bool(false)": "<string:2902459525>", "Bool(false)": "<string:1107297490>" };
+  let obj = { -9223372036854775808: null, 9223372036854775807: null };
   obj = {
-    9223372036854775807: "useMessageCount",
-    -9223372036854775808: "%WeakMap%",
-    0: "generateNonce",
+    user: 32772352,
+    formatToPlainString: 30645248,
+    jsx: 488194304,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_16 };

@@ -1,10 +1,10 @@
-// Module ID: 12785
-// Function ID: 97948
+// Module ID: 12792
+// Function ID: 97981
 // Name: onClose
 // Dependencies: []
 // Exports: default
 
-// Module 12785 (onClose)
+// Module 12792 (onClose)
 function onClose() {
   importDefault(dependencyMap[7]).popWithKey(SHARE_SCREEN_MODAL_KEY);
 }

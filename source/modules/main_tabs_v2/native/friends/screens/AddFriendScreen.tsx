@@ -1,10 +1,10 @@
-// Module ID: 15329
-// Function ID: 116682
+// Module ID: 15337
+// Function ID: 116725
 // Name: AddFriendScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15329 (AddFriendScreen)
+// Module 15337 (AddFriendScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -14,10 +14,10 @@ const ContactPermissions = arg1(dependencyMap[5]).ContactPermissions;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { headerText: { <string:2228586213>: -0.000000015832525233992072, <string:1345935829>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001855055024309289, <string:1384593893>: 15177102529764903000000000000000000000000000000000000000000000000000000000000000000 }, subheaderText: {} };
+obj = { headerText: { "Bool(true)": "a", "Bool(true)": "oldRule", "Bool(true)": "r" }, subheaderText: {} };
 obj = { marginTop: 16, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.input = obj;
-obj.otherOptionsContainer = {};
+obj.otherOptionsContainer = { flexGrow: null, gap: null };
 obj.rowContainer = { marginTop: 8 };
 const tmp3 = arg1(dependencyMap[6]);
 obj.background = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
@@ -81,7 +81,7 @@ export default function AddFriendScreen(navigation) {
   obj = {};
   const items1 = [callback2(importDefault(dependencyMap[16]), { absolute: true }), ];
   obj = { keyboardShouldPersistTaps: "handled", style: tmp.background };
-  obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerText };
+  obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.headerText };
   const intl = arg1(dependencyMap[12]).intl;
   obj1.children = intl.string(arg1(dependencyMap[12]).t.GWMTSE);
   const items2 = [callback2(arg1(dependencyMap[17]).Text, obj1), , , ];
@@ -91,7 +91,7 @@ export default function AddFriendScreen(navigation) {
   items2[1] = callback2(arg1(dependencyMap[17]).Text, obj2);
   items2[2] = callback2(importDefault(dependencyMap[18]), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
   const obj4 = { style: tmp.otherOptionsContainer };
-  const obj5 = { USER_REGISTRATION: "remotePlatform", borderColor: "per", borderWidth: "MiniaturesSpotIllustration" };
+  const obj5 = { "Bool(false)": "Text", "Bool(false)": "position", "Bool(false)": "duration" };
   const intl3 = arg1(dependencyMap[12]).intl;
   obj5.children = intl3.string(arg1(dependencyMap[12]).t.dukg0Z);
   const items3 = [callback2(arg1(dependencyMap[17]).Text, obj5), ];

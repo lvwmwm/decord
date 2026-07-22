@@ -1,10 +1,10 @@
-// Module ID: 11558
-// Function ID: 89935
+// Module ID: 11559
+// Function ID: 89948
 // Name: useGuildPowerupOnToggle
 // Dependencies: []
 // Exports: default
 
-// Module 11558 (useGuildPowerupOnToggle)
+// Module 11559 (useGuildPowerupOnToggle)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupOnToggle.tsx");

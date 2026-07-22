@@ -1,11 +1,13 @@
 // Module ID: 3813
-// Function ID: 31694
+// Function ID: 31696
 // Name: SettingsConfig
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 3813 (SettingsConfig)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 const tmp2 = () => {
   class SettingsConfig {
     constructor(arg0) {
@@ -66,7 +68,11 @@ const tmp3 = () => {
   items[1] = obj;
   return callback(AgeVerificationConfig, items);
 }();
-const tmp4 = () => {
+const result = items.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
+
+export const SettingsConfig = tmp2;
+export const AgeVerificationConfig = tmp3;
+export const RegionalFeatureConfig = () => {
   class RegionalFeatureConfig {
     constructor(arg0, arg1) {
       tmp = RegionalFeatureConfig(this, RegionalFeatureConfig);
@@ -119,8 +125,3 @@ const tmp4 = () => {
   ];
   return callback(RegionalFeatureConfig, items, items1);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
-
-export const SettingsConfig = tmp2;
-export const AgeVerificationConfig = tmp3;
-export const RegionalFeatureConfig = tmp4;

@@ -1,13 +1,14 @@
-// Module ID: 11389
-// Function ID: 88572
+// Module ID: 11390
+// Function ID: 88585
 // Name: TiktokNeutralIcon
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: TiktokNeutralIcon
 
-// Module 11389 (TiktokNeutralIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TiktokNeutralIcon.tsx");
+// Module 11390 (TiktokNeutralIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/TiktokNeutralIcon.tsx");
 
 export const TiktokNeutralIcon = function TiktokNeutralIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

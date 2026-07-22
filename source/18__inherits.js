@@ -17,7 +17,8 @@ export default function _inherits(value) {
   if (arg1) {
     prototype = arg1.prototype;
   }
-  value.prototype = Object.create(prototype, { constructor: { value } });
+  const obj = { "": null, children: null, "": null, value };
+  value.prototype = Object.create(prototype, { constructor: obj });
   Object.defineProperty(value, "prototype", { writable: false });
   if (arg1) {
     require(dependencyMap[0])(value, arg1);

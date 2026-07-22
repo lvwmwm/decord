@@ -1,9 +1,9 @@
-// Module ID: 16008
-// Function ID: 122839
+// Module ID: 16016
+// Function ID: 122881
 // Name: DiscoverabilityLandingScene
 // Dependencies: []
 
-// Module 16008 (DiscoverabilityLandingScene)
+// Module 16016 (DiscoverabilityLandingScene)
 function DiscoverabilityLandingScene(onComplete) {
   onComplete = onComplete.onComplete;
   const arg1 = onComplete;
@@ -143,7 +143,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { MIN_SWIPE_VELOCITY: null, USER_SAFETY_TOOLS_UNBLOCK: "c7e2eadc5cd55417a6c70f428f65fac7", routingFailures: "SlashIcon", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj = { isArray: null, surrogates: "c7e2eadc5cd55417a6c70f428f65fac7", withSpring: "SlashIcon", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj;
 obj.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 let closure_8 = obj.createStyles(obj);

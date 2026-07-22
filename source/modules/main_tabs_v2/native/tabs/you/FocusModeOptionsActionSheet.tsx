@@ -1,10 +1,10 @@
-// Module ID: 14986
-// Function ID: 112871
+// Module ID: 14994
+// Function ID: 112914
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14986 (items)
+// Module 14994 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let obj = {

@@ -1,10 +1,10 @@
-// Module ID: 13704
-// Function ID: 103691
+// Module ID: 13711
+// Function ID: 103724
 // Name: FamilyCenterAvatarPair
 // Dependencies: []
 // Exports: default
 
-// Module 13704 (FamilyCenterAvatarPair)
+// Module 13711 (FamilyCenterAvatarPair)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);

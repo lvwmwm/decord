@@ -1,9 +1,9 @@
-// Module ID: 9641
-// Function ID: 75090
+// Module ID: 9642
+// Function ID: 75103
 // Name: IMAGE_CAROUSEL_TILE_HEIGHT
 // Dependencies: []
 
-// Module 9641 (IMAGE_CAROUSEL_TILE_HEIGHT)
+// Module 9642 (IMAGE_CAROUSEL_TILE_HEIGHT)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/image/native/ImageCarouselConstants.tsx");
 

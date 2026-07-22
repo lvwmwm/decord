@@ -1,5 +1,5 @@
 // Module ID: 6309
-// Function ID: 50385
+// Function ID: 50396
 // Name: NitroCoinSpotIllustration
 // Dependencies: []
 // Exports: NitroCoinSpotIllustration

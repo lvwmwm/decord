@@ -1,10 +1,10 @@
-// Module ID: 9898
-// Function ID: 76586
+// Module ID: 9899
+// Function ID: 76599
 // Name: ForwardFailedAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 9898 (ForwardFailedAlertModal)
+// Module 9899 (ForwardFailedAlertModal)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/forwarding/native/ForwardFailedAlertModal.tsx");

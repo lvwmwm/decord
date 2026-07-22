@@ -1,10 +1,10 @@
-// Module ID: 11073
-// Function ID: 86136
+// Module ID: 11074
+// Function ID: 86149
 // Name: createBlockedAppMessageEmbed
 // Dependencies: []
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 11073 (createBlockedAppMessageEmbed)
+// Module 11074 (createBlockedAppMessageEmbed)
 function createBlockedAppMessageEmbed(arg0) {
   let message;
   let theme;
@@ -45,7 +45,7 @@ const FetchState = arg1(dependencyMap[2]).FetchState;
 let closure_7 = importDefault(dependencyMap[3]);
 const AppLauncherRouteName = arg1(dependencyMap[4]).AppLauncherRouteName;
 const CodedLinkExtendedType = arg1(dependencyMap[5]).CodedLinkExtendedType;
-let closure_10 = ["RollOutRight"];
+let closure_10 = ["ETHERNET"];
 const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/applications/message_embed/native/createAppMessageEmbed.tsx");
 
 export const getAppLinkGateResult = function getAppLinkGateResult(appId) {

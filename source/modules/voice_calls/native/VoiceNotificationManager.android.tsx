@@ -1,9 +1,9 @@
-// Module ID: 13264
-// Function ID: 100651
+// Module ID: 13271
+// Function ID: 100684
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13264 (_isNativeReflectConstruct)
+// Module 13271 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -37,7 +37,11 @@ let tmp2 = () => {
       VoiceNotificationManager = this;
       tmp = closure_7(this, VoiceNotificationManager);
       this.voiceServiceHandlerId = 9000;
-      this.state = { channelId: undefined, connectionState: undefined, embeddedActivity: undefined };
+      obj = { "Bool(false)": "sm", "Bool(false)": null, "Bool(false)": "numeric", "Bool(false)": null, "Bool(false)": "ms", "Bool(false)": true, "Bool(false)": false };
+      obj.channelId = undefined;
+      obj.connectionState = undefined;
+      obj.embeddedActivity = undefined;
+      this.state = obj;
       this.handleVoiceStateChange = () => {
         const channelId = store.getChannelId();
         const state = store.getState();

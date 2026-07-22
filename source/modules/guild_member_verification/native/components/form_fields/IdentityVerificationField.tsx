@@ -1,10 +1,10 @@
-// Module ID: 9172
-// Function ID: 71847
+// Module ID: 9173
+// Function ID: 71860
 // Name: BaseIdentityVerificationField
 // Dependencies: []
 // Exports: default
 
-// Module 9172 (BaseIdentityVerificationField)
+// Module 9173 (BaseIdentityVerificationField)
 function BaseIdentityVerificationField(icon) {
   let label;
   let onPress;
@@ -19,25 +19,22 @@ function BaseIdentityVerificationField(icon) {
     tmp4 = callback(icon, obj);
   }
   const items = [tmp4, , ];
-  obj = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158 };
   const items1 = [tmp.label];
-  obj.style = items1;
-  obj.children = label;
-  items[1] = callback(arg1(dependencyMap[5]).Text, obj);
-  const obj1 = {};
+  items[1] = callback(arg1(dependencyMap[5]).Text, { style: items1, children: label });
+  obj = {};
   if (passesVerification) {
-    obj1.style = tmp.verifiedContainer;
-    const obj2 = { color: "status-positive" };
-    obj1.children = callback(arg1(dependencyMap[6]).CheckmarkLargeIcon, obj2);
-    let tmp11 = obj1;
+    obj.style = tmp.verifiedContainer;
+    const obj1 = { color: "status-positive" };
+    obj.children = callback(arg1(dependencyMap[6]).CheckmarkLargeIcon, obj1);
+    let tmp11 = obj;
   } else {
-    obj1.style = tmp.ctaButton;
-    const obj3 = {};
+    obj.style = tmp.ctaButton;
+    const obj2 = {};
     const intl = arg1(dependencyMap[8]).intl;
-    obj3.text = intl.string(arg1(dependencyMap[8]).t.13ofGu);
-    obj3.onPress = onPress;
-    obj1.children = callback(arg1(dependencyMap[7]).Button, obj3);
-    tmp11 = obj1;
+    obj2.text = intl.string(arg1(dependencyMap[8]).t.13ofGu);
+    obj2.onPress = onPress;
+    obj.children = callback(arg1(dependencyMap[7]).Button, obj2);
+    tmp11 = obj;
   }
   items[2] = callback(View, tmp11);
   obj.children = items;
@@ -51,9 +48,9 @@ obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
 obj.icon = {};
-obj.label = { 1454043078: null, 921736901: null, -1762698309: null };
-obj.verifiedContainer = { 996377586: true, 2136058454: "/assets/design/components/Icon/native/redesign/generated/images", 1365401864: 24, 1398910140: 24 };
-obj.ctaButton = { no: true, name: true, kind: true };
+obj.label = { category: "<string:466485249>", position: "<string:3382050817>", opacity: "<string:40960001>" };
+obj.verifiedContainer = { <string:1101041249>: true, addQuarters: "/assets/design/components/Icon/native/redesign/generated/images", <string:1092586321>: 24, addWeeks: 24 };
+obj.ctaButton = { <string:1385783798>: "<string:1062273028>", <string:3266691745>: "<string:3332911364>", <string:5372001>: "<string:1099511627>" };
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");

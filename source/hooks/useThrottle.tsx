@@ -1,10 +1,10 @@
-// Module ID: 10788
-// Function ID: 83776
+// Module ID: 10789
+// Function ID: 83789
 // Name: throttleStateFn
 // Dependencies: []
 // Exports: useThrottledState
 
-// Module 10788 (throttleStateFn)
+// Module 10789 (throttleStateFn)
 function throttleStateFn(arg0) {
   return arg0;
 }

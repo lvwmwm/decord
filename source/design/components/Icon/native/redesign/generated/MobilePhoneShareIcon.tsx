@@ -1,10 +1,10 @@
-// Module ID: 15753
-// Function ID: 120449
+// Module ID: 15761
+// Function ID: 120492
 // Name: MobilePhoneShareIcon
 // Dependencies: []
 // Exports: MobilePhoneShareIcon
 
-// Module 15753 (MobilePhoneShareIcon)
+// Module 15761 (MobilePhoneShareIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MobilePhoneShareIcon.tsx");

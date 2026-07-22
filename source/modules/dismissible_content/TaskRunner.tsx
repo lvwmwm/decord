@@ -1,12 +1,16 @@
 // Module ID: 1343
 // Function ID: 15817
 // Name: TaskRunner
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 1343 (TaskRunner)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/dismissible_content/TaskRunner.tsx");
+
+export const TaskRunner = () => {
   class TaskRunner {
     constructor() {
       tmp = TaskRunner(this, TaskRunner);
@@ -48,6 +52,3 @@ const tmp2 = () => {
   items[2] = obj;
   return callback(TaskRunner, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/dismissible_content/TaskRunner.tsx");
-
-export const TaskRunner = tmp2;

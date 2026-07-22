@@ -1,5 +1,5 @@
 // Module ID: 3817
-// Function ID: 31714
+// Function ID: 31716
 // Name: makeLongFormatter
 // Dependencies: []
 // Exports: default
@@ -182,7 +182,7 @@ export default function makeFormatter(arg0, addResult) {
   }
   const items = [];
   importDefault = items;
-  obj = {};
+  obj = { 9223372036854775807: "<string:2982654404>", 0: "<string:44043585>", 0: "<string:62673408>", 0: "<string:71457608>", 0: "<string:2785018381>", 9223372036854775807: "<string:1627390409>", 0: "<string:4282598591>", 9223372036854775807: "<string:2571829249>", 9223372036854775807: "<string:3989241857>", 0: "<string:289341441>", 0: "<string:894500866>", 0: "<string:2749448520>" };
   dependencyMap = arr;
   if (arr.length > 0) {
     while (true) {

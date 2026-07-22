@@ -1,5 +1,5 @@
 // Module ID: 6371
-// Function ID: 50478
+// Function ID: 50489
 // Name: NitroWumpusFlightUpwards3dIllustration
 // Dependencies: []
 // Exports: NitroWumpusFlightUpwards3dIllustration

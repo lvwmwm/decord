@@ -1,17 +1,19 @@
-// Module ID: 15309
-// Function ID: 116453
+// Module ID: 15317
+// Function ID: 116496
 // Name: headerBackground
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1352, 1348, 3765, 5600]
 // Exports: default
 
-// Module 15309 (headerBackground)
+// Module 15317 (headerBackground)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { jsx } from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function headerBackground(arg0) {
-  return jsx(importDefault(dependencyMap[2]), { id: "Small", text: "sm", variant: "Placeholder" });
+  return jsx(importDefault(dependencyMap[2]), {});
 }
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
 let closure_5 = { headerBackground: undefined, contentStyle: undefined };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/client_themes/native/useThemedHeaderOptions.tsx");
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/client_themes/native/useThemedHeaderOptions.tsx");
 
 export default function useThemedHeaderOptions() {
   const tmp = importDefault(dependencyMap[3])();

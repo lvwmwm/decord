@@ -1,10 +1,10 @@
-// Module ID: 8962
-// Function ID: 70697
+// Module ID: 8963
+// Function ID: 70710
 // Name: authorizeConnection
 // Dependencies: []
 // Exports: default
 
-// Module 8962 (authorizeConnection)
+// Module 8963 (authorizeConnection)
 let closure_3 = require(dependencyMap[0]).GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE;
 const PlatformTypes = require(dependencyMap[1]).PlatformTypes;
 const _module = require(dependencyMap[15]);

@@ -1,10 +1,10 @@
-// Module ID: 12041
-// Function ID: 93021
+// Module ID: 12045
+// Function ID: 93047
 // Name: getAppCrashSource
 // Dependencies: []
 // Exports: AppCrash
 
-// Module 12041 (getAppCrashSource)
+// Module 12045 (getAppCrashSource)
 function getAppCrashSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

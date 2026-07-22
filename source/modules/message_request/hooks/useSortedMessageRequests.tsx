@@ -1,11 +1,11 @@
-// Module ID: 15440
-// Function ID: 117821
+// Module ID: 15448
+// Function ID: 117864
 // Name: useSortedMessageRequests
 // Dependencies: [0, 4294967295, 4294967295]
 // Exports: default
 
-// Module 15440 (useSortedMessageRequests)
-import result from "result";
+// Module 15448 (useSortedMessageRequests)
+import __exportStarResult1 from "__exportStarResult1";
 
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

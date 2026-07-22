@@ -1,9 +1,9 @@
-// Module ID: 14984
-// Function ID: 112821
+// Module ID: 14992
+// Function ID: 112864
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 14984 (_isNativeReflectConstruct)
+// Module 14992 (_isNativeReflectConstruct)
 let Dimensions;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -24,7 +24,7 @@ const importAllResult = importAll(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 const height = Dimensions.get("window").height;
-let closure_15 = {};
+let closure_15 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
 let closure_16 = importAllResult.memo((arg0) => {
   let active;
   let hideContent;
@@ -93,7 +93,7 @@ let closure_16 = importAllResult.memo((arg0) => {
   obj = {};
   obj = null;
   if (hideContent) {
-    obj = { left: 19, right: "header_localized" };
+    obj = { left: 9, right: 20 };
   }
   obj.style = obj;
   obj.children = importAllResult.cloneElement(renderRow(item, index, tmp6), { sortHandlers: { onLongPress: callback, onPressOut } });
@@ -118,7 +118,7 @@ let closure_17 = importAllResult.memo((listPageY) => {
   const obj = {};
   const items1 = [
     importAllResult.useMemo(() => {
-      const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, height: frameHeight, marginTop: listPageY - wrapperPageY };
+      const obj = { <string:2879415045>: true, <string:1314541910>: true, <string:2897007698>: true, <string:1415733932>: true, <string:1661140049>: true, <string:2591642033>: true, height: frameHeight, marginTop: listPageY - wrapperPageY };
       return obj;
     }, items),
     sortRowStyle,
@@ -157,7 +157,7 @@ const tmp4 = (Component) => {
       tmp2Result._wrapperRef = closure_7.createRef();
       tmp2Result._listRef = closure_7.createRef();
       tmp2Result.scrollContainerHeight = closure_14;
-      obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+      obj = {};
       valueXY = new closure_9.ValueXY(closure_15);
       obj.pan = valueXY;
       tmp2Result.state = obj;
@@ -329,7 +329,7 @@ const tmp4 = (Component) => {
       };
       tmp2Result.cancel = () => {
         if (!tmp2Result.moved) {
-          tmp2Result.setState({ "Bool(true)": null, "Bool(true)": null, "Bool(true)": null });
+          tmp2Result.setState({});
         }
       };
       tmp2Result.scrollTo = (arg0) => {
@@ -374,7 +374,7 @@ const tmp4 = (Component) => {
               if (null !== sum1) {
                 tmp2Result.scrollValue = sum1;
                 const scrollResponder = tmp2Result.scrollResponder;
-                const obj = { <string:3438175103>: 1092747263, <string:3622265520>: 142182, <string:1640027473>: -1907003820, y: tmp2Result.scrollValue };
+                const obj = { "Bool(false)": "_desired", "Bool(false)": "hash", "Bool(false)": "constructor", y: tmp2Result.scrollValue };
                 scrollResponder.scrollTo(obj);
               }
               tmp2Result.checkTargetElement();
@@ -410,7 +410,7 @@ const tmp4 = (Component) => {
             let obj = { frameX, frameY, frameWidth, frameHeight, pageX, pageY };
             frameX.wrapperLayout = obj;
             const pan = frameX.state.pan;
-            pan.setValue({});
+            pan.setValue({ 0: "%FunctionPrototype%", 0: "paddingStart" });
             const result = frameX(closure_1[8]).DeprecatedLayoutAnimation();
             frameX.moveY = frameX.layout.pageY;
             obj = { active: frameX, hovering: true, hoverIndex: frameX.rowData.index };
@@ -421,7 +421,7 @@ const tmp4 = (Component) => {
       obj1 = { dx: tmp2Result.state.pan.x, dy: tmp2Result.state.pan.y };
       items1 = [true];
       items1[1] = obj1;
-      f112848 = closure_9.event(items1, { useNativeDriver: false });
+      f112891 = closure_9.event(items1, { useNativeDriver: false });
       obj2 = {
         onStartShouldSetPanResponder() {
               return true;
@@ -451,7 +451,7 @@ const tmp4 = (Component) => {
               }
             },
         onPanResponderTerminate() {
-              tmp2Result.setState({ "Bool(true)": null, "Bool(true)": null, "Bool(true)": null });
+              tmp2Result.setState({});
             },
         onPanResponderRelease() {
               tmp2Result.moved = false;
@@ -467,7 +467,7 @@ const tmp4 = (Component) => {
               } else {
                 const index = tmp2Result.state.active.rowData.index;
                 if (false === tmp2Result.state.hovering) {
-                  return tmp2Result.setState({});
+                  return tmp2Result.setState({ GiftingBadgeExperiment: "Line_2", ceil: 19 });
                 } else {
                   const hoverIndex = tmp2Result.state.hoverIndex;
                   let diff = hoverIndex;
@@ -482,7 +482,7 @@ const tmp4 = (Component) => {
                     obj = { row: tmp2Result.state.active.rowData, from: index, to: diff };
                     props2.onRowMoved(obj);
                   }
-                  tmp2Result.setState({ "Bool(true)": null, "Bool(true)": null, "Bool(true)": null });
+                  tmp2Result.setState({});
                   const _Math = Math;
                   const bound = Math.max(0, tmp2Result.scrollContainerHeight - tmp2Result.listLayout.height + tmp22);
                   if (tmp2Result.scrollValue > bound) {

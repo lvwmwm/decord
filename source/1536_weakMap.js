@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1536 (weakMap)
-let closure_3 = ["opacity", "__workletHash", "uri", "formatToPlainString", "constructor"];
+let closure_3 = [0, 0.053, 0.978, 1, 0];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);

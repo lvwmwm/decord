@@ -1,10 +1,10 @@
-// Module ID: 15584
-// Function ID: 118922
+// Module ID: 15592
+// Function ID: 118965
 // Name: Loading
 // Dependencies: []
 // Exports: default
 
-// Module 15584 (Loading)
+// Module 15592 (Loading)
 function Loading() {
   const tmp = callback5();
   const items = [];
@@ -36,12 +36,12 @@ const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { 1011943521: "redesign/message-preview/semibold", 1098867089: "primary", 289264: false, -1062441132: 600, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+obj = { 999576676: "redesign/message-preview/semibold", -2140384682: "primary", 1532099425: false, -1594137854: 600, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
 obj.placeholderHeader = obj;
-const tmp4 = arg1(dependencyMap[8]);
-obj.placeholderLabel = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.sm, marginEnd: "005", paddingHorizontal: "activate-device", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+obj.placeholderLabel = obj1;
 obj.emptyState = { backgroundColor: "transparent" };
-const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+const tmp4 = arg1(dependencyMap[8]);
 obj.searchAndShareContainer = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[10]).space.PX_8, paddingVertical: importDefault(dependencyMap[10]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[10]).space.PX_12 };
 let closure_16 = obj.createStyles(obj);
 const obj2 = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[10]).space.PX_8, paddingVertical: importDefault(dependencyMap[10]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[10]).space.PX_12 };
@@ -156,7 +156,7 @@ export default function ActivityInviteSheet(activity) {
     const obj3 = {};
     const obj4 = {};
     const obj5 = { style: tmp.searchAndShareContainer };
-    const obj6 = { <string:1439367743>: false, <string:1856005359>: false, onChange: arg1(closure_2[19]).searchInviteSuggestions };
+    const obj6 = { "Null": false, "Null": false, onChange: arg1(closure_2[19]).searchInviteSuggestions };
     const intl2 = arg1(closure_2[22]).intl;
     obj6.placeholder = intl2.string(arg1(closure_2[22]).t.iI1gMg);
     obj5.children = callback3(arg1(closure_2[25]).SearchField, obj6);

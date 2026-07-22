@@ -1,10 +1,10 @@
-// Module ID: 8440
-// Function ID: 67341
+// Module ID: 8441
+// Function ID: 67353
 // Name: EditGuildEventDetails
 // Dependencies: []
 // Exports: default
 
-// Module 8440 (EditGuildEventDetails)
+// Module 8441 (EditGuildEventDetails)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[2]).isGuildScheduledEventActive;
@@ -67,7 +67,7 @@ export default function EditGuildEventDetails(guildEvent) {
   obj = {};
   let tmp15 = null;
   if (null != tmp12) {
-    obj = { delete: "571b1cf067821ef4949e09c037a195b6", dispatch: "ic_person_shield", raw: "png", style: tmp.error, children: tmp12 };
+    obj = { "Null": "md", "Null": "background-brand", alignItems: "white", style: tmp.error, children: tmp12 };
     tmp15 = callback3(arg1(dependencyMap[10]).Text, obj);
   }
   const items3 = [tmp15, ];

@@ -1,9 +1,9 @@
-// Module ID: 8236
-// Function ID: 65022
+// Module ID: 8237
+// Function ID: 65034
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 8236 (_createForOfIteratorHelperLoose)
+// Module 8237 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -200,7 +200,7 @@ let closure_8 = 0;
 let obj = arg1(dependencyMap[8]);
 obj = obj.create((arg0) => {
   const arg1 = arg0;
-  const obj = { INVITE_OPTIONS_6_HOURS: true, EmojiButtonMouseEntered: true, attachment: true };
+  const obj = { "Null": true, "Null": true, "Null": true };
   let closure_1 = callback(async () => {
     function isStale() {
       return sum !== sum;
@@ -218,7 +218,7 @@ obj = obj.create((arg0) => {
           return callback2(...arguments);
         }(tmp3);
         if (!isStale()) {
-          const obj = { INVITE_OPTIONS_6_HOURS: true, EmojiButtonMouseEntered: true, attachment: true, override: tmp5 };
+          const obj = { "Null": true, "Null": true, "Null": true, override: tmp5 };
           sum(obj);
         }
       }
@@ -229,7 +229,7 @@ obj = obj.create((arg0) => {
   };
   obj.clear = function clear() {
     closure_8 = closure_8 + 1;
-    arg0({ INVITE_OPTIONS_6_HOURS: true, EmojiButtonMouseEntered: true, attachment: true });
+    arg0({ "Null": true, "Null": true, "Null": true });
   };
   return obj;
 });

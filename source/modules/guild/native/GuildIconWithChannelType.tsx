@@ -1,10 +1,10 @@
-// Module ID: 9900
-// Function ID: 76600
+// Module ID: 9901
+// Function ID: 76613
 // Name: GuildIconWithChannelTypeSizes
 // Dependencies: []
 // Exports: GuildIconWithChannelType
 
-// Module 9900 (GuildIconWithChannelTypeSizes)
+// Module 9901 (GuildIconWithChannelTypeSizes)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   let size;
   let tmp;
   let typeIconSize;
-  let obj = {};
+  let obj = { tile_position: "spring", http: 0.4, REDESIGN_INPUT_CONTROL_ACTIVE_BG: 1 };
   ({ aria-label: tmp, size, channel } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

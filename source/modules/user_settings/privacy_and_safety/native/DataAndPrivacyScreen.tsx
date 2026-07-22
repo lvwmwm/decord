@@ -1,10 +1,10 @@
-// Module ID: 14404
-// Function ID: 108666
+// Module ID: 14412
+// Function ID: 108709
 // Name: getTermsOfServicePrivacyPolicySettings
 // Dependencies: []
 // Exports: default
 
-// Module 14404 (getTermsOfServicePrivacyPolicySettings)
+// Module 14412 (getTermsOfServicePrivacyPolicySettings)
 function getTermsOfServicePrivacyPolicySettings(arg0) {
   const arg1 = arg0;
   let obj = {};

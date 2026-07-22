@@ -1,10 +1,10 @@
-// Module ID: 8767
-// Function ID: 69296
+// Module ID: 8768
+// Function ID: 69308
 // Name: CollectiblesShopGiftModal
 // Dependencies: []
 // Exports: default
 
-// Module 8767 (CollectiblesShopGiftModal)
+// Module 8768 (CollectiblesShopGiftModal)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[2]).COLLECTIBLES_APPLICATION_ID;

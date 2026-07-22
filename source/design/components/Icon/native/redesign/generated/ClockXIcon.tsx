@@ -1,10 +1,10 @@
-// Module ID: 9946
-// Function ID: 76910
+// Module ID: 9947
+// Function ID: 76923
 // Name: ClockXIcon
 // Dependencies: []
 // Exports: ClockXIcon
 
-// Module 9946 (ClockXIcon)
+// Module 9947 (ClockXIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClockXIcon.tsx");

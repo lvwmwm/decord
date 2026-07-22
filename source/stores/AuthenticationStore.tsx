@@ -205,7 +205,7 @@ function handleLogout(isSwitchingAccount) {
     fetchFingerprint();
   }
   const PersistedStore = importDefault(dependencyMap[23]).PersistedStore;
-  const obj = { omit: ["Array", "_recordMessageEvent", "%JSONStringify%", "NATIVE_REQUIRED_ASSETS", "SET_CHANNEL_BITRATE", "Array", "weeksAgo", "JSON", "NATIVE_REQUIRED_ASSETS", "MemberSafetyPageTab", "Array"] };
+  const obj = { omit: [] };
   let str = "all";
   if (null != isSwitchingAccount) {
     str = "all";

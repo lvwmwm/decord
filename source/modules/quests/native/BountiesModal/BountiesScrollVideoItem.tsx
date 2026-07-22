@@ -1,10 +1,10 @@
-// Module ID: 13794
-// Function ID: 104335
+// Module ID: 13801
+// Function ID: 104368
 // Name: BountiesScrollVideoItemInner
 // Dependencies: []
 // Exports: BountiesScrollVideoItem
 
-// Module 13794 (BountiesScrollVideoItemInner)
+// Module 13801 (BountiesScrollVideoItemInner)
 function BountiesScrollVideoItemInner(bounty) {
   let handleBufferAnalytics;
   let handleLoadStartAnalytics;
@@ -17,6 +17,7 @@ function BountiesScrollVideoItemInner(bounty) {
   let handleVideoPausedAnalytics;
   let handleVideoProgress;
   let handleVideoResumedAnalytics;
+  let handleVideoTracksAnalytics;
   let index;
   let initialProgress;
   let isCtaVisible;
@@ -162,7 +163,7 @@ function BountiesScrollVideoItemInner(bounty) {
     const bountiesModalVideoAnalytics = arg1(dependencyMap[15]).useBountiesModalVideoAnalytics(obj1);
     handleVideoProgressAnalytics = bountiesModalVideoAnalytics.handleVideoProgressAnalytics;
     onPlaybackTimeChange = undefined;
-    ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
+    ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleVideoTracksAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
     if (null != scrollAffordance) {
       onPlaybackTimeChange = scrollAffordance.onPlaybackTimeChange;
     }
@@ -251,6 +252,7 @@ function BountiesScrollVideoItemInner(bounty) {
     obj4.onLoadStart = handleLoadStartAnalytics;
     obj4.onBuffer = handleBufferAnalytics;
     obj4.onFirstFrame = handleReadyForDisplayAnalytics;
+    obj4.onVideoTracks = handleVideoTracksAnalytics;
     obj4.rewardRemainingSeconds = rewardRemainingSeconds;
     obj4.rewardTotalSeconds = rewardTotalSeconds;
     obj4.normalizedProgress = normalizedProgress;

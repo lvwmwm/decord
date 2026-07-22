@@ -1,10 +1,10 @@
-// Module ID: 14626
-// Function ID: 110306
+// Module ID: 14634
+// Function ID: 110349
 // Name: useFocusRefOnNavigation
 // Dependencies: []
 // Exports: default
 
-// Module 14626 (useFocusRefOnNavigation)
+// Module 14634 (useFocusRefOnNavigation)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
 

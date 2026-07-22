@@ -1,10 +1,10 @@
-// Module ID: 10956
-// Function ID: 85215
+// Module ID: 10957
+// Function ID: 85228
 // Name: SelectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 10956 (SelectionHeader)
+// Module 10957 (SelectionHeader)
 function SelectionHeader(renderIcon) {
   let labelComponent;
   let onQueryChange;
@@ -103,7 +103,7 @@ function SelectionHeader(renderIcon) {
       obj2.onChangeText = function onChangeText(arg0) {
         const current = ref.current;
         if (null != current) {
-          current.scrollTo({ "Bool(false)": 1715544575, "Bool(false)": 1409286699 });
+          current.scrollTo({ <string:1667345620>: "absolute", <string:1638680913>: -1 });
         }
         onQueryChange(arg0);
       };

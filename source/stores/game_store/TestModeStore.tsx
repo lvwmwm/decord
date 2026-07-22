@@ -1,5 +1,5 @@
 // Module ID: 7367
-// Function ID: 59386
+// Function ID: 59397
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -32,7 +32,7 @@ let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = importDefault(dependencyMap[7]);
-let obj = { 38943585: "o", 1652276389: "o" };
+let obj = { alignSelf: "o", paddingHorizontal: "o" };
 const set = new Set();
 let closure_16 = false;
 let tmp3 = (PersistedStore) => {

@@ -1,10 +1,10 @@
-// Module ID: 9678
-// Function ID: 75345
+// Module ID: 9679
+// Function ID: 75358
 // Name: GiftingBadgeIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9678 (GiftingBadgeIcon)
+// Module 9679 (GiftingBadgeIcon)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;

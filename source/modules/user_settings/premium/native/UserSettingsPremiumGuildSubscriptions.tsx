@@ -1,10 +1,10 @@
-// Module ID: 12311
-// Function ID: 94339
+// Module ID: 12316
+// Function ID: 94367
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 12311 (_isNativeReflectConstruct)
+// Module 12316 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -32,13 +32,13 @@ const FractionalPremiumStates = arg1(dependencyMap[13]).FractionalPremiumStates;
 const tmp4 = arg1(dependencyMap[12]);
 ({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { upsellSection: { position: "relative" }, background: { -9223372036854775808: true, 0: true } };
-obj = { <string:1673945475>: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", <string:1711008972>: true, <string:2697769059>: null, backgroundColor: arg1(dependencyMap[16]).DARK_TRANSPARENT_LIGHT_WHITE_500 };
+obj = { upsellSection: { position: "relative" }, background: { useFramePreviewOverrideStore: true, explicitContentGuilds: true } };
+obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, backgroundColor: arg1(dependencyMap[16]).DARK_TRANSPARENT_LIGHT_WHITE_500 };
 obj.scroller = obj;
-obj.subscriptionHeader = { "Null": "isArray", "Null": "accessibilityRole" };
+obj.subscriptionHeader = { getMessageAuthorWithProcessedColor: null, UPLOAD_FAIL: null };
 obj.blurb = { lineHeight: 18 };
 obj.blurbNotLast = { marginBottom: 8 };
-obj.boostingUnavailablePill = { <string:1711008972>: "center", <string:2697769059>: "center" };
+obj.boostingUnavailablePill = {};
 obj.externalManagement = { marginTop: 8 };
 let closure_21 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {

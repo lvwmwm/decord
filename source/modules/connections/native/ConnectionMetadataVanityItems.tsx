@@ -1,10 +1,10 @@
-// Module ID: 9992
-// Function ID: 77278
+// Module ID: 9993
+// Function ID: 77291
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 9992 (_createForOfIteratorHelperLoose)
+// Module 9993 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -169,8 +169,8 @@ const View = arg1(dependencyMap[1]).View;
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { connectedAccountVanityMetadata: {}, connectedAccountVanityMetadataItem: { "Null": 7, "Null": 370 }, connectedAccountVanityMetadataItemIcon: {} };
-obj = { "Bool(true)": 11382, "Bool(true)": 11520, "Bool(true)": 11520, "Bool(true)": 5632, "Bool(true)": 6656, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { connectedAccountVanityMetadata: {}, connectedAccountVanityMetadataItem: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, connectedAccountVanityMetadataItemIcon: {} };
+obj = { unstable_UserBlockingPriority: 28, h5EvZM: 28, shareInviteFailed: null, 1314542178: "transparent", 140650294: "center", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.connectedAccountVanityMetadataTag = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.paypalVerifiedTag = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };

@@ -1,10 +1,10 @@
-// Module ID: 16208
-// Function ID: 125281
+// Module ID: 16216
+// Function ID: 125323
 // Name: IdentityApplicationRow
 // Dependencies: []
 // Exports: default
 
-// Module 16208 (IdentityApplicationRow)
+// Module 16216 (IdentityApplicationRow)
 function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;

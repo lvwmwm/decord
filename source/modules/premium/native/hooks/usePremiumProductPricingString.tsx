@@ -1,10 +1,10 @@
-// Module ID: 9681
-// Function ID: 75355
+// Module ID: 9682
+// Function ID: 75368
 // Name: usePremiumProductPricingString
 // Dependencies: []
 // Exports: default
 
-// Module 9681 (usePremiumProductPricingString)
+// Module 9682 (usePremiumProductPricingString)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/native/hooks/usePremiumProductPricingString.tsx");
 

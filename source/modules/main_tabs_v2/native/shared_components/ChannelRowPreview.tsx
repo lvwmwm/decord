@@ -1,9 +1,9 @@
-// Module ID: 10242
-// Function ID: 79186
+// Module ID: 10243
+// Function ID: 79199
 // Name: PreviewIcon
 // Dependencies: []
 
-// Module 10242 (PreviewIcon)
+// Module 10243 (PreviewIcon)
 function PreviewIcon(icon) {
   icon = icon.icon;
   let obj = Object.create(null);
@@ -74,7 +74,7 @@ class ChannelRowPreview {
         if ("markup" === type) {
           obj = {};
           tmp7 = jsx;
-          tmp8 = f79192;
+          tmp8 = f79205;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -92,7 +92,7 @@ class ChannelRowPreview {
         }
       }
       obj1 = {};
-      obj2 = { "Null": 7, "Null": 370 };
+      obj2 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
       obj2.minHeight = tmp6;
       obj1.style = obj2;
       tmp12 = arg1;
@@ -114,7 +114,7 @@ class ChannelRowPreview {
       num2 = 1.75;
       obj3.maxFontSizeMultiplier = 1.75;
       obj3.color = color2;
-      obj3.style = { -229529002: "\u{1F4A0}", 67064195: 6 };
+      obj3.style = { -1979162038: "\u{1F4A0}", -655569817: 6 };
       combined = null != authorLabel;
       if (combined) {
         tmp15 = globalThis;
@@ -185,20 +185,21 @@ class NativeChannelRowPreview {
       tmp.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, renderComponents: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true });
       return tmp;
     }, items);
-    obj1 = { i: true, apply: true };
-    obj1.modifyRow = function modifyRow(arg0) {
-      arg0.contextType = callback(seeMoreLabelColor[25]).MessageContextType.SEARCH;
-      if (null != callback) {
-        const obj = { numberOfLines: callback, seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
-        arg0.truncation = obj;
-      }
+    obj1 = {
+      modifyRow(arg0) {
+            arg0.contextType = callback(seeMoreLabelColor[25]).MessageContextType.SEARCH;
+            if (null != callback) {
+              const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, numberOfLines: callback, seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
+              arg0.truncation = obj;
+            }
+          },
+      message,
+      rowGenerator: memo,
+      messageSizeCacheRef,
+      maxHeight,
+      backgroundColor,
+      gradientStyles: global.gradientStyles
     };
-    obj1.message = message;
-    obj1.rowGenerator = memo;
-    obj1.messageSizeCacheRef = messageSizeCacheRef;
-    obj1.maxHeight = maxHeight;
-    obj1.backgroundColor = backgroundColor;
-    obj1.gradientStyles = global.gradientStyles;
     return jsx(closure_1(closure_2[24]), obj1);
   }
 }

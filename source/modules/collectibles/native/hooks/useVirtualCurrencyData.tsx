@@ -1,10 +1,10 @@
-// Module ID: 8759
-// Function ID: 69253
+// Module ID: 8760
+// Function ID: 69265
 // Name: useVirtualCurrencyData
 // Dependencies: []
 // Exports: useVirtualCurrencyData
 
-// Module 8759 (useVirtualCurrencyData)
+// Module 8760 (useVirtualCurrencyData)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
 

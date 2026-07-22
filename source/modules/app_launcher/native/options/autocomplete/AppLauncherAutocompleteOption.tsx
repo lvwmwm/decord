@@ -1,22 +1,22 @@
-// Module ID: 11282
-// Function ID: 87802
+// Module ID: 11283
+// Function ID: 87815
 // Name: AppLauncherAutocompleteOption
 // Dependencies: []
 // Exports: default
 
-// Module 11282 (AppLauncherAutocompleteOption)
+// Module 11283 (AppLauncherAutocompleteOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj = { Mouse: false, filename: false, durationSecs: false, waveform: false, GET_GUILDS: false, EntryPointCommandButtonActions: false, woman_in_lotus_position: false, linkedUsersProcessed: false, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.container = obj;
 obj.hasError = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-const obj2 = { "Null": "center", "Null": "center", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-obj.inputText = obj2;
-let closure_6 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
+obj.inputText = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
+let closure_6 = obj.createStyles(obj);
+const obj2 = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
 
 export default function AppLauncherAutocompleteOption(arg0) {

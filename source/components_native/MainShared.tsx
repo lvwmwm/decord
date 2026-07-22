@@ -1,10 +1,10 @@
-// Module ID: 15467
-// Function ID: 117989
+// Module ID: 15475
+// Function ID: 118032
 // Name: BurstReactionAnimationContainer
 // Dependencies: []
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 15467 (BurstReactionAnimationContainer)
+// Module 15475 (BurstReactionAnimationContainer)
 let closure_3 = importAll(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -45,7 +45,7 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
 };
 export const useAppKeyCommands = function useAppKeyCommands() {
   const memo = React.useMemo(() => {
-    const obj = { borderWidth: 0.1, channel: 0.1, navigationReplace: null };
+    const obj = {};
     if (obj2.isAndroid()) {
       let keyModifierCommand = callback2(closure_2[11]).getConstants().keyModifierCommand;
       const obj3 = callback2(closure_2[11]);

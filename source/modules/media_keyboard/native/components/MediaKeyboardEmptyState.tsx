@@ -1,10 +1,10 @@
-// Module ID: 9668
-// Function ID: 75276
+// Module ID: 9669
+// Function ID: 75289
 // Name: MediaKeyboardEmptyState
 // Dependencies: []
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 9668 (MediaKeyboardEmptyState)
+// Module 9669 (MediaKeyboardEmptyState)
 class MediaKeyboardEmptyState {
   constructor(arg0) {
     ({ actionIcon, actionLabel, actionPress, imageSource, label } = global);
@@ -12,7 +12,9 @@ class MediaKeyboardEmptyState {
     obj = { style: tmp.container };
     items = [, , ];
     items[0] = jsx(Image, { source: imageSource });
-    obj = { style: tmp.label, children: label };
+    obj = { cachedAt: null, edpbxy: null };
+    obj.style = tmp.label;
+    obj.children = label;
     items[1] = jsx(arg1(dependencyMap[6]).Text, obj);
     items[2] = jsx(arg1(dependencyMap[7]).Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
     obj.children = items;
@@ -46,7 +48,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
     if (photoPermissionStatus !== NativePermissionStatus.RESTRICTED) {
       if (photosEmpty.photosEmpty) {
         if (photoPermissionStatus === NativePermissionStatus.LIMITED) {
-          let obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, { "Null": 12, "Null": 4 }) };
+          let obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, {}) };
           const intl3 = arg1(dependencyMap[9]).intl;
           obj.actionLabel = intl3.string(arg1(dependencyMap[9]).t.JuXTi6);
           obj.actionPress = tmp2;
@@ -55,7 +57,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           obj.label = intl4.string(arg1(dependencyMap[9]).t.5g7NcN);
           return callback(MediaKeyboardEmptyState, obj);
         } else if (showCameraButton) {
-          obj = { actionIcon: callback(arg1(dependencyMap[11]).CameraIcon, { "Null": 12, "Null": 4 }) };
+          obj = { actionIcon: callback(arg1(dependencyMap[11]).CameraIcon, {}) };
           const intl = arg1(dependencyMap[9]).intl;
           obj.actionLabel = intl.string(arg1(dependencyMap[9]).t.tpoWUd);
           obj.actionPress = tmp;
@@ -67,7 +69,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
       }
     }
   }
-  obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, { "Null": 12, "Null": 4 }) };
+  obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, {}) };
   const intl5 = arg1(dependencyMap[9]).intl;
   obj.actionLabel = intl5.string(arg1(dependencyMap[9]).t.457oeG);
   obj.actionPress = photosEmpty.onPressPrivacySettings;

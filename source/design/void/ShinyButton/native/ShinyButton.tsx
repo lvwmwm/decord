@@ -1,19 +1,21 @@
-// Module ID: 12876
-// Function ID: 98356
-// Name: ShinyButton
+// Module ID: 12883
+// Function ID: 98389
+// Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 12876 (ShinyButton)
+// Module 12883 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const AppState = arg1(dependencyMap[2]).AppState;
 let closure_6 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[4]).jsx;
+let obj = arg1(dependencyMap[5]);
+obj = { <string:972816388>: false, <string:1067515908>: false, <string:2346385412>: false, <string:959578116>: false, <string:1498480644>: false, <string:2488943158>: false };
 const items = [{ rotate: "30deg" }];
-let closure_8 = arg1(dependencyMap[5]).createStyles({ shinyButton: { overflow: "hidden" }, shineContainer: { "Null": false, "Null": false, "Null": false, "Null": false }, shine: { transform: items }, shineInner: { "Null": -901705261, "Null": 1912602979, "Null": 32 } });
+obj.transform = items;
+let closure_8 = obj.createStyles({ shinyButton: { overflow: "hidden" }, shineContainer: { flex: "HT", backgroundColor: "prefixTag", padding: "values", 242550644: "isArray" }, shine: obj, shineInner: { "Bool(false)": 1682718993, "Bool(false)": 544342017, "Bool(false)": 536870912 } });
 let closure_9 = { code: "function ShinyButtonTsx1(){const{width,OFFSCREEN_OFFSET,withRepeat,withSequence,withTiming,withDelay,INITIAL_ANIMATION_DELAY,ANIMATION_DURATION}=this.__closure;if(width==null){return{transform:[{translateX:-OFFSCREEN_OFFSET}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-OFFSCREEN_OFFSET,{duration:0},'animate-always'),withDelay(INITIAL_ANIMATION_DELAY,withTiming(width+OFFSCREEN_OFFSET,{duration:ANIMATION_DURATION},'animate-always'))),-1)}]};}" };
-const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/ShinyButton/native/ShinyButton.tsx");
 
 export default function ShinyButton(disabled) {
@@ -26,7 +28,7 @@ export default function ShinyButton(disabled) {
   }
   const dependencyMap = shineDisabled;
   ({ shineStyle: closure_3, shineInnerStyle: closure_4 } = disabled);
-  let obj = { setShouldFixPushNotificationRawPayload: true, SHOP_HOME_FETCH_STARTED: true, gameTitle: true, handleAFKTimeoutChange: true, ANSWER_FILE_NAME: true, interpolate: true };
+  let obj = { "Bool(false)": "Text", "Bool(false)": "resizeMode", "Bool(false)": "from", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(disabled, obj);
   let AppState;

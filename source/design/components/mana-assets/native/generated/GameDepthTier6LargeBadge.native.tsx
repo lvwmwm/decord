@@ -1,5 +1,5 @@
 // Module ID: 6093
-// Function ID: 50061
+// Function ID: 50072
 // Name: GameDepthTier6LargeBadge
 // Dependencies: []
 // Exports: GameDepthTier6LargeBadge

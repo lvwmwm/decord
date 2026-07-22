@@ -1,16 +1,14 @@
-// Module ID: 15659
-// Function ID: 119650
+// Module ID: 15667
+// Function ID: 119693
 // Name: useCanInviteMembers
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: useCanInviteMembers
 
-// Module 15659 (useCanInviteMembers)
-import closure_2 from "result";
-import closure_3 from "result";
-import { Permissions } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("modules/voice_panel/native/hooks/useCanInviteMembers.tsx");
+// Module 15667 (useCanInviteMembers)
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+const Permissions = arg1(dependencyMap[2]).Permissions;
+const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/voice_panel/native/hooks/useCanInviteMembers.tsx");
 
 export const useCanInviteMembers = function useCanInviteMembers(channelId) {
   const arg1 = channelId;

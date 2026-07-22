@@ -1,10 +1,10 @@
-// Module ID: 10847
-// Function ID: 84280
+// Module ID: 10848
+// Function ID: 84293
 // Name: openMediaModalOverlayAltTextSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10847 (openMediaModalOverlayAltTextSheet)
+// Module 10848 (openMediaModalOverlayAltTextSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/media_viewer/native/components/overlay/openMediaModalOverlayAltTextSheet.tsx");
 

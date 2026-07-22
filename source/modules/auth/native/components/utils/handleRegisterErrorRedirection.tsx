@@ -1,10 +1,10 @@
-// Module ID: 14656
-// Function ID: 110529
+// Module ID: 14664
+// Function ID: 110572
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14656 (_createForOfIteratorHelperLoose)
+// Module 14664 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -104,7 +104,7 @@ function getRedirectStepForErrorKey(value) {
 const _module = require(dependencyMap[0]);
 ({ RegisterTransitionSteps: closure_3, RegistrationTransitionActionTypes: closure_4, authStateToRegisterTransitionStep: closure_5 } = _module);
 const AbortCodes = require(dependencyMap[1]).AbortCodes;
-let closure_7 = { [require(dependencyMap[2]).AuthStates.REGISTER_IDENTITY]: [null, null], [require(dependencyMap[2]).AuthStates.REGISTER_DISPLAY_NAME]: [], [require(dependencyMap[2]).AuthStates.REGISTER_ACCOUNT_INFORMATION]: ["<string:1121381862>", "purity"] };
+let closure_7 = { [require(dependencyMap[2]).AuthStates.REGISTER_IDENTITY]: [null, null], [require(dependencyMap[2]).AuthStates.REGISTER_DISPLAY_NAME]: [], [require(dependencyMap[2]).AuthStates.REGISTER_ACCOUNT_INFORMATION]: [] };
 const _module1 = require(dependencyMap[6]);
 const result = _module1.fileFinishedImporting("modules/auth/native/components/utils/handleRegisterErrorRedirection.tsx");
 
@@ -178,5 +178,5 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code, ste
   }
   obj = { step: constants.AGE_GATE_UNDERAGE, actionType: constants2.VIEWED };
   arg1(obj);
-  navigate.push(require(dependencyMap[2]).AuthStates.AGE_GATE_UNDERAGE, { trackForumPostLinkCopied: null, strokeContainer: null });
+  navigate.push(require(dependencyMap[2]).AuthStates.AGE_GATE_UNDERAGE, { -1395348308: null, 1454072419: null });
 };

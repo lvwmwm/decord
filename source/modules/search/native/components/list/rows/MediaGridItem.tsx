@@ -1,8 +1,8 @@
-// Module ID: 15234
-// Function ID: 115019
+// Module ID: 15242
+// Function ID: 115062
 // Dependencies: []
 
-// Module 15234
+// Module 15242
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Pressable: closure_5, useWindowDimensions: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const tmp3 = arg1(dependencyMap[4]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, overflow: "hidden", backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.container = obj;
-obj.avatar = { "Bool(false)": "isArray", "Bool(false)": "Text", "Bool(false)": "marginTop" };
+obj.avatar = { convertShortcutToName: "Array", hasUnreadMessages: "parseSemver", CreatorMonetizationRestrictions: "Array" };
 obj.card = { padding: 0 };
 let closure_11 = arg1(dependencyMap[5]).createStyles(obj);
 let closure_12 = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };

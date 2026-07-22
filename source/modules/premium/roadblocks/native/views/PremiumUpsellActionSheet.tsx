@@ -1,7 +1,7 @@
 // Module ID: 7944
-// Function ID: 63378
+// Function ID: 63388
 // Name: getPageContent
-// Dependencies: [4581, 7945, 668, 44, 2, 57, 31, 3780, 6683, 1851, 653, 5462, 6656, 4447, 7369, 3828, 1212, 3987, 2, 31, 27, 6666, 33, 4126, 689, 4550, 668, 4124, 1212, 2, 57, 6, 7, 15, 17, 18, 31, 27, 1280, 1849, 653, 7955, 1851, 33, 4126, 689, 4124, 3840, 6681]
+// Dependencies: [4581, 7945, 668, 44, 2, 57, 31, 3780, 6683, 1851, 653, 5461, 6656, 4447, 7369, 3828, 1212, 3987, 2, 31, 27, 6666, 33, 4126, 689, 4550, 668, 4124, 1212, 2, 57, 6, 7, 15, 17, 18, 31, 27, 1280, 1849, 653, 7955, 1851, 33, 4126, 689, 4124, 3840, 6681]
 // Exports: default
 
 // Module 7944 (getPageContent)
@@ -43,7 +43,7 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
     tmp4 = null;
     if (!isKestrelTreatment.isKestrelTreatment) {
       obj = { style: tmp.compressionContainer };
-      obj = { bind: null, cursor: null };
+      obj = { 400888199: null, 2091392542: null };
       const intl = arg1(dependencyMap[19]).intl;
       obj.label = intl.string(arg1(dependencyMap[19]).t.ix8XIj);
       obj.value = stateFromStores;
@@ -80,9 +80,9 @@ function PremiumUpsellImage(arg0) {
 ({ AnalyticEvents: closure_14, AnalyticsPages: closure_15, HelpdeskArticles: closure_16, ThemeTypes: closure_17 } = GuildFeatures);
 ({ Fragment: closure_19, jsx: closure_20, jsxs: closure_21 } = mergeLocations);
 openPremiumPlanSelectionActionSheet = {};
-openPremiumPlanSelectionActionSheet = { FR: true, FM: true, GA: true, GB: true, marginTop: require("_deletePaymentSource").space.PX_16 };
+openPremiumPlanSelectionActionSheet = { <string:1399339306>: 3269969498803617500000000000000000000000000000000000000, <string:437651937>: "Array", <string:293549200>: "isArray", <string:293278058>: "constructor", marginTop: require("_deletePaymentSource").space.PX_16 };
 openPremiumPlanSelectionActionSheet.image = openPremiumPlanSelectionActionSheet;
-openPremiumPlanSelectionActionSheet.text = { body: null, ctaLabel: null };
+openPremiumPlanSelectionActionSheet.text = { lottieComponent: null, GiftBackgroundSelect: null };
 openPremiumPlanSelectionActionSheet.betaTag = { marginLeft: 0 };
 openPremiumPlanSelectionActionSheet.description = { marginHorizontal: require("_deletePaymentSource").space.PX_16 };
 const obj1 = { marginHorizontal: require("_deletePaymentSource").space.PX_16 };
@@ -295,7 +295,7 @@ export default function PremiumUpsellActionSheet(arg0) {
         const tmp41 = importDefault(dependencyMap[44]);
       }
       const items6 = [tmp37, , ];
-      obj3 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, style: tmp.text, children: tmp11.title };
+      obj3 = { vy: false, numberActiveTouches: false, _accountsForMovesUpTo: false, style: tmp.text, children: tmp11.title };
       items6[1] = callback2(arg1(dependencyMap[30]).Text, obj3);
       obj4 = {};
       const items7 = [, ];

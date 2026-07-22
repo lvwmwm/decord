@@ -1,9 +1,9 @@
-// Module ID: 14503
-// Function ID: 109164
+// Module ID: 14511
+// Function ID: 109207
 // Name: messagesProxy
 // Dependencies: []
 
-// Module 14503 (messagesProxy)
+// Module 14511 (messagesProxy)
 const _module = require(dependencyMap[32]);
 const loader = _module.createLoader({
   bg() {

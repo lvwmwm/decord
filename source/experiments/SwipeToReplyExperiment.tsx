@@ -1,10 +1,10 @@
-// Module ID: 10439
-// Function ID: 80573
+// Module ID: 10440
+// Function ID: 80586
 // Name: useIsMessageSwipeActionsEnabled
 // Dependencies: []
 // Exports: useIsMessageSwipeActionsEnabled
 
-// Module 10439 (useIsMessageSwipeActionsEnabled)
+// Module 10440 (useIsMessageSwipeActionsEnabled)
 const LaunchPadTypes = require(dependencyMap[0]).LaunchPadTypes;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("experiments/SwipeToReplyExperiment.tsx");

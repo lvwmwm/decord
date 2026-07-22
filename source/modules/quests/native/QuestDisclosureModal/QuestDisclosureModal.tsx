@@ -1,10 +1,10 @@
-// Module ID: 13884
-// Function ID: 105027
+// Module ID: 13891
+// Function ID: 105067
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 13884 (CloseButton)
+// Module 13891 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[2]),

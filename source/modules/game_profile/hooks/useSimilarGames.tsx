@@ -1,10 +1,10 @@
-// Module ID: 11839
-// Function ID: 91769
+// Module ID: 11840
+// Function ID: 91783
 // Name: useSimilarGames
 // Dependencies: []
 // Exports: default
 
-// Module 11839 (useSimilarGames)
+// Module 11840 (useSimilarGames)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).SIMILAR_GAMES_BLOCKED_GAME_IDS;

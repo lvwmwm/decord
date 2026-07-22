@@ -1,10 +1,10 @@
-// Module ID: 9801
-// Function ID: 76106
+// Module ID: 9802
+// Function ID: 76119
 // Name: GiftingBadgeLevelUpProgress
 // Dependencies: []
 // Exports: default
 
-// Module 9801 (GiftingBadgeLevelUpProgress)
+// Module 9802 (GiftingBadgeLevelUpProgress)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).getSingleRequirementThreshold;
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[5]).space.PX_4, width: "100%" };
 obj.container = obj;
-const obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_8 };
+const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_8 };
 obj.barRow = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.progressBarTrack = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL };

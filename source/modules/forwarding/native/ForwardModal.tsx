@@ -1,10 +1,10 @@
-// Module ID: 9866
-// Function ID: 76390
+// Module ID: 9867
+// Function ID: 76403
 // Name: ForwardModal
 // Dependencies: []
 // Exports: default
 
-// Module 9866 (ForwardModal)
+// Module 9867 (ForwardModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -21,8 +21,8 @@ let obj = arg1(dependencyMap[12]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingVertical: importDefault(dependencyMap[13]).space.PX_8, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.headerContainer = obj;
-obj.header = { 1370382596: false, -865629095: false, -1428639508: false };
-const obj1 = { "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.header = {};
+const obj1 = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj1;
 let closure_16 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[11]);

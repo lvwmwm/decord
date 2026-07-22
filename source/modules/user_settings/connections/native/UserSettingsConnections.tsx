@@ -1,10 +1,10 @@
-// Module ID: 13740
-// Function ID: 103916
+// Module ID: 13747
+// Function ID: 103949
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
 // Dependencies: []
 // Exports: UserSettingsConnections
 
-// Module 13740 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 13747 (ADD_CONNECTIONS_SHEET_SENTINEL)
 let closure_3 = importAll(dependencyMap[0]);
 const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
 let closure_5 = importDefault(dependencyMap[2]);

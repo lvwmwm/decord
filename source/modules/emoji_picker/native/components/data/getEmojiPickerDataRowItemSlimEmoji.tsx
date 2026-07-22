@@ -1,13 +1,12 @@
-// Module ID: 9354
-// Function ID: 73019
+// Module ID: 9355
+// Function ID: 73032
 // Name: getEmojiPickerDataRowItemSlimEmoji
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 9354 (getEmojiPickerDataRowItemSlimEmoji)
-import result from "result";
-
-result = result.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemSlimEmoji.tsx");
+// Module 9355 (getEmojiPickerDataRowItemSlimEmoji)
+const _module = require(dependencyMap[2]);
+const result = _module.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemSlimEmoji.tsx");
 
 export default function getEmojiPickerDataRowItemSlimEmoji(isSectionNitroLocked) {
   const require = isSectionNitroLocked;

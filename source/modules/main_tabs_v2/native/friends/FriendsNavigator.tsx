@@ -1,10 +1,10 @@
-// Module ID: 15308
-// Function ID: 116429
+// Module ID: 15316
+// Function ID: 116472
 // Name: RequestsSettingsModalButton
 // Dependencies: []
 // Exports: default
 
-// Module 15308 (RequestsSettingsModalButton)
+// Module 15316 (RequestsSettingsModalButton)
 function RequestsSettingsModalButton(onPress) {
   let obj = { isModal: true };
   obj = { source: importDefault(dependencyMap[8]), onPress: onPress.onPress };
@@ -215,7 +215,7 @@ let obj1 = arg1(dependencyMap[4]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-obj1 = { MIN_SWIPE_VELOCITY: null, USER_SAFETY_TOOLS_UNBLOCK: "c7e2eadc5cd55417a6c70f428f65fac7", routingFailures: "SlashIcon", backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj1 = { isArray: null, surrogates: "c7e2eadc5cd55417a6c70f428f65fac7", withSpring: "SlashIcon", backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.header = obj1;
 let closure_8 = obj1.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

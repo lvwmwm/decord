@@ -1,5 +1,5 @@
 // Module ID: 4584
-// Function ID: 40180
+// Function ID: 40188
 // Name: staticRouteToTranslation
 // Dependencies: []
 // Exports: staticRouteToItemString, staticRouteToTranslation

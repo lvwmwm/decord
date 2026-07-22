@@ -1,9 +1,9 @@
-// Module ID: 5658
-// Function ID: 48575
+// Module ID: 5657
+// Function ID: 48583
 // Name: validateGuildId
 // Dependencies: []
 
-// Module 5658 (validateGuildId)
+// Module 5657 (validateGuildId)
 function validateGuildId(arg0) {
   let tmp = null != arg0;
   if (tmp) {

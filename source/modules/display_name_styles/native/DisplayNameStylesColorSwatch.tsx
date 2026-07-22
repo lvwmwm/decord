@@ -1,17 +1,17 @@
-// Module ID: 13466
-// Function ID: 102236
+// Module ID: 13473
+// Function ID: 102269
 // Name: DisplayNameStylesColorSwatch
 // Dependencies: []
 // Exports: default
 
-// Module 13466 (DisplayNameStylesColorSwatch)
+// Module 13473 (DisplayNameStylesColorSwatch)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[3]).radii.xs };
 obj.colorSwatch = obj;
-obj.gummySwatch = { "Null": null, "Null": null };
+obj.gummySwatch = { "Bool(false)": true, "Bool(false)": true };
 let closure_5 = _module.createStyles(obj);
 const _module1 = require(dependencyMap[8]);
 const result = _module1.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx");
@@ -31,7 +31,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
     }
   }
   if (colors.length >= 2) {
-    const obj1 = { colors: colors.map((color) => callback(closure_2[7]).int2hex(color)), start: {}, end: {}, style: tmp.colorSwatch };
+    const obj1 = { colors: colors.map((color) => callback(closure_2[7]).int2hex(color)), start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, style: tmp.colorSwatch };
     return jsx(importDefault(dependencyMap[6]), obj1);
   } else {
     let str = "#000000";

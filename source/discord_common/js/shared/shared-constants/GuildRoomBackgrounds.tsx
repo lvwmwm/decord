@@ -1,9 +1,9 @@
-// Module ID: 15930
-// Function ID: 122198
+// Module ID: 15938
+// Function ID: 122241
 // Name: GuildRoomBackgrounds
 // Dependencies: []
 
-// Module 15930 (GuildRoomBackgrounds)
+// Module 15938 (GuildRoomBackgrounds)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildRoomBackgrounds.tsx");
 

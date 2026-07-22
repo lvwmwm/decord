@@ -1,13 +1,9 @@
 // Module ID: 6980
-// Function ID: 55794
+// Function ID: 55805
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: []
 
 // Module 6980 (_createForOfIteratorHelperLoose)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
-
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -87,9 +83,9 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-result = result.fileFinishedImporting("lib/Histogram.tsx");
-
-export const Histogram = () => {
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+const tmp2 = () => {
   class Histogram {
     constructor() {
       tmp = closure_2(this, Histogram);
@@ -218,3 +214,6 @@ export const Histogram = () => {
   };
   return callback(Histogram, items);
 }();
+const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/Histogram.tsx");
+
+export const Histogram = tmp2;

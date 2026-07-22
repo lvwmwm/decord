@@ -1,27 +1,26 @@
-// Module ID: 16154
-// Function ID: 124522
+// Module ID: 16162
+// Function ID: 124564
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 16154 (GuildSettingsServerTagBadgeGrid)
-import result from "result";
-import { GuildTagBadgeSize } from "result";
-import result from "result";
-
+// Module 16162 (GuildSettingsServerTagBadgeGrid)
 let closure_3 = importAll(dependencyMap[0]);
-({ Pressable: closure_4, View: closure_5 } = result);
-({ jsx: closure_7, jsxs: closure_8 } = result);
+({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
+const GuildTagBadgeSize = arg1(dependencyMap[2]).GuildTagBadgeSize;
+const tmp2 = arg1(dependencyMap[1]);
+({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[5]);
 obj = { grid: obj };
-obj = { -9223372036854775808: null, 7741: null, gap: importDefault(dependencyMap[4]).space.PX_8 };
-const obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { "Bool(true)": null, "Bool(true)": null, gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.upsellCard = obj1;
-const obj2 = { "Null": "selectedOptions", "Null": "ary", "Null": "SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_FRIENDS", gap: importDefault(dependencyMap[4]).space.PX_4 };
+const obj2 = { label: "Text", variant: "HTTP", onPress: "accessibilityRole", gap: importDefault(dependencyMap[4]).space.PX_4 };
 obj.upsellPreview = obj2;
 obj.upsellText = { flex: 1 };
 let closure_9 = obj.createStyles(obj);
-result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagBadgeGrid.tsx");
+const tmp3 = arg1(dependencyMap[3]);
+const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagBadgeGrid.tsx");
 
 export default function GuildSettingsServerTagBadgeGrid(guildId) {
   let lockedBadges;
@@ -36,7 +35,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     callback(closure_2[7])({ guildId, autoOpenPerkId: "guildTagsBadgePacks" });
   }, items);
   let obj = { spacing: importDefault(dependencyMap[4]).space.PX_8 };
-  obj = { handleMessageFocus: true, enableHome: "md", afterMs: "secondary" };
+  obj = { gauge: 3, onLayerLoaded: null, ExpressiveGradient: true };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.wRnfnY);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj), , ];
@@ -70,7 +69,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     const substr = lockedBadges.slice(0, 10);
     obj2.children = substr.map((badge) => callback2(guildId(closure_2[13]).GuildBadge, { badge: badge.kind }, badge.kind));
     const items2 = [callback(closure_5, obj2), , ];
-    const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.upsellText };
+    const obj3 = { cachedAt: 3, edpbxy: null, style: tmp.upsellText };
     const intl3 = arg1(dependencyMap[10]).intl;
     obj3.children = intl3.string(arg1(dependencyMap[10]).t.U5p3GZ);
     items2[1] = callback(arg1(dependencyMap[9]).Text, obj3);

@@ -1,15 +1,17 @@
-// Module ID: 15924
-// Function ID: 122088
+// Module ID: 15932
+// Function ID: 122131
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 15924 (_isNativeReflectConstruct)
-import result from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
+// Module 15932 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import closure_11 from "__exportStarResult1";
+import closure_12 from "__exportStarResult1";
+import closure_13 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -35,12 +37,10 @@ function handleSelectedChannelStoreChange() {
 function handleNoteCreateComplete(arg0) {
   delete r0[r1];
 }
-let closure_2 = [false, false];
-let closure_3 = [false, false];
-let closure_4 = [null];
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
+let closure_2 = [null, null];
+let closure_3 = [null, null];
+let closure_4 = [];
+let closure_5 = importDefault(dependencyMap[0]);
 const map = new Map();
 let obj = {};
 let closure_16 = [];
@@ -57,7 +57,7 @@ let tmp5 = (Store) => {
   class GuildRoomStore {
     constructor() {
       self = this;
-      tmp = result(this, GuildRoomStore);
+      tmp = closure_5(this, GuildRoomStore);
       obj = closure_8(GuildRoomStore);
       tmp2 = closure_7;
       if (closure_26()) {
@@ -157,7 +157,7 @@ let tmp5 = (Store) => {
     }
   };
   return callback(GuildRoomStore, items);
-}(importDefault(dependencyMap[10]).Store);
+}(require("__exportStarResult1").Store);
 obj = {
   GUILD_ROOM_CONNECT: function handleConnect(room) {
     let objects;
@@ -338,8 +338,8 @@ obj = {
   GUILD_ROOM_PENDING_NOTE_DELETE: handleNoteCreateComplete,
   GUILD_ROOM_NOTE_CREATE_COMPLETE: handleNoteCreateComplete
 };
-tmp5 = new tmp5(importDefault(dependencyMap[11]), obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_rooms/GuildRoomStore.tsx");
+tmp5 = new tmp5(require("__exportStarResult1"), obj);
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_rooms/GuildRoomStore.tsx");
 
 export default tmp5;
 export const DEFAULT_ROOM = obj;

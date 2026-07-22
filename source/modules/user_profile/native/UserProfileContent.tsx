@@ -1,9 +1,9 @@
-// Module ID: 11970
-// Function ID: 92507
+// Module ID: 11971
+// Function ID: 92521
 // Name: CustomStatusBubble
 // Dependencies: []
 
-// Module 11970 (CustomStatusBubble)
+// Module 11971 (CustomStatusBubble)
 function CustomStatusBubble(guildId) {
   let bubbleRef;
   let customStatusActivity;
@@ -84,7 +84,7 @@ function RemoveFriendIconButton(user) {
   importDefault = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   dependencyMap = importDefault(dependencyMap[23])().newestAnalyticsLocation;
   let closure_3 = importDefault(dependencyMap[25]).useName(user);
-  obj = { icon: callback2(arg1(dependencyMap[27]).UserCheckIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
+  obj = { icon: callback2(arg1(dependencyMap[27]).UserCheckIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) };
   const intl = arg1(dependencyMap[28]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[28]).t.cvSt1J);
   obj.onPress = function onPress() {
@@ -107,7 +107,7 @@ function RemoveGameFriendIconButton(user) {
     obj = { user, guildId, channelId };
     obj.openLazy(user(channelId[19])(channelId[30], channelId.paths), "UserProfileGameFriendActionSheet", obj, "stack");
   }, items);
-  const obj = { icon: callback2(arg1(dependencyMap[31]).UserPlatformIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
+  const obj = { icon: callback2(arg1(dependencyMap[31]).UserPlatformIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) };
   const intl = arg1(dependencyMap[28]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[28]).t.cvSt1J);
   obj.onPress = callback;
@@ -1009,7 +1009,7 @@ const memoResult = importAllResult.memo(function UserProfileContent(user) {
       id3 = stateFromStores2;
       id3 = navigateToShop;
       const obj30 = { ref: ref1 };
-      const obj31 = { 9223372036854775807: null, 9223372036854775807: 4, 0: 4, 0: 10, 9223372036854775807: 8 };
+      const obj31 = {};
       id3 = globalThis;
       const _Math = Math;
       obj31.left = `${Math.max(wishlistTabIndex, 0) / arr18.length * 100}%`;

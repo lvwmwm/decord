@@ -1,13 +1,12 @@
-// Module ID: 10928
-// Function ID: 84957
+// Module ID: 10929
+// Function ID: 84970
 // Name: setBuildOverrideForBranch
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 10928 (setBuildOverrideForBranch)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
+// Module 10929 (setBuildOverrideForBranch)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
 function setBuildOverrideForBranch(id) {
   setBuildOverride({ type: "branch", id });
@@ -46,7 +45,8 @@ let str = "discord_ios";
 if (obj.isAndroid()) {
   str = "discord_android";
 }
-result = result.fileFinishedImporting("modules/build_overrides/native/BuildOverrideUtils.tsx");
+const obj = arg1(dependencyMap[2]);
+const result = require("__exportStarResult1").fileFinishedImporting("modules/build_overrides/native/BuildOverrideUtils.tsx");
 
 export const DEVICE_FIELD = str;
 export { setBuildOverrideForBranch };

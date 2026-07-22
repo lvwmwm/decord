@@ -143,7 +143,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                         ({ method: obj2.method, url: obj2.url } = tmp8);
                         obj.status_code = status_code;
                         obj = { xhr: xhr.xhr, input: tmp8.body, startTimestamp, endTimestamp };
-                        const obj1 = { data: obj, level: xhr(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(status_code) };
+                        const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, data: obj, level: xhr(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(status_code) };
                         xhr.emit("beforeOutgoingRequestBreadcrumb", obj1, obj);
                         const obj5 = xhr(closure_1[0]);
                         xhr(closure_1[0]).addBreadcrumb(obj1, obj);
@@ -192,7 +192,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                           status = response.status;
                         }
                         const obj2 = { input: fetchData.args, response, startTimestamp, endTimestamp };
-                        const obj3 = { "Bool(true)": 0.4, "Bool(true)": "image/webp", "Bool(true)": 0.5, data: merged, level: fetchData(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(merged.status_code) };
+                        const obj3 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, data: merged, level: fetchData(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(merged.status_code) };
                         fetchData.emit("beforeOutgoingRequestBreadcrumb", obj3, obj2);
                         const obj5 = fetchData(closure_1[0]);
                         fetchData(closure_1[0]).addBreadcrumb(obj3, obj2);

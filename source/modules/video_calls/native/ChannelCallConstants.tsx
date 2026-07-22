@@ -1,9 +1,9 @@
-// Module ID: 10198
-// Function ID: 78736
+// Module ID: 10199
+// Function ID: 78749
 // Name: BOX_MODE_ACTIONSHEET_WIDTH
 // Dependencies: []
 
-// Module 10198 (BOX_MODE_ACTIONSHEET_WIDTH)
+// Module 10199 (BOX_MODE_ACTIONSHEET_WIDTH)
 const items = [, , , ];
 ({ TOP_LEFT: arr[0], TOP_RIGHT: arr[1], BOTTOM_LEFT: arr[2], BOTTOM_RIGHT: arr[3] } = require(dependencyMap[0]).PictureInPicturePositions);
 const _module = require(dependencyMap[1]);

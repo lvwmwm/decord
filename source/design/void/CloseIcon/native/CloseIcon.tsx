@@ -1,10 +1,10 @@
-// Module ID: 12880
-// Function ID: 98369
+// Module ID: 12887
+// Function ID: 98402
 // Name: Close
 // Dependencies: []
 // Exports: default
 
-// Module 12880 (Close)
+// Module 12887 (Close)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/void/CloseIcon/native/CloseIcon.tsx");
@@ -22,7 +22,7 @@ export default function Close(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, -9223372036854775808: false };
+  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   obj = {};

@@ -1,9 +1,9 @@
-// Module ID: 14237
-// Function ID: 107601
+// Module ID: 14245
+// Function ID: 107644
 // Name: NitroUpsellButton
 // Dependencies: []
 
-// Module 14237 (NitroUpsellButton)
+// Module 14245 (NitroUpsellButton)
 function NitroUpsellButton() {
   const tmp = callback2();
   const arg1 = tmp;
@@ -12,15 +12,14 @@ function NitroUpsellButton() {
   const dependencyMap = obj;
   obj = {
     onPress() {
-      let obj = analyticsLocations(obj[12]);
-      obj = { analyticsLocation: obj, analyticsLocations };
-      const tmp = tmp(obj[14])(obj[13], obj.paths);
-      obj.premiumFeatureCardOrder = tmp(obj[15]).PremiumFeatureCardOrder.TIER_2_LEADING;
-      obj.pushLazy(tmp, obj);
+      const obj = { analyticsLocation: obj, analyticsLocations };
+      const tmp = analyticsLocations(obj[12]);
+      obj.premiumFeatureCardOrder = tmp(obj[13]).PremiumFeatureCardOrder.TIER_2_LEADING;
+      tmp(obj);
     }
   };
-  const intl = arg1(dependencyMap[16]).intl;
-  obj.text = intl.string(arg1(dependencyMap[16]).t.M0rDSO);
+  const intl = arg1(dependencyMap[14]).intl;
+  obj.text = intl.string(arg1(dependencyMap[14]).t.M0rDSO);
   obj.textStyle = tmp.buttonText;
   obj.renderRightIcon = function renderRightIcon() {
     const obj = { style: tmp.nitroWheel };
@@ -29,9 +28,9 @@ function NitroUpsellButton() {
   obj.color = arg1(dependencyMap[11]).Button.Colors.TRANSPARENT;
   obj.renderLinearGradient = function renderLinearGradient() {
     const obj = { style: tmp.linearGradient };
-    const tmp = analyticsLocations(obj[17]);
-    obj.start = tmp(obj[18]).HorizontalGradient.START;
-    obj.end = tmp(obj[18]).HorizontalGradient.END;
+    const tmp = analyticsLocations(obj[15]);
+    obj.start = tmp(obj[16]).HorizontalGradient.START;
+    obj.end = tmp(obj[16]).HorizontalGradient.END;
     obj.colors = obj.PREMIUM_TIER_2_TRI_COLOR;
     return callback(tmp, obj);
   };
@@ -61,13 +60,13 @@ const memoResult = importAllResult.memo(() => {
     const _onSelect = obj;
     return obj(...arguments);
   }
-  let obj = arg1(dependencyMap[19]);
+  let obj = arg1(dependencyMap[17]);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const arg1 = stateFromStores;
-  let obj1 = arg1(dependencyMap[20]);
+  let obj1 = arg1(dependencyMap[18]);
   const importDefault = obj1.useCurrentAppIcon();
-  let obj2 = arg1(dependencyMap[21]);
+  let obj2 = arg1(dependencyMap[19]);
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const dependencyMap = isPremiumResult;
   obj = {};
@@ -78,9 +77,9 @@ const memoResult = importAllResult.memo(() => {
       return _onSelect(...arguments);
     }
   };
-  obj1.children = callback(importDefault(dependencyMap[25]), obj2);
+  obj1.children = callback(importDefault(dependencyMap[23]), obj2);
   obj.children = callback(View, obj1);
-  const items1 = [callback(arg1(dependencyMap[24]).Form, obj), ];
+  const items1 = [callback(arg1(dependencyMap[22]).Form, obj), ];
   let tmp6 = !isPremiumResult;
   if (tmp6) {
     const obj3 = { style: tmp.upsellButtonContainer, children: callback(NitroUpsellButton, {}) };
@@ -90,6 +89,6 @@ const memoResult = importAllResult.memo(() => {
   obj.children = items1;
   return closure_12(closure_11, obj);
 });
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/user_settings/app_icon/native/UserSettingsAppIcons.tsx");
+const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/user_settings/app_icon/native/UserSettingsAppIcons.tsx");
 
 export default memoResult;

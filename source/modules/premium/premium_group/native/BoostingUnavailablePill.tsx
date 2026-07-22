@@ -1,10 +1,10 @@
-// Module ID: 12326
-// Function ID: 94404
+// Module ID: 12331
+// Function ID: 94432
 // Name: handlePress
 // Dependencies: []
 // Exports: default
 
-// Module 12326 (handlePress)
+// Module 12331 (handlePress)
 function handlePress() {
   let obj = importDefault(dependencyMap[5]);
   obj = {};
@@ -21,7 +21,7 @@ const _module1 = require(dependencyMap[3]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.premiumGroupBanner = obj;
-obj.pgUnavailable = { "Bool(true)": "values", "Bool(true)": "Array" };
+obj.pgUnavailable = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
 obj.pgUnavailableText = { textAlign: "center" };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[11]);

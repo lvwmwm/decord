@@ -1,5 +1,5 @@
 // Module ID: 7851
-// Function ID: 62588
+// Function ID: 62598
 // Name: useCollectiblesData
 // Dependencies: []
 // Exports: default

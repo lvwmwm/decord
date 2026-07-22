@@ -1,10 +1,10 @@
-// Module ID: 11293
-// Function ID: 87876
+// Module ID: 11294
+// Function ID: 87889
 // Name: getRoleColor
 // Dependencies: []
 // Exports: default
 
-// Module 11293 (getRoleColor)
+// Module 11294 (getRoleColor)
 function getRoleColor(role) {
   return null != role.colorString ? role.colorString : DEFAULT_ROLE_COLOR_HEX;
 }
@@ -61,8 +61,7 @@ class RoleRow {
     }, items1);
     tmp6 = jsx;
     obj1 = {};
-    obj2 = { "Null": true, "Null": 15.1, "Null": 253 };
-    obj2.children = guildRole.name;
+    obj2 = { children: guildRole.name };
     obj1.label = jsx(arg1(dependencyMap[12]).Text, obj2);
     obj1.icon = jsx(RoleIcon, { role: guildRole });
     tmp7 = null;
@@ -72,7 +71,7 @@ class RoleRow {
         tmp8 = jsxs;
         tmp9 = arg1;
         tmp10 = dependencyMap;
-        obj3 = {};
+        obj3 = { cachedAt: 400, edpbxy: 20 };
         tmp11 = jsx;
         num = 13;
         items2 = [, , ];
@@ -137,7 +136,7 @@ export default function AppLauncherRoleListActionSheet(channel) {
       callback2(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
+        current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
       }
     }
   };

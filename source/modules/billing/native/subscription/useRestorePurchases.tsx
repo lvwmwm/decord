@@ -1,10 +1,10 @@
-// Module ID: 13978
-// Function ID: 106215
+// Module ID: 13985
+// Function ID: 106255
 // Name: useRestorePurchases
 // Dependencies: []
 // Exports: default
 
-// Module 13978 (useRestorePurchases)
+// Module 13985 (useRestorePurchases)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

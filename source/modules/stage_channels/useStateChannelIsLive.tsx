@@ -1,5 +1,5 @@
 // Module ID: 7475
-// Function ID: 60002
+// Function ID: 60013
 // Name: useStageChannelIsLive
 // Dependencies: []
 // Exports: default

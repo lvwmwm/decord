@@ -1,12 +1,13 @@
 // Module ID: 7237
-// Function ID: 58264
+// Function ID: 58275
 // Name: addNonEnumerableProperty
 // Dependencies: []
 // Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify, urlEncode
 
 // Module 7237 (addNonEnumerableProperty)
 function addNonEnumerableProperty(arg0, arg1, value) {
-  Object.defineProperty(arg0, arg1, { value });
+  const obj = { "": null, children: null, "": null, value };
+  Object.defineProperty(arg0, arg1, obj);
 }
 function markFunctionWrapped(arg0, arg1) {
   const prototype = arg1.prototype;

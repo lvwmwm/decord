@@ -1,5 +1,5 @@
 // Module ID: 7480
-// Function ID: 60048
+// Function ID: 60059
 // Name: RowType
 // Dependencies: []
 // Exports: getChannelPermissionSpecMap

@@ -1,10 +1,10 @@
-// Module ID: 13703
-// Function ID: 103679
+// Module ID: 13710
+// Function ID: 103712
 // Name: FamilyCenterModalDisconnectScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13703 (FamilyCenterModalDisconnectScreen)
+// Module 13710 (FamilyCenterModalDisconnectScreen)
 function FamilyCenterModalDisconnectScreen(otherUser) {
   let tmp8;
   otherUser = otherUser.otherUser;
@@ -88,7 +88,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   const intl11 = arg1(dependencyMap[10]).intl;
   obj3.children = intl11.format(importDefault(dependencyMap[13]).o0JXuK, { username: name });
   items3[1] = callback2(arg1(dependencyMap[18]).Text, obj3);
-  obj4 = { delete: false, dispatch: false, raw: false, style: tmp.subtitle, children: ageSpecificText };
+  obj4 = { "Null": "absolute", "Null": "100%", alignItems: 440, style: tmp.subtitle, children: ageSpecificText };
   items3[2] = callback2(arg1(dependencyMap[18]).Text, obj4);
   obj1.children = items3;
   const items4 = [callback3(View, obj1), , , ];
@@ -97,7 +97,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
     requiresParentalConsent = callback2(importDefault(dependencyMap[19]), obj5);
   }
   items4[1] = requiresParentalConsent;
-  obj6 = { delete: null, dispatch: 1, raw: 1, style: tmp.body, children: ageSpecificText2 };
+  obj6 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.body, children: ageSpecificText2 };
   items4[2] = callback2(arg1(dependencyMap[18]).Text, obj6);
   obj7 = { spacing: importDefault(dependencyMap[5]).space.PX_12 };
   const items5 = [callback2(arg1(dependencyMap[21]).Checkbox, { label: ageSpecificText3, checked: first, onToggle: callback3 }), callback2(arg1(dependencyMap[21]).Checkbox, { label: ageSpecificText4, checked: tmp8, onToggle: callback4 })];

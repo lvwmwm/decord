@@ -1,5 +1,5 @@
 // Module ID: 6699
-// Function ID: 51875
+// Function ID: 51886
 // Name: shouldLogClientHeartbeatSkipped
 // Dependencies: []
 // Exports: shouldLogClientHeartbeatSkipped

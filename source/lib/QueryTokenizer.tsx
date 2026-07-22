@@ -1,9 +1,13 @@
-// Module ID: 10075
-// Function ID: 77976
+// Module ID: 10076
+// Function ID: 77989
 // Name: getMatch
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 10075 (getMatch)
+// Module 10076 (getMatch)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 function getMatch(str, arg1, index) {
   if (null == arg1) {
     return null;
@@ -80,8 +84,6 @@ function fixMatchIndex(arg0, index) {
     return items;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = /.+/g;
 const tmp2 = () => {
   class QueryTokenizer {
@@ -363,7 +365,7 @@ const tmp3 = () => {
 }();
 tmp2.NON_TOKEN_TYPE = "NON_TOKEN";
 tmp2.Token = tmp3;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("lib/QueryTokenizer.tsx");
+const result = items.fileFinishedImporting("lib/QueryTokenizer.tsx");
 
 export default tmp2;
 export const NON_TOKEN_TYPE = "NON_TOKEN";

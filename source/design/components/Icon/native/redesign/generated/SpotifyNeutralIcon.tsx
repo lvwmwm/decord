@@ -1,10 +1,10 @@
-// Module ID: 14819
-// Function ID: 111709
+// Module ID: 14827
+// Function ID: 111752
 // Name: SpotifyNeutralIcon
 // Dependencies: []
 // Exports: SpotifyNeutralIcon
 
-// Module 14819 (SpotifyNeutralIcon)
+// Module 14827 (SpotifyNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SpotifyNeutralIcon.tsx");

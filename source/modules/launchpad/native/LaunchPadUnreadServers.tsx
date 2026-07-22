@@ -1,9 +1,9 @@
-// Module ID: 15526
-// Function ID: 118528
+// Module ID: 15534
+// Function ID: 118571
 // Name: HistorySeparator
 // Dependencies: []
 
-// Module 15526 (HistorySeparator)
+// Module 15534 (HistorySeparator)
 function HistorySeparator() {
   const tmp = callback2();
   let obj = { style: tmp.guildHistorySeparatorWrapper, children: callback(closure_5, obj) };

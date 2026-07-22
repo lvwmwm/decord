@@ -1,10 +1,10 @@
-// Module ID: 10791
-// Function ID: 83789
+// Module ID: 10792
+// Function ID: 83802
 // Name: RootThemeContextProvider
 // Dependencies: []
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10791 (RootThemeContextProvider)
+// Module 10792 (RootThemeContextProvider)
 let closure_2 = importAll(dependencyMap[0]);
 const ThemeTypes = arg1(dependencyMap[1]).ThemeTypes;
 const jsx = arg1(dependencyMap[2]).jsx;

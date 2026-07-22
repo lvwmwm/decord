@@ -1,10 +1,10 @@
-// Module ID: 12892
-// Function ID: 98429
+// Module ID: 12899
+// Function ID: 98462
 // Name: Tooltip
 // Dependencies: []
 // Exports: default
 
-// Module 12892 (Tooltip)
+// Module 12899 (Tooltip)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
@@ -17,10 +17,10 @@ obj.container = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgr
 obj2 = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, fontSize: 12, color: importDefault(dependencyMap[5]).colors.WHITE };
 obj.label = obj2;
 obj.title = { marginBottom: 4 };
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-obj.arrow = { borderTopColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderBottomColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
+const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderTopColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderBottomColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
+obj.arrow = obj3;
 let closure_8 = obj2.createStyles(obj);
-const obj3 = { borderTopColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderBottomColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
+const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("design/void/Tooltip/native/Tooltip.tsx");
 
 export default function Tooltip(arrowHeight) {
@@ -89,7 +89,7 @@ export default function Tooltip(arrowHeight) {
   const items3 = [tmp3.container, containerStyle];
   let tmp12 = null;
   if (null != title) {
-    const obj2 = { delete: null, dispatch: null, raw: null, style: tmp3.title, children: title };
+    const obj2 = { "Null": null, "Null": null, alignItems: null, style: tmp3.title, children: title };
     tmp12 = callback(arg1(dependencyMap[7]).Heading, obj2);
   }
   const items4 = [tmp12, , ];

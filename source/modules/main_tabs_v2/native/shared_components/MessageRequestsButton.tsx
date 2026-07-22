@@ -1,10 +1,10 @@
-// Module ID: 14772
-// Function ID: 111371
+// Module ID: 14780
+// Function ID: 111414
 // Name: useMessageRequestCounts
 // Dependencies: []
 // Exports: default
 
-// Module 14772 (useMessageRequestCounts)
+// Module 14780 (useMessageRequestCounts)
 function useMessageRequestCounts() {
   const obj = {};
   const items = [closure_5];
@@ -73,7 +73,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const merged1 = Object.assign(merged);
       let tmp26 = callback(arg1(dependencyMap[8]).Button, obj1);
     } else {
-      const obj2 = { "Bool(true)": null, "Bool(true)": null, icon: callback(MessageRequestAnimation, {}) };
+      const obj2 = { icon: callback(MessageRequestAnimation, {}) };
       const intl3 = arg1(dependencyMap[9]).intl;
       obj2.accessibilityLabel = intl3.string(arg1(dependencyMap[9]).t.e7GWjQ);
       const merged2 = Object.assign(merged);

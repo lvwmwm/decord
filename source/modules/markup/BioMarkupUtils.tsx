@@ -1,10 +1,10 @@
-// Module ID: 9004
-// Function ID: 70871
+// Module ID: 9005
+// Function ID: 70884
 // Name: getOrParseBioAST
 // Dependencies: []
 // Exports: parseBioReactWithCachedAST
 
-// Module 9004 (getOrParseBioAST)
+// Module 9005 (getOrParseBioAST)
 function getOrParseBioAST(description) {
   let value = importDefaultResult1.get(description);
   if (null == value) {
@@ -14,7 +14,7 @@ function getOrParseBioAST(description) {
   }
   return value;
 }
-const items = [importDefault(dependencyMap[1]).PROFILE_BIO_RULES, importDefault(dependencyMap[2])({})];
+const items = [importDefault(dependencyMap[1]).PROFILE_BIO_RULES, importDefault(dependencyMap[2])({ "Bool(true)": 1766088043, "Bool(true)": 827788593 })];
 const importDefaultResultResult = importDefault(dependencyMap[0])(items);
 let importDefaultResult1 = importDefault(dependencyMap[3]);
 let obj = { max: 2000 };

@@ -1,9 +1,9 @@
-// Module ID: 15697
-// Function ID: 119986
+// Module ID: 15705
+// Function ID: 120029
 // Name: getSourceFromURI
 // Dependencies: []
 
-// Module 15697 (getSourceFromURI)
+// Module 15705 (getSourceFromURI)
 function getSourceFromURI(uri) {
   let tmp = uri;
   if ("number" !== typeof uri) {

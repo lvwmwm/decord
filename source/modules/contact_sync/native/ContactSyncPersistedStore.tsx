@@ -1,10 +1,10 @@
-// Module ID: 11697
-// Function ID: 90799
+// Module ID: 11698
+// Function ID: 90812
 // Name: setStoredContacts
 // Dependencies: []
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate
 
-// Module 11697 (setStoredContacts)
+// Module 11698 (setStoredContacts)
 function setStoredContacts(arg0) {
   const require = arg0;
   const Storage = require(dependencyMap[0]).Storage;

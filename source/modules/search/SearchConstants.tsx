@@ -1,9 +1,9 @@
-// Module ID: 9095
-// Function ID: 71308
+// Module ID: 9096
+// Function ID: 71321
 // Name: SearchAutocompleteSelectAnalyticsActions
 // Dependencies: []
 
-// Module 9095 (SearchAutocompleteSelectAnalyticsActions)
+// Module 9096 (SearchAutocompleteSelectAnalyticsActions)
 const SearchTypes = require(dependencyMap[0]).SearchTypes;
 let obj = { Messages: 0, [0]: "Messages", Media: 1, [1]: "Media", Link: 2, [2]: "Link", File: 3, [3]: "File", Pins: 4, [4]: "Pins" };
 obj = { RECENT: "recent", MEMBERS: "members", PEOPLE: "people", MEDIA: "media", PINS: "pins", MESSAGES: "messages", LINKS: "links", FILES: "files", GUILD_CHANNELS: "guild_channels", THREADS: "threads" };
@@ -44,7 +44,7 @@ export const WEB_SEARCH_HISTORY_STORE_DISPLAY_NAME = "SearchHistoryStore_Web";
 export const NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME = "SearchHistoryStore";
 export const SearchFilter = obj;
 export const SEARCH_QUERY_DEFAULT_FILTERS = {};
-export const SEARCH_QUERY_BY_SEARCH_FILTER = { [obj.Media]: { has: [] }, [obj.File]: { has: ["accessibility"] }, [obj.Messages]: {}, [obj.Link]: { has: [true] }, [obj.Pins]: { pinned: true } };
+export const SEARCH_QUERY_BY_SEARCH_FILTER = { [obj.Media]: { has: [] }, [obj.File]: { has: ["<string:71075138>"] }, [obj.Messages]: {}, [obj.Link]: { has: ["initialWaitTime"] }, [obj.Pins]: { pinned: true } };
 export const SEARCH_PINNED_MESSAGES_LINE_CLAMP = 10;
 export const SEARCH_MESSAGES_DEFAULT_LINE_CLAMP = 4;
 export const SearchTabs = obj;

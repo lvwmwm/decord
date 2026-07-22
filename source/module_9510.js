@@ -1,9 +1,8 @@
 // Module ID: 9510
-// Function ID: 74040
+// Function ID: 74052
 // Dependencies: []
 
 // Module 9510
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, scales: ["Set", "ml"] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: ["<string:24264687>", "isArray"] });

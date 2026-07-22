@@ -1,10 +1,10 @@
-// Module ID: 14842
-// Function ID: 111863
+// Module ID: 14850
+// Function ID: 111906
 // Name: ThreadChannel
 // Dependencies: []
 // Exports: default
 
-// Module 14842 (ThreadChannel)
+// Module 14850 (ThreadChannel)
 function ThreadChannel(channel) {
   let hasVideo;
   let isLocked;
@@ -182,9 +182,9 @@ function ThreadChannel(channel) {
   } else {
     if (selectedVoiceChannelId !== channel.threadId) {
       if (1 !== voiceStates.length) {
-        const obj10 = {};
+        const obj10 = { enumerable: null, HermesInternal: null, dispatch: null, ty: null, it: null };
         const tmp37 = importDefault(dependencyMap[29]);
-        const obj11 = { EMPHASIZE_NOTICE: false, maxHeight: false, hideFriendRequestNotes: null };
+        const obj11 = { <string:879400349>: "mn", <string:2858505162>: "description", <string:1927653984>: "Array" };
         const items6 = [flag];
         obj11.channels = items6;
         const obj12 = {};
@@ -221,27 +221,27 @@ let closure_16 = arg1(dependencyMap[13]).OpenThreadAnalyticsLocations;
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = arg1(dependencyMap[14]));
 let obj1 = arg1(dependencyMap[15]);
 let obj = {};
-obj = { 0: -1437532158, -9223372036854775808: 174014891, 0: -1908342783, 0: 1358955121, -9223372036854775808: 1296114894, marginVertical: tmp2.CHANNEL_MARGIN_VERTICAL, borderRadius: importDefault(dependencyMap[16]).radii.md };
+obj = { backspace: "<string:1358955120>", tab: "<string:1933683661>", enter: "<string:1090519306>", shift: "M99.2224 43.2126C103.136 43.2126 106.31 40.0048 106.31 36.0479C106.31 32.091 103.136 28.8832 99.2224 28.8832C95.3082 28.8832 92.1351 32.091 92.1351 36.0479C92.1351 40.0048 95.3082 43.2126 99.2224 43.2126Z", ctrl: "<string:1092953937>", marginVertical: tmp2.CHANNEL_MARGIN_VERTICAL, borderRadius: importDefault(dependencyMap[16]).radii.md };
 obj.container = obj;
-obj.threadRow = { alignItems: null, flexDirection: "text-xs/bold", justifyContent: "badge-text-brand" };
-obj.unreadContainer = { to: 9, Z_NO_FLUSH: null, Z_PARTIAL_FLUSH: "\u{1F91B}\u{1F3FC}" };
+obj.threadRow = {};
+obj.unreadContainer = { "Null": 9, "Null": null, "Null": "\u{1F91B}\u{1F3FC}" };
 obj.spineSpacer = { width: 28 };
-obj1 = { text: "r", variant: "INSTANT_INVITE_CREATE_SUCCESS", grow: "Array", spacing: "th", justify: "isArray", align: "STICKER_PACK_VIEW_ALL", borderRadius: importDefault(dependencyMap[16]).radii.xs, backgroundColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj1 = { borderRadius: importDefault(dependencyMap[16]).radii.xs, backgroundColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.unreadIcon = obj1;
-const obj2 = { alignItems: "4.8.0", justifyContent: null, flexDirection: 60, alignItems: 3, backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
-obj.threadLineSegment = obj2;
+const tmp3 = arg1(dependencyMap[14]);
+obj.threadLineSegment = { backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
 let closure_20 = obj1.createStyles(obj);
 let closure_21 = importAllResult.memo((arg0) => {
   let color;
   let fontScale;
   ({ color, fontScale } = arg0);
-  let obj = { "Null": "166185917b52ede00e3e20d3f1f7faeb", "Null": "CheckmarkSmallIcon" };
-  obj = { position: 60, shadowRadius: 3, top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
+  let obj = {};
+  obj = { top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
   obj.style = obj;
   obj.children = callback(arg1(dependencyMap[17]).Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
   return callback(importDefault(dependencyMap[17]), obj);
 });
-const tmp3 = arg1(dependencyMap[14]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");
 
 export default function ConnectedThreadChannel(threadId) {

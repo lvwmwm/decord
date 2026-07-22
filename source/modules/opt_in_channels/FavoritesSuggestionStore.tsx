@@ -1,15 +1,25 @@
 // Module ID: 6757
-// Function ID: 52911
+// Function ID: 52922
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [664, 484, 1212, 2198, 2, 5, 6767, 6765, 653, 6768, 686]
 
 // Module 6757 (_isNativeReflectConstruct)
+import module_664 from "module_664";
+import getAuthenticationPath from "getAuthenticationPath";
+import getSystemLocale from "getSystemLocale";
+import messagesProxy from "messagesProxy";
+import result2 from "result2";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import items from "items";
+import dispatcher from "dispatcher";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let module_664 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return module_664;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -30,7 +40,7 @@ function handleChange() {
             const set = new Set();
             closure_8[guild_id] = set;
           }
-          if (closure_7.isFavorite(guild_id, channelId)) {
+          if (items.isFavorite(guild_id, channelId)) {
             closure_8[guild_id].delete(channelId);
             const obj3 = closure_8[guild_id];
           } else {
@@ -54,14 +64,6 @@ function handleChange() {
     }
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-let closure_7 = importDefault(dependencyMap[7]);
 let closure_8 = {};
 let closure_9 = {};
 let closure_10 = {};
@@ -70,14 +72,14 @@ let tmp2 = (PersistedStore) => {
     constructor() {
       self = this;
       tmp = FavoritesSuggestionStore(this, FavoritesSuggestionStore);
-      obj = closure_3(FavoritesSuggestionStore);
-      tmp2 = closure_2;
+      obj = messagesProxy(FavoritesSuggestionStore);
+      tmp2 = getSystemLocale;
       if (closure_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = messagesProxy;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, messagesProxy(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -86,7 +88,7 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = FavoritesSuggestionStore;
+  let module_664 = FavoritesSuggestionStore;
   callback2(FavoritesSuggestionStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -94,8 +96,8 @@ let tmp2 = (PersistedStore) => {
       let channelOpensByChannelId;
       let dismissedSuggestions;
       let suggestedChannels;
-      this.waitFor(closure_5, closure_6, closure_7);
-      const items = [closure_6];
+      this.waitFor(asyncGeneratorStep, _isNativeReflectConstruct, items);
+      const items = [_isNativeReflectConstruct];
       this.syncWith(items, closure_12);
       if (null != arg0) {
         ({ suggestedChannels, dismissedSuggestions, channelOpensByChannelId } = arg0);
@@ -157,10 +159,10 @@ let tmp2 = (PersistedStore) => {
   };
   items[2] = obj;
   return callback(FavoritesSuggestionStore, items);
-}(importDefault(dependencyMap[8]).PersistedStore);
+}(require("ME").PersistedStore);
 tmp2.displayName = "FavoritesSuggestionStore";
 tmp2.persistKey = "FavoritesSuggestionStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("_createForOfIteratorHelperLoose"), {
   DISMISS_FAVORITE_SUGGESTION: function handleFavoriteSuggestionDimissed(arg0) {
     let channelId;
     let guildId;
@@ -175,6 +177,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     return true;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/opt_in_channels/FavoritesSuggestionStore.tsx");
+const result = dispatcher.fileFinishedImporting("modules/opt_in_channels/FavoritesSuggestionStore.tsx");
 
 export default tmp2;

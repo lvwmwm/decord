@@ -1,12 +1,12 @@
-// Module ID: 13848
-// Function ID: 104752
+// Module ID: 13855
+// Function ID: 104792
 // Name: BountiesShopCarouselExperimentVariation
 // Dependencies: []
 
-// Module 13848 (BountiesShopCarouselExperimentVariation)
+// Module 13855 (BountiesShopCarouselExperimentVariation)
 let obj = { BASE: 0, [0]: "BASE", POPULARITY: 1, [1]: "POPULARITY", RECENCY: 2, [2]: "RECENCY" };
 const _module = require(dependencyMap[0]);
-obj = { 844175713: -1516144814, 1387159956: 967463300 };
+obj = { y: -660762798, DateToSystemTimezoneSetter: 972837289 };
 obj = { enabled: false, variation: obj.BASE };
 obj.defaultConfig = obj;
 obj.variations = { [1]: { enabled: true, variation: obj.POPULARITY }, [2]: { enabled: true, variation: obj.RECENCY } };

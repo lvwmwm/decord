@@ -1,5 +1,5 @@
 // Module ID: 7663
-// Function ID: 61255
+// Function ID: 61265
 // Name: createChangeChannelNameSystemMessage
 // Dependencies: []
 // Exports: createChangeChannelNameSystemMessage

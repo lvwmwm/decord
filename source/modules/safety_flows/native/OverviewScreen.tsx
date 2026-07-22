@@ -1,14 +1,14 @@
-// Module ID: 16436
-// Function ID: 126982
+// Module ID: 16444
+// Function ID: 127024
 // Name: OverviewScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16436 (OverviewScreen)
+// Module 16444 (OverviewScreen)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).createStyles({ content: { borderWidth: 2018574337, bundleWidth: -1371467309, bundleHeight: 838861392, pfxWidth: 0, pfxHeight: 1079042048 }, title: {} });
+let closure_6 = arg1(dependencyMap[2]).createStyles({ content: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, title: {} });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/safety_flows/native/OverviewScreen.tsx");
 
@@ -41,7 +41,7 @@ export default function OverviewScreen() {
   const intl = arg1(dependencyMap[11]).intl;
   obj2.children = intl.string(importDefault(dependencyMap[12]).RRamMH);
   const items1 = [callback(arg1(dependencyMap[10]).Text, obj2), , ];
-  const obj3 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1 };
+  const obj3 = { cachedAt: null, edpbxy: null };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj3.children = intl2.string(importDefault(dependencyMap[12]).I2Ctk1);
   items1[1] = callback(arg1(dependencyMap[10]).Text, obj3);
@@ -60,7 +60,7 @@ export default function OverviewScreen() {
   }
   obj5.children = mapped;
   const items2 = [callback(arg1(dependencyMap[13]).TableRowGroup, obj5), ];
-  const obj6 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+  const obj6 = { cachedAt: "center", edpbxy: "center" };
   const intl3 = arg1(dependencyMap[11]).intl;
   obj6.children = intl3.string(importDefault(dependencyMap[12]).0TnUrG);
   items2[1] = callback(arg1(dependencyMap[10]).Text, obj6);

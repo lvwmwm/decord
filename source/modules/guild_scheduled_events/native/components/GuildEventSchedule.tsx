@@ -1,10 +1,10 @@
-// Module ID: 8363
-// Function ID: 66663
+// Module ID: 8364
+// Function ID: 66675
 // Name: GuildEventSchedule
 // Dependencies: []
 // Exports: default
 
-// Module 8363 (GuildEventSchedule)
+// Module 8364 (GuildEventSchedule)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

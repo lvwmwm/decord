@@ -1,10 +1,10 @@
-// Module ID: 9459
-// Function ID: 73701
+// Module ID: 9460
+// Function ID: 73714
 // Name: getFractionalPremiumQuestRewards
 // Dependencies: []
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName
 
-// Module 9459 (getFractionalPremiumQuestRewards)
+// Module 9460 (getFractionalPremiumQuestRewards)
 function getFractionalPremiumQuestRewards(rewardsConfig) {
   const rewards = rewardsConfig.rewardsConfig.rewards;
   return rewards.filter((type) => type.type === callback(closure_2[2]).QuestRewardTypes.FRACTIONAL_PREMIUM);

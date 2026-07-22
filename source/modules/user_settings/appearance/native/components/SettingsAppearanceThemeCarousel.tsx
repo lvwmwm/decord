@@ -1,10 +1,10 @@
-// Module ID: 14039
-// Function ID: 106752
+// Module ID: 14046
+// Function ID: 106792
 // Name: SettingsAppearanceThemeCarousel
 // Dependencies: []
 // Exports: default
 
-// Module 14039 (SettingsAppearanceThemeCarousel)
+// Module 14046 (SettingsAppearanceThemeCarousel)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const importDefaultResult = importDefault(dependencyMap[2]);
@@ -19,23 +19,27 @@ obj.container = obj;
 obj.textCentered = { textAlign: "center" };
 obj1 = { gap: importDefault(dependencyMap[7]).space.PX_4, alignItems: "center" };
 obj.labelGroup = obj1;
-const obj2 = { 9223372036854775807: false, 0: false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, marginTop: importDefault(dependencyMap[7]).space.PX_4 };
+const obj2 = { GENERIC_REGEX: "r", borderWidth: "isNewChannel", borderColor: "%NumberPrototype%", mousemoveCb: "giftingFacet", useMemoCache: "er", marginTop: importDefault(dependencyMap[7]).space.PX_4 };
 obj.titleContainer = obj2;
 const importDefaultResult1 = importDefault(dependencyMap[4]);
 obj.floatingNuxContainer = { position: "absolute", left: importDefault(dependencyMap[7]).space.PX_24 };
-const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, padding: importDefault(dependencyMap[7]).space.PX_4, paddingRight: importDefault(dependencyMap[7]).space.PX_8 };
+const obj4 = { "Bool(false)": "<string:1912603085>", "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[7]).radii.lg, padding: importDefault(dependencyMap[7]).space.PX_4, paddingRight: importDefault(dependencyMap[7]).space.PX_8 };
 const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
 obj4["shadowColor"] = "#000000";
 obj.floatingNux = obj4;
 const items = [{ rotate: "90deg" }];
 obj.arrowLeft = { transform: items };
-const obj3 = { position: "absolute", left: importDefault(dependencyMap[7]).space.PX_24 };
-obj.selectionBorder = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: importDefault(dependencyMap[7]).radii.md, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
+const obj5 = { "Null": "keys", "Null": "disabled" };
+({ THEME_ITEM_WIDTH: obj9.width, THEME_ITEM_HEIGHT: obj9.height } = importDefaultResult);
+obj5.borderRadius = importDefault(dependencyMap[7]).radii.md;
+obj5.borderColor = importDefault(dependencyMap[7]).colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT;
+obj5.borderWidth = 2;
+obj.selectionBorder = obj5;
 obj.a11yThemeList = { flexDirection: "row" };
 obj.a11yThemeListScroll = { flexGrow: 0 };
 let closure_11 = obj1.createStyles(obj);
 let closure_12 = { code: "function SettingsAppearanceThemeCarouselTsx1(){const{withTiming,isMidnightNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isMidnightNuxVisible.get()?1:0,timingStandard),pointerEvents:isMidnightNuxVisible.get()?'auto':'none'};}" };
-const obj5 = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: importDefault(dependencyMap[7]).radii.md, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
+const obj3 = { position: "absolute", left: importDefault(dependencyMap[7]).space.PX_24 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeCarousel.tsx");
 
 export default function SettingsAppearanceThemeCarousel(themes) {
@@ -160,7 +164,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     tmp3 = callback(closure_10, obj1);
   }
   const items4 = [tmp3, ];
-  obj2 = { 0: null, 9223372036854775807: null, 9223372036854775807: null, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary };
+  obj2 = { canCreateGuild: null, _hasMore: null, GameDepthTier9LargeBadge: null, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary };
   let obj8 = themes[currentThemeIndex];
   obj2.children = obj8.getName();
   items4[1] = callback(arg1(dependencyMap[15]).Text, obj2);
@@ -173,7 +177,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       const obj5 = { pointerEvents: "none", style: tmp.selectionBorder };
       const items5 = [callback(closure_4, obj5), ];
       const obj6 = { ref, data: themes, renderItem: callback };
-      const obj7 = { fillOpacity: "number", fillRule: "number", stroke: "mY3Y38", width: deviceWidth, marginLeft: importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN };
+      const obj7 = { font: "string", CONTROL_SWITCH_WIDTH: "string", recordAfter: "color", width: deviceWidth, marginLeft: importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN };
       obj6.style = obj7;
       obj6.width = importDefaultResult.THEME_ITEM_WIDTH + importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN;
       obj6.height = importDefaultResult.THEME_ITEM_HEIGHT;

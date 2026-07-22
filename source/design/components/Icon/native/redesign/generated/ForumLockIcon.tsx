@@ -1,5 +1,5 @@
 // Module ID: 4639
-// Function ID: 40292
+// Function ID: 40300
 // Name: ForumLockIcon
 // Dependencies: []
 // Exports: ForumLockIcon

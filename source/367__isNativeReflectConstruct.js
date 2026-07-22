@@ -58,7 +58,7 @@ export default (arg0) => {
       }
       tmp2Result = tmp2(self, constructResult);
       if (!point) {
-        point = {};
+        point = { 0: "%FunctionPrototype%", 0: "paddingStart" };
       }
       if ("number" === typeof point.x) {
         if ("number" === typeof point.y) {

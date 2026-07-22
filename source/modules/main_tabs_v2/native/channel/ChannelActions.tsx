@@ -1,10 +1,10 @@
-// Module ID: 9123
-// Function ID: 71426
+// Module ID: 9124
+// Function ID: 71439
 // Name: JoinCallButton
 // Dependencies: []
 // Exports: default
 
-// Module 9123 (JoinCallButton)
+// Module 9124 (JoinCallButton)
 function JoinCallButton() {
   const obj = { size: "sm", color: importDefault(dependencyMap[12]).unsafe_rawColors.GREEN_360 };
   return jsx(arg1(dependencyMap[11]).PhoneCallIcon, obj);

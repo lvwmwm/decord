@@ -1,10 +1,10 @@
-// Module ID: 10630
-// Function ID: 82977
+// Module ID: 10631
+// Function ID: 82990
 // Name: FocusedControlsExpanded
 // Dependencies: []
 // Exports: default
 
-// Module 10630 (FocusedControlsExpanded)
+// Module 10631 (FocusedControlsExpanded)
 function FocusedControlsExpanded(children) {
   const availableHeight = children.availableHeight;
   const arg1 = availableHeight;
@@ -89,7 +89,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   fn.__closure = obj;
   fn.__workletHash = 5042367101380;
   fn.__initData = closure_23;
-  obj = { PRELOAD_SERVER_ID: null, EMPTY_SOUND_LIST: 4, paddingBottom: "column", saveClipEx: 288, trackForumPostLinkCopied: 1, onPress: onPressHeader, accessibilityState: { expanded: isExpanded } };
+  obj = { onPress: onPressHeader, accessibilityState: { expanded: isExpanded } };
   const obj1 = { style: tmp.aboveActionBarContainer };
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [callback3(FocusedControlsBottomDrawerTooltip, { positionY }), callback3(arg1(dependencyMap[17]).ActionSheetHeaderBar, {}), ];
@@ -364,7 +364,7 @@ class FocusedControlsBottomDrawer {
       if (!reveal) {
         num = sum;
       }
-      let obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "Date", height: bound };
+      let obj = { height: bound };
       let num2 = 0;
       if (tmp3) {
         num2 = 16;
@@ -517,7 +517,7 @@ function EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y(top) {
 }
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj = { <string:80590080>: 131420590, <string:80590336>: -1717986767, <string:80597504>: -644245095, <string:80624128>: 94527, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.bottomDrawerContainer = obj;
 const obj1 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
@@ -527,10 +527,10 @@ obj.visualEffectView = obj1;
 obj.visualEffectViewBackground = { backgroundColor: "rgba(0, 0, 0, .15)" };
 obj.expandedControlsContainer = { marginHorizontal: 16 };
 obj.aboveActionBarContainer = {};
-obj.aboveActionBarChildrenContainer = { 0: "<string:410124289>", 9223372036854775807: "<string:402653184>", 9223372036854775807: "<string:16777216>", -9223372036854775808: "<string:38387522>" };
-obj.ptbButton = { isImageLoaded: "<string:3202416642>", isImageErrored: "<string:2018574338>", GUILD_BOOSTING_FAQ: "<string:2631619027>" };
-obj.tooltipStyle = { o: "Array", spriteIndex: "isArray", force: "WireType" };
-obj.containerStyle = { MKTG_HYPESQUAD_FORM_SUBMITTED: 1, marginInlineEnd: "comp_0" };
+obj.aboveActionBarChildrenContainer = { -656831359: "<string:1912602980>", 1390021337: "toString", -742727557: "toString", alignItems: "<string:1237991937>" };
+obj.ptbButton = { registerAsset: "<string:3206807554>", category: "<string:4132503554>", alignItems: "<string:745603565>" };
+obj.tooltipStyle = { "Null": null, "Null": null, "Null": null };
+obj.containerStyle = { "Bool(false)": "Array", "Bool(false)": "isArray" };
 const obj2 = {};
 const tmp6 = arg1(dependencyMap[6]);
 const merged1 = Object.assign(importDefault(dependencyMap[10])(tmp5.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).unsafe_rawColors.WHITE, 12, { uppercase: true }));

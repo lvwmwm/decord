@@ -1,8 +1,8 @@
-// Module ID: 9600
-// Function ID: 74811
+// Module ID: 9601
+// Function ID: 74824
 // Dependencies: []
 
-// Module 9600
+// Module 9601
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ MIN_MARGIN: closure_5, STICKER_SIZE: closure_6 } = arg1(dependencyMap[2]));
@@ -11,8 +11,8 @@ const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[4]).ACTION_SHEET_MAX_WIDTH;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-const obj = { "Null": "r", "Null": "y1", "Null": "isArray", height: undefined };
-let closure_12 = arg1(dependencyMap[6]).createStyles({ focusedStickerPreviewContainer: {}, header: obj, stickers: {}, popoutContainer: {} });
+const obj = { guildId: "r", guildMemberAvatar: "emojiSections", roles: "isArray", height: undefined };
+let closure_12 = arg1(dependencyMap[6]).createStyles({ focusedStickerPreviewContainer: {}, header: obj, stickers: { "Bool(false)": null, "Bool(false)": null }, popoutContainer: { <string:765737181>: 16, <string:1382441379>: "center" } });
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(stickerPack) {
   stickerPack = stickerPack.stickerPack;
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(st
     obj.track(rounded.OPEN_POPOUT, obj);
   }, items1);
   obj = {};
-  obj = { quality: "Small", videoQuality: "sm", saveToPhotos: "Placeholder" };
+  obj = {};
   const obj1 = {};
   const obj2 = { stickerPack, style: tmp.header };
   const chunkResult = obj.chunk(stickerPack.stickers, rounded);

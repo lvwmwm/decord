@@ -1,10 +1,10 @@
-// Module ID: 14757
-// Function ID: 111248
+// Module ID: 14765
+// Function ID: 111291
 // Name: handleCreateJoinGuildPress
 // Dependencies: []
 // Exports: handleCreateJoinGuildPress
 
-// Module 14757 (handleCreateJoinGuildPress)
+// Module 14765 (handleCreateJoinGuildPress)
 function handleCreateJoinGuildPress() {
   return _handleCreateJoinGuildPress(...arguments);
 }

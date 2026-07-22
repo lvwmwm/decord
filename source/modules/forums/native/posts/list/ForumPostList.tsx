@@ -1,17 +1,17 @@
-// Module ID: 11135
-// Function ID: 86634
+// Module ID: 11136
+// Function ID: 86647
 // Name: ForumPostList
 // Dependencies: []
 // Exports: default
 
-// Module 11135 (ForumPostList)
+// Module 11136 (ForumPostList)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 const ChannelFlags = arg1(dependencyMap[3]).ChannelFlags;
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ header: { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true }, content: { "Null": "y", "Null": "isArray" } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ header: { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true }, content: { "Null": null, "Null": null } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/list/ForumPostList.tsx");
 

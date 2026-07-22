@@ -1,10 +1,10 @@
-// Module ID: 15412
-// Function ID: 117609
+// Module ID: 15420
+// Function ID: 117652
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15412 (_isNativeReflectConstruct)
+// Module 15420 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -266,7 +266,7 @@ const tmp4 = (Component) => {
       const tmp2 = callback6(this.context);
       let obj = { style: tmp2.screenContainer };
       obj = { style: tmp2.stackPadding, spacing: first(closure_3[17]).space.PX_24 };
-      obj = {};
+      obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
       const intl = ChannelSettingsChangeCategory(closure_3[23]).intl;
       const obj1 = {};
       if (null != category) {

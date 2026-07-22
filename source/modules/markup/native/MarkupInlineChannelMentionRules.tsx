@@ -1,10 +1,10 @@
-// Module ID: 10255
-// Function ID: 79254
+// Module ID: 10256
+// Function ID: 79267
 // Name: createInlineChannelReact
 // Dependencies: []
 // Exports: createInlineChannelReact, inlineChannelMentionReact
 
-// Module 10255 (createInlineChannelReact)
+// Module 10256 (createInlineChannelReact)
 function createInlineChannelReact(arg0) {
   let str = arg0;
   if (arg0 === undefined) {

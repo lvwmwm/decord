@@ -27,8 +27,8 @@ function getStatics($$typeof) {
   }
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_0 = {};
-let closure_1 = { "Null": "force", "Null": "forceChange", "Null": "rotation", "Null": "rotationChange", "Null": "scale", "Null": "scaleChange", "Null": "duration" };
+let closure_0 = { accessible: false, Promise: false, apply: false, icon: false, apply: false, body: false, flex: false, accessibilityRole: false, icon: false, apply: false, borderRadius: false };
+let closure_1 = {};
 let obj = {};
 const forResult1 = Symbol.for("react.memo");
 obj = {};

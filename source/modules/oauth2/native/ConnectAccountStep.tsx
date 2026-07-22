@@ -1,10 +1,10 @@
-// Module ID: 8959
-// Function ID: 70687
+// Module ID: 8960
+// Function ID: 70700
 // Name: ConnectAccountStep
 // Dependencies: []
 // Exports: ConnectedAccountCard, default
 
-// Module 8959 (ConnectAccountStep)
+// Module 8960 (ConnectAccountStep)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,22 +12,22 @@ let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: {}, header: {}, headerIcons: {} };
+obj = { container: { EMOJI_PICKER: "4.8.0", paddingBottom: null, errorArt: 60 }, header: { -110959999: false, -1227664409: false, -1649041997: false, 1860687715: false }, headerIcons: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[7]).radii.md };
 obj.card = obj;
-obj.cardName = { flexShrink: null, flexGrow: null };
-obj.cardInfo = { flexShrink: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003595318688921973, flexGrow: -0.00000000000000021706246343574996, borderColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001452188837802891, borderBottomWidth: 1758272005026274300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-const tmp2 = arg1(dependencyMap[5]);
-obj.platformIcon = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj2 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj.cardName = { backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+obj.cardInfo = { backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000352718140407398, flexDirection: -0.00000000000000021706246366696193, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001452188837802891, flexShrink: 1758271232506091000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+const obj1 = { "Null": "isArray", "Null": "c", borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj.platformIcon = obj1;
+const obj2 = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.platformIconSmall = obj2;
-const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const tmp2 = arg1(dependencyMap[5]);
 obj.infoNotice = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.infoText = { flex: 1 };
-const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.divider = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
+const obj4 = { -9223372036854775808: true, -9223372036854775808: 6, 9223372036854775807: 2, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
+obj.divider = obj4;
 let closure_10 = obj.createStyles(obj);
-const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
+const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/oauth2/native/ConnectAccountStep.tsx");
 
 export default function ConnectAccountStep(clientId) {
@@ -88,15 +88,15 @@ export default function ConnectAccountStep(clientId) {
     items4[2] = callback(arg1(dependencyMap[14]).Avatar, obj5);
     obj2.children = items4;
     const items5 = [callback2(View, obj2), , ];
-    const obj6 = { hasMaxConnections: "gr", isBoostOnlySubscription: null };
+    const obj6 = { cachedAt: "gr", edpbxy: null };
     const intl = arg1(dependencyMap[17]).intl;
     obj6.children = intl.string(arg1(dependencyMap[17]).t.uT1CPa);
     items5[1] = callback(arg1(dependencyMap[16]).Text, obj6);
-    obj7 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: str };
+    obj7 = { cachedAt: false, edpbxy: false, children: str };
     items5[2] = callback(arg1(dependencyMap[16]).Text, obj7);
     obj1.children = items5;
     const items6 = [callback2(View, obj1), , , ];
-    const obj8 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+    const obj8 = {};
     const intl2 = arg1(dependencyMap[17]).intl;
     const obj9 = { applicationName: str, platformName };
     obj8.children = intl2.format(arg1(dependencyMap[17]).t.aJRE/Q, obj9);
@@ -108,7 +108,7 @@ export default function ConnectAccountStep(clientId) {
       tmp24 = callback(arg1(dependencyMap[14]).Icon, obj11);
     }
     const items7 = [tmp24, , ];
-    const obj12 = { flexShrink: true, flexGrow: true, zIndex: true, style: tmp.cardName, children: platformName };
+    const obj12 = { minWidth: true, height: true, top: true, style: tmp.cardName, children: platformName };
     items7[1] = callback(arg1(dependencyMap[16]).Text, obj12);
     const obj13 = {
       onPress() {
@@ -123,7 +123,7 @@ export default function ConnectAccountStep(clientId) {
     const obj14 = { style: tmp.infoNotice };
     const obj15 = { color: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, size: "sm" };
     const items8 = [callback(arg1(dependencyMap[20]).CircleInformationIcon, obj15), ];
-    const obj16 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.infoText };
+    const obj16 = { style: tmp.infoText };
     const intl4 = arg1(dependencyMap[17]).intl;
     const obj17 = { platformName, applicationName: str };
     obj16.children = intl4.format(arg1(dependencyMap[17]).t.8psEFX, obj17);
@@ -151,7 +151,7 @@ export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
   const value = obj.get(platformType);
   if (null == value) {
     obj = { style: tmp.container };
-    obj = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+    obj = {};
     const intl = arg1(dependencyMap[17]).intl;
     let obj1 = { platformName };
     obj.children = intl.format(arg1(dependencyMap[17]).t.+oaRw3, obj1);
@@ -177,7 +177,7 @@ export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
     items1[2] = callback(arg1(dependencyMap[21]).CheckmarkLargeIcon, obj8);
     obj2.children = items1;
     items[1] = callback2(View, obj2);
-    const obj9 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+    const obj9 = {};
     const intl3 = arg1(dependencyMap[17]).intl;
     const obj10 = { applicationName };
     obj9.children = intl3.format(arg1(dependencyMap[17]).t.pyRNXJ, obj10);

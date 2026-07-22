@@ -1,5 +1,5 @@
 // Module ID: 6960
-// Function ID: 55622
+// Function ID: 55633
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: formatWatchTaskRemainingTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasSomeFirstPartyTasks, hasStreamOnDesktopTask, isDesktopOnlyPlayQuest, isVideoQuestForMobilePlatformOnly
@@ -383,7 +383,7 @@ function getDefaultWatchVideoTask(config) {
 }
 function _getQuestTaskDetails(quest, includeTaskTypes) {
   if (isInGameQuest(quest)) {
-    let obj = { resizeMode: "isArray", preventsDisplaySleepDuringVideoPlayback: "key", -1358230225: "constructor", 2120573106: "apply", taskType: includeTaskTypes(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+    let obj = { 0: "isArray", 0: "key", 0: "constructor", 0: "apply", taskType: includeTaskTypes(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
     let tmp6Result = obj;
   } else if (result(quest)) {
     obj = { quest };
@@ -674,7 +674,7 @@ export const getQuestTaskDetails = function getQuestTaskDetails(quest, DESKTOP) 
     let obj = { quest };
     let tmp3 = _getTaskDetailsForType(obj);
     if (null == tmp3) {
-      obj = { resizeMode: "isArray", preventsDisplaySleepDuringVideoPlayback: "key", -1358230225: "constructor", 2120573106: "apply", taskType: DESKTOP(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+      obj = { 0: "isArray", 0: "key", 0: "constructor", 0: "apply", taskType: DESKTOP(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
       tmp3 = obj;
     }
     return tmp3;

@@ -1,14 +1,14 @@
-// Module ID: 15345
-// Function ID: 116874
+// Module ID: 15353
+// Function ID: 116917
 // Dependencies: []
 
-// Module 15345
+// Module 15353
 const View = arg1(dependencyMap[1]).View;
 const RootNavigatorScreen = arg1(dependencyMap[2]).RootNavigatorScreen;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, borderRadius: importDefault(dependencyMap[5]).radii.xl };
+obj = { borderRadius: importDefault(dependencyMap[5]).radii.xl };
 obj.container = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SCRIM, borderRadius: importDefault(dependencyMap[5]).radii.none };
 obj.androidContainer = obj1;

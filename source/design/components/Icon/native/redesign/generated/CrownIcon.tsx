@@ -1,10 +1,10 @@
-// Module ID: 9083
-// Function ID: 71182
+// Module ID: 9084
+// Function ID: 71195
 // Name: CrownIcon
-// Dependencies: [2113929230, 872415267, 33554453, 1946157056, 4096, 9092]
+// Dependencies: [2130706446, 704643107, 33554452, 1946157056, 4096, 9093]
 // Exports: CrownIcon
 
-// Module 9083 (CrownIcon)
+// Module 9084 (CrownIcon)
 import handleVoiceOrStageChannelConnectPress from "handleVoiceOrStageChannelConnectPress";
 
 importAll(dependencyMap[0]);

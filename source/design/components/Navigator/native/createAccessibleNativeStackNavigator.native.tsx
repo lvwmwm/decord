@@ -1,9 +1,9 @@
-// Module ID: 12964
-// Function ID: 98643
+// Module ID: 12971
+// Function ID: 98676
 // Name: useAccessibilityPatchedDescriptors
 // Dependencies: []
 
-// Module 12964 (useAccessibilityPatchedDescriptors)
+// Module 12971 (useAccessibilityPatchedDescriptors)
 function useAccessibilityPatchedDescriptors(descriptors) {
   const arg1 = descriptors;
   const accessibilityNativeStackOptions = arg1(dependencyMap[2]).useAccessibilityNativeStackOptions();
@@ -50,7 +50,7 @@ const navigatorFactory = arg1(dependencyMap[3]).createNavigatorFactory(function 
   let screenListeners;
   let screenOptions;
   let state;
-  let obj = { -1553836157: null, -353945046: null, -2088716468: null, -591942203: null, 1630734434: null };
+  let obj = { -1546889341: false, -355386132: false, -1439431477: false, -592728634: false, 1630734434: false };
   ({ id, initialRouteName, children, screenListeners, screenOptions } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

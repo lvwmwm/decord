@@ -1,10 +1,10 @@
-// Module ID: 13411
-// Function ID: 101891
+// Module ID: 13418
+// Function ID: 101924
 // Name: InventoryIcon
 // Dependencies: []
 // Exports: InventoryIcon
 
-// Module 13411 (InventoryIcon)
+// Module 13418 (InventoryIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/InventoryIcon.tsx");

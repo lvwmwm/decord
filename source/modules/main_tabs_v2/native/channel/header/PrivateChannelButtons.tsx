@@ -1,8 +1,8 @@
-// Module ID: 10094
-// Function ID: 78171
+// Module ID: 10095
+// Function ID: 78184
 // Dependencies: []
 
-// Module 10094
+// Module 10095
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -216,7 +216,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     if (tmp) {
       let obj = screenIndex(tmp[26]);
-      obj = { "Bool(false)": "AccountAgeTier6LargeBadge", "Bool(false)": "linkCode", "Bool(false)": "quest_status", destination_pane: lib.SETTINGS_APP_DMS_MENU, application_id: application.id };
+      obj = { "Bool(false)": false, c: false, h: false, destination_pane: lib.SETTINGS_APP_DMS_MENU, application_id: application.id };
       obj.trackWithMetadata(callback.SETTINGS_PANE_VIEWED, obj);
       obj = { userId: recipientId, channel: stateFromStores, application };
       screenIndex(tmp[27]).openLazy(channelId(tmp[29])(tmp[28], tmp.paths), "AppDMOptionsBottomSheet", obj);
@@ -370,7 +370,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
         let tmp43 = totalParticipantCount > 5;
         if (tmp43) {
           const obj12 = { style: tmp.overflowBadge };
-          const obj13 = {};
+          const obj13 = { cachedAt: null, edpbxy: null };
           const items15 = [null, totalParticipantCount - 5];
           obj13.children = items15;
           obj12.children = callback2(arg1(dependencyMap[43]).Text, obj13);

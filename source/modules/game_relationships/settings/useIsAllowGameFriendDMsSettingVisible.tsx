@@ -1,10 +1,10 @@
-// Module ID: 14425
-// Function ID: 108782
+// Module ID: 14433
+// Function ID: 108825
 // Name: useIsAllowGameFriendDMsSettingVisible
 // Dependencies: []
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 14425 (useIsAllowGameFriendDMsSettingVisible)
+// Module 14433 (useIsAllowGameFriendDMsSettingVisible)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
 

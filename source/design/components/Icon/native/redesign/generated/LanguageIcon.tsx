@@ -1,15 +1,14 @@
-// Module ID: 14131
-// Function ID: 107256
+// Module ID: 14139
+// Function ID: 107299
 // Name: LanguageIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: LanguageIcon
 
-// Module 14131 (LanguageIcon)
-import "result";
-import { jsx } from "result";
-import result from "result";
+// Module 14139 (LanguageIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/LanguageIcon.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/LanguageIcon.tsx");
 
 export const LanguageIcon = function LanguageIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

@@ -1,10 +1,10 @@
-// Module ID: 9574
-// Function ID: 74612
+// Module ID: 9575
+// Function ID: 74625
 // Name: transformFavoriteGifUrl
-// Dependencies: [2382364709]
+// Dependencies: []
 // Exports: useFavoriteGIFsMobile
 
-// Module 9574 (transformFavoriteGifUrl)
+// Module 9575 (transformFavoriteGifUrl)
 function transformFavoriteGifUrl(closure_0) {
   let combined = closure_0;
   const str = importDefault(dependencyMap[2]).toURLSafe(closure_0);

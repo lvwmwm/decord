@@ -1,5 +1,5 @@
 // Module ID: 7063
-// Function ID: 56465
+// Function ID: 56476
 // Name: BurstReactionAnimation
 // Dependencies: []
 // Exports: default
@@ -24,7 +24,7 @@ export default function BurstReactionAnimation(arg0) {
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
-  let obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
+  let obj = { flexDirection: "Text", gap: "resizeMode", alignItems: "from", paddingHorizontal: "Array", paddingVertical: "isArray", borderRadius: "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   const tmp3 = callback();

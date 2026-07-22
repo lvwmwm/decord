@@ -47,7 +47,7 @@ const fn = function t(moment) {
       }
       str = "ste";
     },
-    week: { "Bool(true)": null, "Bool(true)": null }
+    week: { emoji: false, me: false }
   });
 };
 if ("object" === typeof exports) {
@@ -59,7 +59,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

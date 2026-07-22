@@ -1,5 +1,5 @@
 // Module ID: 6942
-// Function ID: 55486
+// Function ID: 55497
 // Name: QuestRewardTypes
 // Dependencies: []
 

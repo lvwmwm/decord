@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 92664
+// Module ID: 11995
+// Function ID: 92690
 // Name: UserProfileDismissibleUpsells
 // Dependencies: []
 // Exports: default
 
-// Module 11991 (UserProfileDismissibleUpsells)
+// Module 11995 (UserProfileDismissibleUpsells)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,7 +15,7 @@ const items = [...arg1(dependencyMap[4]).Gradients.PREMIUM_GUILD];
 let closure_10 = items.reverse();
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { paddingHorizontal: true, accessible: null, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { "Bool(false)": "Array", "Bool(false)": "isArray", borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.upsellContainer = obj;
 const tmp2 = arg1(dependencyMap[6]);
 obj.customProfileThemeUpsellContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };

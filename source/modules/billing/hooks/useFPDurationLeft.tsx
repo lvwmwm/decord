@@ -1,10 +1,10 @@
-// Module ID: 12267
-// Function ID: 94059
+// Module ID: 12272
+// Function ID: 94087
 // Name: roundFPCountdownUnits
 // Dependencies: []
 // Exports: default
 
-// Module 12267 (roundFPCountdownUnits)
+// Module 12272 (roundFPCountdownUnits)
 function roundFPCountdownUnits(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
@@ -38,7 +38,7 @@ function roundFPCountdownUnits(arg0) {
     if (hours > 11) {
       obj = {};
     } else {
-      obj = { 0: 180, width: null, position: 1, top: 0.5, hours };
+      obj = { "Bool(true)": "angle", "Bool(true)": 180, "Bool(true)": null, "Bool(true)": 1, hours };
     }
     return obj;
   } else if (obj.minutes > 0) {
@@ -57,7 +57,7 @@ function roundFPCountdownUnits(arg0) {
   } else {
     let obj2 = obj;
     if (obj.seconds > 0) {
-      obj2 = { 0: 324, width: 187, position: null, top: "c300172c07e69fb8041898afe2aa282d" };
+      obj2 = { "Bool(true)": 324, "Bool(true)": 187, "Bool(true)": null, "Bool(true)": "c300172c07e69fb8041898afe2aa282d" };
     }
     return obj2;
   }

@@ -1,9 +1,9 @@
-// Module ID: 10004
-// Function ID: 77325
+// Module ID: 10005
+// Function ID: 77338
 // Name: VoicePanelControlsModes
 // Dependencies: []
 
-// Module 10004 (VoicePanelControlsModes)
+// Module 10005 (VoicePanelControlsModes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsConstants.tsx");
 

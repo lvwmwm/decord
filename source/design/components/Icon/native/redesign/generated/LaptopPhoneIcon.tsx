@@ -1,12 +1,12 @@
-// Module ID: 13728
-// Function ID: 103865
+// Module ID: 13735
+// Function ID: 103898
 // Name: LaptopPhoneIcon
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: LaptopPhoneIcon
 
-// Module 13728 (LaptopPhoneIcon)
-import "result";
-import { jsx } from "result";
+// Module 13735 (LaptopPhoneIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LaptopPhoneIcon.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 14760
-// Function ID: 111274
+// Module ID: 14768
+// Function ID: 111317
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 14760 (_isNativeReflectConstruct)
+// Module 14768 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ obj = {};
 const tmp4 = arg1(dependencyMap[9]);
 const merged = Object.assign(importDefault(dependencyMap[11])(arg1(dependencyMap[8]).Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[12]).unsafe_rawColors.WHITE, 12, { uppercase: true }));
 obj.unreadText = obj;
-const obj2 = { borderRadius: importDefault(dependencyMap[12]).radii.md };
+const obj2 = { 1661139458: "\u{1F932}\u{1F3FB}", 1384656706: true, BDUDau: null, StartButton Pressed: 10, borderRadius: importDefault(dependencyMap[12]).radii.md };
 const importDefaultResult = importDefault(dependencyMap[11]);
 const obj1 = { uppercase: true };
 obj2.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.PRIMARY_400, 0.9);
@@ -158,7 +158,7 @@ const tmp7 = (PureComponent) => {
         obj["opacity"] = self.animation;
         const obj1 = {};
         const animation = self.animation;
-        const obj2 = { inputRange: ["replace", "then"] };
+        const obj2 = { inputRange: [77601039, 1612144654] };
         let num5 = -72;
         if (bottom) {
           num5 = 72;
@@ -231,7 +231,7 @@ export default function UnreadBars(contentInset) {
   }
   contentInset = contentInset.contentInset;
   if (contentInset === undefined) {
-    contentInset = { emitDefaultValues: "ERROR", enumAsInteger: "ERROR", useProtoFieldName: "NOT_RESPONDER", prettySpaces: "NOT_RESPONDER" };
+    contentInset = { <string:2874954499>: -24, <string:879673916>: null, size: 1, secureTextEntry: "Malaysia" };
   }
   function handlePress(section) {
     callback({ section: section.section, item: section.row, animated: true });

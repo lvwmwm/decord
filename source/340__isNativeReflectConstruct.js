@@ -17,9 +17,9 @@ function _isNativeReflectConstruct() {
 function createRefForwarder(arg0) {
   const global = arg0;
   const obj = {
-    isArray: false,
-    displayName: false,
-    string: null,
+    "Bool(false)": "mn",
+    "Bool(false)": "description",
+    "Bool(false)": "Array",
     getForwardingRef: importDefault(dependencyMap[28])((arg0) => (nativeInstance) => {
       let tmp = null;
       if (null != nativeInstance) {
@@ -39,8 +39,8 @@ function createRefForwarder(arg0) {
   const arg1 = obj;
   return obj;
 }
-let closure_4 = ["cancelable"];
-let closure_5 = [null];
+let closure_4 = ["GUILD_STICKERS_UPDATE"];
+let closure_5 = [];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 let closure_8 = importDefault(dependencyMap[2]);
@@ -180,7 +180,7 @@ const tmp4 = (Component) => {
             const _Math = Math;
             bound = Math.max(0, sum);
           }
-          const obj = { y: bound };
+          const obj = { 0: "httpServerLocation", 0: "hash", 9223372036854775807: "httpServerLocation", y: bound };
           self.scrollTo(obj);
           self._additionalScrollOffset = 0;
           self._preventNegativeScrollOffset = false;
@@ -811,7 +811,7 @@ const tmp4 = (Component) => {
 }(importAllResult.Component);
 tmp4.Context = importDefault(dependencyMap[23]);
 const tmp3 = arg1(dependencyMap[7]);
-let closure_16 = importDefault(dependencyMap[24]).create({ baseVertical: { isArray: null, diversity: null, string: null, y: null }, baseHorizontal: { isArray: false, diversity: false, string: false, y: false }, contentContainerHorizontal: { flexDirection: "row" } });
+let closure_16 = importDefault(dependencyMap[24]).create({ baseVertical: {}, baseHorizontal: {}, contentContainerHorizontal: { flexDirection: "row" } });
 class Wrapper {
   constructor(arg0) {
     ref = global.ref;

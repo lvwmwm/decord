@@ -1,7 +1,7 @@
 // Module ID: 3480
 // Function ID: 26871
 // Name: getISOWeeksInYear
-// Dependencies: []
+// Dependencies: [3070230541, 4026531853, 899103]
 // Exports: default
 
 // Module 3480 (getISOWeeksInYear)

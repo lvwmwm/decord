@@ -1,10 +1,10 @@
-// Module ID: 9800
-// Function ID: 76103
+// Module ID: 9801
+// Function ID: 76116
 // Name: GiftingBadgeProgressBar
 // Dependencies: []
 // Exports: default
 
-// Module 9800 (GiftingBadgeProgressBar)
+// Module 9801 (GiftingBadgeProgressBar)
 function GiftingBadgeProgressBar(percent) {
   const tmp = callback3();
   let obj = { style: tmp.progressBarTrack };
@@ -22,7 +22,7 @@ let closure_4 = arg1(dependencyMap[2]).getSingleRequirementThreshold;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": 7, "Null": 370, padding: importDefault(dependencyMap[5]).space.PX_16 };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.content = { flex: 1, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
@@ -30,7 +30,7 @@ const obj1 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[5]).space
 obj.progressBarTrack = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
 const obj2 = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
 obj.progressBarFill = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-const obj4 = { top: true, bottom: true, left: true, minHeight: importDefault(dependencyMap[5]).space.PX_16 };
+const obj4 = { "Null": true, "Null": true, "Null": true, minHeight: importDefault(dependencyMap[5]).space.PX_16 };
 obj.labels = obj4;
 let closure_7 = obj.createStyles(obj);
 const obj3 = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };

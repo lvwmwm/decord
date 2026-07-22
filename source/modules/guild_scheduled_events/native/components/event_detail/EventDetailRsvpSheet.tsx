@@ -1,9 +1,9 @@
-// Module ID: 12087
-// Function ID: 93224
+// Module ID: 12091
+// Function ID: 93250
 // Name: EmptyDisplay
 // Dependencies: []
 
-// Module 12087 (EmptyDisplay)
+// Module 12091 (EmptyDisplay)
 function EmptyDisplay(arg0) {
   let children;
   let style;
@@ -18,7 +18,7 @@ function EmptyDisplay(arg0) {
 }
 function FetchErrorDisplay(style) {
   let obj = { style: style.style };
-  obj = { delete: false, dispatch: 0, raw: 4, style: callback3().emptyDisplayTitle };
+  obj = { "Null": false, "Null": 0, alignItems: 4, style: callback3().emptyDisplayTitle };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.obChXk);
   obj.children = callback(arg1(dependencyMap[11]).Text, obj);
@@ -26,7 +26,7 @@ function FetchErrorDisplay(style) {
 }
 function NoUsersDisplay(style) {
   let obj = { style: style.style };
-  obj = { delete: false, dispatch: 0, raw: 4, style: callback3().emptyDisplayTitle };
+  obj = { "Null": false, "Null": 0, alignItems: 4, style: callback3().emptyDisplayTitle };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.hW0mBR);
   obj.children = callback(arg1(dependencyMap[11]).Text, obj);
@@ -202,21 +202,21 @@ let closure_6 = importDefault(dependencyMap[3]);
 const Fonts = arg1(dependencyMap[4]).Fonts;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
-let obj = { staticMessageContentContainer: { -1805531016: "<string:4083789493>", 2095032404: "<string:3209801398>" }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 } };
+let obj = { staticMessageContentContainer: { backgroundColor: "vertical", paddingVertical: false }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 } };
 obj = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16 };
 obj.userName = obj;
-obj.emptyDisplayContainer = { YUU0RF: null, f12: null, findChoiceStringValue: null };
+obj.emptyDisplayContainer = { -54378: null, 0: null, 0: null };
 obj.staticMessageContent = { height: "100%" };
 obj1 = { paddingTop: 24 };
 const tmp2 = arg1(dependencyMap[5]);
 const merged = Object.assign(importDefault(dependencyMap[8])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, 20, { marginBottom: 8 }));
 obj1["textAlign"] = "center";
 obj.emptyDisplayTitle = obj1;
+const obj3 = { "Null": "never", "Null": true, -28220831: "compatibility", tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.remainingUsersIcon = obj3;
 const importDefaultResult = importDefault(dependencyMap[8]);
 const obj2 = { marginBottom: 8 };
-obj.remainingUsersIcon = { tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const obj4 = { <string:2404551769>: "window", <string:1642563304>: "Array", <string:2256557963>: "isArray", <string:2761889636>: "x", <string:2730533642>: "hasDiversityParent", <string:3280959101>: "location", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
-obj.remainingUsersIconContainer = obj4;
+obj.remainingUsersIconContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 let closure_9 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((eventUser) => {
   let isMobileOnline;
@@ -260,7 +260,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   return callback(arg1(dependencyMap[13]).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
-const obj3 = { tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailRsvpSheet.tsx");
 
 export default EventDetailRsvpSheet;

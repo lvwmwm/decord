@@ -1,10 +1,10 @@
-// Module ID: 10263
-// Function ID: 79283
+// Module ID: 10264
+// Function ID: 79296
 // Name: usePreviewableMediaText
 // Dependencies: []
 // Exports: usePreviewableMediaText
 
-// Module 10263 (usePreviewableMediaText)
+// Module 10264 (usePreviewableMediaText)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
 
@@ -16,7 +16,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
   const items = [author, previewableMedia];
   return React.useMemo(() => {
     if (0 === previewableMedia.length) {
-      return { 1627762769: "o", 1359040893: "o" };
+      return { borderRadius: "o", alignItems: "o" };
     } else if (1 === previewableMedia.length) {
       const first = previewableMedia[0];
       const type = first.type;

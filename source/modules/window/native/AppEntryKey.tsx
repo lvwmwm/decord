@@ -7,4 +7,4 @@
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/window/native/AppEntryKey.tsx");
 
-export const APP_ENTRY_KEYS = [];
+export const APP_ENTRY_KEYS = ["constructor", "Array"];

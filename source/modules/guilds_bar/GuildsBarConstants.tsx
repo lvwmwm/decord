@@ -1,9 +1,9 @@
-// Module ID: 14695
-// Function ID: 110855
+// Module ID: 14703
+// Function ID: 110898
 // Name: DEFAULT_FOLDER_COLOR
 // Dependencies: []
 
-// Module 14695 (DEFAULT_FOLDER_COLOR)
+// Module 14703 (DEFAULT_FOLDER_COLOR)
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[1]);
 const _module2 = require(dependencyMap[2]);

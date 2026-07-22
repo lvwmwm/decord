@@ -48,7 +48,7 @@ function maybeDecryptToken(closure_7) {
     }
     return obj;
   }
-  obj = { "Bool(false)": true, "Bool(false)": true };
+  obj = { "Null": "<string:1243348993>", "Null": "<string:2137063425>" };
 }
 function maybeEncryptToken(closure_6) {
   let combined = closure_6;

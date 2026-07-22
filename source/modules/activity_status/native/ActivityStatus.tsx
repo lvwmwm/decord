@@ -1,10 +1,10 @@
-// Module ID: 9055
-// Function ID: 71103
+// Module ID: 9056
+// Function ID: 71116
 // Name: ActivityStatus
 // Dependencies: []
 // Exports: default
 
-// Module 9055 (ActivityStatus)
+// Module 9056 (ActivityStatus)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const DOT_UNICODE = arg1(dependencyMap[5]).DOT_UNICODE;
 const ActivityTypes = arg1(dependencyMap[6]).ActivityTypes;
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_13 = arg1(dependencyMap[8]).createStyles({ container: { "Null": true, "Null": true, "Bool(false)": true }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
+let closure_13 = arg1(dependencyMap[8]).createStyles({ container: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/activity_status/native/ActivityStatus.tsx");
 
@@ -191,7 +191,7 @@ export default function ActivityStatus(guildId) {
       tmp24 = null != tmp10;
     }
     if (tmp24) {
-      obj3 = { style: textStyle, maxFontSizeMultiplier, children: closure_8 };
+      obj3 = { lavender: true, GameDepthTier9LargeBadge: true, GENERIC_REGEX: true, borderStyle: true, borderWidth: true, style: textStyle, maxFontSizeMultiplier, children: closure_8 };
       tmp24 = callback(importDefault(dependencyMap[18]), obj3);
     }
     items5[1] = tmp24;

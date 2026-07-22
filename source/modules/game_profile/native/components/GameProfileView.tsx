@@ -1,23 +1,24 @@
-// Module ID: 8621
-// Function ID: 68312
+// Module ID: 8622
+// Function ID: 68324
 // Name: GameProfileView
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 8621 (GameProfileView)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingBottom: importDefault(dependencyMap[4]).space.PX_16 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.body = { paddingVertical: importDefault(dependencyMap[4]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_32 };
-const obj1 = { paddingVertical: importDefault(dependencyMap[4]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_32 };
-obj.buttonsContainer = { flexDirection: "column", gap: importDefault(dependencyMap[4]).space.PX_8 };
-let closure_7 = obj.createStyles(obj);
-const obj2 = { flexDirection: "column", gap: importDefault(dependencyMap[4]).space.PX_8 };
+// Module 8622 (GameProfileView)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { flex: 1, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST, paddingBottom: require("__exportStarResult1").space.PX_16 };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1.body = { paddingVertical: require("__exportStarResult1").space.PX_16, paddingHorizontal: require("__exportStarResult1").space.PX_16, gap: require("__exportStarResult1").space.PX_32 };
+const obj1 = { paddingVertical: require("__exportStarResult1").space.PX_16, paddingHorizontal: require("__exportStarResult1").space.PX_16, gap: require("__exportStarResult1").space.PX_32 };
+__exportStarResult1.buttonsContainer = { flexDirection: "column", gap: require("__exportStarResult1").space.PX_8 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const obj2 = { flexDirection: "column", gap: require("__exportStarResult1").space.PX_8 };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/game_profile/native/components/GameProfileView.tsx");
 
 export default function GameProfileView(arg0) {
@@ -36,7 +37,7 @@ export default function GameProfileView(arg0) {
   ({ game, viewId, source, trackAction, closeModal, websiteButtons, onStoreLinksMeasured } = arg0);
   const arg1 = onStoreLinksMeasured;
   ({ invite, onGuildInviteResolved, scrollY, onHeaderHeightMeasured, scrollOffsetRef } = arg0);
-  const tmp = callback3();
+  const tmp = __exportStarResult1();
   const importDefault = React.useRef(null);
   let closure_2 = React.useRef(null);
   const analyticsLocations = importDefault(closure_2[5])(importDefault(closure_2[6]).GAME_PROFILE).analyticsLocations;

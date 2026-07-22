@@ -4,6 +4,6 @@
 
 // Module 1399
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": "/assets/images/native/avatars", "Bool(false)": 96, "Bool(false)": 96, "Bool(false)": null, "Bool(false)": "13b5174c70f36a12e9398dc83e0105cd", "Bool(false)": "default_avatar_5_small", "Bool(false)": "png", scales: [null] };
+const obj = { 1358955657: true, 1279501871: "/assets/images/native/avatars", -100662186: 96, -134216521: 96, 1375732845: null, -1598249400: "13b5174c70f36a12e9398dc83e0105cd", -117286062: "default_avatar_5_small", 978739886: "png", scales: [false] };
 
 export default _module.registerAsset(obj);

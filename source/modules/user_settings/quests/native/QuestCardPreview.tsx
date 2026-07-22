@@ -1,10 +1,10 @@
-// Module ID: 13946
-// Function ID: 105987
+// Module ID: 13953
+// Function ID: 106027
 // Name: QuestCardPreview
 // Dependencies: []
 // Exports: QuestCardPreview
 
-// Module 13946 (QuestCardPreview)
+// Module 13953 (QuestCardPreview)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/user_settings/quests/native/QuestCardPreview.tsx");

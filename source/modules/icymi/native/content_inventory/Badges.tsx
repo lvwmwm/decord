@@ -1,10 +1,10 @@
-// Module ID: 11918
-// Function ID: 92233
+// Module ID: 11919
+// Function ID: 92247
 // Name: ActiveTimestamp
 // Dependencies: []
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 11918 (ActiveTimestamp)
+// Module 11919 (ActiveTimestamp)
 class ActiveTimestamp {
   constructor(arg0) {
     entry = global.entry;
@@ -16,7 +16,10 @@ class ActiveTimestamp {
     items[0] = entry;
     items[1] = now;
     memo = importAll.useMemo(() => entry(closure_2[7]).formatActiveTimestamp(entry, now), items);
-    return jsx(arg1(dependencyMap[8]).Text, { style: global.style, children: memo });
+    obj = { "Null": false, "Null": false, "Null": false, "Null": false };
+    obj.style = global.style;
+    obj.children = memo;
+    return jsx(arg1(dependencyMap[8]).Text, obj);
   }
 }
 function ContentTimestamp(entry) {
@@ -54,7 +57,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { icon: {} };
+obj = { icon: { "Null": null, "Null": null } };
 obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingLeft: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.badgeContainer = obj;
 const tmp2 = arg1(dependencyMap[3]);

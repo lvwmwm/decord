@@ -1,12 +1,12 @@
-// Module ID: 14602
-// Function ID: 110053
+// Module ID: 14610
+// Function ID: 110096
 // Name: apexExperiment
 // Dependencies: []
 // Exports: useRiveAppStatePlaybackExperiment
 
-// Module 14602 (apexExperiment)
+// Module 14610 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: 11, 1387159956: 11, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { y: 11, DateToSystemTimezoneSetter: 11, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/design/RiveAppStatePlaybackExperiment.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 4453
-// Function ID: 39250
+// Function ID: 39258
 // Name: getStripe
 // Dependencies: []
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
@@ -17,7 +17,7 @@ function getStripe() {
 }
 async function _authenticatePaymentIntentForPaymentId(paymentId, arg1) {
   const HTTP = callback(closure_1[6]).HTTP;
-  let obj = { disabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, accessibilityHint: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, legacyCompat_selected: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, url: closure_6.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
+  let obj = { y: 1567300603, isArray: 221342020, accessible: 822948183, url: closure_6.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
   const stripe_payment_intent_client_secret = yield HTTP.get(obj).body.stripe_payment_intent_client_secret;
   const tmp = yield closure_11();
   let obj1 = tmp;
@@ -89,7 +89,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("StripeUtils");
 let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
-let closure_10 = {};
+let closure_10 = { player_mux_plugin_name: null, player_mux_plugin_version: "title", 9223372036854775807: "__closure" };
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("utils/StripeUtils.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10447
-// Function ID: 80658
+// Module ID: 10448
+// Function ID: 80671
 // Name: fetchChannelInfo
 // Dependencies: []
 // Exports: fetchChannelInfo
 
-// Module 10447 (fetchChannelInfo)
+// Module 10448 (fetchChannelInfo)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
@@ -15,6 +15,6 @@ export const fetchChannelInfo = function fetchChannelInfo(guild_id) {
     obj = { type: "FETCH_CHANNEL_INFO", guildId: guild_id };
     obj.dispatch(obj);
     const socket = socket.getSocket();
-    const channelInfo = socket.requestChannelInfo(guild_id, ["<string:584115552>", "<string:843037147>"]);
+    const channelInfo = socket.requestChannelInfo(guild_id, ["transform", "formatToPlainString"]);
   }
 };

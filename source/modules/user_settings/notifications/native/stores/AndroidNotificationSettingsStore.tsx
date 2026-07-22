@@ -1,10 +1,10 @@
-// Module ID: 14190
-// Function ID: 107399
+// Module ID: 14198
+// Function ID: 107442
 // Name: _initializeAndroidNotificationSettingsStore
 // Dependencies: []
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 14190 (_initializeAndroidNotificationSettingsStore)
+// Module 14198 (_initializeAndroidNotificationSettingsStore)
 function _initializeAndroidNotificationSettingsStore() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,9 +1,9 @@
-// Module ID: 8710
-// Function ID: 68930
+// Module ID: 8711
+// Function ID: 68942
 // Name: memoResult1
 // Dependencies: []
 
-// Module 8710 (memoResult1)
+// Module 8711 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,15 +12,15 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { "Null": "<string:1895825897>", "Null": "Array", "Null": "<string:1798673>", "Null": "<string:19660800>", "Null": "<string:1162936320>", "Null": "<string:3446620741>", "Null": "<string:1932197889>", "Null": "Array", "Null": "s", "Null": 1090519041, "Null": 133535, "Null": -1791799039, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { -229249902: false, 932251029: false, -946260179: false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.regularMetadataContainer = obj;
 obj.assetName = { marginBottom: 4 };
 obj1 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
 obj.priceVariantsContainer = obj1;
-obj.priceDescription = { positionBottom: null, positionRight: 0, text: 360, state: 0 };
+obj.priceDescription = {};
 obj.text = { flexShrink: 1 };
 obj.discountPercentage = { paddingLeft: 3 };
-obj.wheelIcon = { iconPosition: 2, style: "text-sm/semibold" };
+obj.wheelIcon = { <string:2343141277>: 2, <string:259581577>: "text-sm/semibold" };
 obj.androidTextPadding = { paddingBottom: 2 };
 let closure_10 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
@@ -239,7 +239,7 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
   const obj11 = arg1(dependencyMap[25]);
   const items = [closure_5];
   const stateFromStores = arg1(dependencyMap[26]).useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
-  obj = { style: items1, colors: items2, locations: [0, 0.3, 1], start: constants.START, end: constants.END };
+  obj = { style: items1, colors: items2, locations: [1079741169, -1683627215, 1517297860], start: constants.START, end: constants.END };
   const items1 = [tmp.regularMetadataContainer];
   const items2 = [hexToRgbaStringResult1, hexToRgbaStringResult, token];
   const obj12 = arg1(dependencyMap[26]);

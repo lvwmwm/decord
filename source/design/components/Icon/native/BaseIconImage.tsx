@@ -1,15 +1,17 @@
 // Module ID: 3831
-// Function ID: 31986
+// Function ID: 31988
 // Name: BaseIconImage
-// Dependencies: []
+// Dependencies: [31, 33, 2, 31, 33]
 // Exports: BaseIconImage
 
 // Module 3831 (BaseIconImage)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = { xxs: { "Null": "<string:2552889346>", "Null": "<string:2938503170>" }, xs: {}, sm: { "Null": false, "Null": false }, md: {}, lg: { "Null": false, "Null": false }, custom: { width: undefined, height: undefined }, refresh_sm: { "Null": false, "Null": false } };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
+import "module_31";
+import { Image } from "module_33";
+import { jsx } from "result2";
+import module_33 from "module_33";
+
+let closure_4 = { xxs: { "Null": null, "Null": null }, xs: { "Null": null, "Null": null }, sm: { "Null": null, "Null": null }, md: {}, lg: { "Null": true, "Null": true }, custom: { width: undefined, height: undefined }, refresh_sm: { "Null": null, "Null": null } };
+const result = module_33.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {
   let accessibilityLabel;

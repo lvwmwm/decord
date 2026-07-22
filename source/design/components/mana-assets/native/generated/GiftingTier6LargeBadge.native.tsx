@@ -1,7 +1,7 @@
 // Module ID: 6231
-// Function ID: 50268
+// Function ID: 50279
 // Name: GiftingTier6LargeBadge
-// Dependencies: [33554456, 1946157056, 33, 5232]
+// Dependencies: [33554456, 1946157056, 33, 5082]
 // Exports: GiftingTier6LargeBadge
 
 // Module 6231 (GiftingTier6LargeBadge)

@@ -4,9 +4,9 @@
 // Dependencies: []
 
 // Module 656 (set)
-const obj = { ALL: new Set([true, true, true]) };
-const set = new Set([true, true, true]);
-obj.ACTIVE_FRACTIONAL_PREMIUM_SKUS = new Set([true, true, true]);
+const obj = { ALL: new Set([]) };
+const set = new Set([]);
+obj.ACTIVE_FRACTIONAL_PREMIUM_SKUS = new Set([]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/FractionalPremiumSKUs.tsx");
 

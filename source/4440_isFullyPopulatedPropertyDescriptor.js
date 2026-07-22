@@ -1,5 +1,5 @@
 // Module ID: 4440
-// Function ID: 38904
+// Function ID: 38912
 // Name: isFullyPopulatedPropertyDescriptor
 // Dependencies: []
 

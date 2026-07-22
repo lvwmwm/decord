@@ -1,10 +1,10 @@
-// Module ID: 11691
-// Function ID: 90710
+// Module ID: 11692
+// Function ID: 90723
 // Name: dismissActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11691 (dismissActionSheet)
+// Module 11692 (dismissActionSheet)
 function dismissActionSheet() {
   importDefault(dependencyMap[8]).hideActionSheet(closure_6);
 }
@@ -20,7 +20,7 @@ const tmp3 = arg1(dependencyMap[4]);
 const tmp4 = arg1(dependencyMap[6]);
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[7]));
 const tmp5 = arg1(dependencyMap[7]);
-let closure_17 = arg1(dependencyMap[9]).createStyles({ container: { padding: 16 }, footer: {} });
+let closure_17 = arg1(dependencyMap[9]).createStyles({ container: { padding: 16 }, footer: { -1852570492: null, 77203745: 15.1, 56496143: null } });
 const obj = arg1(dependencyMap[9]);
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/hub/native/components/progress_bar/HubProgressActionSheet.tsx");
 

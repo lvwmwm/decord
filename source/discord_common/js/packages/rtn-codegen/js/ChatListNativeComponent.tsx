@@ -1,9 +1,9 @@
-// Module ID: 10015
-// Function ID: 77410
+// Module ID: 10016
+// Function ID: 77423
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 10015 (__INTERNAL_VIEW_CONFIG)
+// Module 10016 (__INTERNAL_VIEW_CONFIG)
 const obj = { uiViewClassName: "DCDChatList", validAttributes: { floatingChatInputEnabled: true } };
 const _module = require(dependencyMap[0]);
 const value = _module.get("DCDChatList", () => obj);

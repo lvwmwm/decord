@@ -1,10 +1,10 @@
-// Module ID: 5641
-// Function ID: 48227
+// Module ID: 5640
+// Function ID: 48235
 // Name: canReviewGuildMemberApplications
 // Dependencies: [31, 1348, 3756, 482, 566, 1327]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 5641 (canReviewGuildMemberApplications)
+// Module 5640 (canReviewGuildMemberApplications)
 import module_31 from "module_31";
 import closure_3 from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

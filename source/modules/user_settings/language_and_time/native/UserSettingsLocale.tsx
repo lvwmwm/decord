@@ -1,9 +1,9 @@
-// Module ID: 14133
-// Function ID: 107259
+// Module ID: 14141
+// Function ID: 107302
 // Name: handleLanguageChange
 // Dependencies: []
 
-// Module 14133 (handleLanguageChange)
+// Module 14141 (handleLanguageChange)
 function handleLanguageChange() {
   return _handleLanguageChange(...arguments);
 }

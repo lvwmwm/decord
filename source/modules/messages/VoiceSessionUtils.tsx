@@ -1,5 +1,5 @@
 // Module ID: 7741
-// Function ID: 61496
+// Function ID: 61506
 // Name: getSortedVoiceSessionParticipants
 // Dependencies: []
 // Exports: getVoiceSessionMessageContent, useSortedVoiceSessionParticipants

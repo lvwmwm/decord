@@ -1,16 +1,18 @@
-// Module ID: 12388
-// Function ID: 94696
+// Module ID: 12393
+// Function ID: 94724
 // Name: useFetchGuildBoostSlots
-// Dependencies: []
+// Dependencies: [31, 4015, 4016, 4019, 566, 11599, 2, 57, 4017, 4019]
 // Exports: default
 
-// Module 12388 (useFetchGuildBoostSlots)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
+// Module 12393 (useFetchGuildBoostSlots)
+import module_31 from "module_31";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import BoostedGuildTiers from "BoostedGuildTiers";
+import closure_6 from "VANITY_URL_POWERUP_SKU_ID";
+import initialize from "initialize";
+import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID";
+
+const result = VANITY_URL_POWERUP_SKU_ID.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
 
 export default function useFetchGuildBoostSlots() {
   const tmp = callback(React.useState(true), 2);
@@ -21,9 +23,9 @@ export default function useFetchGuildBoostSlots() {
   const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => hasFetched.hasFetched);
   const dependencyMap = stateFromStores;
   const obj = arg1(dependencyMap[5]);
-  const items1 = [closure_7];
+  const items1 = [initialize];
   const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => state.getState());
-  let closure_3 = stateFromStores1;
+  let module_31 = stateFromStores1;
   const callback = React.useRef(stateFromStores1);
   const items2 = [stateFromStores1, stateFromStores, first];
   const effect = React.useEffect(() => {

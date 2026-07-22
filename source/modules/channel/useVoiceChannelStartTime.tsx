@@ -1,10 +1,10 @@
-// Module ID: 14932
-// Function ID: 112409
+// Module ID: 14940
+// Function ID: 112452
 // Name: useStartTime
 // Dependencies: []
 // Exports: useStartTime
 
-// Module 14932 (useStartTime)
+// Module 14940 (useStartTime)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

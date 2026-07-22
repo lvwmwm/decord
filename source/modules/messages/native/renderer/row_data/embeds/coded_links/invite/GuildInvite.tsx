@@ -1,10 +1,10 @@
-// Module ID: 12166
-// Function ID: 93585
+// Module ID: 12170
+// Function ID: 93611
 // Name: createResolvingGuildInvite
 // Dependencies: []
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 12166 (createResolvingGuildInvite)
+// Module 12170 (createResolvingGuildInvite)
 const Image = require(dependencyMap[0]).Image;
 const _module = require(dependencyMap[1]);
 ({ getGuildIconURL: closure_4, getGuildAcronym: closure_5 } = _module);

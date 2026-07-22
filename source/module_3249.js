@@ -10,9 +10,9 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: { "Bool(false)": "environ 1 semaine", "Bool(false)": "environ {{count}} semaines", "Bool(false)": "1 semaine", "Bool(false)": "{{count}} semaines" }, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "__initData", "Bool(false)": "start" }, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Null": null, "Null": null, "Null": null, "Null": null }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Null": false, "Null": false, "Null": false, "Null": false }, defaultWidth: "full" });
+obj.dateTime = obj.default({ formats: { "Null": true, "Null": true, "Null": true, "Null": true }, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

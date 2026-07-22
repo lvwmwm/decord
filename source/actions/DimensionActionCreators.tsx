@@ -1,8 +1,8 @@
-// Module ID: 9878
-// Function ID: 76505
-// Dependencies: [646840323, 899088385]
+// Module ID: 9879
+// Function ID: 76518
+// Dependencies: []
 
-// Module 9878
+// Module 9879
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("actions/DimensionActionCreators.tsx");
 
@@ -31,7 +31,7 @@ export default {
   },
   clearChannelListScrollTo(guildId) {
     let obj = importDefault(dependencyMap[0]);
-    obj = { guildId, channelIds: [] };
+    obj = { position: false, left: false, right: false, guildId, channelIds: [] };
     obj.dispatch(obj);
   },
   clearChannelDimensions(channelId) {

@@ -4,6 +4,6 @@
 
 // Module 1990
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: 0.1, format: true, View: "/assets/modules/checkout/messages", accessibilityRole: null, surrogates: "3009b1746fe9c2e1e2935c2a9cae0bc9", url: "CheckoutUntranslated.compiled.messages", scales: [null] };
+const obj = { 296374: "Array", 1102560849: "accountInfoRow", 288807: "getStreamForUser", 1103760465: "Array", 288241: "namesStyle", 1120538193: "Array", scales: [false] };
 
 export default _module.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 5487
-// Function ID: 46820
+// Module ID: 5486
+// Function ID: 46828
 // Name: getRoleIconSource
 // Dependencies: []
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 5487 (getRoleIconSource)
+// Module 5486 (getRoleIconSource)
 function getRoleIconSource(role, arg1) {
   let icon;
   let id;

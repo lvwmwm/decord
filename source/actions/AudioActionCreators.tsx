@@ -1,9 +1,9 @@
-// Module ID: 8835
-// Function ID: 69678
+// Module ID: 8836
+// Function ID: 69690
 // Name: getInputDeviceName
 // Dependencies: []
 
-// Module 8835 (getInputDeviceName)
+// Module 8836 (getInputDeviceName)
 function getInputDeviceName() {
   const inputDevices = store3.getInputDevices();
   let str = "";
@@ -239,13 +239,27 @@ obj = {
     importDefault(dependencyMap[13]).dispatch(obj);
     callback2(ownerId, DEFAULT, snapVolumeToDefaultResult);
   },
-  setAudioMixerSettings(settings, DEFAULT) {
-    if (DEFAULT === undefined) {
+  setAudioMixerSettings(audioMixerSettings) {
+    let DEFAULT = arg1;
+    if (arg1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
     let obj = importDefault(dependencyMap[13]);
-    obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings };
+    obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings: audioMixerSettings };
     obj.dispatch(obj);
+  },
+  setSpatialAudio(arg0, arg1) {
+    if (!callback3()) {
+      const audioMixerSettings = store3.getAudioMixerSettings();
+      importDefault(dependencyMap[15])("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
+      let obj = importDefault(dependencyMap[13]);
+      obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT };
+      obj = {};
+      const merged = Object.assign(audioMixerSettings);
+      obj["enabled"] = arg0;
+      obj.settings = obj;
+      obj.dispatch(obj);
+    }
   },
   setLocalPan(result2, left, right) {
     let DEFAULT = arg3;
@@ -649,7 +663,7 @@ obj = {
   },
   interact() {
     if (!callback3()) {
-      importDefault(dependencyMap[13]).dispatch({ pointerEvents: "png", width: true });
+      importDefault(dependencyMap[13]).dispatch({ 9223372036854775807: "png", 0: true });
       const obj = importDefault(dependencyMap[13]);
     }
   },

@@ -1,5 +1,5 @@
 // Module ID: 4780
-// Function ID: 41548
+// Function ID: 41557
 // Name: fraction
 // Dependencies: []
 

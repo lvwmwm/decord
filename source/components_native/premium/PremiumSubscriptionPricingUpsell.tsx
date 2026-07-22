@@ -1,10 +1,10 @@
-// Module ID: 12348
-// Function ID: 94449
+// Module ID: 12353
+// Function ID: 94477
 // Name: PricingSubheadingCopy
 // Dependencies: []
 // Exports: default
 
-// Module 12348 (PricingSubheadingCopy)
+// Module 12353 (PricingSubheadingCopy)
 function PricingSubheadingCopy() {
   let interval;
   let intervalCount;
@@ -192,7 +192,7 @@ function PricingSubheadingCopy() {
       }
     }
   }
-  obj12 = { 16667904: null, 16668160: "e56e37c53edc4951356b726ba43f79c4", 16668416: "img_wumpus_nitro_classic_boost", style: tmp.cardText };
+  obj12 = { UNKNOWN_EMOJI: null, paddingVertical: "e56e37c53edc4951356b726ba43f79c4", getChangeTitle: "img_wumpus_nitro_classic_boost", style: tmp.cardText };
   return callback2(arg1(dependencyMap[18]).Text, obj12);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -208,7 +208,7 @@ const CurrencyCodes = arg1(dependencyMap[8]).CurrencyCodes;
 const tmp2 = arg1(dependencyMap[9]);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = arg1(dependencyMap[10]));
 const tmp3 = arg1(dependencyMap[10]);
-let closure_21 = arg1(dependencyMap[11]).createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { startExpanded: "<string:410124289>", scrollable: "<string:402653184>", handleDisabled: "<string:16777216>" } });
+let closure_21 = arg1(dependencyMap[11]).createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: {} });
 const obj = arg1(dependencyMap[11]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("components_native/premium/PremiumSubscriptionPricingUpsell.tsx");
 

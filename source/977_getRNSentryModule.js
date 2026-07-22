@@ -269,7 +269,7 @@ obj = {
       let integrations;
       let logsOrigin;
       const self = this;
-      const merged = Object.assign({ themedColor: null, "Null": null }, lib);
+      const merged = Object.assign({ r: null, cx: null }, lib);
       if (undefined !== lib.enableLogs) {
         let obj = {};
         let enableLogs = lib.enableLogs;
@@ -315,7 +315,7 @@ obj = {
                 merged1.ignoreErrorsRegex = mapped;
               }
               ({ beforeSend, beforeBreadcrumb, beforeSendTransaction, beforeSendMetric, integrations, ignoreErrors: ignoreErrors3, logsOrigin, androidProfilingOptions } = merged1);
-              const tmp25 = callback(merged1, [null, null, null, null, null, null, null, null]);
+              const tmp25 = callback(merged1, []);
               if (androidProfilingOptions) {
                 const _Object = Object;
                 const _Object2 = Object;
@@ -478,8 +478,8 @@ obj = {
           ({ id, ip_address, email, username, geo } = arg0);
           const obj = { id, ip_address, email, username, geo };
           _serializeObjectResult = self._serializeObject(obj);
-          _serializeObjectResult1 = self._serializeObject(fn2(arg0, [65, 102, 6, 7, 15]));
-          const tmp5 = fn2(arg0, [65, 102, 6, 7, 15]);
+          _serializeObjectResult1 = self._serializeObject(fn2(arg0, []));
+          const tmp5 = fn2(arg0, []);
         }
         authStore.setUser(_serializeObjectResult, _serializeObjectResult1);
       } else {

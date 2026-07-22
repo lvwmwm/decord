@@ -1,10 +1,10 @@
-// Module ID: 5643
-// Function ID: 48245
+// Module ID: 5642
+// Function ID: 48253
 // Name: getGuildModeratorReportingEnabled
 // Dependencies: []
 // Exports: default
 
-// Module 5643 (getGuildModeratorReportingEnabled)
+// Module 5642 (getGuildModeratorReportingEnabled)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/report_to_mod/getGuildModeratorReportingEnabled.tsx");
 

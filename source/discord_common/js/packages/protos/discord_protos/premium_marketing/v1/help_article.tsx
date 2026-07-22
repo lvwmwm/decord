@@ -1,5 +1,5 @@
 // Module ID: 7132
-// Function ID: 57429
+// Function ID: 57440
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,24 +25,24 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, HelpArticle$Type);
       items = [, , ];
-      items[0] = { 1347510942: 1, 1678385745: "stretch", 1364379111: 16, 140698458: "message_request_restricted_guild_ids" };
-      items[1] = { 1347510942: "body", 1678385745: "scalar", 1364379111: 9, 140698458: 0 };
-      obj = { 9223372036854775807: "y", 9223372036854775807: "worker", 0: "MessageRequestLottieState" };
-      obj.T = function T() {
-        return callback(closure_1[6]).LocalizedString;
+      items[0] = {};
+      items[1] = {};
+      items[2] = {
+        T() {
+              return callback(closure_1[6]).LocalizedString;
+            }
       };
-      items[2] = obj;
-      items1 = [79135297];
+      items1 = [1817285918700075700000000000];
       items1[1] = items;
-      obj2 = closure_6(HelpArticle$Type);
+      obj = closure_6(HelpArticle$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj2.apply(self, items1);
+        constructResult = obj.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -52,7 +52,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 116489713: null, 1420102689: null };
+      let obj = { 1481739105: "Normal", 1544673627: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, HelpArticle$Type(closure_1[7]).MESSAGE_TYPE, obj);

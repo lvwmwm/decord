@@ -1,10 +1,10 @@
-// Module ID: 15492
-// Function ID: 118233
+// Module ID: 15500
+// Function ID: 118276
 // Name: markAsDismissed
 // Dependencies: []
 // Exports: default
 
-// Module 15492 (markAsDismissed)
+// Module 15500 (markAsDismissed)
 let AnalyticsObjectTypes;
 let AnalyticsPages;
 let AnalyticsSections;
@@ -17,7 +17,7 @@ const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType
 const jsx = arg1(dependencyMap[4]).jsx;
 let closure_9 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
 const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/premium/native/discounts/PremiumDiscountOfferActionSheet.tsx");
+const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/premium/native/discounts/PremiumDiscountOfferActionSheet.tsx");
 
 export default function _default(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
@@ -63,13 +63,13 @@ export default function _default(markAsDismissed) {
     obj.track(constants.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_CTA_CLICKED, obj);
     markAsDismissed(constants2.TAKE_ACTION);
     obj = { analyticsLocations };
-    userDiscountOffer(analyticsLocations[9]).pushLazy(markAsDismissed(analyticsLocations[11])(analyticsLocations[10], analyticsLocations.paths), obj);
-    userDiscountOffer(analyticsLocations[12])({ analyticsLocation: closure_9, analyticsLocations, premiumType: memo });
+    userDiscountOffer(analyticsLocations[9])(obj);
+    userDiscountOffer(analyticsLocations[10])({ analyticsLocation: closure_9, analyticsLocations, premiumType: memo });
   }, items2);
-  const obj = { startExpanded: true, onDismiss: callback, children: jsx(importDefault(dependencyMap[14]), { discountOffer: userDiscountOffer, onConfirm: callback1 }) };
+  const obj = { startExpanded: true, onDismiss: callback, children: jsx(importDefault(dependencyMap[12]), { discountOffer: userDiscountOffer, onConfirm: callback1 }) };
   let id;
   if (null != userDiscountOffer) {
     id = userDiscountOffer.id;
   }
-  return jsx(arg1(dependencyMap[13]).BottomSheet, obj, id);
+  return jsx(arg1(dependencyMap[11]).BottomSheet, obj, id);
 };

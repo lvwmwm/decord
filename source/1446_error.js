@@ -410,7 +410,7 @@
   let closure_3 = /^xn--/;
   let closure_4 = /[^\x20-\x7E]/;
   let closure_5 = /[\x2E\u3002\uFF0E\uFF61]/g;
-  let closure_6 = { <string:1122718148>: 30200130322500156000000000000000000000000, onFocusedInputTextChanged: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039611173275837944, onFocusedInputSelectionChanged: false };
+  let closure_6 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   const obj = {
     version: "1.4.1",
     ucs2: { decode: ucs2decode, encode: ucs2encode },

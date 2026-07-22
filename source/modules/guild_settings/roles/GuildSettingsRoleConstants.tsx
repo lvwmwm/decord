@@ -1,9 +1,9 @@
-// Module ID: 16179
-// Function ID: 124876
+// Module ID: 16187
+// Function ID: 124918
 // Name: title
 // Dependencies: []
 
-// Module 16179 (title)
+// Module 16187 (title)
 let DEFAULT_GRADIENT_ROLE_COLORS;
 let HOLOGRAPHIC_ROLE_COLORS;
 const RoleColorsStyle = require(dependencyMap[0]).RoleColorsStyle;
@@ -127,7 +127,7 @@ obj3.contentPreface = function contentPreface() {
 };
 obj[obj.MANAGER] = obj3;
 const addResult = importAll(dependencyMap[3]).add(combineResult1, Permissions.VIEW_GUILD_ANALYTICS);
-const obj5 = { <string:996344831>: false, <string:4132547158>: false, <string:1375429038>: null, primary_color: _module.DEFAULT_ROLE_COLOR };
+const obj5 = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: _module.DEFAULT_ROLE_COLOR };
 const items = [{ id: RoleColorsStyle.SOLID, colors: obj5, labelString: require(dependencyMap[6]).t.8Qyahn }, , ];
 const obj4 = { id: RoleColorsStyle.SOLID, colors: obj5, labelString: require(dependencyMap[6]).t.8Qyahn };
 items[1] = { id: RoleColorsStyle.GRADIENT, colors: DEFAULT_GRADIENT_ROLE_COLORS, labelString: require(dependencyMap[6]).t.XpWmJz };

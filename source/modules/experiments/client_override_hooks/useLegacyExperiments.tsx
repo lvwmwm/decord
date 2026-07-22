@@ -1,10 +1,10 @@
-// Module ID: 10450
-// Function ID: 80687
+// Module ID: 10451
+// Function ID: 80700
 // Name: bucketVariantType
 // Dependencies: []
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 10450 (bucketVariantType)
+// Module 10451 (bucketVariantType)
 function bucketVariantType(arg0) {
   if (arg0 === constants.CONTROL) {
     let TREATMENT = arg1(dependencyMap[4]).Variation_Type.CONTROL;

@@ -1,10 +1,10 @@
-// Module ID: 13681
-// Function ID: 103569
+// Module ID: 13688
+// Function ID: 103602
 // Name: FamilyCenterActivitySectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13681 (FamilyCenterActivitySectionHeader)
+// Module 13688 (FamilyCenterActivitySectionHeader)
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = callback3();
@@ -41,7 +41,7 @@ function FamilyCenterActivitySectionHeader(displayType) {
     const items = [callback2(arg1(dependencyMap[10]).Text, obj), ];
     let tmp16 = null;
     if (null !== tmp8) {
-      const obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp.description, children: tmp8 };
+      const obj1 = { cachedAt: "y", edpbxy: "isArray", style: tmp.description, children: tmp8 };
       tmp16 = callback2(arg1(dependencyMap[10]).Text, obj1);
     }
     items[1] = tmp16;
@@ -65,12 +65,12 @@ const tmp4 = arg1(dependencyMap[4]);
 obj.description = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 let closure_11 = obj.createStyles(obj);
 const obj1 = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-const obj2 = { container: { display: "flex" }, loadMoreContainer: { <string:1415356514>: 994646526333880000000000000000000000000000000000000000000000000000000000000000000000000, <string:2321894483>: -0.000000016044865149258613, <string:3262108988>: -292058213633.0157, <string:2700832355>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006663100421674881, <string:1903372114>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288229869096142, <string:1407672798>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002320959504206114 } };
-const obj5 = arg1(dependencyMap[5]);
-obj2.loadMore = { borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
+const obj2 = { container: { display: "flex" }, loadMoreContainer: { right: "<string:242304235>", left: "<string:1375731712>", justifyContent: "<string:37255138>", "Bool(false)": "<string:3310434913>", "Bool(false)": "<string:105791745>", "Bool(false)": "<string:3947954177>" } };
+const obj3 = { "Null": "O", "Null": "l", "Null": "\u0596", "Null": "\u0598", borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
+obj2.loadMore = obj3;
 obj2.loadMoreButton = { paddingVertical: 4 };
-let closure_12 = obj5.createStyles(obj2);
-const obj3 = { borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
+let closure_12 = arg1(dependencyMap[5]).createStyles(obj2);
+const obj5 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivitySection.tsx");
 
 export default function FamilyCenterActivitySection(displayType) {

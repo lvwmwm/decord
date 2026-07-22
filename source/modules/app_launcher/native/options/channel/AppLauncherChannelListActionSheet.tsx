@@ -1,10 +1,10 @@
-// Module ID: 11300
-// Function ID: 87929
+// Module ID: 11301
+// Function ID: 87942
 // Name: ChannelIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11300 (ChannelIcon)
+// Module 11301 (ChannelIcon)
 class ChannelIcon {
   constructor(arg0) {
     ({ channel, size } = global);
@@ -50,12 +50,7 @@ function ChannelListItem(arg0) {
   let totalCount;
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
-  let obj = { onPress };
-  obj = { "Null": true, "Null": 15.1, "Null": 253, children: importDefault(dependencyMap[13])(channel) };
-  obj.label = callback2(arg1(dependencyMap[15]).Text, obj);
-  obj.icon = callback2(ChannelIcon, { channel });
-  obj.start = 0 === index;
-  obj.end = index === totalCount - 1;
+  const obj = { onPress, label: callback2(arg1(dependencyMap[15]).Text, { children: importDefault(dependencyMap[13])(channel) }), icon: callback2(ChannelIcon, { channel }), start: 0 === index, end: index === totalCount - 1 };
   return callback2(arg1(dependencyMap[14]).TableRow, obj, channel.id);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -103,7 +98,7 @@ export default function AppLauncherChannelListActionSheet(channel) {
       callback2(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
+        current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
       }
     }
   };

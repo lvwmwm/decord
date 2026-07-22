@@ -1,9 +1,9 @@
-// Module ID: 13580
-// Function ID: 102957
+// Module ID: 13587
+// Function ID: 102990
 // Name: useAccountSMSBackupSettingDescription
 // Dependencies: []
 
-// Module 13580 (useAccountSMSBackupSettingDescription)
+// Module 13587 (useAccountSMSBackupSettingDescription)
 function useAccountSMSBackupSettingDescription() {
   const items = [closure_3];
   const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => currentUser.getCurrentUser());

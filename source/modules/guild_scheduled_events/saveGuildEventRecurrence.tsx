@@ -1,10 +1,10 @@
-// Module ID: 8360
-// Function ID: 66656
+// Module ID: 8361
+// Function ID: 66668
 // Name: saveGuildEventRecurrence
 // Dependencies: []
 // Exports: default
 
-// Module 8360 (saveGuildEventRecurrence)
+// Module 8361 (saveGuildEventRecurrence)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 

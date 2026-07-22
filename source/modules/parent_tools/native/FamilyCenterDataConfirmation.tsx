@@ -1,15 +1,14 @@
-// Module ID: 11052
-// Function ID: 86068
+// Module ID: 11053
+// Function ID: 86081
 // Name: RowGroup
 // Dependencies: []
 // Exports: default
 
-// Module 11052 (RowGroup)
-function RowGroup(rows) {
-  rows = rows.rows;
+// Module 11053 (RowGroup)
+function RowGroup(children) {
+  const rows = children.rows;
   let obj = { spacing: 8 };
-  obj = { USER_REGISTRATION: "r", borderColor: 320.5, borderWidth: 175, children: rows.title };
-  const items = [callback(arg1(dependencyMap[3]).Text, obj), ];
+  const items = [callback(arg1(dependencyMap[3]).Text, { children: children.title }), ];
   obj = {
     hasIcons: true,
     children: rows.map((header) => {

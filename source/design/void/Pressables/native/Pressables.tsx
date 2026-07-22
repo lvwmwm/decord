@@ -1,5 +1,5 @@
 // Module ID: 4656
-// Function ID: 40326
+// Function ID: 40334
 // Name: PressableBase
 // Dependencies: []
 
@@ -16,7 +16,7 @@ function PressableBase(androidRippleConfig) {
   const activeOpacity = androidRippleConfig.activeOpacity;
   const underlayColor = androidRippleConfig.underlayColor;
   const Pressable = underlayColor;
-  let obj = { "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, "Bool(true)": "99274532ad7fe616c031212e677b32e8", "Bool(true)": "ThreadLockIcon" };
+  let obj = { "Bool(true)": "ThreadLockIcon", "Bool(true)": "png", "Bool(true)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null };
   ({ children, innerRef } = androidRippleConfig);
   Object.setPrototypeOf(null);
   const merged = Object.assign(androidRippleConfig, obj);

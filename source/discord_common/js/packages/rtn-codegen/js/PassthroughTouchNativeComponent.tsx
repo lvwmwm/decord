@@ -1,9 +1,9 @@
-// Module ID: 12910
-// Function ID: 98481
+// Module ID: 12917
+// Function ID: 98514
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 12910 (__INTERNAL_VIEW_CONFIG)
+// Module 12917 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "PassthroughTouchView", directEventTypes: { topTouchDown: { registrationName: "onTouchDown" } } };
 obj = {};
 const _module = require(dependencyMap[0]);

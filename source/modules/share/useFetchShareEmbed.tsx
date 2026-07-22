@@ -1,12 +1,11 @@
-// Module ID: 12787
-// Function ID: 97980
+// Module ID: 12794
+// Function ID: 98013
 // Name: useFetchShareEmbed
-// Dependencies: [36, 4194304016, 2382364721, 872415239, 973078578, 33554482, 2063597568]
+// Dependencies: []
 // Exports: default
 
-// Module 12787 (useFetchShareEmbed)
-import result from "result";
-
+// Module 12794 (useFetchShareEmbed)
+let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/share/useFetchShareEmbed.tsx");
@@ -18,7 +17,7 @@ export default function useFetchShareEmbed(arg0) {
   let closure_1 = embed[1];
   [tmp3, closure_2] = callback(React.useState(false), 2);
   const hasTriedResolving = callback(React.useState(false), 2);
-  let result = hasTriedResolving[1];
+  let closure_3 = hasTriedResolving[1];
   const callback = React.useRef(true);
   const React = React.useRef(undefined);
   const items = [arg0];

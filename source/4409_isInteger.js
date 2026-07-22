@@ -1,5 +1,5 @@
 // Module ID: 4409
-// Function ID: 38842
+// Function ID: 38850
 // Name: isInteger
 // Dependencies: []
 

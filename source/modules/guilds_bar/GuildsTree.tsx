@@ -1,10 +1,10 @@
-// Module ID: 5242
-// Function ID: 44343
+// Module ID: 4969
+// Function ID: 42755
 // Name: randomFolderId
 // Dependencies: []
 // Exports: createFolderNode, createGuildNode
 
-// Module 5242 (randomFolderId)
+// Module 4969 (randomFolderId)
 function randomFolderId() {
   return Math.floor(4294967296 * Math.random());
 }

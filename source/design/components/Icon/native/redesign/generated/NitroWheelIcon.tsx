@@ -1,5 +1,5 @@
 // Module ID: 7865
-// Function ID: 62652
+// Function ID: 62662
 // Name: NitroWheelIcon
 // Dependencies: []
 // Exports: NitroWheelIcon

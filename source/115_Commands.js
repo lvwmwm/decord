@@ -7,4 +7,4 @@
 const value = importAll(dependencyMap[0]).get("RCTView", () => ({ uiViewClassName: "RCTView" }));
 
 export default value;
-export const Commands = importDefault(dependencyMap[1])({ supportedCommands: ["green_apple", false] });
+export const Commands = importDefault(dependencyMap[1])({ supportedCommands: [false, false] });

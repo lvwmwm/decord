@@ -1,9 +1,19 @@
 // Module ID: 4464
-// Function ID: 39411
+// Function ID: 39419
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
 
 // Module 4464 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import closure_11 from "__exportStarResult1";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -191,23 +201,14 @@ function handleChannelDelete(arg0) {
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = arg1(dependencyMap[9]).MAX_MESSAGE_LENGTH_PREMIUM + 500;
+let closure_12 = require("__exportStarResult1").MAX_MESSAGE_LENGTH_PREMIUM + 500;
 let obj = { ChannelMessage: 0, [0]: "ChannelMessage", ThreadSettings: 1, [1]: "ThreadSettings", FirstThreadMessage: 2, [2]: "FirstThreadMessage", ApplicationLauncherCommand: 3, [3]: "ApplicationLauncherCommand", Poll: 4, [4]: "Poll", SlashCommand: 5, [5]: "SlashCommand", ForwardContextMessage: 6, [6]: "ForwardContextMessage", InteractionModal: 7, [7]: "InteractionModal" };
 let closure_14 = {};
 let tmp2 = (PersistedStore) => {
   class DraftStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, DraftStore);
+      tmp = __exportStarResult1(this, DraftStore);
       obj = closure_6(DraftStore);
       tmp2 = closure_5;
       if (closure_15()) {
@@ -397,7 +398,7 @@ let tmp2 = (PersistedStore) => {
     }
   };
   return callback(DraftStore, items);
-}(importDefault(dependencyMap[13]).PersistedStore);
+}(require("__exportStarResult1").PersistedStore);
 tmp2.displayName = "DraftStore";
 tmp2.persistKey = "DraftStore";
 const items = [
@@ -535,8 +536,8 @@ obj = {
     }
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[14]), obj);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("stores/DraftStore.tsx");
+tmp2 = new tmp2(require("__exportStarResult1"), obj);
+const result = require("__exportStarResult1").fileFinishedImporting("stores/DraftStore.tsx");
 
 export default tmp2;
 export const DraftType = obj;

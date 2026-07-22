@@ -12,7 +12,7 @@ arg5.breadcrumbsIntegration = function breadcrumbsIntegration(merged1) {
     const _Object = Object;
     const obj = {};
     let _fetch = first.fetch;
-    const merged = Object.assign({ 0: "Small", 9223372036854775807: "sm", 9223372036854775807: "Placeholder" }, first);
+    const merged = Object.assign({}, first);
     if (null === _fetch) {
       _fetch = arg1(arg6[0]).isWeb();
       const obj3 = arg1(arg6[0]);

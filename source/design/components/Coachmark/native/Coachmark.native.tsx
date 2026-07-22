@@ -1,10 +1,10 @@
-// Module ID: 8564
-// Function ID: 68062
+// Module ID: 8565
+// Function ID: 68074
 // Name: Coachmark
 // Dependencies: []
 // Exports: CoachmarkContainer
 
-// Module 8564 (Coachmark)
+// Module 8565 (Coachmark)
 let Pressable;
 class Coachmark {
   constructor(arg0) {
@@ -367,7 +367,7 @@ const Image = tmp2.Image;
 const tmp3 = arg1(dependencyMap[4]);
 let closure_13 = importDefault(dependencyMap[5]).createAnimatedComponent(Pressable);
 let obj1 = arg1(dependencyMap[6]);
-let obj = { container: {} };
+let obj = { container: { "Null": "keys", "Null": "disabled" } };
 obj = {};
 const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_BUTTON_OVERLAY);
 obj.shadow = obj;
@@ -380,24 +380,24 @@ const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_24 };
 obj.bodyBgColor = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 const obj3 = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.gradient = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
-const obj5 = { useTopCommands: "number", GameDiversityTier4SmallBadge: "number", analyticsData: "mY3Y38", padding: importDefault(dependencyMap[7]).space.PX_16 };
+const obj5 = { "Bool(true)": "string", "Bool(true)": "string", "Bool(true)": "color", padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.bodyContainer = obj5;
-obj.center = { "Null": null, "Null": null };
+obj.center = { <string:3596066964>: null, <string:3638417373>: null };
 const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
 obj.buttonSpacing = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.text = {};
-obj.cursorContainer = {};
-const obj7 = { 2122157199: "LOGIN", -2108594079: true, 1371431202: "/assets/images", 1835117963: 498, 1633059665: 498, borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.cursorHead = obj7;
-const obj8 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.cursorSpine = obj8;
-obj.image = {};
+obj.cursorContainer = { fromBinary: "isArray", ConvertEmoticons: "isArray" };
 const obj6 = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
+obj.cursorHead = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj7 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj.cursorSpine = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj.image = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
+const obj8 = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.bottomMargin = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 const obj9 = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.closeButton = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 let closure_14 = obj1.createStyles(obj);
-let closure_15 = { flexDirection: null, marginLeft: null, gap: null, width: null, height: null };
+let closure_15 = {};
 const obj10 = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 

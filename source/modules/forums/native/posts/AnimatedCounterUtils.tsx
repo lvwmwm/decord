@@ -1,10 +1,10 @@
-// Module ID: 10342
-// Function ID: 79833
+// Module ID: 10343
+// Function ID: 79846
 // Name: defaultFormatter
 // Dependencies: []
 // Exports: defaultFormatter
 
-// Module 10342 (defaultFormatter)
+// Module 10343 (defaultFormatter)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/forums/native/posts/AnimatedCounterUtils.tsx");
 

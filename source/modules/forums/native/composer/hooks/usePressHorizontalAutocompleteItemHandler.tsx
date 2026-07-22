@@ -1,10 +1,10 @@
-// Module ID: 9548
-// Function ID: 74431
+// Module ID: 9549
+// Function ID: 74444
 // Name: set
 // Dependencies: []
 // Exports: usePressHorizontalAutocompleteItemHandler
 
-// Module 9548 (set)
+// Module 9549 (set)
 let closure_2 = importAll(dependencyMap[0]);
 const items = [, , , ];
 ({ USER: arr[0], ROLE: arr[1], CHANNEL: arr[2], EMOJI: arr[3] } = arg1(dependencyMap[1]).AutoCompleteResultTypes);

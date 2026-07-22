@@ -1,10 +1,10 @@
-// Module ID: 10397
-// Function ID: 80124
+// Module ID: 10398
+// Function ID: 80137
 // Name: useLikelyAtoWarning
 // Dependencies: []
 // Exports: useLikelyAtoWarning
 
-// Module 10397 (useLikelyAtoWarning)
+// Module 10398 (useLikelyAtoWarning)
 const SafetyWarningTypes = require(dependencyMap[0]).SafetyWarningTypes;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");

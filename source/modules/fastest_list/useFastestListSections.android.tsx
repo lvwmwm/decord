@@ -1,10 +1,10 @@
-// Module ID: 9243
-// Function ID: 72267
+// Module ID: 9244
+// Function ID: 72280
 // Name: useFastestListSections
 // Dependencies: []
 // Exports: default
 
-// Module 9243 (useFastestListSections)
+// Module 9244 (useFastestListSections)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
 
@@ -80,7 +80,7 @@ export default function useFastestListSections(fastestListId) {
     const items4 = [];
     const items5 = [];
     if (null == keyExtractor) {
-      let obj = { keys: ["<string:2246337460>"] };
+      let obj = { keys: [2060509169] };
       items.push(obj);
       items2.push("");
       items4.push("");

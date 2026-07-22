@@ -1,47 +1,42 @@
 // Module ID: 8151
-// Function ID: 64470
+// Function ID: 64481
 // Dependencies: []
 
 // Module 8151
+let obj = {};
 const _module = require(dependencyMap[0]);
-const obj = { accessible: require(dependencyMap[2]).bool, accessibilityLabel: require(dependencyMap[2]).node, accessibilityHint: require(dependencyMap[2]).string };
-const _module1 = require(dependencyMap[2]);
-obj.accessibilityActions = _module1.arrayOf(require(dependencyMap[2]).string);
-obj.accessibilityIgnoresInvertColors = require(dependencyMap[2]).bool;
-const _module2 = require(dependencyMap[2]);
-obj.accessibilityRole = _module2.oneOf(require(dependencyMap[3]).DeprecatedAccessibilityRoles);
-obj.accessibilityState = require(dependencyMap[2]).object;
-obj.accessibilityValue = require(dependencyMap[2]).object;
-const _module3 = require(dependencyMap[2]);
-obj.accessibilityLiveRegion = _module3.oneOf([0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003710073230286575, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002450252748993754, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000178999397759635]);
-const _module4 = require(dependencyMap[2]);
-obj.importantForAccessibility = _module4.oneOf([null, null, null, null]);
-obj.accessibilityViewIsModal = require(dependencyMap[2]).bool;
-obj.accessibilityElementsHidden = require(dependencyMap[2]).bool;
-obj.onAccessibilityAction = require(dependencyMap[2]).func;
-obj.onAccessibilityTap = require(dependencyMap[2]).func;
-obj.onMagicTap = require(dependencyMap[2]).func;
-obj.testID = require(dependencyMap[2]).string;
-obj.nativeID = require(dependencyMap[2]).string;
-obj.onResponderGrant = require(dependencyMap[2]).func;
-obj.onResponderMove = require(dependencyMap[2]).func;
-obj.onResponderReject = require(dependencyMap[2]).func;
-obj.onResponderRelease = require(dependencyMap[2]).func;
-obj.onResponderTerminate = require(dependencyMap[2]).func;
-obj.onResponderTerminationRequest = require(dependencyMap[2]).func;
-obj.onStartShouldSetResponder = require(dependencyMap[2]).func;
-obj.onStartShouldSetResponderCapture = require(dependencyMap[2]).func;
-obj.onMoveShouldSetResponder = require(dependencyMap[2]).func;
-obj.onMoveShouldSetResponderCapture = require(dependencyMap[2]).func;
-obj.hitSlop = require(dependencyMap[4]);
-obj.onLayout = require(dependencyMap[2]).func;
-const _module5 = require(dependencyMap[2]);
-obj.pointerEvents = _module5.oneOf(["<string:1285750785>", "<string:2595291139>", "<string:1316749314>", "<string:1708195843>"]);
-obj.style = _module(require(dependencyMap[1]));
-obj.removeClippedSubviews = require(dependencyMap[2]).bool;
-obj.renderToHardwareTextureAndroid = require(dependencyMap[2]).bool;
-obj.shouldRasterizeIOS = require(dependencyMap[2]).bool;
-obj.collapsable = require(dependencyMap[2]).bool;
-obj.needsOffscreenAlphaCompositing = require(dependencyMap[2]).bool;
+const _module1 = require(dependencyMap[1]);
+obj.style = _module1(require(dependencyMap[2]));
+const _module2 = require(dependencyMap[3]);
+const _module3 = require(dependencyMap[3]);
+obj = { uri: require(dependencyMap[3]).string };
+const _module4 = require(dependencyMap[3]);
+obj.headers = _module4.objectOf(require(dependencyMap[3]).string);
+const items = [_module3.shape(obj), require(dependencyMap[3]).number, ];
+const _module5 = require(dependencyMap[3]);
+const _module6 = require(dependencyMap[3]);
+obj = { uri: require(dependencyMap[3]).string, width: require(dependencyMap[3]).number, height: require(dependencyMap[3]).number };
+const _module7 = require(dependencyMap[3]);
+obj.headers = _module7.objectOf(require(dependencyMap[3]).string);
+items[2] = _module5.arrayOf(_module6.shape(obj));
+obj.source = _module2.oneOfType(items);
+obj.blurRadius = require(dependencyMap[3]).number;
+obj.defaultSource = require(dependencyMap[3]).number;
+const _module8 = require(dependencyMap[3]);
+const _module9 = require(dependencyMap[3]);
+const items1 = [_module9.shape({ uri: require(dependencyMap[3]).string }), require(dependencyMap[3]).number];
+obj.loadingIndicatorSource = _module8.oneOfType(items1);
+obj.progressiveRenderingEnabled = require(dependencyMap[3]).bool;
+obj.fadeDuration = require(dependencyMap[3]).number;
+obj.internal_analyticTag = require(dependencyMap[3]).string;
+obj.onLoadStart = require(dependencyMap[3]).func;
+obj.onError = require(dependencyMap[3]).func;
+obj.onLoad = require(dependencyMap[3]).func;
+obj.onLoadEnd = require(dependencyMap[3]).func;
+obj.testID = require(dependencyMap[3]).string;
+const _module10 = require(dependencyMap[3]);
+obj.resizeMethod = _module10.oneOf(["phoneNumber", "link", "address"]);
+const _module11 = require(dependencyMap[3]);
+obj.resizeMode = _module11.oneOf([]);
 
-export default obj;
+export default Object.assign({}, _module, obj);

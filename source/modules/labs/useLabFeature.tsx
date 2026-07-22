@@ -1,10 +1,10 @@
-// Module ID: 8318
-// Function ID: 65920
+// Module ID: 8319
+// Function ID: 65932
 // Name: useLabFeature
 // Dependencies: []
 // Exports: default
 
-// Module 8318 (useLabFeature)
+// Module 8319 (useLabFeature)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/labs/useLabFeature.tsx");
 

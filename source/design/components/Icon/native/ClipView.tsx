@@ -1,5 +1,5 @@
 // Module ID: 7867
-// Function ID: 62658
+// Function ID: 62668
 // Name: SolidCutout
 // Dependencies: []
 // Exports: default
@@ -72,7 +72,7 @@ export default function ClipView(children) {
   let cutouts;
   let style;
   ({ cutouts, borderRadius, style } = children);
-  let obj = {};
+  let obj = { <string:1433821625>: -24, <string:601591618>: null, <string:2578917896>: 1, <string:4032912200>: "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const context = React.useContext(arg1(dependencyMap[6]).CutoutBackgroundContext);

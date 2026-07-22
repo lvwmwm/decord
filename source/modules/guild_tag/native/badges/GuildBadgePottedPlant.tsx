@@ -1,18 +1,18 @@
-// Module ID: 12837
-// Function ID: 98179
+// Module ID: 12844
+// Function ID: 98212
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgePottedPlant
 
-// Module 12837 (items)
+// Module 12844 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682772776, -92559631349653940000000000000000000000000000000000000000000000, 8592586856.156181];
-let closure_5 = ["<string:3704409292>", "<string:1136869695>", "<string:2218917889>"];
-const items = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
+let closure_4 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682772776, -92559631349653940000000000000000000000000000000000000000000000, 8592595432.156181];
+let closure_5 = ["<string:3704409292>", "<string:1154433343>", "<string:2470576129>"];
+const items = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
 let closure_7 = [null, null, "IconAnimation_Notifications_3D_LottieFix02"];
 let closure_8 = [];
-const items1 = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
+const items1 = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgePottedPlant.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -44,7 +44,11 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
   obj1 = { d: "M7 6h-2v-1h1v-1h1v2ZM10 5h1v1h-2v-2h1v1ZM5 5h-1v-1h1v1ZM12 5h-1v-1h1v1ZM4 4h-1v-1h1v1ZM13 4h-1v-1h1v1Z", fill: primaryColorsTransformed[0] };
-  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { d: "M8 9h-1V4h1v5Z", fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, { fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, { d: "M14 3h-2v1h-1v1h-1v-2h1V2h3v1Z", fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, { d: "M9 9h-1V4h1v5ZM5 6h-2v-1h2v1ZM15 4h-1v1h-1v1h-2v-1h1v-1h1v-1h1V2h1v2Z", fill: primaryColorsTransformed[1] }), , , , , ];
+  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { d: "M8 9h-1V4h1v5Z", fill: primaryColorsTransformed[2] }), , , , , , , , ];
+  const obj3 = { "Bool(true)": 4, "Bool(true)": 8, "Bool(true)": 4, fill: primaryColorsTransformed[2] };
+  items[2] = callback(arg1(dependencyMap[3]).Path, obj3);
+  items[3] = callback(arg1(dependencyMap[3]).Path, { d: "M14 3h-2v1h-1v1h-1v-2h1V2h3v1Z", fill: primaryColorsTransformed[2] });
+  items[4] = callback(arg1(dependencyMap[3]).Path, { d: "M9 9h-1V4h1v5ZM5 6h-2v-1h2v1ZM15 4h-1v1h-1v1h-2v-1h1v-1h1v-1h1V2h1v2Z", fill: primaryColorsTransformed[1] });
   const obj6 = { d: "M13 11v1H3v-1h10Z" };
   let first;
   if (null != secondaryColorsTransformed) {
@@ -56,7 +60,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   }
   obj6.fill = str;
   items[5] = callback(arg1(dependencyMap[3]).Path, obj6);
-  items[6] = callback(arg1(dependencyMap[3]).Path, {});
+  items[6] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null });
   const obj7 = { d: "M12 14H4v-2h8v2ZM13 11H5v-1h8v1Z" };
   let tmp9;
   if (null != secondaryColorsTransformed) {
@@ -79,7 +83,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   }
   obj8.fill = str3;
   items[8] = callback(arg1(dependencyMap[3]).Path, obj8);
-  items[9] = callback(arg1(dependencyMap[3]).Path, {});
+  items[9] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": 16, "Bool(true)": 16 });
   obj["children"] = items;
   return closure_3(arg1(dependencyMap[3]).Svg, obj);
 };

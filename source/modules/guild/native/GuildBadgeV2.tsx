@@ -1,10 +1,10 @@
-// Module ID: 5697
-// Function ID: 49052
+// Module ID: 5696
+// Function ID: 49060
 // Name: GuildBadgeV2
 // Dependencies: []
 // Exports: default, hasGuildBadge
 
-// Module 5697 (GuildBadgeV2)
+// Module 5696 (GuildBadgeV2)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_3 = arg1(dependencyMap[2]).createStyles({ icon: { marginRight: 8 } });

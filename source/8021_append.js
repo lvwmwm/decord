@@ -1,5 +1,5 @@
 // Module ID: 8021
-// Function ID: 63630
+// Function ID: 63640
 // Name: append
 // Dependencies: []
 
@@ -39,7 +39,7 @@ function append(arg0, arg1, arg2, arg3, arg4, arg5) {
   }
 }
 let closure_0 = Math.PI / 180;
-const items = [];
+const items = ["Array", "ACCOUNT_STANDING_CATEGORY", "r", "applyClipsQualitySettings", "r", "appsInThisServer"];
 let closure_2 = 1;
 let closure_3 = 0;
 let closure_4 = 0;

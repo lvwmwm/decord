@@ -1,10 +1,10 @@
-// Module ID: 11921
-// Function ID: 92250
+// Module ID: 11922
+// Function ID: 92264
 // Name: FlashIcon
 // Dependencies: []
 // Exports: FlashIcon
 
-// Module 11921 (FlashIcon)
+// Module 11922 (FlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FlashIcon.tsx");

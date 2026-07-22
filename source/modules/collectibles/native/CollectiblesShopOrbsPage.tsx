@@ -1,10 +1,10 @@
-// Module ID: 14385
-// Function ID: 108560
+// Module ID: 14393
+// Function ID: 108603
 // Name: onRenderFirstOrbsItem
 // Dependencies: []
 // Exports: default
 
-// Module 14385 (onRenderFirstOrbsItem)
+// Module 14393 (onRenderFirstOrbsItem)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

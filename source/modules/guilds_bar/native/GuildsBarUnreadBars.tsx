@@ -1,9 +1,9 @@
-// Module ID: 14759
-// Function ID: 111256
+// Module ID: 14767
+// Function ID: 111299
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14759 (_createForOfIteratorHelperLoose)
+// Module 14767 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -170,7 +170,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
     layoutStart = scrollPosValue2.get();
   }
   const scrollPosValue3 = scrollPosValue.scrollPosValue;
-  let obj = { "Bool(false)": "<string:1876819969>", "Bool(false)": "<string:2170814465>" };
+  let obj = { borderWidth: "pow", backgroundColor: "decorationCutout" };
   const diff = scrollPosValue3.get() + scrollPosValue.containerSize - arg3 - (closure_12 + closure_13);
   const tmp3 = _createForOfIteratorHelperLoose(scrollPosValue.state.items);
   const iter = tmp3();
@@ -421,7 +421,7 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: closure_13 } = arg1(dependencyMap[7]));
 const jsx = arg1(dependencyMap[8]).jsx;
 const tmp3 = arg1(dependencyMap[7]);
-const obj = { isRecording: "<string:3082955202>", microphoneEnabled: "<string:103629460>", isUploading: "<string:3630497793>", currentStep: "<string:961609729>", width: tmp2.GUILD_LIST_WIDTH };
+const obj = { -1283718252: 131420590, 762827692: -1717986767, 1876083890: -644245095, 1640879996: 94527, width: tmp2.GUILD_LIST_WIDTH };
 let closure_15 = arg1(dependencyMap[9]).createStyles({ wrapper: obj });
 let closure_16 = { beforeItem: undefined, afterItem: undefined };
 let closure_17 = { beforeItem: {}, afterItem: undefined };
@@ -533,7 +533,7 @@ const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {
   const paddingEnd = tmp6.paddingEnd;
   let closure_7 = paddingEnd;
   const items2 = [fastList, paddingStart, paddingEnd];
-  obj = { l: "<string:906114645>", body: "<string:906114562>", flex: "<string:1694643714>", accessibilityRole: "<string:235802126>", style: tmp6.style };
+  obj = { "Bool(false)": 36961124517340320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033805584894383114, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006203205620314264, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021029010449938233, style: tmp6.style };
   callback = importAllResult.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);

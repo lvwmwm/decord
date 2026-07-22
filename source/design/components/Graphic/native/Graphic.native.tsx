@@ -1,10 +1,10 @@
-// Module ID: 8565
-// Function ID: 68071
+// Module ID: 8566
+// Function ID: 68083
 // Name: ImageGraphic
 // Dependencies: []
 // Exports: Graphic
 
-// Module 8565 (ImageGraphic)
+// Module 8566 (ImageGraphic)
 function ImageGraphic(source) {
   const tmp = callback();
   return jsx(importDefault(dependencyMap[4]), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
@@ -25,7 +25,7 @@ function RiveGraphic(riveProps) {
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = {};
+let closure_6 = { width: false, height: false, backgroundColor: false, opacity: false, width: false };
 let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, image: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");

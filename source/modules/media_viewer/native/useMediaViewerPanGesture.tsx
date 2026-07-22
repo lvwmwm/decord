@@ -1,12 +1,12 @@
-// Module ID: 12133
-// Function ID: 93470
+// Module ID: 12137
+// Function ID: 93496
 // Name: useMediaViewerPanGestureConfig
 // Dependencies: []
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 12133 (useMediaViewerPanGestureConfig)
+// Module 12137 (useMediaViewerPanGestureConfig)
 let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, "Null": true, "Null": true, "Null": true };
+let closure_4 = {};
 let closure_5 = { code: "function useMediaViewerPanGestureTsx1(){const{runOnJS,handleClose}=this.__closure;runOnJS(handleClose)();}" };
 let closure_6 = { code: "function useMediaViewerPanGestureTsx2(){const{isInteracting,velocity,swipeVelocityThreshold,runOnJS,dismiss,translatePos,withSpring,SPRING_CONFIG}=this.__closure;isInteracting.set(false);const willClose=Math.abs(velocity.get())>swipeVelocityThreshold;if(willClose){runOnJS(dismiss)();}else if(translatePos.get()!==0){translatePos.set(withSpring(0,{velocity:velocity.get(),...SPRING_CONFIG}));}}" };
 let closure_7 = { code: "function useMediaViewerPanGestureTsx3(_,manager){const{enabled}=this.__closure;if(!enabled.get()){manager.fail();}}" };
@@ -30,7 +30,7 @@ export const useMediaViewerPanGestureConfig = function useMediaViewerPanGestureC
   const sharedValue3 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue(0);
   let closure_6 = sharedValue3;
   const obj4 = swipeVelocityThreshold(dependencyMap[1]);
-  const sharedValue4 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue({ <string:3438175103>: -536870861, <string:3622265520>: -299892737 });
+  const sharedValue4 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue({ "Bool(false)": "%FunctionPrototype%", "Bool(false)": "paddingStart" });
   let closure_7 = sharedValue4;
   const obj5 = swipeVelocityThreshold(dependencyMap[1]);
   const sharedValue5 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue(true);

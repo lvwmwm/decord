@@ -1,5 +1,5 @@
 // Module ID: 6333
-// Function ID: 50421
+// Function ID: 50432
 // Name: NitroOpalBadgeSmallBadge
 // Dependencies: []
 // Exports: NitroOpalBadgeSmallBadge

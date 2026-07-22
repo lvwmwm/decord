@@ -1,7 +1,7 @@
 // Module ID: 797
 // Function ID: 8982
 // Name: unwrapScopeFromWeakRef
-// Dependencies: [1699348481, 357629953]
+// Dependencies: []
 
 // Module 797 (unwrapScopeFromWeakRef)
 function unwrapScopeFromWeakRef(_sentryIsolationScope) {

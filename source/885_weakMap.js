@@ -1,14 +1,15 @@
 // Module ID: 885
 // Function ID: 9788
 // Name: weakMap
-// Dependencies: []
+// Dependencies: [65, 804, 809]
 
 // Module 885 (weakMap)
+import isMatchingPattern from "isMatchingPattern";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
-const _module = require(dependencyMap[2]);
 
-export const functionToStringIntegration = _module.defineIntegration(function _functionToStringIntegration() {
+export const functionToStringIntegration = isMatchingPattern.defineIntegration(function _functionToStringIntegration() {
   return {
     name: "FunctionToString",
     setupOnce() {

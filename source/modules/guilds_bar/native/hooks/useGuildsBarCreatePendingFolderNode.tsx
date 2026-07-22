@@ -1,10 +1,10 @@
-// Module ID: 14763
-// Function ID: 111298
+// Module ID: 14771
+// Function ID: 111341
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14763 (_createForOfIteratorHelperLoose)
+// Module 14771 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -129,7 +129,7 @@ export default function useGuildsBarCreatePendingFolderNode() {
     obj = { expanded: stateFromStores1, pendingFolderNode: folderNode };
     return obj;
   } else {
-    return { 1399044010: null, -1603952582: null };
+    return { "Bool(false)": "L", "Bool(false)": "L" };
   }
   const obj2 = arg1(dependencyMap[3]);
 };

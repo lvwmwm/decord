@@ -1,9 +1,9 @@
-// Module ID: 10997
-// Function ID: 85569
+// Module ID: 10998
+// Function ID: 85582
 // Name: AutomodTriggerType
 // Dependencies: []
 
-// Module 10997 (AutomodTriggerType)
+// Module 10998 (AutomodTriggerType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodTriggerType.tsx");
 

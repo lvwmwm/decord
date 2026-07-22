@@ -1,8 +1,8 @@
-// Module ID: 11381
-// Function ID: 88500
+// Module ID: 11382
+// Function ID: 88513
 // Dependencies: []
 
-// Module 11381
+// Module 11382
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Pressable: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -20,7 +20,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   }
   obj.elevation = num;
   obj.shadowRadius = 4;
-  obj.shadowOffset = { "Null": null, "Null": null };
+  obj.shadowOffset = {};
   obj.shadowColor = importDefault(dependencyMap[7]).colors.BLACK;
   let num2 = 0.14;
   if (arg1) {
@@ -34,7 +34,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   obj.borderColor = str;
   obj.borderWidth = 1;
   obj.joinButton = obj;
-  obj.joinButtonContent = { @braintree/wrap-promise: 391184385, onPress: 95234 };
+  obj.joinButtonContent = {};
   obj = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
   obj.joinButtonIconActive = obj;
   obj.joinButtonIconInactive = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };

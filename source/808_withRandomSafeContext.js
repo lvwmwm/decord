@@ -1,7 +1,7 @@
 // Module ID: 808
 // Function ID: 9065
 // Name: withRandomSafeContext
-// Dependencies: []
+// Dependencies: [0]
 
 // Module 808 (withRandomSafeContext)
 function withRandomSafeContext(arg0) {

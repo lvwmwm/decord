@@ -1,9 +1,9 @@
-// Module ID: 9609
-// Function ID: 74851
+// Module ID: 9610
+// Function ID: 74864
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 9609 (__INTERNAL_VIEW_CONFIG)
+// Module 9610 (__INTERNAL_VIEW_CONFIG)
 const obj = { uiViewClassName: "APNGStickerView", validAttributes: { url: true } };
 const _module = require(dependencyMap[0]);
 const value = _module.get("APNGStickerView", () => obj);

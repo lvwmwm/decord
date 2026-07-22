@@ -1,10 +1,10 @@
-// Module ID: 14509
-// Function ID: 109248
+// Module ID: 14517
+// Function ID: 109291
 // Name: DevToolsProfilingUseStateFromStores
 // Dependencies: []
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 14509 (DevToolsProfilingUseStateFromStores)
+// Module 14517 (DevToolsProfilingUseStateFromStores)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -13,7 +13,8 @@ const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/devtools/n
 
 export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUseStateFromStores() {
   function renderLabel(children) {
-    return callback2(first(str[4]).Text, { style: { marginBottom: 4 }, children });
+    const obj = { cachedAt: null, edpbxy: null, style: { marginBottom: 4 }, children };
+    return callback2(first(str[4]).Text, obj);
   }
   let obj = arg1(dependencyMap[3]);
   const tmp = callback(React.useState(obj.getUseStateFromStoresDebuggingEnabled()), 2);
@@ -58,10 +59,10 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
   let tmp13 = null;
   const ref = React.useRef(null);
   obj = {};
-  obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000255558858949825, "Bool(false)": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024607565574193414, children: callback2(arg1(dependencyMap[6]).TableSwitchRow, { onValueChange: tmp[1], value: first }) };
+  obj = { children: callback2(arg1(dependencyMap[6]).TableSwitchRow, { onValueChange: tmp[1], value: first }) };
   const items5 = [callback2(arg1(dependencyMap[5]).TableRowGroup, obj), ];
   if (first) {
-    obj1 = { "Bool(false)": true, "Bool(false)": true };
+    obj1 = { -9223372036854775808: "<string:1358954961>", 9223372036854775807: "<string:1866636897>" };
     obj2 = { label: "Execution time window threshold" };
     obj3 = {};
     const items6 = [renderLabel("Time window to wait for before reporting violations."), ];
@@ -90,11 +91,6 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
     const obj6 = {};
     const items8 = [renderLabel("Total execution time limit for hooks before reporting violations."), ];
     const obj7 = {
-      "Null": true,
-      "Null": true,
-      "Null": true,
-      "Null": true,
-      "Null": true,
       defaultValue: str2.toString(),
       leadingIcon: arg1(dependencyMap[9]).TimerIcon,
       onChange(arg0) {
@@ -109,11 +105,11 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
     const obj9 = {};
     const items9 = [renderLabel("Execution counts limit for hooks before reporting violations."), ];
     const obj10 = {
-      "Null": "stackSymbols",
-      "Null": "%Promise_all%",
-      "Null": "SOLID",
-      "Null": "_sent",
-      "Null": "Array",
+      -1991442977: true,
+      -584165995: true,
+      -1950284065: true,
+      -550701337: true,
+      -410271405: true,
       defaultValue: str3.toString(),
       leadingIcon: arg1(dependencyMap[10]).AnalyticsIcon,
       onChange(arg0) {
@@ -127,7 +123,7 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
     const obj11 = { label: "Track specific hook" };
     const obj12 = {};
     const items10 = [renderLabel("Include a specific hook in the profiling regardless of limits."), ];
-    const obj13 = { defaultValue: first1, leadingIcon: arg1(dependencyMap[11]).LettersIcon, trailingIcon: arg1(dependencyMap[12]).TrashIcon };
+    const obj13 = { "Null": 22, "Null": 22, "Null": 90, "Null": true, "Null": "/assets/images/native/premium/illustrations", "Null": 188.5, defaultValue: first1, leadingIcon: arg1(dependencyMap[11]).LettersIcon, trailingIcon: arg1(dependencyMap[12]).TrashIcon };
     const obj14 = {};
     const intl = arg1(dependencyMap[13]).intl;
     obj14.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.VkKicb);

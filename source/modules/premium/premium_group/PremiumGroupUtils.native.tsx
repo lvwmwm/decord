@@ -1,5 +1,5 @@
 // Module ID: 7730
-// Function ID: 61454
+// Function ID: 61464
 // Name: getPremiumGroupInviteEmbedText
 // Dependencies: []
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase

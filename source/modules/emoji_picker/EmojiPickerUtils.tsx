@@ -1,10 +1,10 @@
-// Module ID: 9322
-// Function ID: 72819
+// Module ID: 9323
+// Function ID: 72832
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4120, 1852, 33, 4126, 689, 477, 566, 1392, 5418, 4124, 1212, 4524, 3841, 3829, 2, 31, 27, 4120, 1345, 33, 3989, 566, 3832, 689, 4127, 4538]
+// Dependencies: [31, 4120, 1852, 33, 4126, 689, 477, 566, 1392, 5148, 4124, 1212, 4524, 3841, 3829, 2, 31, 27, 4120, 1345, 33, 3989, 566, 3832, 689, 4127, 4538]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useIsFavoriteEmoji
 
-// Module 9322 (_createForOfIteratorHelperLoose)
+// Module 9323 (_createForOfIteratorHelperLoose)
 import module_31 from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
@@ -598,7 +598,7 @@ export const throttledTrackEmojiAutoSuggestDisplayed = require("map").throttle((
   obj = { suggestion_type: constants6.EMOJI, suggestion_quantity: emojiSuggestions.results.length, custom_quantity: results.filter((emoji) => null != emoji.emoji.id).length, load_id: emojiSuggestions.loadId, location: emojiSuggestions.analyticsLocation };
   const results = emojiSuggestions.results;
   obj.trackWithMetadata(constants4.AUTO_SUGGEST_DISPLAYED, obj);
-}, require("_createForOfIteratorHelperLoose").Millis.HALF_SECOND, {});
+}, require("_createForOfIteratorHelperLoose").Millis.HALF_SECOND, { flex: 1766088043, marginRight: 827788593 });
 export const getAriaIdForEmojiCategory = function getAriaIdForEmojiCategory(type, name) {
   if (type.type === constants2.GUILD) {
     let str = "";

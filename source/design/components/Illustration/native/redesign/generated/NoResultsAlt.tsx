@@ -1,10 +1,10 @@
-// Module ID: 8423
-// Function ID: 67122
+// Module ID: 8424
+// Function ID: 67134
 // Name: getNoResultsAltSource
 // Dependencies: []
 // Exports: NoResultsAlt
 
-// Module 8423 (getNoResultsAltSource)
+// Module 8424 (getNoResultsAltSource)
 function getNoResultsAltSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

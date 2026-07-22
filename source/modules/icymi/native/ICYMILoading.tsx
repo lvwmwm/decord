@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 114076
+// Module ID: 15125
+// Function ID: 114119
 // Name: placeholderRowWidth
 // Dependencies: []
 // Exports: ICYMILoading
 
-// Module 15117 (placeholderRowWidth)
+// Module 15125 (placeholderRowWidth)
 function placeholderRowWidth(arg0, arg1, arg2) {
   const result = 100 * Math.sin(arg0);
   return (result - Math.floor(result)) * (arg2 - arg1) + arg1;
@@ -14,7 +14,7 @@ function ICYMILoadingItem() {
   let subtitle;
   let title;
   const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[5])({ "Null": null, "Null": null });
+  const tmp2 = importDefault(dependencyMap[5])({ -1359411683: null, -106827182: null });
   const memo = React.useMemo(() => ({ avatarTitle: Math.floor(10 * Math.random()), title: Math.floor(10 * Math.random()), subtitle: Math.floor(10 * Math.random()) }), []);
   let obj = {};
   obj = { style: tmp.container };
@@ -68,11 +68,11 @@ let closure_8 = arg1(dependencyMap[3]).createICYMIStyles((margin) => {
   obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
   obj.backgroundColor = obj;
   obj.container = { padding: margin.margin };
-  obj = { "Null": 7, "Null": 370, marginBottom: margin.margin };
+  obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginBottom: margin.margin };
   obj.avatarRow = obj;
-  obj.avatar = { borderRadius: importDefault(dependencyMap[4]).radii.md, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
+  const obj1 = { "Null": "isArray", "Null": "c", borderRadius: importDefault(dependencyMap[4]).radii.md, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
+  obj.avatar = obj1;
   obj.avatarTitle = {};
-  const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.md, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
   obj.title = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_12, borderRadius: 10, flexShrink: 1 };
   const obj2 = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_12, borderRadius: 10, flexShrink: 1 };
   obj.subtitle = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: margin.margin, borderRadius: 10, flexShrink: 1 };

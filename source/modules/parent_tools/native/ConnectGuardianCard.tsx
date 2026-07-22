@@ -1,10 +1,10 @@
-// Module ID: 13663
-// Function ID: 103488
+// Module ID: 13670
+// Function ID: 103521
 // Name: ConnectGuardianCard
 // Dependencies: []
 // Exports: ConnectGuardianCard
 
-// Module 13663 (ConnectGuardianCard)
+// Module 13670 (ConnectGuardianCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,13 +16,13 @@ obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.compactContainer = { alignSelf: "center", gap: importDefault(dependencyMap[6]).space.PX_16 };
-const obj2 = { NONE_MONTH: "png", HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: true, transitionToMessage: "/assets/images/native/community", padding: importDefault(dependencyMap[6]).space.PX_12, borderRadius: importDefault(dependencyMap[6]).radii.lg, borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
+const obj2 = { mousemoveCb: "png", stretch: true, inCall: "/assets/images/native/community", padding: importDefault(dependencyMap[6]).space.PX_12, borderRadius: importDefault(dependencyMap[6]).radii.lg, borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
 obj.card = obj2;
 obj.countdown = { textAlign: "center" };
-const obj3 = { "Null": 7, "Null": 370, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.divider = obj3;
 obj.compactDividerFlush = { paddingHorizontal: 0 };
-const obj4 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
+const obj4 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL, borderWidth: "<string:2941583362>" };
 obj.dividerLine = obj4;
 const obj1 = { alignSelf: "center", gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.dividerText = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
@@ -112,7 +112,7 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
       if ("compact" === shareActions) {
         const obj7 = { style: tmp.compactContainer };
         const items6 = [tmp40, tmp42Result, ];
-        const obj8 = { "Bool(true)": null, "Bool(true)": null };
+        const obj8 = {};
         const intl4 = arg1(dependencyMap[13]).intl;
         obj8.text = intl4.string(arg1(dependencyMap[13]).t.Ej3B3Y);
         const obj9 = { size: "md", color: importDefault(dependencyMap[6]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
@@ -126,13 +126,13 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
         const obj10 = { spacing: importDefault(dependencyMap[6]).space.PX_32, style: tmp.container };
         const items7 = [tmp40, tmp42Result, ];
         const obj11 = { style: tmp.buttonGroup };
-        const obj12 = { "Bool(true)": null, "Bool(true)": null };
+        const obj12 = {};
         const intl2 = arg1(dependencyMap[13]).intl;
         obj12.text = intl2.string(arg1(dependencyMap[13]).t.Ej3B3Y);
         obj12.disabled = "" === linkCode;
         obj12.onPress = callback;
         const items8 = [callback2(arg1(dependencyMap[19]).Button, obj12), ];
-        const obj13 = { "Bool(true)": null, "Bool(true)": null };
+        const obj13 = {};
         const intl3 = arg1(dependencyMap[13]).intl;
         obj13.text = intl3.string(arg1(dependencyMap[13]).t.WqhZss);
         obj13.disabled = "" === linkCode;

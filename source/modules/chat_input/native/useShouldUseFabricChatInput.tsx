@@ -1,10 +1,10 @@
-// Module ID: 11104
-// Function ID: 86436
+// Module ID: 11105
+// Function ID: 86449
 // Name: resolveShouldUseFabric
 // Dependencies: []
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
-// Module 11104 (resolveShouldUseFabric)
+// Module 11105 (resolveShouldUseFabric)
 function resolveShouldUseFabric(enabled) {
   if (null == tmp4) {
     const tmp3 = !require(dependencyMap[0]).isAndroid();

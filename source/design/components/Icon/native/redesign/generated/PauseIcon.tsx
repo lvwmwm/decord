@@ -1,10 +1,10 @@
-// Module ID: 8281
-// Function ID: 65376
+// Module ID: 8282
+// Function ID: 65388
 // Name: PauseIcon
 // Dependencies: []
 // Exports: PauseIcon
 
-// Module 8281 (PauseIcon)
+// Module 8282 (PauseIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PauseIcon.tsx");

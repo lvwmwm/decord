@@ -1,10 +1,10 @@
-// Module ID: 11180
-// Function ID: 86992
+// Module ID: 11181
+// Function ID: 87005
 // Name: _getEmbedApplication
 // Dependencies: []
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11180 (_getEmbedApplication)
+// Module 11181 (_getEmbedApplication)
 function _getEmbedApplication() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

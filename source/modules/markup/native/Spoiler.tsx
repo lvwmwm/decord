@@ -1,9 +1,9 @@
-// Module ID: 10254
-// Function ID: 79243
+// Module ID: 10255
+// Function ID: 79256
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10254 (_isNativeReflectConstruct)
+// Module 10255 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

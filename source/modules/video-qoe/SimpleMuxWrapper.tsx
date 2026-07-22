@@ -1,9 +1,9 @@
-// Module ID: 13913
-// Function ID: 105306
+// Module ID: 13920
+// Function ID: 105346
 // Name: logger
 // Dependencies: []
 
-// Module 13913 (logger)
+// Module 13920 (logger)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const logger = new arg1(dependencyMap[2]).Logger("SimpleMuxWrapper");
@@ -25,7 +25,7 @@ const tmp3 = () => {
     key: "initialize",
     value() {
       const self = this;
-      const obj = { "Null": null, "Null": null, "Null": null };
+      const obj = { CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: null, STEP_3_CLICKED_EXTERNAL: null, onTapGameMention: null };
       const debug = this.config.debug;
       obj.debug = null != debug && debug;
       const MuxIntegration = SimpleMuxWrapper(closure_2[4]).MuxIntegration;

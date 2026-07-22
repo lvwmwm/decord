@@ -1,10 +1,10 @@
-// Module ID: 16326
-// Function ID: 126009
+// Module ID: 16334
+// Function ID: 126051
 // Name: GuildRoleSubscriptionBenefitModalHeader
 // Dependencies: []
 // Exports: default
 
-// Module 16326 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 16334 (GuildRoleSubscriptionBenefitModalHeader)
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,7 +14,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.headerContainer = obj;
-obj.headerButtonContainer = { "Null": true, "Null": "/assets/modules/guild_role_subscriptions/native/images", "Null": 16 };
+obj.headerButtonContainer = { a: true, a: "/assets/modules/guild_role_subscriptions/native/images", a: 16 };
 obj.headerButtonStart = { alignItems: "flex-start" };
 obj.headerButtonEnd = { alignItems: "flex-end" };
 const obj1 = {};
@@ -25,7 +25,7 @@ const importDefaultResult = importDefault(dependencyMap[7]);
 const obj2 = {};
 const merged1 = Object.assign(importDefault(dependencyMap[7])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[6]).colors.TEXT_MUTED, 16));
 obj.disabledButton = obj2;
-obj.titleContainer = {};
+obj.titleContainer = { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003183821265432445, marginVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003136903938464816 };
 const obj3 = {};
 const importDefaultResult1 = importDefault(dependencyMap[7]);
 const merged2 = Object.assign(importDefault(dependencyMap[7])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
@@ -49,14 +49,14 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   obj = { style: items, accessibilityRole: "button", onPress: onClose };
   const items = [, ];
   ({ headerButtonContainer: arr[0], headerButtonStart: arr[1] } = tmp);
-  const obj1 = { style: tmp.headerButton };
+  const obj1 = { "Null": 0.236, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184698513646185, alignItems: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000007170012376140887, style: tmp.headerButton };
   const intl = arg1(dependencyMap[12]).intl;
   obj1.children = intl.string(arg1(dependencyMap[12]).t.ETE/oC);
   obj.children = callback2(arg1(dependencyMap[11]).Text, obj1);
   const items1 = [callback2(importDefault(dependencyMap[10]), obj), , ];
   const obj2 = { style: tmp.titleContainer };
   const items2 = [callback2(arg1(dependencyMap[13]).LegacyText, { style: tmp.title, accessibilityRole: "header", children: title }), ];
-  const obj4 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.subtitle, children: callback(obj.useName(listingId), 1)[0] };
+  const obj4 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.subtitle, children: callback(obj.useName(listingId), 1)[0] };
   items2[1] = callback2(arg1(dependencyMap[11]).Text, obj4);
   obj2.children = items2;
   items1[1] = callback3(View, obj2);

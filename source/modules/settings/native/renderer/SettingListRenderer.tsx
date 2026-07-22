@@ -1,9 +1,9 @@
-// Module ID: 13430
-// Function ID: 101957
+// Module ID: 13437
+// Function ID: 101990
 // Name: SearchListSectionLabel
 // Dependencies: []
 
-// Module 13430 (SearchListSectionLabel)
+// Module 13437 (SearchListSectionLabel)
 function SearchListSectionLabel(label) {
   label = label.label;
   let obj = { style: callback().spacer };

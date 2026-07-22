@@ -1,17 +1,17 @@
-// Module ID: 13839
-// Function ID: 104613
+// Module ID: 13846
+// Function ID: 104653
 // Name: BountiesModalEndCard
 // Dependencies: []
 // Exports: default
 
-// Module 13839 (BountiesModalEndCard)
+// Module 13846 (BountiesModalEndCard)
 const _module = require(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = _module1);
 const _module2 = require(dependencyMap[2]);
 let closure_7 = _module2.createStyles(() => {
-  let obj = { container: { Component: false, style: false, onLoadStart: false, onLoad: false, onError: false, index: false, source: false } };
+  let obj = { container: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false } };
   obj = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
   obj["backgroundColor"] = "rgba(241, 251, 169, 0.15)";

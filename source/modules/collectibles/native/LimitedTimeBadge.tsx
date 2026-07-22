@@ -1,10 +1,10 @@
-// Module ID: 8699
-// Function ID: 68880
+// Module ID: 8700
+// Function ID: 68892
 // Name: LimitedTimeBadge
 // Dependencies: []
 // Exports: default
 
-// Module 8699 (LimitedTimeBadge)
+// Module 8700 (LimitedTimeBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ let closure_5 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { =: 24, 9: 24, 7: null, borderRadius: importDefault(dependencyMap[6]).radii.md };
+obj = { "Null": 24, "Null": 24, "Null": null, borderRadius: importDefault(dependencyMap[6]).radii.md };
 obj.root = obj;
 obj.backgroundDarkMode = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
@@ -30,7 +30,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
   const stateFromStores = obj.useStateFromStores(items, () => callback(closure_2[9]).isThemeDark(theme.theme));
   let obj1 = arg1(dependencyMap[8]);
   const items1 = [closure_4];
-  const items2 = ["<string:1006632963>", "<string:2381053955>"];
+  const items2 = [0.599, 0.853];
   const hasItem = items2.includes(obj1.useStateFromStores(items1, () => locale.locale));
   ({ days, hours } = importDefault(dependencyMap[10])(unpublishedAt.unpublishedAt, 1000, undefined, true));
   if (hasItem) {

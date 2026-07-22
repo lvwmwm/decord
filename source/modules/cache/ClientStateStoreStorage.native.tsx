@@ -1,10 +1,10 @@
-// Module ID: 12993
-// Function ID: 98872
+// Module ID: 13000
+// Function ID: 98905
 // Name: setClientState
 // Dependencies: []
 // Exports: setClientState
 
-// Module 12993 (setClientState)
+// Module 13000 (setClientState)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/cache/ClientStateStoreStorage.native.tsx");

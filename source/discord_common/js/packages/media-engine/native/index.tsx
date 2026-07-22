@@ -1,5 +1,5 @@
 // Module ID: 4224
-// Function ID: 36862
+// Function ID: 36869
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -22,6 +22,14 @@ function toVolumePercent(arg0) {
 }
 function toScaledValue(arg0, arg1, arg2) {
   return arg1 + (arg2 - arg1) * arg0 / 100;
+}
+function clipsBitratePercentToKbps(arg0) {
+  if (null != arg0) {
+    const _Math = Math;
+    const _Math2 = Math;
+    const _Math3 = Math;
+    return Math.round(6000 * Math.min(100, Math.max(10, arg0)) / 100);
+  }
 }
 importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
@@ -51,9 +59,9 @@ const tmp5 = (arg0) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      f37040 = tmp2Result;
-      tmp2Result.Video = f37037(f37032[10]);
-      tmp2Result.Camera = f37037(f37032[11]);
+      f37048 = tmp2Result;
+      tmp2Result.Video = f37045(f37040[10]);
+      tmp2Result.Camera = f37045(f37040[11]);
       tmp2Result.audioInputDeviceId = closure_20;
       tmp2Result.audioOutputDeviceId = closure_20;
       tmp2Result.videoInputDeviceId = closure_20;
@@ -65,9 +73,9 @@ const tmp5 = (arg0) => {
       tmp2Result.deviceChangeGeneration = 0;
       tmp2Result.consecutiveWatchdogFailures = 0;
       tmp2Result.codecSurvey = null;
-      tmp2Result.clipsRecordingEventContext = { "Null": "r", "Null": "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", "Null": "Array" };
+      tmp2Result.clipsRecordingEventContext = { <string:1840316614>: 24, <string:281155572>: 8, <string:717891973>: 3 };
       tmp2Result.clipsRecordingEventHandlerRegistered = false;
-      logger = new f37040(f37032[12]).Logger("MediaEngineNative");
+      logger = new f37048(f37040[12]).Logger("MediaEngineNative");
       tmp2Result.logger = logger;
       tmp2Result.handleDeviceChange = (items, items, items) => {
         let items1 = items;
@@ -185,7 +193,7 @@ const tmp5 = (arg0) => {
       };
       logger = tmp2Result.logger;
       enableNativeLoggerResult = logger.enableNativeLogger(true);
-      obj3 = f37040(f37032[15]);
+      obj3 = f37048(f37040[15]);
       voiceEngine = obj3.getVoiceEngine();
       result = voiceEngine.setDeviceChangeCallback(tmp2Result.handleDeviceChange);
       result1 = voiceEngine.setVolumeChangeCallback(tmp2Result.handleVolumeChange);
@@ -199,7 +207,7 @@ const tmp5 = (arg0) => {
       if (null != voiceEngine.setAudioDeviceModuleErrorCallback) {
         result4 = voiceEngine.setAudioDeviceModuleErrorCallback(tmp2Result.handleAudioDeviceModuleErrorCallback);
       }
-      setTransportOptionsResult = voiceEngine.setTransportOptions({ 0: null, "Null": null });
+      setTransportOptionsResult = voiceEngine.setTransportOptions({});
       if (null != voiceEngine.setNativeScreenSharePickerCallbacks) {
         result5 = voiceEngine.setNativeScreenSharePickerCallbacks(tmp2Result.handleNativeScreenSharePickerUpdate, tmp2Result.handleNativeScreenSharePickerCancel, tmp2Result.handleNativeScreenSharePickerError);
       }
@@ -217,24 +225,24 @@ const tmp5 = (arg0) => {
       }
       onResult = tmp2Result.on("removeListener", tmp2Result.handleRemoveListener);
       onResult1 = tmp2Result.on("newListener", tmp2Result.handleNewListener);
-      obj5 = f37040(f37032[15]);
+      obj5 = f37048(f37040[15]);
       if (null != obj5.getVoiceEngine().getAudioSubsystem) {
-        tmp28 = f37040;
-        tmp29 = f37032;
-        obj9 = f37040(f37032[15]);
+        tmp28 = f37048;
+        tmp29 = f37040;
+        obj9 = f37048(f37040[15]);
         voiceEngine1 = obj9.getVoiceEngine();
         audioSubsystem = voiceEngine1.getAudioSubsystem((audioSubsystem, audioLayer) => {
           tmp2Result.audioSubsystem = audioSubsystem;
           tmp2Result.audioLayer = audioLayer;
         });
       } else {
-        tmp23 = f37040;
-        tmp24 = f37032;
-        obj6 = f37040(f37032[15]);
+        tmp23 = f37048;
+        tmp24 = f37040;
+        obj6 = f37048(f37040[15]);
         if (null != obj6.getVoiceEngine().getUseLegacyAudioDevice) {
-          tmp25 = f37040;
-          tmp26 = f37032;
-          obj7 = f37040(f37032[15]);
+          tmp25 = f37048;
+          tmp26 = f37040;
+          obj7 = f37048(f37040[15]);
           voiceEngine2 = obj7.getVoiceEngine();
           tmp27 = closure_16;
           tmp2Result.audioSubsystem = voiceEngine2.getUseLegacyAudioDevice() ? tmp27.LEGACY : tmp27.STANDARD;
@@ -253,7 +261,7 @@ const tmp5 = (arg0) => {
           }
         });
       }
-      tmp34 = f37037(f37032[16])(tmp2Result);
+      tmp34 = f37045(f37040[16])(tmp2Result);
       tmp35 = function pollQueueMetrics(tmp2Result) {
         function pollMetrics() {
           return _pollMetrics(...arguments);
@@ -969,7 +977,7 @@ const tmp5 = (arg0) => {
               ({ useLoopback, useVideoHook, useHookFramePacer, useGraphicsCapture, useQuartzCapturer, allowScreenCaptureKit, hdrCaptureMode, videoHookAllowDx12, minCaptureWidth, minCaptureHeight } = desktopDescription);
               const result1 = self.registerClipsRecordingEventHandler();
               if (null != voiceEngine.applyClipsSettings) {
-                obj = { useVideoHook, useHookFramePacer, useGraphicsCapture, useQuartzCapturer, allowScreenCaptureKit, hdrCaptureMode, videoHookAllowDx12, soundshareLoopback: useLoopback, frameRate: quality.frameRate, width: result, height: resolution, videoEncoderExperiments: quality.videoEncoderExperiments, minCaptureWidth, minCaptureHeight };
+                obj = { useVideoHook, useHookFramePacer, useGraphicsCapture, useQuartzCapturer, allowScreenCaptureKit, hdrCaptureMode, videoHookAllowDx12, soundshareLoopback: useLoopback, frameRate: quality.frameRate, width: result, height: resolution, bitrateKbps: callback10(quality.bitratePercent), videoEncoderExperiments: quality.videoEncoderExperiments, minCaptureWidth, minCaptureHeight };
                 voiceEngine.applyClipsSettings(obj);
               }
               if (null != id) {
@@ -977,17 +985,17 @@ const tmp5 = (arg0) => {
               } else {
                 parts = [];
               }
-              const tmp6 = callback4(parts, 2);
+              const tmp7 = callback4(parts, 2);
               let num7 = 0;
-              const first = tmp6[0];
-              const obj1 = { id: tmp6[1] };
+              const first = tmp7[0];
+              const obj1 = { id: tmp7[1] };
               if (null != soundshareId) {
                 num7 = soundshareId;
               }
               obj1.soundshareId = num7;
               voiceEngine.setClipsSource(obj1);
             } else {
-              voiceEngine.setClipsSource({ "Null": false, "Null": false });
+              voiceEngine.setClipsSource({ "Bool(true)": true, "Bool(true)": true });
             }
           }
         }
@@ -996,14 +1004,20 @@ const tmp5 = (arg0) => {
   };
   items[25] = {
     key: "setClipsQualitySettings",
-    value(arg0, arg1, arg2) {
-      const voiceEngine = callback(closure_2[15]).getVoiceEngine();
-      let flag = null != voiceEngine.applyClipsQualitySettings;
-      if (flag) {
+    value(arg0, arg1, arg2, arg3) {
+      let obj = callback(closure_2[15]);
+      const voiceEngine = obj.getVoiceEngine();
+      if (null == voiceEngine.applyClipsQualitySettings) {
+        return false;
+      } else {
         const result = voiceEngine.applyClipsQualitySettings(arg0, arg1, arg2);
-        flag = true;
+        const tmp7 = callback10(arg3);
+        if (tmp8) {
+          obj = { bitrateKbps: tmp7 };
+          voiceEngine.applyClipsSettings(obj);
+        }
+        return true;
       }
-      return flag;
     }
   };
   items[26] = {

@@ -1,11 +1,11 @@
 // Module ID: 8024
-// Function ID: 63733
+// Function ID: 63743
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 8024 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "RNSVGSvgViewAndroid" };
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": 2.5, "Bool(false)": "80%", "Bool(false)": true, "Bool(false)": "/assets/images/native/premium/logos", "Bool(false)": 163.5, "Bool(false)": 20, "Bool(false)": null, "Bool(false)": "cd3f012d84fd9fd0e06d08e5556058d7", "Bool(false)": "img_logo_nitro_tier_0_horizontal_dark", "Bool(false)": "png", "Bool(false)": "absolute", "Bool(false)": 22 };
+obj = { "Null": null, "Null": "cd3f012d84fd9fd0e06d08e5556058d7", "Null": "img_logo_nitro_tier_0_horizontal_dark", <string:1364346721>: "png", <string:1630102050>: "absolute", <string:3553251842>: 22, <string:2439116611>: 22, <string:4003559765>: 90, <string:3718061432>: true, <string:1653412338>: "/assets/images/native/premium/illustrations", <string:2203764415>: 188.5, <string:1314735591>: 121, <string:629464489>: null, "Bool(false)": "a1c720960ae9ac46d7d61ad850607231", "Bool(false)": "img_tier_0_clouds_bigger" };
 obj = { process: require(dependencyMap[0]).default };
 obj.color = obj;
 obj.borderBottomColor = { process: require(dependencyMap[0]).default };

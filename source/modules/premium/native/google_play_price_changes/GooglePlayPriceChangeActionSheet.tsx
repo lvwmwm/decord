@@ -1,10 +1,10 @@
-// Module ID: 15489
-// Function ID: 118211
+// Module ID: 15497
+// Function ID: 118254
 // Name: GooglePlayPriceChangeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15489 (GooglePlayPriceChangeActionSheet)
+// Module 15497 (GooglePlayPriceChangeActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -18,7 +18,7 @@ obj = { padding: importDefault(dependencyMap[8]).space.PX_32, paddingTop: import
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.textContainer = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-const obj2 = { <string:1870432525>: "number", <string:223193170>: "number", <string:1003250825>: "mY3Y38", marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
+const obj2 = { <string:1875806532>: "string", <string:1145952594>: "string", <string:1003250825>: "color", marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.header = obj2;
 obj.body = { textAlign: "center" };
 let closure_10 = obj.createStyles(obj);

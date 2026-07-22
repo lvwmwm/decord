@@ -1,10 +1,10 @@
-// Module ID: 8395
-// Function ID: 66815
+// Module ID: 8396
+// Function ID: 66827
 // Name: canManageResource
 // Dependencies: []
 // Exports: getManageResourcePermissions, useManageResourcePermissions
 
-// Module 8395 (canManageResource)
+// Module 8396 (canManageResource)
 function canManageResource(arg0, arg1, arg2, arg3) {
   let creator_id = arg0;
   let id = arg1;
@@ -77,10 +77,10 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ CREATE_GUILD_EVENT_CORE_PERMISSIONS: closure_7, CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS: closure_8, CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS: closure_9 } = arg1(dependencyMap[4]));
 const Permissions = arg1(dependencyMap[5]).Permissions;
 const obj = {
-  body: false,
-  location: false,
-  accessibilityRole: false,
-  colors: false,
+  0: false,
+  338690917: null,
+  9223372036854775807: false,
+  9223372036854775807: false,
   canManageGuildExpression() {
     return false;
   },

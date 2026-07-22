@@ -1,5 +1,5 @@
 // Module ID: 7537
-// Function ID: 60329
+// Function ID: 60340
 // Name: parseMessageEmbedForProps
 // Dependencies: []
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser

@@ -1,10 +1,10 @@
-// Module ID: 13409
-// Function ID: 101888
+// Module ID: 13416
+// Function ID: 101921
 // Name: TeacupIcon
 // Dependencies: []
 // Exports: TeacupIcon
 
-// Module 13409 (TeacupIcon)
+// Module 13416 (TeacupIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TeacupIcon.tsx");

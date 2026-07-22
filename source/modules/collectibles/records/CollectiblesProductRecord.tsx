@@ -1,5 +1,5 @@
 // Module ID: 6771
-// Function ID: 53308
+// Function ID: 53319
 // Name: _callSuper
 // Dependencies: []
 
@@ -63,7 +63,7 @@ const tmp5 = (importDefaultResult) => {
       items = [];
       items[0] = importDefaultResult;
       tmp2 = closure_17(this, CollectiblesProductRecord, items);
-      ({ summary: tmp2.summary, type: tmp2.type, premiumType: tmp2.premiumType, items: tmp2.items, categorySkuId: tmp2.categorySkuId, isCategoryReward: tmp2.isCategoryReward, prices: tmp2.prices, bundledProducts: tmp2.bundledProducts, previewAssets: tmp2.previewAssets, googleSkuIds: tmp2.googleSkuIds, variants: tmp2.variants, eligibleOffers: tmp2.eligibleOffers, badgeOverride: tmp2.badgeOverride, hideBadge: tmp2.hideBadge } = importDefaultResult);
+      ({ summary: tmp2.summary, type: tmp2.type, premiumType: tmp2.premiumType, items: tmp2.items, categorySkuId: tmp2.categorySkuId, isCategoryReward: tmp2.isCategoryReward, prices: tmp2.prices, bundledProducts: tmp2.bundledProducts, previewAssets: tmp2.previewAssets, googleSkuIds: tmp2.googleSkuIds, variants: tmp2.variants, eligibleOffers: tmp2.eligibleOffers, badgeOverride: tmp2.badgeOverride, hideBadge: tmp2.hideBadge, isFirstParty: tmp2.isFirstParty } = importDefaultResult);
       return tmp2;
     }
   }
@@ -76,14 +76,15 @@ const tmp5 = (importDefaultResult) => {
       let bundled_products;
       let category_sku_id;
       let hide_badge;
+      let is_first_party;
       let premium_type;
       let preview_assets;
       let prices;
       let type;
       let variants;
       ({ premium_type, bundled_products, preview_assets, variants } = arg0);
-      let obj = { "Bool(false)": true, "Bool(false)": 6, "Bool(false)": 132, "Bool(false)": null, "Bool(false)": "\u{1F9D1}\u200D\u{1F680}", "Bool(false)": true, "Bool(false)": 12.1, "Bool(false)": 133, "Bool(false)": null };
-      ({ type, category_sku_id, prices, badge_override, hide_badge } = arg0);
+      let obj = {};
+      ({ type, category_sku_id, prices, badge_override, hide_badge, is_first_party } = arg0);
       Object.setPrototypeOf(null);
       const merged = Object.assign(arg0, obj);
       const CollectiblesProductRecord = merged;
@@ -122,6 +123,7 @@ const tmp5 = (importDefaultResult) => {
       obj["eligibleOffers"] = merged.eligible_offers;
       obj["badgeOverride"] = badge_override;
       obj["hideBadge"] = hide_badge;
+      obj["isFirstParty"] = is_first_party;
       tmp3 = new tmp3(obj);
       return tmp3;
     }
@@ -257,6 +259,7 @@ const tmp5 = (importDefaultResult) => {
                 obj.eligibleOffers = undefined;
                 obj.variants = undefined;
                 obj.bundledProducts = undefined;
+                obj.isFirstParty = collectibles.isFirstParty;
                 const prototype = tmp4.prototype;
                 tmp4 = new tmp4(obj);
                 return tmp4;
@@ -274,6 +277,7 @@ const tmp5 = (importDefaultResult) => {
           }
           obj.googleSkuIds = googleSkuIds;
           obj.eligibleOffers = undefined;
+          obj.isFirstParty = collectibles.isFirstParty;
           const bundledSkus = first.bundledSkus;
           let found1;
           if (null != bundledSkus) {
@@ -332,7 +336,7 @@ const tmp6 = (arg0) => {
         let base_variant_sku_id;
         let variant_label;
         let variant_value;
-        let obj = { purple: "ERROR", rebeccapurple: "ERROR", red: "NOT_RESPONDER", rosybrown: "NOT_RESPONDER" };
+        let obj = { -1110200984: -24, -1110038884: null, -1375543399: 1, -1405585269: "Malaysia" };
         ({ base_variant_name, base_variant_sku_id, variant_label, variant_value } = arg0);
         Object.setPrototypeOf(null);
         obj = {};

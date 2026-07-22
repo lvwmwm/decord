@@ -1,11 +1,11 @@
-// Module ID: 12652
-// Function ID: 97292
+// Module ID: 12659
+// Function ID: 97325
 // Name: getLowLatencyRateControlExperimentConfig
 // Dependencies: []
 // Exports: getLowLatencyRateControlExperimentConfig
 
-// Module 12652 (getLowLatencyRateControlExperimentConfig)
-const obj = { bottom: 24, name: 24, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+// Module 12659 (getLowLatencyRateControlExperimentConfig)
+const obj = { "Bool(false)": "Array", "Bool(false)": "isArray", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 let closure_0 = importDefault(dependencyMap[0])(obj);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/media_engine/LowLatencyRateControlExperiment.tsx");
 

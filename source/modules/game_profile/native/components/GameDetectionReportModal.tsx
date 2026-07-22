@@ -1,10 +1,10 @@
-// Module ID: 11859
-// Function ID: 91822
+// Module ID: 11860
+// Function ID: 91836
 // Name: ReportContent
 // Dependencies: []
 // Exports: default
 
-// Module 11859 (ReportContent)
+// Module 11860 (ReportContent)
 function ReportContent(applicationId) {
   applicationId = applicationId.applicationId;
   const arg1 = applicationId;
@@ -126,7 +126,7 @@ function ReportContent(applicationId) {
     children: () => {
       if ("issue_selection" === first) {
         let obj = { style: tmp.content };
-        obj = {};
+        obj = { cachedAt: 400, edpbxy: 20 };
         const intl7 = applicationId(navigation[10]).intl;
         obj.children = intl7.string(applicationId(navigation[10]).t.IQHicr);
         const items = [first2(applicationId(navigation[14]).Text, obj), ];
@@ -158,7 +158,7 @@ function ReportContent(applicationId) {
       } else if ("game_search" === tmp) {
         const obj4 = {};
         const obj5 = { style: tmp.content };
-        const obj6 = {};
+        const obj6 = { cachedAt: 400, edpbxy: 20 };
         const intl4 = applicationId(navigation[10]).intl;
         obj6.children = intl4.string(applicationId(navigation[10]).t.79o/iq);
         const items2 = [first2(applicationId(navigation[14]).Text, obj6), , ];
@@ -206,7 +206,7 @@ function ReportContent(applicationId) {
         obj5.children = items2;
         const items3 = [callback(closure_6, obj5), ];
         const obj9 = { style: tmp.submitContainer };
-        const obj10 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
+        const obj10 = {};
         const intl6 = applicationId(navigation[10]).intl;
         obj10.text = intl6.string(applicationId(navigation[10]).t.geKm7t);
         obj10.disabled = "" === first2.trim();
@@ -218,7 +218,7 @@ function ReportContent(applicationId) {
       } else if ("other_feedback" === tmp) {
         obj = {};
         const obj11 = { style: tmp.content };
-        const obj12 = {};
+        const obj12 = { cachedAt: 400, edpbxy: 20 };
         const intl = applicationId(navigation[10]).intl;
         obj12.children = intl.string(applicationId(navigation[10]).t.IblYEw);
         const items4 = [first2(applicationId(navigation[14]).Text, obj12), ];
@@ -230,7 +230,7 @@ function ReportContent(applicationId) {
         obj11.children = items4;
         const items5 = [callback(closure_6, obj11), ];
         const obj14 = { style: tmp.submitContainer };
-        const obj15 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
+        const obj15 = {};
         const intl3 = applicationId(navigation[10]).intl;
         obj15.text = intl3.string(applicationId(navigation[10]).t.geKm7t);
         obj15.disabled = "" === first4.trim();

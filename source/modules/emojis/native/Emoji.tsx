@@ -1,10 +1,10 @@
-// Module ID: 5418
-// Function ID: 46484
+// Module ID: 5148
+// Function ID: 44905
 // Name: Emoji
 // Dependencies: []
 // Exports: default
 
-// Module 5418 (Emoji)
+// Module 5148 (Emoji)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

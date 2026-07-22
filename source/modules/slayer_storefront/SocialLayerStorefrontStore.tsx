@@ -1,9 +1,9 @@
-// Module ID: 5609
-// Function ID: 47713
+// Module ID: 5608
+// Function ID: 47721
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5609 (_isNativeReflectConstruct)
+// Module 5608 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -367,7 +367,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     } else {
       const obj = {};
       const merged = Object.assign(closure_17);
-      obj[tmp14] = {};
+      obj[tmp14] = { "Bool(true)": "cl", "Bool(true)": "targetFrames" };
       closure_17 = obj;
       delete r1[r2];
     }
@@ -566,7 +566,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       set.delete(interactionId);
       const obj = {};
       const merged = Object.assign(closure_17);
-      obj[skuId] = {};
+      obj[skuId] = { "Bool(true)": "cl", "Bool(true)": "targetFrames" };
       closure_17 = obj;
     } else {
       closure_18[interactionId] = skuId;
@@ -666,7 +666,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
   SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_FAILURE: function handleSocialLayerStorefrontByIdLoadFailure(storefrontId) {
     let obj = {};
     const merged = Object.assign(closure_12);
-    obj = { y: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002407806047699984, isArray: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003390687321928203, fetchedAt: Date.now() };
+    obj = { "Null": "{}", "Null": "Simulated failure", fetchedAt: Date.now() };
     obj[storefrontId.storefrontId] = obj;
     closure_12 = obj;
   },

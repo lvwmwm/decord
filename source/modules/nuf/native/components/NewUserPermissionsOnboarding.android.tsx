@@ -1,10 +1,10 @@
-// Module ID: 11706
-// Function ID: 90944
+// Module ID: 11707
+// Function ID: 90957
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [57, 31, 27, 653, 11717, 33, 4126, 689, 4964, 4545]
+// Dependencies: [57, 31, 27, 653, 11718, 33, 4126, 689, 5081, 4545]
 // Exports: default
 
-// Module 11706 (NewUserPermissionsOnboarding)
+// Module 11707 (NewUserPermissionsOnboarding)
 import "_slicedToArray";
 import module_31 from "module_31";
 import get ActivityIndicator from "get ActivityIndicator";
@@ -16,11 +16,11 @@ import getFontScale from "getFontScale";
 ME = { scrollContainer: { minHeight: "100%" }, container: {} };
 ME = { paddingTop: 80 + require("SuggestedFriendSource").NAV_BAR_HEIGHT };
 ME.alertContainer = ME;
-const obj1 = { flexDirection: "Array", marginBottom: "BOOST_UPSELL_LOST_LEVEL_HEADER", justifyContent: "y", title: "NONE_MONTH", headerIcon: "Array", trailingIcon: "CONNECTION_INDICATOR_SHOWN", backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 const merged = Object.assign(require("module_33").shadows.SHADOW_HIGH);
-ME.alert = obj1;
+ME.alert = { backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 ME.alertContent = {};
-ME.alertTitle = { 0: null, 0: null };
+ME.alertTitle = { isHighlighted: null, isPressable: null };
+const obj1 = { backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 ME.alertSubtitle = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
 ME.buttonWrapper = { flexDirection: "row" };
 const obj2 = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
@@ -52,7 +52,8 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   const items = [header, ];
   const obj2 = { style: tmp.alert };
   const obj3 = { style: tmp.alertContent };
-  const items1 = [callback(arg1(dependencyMap[6]).Text, { style: tmp.alertTitle, children: title }), callback(arg1(dependencyMap[6]).Text, { style: tmp.alertSubtitle, children: subtitle }), , ];
+  const obj4 = { "Null": "r", "Null": 59, alignItems: 85.5, style: tmp.alertTitle, children: title };
+  const items1 = [callback(arg1(dependencyMap[6]).Text, obj4), callback(arg1(dependencyMap[6]).Text, { style: tmp.alertSubtitle, children: subtitle }), , ];
   const obj6 = {};
   const items2 = [tmp.buttonWrapper, ];
   let primaryButtonContainer = flag;
@@ -61,7 +62,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   }
   items2[1] = primaryButtonContainer;
   obj6.style = items2;
-  const obj7 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
+  const obj7 = {};
   const intl = arg1(dependencyMap[8]).intl;
   obj7.text = intl.string(arg1(dependencyMap[8]).t.2nYlT2);
   obj7.onPress = onAllow;

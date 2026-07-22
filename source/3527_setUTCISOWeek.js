@@ -1,19 +1,20 @@
 // Module ID: 3527
 // Function ID: 27251
 // Name: setUTCISOWeek
-// Dependencies: []
+// Dependencies: [3355, 3470, 3208, 3595]
 // Exports: default
 
 // Module 3527 (setUTCISOWeek)
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
-let closure_2 = _interopRequireDefault(require(dependencyMap[2]));
-let closure_3 = _interopRequireDefault(require(dependencyMap[3]));
+import addDays from "addDays";
+import getDay from "getDay";
+import requiredArgs from "requiredArgs";
+import nextDay from "nextDay";
+
 
 export default function setUTCISOWeek(defaultResult1, defaultResult1) {
-  closure_3.default(2, arguments);
-  defaultResult1 = closure_1.default(defaultResult1);
-  const diff = closure_2.default(defaultResult1) - closure_0.default(defaultResult1);
+  nextDay.default(2, arguments);
+  defaultResult1 = getDay.default(defaultResult1);
+  const diff = requiredArgs.default(defaultResult1) - addDays.default(defaultResult1);
   defaultResult1.setUTCDate(defaultResult1.getUTCDate() - 7 * diff);
   return defaultResult1;
 };

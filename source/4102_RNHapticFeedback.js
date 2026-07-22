@@ -1,5 +1,5 @@
 // Module ID: 4102
-// Function ID: 33962
+// Function ID: 33964
 // Name: RNHapticFeedback
 // Dependencies: []
 

@@ -18,7 +18,7 @@ class Wrapper {
     return jsx(Component, Object.assign({}, closure_4(global, _isNativeReflectConstruct), { modalRef: global.ref }));
   }
 }
-let closure_3 = [null];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -164,7 +164,7 @@ const tmp4 = (Component) => {
   };
   return callback2(Modal, items);
 }(importAll(dependencyMap[7]).Component);
-tmp4.defaultProps = { size: null, progressViewOffset: null };
+tmp4.defaultProps = { "Null": "<string:1040334421>", "Null": "<string:1040334338>" };
 tmp4.contextType = arg1(dependencyMap[13]).RootTagContext;
 const importAllResult = importAll(dependencyMap[7]);
 let str = "left";

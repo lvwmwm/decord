@@ -1,11 +1,14 @@
 // Module ID: 7009
-// Function ID: 56228
+// Function ID: 56239
 // Name: ForumChannelAnalyticsManager
-// Dependencies: []
+// Dependencies: [29, 4138, 4321, 3758]
 
 // Module 7009 (ForumChannelAnalyticsManager)
-let closure_0 = importDefault(dependencyMap[1]);
-let closure_1 = importDefault(dependencyMap[2]);
+import closure_0 from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import importDefaultResult from "_objectWithoutProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 class ForumChannelAnalyticsManager {
   constructor() {
     closure_0 = this;
@@ -70,9 +73,7 @@ class ForumChannelAnalyticsManager {
     return;
   }
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(ForumChannelAnalyticsManager);
-const tmp2Result = new importDefault(dependencyMap[0])(ForumChannelAnalyticsManager)();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/forums/tracking/ForumChannelAnalyticsManager.tsx");
+const importDefaultResultResult = require("_objectWithoutProperties")(ForumChannelAnalyticsManager);
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/forums/tracking/ForumChannelAnalyticsManager.tsx");
 
-export default tmp2Result;
+export default new require("_objectWithoutProperties")(ForumChannelAnalyticsManager)();

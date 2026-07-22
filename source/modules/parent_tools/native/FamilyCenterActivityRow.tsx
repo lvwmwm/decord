@@ -1,10 +1,10 @@
-// Module ID: 13682
-// Function ID: 103575
+// Module ID: 13689
+// Function ID: 103608
 // Name: memoResult1
 // Dependencies: []
 // Exports: default
 
-// Module 13682 (memoResult1)
+// Module 13689 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -14,13 +14,13 @@ const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { 9223372036854775807: "center", 0: null, 0: "hidden", 0: true, 9223372036854775807: "/assets/images/native/icons", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+obj = { "Bool(false)": "center", "Bool(false)": null, "Bool(false)": "hidden", "Bool(false)": true, "Bool(false)": "/assets/images/native/icons", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj1 = { borderRadius: arg1(dependencyMap[9]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[9]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.avatar = obj1;
-obj.avatarContainer = { "Bool(false)": true, "Bool(false)": null };
+obj.avatarContainer = { cameraOpportunityDuration: 15.1, FITNESS: null };
 obj.textContainer = {};
-obj.text = {};
+obj.text = { display: null, flexDirection: null, alignItems: null };
 let closure_10 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((action) => {
   action = action.action;
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo((action) => {
     obj.children = callback(arg1(dependencyMap[9]).Avatar, obj1);
     const items1 = [callback(View, obj), ];
     const obj2 = { style: tmp.textContainer };
-    const obj3 = { 9223372036854775807: "<string:1340029796>", 0: "<string:1072076685>", 0: "<string:16821057>", -9223372036854775808: "<string:1014300928>", -9223372036854775808: "isArray", style: tmp.text, children: importDefault(dependencyMap[14]).getName(stateFromStores) };
+    const obj3 = { 2080943186: "isArray", -1626713361: "isArray", -1017926443: "isArray", -708255902: "useStateFromStores", 1451975084: "", style: tmp.text, children: importDefault(dependencyMap[14]).getName(stateFromStores) };
     const items2 = [callback(arg1(dependencyMap[13]).Text, obj3), ];
     const obj4 = {};
     const obj8 = importDefault(dependencyMap[14]);
@@ -59,17 +59,17 @@ const memoResult = importAllResult.memo((action) => {
 memoResult.displayName = "FamilyCenterActivityRowUser";
 let obj5 = arg1(dependencyMap[7]);
 const obj2 = {};
-const obj3 = { targetAttribute: "Array", blurAmount: "isArray", blurStyle: "np", blurTheme: "value", dLbkBk: "Array", voicePanelsOpened: "isArray", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+const obj3 = { width: "Array", height: "isArray", accessible: "construct", disabled: "valueOf", it: "Array", includes: "isArray", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj2.container = obj3;
-const obj4 = { -2041496991: "Array", "Bool(false)": "isArray", "Bool(false)": "e", "Bool(false)": "uri", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "constructor", borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGHEST };
-obj2.avatar = obj4;
+const tmp2 = arg1(dependencyMap[6]);
+obj2.avatar = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGHEST };
 obj5 = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj2.avatarText = obj5;
 obj2.text = {};
 obj2.headerContainer = {};
 obj2.badge = { marginRight: 4 };
 obj2.header = { paddingRight: 16 };
-obj2.headerAndIconContainer = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj2.headerAndIconContainer = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
 let closure_12 = obj5.createStyles(obj2);
 const memoResult1 = importAllResult.memo((action) => {
   action = action.action;
@@ -106,7 +106,7 @@ const memoResult1 = importAllResult.memo((action) => {
       const tmp18 = importDefault(dependencyMap[17]);
     }
     const items2 = [tmp14, ];
-    const obj5 = { 9223372036854775807: "<string:1340029796>", 0: "<string:1072076685>", 0: "<string:16821057>", -9223372036854775808: "<string:1014300928>", -9223372036854775808: "isArray", style: tmp.header, children: stateFromStores.name };
+    const obj5 = { 2080943186: "isArray", -1626713361: "isArray", -1017926443: "isArray", -708255902: "useStateFromStores", 1451975084: "", style: tmp.header, children: stateFromStores.name };
     items2[1] = callback(arg1(dependencyMap[13]).Text, obj5);
     obj3.children = items2;
     obj2.children = closure_9(View, obj3);
@@ -127,7 +127,7 @@ const memoResult1 = importAllResult.memo((action) => {
   }
 });
 memoResult1.displayName = "FamilyCenterActivityRowGuild";
-const tmp2 = arg1(dependencyMap[6]);
+const obj4 = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGHEST };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityRow.tsx");
 
 export default function FamilyCenterActivityRow(action) {

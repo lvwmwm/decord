@@ -1,10 +1,10 @@
-// Module ID: 9024
-// Function ID: 70941
+// Module ID: 9025
+// Function ID: 70954
 // Name: XboxLinkDiscordSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 9024 (XboxLinkDiscordSuccess)
+// Module 9025 (XboxLinkDiscordSuccess)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6, Linking: closure_7, Pressable: closure_8 } = arg1(dependencyMap[2]));
@@ -14,12 +14,12 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { image: { <string:651579779>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000631241836204346, <string:4249959009>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122671433504, <string:1446732419>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019027229372176472 } };
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { image: { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312418372658124, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122671433504, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019187302744385818 } };
+obj = { "Bool(false)": "application/vnd.sentry.items.trace-metric+json", "Null": "first-input", "Null": true, "Null": "auto.core.linked_errors", "Null": "eq", "Null": "neq", "Null": "gt", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.getApp = obj;
 const tmp4 = arg1(dependencyMap[5]);
 obj.appLogoBox = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.PLATFORM_XBOX };
-obj.appLogo = { "Null": false, "Null": false };
+obj.appLogo = { "Null": true, "Null": true };
 obj.getAppTitle = { flex: 1 };
 obj.icon = { marginLeft: 8 };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.PLATFORM_XBOX };
@@ -68,14 +68,14 @@ export default function XboxLinkDiscordSuccess() {
   const intl = arg1(dependencyMap[13]).intl;
   obj2.children = intl.string(arg1(dependencyMap[13]).t.aGRPVq);
   items2[1] = callback2(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: twoWayLinkStyles.body };
+  const obj3 = { cachedAt: 1, edpbxy: 1, style: twoWayLinkStyles.body };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[13]).t.m3mBYE);
   items2[2] = callback2(arg1(dependencyMap[12]).Text, obj3);
   const obj4 = { onPress: callback, style: tmp.getApp };
   const obj5 = { style: tmp.appLogoBox, children: callback2(closure_5, { source: importDefault(dependencyMap[14]), style: tmp.appLogo }) };
   const items3 = [callback2(closure_6, obj5), , ];
-  const obj7 = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.getAppTitle };
+  const obj7 = { "Null": "String", "Null": "justifyContent", alignItems: "np", style: tmp.getAppTitle };
   const intl3 = arg1(dependencyMap[13]).intl;
   const string = intl3.string;
   const t = arg1(dependencyMap[13]).t;
@@ -100,7 +100,7 @@ export default function XboxLinkDiscordSuccess() {
   const items4 = [closure_14(closure_6, obj), ];
   const obj10 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj11 = { style: twoWayLinkStyles.footerButton };
-  const obj12 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
+  const obj12 = { <string:1986169986>: true, <string:2487833047>: true };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj12.text = intl4.string(arg1(dependencyMap[13]).t.3PatSz);
   obj12.onPress = callback1;

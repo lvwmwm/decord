@@ -77,12 +77,12 @@ function createLayoutAnimation(duration, easeInEaseOut, opacity) {
   return obj;
 }
 let closure_4 = importAll(dependencyMap[0]).isLayoutAnimationEnabled();
-let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: { animated: true, variant: true }, update: { useNativeDriver: true, interactionStart: true }, delete: { animated: true, variant: true } } };
+let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: {}, update: { "Bool(false)": true, "Bool(false)": true }, delete: {} } };
 obj = {
   configureNext,
   create: createLayoutAnimation,
-  Types: Object.freeze({ 0: "go", 9223372036854775807: "next", 9223372036854775807: "previous", 0: "search", 0: "send", -9223372036854775808: "postal-address-region" }),
-  Properties: Object.freeze({}),
+  Types: Object.freeze({}),
+  Properties: Object.freeze({ g_s_ending: "<string:1313996802>", QUICKSWITCHER_CLOSED: true, bits: "<string:18022929>", "Null": "<string:4197531921>" }),
   checkConfig() {
     console.error("LayoutAnimation.checkConfig(...) has been disabled.");
   },

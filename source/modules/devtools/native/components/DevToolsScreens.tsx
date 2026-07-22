@@ -1,9 +1,9 @@
-// Module ID: 13385
-// Function ID: 101766
+// Module ID: 13392
+// Function ID: 101799
 // Name: DevToolsScreens
 // Dependencies: []
 
-// Module 13385 (DevToolsScreens)
+// Module 13392 (DevToolsScreens)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = {};

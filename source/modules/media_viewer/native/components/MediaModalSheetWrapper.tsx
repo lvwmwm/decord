@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 65380
+// Module ID: 8285
+// Function ID: 65392
 // Name: MediaModalSheetWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 8284 (MediaModalSheetWrapper)
+// Module 8285 (MediaModalSheetWrapper)
 let closure_2 = importAll(dependencyMap[0]);
 const MEDIA_MODAL_KEY = arg1(dependencyMap[1]).MEDIA_MODAL_KEY;
 const jsx = arg1(dependencyMap[2]).jsx;

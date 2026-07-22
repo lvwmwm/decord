@@ -1,68 +1,69 @@
 // Module ID: 747
 // Function ID: 8797
 // Name: getTag
-// Dependencies: []
+// Dependencies: [788, 794, 1111, 1000, 1089, 1152, 1156]
 
 // Module 747 (getTag)
-const _module = require(dependencyMap[0]);
-let closure_2 = _module(require(dependencyMap[1]));
-const _module1 = require(dependencyMap[0]);
-let closure_3 = _module1(require(dependencyMap[2]));
-const _module2 = require(dependencyMap[0]);
-let closure_4 = _module2(require(dependencyMap[3]));
-const _module3 = require(dependencyMap[0]);
-let closure_5 = _module3(require(dependencyMap[4]));
-const _module4 = require(dependencyMap[0]);
-let closure_6 = _module4(require(dependencyMap[5]));
-let getTag = require(dependencyMap[6]);
-let _module5 = require(dependencyMap[1]);
-if (_module5) {
-  let _module6 = require(dependencyMap[1]);
+import debugSymbolicatorIntegration from "debugSymbolicatorIntegration";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import debugSymbolicatorIntegration from "debugSymbolicatorIntegration";
+import init from "init";
+import debugSymbolicatorIntegration from "debugSymbolicatorIntegration";
+import feedbackAsyncIntegration from "feedbackAsyncIntegration";
+import debugSymbolicatorIntegration from "debugSymbolicatorIntegration";
+import module_1089 from "module_1089";
+import debugSymbolicatorIntegration from "debugSymbolicatorIntegration";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getTag from "getTag";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
+if (registerSpanErrorInstrumentation) {
+  let _module6 = require("registerSpanErrorInstrumentation");
   const _ArrayBuffer = ArrayBuffer;
   const arrayBuffer = new ArrayBuffer(1);
   const prototype2 = _module6.prototype;
   _module6 = new _module6(arrayBuffer);
-  _module5 = getTag(_module6) != "[object DataView]";
+  registerSpanErrorInstrumentation = getTag(_module6) != "[object DataView]";
 }
-if (!_module5) {
-  let _module7 = require(dependencyMap[2]);
+if (!registerSpanErrorInstrumentation) {
+  let _module7 = require("init");
   if (_module7) {
-    let _module8 = require(dependencyMap[2]);
+    let _module8 = require("init");
     const prototype3 = _module8.prototype;
     _module8 = new _module8();
     _module7 = getTag(_module8) != "[object Map]";
   }
-  _module5 = _module7;
+  registerSpanErrorInstrumentation = _module7;
 }
-if (!_module5) {
-  let _module9 = require(dependencyMap[3]);
+if (!registerSpanErrorInstrumentation) {
+  let _module9 = require("feedbackAsyncIntegration");
   if (_module9) {
-    const _module10 = require(dependencyMap[3]);
+    const _module10 = require("feedbackAsyncIntegration");
     _module9 = getTag(_module10.resolve()) != "[object Promise]";
   }
-  _module5 = _module9;
+  registerSpanErrorInstrumentation = _module9;
 }
-if (!_module5) {
-  let _module11 = require(dependencyMap[4]);
+if (!registerSpanErrorInstrumentation) {
+  let _module11 = require("module_1089");
   if (_module11) {
-    let _module12 = require(dependencyMap[4]);
+    let _module12 = require("module_1089");
     const prototype4 = _module12.prototype;
     _module12 = new _module12();
     _module11 = getTag(_module12) != "[object Set]";
   }
-  _module5 = _module11;
+  registerSpanErrorInstrumentation = _module11;
 }
-if (!_module5) {
-  let _module13 = require(dependencyMap[5]);
+if (!registerSpanErrorInstrumentation) {
+  let _module13 = require("_isNativeReflectConstruct");
   if (_module13) {
-    let _module14 = require(dependencyMap[5]);
+    let _module14 = require("_isNativeReflectConstruct");
     const prototype5 = _module14.prototype;
     _module14 = new _module14();
     _module13 = getTag(_module14) != "[object WeakMap]";
   }
-  _module5 = _module13;
+  registerSpanErrorInstrumentation = _module13;
 }
-if (_module5) {
+if (registerSpanErrorInstrumentation) {
   getTag = function getTag(_module10) {
     const tmp = require(dependencyMap[6])(_module10);
     let constructor;
@@ -74,15 +75,15 @@ if (_module5) {
       str = require(dependencyMap[0])(constructor);
     }
     if (str) {
-      if (closure_2 === str) {
+      if (registerSpanErrorInstrumentation === str) {
         return "[object DataView]";
-      } else if (closure_3 === str) {
+      } else if (init === str) {
         return "[object Map]";
-      } else if (closure_4 === str) {
+      } else if (feedbackAsyncIntegration === str) {
         return "[object Promise]";
-      } else if (closure_5 === str) {
+      } else if (module_1089 === str) {
         return "[object Set]";
-      } else if (closure_6 === str) {
+      } else if (_isNativeReflectConstruct === str) {
         return "[object WeakMap]";
       }
     }

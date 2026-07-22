@@ -1,5 +1,5 @@
 // Module ID: 4797
-// Function ID: 41700
+// Function ID: 41709
 // Name: MetaStickerType
 // Dependencies: []
 

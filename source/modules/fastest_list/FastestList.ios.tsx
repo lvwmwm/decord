@@ -1,9 +1,9 @@
-// Module ID: 9251
-// Function ID: 72296
+// Module ID: 9252
+// Function ID: 72309
 // Name: getBatchesToRender
 // Dependencies: []
 
-// Module 9251 (getBatchesToRender)
+// Module 9252 (getBatchesToRender)
 function getBatchesToRender(renderAhead) {
   if ("nominal" !== renderAhead) {
     if ("half" === renderAhead) {

@@ -1,10 +1,10 @@
-// Module ID: 8756
-// Function ID: 69238
+// Module ID: 8757
+// Function ID: 69250
 // Name: PriceTag
 // Dependencies: []
 // Exports: default
 
-// Module 8756 (PriceTag)
+// Module 8757 (PriceTag)
 function PriceTag(color) {
   let icon;
   let priceFormatted;
@@ -69,7 +69,7 @@ function OrbsPriceTag(arg0) {
     let tmp13 = result;
     if (result) {
       obj = { priceFormatted: original.toString(), variant: "text-md/medium", style: tmp.strikedOrbPrice };
-      obj1 = { style: tmp.orbsIcon };
+      obj1 = { GuildBadgeSnail: -2, EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: null, style: tmp.orbsIcon };
       obj.icon = callback(arg1(dependencyMap[12]).OrbsIcon, obj1);
       const intl = arg1(dependencyMap[13]).intl;
       const obj2 = { orbAmount: original.toString() };
@@ -80,7 +80,7 @@ function OrbsPriceTag(arg0) {
     const obj3 = { priceFormatted: vcData.price.amount.toString(), variant: "text-md/semibold" };
     let tmp21;
     if (!result) {
-      const obj4 = { style: tmp.orbsIcon };
+      const obj4 = { GuildBadgeSnail: -2, EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: null, style: tmp.orbsIcon };
       tmp21 = callback(arg1(dependencyMap[12]).OrbsIcon, obj4);
     }
     obj3.icon = tmp21;
@@ -113,8 +113,8 @@ function BundleDiscountV2(discountPercentage) {
   let tmp2 = null;
   if (discountPercentage >= arg1(dependencyMap[11]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
     let obj = { style: tmp.discount };
-    obj = {};
-    const items = [true, discountPercentage, "%"];
+    obj = { cachedAt: null, edpbxy: null };
+    const items = ["translation", discountPercentage, "%"];
     obj.children = items;
     obj.children = callback2(arg1(dependencyMap[8]).Text, obj);
     tmp2 = callback(closure_4, obj);
@@ -130,7 +130,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { priceTag: { "Null": 7, "Null": 370 }, strikedPrice: { "Null": null, "Null": "9ba137dcd88d29dfd923fc4a2e32469d", "Null": "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages" }, strikedOrbPrice: { "Null": null, "Null": "9ba137dcd88d29dfd923fc4a2e32469d", "Null": "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages", "Null": "jsona" }, regularPrice: {}, nitroIcon: {}, nitroIconSubscribeNow: { marginLeft: 0 }, container: {}, priceTagRow: { "Null": 7, "Null": 370 }, priceTagColumn: {}, underline: { textDecorationLine: "underline" } };
+obj = { priceTag: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, strikedPrice: { "Bool(true)": null, "Bool(true)": "118782068bbe62ce561e5b100a9de071", "Bool(true)": "es-ES.messages.118782068bbe62ce561e5b100a9de071.compiled.messages" }, strikedOrbPrice: { "Bool(true)": null, "Bool(true)": "118782068bbe62ce561e5b100a9de071", "Bool(true)": "es-ES.messages.118782068bbe62ce561e5b100a9de071.compiled.messages", "Bool(true)": "jsona" }, regularPrice: {}, nitroIcon: {}, nitroIconSubscribeNow: { marginLeft: 0 }, container: {}, priceTagRow: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, priceTagColumn: {}, underline: { textDecorationLine: "underline" } };
 obj = { marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.subscribeNowPressable = obj;
 obj.androidTextPadding = { paddingBottom: 2 };
@@ -140,7 +140,7 @@ let closure_12 = obj.createStyles(obj);
 const tmp5 = arg1(dependencyMap[5]);
 let closure_13 = arg1(dependencyMap[6]).createStyles(() => {
   let obj = {};
-  obj = { borderRadius: importDefault(dependencyMap[7]).radii.xs - 1 };
+  obj = { "Null": true, "Null": true, height: true, alignSelf: true, flexDirection: true, justifyContent: true, borderRadius: importDefault(dependencyMap[7]).radii.xs - 1 };
   let num;
   if (obj3.isAndroid()) {
     num = 0;
@@ -242,7 +242,7 @@ export default function InlinePriceTag(arg0) {
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj8.style = items3;
         const items4 = [callback(arg1(closure_2[25]).NitroWheelIcon, obj8), ];
-        obj9 = { hasMaxConnections: null, isBoostOnlySubscription: null };
+        obj9 = { cachedAt: null, edpbxy: null };
         let androidTextPadding;
         if (obj26.isAndroid()) {
           androidTextPadding = tmp.androidTextPadding;
@@ -279,7 +279,7 @@ export default function InlinePriceTag(arg0) {
       obj.children = items5;
       return tmp15(tmp16, obj);
     } else {
-      const obj12 = { priceFormatted: formattedPriceForCollectiblesProduct1 };
+      const obj12 = { "Bool(false)": 0.236, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184698513646185, "Bool(false)": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000007170012376140887, priceFormatted: formattedPriceForCollectiblesProduct1 };
       const intl2 = arg1(closure_2[13]).intl;
       const obj13 = { price: formattedPriceForCollectiblesProduct1 };
       obj12.accessibilityLabel = intl2.formatToPlainString(arg1(closure_2[13]).t.kWkpdG, obj13);

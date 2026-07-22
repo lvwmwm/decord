@@ -1,10 +1,10 @@
-// Module ID: 15104
-// Function ID: 113942
+// Module ID: 15112
+// Function ID: 113985
 // Name: ContentInventoryEntryRow
 // Dependencies: []
 // Exports: default
 
-// Module 15104 (ContentInventoryEntryRow)
+// Module 15112 (ContentInventoryEntryRow)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

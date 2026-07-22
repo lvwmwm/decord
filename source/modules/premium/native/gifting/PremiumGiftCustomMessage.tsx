@@ -1,9 +1,9 @@
-// Module ID: 8808
-// Function ID: 69431
+// Module ID: 8809
+// Function ID: 69443
 // Name: GiftCustomMessage
 // Dependencies: []
 
-// Module 8808 (GiftCustomMessage)
+// Module 8809 (GiftCustomMessage)
 class GiftCustomMessage {
   constructor(arg0) {
     ({ setMessagePosition: closure_0, setCustomGiftMessage } = global);

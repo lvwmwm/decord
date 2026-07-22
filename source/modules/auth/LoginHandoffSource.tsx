@@ -1,10 +1,10 @@
-// Module ID: 5692
-// Function ID: 49008
+// Module ID: 5691
+// Function ID: 49016
 // Name: LoginHandoffSource
 // Dependencies: []
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 5692 (LoginHandoffSource)
+// Module 5691 (LoginHandoffSource)
 const StaticChannelRoute = require(dependencyMap[0]).StaticChannelRoute;
 const UserSettingsPath = require(dependencyMap[1]).UserSettingsPath;
 const obj = { ROLE_SUBSCRIPTION: "role_subscription", ROLE_SUBSCRIPTION_SETTING: "role_subscription_setting" };

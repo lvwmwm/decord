@@ -1,5 +1,5 @@
 // Module ID: 4168
-// Function ID: 35367
+// Function ID: 35369
 // Name: transformCollectiblesItemAssetsFromServer
 // Dependencies: []
 // Exports: default
@@ -107,7 +107,7 @@ function transformCollectiblesSKUTenantMetadataFromServer(collectibles) {
     }
     obj.expiresAt = date;
     obj.variant = transformCollectiblesVariantMetadataFromServer(collectibles.variant);
-    ({ option_selector_display_value: obj.optionSelectorDisplayValue, source_type: obj.sourceType } = collectibles);
+    ({ option_selector_display_value: obj.optionSelectorDisplayValue, source_type: obj.sourceType, is_first_party: obj.isFirstParty } = collectibles);
     return obj;
   }
 }

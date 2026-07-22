@@ -1,5 +1,5 @@
 // Module ID: 7252
-// Function ID: 58389
+// Function ID: 58400
 // Name: ScopeClass
 // Dependencies: []
 

@@ -1,8 +1,8 @@
-// Module ID: 14750
-// Function ID: 111213
+// Module ID: 14758
+// Function ID: 111256
 // Dependencies: []
 
-// Module 14750
+// Module 14758
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ getGuildIconSource: closure_5, getGuildIconURL: closure_6 } = arg1(dependencyMap[2]));
@@ -35,7 +35,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuild(guildId) 
   const items1 = [guildId];
   const stateFromStores = obj2.useStateFromStores(items, () => guildId.getGuildId() === guildId, items1);
   const dependencyMap = stateFromStores;
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ <string:3577514597>: null, <string:3965960815>: null });
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null });
   const items2 = [closure_4];
   const items3 = [guildId];
   const stateFromStores1 = arg1(dependencyMap[10]).useStateFromStores(items2, () => stateFromStores3.getRequest(guildId), items3);

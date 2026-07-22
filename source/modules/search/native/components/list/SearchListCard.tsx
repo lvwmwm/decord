@@ -1,10 +1,10 @@
-// Module ID: 15237
-// Function ID: 115046
+// Module ID: 15245
+// Function ID: 115089
 // Name: SearchListContentAuthor
 // Dependencies: []
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15237 (SearchListContentAuthor)
+// Module 15245 (SearchListContentAuthor)
 class SearchListContentAuthor {
   constructor(arg0) {
     author = global.author;
@@ -16,7 +16,7 @@ class SearchListContentAuthor {
     obj.avatarDecoration = author.avatarDecoration;
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[5]).Avatar, obj);
-    obj1 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", "Null": "enum" };
+    obj1 = { <string:2846932934>: "construct", <string:1289959171>: "y", <string:1640337854>: "isArray", <string:2933637077>: "isArray" };
     obj1.style = tmp.authorName;
     obj4 = importDefault(dependencyMap[7]);
     obj1.children = obj4.getName(author);
@@ -35,16 +35,16 @@ function SearchListPrivateChannel(channel) {
     obj = { channel, size: arg1(dependencyMap[5]).AvatarSizes.SIZE_16 };
     obj.children = callback(importDefault(dependencyMap[9]), obj);
     const items = [callback(View, obj), ];
-    const obj1 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", "Null": "enum", style: tmp.channelName, children: tmp2 };
+    const obj1 = { <string:2846932934>: "construct", <string:1289959171>: "y", <string:1640337854>: "isArray", <string:2933637077>: "isArray", style: tmp.channelName, children: tmp2 };
     items[1] = callback(arg1(dependencyMap[6]).Text, obj1);
     obj.children = items;
     let tmp3Result = tmp3(tmp4, obj);
     const tmp15 = importDefault(dependencyMap[9]);
   } else {
     obj.style = tmp.privateChannelIcon;
-    const obj2 = { Gateway: "lag", communicationDisabledUntilTimestamp: "isArrayBuffer", withMutualGuilds: "<string:2631618816>", style: tmp.icon };
+    const obj2 = { style: tmp.icon };
     const items1 = [callback(arg1(dependencyMap[10]).ForumIcon, obj2), ];
-    const obj3 = {};
+    const obj3 = { 803799044: "he", 1269170180: "<string:105791744>", 711589892: "<string:208732161>" };
     const intl = arg1(dependencyMap[11]).intl;
     obj3.children = intl.string(arg1(dependencyMap[11]).t.ACgJhM);
     items1[1] = callback(arg1(dependencyMap[6]).Text, obj3);
@@ -67,7 +67,7 @@ class SearchListGuildChannel {
     obj1.color = tmp.channelIcon.color;
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[5]).Icon, obj1);
-    obj2 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", "Null": "enum" };
+    obj2 = { <string:2846932934>: "construct", <string:1289959171>: "y", <string:1640337854>: "isArray", <string:2933637077>: "isArray" };
     obj2.style = tmp.channelName;
     obj2.children = tmp2;
     items[1] = jsx(arg1(dependencyMap[6]).Text, obj2);
@@ -79,24 +79,24 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { channelName: { subscriptionHasPremiumGuildPlan: null, COUNT_INITIAL_DISPATCHS_LENGTH: null } };
+obj = { channelName: { "Bool(true)": false, "Bool(true)": false } };
 obj = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.channelIcon = obj;
 obj.avatar = { marginRight: 2 };
-obj.channel = { "Null": 7, "Null": 370 };
-obj.author = { "Null": 7, "Null": 370 };
-obj.authorName = { subscriptionHasPremiumGuildPlan: null, COUNT_INITIAL_DISPATCHS_LENGTH: null };
+obj.channel = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+obj.author = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+obj.authorName = { "Bool(true)": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
 const tmp2 = arg1(dependencyMap[2]);
 obj.container = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.content = { length: "row", w: "center", length: 16 };
+obj.content = {};
 obj.footer = {};
-const obj2 = { Č: 10, accessibilityDismiss: 10, borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.thumbnail = obj2;
-obj.privateChannelIcon = { "Null": 7, "Null": 370 };
+const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj.thumbnail = { borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj.privateChannelIcon = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.icon = { marginRight: 4 };
 obj.gdmIcon = { width: 18 };
 let closure_7 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/search/native/components/list/SearchListCard.tsx");
 
 export { SearchListContentAuthor };
@@ -119,13 +119,13 @@ export const SearchListCardContent = function SearchListCardContent(arg0) {
   let obj = { style: callback3().content };
   let tmp3 = label;
   if ("string" === typeof label) {
-    obj = { children: label };
+    obj = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>", children: label };
     tmp3 = callback(arg1(dependencyMap[6]).Text, obj);
   }
   const items = [tmp3, ];
   let tmp7 = subLabel;
   if ("string" === typeof subLabel) {
-    obj = { <string:1643205302>: "editingMessageId", <string:1415816450>: "turquoise", <string:4283523744>: "hermesProfile", children: subLabel };
+    obj = { children: subLabel };
     tmp7 = callback(arg1(dependencyMap[6]).Text, obj);
   }
   items[1] = tmp7;

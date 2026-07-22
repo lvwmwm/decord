@@ -1,10 +1,10 @@
-// Module ID: 10298
-// Function ID: 79502
+// Module ID: 10299
+// Function ID: 79515
 // Name: getExpandNUXState
 // Dependencies: []
 // Exports: markExpandNUXStateAsShown, resetExpandNUXState
 
-// Module 10298 (getExpandNUXState)
+// Module 10299 (getExpandNUXState)
 function getExpandNUXState() {
   const Storage = require(dependencyMap[0]).Storage;
   let value = Storage.get(closure_2);
@@ -14,7 +14,7 @@ function getExpandNUXState() {
   return value;
 }
 let closure_2 = "inAppNotificationExpandNux";
-let closure_3 = { ./shared/errors: -536870861, @braintree/wrap-promise: -299892737 };
+let closure_3 = { "Bool(false)": "%FunctionPrototype%", "Bool(false)": "paddingStart" };
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationExpandNux.tsx");
 

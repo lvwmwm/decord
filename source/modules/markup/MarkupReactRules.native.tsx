@@ -1,5 +1,5 @@
 // Module ID: 4119
-// Function ID: 34134
+// Function ID: 34136
 // Name: MarkupText
 // Dependencies: []
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
@@ -16,7 +16,7 @@ class MarkupText {
     if (str2 === undefined) {
       str2 = "text-sm/medium";
     }
-    obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
+    obj = { 0: "spring", -9223372036854775808: 0.4, 0: 1 };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     obj = {};
@@ -498,9 +498,9 @@ function MarkupChannelMention(state) {
     const obj2 = { themedColor: importDefault(dependencyMap[14]).colors.MENTION_FOREGROUND };
     const fontScale = store.getFontScale();
     if (fontScale < 1.25) {
-      obj3 = {};
+      obj3 = { "Null": 800, "Null": 16 };
     } else {
-      obj3 = fontScale < 2 ? { "Null": "<string:2552889346>", "Null": "<string:2938503170>" } : {};
+      obj3 = fontScale < 2 ? { "Null": null, "Null": null } : { "Null": null, "Null": null };
     }
     obj2.style = obj3;
     obj2.source = importDefault(dependencyMap[41]);
@@ -607,7 +607,7 @@ const tmp4 = arg1(dependencyMap[8]);
 const regExp = new RegExp(arg1(dependencyMap[11]).ANSI_CONTROL_SEQUENCE_RE, "g");
 let obj = { fontFamily: Fonts.CODE_BOLD };
 obj = { fontFamily: Fonts.PRIMARY_BOLD };
-let closure_19 = { emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, resizeMode: "contain" }, guildIcon: { <string:3747734852>: "\u{1F4A0}", <string:1102771281>: 6 }, list: { paddingTop: 16 }, listItem: { paddingTop: 4 }, bullet: obj, strong: obj };
+let closure_19 = { emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, resizeMode: "contain" }, guildIcon: { GRAPHQL_URLS: "\u{1F4A0}", INTEGRATION_TIMEOUT_MS: 6 }, list: { paddingTop: 16 }, listItem: { paddingTop: 4 }, bullet: obj, strong: obj };
 let obj2 = arg1(dependencyMap[13]);
 obj = {};
 const tmp5 = arg1(dependencyMap[10]);
@@ -622,10 +622,10 @@ const obj4 = { color: importDefault(dependencyMap[14]).unsafe_rawColors.BRAND_50
 obj.inlineCode = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
 const obj5 = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
 obj.codeBlock = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
-const obj7 = { enabledOOP: null, enabledLegacy: null, overlayMethod: null, borderLeftColor: importDefault(dependencyMap[14]).colors.SPINE_DEFAULT };
-obj.blockQuote = obj7;
-let closure_20 = obj2.createStyles(obj);
 const obj6 = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
+obj.blockQuote = { borderLeftColor: importDefault(dependencyMap[14]).colors.SPINE_DEFAULT };
+let closure_20 = obj2.createStyles(obj);
+const obj7 = { borderLeftColor: importDefault(dependencyMap[14]).colors.SPINE_DEFAULT };
 const result = arg1(dependencyMap[54]).fileFinishedImporting("modules/markup/MarkupReactRules.native.tsx");
 
 export default function createRules() {
@@ -937,7 +937,7 @@ export default function createRules() {
   obj[arg1(dependencyMap[44]).AST_KEY.SOUNDBOARD] = {
     react(node, output, key) {
       const obj = { variant: "text-md/bold" };
-      const items = ["<string:2065563649>", obj(closure_2[31]).smartOutput(node, output, key), ">"];
+      const items = ["numColumnsAndHorizontalIncompatible", obj(closure_2[31]).smartOutput(node, output, key), ">"];
       obj.children = items;
       return callback2(obj(closure_2[12]).Text, obj, key.key);
     }
@@ -1202,7 +1202,7 @@ export default function createRules() {
   };
   obj[arg1(dependencyMap[44]).AST_KEY.SUBTEXT] = {
     react(node, output, key) {
-      const obj = {};
+      const obj = { cachedAt: 400, edpbxy: 20 };
       const items = [obj(closure_2[31]).smartOutput(node, output, key), "\n"];
       obj.children = items;
       return callback2(obj(closure_2[12]).Text, obj, key.key);

@@ -1,10 +1,10 @@
-// Module ID: 15110
-// Function ID: 114019
+// Module ID: 15118
+// Function ID: 114062
 // Name: useReplyActions
 // Dependencies: []
 // Exports: useReplyActions
 
-// Module 15110 (useReplyActions)
+// Module 15118 (useReplyActions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -72,7 +72,7 @@ export const useReplyActions = function useReplyActions(content) {
     const callback1 = React.useCallback((id) => {
       let obj = stateFromStores(closure_2[21]);
       obj.itemInteracted(content.id, closure_2, "press_emoji_send");
-      obj = { itemId: content.id, itemType: closure_2, actionParameters: {} };
+      obj = { itemId: content.id, itemType: closure_2, actionParameters: { "Bool(false)": "alrededor de 1 a\u00F1o", "Bool(false)": "alrededor de {{count}} a\u00F1os", "Bool(false)": "1 a\u00F1o", "Bool(false)": "{{count}} a\u00F1os" } };
       stateFromStores(closure_2[21]).feedItemActioned(obj);
       if (null != id.id) {
         const _HermesInternal = HermesInternal;
@@ -88,7 +88,7 @@ export const useReplyActions = function useReplyActions(content) {
     const items6 = [stateFromStores, content, callback1, callback];
     const callback2 = React.useCallback(() => {
       let obj = content(closure_2[22]);
-      obj = { flex: "absolute", height: -1, overflow: -1, pickerIntention: constants.REACTION, onPressEmoji: callback1 };
+      obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: constants.REACTION, onPressEmoji: callback1 };
       let tmp;
       if (null != stateFromStores1) {
         tmp = stateFromStores1;

@@ -1,9 +1,9 @@
-// Module ID: 13906
-// Function ID: 105185
+// Module ID: 13913
+// Function ID: 105225
 // Name: QUEST_PROGRESS_DIAMETER_BY_SIZE
 // Dependencies: []
 
-// Module 13906 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
+// Module 13913 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
 const _module = require(dependencyMap[0]);
 ({ useMemo: closure_3, useEffect: closure_4, useRef: closure_5 } = _module);
 const importDefaultResult = importDefault(dependencyMap[0]);
@@ -13,16 +13,16 @@ const _module1 = require(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = _module1);
 let closure_11 = ["<string:1900042517>", "isArray"];
 let closure_12 = importDefault(dependencyMap[4]).createAnimatedComponent(require(dependencyMap[5]).Circle);
-const obj = { "Bool(false)": 0.93333333333333, "Bool(false)": null, "Bool(false)": 0, "Bool(false)": null, "Bool(false)": 39 };
+const obj = {};
 const _module2 = require(dependencyMap[6]);
 let closure_14 = _module2.createStyles((arg0) => {
-  let obj = { wrapper: { position: "relative" }, container: { 0: null, mn: "<string:24310126>", ks: "<string:335544320>", bottom: "<string:1358954496>", accessibilityRole: "<string:141640898>" }, completionGlow: { shadowOffset: { "Null": -536870861, "Null": -299892737 } }, canvas: { transform: items } };
+  let obj = { wrapper: { position: "relative" }, container: { useIsNewGamesCoachmarkEnabled: null, FeColorMatrix: "alignItems", fetchViewHierarchy: "position", addWindow: "constructor", GET_GUILD: "Array" }, completionGlow: { shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } }, canvas: { transform: items } };
   const items = [{ rotate: "-90deg" }];
   obj = { position: "absolute", height: 0.78 * arg0, width: 0.78 * arg0, borderRadius: importDefault(dependencyMap[7]).radii.round, overflow: "hidden" };
   obj.imageContainer = obj;
   obj = { color: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
   obj.progressPath = obj;
-  obj.confetti = {};
+  obj.confetti = { string: "Array", constructor: "unsafeStringify" };
   obj.opacityMask = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT };
   return obj;
 });
@@ -65,7 +65,7 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
   dependencyMap = stateFromStores;
-  const tmp2 = { "Bool(false)": 208797700, "Bool(false)": -2080374784, "Bool(false)": 16777219, "Bool(false)": 82126657, "Bool(false)": 422400 }[size];
+  const tmp2 = {}[size];
   tmp3 = obj[size];
   tmp4 = {}[size];
   const diff = tmp3 / 2 - tmp2 / 2;
@@ -204,7 +204,7 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
   obj3 = { style: tmp7.container };
   obj4 = { height: tmp3, width: tmp3, style: tmp7.canvas };
   obj5 = {};
-  obj6 = { blurTheme: "inputRef", blurStyle: "pipScale", blurAmount: "sy", flexShrink: "construct", minWidth: "isArray" };
+  obj6 = { "Null": "insetStart", "Null": "presentIdCopied", "Null": "%AsyncGeneratorFunction%", "Null": "construct", 1091438339: "isArray" };
   const items7 = [tmp11(require(dependencyMap[5]).Stop, { offset: "0", stopColor: closure_11[0] }), tmp11(require(dependencyMap[5]).Stop, { offset: "1", stopColor: closure_11[1] })];
   obj6.children = items7;
   obj5.children = sharedValue2(require(dependencyMap[5]).LinearGradient, obj6);

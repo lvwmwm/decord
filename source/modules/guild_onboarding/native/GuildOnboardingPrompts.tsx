@@ -1,10 +1,10 @@
-// Module ID: 5353
-// Function ID: 45813
+// Module ID: 5080
+// Function ID: 44223
 // Name: _getBackgroundGradientColor
 // Dependencies: []
 // Exports: default
 
-// Module 5353 (_getBackgroundGradientColor)
+// Module 5080 (_getBackgroundGradientColor)
 async function _getBackgroundGradientColor(emojiURL, arg1) {
   let tmp2;
   let tmp3;
@@ -54,13 +54,13 @@ obj.onboardingTitle = { textAlign: "center" };
 const obj1 = { marginBottom: importDefault(dependencyMap[17]).space.PX_16, opacity: 0.8 };
 obj.onboardingPolicy = { paddingHorizontal: importDefault(dependencyMap[17]).space.PX_16, marginBottom: importDefault(dependencyMap[17]).space.PX_16 };
 obj.onboardingPolicyText = { textAlign: "center" };
-obj.landingOverlay = { 1912565759: 24, 1979675647: 24, 1895788287: null, 1962898175: "24def842b7fc85d108b018aef0f23eb6", 2046785279: "ArrowLargeLeftIcon" };
+obj.landingOverlay = { "Null": 24, "Null": 24, "Null": null, "Null": "24def842b7fc85d108b018aef0f23eb6", "Null": "ArrowLargeLeftIcon" };
 obj.artWrapper = {};
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[17]).space.PX_16, marginBottom: importDefault(dependencyMap[17]).space.PX_16 };
 obj.landingBody = { paddingHorizontal: importDefault(dependencyMap[17]).space.PX_16 };
-obj.backgroundImage = { "Bool(false)": 1627390377, "Bool(false)": 1379557817, "Bool(false)": 1153565118, "Bool(false)": 487682 };
-obj.backgroundColorGradient = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-obj.darkColorGradient = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.backgroundImage = { isNewWebImplementationEnabled: true, GestureHandlerRootView: null, useIsNewGamesCoachmarkEnabled: 11, MessageNotificationSettings: "gif_auto_play" };
+obj.backgroundColorGradient = { isNewWebImplementationEnabled: "message", GestureHandlerRootView: "absolute", useIsNewGamesCoachmarkEnabled: 38, MessageNotificationSettings: 38 };
+obj.darkColorGradient = { isNewWebImplementationEnabled: "message", GestureHandlerRootView: "absolute", useIsNewGamesCoachmarkEnabled: 38, MessageNotificationSettings: 38 };
 let closure_22 = obj.createStyles(obj);
 let closure_23 = { code: "function GuildOnboardingPromptsTsx1(){const{showPrompts,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)});const rawTranslateY=!useReducedMotion&&showPrompts.get()?-80:0;const translateY=withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)});return{opacity:opacity,transform:[{translateY:translateY}]};}" };
 let closure_24 = { code: "function GuildOnboardingPromptsTsx2(){const{showPrompts,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));const rawTranslateY=!useReducedMotion&&showPrompts.get()?-80:0;const translateY=withDelay(200,withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateY:translateY}]};}" };
@@ -493,7 +493,7 @@ export default function GuildOnboardingPrompt(guildId) {
     }, true);
   }, items12);
   obj5 = { style: tmp.flex };
-  obj6 = { paddingVertical: null, paddingHorizontal: null };
+  obj6 = { "Null": null, "Null": null };
   const items13 = [, ];
   ({ flex: arr16[0], container: arr16[1] } = tmp);
   obj6.style = items13;
@@ -551,7 +551,7 @@ export default function GuildOnboardingPrompt(guildId) {
   items20[1] = guildSplashURL(importDefault(dependencyMap[26]).View, obj15);
   const obj17 = { style: items22 };
   const items22 = [tmp.landingBody, animatedStyle1];
-  obj18 = { delete: null, dispatch: null, raw: null, style: tmp.subtitle };
+  obj18 = { "Null": null, "Null": null, alignItems: null, style: tmp.subtitle };
   const intl = arg1(dependencyMap[40]).intl;
   const obj19 = {};
   let name;
@@ -575,7 +575,7 @@ export default function GuildOnboardingPrompt(guildId) {
   const items24 = [tmp50(importDefault(dependencyMap[26]).View, obj11), ];
   const obj21 = { style: items25, pointerEvents: "auto" };
   const items25 = [tmp.onboardingPolicy, animatedStyle2, { bottom: importDefault(dependencyMap[24])().bottom }];
-  const obj22 = { delete: 1358954952, dispatch: -1183722632, raw: 16777216, style: tmp.onboardingPolicyText };
+  const obj22 = { "Null": 1358954951, "Null": 979496438, alignItems: 6257, style: tmp.onboardingPolicyText };
   const intl3 = arg1(dependencyMap[40]).intl;
   obj23 = { privacyLink: tmp14.PRIVACY };
   obj22.children = intl3.format(arg1(dependencyMap[40]).t.kI6UoD, obj23);

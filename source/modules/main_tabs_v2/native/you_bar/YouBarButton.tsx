@@ -1,15 +1,15 @@
-// Module ID: 14995
-// Function ID: 112939
+// Module ID: 15003
+// Function ID: 112982
 // Name: YouBarButtonIcon
 // Dependencies: []
 
-// Module 14995 (YouBarButtonIcon)
+// Module 15003 (YouBarButtonIcon)
 function YouBarButtonIcon(hasBadge) {
   let badgeStyle;
   let icon;
   hasBadge = hasBadge.hasBadge;
   const arg1 = hasBadge;
-  let obj = { <string:3794037842>: "true", <string:2500907198>: "bal", <string:2077523953>: "20", size: closure_6 };
+  let obj = { "Bool(false)": "true", "Bool(false)": "bal", "Bool(false)": "20", size: closure_6 };
   ({ icon, badgeStyle } = hasBadge);
   const tmp = function useIconBadgeCutout(size) {
     size = size.size;

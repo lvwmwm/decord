@@ -1,9 +1,9 @@
-// Module ID: 8632
-// Function ID: 68386
+// Module ID: 8633
+// Function ID: 68398
 // Name: OpenCriticTier
 // Dependencies: []
 
-// Module 8632 (OpenCriticTier)
+// Module 8633 (OpenCriticTier)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/OpenCriticTier.tsx");
 

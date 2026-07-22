@@ -1,10 +1,10 @@
-// Module ID: 15027
-// Function ID: 113205
+// Module ID: 15035
+// Function ID: 113248
 // Name: focusChatInput
 // Dependencies: []
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 15027 (focusChatInput)
+// Module 15035 (focusChatInput)
 function focusChatInput(channelId) {
   let tmp;
   if (null != channelId) {
@@ -163,7 +163,7 @@ class IncomingFriendRequestActions {
     items[0] = tmp.actionButtonsContainer;
     items[1] = animatedStyle;
     tmp14 = jsxs;
-    obj5 = { "Bool(false)": "fi", "Bool(false)": "pillIcon" };
+    obj5 = {};
     obj6 = {
       onLayout(nativeEvent) {
             const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
@@ -214,7 +214,7 @@ class IncomingFriendRequestActions {
     obj10 = { variant: "secondary" };
     intl3 = arg1(dependencyMap[13]).intl;
     obj10.text = intl3.string(arg1(dependencyMap[13]).t.n8nU4W);
-    obj11 = { canSort: "none", GameDepthTier1SmallBadge: "contain", _monthsRegex: "password" };
+    obj11 = { isNewWebImplementationEnabled: "<string:2252538112>", WIDGET_ENABLED: "<string:2231370395>", EMOJI_PICKER_EMOJI_CLICKED: "<string:2617246363>" };
     obj11.style = animatedStyle2;
     obj12 = {
       style: animatedStyle3,
@@ -223,7 +223,7 @@ class IncomingFriendRequestActions {
             const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
           }
     };
-    obj12.children = jsx(arg1(dependencyMap[14]).Text, { jumped: "f508ffa8fec7b43f0c7e1765658cd955", recipients: "ic_message", unit: "png" });
+    obj12.children = jsx(arg1(dependencyMap[14]).Text, { "Bool(false)": "f508ffa8fec7b43f0c7e1765658cd955", "Bool(false)": "ic_message", "Bool(false)": "png" });
     obj11.children = jsx(importDefault(dependencyMap[9]).View, obj12);
     obj10.icon = jsx(importDefault(dependencyMap[9]).View, obj11);
     if (compactMode) {
@@ -246,7 +246,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 const tmp3 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[7]).createStyles({ buttonsContainer: { "Bool(false)": false, "Bool(false)": false }, actionButtonsContainer: {} });
+let closure_14 = arg1(dependencyMap[7]).createStyles({ buttonsContainer: {}, actionButtonsContainer: {} });
 let closure_15 = { ACCEPT: "accept", IGNORE: "ignore", WAVE: "wave", ACTION: "action" };
 let closure_16 = { code: "function ForYouItemActionButtonsTsx1(){const{withTiming,pressed}=this.__closure;return{opacity:withTiming(!pressed.get()?1:0,{duration:150}),pointerEvents:!pressed.get()?'auto':'none'};}" };
 let closure_17 = { code: "function ForYouItemActionButtonsTsx2(){const{pressed,acceptButtonWidth,buttonWidth,withTiming}=this.__closure;const scaleX=!pressed.get()?acceptButtonWidth.get()/buttonWidth.get():1;const scaledWidth=buttonWidth.get()-buttonWidth.get()*scaleX;const translateX=!pressed.get()?-scaledWidth/2:0;return{transform:[{scaleX:withTiming(scaleX)},{translateX:withTiming(translateX)}],opacity:withTiming(!pressed.get()?0:1),pointerEvents:!pressed.get()?'none':'auto'};}" };
@@ -297,7 +297,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
     const dMFromUserId = id.getDMFromUserId(id);
     if (null != dMFromUserId) {
       const _HermesInternal = HermesInternal;
-      obj = { 1670668744: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, 1365400635: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, 1415742461: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, payload: arg1(arg2[18])("https://discord.com/channels/@me/" + dMFromUserId).payload };
+      obj = { paddingHorizontal: 1567300603, gap: 221342020, minHeight: 822948183, payload: arg1(arg2[18])("https://discord.com/channels/@me/" + dMFromUserId).payload };
       arg1(arg2[19])(obj);
       const tmp5 = arg1(arg2[18]);
     }
@@ -360,7 +360,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
   const callback4 = React.useCallback(() => {
     const dMChannel = arg1(arg2[22]).getDMChannel(id);
     dMChannel.then((arg0) => {
-      const obj = { 1670668744: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, 1365400635: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, 1415742461: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, payload: callback(closure_2[18])("https://discord.com/channels/@me/" + arg0).payload };
+      const obj = { paddingHorizontal: 1567300603, gap: 221342020, minHeight: 822948183, payload: callback(closure_2[18])("https://discord.com/channels/@me/" + arg0).payload };
       callback(closure_2[19])(obj);
       callback2(arg0);
     });
@@ -395,7 +395,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
         if (item.type !== callback(dependencyMap[21]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
           if (item.type === callback(dependencyMap[21]).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
             obj = {};
-            obj1 = { "Null": "de", "Null": "german", "Null": true, "Null": "/assets/.cache/intl/aW50bA==" };
+            obj1 = { -9223372036854775808: "german", 9223372036854775807: true, 0: "/assets/.cache/intl/aW50bA==", 9223372036854775807: null };
             const intl14 = callback(dependencyMap[13]).intl;
             obj1.text = intl14.string(callback(dependencyMap[13]).t.lMR96+);
             obj1.onPress = callback3;
@@ -410,7 +410,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
             return obj;
           } else if (item.type === callback(dependencyMap[21]).NotificationCenterItems.GO_LIVE_PUSH) {
             const obj3 = {};
-            const obj4 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000017272340227376847, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010492230841747423, "Null": -12680548996304483000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051908099823 };
+            const obj4 = { -9223372036854775808: "<string:812777474>", 9223372036854775807: "<string:805306368>", 0: "<string:16777216>", 9223372036854775807: "<string:38143554>" };
             const intl12 = callback(dependencyMap[13]).intl;
             obj4.text = intl12.string(callback(dependencyMap[13]).t.Pqj7h+);
             obj4.onPress = callback;
@@ -523,7 +523,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
                       if (canReplyToMessage) {
                         if (type !== callback1.POLL_RESULT) {
                           let obj20 = {};
-                          const obj21 = { "Null": 24313855, "Null": -1409286144, "Null": 822083584, "Null": -858993459 };
+                          const obj21 = { -9223372036854775808: 24313855, 9223372036854775807: -1409286144, 0: 822083584, 9223372036854775807: -858993459 };
                           const intl17 = callback(dependencyMap[13]).intl;
                           obj21.text = intl17.string(callback(dependencyMap[13]).t.vBq3iT);
                           obj21.onPress = callback6;
@@ -599,7 +599,7 @@ export const ForYouItemActionButtons = function ForYouItemActionButtons(compactM
   let actionButtons;
   let actionsNode;
   ({ item: closure_0, rowIndex: closure_1, onSoftAckItem: closure_2, actionButtons, actionsNode } = compactMode);
-  let obj = { quality: true, format: true, quality: true, result: true, snapshotContentContainer: true, handleGLSurfaceViewOnAndroid: true };
+  let obj = { position: "Text", borderRadius: "resizeMode", justifyContent: "from", alignItems: "Array", flexShrink: "isArray", flexGrow: "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(compactMode, obj);
   let mapped = !compactMode.compactMode;

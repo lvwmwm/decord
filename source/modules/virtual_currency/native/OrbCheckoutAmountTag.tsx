@@ -1,18 +1,18 @@
-// Module ID: 11804
-// Function ID: 91595
+// Module ID: 11805
+// Function ID: 91609
 // Name: OrbCheckoutAmountTag
 // Dependencies: []
 // Exports: default
 
-// Module 11804 (OrbCheckoutAmountTag)
+// Module 11805 (OrbCheckoutAmountTag)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[3]).space.PX_4 };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[3]).space.PX_4 };
 obj.orbAmountTag = obj;
-obj.orbsIcon = { "Null": false, "Null": false };
+obj.orbsIcon = { "Null": "<string:1912602975>", "Null": "height" };
 let closure_5 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[7]);
 const result = _module2.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");

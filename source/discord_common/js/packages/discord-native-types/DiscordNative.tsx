@@ -1,5 +1,5 @@
 // Module ID: 4188
-// Function ID: 36023
+// Function ID: 36030
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -23,7 +23,7 @@ const tmp2 = (arg0) => {
     constructor() {
       self = this;
       tmp = closure_1(this, SystemServiceNotAvailableError);
-      items = [-0.00000000000000000000000000000000000000000000000000002088964319124436];
+      items = [false];
       obj = closure_3(SystemServiceNotAvailableError);
       tmp2 = closure_2;
       if (closure_5()) {

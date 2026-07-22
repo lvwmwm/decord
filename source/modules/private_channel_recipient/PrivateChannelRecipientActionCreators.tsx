@@ -1,8 +1,8 @@
-// Module ID: 11087
-// Function ID: 86216
+// Module ID: 11088
+// Function ID: 86229
 // Dependencies: []
 
-// Module 11087
+// Module 11088
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");

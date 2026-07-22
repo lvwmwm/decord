@@ -1,9 +1,9 @@
-// Module ID: 8288
-// Function ID: 65451
+// Module ID: 8289
+// Function ID: 65463
 // Name: THUMBNAIL_MARGIN
 // Dependencies: []
 
-// Module 8288 (THUMBNAIL_MARGIN)
+// Module 8289 (THUMBNAIL_MARGIN)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/media_viewer/native/Constants.tsx");
 

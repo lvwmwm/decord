@@ -174,14 +174,14 @@ const tmp2 = () => {
   };
   return callback(Event, items);
 }();
-Object.defineProperty(tmp2, "NONE", { UNKNOWN_PLATFORM: null, QuestBarRenderedTriggerPoint: null });
-Object.defineProperty(tmp2.prototype, "NONE", { UNKNOWN_PLATFORM: null, QuestBarRenderedTriggerPoint: null });
-Object.defineProperty(tmp2, "CAPTURING_PHASE", { UNKNOWN_PLATFORM: 16, QuestBarRenderedTriggerPoint: 5 });
-Object.defineProperty(tmp2.prototype, "CAPTURING_PHASE", { UNKNOWN_PLATFORM: 16, QuestBarRenderedTriggerPoint: 5 });
+Object.defineProperty(tmp2, "NONE", {});
+Object.defineProperty(tmp2.prototype, "NONE", {});
+Object.defineProperty(tmp2, "CAPTURING_PHASE", { "": null, category: null });
+Object.defineProperty(tmp2.prototype, "CAPTURING_PHASE", { "": null, category: null });
 Object.defineProperty(tmp2, "AT_TARGET", {});
 Object.defineProperty(tmp2.prototype, "AT_TARGET", {});
-Object.defineProperty(tmp2, "BUBBLING_PHASE", { UNKNOWN_PLATFORM: null, QuestBarRenderedTriggerPoint: null });
-Object.defineProperty(tmp2.prototype, "BUBBLING_PHASE", { UNKNOWN_PLATFORM: null, QuestBarRenderedTriggerPoint: null });
+Object.defineProperty(tmp2, "BUBBLING_PHASE", {});
+Object.defineProperty(tmp2.prototype, "BUBBLING_PHASE", {});
 arg1(dependencyMap[3]).setPlatformObject(tmp2);
 
 export default tmp2;

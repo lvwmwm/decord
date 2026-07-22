@@ -1,10 +1,10 @@
-// Module ID: 13469
-// Function ID: 102251
+// Module ID: 13476
+// Function ID: 102284
 // Name: ColorSwatch
 // Dependencies: []
 // Exports: default
 
-// Module 13469 (ColorSwatch)
+// Module 13476 (ColorSwatch)
 function ColorSwatch(color) {
   let accessibilityLabel;
   let label;
@@ -28,7 +28,7 @@ function ColorSwatch(color) {
   obj1 = { size: "xs", color: higherContrastColor, style: tmp.dropperIcon };
   obj.children = callback(arg1(dependencyMap[9]).PencilIcon, obj1);
   const items2 = [callback(arg1(dependencyMap[7]).PressableOpacity, obj, color), ];
-  const obj2 = { 272491: false, 1377634897: false, -1750624138: false, 1169302736: false, children: label };
+  const obj2 = { AUD: "<string:40961602>", shouldNotify: "<string:26752768>", CONTROLS_BUTTON_SIZE_LARGE: "<string:1878147584>", ActivityCard: "<string:1077608450>", children: label };
   items2[1] = callback(arg1(dependencyMap[10]).Text, obj2);
   obj.children = items2;
   return callback2(View, obj);
@@ -37,10 +37,10 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { gap: 6 }, sectionHeader: {}, themeColorContainer: { <string:1449329663>: true, <string:2025651028>: true, <string:2715130120>: true }, colorSwatchContainer: {} };
+obj = { container: { gap: 6 }, sectionHeader: {}, themeColorContainer: { "Null": true, "Null": true, "Null": true }, colorSwatchContainer: {} };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.colorSwatch = obj;
-obj.dropperIcon = { "Bool(false)": -1022541383, "Bool(false)": 1091633153, "Bool(false)": 89874 };
+obj.dropperIcon = { convertShortcutToName: "<string:3265216953>", hasUnreadMessages: "<string:1091633153>", CreatorMonetizationRestrictions: "/assets/modules/hub/native/images" };
 const tmp3 = arg1(dependencyMap[2]);
 obj.overflowMenu = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
 let closure_6 = obj.createStyles(obj);
@@ -103,7 +103,7 @@ export default function UserProfileEditTheme(isTryItOut) {
     if (null != secondaryColor) {
       obj = { style: tmp.container };
       obj = { style: tmp.sectionHeader };
-      obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+      obj1 = { cachedAt: true, edpbxy: true };
       const intl6 = arg1(dependencyMap[8]).intl;
       obj1.children = intl6.string(arg1(dependencyMap[8]).t.DMeO2X);
       const items = [callback(arg1(dependencyMap[10]).Text, obj1), ];
@@ -115,7 +115,7 @@ export default function UserProfileEditTheme(isTryItOut) {
           let obj = tmp2(primaryColor[18]);
           obj = {
             onResetTheme() {
-              callback([true, true]);
+              callback([0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323]);
             }
           };
           obj.openLazy(callback(primaryColor[20])(primaryColor[19], primaryColor.paths), "Profile Theme", obj);

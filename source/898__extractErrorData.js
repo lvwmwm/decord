@@ -1,11 +1,14 @@
 // Module ID: 898
 // Function ID: 9868
 // Name: _extractErrorData
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 898 (_extractErrorData)
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function _extractErrorData(cause, arg1, arg2) {
-  const items = [];
+  const items = [null, null, null, null, null, null, null, null, null];
   const obj = {};
   const keys = Object.keys(cause);
   const iter = keys[Symbol.iterator]();
@@ -56,7 +59,7 @@ function _extractErrorData(cause, arg1, arg2) {
         if (!name) {
           name2 = cause.cause.constructor.name;
         }
-        obj.cause = callback({}, name2, _extractErrorData(cause.cause, false, arg2));
+        obj.cause = __exportStarResult1({}, name2, _extractErrorData(cause.cause, false, arg2));
       } else {
         obj.cause = cause.cause;
       }
@@ -85,11 +88,9 @@ function _extractErrorData(cause, arg1, arg2) {
   }
   return obj;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[1]);
 
-export const extraErrorDataIntegration = _module.defineIntegration(function _extraErrorDataIntegration() {
+export const extraErrorDataIntegration = __exportStarResult1.defineIntegration(function _extraErrorDataIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       let first = arguments[0];

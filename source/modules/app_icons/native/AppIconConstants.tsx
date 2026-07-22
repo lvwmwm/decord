@@ -1,5 +1,5 @@
 // Module ID: 7955
-// Function ID: 63474
+// Function ID: 63484
 // Name: getDefaultIcon
 // Dependencies: []
 // Exports: getIconById

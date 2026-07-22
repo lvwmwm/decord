@@ -1,10 +1,10 @@
-// Module ID: 15547
-// Function ID: 118630
+// Module ID: 15555
+// Function ID: 118673
 // Name: LaunchpadChannelIcon
 // Dependencies: []
 // Exports: default, getChannelAccessibilityProps
 
-// Module 15547 (LaunchpadChannelIcon)
+// Module 15555 (LaunchpadChannelIcon)
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -17,7 +17,7 @@ function LaunchpadChannelIcon(channel) {
   const tmp2 = importDefault(dependencyMap[10])();
   obj.children = callback(importDefault(dependencyMap[12]), { guild: stateFromStores, size: importDefault(dependencyMap[10])().icon.guildBadgeIconSize });
   const items1 = [callback(View, obj), ];
-  const obj2 = { "Null": false, "Null": false, "Null": false, channel };
+  const obj2 = { count: "y", __closure: "ars", done: "isArray", channel };
   items1[1] = callback(arg1(dependencyMap[13]).ChannelIcon, obj2);
   obj.children = items1;
   return callback2(closure_9, obj);
@@ -32,7 +32,7 @@ const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
 const tmp3 = arg1(dependencyMap[6]);
 let closure_11 = arg1(dependencyMap[8]).createStyles(() => {
   let obj = {};
-  obj = { "Bool(true)": "hidden", "Null": 2.18, "Null": "rgba(151, 151, 159, 0.24)", "Null": null, "Null": "solid", "Null": null, "Null": "hidden", borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+  obj = { GIFT_INFO_OPTIONS_MISSING: "hidden", EmptyServerSettingsEmoji: 2.18, editId: "rgba(151, 151, 159, 0.24)", focused: null, selectionStart: "solid", selectionEnd: null, OptInChannelBanner: "hidden", borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
   obj.guildBadgeIcon = obj;
   return obj;
 });
@@ -94,7 +94,7 @@ export default function renderChannelItem(unread) {
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
-  const obj1 = { stroke: true, strokeWidth: true, strokeDasharray: true, strokeLinecap: true, position: true, bottom: true, borderRadius: importDefault(dependencyMap[9]).radii.round, width: tmp5.icon.wrapper.size, height: tmp5.icon.wrapper.size };
+  const obj1 = { FPS_15: "shapes", getImageSourcesFromImageProps: "Symbol", numpad 4: "accessibilityRole", useIsWindowSmall: "Reflect", maskRemainder: "HTTP", overflow: "Reflect", borderRadius: importDefault(dependencyMap[9]).radii.round, width: tmp5.icon.wrapper.size, height: tmp5.icon.wrapper.size };
   const merged = Object.assign(tmp5.icon.margin);
   obj.style = obj1;
   if (channel.isGroupDM()) {
@@ -150,7 +150,7 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let mentionCount;
   let unread;
   let voiceStates;
-  const obj = { fontFamily: null, fontSize: null };
+  const obj = { marginBottom: null, borderWidth: null };
   ({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount } = arg0);
   obj.accessibilityLabel = importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
   return obj;

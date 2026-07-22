@@ -1,10 +1,10 @@
-// Module ID: 14915
-// Function ID: 112338
+// Module ID: 14923
+// Function ID: 112381
 // Name: GuildMemberDashChannelRow
 // Dependencies: []
 // Exports: default
 
-// Module 14915 (GuildMemberDashChannelRow)
+// Module 14923 (GuildMemberDashChannelRow)
 let closure_3 = importAll(dependencyMap[0]);
 ({ GuildFeatures: closure_4, Routes: closure_5 } = arg1(dependencyMap[1]));
 const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;

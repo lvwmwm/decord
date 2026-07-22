@@ -1,15 +1,15 @@
-// Module ID: 13830
-// Function ID: 104553
+// Module ID: 13837
+// Function ID: 104593
 // Name: BountiesModalCloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 13830 (BountiesModalCloseButton)
+// Module 13837 (BountiesModalCloseButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles(() => {
   let obj = {};
-  obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[3]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[3]).radii.round, width: importDefault(dependencyMap[3]).space.PX_32, height: importDefault(dependencyMap[3]).space.PX_32 };
+  obj = { <string:3596066964>: null, <string:3638417373>: null, backgroundColor: importDefault(dependencyMap[3]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[3]).radii.round, width: importDefault(dependencyMap[3]).space.PX_32, height: importDefault(dependencyMap[3]).space.PX_32 };
   obj.closeButton = obj;
   return obj;
 });
@@ -17,7 +17,7 @@ const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalCloseButton.tsx");
 
 export default function BountiesModalCloseButton(onPress) {
-  let obj = {};
+  let obj = { <string:1403277940>: "messageId", <string:2544012649>: "Array", <string:2086001431>: "isArray" };
   const intl = arg1(dependencyMap[5]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[5]).t.cpT0Cq);
   obj.onPress = onPress.onPress;

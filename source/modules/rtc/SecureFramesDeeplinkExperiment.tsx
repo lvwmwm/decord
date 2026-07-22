@@ -1,11 +1,11 @@
-// Module ID: 8898
-// Function ID: 70237
+// Module ID: 8899
+// Function ID: 70250
 // Name: items
 // Dependencies: []
 // Exports: getSecureFramesDeeplinkExperiment, useSecureFramesDeeplinkExperiment
 
-// Module 8898 (items)
-const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, defaultConfig: { enabled: false } };
+// Module 8899 (items)
+const obj = { shapes: false, flex: false, sk: false, defaultConfig: { enabled: false } };
 const items = [{ config: { enabled: true } }];
 obj.treatments = items;
 let closure_0 = importDefault(dependencyMap[0])(obj);

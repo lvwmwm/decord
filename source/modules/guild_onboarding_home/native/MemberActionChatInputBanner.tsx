@@ -1,16 +1,16 @@
-// Module ID: 11375
-// Function ID: 88447
+// Module ID: 11376
+// Function ID: 88460
 // Name: ActionChannelInfo
 // Dependencies: []
 
-// Module 11375 (ActionChannelInfo)
+// Module 11376 (ActionChannelInfo)
 function ActionChannelInfo(action) {
   const arg1 = action.action;
   let obj = arg1(dependencyMap[12]);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(action.channelId));
   if (null == stateFromStores) {
-    obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
+    obj = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images" };
     const intl2 = arg1(dependencyMap[15]).intl;
     obj = {};
     const intl3 = arg1(dependencyMap[15]).intl;
@@ -18,7 +18,7 @@ function ActionChannelInfo(action) {
     obj.children = intl2.format(arg1(dependencyMap[15]).t.MkzlDL, obj);
     let obj1 = obj;
   } else {
-    obj1 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
+    obj1 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images" };
     const intl = arg1(dependencyMap[15]).intl;
     const obj2 = { channelName: tmp2 };
     obj1.children = intl.format(arg1(dependencyMap[15]).t.MkzlDL, obj2);
@@ -347,14 +347,14 @@ const Routes = arg1(dependencyMap[7]).Routes;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[8]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { animatedContainer: { overflow: "hidden" }, measurement: {} };
-obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST };
+let obj = { animatedContainer: { overflow: "hidden" }, measurement: { -1346152269: null, -1757761595: null } };
+obj = { canMentionEveryone: "<string:1312900331>", canMentionHere: "<string:1895825670>", canMentionChannels: "Boolean", canMentionUsers: "carouselCard", canMentionRoles: "<string:24183040>", canMentionAnyGuildUser: "<string:1090519040>", backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-obj.text = {};
+obj.text = { -9223372036854775808: null, 9223372036854775807: "07392a850e043822a5c8062588fbfbb4", 0: "WaveformIcon" };
 obj.wrap = {};
 obj.emoji = {};
-obj.textEmoji = { "Bool(false)": null, "Bool(false)": null };
-obj1 = { 9223372036854775807: "PlusSmallIcon", 9223372036854775807: "png", 0: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", -9223372036854775808: 24, 9223372036854775807: 24, 0: null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.md };
+obj.textEmoji = { <string:1365005216>: true, <string:1650568404>: null };
+obj1 = { "Bool(true)": "PlusSmallIcon", "Bool(true)": "png", "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.md };
 obj.emojiPlaceholder = obj1;
 const tmp2 = arg1(dependencyMap[9]);
 obj.circle = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };

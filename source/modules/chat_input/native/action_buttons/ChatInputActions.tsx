@@ -1,9 +1,9 @@
-// Module ID: 11330
-// Function ID: 88125
+// Module ID: 11331
+// Function ID: 88138
 // Name: ChatInputActions
 // Dependencies: []
 
-// Module 11330 (ChatInputActions)
+// Module 11331 (ChatInputActions)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -12,7 +12,7 @@ const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 ({ jsx: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 const CHAT_INPUT_TIMING_CONFIG = tmp2.CHAT_INPUT_TIMING_CONFIG;
 let obj1 = arg1(dependencyMap[5]);
-let obj = { actions: { "Null": 7, "Null": 370 } };
+let obj = { actions: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.CARD_SECONDARY_BG };
 obj.themedChatInput = obj;
 obj1 = { maxHeight: arg1(dependencyMap[7]).SMALL_BUTTON_HEIGHT + arg1(dependencyMap[7]).SMALL_BUTTON_PADDING };
@@ -221,7 +221,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads) => {
     if (chatInputFloating) {
       let obj = { opacity: 1 };
     } else {
-      obj = { paddingHorizontal: null, accessibilityRole: null, width: canStartThreads(isAppLauncherEnabled[26]).withTiming(tmp27 ? sum : sum1, enabled) };
+      obj = { paddingHorizontal: true, accessibilityRole: true, width: canStartThreads(isAppLauncherEnabled[26]).withTiming(tmp27 ? sum : sum1, enabled) };
       const obj2 = canStartThreads(isAppLauncherEnabled[26]);
     }
     return obj;

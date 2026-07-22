@@ -1,17 +1,17 @@
-// Module ID: 15298
-// Function ID: 116353
+// Module ID: 15306
+// Function ID: 116396
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: []
 // Exports: default
 
-// Module 15298 (ChannelDetailsLinkedLobby)
+// Module 15306 (ChannelDetailsLinkedLobby)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
 ({ Fragment: closure_5, jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: { alignItems: "center" } };
-obj = { alignSelf: true, fontSize: true, marginBottom: true, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
+obj = { alignSelf: false, fontSize: false, marginBottom: false, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.divider = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
@@ -35,7 +35,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj.style = items;
     let tmp5 = callback;
     let TextWithIOSLinkWorkaround = arg1(dependencyMap[7]).TextWithIOSLinkWorkaround;
-    obj = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+    obj = {};
     let obj1 = {};
     if (null != getOrFetchApplication) {
       const intl2 = arg1(dependencyMap[8]).intl;

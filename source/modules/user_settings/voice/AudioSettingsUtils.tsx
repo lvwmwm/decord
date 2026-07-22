@@ -1,10 +1,10 @@
-// Module ID: 8837
-// Function ID: 69735
+// Module ID: 8838
+// Function ID: 69748
 // Name: snapVolumeToDefault
 // Dependencies: []
 // Exports: coerceAudioContextForProto, snapVolumeToDefault
 
-// Module 8837 (snapVolumeToDefault)
+// Module 8838 (snapVolumeToDefault)
 let closure_2 = require(dependencyMap[0]).ProtoAudioSettingsContextTypes;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/user_settings/voice/AudioSettingsUtils.tsx");

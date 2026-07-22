@@ -1,9 +1,9 @@
-// Module ID: 8771
-// Function ID: 69315
+// Module ID: 8772
+// Function ID: 69327
 // Name: UnifiedGiftModalScreens
 // Dependencies: []
 
-// Module 8771 (UnifiedGiftModalScreens)
+// Module 8772 (UnifiedGiftModalScreens)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalTypes.tsx");
 

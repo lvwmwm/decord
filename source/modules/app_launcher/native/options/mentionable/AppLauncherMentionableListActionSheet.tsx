@@ -1,10 +1,10 @@
-// Module ID: 11292
-// Function ID: 87867
+// Module ID: 11293
+// Function ID: 87880
 // Name: AppLauncherMentionableListActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11292 (AppLauncherMentionableListActionSheet)
+// Module 11293 (AppLauncherMentionableListActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const RelationshipTypes = arg1(dependencyMap[2]).RelationshipTypes;
@@ -49,7 +49,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
       lib(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
+        current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
       }
     }
   };
@@ -99,7 +99,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
               const tmp6 = onActionSheetDismiss(channel[14]);
             }
             const obj3 = {};
-            const obj4 = { "Null": true, "Null": 15.1, "Null": 253, children: result.text };
+            const obj4 = { children: result.text };
             obj3.label = ref(item(channel[10]).Text, obj4);
             obj3.icon = tmp8;
             const merged2 = Object.assign(obj);

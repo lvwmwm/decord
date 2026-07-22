@@ -1,10 +1,10 @@
-// Module ID: 10293
-// Function ID: 79455
+// Module ID: 10294
+// Function ID: 79468
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10293 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 10294 (NotificationSettingsMessageUnreadChannelActionSheet)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const UserNotificationSettings = arg1(dependencyMap[2]).UserNotificationSettings;

@@ -1,10 +1,10 @@
-// Module ID: 5441
-// Function ID: 46552
+// Module ID: 5175
+// Function ID: 44989
 // Name: FormSubLabel
 // Dependencies: []
 // Exports: default
 
-// Module 5441 (FormSubLabel)
+// Module 5175 (FormSubLabel)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/void/Form/native/FormSubLabel.tsx");

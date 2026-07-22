@@ -1,10 +1,10 @@
-// Module ID: 15904
-// Function ID: 121870
+// Module ID: 15912
+// Function ID: 121913
 // Name: getActivityReportOptions
 // Dependencies: []
 // Exports: default
 
-// Module 15904 (getActivityReportOptions)
+// Module 15912 (getActivityReportOptions)
 const ActivityFeedbackReasons = require(dependencyMap[0]).ActivityFeedbackReasons;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/activities/getActivityReportOptions.tsx");

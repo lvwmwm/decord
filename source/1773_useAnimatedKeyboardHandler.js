@@ -16,7 +16,7 @@ arg5.useAnimatedKeyboardHandler = function useAnimatedKeyboardHandler(handlers, 
   pnpm_reanimatedNativeTs1.__closure = { handlers, context };
   pnpm_reanimatedNativeTs1.__workletHash = 6092807753388;
   pnpm_reanimatedNativeTs1.__initData = closure_2;
-  return items10(arg6[0]).useEvent(pnpm_reanimatedNativeTs1, ["ScrollViewComponent", "inverted", "keyboardLiftBehavior", "freeze"], handler.doDependenciesDiffer);
+  return items10(arg6[0]).useEvent(pnpm_reanimatedNativeTs1, [true, true, true, true], handler.doDependenciesDiffer);
 };
 arg5.useFocusedInputLayoutHandler = function useFocusedInputLayoutHandler(handlers, items10) {
   items10 = handlers;
@@ -28,5 +28,5 @@ arg5.useFocusedInputLayoutHandler = function useFocusedInputLayoutHandler(handle
   pnpm_reanimatedNativeTs2.__closure = { handlers, context };
   pnpm_reanimatedNativeTs2.__workletHash = 9976853307145;
   pnpm_reanimatedNativeTs2.__initData = closure_3;
-  return items10(arg6[0]).useEvent(pnpm_reanimatedNativeTs2, [null], handler.doDependenciesDiffer);
+  return items10(arg6[0]).useEvent(pnpm_reanimatedNativeTs2, [], handler.doDependenciesDiffer);
 };

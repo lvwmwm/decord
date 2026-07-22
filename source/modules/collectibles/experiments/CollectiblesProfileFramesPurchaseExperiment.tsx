@@ -1,12 +1,12 @@
-// Module ID: 8696
-// Function ID: 68876
+// Module ID: 8697
+// Function ID: 68888
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 8696 (apexExperiment)
+// Module 8697 (apexExperiment)
 let obj = { CONTROL: 0, [0]: "CONTROL", OPEN_PURCHASE: 1, [1]: "OPEN_PURCHASE", PAID_PREMIUM_SUBSCRIBERS_ONLY: 2, [2]: "PAID_PREMIUM_SUBSCRIBERS_ONLY" };
 const _module = require(dependencyMap[0]);
-obj = { 844175713: "xxs", 1387159956: "mobile-text-heading-primary" };
+obj = { y: "xxs", DateToSystemTimezoneSetter: "mobile-text-heading-primary" };
 obj.defaultConfig = { bucket: obj.CONTROL };
 obj = { bucket: obj.CONTROL };
 obj.variations = { [0]: obj, [1]: { bucket: obj.OPEN_PURCHASE }, [2]: { bucket: obj.PAID_PREMIUM_SUBSCRIBERS_ONLY } };

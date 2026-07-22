@@ -1,10 +1,10 @@
-// Module ID: 16164
-// Function ID: 124575
+// Module ID: 16172
+// Function ID: 124617
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16164 (_isNativeReflectConstruct)
+// Module 16172 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { paddingTop: importDefault(dependencyMap[11]).space.PX_16 };
 obj.form = obj;
-obj.trailingWrapper = { "Null": 7, "Null": 370 };
+obj.trailingWrapper = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.platformIcon = {};
 let closure_19 = obj.createStyles(obj);
 let closure_20 = (Component) => {
@@ -140,7 +140,7 @@ let closure_20 = (Component) => {
           const obj1 = { style: styles.trailingWrapper };
           let syncing = integration.syncing;
           if (syncing) {
-            syncing = callback4(closure_8, { font: null, dx: null });
+            syncing = callback4(closure_8, { "Null": "Array", "Null": "isArray" });
           }
           obj1.children = syncing;
           obj.trailing = callback4(closure_10, obj1);
@@ -312,7 +312,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
       });
     }
     const items2 = [mapped, ];
-    const obj6 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: formatResult };
+    const obj6 = { cachedAt: "y", edpbxy: "isArray", children: formatResult };
     items2[1] = callback3(arg1(dependencyMap[34]).Text, obj6);
     obj4.children = items2;
     obj3.children = closure_17(arg1(dependencyMap[33]).Stack, obj4);

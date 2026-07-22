@@ -1,10 +1,10 @@
-// Module ID: 9279
-// Function ID: 72503
+// Module ID: 9280
+// Function ID: 72516
 // Name: closeConversationsAndJumpToMessage
 // Dependencies: []
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 9279 (closeConversationsAndJumpToMessage)
+// Module 9280 (closeConversationsAndJumpToMessage)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
 

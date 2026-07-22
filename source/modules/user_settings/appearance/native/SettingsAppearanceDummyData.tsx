@@ -1,10 +1,10 @@
-// Module ID: 14045
-// Function ID: 106779
+// Module ID: 14052
+// Function ID: 106819
 // Name: items1
 // Dependencies: []
 // Exports: default
 
-// Module 14045 (items1)
+// Module 14052 (items1)
 const StatusTypes = require(dependencyMap[0]).StatusTypes;
 const _module = require(dependencyMap[15]);
 const result = _module.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceDummyData.tsx");
@@ -102,7 +102,7 @@ export default function _default() {
   obj7.avatar1 = importDefault(dependencyMap[14]);
   obj7.status = StatusTypes.DND;
   items[8] = obj7;
-  const obj8 = { "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007456357503353684, "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000977580224266236 };
+  const obj8 = { "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005998699121250527, "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000977580224266236 };
   const intl26 = require(dependencyMap[1]).intl;
   obj8.timestamp = intl26.formatToPlainString(require(dependencyMap[1]).t.rhY1Rs, { hours: 18 });
   const intl27 = require(dependencyMap[1]).intl;

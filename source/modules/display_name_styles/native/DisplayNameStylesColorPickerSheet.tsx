@@ -1,10 +1,10 @@
-// Module ID: 14117
-// Function ID: 107183
+// Module ID: 14125
+// Function ID: 107226
 // Name: DisplayNameStylesColorPickerSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14117 (DisplayNameStylesColorPickerSheet)
+// Module 14125 (DisplayNameStylesColorPickerSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6 } = arg1(dependencyMap[2]));
@@ -13,16 +13,16 @@ const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { header: { paddingTop: 4 }, headerTrailing: { margin: null, backgroundColor: null }, container: { flex: 1 } };
+obj = { header: { paddingTop: 4 }, headerTrailing: { "Bool(false)": null, "Bool(false)": null }, container: { flex: 1 } };
 obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_16 };
 obj.contentContainer = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.presetGrid = { gap: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-const obj1 = { gap: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-obj.presetRow = { gap: importDefault(dependencyMap[7]).space.PX_16 };
-const obj3 = { "Bool(true)": "en-GB", "Bool(true)": "png", "Bool(true)": true, "Bool(true)": "/assets/../discord_common/js/shared/images/flags", "Bool(true)": 70, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { draggable: "<string:1912603085>", onPress: true, icon: true, gap: importDefault(dependencyMap[7]).space.PX_16 };
+obj.presetRow = obj2;
+const obj3 = { borderRadius: importDefault(dependencyMap[7]).radii.sm, accessibilityRole: "png", ti: true, <string:1000405862>: "/assets/../discord_common/js/shared/images/flags", <string:1365429334>: 70 };
 obj.presetColor = obj3;
-const obj2 = { gap: importDefault(dependencyMap[7]).space.PX_16 };
+const obj1 = { gap: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
 obj.presetColorSelected = { borderColor: importDefault(dependencyMap[7]).colors.CONTROL_BRAND_FOREGROUND };
 const obj4 = { borderColor: importDefault(dependencyMap[7]).colors.CONTROL_BRAND_FOREGROUND };
 obj.buttonsContainer = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_16 };
@@ -142,7 +142,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedColor) {
   let tmp12 = selectedEffectId === arg1(dependencyMap[21]).DisplayNameEffect.SOLID;
   if (tmp12) {
     const obj8 = { style: tmp.button };
-    obj9 = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022593422744040444, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008105677098396365, "Bool(false)": -36904047205333070000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015508057099265607, color: 995279476719464000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj9 = { getNextAssetPage: "Search", trackFeedEmptyLoadingSeen: null, addWindow: true, questDockHeaderActionDisclosures: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", EMOJI_PICKER_EMOJI_CLICKED: null };
     const intl3 = arg1(dependencyMap[16]).intl;
     obj9.text = intl3.string(importDefault(dependencyMap[17]).gIeJTK);
     obj9.onPress = callback;

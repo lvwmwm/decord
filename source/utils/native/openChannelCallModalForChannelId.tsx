@@ -1,10 +1,10 @@
-// Module ID: 10804
-// Function ID: 83905
+// Module ID: 10805
+// Function ID: 83918
 // Name: openChannelCallModalForChannelId
 // Dependencies: []
 // Exports: default
 
-// Module 10804 (openChannelCallModalForChannelId)
+// Module 10805 (openChannelCallModalForChannelId)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");
 

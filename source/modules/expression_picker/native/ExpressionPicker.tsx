@@ -1,8 +1,9 @@
-// Module ID: 9562
-// Function ID: 74491
+// Module ID: 9563
+// Function ID: 74504
+// Name: PADDING_HORIZONTAL
 // Dependencies: []
 
-// Module 9562
+// Module 9563 (PADDING_HORIZONTAL)
 let PADDING_HORIZONTAL;
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -13,7 +14,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingHorizontal: PADDING_HORIZONTAL };
+obj = { "Null": "metrics_sample_rate", "Null": "scalar", "Null": 1, "Null": 2, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingHorizontal: PADDING_HORIZONTAL };
 obj.expressionPickerContainer = obj;
 obj.expressionPickerContent = { flex: 1 };
 obj.segmentedControl = { paddingTop: 2 * PADDING_HORIZONTAL, paddingHorizontal: 0 };

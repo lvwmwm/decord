@@ -1,10 +1,10 @@
-// Module ID: 11324
-// Function ID: 88109
+// Module ID: 11325
+// Function ID: 88122
 // Name: EditPollCreationImageAltTextModal
 // Dependencies: []
 // Exports: default
 
-// Module 11324 (EditPollCreationImageAltTextModal)
+// Module 11325 (EditPollCreationImageAltTextModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ TouchableOpacity: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -18,7 +18,7 @@ obj.container = obj;
 obj.header = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.separator = { borderBottomWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.contentContainer = { "Bool(true)": "values", "Bool(true)": "Array" };
+obj.contentContainer = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
 const obj1 = { borderBottomWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.imageContainer = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.formContainer = { paddingHorizontal: 16 };
@@ -59,13 +59,13 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   }, items);
   let obj = { top: true, style: tmp.container };
   obj = { style: tmp.header };
-  obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, onPress: arg1(dependencyMap[8]).closeEditPollCreationImageAltTextModal };
+  obj = { onPress: arg1(dependencyMap[8]).closeEditPollCreationImageAltTextModal };
   const intl = arg1(dependencyMap[10]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.cpT0Cq);
   const obj1 = { source: importDefault(dependencyMap[12]) };
   obj.children = callback2(arg1(dependencyMap[11]).Icon, obj1);
   const items1 = [callback2(closure_5, obj), , ];
-  const obj2 = {};
+  const obj2 = { cachedAt: null, edpbxy: null };
   const intl2 = arg1(dependencyMap[10]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[10]).t.Cq44Rg);
   items1[1] = callback2(arg1(dependencyMap[13]).Text, obj2);
@@ -88,7 +88,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   const intl4 = arg1(dependencyMap[10]).intl;
   obj9.children = intl4.string(arg1(dependencyMap[10]).t./2Gnoa);
   items4[1] = callback2(importDefault(dependencyMap[15]), obj9);
-  const obj10 = { "Bool(false)": "#ffa813", "Bool(false)": "absolute", "Bool(false)": null, value: first, onChange: tmp5[1], clearButtonVisibility: arg1(dependencyMap[11]).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true };
+  const obj10 = { <string:1446732293>: true, <string:3076300900>: false, <string:1446733240>: false, value: first, onChange: tmp5[1], clearButtonVisibility: arg1(dependencyMap[11]).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true };
   const intl5 = arg1(dependencyMap[10]).intl;
   obj10.accessibilityLabel = intl5.string(arg1(dependencyMap[10]).t./2Gnoa);
   items4[2] = callback2(arg1(dependencyMap[16]).FormInput, obj10);

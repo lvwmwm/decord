@@ -1,10 +1,10 @@
-// Module ID: 8975
-// Function ID: 70744
+// Module ID: 8976
+// Function ID: 70757
 // Name: PlayStationLinkError
 // Dependencies: []
 // Exports: PlayStationLinkError
 
-// Module 8975 (PlayStationLinkError)
+// Module 8976 (PlayStationLinkError)
 importAll(dependencyMap[0]);
 let closure_2 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
 const AbortCodes = arg1(dependencyMap[2]).AbortCodes;

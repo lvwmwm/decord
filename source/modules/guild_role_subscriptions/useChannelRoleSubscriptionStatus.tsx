@@ -1,27 +1,33 @@
 // Module ID: 4570
-// Function ID: 40070
+// Function ID: 40078
 // Name: getChannelRoleSubscriptionStatus
-// Dependencies: []
+// Dependencies: [3827, 44, 2, 27, 4589, 3769]
 // Exports: default
 
 // Module 4570 (getChannelRoleSubscriptionStatus)
-function getChannelRoleSubscriptionStatus(id, closure_4, closure_3, closure_6) {
-  let obj = closure_4;
-  let obj2 = closure_3;
+import closure_2 from "t";
+import invariant from "invariant";
+import result2 from "result2";
+import { Permissions } from "get ActivityIndicator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+function getChannelRoleSubscriptionStatus(id, result2, invariant, closure_6) {
+  let obj = result2;
+  let obj2 = invariant;
   let tmp = closure_6;
-  if (closure_4 === undefined) {
-    obj = closure_3;
+  if (result2 === undefined) {
+    obj = invariant;
   }
   if (obj2 === undefined) {
     obj2 = closure_2;
   }
   if (tmp === undefined) {
-    tmp = closure_4;
+    tmp = result2;
   }
   const channel = obj.getChannel(id);
   if (null != channel) {
     if (channel.isRoleSubscriptionTemplatePreviewChannel()) {
-      obj = { "Null": null, "Null": null };
+      obj = { USE_EXIF: null, USE_IPTC: null };
     }
     return obj;
   }
@@ -41,17 +47,13 @@ function getChannelRoleSubscriptionStatus(id, closure_4, closure_3, closure_6) {
   }
   obj = closure_6;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
-let closure_6 = { "Bool(false)": null, "Bool(false)": null };
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
+let closure_6 = { 0: true, 0: true };
+const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
 
 export default function useChannelRoleSubscriptionStatus(arg0) {
   const arg1 = arg0;
-  const items = [closure_3, closure_2, closure_4];
+  const items = [invariant, closure_2, result2];
   const items1 = [arg0];
-  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => callback(arg0, closure_3, closure_2, closure_4), items1);
+  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => callback(arg0, invariant, closure_2, result2), items1);
 };
 export { getChannelRoleSubscriptionStatus };

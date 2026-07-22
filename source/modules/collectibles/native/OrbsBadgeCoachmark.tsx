@@ -1,10 +1,10 @@
-// Module ID: 8553
-// Function ID: 67994
+// Module ID: 8554
+// Function ID: 68006
 // Name: OrbsBadgeCoachmarkImg
 // Dependencies: []
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 8553 (OrbsBadgeCoachmarkImg)
+// Module 8554 (OrbsBadgeCoachmarkImg)
 function OrbsBadgeCoachmarkImg() {
   const tmp = callback();
   let obj = { style: tmp.coachmarkImageContainer };
@@ -19,7 +19,7 @@ let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ coachmarkImageContainer: { "Null": null, "Null": null }, coachmarkImage: {}, coachmarkDescription: { marginBottom: -10 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ coachmarkImageContainer: { <string:3596066964>: null, <string:3638417373>: null }, coachmarkImage: {}, coachmarkDescription: { marginBottom: -10 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/native/OrbsBadgeCoachmark.tsx");
 

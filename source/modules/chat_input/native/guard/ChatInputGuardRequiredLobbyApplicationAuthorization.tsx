@@ -1,21 +1,21 @@
-// Module ID: 11482
-// Function ID: 89395
+// Module ID: 11483
+// Function ID: 89408
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 11482
-import { Image } from "result";
-import { jsx } from "result";
-import result from "result";
-import importAllResult from "result";
-import result from "result";
+// Module 11483
+import { Image } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let obj = {};
-obj = { direction: false, style: false, borderWidth: false, borderRadius: require("result").radii.md };
+obj = { borderRadius: require("__exportStarResult1").radii.md };
 obj.icon = obj;
-let closure_5 = result.createStyles(obj);
-result = result.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
+let closure_5 = __exportStarResult1.createStyles(obj);
+const result = __exportStarResult1.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
 
-export default require("result").memo(function ChatInputGuardRequiredLobbyApplicationAuthorization(requiredLinkedLobbyApplication) {
+export default require("__exportStarResult1").memo(function ChatInputGuardRequiredLobbyApplicationAuthorization(requiredLinkedLobbyApplication) {
   requiredLinkedLobbyApplication = requiredLinkedLobbyApplication.requiredLinkedLobbyApplication;
   let arg1;
   if (!requiredLinkedLobbyApplication.showLinkedLobbyApplicationLoadingIndicator) {
@@ -47,5 +47,5 @@ export default require("result").memo(function ChatInputGuardRequiredLobbyApplic
       return jsx(importDefault(dependencyMap[5]), obj);
     }
   }
-  return jsx(importDefault(dependencyMap[5]), { borderBottomColor: null, borderBottomWidth: null });
+  return jsx(importDefault(dependencyMap[5]), { 9223372036854775807: null, -9223372036854775808: null });
 });

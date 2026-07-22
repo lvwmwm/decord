@@ -1,10 +1,10 @@
-// Module ID: 10787
-// Function ID: 83762
+// Module ID: 10788
+// Function ID: 83775
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useStageChannelParticipantsListThrottled, useThrottleDurationForChannel
 
-// Module 10787 (_createForOfIteratorHelperLoose)
+// Module 10788 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

@@ -1,17 +1,17 @@
-// Module ID: 16446
-// Function ID: 127034
+// Module ID: 16454
+// Function ID: 127076
 // Name: ParentalConsentConnectionNavbar
 // Dependencies: []
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16446 (ParentalConsentConnectionNavbar)
+// Module 16454 (ParentalConsentConnectionNavbar)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 9223372036854775807: null, -9223372036854775808: null, -4328168773: null, 9223372036854775807: null, height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+obj = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "replace", "Bool(true)": "to", height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.row = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.logOut = { position: "absolute", left: importDefault(dependencyMap[6]).space.PX_16 };
@@ -44,7 +44,7 @@ export const ParentalConsentConnectionNavbar = function ParentalConsentConnectio
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj1), ];
   let tmp6 = null != stateFromStores;
   if (tmp6) {
-    const obj2 = { USER_REGISTRATION: null, borderColor: "7e87039ca280115f9b6a52cb6bc7dc5e", borderWidth: "img_app_crash_dark", children: stateFromStores };
+    const obj2 = { "Bool(false)": null, "Bool(false)": "7e87039ca280115f9b6a52cb6bc7dc5e", "Bool(false)": "img_app_crash_dark", children: stateFromStores };
     tmp6 = callback(arg1(dependencyMap[9]).Text, obj2);
   }
   items1[1] = tmp6;

@@ -8,7 +8,7 @@
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = { mechanism: {} };
+let closure_4 = { mechanism: { priority: "repeat", "Bool(false)": false } };
 
 export const trpcMiddleware = function trpcMiddleware() {
   if (arguments.length > 0) {

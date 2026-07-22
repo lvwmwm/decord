@@ -1,10 +1,10 @@
-// Module ID: 11266
-// Function ID: 87665
+// Module ID: 11267
+// Function ID: 87678
 // Name: DEFAULT_CONTENT_PADDING
 // Dependencies: []
 // Exports: AppLauncherCommandViewHeader
 
-// Module 11266 (DEFAULT_CONTENT_PADDING)
+// Module 11267 (DEFAULT_CONTENT_PADDING)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
@@ -14,19 +14,19 @@ const sum = arg1(dependencyMap[4]).BACK_BUTTON_SIZE + 2 * DEFAULT_CONTENT_PADDIN
 let closure_8 = sum - 56;
 let obj = arg1(dependencyMap[5]);
 obj = { headerContainer: obj };
-obj = { <string:3246022526>: false, <string:1764207697>: false, <string:3679956194>: false, <string:944643202>: false, <string:1602118752>: false, <string:4249993594>: false, <string:1366180097>: false, padding: DEFAULT_CONTENT_PADDING };
+obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, padding: DEFAULT_CONTENT_PADDING };
 const tmp3 = arg1(dependencyMap[3]);
 obj.loadingHeaderContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { "Bool(false)": 7471103, "Bool(false)": 822083584, "Bool(false)": 1958505087, "Bool(false)": 1069815955, backgroundColor: tmp2.SCREEN_BACKGROUND_COLOR, borderRadius: importDefault(dependencyMap[6]).radii.xl + 4 };
+const obj2 = { is_pip_mode: 7471103, lastIntervalMs: 822083584, rfc5321AddressLiteral: 1958505087, showCreateBenefitModal: 1069815955, backgroundColor: tmp2.SCREEN_BACKGROUND_COLOR, borderRadius: importDefault(dependencyMap[6]).radii.xl + 4 };
 obj.appIconMask = obj2;
-const obj3 = { "Null": "NR", "Null": "__RRWEB_EXCLUDE_SHADOW_DOM__", borderRadius: importDefault(dependencyMap[6]).radii.xl };
+const obj3 = { "Null": "nativeStyles", "Null": "__handleCache", borderRadius: importDefault(dependencyMap[6]).radii.xl };
 obj.appIcon = obj3;
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingIcon = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
-obj.appSmallName = { "Null": "flex", "Null": "row", "Null": 16, "Null": "center" };
+obj.appSmallName = { opacity: "flex", ddd: "row", ind: 16, ty: "center" };
 const items = [{ rotate: "180deg" }];
 obj.icon = { transform: items };
-obj.headerBannerOverlay = { "Null": 1124139009, "Null": 135025, "Bool(false)": 135024, "Bool(false)": 93131, "Bool(false)": 30006081, "Bool(false)": -1556020992 };
+obj.headerBannerOverlay = { marginBottom: true, borderRadius: true, flexDirection: true, justifyContent: true, marginVertical: true, rowGap: true };
 const styles = obj.createStyles(obj);
 let closure_10 = { code: "function AppLauncherCommandViewHeaderTsx1(){const{interpolate,scrollOffsetY,TOTAL_SCROLL_RANGE}=this.__closure;return{opacity:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[0,1],'clamp'),transform:[{translateY:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[12,0],'clamp')}]};}" };
 let closure_11 = { code: "function AppLauncherCommandViewHeaderTsx2(){const{APP_ICON_SIZE,APP_ICON_BORDER_WIDTH,DEFAULT_CONTENT_PADDING,interpolate,scrollOffsetY,TOTAL_SCROLL_RANGE}=this.__closure;return{transform:[{translateX:-APP_ICON_SIZE/2-APP_ICON_BORDER_WIDTH+DEFAULT_CONTENT_PADDING},{translateY:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[0,-APP_ICON_SIZE/2],'clamp')},{scale:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[1,0],'clamp')}],opacity:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[1,0],'clamp')};}" };
@@ -60,12 +60,12 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
       obj2 = scrollOffsetY(closure_2[8]);
       items = [0.229];
       items[1] = closure_8;
-      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, ["replace", "then"], "clamp");
+      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, [77601039, 1612144654], "clamp");
       obj = {};
       obj4 = scrollOffsetY(closure_2[8]);
       items1 = [0.229];
       items1[1] = closure_8;
-      obj.translateY = obj4.interpolate(scrollOffsetY.get(), items1, [null, null], "clamp");
+      obj.translateY = obj4.interpolate(scrollOffsetY.get(), items1, [], "clamp");
       items2 = [];
       items2[0] = obj;
       obj.transform = items2;
@@ -96,17 +96,17 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
       obj6 = scrollOffsetY(closure_2[8]);
       items3 = [0.229];
       items3[1] = closure_8;
-      obj2.scale = obj6.interpolate(scrollOffsetY.get(), items3, [], "clamp");
+      obj2.scale = obj6.interpolate(scrollOffsetY.get(), items3, [true, true], "clamp");
       items[2] = obj2;
       obj.transform = items;
       obj7 = scrollOffsetY(closure_2[8]);
       items4 = [0.229];
       items4[1] = closure_8;
-      obj.opacity = obj7.interpolate(scrollOffsetY.get(), items4, [], "clamp");
+      obj.opacity = obj7.interpolate(scrollOffsetY.get(), items4, [true, true], "clamp");
       return obj;
     }
   }
-  obj = { "Bool(false)": "<string:1912603304>", "Bool(false)": "values", DEFAULT_CONTENT_PADDING, interpolate: arg1(dependencyMap[8]).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE: closure_8 };
+  obj = { "Bool(false)": "jsx", "Bool(false)": "r", DEFAULT_CONTENT_PADDING, interpolate: arg1(dependencyMap[8]).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE: closure_8 };
   E.__closure = obj;
   E.__workletHash = 13563524587234;
   E.__initData = closure_11;
@@ -118,7 +118,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
       obj2 = scrollOffsetY(closure_2[8]);
       items = [0.229];
       items[1] = closure_8;
-      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, [null, null], "clamp");
+      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, [-447601326, 1659789871], "clamp");
       return obj;
     }
   }
@@ -163,9 +163,8 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   obj4.style = items2;
   const items3 = [tmp.headerBannerOverlay, animatedStyle2];
   const items4 = [callback(importDefault(dependencyMap[8]).View, { style: items3 }), callback(importDefault(dependencyMap[4]), { onPress: onPress.onPressBack }), , , ];
-  const obj5 = { y: 0, isArray: 29.317, "Null": 10, "Null": 199, "Null": "END" };
+  const obj5 = { style: items5 };
   const items5 = [tmp.appSmallName, animatedStyle];
-  obj5.style = items5;
   let displayName;
   if (null != command) {
     displayName = command.displayName;

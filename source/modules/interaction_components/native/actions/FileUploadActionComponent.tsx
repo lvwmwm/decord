@@ -1,10 +1,10 @@
-// Module ID: 15953
-// Function ID: 122356
+// Module ID: 15961
+// Function ID: 122398
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15953 (_createForOfIteratorHelperLoose)
+// Module 15961 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -98,7 +98,7 @@ function MainAreaCanUpload(arg0) {
   obj.icon = callback(arg1(dependencyMap[9]).TableRow.Icon, obj);
   const intl = arg1(dependencyMap[11]).intl;
   obj.label = intl.format(arg1(dependencyMap[11]).t./2JwTv, { maxValues });
-  const formatSizeResult = obj.formatSize(maxSizeBytes / arg1(dependencyMap[8]).BYTE_IN_KB, { justifyContent: null, alignItems: null });
+  const formatSizeResult = obj.formatSize(maxSizeBytes / arg1(dependencyMap[8]).BYTE_IN_KB, { returnKeyType: null, autoCapitalize: null });
   obj.subLabel = arg1(dependencyMap[12]).getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult);
   obj.start = true;
   obj.end = true;
@@ -106,7 +106,7 @@ function MainAreaCanUpload(arg0) {
   return callback(arg1(dependencyMap[9]).TableRow, obj);
 }
 function MainAreaLimitReached() {
-  let obj = { maxWidth: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000230329911188219, flexShrink: -172403270113748460000000, messageLookup: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039776031867697785, scrollEndVelocity: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112201225582, STORE_DIRECTORY: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122019556398, liveContainer: 0 };
+  let obj = { "Bool(false)": "2025-12-proportional-vad-indicator", "Bool(false)": "text", "Bool(false)": "", "Bool(false)": 255, "Bool(false)": 0, "Bool(false)": 256 };
   obj = { IconComponent: arg1(dependencyMap[13]).CircleCheckIcon };
   obj.icon = callback(arg1(dependencyMap[9]).TableRow.Icon, obj);
   const intl = arg1(dependencyMap[11]).intl;
@@ -154,7 +154,7 @@ const DraftType = arg1(dependencyMap[4]).DraftType;
 const NOOP = arg1(dependencyMap[5]).NOOP;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ defaultAttachmentIconWrapper: { @braintree/wrap-promise: "user", onPress: "row" } });
+let closure_11 = arg1(dependencyMap[7]).createStyles({ defaultAttachmentIconWrapper: {} });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/interaction_components/native/actions/FileUploadActionComponent.tsx");
 

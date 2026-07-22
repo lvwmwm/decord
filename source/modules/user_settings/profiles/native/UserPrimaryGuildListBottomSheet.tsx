@@ -1,16 +1,16 @@
-// Module ID: 13487
-// Function ID: 102362
+// Module ID: 13494
+// Function ID: 102395
 // Name: UserPrimaryGuildListBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13487 (UserPrimaryGuildListBottomSheet)
+// Module 13494 (UserPrimaryGuildListBottomSheet)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildTagBadgeSize = arg1(dependencyMap[2]).GuildTagBadgeSize;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { titleContainer: {}, guildIcon: { marginLeft: 4 }, tag: { padding: 2 } };
+let obj = { titleContainer: { paddingBottom: "<string:57754859>", borderBottomWidth: "<string:1090519040>", borderBottomColor: "light_static_url", marginBottom: "<string:1904855889>" }, guildIcon: { marginLeft: 4 }, tag: { padding: 2 } };
 obj = {};
 const tmp2 = arg1(dependencyMap[3]);
 let num = 18;
@@ -124,9 +124,9 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     return items;
   }, items);
   const View = memo;
-  let obj = { ind: null, PX_8: null };
+  let obj = { openDisableCommunication: null, freezeEnabled: null };
   obj = { style: tmp.titleContainer };
-  obj = {};
+  obj = { gauge: true, onLayerLoaded: true, ExpressiveGradient: true };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.Fo0g9x);
   obj.children = callback(arg1(dependencyMap[16]).Text, obj);

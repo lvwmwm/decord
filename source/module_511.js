@@ -4,8 +4,11 @@
 
 // Module 511
 let closure_1 = /%20/g;
-
-export default {
+const obj = {
+  last_pin_timestamp: null,
+  FeedbackRating: null,
+  FriendRequestsOutgoing: null,
+  crc: null,
   formatters: {
     RFC1738(arg0) {
       return replace.call(arg0, closure_1, "+");
@@ -15,3 +18,5 @@ export default {
     }
   }
 };
+
+export default obj;

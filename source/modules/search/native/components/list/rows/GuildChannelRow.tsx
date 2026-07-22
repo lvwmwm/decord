@@ -1,9 +1,9 @@
-// Module ID: 15229
-// Function ID: 115000
+// Module ID: 15237
+// Function ID: 115043
 // Name: GuildChannelLabel
 // Dependencies: []
 
-// Module 15229 (GuildChannelLabel)
+// Module 15237 (GuildChannelLabel)
 function GuildChannelLabel(channel) {
   channel = channel.channel;
   let obj = { style: callback().content };
@@ -18,8 +18,8 @@ const importAllResult = importAll(dependencyMap[0]);
 let closure_5 = arg1(dependencyMap[2]).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let obj = { container: { paddingVertical: 10 }, content: { "Null": 7, "Null": 370 }, iconContainer: { marginRight: 0 } };
-obj = { tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
+let obj = { container: { paddingVertical: 10 }, content: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, iconContainer: { marginRight: 0 } };
+obj = { -9223372036854775808: null, 9223372036854775807: null, 0: null, tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.simpleIcon = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 const obj2 = arg1(dependencyMap[4]);
@@ -32,13 +32,13 @@ const memoResult = importAllResult.memo(function GuildChannelRow(channel) {
   let trailing;
   let voiceStates;
   channel = channel.channel;
-  let obj = { labelLineClamp: true, icon: true, arrow: true, onPress: true, start: true, end: true };
+  let obj = { arrow: "Text", onPress: "resizeMode", start: "from", end: "Array", start: "isArray", end: "braintreemasterpasslanding" };
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   const tmp3 = callback();
   let obj1 = arg1(dependencyMap[9]);
-  obj = { "Bool(false)": null, "Bool(false)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(false)": "img_account_sync_youtube_white", channel, voiceStates };
+  obj = { body: null, icon: "2eaff20be2a75be7ccdd4c6f19f0eb36", accessibilityRole: "img_account_sync_youtube_white", channel, voiceStates };
   const channelAccessibilityProps = obj1.getChannelAccessibilityProps(obj);
   obj = {};
   obj1 = { style: tmp3.simpleIcon, source: arg1(dependencyMap[8]).getSimpleChannelIcon(channel) };

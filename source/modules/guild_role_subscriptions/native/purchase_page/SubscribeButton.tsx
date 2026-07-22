@@ -1,13 +1,12 @@
-// Module ID: 15151
-// Function ID: 114300
+// Module ID: 15159
+// Function ID: 114343
 // Name: emphasisHook
 // Dependencies: []
 // Exports: default
 
-// Module 15151 (emphasisHook)
+// Module 15159 (emphasisHook)
 function emphasisHook(children) {
-  const obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images", children };
-  return callback2(arg1(dependencyMap[12]).Text, obj);
+  return callback2(arg1(dependencyMap[12]).Text, { children });
 }
 function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;

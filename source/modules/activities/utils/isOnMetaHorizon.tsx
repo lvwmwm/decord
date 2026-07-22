@@ -1,10 +1,10 @@
-// Module ID: 11928
-// Function ID: 92263
+// Module ID: 11929
+// Function ID: 92277
 // Name: isOnMetaHorizon
 // Dependencies: [1392, 3801, 2]
 // Exports: default
 
-// Module 11928 (isOnMetaHorizon)
+// Module 11929 (isOnMetaHorizon)
 import { META_PRESENCE_APPLICATION_ID as closure_0 } from "getAvatarURL";
 import { ActivityGamePlatforms } from "explicitContentFromProto";
 import result2 from "result2";

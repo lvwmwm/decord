@@ -504,9 +504,7 @@ const tmp5 = () => {
   items[21] = {
     key: "emptyState",
     value() {
-      let obj = { root: {}, version: this.nextVersion(), derived: obj };
-      obj = { <string:3209542653>: -536870861, <string:1383034466>: -299892737, memoized: {} };
-      return obj;
+      return { root: {}, version: this.nextVersion(), derived: { memoized: {} } };
     }
   };
   items[22] = {

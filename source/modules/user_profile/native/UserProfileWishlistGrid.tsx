@@ -1,16 +1,16 @@
-// Module ID: 12004
-// Function ID: 92771
+// Module ID: 12008
+// Function ID: 92797
 // Name: WishlistEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 12004 (WishlistEmptyState)
+// Module 12008 (WishlistEmptyState)
 class WishlistEmptyState {
   constructor(arg0) {
     shouldShowMRNotice = global.shouldShowMRNotice;
     closure_0 = undefined;
     obj = closure_0(dependencyMap[20]);
-    tmp = f92774(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
+    tmp = f92800(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
     obj2 = closure_0(dependencyMap[21]);
     obj3 = closure_0(dependencyMap[22]);
     str = "mobile-text-heading-primary";
@@ -46,7 +46,7 @@ class WishlistEmptyState {
     obj2.children = intl.string(closure_0(dependencyMap[28]).t.HGnLLT);
     items1 = [, , ];
     items1[0] = jsx(closure_0(dependencyMap[27]).Text, obj2);
-    obj3 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+    obj3 = { cachedAt: -8364226096399416000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012460413631725481 };
     obj3.style = tmp.emptyStateText;
     intl2 = closure_0(dependencyMap[28]).intl;
     obj3.children = intl2.string(closure_0(dependencyMap[28]).t./X1ny6);
@@ -79,7 +79,7 @@ class WishlistEmptyState {
       items4 = [, ];
       items4[0] = jsx(closure_0(dependencyMap[31]).CircleInformationIcon, obj7);
       tmp10 = jsx;
-      obj8 = {};
+      obj8 = { cachedAt: null, edpbxy: null };
       intl4 = closure_0(dependencyMap[28]).intl;
       obj8.children = intl4.string(closure_0(dependencyMap[28]).t.Wp9bEl);
       items4[1] = jsx(closure_0(dependencyMap[27]).Text, obj8);
@@ -120,11 +120,11 @@ let closure_26 = arg1(dependencyMap[18]).createStyles(() => {
     flag = false;
   }
   let obj = {};
-  obj = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r", marginBottom: importDefault(dependencyMap[19]).space.PX_12 };
+  obj = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r", marginBottom: importDefault(dependencyMap[19]).space.PX_12 };
   obj.headerRow = obj;
-  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[19]).space.PX_8 };
+  obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[19]).space.PX_8 };
   obj.headerButtons = obj;
-  obj.gridWrapper = { @braintree/wrap-promise: "BLURPLE_19", onPress: 1 };
+  obj.gridWrapper = {};
   obj.itemsContainer = {};
   const obj1 = { alignItems: "center", paddingTop: importDefault(dependencyMap[19]).space.PX_48 };
   const space = importDefault(dependencyMap[19]).space;
@@ -137,8 +137,8 @@ let closure_26 = arg1(dependencyMap[18]).createStyles(() => {
   const space2 = importDefault(dependencyMap[19]).space;
   obj2.marginTop = flag ? space2.PX_20 : space2.PX_24;
   obj.emptyStateCta = obj2;
-  obj.disclaimer = { padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
-  const obj3 = { padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
+  const obj3 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, -659463325: null, 1020278866: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008482935185324819, padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
+  obj.disclaimer = obj3;
   obj.disclaimerTop = { marginBottom: importDefault(dependencyMap[19]).space.PX_16 };
   const obj4 = { marginBottom: importDefault(dependencyMap[19]).space.PX_16 };
   obj.disclaimerBottom = { marginTop: importDefault(dependencyMap[19]).space.PX_16 };
@@ -389,14 +389,14 @@ export default function UserProfileWishlistGrid(wishlistId) {
       obj2.style = items17;
       obj3 = { size: "sm" };
       const items18 = [callback(arg1(dependencyMap[31]).CircleInformationIcon, obj3), ];
-      obj4 = { children: stringResult };
+      obj4 = { cachedAt: null, edpbxy: null, children: stringResult };
       items18[1] = callback(arg1(dependencyMap[27]).Text, obj4);
       obj2.children = items18;
       tmp33 = callback2(View, obj2);
     }
     const items19 = [tmp33, , , ];
     obj5 = { style: tmp.headerRow };
-    obj6 = {};
+    obj6 = { cachedAt: null, edpbxy: null };
     const intl2 = arg1(dependencyMap[28]).intl;
     obj7 = { count: memo.length };
     obj6.children = intl2.formatToPlainString(arg1(dependencyMap[28]).t.r6Y1Lg, obj7);
@@ -458,7 +458,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
       obj15.style = items23;
       const obj16 = { size: "sm" };
       const items24 = [callback(arg1(dependencyMap[31]).CircleInformationIcon, obj16), ];
-      const obj17 = {};
+      const obj17 = { cachedAt: null, edpbxy: null };
       const intl5 = arg1(dependencyMap[28]).intl;
       obj17.children = intl5.string(arg1(dependencyMap[28]).t.Wp9bEl);
       items24[1] = callback(arg1(dependencyMap[27]).Text, obj17);

@@ -1,9 +1,9 @@
-// Module ID: 9492
-// Function ID: 73971
+// Module ID: 9493
+// Function ID: 73984
 // Name: FeedbackRating
 // Dependencies: []
 
-// Module 9492 (FeedbackRating)
+// Module 9493 (FeedbackRating)
 const obj = { BAD: "bad", NEUTRAL: "neutral", GOOD: "good" };
 const items = [require(dependencyMap[0]).InAppFeedbackType.VIDEO_BACKGROUND, require(dependencyMap[0]).InAppFeedbackType.STREAM, require(dependencyMap[0]).InAppFeedbackType.ACTIVITY, require(dependencyMap[0]).InAppFeedbackType.VOICE, require(dependencyMap[0]).InAppFeedbackType.IN_APP_REPORTS, require(dependencyMap[0]).InAppFeedbackType.SEARCH_RESULTS];
 const items1 = [, , ];

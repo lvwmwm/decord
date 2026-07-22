@@ -1,9 +1,9 @@
-// Module ID: 15733
-// Function ID: 120343
+// Module ID: 15741
+// Function ID: 120386
 // Name: VoicePanelVisualEffectView
 // Dependencies: []
 
-// Module 15733 (VoicePanelVisualEffectView)
+// Module 15741 (VoicePanelVisualEffectView)
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 const importAllResult = importAll(dependencyMap[0]);

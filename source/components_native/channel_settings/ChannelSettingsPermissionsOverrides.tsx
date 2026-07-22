@@ -1,10 +1,10 @@
-// Module ID: 15388
-// Function ID: 117391
+// Module ID: 15396
+// Function ID: 117434
 // Name: ChannelSettingsPermissionsOverrides
 // Dependencies: []
 // Exports: default
 
-// Module 15388 (ChannelSettingsPermissionsOverrides)
+// Module 15396 (ChannelSettingsPermissionsOverrides)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -136,7 +136,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
       navigation.setOptions(obj);
     }
   }, items4);
-  obj = {};
+  obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
   let obj3 = arg1(dependencyMap[32]);
   obj.children = obj3.computeChannelName(stateFromStores, closure_15, closure_14, true);
   const tmp6 = callback2(arg1(dependencyMap[31]).Text, obj);
@@ -180,7 +180,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         flag = flag.flag;
         ({ title, description } = flag);
         const tmp = callback2(flag);
-        let obj = { children: flag(closure_3[36]).renderDescription(description) };
+        let obj = { cachedAt: null, edpbxy: null, children: flag(closure_3[36]).renderDescription(description) };
         const obj2 = flag(closure_3[36]);
         const tmp2 = null != tmp && tmp;
         obj = { disabled: tmp4, label: title, subLabel: callback4(flag(closure_3[31]).Text, obj) };

@@ -1,10 +1,10 @@
-// Module ID: 8813
-// Function ID: 69512
+// Module ID: 8814
+// Function ID: 69524
 // Name: fetchUserAffinitiesV2
 // Dependencies: []
 // Exports: fetchUserAffinitiesV2
 
-// Module 8813 (fetchUserAffinitiesV2)
+// Module 8814 (fetchUserAffinitiesV2)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ Endpoints: closure_5, Consents: closure_6 } = arg1(dependencyMap[2]));

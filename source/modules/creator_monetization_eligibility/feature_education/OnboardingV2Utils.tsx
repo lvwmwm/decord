@@ -1,10 +1,10 @@
-// Module ID: 14951
-// Function ID: 112537
+// Module ID: 14959
+// Function ID: 112580
 // Name: items
 // Dependencies: []
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 14951 (items)
+// Module 14959 (items)
 const isGuildOwner = require(dependencyMap[0]).isGuildOwner;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

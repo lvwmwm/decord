@@ -1,10 +1,10 @@
-// Module ID: 13801
-// Function ID: 104411
+// Module ID: 13808
+// Function ID: 104444
 // Name: SkipBackwardIcon
 // Dependencies: []
 // Exports: SkipBackwardIcon
 
-// Module 13801 (SkipBackwardIcon)
+// Module 13808 (SkipBackwardIcon)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -23,7 +23,7 @@ export const SkipBackwardIcon = function SkipBackwardIcon(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, -9223372036854775808: false };
+  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   obj = {};
@@ -32,7 +32,7 @@ export const SkipBackwardIcon = function SkipBackwardIcon(width) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 32 32";
   obj["fill"] = "none";
-  obj = { fill: str };
+  obj = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "Reflect", "Bool(true)": "accessibilityRole", fill: str };
   const items = [callback(arg1(dependencyMap[2]).Path, obj), , ];
   const obj1 = { fill: str };
   items[1] = callback(arg1(dependencyMap[2]).Path, obj1);

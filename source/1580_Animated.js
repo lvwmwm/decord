@@ -20,7 +20,7 @@ const tmp5 = arg1(dependencyMap[4]);
 let closure_12 = arg1(dependencyMap[5]).isEdgeToEdge();
 const obj = arg1(dependencyMap[5]);
 let closure_13 = importDefault(dependencyMap[6]).createAnimatedComponent(Animated.createAnimatedComponent(arg1(dependencyMap[7]).KeyboardControllerView));
-const styles = StyleSheet.create({ container: { flex: 1 }, hidden: { <string:2709588674>: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, <string:2253543009>: 0.0000000000000000000000000000000000000000000000000000000000000466726142659596 } });
+const styles = StyleSheet.create({ container: { flex: 1 }, hidden: { transparent: null, aliceblue: 0.3 } });
 let closure_15 = { code: "function pnpm_animatedTsx1(event,platforms){const{OS,progressSV,heightSV}=this.__closure;if(platforms.includes(OS)){progressSV.value=event.progress;heightSV.value=-event.height;}}" };
 let closure_16 = { code: "function pnpm_animatedTsx2(event){const{updateSharedValues}=this.__closure;updateSharedValues(event,[\"ios\"]);}" };
 let closure_17 = { code: "function pnpm_animatedTsx3(event){const{updateSharedValues}=this.__closure;updateSharedValues(event,[\"android\"]);}" };

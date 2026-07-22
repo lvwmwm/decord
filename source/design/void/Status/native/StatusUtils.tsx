@@ -1,10 +1,10 @@
-// Module ID: 12894
-// Function ID: 98434
+// Module ID: 12901
+// Function ID: 98467
 // Name: getAnimatedTypingTranslateX
 // Dependencies: []
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 12894 (getAnimatedTypingTranslateX)
+// Module 12901 (getAnimatedTypingTranslateX)
 const _module = require(dependencyMap[0]);
 ({ STATUS_PADDING: closure_2, StatusSizes: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

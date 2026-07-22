@@ -1,10 +1,10 @@
-// Module ID: 10953
-// Function ID: 85172
+// Module ID: 10954
+// Function ID: 85185
 // Name: PopoutCheck
 // Dependencies: []
 // Exports: default
 
-// Module 10953 (PopoutCheck)
+// Module 10954 (PopoutCheck)
 function PopoutCheck(arg0) {
   let connectionMetadataField;
   let connectionType;
@@ -121,7 +121,7 @@ class PopoutChecks {
                 tmp35 = callback(guildId(closure_2[24]).Avatar, obj3);
               }
               items1[1] = tmp35;
-              const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "43b86c9ce273868bacca6aeb06ae392b" };
+              const obj4 = { cachedAt: null, edpbxy: "43b86c9ce273868bacca6aeb06ae392b" };
               let name;
               if (null != value) {
                 name = value.name;
@@ -186,25 +186,25 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[10]);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = arg1(dependencyMap[11]));
 let obj = arg1(dependencyMap[12]);
-obj = { container: { 822894183: 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 400842798: 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, 1120077519: 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 } };
+obj = { container: { "Null": 0.0000000000000000000000000000000000000000000000000000000009659784425801879, "Null": 15177101141243970000000000000000000000000000000000000000000000000000000000000000000, "Null": 15186806633716527000000000000000000000000000000000000000000000000000000000000000000 } };
 obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
 obj.header = obj;
-obj.verifiedContainer = { <string:2320653409>: false, <string:1642905260>: false, <string:2709934496>: false };
-obj.headerTextContainer = {};
-obj.verifiedCheck = { "Null": 3375103, "Null": -8192, "Null": 4320799 };
+obj.verifiedContainer = { <string:2807192673>: "<string:191299586>", <string:1641051308>: "<string:3948019713>", <string:2717012384>: "<string:1359192132>" };
+obj.headerTextContainer = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003183821265432445, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003136903938464816 };
+obj.verifiedCheck = {};
 obj.loadingSpinner = { marginVertical: 40 };
-obj.popoutCheck = { headerIcons: "png", RowButtonIconProps: "startFetchingBlockedDomains", headerLabel: "isArray", showHeaderCloseButton: "NR", hideDontShowAgainCheckbox: "isArray" };
+obj.popoutCheck = { 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882300152402755, 9223372036854775807: 873990039840291000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033951932656, 0: 0.00000000000000000000000000002233771790404307, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011739220321529197 };
 const tmp4 = arg1(dependencyMap[11]);
 obj.popoutCheckIcon = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
 obj.popoutChecksGroup = {};
-const obj1 = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
-obj.popoutChecksGroupBottomMargin = { borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.popoutCheckGroupName = { "Null": 7, "Null": 370 };
+const obj2 = { roleStyle: null, message: null, isFirst: null, content: null, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
+obj.popoutChecksGroupBottomMargin = obj2;
+obj.popoutCheckGroupName = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.popoutCheckGroupPlatformIcon = { marginRight: 8 };
 obj.button = { marginBottom: 8 };
 obj.botTag = { marginLeft: 4 };
 let closure_19 = obj.createStyles(obj);
-const obj2 = { borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
+const obj1 = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
 const result = arg1(dependencyMap[40]).fileFinishedImporting("modules/connections/native/ConnectionsRoleMessageBadgeActionSheet.tsx");
 
 export default function ConnectionsRoleMessageBadgeActionSheet(userId) {
@@ -299,14 +299,14 @@ export default function ConnectionsRoleMessageBadgeActionSheet(userId) {
       obj3.children = callback2(importDefault(dependencyMap[35]), obj4);
       const items7 = [callback2(closure_6, obj3), ];
       obj5 = { style: tmp.headerTextContainer };
-      const obj6 = { hasMaxConnections: "<string:1091687288>", isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
+      const obj6 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images" };
       let name;
       if (null != stateFromStores3) {
         name = stateFromStores3.name;
       }
       obj6.children = name;
       const items8 = [callback2(arg1(dependencyMap[17]).Text, obj6), ];
-      const obj7 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: formatResult };
+      const obj7 = { cachedAt: true, edpbxy: true, children: formatResult };
       items8[1] = callback2(arg1(dependencyMap[17]).Text, obj7);
       obj5.children = items8;
       items7[1] = closure_17(closure_6, obj5);

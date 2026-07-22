@@ -1,10 +1,10 @@
-// Module ID: 15009
-// Function ID: 113020
+// Module ID: 15017
+// Function ID: 113063
 // Name: NotificationCenterActionButton
 // Dependencies: []
 // Exports: default
 
-// Module 15009 (NotificationCenterActionButton)
+// Module 15017 (NotificationCenterActionButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/notification_center/native/NotificationCenterActionButton.tsx");

@@ -1,20 +1,18 @@
-// Module ID: 14992
-// Function ID: 112928
+// Module ID: 15000
+// Function ID: 112971
 // Name: Username
 // Dependencies: []
 
-// Module 14992 (Username)
+// Module 15000 (Username)
 function Username(arg0) {
   let userId;
   let username;
   ({ userId, username } = arg0);
-  let obj = {};
+  const obj = {};
   const items = [callback3().usernameRow];
   obj.style = items;
-  obj = { flexDirection: null, alignItems: "", justifyContent: "", marginBottom: "0", channelId: "none", isPreload: "24", limit: "24", userId, userName: username };
   const items1 = [{ flexShrink: 1 }];
-  obj.style = items1;
-  const items2 = [callback(importDefault(dependencyMap[6]), obj), callback(arg1(dependencyMap[7]).ChevronSmallDownIcon, {})];
+  const items2 = [callback(importDefault(dependencyMap[6]), { userId, userName: username, style: items1 }), callback(arg1(dependencyMap[7]).ChevronSmallDownIcon, {})];
   obj.children = items2;
   return callback2(View, obj);
 }
@@ -23,10 +21,10 @@ let closure_4 = importDefault(dependencyMap[2]);
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let obj = { userText: {} };
+let obj = { userText: { 1314563787: "interactive-text-default", 1364474466: null, -1604160795: false, 102650204: "gr" } };
 obj = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.statusRow = obj;
-obj.statusEmoji = {};
+obj.statusEmoji = { "Null": null, "Null": null };
 obj.usernameRow = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 obj.statusText = { flexShrink: 1 };
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
@@ -60,7 +58,7 @@ const memoResult = importAllResult.memo(function YouName(arg0) {
     tmp11 = callback(importDefault(dependencyMap[11]), obj1);
   }
   const items2 = [tmp11, ];
-  obj2 = { index: "<string:2682257408>", source: null, color: null, style: tmp.statusText, size: null };
+  obj2 = { bgBaseLow: 3309567, CHANGE_EMAIL_COMPLETE: 601874432, getOptedInChannels: 4319821, JUMP_TO_PRESENT_BUTTON_SIZE: -367009792, shrink: 1900146671, style: tmp.statusText };
   if (null == gameMentionsAsPlainText) {
     gameMentionsAsPlainText = arg1(dependencyMap[13]).humanizeStatus(stateFromStores);
     const obj8 = arg1(dependencyMap[13]);

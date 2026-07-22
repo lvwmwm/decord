@@ -4,6 +4,6 @@
 
 // Module 2023
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", format: null, View: "05ca260ddc3690c8f23eea8ea1704185", accessibilityRole: "zh-CN.messages.05ca260ddc3690c8f23eea8ea1704185.compiled.messages", surrogates: "jsona", url: null, scales: [null] };
+const obj = { 296374: null, 1102560849: "05ca260ddc3690c8f23eea8ea1704185", 288807: "zh-CN.messages.05ca260ddc3690c8f23eea8ea1704185.compiled.messages", 1103760465: "jsona", 288241: 0, 1120538193: false, scales: [false] };
 
 export default _module.registerAsset(obj);

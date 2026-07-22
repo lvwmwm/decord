@@ -1,5 +1,5 @@
 // Module ID: 7478
-// Function ID: 60037
+// Function ID: 60048
 // Name: SafetyToastType
 // Dependencies: []
 

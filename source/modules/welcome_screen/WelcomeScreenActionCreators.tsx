@@ -1,10 +1,10 @@
-// Module ID: 11677
-// Function ID: 90593
+// Module ID: 11678
+// Function ID: 90606
 // Name: _fetchWelcomeScreen
 // Dependencies: []
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 11677 (_fetchWelcomeScreen)
+// Module 11678 (_fetchWelcomeScreen)
 function _fetchWelcomeScreen() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

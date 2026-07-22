@@ -1,9 +1,9 @@
-// Module ID: 14845
-// Function ID: 111902
+// Module ID: 14853
+// Function ID: 111945
 // Name: getChannelMode
 // Dependencies: []
 
-// Module 14845 (getChannelMode)
+// Module 14853 (getChannelMode)
 function getChannelMode(selected) {
   let channel;
   let unread;
@@ -107,7 +107,7 @@ function DMChannelIcon(userId) {
   obj.statusStyle = items4;
   return closure_13(arg1(dependencyMap[20]).Avatar, obj);
 }
-let closure_3 = [];
+let closure_3 = ["<string:671088922>", "<string:1778385559>", "<string:2399142161>", "<string:620757311>", "<string:1224737504>", "Array", "isArray"];
 let closure_4 = importDefault(dependencyMap[0]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);

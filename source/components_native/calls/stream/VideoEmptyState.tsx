@@ -1,10 +1,10 @@
-// Module ID: 10556
-// Function ID: 82466
+// Module ID: 10557
+// Function ID: 82479
 // Name: VideoEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 10556 (VideoEmptyState)
+// Module 10557 (VideoEmptyState)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -14,10 +14,10 @@ let obj1 = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_700 };
 obj.container = obj;
-obj.placeholderImage = {};
+obj.placeholderImage = { showMobileGoLiveUpsell: null, goLiveUpsellVariant: null, audioOutputPresent: null };
 obj1 = { color: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD };
 obj.placeholderText = obj1;
-obj.buttonWrapper = { disabled: "center", sequence: "center" };
+obj.buttonWrapper = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.buttonPill = { borderRadius: importDefault(dependencyMap[6]).radii.round };
 let closure_9 = obj1.createStyles(obj);
@@ -33,7 +33,7 @@ export default function VideoEmptyState(arg0) {
   let type;
   ({ type, avError, removeSplashImage, stream } = arg0);
   const arg1 = stream;
-  let obj = { migrateAutoQuality: true, showMobileGoLiveUpsell: true, goLiveUpsellVariant: true, audioOutputPresent: true, nonContextualStreamOutputPresent: true, showTileVolumeIndicator: true };
+  let obj = { <string:2638338131>: "Text", <string:1644773484>: "resizeMode", <string:2891192807>: "from", <string:3261525480>: "Array", <string:1642582493>: "isArray", <string:3681898983>: "braintreemasterpasslanding" };
   ({ style, removeCloseButton } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

@@ -1,9 +1,9 @@
-// Module ID: 11814
-// Function ID: 91629
+// Module ID: 11815
+// Function ID: 91643
 // Name: metadata
 // Dependencies: []
 
-// Module 11814 (metadata)
+// Module 11815 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/gifting/halloween-card-small.png.js");
 

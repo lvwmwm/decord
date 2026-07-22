@@ -1,10 +1,10 @@
-// Module ID: 5400
-// Function ID: 46050
+// Module ID: 5130
+// Function ID: 44471
 // Name: open
-// Dependencies: [57, 31, 27, 4120, 5261, 1852]
+// Dependencies: [57, 31, 27, 4120, 4988, 1852]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5400 (open)
+// Module 5130 (open)
 import { AppContext } from "_slicedToArray";
 
 function open(contextMenu) {

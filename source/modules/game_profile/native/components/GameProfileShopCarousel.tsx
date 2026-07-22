@@ -1,10 +1,10 @@
-// Module ID: 8654
-// Function ID: 68495
+// Module ID: 8655
+// Function ID: 68507
 // Name: HorizontalSpacing
 // Dependencies: []
 // Exports: default
 
-// Module 8654 (HorizontalSpacing)
+// Module 8655 (HorizontalSpacing)
 function HorizontalSpacing() {
   let obj = {};
   obj = { width: arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_GAP };
@@ -36,7 +36,7 @@ function GameProfileShopCarouselContent(trackAction) {
   if (0 !== stateFromStoresArray.length) {
     obj = { style: tmp.container };
     obj = { style: tmp.header };
-    obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    obj1 = { cachedAt: "polite", edpbxy: "column" };
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.5DYPT8);
     const items2 = [callback(arg1(dependencyMap[13]).Text, obj1), ];
@@ -92,7 +92,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[5]).space.PX_8, marginHorizontal: -1 * importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-const obj1 = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+const obj1 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.header = obj1;
 const tmp2 = arg1(dependencyMap[3]);
 obj.card = { borderRadius: importDefault(dependencyMap[5]).radii.lg };

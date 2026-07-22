@@ -1,5 +1,5 @@
 // Module ID: 4793
-// Function ID: 41681
+// Function ID: 41690
 // Name: getTagValue
 // Dependencies: []
 
@@ -19,7 +19,7 @@ function getTagValue(arg0, arg1, arg2, arg3) {
     }
   }
 }
-const obj = { "Null": null, "Null": null, "Null": null };
+const obj = { 1817294689: null, 1374314880: null, 1415687929: null };
 arg5.default = {
   get(arg0, arg1) {
     let obj = {};

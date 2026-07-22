@@ -19,16 +19,16 @@ function checkWeek(getTime, getTime2, date) {
 }
 const _module = require(dependencyMap[0]);
 if (!_module) {
-  const obj = { default: _module };
+  let obj = { default: _module };
   let tmp3 = obj;
 } else {
   tmp3 = _module;
 }
-let closure_1 = { lastWeek: checkWeek, nextWeek: checkWeek };
+obj = { "Bool(false)": -117439546, "Bool(false)": 1107297141, "Bool(false)": 247419, "Bool(false)": 226810, "Bool(false)": 49121602, "Bool(false)": 58063872, lastWeek: checkWeek, nextWeek: checkWeek };
 
 export default function formatRelative(arg0, arg1, arg2, arg3) {
   let tmpResult = tmp;
-  if ("function" === typeof closure_1[arg0]) {
+  if ("function" === typeof obj[arg0]) {
     tmpResult = tmp(arg1, arg2, arg3);
   }
   return tmpResult;

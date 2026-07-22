@@ -1,10 +1,10 @@
-// Module ID: 13635
-// Function ID: 103313
+// Module ID: 13642
+// Function ID: 103346
 // Name: renderSuccessIcon
 // Dependencies: []
 // Exports: default
 
-// Module 13635 (renderSuccessIcon)
+// Module 13642 (renderSuccessIcon)
 function renderSuccessIcon() {
   const obj = { size: "sm", color: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE, secondaryColor: importDefault(dependencyMap[5]).colors.WHITE };
   return callback(arg1(dependencyMap[4]).CircleCheckIcon, obj);
@@ -72,7 +72,7 @@ function GuildCard(guildIds) {
     }
     return str;
   }), items3);
-  obj1 = {};
+  obj1 = { cachedAt: false, edpbxy: 700 };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj1.children = intl3.format(arg1(dependencyMap[10]).t.0fkj8J, { count: guildIds.length });
   const items4 = [callback(arg1(dependencyMap[11]).Text, obj1), ];
@@ -85,7 +85,7 @@ function GuildCard(guildIds) {
   obj4.color = str2;
   obj4.children = stringResult;
   const items5 = [callback(arg1(dependencyMap[11]).Text, obj4), ];
-  const obj5 = { <string:1643205302>: "contain", <string:1415816450>: "100%", <string:4283523744>: 34, style: tmp.guildSummary };
+  const obj5 = { style: tmp.guildSummary };
   const intl4 = arg1(dependencyMap[10]).intl;
   const t = arg1(dependencyMap[10]).t;
   const obj6 = { guildName: str };
@@ -165,13 +165,12 @@ export default function BaseUpsellActionSheet(toastContent) {
   obj = { style: tmp.title, children: title };
   const items1 = [callback(arg1(dependencyMap[11]).Text, obj), callback(arg1(dependencyMap[11]).Text, { style: tmp.description, children: subtitle }), callback(GuildCard, { guildIds: affectedGuildIds, direction, onPress: onCardPress }), ];
   const obj2 = { style: tmp.buttonsContainer };
-  const obj3 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", text: confirmText, onPress: callback };
-  const items2 = [callback(arg1(dependencyMap[17]).Button, obj3), ];
-  const obj4 = { "Bool(true)": null, "Bool(true)": null };
+  const items2 = [callback(arg1(dependencyMap[17]).Button, { text: confirmText, onPress: callback }), ];
+  const obj3 = {};
   const intl = arg1(dependencyMap[10]).intl;
-  obj4.text = intl.string(arg1(dependencyMap[10]).t.X1rGEm);
-  obj4.onPress = callback1;
-  items2[1] = callback(arg1(dependencyMap[17]).Button, obj4);
+  obj3.text = intl.string(arg1(dependencyMap[10]).t.X1rGEm);
+  obj3.onPress = callback1;
+  items2[1] = callback(arg1(dependencyMap[17]).Button, obj3);
   obj2.children = items2;
   items1[3] = callback2(closure_5, obj2);
   obj.children = items1;

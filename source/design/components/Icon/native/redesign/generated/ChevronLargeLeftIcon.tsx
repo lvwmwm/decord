@@ -1,10 +1,10 @@
-// Module ID: 9581
-// Function ID: 74639
+// Module ID: 9582
+// Function ID: 74652
 // Name: ChevronLargeLeftIcon
 // Dependencies: []
 // Exports: ChevronLargeLeftIcon
 
-// Module 9581 (ChevronLargeLeftIcon)
+// Module 9582 (ChevronLargeLeftIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChevronLargeLeftIcon.tsx");

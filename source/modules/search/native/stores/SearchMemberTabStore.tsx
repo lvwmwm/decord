@@ -1,9 +1,9 @@
-// Module ID: 11398
-// Function ID: 88639
+// Module ID: 11399
+// Function ID: 88652
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11398 (_isNativeReflectConstruct)
+// Module 11399 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -208,7 +208,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
       value = new ctor();
     }
     const result = map.set(id, value);
-    let obj = { radius: null, withMutualGuilds: null };
+    let obj = { -9223372036854775808: null, 9223372036854775807: null };
     obj = { guild: guildId, strict: true };
     let tmp5;
     if (null != threadId) {

@@ -6,7 +6,7 @@
 
 // Module 1836 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: true, 1387159956: true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { y: "<string:1102315522>", DateToSystemTimezoneSetter: "<string:1102315522>", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");

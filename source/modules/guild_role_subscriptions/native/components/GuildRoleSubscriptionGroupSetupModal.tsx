@@ -1,9 +1,9 @@
-// Module ID: 16342
-// Function ID: 126090
+// Module ID: 16350
+// Function ID: 126132
 // Name: _createGroupFromStore
 // Dependencies: []
 
-// Module 16342 (_createGroupFromStore)
+// Module 16350 (_createGroupFromStore)
 function _createGroupFromStore() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);

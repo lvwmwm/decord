@@ -1,10 +1,10 @@
-// Module ID: 13250
-// Function ID: 100566
+// Module ID: 13257
+// Function ID: 100599
 // Name: updateSaturation
 // Dependencies: []
 // Exports: updateSaturation
 
-// Module 13250 (updateSaturation)
+// Module 13257 (updateSaturation)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/themes/native/updateSaturation.tsx");

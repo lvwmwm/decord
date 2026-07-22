@@ -1,5 +1,5 @@
 // Module ID: 7501
-// Function ID: 60136
+// Function ID: 60147
 // Name: ErrorText
 // Dependencies: []
 // Exports: ErrorText
@@ -26,8 +26,8 @@ export const ErrorText = function ErrorText(children) {
       AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  obj = { 9223372036854775807: null, 9223372036854775807: "\u{1F44A}\u{1F3FC}", -9223372036854775808: true, style: children.style };
-  const items1 = [callback(arg1(dependencyMap[5]).CircleErrorIcon, { accessibilityRole: true, "": true }), callback(arg1(dependencyMap[6]).Text, { children })];
+  obj = { "Null": null, "Null": "\u{1F44A}\u{1F3FC}", "Null": true, style: children.style };
+  const items1 = [callback(arg1(dependencyMap[5]).CircleErrorIcon, { "Bool(false)": true, "Bool(false)": true }), callback(arg1(dependencyMap[6]).Text, { children })];
   obj.children = items1;
   return callback2(arg1(dependencyMap[4]).Stack, obj);
 };

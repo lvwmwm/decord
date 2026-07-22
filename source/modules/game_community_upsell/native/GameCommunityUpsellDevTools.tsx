@@ -1,10 +1,10 @@
-// Module ID: 14467
-// Function ID: 109012
+// Module ID: 14475
+// Function ID: 109055
 // Name: MultiGuildDevTools
 // Dependencies: []
 // Exports: default
 
-// Module 14467 (MultiGuildDevTools)
+// Module 14475 (MultiGuildDevTools)
 function MultiGuildDevTools() {
   let dismissedCount;
   let guildsCount;
@@ -51,9 +51,9 @@ function MultiGuildDevTools() {
   obj = { style: tmp.container };
   obj = { style: tmp.scrollView };
   obj1 = { style: tmp.section };
-  const obj2 = { "Bool(false)": "<string:1091633153>", "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9pbnRs" };
+  const obj2 = { -9223372036854775808: true, 9223372036854775807: true };
   if (0 === mapped.length) {
-    let mapped1 = callback2(callback(dependencyMap[12]).TableRow, { <string:1650248762>: true, <string:827482716>: true, <string:1637975680>: true });
+    let mapped1 = callback2(callback(dependencyMap[12]).TableRow, { isRecording: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", microphoneEnabled: null, isUploading: "fc5445d4920f9a3bd98dddd962c2e0be" });
   } else {
     mapped1 = mapped.map((detectableAppName) => {
       const obj = { label: detectableAppName.detectableAppName };
@@ -77,18 +77,18 @@ function MultiGuildDevTools() {
   obj1.children = callback2(callback(dependencyMap[11]).TableRowGroup, obj2);
   const items2 = [callback2(closure_3, obj1), , ];
   const obj3 = { style: tmp.section };
-  const obj4 = { "Bool(false)": "<string:16777808>", "Bool(false)": "<string:39243075>" };
-  const obj5 = { <string:1650248762>: "5f7c1f2fd36ae64fe020491f66a557d1", <string:827482716>: "es-ES.messages.5f7c1f2fd36ae64fe020491f66a557d1.compiled.messages", <string:1637975680>: "jsona", subLabel: String(guildsCount) };
+  const obj4 = { -9223372036854775808: "mi", 9223372036854775807: "isArrayBuffer" };
+  const obj5 = { subLabel: String(guildsCount) };
   const items3 = [callback2(callback(dependencyMap[12]).TableRow, obj5), , ];
-  const obj6 = { <string:1650248762>: "463e8dec7c923b7fcc98dc04c7d10d6b", <string:827482716>: "fi.messages.463e8dec7c923b7fcc98dc04c7d10d6b.compiled.messages", <string:1637975680>: "jsona", subLabel: String(dismissedCount) };
+  const obj6 = { subLabel: String(dismissedCount) };
   items3[1] = callback2(callback(dependencyMap[12]).TableRow, obj6);
-  const obj7 = { <string:1650248762>: true, <string:827482716>: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", <string:1637975680>: null, subLabel: str };
+  const obj7 = { isRecording: "isArray", microphoneEnabled: "Array", isUploading: "Text", subLabel: str };
   items3[2] = callback2(callback(dependencyMap[12]).TableRow, obj7);
   obj4.children = items3;
   obj3.children = callback3(callback(dependencyMap[11]).TableRowGroup, obj4);
   items2[1] = callback2(closure_3, obj3);
   const obj8 = { style: tmp.section };
-  const obj9 = { "Bool(false)": null, "Bool(false)": null };
+  const obj9 = {};
   const obj10 = { onPress: callback, icon: callback2(callback(dependencyMap[13]).RefreshIcon, {}), trailing: callback2(callback(dependencyMap[14]).TableRowArrow, {}) };
   const items4 = [callback2(callback(dependencyMap[12]).TableRow, obj10), , , ];
   const obj11 = {

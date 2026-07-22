@@ -1,5 +1,5 @@
 // Module ID: 6819
-// Function ID: 53771
+// Function ID: 53782
 // Name: ShopVariantsReturnStyle
 // Dependencies: []
 

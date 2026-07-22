@@ -1,10 +1,10 @@
-// Module ID: 13677
-// Function ID: 103550
+// Module ID: 13684
+// Function ID: 103583
 // Name: FamilyCenterActivityTotal
 // Dependencies: []
 // Exports: default
 
-// Module 13677 (FamilyCenterActivityTotal)
+// Module 13684 (FamilyCenterActivityTotal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));

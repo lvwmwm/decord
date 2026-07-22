@@ -1,10 +1,10 @@
-// Module ID: 12328
-// Function ID: 94409
+// Module ID: 12333
+// Function ID: 94437
 // Name: handlePress
 // Dependencies: []
 // Exports: default
 
-// Module 12328 (handlePress)
+// Module 12333 (handlePress)
 function handlePress() {
   let obj = importDefault(dependencyMap[4]);
   obj = {};
@@ -20,10 +20,10 @@ const _module2 = require(dependencyMap[2]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[3]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.fractionalPremiumBanner = obj;
-const obj1 = { 1686368849: 2034307539, -1331639198: 1912603050, 1384378961: 24, -1558734823: 24, 1369504610: 1280065793, 996344831: 1750204417, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[3]).radii.xxl };
+const obj1 = { height: -1429651183, marginLeft: 410124289, marginRight: 402653184, flexDirection: 16777216, alignItems: 21823553, marginLeft: -1480502784, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[3]).radii.xxl };
 obj.fpDurationPill = obj1;
-obj.fpDurationText = { zIndex: true, useAngle: true };
-obj.fpUnavailable = { "Bool(true)": "values", "Bool(true)": "Array" };
+obj.fpDurationText = { marginLeft: true, marginRight: true };
+obj.fpUnavailable = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
 obj.fpUnavailableTextNoCountdown = { textAlign: "center" };
 let closure_7 = _module2.createStyles(obj);
 const _module3 = require(dependencyMap[9]);

@@ -1,5 +1,5 @@
 // Module ID: 7125
-// Function ID: 57249
+// Function ID: 57260
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -64,7 +64,7 @@ let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = {};
+let closure_10 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 let closure_11 = null;
 let closure_12 = false;
 let closure_13 = null;
@@ -440,7 +440,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
     }
   },
   LOGOUT: function handleLogout() {
-    let closure_10 = {};
+    let closure_10 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
     let closure_14 = false;
     let closure_15 = null;
     let closure_12 = false;

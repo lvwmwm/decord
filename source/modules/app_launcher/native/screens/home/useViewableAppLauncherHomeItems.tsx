@@ -1,10 +1,10 @@
-// Module ID: 11195
-// Function ID: 87217
+// Module ID: 11196
+// Function ID: 87230
 // Name: useViewableAppLauncherHomeItems
 // Dependencies: []
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 11195 (useViewableAppLauncherHomeItems)
+// Module 11196 (useViewableAppLauncherHomeItems)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/app_launcher/native/screens/home/useViewableAppLauncherHomeItems.tsx");

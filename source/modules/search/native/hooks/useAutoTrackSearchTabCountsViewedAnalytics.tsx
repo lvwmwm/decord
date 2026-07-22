@@ -1,10 +1,10 @@
-// Module ID: 15290
-// Function ID: 116269
+// Module ID: 15298
+// Function ID: 116312
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
 // Dependencies: []
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 15290 (useAutoTrackSearchTabCountsViewedAnalytics)
+// Module 15298 (useAutoTrackSearchTabCountsViewedAnalytics)
 let closure_2 = importAll(dependencyMap[0]);
 const SearchTabs = arg1(dependencyMap[1]).SearchTabs;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");

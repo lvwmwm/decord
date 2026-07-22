@@ -1,15 +1,15 @@
-// Module ID: 12811
-// Function ID: 98125
+// Module ID: 12818
+// Function ID: 98158
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeHeart
 
-// Module 12811 (items)
+// Module 12818 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = ["isArray", "isArray", "isArray"];
 let closure_5 = [];
-const items = [{ "Null": "Array", "Null": "isArray" }, { "Null": "\u{1F4A0}", "Null": 6 }, {}];
+const items = [{ accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "\u{1F4A0}", s: 6 }, {}];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeHeart.tsx");
 
@@ -22,7 +22,7 @@ export const GuildBadgeHeart = function GuildBadgeHeart(primaryTintColor) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false };
+  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
   let obj1 = arg1(dependencyMap[2]);
@@ -34,7 +34,7 @@ export const GuildBadgeHeart = function GuildBadgeHeart(primaryTintColor) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
-  const items = [callback(arg1(dependencyMap[3]).Path, {}), , , , , , ];
+  const items = [callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null }), , , , , , ];
   obj1 = { d: "M15 4h-1V3h-1V2H9v1H7V2H3v1H2v1H1v5h1v2h1v1h2v1h2v1h2v-1h2v-1h2v-1h1V9h1V4Z", fill: primaryColorsTransformed[1] };
   items[1] = callback(arg1(dependencyMap[3]).Path, obj1);
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M15 4h-1v5h1V4ZM14 9h-1v2h1V9ZM3 9H2v2h1V9ZM13 11h-2v1h2v-1ZM11 12H9v1h2v-1ZM9 13H7v1h2v-1ZM7 12H5v1h2v-1ZM5 11H3v1h2v-1Z", fill: primaryColorsTransformed[0] });

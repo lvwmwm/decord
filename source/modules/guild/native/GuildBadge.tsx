@@ -1,9 +1,9 @@
-// Module ID: 9163
-// Function ID: 71807
+// Module ID: 9164
+// Function ID: 71820
 // Name: checkGuildForFeature
-// Dependencies: [297467904, 79429632, 258736128, 601161728, 283967488, 604766208, 126746624, 604962816, 606666752, 603193344]
+// Dependencies: [297467904, 79429632, 258736128, 601227264, 283967488, 604831744, 126746624, 605028352, 606732288, 603258880]
 
-// Module 9163 (checkGuildForFeature)
+// Module 9164 (checkGuildForFeature)
 let PARTNERED;
 let VERIFIED;
 function checkGuildForFeature(guild, PARTNERED) {
@@ -52,7 +52,7 @@ class GuildBadge {
       tmp = GuildBadge;
       MEDIUM = GuildBadge.Sizes.MEDIUM;
     }
-    obj = {};
+    obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
     tmp2 = null;
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);

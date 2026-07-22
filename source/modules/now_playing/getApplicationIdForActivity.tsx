@@ -1,10 +1,10 @@
-// Module ID: 12554
-// Function ID: 96528
+// Module ID: 12559
+// Function ID: 96556
 // Name: getApplicationIdForActivity
 // Dependencies: []
 // Exports: default
 
-// Module 12554 (getApplicationIdForActivity)
+// Module 12559 (getApplicationIdForActivity)
 const SpotifyApplication = require(dependencyMap[0]).SpotifyApplication;
 let closure_3 = require(dependencyMap[1]).TWITCH_APPLICATION_ID_PREFIX;
 let closure_4 = require(dependencyMap[2]).XBOX_APPLICATION_ID_PREFIX;

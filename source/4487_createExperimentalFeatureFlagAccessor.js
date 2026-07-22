@@ -1,10 +1,10 @@
 // Module ID: 4487
-// Function ID: 39591
+// Function ID: 39599
 // Name: createExperimentalFeatureFlagAccessor
 // Dependencies: []
 
 // Module 4487 (createExperimentalFeatureFlagAccessor)
-let closure_0 = { experiment: {}, stable: {} };
+let closure_0 = { experiment: { 0: "<string:3416080896>", 9223372036854775807: "<string:2361720833>", 0: "<string:2655125505>", 9223372036854775807: "<string:3758096843>", 9223372036854775807: "<string:1358954965>", 0: "<string:2101413506>", 9223372036854775807: "<string:1358955083>" }, stable: {} };
 function createExperimentalFeatureFlagAccessor(androidResetScreenShadowStateOnOrientationChangeEnabled, arg1) {
   let closure_0 = androidResetScreenShadowStateOnOrientationChangeEnabled;
   let closure_1 = arg1;
@@ -80,5 +80,5 @@ Object.defineProperty(obj, "ios26AllowInteractionsDuringTransition", {
 obj.experiment = obj;
 obj.stable = {};
 arg5.default = obj;
-arg5.compatibilityFlags = { "Null": "Small", "Null": "sm", "Null": "Placeholder" };
+arg5.compatibilityFlags = {};
 arg5.featureFlags = obj;

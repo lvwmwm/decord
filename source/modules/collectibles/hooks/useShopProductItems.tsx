@@ -1,10 +1,10 @@
-// Module ID: 8199
-// Function ID: 64850
+// Module ID: 8201
+// Function ID: 64863
 // Name: ItemsSortingHat
 // Dependencies: []
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 8199 (ItemsSortingHat)
+// Module 8201 (ItemsSortingHat)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

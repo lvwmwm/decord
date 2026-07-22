@@ -1,10 +1,10 @@
-// Module ID: 16290
-// Function ID: 125732
+// Module ID: 16298
+// Function ID: 125774
 // Name: useRoleSubscriptionFormat
 // Dependencies: []
 // Exports: default
 
-// Module 16290 (useRoleSubscriptionFormat)
+// Module 16298 (useRoleSubscriptionFormat)
 let closure_2 = importAll(dependencyMap[0]);
 const hasPermission = arg1(dependencyMap[1]).hasPermission;
 let closure_4 = importDefault(dependencyMap[2]);

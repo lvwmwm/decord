@@ -1,10 +1,10 @@
-// Module ID: 9621
-// Function ID: 74924
+// Module ID: 9622
+// Function ID: 74937
 // Name: EmptyStateSticker
 // Dependencies: []
 // Exports: default
 
-// Module 9621 (EmptyStateSticker)
+// Module 9622 (EmptyStateSticker)
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
   const animated = arg1(dependencyMap[9]).useShouldAnimateSticker(sticker.isFocused);
@@ -26,7 +26,7 @@ const PremiumUpsellTypes = arg1(dependencyMap[6]).PremiumUpsellTypes;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 const tmp3 = arg1(dependencyMap[7]);
-let closure_13 = arg1(dependencyMap[8]).createStyles({ header: { "Null": null, "Null": null }, blurb: { SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME: "errExpectingATEXT", SCROLL_EVENT_TIMER_MS: "j", cutoutBottomRightSize: "MiniaturesSpotIllustration" }, premiumButton: { sr: 1100505555, HTTP: 126701, source: 25724, split: 2560, accessible: 6400 }, nitroWheel: { width: 32 }, stickersRow: { "Null": 7, "Null": 370 }, sticker: { paddingHorizontal: 2 } });
+let closure_13 = arg1(dependencyMap[8]).createStyles({ header: { value: null, on: null }, blurb: {}, premiumButton: { flexDirection: -1102997407, alignItems: 2080375278, padding: 100, backgroundColor: 10, borderRadius: 25 }, nitroWheel: { width: 32 }, stickersRow: { -9223372036854775808: null, -9223372036854775808: "\u{1F43F}\uFE0F" }, sticker: { paddingHorizontal: 2 } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
 
@@ -54,7 +54,7 @@ export default function _default() {
     obj.track(constants.PREMIUM_UPSELL_VIEWED, obj);
   }, items1);
   obj = {};
-  obj = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.header };
+  obj = { style: tmp.header };
   const intl = arg1(closure_2[16]).intl;
   obj.children = intl.string(arg1(closure_2[16]).t.HEm04J);
   const items2 = [callback2(arg1(closure_2[15]).Text, obj), , , ];

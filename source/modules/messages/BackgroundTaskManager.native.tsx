@@ -1,5 +1,5 @@
 // Module ID: 6993
-// Function ID: 55902
+// Function ID: 55913
 // Name: startBackgroundTask
 // Dependencies: []
 // Exports: backgroundify

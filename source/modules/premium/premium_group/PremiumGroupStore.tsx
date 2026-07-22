@@ -1,9 +1,9 @@
-// Module ID: 12300
-// Function ID: 94201
+// Module ID: 12305
+// Function ID: 94229
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12300 (_isNativeReflectConstruct)
+// Module 12305 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -35,7 +35,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
 ({ PremiumGroupAPIErrorCodes: closure_9, TOTAL_PREMIUM_GROUP_MEMBER_SEATS: closure_10 } = arg1(dependencyMap[6]));
 const NOOP_NULL = arg1(dependencyMap[7]).NOOP_NULL;
-let closure_12 = { membersData: { isPurchasing: "absolute", purchasingProductId: -1, enabled: -1 }, membershipData: { removeYearlyUpsell: "absolute", flex: -1, paddingTop: -1 } };
+let closure_12 = { membersData: { "Null": "HTTP", "Null": "Date", "Null": "HTTP" }, membershipData: { "Bool(true)": "HTTP", "Bool(true)": "Date", "Bool(true)": "HTTP" } };
 let tmp3 = (Store) => {
   class PremiumGroupStore {
     constructor() {
@@ -214,7 +214,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
     }
   },
   LOGOUT: function reset() {
-    let closure_12 = { membersData: { isPurchasing: "absolute", purchasingProductId: -1, enabled: -1 }, membershipData: { removeYearlyUpsell: "absolute", flex: -1, paddingTop: -1 } };
+    let closure_12 = { membersData: { "Null": "HTTP", "Null": "Date", "Null": "HTTP" }, membershipData: { "Bool(true)": "HTTP", "Bool(true)": "Date", "Bool(true)": "HTTP" } };
   }
 });
 const obj = {
@@ -291,7 +291,7 @@ const obj = {
     }
   },
   LOGOUT: function reset() {
-    let closure_12 = { membersData: { isPurchasing: "absolute", purchasingProductId: -1, enabled: -1 }, membershipData: { removeYearlyUpsell: "absolute", flex: -1, paddingTop: -1 } };
+    let closure_12 = { membersData: { "Null": "HTTP", "Null": "Date", "Null": "HTTP" }, membershipData: { "Bool(true)": "HTTP", "Bool(true)": "Date", "Bool(true)": "HTTP" } };
   }
 };
 const tmp2 = arg1(dependencyMap[6]);

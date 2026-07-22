@@ -1,7 +1,7 @@
 // Module ID: 1806
 // Function ID: 19927
 // Name: Done
-// Dependencies: []
+// Dependencies: [654312288, 83886893]
 // Exports: default
 
 // Module 1806 (Done)
@@ -11,7 +11,7 @@ importDefault(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[0]);
 ({ StyleSheet, Text: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ doneButton: { <string:80682240>: "scalar", <string:80824832>: 4 }, doneButtonContainer: {} });
+const styles = StyleSheet.create({ doneButton: { "Bool(true)": "he", "Bool(true)": "<string:3685957888>" }, doneButtonContainer: {} });
 
 export default function Done(rippleRadius) {
   let button;

@@ -1,10 +1,10 @@
-// Module ID: 9179
-// Function ID: 71898
+// Module ID: 9180
+// Function ID: 71911
 // Name: ChangeEmailWarning
 // Dependencies: []
 // Exports: default
 
-// Module 9179 (ChangeEmailWarning)
+// Module 9180 (ChangeEmailWarning)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { <string:743828640>: "isArray", <string:3482404964>: "Array", <string:1940311795>: "constructor", <string:3335284451>: "values", padding: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.title = { marginTop: importDefault(dependencyMap[7]).space.PX_16 };
@@ -39,14 +39,14 @@ export default function ChangeEmailWarning(changeEmailReason) {
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let tmp5 = null;
   if (null != stateFromStores) {
-    obj = { onUnexpectedItemSize: null, minResolutionHeight: null };
+    obj = { "Bool(true)": true, "Bool(true)": true };
     obj = { style: tmp.container };
     const items2 = [callback(arg1(dependencyMap[12]).TrafficConeSpotIllustration, {}), , , ];
-    obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.hhR7gX);
     items2[1] = callback(arg1(dependencyMap[13]).Text, obj1);
-    const obj2 = { Opened: null, marginVertical: null, marginStart: null, marginEnd: null, style: tmp.body };
+    const obj2 = { alignSelf: null, justifyContent: null, alignItems: null, backgroundColor: null, style: tmp.body };
     const intl2 = arg1(dependencyMap[14]).intl;
     const obj3 = { hcArticle: closure_7 };
     const items3 = [intl2.format(arg1(dependencyMap[14]).t.rqWXUf, obj3), "\n\n", ];
@@ -55,12 +55,12 @@ export default function ChangeEmailWarning(changeEmailReason) {
     obj2.children = items3;
     items2[2] = callback2(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj2);
     const obj4 = { style: tmp.buttonContainer };
-    const obj5 = { 1263708765: 0.6, 1653359405: "400", 1162991478: null, -103325020: 0, -1907292063: 0 };
+    const obj5 = { 0: 0.6, 0: "400", 0: null, 9223372036854775807: 0, 9223372036854775807: 0 };
     const intl4 = arg1(dependencyMap[14]).intl;
     obj5.text = intl4.string(arg1(dependencyMap[14]).t.rwTBFs);
     obj5.onPress = tmp4;
     const items4 = [callback(arg1(dependencyMap[16]).Button, obj5), ];
-    const obj6 = { 1263708765: true, 1653359405: true, 1162991478: true, -103325020: true, -1907292063: true };
+    const obj6 = {};
     const intl5 = arg1(dependencyMap[14]).intl;
     obj6.text = intl5.string(arg1(dependencyMap[14]).t.ETE/oC);
     obj6.onPress = function onPress() {

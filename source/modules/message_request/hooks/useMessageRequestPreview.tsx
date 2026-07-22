@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 90209
+// Module ID: 11618
+// Function ID: 90222
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 6897, 5240, 6851, 566, 22, 8459, 2, 31]
+// Dependencies: [57, 31, 6897, 4967, 6851, 566, 22, 8460, 2, 31]
 // Exports: useMessageRequestPreview
 
-// Module 11617 (_createForOfIteratorHelperLoose)
+// Module 11618 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -136,7 +136,7 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
       if (null != lastMessageIdResult) {
         const message = message.getMessage(id, lastMessageIdResult);
         if (null != message) {
-          const obj = { 0: null, 9223372036854775807: null, message };
+          const obj = { WAVE_EMPHASIZE: "<string:1040334421>", overflow: "<string:1040334338>", message };
           return obj;
         }
       }

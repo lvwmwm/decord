@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 91811
+// Module ID: 11856
+// Function ID: 91825
 // Name: TwitchNeutralIcon
 // Dependencies: []
 // Exports: TwitchNeutralIcon
 
-// Module 11855 (TwitchNeutralIcon)
+// Module 11856 (TwitchNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TwitchNeutralIcon.tsx");

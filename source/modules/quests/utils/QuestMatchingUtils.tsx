@@ -1,10 +1,10 @@
-// Module ID: 10465
-// Function ID: 81029
+// Module ID: 10466
+// Function ID: 81042
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 10465 (_createForOfIteratorHelperLoose)
+// Module 10466 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

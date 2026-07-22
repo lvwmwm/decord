@@ -1,10 +1,10 @@
-// Module ID: 9773
-// Function ID: 75998
+// Module ID: 9774
+// Function ID: 76011
 // Name: getCurrentUserProfile
 // Dependencies: []
 // Exports: default
 
-// Module 9773 (getCurrentUserProfile)
+// Module 9774 (getCurrentUserProfile)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/utils/getCurrentUserProfile.tsx");

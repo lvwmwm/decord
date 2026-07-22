@@ -7,17 +7,17 @@
 // Module 1793 (useScrollState)
 const _module = require(dependencyMap[0]);
 ({ useCallback: closure_2, useEffect: closure_3 } = _module);
-let closure_4 = ["doneText", "button", "icon", "showArrows", "onNextCallback"];
+let closure_4 = [];
 let closure_5 = { code: "function pnpm_useScrollStateTs1(event){const{offset,layout,size}=this.__closure;offset.value=event.contentOffset.y;layout.value=event.layoutMeasurement;size.value=event.contentSize;}" };
 
 export default function useScrollState(arg0) {
   let obj = require(dependencyMap[1]);
   const sharedValue = obj.useSharedValue(0);
   const require = sharedValue;
-  const sharedValue1 = require(dependencyMap[1]).useSharedValue({ "Null": -536870861, "Null": -299892737 });
+  const sharedValue1 = require(dependencyMap[1]).useSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
   const dependencyMap = sharedValue1;
   const obj2 = require(dependencyMap[1]);
-  const sharedValue2 = require(dependencyMap[1]).useSharedValue({ "Null": -536870861, "Null": -299892737 });
+  const sharedValue2 = require(dependencyMap[1]).useSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
   const obj3 = require(dependencyMap[1]);
   const callback = require(dependencyMap[2]).useEventHandlerRegistration(arg0);
   const obj4 = require(dependencyMap[2]);

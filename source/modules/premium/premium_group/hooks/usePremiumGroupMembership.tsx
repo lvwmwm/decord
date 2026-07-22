@@ -1,10 +1,10 @@
-// Module ID: 12299
-// Function ID: 94197
+// Module ID: 12304
+// Function ID: 94225
 // Name: usePremiumGroupMembership
 // Dependencies: []
 // Exports: default
 
-// Module 12299 (usePremiumGroupMembership)
+// Module 12304 (usePremiumGroupMembership)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_4 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[4]);

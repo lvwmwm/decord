@@ -1,10 +1,10 @@
-// Module ID: 16079
-// Function ID: 123564
+// Module ID: 16087
+// Function ID: 123606
 // Name: handleTouch
 // Dependencies: []
 // Exports: default
 
-// Module 16079 (handleTouch)
+// Module 16087 (handleTouch)
 function handleTouch() {
   closure_7.dismiss();
 }
@@ -42,7 +42,7 @@ const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUN
 obj.description = { marginTop: importDefault(dependencyMap[8]).space.PX_24, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
 const obj2 = { marginTop: importDefault(dependencyMap[8]).space.PX_24, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
 obj.agreementDescription = { marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-const obj4 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj4 = { "Bool(false)": 40, "Bool(false)": 40, tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.navbarRight = obj4;
 const obj3 = { marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 obj.stickyFooter = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_16, marginTop: importDefault(dependencyMap[8]).space.PX_24, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
@@ -75,7 +75,7 @@ export default function NewTermsModal() {
     obj2.style = items1;
     obj2.contentContainerStyle = tmp.contentContainer;
     obj2.onTouchStart = handleTouch;
-    const obj3 = { <string:1558859557>: 700, <string:996770733>: 24 };
+    const obj3 = {};
     const intl = arg1(closure_2[10]).intl;
     obj3.children = intl.string(arg1(closure_2[10]).t.7glvXu);
     const items2 = [callback3(arg1(closure_2[18]).Text, obj3), , , , , , ];

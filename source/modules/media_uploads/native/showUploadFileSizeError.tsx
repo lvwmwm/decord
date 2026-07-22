@@ -1,21 +1,19 @@
 // Module ID: 7934
-// Function ID: 63354
+// Function ID: 63364
 // Name: showUploadFileSizeError
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [247332864, 520683520, 308543488, 305856512, 79429632, 250675200, 125829120, 520749056, 520814592, 520880128, 485228544, 43778048, 37093376, 520945664, 360513536, 270270464, 31260672, 521011200]
 // Exports: default
 
 // Module 7934 (showUploadFileSizeError)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import { FileUploadErrorTypes } from "result";
-import result from "result";
-import result from "result";
-
-({ AnalyticEvents: closure_5, AnalyticsSections: closure_6 } = result);
-({ PremiumTypes: closure_8, PremiumUserLimits: closure_9, PremiumUpsellTypes: closure_10 } = result);
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+({ AnalyticEvents: closure_5, AnalyticsSections: closure_6 } = arg1(dependencyMap[2]));
+const FileUploadErrorTypes = arg1(dependencyMap[3]).FileUploadErrorTypes;
+const tmp2 = arg1(dependencyMap[2]);
+({ PremiumTypes: closure_8, PremiumUserLimits: closure_9, PremiumUpsellTypes: closure_10 } = arg1(dependencyMap[4]));
 let closure_11 = { NITRO_UPSELL: "Nitro Upsell", OVER_MAX_SIZE: "Over Max Size" };
-result = result.fileFinishedImporting("modules/media_uploads/native/showUploadFileSizeError.tsx");
+const tmp3 = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/media_uploads/native/showUploadFileSizeError.tsx");
 
 export default function showUploadFileSizeError(arg0) {
   let analyticsLocations;

@@ -1,7 +1,7 @@
 // Module ID: 4266
-// Function ID: 37344
+// Function ID: 37352
 // Name: clamp
-// Dependencies: []
+// Dependencies: [704, 4292]
 
 // Module 4266 (clamp)
 

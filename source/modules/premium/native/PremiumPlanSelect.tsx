@@ -1,10 +1,10 @@
-// Module ID: 12353
-// Function ID: 94472
+// Module ID: 12358
+// Function ID: 94500
 // Name: getPlanDescription
 // Dependencies: []
 // Exports: default
 
-// Module 12353 (getPlanDescription)
+// Module 12358 (getPlanDescription)
 let Fonts;
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 function getPlanDescription(premiumTier) {
@@ -31,17 +31,17 @@ function BoostDeltaPriceTrailing(arg0) {
   let interval;
   let price;
   ({ price, interval } = arg0);
-  let obj = { "Bool(false)": null, "Bool(false)": 8, spacing: importDefault(dependencyMap[18]).space.PX_4 };
+  let obj = { "Bool(false)": "absolute", "Bool(false)": 8, spacing: importDefault(dependencyMap[18]).space.PX_4 };
   obj = { size: "xs", color: importDefault(dependencyMap[18]).colors.ICON_FEEDBACK_POSITIVE };
   const items = [callback4(arg1(dependencyMap[28]).NitroWheelIcon, obj), ];
-  obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+  obj = { cachedAt: "y", edpbxy: "isArray" };
   const intl = arg1(dependencyMap[19]).intl;
   if (interval === constants.MONTH) {
     rS8FA+ = arg1(dependencyMap[19]).t.AbOLNu;
   } else {
     rS8FA+ = arg1(dependencyMap[19]).t.rS8FA+;
   }
-  const obj2 = { hasMaxConnections: 141033474, isBoostOnlySubscription: null, children: price };
+  const obj2 = { cachedAt: 143327234, edpbxy: null, children: price };
   obj.children = intl.format(rS8FA_, { price: callback4(arg1(dependencyMap[29]).Text, obj2, "price") });
   items[1] = callback4(arg1(dependencyMap[29]).Text, obj);
   obj.children = items;
@@ -176,7 +176,7 @@ function PlanRow(plan) {
   if (flag3) {
     obj3 = {};
     if (tmp17) {
-      let tmp66Result = tmp66(importDefault(dependencyMap[39]), { "Null": false, "Null": false });
+      let tmp66Result = tmp66(importDefault(dependencyMap[39]), { "Null": true, "Null": true });
     } else if (tmp11) {
       const obj4 = { size: "xxs", color: importDefault(dependencyMap[18]).colors.ICON_DEFAULT };
       tmp66Result = tmp66(arg1(dependencyMap[28]).NitroWheelIcon, obj4);
@@ -188,13 +188,13 @@ function PlanRow(plan) {
     obj3.label = getPlanDescription(plan);
     obj3.subLabel = formatToPlainStringResult1;
     if (tmp3) {
-      const obj6 = { font: null, dx: null, color: token };
+      const obj6 = { "Null": "Array", "Null": "isArray", color: token };
       let tmp78 = callback4(arg1(dependencyMap[40]).ActivityIndicator, obj6);
     } else if (null != premiumTier2DeltaPriceString) {
       const obj7 = { price: premiumTier2DeltaPriceString, interval: plan.interval };
       tmp78 = callback4(BoostDeltaPriceTrailing, obj7);
     } else {
-      obj8 = { <string:1643205302>: "contain", <string:1415816450>: "100%", <string:4283523744>: 34, children: formatToPlainStringResult };
+      obj8 = { children: formatToPlainStringResult };
       tmp78 = callback4(arg1(dependencyMap[29]).Text, obj8);
     }
     obj3.trailing = tmp78;
@@ -206,7 +206,7 @@ function PlanRow(plan) {
     obj3.onPress = onPress;
     let tmp46Result = tmp46(tmp47(tmp48[38]).TableRow, obj3);
   } else {
-    const obj9 = { "Bool(false)": 0.55, "Bool(false)": 0, "Bool(false)": 3.896 };
+    const obj9 = { borderStyle: 0.55, borderWidth: 0, borderColor: 3.896 };
     let str3 = "none";
     if (!tmp47Result.isThemeDark(tmp10)) {
       str3 = "none";
@@ -245,7 +245,7 @@ function PlanRow(plan) {
     items3[3] = callback4(arg1(dependencyMap[35]).LegacyText, obj13);
     let tmp61 = null;
     if (tmp3) {
-      const obj14 = { font: null, dx: null, style: tmp.purchasingSpinner, color: token };
+      const obj14 = { "Null": "Array", "Null": "isArray", style: tmp.purchasingSpinner, color: token };
       tmp61 = callback4(arg1(dependencyMap[40]).ActivityIndicator, obj14);
     }
     items3[4] = tmp61;
@@ -311,9 +311,9 @@ function PlanSection(label) {
             obj = { fromStep: productId(tmp2[45]).PaymentFlowStep.PLAN_SELECT, toStep: productId(tmp2[45]).PaymentFlowStep.YEARLY_UPSELL, productId };
             callback(obj);
             obj = {
-              marginBottom: null,
-              flexGrow: null,
-              flexShrink: null,
+              0: null,
+              0: null,
+              9223372036854775807: null,
               importer() {
                       return arg0(tmp2[48])(tmp2[47], tmp2.paths).then((arg0) => {
                         let closure_0 = arg0.default;
@@ -384,9 +384,9 @@ function CurrentPlanRow(subscription) {
               obj = { fromStep: subscription(closure_2[45]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(closure_2[45]).PaymentFlowStep.YEARLY_UPSELL, productId: productIdFromSubscription };
               yearly(obj);
               obj = {
-                marginBottom: null,
-                flexGrow: null,
-                flexShrink: null,
+                0: null,
+                0: null,
+                9223372036854775807: null,
                 importer() {
                         return callback(paths[48])(paths[47], paths.paths).then((arg0) => {
                           let closure_0 = arg0.default;
@@ -561,33 +561,34 @@ const merged = Object.assign(importDefault(dependencyMap[16])(Fonts.DISPLAY_EXTR
 obj["marginTop"] = 16;
 obj["color"] = arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500;
 obj.header = obj;
-obj1 = { display: "M12 12H10.5V10.5H12V12Z", flexDirection: "#FCC0F4", marginTop: "M13.5 10.5H12V9H13.5V10.5Z", flexGrow: "#FCC0F4", flexShrink: "M15 9H13.5V7.5H15V9Z", height: "#FCC0F4", marginLeft: "M12 18H10.5V16.5H12V18Z", borderRadius: importDefault(dependencyMap[18]).radii.sm, backgroundColor: arg1(dependencyMap[17]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj1 = { <string:1369465220>: "M12 12H10.5V10.5H12V12Z", <string:4217439774>: "#FCC0F4", <string:1638320977>: "M13.5 10.5H12V9H13.5V10.5Z", <string:3882771414>: "#FCC0F4", <string:2690802681>: "M15 9H13.5V7.5H15V9Z", <string:1314542008>: "#FCC0F4", <string:4065459041>: "M12 18H10.5V16.5H12V18Z", borderRadius: importDefault(dependencyMap[18]).radii.sm, backgroundColor: arg1(dependencyMap[17]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.row = obj1;
 obj.rowDisabled = { opacity: 0.5 };
-obj.imgWumpusNitro = {};
-obj.imgBoost = {};
-obj.imgWumpusNitroBoost = { "Null": false, "Null": false };
-obj.imgWumpusNitroClassic = {};
-obj.imgWumpusNitroClassicBoost = { "Null": false, "Null": false };
-obj.imgWumpusNitroTier0 = {};
+obj.imgWumpusNitro = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
+obj.imgBoost = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
+obj.imgWumpusNitroBoost = { "Null": true, "Null": true };
+obj.imgWumpusNitroClassic = { "Null": "isArray", "Null": "c" };
+obj.imgWumpusNitroClassicBoost = { "Null": true, "Null": true };
+obj.imgWumpusNitroTier0 = { "Null": "isArray", "Null": "c" };
 const tmp7 = arg1(dependencyMap[14]);
 obj.rowText = { fontSize: 16, color: arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500 };
-const obj3 = { marginLeft: "isArray", width: "key", aspectRatio: "Array", fontFamily: Fonts.PRIMARY_SEMIBOLD };
-obj.rowPlanDescription = obj3;
-const obj4 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, fontFamily: Fonts.PRIMARY_MEDIUM };
+obj.rowPlanDescription = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
+const obj4 = { resizeMode: null, color: null, style: null, variant: null, fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.rowPlanDescriptionSubtext = obj4;
 obj.rowPrice = { marginLeft: "auto" };
-obj.purchasingSpinner = { overflow_top: false, GAME_SERVERS: false, leading: false, targetOrbAmount: false, subtitleLink: false, handleWaitForRemoteSession: false, targetOrbAmount: false };
-obj.container = { "Bool(false)": "<string:879886337>", "Bool(false)": "<string:771751936>" };
+obj.purchasingSpinner = { <string:1382672226>: false, <string:3949718378>: false, <string:1369504610>: false, <string:928094841>: false, <string:2985058826>: false, <string:1373970001>: false, <string:3965848119>: false };
+obj.container = { 9223372036854775807: "<string:879886337>", 0: "<string:771751936>" };
 const obj2 = { fontSize: 16, color: arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500 };
+const obj3 = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
 obj.currentPlanGradient = { marginTop: 20, borderRadius: importDefault(dependencyMap[18]).radii.sm };
-obj.currentPlanRow = { maxWidth: "isArray", paddingHorizontal: "constructor", width: "type", alignSelf: "isArray" };
-obj.loadingSpinnerContainer = { 9223372036854775807: 0, 618913616341: 0, 0: 0, 9223372036854775807: 0 };
-obj.offPlatformSubscriptionMessage = { margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+obj.currentPlanRow = { delete: "isArray", borderRadius: "constructor", paddingHorizontal: "type", width: "isArray" };
+obj.loadingSpinnerContainer = {};
+const obj6 = { HOUR: "%Float16Array%", DAY: "liveContainer", margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+obj.offPlatformSubscriptionMessage = obj6;
 obj.premiumHeaderLabel = { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, marginTop: 8 };
 const obj5 = { marginTop: 20, borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj.boostContainer = { rowGap: importDefault(dependencyMap[18]).space.PX_24 };
-obj.boostRowIcon = { "Null": false, "Null": false };
+obj.boostRowIcon = { "Null": true, "Null": true };
 let closure_33 = obj1.createStyles(obj);
 let closure_34 = { [importDefault(dependencyMap[24])]: "imgWumpusNitro", [importDefault(dependencyMap[26])]: "imgWumpusNitroBoost", [importDefault(dependencyMap[23])]: "imgWumpusNitroClassic", [importDefault(dependencyMap[25])]: "imgWumpusNitroClassicBoost", [importDefault(dependencyMap[22])]: "imgWumpusNitroTier0", [importDefault(dependencyMap[21])]: "imgBoost" };
 const items = [
@@ -724,7 +725,7 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
     return null;
   } else {
     if (!tmp3[0]) {
-      const obj5 = { style: tmp2.loadingSpinnerContainer, children: callback4(arg1(dependencyMap[40]).ActivityIndicator, { font: 397, dx: 97 }) };
+      const obj5 = { style: tmp2.loadingSpinnerContainer, children: callback4(arg1(dependencyMap[40]).ActivityIndicator, {}) };
       callback4(orderRequired, obj5);
     }
     if (isPaymentsBlocked) {
@@ -744,7 +745,7 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
         let tmp28 = null != first;
         if (tmp28) {
           obj9 = {};
-          const obj10 = { style: tmp2.premiumHeaderLabel };
+          const obj10 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp2.premiumHeaderLabel };
           const intl = arg1(dependencyMap[19]).intl;
           obj10.children = intl.string(arg1(dependencyMap[19]).t.ITurwY);
           const items4 = [callback4(arg1(dependencyMap[29]).Text, obj10), ];
@@ -801,8 +802,8 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
     }
   }
 });
-const obj6 = { rowGap: importDefault(dependencyMap[18]).space.PX_24 };
-const obj7 = {
+const obj7 = { rowGap: importDefault(dependencyMap[18]).space.PX_24 };
+const obj8 = {
   getLabel() {
     const intl = arg1(dependencyMap[19]).intl;
     return intl.string(arg1(dependencyMap[19]).t.A4BfLn);
@@ -920,7 +921,7 @@ export default function PremiumPlanSelectWithOrderCTX(isBoostPurchaseFlow) {
       obj2.children = callback4(arg1(dependencyMap[29]).Text, obj3);
       return callback4(closure_7, obj2);
     } else {
-      obj5 = { style: tmp.loadingSpinnerContainer, children: callback4(arg1(dependencyMap[40]).ActivityIndicator, { font: 397, dx: 97 }) };
+      obj5 = { style: tmp.loadingSpinnerContainer, children: callback4(arg1(dependencyMap[40]).ActivityIndicator, {}) };
       return callback4(closure_7, obj5);
     }
     const obj7 = arg1(dependencyMap[31]);

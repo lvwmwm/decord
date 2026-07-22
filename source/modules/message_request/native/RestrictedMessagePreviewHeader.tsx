@@ -1,10 +1,10 @@
-// Module ID: 15455
-// Function ID: 117898
+// Module ID: 15463
+// Function ID: 117941
 // Name: RestrictedMessagePreviewHeader
 // Dependencies: []
 // Exports: default
 
-// Module 15455 (RestrictedMessagePreviewHeader)
+// Module 15463 (RestrictedMessagePreviewHeader)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
@@ -30,7 +30,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
   let obj = importDefault(dependencyMap[7]);
   const name = obj.getName(user);
   let obj1 = importDefault(dependencyMap[7]);
-  const userTag = obj1.getUserTag(user, { allowSnowflake: true, gay-Latn-ID: true });
+  const userTag = obj1.getUserTag(user, { y: true, getEventLocationIconSource: true });
   const React = userTag;
   const items = [user.id, channel.id, analyticsLocations];
   const callback = React.useCallback(() => {
@@ -71,7 +71,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
   const intl2 = arg1(dependencyMap[18]).intl;
   obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.iXAna6);
   obj2.onPress = callback;
-  const obj3 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: name };
+  const obj3 = { cachedAt: "Array", edpbxy: "isArray", children: name };
   obj2.children = callback(arg1(dependencyMap[20]).Text, obj3);
   items3[1] = callback(arg1(dependencyMap[17]).PressableOpacity, obj2);
   let tmp9 = !user.isProvisional;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
     const intl3 = arg1(dependencyMap[18]).intl;
     obj4.accessibilityHint = intl3.string(arg1(dependencyMap[18]).t.y5MwJy);
     obj4.onPress = callback1;
-    const obj5 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: userTag };
+    const obj5 = { cachedAt: null, edpbxy: null, children: userTag };
     obj4.children = callback(arg1(dependencyMap[20]).Text, obj5);
     tmp9 = callback(arg1(dependencyMap[17]).PressableOpacity, obj4);
   }

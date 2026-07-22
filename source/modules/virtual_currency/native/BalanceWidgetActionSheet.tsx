@@ -1,10 +1,10 @@
-// Module ID: 9790
-// Function ID: 76065
+// Module ID: 9791
+// Function ID: 76078
 // Name: balance
 // Dependencies: []
 // Exports: default
 
-// Module 9790 (balance)
+// Module 9791 (balance)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, TouchableOpacity: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -28,18 +28,18 @@ let closure_12 = arg1(dependencyMap[26]).createStyles((color) => {
   obj1.lineHeight = num;
   obj1.textAlignVertical = "center";
   obj.balanceText = obj1;
-  const obj2 = { -9223372036854775808: "png", 0: "fr-NE", -9223372036854775808: "isStaticChannelRoute", 0: "r", marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
-  obj.content = obj2;
-  const obj3 = { 1632254648: "accessibilityLabel", 571757639: "r", 1722034423: "isArray", 1330709345: 24, 909075202: 24, 27676943: null, paddingTop: importDefault(dependencyMap[13]).space.PX_12, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
-  obj.header = obj3;
+  obj.content = { marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
+  const obj2 = { marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
+  obj.header = { paddingTop: importDefault(dependencyMap[13]).space.PX_12, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
   obj4 = { backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.round };
   obj.infoIconBackground = obj4;
+  const obj3 = { paddingTop: importDefault(dependencyMap[13]).space.PX_12, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
   obj.infoIconContainer = { position: "absolute", left: importDefault(dependencyMap[13]).space.PX_16, top: importDefault(dependencyMap[13]).space.PX_16, zIndex: 10 };
-  const obj5 = { position: "absolute", left: importDefault(dependencyMap[13]).space.PX_16, top: importDefault(dependencyMap[13]).space.PX_16, zIndex: 10 };
-  obj.promotionalBackground = { borderRadius: importDefault(dependencyMap[13]).radii.xl };
-  obj.promotionalBackgroundContainer = {};
+  const obj6 = { display: null, flexDirection: "07355a598097545c3503439dcc045f96", flexWrap: "ImageFileIcon", justifyContent: "png", alignItems: true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", borderRadius: importDefault(dependencyMap[13]).radii.xl };
+  obj.promotionalBackground = obj6;
+  obj.promotionalBackgroundContainer = { backgroundColor: true, borderWidth: true };
   obj.promotionalBannerAsset = {};
-  const obj7 = { "Null": "isPreviewingRoles", "Null": "%SetIteratorPrototype%", gap: importDefault(dependencyMap[13]).space.PX_12, marginBottom: importDefault(dependencyMap[13]).space.PX_64 };
+  const obj7 = { "Null": "RiotGamesNeutralIcon", "Null": "%Reflect.getPrototypeOf%", gap: importDefault(dependencyMap[13]).space.PX_12, marginBottom: importDefault(dependencyMap[13]).space.PX_64 };
   obj.promotionalBannerContainer = obj7;
   obj.promotionalBannerText = { color, fontFamily: constants.PRIMARY_BOLD };
   return obj;
@@ -184,7 +184,7 @@ export default function _default(balance) {
     items2[4] = tmp27Result;
     const obj16 = { style: tmp6.actions };
     ({ buttonText: obj24.text, onButtonPress: obj24.onPress } = primaryButtonConfig);
-    const items5 = [callback(arg1(dependencyMap[25]).Button, { _monthsRegex: true, overflow: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", messageHasObscurableMedia: null }), ];
+    const items5 = [callback(arg1(dependencyMap[25]).Button, { EMOJI_PICKER_EMOJI_CLICKED: "83f73ec48da0fa384732b494e560b028", overflow: "nl.messages.83f73ec48da0fa384732b494e560b028.compiled.messages", getOwnPropertyNames: "jsona" }), ];
     ({ buttonText: obj25.text, onButtonPress: obj25.onPress } = secondaryButtonConfig);
     items5[1] = callback(arg1(dependencyMap[25]).Button, {});
     obj16.children = items5;
@@ -201,7 +201,7 @@ export default function _default(balance) {
     obj19.resizeMode = "cover";
     let tmp12Result = tmp12(importDefault(dependencyMap[19]), obj19);
   } else {
-    const obj21 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000230329911188219, "Null": -172403270113748460000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039776031867697785, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112201225582, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122019556398, "Null": 0 };
+    const obj21 = { "Bool(true)": "2025-12-proportional-vad-indicator", "Bool(true)": "text", "Bool(true)": "", "Bool(true)": 255, "Bool(true)": 0, "Bool(true)": 256 };
     const obj22 = { uri: memo.backgroundVideo };
     obj21.source = obj22;
     obj21.poster = memo.backgroundImage;

@@ -1,10 +1,10 @@
-// Module ID: 12250
-// Function ID: 93952
+// Module ID: 12255
+// Function ID: 93980
 // Name: mapToUser
 // Dependencies: []
 // Exports: default
 
-// Module 12250 (mapToUser)
+// Module 12255 (mapToUser)
 function mapToUser(arg0) {
   const items = [arg0, user.getUser(arg0)];
   return items;
@@ -240,7 +240,7 @@ export default function ReferralProgramShareActionSheet() {
   obj12.children = hasError(arg1(dependencyMap[34]).Button, obj13);
   const tmp45 = hasError(arg1(dependencyMap[33]).ActivityIndicator, {});
   const tmp46 = View;
-  obj14 = { ind: null, PX_8: null, header: tmp25, footer: hasError(View, obj12) };
+  obj14 = { openDisableCommunication: null, freezeEnabled: null, header: tmp25, footer: hasError(View, obj12) };
   const obj15 = { style: tmp.searchBarContainer };
   const obj16 = { onChangeText: tmp4[1], onRemove: callback1, tags: memo1 };
   const tmp44Result = hasError(View, obj12);

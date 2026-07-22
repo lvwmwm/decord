@@ -1,10 +1,10 @@
-// Module ID: 11143
-// Function ID: 86656
+// Module ID: 11144
+// Function ID: 86669
 // Name: setAppLauncherA11yFocusReturnRef
-// Dependencies: [31260672, 535429120, 131072, 527826944, 855638016, 4026531845, 3707764767, 1493172225, 33554439, 1962934272, 31, 7365, 4151, 566, 2, 14718, 345088, 1036544, 473344, 2855168, 2855424, 1167872, 169984, 144896, 5376, 341504, 1484032, 1009664]
+// Dependencies: [31260672, 535494656, 131072, 527826944, 855638016, 4043309061, 3707764767, 1493172225, 33554439, 1962934272, 31, 7365, 4151, 566, 2, 14718, 345088, 1036544, 473344, 2855424, 2855680, 1167872, 169984, 144896, 5376, 341504, 1484032, 1009664]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 11143 (setAppLauncherA11yFocusReturnRef)
+// Module 11144 (setAppLauncherA11yFocusReturnRef)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -15,7 +15,7 @@ let obj1 = arg1(dependencyMap[6]);
 let obj = {};
 obj = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.onboardingRoundingView = obj;
-obj1 = { requestApplicationCommandIndex: "MASTERPASS_FLOW_FAILED", _milliseconds: "Could not initialize Masterpass flow.", _isEnabled: "visa", GiftCardStack3dIllustration: "mastercard", borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
+obj1 = { stopColor: "y", stopOpacity: "isArray", height: "constructor", width: "d", borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.onboardingHeader = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.onboardingNavigatorContent = { borderWidth: 2, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };

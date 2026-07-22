@@ -1,5 +1,5 @@
 // Module ID: 3881
-// Function ID: 32155
+// Function ID: 32157
 // Name: callDispose
 // Dependencies: []
 
@@ -25,7 +25,7 @@ arg5.callDispose = function callDispose(closure_0) {
           let _Object = Object;
           let tmp3 = arg0;
           let tmp4 = tmp8;
-          obj = { value: undefined };
+          obj = { "": 60, channel: 0, "": 0, value: undefined };
           let definePropertyResult = Object.defineProperty(obj, tmp9, obj);
           // continue
         }
@@ -36,6 +36,9 @@ arg5.callDispose = function callDispose(closure_0) {
     continue;
   }
   obj = {
+    "": 60,
+    channel: 0,
+    "": 0,
     value() {
       return "[disposed HybridObject]";
     }

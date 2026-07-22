@@ -1,10 +1,10 @@
-// Module ID: 14272
-// Function ID: 107846
+// Module ID: 14280
+// Function ID: 107889
 // Name: UserSettingsDebugLogs
 // Dependencies: []
 // Exports: default
 
-// Module 14272 (UserSettingsDebugLogs)
+// Module 14280 (UserSettingsDebugLogs)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ RefreshControl: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -14,9 +14,9 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.wrap = obj;
+const obj1 = { <string:3645437925>: "<string:1912603085>", <string:1554053987>: true, <string:1672411473>: true, padding: importDefault(dependencyMap[6]).space.PX_16 };
+obj.searchWrap = obj1;
 const tmp3 = arg1(dependencyMap[4]);
-obj.searchWrap = { padding: importDefault(dependencyMap[6]).space.PX_16 };
-const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.shareButton = { backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, marginLeft: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, height: arg1(dependencyMap[7]).InputHeights.MD, width: arg1(dependencyMap[7]).InputHeights.MD, justifyContent: "center", alignItems: "center" };
 const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, marginLeft: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, height: arg1(dependencyMap[7]).InputHeights.MD, width: arg1(dependencyMap[7]).InputHeights.MD, justifyContent: "center", alignItems: "center" };
 obj.list = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
@@ -97,7 +97,7 @@ export default function UserSettingsDebugLogs() {
   const callback1 = React.useCallback((item) => {
     item = item.item;
     let obj = { style: tmp.log };
-    obj = { delete: null, dispatch: null, raw: null, style: first1.code };
+    obj = { style: tmp.code };
     const items = [new Date(item.time).toISOString(), " ", ];
     const timing = item.timing;
     let str = "";
@@ -115,7 +115,7 @@ export default function UserSettingsDebugLogs() {
     obj.children = items1;
     return first1(memo, obj, item.index);
   }, items2);
-  obj = { "Null": "useStateFromStores", "Null": "Array", onChange: tmp10[1], defaultValue: first1, trailingIcon: arg1(dependencyMap[14]).FiltersHorizontalIcon };
+  obj = { "Null": false, "Null": false, onChange: tmp10[1], defaultValue: first1, trailingIcon: arg1(dependencyMap[14]).FiltersHorizontalIcon };
   const obj1 = {};
   const intl = arg1(dependencyMap[15]).intl;
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[15]).t.+1H47t);

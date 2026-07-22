@@ -1,9 +1,9 @@
-// Module ID: 12867
-// Function ID: 98335
+// Module ID: 12874
+// Function ID: 98368
 // Name: PremiumSKUFeature
 // Dependencies: []
 
-// Module 12867 (PremiumSKUFeature)
+// Module 12874 (PremiumSKUFeature)
 let closure_0 = importDefault(dependencyMap[1]);
 class PremiumSKUFeature {
   constructor(arg0, arg1, arg2) {
@@ -11,7 +11,7 @@ class PremiumSKUFeature {
     this.name = global;
     this.description = importDefault;
     this.getFeatureValue = arg1;
-    obj = { "Null": "absolute", "Null": -1, "Null": -1 };
+    obj = { "Null": "HTTP", "Null": "Date", "Null": "HTTP" };
     obj.value = arg1;
     definePropertyResult = Object.defineProperty(this, "getFeatureValue", obj);
     return;

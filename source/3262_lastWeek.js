@@ -6,12 +6,12 @@
 
 // Module 3262 (lastWeek)
 const obj = {
-  areIntervalsOverlapping: " h\u00E9ttel ezel\u0151tt",
-  clamp: " h\u00E9t m\u00FAlva",
-  closestIndexTo: " hete",
-  closestTo: " h\u00F3nappal ezel\u0151tt",
-  compareAsc: " h\u00F3nap m\u00FAlva",
-  compareDesc: " h\u00F3napja",
+  "Bool(false)": "children",
+  "Bool(false)": "Path",
+  "Bool(false)": "r",
+  "Bool(false)": "isArray",
+  "Bool(false)": "id",
+  "Bool(false)": "Path",
   lastWeek(getUTCDay) {
     const uTCDay = getUTCDay.getUTCDay();
     if (0 === uTCDay) {

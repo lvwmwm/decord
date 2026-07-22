@@ -1,9 +1,9 @@
-// Module ID: 14263
-// Function ID: 107805
+// Module ID: 14271
+// Function ID: 107848
 // Name: handleLogout
 // Dependencies: []
 
-// Module 14263 (handleLogout)
+// Module 14271 (handleLogout)
 function handleLogout() {
   const Storage = require(dependencyMap[1]).Storage;
   const result = Storage.set(require(dependencyMap[2]).StorageKeys.LOGOUT_TIMESTAMP_KEY, new Date().getTime());

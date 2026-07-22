@@ -1,10 +1,10 @@
-// Module ID: 10820
-// Function ID: 84020
+// Module ID: 10821
+// Function ID: 84033
 // Name: _installApplicationOnDemandIfNeeded
 // Dependencies: []
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 10820 (_installApplicationOnDemandIfNeeded)
+// Module 10821 (_installApplicationOnDemandIfNeeded)
 function _installApplicationOnDemandIfNeeded() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

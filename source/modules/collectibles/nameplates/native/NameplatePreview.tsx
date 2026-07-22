@@ -1,10 +1,10 @@
-// Module ID: 9797
-// Function ID: 76080
+// Module ID: 9798
+// Function ID: 76093
 // Name: NameplatePreview
 // Dependencies: []
 // Exports: NameplatePreview
 
-// Module 9797 (NameplatePreview)
+// Module 9798 (NameplatePreview)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[4]);
 let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = {};
+  obj = { <string:2599080275>: false, <string:3505642171>: null, <string:3757145625>: "\u{1F43F}\uFE0F", <string:1221882832>: 7, <string:1319336657>: 370 };
   let num = 0;
   if (arg0) {
     num = importDefault(dependencyMap[6]).radii.sm;
@@ -131,7 +131,7 @@ export const NameplatePreview = function NameplatePreview(aria-hidden) {
   const items4 = [tmp16, ];
   let tmp22 = null == tmp12;
   if (tmp22) {
-    const obj5 = { "Null": true, "Null": 15.1, "Null": 253, children: pendingGlobalName };
+    const obj5 = { children: pendingGlobalName };
     tmp22 = callback(arg1(dependencyMap[17]).Text, obj5);
   }
   items4[1] = tmp22;

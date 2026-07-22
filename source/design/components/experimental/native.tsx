@@ -1,9 +1,9 @@
-// Module ID: 8365
-// Function ID: 66685
+// Module ID: 8366
+// Function ID: 66697
 // Name: TwinButtons
 // Dependencies: []
 
-// Module 8365 (TwinButtons)
+// Module 8366 (TwinButtons)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("design/components/experimental/native.tsx");
 

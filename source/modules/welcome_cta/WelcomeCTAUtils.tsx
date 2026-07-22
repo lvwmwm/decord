@@ -1,5 +1,5 @@
 // Module ID: 7682
-// Function ID: 61342
+// Function ID: 61352
 // Name: pickHelloSticker
 // Dependencies: []
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker

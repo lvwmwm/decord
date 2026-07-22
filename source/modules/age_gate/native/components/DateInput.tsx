@@ -1,9 +1,9 @@
-// Module ID: 15859
-// Function ID: 121376
+// Module ID: 15867
+// Function ID: 121419
 // Name: subtractYearsFromToday
 // Dependencies: []
 
-// Module 15859 (subtractYearsFromToday)
+// Module 15867 (subtractYearsFromToday)
 function subtractYearsFromToday(arg0) {
   const obj = importDefault(dependencyMap[3])();
   const result = obj.set("year", obj.year() - arg0);

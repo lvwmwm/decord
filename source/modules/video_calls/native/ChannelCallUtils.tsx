@@ -1,10 +1,10 @@
-// Module ID: 15764
-// Function ID: 120543
+// Module ID: 15772
+// Function ID: 120586
 // Name: voiceSettings
 // Dependencies: []
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 15764 (voiceSettings)
+// Module 15772 (voiceSettings)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ UserSettingsSections: closure_4, AnalyticsPages: closure_5, InstantInviteSources: closure_6, RPC_APPLICATION_LOGGING_CATEGORY: closure_7 } = arg1(dependencyMap[2]));

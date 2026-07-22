@@ -1,5 +1,5 @@
 // Module ID: 4227
-// Function ID: 37053
+// Function ID: 37061
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -146,7 +146,7 @@ export default function DirectVideo(streamId, onContainerResized) {
     flag2 = true;
   }
   let closure_4 = flag2;
-  let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  let obj = { "Bool(true)": "Text", "Bool(true)": "resizeMode", "Bool(true)": "from", "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(streamId, obj);
   let React;
@@ -156,7 +156,7 @@ export default function DirectVideo(streamId, onContainerResized) {
   const ref = React.useRef(null);
   React = ref;
   jsx = React.useRef(null);
-  closure_7 = React.useRef({ "Null": -536870861, "Null": -299892737 });
+  closure_7 = React.useRef({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
   obj = { streamId, paused: flag, onReady, onResize, onContainerResized };
   closure_8 = React.useRef(obj);
   const items = [flag2];

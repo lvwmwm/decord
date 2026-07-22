@@ -13,7 +13,7 @@ function instrumentDOM() {
     const listener = _document.addEventListener("click", tmp6, false);
     const _document2 = arg1(arg6[1]).WINDOW.document;
     const listener1 = _document2.addEventListener("keypress", tmp6, false);
-    const items = [true, true];
+    const items = [];
     const item = items.forEach((arg0) => {
       const tmp = bindResult(closure_1[1]).WINDOW[arg0];
       let prototype;

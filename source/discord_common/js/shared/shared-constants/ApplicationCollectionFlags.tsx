@@ -1,9 +1,9 @@
-// Module ID: 11235
-// Function ID: 87465
+// Module ID: 11236
+// Function ID: 87478
 // Name: ApplicationCollectionFlags
 // Dependencies: []
 
-// Module 11235 (ApplicationCollectionFlags)
+// Module 11236 (ApplicationCollectionFlags)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionFlags.tsx");
 

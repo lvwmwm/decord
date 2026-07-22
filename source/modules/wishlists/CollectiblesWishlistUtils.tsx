@@ -1,10 +1,10 @@
-// Module ID: 8660
-// Function ID: 68542
+// Module ID: 8661
+// Function ID: 68554
 // Name: getProductNameAndTypeFromSku
 // Dependencies: []
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8660 (getProductNameAndTypeFromSku)
+// Module 8661 (getProductNameAndTypeFromSku)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 

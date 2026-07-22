@@ -1,8 +1,8 @@
-// Module ID: 14784
-// Function ID: 111438
+// Module ID: 14792
+// Function ID: 111481
 // Dependencies: []
 
-// Module 14784
+// Module 14792
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 const memoResult = importAll(dependencyMap[0]).memo(function MessagesItemChannelWave(hasNameplate) {
@@ -13,7 +13,7 @@ const memoResult = importAll(dependencyMap[0]).memo(function MessagesItemChannel
   let obj = {};
   const intl = arg1(dependencyMap[3]).intl;
   obj.text = intl.string(arg1(dependencyMap[3]).t.n8nU4W);
-  obj = { "Null": "<string:1251999746>", "Null": "<string:454230018>", "Null": "<string:1252589570>", "Null": "<string:3137732610>", style: { marginTop: 3 } };
+  obj = { "Null": null, "Null": null, "Null": null, hasSkip: null, style: { marginTop: 3 } };
   obj.icon = jsx(arg1(dependencyMap[4]).Text, obj);
   let str = "secondary";
   if (flag) {

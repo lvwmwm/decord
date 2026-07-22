@@ -1,10 +1,10 @@
-// Module ID: 10335
-// Function ID: 79778
+// Module ID: 10336
+// Function ID: 79791
 // Name: useFavoritesAccess
 // Dependencies: []
 // Exports: useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories
 
-// Module 10335 (useFavoritesAccess)
+// Module 10336 (useFavoritesAccess)
 function useFavoritesAccess(FavoritesGuildChannelList) {
   let obj = arg1(dependencyMap[5]);
   obj = { location: FavoritesGuildChannelList };
@@ -33,7 +33,7 @@ function getFavoritesCategories(favoriteChannels) {
     favoriteChannels = favoriteChannels.getFavoriteChannels();
   }
   const arg1 = favoriteChannels;
-  const items = [{}];
+  const items = [{ <string:3406336996>: "<string:20137472>", <string:67522959>: "<string:2543931648>" }];
   for (const key10012 in favoriteChannels) {
     let tmp5 = key10012;
     let tmp6 = favoriteChannels[key10012];

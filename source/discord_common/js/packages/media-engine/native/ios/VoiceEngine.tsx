@@ -1,5 +1,5 @@
 // Module ID: 4176
-// Function ID: 35815
+// Function ID: 35821
 // Name: base64Decode
 // Dependencies: []
 
@@ -40,7 +40,7 @@ if (null != constants) {
   supportedFeatures = constants.supportedFeatures;
 }
 if (null == supportedFeatures) {
-  supportedFeatures = [];
+  supportedFeatures = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
 }
 arg1(dependencyMap[4]).VoiceEngine.supportsFeature = (arg0) => supportedFeatures.includes(arg0);
 let closure_6 = [];

@@ -1,10 +1,10 @@
-// Module ID: 8515
-// Function ID: 67908
+// Module ID: 8516
+// Function ID: 67920
 // Name: splitGraphemes
 // Dependencies: []
 // Exports: splitGraphemes
 
-// Module 8515 (splitGraphemes)
+// Module 8516 (splitGraphemes)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("utils/native/StringUtils.tsx");
 

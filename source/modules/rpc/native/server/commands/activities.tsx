@@ -1,9 +1,9 @@
-// Module ID: 13316
-// Function ID: 101156
+// Module ID: 13323
+// Function ID: 101189
 // Name: RPC_LOCAL_SCOPE
 // Dependencies: []
 
-// Module 13316 (RPC_LOCAL_SCOPE)
+// Module 13323 (RPC_LOCAL_SCOPE)
 let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_LOCAL_SCOPE;

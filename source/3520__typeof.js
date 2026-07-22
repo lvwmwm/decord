@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const QuarterParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 120);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, true, true, true, true, true, true]);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const QuarterParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 120);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, true, true, true, true, true, true]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const QuarterParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: QuarterParser };
+  let obj = { "": null, children: null, "": null, value: QuarterParser };
   QuarterParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class QuarterParser {
@@ -256,7 +256,7 @@ export const QuarterParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 120);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, true, true, true, true, true, true]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -282,11 +282,11 @@ export const QuarterParser = (Parser) => {
             const obj = { unit: "quarter" };
             return ordinalNumber.ordinalNumber(arg0, obj);
           } else if ("QQQ" === arg1) {
-            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {});
           } else if ("QQQQQ" === arg1) {
-            return ordinalNumber.quarter(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.quarter(arg0, {});
           } else {
-            return ordinalNumber.quarter(arg0, { "Bool(true)": 52931328, "Bool(true)": -213302784 }) || ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {});
           }
         }
       }

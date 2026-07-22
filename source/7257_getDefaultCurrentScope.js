@@ -1,5 +1,5 @@
 // Module ID: 7257
-// Function ID: 58466
+// Function ID: 58477
 // Name: getDefaultCurrentScope
 // Dependencies: [0, 0]
 

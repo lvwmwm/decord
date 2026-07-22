@@ -1,9 +1,9 @@
-// Module ID: 15549
-// Function ID: 118641
+// Module ID: 15557
+// Function ID: 118684
 // Name: getStageChannelAccessibilityProps
 // Dependencies: []
 
-// Module 15549 (getStageChannelAccessibilityProps)
+// Module 15557 (getStageChannelAccessibilityProps)
 function getStageChannelAccessibilityProps(arg0) {
   let channel;
   let channelName;
@@ -17,7 +17,7 @@ function getStageChannelAccessibilityProps(arg0) {
       let obj = { channelName, userCount, limit: channel.userLimit };
       formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[12]).t.rhh6Ev, obj);
     }
-    obj = { fontFamily: null, fontSize: null, accessibilityLabel: formatToPlainStringResult };
+    obj = { marginBottom: null, borderWidth: null, accessibilityLabel: formatToPlainStringResult };
     return obj;
   }
   if (userCount > 0) {
@@ -74,7 +74,7 @@ const getThemedRippleConfig = arg1(dependencyMap[9]).getThemedRippleConfig;
 const StaticChannelRoute = arg1(dependencyMap[10]).StaticChannelRoute;
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[11]));
 const tmp2 = arg1(dependencyMap[11]);
-let closure_16 = arg1(dependencyMap[23]).createStyles(() => ({ voiceUsers: { "Null": true, "Null": true, "Null": true, "Null": true }, pressable: { flex: 1 } }));
+let closure_16 = arg1(dependencyMap[23]).createStyles(() => ({ voiceUsers: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, <string:3944061457>: true }, pressable: { flex: 1 } }));
 let closure_17 = [];
 let closure_18 = importAllResult.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   let guild_id;

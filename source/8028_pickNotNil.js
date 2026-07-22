@@ -1,5 +1,5 @@
 // Module ID: 8028
-// Function ID: 63754
+// Function ID: 63764
 // Name: pickNotNil
 // Dependencies: []
 
@@ -34,5 +34,5 @@ arg5.getRandomNumber = function getRandomNumber() {
   return Math.floor(random * Math.floor(random1 * Date.now()));
 };
 arg5.warnUnimplementedFilter = function warnUnimplementedFilter() {
-  arg2(arg6[0])(true, "Some of the used filters are not yet supported on native platforms. Please check the USAGE.md for more info. Not implemented filters:\n", JSON.stringify([true, true, true, true, true, true, true, true, true, true, true, false, false, false, false], null, 2));
+  arg2(arg6[0])(true, "Some of the used filters are not yet supported on native platforms. Please check the USAGE.md for more info. Not implemented filters:\n", JSON.stringify([true, true, true, true, true, true, true, true, true, true, true, true, true, true, true], null, 2));
 };

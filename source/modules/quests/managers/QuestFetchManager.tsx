@@ -1,9 +1,9 @@
-// Module ID: 16383
-// Function ID: 126545
+// Module ID: 16391
+// Function ID: 126587
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16383 (_isNativeReflectConstruct)
+// Module 16391 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -143,7 +143,7 @@ let tmp2 = (arg0) => {
         }
         if (isEligibleForQuests) {
           let obj1 = callback(closure_2[10]);
-          obj = { <string:1768156336>: "UNCLAIMED_ACCOUNT", <string:483457390>: "fr-NE" };
+          obj = { style: "y", textStyle: "isArray" };
           obj = { callerSource, storeSize: closure_8.quests.size, lastFetchedCurrentQuests: closure_8.lastFetchedCurrentQuests };
           const _Date = Date;
           obj.msSinceLastFetch = Date.now() - closure_8.lastFetchedCurrentQuests;

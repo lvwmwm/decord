@@ -1,5 +1,5 @@
 // Module ID: 7187
-// Function ID: 57850
+// Function ID: 57861
 // Name: FormTitle
 // Dependencies: []
 // Exports: default
@@ -21,7 +21,7 @@ if (obj1.isAndroid()) {
   num2 = 56;
 }
 const tmp4 = arg1(dependencyMap[3]);
-obj = { titleWrapper: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 } };
+obj = { titleWrapper: { "Bool(false)": "w", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "container" }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 } };
 obj = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
 obj.titleText = obj;
 obj1 = { color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };

@@ -1,10 +1,10 @@
-// Module ID: 15623
-// Function ID: 119291
+// Module ID: 15631
+// Function ID: 119334
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default, useSearchCategories
 
-// Module 15623 (_createForOfIteratorHelperLoose)
+// Module 15631 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -289,7 +289,7 @@ export default function useSoundGrid(guild_id, location) {
       }
       obj.availableSounds = value;
       obj.isFetching = tmp7;
-      obj.soundCounts = { -9223372036854775808: false, 0: false, -9223372036854775808: false };
+      obj.soundCounts = { -900297605: "spring", -766416799: 0.4, 2129155287: 1 };
       let obj8 = obj;
     } else {
       obj = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds: first };

@@ -18,7 +18,7 @@ const tmp2 = () => {
       eventEmitter = new ComponentDispatcher(closure_1[2]).EventEmitter();
       self.emitter = eventEmitter;
       self._savedDispatches = {};
-      obj = {};
+      obj = { 389648952: "isArray", -625213786: "WireType" };
       num = 100;
       merged = Object.assign(obj);
       self.options = obj;

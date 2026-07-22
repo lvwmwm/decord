@@ -1,12 +1,16 @@
 // Module ID: 6708
-// Function ID: 52140
+// Function ID: 52151
 // Name: Lru
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 6708 (Lru)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/app_database/util/Lru.tsx");
+
+export const Lru = () => {
   class Lru {
     constructor(arg0) {
       tmp = Lru(this, Lru);
@@ -125,6 +129,3 @@ const tmp2 = () => {
   };
   return callback(Lru, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_database/util/Lru.tsx");
-
-export const Lru = tmp2;

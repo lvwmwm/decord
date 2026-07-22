@@ -1,9 +1,9 @@
-// Module ID: 11586
-// Function ID: 90068
+// Module ID: 11587
+// Function ID: 90081
 // Name: getClampedIndex
 // Dependencies: []
 
-// Module 11586 (getClampedIndex)
+// Module 11587 (getClampedIndex)
 function getClampedIndex(arg0, itemCount) {
   return Math.max(0, Math.min(itemCount - 1, arg0));
 }
@@ -15,7 +15,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
 let obj = { wrapper: { position: "relative" } };
-obj = { -1326658460: false, 1311855064: false, -42222254: false, -2031922301: false, -390732911: false, 1677983569: false, 1553225275: false, 1560477779: false, 1638554794: false, -741060176: false };
+obj = { 9223372036854775807: false, 0: false, 0: false, -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false, 0: false, 9223372036854775807: false, 0: false, -9223372036854775808: false };
 const obj2 = arg1(dependencyMap[5]);
 obj.backgroundColor = arg1(dependencyMap[6]).hexWithOpacity(importDefault(dependencyMap[7]).unsafe_rawColors.BLACK, 0.56);
 obj.borderRadius = importDefault(dependencyMap[7]).radii.round;

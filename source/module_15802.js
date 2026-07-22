@@ -1,33 +1,28 @@
 // Module ID: 15802
-// Function ID: 120891
+// Function ID: 120916
 // Dependencies: []
 
 // Module 15802
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "it",
+  locale: "de",
   pluralRuleFunction(arg0, arg1) {
     String(arg0);
-    if (arg1) {
-      if (11 != arg0) {
-        if (8 != arg0) {
-          if (80 != arg0) {
-            let str3 = "other";
-          }
-          let str2 = str3;
-        }
-      }
-      str3 = "many";
-    } else {
-      str2 = "other";
+    let str = "other";
+    if (!arg1) {
+      let str2 = "other";
       if (1 == arg0) {
         str2 = "other";
         if (tmp2) {
           str2 = "one";
         }
       }
+      str = str2;
     }
-    return str2;
+    return str;
   }
 });
 globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ 0: true, 0: true });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: false, 0: false });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: 0.0000000000000000000000000000000000000000000000000007154545686270343, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007295240586021974 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: false, 0: false });

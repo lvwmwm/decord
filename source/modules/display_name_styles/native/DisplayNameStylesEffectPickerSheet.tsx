@@ -1,10 +1,10 @@
-// Module ID: 14109
-// Function ID: 107133
+// Module ID: 14117
+// Function ID: 107176
 // Name: EffectTile
 // Dependencies: []
 // Exports: default
 
-// Module 14109 (EffectTile)
+// Module 14117 (EffectTile)
 function EffectTile(arg0) {
   let effectId;
   let onClick;
@@ -43,12 +43,12 @@ function EffectTile(arg0) {
   const obj2 = { userId, userName: stringResult, effectDisplayType: arg1(dependencyMap[20]).EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
   const items1 = [callback2(importDefault(dependencyMap[19]), obj2), , ];
   if (showNewDot) {
-    const obj3 = { canSort: "none", GameDepthTier1SmallBadge: "contain", _monthsRegex: "password", style: tmp.tileNewDot };
+    const obj3 = { isNewWebImplementationEnabled: "<string:2252538112>", WIDGET_ENABLED: "<string:2231370395>", EMOJI_PICKER_EMOJI_CLICKED: "<string:2617246363>", style: tmp.tileNewDot };
     showNewDot = callback2(closure_5, obj3);
   }
   items1[1] = showNewDot;
   if (hasItem) {
-    const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.betaCaption };
+    const obj4 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.betaCaption };
     const intl3 = arg1(dependencyMap[14]).intl;
     obj4.children = intl3.string(arg1(dependencyMap[14]).t.oW0eUd);
     hasItem = callback2(arg1(dependencyMap[21]).Text, obj4);
@@ -65,11 +65,11 @@ const FLYWHEEL_EFFECTS = arg1(dependencyMap[3]).FLYWHEEL_EFFECTS;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { header: { paddingTop: 4 }, headerTrailing: { margin: null, backgroundColor: null }, container: { flex: 1 } };
+obj = { header: { paddingTop: 4 }, headerTrailing: { "Bool(false)": null, "Bool(false)": null }, container: { flex: 1 } };
 obj = { padding: importDefault(dependencyMap[6]).space.PX_8, paddingLeft: importDefault(dependencyMap[6]).space.PX_16, alignItems: "center" };
 obj.contentContainer = obj;
-obj.gridContainer = { 9223372036854775807: "Array", 0: "isArray" };
-const obj1 = { <string:2214447224>: "isArray", <string:1550125183>: "warn", <string:2857803874>: "textAlign", <string:1370110562>: "r", <string:4217569875>: "isArray", <string:3881981674>: "track", <string:3085914449>: "textAlign", <string:1383004514>: "r", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+obj.gridContainer = { <string:1185521966>: "Array", <string:3310479201>: "isArray" };
+const obj1 = { 1449305803: "isArray", -1312004949: "y", -1604011816: "title", 1374473467: "r", 1650721798: "isArray", 1654717276: "y", -430839210: "title", 67522930: "r", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.effectCard = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.effectCardSelected = { borderColor: importDefault(dependencyMap[6]).colors.CONTROL_BRAND_FOREGROUND };
@@ -127,8 +127,6 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
     const obj4 = { style: tmp.container };
     const obj5 = { style: tmp.contentContainer };
     const obj6 = {
-      "Bool(false)": "fi",
-      "Bool(false)": "pillIcon",
       style: tmp.gridContainer,
       children: visibleEffectOrder.map((effectId) => {
           const userId = effectId;

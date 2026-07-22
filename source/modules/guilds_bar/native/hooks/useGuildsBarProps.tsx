@@ -1,10 +1,10 @@
-// Module ID: 14698
-// Function ID: 110867
+// Module ID: 14706
+// Function ID: 110910
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14698 (_createForOfIteratorHelperLoose)
+// Module 14706 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -341,7 +341,7 @@ export default function useGuildsBarProps(arg0) {
     listProps: memo,
     listDataProps: React.useMemo(() => {
       let iter2;
-      const items = [null, num];
+      const items = [false, num];
       let num = 0;
       if (null != pendingFolderNode) {
         let num2 = 1;

@@ -5,7 +5,7 @@
 
 // Module 385 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "AndroidHorizontalScrollView", bubblingEventTypes: {}, directEventTypes: {} };
-obj = {};
+obj = { 0: null, -9223372036854775808: true, 0: false, 0: true, 0: 3000, 9223372036854775807: 15, -9223372036854775808: 50, 0: null, 9223372036854775807: "\u{1F600}", 0: 6.1, 9223372036854775807: 0, 0: null, 0: 3, -9223372036854775808: false, 9223372036854775807: false, 0: null, 0: false, -9223372036854775808: "handled", -9223372036854775808: false, 9223372036854775807: 16, -9223372036854775808: "rules", -9223372036854775808: "message", 9223372036854775807: 1, 0: "log", 0: "info" };
 obj = { process: arg1(dependencyMap[0]).default };
 obj.endFillColor = obj;
 obj.borderRightColor = { process: arg1(dependencyMap[0]).default };

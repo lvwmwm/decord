@@ -1,5 +1,5 @@
 // Module ID: 6159
-// Function ID: 50160
+// Function ID: 50171
 // Name: GemInHandSpotIllustration
 // Dependencies: []
 // Exports: GemInHandSpotIllustration

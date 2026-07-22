@@ -1,5 +1,5 @@
 // Module ID: 7872
-// Function ID: 62676
+// Function ID: 62686
 // Name: EditCollectiblesPickerList
 // Dependencies: []
 // Exports: EditCollectiblesPickerList
@@ -10,15 +10,11 @@ const importAllResult = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { list: { right: "y", height: "isArray" }, listContent: { paddingBottom: 88 }, loadingContainer: { 0: "CanonicalizeUnicodeLocaleId", 0: "action_intent_type" } };
+let obj = { list: { loginWebAuthn: null, Ŕ: null }, listContent: { paddingBottom: 88 }, loadingContainer: { t: "_createPaymentsSetupCompleteCallback", channel: "_handleNewListener" } };
 obj = { paddingHorizontal: arg1(dependencyMap[5]).GUTTER_SIZE };
 obj.header = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
-let closure_8 = importAllResult.memo((header) => {
-  let obj = { style: callback2().header, children: jsx(arg1(dependencyMap[6]).Heading, obj) };
-  obj = { hasMaxConnections: "kind", isBoostOnlySubscription: "ix", children: header.header };
-  return <closure_5 {...obj} />;
-});
+let closure_8 = importAllResult.memo((children) => <closure_5 style={callback2().header}>{jsx(arg1(dependencyMap[6]).Heading, { children: arg0.header })}</closure_5>);
 const obj2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 
@@ -83,7 +79,7 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
   let obj = {};
   if (flag) {
     obj.style = tmp.loadingContainer;
-    obj.children = <closure_4 font={397} dx={97} />;
+    obj.children = <closure_4 />;
     let tmp18 = obj;
   } else {
     obj.style = tmp.list;

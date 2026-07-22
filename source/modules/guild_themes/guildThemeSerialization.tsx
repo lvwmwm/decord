@@ -86,7 +86,7 @@ export const cloneGuildTheme = function cloneGuildTheme(guildTheme) {
 };
 export const toServerGuildThemeSettings = function toServerGuildThemeSettings(themeSettings) {
   if (null == themeSettings) {
-    let obj = { VIRTUAL_CURRENCY: "o", GameUpdatePlatformIcon: "o" };
+    let obj = { "Null": "o", "Null": "o" };
   } else {
     obj = {};
     const presetId = themeSettings.presetId;

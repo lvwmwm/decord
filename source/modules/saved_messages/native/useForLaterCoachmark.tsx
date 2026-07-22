@@ -1,10 +1,10 @@
-// Module ID: 15005
-// Function ID: 112997
+// Module ID: 15013
+// Function ID: 113040
 // Name: CoachmarkImg
 // Dependencies: []
 // Exports: default
 
-// Module 15005 (CoachmarkImg)
+// Module 15013 (CoachmarkImg)
 function CoachmarkImg() {
   const obj = { source: importDefault(dependencyMap[7]), style: callback2().imageContainer };
   return <Image {...obj} />;

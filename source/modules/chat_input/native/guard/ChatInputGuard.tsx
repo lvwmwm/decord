@@ -1,10 +1,10 @@
-// Module ID: 11470
-// Function ID: 89353
+// Module ID: 11471
+// Function ID: 89366
 // Name: ChatInputGuard
 // Dependencies: []
 // Exports: ChatInputGuardContainer, default
 
-// Module 11470 (ChatInputGuard)
+// Module 11471 (ChatInputGuard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = arg1(dependencyMap[2]).updateChatInputContainerHeight;

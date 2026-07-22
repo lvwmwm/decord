@@ -1,12 +1,17 @@
-// Module ID: 13640
-// Function ID: 103350
+// Module ID: 13647
+// Function ID: 103383
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [13648, 13650, 2]
+// Dependencies: [13655, 13657, 2, 13656, 566, 2, 57, 31, 27, 6764, 1849, 653, 1197, 1345, 6765, 33]
 // Exports: fetchHarvestStatus
 
-// Module 13640 (useIsHarvestRequestDisabled)
+// Module 13647 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "useParentalConsentWarning";
 import frozen from "frozen";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "initialize";
+import result2 from "result2";
+import ContentDismissActionType from "ContentDismissActionType";
+import module_33 from "module_33";
 
 function useIsHarvestRequestDisabled() {
   const items = [frozen];
@@ -23,12 +28,8 @@ function useIsHarvestRequestDisabled() {
   }
   return tmp4;
 }
-const _module = require(dependencyMap[3]);
-const REQUEST_DATA_LIMIT_DAYS = _module.REQUEST_DATA_LIMIT_DAYS;
-const jsx = require(dependencyMap[4]).jsx;
-const _module1 = require(dependencyMap[5]);
-let closure_7 = _module1.createWithEqualityFn(() => ({ marginLeft: null, display: null }));
-const _module2 = require(dependencyMap[13]);
+const REQUEST_DATA_LIMIT_DAYS = _isNativeReflectConstruct.REQUEST_DATA_LIMIT_DAYS;
+let closure_7 = result2.createWithEqualityFn(() => ({ "Null": "L", "Null": "L" }));
 let obj = {
   useTitle() {
     const intl = require(dependencyMap[11]).intl;
@@ -82,14 +83,13 @@ let obj = {
   screen: obj
 };
 obj = {
-  route: _module.UserSettingsSections.REQUEST_DATA,
+  route: _isNativeReflectConstruct.UserSettingsSections.REQUEST_DATA,
   getComponent() {
     return require(dependencyMap[14]).default;
   }
 };
-const route = _module2.createRoute(obj);
-const _module3 = require(dependencyMap[15]);
-const result = _module3.fileFinishedImporting("modules/user_settings/defs/native/RequestYourDataSetting.tsx");
+const route = ContentDismissActionType.createRoute(obj);
+const result = module_33.fileFinishedImporting("modules/user_settings/defs/native/RequestYourDataSetting.tsx");
 
 export default route;
 export const fetchHarvestStatus = function fetchHarvestStatus() {

@@ -1,9 +1,9 @@
-// Module ID: 15199
-// Function ID: 114698
+// Module ID: 15207
+// Function ID: 114741
 // Name: SearchFilterPrefixRow
 // Dependencies: []
 
-// Module 15199 (SearchFilterPrefixRow)
+// Module 15207 (SearchFilterPrefixRow)
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const arg1 = text;
@@ -11,7 +11,7 @@ function SearchFilterPrefixRow(text) {
   const importDefault = searchTokenType;
   const onPress = text.onPress;
   const dependencyMap = onPress;
-  let obj = { 0: false, 0: false, 0: false };
+  let obj = { <string:1103318440>: "spring", enableWatchdogTerminationTracking: 0.4, <string:785041237>: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(text, obj);
   const items = [searchTokenType];
@@ -31,10 +31,7 @@ function SearchFilterPrefixRow(text) {
   const callback = importAllResult.useCallback(() => {
     onPress(text);
   }, items2);
-  obj = { icon: memo, onPress: callback };
-  obj = { "Null": true, "Null": 15.1, "Null": 253, children: text };
-  obj.label = jsx(arg1(dependencyMap[9]).Text, obj);
-  obj.subLabel = memo1;
+  obj = { icon: memo, onPress: callback, label: jsx(arg1(dependencyMap[9]).Text, { children: text }), subLabel: memo1 };
   const merged1 = Object.assign(merged);
   return jsx(arg1(dependencyMap[8]).TableRow, obj);
 }

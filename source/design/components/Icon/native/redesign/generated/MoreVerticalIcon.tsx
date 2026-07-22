@@ -1,10 +1,10 @@
-// Module ID: 12120
-// Function ID: 93359
+// Module ID: 12124
+// Function ID: 93385
 // Name: MoreVerticalIcon
 // Dependencies: []
 // Exports: MoreVerticalIcon
 
-// Module 12120 (MoreVerticalIcon)
+// Module 12124 (MoreVerticalIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MoreVerticalIcon.tsx");

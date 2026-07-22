@@ -1,10 +1,10 @@
-// Module ID: 9230
-// Function ID: 72181
+// Module ID: 9231
+// Function ID: 72194
 // Name: AddPhone
 // Dependencies: []
 // Exports: default
 
-// Module 9230 (AddPhone)
+// Module 9231 (AddPhone)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -20,7 +20,7 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = { <string:80631552>: "Group 11", <string:80637696>: 2 };
+obj.container = { "Bool(false)": null, "Bool(false)": "Group 11" };
 obj.title = { textAlign: "center" };
 obj.input = { marginTop: 24 };
 const tmp3 = arg1(dependencyMap[9]);
@@ -168,7 +168,7 @@ export default function AddPhone(reason) {
       let tmp45 = null;
       if (tmp6) {
         const obj4 = { style: tmp.button };
-        const obj5 = { "Bool(true)": null, "Bool(true)": null };
+        const obj5 = {};
         const intl6 = arg1(dependencyMap[17]).intl;
         obj5.text = intl6.string(arg1(dependencyMap[17]).t.kYvzoQ);
         obj5.onPress = function onPress() {
@@ -206,7 +206,7 @@ export default function AddPhone(reason) {
     stringResult = intl4.string(arg1(dependencyMap[17]).t.64bX0M);
     const tmp30 = _handleSubmit;
   } else {
-    const obj6 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj6 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
     if (null != phone) {
       if (!result) {
         const intl = arg1(dependencyMap[17]).intl;

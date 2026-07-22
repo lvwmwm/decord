@@ -222,7 +222,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, 
     data = data.data.mechanism;
   }
   if (!data) {
-    data = { id: false, gameId: false };
+    data = { priority: "IE", "Bool(false)": "MSIE" };
   }
   const tmp = callback(getException(arg0, data, arg2, data), 2);
   let obj = {};

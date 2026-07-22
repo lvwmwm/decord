@@ -1,10 +1,10 @@
-// Module ID: 11138
-// Function ID: 86640
+// Module ID: 11139
+// Function ID: 86653
 // Name: useNativeForumPostContent
 // Dependencies: []
 // Exports: default
 
-// Module 11138 (useNativeForumPostContent)
+// Module 11139 (useNativeForumPostContent)
 const MessageFlags = require(dependencyMap[0]).MessageFlags;
 const _module = require(dependencyMap[1]);
 let closure_4 = _module.createStyles({ italics: { fontStyle: "italic" } });
@@ -65,7 +65,7 @@ export default function useNativeForumPostContent(arg0) {
               tmp9 = isArray;
             }
             if (!messageLoaded) {
-              obj = { "Null": true, "Null": true, "Null": true };
+              obj = { fill: null, d: null, opacity: null };
               let tmp31 = messageContent;
               if (tmp9) {
                 tmp31 = null;

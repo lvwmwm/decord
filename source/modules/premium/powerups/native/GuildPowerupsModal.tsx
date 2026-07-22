@@ -1,10 +1,10 @@
-// Module ID: 11502
-// Function ID: 89623
+// Module ID: 11503
+// Function ID: 89636
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 11502 (_createForOfIteratorHelperLoose)
+// Module 11503 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -96,7 +96,7 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGRO
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.headerContainer = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { "Null": 2046820991, "Null": 1174405381, "Null": 66666, "Null": 66666, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
+const obj2 = { accessible: null, window: null, "Null": null, "Null": null, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.boostInfoContainer = obj2;
 const obj3 = { "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.boostInfoSeparator = obj3;

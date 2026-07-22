@@ -1,10 +1,10 @@
-// Module ID: 14559
-// Function ID: 109724
+// Module ID: 14567
+// Function ID: 109767
 // Name: Select
 // Dependencies: []
 // Exports: default
 
-// Module 14559 (Select)
+// Module 14567 (Select)
 function Select(children) {
   let type = children.type;
   const tmp = importDefaultResult(React.useState(false), 2);
@@ -48,12 +48,12 @@ function Select(children) {
       const selectedOptions = state.selectedOptions;
       mapped = selectedOptions.map((label) => label.label);
     }
-    state = [454480908, mapped.join(", ")];
+    state = [873930508, mapped.join(", ")];
     obj2.children = state;
     closure_8(callback(dependencyMap[11]).Text, obj2);
     const tmp24 = closure_8;
   } else {
-    items[2] = callback2(callback(dependencyMap[11]).Text, { <string:1749439162>: 1092681729, <string:140675621>: 73114 });
+    items[2] = callback2(callback(dependencyMap[11]).Text, { <string:2807142664>: "title", <string:1446667417>: "Array" });
     const obj3 = {};
     let str4 = "off";
     if (first) {
@@ -83,15 +83,14 @@ const tmp3 = arg1(dependencyMap[4]);
 obj.contentContainer = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 let closure_9 = obj.createStyles(obj);
 let obj4 = arg1(dependencyMap[7]);
-const obj2 = { accessible: null, useStateFromStores: null, d: null, Date: null, state: null, type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT };
-const items = [{ <string:2048437162>: null, <string:2887950716>: null }, {}, , ];
-const obj3 = { <string:2048437162>: null, <string:2887950716>: null, emoji: { name: "\u2B50" } };
-items[2] = obj3;
-obj4 = { <string:2048437162>: null, <string:2887950716>: null, emoji: { top: null, right: null, left: null } };
-items[3] = obj4;
-obj2.options = items;
-const items1 = [obj2, ];
 const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
+const items = [{}, { login_source: 563089567121444.6, messageFooterText: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002703507518239046, fil: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002806891733743516 }, , ];
+const obj3 = { "Null": false, "Null": false, emoji: { name: "\u2B50" } };
+items[2] = obj3;
+obj4 = { "Null": "test-warning-123", "Null": "inappropriate_conversation", emoji: {} };
+items[3] = obj4;
+const items1 = [{ type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT, options: items }, ];
+const obj2 = { type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT, options: items };
 items1[1] = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
 const transformComponentsResult = obj4.transformComponents(items1);
 const obj5 = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
@@ -103,7 +102,7 @@ export default function DevToolsComponentsTestingScreen() {
   const tmp = callback4();
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 16 };
-  const items = [callback2(arg1(dependencyMap[11]).Text, {}), , ];
+  const items = [callback2(arg1(dependencyMap[11]).Text, { <string:2807142664>: "<string:4143973053>", <string:1446667417>: "<string:1090519594>" }), , ];
   obj = {};
   const obj1 = { customId: "modal", channelId: channelId.getChannelId(), components: transformComponentsResult };
   obj.modal = obj1;
@@ -124,7 +123,7 @@ export default function DevToolsComponentsTestingScreen() {
   items[1] = callback3(arg1(dependencyMap[9]).ComponentStateContextProvider, obj);
   items[2] = callback2(arg1(dependencyMap[14]).Button, {
     onPress() {
-      return callback(closure_2[17]).dispatch({});
+      return callback(closure_2[17]).dispatch({ is_new_user: false, login_method: false });
     },
     text: "Reset Modal State"
   });

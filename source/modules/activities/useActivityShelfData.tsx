@@ -1,10 +1,10 @@
-// Module ID: 11149
-// Function ID: 86694
+// Module ID: 11150
+// Function ID: 86707
 // Name: useActivityShelfData
 // Dependencies: []
 // Exports: useActivityShelfData
 
-// Module 11149 (useActivityShelfData)
+// Module 11150 (useActivityShelfData)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

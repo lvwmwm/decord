@@ -1,10 +1,10 @@
-// Module ID: 11984
-// Function ID: 92634
+// Module ID: 11988
+// Function ID: 92660
 // Name: useGameWidgets
 // Dependencies: []
 // Exports: useGameWidgets
 
-// Module 11984 (useGameWidgets)
+// Module 11988 (useGameWidgets)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_profile/hooks/useGameWidgets.tsx");
 

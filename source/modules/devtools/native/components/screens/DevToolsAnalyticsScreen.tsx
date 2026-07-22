@@ -1,16 +1,16 @@
-// Module ID: 13386
-// Function ID: 101793
+// Module ID: 13393
+// Function ID: 101826
 // Name: CommonProperty
 // Dependencies: []
 // Exports: default
 
-// Module 13386 (CommonProperty)
+// Module 13393 (CommonProperty)
 function CommonProperty(arg0) {
   let children;
   let name;
   ({ name, children } = arg0);
   let obj = { style: callback4().commonProperty };
-  obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum", children: name };
+  obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", children: name };
   const items = [callback2(arg1(dependencyMap[9]).Text, obj), children];
   obj.children = items;
   return callback3(View, obj);
@@ -64,7 +64,7 @@ function LoggedEvent(arg0) {
     let obj1 = { style: map.commonPropertiesContainer };
     const obj2 = { name: "Timestamp (local)" };
     let items3 = 9;
-    const obj3 = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole" };
+    const obj3 = { cachedAt: true, edpbxy: true };
     let obj5 = importDefault(closure_2[12])(timestamp);
     obj3.children = obj5.calendar();
     obj2.children = callback2(arg1(closure_2[9]).Text, obj3);
@@ -101,7 +101,7 @@ function LoggedEvent(arg0) {
       let tmp31 = callback3(arg1(closure_2[14]).PressableOpacity, obj7);
       const tmp36 = callback2(arg1(closure_2[items3]).Text, obj8);
     } else {
-      const obj11 = { style: map.monospace };
+      const obj11 = { left: false, position: false, accessible: false, "Bool(true)": false, style: map.monospace };
       tmp31 = callback2(arg1(closure_2[items3]).Text, obj11);
     }
     obj6.children = tmp31;
@@ -121,12 +121,12 @@ function LoggedEvent(arg0) {
       let tmp2;
       [tmp, tmp2] = arg0;
       let obj = { style: map.customProperty };
-      obj = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute", style: map.customPropertyName };
+      obj = { cachedAt: "png", edpbxy: "absolute", style: map.customPropertyName };
       const items = [tmp, ":"];
       obj.children = items;
       const items1 = [callback2(fingerprint(closure_2[9]).Text, obj), ];
       if (null != tmp2) {
-        obj = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", style: map.monospace };
+        obj = { cachedAt: true, edpbxy: true, style: map.monospace };
         const _JSON = JSON;
         obj.children = JSON.stringify(tmp2);
         let obj1 = obj;
@@ -168,11 +168,10 @@ const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUN
 obj.commonPropertiesContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
 obj.commonProperty = {};
 obj.customPropertiesContainer = {};
-obj.customProperty = { <string:3635438572>: null, <string:1408024149>: null, <string:1708473420>: null, <string:1673686922>: null, <string:1365507020>: null };
-const obj5 = { "Null": true, "Null": true, "Null": true, fontFamily: Fonts.CODE_BOLD };
-obj.customPropertyName = obj5;
+obj.customProperty = { <string:1365507020>: "<string:141658571>", <string:1650722957>: "<string:1895825408>", <string:1698387627>: "r", <string:2700859346>: "<string:48239169>", <string:2395099846>: "<string:2311803136>" };
+obj.customPropertyName = { fontFamily: Fonts.CODE_BOLD };
 obj.monospace = { fontFamily: Fonts.CODE_BOLD };
-obj.copyContainer = { "Null": 7, "Null": 370 };
+obj.copyContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 let closure_10 = obj.createStyles(obj);
 const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAnalyticsScreen.tsx");
@@ -208,10 +207,10 @@ export default function DevToolsAnalyticsScreen() {
   obj = { style: tmp.analyticsContainer };
   obj = {};
   const obj1 = { spacing: 16 };
-  const obj2 = { "Bool(false)": null, "Bool(false)": null };
+  const obj2 = {};
   const obj3 = { icon: callback2(arg1(dependencyMap[22]).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
   const items2 = [callback2(arg1(dependencyMap[21]).TableSwitchRow, obj3), ];
-  const obj4 = { flex: "30f38e9cc06345b39ea1b73343d04289", flexDirection: "CarIcon", marginTop: "png", width: true, icon: callback2(arg1(dependencyMap[23]).TrashIcon, { color: "text-feedback-critical" }), onPress: arg1(dependencyMap[24]).clearAnalyticsLog };
+  const obj4 = { "Bool(false)": "30f38e9cc06345b39ea1b73343d04289", "Bool(false)": "CarIcon", "Bool(false)": "png", "Bool(false)": true, icon: callback2(arg1(dependencyMap[23]).TrashIcon, { color: "text-feedback-critical" }), onPress: arg1(dependencyMap[24]).clearAnalyticsLog };
   items2[1] = callback2(arg1(dependencyMap[10]).TableRow, obj4);
   obj2.children = items2;
   const items3 = [callback3(arg1(dependencyMap[20]).TableRowGroup, obj2), , ];
@@ -221,7 +220,7 @@ export default function DevToolsAnalyticsScreen() {
   const tmp12 = callback3;
   const tmp9 = callback2;
   items3[1] = callback2(View, { style: tmp.searchFieldContainer, children: callback2(arg1(dependencyMap[25]).SearchField, { placeholder: "Search by event name", onChange: tmp6 }) });
-  const obj6 = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images" };
+  const obj6 = { -9223372036854775808: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images" };
   if (0 === loggedEvents.length) {
     const obj7 = { label: "No events logged." };
     let tmp14 = callback2(arg1(dependencyMap[10]).TableRow, obj7);

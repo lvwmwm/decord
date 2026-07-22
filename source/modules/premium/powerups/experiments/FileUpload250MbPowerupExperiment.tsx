@@ -1,16 +1,15 @@
 // Module ID: 4056
-// Function ID: 33814
+// Function ID: 33816
 // Name: items
 // Dependencies: []
 // Exports: getFileUpload250MbPowerupEnabled, getFileUpload250MbPowerupRollbackEnabled, useFileUpload250MbPowerupEnabled, useFileUpload250MbPowerupRollbackEnabled
 
 // Module 4056 (items)
 const _module = require(dependencyMap[0]);
-let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, defaultConfig: { "Null": null, "Null": null } };
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: true, 炖锅: true, config: { "Null": null, "Null": null } };
-const items = [obj, ];
-const obj1 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "accessibilityLabel", 炖锅: "r", config: { "Null": null, "Null": null } };
-items[1] = obj1;
+let obj = { shapes: true, flex: true, sk: true, defaultConfig: {} };
+const items = [{ config: {} }, ];
+obj = { displayNameStylesEnabled: true, submitButtonEnabled: true, config: {} };
+items[1] = obj;
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);

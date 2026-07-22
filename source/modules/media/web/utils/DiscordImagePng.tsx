@@ -1,5 +1,5 @@
 // Module ID: 4739
-// Function ID: 41142
+// Function ID: 41151
 // Name: DiscordImagePng
 // Dependencies: []
 
@@ -59,7 +59,7 @@ const tmp2 = () => {
   const obj1 = { key: "hasSrgbIccProfile" };
   let closure_0 = callback(async function() {
     let tmp2;
-    const tmp = yield callback(closure_2[4]).load(this.originalBuffer, { onCompleteFirstLayout: "Small", onMessageAccessibilityAction: "sm", onMediaPlayFinishedAnalytics: "Placeholder" });
+    const tmp = yield callback(closure_2[4]).load(this.originalBuffer, {});
     if (null == tmp.icc) {
       return true;
     } else {

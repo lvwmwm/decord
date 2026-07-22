@@ -1,10 +1,10 @@
-// Module ID: 11626
-// Function ID: 90278
+// Module ID: 11627
+// Function ID: 90291
 // Name: UserProfileStackedActionSheet
 // Dependencies: []
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11626 (UserProfileStackedActionSheet)
+// Module 11627 (UserProfileStackedActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -26,7 +26,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   let children;
   let title;
   onBack = onBack.onBack;
-  let obj = { 978544094: false, 1710970538: false, -1208246174: false };
+  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
   ({ title, children } = onBack);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onBack, obj);
@@ -54,12 +54,10 @@ export default function UserProfileStackedActionSheet(onBack) {
     obj2.children = callback(arg1(dependencyMap[12]).ArrowLargeLeftIcon, obj3);
     tmp9 = callback(arg1(dependencyMap[10]).PressableOpacity, obj2);
   }
-  const items1 = [tmp9, , ];
-  const obj4 = { handleMessageFocus: 17, enableHome: "message_display_compact", afterMs: "message", children: title };
-  items1[1] = callback(arg1(dependencyMap[13]).Text, obj4);
+  const items1 = [tmp9, callback(arg1(dependencyMap[13]).Text, { children: title }), ];
   if (tmp4) {
-    const obj5 = { style: tmp3.headerSpacer };
-    tmp4 = callback(View, obj5);
+    const obj4 = { style: tmp3.headerSpacer };
+    tmp4 = callback(View, obj4);
   }
   items1[2] = tmp4;
   obj.children = items1;
@@ -71,7 +69,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
   data = data.data;
   const arg1 = data;
   const importDefault = data.renderItem;
-  let obj = { hasHeaderBack: false, isChannelNSFWGated: false, countContainer: false };
+  let obj = { updateTeenConsents: "spring", code: 0.4, onPressClose: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(data, obj);
   const tmp3 = callback2();

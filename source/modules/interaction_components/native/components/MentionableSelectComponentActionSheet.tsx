@@ -1,10 +1,10 @@
-// Module ID: 10957
-// Function ID: 85231
+// Module ID: 10958
+// Function ID: 85244
 // Name: MentionableSelectComponentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10957 (MentionableSelectComponentActionSheet)
+// Module 10958 (MentionableSelectComponentActionSheet)
 let Fonts;
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -21,7 +21,7 @@ obj = { color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT, 
 obj.name = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.discriminator = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-obj.roleCountContainer = {};
+obj.roleCountContainer = { FRAME_WEB_VIEW_KEY: null, VIDEO_DISABLED_LOCAL_AUTO: null, hasMidnightNux: null, -9223372036854775808: null, 9223372036854775807: null, -4212385683882: null };
 obj.roleCountText = { paddingRight: 4 };
 let closure_12 = obj.createStyles(obj);
 const obj1 = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };

@@ -1,25 +1,25 @@
-// Module ID: 10729
-// Function ID: 83432
+// Module ID: 10730
+// Function ID: 83445
 // Name: IconPosition
 // Dependencies: []
 // Exports: LabeledActionButton
 
-// Module 10729 (IconPosition)
+// Module 10730 (IconPosition)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
+obj = { "Null": "is_managed", "Null": "scalar", "Null": 8, "Null": 43, "Null": "number_line_settings", backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
 obj.buttonContainer = obj;
 obj.container = { marginHorizontal: 12 };
 obj.containerWithLabel = {};
 obj.pressable = {};
-obj.buttonContent = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj.buttonContent = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
 const tmp4 = arg1(dependencyMap[3]);
 obj.buttonText = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
-obj.rightTextMargin = { "Bool(true)": "r", "Bool(true)": "gift_info" };
+obj.rightTextMargin = { jsx: null, padding: null };
 let closure_6 = obj.createStyles(obj);
 const obj2 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
 const obj1 = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
@@ -37,7 +37,7 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   if (iconPosition === undefined) {
     iconPosition = obj2.LEFT;
   }
-  let obj = { -79157947: true, -788528008: "/assets/design/components/Icon/native/redesign/generated/images", 1275069581: 24, -2013264746: 24, 134218861: null, 1107297406: "99274532ad7fe616c031212e677b32e8", 2097153111: "ThreadLockIcon" };
+  let obj = { 0: "ThreadLockIcon", 0: "png", 0: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", -9223372036854775808: 24, 9223372036854775807: 24, 9223372036854775807: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const tmp4 = callback2();

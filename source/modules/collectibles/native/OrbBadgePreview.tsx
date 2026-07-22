@@ -1,10 +1,10 @@
-// Module ID: 8749
-// Function ID: 69158
+// Module ID: 8750
+// Function ID: 69170
 // Name: OrbBadgePreview
 // Dependencies: []
 // Exports: OrbBadgePreview
 
-// Module 8749 (OrbBadgePreview)
+// Module 8750 (OrbBadgePreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

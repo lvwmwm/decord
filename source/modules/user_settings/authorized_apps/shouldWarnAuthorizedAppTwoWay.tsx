@@ -1,10 +1,10 @@
-// Module ID: 11621
-// Function ID: 90252
+// Module ID: 11622
+// Function ID: 90265
 // Name: isAuthorizedAppTwoWay
 // Dependencies: []
 // Exports: useShouldWarnAuthorizedAppTwoWay
 
-// Module 11621 (isAuthorizedAppTwoWay)
+// Module 11622 (isAuthorizedAppTwoWay)
 function isAuthorizedAppTwoWay(id) {
   let hasItem = require(dependencyMap[0]).ConsoleOAuthApplications.XBOX_APPLICATION_ID === id;
   if (!hasItem) {

@@ -1,10 +1,10 @@
-// Module ID: 9969
-// Function ID: 77049
+// Module ID: 9970
+// Function ID: 77062
 // Name: resetStoreState
 // Dependencies: []
 // Exports: default
 
-// Module 9969 (resetStoreState)
+// Module 9970 (resetStoreState)
 function resetStoreState(guildId) {
   let obj = importDefault(dependencyMap[4]);
   obj = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId };

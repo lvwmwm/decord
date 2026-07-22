@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 323 (convertObjectFitToResizeMode)
-let closure_0 = { "Bool(true)": "Array", "Bool(true)": "MAX_SNOWFLAKE_SEQ", "Bool(true)": "Array", "Bool(true)": "remainTime", "Bool(true)": "Array" };
+let closure_0 = { onRequestClose: true, onShow: true, onDismiss: true, onOrientationChange: true, gap: true };
 arg5.convertObjectFitToResizeMode = function convertObjectFitToResizeMode(objectFit) {
   let tmp;
   if (null != objectFit) {

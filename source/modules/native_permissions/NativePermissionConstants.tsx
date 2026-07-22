@@ -1,5 +1,5 @@
 // Module ID: 4340
-// Function ID: 38339
+// Function ID: 38347
 // Name: NativePermissionStatus
 // Dependencies: []
 

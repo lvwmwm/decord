@@ -1,5 +1,5 @@
 // Module ID: 4742
-// Function ID: 41188
+// Function ID: 41197
 // Name: getStringFromDataView
 // Dependencies: []
 
@@ -91,21 +91,17 @@ arg5.deferInit = function deferInit(Compression, base64, arg2) {
   const arg6 = base64;
   const getStringFromDataView = arg2;
   let closure_3 = false;
-  const obj = {
-    -9223372036854775808: null,
-    0: null,
-    0: null,
+  Object.defineProperty(Compression, base64, {
     get() {
       if (!closure_3) {
         closure_3 = true;
         const _Object = Object;
-        const obj = { 1560238847: "gif", 1627348735: "png", 1677681151: 500, 1744791039: 1000, value: arg2.apply(arg0) };
+        const obj = { value: arg2.apply(arg0) };
         Object.defineProperty(arg0, arg1, obj);
       }
       return arg0[closure_1];
     }
-  };
-  Object.defineProperty(Compression, base64, obj);
+  });
 };
 arg5.getBase64Image = function getBase64Image(image) {
   if ("undefined" !== typeof btoa) {

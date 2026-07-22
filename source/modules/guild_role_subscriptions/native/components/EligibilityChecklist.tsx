@@ -1,10 +1,10 @@
-// Module ID: 16261
-// Function ID: 125635
+// Module ID: 16269
+// Function ID: 125677
 // Name: EligibilityChecklistRow
 // Dependencies: []
 // Exports: default
 
-// Module 16261 (EligibilityChecklistRow)
+// Module 16269 (EligibilityChecklistRow)
 function EligibilityChecklistRow(item) {
   item = item.item;
   const tmp = callback2();
@@ -26,7 +26,7 @@ function EligibilityChecklistRow(item) {
   obj.source = tmp7Result;
   const items1 = [callback(importDefault(dependencyMap[4]), obj), ];
   const obj1 = { style: tmp.rowTextColumn };
-  const obj2 = { delete: null, dispatch: null, raw: null, style: tmp.rowLabel, children: item.checked ? item.checkedLabel : item.uncheckedLabel };
+  const obj2 = { "Null": true, "Null": true, alignItems: true, style: tmp.rowLabel, children: item.checked ? item.checkedLabel : item.uncheckedLabel };
   const items2 = [callback(arg1(dependencyMap[7]).Text, obj2), callback(arg1(dependencyMap[7]).Text, { children: item.description }), ];
   let tmp13 = null != item.actionHandler && null != item.actionLabel;
   if (tmp13) {
@@ -57,7 +57,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ row: { withAnimation: true, overflow: true, marginHorizontal: true, borderRadius: true }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: {}, rowTextColumn: {}, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ row: {}, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { "Null": "ADBE Vector Group", "Null": false, -9223372036854775808: "staff" }, rowTextColumn: { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003183821265432445, marginVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003136903938464816 }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/EligibilityChecklist.tsx");
 

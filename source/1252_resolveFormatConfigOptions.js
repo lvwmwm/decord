@@ -18,4 +18,4 @@ arg5.resolveFormatConfigOptions = function resolveFormatConfigOptions(list, form
     return format;
   }
 };
-arg5.DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { <string:3478312518>: false, <string:4217799105>: false, <string:1449286816>: false }, medium: { <string:3478312518>: true, <string:4217799105>: true, <string:1449286816>: true }, long: {}, full: {} }, time: { short: { state: false, sk: false }, medium: {}, long: {}, full: {} } };
+arg5.DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { "Bool(true)": "message", "Bool(true)": "absolute", "Bool(true)": "100%" }, medium: { "Bool(true)": "log", "Bool(true)": "info", "Bool(true)": "warn" }, long: { "Bool(true)": "transparent", "Bool(true)": 1, "Bool(true)": "solid" }, full: {} }, time: { short: { -17117184: "message", 0: "absolute" }, medium: {}, long: {}, full: {} } };

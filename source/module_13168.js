@@ -1,12 +1,15 @@
 // Module ID: 13168
-// Function ID: 99588
+// Function ID: 99602
 // Dependencies: []
 
 // Module 13168
-let closure_0 = require(dependencyMap[0])(Function.toString);
-const _module = require(dependencyMap[1]);
-if (!_module(require(dependencyMap[2]).inspectSource)) {
-  require(dependencyMap[2]).inspectSource = (arg0) => callback(arg0);
-}
 
-export default require(dependencyMap[2]).inspectSource;
+export default (arg0) => {
+  if (require(dependencyMap[0])(arg0)) {
+    return arg0;
+  } else {
+    const prototype = TypeError.prototype;
+    const tmp5 = new TypeError(String(arg0) + " is not an object");
+    throw tmp5;
+  }
+};

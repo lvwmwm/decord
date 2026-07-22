@@ -1,10 +1,10 @@
-// Module ID: 13276
-// Function ID: 100838
+// Module ID: 13283
+// Function ID: 100871
 // Name: setCertifiedDevices
-// Dependencies: [646840323, 899088385]
+// Dependencies: []
 // Exports: setCertifiedDevices
 
-// Module 13276 (setCertifiedDevices)
+// Module 13283 (setCertifiedDevices)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("actions/CertifiedDeviceActionCreators.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 8367
-// Function ID: 66687
+// Module ID: 8368
+// Function ID: 66699
 // Name: TwinButtons
-// Dependencies: [45154304, 102039552, 325189632, 357105664, 360382464, 325386240, 492437504, 492371968]
+// Dependencies: [45154304, 102039552, 339738624, 339673088, 360316928, 339869696, 492437504, 492371968]
 // Exports: TwinButtons
 
-// Module 8367 (TwinButtons)
+// Module 8368 (TwinButtons)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

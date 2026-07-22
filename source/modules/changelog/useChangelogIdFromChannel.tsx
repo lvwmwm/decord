@@ -1,10 +1,10 @@
-// Module ID: 11458
-// Function ID: 89276
+// Module ID: 11459
+// Function ID: 89289
 // Name: useChangelogIdFromChannel
 // Dependencies: []
 // Exports: default
 
-// Module 11458 (useChangelogIdFromChannel)
+// Module 11459 (useChangelogIdFromChannel)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/changelog/useChangelogIdFromChannel.tsx");
 

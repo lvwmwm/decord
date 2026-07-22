@@ -1,5 +1,5 @@
 // Module ID: 4805
-// Function ID: 41850
+// Function ID: 41859
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -347,7 +347,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[30]), {
           return arg0;
         } else {
           const localVoiceState = callback(closure_3[18]).localVoiceState;
-          localVoiceState.setState({ children: "o", ao: "o" });
+          localVoiceState.setState({ "Null": "o", "Null": "o" });
         }
         return true;
       }
@@ -356,13 +356,13 @@ tmp5 = new tmp5(importDefault(dependencyMap[30]), {
   GUILD_DELETE: function handleGuildDelete(guild) {
     if (guild.guild.id === arg1(dependencyMap[18]).localVoiceState.guildId) {
       const localVoiceState = arg1(dependencyMap[18]).localVoiceState;
-      localVoiceState.setState({ children: "o", ao: "o" });
+      localVoiceState.setState({ "Null": "o", "Null": "o" });
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     if (channel.channel.id === arg1(dependencyMap[18]).localVoiceState.channelId) {
       const localVoiceState = arg1(dependencyMap[18]).localVoiceState;
-      localVoiceState.setState({ children: "o", ao: "o" });
+      localVoiceState.setState({ "Null": "o", "Null": "o" });
     }
   },
   CALL_DELETE: function handleCallDelete(channelId) {
@@ -372,7 +372,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[30]), {
         return false;
       } else {
         const localVoiceState = arg1(dependencyMap[18]).localVoiceState;
-        localVoiceState.setState({ children: "o", ao: "o" });
+        localVoiceState.setState({ "Null": "o", "Null": "o" });
       }
     }
   },
@@ -707,7 +707,7 @@ const obj = {
           return arg0;
         } else {
           const localVoiceState = callback(closure_3[18]).localVoiceState;
-          localVoiceState.setState({ children: "o", ao: "o" });
+          localVoiceState.setState({ "Null": "o", "Null": "o" });
         }
         return true;
       }
@@ -716,13 +716,13 @@ const obj = {
   GUILD_DELETE: function handleGuildDelete(guild) {
     if (guild.guild.id === arg1(dependencyMap[18]).localVoiceState.guildId) {
       const localVoiceState = arg1(dependencyMap[18]).localVoiceState;
-      localVoiceState.setState({ children: "o", ao: "o" });
+      localVoiceState.setState({ "Null": "o", "Null": "o" });
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     if (channel.channel.id === arg1(dependencyMap[18]).localVoiceState.channelId) {
       const localVoiceState = arg1(dependencyMap[18]).localVoiceState;
-      localVoiceState.setState({ children: "o", ao: "o" });
+      localVoiceState.setState({ "Null": "o", "Null": "o" });
     }
   },
   CALL_DELETE: function handleCallDelete(channelId) {
@@ -732,7 +732,7 @@ const obj = {
         return false;
       } else {
         const localVoiceState = arg1(dependencyMap[18]).localVoiceState;
-        localVoiceState.setState({ children: "o", ao: "o" });
+        localVoiceState.setState({ "Null": "o", "Null": "o" });
       }
     }
   },

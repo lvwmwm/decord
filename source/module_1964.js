@@ -4,6 +4,6 @@
 
 // Module 1964
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "<string:1124139010>", format: "f97d64312921f5ef7b3340956e698c3b", View: "el.messages.f97d64312921f5ef7b3340956e698c3b.compiled.messages", accessibilityRole: "jsona", surrogates: "<string:33513729>", url: "<string:287440737>", scales: [null] };
+const obj = { 296374: "<string:3603562497>", 1102560849: "<string:3550216193>", 288807: "<string:1211170817>", 1103760465: "<string:2920577761>", 288241: "<string:1900012871>", 1120538193: "isArray", scales: [false] };
 
 export default _module.registerAsset(obj);

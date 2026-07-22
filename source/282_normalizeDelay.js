@@ -33,7 +33,7 @@ function convertPointerEventToMouseEvent(nativeEvent) {
 }
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = Object.freeze({ NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "constructor", "Bool(false)": "apply" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, ERROR: {} });
+let closure_5 = Object.freeze({ NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, ERROR: {} });
 function isActiveSignal(arg0) {
   let tmp = "RESPONDER_ACTIVE_PRESS_IN" === arg0;
   if (!tmp) {

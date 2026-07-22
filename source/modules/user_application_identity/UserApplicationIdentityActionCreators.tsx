@@ -1,9 +1,9 @@
-// Module ID: 12000
-// Function ID: 92736
+// Module ID: 12004
+// Function ID: 92762
 // Name: fetchStore
 // Dependencies: []
 
-// Module 12000 (fetchStore)
+// Module 12004 (fetchStore)
 let closure_3 = importDefault(dependencyMap[0]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[2]);

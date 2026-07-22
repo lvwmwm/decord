@@ -1,17 +1,17 @@
-// Module ID: 13697
-// Function ID: 103664
+// Module ID: 13704
+// Function ID: 103697
 // Name: FamilyCenterAcceptedLinkRow
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 13697 (FamilyCenterAcceptedLinkRow)
-import "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 13704 (FamilyCenterAcceptedLinkRow)
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function FamilyCenterAcceptedLinkRow(otherUser) {
   let str = otherUser.otherUser;
@@ -44,20 +44,20 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
   }
   return tmp8Result;
 }
-({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_4, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_5 } = result);
-({ jsx: closure_6, jsxs: closure_7 } = result);
-result = { container: { marginTop: 24 } };
-result = { 1979675647: true, 1895788287: true, backgroundColor: require("result").colors.BACKGROUND_BASE_LOW, borderRadius: require("result").radii.md };
-result.content = result;
-result.empty = { "Bool(true)": 1100505555, "Bool(true)": 126701 };
-result.header = { marginBottom: 10 };
-result = result.createStyles(result);
-const obj1 = { actionButton: { backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("result").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("result").radii.round } };
-let closure_9 = result.createStyles(obj1);
-result = result.fileFinishedImporting("modules/parent_tools/native/FamilyCenterAcceptedLinks.tsx");
+({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_4, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_5 } = __exportStarResult1);
+({ jsx: closure_6, jsxs: closure_7 } = __exportStarResult1);
+__exportStarResult1 = { container: { marginTop: 24 } };
+__exportStarResult1 = { 0: true, 0: true, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW, borderRadius: require("__exportStarResult1").radii.md };
+__exportStarResult1.content = __exportStarResult1;
+__exportStarResult1.empty = { 9223372036854775807: -1102997407, -9223372036854775808: 2080375278 };
+__exportStarResult1.header = { marginBottom: 10 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const obj1 = { actionButton: { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("__exportStarResult1").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("__exportStarResult1").radii.round } };
+let closure_9 = __exportStarResult1.createStyles(obj1);
+const result = __exportStarResult1.fileFinishedImporting("modules/parent_tools/native/FamilyCenterAcceptedLinks.tsx");
 
 export default function FamilyCenterAcceptedLinks() {
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[7]);
   const activeLinkUsers = obj.useActiveLinkUsers();
   obj = { count: activeLinkUsers.length, max: importDefault(dependencyMap[6])() ? closure_4 : closure_5 };
@@ -67,7 +67,8 @@ export default function FamilyCenterAcceptedLinks() {
   const intl2 = arg1(dependencyMap[9]).intl;
   obj = { style: tmp.container };
   const ageSpecificText = obj2.useAgeSpecificText(intl.formatToPlainString(importDefault(dependencyMap[10]).+tnO34, obj), intl2.formatToPlainString(importDefault(dependencyMap[10]).pu6/U0, obj));
-  const items = [callback(arg1(dependencyMap[11]).Text, { style: tmp.header, children: ageSpecificText }), ];
+  const obj1 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.header, children: ageSpecificText };
+  const items = [callback(arg1(dependencyMap[11]).Text, obj1), ];
   obj2 = { style: tmp.content };
   if (0 === activeLinkUsers.length) {
     const obj3 = { style: tmp.empty };

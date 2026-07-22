@@ -1,35 +1,36 @@
-// Module ID: 16172
-// Function ID: 124736
+// Module ID: 16180
+// Function ID: 124778
 // Name: GuildSettingsModalSecurity
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16172 (GuildSettingsModalSecurity)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).isGuildOwnerWithRequiredMfaLevel;
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[1]);
+// Module 16180 (GuildSettingsModalSecurity)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+({ View: closure_4, Image: closure_5 } = __exportStarResult1);
 ({ GuildFeatures: closure_10, MFALevels: closure_11 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { wrapper: { 979561191: 0.129, 1890734395: 1, -1135424415: 0 } };
-obj = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING };
-obj.center = obj;
-obj.label = {};
-obj.image = { 9223372036854775807: "<string:2835350032>", 9223372036854775807: "<string:1358954899>", 0: "<string:3461534584>" };
-obj.infoWrapper = { marginBottom: 40 };
-obj.button = { 0: "<string:2255552513>", 0: "<string:16777216>", 0: "%MapPrototype%" };
-let closure_15 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");
+({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = __exportStarResult1);
+__exportStarResult1 = { wrapper: { 0: 0.129, -9223372036854775808: 1, 9223372036854775807: 0 } };
+__exportStarResult1 = { paddingHorizontal: require("__exportStarResult1").modules.mobile.TABLE_ROW_PADDING };
+__exportStarResult1.center = __exportStarResult1;
+__exportStarResult1.label = {};
+__exportStarResult1.image = {};
+__exportStarResult1.infoWrapper = { marginBottom: 40 };
+__exportStarResult1.button = {};
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");
 
 export default function GuildSettingsModalSecurity(guildId) {
   const arg1 = guildId.guildId;
-  const tmp = callback4();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[10]);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
@@ -67,7 +68,7 @@ export default function GuildSettingsModalSecurity(guildId) {
       updateMFALevelResult = updateMFALevelResult.updateMFALevel(updateMFALevelResult);
     }
   }, items2);
-  const obj2 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.label };
+  const obj2 = { style: tmp.label };
   const intl = arg1(dependencyMap[13]).intl;
   obj2.children = intl.string(arg1(dependencyMap[13]).t.Wi9LEV);
   const items4 = [callback2(arg1(dependencyMap[12]).Text, obj2), , ];
@@ -97,7 +98,7 @@ export default function GuildSettingsModalSecurity(guildId) {
     const features2 = stateFromStores.features;
     tmp17 = null;
     if (features2.has(constants.DISCOVERABLE)) {
-      const obj5 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+      const obj5 = { cachedAt: "GESTURE_FULL", edpbxy: "Int8Array" };
       const intl3 = arg1(dependencyMap[13]).intl;
       obj5.children = intl3.string(arg1(dependencyMap[13]).t.KG1V/E);
       tmp17 = callback2(arg1(dependencyMap[12]).Text, obj5);
@@ -109,7 +110,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   const obj6 = { style: tmp.center };
   const items6 = [callback2(closure_5, { source: importDefault(dependencyMap[15]), style: tmp.image, resizeMode: "contain" }), ];
   const obj8 = { style: tmp.infoWrapper };
-  const obj9 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+  const obj9 = { cachedAt: "y", edpbxy: "isArray" };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj9.children = intl4.format(arg1(dependencyMap[13]).t.FK0+iX, {});
   obj8.children = callback2(arg1(dependencyMap[12]).Text, obj9);

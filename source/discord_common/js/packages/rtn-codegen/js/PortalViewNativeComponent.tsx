@@ -1,9 +1,9 @@
-// Module ID: 8273
-// Function ID: 65322
+// Module ID: 8274
+// Function ID: 65334
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 8273 (__INTERNAL_VIEW_CONFIG)
+// Module 8274 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDPortalView", directEventTypes: { topPortalViewLoaded: { registrationName: "onPortalViewLoaded" } } };
 obj = { portal: true };
 const _module = require(dependencyMap[0]);

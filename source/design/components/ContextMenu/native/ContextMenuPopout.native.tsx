@@ -1,10 +1,10 @@
-// Module ID: 12959
-// Function ID: 98614
+// Module ID: 12966
+// Function ID: 98647
 // Name: ContextMenuDivider
 // Dependencies: []
 // Exports: ContextMenuPopout
 
-// Module 12959 (ContextMenuDivider)
+// Module 12966 (ContextMenuDivider)
 function ContextMenuDivider() {
   return callback2(View, { style: callback3().divider });
 }
@@ -98,7 +98,7 @@ const View = tmp2.View;
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg, minWidth: arg1(dependencyMap[6]).CONTEXT_MENU_MIN_WIDTH };
+obj = { "Bool(false)": "hybridGdiFrames", "Bool(false)": "useBountiesModalVideoAnalytics", "Bool(false)": "Array", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg, minWidth: arg1(dependencyMap[6]).CONTEXT_MENU_MIN_WIDTH };
 const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_HIGH);
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[3]);
@@ -212,7 +212,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       obj = {};
       obj2 = transitionState(positionX[12]);
       obj3 = transitionState(positionX[7]);
-      interpolateResult = obj3.interpolate(closure_8.get(), ["replace", "then"], ["replace", "then"]);
+      interpolateResult = obj3.interpolate(closure_8.get(), [77601039, 1612144654], [77601039, 1612144654]);
       fn = function t(arg0) {
         let tmp = arg0;
         if (arg0) {
@@ -241,7 +241,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       items = [, ];
       items[0] = num2 * result1 + transitionState(positionX[6]).CONTEXT_MENU_MIN_SCALE * -num2 * result1;
       items[1] = 0;
-      interpolateResult1 = obj7.interpolate(value, ["replace", "then"], items);
+      interpolateResult1 = obj7.interpolate(value, [77601039, 1612144654], items);
       obj1.translateX = obj6.withSpring(interpolateResult1, transitionState(positionX[6]).CONTEXT_MENU_SPRING);
       items1 = [, , ];
       items1[0] = obj1;
@@ -252,7 +252,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       items2 = [, ];
       items2[0] = num * result + transitionState(positionX[6]).CONTEXT_MENU_MIN_SCALE * -num * result;
       items2[1] = 0;
-      interpolateResult2 = obj10.interpolate(value1, ["replace", "then"], items2);
+      interpolateResult2 = obj10.interpolate(value1, [77601039, 1612144654], items2);
       obj2.translateY = obj9.withSpring(interpolateResult2, transitionState(positionX[6]).CONTEXT_MENU_SPRING);
       items1[1] = obj2;
       obj3 = {};
@@ -262,7 +262,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       items3 = [, ];
       items3[0] = transitionState(positionX[6]).CONTEXT_MENU_MIN_SCALE;
       items3[1] = 1;
-      interpolateResult3 = obj13.interpolate(value2, ["replace", "then"], items3);
+      interpolateResult3 = obj13.interpolate(value2, [77601039, 1612144654], items3);
       obj3.scale = obj12.withSpring(interpolateResult3, transitionState(positionX[6]).CONTEXT_MENU_SPRING);
       items1[2] = obj3;
       obj.transform = items1;
@@ -324,7 +324,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
   if (null != title) {
     const obj5 = {};
     const obj6 = { style: tmp3.titleContainer };
-    const obj7 = { handleMessageFocus: "Array", enableHome: "isArray", afterMs: "Array", children: title };
+    const obj7 = { gauge: 1231704321, onLayerLoaded: 32296513, ExpressiveGradient: 57737472, children: title };
     obj6.children = requestClose(arg1(dependencyMap[15]).Text, obj7);
     const items7 = [requestClose(View, obj6), requestClose(ContextMenuDivider, {})];
     obj5.children = items7;

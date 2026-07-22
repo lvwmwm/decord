@@ -1,10 +1,10 @@
-// Module ID: 10662
-// Function ID: 83162
+// Module ID: 10663
+// Function ID: 83175
 // Name: useLocalStorageState
 // Dependencies: []
 // Exports: useLocalStorageState
 
-// Module 10662 (useLocalStorageState)
+// Module 10663 (useLocalStorageState)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("hooks/useLocalStorageState.tsx");

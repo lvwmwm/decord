@@ -1,15 +1,15 @@
-// Module ID: 12887
-// Function ID: 98410
+// Module ID: 12894
+// Function ID: 98443
 // Name: Collapsible
 // Dependencies: []
 // Exports: default
 
-// Module 12887 (Collapsible)
+// Module 12894 (Collapsible)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = {};
+let closure_8 = { 1000575061: true, 527995234: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
 let obj = arg1(dependencyMap[4]);
 obj = { collapsible: {} };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };

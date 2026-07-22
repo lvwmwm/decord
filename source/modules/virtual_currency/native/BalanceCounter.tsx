@@ -1,9 +1,9 @@
-// Module ID: 9787
-// Function ID: 76053
+// Module ID: 9788
+// Function ID: 76066
 // Name: BalanceCounter
 // Dependencies: []
 
-// Module 9787 (BalanceCounter)
+// Module 9788 (BalanceCounter)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ useState: closure_4, useEffect: closure_5, useRef: closure_6, useCallback: closure_7 } = arg1(dependencyMap[1]));
 let closure_8 = importAll(dependencyMap[1]);
@@ -49,7 +49,7 @@ class BalanceCounter {
     tmp9 = useCallback((set, targetHeight, duration) => {
       callback(true);
       let obj = value(closure_2[5]);
-      obj = { duration };
+      obj = { paddingBottom: null, paddingTop: null, width: null, height: null, duration };
       const fn = function l() {
         callback(closure_2[3]).runOnJS(closure_9)(false);
       };

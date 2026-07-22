@@ -1,10 +1,10 @@
-// Module ID: 11157
-// Function ID: 86767
+// Module ID: 11158
+// Function ID: 86780
 // Name: AppLauncherOnboardingBanner
 // Dependencies: []
 // Exports: default
 
-// Module 11157 (AppLauncherOnboardingBanner)
+// Module 11158 (AppLauncherOnboardingBanner)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingBanner.tsx");

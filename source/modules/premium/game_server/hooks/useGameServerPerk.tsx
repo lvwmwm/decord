@@ -1,10 +1,10 @@
-// Module ID: 11598
-// Function ID: 90138
+// Module ID: 11599
+// Function ID: 90151
 // Name: useGameServerPerk
 // Dependencies: []
 // Exports: default
 
-// Module 11598 (useGameServerPerk)
+// Module 11599 (useGameServerPerk)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const GuildPowerupType = arg1(dependencyMap[2]).GuildPowerupType;

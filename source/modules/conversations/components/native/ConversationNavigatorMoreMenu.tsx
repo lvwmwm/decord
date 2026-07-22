@@ -1,10 +1,10 @@
-// Module ID: 9289
-// Function ID: 72565
+// Module ID: 9290
+// Function ID: 72578
 // Name: ConversationNavigatorMoreMenu
 // Dependencies: []
 // Exports: default
 
-// Module 9289 (ConversationNavigatorMoreMenu)
+// Module 9290 (ConversationNavigatorMoreMenu)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

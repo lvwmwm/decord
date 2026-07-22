@@ -1,10 +1,10 @@
-// Module ID: 8207
-// Function ID: 64890
+// Module ID: 8209
+// Function ID: 64903
 // Name: getSizedAssetUri
 // Dependencies: []
 // Exports: default
 
-// Module 8207 (getSizedAssetUri)
+// Module 8209 (getSizedAssetUri)
 let StyleSheet;
 function getSizedAssetUri(bgStatic, targetSize) {
   if (null != targetSize) {
@@ -37,7 +37,7 @@ function BundleStaticPreviewContent(arg0) {
   let tmp = null;
   ({ disableBackground, mutedBackground } = arg0);
   if (null != bgStatic) {
-    let obj = {};
+    let obj = { 0: "border", 0: "TOO_MANY_CONNECTIONS", 0: "getTemplateTierCreationAnalyticsContext", 9223372036854775807: null, 9223372036854775807: null };
     obj = { uri: getSizedAssetUri(bgStatic, targetSize) };
     obj.source = obj;
     obj.style = closure_8.bgImage;
@@ -65,7 +65,7 @@ function BundleStaticPreviewContent(arg0) {
   let tmp18 = null != fgStatic;
   if (tmp18) {
     const obj3 = { style: closure_8.fgClip, pointerEvents: "none" };
-    const obj4 = {};
+    const obj4 = { 0: "border", 0: "TOO_MANY_CONNECTIONS", 0: "getTemplateTierCreationAnalyticsContext", 9223372036854775807: null, 9223372036854775807: null };
     const obj5 = { uri: getSizedAssetUri(fgStatic, targetSize) };
     obj4.source = obj5;
     obj4.style = closure_8.fgImage;
@@ -198,21 +198,13 @@ let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: importDefault(dependencyMap[6]).radii.xs };
   const items = [{ rotate: "-8deg" }];
   obj.pfx = obj;
-  const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-  ({ avatarTop: obj4.top, avatarRight: obj4.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items1 = [{ rotate: "8deg" }];
-  obj1.transform = items1;
-  obj.avatar = obj1;
-  const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-  ({ avatarWithNameplateTop: obj5.top, avatarWithNameplateRight: obj5.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
+  obj.avatar = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1 };
   const items2 = [{ rotate: "8deg" }];
-  obj2.transform = items2;
-  obj2.shadowColor = importDefault(dependencyMap[6]).colors.BLACK;
-  obj2.shadowOffset = { "Null": "<string:2754674692>", "Null": "<string:3607772528>" };
-  obj2.shadowOpacity = 0.5;
-  obj2.shadowRadius = 4;
-  obj.avatarWithNameplate = obj2;
-  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { "Null": "<string:2754674692>", "Null": "<string:3607772528>" }, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj.avatarWithNameplate = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
+  const obj1 = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1 };
+  const obj2 = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
   return obj;
 });
 const obj7 = arg1(dependencyMap[5]);

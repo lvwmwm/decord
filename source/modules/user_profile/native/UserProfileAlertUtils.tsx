@@ -1,10 +1,10 @@
-// Module ID: 11642
-// Function ID: 90356
+// Module ID: 11643
+// Function ID: 90369
 // Name: confirmCancelFriendRequest
 // Dependencies: []
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmThreadRemove, confirmVideoUnstableConnection
 
-// Module 11642 (confirmCancelFriendRequest)
+// Module 11643 (confirmCancelFriendRequest)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_profile/native/UserProfileAlertUtils.tsx");

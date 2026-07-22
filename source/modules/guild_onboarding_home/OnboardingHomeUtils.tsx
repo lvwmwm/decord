@@ -1,10 +1,10 @@
-// Module ID: 5605
-// Function ID: 47647
+// Module ID: 5604
+// Function ID: 47655
 // Name: canSeeOnboardingHomeInPreview
 // Dependencies: []
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 5605 (canSeeOnboardingHomeInPreview)
+// Module 5604 (canSeeOnboardingHomeInPreview)
 function canSeeOnboardingHomeInPreview(guild) {
   const id = guild.id;
   let newMemberActions = store.getNewMemberActions(id);

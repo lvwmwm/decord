@@ -1,10 +1,10 @@
-// Module ID: 10580
-// Function ID: 82579
+// Module ID: 10581
+// Function ID: 82592
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 10580 (_isNativeReflectConstruct)
+// Module 10581 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

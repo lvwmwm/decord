@@ -1,8 +1,8 @@
-// Module ID: 9601
-// Function ID: 74822
+// Module ID: 9602
+// Function ID: 74835
 // Dependencies: []
 
-// Module 9601
+// Module 9602
 const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
 const PADDING_VERTICAL = tmp2.PADDING_VERTICAL;
@@ -14,15 +14,15 @@ let obj = {};
 obj = { paddingTop: PADDING_VERTICAL, paddingHorizontal: tmp2.PADDING_HORIZONTAL, height: 36 + result, justifyContent: "center", overflow: "hidden", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.section = obj;
 obj.label = { flex: -1 };
-obj.header = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
+obj.header = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" };
 obj.bannerContainer = {};
 obj.banner = { height: "100%" };
-obj.headline = { useIsVerifiedAdult: "6d493c91631ba30b8d8c55fe48d43780", createTimeToFullDisplay: "CheckmarkLargeBoldIcon", isBLEND: "png", page_session_id: "absolute" };
+obj.headline = { "Bool(true)": "6d493c91631ba30b8d8c55fe48d43780", "Bool(true)": "CheckmarkLargeBoldIcon", "Bool(true)": "png", "Bool(true)": "absolute" };
 obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.iconContainer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.icon = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.animatedIcon = { position: true, shadowRadius: true };
+obj.animatedIcon = {};
 obj.premiumIcon = {};
 let closure_7 = obj1.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     flag = callback(arg1(dependencyMap[6]).Text, obj6);
   }
   items1[1] = flag;
-  const obj7 = { "Null": null, "Null": null, "Null": null };
+  const obj7 = {};
   const intl = arg1(dependencyMap[11]).intl;
   obj7.children = intl.format(arg1(dependencyMap[11]).t.0S3JpO, { numStickers: stickerPack.stickers.length });
   items1[2] = callback(arg1(dependencyMap[6]).Text, obj7);

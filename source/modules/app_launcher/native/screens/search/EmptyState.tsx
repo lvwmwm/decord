@@ -1,14 +1,14 @@
-// Module ID: 11218
-// Function ID: 87369
+// Module ID: 11219
+// Function ID: 87382
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 11218 (EmptyState)
+// Module 11219 (EmptyState)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { 1879049349: true, "Null": true, "Null": true }, textContainer: {}, text: {} });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { <string:4175141322>: 2017525761, <string:2410893134>: 1895826561, <string:2325658035>: 1 }, textContainer: {}, text: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/app_launcher/native/screens/search/EmptyState.tsx");
 

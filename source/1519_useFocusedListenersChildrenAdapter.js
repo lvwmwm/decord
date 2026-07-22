@@ -33,7 +33,7 @@ export default function useFocusedListenersChildrenAdapter(navigation) {
       obj = { handled: true, result: arg0(navigation) };
       return obj;
     } else {
-      return { iconPosition: null, grow: null };
+      return { ORBS_QUESTS_BALANCE_MENU_CTA: "L", roundingIncrement: "L" };
     }
   }, items);
   const items1 = [addListener, callback];

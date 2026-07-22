@@ -1,5 +1,5 @@
 // Module ID: 7918
-// Function ID: 63112
+// Function ID: 63122
 // Name: _fetchApplicationCommandIndex
 // Dependencies: []
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex

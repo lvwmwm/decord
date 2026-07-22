@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 88985
+// Module ID: 11435
+// Function ID: 88998
 // Name: ApplicationCommandOptionItem
 // Dependencies: []
 // Exports: default
 
-// Module 11434 (ApplicationCommandOptionItem)
+// Module 11435 (ApplicationCommandOptionItem)
 function ApplicationCommandOptionItem(arg0) {
   let option;
   let optionState;
@@ -97,18 +97,18 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[6]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
 obj.applicationCommandBar = obj;
-const obj1 = { 2018655073: 16, 1669594568: 16, 1045670548: -64, -460645489: 0, borderRadius: importDefault(dependencyMap[6]).radii.md };
+const obj1 = { "Bool(false)": 16, "Bool(false)": 16, "Bool(false)": -64, "Bool(false)": 0, borderRadius: importDefault(dependencyMap[6]).radii.md };
 obj.applicationIcon = obj1;
 obj.applicationTopWrapperScrollView = {};
-obj.applicationName = { "Bool(false)": "isArrayBufferToString", "Bool(false)": "sync" };
-const obj2 = { "Null": 2084700162, "Null": 1174405692, "Null": 1107296880, "Null": 82906, "Null": 159660, width: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
+obj.applicationName = { "Bool(true)": "Group 13", "Bool(true)": 2 };
+const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, width: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
 obj.applicationOptionalOptionsDivider = obj2;
 obj.applicationOptionalOptionsDividerWithNoRequired = { marginLeft: 4 };
 obj.applicationOptionalOptionsIndicator = {};
 obj.applicationDescriptionContainer = { flexShrink: 1 };
 const tmp3 = arg1(dependencyMap[4]);
 obj.applicationDescriptionDivider = { marginLeft: 0, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_COMMAND_BAR_DIVIDER };
-const obj4 = { "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: arg1(dependencyMap[7]).DARK_PRIMARY_800_LIGHT_PRIMARY_300 };
+const obj4 = { "Bool(false)": "Array", "Null": "isArray", "Null": "accessibilityRole", "Null": "t", borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: arg1(dependencyMap[7]).DARK_PRIMARY_800_LIGHT_PRIMARY_300 };
 obj.applicationCommandOption = obj4;
 const obj3 = { marginLeft: 0, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_COMMAND_BAR_DIVIDER };
 obj.applicationCommandOptionText = { color: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
@@ -320,7 +320,7 @@ export default function _default(command) {
     tmp15 = optionStates[name1];
   }
   obj = { style: tmp.applicationCommandBar };
-  obj = { style: "r", variant: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", aria-hidden: "Array", children: "%Math.abs%", containerStyle: "isArray", ref, contentContainerStyle: tmp.applicationTopWrapperScrollView };
+  obj = { "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(false)": null, "Bool(false)": "7f316656b571ac7f7a106867fe919370", "Bool(false)": "el.messages.7f316656b571ac7f7a106867fe919370.compiled.messages", "Bool(false)": "jsona", ref, contentContainerStyle: tmp.applicationTopWrapperScrollView };
   let tmp20 = null != memo;
   if (tmp20) {
     const obj1 = { style: tmp.applicationIcon, source: memo };
@@ -366,7 +366,7 @@ export default function _default(command) {
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     obj4.style = items6;
     const items7 = [callback2(onPressOption, obj4), , ];
-    const obj5 = { "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "constructor", "Bool(false)": "l", style: tmp.applicationOptionalOptionsIndicator };
+    const obj5 = { style: tmp.applicationOptionalOptionsIndicator };
     const intl = arg1(dependencyMap[9]).intl;
     obj5.children = intl.string(arg1(dependencyMap[9]).t.U19GM3);
     items7[1] = callback2(arg1(dependencyMap[14]).Text, obj5);

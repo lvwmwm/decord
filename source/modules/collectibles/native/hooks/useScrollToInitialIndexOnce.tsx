@@ -1,10 +1,10 @@
-// Module ID: 14357
-// Function ID: 108424
+// Module ID: 14365
+// Function ID: 108467
 // Name: INITIAL_SCROLL_DELAY_MS
 // Dependencies: []
 // Exports: useScrollToInitialIndexOnce
 
-// Module 14357 (INITIAL_SCROLL_DELAY_MS)
+// Module 14365 (INITIAL_SCROLL_DELAY_MS)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/collectibles/native/hooks/useScrollToInitialIndexOnce.tsx");
 

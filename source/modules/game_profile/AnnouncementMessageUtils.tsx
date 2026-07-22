@@ -1,10 +1,10 @@
-// Module ID: 8646
-// Function ID: 68441
+// Module ID: 8647
+// Function ID: 68453
 // Name: toAnnouncementMessages
 // Dependencies: []
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8646 (toAnnouncementMessages)
+// Module 8647 (toAnnouncementMessages)
 const isMessageComponentsV2 = require(dependencyMap[0]).isMessageComponentsV2;
 let closure_4 = /^#{1,3}\s+(.+)$/;
 let closure_5 = /^https?:\/\/\S+$/;

@@ -1,9 +1,9 @@
-// Module ID: 8444
-// Function ID: 67377
+// Module ID: 8445
+// Function ID: 67389
 // Name: guildEventDetailsParser
 // Dependencies: []
 
-// Module 8444 (guildEventDetailsParser)
+// Module 8445 (guildEventDetailsParser)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/guildEventDetailsParser.native.tsx");
 

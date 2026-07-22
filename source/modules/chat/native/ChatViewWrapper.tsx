@@ -1,8 +1,8 @@
-// Module ID: 10379
-// Function ID: 80043
-// Dependencies: [578093056, 131072, 1148452864, 1140850693]
+// Module ID: 10380
+// Function ID: 80056
+// Dependencies: [578158592, 131072, 1148452864, 1157627909]
 
-// Module 10379
+// Module 10380
 const _module = require(dependencyMap[0]);
 if (_module.isAnimatedAndroidKeyboard()) {
   let importDefaultResult = importDefault(dependencyMap[1]);

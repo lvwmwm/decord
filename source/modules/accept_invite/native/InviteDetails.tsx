@@ -1,10 +1,10 @@
-// Module ID: 11741
-// Function ID: 91204
+// Module ID: 11742
+// Function ID: 91217
 // Name: getMemberCountFromInvite
 // Dependencies: []
 // Exports: default
 
-// Module 11741 (getMemberCountFromInvite)
+// Module 11742 (getMemberCountFromInvite)
 function getMemberCountFromInvite(invite) {
   const obj = {};
   const approximate_presence_count = invite.approximate_presence_count;
@@ -214,7 +214,7 @@ function InviteJoinContext(invite) {
     const obj13 = arg1(dependencyMap[12]);
   }
   const items1 = [tmp33, ];
-  obj6 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.inviteJoinText, children: formatResult };
+  obj6 = { "Null": 1, "Null": "tail", alignItems: null, style: tmp.inviteJoinText, children: formatResult };
   items1[1] = callback2(arg1(dependencyMap[18]).Text, obj6);
   obj3.children = items1;
   return closure_13(View, obj3);
@@ -242,7 +242,7 @@ function InviteMemberCounts(invite) {
           obj = {};
           obj = { style: tmp.dotOnline };
           const items = [callback2(View, obj), ];
-          const obj1 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+          const obj1 = { cachedAt: true, edpbxy: true };
           const intl = arg1(dependencyMap[16]).intl;
           const obj2 = { membersOnline: tmp2.onlineCount };
           obj1.children = intl.format(arg1(dependencyMap[16]).t.LC+S+m, obj2);
@@ -256,7 +256,7 @@ function InviteMemberCounts(invite) {
           const obj3 = {};
           const obj4 = { style: tmp.dotOffline };
           const items2 = [callback2(View, obj4), ];
-          const obj5 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+          const obj5 = { cachedAt: true, edpbxy: true };
           const intl2 = arg1(dependencyMap[16]).intl;
           const obj6 = { count: tmp2.memberCount };
           obj5.children = intl2.format(arg1(dependencyMap[16]).t.zRl6XR, obj6);
@@ -286,27 +286,27 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { paddingVertical: 48, flexDirection: 48, alignItems: null, borderRadius: importDefault(dependencyMap[10]).radii.lg };
+obj = { borderRadius: importDefault(dependencyMap[10]).radii.lg, marginEnd: 48, paddingHorizontal: null };
 obj.avatar = obj;
 const tmp3 = arg1(dependencyMap[8]);
 obj.avatarContainer = { borderRadius: importDefault(dependencyMap[10]).radii.none };
-obj.inviteJoinContainer = { header: "/assets/images/native/stream_feedback/light-theme-desaturated", body: 64, helpArticleId: 64, type: null, pendingDowngrade: "69e9e79e44fff2fca6c7a210e9bf5b9f" };
+obj.inviteJoinContainer = { getRuleDefaultActionsFromConfig: "/assets/images/native/stream_feedback/light-theme-desaturated", EMOJI_ROW_SLIM: 64, assetUrl: 64, lld: null, EducationIcon: "69e9e79e44fff2fca6c7a210e9bf5b9f" };
 obj.inviteJoinText = { textAlign: "center" };
 const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.none };
 obj.inviterIconWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.none, marginRight: 8 };
-const obj3 = { "Null": 0, "Null": -1048576, borderRadius: importDefault(dependencyMap[10]).radii.md };
-obj.inviterIcon = obj3;
+const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.none, marginRight: 8 };
+obj.inviterIcon = { borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.guildNameContainer = {};
 obj.guildNameText = { textAlign: "center" };
-const obj4 = { flex: "r", position: "gift_info", opacity: arg1(dependencyMap[11]).DARK_1_LIGHT_04 };
+const obj4 = { -9223372036854775808: null, 0: null, opacity: arg1(dependencyMap[11]).DARK_1_LIGHT_04 };
 obj.featureIcon = obj4;
 obj.memberInfo = {};
-obj.rolesList = {};
-const obj5 = { 2018655073: 858992922, 1669594568: 858993459, 1045670548: "accessibilityRole", -460645489: "name", borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
+obj.rolesList = { "Null": 800, "Null": 16, 0: 20 };
+const obj5 = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
 obj.dotOnline = obj5;
-const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.none, marginRight: 8 };
+const obj3 = { borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.dotOffline = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.PRIMARY_400 };
-const obj7 = { <string:1554054124>: null, <string:2690802602>: 10, <string:2894746452>: "grab", <string:1311878281>: null, <string:4217612897>: "\u{1F91F}\u{1F3FF}", <string:3159515808>: true, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.sm };
+const obj7 = { "Bool(false)": null, "Bool(false)": 0, "Bool(false)": null, "Bool(false)": 124, "Bool(false)": 132, "Bool(false)": 21, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.sm };
 obj.embedDetailsCard = obj7;
 let closure_15 = obj.createStyles(obj);
 let closure_16 = { ACCEPT: 0, [0]: "ACCEPT", DECLINE: 1, [1]: "DECLINE" };
@@ -401,9 +401,9 @@ export default function InviteDetails(invite) {
   }
   const obj11 = {};
   const obj12 = {
-    -9223372036854775808: true,
-    9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi",
-    9223372036854775807: null,
+    SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH: "83f73ec48da0fa384732b494e560b028",
+    linkText: "nl.messages.83f73ec48da0fa384732b494e560b028.compiled.messages",
+    addWindow: "jsona",
     icon: tmp24,
     text: stringResult,
     accessibilityLabel: tmp33,
@@ -415,7 +415,7 @@ export default function InviteDetails(invite) {
     disabled: first === constants2.ACCEPT
   };
   const items4 = [callback2(arg1(dependencyMap[25]).Button, obj12), ];
-  obj13 = { "Bool(true)": 1124139009, "Bool(true)": 153708 };
+  obj13 = {};
   const intl4 = arg1(dependencyMap[16]).intl;
   const string = intl4.string;
   const t = arg1(dependencyMap[16]).t;

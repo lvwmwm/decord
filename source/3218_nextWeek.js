@@ -7,12 +7,12 @@
 // Module 3218 (nextWeek)
 let closure_0 = [];
 const obj = {
-  areIntervalsOverlapping: false,
-  clamp: false,
-  closestIndexTo: false,
-  closestTo: false,
-  compareAsc: null,
-  compareDesc: null,
+  "Bool(false)": 0.16,
+  "Bool(false)": null,
+  "Bool(false)": 16,
+  "Bool(false)": "center",
+  "Bool(false)": "center",
+  "Bool(false)": 4,
   nextWeek(arg0) {
     return "'v " + closure_0[arg0.getUTCDay(arg0)] + " o' p";
   }

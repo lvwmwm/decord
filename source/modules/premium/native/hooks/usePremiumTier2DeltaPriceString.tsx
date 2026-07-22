@@ -1,10 +1,10 @@
-// Module ID: 12361
-// Function ID: 94552
+// Module ID: 12366
+// Function ID: 94580
 // Name: getViewerProductId
 // Dependencies: []
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12361 (getViewerProductId)
+// Module 12366 (getViewerProductId)
 function getViewerProductId(subscription) {
   if (null == subscription) {
     return null;
@@ -17,7 +17,7 @@ const useNativeCheckoutStore = arg1(dependencyMap[1]).useNativeCheckoutStore;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ PremiumTypes: closure_5, SubscriptionIntervalTypes: closure_6 } = arg1(dependencyMap[3]));
 const CurrencyCodes = arg1(dependencyMap[4]).CurrencyCodes;
-let closure_8 = { "Null": "o", "Null": "o" };
+let closure_8 = { GuildBadgeDollarSign: "o", markAt: "o" };
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
 

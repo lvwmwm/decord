@@ -1,10 +1,10 @@
-// Module ID: 5351
-// Function ID: 45783
+// Module ID: 5078
+// Function ID: 44193
 // Name: headerTitle
 // Dependencies: []
 // Exports: default
 
-// Module 5351 (headerTitle)
+// Module 5078 (headerTitle)
 function headerTitle() {
   return null;
 }

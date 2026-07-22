@@ -1,18 +1,17 @@
-// Module ID: 10759
-// Function ID: 83622
+// Module ID: 10760
+// Function ID: 83635
 // Name: useStageActionBarAnimation
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: useStageActionBarAnimation
 
-// Module 10759 (useStageActionBarAnimation)
-import { Easing } from "result";
-import result from "result";
+// Module 10760 (useStageActionBarAnimation)
+import { Easing } from "__exportStarResult1";
 
 const obj = { duration: 250 };
 obj.easing = Easing.bezier(0.66, 0, 0.2, 1);
 let closure_4 = { code: "function StageChannelAnimationUtilsTsx1(){const{isInvited,actionBarHeight,ACTION_BAR_SAFE_AREA_PADDING,safeAreaTop,controlPadding}=this.__closure;return isInvited?actionBarHeight+ACTION_BAR_SAFE_AREA_PADDING+safeAreaTop:controlPadding;}" };
 let closure_5 = { code: "function StageChannelAnimationUtilsTsx2(){const{withTiming,paddingTop,TIMING_CONFIG}=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};}" };
-result = result.fileFinishedImporting("modules/stage_channels/native/components/StageChannelAnimationUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/stage_channels/native/components/StageChannelAnimationUtils.tsx");
 
 export const useStageActionBarAnimation = function useStageActionBarAnimation(channelId, controlPadding) {
   const require = controlPadding;

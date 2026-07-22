@@ -1,10 +1,10 @@
-// Module ID: 9336
-// Function ID: 72955
+// Module ID: 9337
+// Function ID: 72968
 // Name: useExpressionPickerListWidth
 // Dependencies: []
 // Exports: default
 
-// Module 9336 (useExpressionPickerListWidth)
+// Module 9337 (useExpressionPickerListWidth)
 const PADDING_HORIZONTAL = require(dependencyMap[0]).PADDING_HORIZONTAL;
 const ACTION_SHEET_MAX_WIDTH = require(dependencyMap[1]).ACTION_SHEET_MAX_WIDTH;
 const _module = require(dependencyMap[4]);

@@ -1,10 +1,10 @@
-// Module ID: 8766
-// Function ID: 69293
+// Module ID: 8767
+// Function ID: 69305
 // Name: ShopGiftModalKey
 // Dependencies: []
 // Exports: closeShopGiftModal, openShopGiftModal
 
-// Module 8766 (ShopGiftModalKey)
+// Module 8767 (ShopGiftModalKey)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/collectibles/native/openGiftModal.tsx");
 

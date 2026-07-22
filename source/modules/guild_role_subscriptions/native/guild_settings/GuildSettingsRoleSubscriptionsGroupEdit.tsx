@@ -1,10 +1,10 @@
-// Module ID: 16289
-// Function ID: 125722
+// Module ID: 16297
+// Function ID: 125764
 // Name: GuildSettingsRoleSubscriptionsGroupEditInner
 // Dependencies: []
 // Exports: default
 
-// Module 16289 (GuildSettingsRoleSubscriptionsGroupEditInner)
+// Module 16297 (GuildSettingsRoleSubscriptionsGroupEditInner)
 function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   guildId = guildId.guildId;
   const arg1 = guildId;

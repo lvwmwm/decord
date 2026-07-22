@@ -1,9 +1,9 @@
-// Module ID: 13874
-// Function ID: 104977
+// Module ID: 13881
+// Function ID: 105017
 // Name: QuestDockMode
 // Dependencies: []
 
-// Module 13874 (QuestDockMode)
+// Module 13881 (QuestDockMode)
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
@@ -11,7 +11,7 @@ const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
 const jsx = arg1(dependencyMap[4]).jsx;
 const obj = {};
 const tmp2 = arg1(dependencyMap[3]);
-obj.questDockWrapperSpecs = arg1(dependencyMap[5]).createFakeSharedValue({ 9223372036854775807: null, 0: null, 0: null, -9223372036854775808: null, 16640512: null });
+obj.questDockWrapperSpecs = arg1(dependencyMap[5]).createFakeSharedValue({ "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false });
 const obj3 = arg1(dependencyMap[5]);
 obj.windowDimensions = arg1(dependencyMap[5]).createFakeSharedValue({});
 const obj4 = arg1(dependencyMap[5]);
@@ -28,7 +28,7 @@ const memoResult = importAllResult.memo(function QuestDockGestureContextProvider
   const arg1 = sharedValue;
   const youBarHorizontalMargin = arg1(dependencyMap[8]).useYouBarHorizontalMargin();
   const obj3 = arg1(dependencyMap[8]);
-  obj = { 9223372036854775807: 345, 0: 82, 0: null, -9223372036854775808: "91248bc802fa2159ae23ab96ddaf91db", 16640512: "clouds_light_background" };
+  obj = { "Bool(false)": 345, "Bool(false)": 82, "Bool(false)": null, "Bool(false)": "91248bc802fa2159ae23ab96ddaf91db", "Bool(false)": "clouds_light_background" };
   const obj4 = arg1(dependencyMap[7]);
   obj.width = arg1(dependencyMap[9]).getQuestDockCollapsedWidth(size.width, youBarHorizontalMargin, youBarHorizontalMargin);
   obj.height = closure_6;

@@ -1,10 +1,10 @@
-// Module ID: 9638
-// Function ID: 75068
+// Module ID: 9639
+// Function ID: 75081
 // Name: IdIcon
 // Dependencies: []
 // Exports: IdIcon
 
-// Module 9638 (IdIcon)
+// Module 9639 (IdIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/IdIcon.tsx");

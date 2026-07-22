@@ -1,9 +1,9 @@
-// Module ID: 14812
-// Function ID: 111666
+// Module ID: 14820
+// Function ID: 111709
 // Name: IconOrPreview
 // Dependencies: []
 
-// Module 14812 (IconOrPreview)
+// Module 14820 (IconOrPreview)
 let HAPPENING_NOW_CONTENT_HEIGHT;
 let PixelRatio;
 function IconOrPreview(arg0) {
@@ -207,24 +207,23 @@ const tmp4 = arg1(dependencyMap[5]);
 const pixelSizeForLayoutSize = PixelRatio.getPixelSizeForLayoutSize(HAPPENING_NOW_CONTENT_HEIGHT);
 const items = [importDefault(dependencyMap[8]), importDefault(dependencyMap[9])];
 let obj1 = arg1(dependencyMap[10]);
-let obj = { content: { enableGameUpdateNotifications: null, fr-RW: null } };
-obj = { -1437179192: true, 1697044049: true, -1437140064: true, 1367172194: true, 140588052: true, 1673742417: true, backgroundColor: importDefault(dependencyMap[11]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[11]).radii.xl };
+let obj = { content: { "Bool(false)": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 } };
+obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[11]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[11]).radii.xl };
 obj.avatarStackContainer = obj;
 obj.cardAvatar = { marginBottom: 2 };
 obj.cardImage = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" };
 obj.cardImageStream = { height: tmp3.HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" };
 obj1 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[11]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
 obj.cardImageAsset = obj1;
-const obj2 = { ExclusiveGesture: "2026-02-activity-privacy-matching", spades: "user", _cachedKeyLayoutMapEntries: "Global Overrides", isVisible: false, isChannelNSFWGated: null, showIconSparkle: "text-sm/semibold", paddingVertical: "text-default", backgroundColor: importDefault(dependencyMap[11]).colors.CARD_SECONDARY_BG, borderRadius: importDefault(dependencyMap[11]).radii.sm, shadowOffset: { "Null": -536870861, "Null": -299892737 } };
+const obj2 = { paddingVertical: "2026-02-activity-privacy-matching", display: "user", flexDirection: "Global Overrides", alignItems: false, paddingLeft: null, zIndex: "text-sm/semibold", users: "text-default", backgroundColor: importDefault(dependencyMap[11]).colors.CARD_SECONDARY_BG, borderRadius: importDefault(dependencyMap[11]).radii.sm, shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
 obj.cardImageAssetContainer = obj2;
 const tmp5 = arg1(dependencyMap[7]);
 obj.cardImageAssetBackground = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[11]).radii.sm };
 const obj3 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[11]).radii.sm };
 obj.cardImageStreamPreview = { borderRadius: importDefault(dependencyMap[11]).radii.sm, overflow: "hidden" };
 obj.cardImageStreamLive = {};
-const obj5 = { 9223372036854775807: "center", 0: null, fontFamily: arg1(dependencyMap[6]).Fonts.PRIMARY_BOLD };
-obj.stageStreamLiveText = obj5;
-obj.stagePreviewWrapper = {};
+obj.stageStreamLiveText = { fontFamily: arg1(dependencyMap[6]).Fonts.PRIMARY_BOLD };
+obj.stagePreviewWrapper = { 67522890: true, 1549155173: true, -61778846: true };
 let closure_16 = obj1.createStyles(obj);
 const obj4 = { borderRadius: importDefault(dependencyMap[11]).radii.sm, overflow: "hidden" };
 const memoResult = importAllResult.memo((userId) => {

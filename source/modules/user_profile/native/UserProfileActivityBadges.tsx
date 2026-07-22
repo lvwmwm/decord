@@ -1,16 +1,16 @@
-// Module ID: 11913
-// Function ID: 92216
+// Module ID: 11914
+// Function ID: 92230
 // Name: TimestampBadge
 // Dependencies: []
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 11913 (TimestampBadge)
+// Module 11914 (TimestampBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ActivityTypes = arg1(dependencyMap[2]).ActivityTypes;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, bold: { fontWeight: "bold" } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { 9223372036854775807: "suppress_editor_mention", -9223372036854775808: "scalar", 0: 8, 9223372036854775807: 33 }, bold: { fontWeight: "bold" } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/user_profile/native/UserProfileActivityBadges.tsx");
 
@@ -83,7 +83,7 @@ export const PartyBadge = function PartyBadge(activity) {
         let obj = { style: tmp.container };
         obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
         const items = [callback(arg1(dependencyMap[16]).GroupIcon, obj), ];
-        obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: richGameStateBadgeText };
+        obj = { cachedAt: "y", edpbxy: "isArray", children: richGameStateBadgeText };
         items[1] = callback(arg1(dependencyMap[17]).Text, obj);
         obj.children = items;
         tmp9 = callback2(View, obj);
@@ -106,7 +106,7 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
     obj = { style: tmp.container };
     obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
     const items = [callback(arg1(dependencyMap[18]).TopicsIcon, obj), ];
-    const obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: episodeBadgeText };
+    const obj1 = { cachedAt: "y", edpbxy: "isArray", children: episodeBadgeText };
     items[1] = callback(arg1(dependencyMap[17]).Text, obj1);
     obj.children = items;
     tmp4 = callback2(View, obj);

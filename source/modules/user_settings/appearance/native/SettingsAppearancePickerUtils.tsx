@@ -1,14 +1,10 @@
-// Module ID: 14067
-// Function ID: 106826
+// Module ID: 14074
+// Function ID: 106866
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14067 (_createForOfIteratorHelperLoose)
-import closure_3 from "result";
-import { ThemeTypes } from "result";
-import result from "result";
-
+// Module 14074 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -234,7 +230,9 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme) {
   obj.colors = padWithLast(mapped, getMaxColors());
   return obj;
 }
-result = result.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
+let closure_3 = importAll(dependencyMap[0]);
+const ThemeTypes = arg1(dependencyMap[1]).ThemeTypes;
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
 
 export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThemes(arg0, prop, prop1, memo, BACKGROUND_SURFACE_HIGH) {
   let iter2;
@@ -296,7 +294,7 @@ export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme(
   const arg1 = token;
   const items = [token];
   return React.useMemo(() => {
-    let obj = {};
+    let obj = { graphic: "baseline", gradientColor: 6, title: null, description: null };
     const intl = token(closure_2[9]).intl;
     obj.name = intl.string(token(closure_2[9]).t.zlvNOj);
     obj = { hex: token, stop: 20 };

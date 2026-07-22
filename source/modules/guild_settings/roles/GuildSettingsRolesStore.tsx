@@ -1,9 +1,9 @@
-// Module ID: 16180
-// Function ID: 124893
+// Module ID: 16188
+// Function ID: 124935
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16180 (_isNativeReflectConstruct)
+// Module 16188 (_isNativeReflectConstruct)
 let FormStates;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -97,7 +97,7 @@ function initRoleStyles(guildId, items) {
     let obj = colors(closure_3[14]);
     if (!tmp) {
       obj = {};
-      obj = { <string:996344831>: false, <string:4132547158>: false, <string:1375429038>: null, primary_color: closure_17 };
+      obj = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: closure_17 };
       obj[constants.SOLID] = obj;
       const obj1 = { primary_color: closure_19.primary_color, secondary_color: closure_19.secondary_color, tertiary_color: null };
       obj[constants.GRADIENT] = obj1;
@@ -261,7 +261,7 @@ const tmp2 = arg1(dependencyMap[11]);
 ({ DEFAULT_ROLE_COLOR: closure_17, GuildFeatures: closure_18 } = tmp2);
 ({ DEFAULT_GRADIENT_ROLE_COLORS: closure_19, HOLOGRAPHIC_ROLE_COLORS: closure_20 } = arg1(dependencyMap[12]));
 let obj = { SOLID: "solid", GRADIENT: "gradient", HOLOGRAPHIC: "holographic" };
-let closure_25 = { [GuildSettingsRoleEditSections.DISPLAY]: ["configurable", "enumerable", "value", "writable", "value", "writable", "configurable"], [GuildSettingsRoleEditSections.PERMISSIONS]: [true], [GuildSettingsRoleEditSections.MEMBERS]: [], [GuildSettingsRoleEditSections.VERIFICATIONS]: [] };
+let closure_25 = { [GuildSettingsRoleEditSections.DISPLAY]: ["formatters", "RFC1738", "RFC3986", true, true, true, true], [GuildSettingsRoleEditSections.PERMISSIONS]: [true], [GuildSettingsRoleEditSections.MEMBERS]: [], [GuildSettingsRoleEditSections.VERIFICATIONS]: [] };
 set = new Set();
 const CLOSED = FormStates.CLOSED;
 let closure_28 = false;
@@ -540,17 +540,17 @@ obj = {
       let tmp12Result = null != value;
       if (tmp12Result) {
         value.currentStyle = obj.SOLID;
-        obj = { <string:996344831>: false, <string:4132547158>: false, <string:1375429038>: null, primary_color: color };
+        obj = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: color };
         value.styleColors[obj.SOLID] = obj;
         obj = {};
         const merged = Object.assign(value);
         const result = map2.set(id, obj);
         const obj1 = { color, colorString: int2hexResult };
-        const obj2 = { <string:996344831>: false, <string:4132547158>: false, <string:1375429038>: null, primary_color: color };
+        const obj2 = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: color };
         obj1.colors = obj2;
         let tmp13 = null;
         if (null != int2hexResult) {
-          const obj3 = { max: false, done: false, has: null, primaryColor: int2hexResult };
+          const obj3 = { 0: "mn", 9223372036854775807: "description", -9223372036854775808: "Array", primaryColor: int2hexResult };
           tmp13 = obj3;
         }
         obj1.colorStrings = tmp13;

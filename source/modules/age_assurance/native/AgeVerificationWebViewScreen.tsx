@@ -1,5 +1,5 @@
 // Module ID: 7540
-// Function ID: 60351
+// Function ID: 60362
 // Name: AgeVerificationWebViewScreen
 // Dependencies: []
 // Exports: default
@@ -18,7 +18,7 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-const obj1 = { contentInset: false, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false, searchResultsQuery: false, isEntryLive: false, doughnut: false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingOverlay = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.webView = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };

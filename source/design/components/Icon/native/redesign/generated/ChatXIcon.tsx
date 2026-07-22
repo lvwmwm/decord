@@ -1,10 +1,10 @@
-// Module ID: 11487
-// Function ID: 89421
+// Module ID: 11488
+// Function ID: 89434
 // Name: ChatXIcon
 // Dependencies: []
 // Exports: ChatXIcon
 
-// Module 11487 (ChatXIcon)
+// Module 11488 (ChatXIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChatXIcon.tsx");

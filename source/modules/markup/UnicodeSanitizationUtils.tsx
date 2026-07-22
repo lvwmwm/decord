@@ -1,5 +1,5 @@
 // Module ID: 4565
-// Function ID: 40021
+// Function ID: 40029
 // Name: makeMatcher
 // Dependencies: []
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
@@ -195,7 +195,7 @@ items1[3] = { character: "s", matcher: makeMatcher([]) };
 const obj1 = { character: "s", matcher: makeMatcher([]) };
 items1[4] = { character: ":", matcher: makeMatcher([]) };
 const obj2 = { character: ":", matcher: makeMatcher([]) };
-items1[5] = { character: "/", matcher: makeMatcher(["dobbelt utropstegn", "tegn", "tegnsetting", "utropstegn", "!", "!?", "?", "\u203D", "interrobang", "sp\u00F8rsm\u00E5l", "sp\u00F8rsm\u00E5lstegn", "tegn", "tegnsetting", "utrop"]) };
+items1[5] = { character: "/", matcher: makeMatcher([-119189248, 1360387409, 1531030306, 1358954811, 1313190790, 1325400752, 553648530, -587201909, 721420909, 1358955207, -1404975966, 1358954979, -1135506081, -1432596012]) };
 let closure_5 = [];
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/markup/UnicodeSanitizationUtils.tsx");

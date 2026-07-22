@@ -1,5 +1,5 @@
 // Module ID: 4327
-// Function ID: 38148
+// Function ID: 38156
 // Name: _regeneratorRuntime
 // Dependencies: []
 
@@ -7,8 +7,7 @@
 
 export default function _regeneratorRuntime() {
   function define(arg0, arg1, value) {
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
-    Object.defineProperty(arg0, arg1, obj);
+    Object.defineProperty(arg0, arg1, { value });
     return arg0[arg1];
   }
   function wrap(arg0, arg1, arg2, arg3) {
@@ -46,7 +45,7 @@ export default function _regeneratorRuntime() {
     }
   }
   function defineIteratorMethods(prototype) {
-    const items = ["REWARD", "disableTouchLogging", "taqkwK"];
+    const items = ["to", "borderRadius", "children"];
     const item = items.forEach((arg0) => {
       callback(arg0, arg0, function(arg0) {
         return this._invoke(arg0, arg0);
@@ -102,7 +101,7 @@ export default function _regeneratorRuntime() {
               return nextPromise;
             }
       };
-      tmp = f38177(this, "_invoke", obj);
+      tmp = f38185(this, "_invoke", obj);
       return;
     }
   }
@@ -456,7 +455,7 @@ export default function _regeneratorRuntime() {
                   return nextPromise;
                 }
         };
-        tmp = f38177(this, "_invoke", obj);
+        tmp = f38185(this, "_invoke", obj);
         return;
       }
     }

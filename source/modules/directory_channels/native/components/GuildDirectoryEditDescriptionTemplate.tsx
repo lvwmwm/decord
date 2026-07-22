@@ -1,10 +1,10 @@
-// Module ID: 10038
-// Function ID: 77590
+// Module ID: 10039
+// Function ID: 77603
 // Name: GuildDirectoryEditDescriptionTemplate
 // Dependencies: []
 // Exports: default
 
-// Module 10038 (GuildDirectoryEditDescriptionTemplate)
+// Module 10039 (GuildDirectoryEditDescriptionTemplate)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

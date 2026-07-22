@@ -1,9 +1,9 @@
-// Module ID: 9116
-// Function ID: 71409
+// Module ID: 9117
+// Function ID: 71422
 // Name: PressableNavigatorBackIcon
 // Dependencies: []
 
-// Module 9116 (PressableNavigatorBackIcon)
+// Module 9117 (PressableNavigatorBackIcon)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 14643
-// Function ID: 110425
+// Module ID: 14651
+// Function ID: 110468
 // Name: ExternalLink
 // Dependencies: []
 // Exports: default
 
-// Module 14643 (ExternalLink)
+// Module 14651 (ExternalLink)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Linking: closure_4, ScrollView: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -12,7 +12,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[2]);
 let closure_9 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+  obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
   let str = "center";
   if (arg0) {
     str = "space-between";
@@ -44,7 +44,7 @@ export default function ExternalLink(externalURL) {
   const effect = React.useEffect(() => {
     callback();
   }, items1);
-  obj = { useIsMobileGameCollectionExperimentEnabled: true, openSafetyFlow: true, contentContainerStyle: tmp.container };
+  obj = { okQonm: 469507067, GET_GUILD: 469508166, contentContainerStyle: tmp.container };
   obj = {};
   const obj1 = {};
   const intl = arg1(dependencyMap[8]).intl;
@@ -57,12 +57,12 @@ export default function ExternalLink(externalURL) {
   obj.children = items2;
   const items3 = [callback2(closure_6, obj), ];
   const obj3 = {};
-  const obj4 = { isGuildChannelType: "d5c9201b5d59debfcddeffefede24edc", authorizationFingerprint: "lt.messages.d5c9201b5d59debfcddeffefede24edc.compiled.messages" };
+  const obj4 = { "Null": "d7825c8630cb00012f54beafd65fb181", "Null": "nl.messages.d7825c8630cb00012f54beafd65fb181.compiled.messages" };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[8]).t.2ixEBi);
   obj4.onPress = callback;
   const items4 = [callback(arg1(dependencyMap[11]).Button, obj4), ];
-  const obj5 = { isGuildChannelType: true, authorizationFingerprint: true };
+  const obj5 = {};
   const intl4 = arg1(dependencyMap[8]).intl;
   obj5.text = intl4.string(arg1(dependencyMap[8]).t.j3cG2p);
   obj5.onPress = function onPress() {

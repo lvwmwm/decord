@@ -126,9 +126,9 @@ export default {
     } else if ("QQQ" === arg1) {
       return ordinalNumber.quarter(rounded, {});
     } else if ("QQQQQ" === arg1) {
-      return ordinalNumber.quarter(rounded, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.quarter(rounded, {});
     } else {
-      return ordinalNumber.quarter(rounded, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+      return ordinalNumber.quarter(rounded, {});
     }
   },
   q(getUTCMonth, arg1, ordinalNumber) {
@@ -142,11 +142,11 @@ export default {
       const obj = { unit: "quarter" };
       return ordinalNumber.ordinalNumber(rounded, obj);
     } else if ("qqq" === arg1) {
-      return ordinalNumber.quarter(rounded, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" });
+      return ordinalNumber.quarter(rounded, {});
     } else if ("qqqqq" === arg1) {
-      return ordinalNumber.quarter(rounded, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.quarter(rounded, {});
     } else {
-      return ordinalNumber.quarter(rounded, { "Bool(true)": "a", "Bool(true)": "_activities" });
+      return ordinalNumber.quarter(rounded, {});
     }
   },
   M(getUTCMonth, arg1, ordinalNumber) {
@@ -159,9 +159,9 @@ export default {
         } else if ("MMM" === arg1) {
           return ordinalNumber.month(uTCMonth, {});
         } else if ("MMMMM" === arg1) {
-          return ordinalNumber.month(uTCMonth, { "Bool(true)": null, "Bool(true)": null });
+          return ordinalNumber.month(uTCMonth, {});
         } else {
-          return ordinalNumber.month(uTCMonth, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+          return ordinalNumber.month(uTCMonth, {});
         }
       }
     }
@@ -178,11 +178,11 @@ export default {
       const obj = { unit: "month" };
       return ordinalNumber.ordinalNumber(uTCMonth + 1, obj);
     } else if ("LLL" === arg1) {
-      return ordinalNumber.month(uTCMonth, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" });
+      return ordinalNumber.month(uTCMonth, {});
     } else if ("LLLLL" === arg1) {
-      return ordinalNumber.month(uTCMonth, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.month(uTCMonth, {});
     } else {
-      return ordinalNumber.month(uTCMonth, { "Bool(true)": "a", "Bool(true)": "_activities" });
+      return ordinalNumber.month(uTCMonth, {});
     }
   },
   w(defaultResult1, arg1, ordinalNumber, defaultResult2) {
@@ -231,11 +231,11 @@ export default {
       if ("EE" !== arg1) {
         if ("EEE" !== arg1) {
           if ("EEEEE" === arg1) {
-            return day.day(uTCDay, { "Bool(true)": null, "Bool(true)": null });
+            return day.day(uTCDay, {});
           } else if ("EEEEEE" === arg1) {
-            return day.day(uTCDay, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+            return day.day(uTCDay, {});
           } else {
-            return day.day(uTCDay, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+            return day.day(uTCDay, {});
           }
         }
       }
@@ -255,11 +255,11 @@ export default {
     } else if ("eee" === arg1) {
       return ordinalNumber.day(uTCDay, {});
     } else if ("eeeee" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("eeeeee" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      return ordinalNumber.day(uTCDay, {});
     } else {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+      return ordinalNumber.day(uTCDay, {});
     }
   },
   c(getUTCDay, arg1, ordinalNumber, weekStartsOn) {
@@ -273,13 +273,13 @@ export default {
       const obj = { unit: "day" };
       return ordinalNumber.ordinalNumber(tmp2, obj);
     } else if ("ccc" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("ccccc" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("cccccc" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.day(uTCDay, {});
     } else {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": "a", "Bool(true)": "_activities" });
+      return ordinalNumber.day(uTCDay, {});
     }
   },
   i(getUTCDay, arg1, ordinalNumber) {
@@ -299,11 +299,11 @@ export default {
     } else if ("iii" === arg1) {
       return ordinalNumber.day(uTCDay, {});
     } else if ("iiiii" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": null, "Bool(true)": null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("iiiiii" === arg1) {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      return ordinalNumber.day(uTCDay, {});
     } else {
-      return ordinalNumber.day(uTCDay, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+      return ordinalNumber.day(uTCDay, {});
     }
   },
   a(getUTCHours, arg1, dayPeriod) {
@@ -316,9 +316,9 @@ export default {
         if ("aaa" === arg1) {
           return dayPeriod.dayPeriod(str, {}).toLowerCase();
         } else if ("aaaaa" === arg1) {
-          return dayPeriod.dayPeriod(str, { "Bool(true)": null, "Bool(true)": null });
+          return dayPeriod.dayPeriod(str, {});
         } else {
-          return dayPeriod.dayPeriod(str, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+          return dayPeriod.dayPeriod(str, {});
         }
       }
     }
@@ -343,9 +343,9 @@ export default {
         if ("bbb" === arg1) {
           return dayPeriod.dayPeriod(str, {}).toLowerCase();
         } else if ("bbbbb" === arg1) {
-          return dayPeriod.dayPeriod(str, { "Bool(true)": null, "Bool(true)": null });
+          return dayPeriod.dayPeriod(str, {});
         } else {
-          return dayPeriod.dayPeriod(str, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+          return dayPeriod.dayPeriod(str, {});
         }
       }
     }
@@ -369,9 +369,9 @@ export default {
       if ("BB" !== arg1) {
         if ("BBB" !== arg1) {
           if ("BBBBB" === arg1) {
-            return dayPeriod.dayPeriod(str, { "Bool(true)": null, "Bool(true)": null });
+            return dayPeriod.dayPeriod(str, {});
           } else {
-            return dayPeriod.dayPeriod(str, { "Bool(true)": 52931328, "Bool(true)": -213302784 });
+            return dayPeriod.dayPeriod(str, {});
           }
         }
       }

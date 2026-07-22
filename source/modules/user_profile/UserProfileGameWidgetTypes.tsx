@@ -1,5 +1,5 @@
 // Module ID: 6853
-// Function ID: 54170
+// Function ID: 54181
 // Name: items
 // Dependencies: []
 // Exports: isGameWidget, isGameWidgetType
@@ -92,7 +92,7 @@ export const GAME_WIDGET_TYPES = items;
 export const isGameWidgetType = function isGameWidgetType(arg0) {
   return items.includes(arg0);
 };
-export const isGameWidget = function isGameWidget(arg0) {
-  return arg0 instanceof tmp2;
+export const isGameWidget = function isGameWidget(widget) {
+  return widget instanceof tmp2;
 };
 export const BaseGameWidget = tmp2;

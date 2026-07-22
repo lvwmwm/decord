@@ -1,9 +1,9 @@
-// Module ID: 16096
-// Function ID: 123789
+// Module ID: 16104
+// Function ID: 123831
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16096 (_isNativeReflectConstruct)
+// Module 16104 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,12 +26,12 @@ const UPLOAD_MEDIUM_SIZE = arg1(dependencyMap[9]).UPLOAD_MEDIUM_SIZE;
 const tmp4 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
-obj = { assetWrapper: { @braintree/wrap-promise: "BLURPLE_19", onPress: 1 } };
+obj = { assetWrapper: {} };
 obj = { borderRadius: importDefault(dependencyMap[12]).radii.xs, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 obj.asset = obj;
-const obj1 = { 9223372036854775807: -1022541383, 9223372036854775807: 1091633153, -9223372036854775808: 89874, 0: 22642, 9223372036854775807: 20480, -9223372036854775808: -398327552, 9223372036854775807: "<string:2833973250>", shadowColor: importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, shadowOffset: { y: null, isArray: null } };
+const obj1 = { -319042459: "<string:3265216953>", 979476696: "<string:1091633153>", 527498578: "/assets/modules/hub/native/images", 1362780422: "FamilyCenterConnectionPrereqExperiment", 1550036729: "DmGdmListRenderTriggerPoint", 1515283030: "<string:54657280>", -1594136498: "<string:1090519619>", shadowColor: importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, shadowOffset: { hideWhenScrolling: "\u{1F9D1}\u200D\u{1F3A8}", autoCapitalize: true } };
 obj.uploadIconWrapper = obj1;
-obj.uploadIcon = {};
+obj.uploadIcon = { "Null": null, "Null": null };
 const tmp5 = arg1(dependencyMap[10]);
 obj.remove = { color: importDefault(dependencyMap[12]).unsafe_rawColors.BLUE_345 };
 let closure_17 = obj.createLegacyClassComponentStyles(obj);

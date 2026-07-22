@@ -1,10 +1,10 @@
-// Module ID: 16077
-// Function ID: 123535
+// Module ID: 16085
+// Function ID: 123577
 // Name: Overview
 // Dependencies: []
 // Exports: default
 
-// Module 16077 (Overview)
+// Module 16085 (Overview)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -17,15 +17,15 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.containerInner = {};
-const tmp3 = arg1(dependencyMap[5]);
-obj.title = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const obj1 = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.body = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_400 };
-obj.blocks = {};
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.title = obj1;
+const obj2 = { <string:3488468717>: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_400 };
+obj.body = obj2;
+obj.blocks = { ref: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004789945341679744, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000362298761508198 };
 obj.verificationType = { marginBottom: 20 };
-obj.button = { mediaCapturePermissionGrantType: true, javaScriptEnabled: true, fontFamily: true };
+obj.button = { "Null": null, "Null": null, "Null": null };
 let closure_13 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_400 };
+const tmp3 = arg1(dependencyMap[5]);
 const articleURL = importDefault(dependencyMap[8]).getArticleURL(tmp2.HelpdeskArticles.VERIFICATION_FAQ);
 const importDefaultResult = importDefault(dependencyMap[8]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/verification/native/components/Overview.tsx");
@@ -102,7 +102,7 @@ export default function Overview() {
       return tmp4;
     })
   }), items1);
-  obj1 = { "Null": null, "Null": "be0ebbe0444cf9ea073becdc22f65ec9", "Null": "DenyIcon", style: tmp.title };
+  obj1 = { <string:3339517956>: "<string:810680321>", <string:3335454724>: "<string:300807721>", <string:2271412228>: "<string:36311617>", style: tmp.title };
   const intl = arg1(dependencyMap[14]).intl;
   obj1.children = intl.string(arg1(dependencyMap[14]).t.Iz0kDg);
   const items2 = [callback(arg1(dependencyMap[18]).Text, obj1), , ];

@@ -1,23 +1,21 @@
-// Module ID: 5448
-// Function ID: 46564
+// Module ID: 5182
+// Function ID: 45001
 // Name: FormIcon
-// Dependencies: [31, 27, 5352, 5336, 4809]
+// Dependencies: []
 // Exports: default
 
-// Module 5448 (FormIcon)
-import "module_31";
-import { jsx } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
-let closure_3 = _isNativeReflectConstruct.createStyles({ icon: { opacity: 0.6 } });
-const result = _isNativeReflectConstruct.fileFinishedImporting("design/void/Form/native/FormIcon.tsx");
+// Module 5182 (FormIcon)
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+let closure_3 = arg1(dependencyMap[2]).createStyles({ icon: { opacity: 0.6 } });
+const obj = arg1(dependencyMap[2]);
+const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/Form/native/FormIcon.tsx");
 
 export default function FormIcon(color) {
   let style;
   let themedColor;
   ({ style, themedColor } = color);
-  let obj = {};
+  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   const tmp3 = callback();

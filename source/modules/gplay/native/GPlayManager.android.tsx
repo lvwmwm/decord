@@ -1,5 +1,5 @@
 // Module ID: 7154
-// Function ID: 57721
+// Function ID: 57732
 // Name: handleConnectionStateUpdated
 // Dependencies: []
 
@@ -156,16 +156,16 @@ async function _handleDowngradeCommand(arg0, arg1) {
 async function _executePendingDowngrade() {
   const pendingDowngrade = pendingDowngrade.getPendingDowngrade();
   if (null != pendingDowngrade) {
-    callback2(closure_2[16]).dispatch({});
+    callback2(closure_2[16]).dispatch({ raw: "/assets/.cache/intl/ZGVzaWdu", Boolean: null });
     const obj2 = callback2(closure_2[16]);
     yield callback(closure_2[17]).downgradeSubscription(tmp2);
     callback3();
     yield closure_37();
     const obj3 = callback(closure_2[17]);
     const dispatch = callback2(closure_2[16]).dispatch;
-    dispatch({ "Null": "isArray", "Null": "isArray" });
+    dispatch({ raw: "isArray", Boolean: "isArray" });
     const tmp12 = callback2(closure_2[16]);
-    callback2(closure_2[16]).dispatch({ "Null": "isArray", "Null": "isArray" });
+    callback2(closure_2[16]).dispatch({ raw: "isArray", Boolean: "isArray" });
     return dispatch;
   }
 }
@@ -225,7 +225,7 @@ async function _handleAppStateUpdated(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = ["Kaaba"];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 122785
+// Module ID: 16011
+// Function ID: 122827
 // Name: _shouldSkipContactSyncStep
 // Dependencies: []
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 16003 (_shouldSkipContactSyncStep)
+// Module 16011 (_shouldSkipContactSyncStep)
 function _shouldSkipContactSyncStep() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = importDefaultResult(tmp);

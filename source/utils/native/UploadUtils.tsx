@@ -1,5 +1,5 @@
 // Module ID: 4671
-// Function ID: 40613
+// Function ID: 40622
 // Name: openImagePickerUnhandled
 // Dependencies: []
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker
@@ -24,7 +24,7 @@ async function _openImagePickerUnhandled(preferredMimeType, arg1) {
     }
     ({ width, height } = tmp8);
     const tmp12 = yield new Promise((arg0, arg1) => {
-      arg1(closure_2[10]).launchImageLibrary({ "Null": false, "Null": false, "Null": null }, (assets) => {
+      arg1(closure_2[10]).launchImageLibrary({}, (assets) => {
         let first = null;
         if (null != assets.assets) {
           first = null;
@@ -1244,7 +1244,7 @@ async function _calculateImageQualityMetrics(str, arg1, arg2, arg3, arg4, arg5) 
     }
   }
 }
-let closure_3 = [];
+let closure_3 = [255];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 ({ NativeModules: closure_6, Image: closure_7 } = arg1(dependencyMap[2]));

@@ -1,10 +1,10 @@
-// Module ID: 16183
-// Function ID: 124984
+// Module ID: 16191
+// Function ID: 125026
 // Name: width
 // Dependencies: []
 // Exports: default
 
-// Module 16183 (width)
+// Module 16191 (width)
 let Dimensions;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -24,18 +24,18 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj.container = obj;
 obj.carousel = { flex: 1 };
-obj.cardWrapper = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, padding: -57609758622971150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+obj.cardWrapper = { lastDismissedObjectId: "y", isNewWebImplementationEnabled: "MessagesDataHeader" };
 const tmp5 = arg1(dependencyMap[7]);
 obj.card = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.templateTitle = {};
+obj.templateTitle = { -262995365: null, 1183819946: null, 651842187: null };
 obj.templateSubtitle = { paddingBottom: 16 };
 obj.templateContentWrapper = {};
 obj.templateContent = {};
-obj.templateContentText = { disableFocus: "y", preventsDisplaySleepDuringVideoPlayback: "isArray" };
-obj.templateButton = {};
+obj.templateContentText = { flexGrow: null, zIndex: null };
+obj.templateButton = { height: null, width: null, borderRadius: null };
 obj.sliderContainer = { alignItems: "center" };
-obj.slider = { "Bool(false)": 4, "Bool(false)": 0, "Bool(false)": -4 };
-obj.sliderLabels = { textInput: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778310296355388, GiftCardStack3dIllustration: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010687, TimeStampProducer: 6701222723586, MIN_HEADER_HEIGHT: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001940246852204425, FITNESS: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000099411258832273, handleRewardClaimThenView: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015979878120062223, marginHorizontal: "Array" };
+obj.slider = { name: 54, opacity: 32, matrix: 553730 };
+obj.sliderLabels = {};
 obj.sliderLabel = {};
 let closure_19 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
@@ -90,7 +90,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
     }
   };
   obj = { style: tmp.sliderContainer };
-  obj = { handleRewardClaimThenView: false, Wp9bEl: false, PremiumSKUPreview: false, children: callback2(importDefault(dependencyMap[13]), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
+  obj = { -1420412060: "title", 39539027: "__closure", -229548959: "constructor", children: callback2(importDefault(dependencyMap[13]), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
   const items = [callback2(first, obj), ];
   const obj1 = { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   const tmp12 = callback3;

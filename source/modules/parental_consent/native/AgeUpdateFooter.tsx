@@ -1,10 +1,10 @@
-// Module ID: 16449
-// Function ID: 127074
+// Module ID: 16457
+// Function ID: 127116
 // Name: AgeUpdateFooter
 // Dependencies: []
 // Exports: default
 
-// Module 16449 (AgeUpdateFooter)
+// Module 16457 (AgeUpdateFooter)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles({ text: { textAlign: "center" } });
@@ -12,7 +12,7 @@ const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
 
 export default function AgeUpdateFooter() {
-  let obj = { style: callback().text };
+  let obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, style: callback().text };
   const intl = arg1(dependencyMap[4]).intl;
   obj = {
     handleAgeVerifyHook() {

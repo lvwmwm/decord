@@ -1,9 +1,9 @@
-// Module ID: 15224
-// Function ID: 114952
+// Module ID: 15232
+// Function ID: 114995
 // Name: SearchHistoryRemoveIcon
 // Dependencies: []
 
-// Module 15224 (SearchHistoryRemoveIcon)
+// Module 15232 (SearchHistoryRemoveIcon)
 function SearchHistoryRemoveIcon(searchContext) {
   searchContext = searchContext.searchContext;
   const arg1 = searchContext;
@@ -13,7 +13,7 @@ function SearchHistoryRemoveIcon(searchContext) {
   const callback = importAllResult.useCallback(() => {
     const result = searchHistoryItem(closure_2[10]).removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
-  const obj = { 122814468: 0, 1158220809: 3.896, 301575: 5, onPress: callback, style: { marginLeft: 16 }, hitSlop: {}, children: callback(arg1(dependencyMap[12]).XSmallIcon, {}) };
+  const obj = { "Null": 0, "Null": 3.896, "Null": 5, onPress: callback, style: { marginLeft: 16 }, hitSlop: { useState: null, r: "header", bottom: "heading-md/semibold", backgroundColor: "mobile-text-heading-primary" }, children: callback(arg1(dependencyMap[12]).XSmallIcon, {}) };
   return callback(arg1(dependencyMap[11]).PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
@@ -39,15 +39,13 @@ function SearchHistoryTextRow(searchContext) {
   const tags = searchHistoryItem.tags;
   let mapped;
   if (null != tags) {
-    mapped = tags.map((text) => {
+    mapped = tags.map((children) => {
       let obj = { accessibilityRole: "button", style: tmp.tag, children: callback(searchContext(tmp[16]).Text, obj) };
-      obj = { "Null": 80, "Null": 80, "Null": null, children: text.text };
-      return callback(closure_5, obj, text.text);
+      obj = { children: children.text };
+      return callback(closure_5, obj, children.text);
     });
   }
-  const items1 = [mapped, ];
-  const obj1 = { "Null": true, "Null": 15.1, "Null": 253, style: tmp.text, children: searchHistoryItem.text };
-  items1[1] = callback(arg1(dependencyMap[16]).Text, obj1);
+  const items1 = [mapped, callback(arg1(dependencyMap[16]).Text, { style: tmp.text, children: searchHistoryItem.text })];
   obj.children = items1;
   obj.label = closure_11(View, obj);
   obj.onPress = callback;
@@ -235,9 +233,9 @@ let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.xl, backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT };
 obj.iconContainer = obj;
 obj.text = { flexShrink: 1 };
-obj.textContainer = { paths: 177, has: null, TypeError: 1, Symbol: null };
+obj.textContainer = { position: 163.002, top: null, bottom: 1, left: null };
 obj.textIconContainer = { alignSelf: "flex-start" };
-obj1 = { "Null": 1, "Null": "comp_0", "Null": 1, "Null": null, "Null": 0, "Null": 40, textAlignVertical: 40, borderRadius: importDefault(dependencyMap[9]).radii.lg, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+obj1 = { 2111801688: "Array", -816685983: "isArray", 1638715052: "accessibilityRole", 50090324: "pos", 1398160226: "done", 50094625: "construct", 996411533: "Date", borderRadius: importDefault(dependencyMap[9]).radii.lg, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj.tag = obj1;
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = [];

@@ -1,12 +1,12 @@
-// Module ID: 15391
-// Function ID: 117427
+// Module ID: 15399
+// Function ID: 117470
 // Name: items
 // Dependencies: []
 // Exports: getHangoutWindowExperiment, useHangoutWindowExperiment
 
-// Module 15391 (items)
+// Module 15399 (items)
 const _module = require(dependencyMap[1]);
-const obj = { "Bool(false)": "flex-start", "Bool(false)": "100%", "Bool(false)": true, defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL };
+const obj = { shapes: "flex-start", flex: "100%", sk: true, defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL };
 const items = [{ config: { enableHangoutWindow: true } }];
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);

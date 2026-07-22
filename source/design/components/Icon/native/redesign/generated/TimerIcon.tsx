@@ -1,10 +1,10 @@
-// Module ID: 10864
-// Function ID: 84528
+// Module ID: 10865
+// Function ID: 84541
 // Name: TimerIcon
 // Dependencies: []
 // Exports: TimerIcon
 
-// Module 10864 (TimerIcon)
+// Module 10865 (TimerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TimerIcon.tsx");

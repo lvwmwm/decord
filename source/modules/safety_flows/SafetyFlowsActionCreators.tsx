@@ -1,10 +1,10 @@
-// Module ID: 16434
-// Function ID: 126943
+// Module ID: 16442
+// Function ID: 126985
 // Name: _getCurrentTask
 // Dependencies: []
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 16434 (_getCurrentTask)
+// Module 16442 (_getCurrentTask)
 function _getCurrentTask() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

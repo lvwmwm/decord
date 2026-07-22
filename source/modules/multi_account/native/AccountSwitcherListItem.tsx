@@ -1,10 +1,10 @@
-// Module ID: 14614
-// Function ID: 110210
+// Module ID: 14622
+// Function ID: 110253
 // Name: AccountStatusIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14614 (AccountStatusIcon)
+// Module 14622 (AccountStatusIcon)
 class AccountStatusIcon {
   constructor(arg0) {
     user = global.user;
@@ -53,7 +53,7 @@ const MultiAccountTokenStatus = arg1(dependencyMap[5]).MultiAccountTokenStatus;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ accountListTag: { 906602722: null, -1414893631: 0 }, tagContainer: {}, accountSwitcherListItem: {}, username: { flexShrink: 1 }, accountInfo: { <string:2165506052>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042740394, <string:1128071172>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004576711475846341, <string:1098842116>: 131072.001953125, <string:2717646852>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007851385078373, <string:2717450244>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015133978915753696 } });
+let closure_11 = arg1(dependencyMap[7]).createStyles({ accountListTag: { NBSP: null, isEndStream: 0 }, tagContainer: {}, accountSwitcherListItem: {}, username: { flexShrink: 1 }, accountInfo: {} });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/multi_account/native/AccountSwitcherListItem.tsx");
 
@@ -85,7 +85,7 @@ export default function AccountSwitcherListItem(arg0) {
   let obj2 = new closure_5(user);
   if (user.id === id) {
     if (showActiveAccountLabel) {
-      obj = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
+      obj = { cachedAt: "png", edpbxy: "absolute" };
       const intl = arg1(dependencyMap[13]).intl;
       obj.children = intl.string(arg1(dependencyMap[13]).t.seV8yt);
       let tmp6 = callback(arg1(dependencyMap[12]).Text, obj);
@@ -116,7 +116,7 @@ export default function AccountSwitcherListItem(arg0) {
     const items3 = [callback(arg1(dependencyMap[16]).Avatar, obj3), ];
     obj4 = { style: tmp.accountListTag };
     const obj5 = { style: tmp.tagContainer };
-    const obj6 = { style: tmp.username };
+    const obj6 = { -9223372036854775808: "USN", 0: "getMessageByReference", 9223372036854775807: "p", 9223372036854775807: "isArray", style: tmp.username };
     const obj7 = { mode: "username" };
     let str2 = "always";
     if (stateFromStores) {

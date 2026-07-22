@@ -1,15 +1,15 @@
-// Module ID: 15704
-// Function ID: 120036
+// Module ID: 15712
+// Function ID: 120079
 // Dependencies: []
 
-// Module 15704
+// Module 15712
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const Image = arg1(dependencyMap[2]).Image;
 const jsx = arg1(dependencyMap[3]).jsx;
 let closure_6 = arg1(dependencyMap[4]).createStyles((aspectRatio) => {
   const activityImage = { width: "100%", aspectRatio };
-  return { previewImage: { flex: "<string:2631615682>", overflow: "windowId", marginRight: "styleActiveIcon" }, activityImage };
+  return { previewImage: { color: "title", fontFamily: "__closure", fontSize: "_desired" }, activityImage };
 });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function ActivityShelfItemBackground(aspectRatio) {

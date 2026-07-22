@@ -1,10 +1,10 @@
-// Module ID: 11519
-// Function ID: 89760
+// Module ID: 11520
+// Function ID: 89773
 // Name: useShouldShowFileUploadRollback
 // Dependencies: []
 // Exports: useShouldShowFileUploadRollback
 
-// Module 11519 (useShouldShowFileUploadRollback)
+// Module 11520 (useShouldShowFileUploadRollback)
 let closure_3 = importDefault(dependencyMap[0]);
 const PowerupActiveStatusType = arg1(dependencyMap[1]).PowerupActiveStatusType;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/utils/fileUpload.tsx");

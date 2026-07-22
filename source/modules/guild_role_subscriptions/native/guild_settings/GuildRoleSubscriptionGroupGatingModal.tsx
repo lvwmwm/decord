@@ -1,10 +1,10 @@
-// Module ID: 16313
-// Function ID: 125891
+// Module ID: 16321
+// Function ID: 125933
 // Name: GuildRoleSubscriptionGroupGatingModal
 // Dependencies: []
 // Exports: default
 
-// Module 16313 (GuildRoleSubscriptionGroupGatingModal)
+// Module 16321 (GuildRoleSubscriptionGroupGatingModal)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

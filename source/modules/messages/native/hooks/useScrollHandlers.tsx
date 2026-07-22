@@ -1,10 +1,10 @@
-// Module ID: 10852
-// Function ID: 84306
+// Module ID: 10853
+// Function ID: 84319
 // Name: useScrollHandlers
 // Dependencies: []
 // Exports: default
 
-// Module 10852 (useScrollHandlers)
+// Module 10853 (useScrollHandlers)
 let closure_3 = importAll(dependencyMap[0]);
 ({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: closure_5 } = arg1(dependencyMap[1]));
 let importDefaultResult = importDefault(dependencyMap[2]);

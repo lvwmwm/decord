@@ -1,5 +1,5 @@
 // Module ID: 7834
-// Function ID: 62434
+// Function ID: 62444
 // Name: usePendingAvatarSettings
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 7538
-// Function ID: 60346
+// Function ID: 60357
 // Name: SafetyHubLinks
 // Dependencies: []
 
@@ -78,7 +78,7 @@ export const VIDEO_PLACEHOLDER_HEIGHT = 250;
 export const VIDEO_PLACEHOLDER_FILENAME = "video.png";
 export const APPEAL_INGESTION_IMPRESSION_PROPERTIES = obj1;
 export const AppealIngestionSlideTypes = obj2;
-export const AppealIngestionSlidesOrder = { [obj2.SPEED_BUMP]: { next: obj2.COLLECT_SIGNAL, prev: null }, [obj2.COLLECT_SIGNAL]: { next: obj2.CONFIRM_SUBMISSION, prev: obj2.SPEED_BUMP }, [obj2.CONFIRM_SUBMISSION]: { next: obj2.REQUEST_SENT, prev: obj2.COLLECT_SIGNAL }, [obj2.REQUEST_SENT]: { 945815556: "o", 1012465668: "o" } };
+export const AppealIngestionSlidesOrder = { [obj2.SPEED_BUMP]: { next: obj2.COLLECT_SIGNAL, prev: null }, [obj2.COLLECT_SIGNAL]: { next: obj2.CONFIRM_SUBMISSION, prev: obj2.SPEED_BUMP }, [obj2.CONFIRM_SUBMISSION]: { next: obj2.REQUEST_SENT, prev: obj2.COLLECT_SIGNAL }, [obj2.REQUEST_SENT]: { e: "o", context: "o" } };
 export const ViolationType = { USER: 1, [1]: "USER", GUILD_OWNER: 2, [2]: "GUILD_OWNER", GUILD_MEMBER: 3, [3]: "GUILD_MEMBER" };
 export const AgeCheckStatus = { LOADING: "loading", ERROR: "error", SUCCESS: "success", FAILURE: "failure", NONE: "none" };
 export const AGE_CHECK_POLL_DELAY_MS = 2000;

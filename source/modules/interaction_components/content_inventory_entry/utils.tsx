@@ -1,5 +1,5 @@
 // Module ID: 7784
-// Function ID: 62115
+// Function ID: 62125
 // Name: isContentInventoryFallbackEmbed
 // Dependencies: []
 // Exports: isContentInventoryFallbackEmbed

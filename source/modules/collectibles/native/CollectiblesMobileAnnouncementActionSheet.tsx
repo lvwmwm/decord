@@ -1,10 +1,10 @@
-// Module ID: 15502
-// Function ID: 118319
+// Module ID: 15510
+// Function ID: 118362
 // Name: CatEarsBackdrop
 // Dependencies: []
 // Exports: default
 
-// Module 15502 (CatEarsBackdrop)
+// Module 15510 (CatEarsBackdrop)
 let StyleSheet;
 function CatEarsBackdrop() {
   const tmp = callback3();
@@ -52,7 +52,7 @@ function FeatureRow(arg0) {
   const tmp = callback3();
   let obj = { style: tmp.featureRow };
   const items = [icon, ];
-  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.featureText, children: text };
+  obj = { cachedAt: true, edpbxy: true, style: tmp.featureText, children: text };
   items[1] = callback(arg1(dependencyMap[13]).Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
@@ -73,12 +73,12 @@ obj.mascotContainer = obj;
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj.mascotLayer = {};
 obj.mascotImage = {};
-obj.framePreviewImage = {};
+obj.framePreviewImage = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000193549897458269, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, "Null": 57309442019316190000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 const obj1 = {};
 const tmp3 = arg1(dependencyMap[5]);
 obj.container = { padding: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.headerText = { textAlign: "center" };
-const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_16 };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.featureRow = obj3;
 obj.featureText = { flex: 1 };
 const obj2 = { padding: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24, gap: importDefault(dependencyMap[7]).space.PX_16 };
@@ -152,7 +152,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj1.accessibilityElementsHidden = true;
   obj1.importantForAccessibility = "no-hide-descendants";
   const items3 = [callback(closure_4, obj1), , , ];
-  const obj3 = { handleMessageFocus: "button", enableHome: null, afterMs: null, style: tmp.headerText };
+  const obj3 = { gauge: "button", onLayerLoaded: null, ExpressiveGradient: null, style: tmp.headerText };
   const intl3 = tmp2(tmp3[14]).intl;
   obj3.children = intl3.string(arg1(closure_2[14]).t.vRCvqo);
   items3[1] = callback(arg1(closure_2[13]).Text, obj3);

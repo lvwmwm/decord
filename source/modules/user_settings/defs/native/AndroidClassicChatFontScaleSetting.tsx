@@ -1,9 +1,9 @@
-// Module ID: 14083
-// Function ID: 106911
+// Module ID: 14090
+// Function ID: 106951
 // Name: toggle
 // Dependencies: []
 
-// Module 14083 (toggle)
+// Module 14090 (toggle)
 const useFontScaleStore = require(dependencyMap[0]).useFontScaleStore;
 const _module = require(dependencyMap[5]);
 const toggle = _module.createToggle({

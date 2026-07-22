@@ -5,8 +5,8 @@
 // Exports: default
 
 // Module 395 (AnimatedScrollViewWithInvertedRefreshControl)
-let closure_2 = [null];
-let closure_3 = [null];
+let closure_2 = [];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

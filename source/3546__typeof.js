@@ -1,7 +1,7 @@
 // Module ID: 3546
 // Function ID: 27580
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3546 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const ISOTimezoneWithZParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 10);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", [-461701119, -1124007934, 1045495809]);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const ISOTimezoneWithZParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 10);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [-461701119, -1124007934, 1045495809]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const ISOTimezoneWithZParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ISOTimezoneWithZParser };
+  let obj = { "": null, children: null, "": null, value: ISOTimezoneWithZParser };
   ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class ISOTimezoneWithZParser {
@@ -256,7 +256,7 @@ export const ISOTimezoneWithZParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 10);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [-461701119, -1124007934, 1045495809]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -304,4 +304,4 @@ export const ISOTimezoneWithZParser = (Parser) => {
   items[1] = obj;
   _defineProperties(ISOTimezoneWithZParser.prototype, items);
   return ISOTimezoneWithZParser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

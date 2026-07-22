@@ -1,10 +1,10 @@
-// Module ID: 5717
-// Function ID: 49134
+// Module ID: 5716
+// Function ID: 49142
 // Name: getPreviousSafeRouteForNsfwReturn
 // Dependencies: []
 // Exports: default
 
-// Module 5717 (getPreviousSafeRouteForNsfwReturn)
+// Module 5716 (getPreviousSafeRouteForNsfwReturn)
 const _module = require(dependencyMap[0]);
 ({ CHANNEL_PREFIX: closure_2, GUILD_PREFIX: closure_3, getIdFromHistoryItem: closure_4 } = _module);
 let closure_5 = importDefault(dependencyMap[0]);

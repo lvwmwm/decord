@@ -1,5 +1,5 @@
 // Module ID: 7655
-// Function ID: 61220
+// Function ID: 61230
 // Name: DoubleTapNitroAlert
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const MobileSetting = arg1(dependencyMap[4]).MobileSetting;
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ icon: { "Null": null, "Null": null } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ icon: { <string:3596066964>: null, <string:3638417373>: null } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapNitroAlert.tsx");
 
@@ -31,7 +31,7 @@ export default function DoubleTapNitroAlert(emojiName) {
     });
   }, []);
   let obj = {};
-  obj = { style: callback3().icon, children: callback(arg1(dependencyMap[10]).CircleErrorIcon, { size: "custom", style: {} }) };
+  obj = { style: callback3().icon, children: callback(arg1(dependencyMap[10]).CircleErrorIcon, { size: "custom", style: { "Null": "isArray", "Null": "c" } }) };
   obj.header = callback(View, obj);
   const intl = arg1(dependencyMap[11]).intl;
   obj.title = intl.string(arg1(dependencyMap[11]).t.HRAWfC);

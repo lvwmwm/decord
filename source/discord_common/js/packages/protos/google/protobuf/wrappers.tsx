@@ -173,7 +173,7 @@ let tmp4 = (MessageType) => {
       tmp = closure_3(this, FloatValue$Type);
       items = [];
       items[0] = {};
-      items1 = [];
+      items1 = ["constructor"];
       items1[1] = items;
       return closure_8(this, FloatValue$Type, items1);
     }
@@ -307,8 +307,8 @@ let tmp6 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, Int64Value$Type);
       items = [];
-      items[0] = { 1347510942: 1895826602, 1678385745: 1, 1364379111: 860962401, 140698458: 163467524 };
-      items1 = [false];
+      items[0] = {};
+      items1 = [];
       items1[1] = items;
       return closure_8(this, Int64Value$Type, items1);
     }
@@ -443,8 +443,8 @@ let tmp8 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, UInt64Value$Type);
       items = [];
-      items[0] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
-      items1 = ["isArray"];
+      items[0] = {};
+      items1 = [7];
       items1[1] = items;
       return closure_8(this, UInt64Value$Type, items1);
     }
@@ -580,7 +580,7 @@ let tmp10 = (MessageType) => {
       tmp = closure_3(this, Int32Value$Type);
       items = [];
       items[0] = {};
-      items1 = [];
+      items1 = [true];
       items1[1] = items;
       return closure_8(this, Int32Value$Type, items1);
     }
@@ -715,7 +715,7 @@ let tmp12 = (MessageType) => {
       tmp = closure_3(this, UInt32Value$Type);
       items = [];
       items[0] = {};
-      items1 = [];
+      items1 = [false];
       items1[1] = items;
       return closure_8(this, UInt32Value$Type, items1);
     }
@@ -849,7 +849,7 @@ let tmp14 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, BoolValue$Type);
       items = [];
-      items[0] = { 1347510942: "Gwu134", 1678385745: "isArray", 1364379111: "uploads", 140698458: "isArray" };
+      items[0] = {};
       items1 = [];
       items1[1] = items;
       return closure_8(this, BoolValue$Type, items1);
@@ -983,7 +983,7 @@ let tmp16 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, StringValue$Type);
       items = [];
-      items[0] = { 1347510942: -120.702, 1678385745: 10, 1364379111: "WHITE_500", 140698458: 0.25 };
+      items[0] = {};
       items1 = [];
       items1[1] = items;
       return closure_8(this, StringValue$Type, items1);

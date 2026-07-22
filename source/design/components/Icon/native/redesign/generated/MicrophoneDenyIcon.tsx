@@ -1,10 +1,10 @@
-// Module ID: 8864
-// Function ID: 69912
+// Module ID: 8865
+// Function ID: 69925
 // Name: MicrophoneDenyIcon
 // Dependencies: []
 // Exports: MicrophoneDenyIcon
 
-// Module 8864 (MicrophoneDenyIcon)
+// Module 8865 (MicrophoneDenyIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MicrophoneDenyIcon.tsx");

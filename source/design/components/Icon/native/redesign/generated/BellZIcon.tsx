@@ -1,10 +1,10 @@
-// Module ID: 14722
-// Function ID: 111063
+// Module ID: 14730
+// Function ID: 111106
 // Name: BellZIcon
 // Dependencies: []
 // Exports: BellZIcon
 
-// Module 14722 (BellZIcon)
+// Module 14730 (BellZIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BellZIcon.tsx");

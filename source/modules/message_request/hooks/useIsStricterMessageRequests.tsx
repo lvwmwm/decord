@@ -1,11 +1,11 @@
-// Module ID: 11467
-// Function ID: 89339
+// Module ID: 11468
+// Function ID: 89352
 // Name: set
 // Dependencies: []
 // Exports: default
 
-// Module 11467 (set)
-const set = new Set([102]);
+// Module 11468 (set)
+const set = new Set([-9306108]);
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/message_request/hooks/useIsStricterMessageRequests.tsx");
 

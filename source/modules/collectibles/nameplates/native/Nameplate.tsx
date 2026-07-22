@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 64964
+// Module ID: 8223
+// Function ID: 64976
 // Name: NameplateInner
 // Dependencies: []
 // Exports: default
 
-// Module 8222 (NameplateInner)
+// Module 8223 (NameplateInner)
 function NameplateInner(isFocused) {
   let animatedImageUrl;
   let isPressed;
@@ -101,7 +101,7 @@ function NameplateInner(isFocused) {
     obj1.x = num4;
     obj1.y = 0;
     obj.start = obj1;
-    obj.end = {};
+    obj.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj.colors = items3;
@@ -130,8 +130,8 @@ let closure_4 = importDefault(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg4) => {
-  let obj = { container: {} };
-  obj = {};
+  let obj = { container: { Array: "ring", construct: "EXPRESSION_PICKER_EXPRESSION_FOCUS", body: "isXMLFile", paddingHorizontal: "r", add: "SPAN_ORIGIN_MANUAL_UI_TIME_TO_DISPLAY", body: "r" } };
+  obj = { "Null": null, "Null": null, "Null": null };
   let num = 1;
   let num2 = 1;
   if (!arg0) {
@@ -155,7 +155,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg
   }
   obj.opacity = num2;
   obj.gradient = obj;
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  obj = { <string:296017763>: "Text", <string:3995624531>: "Array", <string:1661649625>: 0.3, <string:1372357099>: "SlideOutLeft" };
   if (!arg0) {
     if (arg3) {
       if (!arg2) {

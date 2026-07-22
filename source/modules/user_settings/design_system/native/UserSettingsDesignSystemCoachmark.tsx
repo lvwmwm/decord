@@ -1,10 +1,10 @@
-// Module ID: 14331
-// Function ID: 108217
+// Module ID: 14339
+// Function ID: 108260
 // Name: Content
 // Dependencies: []
 // Exports: default
 
-// Module 14331 (Content)
+// Module 14339 (Content)
 function Content() {
   let tmp10;
   let tmp9;
@@ -37,7 +37,7 @@ function Content() {
   const ref = React.useRef(null);
   const items = [first3, first2, first, first1, first4, first5, first6];
   const memo = React.useMemo(() => {
-    let obj = { flexDirection: "Don't show role colors", alignItems: "no-color" };
+    let obj = {};
     let str = "top";
     if (first2) {
       str = "bottom";
@@ -88,9 +88,9 @@ function Content() {
     const obj2 = { height: 300 };
     const items1 = [obj2, tmp.container];
     obj1.style = items1;
-    obj1.start = {};
-    obj1.end = {};
-    obj1.colors = [true, true, true, true, true, true, true];
+    obj1.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+    obj1.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+    obj1.colors = [4115907468583376000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003854580488009173, 13821141722027687000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002635931759579534, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018950559176091574, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030154169526289986, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001549151829358896];
     obj1.children = tmp22;
     let tmp26Result = tmp26(importDefault(dependencyMap[10]), obj1);
   } else {
@@ -115,7 +115,7 @@ function Content() {
   obj7.defaultValue = str2;
   obj7.onChange = tmp13[1];
   obj7.hasIcons = false;
-  const items5 = [null, null, null];
+  const items5 = ["<string:1293556133>", "<string:334826733>", "<string:838013486>"];
   obj7.children = items5.map((value) => first6(first(first1[14]).TableRadioRow, { value, label: value }, value));
   obj6.children = first6(arg1(dependencyMap[13]).TableRadioGroup, obj7);
   items3[2] = first6(first4, obj6);
@@ -125,7 +125,7 @@ function Content() {
     const obj9 = { marginVertical: 16 };
     obj8.style = obj9;
     const obj10 = { title: "Gradient Color", defaultValue: first5, onChange: tmp15[1], hasIcons: false };
-    const items6 = [{ <string:2048437162>: "<string:275858626>", <string:2887950716>: "<string:1107296256>" }, { <string:2048437162>: "text-subtle", <string:2887950716>: "A sheet with an illustration, title, description, and actions." }, {}, { <string:2048437162>: "getActiveRootSpan", <string:2887950716>: "%JSONParse%" }, {}, { <string:2048437162>: "Show role colors in names", <string:2887950716>: "color-in-names" }, { <string:2048437162>: "Show role colors next to names", <string:2887950716>: "color-next-to-names" }];
+    const items6 = [{ "Null": "<string:275858667>", "Null": "<string:1107296256>" }, { "Null": "Here's a Promo Sheet", "Null": "You can use this to promote new features, products, or anything else you'd like!" }, {}, {}, {}, {}, {}];
     obj10.children = items6.map((value) => {
       const label = value.label;
       return first6(first(first1[14]).TableRadioRow, { value: value.value, label }, label);
@@ -140,7 +140,7 @@ function Content() {
     const obj12 = { marginVertical: 16 };
     obj11.style = obj12;
     const obj13 = { title: "Aspect Ratio", defaultValue: first6, onChange: tmp17[1], hasIcons: false };
-    const items7 = [469451212, 293170038, 191830474, 166858942, 225579656];
+    const items7 = [false, false, false, false, false];
     obj13.children = items7.map((value) => first6(first(first1[14]).TableRadioRow, { value, label: value }, value));
     obj11.children = first6(arg1(dependencyMap[13]).TableRadioGroup, obj13);
     tmp40 = first6(first4, obj11);
@@ -158,7 +158,7 @@ let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ container: {}, flex: { -1805531016: "<string:4083789493>", 2095032404: "<string:3209801398>" } });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ container: {}, flex: { backgroundColor: "vertical", paddingVertical: false } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemCoachmark.tsx");
 

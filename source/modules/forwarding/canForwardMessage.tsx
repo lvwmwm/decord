@@ -1,10 +1,10 @@
-// Module ID: 9526
-// Function ID: 74218
+// Module ID: 9527
+// Function ID: 74231
 // Name: canForwardMessage
-// Dependencies: []
+// Dependencies: [4093640725]
 // Exports: useCanForwardMessage
 
-// Module 9526 (canForwardMessage)
+// Module 9527 (canForwardMessage)
 let MessageFlags;
 function canForwardMessage(state) {
   let obj = arg1;

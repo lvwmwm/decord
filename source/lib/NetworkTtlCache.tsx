@@ -1,14 +1,19 @@
-// Module ID: 12530
-// Function ID: 96275
+// Module ID: 12535
+// Function ID: 96303
 // Name: NetworkTtlCache
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 12530 (NetworkTtlCache)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
+// Module 12535 (NetworkTtlCache)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 let closure_2 = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };
 const obj = { IDLE: "idle", LOADING: "loading", VALID: "valid", STALE: "stale", ERROR: "error" };
-const tmp2 = () => {
+const result = items.fileFinishedImporting("lib/NetworkTtlCache.tsx");
+
+export const NetworkTtlCacheStatus = obj;
+export const NetworkTtlCache = () => {
   class NetworkTtlCache {
     constructor() {
       obj = arg0;
@@ -188,7 +193,3 @@ const tmp2 = () => {
   };
   return callback(NetworkTtlCache, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("lib/NetworkTtlCache.tsx");
-
-export const NetworkTtlCacheStatus = obj;
-export const NetworkTtlCache = tmp2;

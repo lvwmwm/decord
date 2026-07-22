@@ -1,11 +1,11 @@
-// Module ID: 5412
-// Function ID: 46418
+// Module ID: 5142
+// Function ID: 44839
 // Name: decideFileExtension
 // Dependencies: []
 // Exports: decideFileExtension
 
-// Module 5412 (decideFileExtension)
-let closure_2 = { "Null": 30, "Null": 30, "Null": null, "Null": "b845947570ae5a0cc8ded11809e80b37", "Null": "ic_loading_emoji_light", "Null": "png", had_cache_at_startup: true, useTrackAppLauncherHomeItemImpression: "/assets/design/components/Icon/native/redesign/generated/images", PRESENCES_WRITE: 24 };
+// Module 5142 (decideFileExtension)
+let closure_2 = {};
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 

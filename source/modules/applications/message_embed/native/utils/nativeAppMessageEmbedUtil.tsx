@@ -1,10 +1,10 @@
-// Module ID: 11077
-// Function ID: 86154
+// Module ID: 11078
+// Function ID: 86167
 // Name: items
 // Dependencies: []
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 11077 (items)
+// Module 11078 (items)
 const _module = require(dependencyMap[0]);
 const items = [_module.hexToRgba(importDefault(dependencyMap[1]).unsafe_rawColors.PRIMARY_760), ];
 const _module1 = require(dependencyMap[0]);

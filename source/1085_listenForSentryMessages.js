@@ -85,7 +85,7 @@ function listenForSentryMessages(addEventListener) {
             result1.contexts = Object.assign({}, result1.contexts, obj);
           }
           const obj7 = callback(closure_1[0]);
-          obj1 = { originalException: reason, mechanism: { id: null, gameId: null } };
+          obj1 = { originalException: reason, mechanism: { priority: 1902051331, "Bool(false)": null } };
           callback(closure_1[0]).captureEvent(result1, obj1);
           if (callback(closure_1[1]).DEBUG_BUILD) {
             const debug4 = callback(closure_1[0]).debug;

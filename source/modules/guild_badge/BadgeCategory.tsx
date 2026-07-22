@@ -1,10 +1,10 @@
-// Module ID: 5699
-// Function ID: 49058
+// Module ID: 5698
+// Function ID: 49066
 // Name: BadgeCategory
-// Dependencies: [2365587463, 905969666]
+// Dependencies: []
 // Exports: getBadgeCategory
 
-// Module 5699 (BadgeCategory)
+// Module 5698 (BadgeCategory)
 const obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", VERIFIED_AND_PARTNERED: 2, [2]: "VERIFIED_AND_PARTNERED", COMMUNITY: 3, [3]: "COMMUNITY", DISCOVERABLE: 4, [4]: "DISCOVERABLE", STAFF: 5, [5]: "STAFF", NONE: 6, [6]: "NONE" };
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_badge/BadgeCategory.tsx");

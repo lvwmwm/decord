@@ -1,10 +1,10 @@
-// Module ID: 11150
-// Function ID: 86708
+// Module ID: 11151
+// Function ID: 86721
 // Name: useActivityShelfItemsSorting
 // Dependencies: []
 // Exports: default
 
-// Module 11150 (useActivityShelfItemsSorting)
+// Module 11151 (useActivityShelfItemsSorting)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/useActivityShelfItemsSorting.tsx");
 

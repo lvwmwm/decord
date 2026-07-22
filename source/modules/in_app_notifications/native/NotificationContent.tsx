@@ -1,10 +1,10 @@
-// Module ID: 10297
-// Function ID: 79491
+// Module ID: 10298
+// Function ID: 79504
 // Name: DragHandle
 // Dependencies: []
 // Exports: default
 
-// Module 10297 (DragHandle)
+// Module 10298 (DragHandle)
 function DragHandle(onAccessibilityExpand) {
   onAccessibilityExpand = onAccessibilityExpand.onAccessibilityExpand;
   let tmp11;
@@ -56,7 +56,7 @@ function DragHandle(onAccessibilityExpand) {
   const fn = function c() {
     const obj = { opacity: sharedValue1.get() };
     const items = [0.229, first];
-    obj.height = sharedValue(first[7]).interpolate(sharedValue1.get(), ["replace", "then"], items);
+    obj.height = sharedValue(first[7]).interpolate(sharedValue1.get(), [77601039, 1612144654], items);
     return obj;
   };
   obj = { textRevealProgress: sharedValue1, interpolate: arg1(dependencyMap[7]).interpolate, textHeight: first };
@@ -139,9 +139,9 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { dragHandleTextContainer: { overflow: "hidden" } };
-obj = { trackForumPostLinkCopied: 6, applicationCommands: "label", HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: "message", <string:1163000279>: "4.8.0", paddingBottom: importDefault(dependencyMap[5]).space.PX_4 };
+obj = { libvpx: 6, Zt4Mf4: "label", explicitContentGuilds: "message", <string:1230109143>: "4.8.0", paddingBottom: importDefault(dependencyMap[5]).space.PX_4 };
 obj.dragHandleText = obj;
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_ACCENT, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: -802828222984565800000000000000000000000000000, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
+const obj1 = { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019806634022665753, "Null": -5260090822764542500000000000000000000000000000000000000000000000000000000000000000000000, "Null": -19736389607297532000000000000000000000000, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_ACCENT, borderRadius: importDefault(dependencyMap[5]).radii.xs, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
 obj.dragHandle = obj1;
 let closure_10 = obj.createStyles(obj);
 let obj4 = arg1(dependencyMap[4]);
@@ -150,14 +150,14 @@ const tmp3 = arg1(dependencyMap[3]);
 obj2.iconContainer = { marginRight: importDefault(dependencyMap[5]).space.PX_12 };
 obj4 = { padding: importDefault(dependencyMap[5]).space.PX_12, flexDirection: "row" };
 obj2.contentContainer = obj4;
-const obj3 = { marginRight: importDefault(dependencyMap[5]).space.PX_12 };
-obj2.contentContainerExpanded = { padding: importDefault(dependencyMap[5]).space.PX_12 };
+const obj5 = { <string:2839314540>: "Array", <string:172088541>: "isArray", <string:1375732912>: "message", padding: importDefault(dependencyMap[5]).space.PX_12 };
+obj2.contentContainerExpanded = obj5;
 obj2.headerContainer = { flex: 1 };
-obj2.labelContainer = { "Null": 7, "Null": 370 };
+obj2.labelContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 let closure_11 = obj4.createStyles(obj2);
 let closure_12 = { code: "function NotificationContentTsx1(){const{textRevealProgress,interpolate,textHeight}=this.__closure;return{opacity:textRevealProgress.get(),height:interpolate(textRevealProgress.get(),[0,1],[0,textHeight])};}" };
 let closure_13 = { code: "function NotificationContentTsx2(){const{dragHandleBounceProgress}=this.__closure;return{transform:[{translateY:dragHandleBounceProgress.get()}]};}" };
-const obj5 = { padding: importDefault(dependencyMap[5]).space.PX_12 };
+const obj3 = { marginRight: importDefault(dependencyMap[5]).space.PX_12 };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/in_app_notifications/native/NotificationContent.tsx");
 
 export default function NotificationContent(arg0) {

@@ -1,5 +1,5 @@
 // Module ID: 7841
-// Function ID: 62531
+// Function ID: 62541
 // Name: trackTryOutFeature
 // Dependencies: []
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors

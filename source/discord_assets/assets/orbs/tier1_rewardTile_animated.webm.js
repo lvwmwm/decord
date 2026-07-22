@@ -1,9 +1,9 @@
-// Module ID: 9451
-// Function ID: 73650
+// Module ID: 9452
+// Function ID: 73663
 // Name: metadata
 // Dependencies: []
 
-// Module 9451 (metadata)
+// Module 9452 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/tier1_rewardTile_animated.webm.js");
 

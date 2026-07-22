@@ -1,14 +1,14 @@
-// Module ID: 8736
-// Function ID: 69095
+// Module ID: 8737
+// Function ID: 69107
 // Name: DynamicBadgeTooltip
 // Dependencies: []
 // Exports: DynamicBadgeTooltip
 
-// Module 8736 (DynamicBadgeTooltip)
+// Module 8737 (DynamicBadgeTooltip)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = { "Bool(true)": 410058753, "Bool(true)": 16777216, "Bool(true)": 1095025233, "Bool(true)": 148820 };
+let closure_5 = {};
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
 
 export const DynamicBadgeTooltip = function DynamicBadgeTooltip(tooltipPosition) {

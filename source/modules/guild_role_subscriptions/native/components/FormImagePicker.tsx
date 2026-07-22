@@ -1,10 +1,10 @@
-// Module ID: 16300
-// Function ID: 125788
+// Module ID: 16308
+// Function ID: 125830
 // Name: pickImage
 // Dependencies: []
 // Exports: default
 
-// Module 16300 (pickImage)
+// Module 16308 (pickImage)
 function pickImage() {
   return _pickImage(...arguments);
 }
@@ -118,7 +118,7 @@ class ImagePickerIcon {
       tmp19 = arg1;
       tmp20 = dependencyMap;
       num3 = 12;
-      obj3.children = jsx(arg1(dependencyMap[12]).PencilIcon, { "Null": "Array", "Null": "isArray" });
+      obj3.children = jsx(arg1(dependencyMap[12]).PencilIcon, { GuildBadgeSnail: "Array", EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: "isArray" });
       tmp16Result = tmp16(tmp17, obj3);
     }
     items3[1] = tmp16Result;
@@ -131,14 +131,14 @@ let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { imageSelectionRow: {}, buttonColumn: {}, imageDescription: {}, image: {}, imageCentered: {}, imageCircle: { borderRadius: 42 } };
+obj = { imageSelectionRow: {}, buttonColumn: {}, imageDescription: { accessibilityRole: null, rejectWithError: null }, image: { -659428249: 0, -1420374941: null, -319042460: 586 }, imageCentered: { -659428249: false, -1420374941: false, -319042460: false }, imageCircle: { borderRadius: 42 } };
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.imageSquircle = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.imageContainerEmpty = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { width: "application", height: "now", borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: "Text", borderColor: "then", justifyContent: "accessibilityRole", alignItems: "r", "Bool(false)": "isArray", "Bool(false)": "LIGHT", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj2 = { "Bool(true)": "<string:1388517415>", "Bool(true)": "<string:659301671>", "Bool(true)": "<string:4233314577>", "Bool(true)": "<string:3211265>", "Bool(true)": "isArray", "Bool(true)": "<string:1900045744>", "Bool(true)": "accessibilityLabel", "Bool(true)": "<string:325730817>", "Bool(true)": "<string:250609666>", "Bool(true)": "<string:4132503553>", backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.editImageIcon = obj2;
-obj.standaloneIcon = { <string:2885813600>: "bannerOriginalMd5", <string:2339432560>: "splashOriginalMd5" };
+obj.standaloneIcon = { useIsNewGamesCoachmarkEnabled: "bannerOriginalMd5", QUESTS_GET_DECISIONS: "splashOriginalMd5" };
 obj.disabled = { opacity: 0.3 };
 let closure_8 = obj.createStyles(obj);
 const obj3 = { CIRCLE: 0, [0]: "CIRCLE", SQUIRCLE: 1, [1]: "SQUIRCLE" };
@@ -153,7 +153,7 @@ export default function FormImagePicker(children) {
   ({ image, setImage } = children);
   const importDefault = setImage;
   const disabled = children.disabled;
-  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const tmp3 = callback4();

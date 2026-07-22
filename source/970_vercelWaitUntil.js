@@ -1,7 +1,7 @@
 // Module ID: 970
 // Function ID: 10463
 // Name: vercelWaitUntil
-// Dependencies: []
+// Dependencies: [0]
 
 // Module 970 (vercelWaitUntil)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

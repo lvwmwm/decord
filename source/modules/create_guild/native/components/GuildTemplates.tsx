@@ -1,14 +1,14 @@
-// Module ID: 11728
-// Function ID: 91097
+// Module ID: 11729
+// Function ID: 91110
 // Name: GuildTemplatesHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11728 (GuildTemplatesHeader)
+// Module 11729 (GuildTemplatesHeader)
 function GuildTemplatesHeader() {
   const tmp = callback5();
   let obj = { style: tmp.headerContainer };
-  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerTitle };
+  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.headerTitle };
   const intl = arg1(dependencyMap[11]).intl;
   obj.children = intl.string(arg1(dependencyMap[11]).t.5HZu07);
   const items = [callback3(arg1(dependencyMap[10]).Text, obj), ];
@@ -43,7 +43,7 @@ function GuildTemplatesJoinFooter(trigger) {
   };
   const items1 = [tmp.footerSafeAreaContainer, { paddingBottom: importDefault(closure_2[13])().bottom }];
   obj = { style: tmp.footerContainer };
-  const obj1 = { delete: true, dispatch: true, raw: true, style: tmp.footerTitle };
+  const obj1 = { "Null": -43.296, "Null": 4, alignItems: "score", style: tmp.footerTitle };
   const intl3 = arg1(closure_2[11]).intl;
   obj1.children = intl3.string(arg1(closure_2[11]).t.N+Mi/U);
   const items2 = [callback3(arg1(closure_2[10]).Text, obj1), ];
@@ -103,13 +103,13 @@ const tmp6 = arg1(dependencyMap[6]);
 obj.scrollContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.sections = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING, gap: 24 };
-obj.headerContainer = { "Null": "not_verified", "Null": "gr", "Null": null, "Null": "Group 8" };
+obj.headerContainer = {};
 obj.headerTitle = {};
-obj.headerDescription = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
-const obj3 = { grinning_face: "Array", smiley: "isArray", smile: "max", grin: "names", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj.headerDescription = {};
+const obj3 = { y: true, isArray: true, bottom: true, flex: true, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.footerSafeAreaContainer = obj3;
 obj.footerContainer = {};
-obj.footerTitle = { body: null, ctaLabel: null };
+obj.footerTitle = { lottieComponent: null, GiftBackgroundSelect: null };
 let closure_16 = obj.createStyles(obj);
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING, gap: 24 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/create_guild/native/components/GuildTemplates.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 9888
-// Function ID: 76555
+// Module ID: 9889
+// Function ID: 76568
 // Name: MessagePreview
 // Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295]
 // Exports: ForwardPreview
 
-// Module 9888 (MessagePreview)
-import closure_3 from "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
+// Module 9889 (MessagePreview)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function MessagePreview(content) {
   let attachmentCount;
@@ -28,7 +28,7 @@ function MessagePreview(content) {
   const items = [tmp6.seeMoreLabelColor, attachmentCount];
   const callback = React.useCallback((message) => {
     message.contextType = attachmentCount(closure_2[6]).MessageContextType.SEARCH;
-    const obj = {};
+    const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
     let num = 2;
     if (attachmentCount > 0) {
       num = 1;
@@ -44,33 +44,33 @@ function MessagePreview(content) {
     tmp.setOptions({});
     return tmp;
   }, []);
-  obj = { i: true, apply: true, modifyRow: callback };
+  obj = { modifyRow: callback };
   const obj1 = { messageSnapshots: [], content: content.contentMessage.content };
   const tmp = importDefault(dependencyMap[5])();
   obj.message = message.merge(obj1);
   obj.rowGenerator = memo;
   return callback(importDefault(dependencyMap[8]), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = result);
-result = {};
-result = { gap: require("result").space.PX_12 };
-result.forwardPreview = result;
-result.quote = { backgroundColor: require("result").colors.BORDER_SUBTLE };
-result.contentWrapper = { position: null, width: null, top: null, left: null };
-const obj1 = { backgroundColor: require("result").colors.BORDER_SUBTLE };
-result.attachmentPreview = { borderRadius: require("result").radii.sm };
-const obj2 = { borderRadius: require("result").radii.sm };
-result.attachmentPreviewVideo = { backgroundColor: require("result").colors.BLACK };
-result.videoThumbnail = { "Bool(false)": null, "Bool(false)": "stretch", "Bool(false)": "row", "Bool(false)": 10 };
-result.playIcon = {};
-result.attachmentPreviewOverflow = { position: "relative" };
-const obj4 = { 0: "contain", -9223372036854775808: false, 0: false, -1055617191: false, 9223372036854775807: false, 9223372036854775807: false, 0: false, -9223372036854775808: false, 0: false, 9223372036854775807: true, 9223372036854775807: true, 0: 140, backgroundColor: require("result").colors.BACKGROUND_MOD_STRONG, borderRadius: require("result").radii.sm };
-result.overflowCount = obj4;
-result.attachmentRow = { "Null": -747089664, "Null": 4211, "Bool(false)": 4096 };
-result.largeIcon = { "Null": 0, "Null": -1048576 };
-result = result.createStyles(result);
-const obj3 = { backgroundColor: require("result").colors.BLACK };
-result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { -2108412530: "text-lg/normal", -266912356: "text-default", 1638363508: true, gap: require("__exportStarResult1").space.PX_12 };
+__exportStarResult1.forwardPreview = __exportStarResult1;
+__exportStarResult1.quote = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
+__exportStarResult1.contentWrapper = { 1649697713: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", 106012843: "ChatArrowRightIcon", 1006330628: "png", -586653013: "SETTINGS_PREMIUM_MANAGE_PLAN" };
+const obj1 = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
+__exportStarResult1.attachmentPreview = { borderRadius: require("__exportStarResult1").radii.sm };
+const obj2 = { borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.attachmentPreviewVideo = { backgroundColor: require("__exportStarResult1").colors.BLACK };
+__exportStarResult1.videoThumbnail = {};
+__exportStarResult1.playIcon = {};
+__exportStarResult1.attachmentPreviewOverflow = { position: "relative" };
+const obj4 = { "Null": 24, "Null": 8, -719531916: true, 1548981349: "/assets/modules/saved_messages", 1368700770: 280, -1604176509: 262, -2079960581: null, 911293281: "f30ab52fb194d8e8f6a2de0e6e9d812d", 1656250663: "empty_state_image", -900470830: "png", 1004165816: 16, 1364287859: 16, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_STRONG, borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.overflowCount = obj4;
+__exportStarResult1.attachmentRow = {};
+__exportStarResult1.largeIcon = {};
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const obj3 = { backgroundColor: require("__exportStarResult1").colors.BLACK };
+const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
 
 export const ForwardPreview = function ForwardPreview(message) {
   let attachments;
@@ -81,7 +81,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   let hasContent;
   message = message.message;
   ({ channel, forwardOptions } = message);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[9]);
   const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
@@ -138,7 +138,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           obj1.width = 56;
           obj1.height = 56;
           const items1 = [callback(importDefault(dependencyMap[19]), obj1), ];
-          const obj3 = { Gateway: true, communicationDisabledUntilTimestamp: true, withMutualGuilds: true, style: tmp.playIcon };
+          const obj3 = { style: tmp.playIcon };
           items1[1] = callback(arg1(dependencyMap[16]).CirclePlayIcon, obj3);
           obj.children = items1;
           let tmp11 = callback2(View, obj);
@@ -224,7 +224,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       obj15.cutouts = items2;
       obj15.children = tmp11;
       const items3 = [callback(importDefault(dependencyMap[21]), obj15), ];
-      const obj16 = { style: tmp.overflowCount };
+      const obj16 = { "Null": 16, "Null": true, alignItems: "/assets/modules/polls/native/images", style: tmp.overflowCount };
       const items4 = [null, length - 1];
       obj16.children = items4;
       items3[1] = callback2(arg1(dependencyMap[22]).Text, obj16);

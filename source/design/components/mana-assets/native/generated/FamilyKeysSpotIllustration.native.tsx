@@ -1,14 +1,13 @@
 // Module ID: 6045
-// Function ID: 49989
+// Function ID: 50000
 // Name: FamilyKeysSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: FamilyKeysSpotIllustration
 
 // Module 6045 (FamilyKeysSpotIllustration)
-import { jsx } from "result";
-import result from "result";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/FamilyKeysSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/FamilyKeysSpotIllustration.native.tsx");
 
 export const FamilyKeysSpotIllustration = function FamilyKeysSpotIllustration(width) {
   let accessibilityLabel;

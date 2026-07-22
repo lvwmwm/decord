@@ -1,10 +1,10 @@
-// Module ID: 9643
-// Function ID: 75093
+// Module ID: 9644
+// Function ID: 75106
 // Name: UploadPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9643 (UploadPreviewActionSheet)
+// Module 9644 (UploadPreviewActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = { contentContainer: { padding: 16 } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, padding: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.md, width: "100%" };
 obj.imageWrap = obj;
-const obj1 = { <string:4223779917>: true, <string:2053078631>: true, borderRadius: importDefault(dependencyMap[7]).radii.md - importDefault(dependencyMap[7]).space.PX_4 };
+const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.md - importDefault(dependencyMap[7]).space.PX_4 };
 obj.imageContainer = obj1;
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -198,7 +198,7 @@ export default function UploadPreviewActionSheet(onAdd) {
           }
           items5[2] = tmp33Result;
           if (null != onRemove) {
-            const obj9 = { icon: spoiler(arg1(dependencyMap[39]).TrashIcon, { accessibilityRole: null, "": null }) };
+            const obj9 = { icon: spoiler(arg1(dependencyMap[39]).TrashIcon, { "Bool(false)": "%Float64Array%", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }) };
             const intl6 = arg1(dependencyMap[32]).intl;
             obj9.text = intl6.string(arg1(dependencyMap[32]).t.40jBO/);
             obj9.onPress = callback;
@@ -207,7 +207,7 @@ export default function UploadPreviewActionSheet(onAdd) {
           } else {
             tmp54 = null;
             if (null != onAdd) {
-              const obj10 = { icon: spoiler(arg1(dependencyMap[30]).ImageFileIcon, { accessibilityRole: null, "": null }) };
+              const obj10 = { icon: spoiler(arg1(dependencyMap[30]).ImageFileIcon, { "Bool(false)": "%Float64Array%", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }) };
               const intl5 = arg1(dependencyMap[32]).intl;
               obj10.text = intl5.string(arg1(dependencyMap[32]).t.s7oPyG);
               obj10.onPress = callback1;

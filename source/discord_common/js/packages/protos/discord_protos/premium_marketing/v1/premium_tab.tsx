@@ -1,5 +1,5 @@
 // Module ID: 7133
-// Function ID: 57439
+// Function ID: 57450
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,31 +25,31 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PremiumTab$Type);
       items = [, , , , , ];
-      items[0] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
-      items[1] = { 1347510942: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002413279153115, 1678385745: 19783717845804110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1364379111: 203551996438117940000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 140698458: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002234351583429534 };
-      items[2] = { 1347510942: false, 1678385745: false, 1364379111: null, 140698458: null };
+      items[0] = {};
+      items[1] = {};
+      items[2] = {};
       items[3] = {};
       items[4] = {
         T() {
               return callback(closure_1[6]).LocalizedString;
             }
       };
-      items[5] = {
-        T() {
-              return callback(closure_1[6]).LocalizedString;
-            }
+      obj = { -111020099: true, 1351895378: true, 1456955659: true };
+      obj.T = function T() {
+        return callback(closure_1[6]).LocalizedString;
       };
-      items1 = [];
+      items[5] = obj;
+      items1 = ["getCurrentUser"];
       items1[1] = items;
-      obj = closure_6(PremiumTab$Type);
+      obj2 = closure_6(PremiumTab$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj.apply(self, items1);
+        constructResult = obj2.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -59,7 +59,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(false)": "<string:1237712898>", "Null": "<string:3349217282>", "Null": "<string:160104449>", "Null": "<string:115015681>" };
+      let obj = { hasContentBackground: "onunhandledrejection", GEN_AI_REQUEST_MESSAGES_ATTRIBUTE: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", HubEmailConnectionSteps: null, verifiedAt: false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumTab$Type(closure_1[7]).MESSAGE_TYPE, obj);

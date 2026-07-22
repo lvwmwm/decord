@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 90194
+// Module ID: 11614
+// Function ID: 90207
 // Name: GuildProgressCircle
 // Dependencies: []
 // Exports: default
 
-// Module 11613 (GuildProgressCircle)
+// Module 11614 (GuildProgressCircle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

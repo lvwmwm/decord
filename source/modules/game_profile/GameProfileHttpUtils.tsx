@@ -1,10 +1,10 @@
-// Module ID: 8651
-// Function ID: 68470
+// Module ID: 8652
+// Function ID: 68482
 // Name: _getShopCollection
 // Dependencies: []
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 8651 (_getShopCollection)
+// Module 8652 (_getShopCollection)
 function _getShopCollection() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

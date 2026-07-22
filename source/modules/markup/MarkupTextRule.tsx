@@ -1,5 +1,5 @@
 // Module ID: 4568
-// Function ID: 40050
+// Function ID: 40058
 // Name: textRegexp
 // Dependencies: []
 // Exports: textMarkupPatternWithExclusions

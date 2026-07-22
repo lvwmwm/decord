@@ -38,7 +38,7 @@ let tmp2 = (MessageType) => {
   class NormalState$Type {
     constructor() {
       tmp = closure_3(this, NormalState$Type);
-      items = [null];
+      items = [];
       items[1] = [];
       return closure_15(this, NormalState$Type, items);
     }
@@ -94,13 +94,14 @@ let tmp4 = (MessageType) => {
   class RestrictedState$Type {
     constructor() {
       tmp = closure_3(this, RestrictedState$Type);
-      obj = { 9223372036854775807: "CONTAINS_SELF_HARM_CONTENT", 9223372036854775807: "XLargeIcon", 0: "y" };
-      obj.T = function T() {
-        return callback(closure_1[7]).Timestamp;
+      obj = {
+        T() {
+              return callback(closure_1[7]).Timestamp;
+            }
       };
       items = [];
       items[0] = obj;
-      items1 = [];
+      items1 = [null];
       items1[1] = items;
       return closure_15(this, RestrictedState$Type, items1);
     }
@@ -221,10 +222,9 @@ let tmp6 = (MessageType) => {
   class DeferredActionState$Type {
     constructor() {
       tmp = closure_3(this, DeferredActionState$Type);
-      obj = {
-        T() {
-              return callback(closure_1[7]).Timestamp;
-            }
+      obj = { -111020099: "marginBottom", 1351895378: "slice", 1456955659: "formatToPlainString" };
+      obj.T = function T() {
+        return callback(closure_1[7]).Timestamp;
       };
       items = [];
       items[0] = obj;
@@ -349,7 +349,7 @@ let tmp8 = (MessageType) => {
   class TempBannedState$Type {
     constructor() {
       tmp = closure_3(this, TempBannedState$Type);
-      obj = { 9223372036854775807: "braintree:merchantId", 9223372036854775807: "<string:2410955008>", 0: "<string:3110141954>" };
+      obj = { -111020099: -141359518085676640000000000000000000000000000000000000000000000000000000000000000000000, 1351895378: 130196384959298370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1456955659: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585593 };
       obj.T = function T() {
         return callback(closure_1[7]).Timestamp;
       };
@@ -361,11 +361,11 @@ let tmp8 = (MessageType) => {
               return items;
             }
       };
-      items[2] = {
-        T() {
-              return callback(closure_1[7]).Timestamp;
-            }
+      obj = { -111020099: "<string:1111621634>", 1351895378: "<string:1107297328>", 1456955659: "<string:1090520112>" };
+      obj.T = function T() {
+        return callback(closure_1[7]).Timestamp;
       };
+      items[2] = obj;
       items1 = [];
       items1[1] = items;
       return closure_15(this, TempBannedState$Type, items1);
@@ -547,19 +547,18 @@ let tmp10 = (MessageType) => {
   class BannedState$Type {
     constructor() {
       tmp = closure_3(this, BannedState$Type);
-      obj = {
-        T() {
-              const items = [null, callback(closure_1[8]).ClassificationType];
-              return items;
-            }
+      obj = { 0: "context", 0: "y", 0: "isArray", 0: 1 };
+      obj.T = function T() {
+        const items = [null, callback(closure_1[8]).ClassificationType];
+        return items;
       };
       items = [, ];
       items[0] = obj;
-      items[1] = {
-        T() {
-              return callback(closure_1[7]).Timestamp;
-            }
+      obj = { -111020099: 0, 1351895378: "sh", 1456955659: 1 };
+      obj.T = function T() {
+        return callback(closure_1[7]).Timestamp;
       };
+      items[1] = obj;
       items1 = [];
       items1[1] = items;
       return closure_15(this, BannedState$Type, items1);
@@ -724,17 +723,18 @@ let tmp12 = (MessageType) => {
   class SafetyState$Type {
     constructor() {
       tmp = closure_3(this, SafetyState$Type);
-      obj = { 9223372036854775807: "<string:1170079746>", 0: "<string:1514274818>", 0: "<string:1509950539>", 0: "<string:1090520139>" };
-      obj.T = function T() {
-        return closure_10;
+      obj = {
+        T() {
+              return closure_10;
+            }
       };
       items = [, , , , , , , ];
       items[0] = obj;
-      items[1] = {
-        T() {
-              return closure_11;
-            }
+      obj = { "Bool(false)": false, "Bool(false)": "no-preference", "Bool(false)": "db.fs_info", "Bool(false)": 0 };
+      obj.T = function T() {
+        return closure_11;
       };
+      items[1] = obj;
       items[2] = {
         T() {
               return closure_12;
@@ -745,28 +745,28 @@ let tmp12 = (MessageType) => {
               return closure_13;
             }
       };
-      obj = { 9223372036854775807: null, 0: 4, 0: true, 0: "/assets/.cache/intl/ZGVzaWdu" };
-      obj.T = function T() {
+      obj1 = { "Bool(false)": "<string:1414004738>", "Bool(false)": "<string:3644981249>", "Bool(false)": "<string:1694499380>", "Bool(false)": "<string:1107296695>" };
+      obj1.T = function T() {
         return closure_14;
       };
-      items[4] = obj;
-      obj1 = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
-      obj1.T = function T() {
+      items[4] = obj1;
+      obj2 = { -111020099: "in", 1351895378: "<string:507642112>", 1456955659: "<string:1962934591>" };
+      obj2.T = function T() {
         const items = [, closure_8];
         return items;
       };
-      items[5] = obj1;
-      items[6] = {
-        T() {
-              const items = [, closure_9];
-              return items;
-            }
+      items[5] = obj2;
+      obj3 = { 0: null, 0: null, 0: null, 0: null };
+      obj3.T = function T() {
+        const items = [, closure_9];
+        return items;
       };
-      items[7] = {
-        T() {
-              return callback(closure_1[9]).UInt64Value;
-            }
+      items[6] = obj3;
+      obj4 = { -111020099: "r", 1351895378: "emitVoiceMessageRecorded", 1456955659: "r" };
+      obj4.T = function T() {
+        return callback(closure_1[9]).UInt64Value;
       };
+      items[7] = obj4;
       items1 = [null];
       items1[1] = items;
       return closure_15(this, SafetyState$Type, items1);

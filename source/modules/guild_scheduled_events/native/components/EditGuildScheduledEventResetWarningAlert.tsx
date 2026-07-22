@@ -1,10 +1,10 @@
-// Module ID: 8445
-// Function ID: 67378
+// Module ID: 8446
+// Function ID: 67390
 // Name: EditGuildScheduledEventResetWarningAlert
 // Dependencies: []
 // Exports: default
 
-// Module 8445 (EditGuildScheduledEventResetWarningAlert)
+// Module 8446 (EditGuildScheduledEventResetWarningAlert)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildScheduledEventResetWarningAlert.tsx");

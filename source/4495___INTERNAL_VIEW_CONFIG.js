@@ -1,5 +1,5 @@
 // Module ID: 4495
-// Function ID: 39649
+// Function ID: 39657
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
@@ -9,7 +9,7 @@ let codegenNativeComponent;
 const _module = require(dependencyMap[0]);
 ({ codegenNativeCommands, codegenNativeComponent } = _module);
 let obj = { uiViewClassName: "RNSSearchBar", directEventTypes: { topSearchFocus: { registrationName: "onSearchFocus" }, topSearchBlur: { registrationName: "onSearchBlur" }, topSearchButtonPress: { registrationName: "onSearchButtonPress" }, topCancelButtonPress: { registrationName: "onCancelButtonPress" }, topChangeText: { registrationName: "onChangeText" }, topClose: { registrationName: "onClose" }, topOpen: { registrationName: "onOpen" } } };
-obj = { "Bool(true)": "true", "Bool(true)": 424, "Bool(true)": 424, "Bool(true)": 100, "Bool(true)": "2026-03-soundmoji-rendering", "Bool(true)": "user", "Bool(true)": "2025-12-proportional-vad-indicator", "Bool(true)": "text", "Bool(true)": "", "Bool(true)": 255, "Bool(true)": 0, "Bool(true)": 256, "Bool(true)": 0, "Bool(true)": 0 };
+obj = {};
 obj = { process: require(dependencyMap[1]).default };
 obj.barTintColor = obj;
 obj.tintColor = { process: require(dependencyMap[1]).default };
@@ -21,7 +21,7 @@ const obj3 = { process: require(dependencyMap[1]).default };
 obj.headerIconColor = { process: require(dependencyMap[1]).default };
 obj.shouldShowHintSearchIcon = true;
 const _module1 = require(dependencyMap[2]);
-obj.validAttributes = Object.assign(obj, _module1.ConditionallyIgnoredEventHandlers({}));
+obj.validAttributes = Object.assign(obj, _module1.ConditionallyIgnoredEventHandlers({ "Null": 65535, "Null": 18939904, "Null": 287441443, "Null": 1393, "Null": 1895895552, "Null": 1, "Null": 275906833 }));
 const _module2 = require(dependencyMap[3]);
 
 export default _module2.get("RNSSearchBar", () => obj);

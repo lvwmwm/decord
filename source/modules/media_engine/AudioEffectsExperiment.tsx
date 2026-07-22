@@ -1,9 +1,9 @@
-// Module ID: 12708
-// Function ID: 97581
+// Module ID: 12715
+// Function ID: 97614
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12708 (apexExperiment)
+// Module 12715 (apexExperiment)
 let obj = { probeAudioEffects: false };
 const _module = require(dependencyMap[0]);
 obj = { defaultConfig: obj };

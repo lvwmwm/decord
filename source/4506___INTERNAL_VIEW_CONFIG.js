@@ -1,10 +1,10 @@
 // Module ID: 4506
-// Function ID: 39685
+// Function ID: 39693
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [0, 4294967295]
 
 // Module 4506 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "result";
+import { codegenNativeComponent } from "__exportStarResult1";
 
 const obj = { uiViewClassName: "RNSScreenFooter", validAttributes: {} };
 const _module = require(dependencyMap[1]);

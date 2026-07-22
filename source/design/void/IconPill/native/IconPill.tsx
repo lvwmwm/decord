@@ -1,16 +1,16 @@
-// Module ID: 12884
-// Function ID: 98393
+// Module ID: 12891
+// Function ID: 98426
 // Name: IconPill
-// Dependencies: [131072, 4201840640, 1593835524, 33554482, 1912602624, 1274, 2, 3741680, 2031616]
+// Dependencies: [131072, 4201840640, 1711276036, 33554482, 1912602624, 1274, 2, 3741680, 2031616]
 // Exports: default
 
-// Module 12884 (IconPill)
+// Module 12891 (IconPill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: require("STATUS_PADDING").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("STATUS_PADDING").radii.md };
+obj = { marginRight: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291123377633704, flexShrink: "83d9ad6473cb40e1d6825c7dbdb7f70f", fontSize: "ic_media_post_share_prompt", marginRight: "png", label: true, maxLength: "/assets/images/native/icons", backgroundColor: require("STATUS_PADDING").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("STATUS_PADDING").radii.md };
 obj.pillContainer = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.pillIcon = { tintColor: require("STATUS_PADDING").colors.TEXT_SUBTLE, marginRight: 4 };

@@ -1,19 +1,18 @@
 // Module ID: 3421
 // Function ID: 26654
 // Name: eachWeekendOfInterval
-// Dependencies: [3383, 3405, 3410, 3453]
+// Dependencies: []
 // Exports: default
 
 // Module 3421 (eachWeekendOfInterval)
-import compareAsc from "compareAsc";
-import differenceInMonths from "differenceInMonths";
-import differenceInSeconds from "differenceInSeconds";
-import module_3453 from "module_3453";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
+let closure_2 = _interopRequireDefault(require(dependencyMap[2]));
+let closure_3 = _interopRequireDefault(require(dependencyMap[3]));
 
 export default function eachWeekendOfInterval(defaultResult1) {
-  module_3453.default(1, arguments);
-  defaultResult1 = compareAsc.default(defaultResult1);
+  closure_3.default(1, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
   const items = [];
   let num = 0;
   if (0 < defaultResult1.length) {

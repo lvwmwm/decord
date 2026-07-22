@@ -1,9 +1,9 @@
-// Module ID: 13322
-// Function ID: 101192
+// Module ID: 13329
+// Function ID: 101225
 // Name: messageEventsValidation
 // Dependencies: []
 
-// Module 13322 (messageEventsValidation)
+// Module 13329 (messageEventsValidation)
 let RPCEvents;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_LOCAL_SCOPE;

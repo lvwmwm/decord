@@ -1,5 +1,5 @@
 // Module ID: 6339
-// Function ID: 50430
+// Function ID: 50441
 // Name: NitroRewardsLaptopSpotIllustration
 // Dependencies: []
 // Exports: NitroRewardsLaptopSpotIllustration

@@ -1,8 +1,8 @@
-// Module ID: 12119
-// Function ID: 93356
+// Module ID: 12123
+// Function ID: 93382
 // Dependencies: []
 
-// Module 12119
+// Module 12123
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const memoResult = importAllResult.memo(function GIFFavButton(source) {

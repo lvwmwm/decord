@@ -1,10 +1,10 @@
-// Module ID: 14646
-// Function ID: 110447
+// Module ID: 14654
+// Function ID: 110490
 // Name: PrivacyPolicyDescription
 // Dependencies: []
 // Exports: default
 
-// Module 14646 (PrivacyPolicyDescription)
+// Module 14654 (PrivacyPolicyDescription)
 function PrivacyPolicyDescription(style) {
   let obj = { style: style.style };
   const intl = arg1(dependencyMap[8]).intl;
@@ -26,7 +26,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const intl = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.Y7Kgvf);
   obj.onPress = onToggleConsent.onToggleConsent;
-  obj.hitSlop = { onAccessibilityFocus: "absolute", onAccessibilityBlur: null, xOffset: -4 };
+  obj.hitSlop = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000651877107004067, 9223372036854775807: NaN, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001112536929545012 };
   if (asCheckbox) {
     obj = { checked: consent };
     let tmp5Result = tmp5(tmp6(tmp7[10]).FormCheckbox, obj);
@@ -35,7 +35,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
     tmp5Result = tmp5(tmp6(tmp7[11]).FormRow.Radio, obj1);
   }
   const items = [tmp5Result, ];
-  const obj2 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.checkboxLabel };
+  const obj2 = { cachedAt: "center", edpbxy: "center", style: tmp.checkboxLabel };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.format(arg1(dependencyMap[8]).t.qMDAP0, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
   items[1] = callback(arg1(dependencyMap[7]).TextWithIOSLinkWorkaround, obj2);
@@ -50,7 +50,7 @@ const MarketingURLs = arg1(dependencyMap[4]).MarketingURLs;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp4 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ multiItem: {}, checkbox: {}, radio: {}, checkboxLabel: { flex: 1 } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ multiItem: { 9223372036854775807: "safety_state", 9223372036854775807: "message" }, checkbox: {}, radio: {}, checkboxLabel: { flex: 1 } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/auth/native/components/PrivacyHint.tsx");
 

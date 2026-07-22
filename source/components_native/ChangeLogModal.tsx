@@ -1,10 +1,10 @@
-// Module ID: 14253
-// Function ID: 107720
+// Module ID: 14261
+// Function ID: 107763
 // Name: _callSuper
 // Dependencies: []
 // Exports: default
 
-// Module 14253 (_callSuper)
+// Module 14261 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -144,13 +144,13 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f107735;
+      tmp13 = f107778;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f107735, obj5);
+      tmp14 = jsx(f107778, obj5);
     }
     return tmp14;
   }
@@ -173,20 +173,20 @@ let obj = arg1(dependencyMap[10]);
 obj = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 } };
 obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, overflow: "hidden" };
 obj.videoSpecial = obj;
-obj.videoOverlay = {};
-const tmp3 = arg1(dependencyMap[9]);
-obj.playButton = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
-obj.playIcon = { "Null": 24, "Null": 24 };
-obj.empty = { "Null": "oneTimeCode", "Null": "stretch", "Null": 1, "Null": "center" };
+obj.videoOverlay = { "Null": null, "Null": null, "Null": null };
+const obj1 = { getUserTrialOffer: "<string:861011969>", borderColor: "<string:861077505>", GuildsNodeType: "<string:976486401>", OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED: "<string:1656487938>", is_pip_mode: "<string:1045495809>", notifSetting: "<string:271532290>", resetNotification: "<string:2035351553>", canEditInvite: "<string:206652268>", SquareActivityPIPReferenceDimensions: "<string:206831617>", borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+obj.playButton = obj1;
+obj.playIcon = { "Null": true, "Null": true };
+obj.empty = { reportedPageIndex: "oneTimeCode", pageIndex: "stretch", scrollTargetPageIndex: 1, index: "center" };
 let closure_15 = obj.createLegacyClassComponentStyles(obj);
 let obj4 = arg1(dependencyMap[10]);
 const obj2 = {};
-const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+const tmp3 = arg1(dependencyMap[9]);
 obj2.bulletPoint = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
 obj2.listItem = {};
 obj4 = { color: importDefault(dependencyMap[11]).colors.TEXT_DEFAULT };
 obj2.listText = obj4;
-obj2.listItemContent = {};
+obj2.listItemContent = { 1649697713: "onAnimationFinishCapture", 106012843: "onAnimationFinish" };
 let closure_16 = obj4.createLegacyClassComponentStyles(obj2);
 const tmp4 = (PureComponent) => {
   class ListItem {
@@ -258,7 +258,7 @@ const tmp5 = (PureComponent) => {
         tmp2.track(constants.CHANGE_LOG_VIDEO_INTERACTED);
         const current = tmp2.ref.current;
         if (null != current) {
-          obj = { <string:1669536098>: 11289912320616628000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1645850274>: 2.000000599364285, <string:4184044779>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009220728876660892, <string:1549891269>: -12680549038139213000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          obj = { "Bool(false)": 10742523210446360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 2.000000599364285, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009089488680308877, "Bool(false)": -504174745769255300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
           const obj1 = {};
           const merged = Object.assign(obj);
           obj1["width"] = width;
@@ -384,8 +384,8 @@ const tmp5 = (PureComponent) => {
       const items1 = [callback3(callback(closure_2[17]), obj6), ];
       let tmp20 = null;
       if (null != video) {
-        const obj7 = { "Bool(false)": -1522462253, "Bool(false)": 1912603165, style: tmp.videoOverlay, onPress: self.playVideo };
-        const obj8 = { "Bool(false)": -1522462253, "Bool(false)": 1912603165, source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+        const obj7 = { <string:1403277940>: "GAME_SERVER_REGIONS", <string:2544012649>: "GAME_SERVER_REGIONS", style: tmp.videoOverlay, onPress: self.playVideo };
+        const obj8 = { <string:1403277940>: "GAME_SERVER_REGIONS", <string:2544012649>: "GAME_SERVER_REGIONS", source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
         obj7.children = callback3(callback(closure_2[20]), obj8);
         tmp20 = callback3(ChangeLog(closure_2[19]).PressableOpacity, obj7);
         const tmp26 = callback(closure_2[20]);

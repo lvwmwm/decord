@@ -1,10 +1,10 @@
-// Module ID: 5600
-// Function ID: 47563
+// Module ID: 5599
+// Function ID: 47571
 // Name: getChannelIdForGuildTransition
 // Dependencies: []
 // Exports: getChannelIdForGuildTransition
 
-// Module 5600 (getChannelIdForGuildTransition)
+// Module 5599 (getChannelIdForGuildTransition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

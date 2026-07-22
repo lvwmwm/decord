@@ -1,10 +1,10 @@
-// Module ID: 12569
-// Function ID: 96715
+// Module ID: 12574
+// Function ID: 96743
 // Name: parseParticipant
 // Dependencies: []
 // Exports: getHavenSoundControlName, parseRoom
 
-// Module 12569 (parseParticipant)
+// Module 12574 (parseParticipant)
 function parseParticipant(userId) {
   return { userId: userId.user_id, position: userId.position, avatar: userId.avatar };
 }

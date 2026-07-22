@@ -1,5 +1,5 @@
 // Module ID: 7093
-// Function ID: 56939
+// Function ID: 56950
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -937,7 +937,7 @@ let tmp3 = (arg0) => {
               let tmp14 = closure_1;
               let tmp15 = closure_3;
               let obj1 = closure_1(closure_3[19]);
-              let obj = {};
+              let obj = { style: "construct", textStyle: "isArray" };
               obj = { action };
               obj1 = { userIsNull: null == value, idIsNull: true };
               let username;

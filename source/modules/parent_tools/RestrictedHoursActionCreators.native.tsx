@@ -1,10 +1,10 @@
-// Module ID: 15843
-// Function ID: 121110
+// Module ID: 15851
+// Function ID: 121153
 // Name: closeRestrictedHoursModal
 // Dependencies: []
 // Exports: openRestrictedHoursModal
 
-// Module 15843 (closeRestrictedHoursModal)
+// Module 15851 (closeRestrictedHoursModal)
 function closeRestrictedHoursModal() {
   importDefault(dependencyMap[1]).popWithKey(closure_4);
 }

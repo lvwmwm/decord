@@ -10,7 +10,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ cloneElement: closure_5, useMemo: closure_6 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = ["n", "setCommunicationModeOn", "%BooleanPrototype%", "getAccessibleEmojiDisplayName", "parseFloat", "_headers", "multiplier", "hovering", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+let closure_7 = [];
 
 export default function TouchableWithoutFeedback(disabled) {
   let onBlur2;

@@ -1,9 +1,9 @@
-// Module ID: 10158
-// Function ID: 78535
+// Module ID: 10159
+// Function ID: 78548
 // Name: GroupDMInviteManagement
 // Dependencies: []
 
-// Module 10158 (GroupDMInviteManagement)
+// Module 10159 (GroupDMInviteManagement)
 let Platform;
 function GroupDMInviteManagement(channelId) {
   const arg1 = channelId.channelId;

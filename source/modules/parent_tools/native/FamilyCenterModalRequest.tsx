@@ -1,10 +1,10 @@
-// Module ID: 11048
-// Function ID: 85978
+// Module ID: 11049
+// Function ID: 85991
 // Name: FamilyCenterModalRequestConfirm
 // Dependencies: []
 // Exports: default
 
-// Module 11048 (FamilyCenterModalRequestConfirm)
+// Module 11049 (FamilyCenterModalRequestConfirm)
 class FamilyCenterModalRequestConfirm {
   constructor(arg0) {
     userId = global.userId;
@@ -148,14 +148,14 @@ class FamilyCenterModalRequestConfirm {
       tmp38 = arg1;
       tmp39 = dependencyMap;
       num6 = 20;
-      obj13 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
+      obj13 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817 };
       obj13.style = tmp.title;
       intl3 = arg1(dependencyMap[18]).intl;
       tmp40 = importDefault;
       obj13.children = intl3.string(importDefault(dependencyMap[19]).sMmIbm);
       items6[1] = jsx(arg1(dependencyMap[20]).Text, obj13);
       tmp41 = jsx;
-      obj14 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
+      obj14 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817 };
       obj14.style = tmp.teenName;
       username2 = teenIdentity.global_name;
       if (null == username2) {
@@ -166,7 +166,7 @@ class FamilyCenterModalRequestConfirm {
       tmp43 = arg1;
       tmp44 = dependencyMap;
       tmp42 = jsx;
-      obj15 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+      obj15 = { cachedAt: "y", edpbxy: "isArray" };
       obj15.style = tmp.consent;
       intl4 = arg1(dependencyMap[18]).intl;
       tmp45 = importDefault;
@@ -217,15 +217,13 @@ class FamilyCenterModalRequestConfirm {
     items9[0] = tmp9(arg1(dependencyMap[15]).ModalContent, obj1);
     obj20 = {};
     obj21 = {};
-    obj22 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
-    obj22.disabled = isRequestingLink;
-    obj22.loading = isRequestingLink;
+    obj22 = { disabled: isRequestingLink, loading: isRequestingLink };
     intl5 = arg1(dependencyMap[18]).intl;
     obj22.text = intl5.string(importDefault(dependencyMap[19]).ISg34l);
     obj22.onPress = callback2;
     items10 = [, ];
     items10[0] = jsx(arg1(dependencyMap[25]).Button, obj22);
-    obj23 = { "Bool(true)": 1124139009, "Bool(true)": 153708 };
+    obj23 = {};
     intl6 = arg1(dependencyMap[18]).intl;
     obj23.text = intl6.string(arg1(dependencyMap[18]).t.ETE/oC);
     obj23.onPress = importDefault(dependencyMap[26]).pop;
@@ -269,12 +267,13 @@ class FamilyCenterModalRequestSuccess {
     obj4.children = jsx(arg1(dependencyMap[27]).EnvelopeSpotIllustration, { scale: 0.7 });
     items1 = [, , ];
     items1[0] = jsx(View, obj4);
-    obj5 = { style: tmp.header };
+    obj5 = { cachedAt: true, edpbxy: true };
+    obj5.style = tmp.header;
     intl = arg1(dependencyMap[18]).intl;
     obj5.children = intl.string(importDefault(dependencyMap[19]).EpwfZl);
     items1[1] = jsx(arg1(dependencyMap[20]).Text, obj5);
     tmp13 = jsx;
-    obj6 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+    obj6 = { cachedAt: "y", edpbxy: "isArray" };
     obj6.style = tmp.description;
     intl2 = arg1(dependencyMap[18]).intl;
     obj7 = {};
@@ -375,9 +374,11 @@ class FamilyCenterModalRequestError {
     obj3.children = tmp15(tmp16, obj4);
     items3 = [, , ];
     items3[0] = tmp13(tmp14, obj3);
-    obj7 = { style: tmp.header, children: headerResult };
+    obj7 = { cachedAt: true, edpbxy: true };
+    obj7.style = tmp.header;
+    obj7.children = headerResult;
     items3[1] = jsx(arg1(dependencyMap[20]).Text, obj7);
-    obj8 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+    obj8 = { cachedAt: "y", edpbxy: "isArray" };
     obj8.style = tmp.description;
     obj8.children = descriptionResult;
     items3[2] = jsx(arg1(dependencyMap[20]).Text, obj8);
@@ -427,9 +428,9 @@ function FamilyCenterPrereqScreen(primaryButton) {
   const tmp = callback7();
   let obj = {};
   obj = { style: tmp.content };
-  obj = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.title, children: title };
+  obj = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp.title, children: title };
   const items = [callback(arg1(dependencyMap[20]).Text, obj), ];
-  const obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp.description, children: description };
+  const obj1 = { cachedAt: "y", edpbxy: "isArray", style: tmp.description, children: description };
   items[1] = callback(arg1(dependencyMap[20]).Text, obj1);
   obj.children = items;
   const items1 = [callback2(closure_6, obj), ];
@@ -484,7 +485,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   obj = { style: tmp.content };
   obj = { style: tmp.art, children: callback(arg1(dependencyMap[27]).FamilyShieldSpotIllustration, {}) };
   const items = [callback(closure_6, obj), , ];
-  const obj1 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.title };
+  const obj1 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp.title };
   const intl = arg1(dependencyMap[18]).intl;
   const obj2 = {};
   let global_name;
@@ -505,7 +506,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   obj2.username = str;
   obj1.children = intl.formatToPlainString(importDefault(dependencyMap[19]).pQQMJ7, obj2);
   items[1] = callback(arg1(dependencyMap[20]).Text, obj1);
-  const obj3 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp.description };
+  const obj3 = { cachedAt: "y", edpbxy: "isArray", style: tmp.description };
   const intl2 = arg1(dependencyMap[18]).intl;
   obj3.children = intl2.format(importDefault(dependencyMap[19]).0o3yg8, { link: "https://support.discord.com/hc/articles/14155060633623" });
   items[2] = callback(arg1(dependencyMap[20]).Text, obj3);
@@ -625,30 +626,30 @@ const obj1 = { alignItems: "center", marginBottom: importDefault(dependencyMap[7
 obj.headerIcons = { padding: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.round, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 const obj2 = { padding: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.round, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj.ellipseGroup = { flexDirection: "row", marginHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
-const obj4 = { 9223372036854775807: "applications", 9223372036854775807: "message", 0: "en-AS", backgroundColor: importDefault(dependencyMap[7]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.round };
-obj.ellipse = obj4;
-obj.title = { textAlign: "center" };
 const obj3 = { flexDirection: "row", marginHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
+obj.ellipse = { backgroundColor: importDefault(dependencyMap[7]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.round };
+obj.title = { textAlign: "center" };
+const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.teenName = { marginTop: importDefault(dependencyMap[7]).space.PX_4, textAlign: "center" };
 const obj5 = { marginTop: importDefault(dependencyMap[7]).space.PX_4, textAlign: "center" };
 obj.consent = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
 let closure_15 = obj.createStyles(obj);
 let obj9 = arg1(dependencyMap[6]);
 const obj7 = {};
-const obj8 = { 1962313087: "Array", 1104954998: "textComponentStyle", 290881: "isArray", 1250711380: "STICKER_PACK_VIEW_ALL", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+const obj8 = { position: "text-xs/medium", location: "text-muted", index: null, sa: 1.75, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
 obj7.content = obj8;
 obj7.textWrapper = { alignItems: "center" };
 obj9 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj7.header = obj9;
 obj7.description = { textAlign: "center" };
-const obj10 = { "Bool(false)": "pillIcon", "Bool(false)": "SIGNED", "Bool(false)": "favoriteContainer", "Bool(false)": "co", "Bool(false)": "MiniaturesSpotIllustration", paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
-obj7.illustration = obj10;
+const obj6 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+obj7.illustration = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
 let closure_16 = obj9.createStyles(obj7);
 let obj14 = arg1(dependencyMap[6]);
-const obj11 = { header: { "Null": null, "Null": null }, description: { textAlign: "center" } };
-const obj12 = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003612076936463168, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001625974664839776, "Bool(false)": 12314683129717740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": NaN, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039023424152515276, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000321803323034114, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, "Bool(false)": 995036027991409700000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
+const obj11 = { header: { value: null, on: null }, description: { textAlign: "center" } };
+const obj12 = { -1398297388: true, -1398362964: true, -42583723: true, -1649410897: true, 1707739513: true, -1311966266: true, 1382179308: true, -1397969708: true, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 obj11.ring = obj12;
-const obj6 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+const obj10 = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj11.iconContainer = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
 obj14 = { backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
 obj11.positive = obj14;
@@ -658,13 +659,13 @@ let closure_17 = obj14.createStyles(obj11);
 let obj20 = arg1(dependencyMap[6]);
 let closure_18 = obj20.createStyles({ container: {} });
 let obj21 = arg1(dependencyMap[6]);
-const obj16 = { content: { EMOJI_PICKER_EMOJI_TO_SHOW_COUNT: "Array", previewProfileButtonDark: "textComponentStyle", MAX_FORUM_TAGS: "isArray", lavender: "STICKER_PACK_VIEW_ALL", lavenderblush: "isArray" } };
+const obj16 = { content: { responseUrl: "text-xs/medium", Shards_All_Nitro: "text-muted", _sentRequests: null, KIDS: 1.75, textInputRef: 138 } };
 const obj15 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_CRITICAL };
 obj16.title = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj16.description = { textAlign: "center" };
 let closure_19 = obj21.createStyles(obj16);
 const obj17 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-const obj18 = { content: { EMOJI_PICKER_EMOJI_TO_SHOW_COUNT: "Array", previewProfileButtonDark: "textComponentStyle", MAX_FORUM_TAGS: "isArray", lavender: "STICKER_PACK_VIEW_ALL", lavenderblush: "isArray" } };
+const obj18 = { content: { responseUrl: "text-xs/medium", Shards_All_Nitro: "text-muted", _sentRequests: null, KIDS: 1.75, textInputRef: 138 } };
 const obj25 = arg1(dependencyMap[6]);
 obj18.art = { marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj20 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };

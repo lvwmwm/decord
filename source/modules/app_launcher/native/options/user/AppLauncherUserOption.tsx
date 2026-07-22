@@ -1,10 +1,10 @@
-// Module ID: 11296
-// Function ID: 87899
+// Module ID: 11297
+// Function ID: 87912
 // Name: AppLauncherUserOption
 // Dependencies: []
 // Exports: default
 
-// Module 11296 (AppLauncherUserOption)
+// Module 11297 (AppLauncherUserOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

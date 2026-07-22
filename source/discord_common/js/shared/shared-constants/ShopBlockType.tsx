@@ -1,5 +1,5 @@
 // Module ID: 6801
-// Function ID: 53677
+// Function ID: 53688
 // Name: ShopBlockType
 // Dependencies: []
 

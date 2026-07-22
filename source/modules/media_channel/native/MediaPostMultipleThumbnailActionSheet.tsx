@@ -1,10 +1,10 @@
-// Module ID: 9552
-// Function ID: 74446
+// Module ID: 9553
+// Function ID: 74459
 // Name: MediaPostThumbnailActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9552 (MediaPostThumbnailActionSheet)
+// Module 9553 (MediaPostThumbnailActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
@@ -13,11 +13,11 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
-const obj1 = { paddingTop: false, justifyContent: false, alignItems: false, flexDirection: false, backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_WARNING, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_WARNING, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginTop: false, marginBottom: false };
 obj.topContainer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.setAsThumbnailContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.contentContainer = { parent: null, bm: null };
+obj.contentContainer = {};
 obj.title = { marginTop: 24 };
 obj.description = { textAlign: "center" };
 let closure_7 = obj.createStyles(obj);
@@ -38,7 +38,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   const items = [tmp.contentContainer, { paddingBottom: importDefault(dependencyMap[6])().bottom }];
   const obj1 = { style: tmp.topContainer };
   const obj2 = { style: tmp.setAsThumbnailContainer };
-  const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+  const obj3 = {};
   const intl = arg1(dependencyMap[10]).intl;
   obj3.children = intl.string(arg1(dependencyMap[10]).t.ews2pj);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), callback(arg1(dependencyMap[11]).Checkbox, { selected: true })];
@@ -50,7 +50,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   obj4.children = intl2.string(arg1(dependencyMap[10]).t.WJisip);
   items2[1] = callback(arg1(dependencyMap[9]).Text, obj4);
   items2[2] = callback(arg1(dependencyMap[11]).Spacer, { size: 12 });
-  const obj5 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
+  const obj5 = { cachedAt: 1, edpbxy: 1, style: tmp.description };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj5.children = intl3.string(arg1(dependencyMap[10]).t.X6ZH6d);
   items2[3] = callback(arg1(dependencyMap[9]).Text, obj5);

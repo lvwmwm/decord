@@ -1,10 +1,10 @@
-// Module ID: 10069
-// Function ID: 77791
+// Module ID: 10070
+// Function ID: 77804
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker
 
-// Module 10069 (_createForOfIteratorHelperLoose)
+// Module 10070 (_createForOfIteratorHelperLoose)
 let ME;
 let SearchTokenTypes;
 function _createForOfIteratorHelperLoose(@@iterator) {
@@ -271,9 +271,9 @@ export const getTabTitle = function getTabTitle(id) {
 };
 export const searchModeToSearchQueryParams = function searchModeToSearchQueryParams(searchMode) {
   if (constants3.MOST_RELEVANT === searchMode) {
-    return {};
+    return { libvpx: true, Zt4Mf4: true };
   } else if (constants3.OLDEST === searchMode) {
-    return { 9223372036854775807: true, 0: true };
+    return { libvpx: 24, Zt4Mf4: 24 };
   } else {
     const NEWEST = constants3.NEWEST;
     return {};
@@ -514,10 +514,10 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   }
   ({ currentToken, nextToken, previousToken } = obj);
   if (0 === tokens.length) {
-    obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null, type: constants2.EMPTY };
+    obj = { "Null": "mn", "Null": "description", "Null": "Array", type: constants2.EMPTY };
     return obj;
   } else if (null == currentToken) {
-    obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null, type: constants2.FILTER_ALL };
+    obj = { "Null": "mn", "Null": "description", "Null": "Array", type: constants2.FILTER_ALL };
     return obj;
   } else {
     if (obj9.isSearchFilterTokenType(currentToken.type)) {

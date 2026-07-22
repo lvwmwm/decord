@@ -1,10 +1,10 @@
-// Module ID: 15129
-// Function ID: 114175
+// Module ID: 15137
+// Function ID: 114218
 // Name: NotificationNudgeBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15129 (NotificationNudgeBottomSheet)
+// Module 15137 (NotificationNudgeBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ EventActionType: closure_5, NotificationNudgeAnalyticsAction: closure_6 } = arg1(dependencyMap[2]));
@@ -74,7 +74,7 @@ export default function NotificationNudgeBottomSheet(actionLocation) {
   obj = { style: tmp.container };
   obj = { style: tmp.illustration, children: callback(arg1(dependencyMap[12]).BellSpotIllustration, { scale: 0.8 }) };
   const items4 = [callback(View, obj), , , ];
-  const obj1 = { "Bool(false)": "faint", "Bool(false)": 16, "Bool(false)": "none", style: tmp.title, children: title };
+  const obj1 = { vy: "faint", numberActiveTouches: 16, _accountsForMovesUpTo: "none", style: tmp.title, children: title };
   items4[1] = callback(arg1(dependencyMap[13]).Text, obj1);
   items4[2] = callback(arg1(dependencyMap[13]).Text, { style: tmp.body, children: body });
   const obj3 = { style: tmp.buttonsContainer };

@@ -29,17 +29,17 @@ obj = {
     }
   }
 };
-obj.era = obj.default({ values: { narrow: [null, null], abbreviated: [null, null], wide: [] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [null, null], abbreviated: [null, null], wide: [65715200, 65879808] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [null, null, null, null], abbreviated: [51237888, 51238400, 51238912, 51239424], wide: [] },
+  values: { narrow: [], abbreviated: [51240448, 51240960, 51241472, 51241984], wide: [] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: ["r", "guild_members_size", "a", "5HZu07", "a", "dispatcher", "a", "5IEsGx", "a", "blossom", "a", "jumboable"] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: ["<string:277807107>", "<string:230293507>", "<string:230424579>", "<string:231079939>", "<string:230555651>", "<string:3186491395>", "<string:231276547>"], short: ["<string:277807107>", "<string:230293507>", "<string:230424579>", "<string:231079939>", "<string:230555651>", "<string:3186491395>", "<string:231276547>"], abbreviated: [], wide: [null, null, null, null, null, null, null] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: { unicodeVersion: "<string:261685249>", y: "<string:1222049793>", isArray: "<string:3679518722>", colors: "NSFW_CHANNEL_AGREE_CTA", construct: "isArray", y: "isArray", isArray: "<string:1359085568>", id: "<string:1986544834>" }, wide: { unicodeVersion: "<string:261685249>", y: "<string:1222049793>", isArray: "<string:3679518722>", colors: "NSFW_CHANNEL_AGREE_CTA", construct: "isArray", y: "isArray", isArray: "<string:1359085568>", id: "<string:1986544834>" } }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: { unicodeVersion: "<string:261685249>", y: "<string:1222049793>", isArray: "<string:3679518722>", colors: "NSFW_CHANNEL_AGREE_CTA", construct: "isArray", y: "isArray", isArray: "<string:1359085568>", id: "<string:1986544834>" }, wide: { unicodeVersion: "<string:261685249>", y: "<string:1222049793>", isArray: "<string:3679518722>", colors: "NSFW_CHANNEL_AGREE_CTA", construct: "isArray", y: "isArray", isArray: "<string:1359085568>", id: "<string:1986544834>" } }, defaultFormattingWidth: "wide" });
+obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: ["r", "pendingCancellationMessage", "a", "delimiter", "a", "APPLICATION_STORE", "a", "SCHOOL_CLUB", "a", "DATA-ID", "a", "getChannelOpenedMetadata"] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: ["<string:278462467>", "<string:230948867>", "<string:231079939>", "<string:231735299>", "<string:231211011>", "<string:3187146755>", "<string:231931907>"], short: ["<string:278462467>", "<string:230948867>", "<string:231079939>", "<string:231735299>", "<string:231211011>", "<string:3187146755>", "<string:231931907>"], abbreviated: [], wide: [null, null, null, null, null, null, null] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: { Text: "center", body: 1912603510, PX_8: 704643958, y: "isArray", isArray: "HTTP", accessibilityRole: "title", useStateFromStores: "r", lj: "isArray" }, wide: { Text: "center", body: 1912603510, PX_8: 704643958, y: "isArray", isArray: "HTTP", accessibilityRole: "title", useStateFromStores: "r", lj: "isArray" } }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: { Text: "center", body: 1912603510, PX_8: 704643958, y: "isArray", isArray: "HTTP", accessibilityRole: "title", useStateFromStores: "r", lj: "isArray" }, wide: { Text: "center", body: 1912603510, PX_8: 704643958, y: "isArray", isArray: "HTTP", accessibilityRole: "title", useStateFromStores: "r", lj: "isArray" } }, defaultFormattingWidth: "wide" });
 
 export default obj;
 export default exports.default;

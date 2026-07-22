@@ -1,12 +1,16 @@
-// Module ID: 13914
-// Function ID: 105313
+// Module ID: 13921
+// Function ID: 105353
 // Name: SessionManager
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 13914 (SessionManager)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 13921 (SessionManager)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");
+
+export const SessionManager = () => {
   class SessionManager {
     constructor() {
       tmp = SessionManager(this, SessionManager);
@@ -26,6 +30,3 @@ const tmp2 = () => {
   ];
   return callback(SessionManager, null, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");
-
-export const SessionManager = tmp2;

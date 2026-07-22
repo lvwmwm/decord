@@ -1,10 +1,10 @@
-// Module ID: 12855
-// Function ID: 98253
+// Module ID: 12862
+// Function ID: 98286
 // Name: _fetchGuildForPopout
 // Dependencies: []
 // Exports: fetchGuildForPopout
 
-// Module 12855 (_fetchGuildForPopout)
+// Module 12862 (_fetchGuildForPopout)
 function _fetchGuildForPopout() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

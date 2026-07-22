@@ -1,10 +1,10 @@
-// Module ID: 14381
-// Function ID: 108535
+// Module ID: 14389
+// Function ID: 108578
 // Name: CollectiblesShopHeaderTitle
 // Dependencies: []
 // Exports: default
 
-// Module 14381 (CollectiblesShopHeaderTitle)
+// Module 14389 (CollectiblesShopHeaderTitle)
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = callback2();
   let obj = { style: tmp.headerTitleContainer };
@@ -191,7 +191,7 @@ obj = {};
 obj = { "Null": true, "Null": true, "Null": true, marginTop: importDefault(dependencyMap[9]).space.PX_8, paddingLeft: importDefault(dependencyMap[9]).space.PX_8, gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.headerTitleContainer = obj;
 obj.headerTitle = { flexShrink: 1 };
-const obj1 = { top: true, bottom: true, left: true, gap: importDefault(dependencyMap[9]).space.PX_8, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
+const obj1 = { "Null": true, "Null": true, "Null": true, gap: importDefault(dependencyMap[9]).space.PX_8, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
 obj.headerRightContainer = obj1;
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[7]);

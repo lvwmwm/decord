@@ -1,10 +1,10 @@
-// Module ID: 5434
-// Function ID: 46541
+// Module ID: 5168
+// Function ID: 44978
 // Name: TableRowArrow
 // Dependencies: []
 // Exports: TableRowArrow
 
-// Module 5434 (TableRowArrow)
+// Module 5168 (TableRowArrow)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

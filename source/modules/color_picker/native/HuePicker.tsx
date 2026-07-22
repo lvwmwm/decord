@@ -1,24 +1,24 @@
-// Module ID: 13452
-// Function ID: 102160
+// Module ID: 13459
+// Function ID: 102193
 // Name: HuePicker
 // Dependencies: []
 // Exports: default
 
-// Module 13452 (HuePicker)
+// Module 13459 (HuePicker)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = [146, 348, 0, 0.18, 1, 0.6583, 1];
+let closure_8 = [];
 let obj = arg1(dependencyMap[4]);
-obj = { container: { margin: null, backgroundColor: null }, containerFullWidth: {} };
-obj = { borderColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { container: { "Bool(false)": null, "Bool(false)": null }, containerFullWidth: {} };
+obj = { -1118643953: null, 1385742477: null, 293474997: "<string:1140981761>", -50002862: "<string:810614785>", -1218681598: "<string:122896825>", 1365399123: "<string:810614785>", 1230160419: 32893667834787498000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.slider = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.colorBar = { borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.colorBarFullWidth = { width: "100%" };
 obj.colorBarInner = {};
-obj.colorBarInnerFullWidth = { 0: true, -9223372036854775808: true };
+obj.colorBarInnerFullWidth = { fill: "age", unicodeVersion: "targetFrames" };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function setSatVal_HuePickerTsx1({x:x}){const{hue,normalizeValue,barWidth,onPanUpdate,runOnJS}=this.__closure;hue.set(normalizeValue(x/barWidth.get())*360);onPanUpdate!=null&&runOnJS(onPanUpdate)();}" };
 let closure_11 = { code: "function HuePickerTsx2(){const{onPanFinalize,runOnJS}=this.__closure;onPanFinalize!=null&&runOnJS(onPanFinalize)();}" };
@@ -174,7 +174,7 @@ export default function HuePicker(hue) {
       };
     }(hue, sharedValue3, onPanUpdate, onPanFinalize).gesture
   };
-  obj3 = { colors: memo, start: {}, end: {} };
+  obj3 = { colors: memo, start: {}, end: { 0: -721485569, 0: 3375103 } };
   const items4 = [tmp.colorBar, ];
   let colorBarFullWidth = flag;
   const obj7 = arg1(dependencyMap[7]);

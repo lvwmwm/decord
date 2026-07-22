@@ -1,10 +1,10 @@
-// Module ID: 11990
-// Function ID: 92662
+// Module ID: 11994
+// Function ID: 92688
 // Name: UserProfilePrivateInfoBanner
 // Dependencies: []
 // Exports: default
 
-// Module 11990 (UserProfilePrivateInfoBanner)
+// Module 11994 (UserProfilePrivateInfoBanner)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);

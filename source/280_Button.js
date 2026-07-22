@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 280 (Button)
-let closure_2 = [null];
+let closure_2 = [];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -128,6 +128,6 @@ class Button {
 }
 Button.displayName = "Button";
 const importDefaultResult = importDefault(dependencyMap[7]);
-let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({}, {}), buttonDisabled: { borderRadius: 0, overflow: 0 }, textDisabled: { color: "#a1a1a1" } });
+let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({}, {}), buttonDisabled: { "Bool(true)": null, "Bool(true)": "RFC1738" }, textDisabled: { color: "#a1a1a1" } });
 
 export default Button;

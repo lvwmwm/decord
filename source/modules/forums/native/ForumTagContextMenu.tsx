@@ -1,10 +1,10 @@
-// Module ID: 9637
-// Function ID: 75065
+// Module ID: 9638
+// Function ID: 75078
 // Name: ForumTagContextMenu
 // Dependencies: []
 // Exports: default
 
-// Module 9637 (ForumTagContextMenu)
+// Module 9638 (ForumTagContextMenu)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");

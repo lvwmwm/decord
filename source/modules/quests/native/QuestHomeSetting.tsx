@@ -1,10 +1,10 @@
-// Module ID: 13778
-// Function ID: 104102
+// Module ID: 13785
+// Function ID: 104135
 // Name: parseSortMethod
 // Dependencies: []
 // Exports: default
 
-// Module 13778 (parseSortMethod)
+// Module 13785 (parseSortMethod)
 function parseSortMethod(arg0) {
   let SUGGESTED = arg0;
   if (null == arg0) {

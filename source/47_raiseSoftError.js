@@ -1,7 +1,7 @@
 // Module ID: 47
 // Function ID: 1322
 // Name: raiseSoftError
-// Dependencies: []
+// Dependencies: [66, 67, 60, 68]
 
 // Module 47 (raiseSoftError)
 function raiseSoftError(clearJSResponder, arg1) {

@@ -1,5 +1,5 @@
 // Module ID: 7842
-// Function ID: 62548
+// Function ID: 62558
 // Name: useShouldConvertBioEmoji
 // Dependencies: []
 // Exports: default, getShouldConvertBioEmoji

@@ -1,10 +1,10 @@
-// Module ID: 13820
-// Function ID: 104523
+// Module ID: 13827
+// Function ID: 104563
 // Name: BountiesEndCardPressableCta
 // Dependencies: []
 // Exports: default
 
-// Module 13820 (BountiesEndCardPressableCta)
+// Module 13827 (BountiesEndCardPressableCta)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const END_CARD_IMAGE_SIZE = arg1(dependencyMap[2]).END_CARD_IMAGE_SIZE;
@@ -17,7 +17,7 @@ let closure_9 = arg1(dependencyMap[4]).createStyles(() => {
   obj.image = obj;
   obj = { gap: importDefault(dependencyMap[5]).space.PX_4, alignItems: "center", marginTop: importDefault(dependencyMap[5]).space.PX_12 };
   obj.info = obj;
-  obj.ctaContainer = { <string:2513344359>: 0.000000000000000000000000000000000000000000000000000000000000041337475905652505, <string:1453349989>: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000 };
+  obj.ctaContainer = { "Null": false, "Null": false };
   return obj;
 });
 const obj = arg1(dependencyMap[4]);
@@ -69,7 +69,8 @@ export default function BountiesEndCardPressableCta(bounty) {
   obj2 = { uri: scaledImageUrl };
   const items1 = [callback(importDefault(dependencyMap[13]), obj1), ];
   const obj3 = { style: tmp.info };
-  const items2 = [callback(arg1(dependencyMap[14]).Text, { children: bountyCtaInfo.label }), callback(arg1(dependencyMap[14]).Text, { children: bountyCtaInfo.subtext })];
+  const obj4 = { cachedAt: false, edpbxy: 700, children: bountyCtaInfo.label };
+  const items2 = [callback(arg1(dependencyMap[14]).Text, obj4), callback(arg1(dependencyMap[14]).Text, { children: bountyCtaInfo.subtext })];
   obj3.children = items2;
   items1[1] = callback2(closure_5, obj3);
   obj.children = items1;

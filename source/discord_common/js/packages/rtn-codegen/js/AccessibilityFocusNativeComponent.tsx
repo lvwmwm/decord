@@ -1,13 +1,13 @@
-// Module ID: 12908
-// Function ID: 98477
+// Module ID: 12915
+// Function ID: 98510
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 12908 (__INTERNAL_VIEW_CONFIG)
+// Module 12915 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "AccessibilityFocusView", directEventTypes: { topAccessibilityFocus: { registrationName: "onAccessibilityFocus" }, topAccessibilityBlur: { registrationName: "onAccessibilityBlur" } } };
 obj = {};
 const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ resizeMode: null, gap: null }));
+const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ <string:2700829578>: null, <string:1874612709>: null }));
 obj.validAttributes = obj;
 const _module1 = require(dependencyMap[1]);
 const value = _module1.get("AccessibilityFocusView", () => obj);

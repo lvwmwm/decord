@@ -1,10 +1,10 @@
-// Module ID: 10604
-// Function ID: 82735
+// Module ID: 10605
+// Function ID: 82748
 // Name: useLeadingEdgeDebounce
 // Dependencies: []
 // Exports: useLeadingEdgeDebounce
 
-// Module 10604 (useLeadingEdgeDebounce)
+// Module 10605 (useLeadingEdgeDebounce)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("hooks/useLeadingEdgeDebounce.tsx");

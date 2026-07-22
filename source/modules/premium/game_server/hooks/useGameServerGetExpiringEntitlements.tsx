@@ -1,10 +1,10 @@
-// Module ID: 11581
-// Function ID: 90020
+// Module ID: 11582
+// Function ID: 90033
 // Name: useGameServerGetExpiringEntitlements
 // Dependencies: []
 // Exports: default
 
-// Module 11581 (useGameServerGetExpiringEntitlements)
+// Module 11582 (useGameServerGetExpiringEntitlements)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");

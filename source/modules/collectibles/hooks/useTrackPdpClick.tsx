@@ -1,10 +1,10 @@
-// Module ID: 8733
-// Function ID: 69077
+// Module ID: 8734
+// Function ID: 69089
 // Name: useTrackPdpClick
 // Dependencies: []
 // Exports: useTrackPdpClick
 
-// Module 8733 (useTrackPdpClick)
+// Module 8734 (useTrackPdpClick)
 let closure_3 = importAll(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");

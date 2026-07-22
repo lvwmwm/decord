@@ -1,9 +1,9 @@
-// Module ID: 15474
-// Function ID: 118035
+// Module ID: 15482
+// Function ID: 118078
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15474 (_isNativeReflectConstruct)
+// Module 15482 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -83,7 +83,7 @@ obj3["backgroundColor"] = importDefault(dependencyMap[18]).colors.BACKGROUND_SCR
 obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj2.alertWrapper = obj3;
-obj2.alertContentWrapper = { 9223372036854775807: 0, 618913616341: 0, 0: 0, 9223372036854775807: 0 };
+obj2.alertContentWrapper = {};
 let closure_21 = arg1(dependencyMap[17]).createLegacyClassComponentStyles(obj2);
 const tmp10 = (PureComponent) => {
   class AlertWrapper {
@@ -128,10 +128,10 @@ const tmp10 = (PureComponent) => {
         closure_10.parallel(items).start(arg0);
       };
       tmp2Result.componentWillLeave = (arg0) => {
-        let obj = { GET_PLATFORM_BEHAVIORS: "BACKROOM_SEAT_1", externalPipEnabled: null, selectedStreamId: true, expBCP47Syntax: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", easing: closure_11.linear };
+        let obj = { 0: "BACKROOM_SEAT_1", 9223372036854775807: null, 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", easing: closure_11.linear };
         const items = [closure_10.timing(tmp2Result.state.opacity, obj)];
         if (!tmp2Result.props.useReducedMotion) {
-          obj = { GET_PLATFORM_BEHAVIORS: "BACKROOM_SEAT_1", externalPipEnabled: null, selectedStreamId: true, expBCP47Syntax: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", easing: closure_11.in(closure_11.ease) };
+          obj = { 0: "BACKROOM_SEAT_1", 9223372036854775807: null, 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", easing: closure_11.in(closure_11.ease) };
           items.push(closure_10.timing(tmp2Result.state.scale, obj));
         }
         closure_10.parallel(items).start(arg0);
@@ -166,7 +166,7 @@ const tmp10 = (PureComponent) => {
         obj = { dialogKey: str, onDismiss: self.handleRequestClose };
         obj = { style: items };
         const items = [absoluteFill.absoluteFill, tmp.alertContentWrapper];
-        const obj1 = { onPress: self.handleRequestClose };
+        const obj1 = { "Bool(true)": "r", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole", "Bool(true)": "useStateFromStores", onPress: self.handleRequestClose };
         const items1 = [tmp.alertWrapper, self.props.style, { opacity }];
         const renderAlertResult = props.renderAlert(obj);
         obj1.children = callback4(RN.View, { style: items1 });

@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 89993
+// Module ID: 11572
+// Function ID: 90006
 // Name: usePowerupGroupConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11571 (usePowerupGroupConfig)
+// Module 11572 (usePowerupGroupConfig)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 15133
-// Function ID: 114193
+// Module ID: 15141
+// Function ID: 114236
 // Name: useIsCompletelyCovered
 // Dependencies: []
 
-// Module 15133 (useIsCompletelyCovered)
+// Module 15141 (useIsCompletelyCovered)
 function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX) {
   highestFullyRenderedScreenIndex = index;
   const importDefault = highestFullyRenderedScreenIndex;
@@ -453,7 +453,7 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
   obj3.freezeScreenIndex(shouldFreeze, 0);
   if (!shouldFreeze) {
     obj = { freeze: shouldFreeze };
-    const obj1 = { "Null": false, "Null": "gr", "Null": null, style: focusChatPressableComponent.absoluteFill, accessibilityElementsHidden: !screenStackActive, importantForAccessibility: "no-hide-descendants" };
+    const obj1 = { -71780508: null, 102585046: 0, -1201578193: 419, style: focusChatPressableComponent.absoluteFill, accessibilityElementsHidden: !screenStackActive, importantForAccessibility: "no-hide-descendants" };
     obj2 = { gradient: tmp };
     obj3 = { items: screens, renderItem: callback, getItemKey: getKey };
     obj2.children = callback2(arg1(dependencyMap[15]).TransitionGroup, obj3);

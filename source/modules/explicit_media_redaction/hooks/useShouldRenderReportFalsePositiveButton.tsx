@@ -1,10 +1,10 @@
-// Module ID: 11046
-// Function ID: 85971
+// Module ID: 11047
+// Function ID: 85984
 // Name: shouldRenderReportFalsePositiveButton
 // Dependencies: []
 // Exports: shouldRenderReportFalsePositiveButton, useShouldRenderReportFalsePositiveButton
 
-// Module 11046 (shouldRenderReportFalsePositiveButton)
+// Module 11047 (shouldRenderReportFalsePositiveButton)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");
 

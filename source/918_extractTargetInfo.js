@@ -9,15 +9,15 @@ let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, targetAttribute: require(dependencyMap[2]).MCP_TOOL_NAME_ATTRIBUTE };
+obj = { targetAttribute: require(dependencyMap[2]).MCP_TOOL_NAME_ATTRIBUTE };
 obj.tools/call = obj;
-obj = { targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
+obj = { <string:1641789485>: "\u{1F47D}", <string:2054836715>: 6, Button: 115, targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
 obj.resources/read = obj;
 obj.resources/subscribe = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
 const obj1 = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
 obj.resources/unsubscribe = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-const obj2 = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-obj.prompts/get = { targetAttribute: require(dependencyMap[2]).MCP_PROMPT_NAME_ATTRIBUTE };
+const obj3 = { 9850: "N", 15360: "N", 15872: "N", 8704: "N", 40960: "n", targetAttribute: require(dependencyMap[2]).MCP_PROMPT_NAME_ATTRIBUTE };
+obj.prompts/get = obj3;
 
 export const extractTargetInfo = function extractTargetInfo(method, params) {
   if (obj[method]) {

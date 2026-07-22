@@ -1,5 +1,5 @@
 // Module ID: 7801
-// Function ID: 62251
+// Function ID: 62261
 // Name: getContentScanVersionFromMedia
 // Dependencies: []
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
@@ -154,5 +154,5 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   return obj1;
 };
 export function getAttachmentObscurityDefaults() {
-  return { 67064150: "<string:3349217282>", 1368669026: "<string:160104449>" };
+  return { display: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", flexDirection: null };
 }

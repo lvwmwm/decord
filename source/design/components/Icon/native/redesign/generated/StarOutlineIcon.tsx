@@ -1,10 +1,10 @@
-// Module ID: 9389
-// Function ID: 73202
+// Module ID: 9390
+// Function ID: 73215
 // Name: StarOutlineIcon
 // Dependencies: []
 // Exports: StarOutlineIcon
 
-// Module 9389 (StarOutlineIcon)
+// Module 9390 (StarOutlineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StarOutlineIcon.tsx");

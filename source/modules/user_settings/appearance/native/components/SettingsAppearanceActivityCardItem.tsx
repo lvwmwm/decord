@@ -1,10 +1,10 @@
-// Module ID: 14061
-// Function ID: 106804
-// Name: ActivityCardItem
+// Module ID: 14068
+// Function ID: 106844
+// Name: HAPPENING_NOW_BADGE_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 14061 (ActivityCardItem)
+// Module 14068 (HAPPENING_NOW_BADGE_SIZE)
 let HAPPENING_NOW_BADGE_SIZE;
 let HAPPENING_NOW_CARD_HEIGHT;
 let HAPPENING_NOW_CARD_MARGIN_RIGHT;
@@ -25,19 +25,19 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.lg, borderWidth: tmp3.StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj.card = obj;
-obj.cardBadgeWrapper = { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 };
+obj.cardBadgeWrapper = {};
 obj1 = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: importDefault(dependencyMap[8]).space.PX_12, borderRadius: importDefault(dependencyMap[8]).radii.md, position: "relative" };
 obj.cardImage = obj1;
+const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE, borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.md };
+obj.cardBadge = obj2;
 const importDefaultResult = importDefault(dependencyMap[5]);
-obj.cardBadge = { width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE, borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.md };
-const obj2 = { width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE, borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.md };
 obj.cardImageAssetContainer = { height: "100%", backgroundColor: importDefault(dependencyMap[8]).colors.CARD_SECONDARY_BG, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 const obj3 = { height: "100%", backgroundColor: importDefault(dependencyMap[8]).colors.CARD_SECONDARY_BG, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.cardImageAssetBackground = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 const obj4 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.cardImageAsset = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[8]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.shiftedAvatar = { marginLeft: -4 };
-const obj6 = { height: arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.XSMALL_20], minWidth: arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.XSMALL_20], borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj6 = { "Null": null, "Null": "column", "Null": "flex-end", "Null": null, "Bool(false)": "text-subtle", "Null": 1, "Null": "es-PH", "Null": "es", "Null": "tertiary", height: arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.XSMALL_20], minWidth: arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.XSMALL_20], borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.userCounter = obj6;
 let closure_8 = obj1.createStyles(obj);
 const obj5 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[8]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
@@ -117,7 +117,7 @@ export default function ActivityCardItem(arg0) {
     const obj6 = {};
     const items5 = [tmp2.userCounter, animatedStyles.bgModStrong];
     obj6.style = items5;
-    const obj7 = { 665604545: "PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_DISMISSED", 1470947939: "ACCESS_COARSE_LOCATION", 1608097877: "convertLandscapeToPortraitScreens", style: animatedStyles.textNormal };
+    const obj7 = { hasMask: true, masksProperties: true, w: true, style: animatedStyles.textNormal };
     const items6 = [null, arg1(dependencyMap[13]).humanizeValue(num3, stateFromStores)];
     obj7.children = items6;
     obj6.children = callback2(arg1(dependencyMap[12]).Text, obj7);

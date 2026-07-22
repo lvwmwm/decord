@@ -1,10 +1,10 @@
-// Module ID: 13537
-// Function ID: 102690
+// Module ID: 13544
+// Function ID: 102723
 // Name: SafetyHubViolationsHeader
 // Dependencies: []
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 13537 (SafetyHubViolationsHeader)
+// Module 13544 (SafetyHubViolationsHeader)
 function SafetyHubViolationsHeader(count) {
   let onClick;
   let opened;
@@ -205,7 +205,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = closure_7;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f102701 = stateFromStores;
+    f102734 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -246,7 +246,7 @@ class SafetyHubViolationsContainer {
     obj1.opened = first;
     obj1.count = classifications.length;
     tmp9 = jsxs;
-    tmp10 = f102701;
+    tmp10 = f102734;
     items4 = [, ];
     items4[0] = jsx(SafetyHubViolationsHeader, obj1);
     if (first) {
@@ -257,9 +257,9 @@ class SafetyHubViolationsContainer {
       items5[0] = tmp.separator;
       obj3.style = items5;
       tmp11 = jsxs;
-      tmp12 = f102701;
+      tmp12 = f102734;
       items6 = [, , , , ];
-      items6[0] = jsx(f102701, obj3);
+      items6[0] = jsx(f102734, obj3);
       tmp14 = memo.length > 0 && memo.map((classification) => callback3(closure_20, { classification }, classification.id));
       items6[1] = tmp14;
       tmp15 = memo.length < classifications.length;
@@ -268,15 +268,15 @@ class SafetyHubViolationsContainer {
         tmp17 = Fragment;
         obj4 = {};
         tmp18 = jsx;
-        tmp19 = f102701;
+        tmp19 = f102734;
         obj5 = {};
         items7 = [];
         items7[0] = tmp.separator;
         obj5.style = items7;
         items8 = [, ];
-        items8[0] = jsx(f102701, obj5);
+        items8[0] = jsx(f102734, obj5);
         tmp20 = jsx;
-        tmp21 = f102701;
+        tmp21 = f102734;
         obj6 = {};
         items9 = [];
         items9[0] = tmp.moreButtonContainer;
@@ -304,7 +304,7 @@ class SafetyHubViolationsContainer {
         obj8.children = intl.format(arg1(closure_2[12]).t.9Ml56H, obj9);
         obj7.children = jsx(arg1(closure_2[11]).Text, obj8);
         obj6.children = jsx(Pressable, obj7);
-        items8[1] = jsx(f102701, obj6);
+        items8[1] = jsx(f102734, obj6);
         obj4.children = items8;
         tmp15 = jsxs(Fragment, obj4);
       }
@@ -350,11 +350,11 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { -9223372036854775808: 1, 0: 162, 0: -42, marginTop: importDefault(dependencyMap[8]).space.PX_12, gap: importDefault(dependencyMap[8]).space.PX_12 };
+obj = { "Bool(false)": 1, "Bool(false)": 162, "Bool(false)": -42, marginTop: importDefault(dependencyMap[8]).space.PX_12, gap: importDefault(dependencyMap[8]).space.PX_12 };
 obj.connectedContainer = obj;
 const tmp4 = arg1(dependencyMap[6]);
 obj.container = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_8, width: "100%" };
-const obj2 = { animationEasing: "none", year: 8, month: "oneTimeCode", "Bool(true)": "stretch", "Bool(true)": 1, gap: importDefault(dependencyMap[8]).space.PX_16 };
+const obj2 = { muted: "none", SUSPICIOUS_CHANGE_EMAIL_REASONS: 8, _totalAmount: "oneTimeCode", maxWidth: "stretch", useFramePreviewOverrideStore: 1, gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.header = obj2;
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_8, width: "100%" };
 obj.detailContainerOuter = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: 10 };
@@ -362,7 +362,7 @@ const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUN
 obj.detailContainerOuterNew = { borderColor: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
 const obj4 = { borderColor: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
 obj.detailContainerInner = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj6 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+const obj6 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.iconBackground = obj6;
 obj.chevron = { marginLeft: "auto" };
 const obj5 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
@@ -370,14 +370,14 @@ obj.incidentDate = { alignSelf: "flex-start", backgroundColor: importDefault(dep
 const obj7 = { alignSelf: "flex-start", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingVertical: importDefault(dependencyMap[8]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_8 };
 obj.incidentDateNew = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, color: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 obj.newText = { textTransform: "capitalize" };
-const obj9 = { <string:29557293>: true, <string:45941405>: true, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[8]).radii.md, gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_24, paddingBottom: importDefault(dependencyMap[8]).space.PX_24 };
+const obj9 = { "Null": true, "Null": true, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[8]).radii.md, gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_24, paddingBottom: importDefault(dependencyMap[8]).space.PX_24 };
 obj.emptyState = obj9;
 const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, color: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 obj.separator = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.moreButtonContainer = {};
 const obj10 = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.moreButton = { borderBottomEndRadius: importDefault(dependencyMap[8]).radii.xs, borderBottomStartRadius: importDefault(dependencyMap[8]).radii.xs, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
-obj.headerTextContainer = { "Bool(false)": 0.000000000000000000000899976010540858, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002139168130298584, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026618315231394 };
+obj.headerTextContainer = { marginLeft: 250, marginRight: true, getVoiceStateChannelSummaryFromVoiceStates: true };
 let closure_14 = obj.createStyles(obj);
 const obj11 = { borderBottomEndRadius: importDefault(dependencyMap[8]).radii.xs, borderBottomStartRadius: importDefault(dependencyMap[8]).radii.xs, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/safety_hub/native/SafetyHubViolationsContainer.tsx");

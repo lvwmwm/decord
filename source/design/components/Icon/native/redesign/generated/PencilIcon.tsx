@@ -1,10 +1,10 @@
-// Module ID: 9098
-// Function ID: 71312
+// Module ID: 9099
+// Function ID: 71325
 // Name: PencilIcon
 // Dependencies: []
 // Exports: PencilIcon
 
-// Module 9098 (PencilIcon)
+// Module 9099 (PencilIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PencilIcon.tsx");

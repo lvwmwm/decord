@@ -4,6 +4,5 @@
 
 // Module 1956
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "application", format: "r", View: "isArray", accessibilityRole: "ix", surrogates: "application", url: "r", scales: [null] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [false] });

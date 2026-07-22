@@ -1,10 +1,10 @@
-// Module ID: 15021
-// Function ID: 113161
+// Module ID: 15029
+// Function ID: 113204
 // Name: ForYouMentionPlaceholder
 // Dependencies: []
 // Exports: ForYouMentionPlaceholder
 
-// Module 15021 (ForYouMentionPlaceholder)
+// Module 15029 (ForYouMentionPlaceholder)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -13,10 +13,10 @@ let obj = arg1(dependencyMap[4]);
 obj = { placeholder: {} };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.placeholderImage = obj;
-const obj1 = { 0: null, 0: 14, 9223372036854775807: null, -9223372036854775808: "\u{1FAF0}\u{1F3FC}", 0: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.placeholderText = obj1;
-obj.placeholderTextContainer = { -9223372036854775808: null, 7741: null };
 const tmp3 = arg1(dependencyMap[3]);
+obj.placeholderText = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.placeholderTextContainer = { "Bool(true)": null, "Bool(true)": null };
+const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.placeholderBody = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginTop: 4 };
 let closure_7 = obj.createStyles(obj);
 let closure_8 = ["keys", "disabled"];

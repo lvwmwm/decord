@@ -1,10 +1,10 @@
-// Module ID: 16090
-// Function ID: 123710
+// Module ID: 16098
+// Function ID: 123752
 // Name: HasCreatedListingsSection
 // Dependencies: []
 // Exports: default
 
-// Module 16090 (HasCreatedListingsSection)
+// Module 16098 (HasCreatedListingsSection)
 function HasCreatedListingsSection(arg0) {
   ({ guild: closure_0, pushScreen: closure_1 } = arg0);
   let obj = arg1(dependencyMap[5]);

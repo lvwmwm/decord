@@ -1,12 +1,12 @@
 // Module ID: 6868
-// Function ID: 54322
+// Function ID: 54333
 // Name: set
 // Dependencies: []
 
 // Module 6868 (set)
-const obj = { ALL: new Set([null]) };
-const set = new Set([null]);
-obj.IS_ADULT = new Set([null]);
+const obj = { ALL: new Set([false]) };
+const set = new Set([false]);
+obj.IS_ADULT = new Set([false]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentRatingGOPClassification.tsx");
 

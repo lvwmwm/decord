@@ -1,5 +1,5 @@
 // Module ID: 4239
-// Function ID: 37290
+// Function ID: 37298
 // Name: initCloneObject
 // Dependencies: []
 

@@ -1,9 +1,9 @@
-// Module ID: 13911
-// Function ID: 105256
+// Module ID: 13918
+// Function ID: 105296
 // Name: getSafeAreaInsetOrPadding
 // Dependencies: []
 
-// Module 13911 (getSafeAreaInsetOrPadding)
+// Module 13918 (getSafeAreaInsetOrPadding)
 let StyleSheet;
 function getSafeAreaInsetOrPadding(arg0, arg1) {
   return Math.max(arg0[arg1], obj[arg1]);
@@ -65,7 +65,7 @@ obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj.bufferingSpinnerCentered = obj3;
 obj.video = {};
-obj.videoContainer = { was: "PlaystationNeutralIcon", visible: "png", hasSpoiler: true };
+obj.videoContainer = { zIndex: "PlaystationNeutralIcon", width: "png", backgroundColor: true };
 const obj4 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 const obj1 = {};
@@ -77,17 +77,17 @@ obj4["justifyContent"] = "center";
 obj4["alignItems"] = "center";
 obj4["flexDirection"] = "column";
 obj.controls = obj4;
-const obj5 = { "Null": "isArray", "Null": "SOLID", "Null": "isArray", "Null": "isArrayBuffer", "Null": "540091c70b333c8b8937ba1627138192", "Null": "wumpus-pikachu", padding: importDefault(dependencyMap[8]).space.PX_8 };
+const obj5 = { width: "isArray", backgroundColor: "EXPRESSION_PICKER_EXPRESSION_FOCUS", borderWidth: "isArray", position: "isArrayBuffer", alignSelf: "540091c70b333c8b8937ba1627138192", height: "wumpus-pikachu", padding: importDefault(dependencyMap[8]).space.PX_8 };
 obj.controlsTopBottom = obj5;
-const alphaResult = importDefault(dependencyMap[11])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
-obj.controlsMiddle = { gap: importDefault(dependencyMap[8]).space.PX_24 };
+const obj6 = { <string:3891881121>: "ADBE Vector Group", <string:3972819310>: false, <string:4217527512>: 2, "Bool(false)": "sh", "Bool(false)": 3, "Bool(false)": null, gap: importDefault(dependencyMap[8]).space.PX_24 };
+obj.controlsMiddle = obj6;
 obj.controlsTop = { top: 0 };
 obj.controlsBottom = { bottom: 0 };
-const obj7 = { flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007696006539765, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025322775409541142, justifyContent: 0, marginLeft: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009266003024732815, height: importDefault(dependencyMap[8]).space.PX_16, minWidth: 6893587421222876000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915829 };
+const obj7 = { <string:2690753010>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007696006539765, <string:1661098833>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002532278140417925, <string:1370183227>: 0, <string:2690713118>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000057367551759214845, <string:1644361041>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005075884439417386, <string:3847312482>: 8503912906763360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:3890176882>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915829, height: importDefault(dependencyMap[8]).space.PX_16 };
 obj.progressContainer = obj7;
-const obj8 = { "Null": 0, "Null": 11, 50418440: 4, 83461222: "Explosion 3", 22210401: 1, 1376057603: 1, -625421284: null, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, shadowOffset: { "Null": -536870861, "Null": -299892737 } };
-obj.progress = obj8;
-const obj6 = { gap: importDefault(dependencyMap[8]).space.PX_24 };
+const alphaResult = importDefault(dependencyMap[11])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
+obj.progress = { backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
+const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
 obj.icon = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 const obj9 = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.iconDisabled = { color: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
@@ -280,7 +280,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   let obj3 = arg1(dependencyMap[16]);
   class K {
     constructor() {
-      tmp = f105267();
+      tmp = f105307();
       obj = {};
       obj2 = onLoad(onToggleFullscreen[17]);
       num = 0;
@@ -1009,7 +1009,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       const intl4 = arg1(dependencyMap[33]).intl;
       obj17.accessibilityLabel = intl4.string(arg1(dependencyMap[33]).t.r9s3Uv);
       obj17.onPress = callbackResult;
-      const obj18 = { color: top1.icon.color };
+      const obj18 = { paddingHorizontal: null, accessibilityRole: null, bottom: null, color: top1.icon.color };
       obj17.children = targetSeconds(arg1(dependencyMap[39]).SkipBackwardIcon, obj18);
       const items33 = [targetSeconds(arg1(dependencyMap[38]).VideoQuestPlayerControlButton, obj17), , ];
       const obj19 = { accessibilityRole: "button" };
@@ -1046,7 +1046,7 @@ const memoResult = importAllResult.memo((onLoad) => {
           const intl5 = arg1(dependencyMap[33]).intl;
           obj21.accessibilityLabel = intl5.string(arg1(dependencyMap[33]).t.zWDcNP);
           obj21.onPress = callbackResult1;
-          const obj22 = { color: top1.icon.color };
+          const obj22 = { paddingHorizontal: null, accessibilityRole: null, bottom: null, color: top1.icon.color };
           obj21.children = targetSeconds(arg1(dependencyMap[43]).SkipForwardIcon, obj22);
           items33[2] = targetSeconds(arg1(dependencyMap[38]).VideoQuestPlayerControlButton, obj21);
           obj16.children = items33;

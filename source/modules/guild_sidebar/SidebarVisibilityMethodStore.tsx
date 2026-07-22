@@ -1,10 +1,10 @@
-// Module ID: 9437
-// Function ID: 73559
+// Module ID: 9438
+// Function ID: 73572
 // Name: SidebarVisibilityMethodStore
 // Dependencies: []
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 9437 (SidebarVisibilityMethodStore)
+// Module 9438 (SidebarVisibilityMethodStore)
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => ({}));
 const _module1 = require(dependencyMap[1]);

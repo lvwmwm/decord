@@ -1,11 +1,11 @@
 // Module ID: 8039
-// Function ID: 63817
+// Function ID: 63827
 // Name: Mixin
 // Dependencies: []
 // Exports: default
 
 // Module 8039 (Mixin)
-let closure_0 = { emitDefaultValues: true, enumAsInteger: "/assets/images/native/premium/illustrations", useProtoFieldName: 188.5, prettySpaces: 121 };
+let closure_0 = {};
 const Mixin = require(dependencyMap[0]).Touchable.Mixin;
 ({ touchableHandleStartShouldSetResponder: closure_1, touchableHandleResponderTerminationRequest: closure_2, touchableHandleResponderGrant: closure_3, touchableHandleResponderMove: closure_4, touchableHandleResponderRelease: closure_5, touchableHandleResponderTerminate: closure_6, touchableGetInitialState: closure_7 } = Mixin);
 const merged = Object.assign({}, Mixin, {

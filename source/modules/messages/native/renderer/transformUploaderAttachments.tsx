@@ -1,7 +1,7 @@
 // Module ID: 7891
-// Function ID: 62817
+// Function ID: 62827
 // Name: createUploaderAttachments
-// Dependencies: []
+// Dependencies: [33554437, 1946157056, 4325]
 // Exports: default
 
 // Module 7891 (createUploaderAttachments)

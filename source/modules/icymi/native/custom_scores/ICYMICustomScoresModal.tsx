@@ -1,10 +1,10 @@
-// Module ID: 15059
-// Function ID: 113372
+// Module ID: 15067
+// Function ID: 113415
 // Name: ICYMICustomScoresModal
 // Dependencies: []
 // Exports: default
 
-// Module 15059 (ICYMICustomScoresModal)
+// Module 15067 (ICYMICustomScoresModal)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);

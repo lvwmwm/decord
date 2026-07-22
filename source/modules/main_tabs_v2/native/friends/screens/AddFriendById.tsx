@@ -1,9 +1,9 @@
-// Module ID: 12741
-// Function ID: 97749
+// Module ID: 12748
+// Function ID: 97782
 // Name: getDefaultTextState
 // Dependencies: []
 
-// Module 12741 (getDefaultTextState)
+// Module 12748 (getDefaultTextState)
 function getDefaultTextState() {
   const obj = { validatedText: "" };
   const intl = arg1(dependencyMap[7]).intl;
@@ -24,7 +24,7 @@ const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { headingVariant: "PREMIUM_UPSELL_VALENTINES_GIFTING_CAMPAIGN", textVariant: "hasConfetti", headingSpacing: "Float64Array", rowGap: "isArrayBuffer", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { 1387894524: "error", 2069394008: "experiments", -1806614943: "errorcode", -1594138003: "errortext", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.textInputContainer = { alignSelf: "stretch" };
 obj1 = { color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
@@ -72,7 +72,7 @@ let closure_15 = importAllResult.forwardRef((headerTextStyle, ref) => {
     }
   }
   let obj = { style: tmp3.textInputContainer };
-  obj = { delete: 1404174337, dispatch: null, raw: null };
+  obj = { "Null": false, "Null": false, alignItems: false };
   const items = [, , ];
   ({ redesignInputAccessoryText: arr[0], inputHeaderText: arr[1] } = tmp3);
   items[2] = headerTextStyle.headerTextStyle;
@@ -345,7 +345,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     return tmp12(closure_11, obj);
   } else {
     const obj4 = { style: tmp.friendMessageContainer };
-    const obj5 = { delete: 1404174337, dispatch: null, raw: null };
+    const obj5 = { "Null": false, "Null": false, alignItems: false };
     const items7 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items7[2] = headerTextStyle;

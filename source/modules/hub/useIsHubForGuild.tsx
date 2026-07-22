@@ -1,10 +1,10 @@
-// Module ID: 11407
-// Function ID: 88732
+// Module ID: 11408
+// Function ID: 88745
 // Name: useIsHubForGuild
 // Dependencies: []
 // Exports: default
 
-// Module 11407 (useIsHubForGuild)
+// Module 11408 (useIsHubForGuild)
 let closure_2 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/hub/useIsHubForGuild.tsx");

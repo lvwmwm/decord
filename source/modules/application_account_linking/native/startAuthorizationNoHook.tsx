@@ -1,10 +1,10 @@
-// Module ID: 10905
-// Function ID: 84733
+// Module ID: 10906
+// Function ID: 84746
 // Name: _startAuthorizationNoHook
 // Dependencies: []
 // Exports: startAuthorizationNoHook
 
-// Module 10905 (_startAuthorizationNoHook)
+// Module 10906 (_startAuthorizationNoHook)
 function _startAuthorizationNoHook() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

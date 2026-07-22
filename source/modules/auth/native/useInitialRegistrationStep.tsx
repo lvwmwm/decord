@@ -1,10 +1,10 @@
-// Module ID: 14623
-// Function ID: 110288
+// Module ID: 14631
+// Function ID: 110331
 // Name: isFirstStep
 // Dependencies: []
 // Exports: default
 
-// Module 14623 (isFirstStep)
+// Module 14631 (isFirstStep)
 function isFirstStep(arg0) {
   return arg0 === arg1(dependencyMap[4]).getRegistrationSteps()[1];
 }

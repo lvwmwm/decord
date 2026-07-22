@@ -1,15 +1,15 @@
-// Module ID: 15438
-// Function ID: 117810
+// Module ID: 15446
+// Function ID: 117853
 // Name: MessageRequestMutualServers
 // Dependencies: []
 // Exports: default
 
-// Module 15438 (MessageRequestMutualServers)
+// Module 15446 (MessageRequestMutualServers)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { "Null": true, "Null": true, "Bool(false)": true }, label: { flexShrink: 1 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null }, label: { flexShrink: 1 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/message_request/native/MessageRequestMutualServers.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 14278
-// Function ID: 107909
+// Module ID: 14286
+// Function ID: 107952
 // Name: _writeCaches
 // Dependencies: []
 // Exports: clearCaches, writeCaches
 
-// Module 14278 (_writeCaches)
+// Module 14286 (_writeCaches)
 function _writeCaches() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -20,5 +20,5 @@ export const writeCaches = function writeCaches(arg0) {
   return _writeCaches(...arguments);
 };
 export const clearCaches = function clearCaches() {
-  importDefault(dependencyMap[3]).dispatch({ "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false });
+  importDefault(dependencyMap[3]).dispatch({ -755778261: false, 1631037591: false, -1850846485: false, -345953905: false });
 };

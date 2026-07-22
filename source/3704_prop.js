@@ -10,9 +10,9 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: {}, narrow: {}, short: {} };
+    obj = { long: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, narrow: {}, short: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null } };
     obj.conjunction = obj;
-    const obj1 = { long: { application: false, Set: false, Icon: false, id: false }, narrow: { application: false, Set: false, Icon: false, id: false }, short: { application: false, Set: false, Icon: false, id: false } };
+    const obj1 = { long: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, narrow: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, short: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" } };
     obj.disjunction = obj1;
     const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: false, Set: false, Icon: false, id: false }, narrow: { application: false, Set: false, Icon: false, id: false }, short: { application: false, Set: false, Icon: false, id: false } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "vi" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, narrow: {}, short: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null } }, disjunction: { long: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, narrow: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, short: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "vi" });

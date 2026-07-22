@@ -1,10 +1,10 @@
-// Module ID: 14718
-// Function ID: 111021
+// Module ID: 14726
+// Function ID: 111064
 // Name: useFavoriteGuildUnreads
 // Dependencies: []
 // Exports: default
 
-// Module 14718 (useFavoriteGuildUnreads)
+// Module 14726 (useFavoriteGuildUnreads)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -68,6 +68,6 @@ export default function useFavoriteGuildUnreads(arg0) {
         }
       }
       return badge;
-    }, { <string:80643072>: 1715544575, <string:80649984>: 1409286699 });
+    }, { overflow: "absolute", flexDirection: -1 });
   });
 };

@@ -34,7 +34,7 @@ export const createReduxEnhancer = function createReduxEnhancer(arg0) {
           const currentScope = obj.getCurrentScope();
           const actionTransformerResult = self.actionTransformer(arg1);
           if (null != actionTransformerResult) {
-            obj = { "Bool(true)": "<string:1242300418>", "Bool(true)": "<string:3342925826>", "Bool(true)": "<string:1627390501>", data: actionTransformerResult };
+            obj = { "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", data: actionTransformerResult };
             self(closure_1[1]).addBreadcrumb(obj);
             const obj3 = self(closure_1[1]);
           }

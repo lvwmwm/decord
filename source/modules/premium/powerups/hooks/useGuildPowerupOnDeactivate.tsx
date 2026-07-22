@@ -1,10 +1,10 @@
-// Module ID: 11563
-// Function ID: 89965
+// Module ID: 11564
+// Function ID: 89978
 // Name: useGuildPowerupOnDeactivate
 // Dependencies: []
 // Exports: default
 
-// Module 11563 (useGuildPowerupOnDeactivate)
+// Module 11564 (useGuildPowerupOnDeactivate)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupOnDeactivate.tsx");
 

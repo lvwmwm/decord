@@ -1,9 +1,9 @@
-// Module ID: 10906
-// Function ID: 84738
+// Module ID: 10907
+// Function ID: 84751
 // Name: fetchJoinSecret
 // Dependencies: []
 
-// Module 10906 (fetchJoinSecret)
+// Module 10907 (fetchJoinSecret)
 function fetchJoinSecret(application) {
   let channelId;
   let messageId;
@@ -25,7 +25,7 @@ function fetchJoinSecret(application) {
   }
   importDefault(dependencyMap[6]).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
   const HTTP = arg1(dependencyMap[7]).HTTP;
-  obj = { -72722844: "<string:1141964802>", 1809338784: "<string:1770717186>", 1707013987: "<string:958005249>", -526639532: "<string:1208483841>", -321895459: "<string:3625975810>", url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), query: tmp2 };
+  obj = { accessibilityRole: "<string:1143341058>", apply: "<string:1783758850>", "Null": "<string:966328321>", "Null": "<string:1210843137>", "Null": "<string:3618963458>", url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), query: tmp2 };
   const value = HTTP.get(obj);
   return value.then((arg0) => arg1(arg0), () => {
     let obj = id(closure_2[6]);

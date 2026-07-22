@@ -1,9 +1,9 @@
-// Module ID: 11347
-// Function ID: 88219
+// Module ID: 11348
+// Function ID: 88232
 // Name: PortalKeyboardPlaceholderInner
 // Dependencies: []
 
-// Module 11347 (PortalKeyboardPlaceholderInner)
+// Module 11348 (PortalKeyboardPlaceholderInner)
 function PortalKeyboardPlaceholderInner(keyboardType) {
   const rect = importDefault(dependencyMap[7])();
   const tmp = importDefault(dependencyMap[8])();

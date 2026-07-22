@@ -1,9 +1,9 @@
-// Module ID: 15933
-// Function ID: 122201
+// Module ID: 15941
+// Function ID: 122244
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15933 (_isNativeReflectConstruct)
+// Module 15941 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,8 +24,8 @@ let closure_10 = importDefault(dependencyMap[7]);
 let closure_11 = importDefault(dependencyMap[8]);
 let closure_12 = importDefault(dependencyMap[9]);
 let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = arg1(dependencyMap[11]).GUILD_ROOM_SPATIAL_AUDIO_MODE;
-let closure_15 = arg1(dependencyMap[12]).DEFAULT_AUDIO_MIXER_SETTINGS;
+let closure_14 = importDefault(dependencyMap[11]);
+let closure_15 = importDefault(dependencyMap[12]);
 let tmp2 = (arg0) => {
   class GuildRoomSpatialAudioManager {
     constructor(arg0) {
@@ -50,13 +50,13 @@ let tmp2 = (arg0) => {
               return tmp2Result.apply();
             },
         RTC_CONNECTION_STATE() {
-              return tmp2Result.reconcile();
+              return tmp2Result.apply();
             },
         RTC_CONNECTION_USERS_MERGED() {
               return tmp2Result.apply();
             },
         MEDIA_SESSION_JOINED() {
-              return tmp2Result.reconcile();
+              return tmp2Result.apply();
             },
         GUILD_ROOM_CONNECT() {
               return tmp2Result.apply();
@@ -71,8 +71,9 @@ let tmp2 = (arg0) => {
               return tmp2Result.apply();
             }
       };
-      tmp2Result.reconcile = () => {
-        const result = tmp2Result.resetModeIfUnavailable();
+      tmp2Result.reapplyForExperimentUpdate = () => {
+        const audioMixerSettings = audioMixerSettings.getAudioMixerSettings();
+        const result = callback(closure_2[13]).setAudioMixerSettings(audioMixerSettings);
         tmp2Result.apply();
       };
       return tmp2Result;
@@ -83,10 +84,11 @@ let tmp2 = (arg0) => {
   let obj = {
     key: "_initialize",
     value() {
-      this.stores = new Map().set(closure_9, this.reconcile);
+      const result = new Map().set(closure_9, this.reapplyForExperimentUpdate);
+      this.stores = result.set(closure_10, this.reapplyForExperimentUpdate);
     }
   };
-  const items = [obj, , , , ];
+  const items = [obj, , , ];
   obj = {
     key: "_terminate",
     value() {
@@ -100,7 +102,7 @@ let tmp2 = (arg0) => {
       const guildId = store2.getGuildId();
       let experimental = null != guildId;
       if (experimental) {
-        let obj = callback(closure_2[13]);
+        let obj = callback(closure_2[14]);
         obj = { guildId, location: "GuildRoomSpatialAudioManager" };
         obj = { autoTrackExposure: false };
         experimental = obj.getCurrentConfig(obj, obj).experimental;
@@ -110,35 +112,21 @@ let tmp2 = (arg0) => {
   };
   items[2] = obj;
   items[3] = {
-    key: "resetModeIfUnavailable",
-    value() {
-      const self = this;
-      const audioMixerSettings = store.getAudioMixerSettings();
-      if (audioMixerSettings.mode === closure_14) {
-        if (!tmp2) {
-          let obj = callback(closure_2[14]);
-          obj = {};
-          const merged = Object.assign(audioMixerSettings);
-          obj["mode"] = mode.mode;
-          const result = obj.setAudioMixerSettings(obj, GuildRoomSpatialAudioManager(closure_2[15]).MediaEngineContextTypes.DEFAULT);
-        }
-        const tmp2 = null == store2.getChannelId() || self.isLivingRoomAvailable();
-      }
-    }
-  };
-  items[4] = {
     key: "apply",
     value() {
       const self = this;
-      const audioMixerSettings = store.getAudioMixerSettings();
-      if (audioMixerSettings.enabled) {
-        if (audioMixerSettings.mode === closure_14) {
-          const channelId = store2.getChannelId();
-          if (null != channelId) {
-            if (self.isLivingRoomAvailable()) {
-              let obj = GuildRoomSpatialAudioManager(closure_2[16]);
-              obj = { users: roomUsers.getRoomUsers(channelId), currentUserId: id.getId(), listenerHeight: audioMixerSettings.listenerHeight };
-              const GuildRoomSpatialAudioManager = obj.computeLivingRoomWorldPoints(obj);
+      if (store.getAudioMixerSettings().enabled) {
+        const channelId = store2.getChannelId();
+        if (null != channelId) {
+          if (self.isLivingRoomAvailable()) {
+            const channel = channel.getChannel(channelId);
+            let isGuildStageVoiceResult;
+            if (null != channel) {
+              isGuildStageVoiceResult = channel.isGuildStageVoice();
+            }
+            if (null == isGuildStageVoiceResult) {
+              const obj = { users: roomUsers.getRoomUsers(channelId), currentUserId: id.getId() };
+              const GuildRoomSpatialAudioManager = GuildRoomSpatialAudioManager(closure_2[15]).computeLivingRoomWorldPoints(obj);
               const mediaEngine = store.getMediaEngine();
               mediaEngine.eachConnection((setUserPosition) => {
                 let length;
@@ -150,13 +138,14 @@ let tmp2 = (arg0) => {
                     let tmp2 = closure_3(entries[num], 2);
                     let tmp3 = closure_0;
                     let tmp4 = closure_2;
-                    let obj = closure_0(closure_2[16]);
+                    let obj = closure_0(closure_2[15]);
                     let setUserPositionResult = setUserPosition.setUserPosition(tmp2[0], obj.livingRoomWorldPointToMediaEnginePoint(tmp2[1]));
                     num = num + 1;
                     length = entries.length;
                   } while (num < length);
                 }
               });
+              const obj2 = GuildRoomSpatialAudioManager(closure_2[15]);
             }
           }
         }
@@ -164,8 +153,8 @@ let tmp2 = (arg0) => {
     }
   };
   return callback(GuildRoomSpatialAudioManager, items);
-}(importDefault(dependencyMap[17]));
+}(importDefault(dependencyMap[16]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudioManager.tsx");
+const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudioManager.tsx");
 
 export default tmp2;

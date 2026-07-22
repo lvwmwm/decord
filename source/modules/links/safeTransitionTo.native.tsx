@@ -1,13 +1,13 @@
-// Module ID: 5624
-// Function ID: 47997
+// Module ID: 5623
+// Function ID: 48005
 // Name: _safeTransitionTo
 // Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 5, 3776, 653, 1851]
 // Exports: default
 
-// Module 5624 (_safeTransitionTo)
-import result from "result";
-import closure_4 from "result";
-import { Routes } from "result";
+// Module 5623 (_safeTransitionTo)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { Routes } from "__exportStarResult1";
 import GuildFeatures from "GuildFeatures";
 
 async function _safeTransitionTo(CHANNELResult, source, arg2) {

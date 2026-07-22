@@ -1,10 +1,10 @@
-// Module ID: 8412
-// Function ID: 67017
+// Module ID: 8413
+// Function ID: 67029
 // Name: _fetchGuildTopGames
 // Dependencies: []
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 8412 (_fetchGuildTopGames)
+// Module 8413 (_fetchGuildTopGames)
 function _fetchGuildTopGames() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

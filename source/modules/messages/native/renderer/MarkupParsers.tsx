@@ -1,5 +1,5 @@
 // Module ID: 7759
-// Function ID: 61606
+// Function ID: 61616
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
@@ -73,7 +73,7 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
       // continue
     }
   }
-  const obj = { availableWidth: null, GiftBackgroundSelect: null, GiftCardStack3dIllustration: null, channelId };
+  const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, channelId };
   let tmp7 = !isField;
   if (tmp7) {
     tmp7 = showListsAndHeaders;

@@ -1,5 +1,5 @@
 // Module ID: 5732
-// Function ID: 49288
+// Function ID: 49299
 // Name: transitionToGuild
 // Dependencies: []
 // Exports: transitionToGuild

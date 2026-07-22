@@ -1,5 +1,5 @@
 // Module ID: 6826
-// Function ID: 53862
+// Function ID: 53873
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -220,7 +220,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             let messageMetadataByMessageId3 = peekResult.messageMetadataByMessageId;
             if (null == messageMetadataByMessageId3.get(value.id)) {
               let messageMetadataByMessageId4 = peekResult.messageMetadataByMessageId;
-              obj = { sourceSessionId: "o", glowMask: "o" };
+              obj = { "Bool(false)": "o", "Bool(false)": "o" };
               let tmp13 = closure_0;
               let tmp14 = closure_2;
               let obj4 = closure_0(closure_2[14]);

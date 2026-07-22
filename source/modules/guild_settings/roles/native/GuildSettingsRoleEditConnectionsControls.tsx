@@ -1,10 +1,10 @@
-// Module ID: 16206
-// Function ID: 125225
+// Module ID: 16214
+// Function ID: 125267
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 16206 (_createForOfIteratorHelperLoose)
+// Module 16214 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -128,7 +128,7 @@ function HeaderSection(arg0) {
   let tmp15;
   if (hasConnections) {
     const obj5 = { hitSlop: 8, onPress: clearConnections, disabled: locked };
-    const obj6 = { hasMaxConnections: 1, isBoostOnlySubscription: "center" };
+    const obj6 = { cachedAt: 1, edpbxy: "center" };
     const intl3 = arg1(dependencyMap[13]).intl;
     obj6.children = intl3.string(arg1(dependencyMap[13]).t.ntW1cc);
     obj5.children = callback(arg1(dependencyMap[12]).Text, obj6);
@@ -321,10 +321,10 @@ const HelpdeskArticles = arg1(dependencyMap[4]).HelpdeskArticles;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { formContent: { padding: 838861158, HermesInternal: -385875662 } };
-obj = { <string:2709934651>: 8, <string:2018706169>: null, <string:1403975368>: "\u270A\u{1F3FF}", <string:4221592322>: true, <string:1311854946>: null, <string:2350940498>: 8, <string:1654677932>: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[8]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[8]).radii.xs };
+obj = { formContent: { 335090477: "<string:855900161>", -1945376054: "<string:1902706689>" } };
+obj = { 1640819852: 8, -1577954757: null, 861078261: "\u270A\u{1F3FF}", 1538193864: true, -73374974: null, 1314541922: 8, -1457879470: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[8]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[8]).radii.xs };
 obj.warningContainer = obj;
-obj.warningText = { disableFocus: null, preventsDisplaySleepDuringVideoPlayback: null };
+obj.warningText = { flexGrow: true, zIndex: true };
 obj.headerTitleContainer = {};
 let closure_13 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[6]);

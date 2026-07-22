@@ -1,10 +1,10 @@
-// Module ID: 5221
-// Function ID: 44177
+// Module ID: 5442
+// Function ID: 46547
 // Name: useBottomSheetImperativeHandle
 // Dependencies: []
 // Exports: useBottomSheetImperativeHandle
 
-// Module 5221 (useBottomSheetImperativeHandle)
+// Module 5442 (useBottomSheetImperativeHandle)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/Sheet/native/BottomSheetHandle.tsx");
 

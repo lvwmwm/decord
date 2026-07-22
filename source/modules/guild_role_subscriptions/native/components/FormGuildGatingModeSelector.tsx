@@ -1,10 +1,10 @@
-// Module ID: 16293
-// Function ID: 125740
+// Module ID: 16301
+// Function ID: 125782
 // Name: FormGuildGatingModeSelector
 // Dependencies: []
 // Exports: default
 
-// Module 16293 (FormGuildGatingModeSelector)
+// Module 16301 (FormGuildGatingModeSelector)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
@@ -35,7 +35,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
       const intl = isFullServerGating(tmp[6]).intl;
       obj.confirmText = intl.string(isFullServerGating(onChange[6]).t.NX+WJN);
       obj = {};
-      const obj1 = { delete: "accessibilityLabel", dispatch: "r", raw: "isArray", style: onChange.alertHeader };
+      const obj1 = { "Null": "<string:4294472349>", "Null": "<string:4294508543>", alignItems: "<string:1107427327>", style: onChange.alertHeader };
       const intl2 = isFullServerGating(tmp[6]).intl;
       obj1.children = intl2.string(isFullServerGating(onChange[6]).t.dmVoOz);
       const items = [callback(isFullServerGating(onChange[7]).Text, obj1), ];

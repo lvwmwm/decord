@@ -1,5 +1,5 @@
 // Module ID: 6880
-// Function ID: 54570
+// Function ID: 54581
 // Name: getDurationString
 // Dependencies: []
 // Exports: default, getAbbreviatedFormatter, getFullFormatter

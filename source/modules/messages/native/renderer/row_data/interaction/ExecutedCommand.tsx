@@ -1,5 +1,5 @@
 // Module ID: 7910
-// Function ID: 62927
+// Function ID: 62937
 // Name: getCommandUserAvatar
 // Dependencies: []
 // Exports: createExecutedCommand
@@ -139,7 +139,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     obj = {};
     let obj9 = require(dependencyMap[7]);
     obj.username = obj9.getUserAuthor(message.interaction.user, channel).nick;
-    obj = { "Bool(false)": null, "Bool(false)": "0e96bcd2b2f1118c31b249938bd6d191", userId: id, messageChannelId: message.channel_id, linkColor: tmp31 };
+    obj = { <string:1553034850>: null, <string:3345519290>: "0e96bcd2b2f1118c31b249938bd6d191", userId: id, messageChannelId: message.channel_id, linkColor: tmp31 };
     let tmp51;
     if (null != colorString) {
       tmp51 = colorString;
@@ -178,7 +178,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
         const obj12 = require(dependencyMap[13]);
       }
       obj4 = { userId: message.interaction.user.id, username: obj.username, usernameColor: tmp31, avatarURL: tmp3, targetUsernameColor: tmp27, content: formatToPartsResult };
-      obj5 = { PIN_PERMISSION_MIGRATION_COMPLETE: "isArray", clearCommunicationDisabledNotice: "resolve", fetchCollectiblesCategories: "title", color: processColor(semanticColor) };
+      obj5 = { fillOpacity: false, fillRule: false, stroke: false, color: processColor(semanticColor) };
       obj4.commandNameBackgroundStyles = obj5;
       obj4.showAppsIcon = true;
       return obj4;
@@ -195,7 +195,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     if (null == channel) {
       obj7 = {};
     } else {
-      const obj8 = { "Bool(false)": null, "Bool(false)": null, userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id };
+      const obj8 = { <string:1553034850>: null, <string:3345519290>: null, userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id };
       ({ type: obj19.messageType, channel_id: obj19.messageChannelId } = message);
       obj7 = obj8;
     }
@@ -208,7 +208,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       obj9["commandName"] = result4;
       obj9["commandNameOnClick"] = {};
       obj9["targetUsername"] = require(dependencyMap[7]).getUserAuthor(tmp18, channel).nick;
-      const obj10 = { "Bool(false)": null, "Bool(false)": null };
+      const obj10 = { <string:1553034850>: null, <string:3345519290>: null };
       let id1;
       if (null != tmp18) {
         id1 = tmp18.id;

@@ -1,9 +1,9 @@
-// Module ID: 10018
-// Function ID: 77416
+// Module ID: 10019
+// Function ID: 77429
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 10018 (__INTERNAL_VIEW_CONFIG)
+// Module 10019 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDTTIMeasurementView", directEventTypes: { topMeasurement: { registrationName: "onMeasurement" } } };
 obj = {};
 const _module = require(dependencyMap[0]);

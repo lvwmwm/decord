@@ -1,10 +1,10 @@
-// Module ID: 15072
-// Function ID: 113451
+// Module ID: 15080
+// Function ID: 113494
 // Name: ICYMIInfoScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15072 (ICYMIInfoScreen)
+// Module 15080 (ICYMIInfoScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,31 +14,31 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { 9223372036854775807: "scalar", 9223372036854775807: 1, 9223372036854775807: "center", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
+obj = { 9223372036854775807: 1, 9223372036854775807: 2, 9223372036854775807: "filters", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.closeIcon = { height: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
 const obj1 = { height: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
 obj.closeIconColor = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.bgImage = {};
-obj.headerImg = { flexDirection: 95231, flexWrap: 65536, gap: 786432, isEnabled: 979435520 };
-obj.flashIcon = { "Null": "flex", "Null": "row" };
+obj.headerImg = { "Null": 95231, "Null": 65536, "Null": 786432, "Null": 979435520 };
+obj.flashIcon = { 0: "flex", -9223372036854775808: "row" };
 obj.subContainer = {};
-obj.header = { content: "isArrayBufferToString", t: "sync" };
+obj.header = { padding: "Group 13", op: 2 };
 obj.headerText = {};
-const obj3 = { color: false, variant: false, style: false, maxFontSizeMultiplier: false, lineClamp: false, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+const obj3 = { icon: false, text: false, alignItems: false, ref: false, resizeMode: false, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.body = obj3;
-const obj4 = { resetRoot: null, drawerOpen: null, marginBottom: null, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
-obj.divider = obj4;
-obj.infoRow = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.divider = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
+obj.infoRow = {};
+const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 obj.infoIcon = { padding: 8, backgroundColor: importDefault(dependencyMap[7]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.infoText = { flexShrink: 1 };
 obj.hint = { margin: 12 };
-const obj5 = { padding: 8, backgroundColor: importDefault(dependencyMap[7]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[7]).radii.round };
-obj.footer = { left: importDefault(dependencyMap[7]).space.PX_24, right: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_8 };
+const obj6 = { <string:765737181>: 40, <string:1382441379>: 40, left: importDefault(dependencyMap[7]).space.PX_24, right: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_8 };
+obj.footer = obj6;
 let closure_12 = obj.createStyles(obj);
-const obj6 = { left: importDefault(dependencyMap[7]).space.PX_24, right: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_8 };
+const obj5 = { padding: 8, backgroundColor: importDefault(dependencyMap[7]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[7]).radii.round };
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoScreen.tsx");
 
 export default function ICYMIInfoScreen(extendedOnboarding) {
@@ -115,11 +115,11 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   obj10.source = importDefault(closure_2[22]);
   obj10.style = tmp.flashIcon;
   items7[1] = callback3(importDefault(closure_2[18]), obj10);
-  const obj11 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
+  const obj11 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817 };
   const intl2 = arg1(closure_2[17]).intl;
   obj11.children = intl2.string(arg1(closure_2[17]).t.jnXV/V);
   items7[2] = callback3(arg1(closure_2[23]).Text, obj11);
-  const obj12 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.headerText };
+  const obj12 = { cachedAt: 1, edpbxy: 1, style: tmp.headerText };
   const intl3 = arg1(closure_2[17]).intl;
   obj12.children = intl3.string(arg1(closure_2[17]).t.9SjvoK);
   items7[3] = callback3(arg1(closure_2[23]).Text, obj12);
@@ -160,19 +160,16 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[4] = callback4(closure_6, obj23);
   obj14.children = items10;
   const items13 = [callback4(closure_6, obj14), ];
-  const obj26 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.hint };
+  const obj26 = { cachedAt: "center", edpbxy: "center", style: tmp.hint };
   const intl7 = arg1(closure_2[17]).intl;
   obj26.children = intl7.format(arg1(closure_2[17]).t.jVS/hc, {
     feedbackHook(children) {
-      const obj = {
-        hasMaxConnections: true,
-        isBoostOnlySubscription: true,
+      return callback(extendedOnboarding(closure_2[23]).Text, {
         onPress() {
           return callback2(paths[27]).openLazy(callback(paths[29])(paths[28], paths.paths), "ICYMIFeedbackSheet", {});
         },
         children
-      };
-      return callback(extendedOnboarding(closure_2[23]).Text, obj, arg1);
+      }, arg1);
     }
   });
   items13[1] = callback3(arg1(closure_2[23]).Text, obj26);

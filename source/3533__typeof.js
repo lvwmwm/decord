@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -169,7 +169,7 @@ export const StandAloneLocalDayParser = (Parser) => {
         tmp17 = closure_9(applyResult, "priority", 90);
         tmp18 = closure_7(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_9(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_9(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -213,7 +213,7 @@ export const StandAloneLocalDayParser = (Parser) => {
           tmp17 = closure_9(applyResult, "priority", 90);
           tmp18 = closure_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_9(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_9(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -232,7 +232,7 @@ export const StandAloneLocalDayParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: StandAloneLocalDayParser };
+  let obj = { "": null, children: null, "": null, value: StandAloneLocalDayParser };
   StandAloneLocalDayParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class StandAloneLocalDayParser {
@@ -263,7 +263,7 @@ export const StandAloneLocalDayParser = (Parser) => {
           tmp17 = closure_9(applyResult, "priority", 90);
           tmp18 = closure_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_9(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_9(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -293,13 +293,13 @@ export const StandAloneLocalDayParser = (Parser) => {
             const obj = { unit: "day" };
             return callback(StandAloneLocalDayParser[1]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
           } else if ("ccc" === arg1) {
-            return ordinalNumber.day(arg0, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {});
           } else if ("ccccc" === arg1) {
-            return ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.day(arg0, {});
           } else if ("cccccc" === arg1) {
-            return ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {});
           } else {
-            return ordinalNumber.day(arg0, { "Bool(true)": "a", "Bool(true)": "_activities" }) || ordinalNumber.day(arg0, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null });
+            return ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {});
           }
         }
       }

@@ -1,5 +1,5 @@
 // Module ID: 7924
-// Function ID: 63162
+// Function ID: 63172
 // Name: getOptionValue
 // Dependencies: []
 // Exports: getBuiltInCommands
@@ -63,7 +63,7 @@ Object.defineProperty(obj1, "displayDescription", {
   },
   set: undefined
 });
-const obj2 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj2 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj2, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -107,7 +107,7 @@ Object.defineProperty(obj3, "displayDescription", {
   },
   set: undefined
 });
-const obj4 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj4 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj4, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -151,7 +151,7 @@ Object.defineProperty(obj5, "displayDescription", {
   },
   set: undefined
 });
-const obj6 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj6 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj6, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -180,7 +180,7 @@ obj5.execute = function execute(arr) {
 };
 items[sum1] = obj5;
 const sum2 = sum1 + 1;
-const obj7 = { SCROLLING_MOMENTUM: false, WAITING_FOR_SERVICE: false, enableGameUpdateNotifications: false, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
+const obj7 = { "Null": -8364227041597800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 203601245870474400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001039777937815, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj7, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -195,7 +195,7 @@ Object.defineProperty(obj7, "displayDescription", {
   },
   set: undefined
 });
-const obj8 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj8 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj8, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -238,7 +238,7 @@ obj7.execute = function execute(arr) {
 };
 items[sum2] = obj7;
 const sum3 = sum2 + 1;
-const obj9 = { SCROLLING_MOMENTUM: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", WAITING_FOR_SERVICE: null, enableGameUpdateNotifications: "6a336799c634b8d004d29afaef8bc9a8", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
+const obj9 = { type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj9, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -253,7 +253,7 @@ Object.defineProperty(obj9, "displayDescription", {
   },
   set: undefined
 });
-const obj10 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj10 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj10, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -283,7 +283,7 @@ obj9.execute = function execute(arr) {
 };
 items[sum3] = obj9;
 const sum4 = sum3 + 1;
-const obj11 = { SCROLLING_MOMENTUM: true, WAITING_FOR_SERVICE: "/assets/images/native/premium/upsell", enableGameUpdateNotifications: 49, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
+const obj11 = { "Null": true, "Null": "/assets/images/native/premium/upsell", "Null": 49, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj11, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -298,7 +298,7 @@ Object.defineProperty(obj11, "displayDescription", {
   },
   set: undefined
 });
-const obj12 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj12 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj12, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -342,7 +342,7 @@ Object.defineProperty(obj13, "displayDescription", {
   },
   set: undefined
 });
-const obj14 = { "Null": null, "Null": "6922badb2f007833b3becc6f00bcb5a4", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj14 = { filter: null, fontSize: "6922badb2f007833b3becc6f00bcb5a4", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj14, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -410,7 +410,7 @@ Object.defineProperty(obj15, "displayDescription", {
   },
   set: undefined
 });
-const obj16 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj16 = { filter: null, fontSize: null, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj16, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -428,7 +428,7 @@ Object.defineProperty(obj16, "displayDescription", {
 obj16.required = true;
 obj16.maxLength = MAX_CHANNEL_NAME_LENGTH;
 const items8 = [obj16, ];
-const obj17 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj17 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj17, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -500,7 +500,7 @@ Object.defineProperty(obj18, "displayDescription", {
   },
   set: undefined
 });
-const obj19 = { "Null": "/assets/modules/premium/roadblocks/images", "Null": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj19 = { filter: "/assets/modules/premium/roadblocks/images", fontSize: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj19, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -517,7 +517,7 @@ Object.defineProperty(obj19, "displayDescription", {
 });
 obj19.required = true;
 const items9 = [obj19, ];
-const obj20 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj20 = { filter: null, fontSize: null, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj20, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -613,7 +613,7 @@ Object.defineProperty(obj21, "displayDescription", {
   },
   set: undefined
 });
-const obj22 = { "Null": "/assets/modules/premium/roadblocks/images", "Null": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj22 = { filter: "/assets/modules/premium/roadblocks/images", fontSize: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj22, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -630,7 +630,7 @@ Object.defineProperty(obj22, "displayDescription", {
 });
 obj22.required = true;
 const items10 = [obj22, , ];
-const obj23 = { "Null": "<string:3547877632>", "Null": "<string:1402683665>", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
+const obj23 = { filter: "<string:3992342784>", fontSize: "<string:1364017425>", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
 Object.defineProperty(obj23, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -702,7 +702,7 @@ Object.defineProperty(obj23, "choices", {
   set: undefined
 });
 items10[1] = obj23;
-const obj24 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj24 = { filter: null, fontSize: null, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj24, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -807,7 +807,7 @@ Object.defineProperty(obj25, "displayDescription", {
   },
   set: undefined
 });
-const obj26 = { "Null": "/assets/modules/premium/roadblocks/images", "Null": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj26 = { filter: "/assets/modules/premium/roadblocks/images", fontSize: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj26, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -824,7 +824,7 @@ Object.defineProperty(obj26, "displayDescription", {
 });
 obj26.required = true;
 const items11 = [obj26, , ];
-const obj27 = { "Null": "Array", "Null": "mga", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
+const obj27 = { filter: "r", fontSize: 488, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
 Object.defineProperty(obj27, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -851,7 +851,7 @@ Object.defineProperty(obj27, "choices", {
   set: undefined
 });
 items11[1] = obj27;
-const obj28 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj28 = { filter: null, fontSize: null, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj28, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -940,7 +940,7 @@ obj25.execute = function execute(arr, guild) {
 };
 items[sum9] = obj25;
 const sum10 = sum9 + 1;
-const obj29 = { SCROLLING_MOMENTUM: 488, WAITING_FOR_SERVICE: 240, enableGameUpdateNotifications: null, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
+const obj29 = { "Null": 488, "Null": 240, "Null": null, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj29, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -955,7 +955,7 @@ Object.defineProperty(obj29, "displayDescription", {
   },
   set: undefined
 });
-const obj30 = { "Null": "/assets/modules/premium/roadblocks/images", "Null": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj30 = { filter: "/assets/modules/premium/roadblocks/images", fontSize: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj30, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -972,7 +972,7 @@ Object.defineProperty(obj30, "displayDescription", {
 });
 obj30.required = true;
 const items12 = [obj30, ];
-const obj31 = { "Null": 719126529, "Null": -1146748927, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj31 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj31, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -1026,7 +1026,7 @@ obj29.execute = function execute(arr, channel) {
   }
 };
 items[sum10] = obj29;
-const obj32 = { SCROLLING_MOMENTUM: "1653812d24f945a581bfdacd052d1cd9", WAITING_FOR_SERVICE: "app_icons_upsell", enableGameUpdateNotifications: "png", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
+const obj32 = { "Null": "1653812d24f945a581bfdacd052d1cd9", "Null": "app_icons_upsell", "Null": "png", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj32, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -1059,7 +1059,7 @@ Object.defineProperty(obj33, "displayDescription", {
 obj33.minValue = 1;
 obj33.maxValue = MAX_DICE_COUNT;
 const items13 = [obj33, ];
-const obj34 = { "Null": "/assets/modules/saved_messages", "Null": 297, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
+const obj34 = { filter: "/assets/modules/saved_messages", fontSize: 297, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
 Object.defineProperty(obj34, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;

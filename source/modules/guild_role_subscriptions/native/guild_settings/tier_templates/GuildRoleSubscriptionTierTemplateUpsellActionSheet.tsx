@@ -1,10 +1,10 @@
-// Module ID: 14949
-// Function ID: 112526
+// Module ID: 14957
+// Function ID: 112569
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14949 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 14957 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,12 +16,12 @@ const tmp2 = arg1(dependencyMap[4]);
 let closure_12 = { videoURI: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov" };
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { <string:1641097624>: true, <string:1493721812>: true, <string:3169187154>: true, <string:381375725>: true, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { -877328895: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006835717854823887, -541306282: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000563, 140694625: 203623697495444500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -435596711: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002953020121760984, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.videoContainer = { borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
 obj.info = {};
-obj.title = {};
+obj.title = { MINIMAL: true, currentScreenId: null };
 obj.subtitle = {};
 obj.footer = { marginTop: 32 };
 obj.button = { marginBottom: 8 };
@@ -62,11 +62,11 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1.children = callback2(importDefault(closure_2[13]), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info };
-  const obj4 = { flexShrink: 2673, flexGrow: -2028912384, zIndex: -1184825342, style: tmp.title };
+  const obj4 = { style: tmp.title };
   const intl2 = arg1(closure_2[12]).intl;
   obj4.children = intl2.string(arg1(closure_2[12]).t.gCgirr);
   const items3 = [callback2(arg1(closure_2[14]).Text, obj4), ];
-  const obj5 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.subtitle };
+  const obj5 = { cachedAt: 1, edpbxy: 1, style: tmp.subtitle };
   const intl3 = arg1(closure_2[12]).intl;
   obj5.children = intl3.string(arg1(closure_2[12]).t.fLMZFw);
   items3[1] = callback2(arg1(closure_2[14]).Text, obj5);

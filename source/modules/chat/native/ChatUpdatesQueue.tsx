@@ -1,9 +1,9 @@
-// Module ID: 10448
-// Function ID: 80660
+// Module ID: 10449
+// Function ID: 80673
 // Name: ChatUpdatesQueue
 // Dependencies: []
 
-// Module 10448 (ChatUpdatesQueue)
+// Module 10449 (ChatUpdatesQueue)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);

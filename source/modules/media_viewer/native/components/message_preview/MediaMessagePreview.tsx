@@ -1,10 +1,10 @@
-// Module ID: 12125
-// Function ID: 93399
+// Module ID: 12129
+// Function ID: 93425
 // Name: rowModifierShared
 // Dependencies: []
 // Exports: default
 
-// Module 12125 (rowModifierShared)
+// Module 12129 (rowModifierShared)
 function rowModifierShared(arg0, arg1) {
   arg0.canAddNewReactions = !arg1;
   arg0.contextType = arg1(dependencyMap[11]).MessageContextType.MEDIA_VIEWER;
@@ -39,7 +39,7 @@ function MeasureMessage(message) {
         modifyRow(arg0) {
           callback3(arg0, closure_3);
           if (arg0) {
-            arg0.truncation = { flexDirection: "channelId", marginRight: "channelId", marginBottom: "channelId" };
+            arg0.truncation = { "Bool(false)": "channelId", "Bool(false)": "channelId", "Bool(false)": "channelId" };
           }
         },
         rowGenerator: closure_16,
@@ -73,7 +73,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let importDefaultResult = importDefault(dependencyMap[10]);
 importDefaultResult = new importDefaultResult();
-let obj = { 190295266: true, 1310491158: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", 1446667104: null, 2075939498: "8321c7573efa1c0254c4a9b939ac0953", 1415674813: "ko.messages.8321c7573efa1c0254c4a9b939ac0953.compiled.messages", -654114733: "jsona", 1716400491: true, -866363734: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", -1521307412: true, 1641849646: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", -1194765590: null, -1218378100: "06ce787c33fd0c9cd370f243d3462ef5", -2041431455: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages", 1635499425: "jsona", 101274478: "user-code-input", 956368524: true, 1689709154: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", forcedTheme: ThemeTypes.DARK };
+let obj = { <string:4039976956>: "06ce787c33fd0c9cd370f243d3462ef5", <string:1471013481>: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages", <string:478287371>: "jsona", <string:979591246>: true, <string:3847400278>: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", <string:1634920050>: true, <string:50090836>: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", <string:1314548780>: null, <string:1549183846>: "83f73ec48da0fa384732b494e560b028", <string:1639050444>: "nl.messages.83f73ec48da0fa384732b494e560b028.compiled.messages", <string:2725532774>: "jsona", <string:2725339679>: "user-code-input", <string:2488417084>: true, <string:1641846911>: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", <string:3372438250>: null, <string:3093366434>: "93158deefa82be820403a68e5af4dcf4", <string:4065475169>: "no.messages.93158deefa82be820403a68e5af4dcf4.compiled.messages", forcedTheme: ThemeTypes.DARK };
 importDefaultResult.setOptions(obj);
 const tmp3 = arg1(dependencyMap[9]);
 let closure_17 = arg1(dependencyMap[12]).createStyles({ dummyLayout: {} });
@@ -146,7 +146,7 @@ export default function MediaMessagePreview(channelId) {
     message.message.editedColor = editedColor;
     message.reactionsTheme = tmp8;
     if (!full) {
-      const obj = {};
+      const obj = { allowLinks: "100%", allowEmojiLinks: 16 };
       const intl = channelId(onClose[18]).intl;
       const _HermesInternal = HermesInternal;
       obj.seeMoreLabel = " " + intl.string(channelId(onClose[18]).t.7qbp3B);

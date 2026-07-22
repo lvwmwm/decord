@@ -1,10 +1,10 @@
-// Module ID: 9485
-// Function ID: 73915
+// Module ID: 9486
+// Function ID: 73928
 // Name: removeAutomodMessageNotice
-// Dependencies: [646840323, 899088385]
+// Dependencies: []
 // Exports: removeAutomodMessageNotice
 
-// Module 9485 (removeAutomodMessageNotice)
+// Module 9486 (removeAutomodMessageNotice)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_automod/GuildAutomodMessageActionCreators.tsx");
 

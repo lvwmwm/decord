@@ -1,10 +1,10 @@
-// Module ID: 10499
-// Function ID: 82014
+// Module ID: 10500
+// Function ID: 82027
 // Name: getShelfItemData
 // Dependencies: []
 // Exports: default
 
-// Module 10499 (getShelfItemData)
+// Module 10500 (getShelfItemData)
 let closure_0 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/activities/getShelfItemData.tsx");
 

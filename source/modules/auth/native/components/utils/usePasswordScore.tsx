@@ -1,10 +1,10 @@
-// Module ID: 14632
-// Function ID: 110354
+// Module ID: 14640
+// Function ID: 110397
 // Name: PasswordScore
 // Dependencies: []
 // Exports: usePasswordScore
 
-// Module 14632 (PasswordScore)
+// Module 14640 (PasswordScore)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

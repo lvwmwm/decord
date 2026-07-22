@@ -1,9 +1,9 @@
-// Module ID: 9094
-// Function ID: 71307
+// Module ID: 9095
+// Function ID: 71320
 // Name: ChannelDetailsNavigatorScreens
 // Dependencies: []
 
-// Module 9094 (ChannelDetailsNavigatorScreens)
+// Module 9095 (ChannelDetailsNavigatorScreens)
 const sum = require(dependencyMap[0]).SEARCH_BAR_HEIGHT + 40;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");

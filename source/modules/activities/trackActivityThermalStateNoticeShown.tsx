@@ -1,10 +1,10 @@
-// Module ID: 15613
-// Function ID: 119219
+// Module ID: 15621
+// Function ID: 119262
 // Name: trackActivityThermalStateNoticeShown
 // Dependencies: []
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 15613 (trackActivityThermalStateNoticeShown)
+// Module 15621 (trackActivityThermalStateNoticeShown)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

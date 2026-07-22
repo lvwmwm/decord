@@ -1,10 +1,10 @@
-// Module ID: 15103
-// Function ID: 113911
+// Module ID: 15111
+// Function ID: 113954
 // Name: onAddReaction
 // Dependencies: []
 // Exports: default
 
-// Module 15103 (onAddReaction)
+// Module 15111 (onAddReaction)
 function onAddReaction(id, id2, byName, burst) {
   if (null != byName) {
     let obj = id2(dependencyMap[10]);
@@ -43,7 +43,7 @@ function useThread(id) {
       }
       return obj;
     }
-    obj = { display: "decimal-pad", marginBottom: "number-pad", padding: "phone-pad" };
+    obj = { pipMode: 22817347, externalProductImage: 18467840, facing: 21634048 };
   });
   ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
   if (null != id) {
@@ -85,9 +85,9 @@ function AddEmojiButton(channel) {
   const tmp = callback4();
   const items = [channel, onPressEmoji, handleItemInteracted];
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction_picker", { <string:2204214729>: null, <string:1672982865>: 0, <string:1370399429>: false, <string:3949021540>: "swf" });
+    handleItemInteracted("press_reaction_picker", {});
     let obj = channel(handleItemInteracted[19]);
-    obj = { flex: "absolute", height: -1, overflow: -1, pickerIntention: constants.REACTION, onPressEmoji, channel };
+    obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: constants.REACTION, onPressEmoji, channel };
     let guild_id;
     if (null != channel) {
       guild_id = channel.guild_id;
@@ -110,7 +110,7 @@ function AddEmojiButton(channel) {
   obj.disabled = disabled;
   const items2 = [callback2(arg1(dependencyMap[22]).ReactionIcon, { size: "sm" }), ];
   if (showText) {
-    obj = { hasMaxConnections: "Show debug log overlay in collectibles shop", isBoostOnlySubscription: "shop_show_debug_overlay" };
+    obj = { cachedAt: "Show debug log overlay in collectibles shop", edpbxy: "shop_show_debug_overlay" };
     const intl2 = arg1(dependencyMap[21]).intl;
     obj.children = intl2.string(arg1(dependencyMap[21]).t.m9O1gd);
     showText = callback2(arg1(dependencyMap[23]).Text, obj);
@@ -204,7 +204,7 @@ function EmojiReaction(count) {
     return tmp;
   }, items1);
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction", { <string:2204214729>: "isArray", <string:1672982865>: "LIGHT", <string:1370399429>: "channelId", <string:3949021540>: "channelId" });
+    handleItemInteracted("press_reaction", {});
     const result = messageId(reaction[27]).handleAddOrRemoveReaction(messageId, channel, reaction, isBurstReaction, messageId(reaction[11]).ReactionLocations.MESSAGE);
   }, items2);
   const obj1 = {};
@@ -322,7 +322,7 @@ function ThreadAsCommentsButton(parentMessage) {
   const items1 = [parentMessage, threadData.thread, handleItemInteracted];
   const stateFromStores = obj.useStateFromStores(items, () => closure_11.canWithPartialContext(constants.VIEW_CHANNEL, { channelId: parentMessage.id }));
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_comments", { <string:2204214729>: true, <string:1672982865>: "background-brand", <string:1370399429>: "caught_up", <string:3949021540>: "caught_up" });
+    handleItemInteracted("press_comments", { "Bool(false)": "<string:1784168705>", "Bool(false)": "<string:2420244481>", "Bool(false)": "<string:2415919508>", "Bool(false)": "<string:1107296660>" });
     let tmp2 = null != parentMessage;
     if (tmp2) {
       tmp2 = null != threadData.thread;
@@ -347,7 +347,7 @@ function ThreadAsCommentsButton(parentMessage) {
           obj = { style: tmp.commentCount };
           const obj1 = { style: tmp.commentsIcon };
           const items3 = [callback2(arg1(dependencyMap[33]).ChatIcon, obj1), ];
-          const obj2 = { children: str };
+          const obj2 = { cachedAt: false, edpbxy: 700, children: str };
           items3[1] = callback2(arg1(dependencyMap[23]).Text, obj2);
           obj.children = items3;
           obj.children = callback3(closure_5, obj);
@@ -382,16 +382,16 @@ const tmp3 = arg1(dependencyMap[7]);
 let closure_19 = 20;
 const tmp4 = arg1(dependencyMap[9]);
 let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
-  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: {}, emojisContainer: {} };
-  obj = { "Null": "Array", "Null": "isArray", "Null": "padding", "Null": "Boolean", "Null": "Array", "Null": "isArray", backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: { 861099105: "dispatch", -318503224: "Text", 1672176033: "createStyles", 1390898937: "__d", -1097784146: "r" }, emojisContainer: { 861099105: "dispatch", -318503224: "Text", 1672176033: "createStyles", 1390898937: "__d", -1097784146: "r" } };
+  obj = { backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
   obj.emojiContainer = obj;
   obj.innerEmojiContainer = { paddingVertical: 5 };
   obj.selectedInnerEmojiContainer = { paddingVertical: 4 };
-  obj.addEmojiContainer = { "Bool(false)": 5, "Bool(false)": "center" };
+  obj.addEmojiContainer = { "Bool(false)": "row", "Bool(false)": "100%" };
   obj.disabled = { opacity: 0.4 };
   obj = { width: closure_19, height: closure_19 };
   obj.defaultEmoji = obj;
-  const obj1 = { paddingVertical: 13, paddingHorizontal: 0.652, flexGrow: 0, justifyContent: 183.333 };
+  const obj1 = { -1398941826: 13, 541046124: 0.652, 1600327841: 0, -343421673: 183.333 };
   let obj4 = arg1(dependencyMap[14]);
   let num = 16;
   if (!obj4.isAndroid()) {
@@ -404,13 +404,14 @@ let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
   obj.emojiImage = { resizeMode: "contain", width: closure_19, height: closure_19 };
   const obj3 = { borderColor: importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_560, backgroundColor: arg1(dependencyMap[15]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_500, 0.3) };
   obj.selected = obj3;
-  obj.gradient = { a: "<string:1376306053>", s: "<string:1153565118>", d: "<string:2873114881>", f: "<string:24248321>", h: "<string:16777216>" };
-  obj.overflowChevron = { "Null": null, "Null": null };
-  obj4 = { textInputStyle: true, label: true, error: true, value: true, hint: true, onChangeText: true, alpha2: true, countryCode: true, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  obj.gradient = { width: "dispatch", height: "registerAsset", position: "type", justifyContent: "accessible", alignItems: "onPress" };
+  obj.overflowChevron = { "Bool(false)": 40, "Bool(false)": 40 };
+  obj4 = { <string:3713687343>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, <string:1524488669>: -7312499169131388000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1306795994>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, <string:3889845200>: -999775953481944100000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:999405895>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, <string:1660130931>: -1067754237731450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1532076283>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020043463816, <string:1549951490>: -189118451239682540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
   obj.comments = obj4;
   obj.commentCount = {};
-  const obj5 = { "Null": 0, "Null": -1048576, tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.commentsIcon = obj5;
+  const obj2 = { resizeMode: "contain", width: closure_19, height: closure_19 };
+  const obj8 = arg1(dependencyMap[15]);
+  obj.commentsIcon = { tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
   return obj;
 });
 const obj = arg1(dependencyMap[12]);
@@ -543,7 +544,7 @@ export default function ICYMICardInteractionRow(message) {
   }, items6);
   const items8 = [str, flag2];
   const callback3 = React.useCallback(() => {
-    callback("press_reply", { <string:2204214729>: true, <string:1672982865>: true, <string:1370399429>: true, <string:3949021540>: true });
+    callback("press_reply", {});
     let obj = message(flag[32]);
     obj.navigateToPost(channel.id, channel.guild_id, message.id);
     obj = { channel, message, shouldMention: true, showMentionToggle: true };
@@ -644,7 +645,7 @@ export default function ICYMICardInteractionRow(message) {
           const obj17 = importDefault(dependencyMap[42])(token);
           const items14 = [importDefault(dependencyMap[42])(token).alpha(0).hex(), token, token];
           obj11.colors = items14;
-          obj11.locations = [];
+          obj11.locations = ["<string:6582592>", "<string:305266688>", "<string:2714419331>"];
           const items15 = [callback2(tmp47, obj11), ];
           const obj12 = {};
           const items16 = [tmp.overflowChevron];

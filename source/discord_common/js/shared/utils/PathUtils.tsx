@@ -1,10 +1,14 @@
 // Module ID: 484
 // Function ID: 6292
 // Name: getAuthenticationPath
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 // Exports: getLoginPath, wrapPaths
 
 // Module 484 (getAuthenticationPath)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 function getAuthenticationPath(login, arg1, flag, arg3) {
   let tmp = arg1;
   let str = arg3;
@@ -43,8 +47,6 @@ function getAuthenticationPath(login, arg1, flag, arg3) {
     combined = "&" + str;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {
   class UnescapedPathParam {
     constructor(arg0) {
@@ -64,7 +66,7 @@ const tmp2 = () => {
   ];
   return callback(UnescapedPathParam, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
+const result = items.fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
 
 export const getLoginPath = function getLoginPath(arg0, flag) {
   let str = arg2;
@@ -81,7 +83,7 @@ export const UnescapedPathParam = tmp2;
 export const wrapPaths = function wrapPaths(frozen, arg1) {
   let length;
   let closure_0 = frozen;
-  let closure_1 = arg1;
+  let module_511 = arg1;
   const obj = {};
   function _loop() {
     const arg0 = tmp;
@@ -106,7 +108,7 @@ export const wrapPaths = function wrapPaths(frozen, arg1) {
             str = mapped.join("");
           }
         });
-      }(HermesBuiltin.copyRestArgs(), closure_1));
+      }(HermesBuiltin.copyRestArgs(), module_511));
     }
   }
   const keys = Object.keys(frozen);

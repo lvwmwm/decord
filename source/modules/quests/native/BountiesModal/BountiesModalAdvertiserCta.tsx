@@ -1,10 +1,10 @@
-// Module ID: 13816
-// Function ID: 104502
+// Module ID: 13823
+// Function ID: 104542
 // Name: BountiesModalAdvertiserCta
 // Dependencies: []
 // Exports: default
 
-// Module 13816 (BountiesModalAdvertiserCta)
+// Module 13823 (BountiesModalAdvertiserCta)
 let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
@@ -16,7 +16,7 @@ let closure_10 = importDefault(dependencyMap[4]).createAnimatedComponent(tmp2.Pr
 const importDefaultResult = importDefault(dependencyMap[4]);
 let closure_11 = arg1(dependencyMap[5]).createStyles(() => {
   let obj = {};
-  obj = { variant: "isArray", onPress: "useStateFromStores", size: "textAlign", position: "r", left: "isArray", right: "useStateFromStores", top: "textAlign", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_16 };
+  obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_16 };
   obj.outerContainer = obj;
   obj = {};
   const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_TOP_HIGH);
@@ -26,7 +26,7 @@ let closure_11 = arg1(dependencyMap[5]).createStyles(() => {
   obj["borderRadius"] = importDefault(dependencyMap[6]).radii.lg;
   obj["overflow"] = "hidden";
   obj.ctaPressable = obj;
-  const obj1 = { "Null": 7, "Null": 370, paddingLeft: importDefault(dependencyMap[6]).space.PX_12, paddingRight: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_12, gap: importDefault(dependencyMap[6]).space.PX_12 };
+  const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", paddingLeft: importDefault(dependencyMap[6]).space.PX_12, paddingRight: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_12, gap: importDefault(dependencyMap[6]).space.PX_12 };
   obj.cta = obj1;
   obj.ctaLogoContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
   const merged1 = Object.assign(absoluteFillObject.absoluteFillObject);
@@ -72,7 +72,7 @@ export default function BountiesModalAdvertiserCta(bounty) {
     const obj3 = bounty(sourceQuestContent[11]);
     const obj4 = bounty(sourceQuestContent[4]);
     const tmp2 = bounty(sourceQuestContent[10]);
-    obj.translateY = obj3.withTiming(bounty(sourceQuestContent[4]).interpolate(num2, ["replace", "then"], []), visible ? tmp2.timingStandard : tmp2.timingFast);
+    obj.translateY = obj3.withTiming(bounty(sourceQuestContent[4]).interpolate(num2, [77601039, 1612144654], [true, true]), visible ? tmp2.timingStandard : tmp2.timingFast);
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -127,9 +127,9 @@ export default function BountiesModalAdvertiserCta(bounty) {
     obj5.children = callback2(importDefault(dependencyMap[19]), obj6);
     const items4 = [callback2(closure_7, obj5), , ];
     obj8 = { style: tmp.ctaInfo };
-    obj9 = { "Null": "a9bda86a153eecbc9eb21d6f5b6433f7", "Null": "QrCodeIcon", "Null": "png", children: bountyCtaInfo.label };
+    obj9 = { children: bountyCtaInfo.label };
     const items5 = [callback2(arg1(dependencyMap[20]).Text, obj9), ];
-    const obj10 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: bountyCtaInfo.subtext };
+    const obj10 = { cachedAt: true, edpbxy: true, children: bountyCtaInfo.subtext };
     items5[1] = callback2(arg1(dependencyMap[20]).Text, obj10);
     obj8.children = items5;
     items4[1] = callback3(closure_7, obj8);

@@ -1,10 +1,10 @@
-// Module ID: 12180
-// Function ID: 93635
+// Module ID: 12184
+// Function ID: 93661
 // Name: buildBaseEmbedProps
 // Dependencies: []
 // Exports: createQuestsEmbed
 
-// Module 12180 (buildBaseEmbedProps)
+// Module 12184 (buildBaseEmbedProps)
 function buildBaseEmbedProps(arg0) {
   let bodyText;
   let themeColors;

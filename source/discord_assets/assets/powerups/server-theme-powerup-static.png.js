@@ -1,9 +1,9 @@
-// Module ID: 14877
-// Function ID: 112064
+// Module ID: 14885
+// Function ID: 112107
 // Name: metadata
 // Dependencies: []
 
-// Module 14877 (metadata)
+// Module 14885 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/powerups/server-theme-powerup-static.png.js");
 

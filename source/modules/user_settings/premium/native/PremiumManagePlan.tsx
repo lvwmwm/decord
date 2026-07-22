@@ -1,10 +1,10 @@
-// Module ID: 12308
-// Function ID: 94309
+// Module ID: 12313
+// Function ID: 94337
 // Name: ManagePlanHeader
 // Dependencies: []
 // Exports: default
 
-// Module 12308 (ManagePlanHeader)
+// Module 12313 (ManagePlanHeader)
 function ManagePlanHeader() {
   const tmp = callback7();
   let obj = callback(dependencyMap[20]);
@@ -18,7 +18,7 @@ function ManagePlanHeader() {
     children: callback4(callback(dependencyMap[22]).ArrowLargeLeftIcon, { size: "md" })
   };
   const items = [callback4(callback(dependencyMap[21]).PressableOpacity, obj), , ];
-  const obj1 = {};
+  const obj1 = { tooltipText: 800, contain: 32 };
   const intl = callback(dependencyMap[24]).intl;
   obj1.children = intl.string(callback(dependencyMap[24]).t.1bX7Tx);
   items[1] = callback4(callback(dependencyMap[23]).Text, obj1);
@@ -44,7 +44,7 @@ function SubscriptionAndBillingInfo(subscription) {
   const analyticsLocations = importDefault(dependencyMap[28])().analyticsLocations;
   const importDefault = analyticsLocations;
   let obj = arg1(dependencyMap[29]);
-  obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, subscriptionId: subscription.id, analyticsLocations, analyticsLocation: importDefault(dependencyMap[30]).PREMIUM_SUBSCRIPTION_DETAILS };
+  obj = { 1393537105: null, -760149847: null, -1309907082: null, subscriptionId: subscription.id, analyticsLocations, analyticsLocation: importDefault(dependencyMap[30]).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback3(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let obj2 = arg1(dependencyMap[29]);
   obj = { subscriptionId: subscription.id, preventFetch: subscription.status !== constants2.PAST_DUE };
@@ -199,7 +199,7 @@ function SubscriptionAndBillingInfo(subscription) {
               obj7 = { premiumType: closure_27.TIER_2, hideButton: true, isPremiumGroup, premiumGroupRole };
               items7[1] = callback4(importDefault(dependencyMap[53]), obj7);
               obj8 = { style: tmp2.extraInfoContainer };
-              obj9 = { handleMessageFocus: "/assets/images/native/premium/illustrations", enableHome: 51, afterMs: 36 };
+              obj9 = { gauge: "/assets/images/native/premium/illustrations", onLayerLoaded: 51, ExpressiveGradient: 36 };
               const intl7 = arg1(dependencyMap[24]).intl;
               obj9.children = intl7.string(arg1(dependencyMap[24]).t.YCrcPL);
               const items8 = [callback4(arg1(dependencyMap[23]).Text, obj9), ];
@@ -244,7 +244,7 @@ function SubscriptionAndBillingInfo(subscription) {
             obj14.children = items10;
             const items11 = [planIdFromInvoice(planIdFromInvoice, obj14), ];
             const obj17 = { style: tmp2.extraInfoContainer };
-            const obj18 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+            const obj18 = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
             const intl = arg1(dependencyMap[24]).intl;
             obj18.children = intl.string(arg1(dependencyMap[24]).t.YCrcPL);
             const items12 = [callback4(arg1(dependencyMap[23]).Text, obj18), , , ];
@@ -272,7 +272,7 @@ function SubscriptionAndBillingInfo(subscription) {
             items13[2] = null != memo && memo;
             obj19.children = items13;
             items12[1] = callback5(closure_8, obj19);
-            const obj23 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+            const obj23 = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
             const intl4 = arg1(dependencyMap[24]).intl;
             obj23.children = intl4.string(arg1(dependencyMap[24]).t.Sb6wI1);
             items12[2] = callback4(arg1(dependencyMap[23]).Text, obj23);
@@ -281,7 +281,7 @@ function SubscriptionAndBillingInfo(subscription) {
             let obj25 = { gap: 4 };
             items14[1] = obj25;
             obj24.style = items14;
-            obj26 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+            obj26 = { cachedAt: null, edpbxy: "Array" };
             const intl5 = arg1(dependencyMap[24]).intl;
             obj26.children = intl5.string(arg1(dependencyMap[24]).t.KXQjfc);
             const items15 = [callback4(arg1(dependencyMap[23]).Text, obj26), ];
@@ -340,7 +340,7 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = callback4;
     planIdFromInvoice = arg1;
     planIdFromInvoice = dependencyMap;
-    const obj34 = { hasMaxConnections: null, isBoostOnlySubscription: "153e24032a5a8790888aef41caaf4b2c", children: planDescription };
+    const obj34 = { cachedAt: null, edpbxy: "153e24032a5a8790888aef41caaf4b2c", children: planDescription };
     items17[1] = callback4(arg1(dependencyMap[23]).Text, obj34);
     obj30.children = items17;
     const items18 = [callback5(planIdFromInvoice, obj30), ];
@@ -372,7 +372,7 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = dependencyMap;
     planIdFromInvoice = callback5;
     planIdFromInvoice = closure_8;
-    const obj38 = { handleMessageFocus: "/assets/images/native/premium/illustrations", enableHome: 51, afterMs: 36 };
+    const obj38 = { gauge: "/assets/images/native/premium/illustrations", onLayerLoaded: 51, ExpressiveGradient: 36 };
     const intl10 = arg1(dependencyMap[24]).intl;
     obj38.children = intl10.string(arg1(dependencyMap[24]).t.YCrcPL);
     const items20 = [callback4(arg1(dependencyMap[23]).Text, obj38), ];
@@ -417,16 +417,16 @@ function FractionalPremiumCredits(durationText) {
   const tmp = callback8(importDefault(dependencyMap[27])("FractionalPremiumCredits"));
   let obj = { style: tmp.container };
   if (showPremiumFeaturesCard) {
-    obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, premiumType: closure_27.TIER_2 };
+    obj = { width: null, alignItems: null, justifyContent: null, premiumType: closure_27.TIER_2 };
     showPremiumFeaturesCard = callback4(importDefault(dependencyMap[53]), obj);
   }
   const items = [showPremiumFeaturesCard, ];
   obj = { style: tmp.extraInfoContainer };
-  const obj1 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+  const obj1 = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
   const intl = arg1(dependencyMap[24]).intl;
   obj1.children = intl.string(arg1(dependencyMap[24]).t.Obre8v);
   const items1 = [callback4(arg1(dependencyMap[23]).Text, obj1), , ];
-  const obj2 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+  const obj2 = { cachedAt: null, edpbxy: "Array" };
   const intl2 = arg1(dependencyMap[24]).intl;
   const obj3 = {};
   let obj6 = importDefault(dependencyMap[56]);
@@ -439,7 +439,7 @@ function FractionalPremiumCredits(durationText) {
   const obj7 = {};
   const obj8 = { padding: 6, borderRadius: importDefault(dependencyMap[19]).radii.sm };
   obj7.style = obj8;
-  obj7.start = {};
+  obj7.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
   obj7.end = {};
   const items2 = [importDefault(dependencyMap[19]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[19]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj7.colors = items2;
@@ -468,7 +468,7 @@ function FractionalPremiumCredits(durationText) {
     const obj15 = { style: tmp.divider };
     obj14.children = callback4(closure_8, obj15);
     items5[1] = callback4(closure_8, obj14);
-    const obj16 = { accessibilityRole: 24, resizeMode: 0, "Bool(false)": 72, "Bool(false)": 900, style: tmp.fpRowEnd };
+    const obj16 = { -9223372036854775808: 24, 9223372036854775807: 0, 9223372036854775807: 72, 1661208145: 900, style: tmp.fpRowEnd };
     const obj17 = { style: tmp.fpRowContent };
     if (hasUnactivatedUnits) {
       if (fractionalPremiumInfo.fractionalState === constants3.NONE) {
@@ -479,7 +479,7 @@ function FractionalPremiumCredits(durationText) {
         const items6 = [callback4(arg1(dependencyMap[23]).Text, obj19), ];
         let tmp40 = undefined !== activationDate;
         if (tmp40) {
-          const obj20 = {};
+          const obj20 = { cachedAt: null, edpbxy: null };
           const intl7 = arg1(dependencyMap[24]).intl;
           const obj21 = { activateDate: activationDate };
           obj20.children = intl7.format(arg1(dependencyMap[24]).t.0Vwb/l, obj21);
@@ -555,7 +555,7 @@ obj.background = obj;
 const tmp5 = arg1(dependencyMap[16]);
 obj.container = { display: "flex", paddingHorizontal: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING };
 obj.contentContainer = {};
-obj.topBlur = { "Bool(true)": "PREMIUM_TIER_2_DISCOUNT_ENDING", "Bool(true)": "%RegExpPrototype%", "Bool(true)": "MiniaturesSpotIllustration", "Bool(true)": "%Reflect%", "Bool(true)": "isArray" };
+obj.topBlur = { 9223372036854775807: "Text", 0: "parent", 9223372036854775807: "np", 0: "Array", 0: "isArray" };
 obj.accountCredit = { paddingHorizontal: 16 };
 const obj1 = { display: "flex", paddingHorizontal: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING };
 obj.accountCreditList = { borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
@@ -565,7 +565,7 @@ obj.billingInfo = {};
 let closure_32 = obj.createStyles(obj);
 const obj2 = { borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
 const obj3 = { headerContainer: {} };
-const obj4 = { "Null": null, "Null": "heading-lg/extrabold", "Null": "header", "Null": "text-sm/semibold", <string:903611347>: "text-muted", borderRadius: importDefault(dependencyMap[19]).radii.lg };
+const obj4 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[19]).radii.lg };
 obj3.backButtonWrapper = obj4;
 let closure_33 = arg1(dependencyMap[18]).createStyles(obj3);
 const obj6 = arg1(dependencyMap[18]);
@@ -575,12 +575,12 @@ let closure_34 = arg1(dependencyMap[18]).createStyles((arg0) => {
   obj = { backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[19]).radii.lg, overflow: "hidden" };
   obj.errorHeader = obj;
   obj.headerBackground = { padding: 16 };
-  obj.logoContainer = { -9223372036854775808: "<string:1107297123>", "Null": "n\u00E4stan ett \u00E5r", "Null": "n\u00E4stan {{count}} \u00E5r" };
-  obj.wumpusImg = {};
+  obj.logoContainer = {};
+  obj.wumpusImg = { <string:2807192673>: false, <string:1641051308>: false, <string:2717012384>: false };
   obj.logoStyle = {};
-  obj.errorHeaderPrimaryButton = {};
-  obj.extraInfoContainer = { jsx: null, Path: null, uri: null, body: null };
-  obj = { withSpring: 1, disabled: "center", accessible: "center", mn: "hidden", ks: "100%", borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
+  obj.errorHeaderPrimaryButton = { -9223372036854775808: null, -9223372036854775808: null };
+  obj.extraInfoContainer = {};
+  obj = { borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
   obj.extraInfoTextContainer = obj;
   obj.mutationWarningContainer = { borderRadius: importDefault(dependencyMap[19]).radii.lg, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
   obj.mutationText = { flex: 1 };
@@ -768,7 +768,7 @@ export default function PremiumManagePlan() {
   }
   const items9 = [tmp31, , , , , , ];
   if (isInReverseTrial) {
-    obj6 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, premiumType: closure_27.TIER_2 };
+    obj6 = { width: null, alignItems: null, justifyContent: null, premiumType: closure_27.TIER_2 };
     isInReverseTrial = callback4(importDefault(dependencyMap[53]), obj6);
   }
   items9[1] = isInReverseTrial;
@@ -777,7 +777,7 @@ export default function PremiumManagePlan() {
     tmp38 = !tmp19;
   }
   if (tmp38) {
-    obj7 = { flexGrow: true, flexShrink: true, marginRight: true, flexGrow: true, premiumType: closure_27.TIER_2, premiumGroupRole };
+    obj7 = { premiumType: closure_27.TIER_2, premiumGroupRole };
     tmp38 = callback4(importDefault(dependencyMap[53]), obj7);
   }
   items9[2] = tmp38;

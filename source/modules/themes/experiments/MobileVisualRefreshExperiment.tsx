@@ -5,7 +5,8 @@
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
 // Module 1324 (useIsMobileVisualRefreshExperimentEnabled)
-const tmp2 = importDefault(dependencyMap[0])({ defaultConfig: { height: "#ffa813", flex: "absolute", padding: null }, variations: { [0]: { height: "#ffa813", flex: "absolute", padding: null }, [1]: { height: true, flex: true, padding: true }, [2]: { height: "sm", flex: "Placeholder", padding: "Click" }, [3]: { height: "sm", flex: "Placeholder", padding: "Click" }, [4]: { height: "Small", flex: "sm", padding: "Placeholder" } } });
+const obj = { "Bool(false)": null, "Bool(false)": null, defaultConfig: { gopher: true, file: false, http:: false }, variations: { [0]: { gopher: true, file: false, http:: false }, [1]: { gopher: "y", file: "isArray", http:: "Reflect" }, [2]: {}, [3]: {}, [4]: {} } };
+const tmp2 = importDefault(dependencyMap[0])(obj);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/themes/experiments/MobileVisualRefreshExperiment.tsx");
 
 export default function useIsMobileVisualRefreshExperimentEnabled(location) {
@@ -19,5 +20,5 @@ export const isMobileVisualRefreshEnabled = function isMobileVisualRefreshEnable
   return tmp2.getConfig({ location: YouBannerDecorations }).enabled;
 };
 export const resolveRefreshToken = function resolveRefreshToken(CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND, chatInputFloating) {
-  return CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND.resolve({ enabledExperiments: [] });
+  return CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND.resolve({ enabledExperiments: chatInputFloating ? [true] : [] });
 };

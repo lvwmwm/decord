@@ -1,10 +1,10 @@
-// Module ID: 10810
-// Function ID: 83966
+// Module ID: 10811
+// Function ID: 83979
 // Name: ConfirmActivityGateContent
 // Dependencies: []
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10810 (ConfirmActivityGateContent)
+// Module 10811 (ConfirmActivityGateContent)
 function ConfirmActivityGateContent(children) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer };
@@ -19,7 +19,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { alertContainer: {} };
-obj = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.alertBodyText = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

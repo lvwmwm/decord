@@ -1,10 +1,10 @@
-// Module ID: 8409
-// Function ID: 66984
+// Module ID: 8410
+// Function ID: 66996
 // Name: CreateChannelTypeDescription
 // Dependencies: []
 // Exports: default
 
-// Module 8409 (CreateChannelTypeDescription)
+// Module 8410 (CreateChannelTypeDescription)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildProfileFetchStatus = arg1(dependencyMap[2]).GuildProfileFetchStatus;
@@ -39,7 +39,7 @@ export default function CreateChannelTypeDescription(guildId) {
   let tmp9 = null;
   if (tmp6) {
     obj = {};
-    obj = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000 };
+    obj = {};
     const intl = arg1(dependencyMap[8]).intl;
     obj.children = intl.string(arg1(dependencyMap[8]).t.2Ab4Id);
     obj.children = jsx(arg1(dependencyMap[7]).Text, obj);

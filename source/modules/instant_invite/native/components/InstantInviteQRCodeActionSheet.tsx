@@ -1,10 +1,10 @@
-// Module ID: 12052
-// Function ID: 93075
+// Module ID: 12056
+// Function ID: 93101
 // Name: InstantInviteQRCodeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12052 (InstantInviteQRCodeActionSheet)
+// Module 12056 (InstantInviteQRCodeActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[7]).space.PX_12, gap: importDefault(dependencyMap[7]).space.PX_24 };
 obj.container = obj;
-obj.iconContainer = { Component: false, style: false, onLoadStart: false, onLoad: false, onError: false, index: false, source: false };
+obj.iconContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
 const obj1 = { padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.lg + importDefault(dependencyMap[7]).space.PX_4, backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
 obj.icon = obj1;
 obj.code = { alignSelf: "center" };

@@ -1,10 +1,10 @@
-// Module ID: 15454
-// Function ID: 117887
+// Module ID: 15462
+// Function ID: 117930
 // Name: RestrictedMessageRequestPreview
 // Dependencies: []
 // Exports: default
 
-// Module 15454 (RestrictedMessageRequestPreview)
+// Module 15462 (RestrictedMessageRequestPreview)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ScrollView: closure_5, View: closure_6 } = arg1(dependencyMap[2]));

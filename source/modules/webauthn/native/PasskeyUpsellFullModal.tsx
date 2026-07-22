@@ -1,10 +1,10 @@
-// Module ID: 13510
-// Function ID: 102524
+// Module ID: 13517
+// Function ID: 102557
 // Name: PasskeyUpsellFullModal
 // Dependencies: []
 // Exports: default
 
-// Module 13510 (PasskeyUpsellFullModal)
+// Module 13517 (PasskeyUpsellFullModal)
 importAll(dependencyMap[0]);
 const WebAuthnScreens = arg1(dependencyMap[1]).WebAuthnScreens;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,12 +1,12 @@
-// Module ID: 14817
-// Function ID: 111695
+// Module ID: 14825
+// Function ID: 111738
 // Name: _getEmojiCacheKey
 // Dependencies: [0, 4294967295, 0, 4294967295]
 // Exports: getEmojiDominantColors
 
-// Module 14817 (_getEmojiCacheKey)
-import result from "result";
-import importDefaultResult from "result";
+// Module 14825 (_getEmojiCacheKey)
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
 
 function _getEmojiCacheKey(name) {
   return "" + name.name + "-" + name.id;

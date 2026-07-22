@@ -1,9 +1,9 @@
-// Module ID: 16505
-// Function ID: 127466
+// Module ID: 16513
+// Function ID: 127508
 // Name: promise
 // Dependencies: []
 
-// Module 16505 (promise)
+// Module 16513 (promise)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");

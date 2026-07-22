@@ -1,10 +1,10 @@
-// Module ID: 9780
-// Function ID: 76022
+// Module ID: 9781
+// Function ID: 76035
 // Name: useVirtualCurrencyBalanceAnimationData
 // Dependencies: []
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 9780 (useVirtualCurrencyBalanceAnimationData)
+// Module 9781 (useVirtualCurrencyBalanceAnimationData)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

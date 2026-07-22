@@ -1,10 +1,10 @@
-// Module ID: 13318
-// Function ID: 101167
+// Module ID: 13325
+// Function ID: 101200
 // Name: authorizeWithPrompt
 // Dependencies: []
 // Exports: default
 
-// Module 13318 (authorizeWithPrompt)
+// Module 13325 (authorizeWithPrompt)
 function authorizeWithPrompt() {
   return _authorizeWithPrompt(...arguments);
 }

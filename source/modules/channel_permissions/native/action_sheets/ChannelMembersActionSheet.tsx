@@ -1,10 +1,10 @@
-// Module ID: 10868
-// Function ID: 84535
+// Module ID: 10869
+// Function ID: 84548
 // Name: ChannelMembersActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10868 (ChannelMembersActionSheet)
+// Module 10869 (ChannelMembersActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ let closure_8 = importDefault(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { position: "Group 11", padding: 2 } };
+obj = { container: { lastDismissedObjectId: null, isNewWebImplementationEnabled: "Group 11" } };
 obj = { paddingVertical: importDefault(dependencyMap[10]).space.PX_12 };
 obj.sectionRowWrapper = obj;
-obj.warning = { 0: 838861158, 0: -385875662 };
+obj.warning = { useShouldShowWishlistInDMGifting: "<string:855900161>", responseTexts: "<string:1902706689>" };
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
@@ -143,7 +143,7 @@ export default function ChannelMembersActionSheet(arg0) {
           let data;
           let title;
           ({ title, data } = section.section);
-          let obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "name", "Bool(false)": "Array", style: tmp.sectionRowWrapper };
+          let obj = { style: tmp.sectionRowWrapper };
           const intl = callback(tmp[16]).intl;
           obj = { numberOfItems: data.length, sectionTitle: title };
           obj.children = intl.format(callback(tmp[16]).t.u8CWLl, obj);

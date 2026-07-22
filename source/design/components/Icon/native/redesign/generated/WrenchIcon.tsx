@@ -1,10 +1,10 @@
-// Module ID: 14270
-// Function ID: 107843
+// Module ID: 14278
+// Function ID: 107886
 // Name: WrenchIcon
 // Dependencies: []
 // Exports: WrenchIcon
 
-// Module 14270 (WrenchIcon)
+// Module 14278 (WrenchIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/WrenchIcon.tsx");

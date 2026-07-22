@@ -1,10 +1,10 @@
-// Module ID: 8643
-// Function ID: 68416
+// Module ID: 8644
+// Function ID: 68428
 // Name: getExtendedInviteType
 // Dependencies: []
 // Exports: default
 
-// Module 8643 (getExtendedInviteType)
+// Module 8644 (getExtendedInviteType)
 function getExtendedInviteType(target_type) {
   if (null == target_type) {
     return null;
@@ -59,7 +59,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
   if (map.has(inviteKey)) {
     return map.get(inviteKey);
   } else {
-    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+    obj = { width: null, height: null, display: null };
     let inputValue;
     if (null != inviteInstanceId) {
       inputValue = inviteInstanceId.inputValue;

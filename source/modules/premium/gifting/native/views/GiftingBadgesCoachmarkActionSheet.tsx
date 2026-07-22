@@ -1,10 +1,10 @@
-// Module ID: 15496
-// Function ID: 118253
+// Module ID: 15504
+// Function ID: 118296
 // Name: HasBadgeCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 15496 (HasBadgeCoachmark)
+// Module 15504 (HasBadgeCoachmark)
 function HasBadgeCoachmark(markAsDismissed) {
   let currentTier;
   let giftCount;
@@ -37,7 +37,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   obj.children = tmp9;
   const items2 = [callback(closure_5, obj), , ];
   const obj2 = { style: tmp.textContainer };
-  const obj3 = { delete: "absolute", dispatch: 0, raw: 0, style: tmp.text };
+  const obj3 = { "Null": "absolute", "Null": 0, alignItems: 0, style: tmp.text };
   const intl = arg1(dependencyMap[12]).intl;
   const obj4 = {};
   const name = currentTier.name;
@@ -130,12 +130,12 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[6]).space.PX_24 };
+obj = { padding: false, op: false, fill: false, gap: importDefault(dependencyMap[6]).space.PX_24 };
 obj.container = obj;
+const obj1 = { nativeID: "<string:3942907907>", accessibilityViewIsModal: "<string:1280376834>", backgroundColor: "<string:3981509021>", borderRadius: "<string:7893395>", padding: importDefault(dependencyMap[6]).space.PX_16 };
+obj.graphicContainer = obj1;
+obj.newBadgeImage = {};
 const tmp3 = arg1(dependencyMap[4]);
-obj.graphicContainer = { padding: importDefault(dependencyMap[6]).space.PX_16 };
-obj.newBadgeImage = { backgroundColor: "/assets/images/native/icons", borderRadius: 24, width: 24 };
-const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.textContainer = { gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.text = { textAlign: "center" };
 obj.footer = { width: "100%" };

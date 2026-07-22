@@ -1,15 +1,15 @@
-// Module ID: 15521
-// Function ID: 118448
+// Module ID: 15529
+// Function ID: 118491
 // Name: useLaunchpadAnimatedStyles
 // Dependencies: []
 // Exports: default
 
-// Module 15521 (useLaunchpadAnimatedStyles)
+// Module 15529 (useLaunchpadAnimatedStyles)
 const LAUNCH_PAD_SPRING_CONFIG = require(dependencyMap[0]).LAUNCH_PAD_SPRING_CONFIG;
 const _module = require(dependencyMap[1]);
 let closure_4 = _module.isAndroid();
 const _module1 = require(dependencyMap[2]);
-let closure_5 = _module1.createStyles({ launchPad: { <string:1638155601>: "Array", <string:2911785703>: "isArray", <string:291738931>: "constructor", <string:3327292578>: null, <string:1396137408>: null }, launchPadCover: {} });
+let closure_5 = _module1.createStyles({ launchPad: {}, launchPadCover: {} });
 let closure_6 = { code: "function useLaunchPadAnimatedStylesNativeTsx1(){const{withSpring,interpolate,launchPadSharedState,windowDimensions,LAUNCH_PAD_SPRING_CONFIG,gestureState,launchPadShown,IS_ANDROID,height}=this.__closure;return{transform:[{translateX:withSpring(interpolate(launchPadSharedState.get(),[0,1],[windowDimensions.get().width-16,0]),LAUNCH_PAD_SPRING_CONFIG,'animate-always',function(finished){'worklet';if(!finished||gestureState.get().active)return;if(launchPadSharedState.get()===1||launchPadSharedState.get()===0){launchPadShown.set(launchPadSharedState.get()===1);}})}],bottom:IS_ANDROID?0:height.get()};}" };
 let closure_7 = { code: "function useLaunchPadAnimatedStylesNativeTsx2(finished){const{gestureState,launchPadSharedState,launchPadShown}=this.__closure;if(!finished||gestureState.get().active)return;if(launchPadSharedState.get()===1||launchPadSharedState.get()===0){launchPadShown.set(launchPadSharedState.get()===1);}}" };
 let closure_8 = { code: "function useLaunchPadAnimatedStylesNativeTsx3(){const{withSpring,interpolate,launchPadSharedState,LAUNCH_PAD_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(interpolate(launchPadSharedState.get(),[0,1],[0,0.6]),LAUNCH_PAD_SPRING_CONFIG,'animate-always')};}" };
@@ -56,7 +56,7 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
     fn.__closure = obj;
     fn.__workletHash = 7028378249389;
     fn.__initData = closure_7;
-    obj.translateX = obj3.withSpring(launchPadSharedState(launchPadShown[6]).interpolate(value, ["replace", "then"], items), tmp2, "animate-always", fn);
+    obj.translateX = obj3.withSpring(launchPadSharedState(launchPadShown[6]).interpolate(value, [77601039, 1612144654], items), tmp2, "animate-always", fn);
     const items1 = [obj];
     obj.transform = items1;
     if (!tmp3) {
@@ -75,7 +75,7 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
       obj = {};
       obj2 = launchPadSharedState(launchPadShown[7]);
       obj3 = launchPadSharedState(launchPadShown[6]);
-      obj.opacity = obj2.withSpring(obj3.interpolate(launchPadSharedState.get(), ["replace", "then"], [null, null]), closure_3, "animate-always");
+      obj.opacity = obj2.withSpring(obj3.interpolate(launchPadSharedState.get(), [77601039, 1612144654], [true, true]), closure_3, "animate-always");
       return obj;
     }
   }

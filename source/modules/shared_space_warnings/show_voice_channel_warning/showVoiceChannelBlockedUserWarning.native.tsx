@@ -1,10 +1,10 @@
-// Module ID: 12545
-// Function ID: 96409
+// Module ID: 12550
+// Function ID: 96437
 // Name: showVoiceChannelBlockedUserWarning
 // Dependencies: []
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 12545 (showVoiceChannelBlockedUserWarning)
+// Module 12550 (showVoiceChannelBlockedUserWarning)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ queueBlockWarning: closure_4, dequeueBlockWarning: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = arg1(dependencyMap[2]).VoiceChannelWarningSurfaces;

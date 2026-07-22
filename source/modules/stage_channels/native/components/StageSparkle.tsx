@@ -1,5 +1,5 @@
 // Module ID: 7486
-// Function ID: 60077
+// Function ID: 60088
 // Name: StageSparkleInner
 // Dependencies: []
 // Exports: default
@@ -39,7 +39,7 @@ obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_
 obj.iconContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.iconStyle = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.sparkles = { force: null, trackAnalytics: null };
+obj.sparkles = { 10360: 40, 10496: 40 };
 let closure_6 = obj.createStyles(obj);
 const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stage_channels/native/components/StageSparkle.tsx");

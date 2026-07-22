@@ -1,10 +1,10 @@
-// Module ID: 13564
-// Function ID: 102864
+// Module ID: 13571
+// Function ID: 102897
 // Name: getPageMarker
 // Dependencies: []
 // Exports: TwoFASetupModalScreen, default
 
-// Module 13564 (getPageMarker)
+// Module 13571 (getPageMarker)
 function getPageMarker(arg0) {
   return callback(arg1(dependencyMap[11]).PageMarker, { currentPage: closure_9[arg0], numMarkers: Object.keys(closure_9).length - 1 });
 }

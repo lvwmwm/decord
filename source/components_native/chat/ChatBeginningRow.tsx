@@ -1,10 +1,10 @@
-// Module ID: 11490
-// Function ID: 89437
+// Module ID: 11491
+// Function ID: 89450
 // Name: ChatBeginningRowIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11490 (ChatBeginningRowIcon)
+// Module 11491 (ChatBeginningRowIcon)
 function ChatBeginningRowIcon(arg0) {
   let IconComponent;
   let isForumPost;
@@ -54,7 +54,7 @@ function ChatBeginningRowHeader(arg0) {
   const tmp2 = null != subtitleLink && obj.useIsScreenReaderEnabled();
   obj = {};
   const items = [callback3(ChatBeginningRowIcon, { isNSFW, isPrivate, isThread, isForumPost }), , ];
-  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa" };
+  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8" };
   const items1 = [tmp.title, ];
   const obj1 = {};
   let num = 8;
@@ -116,7 +116,7 @@ function LinkManageButtons(arg0) {
     obj.style = items;
     const obj1 = { source: importDefault(dependencyMap[40]), size: arg1(dependencyMap[39]).IconSizes.REFRESH_SMALL_16, color: token };
     const items1 = [callback3(arg1(dependencyMap[39]).Icon, obj1), ];
-    const obj2 = {};
+    const obj2 = { "Null": "business", "Null": "cached", alignItems: "cancel" };
     const items2 = [, ];
     ({ ctaLabel: arr3[0], ctaAddRoles: arr3[1] } = tmp);
     obj2.style = items2;
@@ -141,7 +141,7 @@ function LinkManageButtons(arg0) {
     obj3.style = items4;
     const obj4 = { size: "xs", color: token };
     const items5 = [callback3(arg1(dependencyMap[42]).PencilIcon, obj4), ];
-    const obj5 = {};
+    const obj5 = { "Null": "business", "Null": "cached", alignItems: "cancel" };
     const items6 = [tmp.ctaLabel];
     obj5.style = items6;
     const intl2 = arg1(dependencyMap[29]).intl;
@@ -235,7 +235,7 @@ function ThreadOwner(arg0) {
       tmp15 = callback3(arg1(dependencyMap[39]).RoleDot, obj2);
     }
     const items3 = [tmp15, ];
-    obj3 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: str };
+    obj3 = { cachedAt: null, edpbxy: "Array", children: str };
     items3[1] = callback3(arg1(dependencyMap[34]).Text, obj3);
     obj1.children = items3;
     return closure_44(closure_43, obj1);
@@ -600,7 +600,7 @@ function ChatBeginningRowDM(channel) {
     if (null != channel) {
       guild_id = channel.guild_id;
     }
-    tmp(id, getAvatarURL(guild_id, 80), { "Bool(false)": null, "Bool(false)": null });
+    tmp(id, getAvatarURL(guild_id, 80), { <string:2875327494>: null, <string:2591641942>: null });
   }, items3);
   let bot;
   if (null != user) {
@@ -623,7 +623,7 @@ function ChatBeginningRowDM(channel) {
   if (null == user) {
     return null;
   } else {
-    userTag = importDefault(dependencyMap[44]).getUserTag(user, { allowSnowflake: true, gay-Latn-ID: true });
+    userTag = importDefault(dependencyMap[44]).getUserTag(user, { y: true, getEventLocationIconSource: true });
     const obj20 = importDefault(dependencyMap[44]);
     const name = importDefault(dependencyMap[44]).getName(user);
     const intl5 = arg1(dependencyMap[29]).intl;
@@ -650,7 +650,7 @@ function ChatBeginningRowDM(channel) {
     const obj4 = { accessibilityRole: "button", onPress: handleCopyUserTag };
     const intl3 = arg1(dependencyMap[29]).intl;
     obj4.accessibilityHint = intl3.string(arg1(dependencyMap[29]).t.y5MwJy);
-    const obj5 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: name };
+    const obj5 = { cachedAt: "Array", edpbxy: "isArray", children: name };
     obj4.children = callback3(arg1(dependencyMap[34]).Text, obj5);
     items5[1] = callback3(arg1(dependencyMap[37]).PressableOpacity, obj4);
     let tmp25 = null;
@@ -658,7 +658,7 @@ function ChatBeginningRowDM(channel) {
       const obj6 = { accessibilityRole: "button", onPress: handleCopyUserTag };
       const intl4 = arg1(dependencyMap[29]).intl;
       obj6.accessibilityHint = intl4.string(arg1(dependencyMap[29]).t.y5MwJy);
-      const obj7 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: userTag };
+      const obj7 = { cachedAt: null, edpbxy: null, children: userTag };
       obj6.children = callback3(arg1(dependencyMap[34]).Text, obj7);
       tmp25 = callback3(arg1(dependencyMap[37]).PressableOpacity, obj6);
     }
@@ -746,7 +746,7 @@ function ChatBeginningRowDM(channel) {
         obj.onPress = handleBlock;
         if (stateFromStores === constants2.PENDING_INCOMING) {
           obj = { style: tmp.pendingIncoming };
-          const obj1 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+          const obj1 = {};
           const intl5 = channel(tmp[29]).intl;
           const obj2 = {};
           let obj8 = user(tmp[44]);
@@ -754,7 +754,7 @@ function ChatBeginningRowDM(channel) {
           obj1.children = intl5.format(channel(tmp[29]).t.uIomXw, obj2);
           const items1 = [callback(channel(tmp[34]).Text, obj1), ];
           const obj3 = { style: tmp.pendingIncomingButtons };
-          const obj4 = {};
+          const obj4 = { 0: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", 0: null };
           const intl6 = channel(tmp[29]).intl;
           obj4.text = intl6.string(channel(tmp[29]).t.+WbSn5);
           obj4.onPress = function handleAcceptFriend() {
@@ -786,7 +786,7 @@ function ChatBeginningRowDM(channel) {
           const obj7 = {};
           if (constants2.NONE === stateFromStores) {
             if (null == user) {
-              obj8 = {};
+              obj8 = { 0: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", 0: null };
               const intl4 = channel(tmp[29]).intl;
               obj8.text = intl4.string(channel(tmp[29]).t.PMsq/b);
               obj8.onPress = function handleAddFriend() {
@@ -830,7 +830,7 @@ function ChatBeginningRowDM(channel) {
           } else {
             tmp6 = null;
             if (constants2.PENDING_OUTGOING === stateFromStores) {
-              const obj11 = {};
+              const obj11 = { delete: true, apply: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", sa: null, body: "57b3286b2824f2c7cf84996c89963e3f" };
               const intl9 = channel(tmp[29]).intl;
               obj11.text = intl9.string(channel(tmp[29]).t.xMH6vD);
               obj11.onPress = undefined;
@@ -1014,38 +1014,38 @@ let closure_41 = arg1(dependencyMap[24]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const tmp4 = arg1(dependencyMap[22]);
 ({ jsx: closure_42, Fragment: closure_43, jsxs: closure_44 } = arg1(dependencyMap[25]));
 let obj = arg1(dependencyMap[26]);
-obj = { container: { -9223372036854775808: true, 0: true }, contentWrapper: { paddingHorizontal: false, accessible: false }, title: { marginTop: 16 }, subtitle: { "Bool(true)": null, "Bool(true)": null } };
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[27]).radii.lg };
+obj = { container: { useFramePreviewOverrideStore: true, explicitContentGuilds: true }, contentWrapper: { "Bool(false)": null, "Bool(false)": null }, title: { marginTop: 16 }, subtitle: {} };
+obj = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014059549379171, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009471827915, "Bool(false)": 122885184.00000012, borderRadius: importDefault(dependencyMap[27]).radii.lg };
 obj.gdmInviteFriends = obj;
-const obj1 = { "Bool(false)": -627369379159349800000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001173924286404835, "Bool(false)": 4224643331534381000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[27]).radii.lg };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[27]).radii.lg };
 obj.gdmShareInviteLink = obj1;
 obj.gdmShareInviteLinkNoRelationships = { marginTop: 16 };
 obj.ctaLabel = { marginLeft: 8 };
-obj.ctaContainer = { -9223372036854775808: null, 7741: null };
-obj.ctaButton = { "Null": 7, "Null": 370 };
+obj.ctaContainer = { "Bool(true)": null, "Bool(true)": null };
+obj.ctaButton = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.ctaAddRoles = { paddingRight: 24 };
 obj.avatar = { marginBottom: 16 };
 obj.avatarRedesign = { marginBottom: 16 };
-obj.centerHeader = { y: null, GuildThemePreviewOwner: null };
+obj.centerHeader = { space: null, TypeError: null };
 obj.gdmText = { textAlign: "center" };
-obj.dmTitle = { "Null": null, "Null": null };
+obj.dmTitle = { value: null, on: null };
 obj.dmBeginningMessage = { marginTop: 8 };
 obj.provisionalAccountExplainer = { marginTop: 12 };
-obj.mutualGuildsLabel = { flexDirection: null, backgroundColor: "127.0.0.1", padding: "https://google.com" };
-obj.mutualGuildsContainer = { headerIcons: -747089664, RowButtonIconProps: 4211, headerLabel: 4096 };
-const tmp5 = arg1(dependencyMap[25]);
-obj.iconContainer = { borderRadius: importDefault(dependencyMap[27]).radii.xxl, backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_MOD_MUTED };
+obj.mutualGuildsLabel = { "Bool(false)": null, "Bool(false)": "127.0.0.1", "Bool(false)": "https://google.com" };
+obj.mutualGuildsContainer = {};
+const obj2 = { ao: "<string:16881920>", shapes: "<string:2543931648>", ip: null, op: "manje od {{count}} minute", st: "manje od {{count}} minuta", bm: "manje od 1 minute", borderRadius: importDefault(dependencyMap[27]).radii.xxl, backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_MOD_MUTED };
+obj.iconContainer = obj2;
 obj.threadDetails = { lineHeight: 20 };
-obj.threadCreatorRoleDot = { first: 657391618, assetType: 1934688258 };
-obj.tagContainer = { "Bool(false)": -12, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": null };
-const obj3 = { "Null": 17891330, "Null": -1002126767, "Null": -167771276, "Null": -167771414, "Null": -167771414, "Null": 1912603370, borderRadius: importDefault(dependencyMap[27]).radii.round, backgroundColor: importDefault(dependencyMap[27]).colors.STATUS_POSITIVE };
+obj.threadCreatorRoleDot = { padding: null, priority: null };
+obj.tagContainer = { <string:3427919713>: null, <string:1374118325>: 8, <string:1632825022>: null, <string:1378301610>: -12 };
+const obj3 = { Text: null, a: "center", Set: "center", url: -352059390, children: -353173502, Object: -352059390, borderRadius: importDefault(dependencyMap[27]).radii.round, backgroundColor: importDefault(dependencyMap[27]).colors.STATUS_POSITIVE };
 obj.unmutedNotificationContainer = obj3;
-obj.unmutedNotification = {};
-obj.dmButtonRow = { "Null": "<string:1091687288>", "Null": "/assets/images/native", paddingHorizontal: "children must be strings", paddingBottom: "getAccessibleEmojiDisplayName", display: "<string:2302804224>" };
-obj.pendingIncoming = {};
-obj.pendingIncomingButtons = {};
+obj.unmutedNotification = { "Null": null, "Null": null };
+obj.dmButtonRow = {};
+obj.pendingIncoming = { 9223372036854775807: "<string:1126170625>", 9223372036854775807: "<string:1598160898>" };
+obj.pendingIncomingButtons = { STORE_LISTING_BUY: -12, display: null, getVoiceStateChannelSummaryFromVoiceStates: 1 };
 obj.appDMButtonIcon = { marginRight: 2 };
-obj.formCtaIcon = { "Null": false, "Null": false };
+obj.formCtaIcon = { "Null": true, "Null": true };
 let closure_45 = obj.createStyles(obj);
 function ChatBeginningRowGuildDefaultChannel(guild) {
   let canInvite;
@@ -1158,7 +1158,7 @@ function ChatBeginningRowGuildDefaultChannel(guild) {
     obj4 = {};
     const intl4 = arg1(dependencyMap[29]).intl;
     obj5 = { guideURL: combined };
-    const items4 = [-1402750382, intl4.format(arg1(dependencyMap[29]).t.UOtD32, obj5)];
+    const items4 = [false, intl4.format(arg1(dependencyMap[29]).t.UOtD32, obj5)];
     obj4.children = items4;
     tmp35 = callback4(closure_43, obj4);
   }
@@ -1192,7 +1192,7 @@ function ChatBeginningRowGuildDefaultChannel(guild) {
   obj6.children = items5;
   return callback4(React.Fragment, obj6);
 }
-const obj2 = { borderRadius: importDefault(dependencyMap[27]).radii.xxl, backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_MOD_MUTED };
+const tmp5 = arg1(dependencyMap[25]);
 const result = arg1(dependencyMap[113]).fileFinishedImporting("components_native/chat/ChatBeginningRow.tsx");
 
 export default function ChatBeginningRow(channelId) {

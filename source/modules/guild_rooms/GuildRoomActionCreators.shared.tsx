@@ -1,10 +1,10 @@
-// Module ID: 15927
-// Function ID: 122127
+// Module ID: 15935
+// Function ID: 122170
 // Name: _guildRoomConnect
 // Dependencies: []
 // Exports: createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, placePendingGuildRoomNote, selectGuildRoomLocalPosition, startPendingGuildRoomNote
 
-// Module 15927 (_guildRoomConnect)
+// Module 15935 (_guildRoomConnect)
 function _guildRoomConnect() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -74,7 +74,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const Endpoints = arg1(dependencyMap[3]).Endpoints;
-let closure_7 = {};
+let closure_7 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_rooms/GuildRoomActionCreators.shared.tsx");
 
 export const guildRoomConnect = function guildRoomConnect() {

@@ -1,9 +1,9 @@
-// Module ID: 15627
-// Function ID: 119328
+// Module ID: 15635
+// Function ID: 119371
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15627 (_createForOfIteratorHelperLoose)
+// Module 15635 (_createForOfIteratorHelperLoose)
 let SOUND_BUTTON_HEIGHT;
 let SOUND_ROW_HORIZONTAL_PADDING;
 let SOUND_ROW_SPACING;
@@ -160,14 +160,15 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ SOUND_BUTTON_HEIGHT, SOUND_ROW_SPACING } = tmp2);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const sum = SOUND_BUTTON_HEIGHT + 8;
-const tmp3 = arg1(dependencyMap[4]);
-let obj = { row: { height: sum, paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING } };
-obj = { "Null": null, "Null": null, display: null, flexDirection: null, justifyContent: null, alignItems: null, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING };
-obj.sectionHeader = obj;
+let obj1 = arg1(dependencyMap[5]);
+let obj = { row: obj };
+obj = { marginTop: "MAX_FAVORITE_GIFS_SIZE", paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING, gap: "isArrayBuffer", height: sum };
+obj1 = { flexDirection: null, marginStart: 32, marginEnd: 97, flexDirection: -6, alignItems: 0, gap: 0, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING };
+obj.sectionHeader = obj1;
 obj.sectionIcon = {};
 obj.soundButtonNotFirst = { marginLeft: SOUND_ROW_SPACING };
-let closure_10 = arg1(dependencyMap[5]).createStyles(obj);
-const obj2 = arg1(dependencyMap[5]);
+let closure_10 = obj1.createStyles(obj);
+const tmp3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function SoundboardSoundPickerListComponent(channel) {
   let categories;
   let done;
@@ -343,7 +344,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
         tmp6 = lib2(channel(closure_2[13]).PremiumUpsellGradientBackground, {});
       }
       const items = [tmp6, getSectionIcon(items1[arg0]), ];
-      obj = { 1366204667: "onDragStart", 1449395199: "j", 1689692731: "MiniaturesSpotIllustration", children: isSectionLocked(items1[arg0]) };
+      obj = { justifyContent: "Text", gap: "", width: "accessibilityLabel", children: isSectionLocked(items1[arg0]) };
       items[2] = lib2(channel(closure_2[24]).Text, obj);
       obj.children = items;
       obj.children = closure_8(closure_4, obj);

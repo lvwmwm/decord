@@ -1,10 +1,10 @@
-// Module ID: 12021
-// Function ID: 92907
+// Module ID: 12025
+// Function ID: 92933
 // Name: EmptyGuildList
 // Dependencies: []
 // Exports: default
 
-// Module 12021 (EmptyGuildList)
+// Module 12025 (EmptyGuildList)
 function EmptyGuildList() {
   const obj = { containerStyle: callback5().emptyStateContainer };
   const intl = arg1(dependencyMap[7]).intl;
@@ -110,7 +110,7 @@ export default function GuildInviteActionSheet(arg0) {
   let obj = {};
   const intl = callback(dependencyMap[7]).intl;
   obj.title = intl.string(callback(dependencyMap[7]).t.HvoZQD);
-  obj = { ind: null, PX_8: null };
+  obj = { openDisableCommunication: null, freezeEnabled: null };
   obj.header = callback3(callback(dependencyMap[15]).BottomSheetTitleHeader, obj);
   obj.contentStyles = tmp.content;
   obj = { style: tmp.searchbarWrapper };
@@ -122,7 +122,7 @@ export default function GuildInviteActionSheet(arg0) {
   const intl2 = callback(dependencyMap[7]).intl;
   obj1.placeholder = intl2.string(callback(dependencyMap[7]).t.uohsSv);
   const items = [callback3(callback(dependencyMap[17]).SearchField, obj1), ];
-  const obj2 = {};
+  const obj2 = { cachedAt: null, edpbxy: null };
   const intl3 = callback(dependencyMap[7]).intl;
   const obj3 = { xDays: importDefault(dependencyMap[18]).INVITE_OPTIONS_7_DAYS.label };
   obj2.children = intl3.format(callback(dependencyMap[7]).t.4UyUHh, obj3);

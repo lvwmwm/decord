@@ -1,22 +1,22 @@
-// Module ID: 16234
-// Function ID: 125491
+// Module ID: 16242
+// Function ID: 125533
 // Name: SafetyCheckScreen
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16234 (SafetyCheckScreen)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import closure_7 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 16242 (SafetyCheckScreen)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ Image: closure_5, View: closure_6 } = result);
-({ VerificationLevels: closure_8, GuildExplicitContentFilterTypes: closure_9 } = result);
-({ jsx: closure_10, jsxs: closure_11 } = result);
-result = result.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/SafetyCheckScreen.tsx");
+({ Image: closure_5, View: closure_6 } = __exportStarResult1);
+({ VerificationLevels: closure_8, GuildExplicitContentFilterTypes: closure_9 } = __exportStarResult1);
+({ jsx: closure_10, jsxs: closure_11 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/SafetyCheckScreen.tsx");
 
 export default function SafetyCheckScreen() {
   const ref = React.useRef(null);
@@ -55,9 +55,9 @@ export default function SafetyCheckScreen() {
     }
     obj.disableNextStep = tmp20;
     obj = { style: enableCommunitySharedStyles.content };
-    obj1 = { "Bool(false)": 2137542913, "Bool(false)": 1359050337, "Bool(false)": 507643607, "Bool(false)": 2113930363, ref };
+    obj1 = { "Bool(false)": -1480503039, "Bool(false)": 1359050337, "Bool(false)": -1136523533, "Bool(false)": 989856819, ref };
     const intl = arg1(dependencyMap[13]).intl;
-    obj1.children = intl.formatToPlainString(arg1(dependencyMap[13]).t.tInpJj, { constructor: 0, height: null });
+    obj1.children = intl.formatToPlainString(arg1(dependencyMap[13]).t.tInpJj, { "Bool(false)": 0, "Bool(false)": null });
     const items1 = [callback2(arg1(dependencyMap[12]).Text, obj1), , , ];
     obj2 = { resizeMode: "contain", source: tmp5.safetyCheck };
     items1[1] = callback2(closure_5, obj2);
@@ -65,7 +65,7 @@ export default function SafetyCheckScreen() {
     const intl2 = arg1(dependencyMap[13]).intl;
     obj3.children = intl2.string(arg1(dependencyMap[13]).t.QrjLYl);
     items1[2] = callback2(arg1(dependencyMap[12]).Heading, obj3);
-    const obj4 = { delete: true, dispatch: true, raw: true, style: enableCommunitySharedStyles.description };
+    const obj4 = { "Null": null, "Null": 3, alignItems: null, style: enableCommunitySharedStyles.description };
     const intl3 = arg1(dependencyMap[13]).intl;
     obj4.children = intl3.string(arg1(dependencyMap[13]).t.i1STwu);
     items1[3] = callback2(arg1(dependencyMap[12]).Text, obj4);

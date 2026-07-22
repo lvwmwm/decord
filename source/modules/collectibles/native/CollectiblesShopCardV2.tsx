@@ -1,9 +1,9 @@
-// Module ID: 8655
-// Function ID: 68505
+// Module ID: 8656
+// Function ID: 68517
 // Name: CollectiblesShopCardInternalV2
 // Dependencies: []
 
-// Module 8655 (CollectiblesShopCardInternalV2)
+// Module 8656 (CollectiblesShopCardInternalV2)
 let PixelRatio;
 function CollectiblesShopCardInternalV2(hidePrice) {
   let cardStyle;
@@ -205,7 +205,7 @@ function CollectiblesShopCardInternalV2(hidePrice) {
     const obj9 = {};
     const items9 = [tmp.badgePill, stateFromStores ? tmp.badgePillDarkMode : tmp.badgePillLightMode];
     obj9.style = items9;
-    obj10 = { "Null": 141689299, "Null": 33554432, "Null": 285212672, "Null": 38822721, "Null": 1602048 };
+    obj10 = {};
     let str3 = "text-overlay-light";
     if (stateFromStores) {
       str3 = "text-overlay-dark";
@@ -367,9 +367,9 @@ if (PixelRatio.getFontScale() >= 1.78) {
 }
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { 9223372036854775807: "sh", 0: 11, 0: null, 9223372036854775807: "Path 11", 9223372036854775807: "ADBE Vector Shape - Group", 0: false, 9223372036854775807: null, 0: "\u{1F9D1}\u{1F3FE}", height: num, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { 9223372036854775807: "sh", -9223372036854775808: 11, 0: null, 0: "Path 11", 9223372036854775807: "ADBE Vector Shape - Group", 0: false, 9223372036854775807: null, 9223372036854775807: "\u{1F9D1}\u{1F3FE}", height: num, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.card = obj;
-obj.topRowOverlay = { HI88Q3: true, EXPRESSION_FOOTER_HEIGHT: "#fff", sessionSampleRate: "small", errorSampleRate: "2026-04-collectibles-profile-frames-purchase", getOrCreate: "user", ITEM: "2026-03-friend-request-message", waxing_gibbous_moon: true, GYpoAq: "/assets/design/components/Icon/native/redesign/generated/images", JUMP_TO_PRESENT_BUTTON_SIZE: 24, rawSpec: 24 };
+obj.topRowOverlay = { markAt: true, CHANGE_EMAIL_COMPLETE: "#fff", selectedIcon: "small", GameDepthTier9LargeBadge: "2026-04-collectibles-profile-frames-purchase", EMOJI_PICKER_EMOJI_CLICKED: "user", alignSelf: "2025-10-low-latency-rate-control", overrideSuccessCallback: true, TABLE_ROW_LABEL_COLOR: "/assets/design/components/Icon/native/redesign/generated/images", borderColor: 24, renderImage: 24 };
 obj.badge = { flexShrink: 1 };
 obj1 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_4, paddingVertical: 1.5, borderRadius: importDefault(dependencyMap[6]).radii.round, flexShrink: 1 };
 obj.badgePill = obj1;
@@ -378,7 +378,7 @@ const tmp3 = arg1(dependencyMap[4]);
 obj.badgePillDarkMode = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
 const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
 obj.badgePillLightMode = { backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND };
-obj.wishlistButton = { 0: -720897, 9223372036854775807: 65535 };
+obj.wishlistButton = {};
 let closure_9 = obj1.createStyles(obj);
 const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND };
 const memoResult = importAllResult.memo(function CollectiblesShopCardV2(arg0) {

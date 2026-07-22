@@ -1,12 +1,12 @@
-// Module ID: 10849
-// Function ID: 84284
+// Module ID: 10850
+// Function ID: 84297
 // Name: useMessagePreviewHeightStore
 // Dependencies: []
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 10849 (useMessagePreviewHeightStore)
+// Module 10850 (useMessagePreviewHeightStore)
 const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({}));
+const obj = _module.create(() => ({ 1851909288: "%FunctionPrototype%", -362860719: "paddingStart" }));
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/media_viewer/native/useMessagePreviewHeight.tsx");
 

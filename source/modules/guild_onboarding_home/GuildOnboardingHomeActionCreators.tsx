@@ -1,10 +1,10 @@
-// Module ID: 11372
-// Function ID: 88409
+// Module ID: 11373
+// Function ID: 88422
 // Name: _fetchGuildHomeSettings
 // Dependencies: []
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11372 (_fetchGuildHomeSettings)
+// Module 11373 (_fetchGuildHomeSettings)
 function _fetchGuildHomeSettings() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);

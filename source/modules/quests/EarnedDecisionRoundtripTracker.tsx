@@ -1,9 +1,15 @@
-// Module ID: 9449
-// Function ID: 73628
+// Module ID: 9450
+// Function ID: 73641
 // Name: trackRoundtrip
-// Dependencies: []
+// Dependencies: [31, 4113, 4199, 653, 6925, 6974, 9468, 5643, 4117]
 
-// Module 9449 (trackRoundtrip)
+// Module 9450 (trackRoundtrip)
+import module_31 from "module_31";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import CodedLinkType from "CodedLinkType";
+
 function trackRoundtrip(apiResponseTimestamp) {
   if (Math.random() <= 0.1) {
     let diff = null;
@@ -33,14 +39,10 @@ function trackRoundtrip(apiResponseTimestamp) {
     const obj5 = arg1(dependencyMap[7]);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 let tmp2 = () => {
   class EarnedDecisionRoundtripTracker {
     constructor() {
-      tmp = closure_3(this, EarnedDecisionRoundtripTracker);
+      tmp = module_31(this, EarnedDecisionRoundtripTracker);
       map = new Map();
       this.pendingRequests = map;
       return;
@@ -51,7 +53,7 @@ let tmp2 = () => {
     key: "recordEarnedRequestAttempt",
     value(arg0, callerSource) {
       const EarnedDecisionRoundtripTracker = this;
-      const obj = { <string:1245880232>: false, <string:1275069486>: false, <string:1526727829>: 49253888, <string:276825862>: 49553152, <string:118818459>: 49253376, <string:123535643>: 49548032, <string:2351468194>: 49250560, initialSendTimestamp: Date.now(), callerSource };
+      const obj = { "Bool(false)": 28945, "Bool(false)": -449773568, "Bool(false)": -103079216, "Bool(false)": 1900010110, "Bool(false)": 3, "Bool(false)": -877548462, "Bool(false)": 618889, initialSendTimestamp: Date.now(), callerSource };
       const pendingRequests = this.pendingRequests;
       const result = pendingRequests.set(arg0, obj);
       const timerId = setTimeout(() => {
@@ -98,6 +100,6 @@ let tmp2 = () => {
   return callback(EarnedDecisionRoundtripTracker, items);
 }();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/EarnedDecisionRoundtripTracker.tsx");
+const result = CodedLinkType.fileFinishedImporting("modules/quests/EarnedDecisionRoundtripTracker.tsx");
 
 export default tmp2;

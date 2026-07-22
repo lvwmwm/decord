@@ -1,5 +1,5 @@
 // Module ID: 4645
-// Function ID: 40304
+// Function ID: 40312
 // Name: AnnouncementsSpoilerIcon
 // Dependencies: []
 // Exports: AnnouncementsSpoilerIcon

@@ -1,14 +1,14 @@
-// Module ID: 15326
-// Function ID: 116622
+// Module ID: 15334
+// Function ID: 116665
 // Name: MediaKeyboardBackground
 // Dependencies: []
 
-// Module 15326 (MediaKeyboardBackground)
+// Module 15334 (MediaKeyboardBackground)
 function MediaKeyboardBackground(arg0) {
   let pointerEvents;
   let style;
   ({ pointerEvents, style } = arg0);
-  const obj = { -9223372036854775808: "row", 9223372036854775807: "center", 0: "hidden", pointerEvents };
+  const obj = { aspectRatio: true, flexShrink: "/assets/design/components/Icon/native/redesign/generated/images", GifAutoPlay: 24, pointerEvents };
   const intl = arg1(dependencyMap[10]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.XONG6A);
   const items = [style, callback3().background];

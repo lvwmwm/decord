@@ -1,13 +1,13 @@
-// Module ID: 15196
-// Function ID: 114662
+// Module ID: 15204
+// Function ID: 114705
 // Dependencies: []
 
-// Module 15196
+// Module 15204
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ header: { "Null": null, "Null": 16, "Null": 8, "Null": "heading-sm/normal" }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { SDK_VERSION: null, numberOfLines: null }, headerControlsRight: { 1425118705: true, 2144434981: null }, suggestionsAnchor: { height: 0 }, suggestions: {}, suggestionsWithBackButton: { left: -28 } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ header: { <string:4138288979>: null, <string:1685970655>: 16, <string:2493557563>: 8, <string:1407571810>: "heading-sm/normal" }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" }, headerControlsRight: { accessibilityRole: "Array", rejectWithError: "isArray" }, suggestionsAnchor: { height: 0 }, suggestions: {}, suggestionsWithBackButton: { left: -28 } });
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) => {
   let backButton;

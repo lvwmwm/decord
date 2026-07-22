@@ -1,5 +1,5 @@
 // Module ID: 6345
-// Function ID: 50439
+// Function ID: 50450
 // Name: NitroRubyBadgeLargeBadge
 // Dependencies: []
 // Exports: NitroRubyBadgeLargeBadge

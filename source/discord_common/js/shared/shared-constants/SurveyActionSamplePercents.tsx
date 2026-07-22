@@ -1,10 +1,10 @@
-// Module ID: 9274
-// Function ID: 72485
+// Module ID: 9275
+// Function ID: 72498
 // Name: SURVEY_ACTION_SAMPLE_PERCENTS
 // Dependencies: []
 
-// Module 9274 (SURVEY_ACTION_SAMPLE_PERCENTS)
+// Module 9275 (SURVEY_ACTION_SAMPLE_PERCENTS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionSamplePercents.tsx");
 
-export const SURVEY_ACTION_SAMPLE_PERCENTS = { "Null": "ba11c4394297d005e32400d962515cfe", "Null": "wumpus-luigi", "Null": "png", paddingHorizontal: true, display: "/assets/images/native/wumpus", justifyContent: 84, overflow: 66, backgroundColor: null, alignItems: "1f7ad1fdc74f906f486dc69b445bb809", justifyContent: "wumpus-wump", illustration: "png", title: true };
+export const SURVEY_ACTION_SAMPLE_PERCENTS = { 0: "ba11c4394297d005e32400d962515cfe", 0: "wumpus-luigi", -9223372036854775808: "png", 9223372036854775807: true, 9223372036854775807: "/assets/images/native/wumpus", 9223372036854775807: 84, 0: 66, 0: null, 0: "1f7ad1fdc74f906f486dc69b445bb809", 9223372036854775807: "wumpus-wump", 0: "png", 0: true };

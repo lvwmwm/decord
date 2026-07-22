@@ -1,10 +1,10 @@
-// Module ID: 9175
-// Function ID: 71872
+// Module ID: 9176
+// Function ID: 71885
 // Name: setChangeEmailError
 // Dependencies: []
 // Exports: resetChangeEmailStore, setEmailToken, useChangeEmailError
 
-// Module 9175 (setChangeEmailError)
+// Module 9176 (setChangeEmailError)
 function setChangeEmailError(arg0, arg1) {
   const require = arg0;
   const dependencyMap = arg1;
@@ -17,7 +17,7 @@ function setChangeEmailError(arg0, arg1) {
     return obj;
   }));
 }
-let closure_2 = { "Bool(true)": "o", "Bool(true)": "o" };
+let closure_2 = { sectionsId: "o", sectionStart: "o" };
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => closure_2);
 const _module1 = require(dependencyMap[2]);

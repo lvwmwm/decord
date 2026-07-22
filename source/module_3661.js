@@ -10,8 +10,8 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": "600", "Bool(false)": 16 }, defaultWidth: "full" });
-obj.time = obj.default({ formats: {}, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Null": true, "Null": null, "Null": null, "Null": null }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Null": "<string:58065408>", "Null": "<string:3299164672>", "Null": "<string:1979777027>", "Null": "<string:2051145731>" }, defaultWidth: "full" });
 obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 
 export default obj;

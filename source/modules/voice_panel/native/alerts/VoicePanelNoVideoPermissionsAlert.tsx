@@ -1,10 +1,10 @@
-// Module ID: 15749
-// Function ID: 120437
+// Module ID: 15757
+// Function ID: 120480
 // Name: VoicePanelNoVideoPermissionsAlert
 // Dependencies: []
 // Exports: default
 
-// Module 15749 (VoicePanelNoVideoPermissionsAlert)
+// Module 15757 (VoicePanelNoVideoPermissionsAlert)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoVideoPermissionsAlert.tsx");

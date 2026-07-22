@@ -1,10 +1,10 @@
-// Module ID: 12917
-// Function ID: 98495
+// Module ID: 12924
+// Function ID: 98528
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 12917 (EmptyState)
+// Module 12924 (EmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_2, Image: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -13,8 +13,8 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.emptyImage = { "Bool(false)": -934215679, "Bool(false)": 356585860, "Bool(false)": 16777567 };
-obj.emptyTitle = { 1375418978: "MASTERPASS_INVALID_PAYMENT_OPTION", 1415643904: "Masterpass payment options are invalid." };
+obj.emptyImage = { <string:3260278625>: "<string:1358954855>", <string:3047011082>: "<string:1091667159>", <string:1006331037>: "/assets/design/components/LottieIcon/native/generated/lotties" };
+obj.emptyTitle = {};
 obj.emptyBody = {};
 let closure_6 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
@@ -53,7 +53,7 @@ export default function EmptyState(Illustration) {
   let tmp14 = null;
   ({ children, bodyStyle } = Illustration);
   if (null != title) {
-    obj1 = { 1448895712: null, -1135386053: null, 833392556: null };
+    obj1 = { 0: "EmojiSourceDataTypes", -9223372036854775808: "roleImage", 9223372036854775807: "viewBoxSize" };
     const items4 = [tmp.emptyTitle, tmp11];
     obj1.style = items4;
     obj1.children = title;
@@ -62,7 +62,7 @@ export default function EmptyState(Illustration) {
   items3[1] = tmp14;
   let tmp18 = null;
   if (null != body) {
-    const obj2 = {};
+    const obj2 = { 0: "FrameEffect_02-4_Out", -9223372036854775808: 0, 9223372036854775807: 24.881 };
     const items5 = [tmp.emptyBody, bodyStyle];
     obj2.style = items5;
     obj2.children = body;

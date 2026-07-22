@@ -1,10 +1,10 @@
-// Module ID: 11024
-// Function ID: 85831
+// Module ID: 11025
+// Function ID: 85844
 // Name: ClassificationEvidence
 // Dependencies: []
 // Exports: default
 
-// Module 11024 (ClassificationEvidence)
+// Module 11025 (ClassificationEvidence)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, findNodeHandle: closure_6, Image: closure_7, ActivityIndicator: closure_8 } = arg1(dependencyMap[2]));
@@ -19,7 +19,7 @@ const tmp3 = arg1(dependencyMap[6]);
 let importDefaultResult = importDefault(dependencyMap[9]);
 importDefaultResult = new importDefaultResult();
 const tmp4 = arg1(dependencyMap[8]);
-let closure_21 = arg1(dependencyMap[10]).createStyles({ dummyVideoAttachments: { "Null": -536870861, "Null": -299892737 } });
+let closure_21 = arg1(dependencyMap[10]).createStyles({ dummyVideoAttachments: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } });
 const obj = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
 
@@ -230,7 +230,7 @@ export default function ClassificationEvidence(arg0) {
     obj4.channel_id = "1";
     obj4.type = MessageTypes.DEFAULT;
     if (null == stateFromStores) {
-      const obj5 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, username: stateFromStores1 };
+      const obj5 = { 1654780497: "r", -28202154: "SubscriptionPlatform", 1387815280: "Array", username: stateFromStores1 };
       stateFromStores = obj5;
     }
     obj4.author = stateFromStores;

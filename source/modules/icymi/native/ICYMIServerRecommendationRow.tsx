@@ -1,10 +1,10 @@
-// Module ID: 15121
-// Function ID: 114108
+// Module ID: 15129
+// Function ID: 114151
 // Name: CutoutGuildBanner
 // Dependencies: []
 // Exports: ICYMIServerRecommendationRow
 
-// Module 15121 (CutoutGuildBanner)
+// Module 15129 (CutoutGuildBanner)
 function CutoutGuildBanner(guild) {
   guild = guild.guild;
   const arg1 = guild;
@@ -72,7 +72,7 @@ function FeaturedServer(guild) {
   obj = { style: tmp.featuredServerContainer };
   const items2 = [callback3(CutoutGuildBanner, { guild }), , ];
   obj = { style: tmp.featuredServerInnerContainer };
-  const obj1 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "get", "Bool(false)": "concat", "Bool(false)": "Array", style: tmp.featuredServerTitle, children: guild.name };
+  const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": "<string:25015040>", style: tmp.featuredServerTitle, children: guild.name };
   const items3 = [callback3(arg1(dependencyMap[21]).Text, obj1), callback3(arg1(dependencyMap[21]).Text, { children: guild.description })];
   obj.children = items3;
   items2[1] = callback4(View, obj);
@@ -141,7 +141,7 @@ let closure_17 = arg1(dependencyMap[9]).createICYMIStyles((marginHorizontal) => 
   const obj3 = { position: "absolute", bottom: importDefault(dependencyMap[10]).space.PX_12, left: importDefault(dependencyMap[10]).space.PX_12, right: importDefault(dependencyMap[10]).space.PX_12 };
   obj.featuredServerTitle = { marginBottom: importDefault(dependencyMap[10]).space.PX_8 };
   obj.guildIcon = {};
-  obj.bannerImage = { y: true, isArray: true };
+  obj.bannerImage = { hideWhenScrolling: true, autoCapitalize: true };
   const obj4 = { marginBottom: importDefault(dependencyMap[10]).space.PX_8 };
   obj.emptyBanner = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE };
   const obj5 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE };
@@ -160,11 +160,11 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
   if (0 !== stateFromStoresArray.length) {
     obj = {};
     obj = { style: tmp.container };
-    const obj1 = { delete: true, dispatch: true, raw: true, style: tmp.title };
+    const obj1 = { "Null": -43.296, "Null": 4, alignItems: "score", style: tmp.title };
     const intl = arg1(dependencyMap[19]).intl;
     obj1.children = intl.string(arg1(dependencyMap[19]).t.lv1tce);
     const items1 = [callback3(arg1(dependencyMap[21]).Text, obj1), , ];
-    const obj2 = { delete: 23929153, dispatch: 569860352, raw: -389857007, style: tmp.subtitle };
+    const obj2 = { "Null": 26053697, "Null": 569860352, alignItems: -391954159, style: tmp.subtitle };
     const intl2 = arg1(dependencyMap[19]).intl;
     obj2.children = intl2.string(arg1(dependencyMap[19]).t.x4OezN);
     items1[1] = callback3(arg1(dependencyMap[21]).Text, obj2);

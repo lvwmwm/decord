@@ -1,5 +1,5 @@
 // Module ID: 6665
-// Function ID: 51367
+// Function ID: 51378
 // Name: PremiumPlanActionSheetHeader
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp4 = arg1(dependencyMap[4]);
 const items = [{ scaleX: -1 }];
-let closure_9 = arg1(dependencyMap[5]).createStyles({ header: {}, logoContainer: {}, imgWumpus: {}, imgWumpusRight: { transform: items }, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ header: { "Null": 16777216, "Null": 82467137, x: 858853632 }, logoContainer: {}, imgWumpus: {}, imgWumpusRight: { transform: items }, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/premium/native/PremiumPlanActionSheetHeader.tsx");
 

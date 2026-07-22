@@ -1,10 +1,10 @@
-// Module ID: 9253
-// Function ID: 72304
+// Module ID: 9254
+// Function ID: 72317
 // Name: SMSBackupWarningAlert
 // Dependencies: []
 // Exports: default
 
-// Module 9253 (SMSBackupWarningAlert)
+// Module 9254 (SMSBackupWarningAlert)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -27,7 +27,7 @@ export default function SMSBackupWarningAlert(onConfirm) {
   obj.onCancel = function onCancel() {
     return callback(closure_2[5]).close();
   };
-  obj = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
+  obj = { style: tmp.title };
   const intl3 = arg1(dependencyMap[4]).intl;
   obj.children = intl3.string(arg1(dependencyMap[4]).t.Ed4XQB);
   const items = [callback(arg1(dependencyMap[6]).Text, obj), ];

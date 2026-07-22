@@ -13,7 +13,7 @@ const fn = function t(moment) {
     weekdaysShort: "\u0E2D\u0E32\u0E17\u0E34\u0E15\u0E22\u0E4C_\u0E08\u0E31\u0E19\u0E17\u0E23\u0E4C_\u0E2D\u0E31\u0E07\u0E04\u0E32\u0E23_\u0E1E\u0E38\u0E18_\u0E1E\u0E24\u0E2B\u0E31\u0E2A_\u0E28\u0E38\u0E01\u0E23\u0E4C_\u0E40\u0E2A\u0E32\u0E23\u0E4C".split("_"),
     weekdaysMin: "\u0E2D\u0E32._\u0E08._\u0E2D._\u0E1E._\u0E1E\u0E24._\u0E28._\u0E2A.".split("_"),
     weekdaysParseExact: true,
-    longDateFormat: {},
+    longDateFormat: { "Bool(true)": "<string:18743298>", "Bool(true)": "<string:3967221763>", "Bool(true)": "<string:1022492674>", "Bool(true)": "<string:32833538>", "Bool(true)": "<string:712900609>", "Bool(true)": "<string:3974692867>" },
     meridiemParse: /ก่อนเที่ยง|หลังเที่ยง/,
     isPM(arg0) {
       return "\u0E2B\u0E25\u0E31\u0E07\u0E40\u0E17\u0E35\u0E48\u0E22\u0E07" === arg0;
@@ -26,7 +26,7 @@ const fn = function t(moment) {
       return str;
     },
     calendar: {},
-    relativeTime: {}
+    relativeTime: { COZY_DRAWER: null, rootContainer: null, imgWumpus: null, VoicePanelPIPModes: null, textAlign: null, st: null, registerAsset: null, then: null, httpServerLocation: null, application: null, Reflect: null, keys: null, uri: null, Set: null }
   });
 };
 if ("object" === typeof exports) {
@@ -38,7 +38,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

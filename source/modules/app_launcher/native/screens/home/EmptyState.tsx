@@ -1,16 +1,16 @@
-// Module ID: 11220
-// Function ID: 87380
+// Module ID: 11221
+// Function ID: 87393
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 11220 (EmptyState)
+// Module 11221 (EmptyState)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { "Bool(false)": "mentionChannelName", "Bool(false)": "%Math%", "Bool(false)": "SET_GUILD_MEMBER", "Bool(false)": "StretchOutY", "Bool(false)": "StretchOutY", "Bool(false)": "stopCallback", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.container = obj;
 obj.textContainer = { textAlign: "center" };
 let closure_6 = obj.createStyles(obj);
@@ -23,7 +23,7 @@ export default function EmptyState() {
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[6]).AppLauncherEmptyStateType.HOME_EMPTY);
   obj = { style: tmp.container };
   const items = [callback(importDefault(dependencyMap[7]), {}), ];
-  obj = { delete: "contain", dispatch: 8, raw: 4, style: tmp.textContainer };
+  obj = { "Null": "<string:1895908587>", "Null": "r", alignItems: "<string:44592193>", style: tmp.textContainer };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.V7+xhH);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);

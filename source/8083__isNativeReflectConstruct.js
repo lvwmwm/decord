@@ -1,5 +1,5 @@
 // Module ID: 8083
-// Function ID: 64099
+// Function ID: 64109
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -99,6 +99,6 @@ const tmp3 = (arg0) => {
   return callback(SvgImage, items);
 }(importDefault(dependencyMap[11]));
 tmp3.displayName = "Image";
-tmp3.defaultProps = { "Null": "r", "Null": "isArray", "Null": "accessibilityRole", "Null": "create", "Null": "registerAsset" };
+tmp3.defaultProps = {};
 
 export default tmp3;

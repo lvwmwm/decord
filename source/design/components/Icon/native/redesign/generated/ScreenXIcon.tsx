@@ -1,10 +1,10 @@
-// Module ID: 15747
-// Function ID: 120426
+// Module ID: 15755
+// Function ID: 120469
 // Name: ScreenXIcon
 // Dependencies: []
 // Exports: ScreenXIcon
 
-// Module 15747 (ScreenXIcon)
+// Module 15755 (ScreenXIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ScreenXIcon.tsx");

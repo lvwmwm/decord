@@ -1,9 +1,9 @@
-// Module ID: 14672
-// Function ID: 110639
+// Module ID: 14680
+// Function ID: 110682
 // Name: context
 // Dependencies: []
 
-// Module 14672 (context)
+// Module 14680 (context)
 const importAllResult = importAll(dependencyMap[0]);
 const obj = {};
 const Gesture = arg1(dependencyMap[1]).Gesture;

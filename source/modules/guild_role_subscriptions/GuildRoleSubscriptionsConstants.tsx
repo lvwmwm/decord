@@ -1,16 +1,16 @@
-// Module ID: 13973
-// Function ID: 106199
+// Module ID: 13980
+// Function ID: 106239
 // Name: MAX_SUBSCRIPTION_TIERS
 // Dependencies: []
 
-// Module 13973 (MAX_SUBSCRIPTION_TIERS)
+// Module 13980 (MAX_SUBSCRIPTION_TIERS)
 const SubscriptionIntervalTypes = require(dependencyMap[0]).SubscriptionIntervalTypes;
 let obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 1 };
 const items = [obj, ];
 obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 };
 items[1] = obj;
 const combined = "https://" + require(dependencyMap[1]).PRIMARY_DOMAIN + "/creators";
-const frozen = Object.freeze({ "Null": null, "Null": "d415e9ae6db962a437b5c21e64fa1fc3", "Null": "ThemeMidnightIcon" });
+const frozen = Object.freeze({ "Bool(true)": null, "Bool(true)": "d415e9ae6db962a437b5c21e64fa1fc3", "Bool(true)": "ThemeMidnightIcon" });
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx");
 

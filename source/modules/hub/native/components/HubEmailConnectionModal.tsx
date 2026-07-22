@@ -1,10 +1,10 @@
-// Module ID: 11750
-// Function ID: 91238
+// Module ID: 11751
+// Function ID: 91251
 // Name: getScreens
 // Dependencies: []
 // Exports: HubEmailConnectionScreen, default
 
-// Module 11750 (getScreens)
+// Module 11751 (getScreens)
 function getScreens(pop) {
   let obj = arg1(dependencyMap[5]);
   if (arg1) {
@@ -81,8 +81,8 @@ function getScreens(pop) {
     }
   };
   const obj2 = {
-    1388296529: null,
-    -805977770: null,
+    type: "<string:1040334421>",
+    text: "<string:1040334338>",
     render(arg0) {
       const merged = Object.assign(arg0);
       return callback2(callback(closure_2[13]), {});

@@ -1,14 +1,10 @@
 // Module ID: 4094
-// Function ID: 33906
+// Function ID: 33908
 // Name: removeInAppBrowserCloseSubscription
-// Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: []
 // Exports: browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
 // Module 4094 (removeInAppBrowserCloseSubscription)
-import result from "result";
-import result from "result";
-import result from "result";
-
 let NativeModules;
 function removeInAppBrowserCloseSubscription() {
   if (null != closure_8) {
@@ -22,9 +18,11 @@ function getBrowserManagerIsChromeInstalled() {
 function getBrowserManagerSelectedBrowser() {
   return store.getState().selectedBrowser;
 }
-({ AppState: closure_3, NativeEventEmitter: closure_4, NativeModules } = result);
+const _module = require(dependencyMap[0]);
+({ AppState: closure_3, NativeEventEmitter: closure_4, NativeModules } = _module);
 const BrowserManager = NativeModules.BrowserManager;
-let closure_7 = result.create(() => {
+const _module1 = require(dependencyMap[1]);
+let closure_7 = _module1.create(() => {
   const obj = {};
   if (obj2.isAndroid()) {
     let isChromeInstalled = importDefault(dependencyMap[3]).getConstants().isChromeInstalled;
@@ -53,7 +51,8 @@ let closure_7 = result.create(() => {
   return obj;
 });
 let closure_8 = null;
-result = result.fileFinishedImporting("modules/links/native/BrowserManager.tsx");
+const _module2 = require(dependencyMap[7]);
+const result = _module2.fileFinishedImporting("modules/links/native/BrowserManager.tsx");
 
 export const useBrowserManagerIsChromeInstalled = function useBrowserManagerIsChromeInstalled() {
   return store((isChromeInstalled) => isChromeInstalled.isChromeInstalled);

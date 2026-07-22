@@ -1,18 +1,18 @@
-// Module ID: 14834
-// Function ID: 111791
+// Module ID: 14842
+// Function ID: 111834
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
 // Dependencies: []
 
-// Module 14834 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 14842 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Bool(false)": true, "Bool(false)": "mobile-text-heading-primary", "Bool(false)": null, padding: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+obj1 = { left: "password", right: "email", accessible: "name-prefix", marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.containerImage = obj1;
 obj.image = {};
 const tmp3 = arg1(dependencyMap[2]);
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       obj2 = current;
     }
     if (!tmp2) {
-      obj = { screen: "add-friends", params: { backgroundColor: null, width: null } };
+      obj = { screen: "add-friends", params: { height: false, flexDirection: false } };
       obj2.navigate("friends", obj);
     }
   }, []);
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
   const intl = arg1(dependencyMap[8]).intl;
   obj1.children = intl.string(arg1(dependencyMap[8]).t.8JZof8);
   items[1] = callback(arg1(dependencyMap[7]).Heading, obj1);
-  const obj2 = { style: tmp.body };
+  const obj2 = { margin: "row", paddingHorizontal: "center", height: "visible", alignItems: 2, style: tmp.body };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[8]).t.qm+H7x);
   items[2] = callback(arg1(dependencyMap[7]).Text, obj2);

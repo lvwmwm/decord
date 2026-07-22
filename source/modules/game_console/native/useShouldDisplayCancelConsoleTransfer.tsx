@@ -1,10 +1,10 @@
-// Module ID: 15727
-// Function ID: 120312
+// Module ID: 15735
+// Function ID: 120355
 // Name: shouldDisplayCancel
 // Dependencies: []
 // Exports: default
 
-// Module 15727 (shouldDisplayCancel)
+// Module 15735 (shouldDisplayCancel)
 function shouldDisplayCancel(startedAt) {
   let tmp = null != startedAt;
   if (tmp) {

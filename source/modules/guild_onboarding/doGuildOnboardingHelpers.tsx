@@ -1,10 +1,10 @@
-// Module ID: 5332
-// Function ID: 45430
+// Module ID: 5059
+// Function ID: 43840
 // Name: waitForOnboardingCompletion
 // Dependencies: []
 // Exports: waitForOnboardingCompletion
 
-// Module 5332 (waitForOnboardingCompletion)
+// Module 5059 (waitForOnboardingCompletion)
 let closure_3 = importDefault(dependencyMap[0]);
 const GuildMemberFlags = arg1(dependencyMap[1]).GuildMemberFlags;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_onboarding/doGuildOnboardingHelpers.tsx");

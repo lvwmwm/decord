@@ -1,10 +1,10 @@
-// Module ID: 15734
-// Function ID: 120345
+// Module ID: 15742
+// Function ID: 120388
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15734 (_createForOfIteratorHelperLoose)
+// Module 15742 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -181,7 +181,7 @@ export default function useControlsButtons() {
         items.push(obj2);
       }
       if (tmp) {
-        const obj3 = { "Bool(false)": "shelfItem", "Bool(false)": "NATIVE_REQUIRED_ASSETS_ICONS", render: redux.ptt };
+        const obj3 = { "Bool(false)": "ACCESS_MEDIA_LOCATION", "Bool(false)": "CONNECTIONS_STEP", render: redux.ptt };
         items.push(obj3);
       }
       if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
@@ -191,7 +191,7 @@ export default function useControlsButtons() {
         const obj5 = { render: redux.soundboard };
         items.push(obj5);
       }
-      const obj6 = { "Bool(false)": "<string:3174913>", "Bool(false)": "isFetchingFriendsForGuild", render: redux.disconnectCancel };
+      const obj6 = { "Bool(false)": "<string:3174913>", "Bool(false)": "gymnaste", render: redux.disconnectCancel };
       items.push(obj6);
     } else {
       obj = { render: redux.mic };

@@ -1,10 +1,10 @@
-// Module ID: 15279
-// Function ID: 115364
+// Module ID: 15287
+// Function ID: 115407
 // Name: snowballStem
 // Dependencies: []
 // Exports: snowballStem
 
-// Module 15279 (snowballStem)
+// Module 15287 (snowballStem)
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.newStemmer("english");
 const _module1 = require(dependencyMap[1]);

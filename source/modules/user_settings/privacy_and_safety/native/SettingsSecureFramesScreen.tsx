@@ -1,10 +1,10 @@
-// Module ID: 14394
-// Function ID: 108599
+// Module ID: 14402
+// Function ID: 108642
 // Name: UserListItem
 // Dependencies: []
 // Exports: default
 
-// Module 14394 (UserListItem)
+// Module 14402 (UserListItem)
 function UserListItem(userId) {
   let end;
   let start;
@@ -83,7 +83,7 @@ function SettingsSecureFramesFooter() {
   let tmp6 = null;
   if (0 !== secureFramesVerifiedUserIds.length) {
     obj = { style: tmp.list };
-    obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+    obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
     const intl = arg1(dependencyMap[15]).intl;
     obj.children = intl.string(arg1(dependencyMap[15]).t.5b3FNI);
     const items2 = [callback(arg1(dependencyMap[20]).Text, obj), , ];
@@ -93,7 +93,7 @@ function SettingsSecureFramesFooter() {
     const obj3 = { keyExtractor, getItemType, renderItem, data: tmp5 };
     obj1.children = callback(arg1(dependencyMap[21]).FlashList, obj3);
     items2[1] = callback(View, obj1);
-    const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    const obj4 = { cachedAt: true, edpbxy: true };
     const intl2 = arg1(dependencyMap[15]).intl;
     const obj5 = { helpArticle: arg1(dependencyMap[23]).getSecureFramesVerifiedDevicesHelpdeskArticle() };
     obj4.children = intl2.format(arg1(dependencyMap[15]).t.7w9ymD, obj5);
@@ -126,11 +126,11 @@ export default function SettingsSecureFramesScreen() {
   const tmp = callback3();
   let obj = { style: tmp.container };
   obj = { style: tmp.header };
-  obj = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
+  obj = {};
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.string(arg1(dependencyMap[15]).t.9Q/PQv);
   const items = [callback(arg1(dependencyMap[20]).Text, obj), ];
-  const obj1 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+  const obj1 = {};
   const intl2 = arg1(dependencyMap[15]).intl;
   const obj2 = { helpArticle: arg1(dependencyMap[23]).getSecureFramesHelpdeskArticle() };
   obj1.children = intl2.format(arg1(dependencyMap[15]).t.8IwQfG, obj2);

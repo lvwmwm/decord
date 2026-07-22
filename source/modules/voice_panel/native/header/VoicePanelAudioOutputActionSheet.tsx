@@ -1,9 +1,9 @@
-// Module ID: 8855
-// Function ID: 69865
+// Module ID: 8856
+// Function ID: 69878
 // Name: closeActionSheet
 // Dependencies: []
 
-// Module 8855 (closeActionSheet)
+// Module 8856 (closeActionSheet)
 function closeActionSheet() {
   importDefault(dependencyMap[10]).hideActionSheet(closure_9);
 }
@@ -179,7 +179,7 @@ let closure_9 = arg1(dependencyMap[6]).VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY
 const PlatformTypes = arg1(dependencyMap[7]).PlatformTypes;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp2 = arg1(dependencyMap[8]);
-let closure_13 = arg1(dependencyMap[9]).createStyles({ sectionContainer: { size: "SECURE_FRAMES_SETTINGS_UPDATE", progress: false } });
+let closure_13 = arg1(dependencyMap[9]).createStyles({ sectionContainer: { y: "SECURE_FRAMES_SETTINGS_UPDATE", channelId: false } });
 const obj2 = arg1(dependencyMap[9]);
 const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionSheet(arg0) {
   let isConnectedToVoiceChannel;

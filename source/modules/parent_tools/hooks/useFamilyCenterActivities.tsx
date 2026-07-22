@@ -1,10 +1,10 @@
-// Module ID: 13676
-// Function ID: 103541
+// Module ID: 13683
+// Function ID: 103574
 // Name: useActionTotalsForDisplayType
 // Dependencies: []
 // Exports: useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 13676 (useActionTotalsForDisplayType)
+// Module 13683 (useActionTotalsForDisplayType)
 function useActionTotalsForDisplayType(displayType) {
   const arg1 = displayType;
   const items = [closure_2];

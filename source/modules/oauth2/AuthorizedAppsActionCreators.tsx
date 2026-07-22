@@ -1,9 +1,9 @@
-// Module ID: 5470
-// Function ID: 46729
+// Module ID: 5469
+// Function ID: 46737
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 5470 (_createForOfIteratorHelperLoose)
+// Module 5469 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -124,7 +124,7 @@ async function _fetchAuthorizedApps(applicationIds, arg1) {
   obj.request = obj1;
   obj.dispatch(obj);
   const HTTP = applicationIds(closure_2[5]).HTTP;
-  const obj2 = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: OAUTH2_TOKENS.OAUTH2_TOKENS, query: { application_ids: applicationIds } };
+  const obj2 = { y: null, isArray: null, accessible: null, url: OAUTH2_TOKENS.OAUTH2_TOKENS, query: { application_ids: applicationIds } };
   const value = HTTP.get(obj2);
   yield value.then((body) => {
     let obj = callback(closure_2[4]);
@@ -164,7 +164,7 @@ export default {
   delete(arg0) {
     const arg1 = this;
     const HTTP = arg1(dependencyMap[5]).HTTP;
-    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: Endpoints.OAUTH2_TOKEN(arg0) };
+    const obj = { y: null, isArray: null, accessible: null, url: Endpoints.OAUTH2_TOKEN(arg0) };
     HTTP.del(obj).then(() => {
       const response = self.fetch();
     });

@@ -1,10 +1,10 @@
-// Module ID: 11206
-// Function ID: 87249
+// Module ID: 11207
+// Function ID: 87262
 // Name: useBottomSheetFlashListBottomViewabilityInset
 // Dependencies: []
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11206 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 11207 (useBottomSheetFlashListBottomViewabilityInset)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = { code: "function useBottomSheetFlashListBottomViewabilityInsetTsx1(){const{bottomSheetPosition}=this.__closure;var _bottomSheetPosition$,_bottomSheetPosition;return(_bottomSheetPosition$=(_bottomSheetPosition=bottomSheetPosition)===null||_bottomSheetPosition===void 0?void 0:_bottomSheetPosition.get())!==null&&_bottomSheetPosition$!==void 0?_bottomSheetPosition$:0;}" };
 let closure_5 = { code: "function useBottomSheetFlashListBottomViewabilityInsetTsx2(sheetPosition){const{distanceBetweenExpandedScreenTopAndSheetTop,runOnJS,handleBottomViewabilityInsetDebounced}=this.__closure;const bottomViewabilityInset=sheetPosition-distanceBetweenExpandedScreenTopAndSheetTop;runOnJS(handleBottomViewabilityInsetDebounced)(bottomViewabilityInset);}" };

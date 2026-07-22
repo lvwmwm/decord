@@ -1,10 +1,10 @@
-// Module ID: 16330
-// Function ID: 126032
+// Module ID: 16338
+// Function ID: 126074
 // Name: BaseBenefitRow
 // Dependencies: []
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 16330 (BaseBenefitRow)
+// Module 16338 (BaseBenefitRow)
 function BaseBenefitRow(isInteractive) {
   let children;
   let contentStyle;
@@ -69,7 +69,7 @@ function ChannelBenefitRow(benefit) {
     channelIcon = obj1.getChannelIcon(channelWithTemplateFallback);
   }
   if (null == channelWithTemplateFallback) {
-    obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+    obj = {};
     const intl = arg1(dependencyMap[13]).intl;
     const _HermesInternal = HermesInternal;
     obj.children = "[" + intl.string(arg1(dependencyMap[13]).t.bz1PZX) + "]";
@@ -79,7 +79,7 @@ function ChannelBenefitRow(benefit) {
     obj1 = { style: tmp.channelRow };
     const obj2 = { style: tmp.channelIcon, size: arg1(dependencyMap[6]).Icon.Sizes.CUSTOM, source: channelIcon };
     const items = [callback(arg1(dependencyMap[6]).Icon, obj2), ];
-    const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: tmp3 };
+    const obj3 = { children: tmp3 };
     items[1] = callback(arg1(dependencyMap[8]).Text, obj3);
     obj1.children = items;
     obj.children = callback2(View, obj1);
@@ -90,7 +90,7 @@ function ChannelBenefitRow(benefit) {
 function IntangibleBenefitRow(benefit) {
   benefit = benefit.benefit;
   let obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: callback(arg1(dependencyMap[8]).Text, obj) };
-  obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: benefit.name };
+  obj = { children: benefit.name };
   return callback(DescriptiveBenefitRow, obj);
 }
 function EmojiBenefitRow(benefit) {
@@ -100,12 +100,11 @@ function EmojiBenefitRow(benefit) {
   ({ guildId, isInteractive } = benefit);
   const tmp = callback3();
   let obj = { emoji: benefit.id, guildId, contentStyle: tmp.emojiRow, isInteractive };
-  obj = { EMOJI_REACTIONS_ON_MESSAGES: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, paddingVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: -120145600412238510000000000000000000000000000000000000000000000000000000000, authorization: 0.0000000000000000000000000000000003851862592832466, style: tmp.emojiColons };
+  obj = { style: tmp.emojiColons };
   const items = [callback(arg1(dependencyMap[8]).Text, obj), , ];
-  obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: benefit.name };
+  obj = { children: benefit.name };
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);
-  const obj1 = { EMOJI_REACTIONS_ON_MESSAGES: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, paddingVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: -120145600412238510000000000000000000000000000000000000000000000000000000000, authorization: 0.0000000000000000000000000000000003851862592832466, style: tmp.emojiColons };
-  items[2] = callback(arg1(dependencyMap[8]).Text, obj1);
+  items[2] = callback(arg1(dependencyMap[8]).Text, { style: tmp.emojiColons });
   obj.children = items;
   return callback2(BaseBenefitRow, obj);
 }
@@ -114,7 +113,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).GuildRoleSubscriptionBenefitTypes;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, emojiContainer: {}, benefitColumn: {}, benefitDescription: { right: null, height: null }, channelRow: {}, channelIcon: { decryptEncodedCiphertext: "usePubSub", GUILD_SOUNDBOARD: "Array", deleteOne: "ERNhYf" }, emojiRow: {}, emojiColons: { paddingHorizontal: 2 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, emojiContainer: {}, benefitColumn: {}, benefitDescription: { loginWebAuthn: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Ŕ: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 }, channelRow: {}, channelIcon: { ty: 24, bm: 24, hd: null }, emojiRow: {}, emojiColons: { paddingHorizontal: 2 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx");
 

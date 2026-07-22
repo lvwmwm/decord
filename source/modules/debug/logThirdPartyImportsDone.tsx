@@ -1,12 +1,11 @@
-// Module ID: 15849
-// Function ID: 121157
-// Name: result
+// Module ID: 15857
+// Function ID: 121200
+// Name: __exportStarResult1
 // Dependencies: [0, 0]
 
-// Module 15849 (result)
-import importDefaultResult from "result";
-import result from "result";
+// Module 15857 (__exportStarResult1)
+import importDefaultResult from "__exportStarResult1";
 
 importDefaultResult = new importDefaultResult("app");
 importDefaultResult.log("Finished loading third party imports");
-result = result.fileFinishedImporting("modules/debug/logThirdPartyImportsDone.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/debug/logThirdPartyImportsDone.tsx");

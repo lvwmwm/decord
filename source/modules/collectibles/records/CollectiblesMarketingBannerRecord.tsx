@@ -1,5 +1,5 @@
 // Module ID: 6795
-// Function ID: 53648
+// Function ID: 53659
 // Name: CollectiblesMarketingBannerRecord
 // Dependencies: []
 

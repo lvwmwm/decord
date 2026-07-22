@@ -1,5 +1,5 @@
 // Module ID: 6315
-// Function ID: 50394
+// Function ID: 50405
 // Name: NitroDiamondBadgeSmallBadge
 // Dependencies: []
 // Exports: NitroDiamondBadgeSmallBadge

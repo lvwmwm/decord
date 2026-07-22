@@ -1,10 +1,10 @@
-// Module ID: 11714
-// Function ID: 90963
+// Module ID: 11715
+// Function ID: 90976
 // Name: SkipHeaderButton
 // Dependencies: []
 // Exports: default
 
-// Module 11714 (SkipHeaderButton)
+// Module 11715 (SkipHeaderButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

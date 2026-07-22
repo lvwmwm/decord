@@ -1,10 +1,10 @@
-// Module ID: 8737
-// Function ID: 69104
+// Module ID: 8738
+// Function ID: 69116
 // Name: useCollectiblesExternalGatewayFacet
 // Dependencies: []
 // Exports: default
 
-// Module 8737 (useCollectiblesExternalGatewayFacet)
+// Module 8738 (useCollectiblesExternalGatewayFacet)
 const useMemo = require(dependencyMap[0]).useMemo;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[4]);

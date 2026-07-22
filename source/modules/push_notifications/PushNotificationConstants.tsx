@@ -1,10 +1,10 @@
-// Module ID: 5591
-// Function ID: 47483
+// Module ID: 5590
+// Function ID: 47491
 // Name: str2
 // Dependencies: []
 // Exports: getDevicePushProvider
 
-// Module 5591 (str2)
+// Module 5590 (str2)
 const _module = require(dependencyMap[0]);
 const constants = _module.getConstants();
 let Identifier;

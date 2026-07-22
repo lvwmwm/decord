@@ -1,10 +1,10 @@
-// Module ID: 9743
-// Function ID: 75817
+// Module ID: 9744
+// Function ID: 75830
 // Name: WishlistItemCard
 // Dependencies: []
 // Exports: default
 
-// Module 9743 (WishlistItemCard)
+// Module 9744 (WishlistItemCard)
 importAll(dependencyMap[0]);
 const SKUProductLines = arg1(dependencyMap[1]).SKUProductLines;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -16,7 +16,7 @@ export default function WishlistItemCard(arg0) {
   let source;
   let wishlistOwnerId;
   ({ sku, isOwned, source, wishlistOwnerId } = arg0);
-  let obj = { duration: "ERROR", damping: "ERROR", stiffness: "NOT_RESPONDER", mass: "NOT_RESPONDER" };
+  let obj = { "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   arg1(dependencyMap[3]);

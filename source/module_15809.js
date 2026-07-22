@@ -1,55 +1,24 @@
 // Module ID: 15809
-// Function ID: 120905
+// Function ID: 120932
 // Dependencies: []
 
 // Module 15809
-let obj = {
-  locale: "pt",
+globalThis.IntlMessageFormat.__addLocaleData({
+  locale: "hu",
   pluralRuleFunction(arg0, arg1) {
-    String(arg0);
-    let str = "other";
-    if (!arg1) {
-      let str2 = "other";
-      if (tmp2) {
-        str2 = "other";
-        if (arg0 >= 0) {
-          str2 = "other";
-          if (arg0 <= 2) {
-            str2 = "other";
-            if (2 != arg0) {
-              str2 = "one";
-            }
-          }
-        }
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({});
-obj = {
-  pluralRuleFunction(arg0, arg1) {
-    String(arg0);
-    let str = "other";
-    if (!arg1) {
-      let str2 = "other";
+    if (arg1) {
       if (1 == arg0) {
+        let str2 = "one";
+      } else {
         str2 = "other";
-        if (tmp2) {
-          str2 = "one";
-        }
       }
-      str = str2;
+      let str = str2;
+    } else {
+      str = "other";
+      if (1 == arg0) {
+        str = "one";
+      }
     }
     return str;
   }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({});
+});

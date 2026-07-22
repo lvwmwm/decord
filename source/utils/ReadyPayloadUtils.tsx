@@ -1,10 +1,10 @@
-// Module ID: 12489
-// Function ID: 95685
+// Module ID: 12494
+// Function ID: 95713
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12489 (_createForOfIteratorHelperLoose)
+// Module 12494 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -370,7 +370,7 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
   let merged_presences;
   ({ guilds, merged_members: closure_0, merged_presences } = found);
   const importDefault = merged_presences;
-  let obj = { <string:1358955663>: false, InteractionState: false, interestedIcon: false };
+  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(found, obj);
   let friends;
@@ -454,7 +454,7 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
   let private_channels;
   let users;
   ({ users, private_channels, merged_members: closure_0, guilds } = closure_0);
-  let obj = { roomSize: "ERROR", spread: "ERROR", arcAngle: "NOT_RESPONDER", gridColumns: "NOT_RESPONDER" };
+  let obj = { enableAnalog: -24, enableDigital: null, headroom_db: 1, max_gain_db: "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(closure_0, obj);
   let tmp3 = null != importDefault(dependencyMap[1]).database();

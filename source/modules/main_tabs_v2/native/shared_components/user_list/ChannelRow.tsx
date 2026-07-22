@@ -1,8 +1,8 @@
-// Module ID: 9090
-// Function ID: 71207
+// Module ID: 9091
+// Function ID: 71220
 // Dependencies: []
 
-// Module 9090
+// Module 9091
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const UserRowModes = arg1(dependencyMap[7]).UserRowModes;
 const ReadStateTypes = arg1(dependencyMap[8]).ReadStateTypes;
 ({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 const tmp2 = arg1(dependencyMap[9]);
-let obj = { guildIcon: { "Null": -536870861, "Null": -299892737 }, subLabel: { ty: 8, c: null, o: "\u270A\u{1F3FF}" }, subLabelIcon: { <string:1549954009>: null, <string:67064148>: null, <string:2018617953>: null } };
+let obj = { guildIcon: { createStyles: "%FunctionPrototype%", guild_id: "paddingStart" }, subLabel: { id: 8, title: null, options: "\u270A\u{1F3FF}" }, subLabelIcon: { -9223372036854775808: 20, 9223372036854775807: "relative", 0: 10 } };
 obj = { marginHorizontal: importDefault(dependencyMap[11]).space.PX_4 };
 obj.subLabelSeparator = obj;
 obj.threadName = { flexShrink: 1 };
@@ -61,9 +61,8 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
   closure_8 = stateFromStores;
   const tmp6 = importDefault(dependencyMap[13])(channel);
   closure_9 = tmp6;
-  let obj2 = arg1(dependencyMap[12]);
   const items1 = [closure_5, closure_9, closure_8];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+  const stateFromStores1 = arg1(dependencyMap[12]).useStateFromStores(items1, () => {
     const channel = subLabel.getChannel(channel.parent_id);
     let channelName = null;
     if (null != channel) {
@@ -73,6 +72,7 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
     return channelName;
   });
   UserRowModes = stateFromStores1;
+  const obj3 = arg1(dependencyMap[12]);
   const items2 = [closure_7];
   const stateFromStores2 = arg1(dependencyMap[12]).useStateFromStores(items2, () => tmp4.lastMessageTimestamp(channel.id, stateFromStores2.CHANNEL));
   ReadStateTypes = stateFromStores2;
@@ -134,14 +134,14 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
       let obj = { style: tmp4.subLabel };
       obj = { color: flag2(onPress[11]).colors.TEXT_SUBTLE, style: tmp4.subLabelIcon };
       const items = [callback(TextIcon, obj), , ];
-      obj = { "Bool(false)": "boolean", "Bool(false)": "boolean", "Bool(false)": "number", "Bool(false)": "number", "Bool(false)": "number", style: tmp4.threadName, children: stateFromStores1 };
+      obj = { style: tmp4.threadName, children: stateFromStores1 };
       items[1] = callback(channel(onPress[18]).Text, obj);
       let tmp20 = null;
       if (null != stateFromStores2) {
         const obj1 = {};
-        const obj2 = { EMOJI_REACTIONS_ON_MESSAGES: null, paddingVertical: null, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: null, authorization: null, style: tmp4.subLabelSeparator };
+        const obj2 = { "Null": true, ti: true, tk: true, tl: true, style: tmp4.subLabelSeparator };
         const items1 = [callback(channel(onPress[18]).Text, obj2), ];
-        const obj3 = { children: channel(onPress[19]).calendarFormatCompact(flag2(onPress[20])(stateFromStores2)) };
+        const obj3 = { cachedAt: null, edpbxy: null, children: channel(onPress[19]).calendarFormatCompact(flag2(onPress[20])(stateFromStores2)) };
         items1[1] = callback(channel(onPress[18]).Text, obj3);
         obj1.children = items1;
         tmp20 = callback2(closure_13, obj1);
@@ -160,7 +160,6 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
     }
     return tmp2;
   }, items8);
-  obj = { "Null": true, "Null": 15.1, "Null": 253, children: memo1 };
   obj = {};
   const obj4 = arg1(dependencyMap[12]);
   const merged1 = Object.assign(merged);
@@ -168,20 +167,20 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
   obj["icon"] = memo;
   obj["onPress"] = callback;
   obj["onLongPress"] = callback1;
-  obj["label"] = callback(arg1(dependencyMap[18]).Text, obj);
+  obj["label"] = callback(arg1(dependencyMap[18]).Text, { children: memo1 });
   obj["subLabel"] = memo2;
   if (NONE === UserRowModes.TOGGLE) {
-    obj1 = {};
+    obj = {};
     const merged2 = Object.assign(obj);
-    obj1["height"] = "100%";
-    obj1["checked"] = flag;
-    let tmp25 = callback(arg1(dependencyMap[21]).TableCheckboxRow, obj1);
+    obj["height"] = "100%";
+    obj["checked"] = flag;
+    let tmp25 = callback(arg1(dependencyMap[21]).TableCheckboxRow, obj);
   } else {
-    obj2 = {};
+    obj1 = {};
     const merged3 = Object.assign(obj);
-    obj2["height"] = "100%";
-    obj2["trailing"] = memo3;
-    tmp25 = callback(arg1(dependencyMap[22]).TableRow, obj2);
+    obj1["height"] = "100%";
+    obj1["trailing"] = memo3;
+    tmp25 = callback(arg1(dependencyMap[22]).TableRow, obj1);
   }
   return tmp25;
 });

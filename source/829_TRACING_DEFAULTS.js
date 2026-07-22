@@ -8,7 +8,7 @@
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const obj = {};
+const obj = { 0: false, 0: "auto.db.supabase.postgres", 0: "Sloven\u010Dina" };
 
 export const TRACING_DEFAULTS = obj;
 export const startIdleSpan = function startIdleSpan(arg0) {
@@ -304,7 +304,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
     const sentryNonRecordingSpan = new SentryNonRecordingSpan();
     const _Object = Object;
     const obj2 = require(dependencyMap[2]);
-    const merged = Object.assign({ targetField: "press", targetAttribute: "tune_settings_button" }, require(dependencyMap[5]).getDynamicSamplingContextFromSpan(sentryNonRecordingSpan));
+    const merged = Object.assign({}, require(dependencyMap[5]).getDynamicSamplingContextFromSpan(sentryNonRecordingSpan));
     const obj5 = require(dependencyMap[5]);
     require(dependencyMap[5]).freezeDscOnSpan(sentryNonRecordingSpan, merged);
     return sentryNonRecordingSpan;

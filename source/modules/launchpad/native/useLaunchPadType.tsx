@@ -1,10 +1,10 @@
-// Module ID: 10441
-// Function ID: 80576
+// Module ID: 10442
+// Function ID: 80589
 // Name: useLaunchPadType
 // Dependencies: []
 // Exports: default
 
-// Module 10441 (useLaunchPadType)
+// Module 10442 (useLaunchPadType)
 const LaunchPadTypes = require(dependencyMap[0]).LaunchPadTypes;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");

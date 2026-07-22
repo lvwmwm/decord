@@ -1,11 +1,11 @@
-// Module ID: 15887
-// Function ID: 121674
+// Module ID: 15895
+// Function ID: 121717
 // Name: items
 // Dependencies: []
 
-// Module 15887 (items)
+// Module 15895 (items)
 const _module = require(dependencyMap[1]);
-const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };
+const obj = { shapes: null, flex: null, sk: null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };
 const items = [{ config: { enabled: true } }];
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);

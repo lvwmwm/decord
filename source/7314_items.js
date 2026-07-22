@@ -1,10 +1,10 @@
 // Module ID: 7314
-// Function ID: 58991
+// Function ID: 59002
 // Name: items
 // Dependencies: []
 
 // Module 7314 (items)
-const items = [false, false, false, false, false, false, false, false, false, false, false, false];
+const items = [];
 arg5.getClientIPAddress = function getClientIPAddress(arg0) {
   const items = arg0;
   const mapped = items.map((arg0) => {

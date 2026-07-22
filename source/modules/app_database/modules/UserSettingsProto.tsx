@@ -1,5 +1,5 @@
 // Module ID: 6716
-// Function ID: 52194
+// Function ID: 52205
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -93,7 +93,7 @@ importDefaultResult = new importDefaultResult("UserSettingsProto");
 let tmp4 = () => {
   class UserSettingsProto {
     constructor() {
-      f52206 = this;
+      f52217 = this;
       tmp = closure_3(this, UserSettingsProto);
       this.actions = {
         CONNECTION_OPEN() {
@@ -140,7 +140,7 @@ let tmp4 = () => {
           }, "handleUserSettingsProtoChange");
         }
       };
-      obj = f52206(UserSettingsProto[8]);
+      obj = f52217(UserSettingsProto[8]);
       this.throttledOnChange = obj.debounce(this.handleUserSettingsProtoChange, 0);
       return;
     }

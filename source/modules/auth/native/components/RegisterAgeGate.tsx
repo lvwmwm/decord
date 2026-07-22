@@ -1,10 +1,10 @@
-// Module ID: 14644
-// Function ID: 110431
+// Module ID: 14652
+// Function ID: 110474
 // Name: RegisterAgeGate
 // Dependencies: []
 // Exports: default
 
-// Module 14644 (RegisterAgeGate)
+// Module 14652 (RegisterAgeGate)
 import subtractResult from "module_100";
 
 let closure_3 = importDefault(dependencyMap[0]);

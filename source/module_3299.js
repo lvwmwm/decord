@@ -14,17 +14,17 @@ obj = {
     return Number(arg0) + "e";
   }
 };
-obj.era = obj.default({ values: { narrow: ["ma", "di"], abbreviated: [null, null], wide: ["<string:1171850257>", "<string:4165402900>"] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: ["zo", "ma"], abbreviated: ["zzz", "<string:1828717299>"], wide: ["Array", "graphicsCaptureStaleFrameTimeoutMs"] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [null, null, null, null], abbreviated: [], wide: [null, null, null, null] },
+  values: { narrow: [], abbreviated: [null, null, null, null], wide: [] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { narrow: [], abbreviated: ["type", "filter", "pos", "ip", "r", "isArray", "props", "ip", "r", "isArray", "type", "disabled"], wide: [] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [], short: [null, null, null, null, null, null, null], abbreviated: [], wide: ["<string:1157103619>", "<string:330694657>", "<string:1689518083>", "<string:1045495811>", "<string:23541828>", "<string:23541504>", "<string:23541248>"] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: { unicodeVersion: "33.33%", y: "center", isArray: "center", colors: true, construct: true, y: true, isArray: true, id: true }, abbreviated: { unicodeVersion: "33.33%", y: "center", isArray: "center", colors: true, construct: true, y: true, isArray: true, id: true }, wide: { unicodeVersion: "33.33%", y: "center", isArray: "center", colors: true, construct: true, y: true, isArray: true, id: true } }, defaultWidth: "wide" });
+obj.month = obj.default({ values: { narrow: ["bounciness", "num", "targetFrames", "night", "convertSkemaError", "../lib/braintree-error", "targetFrames", "sleep", "_findItemIndexWithKey", "Iterator", "targetFrames", "zzz"], abbreviated: [null, null, null, null, null, null, null, null, null, null, null, null], wide: ["r", "subLabelCritical", "a", "textShadowColor", "Array", "UPDATE_APP", "a", "cUMdH0", "a", "ah0EUu", "CH", "reType"] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [], short: [true, true, true, true, true, true, true], abbreviated: [], wide: [-13944167551317220000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022446710609221376, -39021885772242877000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006866490598704491, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006863907863137107, 9855629821041702000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000077580793651224274] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide" });
 
 export default obj;
 export default exports.default;

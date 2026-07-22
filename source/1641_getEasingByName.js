@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1641 (getEasingByName)
-const obj = { linear: [], ease: ["<string:1304559617>", "<string:4110352386>", "<string:2018574337>", "<string:3339142040>"], quad: [], cubic: ["scrollViewOffset", "onGestureHandlerStateChange", "onGestureHandlerEvent", "GUILD_DELETE"], sin: ["<string:1204045508>", "\u010Dlov\u011Bk", "mra\u010Dit se", "mu\u017E"], circle: [false, false, false, false], exp: ["<string:4166975489>", "<string:927465474>", "<string:1113653251>", "onFocusedInputTextChanged"] };
+const obj = { linear: [true, true, true, true], ease: [true, true, true, true], quad: [], cubic: [false, false, false, false], sin: ["AllowGameFriendDmsInDiscord", "otherKey", "adding", "setPartition"], circle: ["Radio", "MKTG_VIDEO_PLAYED", "NO_CLASSIFICATION", "useIdentityRegistrationStep"], exp: ["<string:760318817>", "<string:2169717220>", "<string:3881893892>", "<string:1805075793>"] };
 arg5.WebEasings = obj;
 arg5.getEasingByName = function getEasingByName(linear) {
   return "cubic-bezier(" + obj[linear].toString() + ")";

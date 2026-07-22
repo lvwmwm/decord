@@ -1,10 +1,10 @@
-// Module ID: 11794
-// Function ID: 91539
+// Module ID: 11795
+// Function ID: 91552
 // Name: ChannelTitleContent
 // Dependencies: []
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11794 (ChannelTitleContent)
+// Module 11795 (ChannelTitleContent)
 function ChannelTitleContent(arg0) {
   let accessibleTitle;
   let icon;
@@ -52,8 +52,8 @@ function ParentChannelSubTitle(parentChannel) {
   obj.children = arg1(dependencyMap[19]).computeChannelName(parentChannel, closure_11, closure_10, true);
   return callback(arg1(dependencyMap[30]).Text, obj);
 }
-function DMChannelName(style) {
-  const userId = style.userId;
+function DMChannelName(userId) {
+  userId = userId.userId;
   const arg1 = userId;
   let obj = arg1(dependencyMap[16]);
   const items = [closure_11, closure_10];
@@ -70,7 +70,7 @@ function DMChannelName(style) {
     }
     return str;
   }, items1);
-  obj = { style: style.style };
+  obj = { get: null, ty: 0, jsxs: 40, string: 40, guildId: 73, style: userId.style };
   const intl = arg1(dependencyMap[17]).intl;
   obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[17]).t.fYqXVY, { channelName: stateFromStores });
   obj.children = stateFromStores;
@@ -108,7 +108,7 @@ const StaticChannelRoute = arg1(dependencyMap[10]).StaticChannelRoute;
 const tmp3 = arg1(dependencyMap[11]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
 let obj1 = arg1(dependencyMap[13]);
-let obj = { navbarTitleContainer: { useIsVerifiedAdult: "r", createTimeToFullDisplay: "MediaViewerDimensionsProvider", isBLEND: "content", page_session_id: "isArray" } };
+let obj = { navbarTitleContainer: { "Bool(true)": null, "Bool(true)": false, "Bool(true)": "gr", "Bool(true)": null } };
 obj = {};
 const tmp4 = arg1(dependencyMap[12]);
 const merged = Object.assign(importDefault(dependencyMap[14])(tmp2.Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[15]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
@@ -122,11 +122,11 @@ obj.channelIconColor = { color: importDefault(dependencyMap[15]).colors.CHANNEL_
 const obj2 = { color: importDefault(dependencyMap[15]).colors.CHANNEL_ICON };
 obj.homeIcon = { tintColor: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj.premiumIcon = { marginRight: 4 };
-obj.status = { "Null": null, "Null": null };
-obj.channelTextContainer = { SDK_VERSION: null, numberOfLines: null };
+obj.status = { logMessageGiftIntentShown: false, categorySkuId: false };
+obj.channelTextContainer = { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" };
 obj.channelNameContainer = { flexGrow: 1 };
 obj.channelName = { textAlign: "left" };
-obj.flexRow = { "Null": 7, "Null": 370 };
+obj.flexRow = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 let closure_18 = obj1.createStyles(obj);
 function ChannelTitleWrapper(arg0) {
   let children;

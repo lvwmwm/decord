@@ -1,10 +1,10 @@
-// Module ID: 8364
-// Function ID: 66668
+// Module ID: 8365
+// Function ID: 66680
 // Name: GuildEventTopic
 // Dependencies: []
 // Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic
 
-// Module 8364 (GuildEventTopic)
+// Module 8365 (GuildEventTopic)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ GuildScheduledEventEntityTypes: closure_6, GUILD_EVENT_MAX_DESCRIPTION_LENGTH: closure_7, MAX_EVENT_LOCATION_LENGTH: closure_8, GUILD_EVENT_MAX_NAME_LENGTH: closure_9 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_13 = arg1(dependencyMap[5]).createStyles({ formGroup: { paddingVertical: 8 }, formGroupSmall: { paddingVertical: 4 }, formGroupLarge: { padding: "last_payment_error", HermesInternal: "$" }, dateInput: { "Bool(false)": "hidden", "Bool(false)": 0, "Bool(false)": 703.5 }, timeInput: {}, formHeader: { marginBottom: 8 }, header: { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true } });
+let closure_13 = arg1(dependencyMap[5]).createStyles({ formGroup: { paddingVertical: 8 }, formGroupSmall: { paddingVertical: 4 }, formGroupLarge: { 335090477: "useValidOrderedFilterTokens", -1945376054: "JPEGInterchangeFormatLength" }, dateInput: { position: 159493472347714030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderColor: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004447056731589706, borderRadius: -0.00000000000000000000000000000005244681122911821 }, timeInput: { position: "tax", borderColor: "targetFrames", borderRadius: "png" }, formHeader: { marginBottom: 8 }, header: { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventModalComponents.tsx");
 
@@ -74,7 +74,7 @@ export const GuildEventRecurrence = function GuildEventRecurrence(startDate) {
   }
   obj = { style: tmp.formGroup };
   obj = { style: tmp.header };
-  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  const obj1 = { cachedAt: true, edpbxy: true };
   const intl = arg1(closure_3[7]).intl;
   obj1.children = intl.string(arg1(closure_3[7]).t.59TVxL);
   obj.children = callback(arg1(closure_3[9]).Text, obj1);
@@ -256,14 +256,14 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
   obj = { style: tmp5.formGroup };
   obj = {};
   const obj1 = { style: tmp5.dateInput };
-  const obj2 = { delete: "content", dispatch: "isArray", raw: "isArray", style: tmp5.formHeader, children: dateLabel };
+  const obj2 = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp5.formHeader, children: dateLabel };
   const items = [callback(arg1(dependencyMap[9]).Text, obj2), ];
   const obj3 = { text: dateLabel, value: date.format("MMM Do YYYY"), onPress: handleOpenDatePicker("date"), disabled };
   items[1] = callback(arg1(dependencyMap[10]).InputButton, obj3);
   obj1.children = items;
   const items1 = [callback2(View, obj1), ];
   const obj4 = { style: tmp5.timeInput };
-  const obj5 = { delete: "content", dispatch: "isArray", raw: "isArray", style: tmp5.formHeader, children: timeLabel };
+  const obj5 = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp5.formHeader, children: timeLabel };
   const items2 = [callback(arg1(dependencyMap[9]).Text, obj5), ];
   const obj6 = { text: timeLabel, value: date.format("LT"), onPress: handleOpenDatePicker("time"), disabled };
   items2[1] = callback(arg1(dependencyMap[10]).InputButton, obj6);

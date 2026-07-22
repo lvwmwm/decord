@@ -1,10 +1,10 @@
-// Module ID: 9405
-// Function ID: 73260
+// Module ID: 9406
+// Function ID: 73273
 // Name: BicycleIcon
 // Dependencies: []
 // Exports: BicycleIcon
 
-// Module 9405 (BicycleIcon)
+// Module 9406 (BicycleIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BicycleIcon.tsx");

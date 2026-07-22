@@ -1,10 +1,10 @@
-// Module ID: 11364
-// Function ID: 88369
+// Module ID: 11365
+// Function ID: 88382
 // Name: ChatFloatingNavButton
 // Dependencies: []
 // Exports: default
 
-// Module 11364 (ChatFloatingNavButton)
+// Module 11365 (ChatFloatingNavButton)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, Pressable: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -44,7 +44,7 @@ export default function ChatFloatingNavButton(arg0) {
       items = [, ];
       items[0] = closure_1;
       items[1] = closure_2;
-      interpolateColorResult = obj3.interpolateColor(closure_0.get(), ["replace", "then"], items);
+      interpolateColorResult = obj3.interpolateColor(closure_0.get(), [77601039, 1612144654], items);
       obj.backgroundColor = obj2.withSpring(interpolateColorResult, closure_0(closure_2[8]).ON_PRESS_SPRING, "animate-always");
       return obj;
     }

@@ -1,10 +1,10 @@
-// Module ID: 10850
-// Function ID: 84294
+// Module ID: 10851
+// Function ID: 84307
 // Name: useChannelLoading
 // Dependencies: []
 // Exports: default
 
-// Module 10850 (useChannelLoading)
+// Module 10851 (useChannelLoading)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/messages/native/hooks/useChannelLoading.tsx");

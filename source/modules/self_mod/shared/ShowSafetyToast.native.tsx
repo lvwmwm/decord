@@ -1,10 +1,10 @@
-// Module ID: 10147
-// Function ID: 78483
+// Module ID: 10148
+// Function ID: 78496
 // Name: showSafetyToast
 // Dependencies: []
 // Exports: showSafetyToast
 
-// Module 10147 (showSafetyToast)
+// Module 10148 (showSafetyToast)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/self_mod/shared/ShowSafetyToast.native.tsx");
 

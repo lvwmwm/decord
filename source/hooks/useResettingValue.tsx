@@ -1,10 +1,10 @@
-// Module ID: 12371
-// Function ID: 94613
+// Module ID: 12376
+// Function ID: 94641
 // Name: useResettingValue
 // Dependencies: []
 // Exports: default
 
-// Module 12371 (useResettingValue)
+// Module 12376 (useResettingValue)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ useState: closure_4, useCallback: closure_5, useEffect: closure_6 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

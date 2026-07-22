@@ -1,10 +1,10 @@
-// Module ID: 10869
-// Function ID: 84544
+// Module ID: 10870
+// Function ID: 84557
 // Name: getChannelDetailsButtons
 // Dependencies: []
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 10869 (getChannelDetailsButtons)
+// Module 10870 (getChannelDetailsButtons)
 const ChannelDetailsButtonTypes = require(dependencyMap[0]).ChannelDetailsButtonTypes;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx");

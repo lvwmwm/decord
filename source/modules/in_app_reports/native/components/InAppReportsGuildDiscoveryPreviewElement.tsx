@@ -1,23 +1,23 @@
-// Module ID: 12212
-// Function ID: 93771
+// Module ID: 12217
+// Function ID: 93799
 // Name: GuildDiscoveryPreviewElement
 // Dependencies: []
 // Exports: default
 
-// Module 12212 (GuildDiscoveryPreviewElement)
+// Module 12217 (GuildDiscoveryPreviewElement)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+obj = { container: {} };
 obj = { color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.borderColor = obj;
 obj.title = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.itemContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.guildInfo = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
-obj.guildName = { "Null": "gSbmdt", "Null": "%Int16ArrayPrototype%" };
+obj.guildInfo = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
+obj.guildName = {};
 const obj2 = { "Null": "never", "Null": true, "Null": "compatibility", borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.guildIcon = obj2;
 let closure_7 = obj.createStyles(obj);
@@ -32,7 +32,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj1 = arg1(dependencyMap[7]);
   obj = { style: tmp.container };
-  obj = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp.title };
+  obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.nTe4HC);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];

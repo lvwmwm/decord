@@ -1,10 +1,10 @@
-// Module ID: 11228
-// Function ID: 87399
+// Module ID: 11229
+// Function ID: 87412
 // Name: useFrecentApps
 // Dependencies: []
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11228 (useFrecentApps)
+// Module 11229 (useFrecentApps)
 function useFrecentApps(onlyActivityApps) {
   let context;
   let sectionDescriptors;
@@ -116,7 +116,7 @@ const BuiltInSectionId = tmp2.BuiltInSectionId;
 let obj = {};
 const items = [arg1(dependencyMap[6]).ApplicationCommandType.CHAT, arg1(dependencyMap[6]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
 obj.commandTypes = items;
-obj = { "Bool(false)": "<string:8912898>", "Bool(false)": "<string:2919038977>", "Bool(false)": "<string:2024931329>", limit: tmp2.DISCOVERY_COMMANDS_QUERY_LIMIT };
+obj = { justifyContent: "httpServerLocation", sk: "hash", radii: "httpServerLocation", limit: tmp2.DISCOVERY_COMMANDS_QUERY_LIMIT };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/app_launcher/hooks/useAppLauncherFrecents.tsx");
 
 export default function useAppLauncherFrecentCommandsAndApps(arg0) {

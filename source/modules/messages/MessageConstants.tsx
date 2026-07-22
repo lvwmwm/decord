@@ -1,5 +1,5 @@
 // Module ID: 4121
-// Function ID: 34287
+// Function ID: 34289
 // Name: MESSAGE_GROUP_SPACING
 // Dependencies: []
 // Exports: isChannelStreamMessage
@@ -8,7 +8,7 @@
 const ChannelStreamTypes = require(dependencyMap[0]).ChannelStreamTypes;
 let obj = {};
 obj = {};
-const frozen = Object.freeze({});
+const frozen = Object.freeze({ "Bool(true)": -1882570463, detectableGamesEtag: 1360068610, detectableGames: 1361143520, blocklistEtag: 1340580, total: 1310720, progress: 1310720, mode: 1310720, modeOptions: -952041472, echoCancellation: 1895826512, noiseSuppression: 1, automaticGainControl: -873112494 });
 obj.response = 10 * importDefault(dependencyMap[1]).Millis.SECOND;
 obj.deadline = importDefault(dependencyMap[1]).Millis.MINUTE;
 obj.timeout = obj;

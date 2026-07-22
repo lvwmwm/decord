@@ -1,10 +1,10 @@
-// Module ID: 8262
-// Function ID: 65195
+// Module ID: 8263
+// Function ID: 65207
 // Name: set
 // Dependencies: [1348, 653, 621]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId
 
-// Module 8262 (set)
+// Module 8263 (set)
 import module_621 from "module_621";
 
 const set = new Set(Object.values(require("_isNativeReflectConstruct").LEGACY_BADGE_ID_MAP));

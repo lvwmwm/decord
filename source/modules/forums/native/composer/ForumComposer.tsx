@@ -1,10 +1,10 @@
-// Module ID: 9541
-// Function ID: 74325
+// Module ID: 9542
+// Function ID: 74338
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 9541 (_createForOfIteratorHelperLoose)
+// Module 9542 (_createForOfIteratorHelperLoose)
 let StyleSheet;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -306,25 +306,25 @@ const tmp3 = arg1(dependencyMap[12]);
 let closure_31 = /(#"[^"]*"|[@#]\S+|:[\w+-]+:)/g;
 let obj = arg1(dependencyMap[19]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_BASE_LOW };
+obj = { GifAutoPlay: true, isNewWebImplementationEnabled: true, WIDGET_ENABLED: true, backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.scrollViewContentContainer = { paddingBottom: 16 };
 obj.avatarContainer = { height: 40 };
 obj.avatar = { marginRight: 12 };
 obj.titleInput = { padding: 8 };
-const obj1 = { getGuildAcronym: 25, getCellMetricsApprox: "soundboard_picker_collapsed_sections", fontFamily: tmp4.Fonts.DISPLAY_SEMIBOLD, color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj1 = { 0: 25, 9223372036854775807: "soundboard_picker_collapsed_sections", fontFamily: tmp4.Fonts.DISPLAY_SEMIBOLD, color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.titleInputText = obj1;
-const obj2 = { "Bool(false)": "Array", "Bool(false)": "ADDRESS_ZIP", "Bool(false)": "isArray", "Bool(false)": "UNSET_EXPLICIT_CONTENT_REDACTION", "Bool(false)": "isArray", "Bool(false)": "isArrayBuffer", color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.contentInput = obj2;
 const tmp5 = arg1(dependencyMap[18]);
+obj.contentInput = { color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj2 = { color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.mentionText = { color: importDefault(dependencyMap[20]).unsafe_rawColors.BRAND_500 };
 obj.postButtonWrapper = { marginLeft: "auto" };
 obj.tags = {};
 obj.tagIcon = { marginRight: 8 };
 obj.editor = {};
-obj.editorBody = {};
-obj.usernameToChannel = { "Null": true, "Null": true, "Null": true };
-obj.channelName = { "Bool(false)": null, "Bool(false)": 0 };
+obj.editorBody = { overflow: 0, flex: "#dfdfdf", paddingVertical: "ThemeAttrAndroid", paddingHorizontal: "selectableItemBackground" };
+obj.usernameToChannel = {};
+obj.channelName = { -105930140: null, -1504685627: 0 };
 const obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4["borderTopWidth"] = StyleSheet.hairlineWidth;
@@ -332,11 +332,11 @@ obj4["borderTopColor"] = importDefault(dependencyMap[20]).colors.BORDER_SUBTLE;
 obj4["backgroundColor"] = importDefault(dependencyMap[20]).colors.BACKGROUND_BASE_LOW;
 obj4["top"] = undefined;
 obj.actionsContainer = obj4;
-obj.actions = { 0: null, 9223372036854775807: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", -9223372036854775808: true, 0: null, -9223372036854775808: 11 };
-const obj5 = { position: "<string:24248787>", left: "<string:268435456>", top: "<string:1358954496>", height: "<string:1667363182>", width: "<string:17514305>", alignItems: "a61f8b298e0ebb5630c0a628e2bf4153", justifyContent: "<string:4294705152>", backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_MOD_NORMAL, scrollable: "<string:4294930742>", startExpanded: "<string:659685375>", handleDisabled: "<string:1602192>", aspectRatio: "<string:1572864>", color: importDefault(dependencyMap[20]).colors.TEXT_DEFAULT };
-obj.actionButton = obj5;
-obj.mediaButton = { marginRight: 8 };
+obj.actions = { 1515617622: null, -730637965: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", 1914475801: true, 141938224: null, 150994944: 11 };
 const obj3 = { color: importDefault(dependencyMap[20]).unsafe_rawColors.BRAND_500 };
+obj.actionButton = { color: importDefault(dependencyMap[20]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_MOD_NORMAL };
+obj.mediaButton = { marginRight: 8 };
+const obj5 = { color: importDefault(dependencyMap[20]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_MOD_NORMAL };
 obj.horizontalAutocomplete = { backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_SURFACE_HIGH };
 obj.nameError = {};
 obj.messageError = { marginTop: 8 };
@@ -821,7 +821,7 @@ export default function ForumComposer(parentChannel) {
     };
     const items20 = [callback4(importDefault(dependencyMap[52]), obj4), ];
     obj5 = {};
-    obj6 = { onScroll: animatedScrollHandler, contentContainerStyle: renderErrorResult.scrollViewContentContainer };
+    obj6 = { marginLeft: "clp", marginBottom: "cny", marginTop: "usd", flex: "usd", onPressSticker: "usd", onLongPressSticker: "usd", onScroll: animatedScrollHandler, contentContainerStyle: renderErrorResult.scrollViewContentContainer };
     obj7 = { ref };
     ({ titleInput: obj27.style, titleInputText: obj27.inputTextStyle } = renderErrorResult);
     obj7.showTopContainer = false;
@@ -941,7 +941,7 @@ export default function ForumComposer(parentChannel) {
     obj17 = { style: renderErrorResult.channelName };
     const intl4 = arg1(dependencyMap[42]).intl;
     obj18 = { channelName: tmp10 };
-    const items24 = [-1402750382, intl4.format(arg1(dependencyMap[42]).t.6Y1Kev, obj18)];
+    const items24 = [false, intl4.format(arg1(dependencyMap[42]).t.6Y1Kev, obj18)];
     obj17.children = items24;
     items23[1] = createForumPost(arg1(dependencyMap[62]).Text, obj17);
     obj14.children = items23;

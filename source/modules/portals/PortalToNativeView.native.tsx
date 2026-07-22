@@ -1,14 +1,14 @@
-// Module ID: 9250
-// Function ID: 72294
+// Module ID: 9251
+// Function ID: 72307
 // Name: PortalToNativeView
 // Dependencies: []
 // Exports: default
 
-// Module 9250 (PortalToNativeView)
+// Module 9251 (PortalToNativeView)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_1 = arg1(dependencyMap[1]).requireNativeComponent("PortalToNativeView");
-let closure_2 = arg1(dependencyMap[3]).createStyles({ portal: { "Bool(false)": "PaperIcon", "Bool(false)": "png", "Bool(false)": "row", "Bool(false)": "flex-end", "Bool(false)": null, "Bool(false)": "absolute" } });
+let closure_2 = arg1(dependencyMap[3]).createStyles({ portal: { display: "PaperIcon", justifyContent: "png", overflow: "row", backgroundColor: "flex-end", alignItems: null, justifyContent: "absolute" } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");
 

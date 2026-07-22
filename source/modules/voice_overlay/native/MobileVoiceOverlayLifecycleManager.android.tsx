@@ -1,9 +1,9 @@
-// Module ID: 13329
-// Function ID: 101310
+// Module ID: 13336
+// Function ID: 101343
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 7, 6, 15, 17, 18, 4173, 1906, 4574, 3, 13340, 13341, 10233, 5728, 13342, 2, 4173, 4576, 3801, 2, 6, 7, 15, 17, 18, 1194, 4173, 686, 4526, 2, 6, 7, 15, 17, 18, 27, 4120, 1906]
+// Dependencies: [5, 7, 6, 15, 17, 18, 4173, 1906, 4574, 3, 13347, 13348, 10234, 5728, 13349, 2, 4173, 4576, 3801, 2, 6, 7, 15, 17, 18, 1194, 4173, 686, 4526, 2, 6, 7, 15, 17, 18, 27, 4120, 1906]
 
-// Module 13329 (_isNativeReflectConstruct)
+// Module 13336 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import closure_4 from "_defineProperties";
 import closure_5 from "_classCallCheck";

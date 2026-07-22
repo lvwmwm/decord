@@ -1,5 +1,5 @@
 // Module ID: 7685
-// Function ID: 61349
+// Function ID: 61359
 // Name: getNumSubscriptionsPurchasedFromSystemMessage
 // Dependencies: []
 // Exports: default

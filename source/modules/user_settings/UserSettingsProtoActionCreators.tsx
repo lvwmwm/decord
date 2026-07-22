@@ -360,7 +360,7 @@ let tmp9 = () => {
     let obj = { url: closure_10.USER_SETTINGS_PROTO(self.type), rejectWithError: false };
     const b64ToProtoResult = callback(closure_2[8]).b64ToProto(self.ProtoClass, yield HTTP.get(obj).body.settings);
     if (null == b64ToProtoResult) {
-      self.dispatchChanges({});
+      self.dispatchChanges({ "Bool(false)": 1766088043, "Bool(false)": 827788593 });
     } else {
       const runMigrationsResult = callback(closure_2[8]).runMigrations(tmp4, callback2(closure_2[14])[self.type]);
       const isDirty = runMigrationsResult.isDirty;
@@ -405,7 +405,7 @@ let tmp9 = () => {
       const self = this;
       if (beforeSendCallbacks.some((hasChanges) => hasChanges.hasChanges())) {
         ({ ProtoClass, markDirty } = self);
-        const obj = { cleanup };
+        const obj = { body: true, paddingHorizontal: true, cleanup };
         markDirty(ProtoClass.create(), obj);
       }
     }

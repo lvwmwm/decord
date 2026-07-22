@@ -1,10 +1,10 @@
-// Module ID: 16443
-// Function ID: 127014
+// Module ID: 16451
+// Function ID: 127056
 // Name: ResendVerificationCodeButton
 // Dependencies: []
 // Exports: default
 
-// Module 16443 (ResendVerificationCodeButton)
+// Module 16451 (ResendVerificationCodeButton)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -36,7 +36,7 @@ export default function ResendVerificationCodeButton(flowId) {
   let obj = { onPress: React.useCallback(callback(tmp), items1), disabled: first > 0, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl.string(importDefault(dependencyMap[9]).ah0EUu);
-  obj = {};
+  obj = { <string:1090601217>: "<string:3344105473>", "Null": "<string:3465102384>", 1912762882: "<string:1684890264>", 469922306: "<string:3147546450>" };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl2.string(importDefault(dependencyMap[9]).ah0EUu);
   if (first > 0) {

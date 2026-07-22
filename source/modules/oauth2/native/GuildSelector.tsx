@@ -1,16 +1,16 @@
-// Module ID: 9010
-// Function ID: 70890
+// Module ID: 9011
+// Function ID: 70903
 // Name: styles
 // Dependencies: []
 // Exports: default
 
-// Module 9010 (styles)
+// Module 9011 (styles)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const Permissions = arg1(dependencyMap[2]).Permissions;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { selectorGroup: { overflow: 2, flex: 2, flexDirection: 0 } };
+obj = { selectorGroup: {} };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.select = obj;
 const tmp2 = arg1(dependencyMap[3]);
@@ -53,7 +53,7 @@ export default function GuildSelector(onGuildChange) {
   }, items);
   const found = guilds.find((id) => id.id === selectedGuildId);
   let obj = { style: tmp.selectorGroup };
-  obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+  obj = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.1DXFFd);
   const items1 = [callback(arg1(dependencyMap[11]).Text, obj), , , ];

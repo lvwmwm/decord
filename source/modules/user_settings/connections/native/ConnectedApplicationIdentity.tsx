@@ -1,10 +1,10 @@
-// Module ID: 13744
-// Function ID: 103943
+// Module ID: 13751
+// Function ID: 103976
 // Name: ConnectedApplicationIdentity
 // Dependencies: []
 // Exports: default
 
-// Module 13744 (ConnectedApplicationIdentity)
+// Module 13751 (ConnectedApplicationIdentity)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -127,12 +127,12 @@ export default function ConnectedApplicationIdentity(identity) {
     obj.source = memo;
     obj.disableColor = true;
     const tmp19 = importDefault(dependencyMap[15]);
-    const obj1 = { <string:2494184035>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045856417437685, <string:4146205778>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004589055092517, <string:2432852520>: 859756496761911200000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    const obj1 = { <string:2494249571>: 8, <string:1638682449>: "absolute", <string:180507111>: 8 };
     const obj2 = { accessibilityRole: "button" };
     const intl2 = arg1(dependencyMap[7]).intl;
     obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[7]).t.DT39A+);
     obj2.onPress = callback;
-    obj2.hitSlop = { flexGrow: "useStickerPackCategories", flexShrink: "%Boolean%", height: "MiniaturesSpotIllustration", left: "add" };
+    obj2.hitSlop = { useManaTypeConsolidationExperiment: "Text", notification_center_id: "options", bdt: "to", animatedContainerHeight: "Array" };
     obj2.disabled = null == token;
     const obj3 = { style: legacyClassComponentStyles.deleteConnectionIcon };
     const tmp20 = callback2(importDefault(dependencyMap[15]), obj);

@@ -1,10 +1,10 @@
-// Module ID: 13930
-// Function ID: 105875
+// Module ID: 13937
+// Function ID: 105915
 // Name: VideoQuestTranscriptActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13930 (VideoQuestTranscriptActionSheet)
+// Module 13937 (VideoQuestTranscriptActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
 ({ FetchStatus: closure_5, useVideoQuestUIStore: closure_6 } = arg1(dependencyMap[2]));
@@ -90,7 +90,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   const items2 = [
     tmp9,
     memo.length > 0 && memo.map((children) => {
-      const obj = { hasMaxConnections: "<string:1073205343>", isBoostOnlySubscription: 35, children };
+      const obj = { cachedAt: "tappableDots", edpbxy: "getQuestOrbMultiplierSource", children };
       return callback(quest(closure_2[14]).Text, obj, arg1);
     })
   ];

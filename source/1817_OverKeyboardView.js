@@ -11,7 +11,7 @@ importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[0]).useMemo;
 ({ Platform, StyleSheet, View: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { "Bool(true)": "ERROR", "Bool(true)": "ERROR", "Bool(true)": "NOT_RESPONDER", "Bool(true)": "NOT_RESPONDER" } });
+const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { wideBannerAnimatedUrl: -24, SPACE_32: null, np: 1, linkedUsers: "Malaysia" } });
 
 export default function OverKeyboardView(visible) {
   let children = visible.visible;

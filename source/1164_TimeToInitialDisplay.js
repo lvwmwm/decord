@@ -61,7 +61,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
       return found;
     } else {
       const _Object = Object;
-      obj = { 1641015498: true, 611078649: true, startTime: tmp4(tmp5[2]).spanToJSON(activeSpan).start_timestamp };
+      obj = { startTime: tmp4(tmp5[2]).spanToJSON(activeSpan).start_timestamp };
       const startInactiveSpanResult = obj3.startInactiveSpan(Object.assign(obj, isAutoInstrumented));
       const arg1 = startInactiveSpanResult;
       if (startInactiveSpanResult) {
@@ -110,7 +110,7 @@ function startTimeToFullDisplaySpan(arg0) {
           return found1;
         } else {
           const _Object = Object;
-          const obj = { 1641015498: "channelId", 611078649: "toString", startTime: tmp12(tmp13[2]).spanToJSON(found).start_timestamp };
+          const obj = { monitorTypeSurfaces: 216209879871019200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, preferCurrentTab: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011744673764129227, startTime: tmp12(tmp13[2]).spanToJSON(found).start_timestamp };
           const startInactiveSpanResult = obj4.startInactiveSpan(Object.assign(obj, first));
           const dependencyMap = startInactiveSpanResult;
           if (startInactiveSpanResult) {
@@ -307,7 +307,7 @@ function captureStartFramesForSpan(spanId) {
         }
       }, 60000);
       if (!store.has(callback)) {
-        const obj = { "Null": "o", "Null": "o", cleanupTimeout: timerId };
+        const obj = { marginBottom: "o", textAlign: "o", cleanupTimeout: timerId };
         const result = store.set(callback, obj);
       }
       const value = store.get(callback);

@@ -1,5 +1,5 @@
 // Module ID: 4548
-// Function ID: 39866
+// Function ID: 39874
 // Name: PillWrapper
 // Dependencies: []
 // Exports: ButtonPill
@@ -44,7 +44,7 @@ function PillWrapper(expressivePressState) {
         obj1 = {};
         const items2 = [closure_6.absoluteFill, tmp3.expressivePill];
         obj1.style = items2;
-        obj2 = { 0: "GroupIcon", "Null": "png", "Null": true, ref: expressiveRiveRef };
+        obj2 = { ref: expressiveRiveRef };
         let str = "Mobile Expressive Button Dark Mode";
         if (obj10.isThemeLight(obj2.useThemeContext().theme)) {
           str = "Mobile Expressive Button Lightmode";
@@ -72,7 +72,7 @@ function PillWrapper(expressivePressState) {
     return tmp8(tmp9, obj);
   }
   obj5 = {};
-  const obj6 = { start: {}, end: {}, style: items6 };
+  const obj6 = { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, style: items6 };
   const items6 = [style, gradientPillStyles, closure_6.absoluteFill];
   if ("experimental_premium-basic" === variant) {
     items = items1;
@@ -104,7 +104,7 @@ class BasicButtonPill {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39875(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39883(str, DEFAULT_BUTTON_SIZE);
     obj = {};
     obj.variant = str;
     obj.size = DEFAULT_BUTTON_SIZE;
@@ -144,7 +144,7 @@ class LoadingButtonPill {
     importDefault = undefined;
     closure_2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39875(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39883(str, DEFAULT_BUTTON_SIZE);
     importDefault = importAll.useRef(null);
     tmp4 = closure_3(importAll.useState(flag), 2);
     first = tmp4[0];
@@ -334,7 +334,7 @@ let closure_14 = arg1(dependencyMap[5]).createStyles((arg0, arg1) => {
   obj2.expressivePill = obj4;
   obj2.expressiveRiveFill = { color: importDefault(dependencyMap[6]).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
   obj2.childContainer = {};
-  obj2.ellipsis = {};
+  obj2.ellipsis = { 0: null, 0: null, children: null, cutouts: null, borderRadius: null };
   return obj2;
 });
 let closure_15 = { code: "function ButtonPillNativeTsx1(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?0:1,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?opacityTransition:withDelay(FADE_DELAY,opacityTransition),transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?-1*offsetY:0,SUBTLE_SPRING)}]};}" };

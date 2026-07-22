@@ -1,9 +1,9 @@
-// Module ID: 11669
-// Function ID: 90542
+// Module ID: 11670
+// Function ID: 90555
 // Name: ChatViewPopups
 // Dependencies: []
 
-// Module 11669 (ChatViewPopups)
+// Module 11670 (ChatViewPopups)
 class ChatViewPopups {
   constructor(arg0) {
     guildId = global.guildId;

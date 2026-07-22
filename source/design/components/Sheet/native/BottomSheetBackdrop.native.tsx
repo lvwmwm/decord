@@ -1,9 +1,9 @@
-// Module ID: 5223
-// Function ID: 44187
+// Module ID: 5444
+// Function ID: 46557
 // Name: BottomSheetBackdrop
 // Dependencies: []
 
-// Module 5223 (BottomSheetBackdrop)
+// Module 5444 (BottomSheetBackdrop)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles({ container: { flex: 1 } });
@@ -81,7 +81,7 @@ const memoResult = importAllResult.memo((animatedIndex) => {
       items[0] = -1;
       items[1] = closure_3;
       items[2] = closure_2;
-      items1 = ["<string:53040003>", "<string:806589490>"];
+      items1 = ["placeholder", "aria-label"];
       items1[2] = closure_1;
       obj.opacity = obj2.interpolate(animatedIndex.get(), items, items1);
       return obj;

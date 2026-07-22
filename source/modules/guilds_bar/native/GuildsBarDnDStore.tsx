@@ -1,10 +1,10 @@
-// Module ID: 14689
-// Function ID: 110805
+// Module ID: 14697
+// Function ID: 110848
 // Name: withEqualityFn
 // Dependencies: []
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 14689 (withEqualityFn)
+// Module 14697 (withEqualityFn)
 const GuildsNodeType = require(dependencyMap[0]).GuildsNodeType;
 const obj = {};
 let closure_5 = -1;
@@ -12,13 +12,13 @@ const _module = require(dependencyMap[1]);
 const withEqualityFn = _module.createWithEqualityFn((arg0, arg1) => {
   const require = arg0;
   const importDefault = arg1;
-  const obj = { dragSpecs: undefined, overSpecs: undefined, dropSpecs: undefined, dragRegion: require(dependencyMap[2]).makeMutable({ Math: -536870861, data: -299892737 }) };
+  const obj = { dragSpecs: undefined, overSpecs: undefined, dropSpecs: undefined, dragRegion: require(dependencyMap[2]).makeMutable({ zIndex: "%FunctionPrototype%", getVoiceState: "paddingStart" }) };
   const obj2 = require(dependencyMap[2]);
   obj.gestureState = require(dependencyMap[2]).makeMutable(obj);
   const obj3 = require(dependencyMap[2]);
   obj.dragDropInProgress = require(dependencyMap[2]).makeMutable(false);
   const obj4 = require(dependencyMap[2]);
-  obj.listInsets = require(dependencyMap[2]).makeMutable({ bind: -536870861, cursor: -299892737 });
+  obj.listInsets = require(dependencyMap[2]).makeMutable({ 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" });
   const obj5 = require(dependencyMap[2]);
   obj.scrollPosition = require(dependencyMap[2]).makeMutable(0);
   obj.windowSize = 0;

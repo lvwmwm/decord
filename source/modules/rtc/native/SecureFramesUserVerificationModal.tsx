@@ -1,10 +1,10 @@
-// Module ID: 8894
-// Function ID: 70200
+// Module ID: 8895
+// Function ID: 70213
 // Name: SecureFramesUserVerificationModal
 // Dependencies: []
 // Exports: default
 
-// Module 8894 (SecureFramesUserVerificationModal)
+// Module 8895 (SecureFramesUserVerificationModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -19,11 +19,11 @@ const tmp4 = arg1(dependencyMap[6]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { disableBackButtonOverride: "<string:4083789493>", inputType: "<string:3209801398>", onSearchFocus: "<string:2577019143>", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(false)": "vertical", "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.footer = { width: true, height: true, marginBottom: true };
+obj.footer = {};
 obj.footerText = { textAlign: "center" };
-obj.header = { 9223372036854775807: false, -9223372036854775808: false, -4328168773: false, 9223372036854775807: false };
+obj.header = {};
 obj.subtitle = { textAlign: "center" };
 obj.code = { marginTop: 24 };
 obj.helpMessage = { marginBottom: 16 };
@@ -155,7 +155,7 @@ export default function SecureFramesUserVerificationModal(userId) {
     obj = { userId, channelId };
     const result = obj.trackE2EEUserVerificationViewed(obj);
   }, items8);
-  obj1 = { paddingVertical: null, paddingHorizontal: null, style: tmp.container };
+  obj1 = { "Null": null, "Null": null, style: tmp.container };
   obj2 = { style: tmp.header };
   obj3 = { accessibilityRole: "button" };
   const intl = arg1(dependencyMap[21]).intl;
@@ -173,7 +173,7 @@ export default function SecureFramesUserVerificationModal(userId) {
     obj4.androidRippleConfig = ANDROID_FOREGROUND_RIPPLE;
     obj4.hitSlop = 8;
     obj4.onPress = callback2;
-    const obj5 = { hasMaxConnections: 230, isBoostOnlySubscription: 160 };
+    const obj5 = { cachedAt: true, edpbxy: true };
     const intl3 = arg1(dependencyMap[21]).intl;
     obj5.children = intl3.string(arg1(dependencyMap[21]).t.RDE0Sc);
     obj4.children = callback2(arg1(dependencyMap[32]).Text, obj5);
@@ -182,8 +182,8 @@ export default function SecureFramesUserVerificationModal(userId) {
   items9[1] = tmp21;
   obj2.children = items9;
   const items10 = [callback3(isUserSecureFramesVerified, obj2), , , ];
-  obj6 = {};
-  obj7 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
+  obj6 = { resizeMode: true, alignSelf: true, borderRadius: true, maxWidth: true };
+  obj7 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817 };
   const intl4 = arg1(dependencyMap[21]).intl;
   obj7.children = intl4.string(arg1(dependencyMap[21]).t./WPGnF);
   const items11 = [callback2(arg1(dependencyMap[32]).Text, obj7), ];
@@ -228,7 +228,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   obj9.children = items12;
   items10[2] = tmp26(tmp28, obj9);
   const obj13 = { style: tmp.footer };
-  const obj14 = { delete: 24, dispatch: 24, raw: null, style: tmp.footerText, children: memo };
+  const obj14 = { "Null": 24, "Null": 24, alignItems: null, style: tmp.footerText, children: memo };
   const items13 = [callback2(arg1(dependencyMap[32]).Text, obj14), ];
   const obj15 = {};
   let loading = null == readableSecureFramesFingerprint;

@@ -1,10 +1,10 @@
-// Module ID: 11530
-// Function ID: 89817
+// Module ID: 11531
+// Function ID: 89830
 // Name: experiment
 // Dependencies: []
 // Exports: useIsGameServerPricingEnabled
 
-// Module 11530 (experiment)
+// Module 11531 (experiment)
 const _module = require(dependencyMap[0]);
 const items = [{ config: { enabled: true } }];
 const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });

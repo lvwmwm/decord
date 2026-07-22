@@ -1,10 +1,10 @@
-// Module ID: 11574
-// Function ID: 89999
+// Module ID: 11575
+// Function ID: 90012
 // Name: GuildPowerupsSectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11574 (GuildPowerupsSectionHeader)
+// Module 11575 (GuildPowerupsSectionHeader)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
@@ -20,8 +20,9 @@ export default function GuildPowerupsSectionHeader(arg0) {
   let description;
   let title;
   ({ title, description } = arg0);
-  const obj = { style: callback3().headerContainer };
-  const items = [callback(require(dependencyMap[4]).Text, { children: title }), callback(require(dependencyMap[4]).Text, { variant: "text-md/normal", children: description })];
+  let obj = { style: callback3().headerContainer };
+  obj = { tooltipText: "png", contain: true, children: title };
+  const items = [callback(require(dependencyMap[4]).Text, obj), callback(require(dependencyMap[4]).Text, { variant: "text-md/normal", children: description })];
   obj.children = items;
   return callback2(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8573
-// Function ID: 68111
+// Module ID: 8574
+// Function ID: 68123
 // Name: getBackgroundForProfile
 // Dependencies: []
 // Exports: default
 
-// Module 8573 (getBackgroundForProfile)
+// Module 8574 (getBackgroundForProfile)
 function getBackgroundForProfile(theme, token) {
   const items = [token, ];
   const obj = token(dependencyMap[5]);
@@ -55,12 +55,12 @@ function GuildProfileGradient(guildProfile) {
   return callback(importDefault(dependencyMap[17]), obj);
 }
 function JoinForFullAccessCard() {
-  let obj = { style: styles().joinForFullAccessCard };
-  obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
+  let obj = { MCP_FUNCTION_ORIGIN_VALUE: 705839377, Visa: 410124290, style: styles().joinForFullAccessCard };
+  obj = { cachedAt: null, edpbxy: "Array" };
   const intl = arg1(dependencyMap[20]).intl;
   obj.children = intl.string(arg1(dependencyMap[20]).t.us0bE8);
   const items = [callback(arg1(dependencyMap[19]).Text, obj), ];
-  obj = {};
+  obj = { cachedAt: 400, edpbxy: 20 };
   const intl2 = arg1(dependencyMap[20]).intl;
   obj.children = intl2.string(arg1(dependencyMap[20]).t.fTtTTp);
   items[1] = callback(arg1(dependencyMap[19]).Text, obj);
@@ -77,18 +77,18 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.colorBanner = { y: "/assets/design/components/Icon/native/redesign/generated/images", isArray: 24 };
-obj.imageBanner = { crystal_ball: "/assets/design/components/Icon/native/redesign/generated/images", channels: 24, isStreamInfoOverlayEnabled: 24 };
-obj.body = { width: "accessibilityLabel", marginVertical: "r", borderRadius: "isArray" };
-obj.error = { <string:18940595>: 8, <string:24337135>: null, <string:332421729>: "\u270A\u{1F3FF}", <string:82118454>: true };
+obj.colorBanner = { hideWhenScrolling: "/assets/design/components/Icon/native/redesign/generated/images", autoCapitalize: 24 };
+obj.imageBanner = { overflow: "/assets/design/components/Icon/native/redesign/generated/images", flex: 24, flexDirection: 24 };
+obj.body = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": false };
+obj.error = { 9223372036854775807: 8, -9223372036854775808: null, 0: "\u270A\u{1F3FF}", 9223372036854775807: true };
 obj.buttonContainer = { marginTop: 160 };
-obj.header = { "Bool(false)": null, "Bool(false)": "f1c8eb967129922c017ed22ec1b6aff1", "Bool(false)": "MinecraftNeutralIcon-secondary", "Bool(false)": "png", "Bool(false)": true };
+obj.header = { flexDirection: null, alignItems: "f1c8eb967129922c017ed22ec1b6aff1", gap: "MinecraftNeutralIcon-secondary", marginTop: "png", flex: true };
 const tmp3 = arg1(dependencyMap[4]);
 obj.avatarBackground = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.restrictedAcronym = { fontSize: 24 };
 obj.joinForFullAccessCard = { gap: 4 };
 const styles = obj.createStyles(obj);
-const frozen = Object.freeze({ START: {}, END: {} });
+const frozen = Object.freeze({ START: {}, END: { 0: null, 0: null } });
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileView.tsx");
 
@@ -132,7 +132,7 @@ export default function GuildProfileView(guildProfile) {
     tmp11 = guildProfile.description.length > 0;
   }
   if (tmp11) {
-    obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children: guildProfile.description };
+    obj = { cachedAt: 3, edpbxy: null, children: guildProfile.description };
     tmp11 = callback(arg1(dependencyMap[19]).Text, obj);
   }
   const items2 = [tmp11, ];

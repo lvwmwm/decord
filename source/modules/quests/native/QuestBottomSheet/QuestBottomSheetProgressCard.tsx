@@ -1,10 +1,10 @@
-// Module ID: 13934
-// Function ID: 105898
+// Module ID: 13941
+// Function ID: 105938
 // Name: StyleSheet
 // Dependencies: []
 // Exports: QuestBottomSheetProgressCardInGameTask, QuestBottomSheetProgressCardPlayStreamTask, QuestBottomSheetProgressCardWatchTask
 
-// Module 13934 (StyleSheet)
+// Module 13941 (StyleSheet)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, StyleSheet } = arg1(dependencyMap[1]));
@@ -12,11 +12,11 @@ let closure_6 = importDefault(dependencyMap[2]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { card: { padding: 0 }, cardWatchTask: {} };
+obj = { card: { padding: 0 }, cardWatchTask: { pointerEvents: null, accessibilityLabel: null } };
 obj = { padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.content = obj;
 obj.contentWatchTask = { alignItems: "flex-end" };
-const obj1 = { collapsable: null, removeClippedSubviews: 15.1, top: null, bottom: "\u{1F468}\u{1F3FE}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", left: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
+const obj1 = { GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, EMOJI_PICKER_EMOJI_CLICKED: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054739547892, display: 15.1, getVoiceStateChannelSummaryFromVoiceStates: null, EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "\u{1F468}\u{1F3FD}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
 obj.footer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.instructionsText = { marginTop: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
@@ -27,7 +27,7 @@ obj3["overflow"] = "hidden";
 obj.videoPreviewWrapper = obj3;
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj.videoPreview = {};
-const obj5 = { aspectRatio: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000194693962666178, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019469396266471084, shadowRadius: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009373018188927624, shadowColor: -71231254275226500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, shadowOpacity: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003131512905025784, allowUIToHandleError: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000304209316664174, reason: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017526217252763136, DOCUMENT_VISIBILITY_CHANGE_EVENT_DELAY: 170069515482035200000000, DEFAULT_PROCESS_RESULTS_DELAY: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319599541858375, borderRadius: importDefault(dependencyMap[5]).radii.round };
+const obj5 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, borderRadius: importDefault(dependencyMap[5]).radii.round };
 const items = [{ translateX: -30 }, { translateY: -30 }];
 obj5.transform = items;
 obj.playVideoIconWrapper = obj5;
@@ -145,7 +145,7 @@ export const QuestBottomSheetProgressCardPlayStreamTask = function QuestBottomSh
   const items2 = [tmp16(importDefault(dependencyMap[15]), obj1), ];
   let tmp18 = null != memo;
   if (tmp18) {
-    obj2 = { delete: "content", dispatch: "isArray", raw: "isArray", style: tmp.instructionsText, children: memo };
+    obj2 = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp.instructionsText, children: memo };
     tmp18 = defaultRewardName(arg1(dependencyMap[12]).Text, obj2);
   }
   items2[1] = tmp18;
@@ -153,7 +153,7 @@ export const QuestBottomSheetProgressCardPlayStreamTask = function QuestBottomSh
   const items3 = [isSponsoredPlayQuestResult(tmp15, obj), ];
   if (isQuestProgressing) {
     obj3 = { style: tmp.footer };
-    obj4 = { "Null": null, "Null": "text-sm/medium" };
+    obj4 = { "Null": "text-sm/medium", "Null": "interactive-text-active" };
     const intl = arg1(dependencyMap[11]).intl;
     obj5 = { gameName: quest.config.messages.gameTitle };
     obj4.children = intl.format(arg1(dependencyMap[11]).t.lIFg6I, obj5);
@@ -209,7 +209,7 @@ export const QuestBottomSheetProgressCardWatchTask = function QuestBottomSheetPr
     const obj4 = { uri: memo.url };
     obj3.source = obj4;
     const items4 = [callback(arg1(dependencyMap[20]).VideoComponent, obj3), ];
-    const obj5 = { start: {}, end: {}, style: StyleSheet.absoluteFill, colors: [null, null] };
+    const obj5 = { start: { 0: false, 0: false }, end: { 0: "<string:2491613185>", 0: "<string:2941583362>" }, style: StyleSheet.absoluteFill, colors: [null, null] };
     items4[1] = callback(importDefault(dependencyMap[21]), obj5);
     obj2.children = items4;
     tmp18Result = callback2(closure_4, obj2);
@@ -226,7 +226,7 @@ export const QuestBottomSheetProgressCardWatchTask = function QuestBottomSheetPr
     obj7.source = obj8;
     obj7.resizeMode = "cover";
     const items6 = [callback(importDefault(dependencyMap[22]), obj7), ];
-    const obj9 = { start: {}, end: {}, style: StyleSheet.absoluteFill, colors: [null, null] };
+    const obj9 = { start: { 0: false, 0: false }, end: { 0: "<string:2491613185>", 0: "<string:2941583362>" }, style: StyleSheet.absoluteFill, colors: [null, null] };
     items6[1] = callback(importDefault(dependencyMap[21]), obj9);
     obj6.children = items6;
     tmp28 = callback2(closure_4, obj6);

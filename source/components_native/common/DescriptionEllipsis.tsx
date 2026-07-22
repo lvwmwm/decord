@@ -1,16 +1,16 @@
-// Module ID: 11435
-// Function ID: 89005
+// Module ID: 11436
+// Function ID: 89018
 // Name: DescriptionEllipsis
 // Dependencies: []
 // Exports: default
 
-// Module 11435 (DescriptionEllipsis)
+// Module 11436 (DescriptionEllipsis)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_1, jsxs: closure_2 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { status: true, style: "/assets/images/native/icons/voice_calls", border: 24, radius: 24, shadow: null, maxWidth: "897ada03fe806525383ec1a77806ad61", flexShrink: "screenshare_end", position: "png", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { flexDirection: true, alignItems: "/assets/images/native/icons/voice_calls", padding: 24, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderWidth: null, shouldShow: "897ada03fe806525383ec1a77806ad61", title: "screenshare_end", description: "png", borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.topicEllipsis = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.topicEllipsisDot = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_MUTED };

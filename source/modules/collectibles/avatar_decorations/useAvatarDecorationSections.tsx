@@ -1,5 +1,5 @@
 // Module ID: 7857
-// Function ID: 62616
+// Function ID: 62626
 // Name: useAvatarDecorationSections
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 4563
-// Function ID: 40007
+// Function ID: 40015
 // Name: MENTION_SENTINEL
 // Dependencies: []
 // Exports: formatGameMentionRaw

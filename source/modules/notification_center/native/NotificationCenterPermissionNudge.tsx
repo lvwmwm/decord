@@ -1,10 +1,10 @@
-// Module ID: 15014
-// Function ID: 113042
+// Module ID: 15022
+// Function ID: 113085
 // Name: NotificationCenterBannerImpl
 // Dependencies: []
 // Exports: default
 
-// Module 15014 (NotificationCenterBannerImpl)
+// Module 15022 (NotificationCenterBannerImpl)
 function NotificationCenterBannerImpl(onDismiss) {
   const arg1 = onDismiss.onDismiss;
   const tmp = callback6();
@@ -19,18 +19,18 @@ function NotificationCenterBannerImpl(onDismiss) {
   obj.children = callback4(arg1(dependencyMap[10]).BellSlashIcon, obj);
   const items = [callback4(View, obj), , ];
   const obj1 = { style: tmp.contentContainer };
-  const obj2 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+  const obj2 = { cachedAt: null, edpbxy: "Array" };
   const intl = arg1(dependencyMap[12]).intl;
   obj2.children = intl.string(arg1(dependencyMap[12]).t.G6YBna);
   const items1 = [callback4(arg1(dependencyMap[11]).Text, obj2), , ];
-  const obj3 = {};
+  const obj3 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
   const obj4 = { marginTop: importDefault(dependencyMap[8]).space.PX_4 };
   obj3.style = obj4;
   const intl2 = arg1(dependencyMap[12]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[12]).t.9CoPDE);
   items1[1] = callback4(arg1(dependencyMap[11]).Text, obj3);
   const obj5 = { style: tmp.ctaButton };
-  const obj6 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
+  const obj6 = {};
   const intl3 = arg1(dependencyMap[12]).intl;
   obj6.text = intl3.string(arg1(dependencyMap[12]).t.a4bgO0);
   obj6.onPress = function onPress() {
@@ -44,9 +44,6 @@ function NotificationCenterBannerImpl(onDismiss) {
   obj1.children = items1;
   items[1] = callback5(View, obj1);
   const obj7 = {
-    -1011446930: null,
-    31071: 8,
-    65536: "absolute",
     onPress() {
       let obj = callback(closure_2[9]);
       obj = { action: constants4.DISMISS, prompt_type: constants5.NOTIFICATION_CENTER_BANNER };
@@ -56,7 +53,7 @@ function NotificationCenterBannerImpl(onDismiss) {
   };
   const intl4 = arg1(dependencyMap[12]).intl;
   obj7.accessibilityLabel = intl4.string(arg1(dependencyMap[12]).t.WAI6xu);
-  obj7.children = callback4(arg1(dependencyMap[16]).XSmallIcon, { accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003576746115128254, "": -16293828138055107000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  obj7.children = callback4(arg1(dependencyMap[16]).XSmallIcon, { "Bool(false)": 1948506963, "Bool(false)": 19127130 });
   items[2] = callback4(arg1(dependencyMap[15]).PressableHighlight, obj7);
   obj.children = items;
   return callback5(View, obj);

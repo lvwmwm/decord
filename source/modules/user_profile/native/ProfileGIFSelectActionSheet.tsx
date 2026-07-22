@@ -1,10 +1,10 @@
-// Module ID: 13461
-// Function ID: 102214
+// Module ID: 13468
+// Function ID: 102247
 // Name: ProfileGIFSelectActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13461 (ProfileGIFSelectActionSheet)
+// Module 13468 (ProfileGIFSelectActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -30,7 +30,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   }
   const tmp = callback3();
   const ref = React.useRef(null);
-  let obj = { <string:1597498264>: null, 9223372036854775807: null, 0: null, ref };
+  let obj = { 0: null, 0: null, 9223372036854775807: null, ref };
   obj = {};
   const intl = arg1(dependencyMap[15]).intl;
   obj.title = intl.string(arg1(dependencyMap[15]).t.xsC+/y);

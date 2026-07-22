@@ -1,10 +1,10 @@
-// Module ID: 11909
-// Function ID: 92207
+// Module ID: 11910
+// Function ID: 92221
 // Name: isOnXbox
 // Dependencies: [1392, 3801, 2]
 // Exports: default
 
-// Module 11909 (isOnXbox)
+// Module 11910 (isOnXbox)
 import { XBOX_ACTIVITY_APPLICATION_ID as closure_0 } from "getAvatarURL";
 import { ActivityGamePlatforms } from "explicitContentFromProto";
 import result2 from "result2";

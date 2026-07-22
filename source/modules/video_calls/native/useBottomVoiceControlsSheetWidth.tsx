@@ -1,10 +1,10 @@
-// Module ID: 10539
-// Function ID: 82356
+// Module ID: 10540
+// Function ID: 82369
 // Name: useBottomVoiceControlsSheetWidth
 // Dependencies: []
 // Exports: default
 
-// Module 10539 (useBottomVoiceControlsSheetWidth)
+// Module 10540 (useBottomVoiceControlsSheetWidth)
 const _module = require(dependencyMap[0]);
 ({ BOX_MODE_ACTIONSHEET_WIDTH: closure_2, BOX_MODE_THRESHOLD_WIDTH: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

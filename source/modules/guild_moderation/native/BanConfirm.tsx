@@ -1,9 +1,9 @@
-// Module ID: 10985
-// Function ID: 85509
+// Module ID: 10986
+// Function ID: 85522
 // Name: items
 // Dependencies: []
 
-// Module 10985 (items)
+// Module 10986 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
@@ -132,7 +132,7 @@ const memoResult = importAllResult.memo(function BanConfirm(arg0) {
   const stateFromStores1 = obj1.useStateFromStores(items2, () => user.getUser(closure_1));
   let closure_5 = importAllResult.useRef(0);
   let closure_6 = importAllResult.useRef("");
-  const tmp7 = callback(stateFromStores1.useState(() => ({ right: null, ti: null })), 2);
+  const tmp7 = callback(stateFromStores1.useState(() => ({ 1565697739: true, 1409892904: true })), 2);
   const first = tmp7[0];
   let closure_7 = tmp7[1];
   const items3 = [stateFromStores, stateFromStores1, onBan];
@@ -154,11 +154,11 @@ const memoResult = importAllResult.memo(function BanConfirm(arg0) {
       obj5.username = obj9.getName(stateFromStores1);
       obj4.children = intl.format(arg1(dependencyMap[6]).t.Qd6w7T, obj5);
       items4[1] = callback2(arg1(dependencyMap[15]).Text, obj4);
-      const obj6 = { hasMaxConnections: "isArray", isBoostOnlySubscription: "accessibilityRole", children: stateFromStores.name };
+      const obj6 = { cachedAt: "isArray", edpbxy: "accessibilityRole", children: stateFromStores.name };
       items4[2] = callback2(arg1(dependencyMap[15]).Text, obj6);
       obj2.children = items4;
       const items5 = [callback3(closure_6, obj2), , , , , ];
-      const obj7 = { delete: "Array", dispatch: "VOICE_PROCESSING", raw: "Array", style: tmp.blurb };
+      const obj7 = { "Null": "r", "Null": 350, alignItems: 350, style: tmp.blurb };
       const intl2 = arg1(dependencyMap[6]).intl;
       const obj8 = {};
       let obj13 = importDefault(dependencyMap[16]);

@@ -1,5 +1,5 @@
 // Module ID: 6924
-// Function ID: 55247
+// Function ID: 55258
 // Name: canBypassSlowmodeHelper
 // Dependencies: []
 // Exports: canBypassSlowmode, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode

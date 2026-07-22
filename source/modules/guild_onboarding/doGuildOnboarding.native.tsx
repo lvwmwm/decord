@@ -1,10 +1,10 @@
-// Module ID: 5323
-// Function ID: 45293
+// Module ID: 5050
+// Function ID: 43703
 // Name: getBaseAnimationData
 // Dependencies: []
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 5323 (getBaseAnimationData)
+// Module 5050 (getBaseAnimationData)
 function getBaseAnimationData() {
   return JSON.parse(JSON.stringify(arg1(dependencyMap[6])));
 }

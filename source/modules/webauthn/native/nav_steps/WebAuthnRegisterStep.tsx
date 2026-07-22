@@ -1,10 +1,10 @@
-// Module ID: 13520
-// Function ID: 102587
+// Module ID: 13527
+// Function ID: 102620
 // Name: AndroidPasskeyRadioGroup
 // Dependencies: []
 // Exports: default
 
-// Module 13520 (AndroidPasskeyRadioGroup)
+// Module 13527 (AndroidPasskeyRadioGroup)
 let OTHER_AND_ANDROID_NONDISCOVERABLE;
 let PASSKEY_CREDENTIAL_MANAGER;
 let PASSKEY_DEVICE;
@@ -44,7 +44,7 @@ const View = arg1(dependencyMap[2]).View;
 const WebAuthnScreens = arg1(dependencyMap[3]).WebAuthnScreens;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { flexContainer: {}, centerFlex: { <string:29557293>: true, <string:45941405>: true }, margin: {} };
+obj = { flexContainer: {}, centerFlex: { "Null": true, "Null": true }, margin: {} };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
 obj.radioItem = obj;
 let closure_9 = obj.createStyles(obj);
@@ -79,7 +79,7 @@ export default function WebAuthnRegisterStep() {
   let closure_5 = React.useMemo(() => closure_11[closure_3], items1);
   const items2 = [callback, tmp8, tmp3[1]];
   let closure_6 = React.useMemo(() => ({ onRegisterSuccess: callback, setError: tmp8, setRegistering: tmp5 }), items2);
-  obj = { "Bool(false)": "Small", "Bool(false)": "sm", "Bool(false)": "Placeholder", style: tmp2.flexContainer };
+  obj = { style: tmp2.flexContainer };
   obj = { style: tmp2.centerFlex };
   const items3 = [callback2(arg1(dependencyMap[13]).KeyImage, {}), , ];
   obj1 = { style: tmp2.margin, variant: "text-md/normal" };

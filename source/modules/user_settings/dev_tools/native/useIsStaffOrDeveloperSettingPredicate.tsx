@@ -1,10 +1,10 @@
-// Module ID: 13624
-// Function ID: 103227
+// Module ID: 13631
+// Function ID: 103260
 // Name: useStaffOrDeveloperSettingPredicate
 // Dependencies: []
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 13624 (useStaffOrDeveloperSettingPredicate)
+// Module 13631 (useStaffOrDeveloperSettingPredicate)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");
 

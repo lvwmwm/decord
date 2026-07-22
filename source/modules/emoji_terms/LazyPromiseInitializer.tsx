@@ -1,12 +1,16 @@
-// Module ID: 5270
-// Function ID: 44828
+// Module ID: 4997
+// Function ID: 43238
 // Name: LazyPromiseInitializer
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 5270 (LazyPromiseInitializer)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4997 (LazyPromiseInitializer)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/emoji_terms/LazyPromiseInitializer.tsx");
+
+export default () => {
   class LazyPromiseInitializer {
     constructor(arg0) {
       tmp = LazyPromiseInitializer(this, LazyPromiseInitializer);
@@ -62,6 +66,3 @@ const tmp2 = () => {
   items[2] = obj;
   return callback(LazyPromiseInitializer, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/emoji_terms/LazyPromiseInitializer.tsx");
-
-export default tmp2;

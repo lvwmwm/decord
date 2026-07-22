@@ -1,15 +1,15 @@
-// Module ID: 9170
-// Function ID: 71843
+// Module ID: 9171
+// Function ID: 71856
 // Name: TermsField
 // Dependencies: []
 // Exports: default
 
-// Module 9170 (TermsField)
+// Module 9171 (TermsField)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { no: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, channel: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054740832208 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { "Bool(false)": 155167561210812170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004665176389013491 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsField.tsx");
 
@@ -25,7 +25,7 @@ export default function TermsField(field) {
   }
   let obj = { style: callback3().container };
   const items = [callback(importDefault(dependencyMap[4]), { rules: field.values, rulesChannelId }), ];
-  obj = { bind: null, cursor: null, checked: tmp2 };
+  obj = { 400888199: null, 2091392542: null, checked: tmp2 };
   const intl = arg1(dependencyMap[6]).intl;
   obj.label = intl.string(arg1(dependencyMap[6]).t.2EXfGJ);
   obj.onPress = onChange;

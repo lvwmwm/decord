@@ -52,8 +52,8 @@ function buildLocalizeTokenFn(arg0) {
   };
 }
 const obj = {
-  lessThanXSeconds: buildLocalizeTokenFn({ regular: { location: "{{count}} \u0434\u0435\u043D\u044C", y: "{{count}} \u0434\u043D\u044F", isArray: "{{count}} \u0434\u043D\u0435\u0439", children: "\u043E\u043A\u043E\u043B\u043E {{count}} \u043D\u0435\u0434\u0435\u043B\u0438" }, future: { location: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009272410266334245, y: 210210867405878300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, isArray: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005458427025666394, children: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009784048354417965 } }),
-  xSeconds: buildLocalizeTokenFn({ regular: { 0: 1969291267, 0: 423821315, 0: 553649013 }, past: { 0: 1965096963, 0: 541261827, 0: 553649079 }, future: { 0: 12322518567851921000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 16891962373502924000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 69305481775476890000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } }),
+  lessThanXSeconds: buildLocalizeTokenFn({ regular: { "Null": "context", "Null": "a", "Null": "isArray", "Null": "WireType" }, future: { "Null": false, "Null": false, "Null": false, "Null": false } }),
+  xSeconds: buildLocalizeTokenFn({ regular: { "Bool(true)": "a", formatDistanceStrict: "isArray", formatDistanceToNow: "WireType" }, past: { "Bool(true)": false, formatDistanceStrict: false, formatDistanceToNow: false }, future: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: null } }),
   halfAMinute(arg0, addSuffix) {
     let str = "\u043F\u043E\u043B\u043C\u0438\u043D\u0443\u0442\u044B";
     if (null != addSuffix) {
@@ -71,19 +71,19 @@ const obj = {
     }
     return str;
   },
-  lessThanXMinutes: buildLocalizeTokenFn({ regular: {}, future: { location: "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u0433\u043E\u0434", y: "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u0433\u043E\u0434\u0430", isArray: "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u043B\u0435\u0442", children: 68 } }),
-  xMinutes: buildLocalizeTokenFn({ regular: {}, past: { 0: null, 0: null, 0: null }, future: { 0: null, 0: null, 0: null } }),
-  aboutXHours: buildLocalizeTokenFn({ regular: { 0: "<string:1514340608>", 0: "<string:620757742>", 0: "<string:134218481>" }, future: { 0: null, 0: null, 0: null } }),
-  xHours: buildLocalizeTokenFn({ regular: { 0: "hidden", 0: 42, 0: 20 } }),
-  xDays: buildLocalizeTokenFn({ regular: { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017303363919666164, 0: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006694660806378437, 0: -9131702984665393000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } }),
-  aboutXWeeks: buildLocalizeTokenFn({ regular: { 0: null, 0: null, 0: null }, future: { 0: null, 0: null, 0: null } }),
-  xWeeks: buildLocalizeTokenFn({ regular: {} }),
-  aboutXMonths: buildLocalizeTokenFn({ regular: {}, future: { 0: "<string:1207960332>", 0: "<string:1174405900>", 0: null } }),
-  xMonths: buildLocalizeTokenFn({ regular: { 0: true, 0: true, 0: true } }),
-  aboutXYears: buildLocalizeTokenFn({ regular: { 0: null, 0: null, 0: null }, future: { 0: null, 0: null, 0: null } }),
-  xYears: buildLocalizeTokenFn({ regular: { 0: null, 0: null, 0: null } }),
-  overXYears: buildLocalizeTokenFn({ regular: {}, future: { 0: "mindre \u00E4n en sekund", 0: "mindre \u00E4n {{count}} sekunder", 0: "en sekund" } }),
-  almostXYears: buildLocalizeTokenFn({ regular: {}, future: {} })
+  lessThanXMinutes: buildLocalizeTokenFn({ regular: { "Null": true, "Null": true, "Null": true, "Null": true }, future: { "Null": "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u0433\u043E\u0434", "Null": "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u0433\u043E\u0434\u0430", "Null": "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u043B\u0435\u0442", "Null": null } }),
+  xMinutes: buildLocalizeTokenFn({ regular: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: null }, past: { "Bool(true)": "title", formatDistanceStrict: "__closure", formatDistanceToNow: "title" }, future: {} }),
+  aboutXHours: buildLocalizeTokenFn({ regular: {}, future: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: 16 } }),
+  xHours: buildLocalizeTokenFn({ regular: {} }),
+  xDays: buildLocalizeTokenFn({ regular: { "Bool(true)": "0", formatDistanceStrict: "\u0414\u041F", formatDistanceToNow: "\u041F\u041F" } }),
+  aboutXWeeks: buildLocalizeTokenFn({ regular: {}, future: { "Bool(true)": "<string:2835350284>", formatDistanceStrict: "<string:1342178063>", formatDistanceToNow: "<string:1207960332>" } }),
+  xWeeks: buildLocalizeTokenFn({ regular: { "Bool(true)": false, formatDistanceStrict: false, formatDistanceToNow: false } }),
+  aboutXMonths: buildLocalizeTokenFn({ regular: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: null }, future: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: null } }),
+  xMonths: buildLocalizeTokenFn({ regular: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: null } }),
+  aboutXYears: buildLocalizeTokenFn({ regular: {}, future: { "Bool(true)": "\u0414\u041F", formatDistanceStrict: "\u041F\u041F", formatDistanceToNow: "\u043F\u043E\u043B\u043D\u043E\u0447\u044C" } }),
+  xYears: buildLocalizeTokenFn({ regular: {} }),
+  overXYears: buildLocalizeTokenFn({ regular: { "Bool(true)": null, formatDistanceStrict: null, formatDistanceToNow: null }, future: { "Bool(true)": false, formatDistanceStrict: false, formatDistanceToNow: false } }),
+  almostXYears: buildLocalizeTokenFn({ regular: { "Bool(true)": true, formatDistanceStrict: true, formatDistanceToNow: true }, future: { "Bool(true)": true, formatDistanceStrict: true, formatDistanceToNow: true } })
 };
 
 export default function formatDistance(arg0, arg1, arg2) {

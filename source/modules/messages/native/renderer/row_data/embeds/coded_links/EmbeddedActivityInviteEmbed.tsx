@@ -1,10 +1,10 @@
-// Module ID: 12172
-// Function ID: 93605
+// Module ID: 12176
+// Function ID: 93631
 // Name: createEmbeddedActivityInviteEmbed
 // Dependencies: []
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12172 (createEmbeddedActivityInviteEmbed)
+// Module 12176 (createEmbeddedActivityInviteEmbed)
 let closure_3 = importDefault(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -18,7 +18,7 @@ let closure_12 = importDefault(dependencyMap[8]);
 let closure_13 = importDefault(dependencyMap[9]);
 const CodedLinkExtendedType = arg1(dependencyMap[10]).CodedLinkExtendedType;
 const InviteTargetTypes = arg1(dependencyMap[11]).InviteTargetTypes;
-let closure_16 = ["RollOutRight"];
+let closure_16 = ["ETHERNET"];
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
 
 export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivityInviteEmbed(inviteCode) {

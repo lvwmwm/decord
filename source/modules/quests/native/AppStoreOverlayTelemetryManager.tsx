@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 81005
+// Module ID: 10463
+// Function ID: 81018
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 4142, 10473, 10474, 2, 653, 1207, 2, 5, 686]
+// Dependencies: [5, 4142, 10474, 10475, 2, 653, 1207, 2, 5, 686]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10462 (_isNativeReflectConstruct)
+// Module 10463 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closeVoicePanels from "closeVoicePanels";

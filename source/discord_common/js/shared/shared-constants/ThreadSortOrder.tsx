@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1357 (set)
-const obj = { ALL: new Set(["replace", "then"]) };
+const obj = { ALL: new Set([77601039, 1612144654]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSortOrder.tsx");
 

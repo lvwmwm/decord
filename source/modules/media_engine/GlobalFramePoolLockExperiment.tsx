@@ -1,10 +1,10 @@
-// Module ID: 12650
-// Function ID: 97288
+// Module ID: 12657
+// Function ID: 97321
 // Name: getGlobalFramePoolLockExperimentConfig
 // Dependencies: []
 // Exports: getGlobalFramePoolLockExperimentConfig
 
-// Module 12650 (getGlobalFramePoolLockExperimentConfig)
+// Module 12657 (getGlobalFramePoolLockExperimentConfig)
 let closure_0 = importDefault(dependencyMap[0])({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/media_engine/GlobalFramePoolLockExperiment.tsx");
 

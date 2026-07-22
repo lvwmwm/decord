@@ -1,10 +1,10 @@
-// Module ID: 9611
-// Function ID: 74855
+// Module ID: 9612
+// Function ID: 74868
 // Name: hideStickerDetailActionSheet
 // Dependencies: []
 // Exports: hideStickerDetailActionSheet, showStickerDetailActionSheet
 
-// Module 9611 (hideStickerDetailActionSheet)
+// Module 9612 (hideStickerDetailActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/stickers/native/showStickerDetailActionSheet.tsx");
 

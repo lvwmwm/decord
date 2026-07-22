@@ -1,9 +1,9 @@
-// Module ID: 12487
-// Function ID: 95396
+// Module ID: 12492
+// Function ID: 95424
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12487 (_isNativeReflectConstruct)
+// Module 12492 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -107,7 +107,8 @@ const tmp3 = (arg0) => {
   items[3] = {
     key: "getInitialState",
     value() {
-      return { selfMute: closure_10.isSelfMute(), selfDeaf: closure_10.isSelfDeaf(), selfVideo: closure_10.isVideoEnabled() };
+      const obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, selfMute: closure_10.isSelfMute(), selfDeaf: closure_10.isSelfDeaf(), selfVideo: closure_10.isVideoEnabled() };
+      return obj;
     }
   };
   items[4] = {

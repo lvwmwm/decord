@@ -1,10 +1,10 @@
-// Module ID: 9317
-// Function ID: 72798
+// Module ID: 9318
+// Function ID: 72811
 // Name: PremiumUpsellTooltipActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9317 (PremiumUpsellTooltipActionSheet)
+// Module 9318 (PremiumUpsellTooltipActionSheet)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
@@ -14,11 +14,11 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { justifyContent: "center", paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-const tmp4 = arg1(dependencyMap[3]);
-obj.img = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.header = { "Bool(false)": 7, "Bool(false)": 370 };
+const obj1 = { 2147452671: null, -2080407041: null, -2013297153: null, -1962964737: null, -1879077633: null, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.img = obj1;
+obj.header = { "Bool(false)": null, "Bool(false)": "\u{1F43F}\uFE0F" };
 obj.title = {};
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const tmp4 = arg1(dependencyMap[3]);
 obj.description = { textAlign: "center", marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
 const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
 obj.nitroWheel = { tintColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -70,9 +70,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   }
   const items1 = [tmp6, , , ];
   const obj1 = { style: tmp.header };
-  const items2 = [callback(arg1(dependencyMap[8]).NitroWheel, { style: tmp.nitroWheel }), ];
-  const obj3 = { body: "Array", variant: "RNIapModule", accessibilityRole: "isArray", unicodeVersion: "_parentSpanId", style: tmp.title, children: title };
-  items2[1] = callback(arg1(dependencyMap[9]).Text, obj3);
+  const items2 = [callback(arg1(dependencyMap[8]).NitroWheel, { style: tmp.nitroWheel }), callback(arg1(dependencyMap[9]).Text, { style: tmp.title, children: title })];
   obj1.children = items2;
   items1[1] = callback2(handleDismiss, obj1);
   const items3 = [tmp.description, descriptionStyle];

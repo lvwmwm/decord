@@ -16,6 +16,6 @@ export const ignoreRequireCycleLogs = function ignoreRequireCycleLogs(version) {
     tmp = version.minor < 70;
   }
   if (tmp) {
-    LogBox.ignoreLogs(["<string:3221226569>"]);
+    LogBox.ignoreLogs([null]);
   }
 };

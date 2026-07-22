@@ -1,10 +1,10 @@
-// Module ID: 10746
-// Function ID: 83496
+// Module ID: 10747
+// Function ID: 83509
 // Name: closeStageModal
 // Dependencies: []
 // Exports: HideChannelCallButton
 
-// Module 10746 (closeStageModal)
+// Module 10747 (closeStageModal)
 function closeStageModal(id) {
   let obj = importDefault(dependencyMap[14]);
   obj = { video_layout: "pop out" };
@@ -72,15 +72,15 @@ class StageChannelCallHeader {
       num = 28;
       obj2 = {};
       obj2.style = tmp.linearGradient;
-      obj2.colors = ["formatToPlainString", "it"];
-      obj2.start = {};
-      obj2.end = {};
+      obj2.colors = [-648432688, 2095943999];
+      obj2.start = { 0: "column", 0: null };
+      obj2.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
       tmp10 = jsx(importDefault(dependencyMap[28]), obj2);
     }
     items3 = [, ];
     items3[0] = tmp10;
     tmp14 = jsx;
-    obj3 = { "Null": null, "Null": null };
+    obj3 = {};
     topic = undefined;
     if (null != stateFromStores) {
       topic = stateFromStores.topic;
@@ -176,14 +176,14 @@ class StageInviteButton {
     channelId = global.channelId;
     arg1 = channelId;
     tmp = closure_14();
-    obj = arg1(f83508[19]);
+    obj = arg1(f83521[19]);
     items = [];
     items[0] = closure_5;
     items1 = [];
     items1[0] = channelId;
     stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId), items1);
-    f83507 = stateFromStores;
-    obj2 = arg1(f83508[19]);
+    f83520 = stateFromStores;
+    obj2 = arg1(f83521[19]);
     items2 = [];
     items2[0] = closure_7;
     items3 = [];
@@ -199,28 +199,28 @@ class StageInviteButton {
       }
       return guild.getGuild(tmp4);
     }, items3);
-    f83508 = stateFromStores1;
-    obj3 = arg1(f83508[35]);
+    f83521 = stateFromStores1;
+    obj3 = arg1(f83521[35]);
     View = obj3.useActiveEvent(channelId);
     tmp4 = null;
     if (null != stateFromStores) {
       tmp4 = null;
       if (null != stateFromStores1) {
         tmp5 = jsx;
-        tmp6 = f83507;
-        tmp7 = f83508;
+        tmp6 = f83520;
+        tmp7 = f83521;
         num = 20;
         obj = {};
         tmp9 = arg1;
         num2 = 22;
-        tmp8 = f83507(f83508[20]);
-        intl = arg1(f83508[22]).intl;
-        obj.accessibilityLabel = intl.string(arg1(f83508[22]).t.VINpSK);
+        tmp8 = f83520(f83521[20]);
+        intl = arg1(f83521[22]).intl;
+        obj.accessibilityLabel = intl.string(arg1(f83521[22]).t.VINpSK);
         obj.containerStyle = tmp.iconBackground;
         num3 = 36;
-        obj.source = f83507(f83508[36]);
+        obj.source = f83520(f83521[36]);
         num4 = 37;
-        obj.IconComponent = arg1(f83508[37]).GroupPlusIcon;
+        obj.IconComponent = arg1(f83521[37]).GroupPlusIcon;
         obj.onPress = function onPress() {
           if (null != stateFromStores1.vanityURLCode) {
             const result = channelId(stateFromStores1[38]).showVanityUrlInviteActionSheet(stateFromStores1, stateFromStores, constants.STAGE_CHANNEL);
@@ -313,11 +313,11 @@ const tmp2 = arg1(dependencyMap[8]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
 let obj = {};
-obj = { y: false, isArray: false, type: false, ddd: false, y: false, height: arg1(dependencyMap[11]).NAV_BAR_HEIGHT };
+obj = { height: arg1(dependencyMap[11]).NAV_BAR_HEIGHT };
 obj.header = obj;
-obj.leftTitleContainer = { 906602722: null, -1414893631: 0 };
+obj.leftTitleContainer = { NBSP: null, isEndStream: 0 };
 obj.titleWrapper = {};
-obj.linearGradient = {};
+obj.linearGradient = { flex: true, flexDirection: "/assets/modules/stage_channels/native/images", alignItems: 20, padding: 20, width: null, _desired: "d3638c1d3e13cd543d354bc72debe331" };
 obj1 = {};
 const tmp3 = arg1(dependencyMap[9]);
 obj1.backgroundColor = arg1(dependencyMap[12]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.WHITE, 0.1);
@@ -327,10 +327,10 @@ const obj6 = arg1(dependencyMap[12]);
 obj2.backgroundColor = arg1(dependencyMap[12]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.WHITE, 0.1);
 obj.iconContainer = obj2;
 obj.settingsButton = { marginRight: 4 };
-const obj3 = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true, color: importDefault(dependencyMap[13]).colors.TEXT_SUBTLE };
+const obj3 = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true, color: importDefault(dependencyMap[13]).colors.TEXT_SUBTLE };
 obj.stageInfo = obj3;
 obj.stageInfoTopic = { marginLeft: 4 };
-const obj4 = { ICON_VOICE_MUTED: 1, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: "comp_0", tintColor: importDefault(dependencyMap[13]).colors.TEXT_SUBTLE };
+const obj4 = { <string:4224476331>: "Array", <string:1415819756>: "isArray", tintColor: importDefault(dependencyMap[13]).colors.TEXT_SUBTLE };
 obj.icon = obj4;
 let closure_14 = obj1.createStyles(obj);
 const obj8 = arg1(dependencyMap[12]);

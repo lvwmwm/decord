@@ -1,5 +1,5 @@
 // Module ID: 3941
-// Function ID: 32505
+// Function ID: 32507
 // Name: items1
 // Dependencies: []
 
@@ -17,7 +17,7 @@ let obj = {
   },
   midpointPercentage: 27
 };
-const items = [{}, {}, {}];
+const items = [{ "Bool(true)": true, "Bool(true)": true }, { "Bool(true)": "GAME_CLICKED_LANDING", "Bool(true)": "sortSoundsFn" }, { "Bool(true)": 1975684956, "Bool(true)": 188825664 }];
 const items1 = [obj, , , , , , , ];
 obj = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -31,7 +31,7 @@ obj = {
   },
   midpointPercentage: 27
 };
-const items2 = [{}, {}];
+const items2 = [{ "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": "ETHERNET", "Bool(true)": "onStorageInitialize" }];
 items1[1] = obj;
 obj = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -45,9 +45,9 @@ obj = {
   },
   midpointPercentage: 50
 };
-const items3 = [{}, {}, {}, {}];
+const items3 = [{ "Bool(true)": "ETHERNET", "Bool(true)": null }, { "Bool(true)": true, "Bool(true)": true }, { "Bool(true)": null, "Bool(true)": null }, { "Bool(true)": true, "Bool(true)": true }];
 items1[2] = obj;
-const items4 = [{}, {}, {}];
+const items4 = [{ "Bool(true)": "<string:1079188684>", "Bool(true)": "<string:71293249>" }, { "Bool(true)": "GS", "Bool(true)": "+500" }, { "Bool(true)": 8957941133816627, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003204277304628237 }];
 items1[3] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.HANAMI,
@@ -72,7 +72,7 @@ const obj1 = {
   },
   midpointPercentage: 50
 };
-const items5 = [{}, {}, {}];
+const items5 = [{ "Bool(true)": "channelId", "Bool(true)": "channelId" }, { "Bool(true)": "Map", "Bool(true)": "transform" }, { "Bool(true)": true, "Bool(true)": true }];
 items1[4] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.SUNRISE,
@@ -97,7 +97,7 @@ const obj2 = {
   },
   midpointPercentage: 50
 };
-const items6 = [{}, {}];
+const items6 = [{ "Bool(true)": "channelId", "Bool(true)": "channelId" }, { "Bool(true)": false, "Bool(true)": false }];
 items1[5] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.COTTON_CANDY,
@@ -122,7 +122,7 @@ const obj3 = {
   },
   midpointPercentage: 50
 };
-const items7 = [{}, {}, {}, {}];
+const items7 = [{ "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025003067525494595, "Bool(true)": 216209879820678930000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, {}, { "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false }];
 items1[6] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.LOFI_VIBES,
@@ -147,7 +147,7 @@ const obj4 = {
   },
   midpointPercentage: 27
 };
-const items8 = [{}, {}, {}];
+const items8 = [{ "Bool(true)": "CONSOLE_DEVICE_ACCOUNT_LINK_ERROR", "Bool(true)": "CHANNEL_SELECTOR" }, { "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": "CONSOLE_DEVICE_ACCOUNT_LINK_ERROR", "Bool(true)": "FRIENDS_SUGGESTED_FRIENDS_MODAL" }];
 items1[7] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.DESERT_KHAKI,
@@ -173,7 +173,7 @@ const obj5 = {
   },
   midpointPercentage: 50
 };
-const items9 = [{}, {}];
+const items9 = [{ "Bool(true)": 77801793, "Bool(true)": -2061553408 }, { "Bool(true)": "DfaKHr", "Bool(true)": "%Object%" }];
 const items10 = [
   {
     type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -212,7 +212,7 @@ const obj6 = {
   },
   midpointPercentage: 35
 };
-const items11 = [{}, {}, {}, {}, {}];
+const items11 = [{ "Bool(true)": "<string:2737455424>", "Bool(true)": "<string:1714487300>" }, { "Bool(true)": "h", "Bool(true)": "application" }, { "Bool(true)": "CONTRAST_MODE", "Bool(true)": "CONSOLE_DEVICE_ACCOUNT_LINK_ERROR" }, { "Bool(true)": "<string:1094728289>", "Bool(true)": "BG_GRADIENT_RETRO_STORM_2" }, { "Bool(true)": "<string:3980476488>", "Bool(true)": "<string:822084690>" }];
 items10[1] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.CHROMA_GLOW,
@@ -237,7 +237,7 @@ const obj7 = {
   },
   midpointPercentage: 15
 };
-const items12 = [{}, {}, {}, {}, {}];
+const items12 = [{ "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": null, "Bool(true)": 9 }, { "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": true, "Bool(true)": true }, { "Bool(true)": "Map", "Bool(true)": "IconComponent" }];
 items10[2] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.FOREST,
@@ -262,7 +262,7 @@ const obj8 = {
   },
   midpointPercentage: 50
 };
-const items13 = [{}, {}];
+const items13 = [{ "Bool(true)": 617066004, "Bool(true)": -1922744000 }, { "Bool(true)": "marginBottom", "Bool(true)": "slice" }];
 items10[3] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.CRIMSON_MOON,
@@ -287,7 +287,7 @@ const obj9 = {
   },
   midpointPercentage: 30
 };
-const items14 = [{}, {}];
+const items14 = [{ "Bool(true)": false, "Bool(true)": false }, {}];
 items10[4] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.MIDNIGHT_BLURPLE,
@@ -312,7 +312,7 @@ const obj10 = {
   },
   midpointPercentage: 24
 };
-const items15 = [{}, {}];
+const items15 = [{ "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000011332255526950792, "Bool(true)": 92.5 }, {}];
 items10[5] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.MARS,
@@ -337,7 +337,7 @@ const obj11 = {
   },
   midpointPercentage: 50
 };
-const items16 = [{}, {}];
+const items16 = [{ "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": "<string:2504081486>", "Bool(true)": "<string:822084656>" }];
 items10[6] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.DUSK,
@@ -362,7 +362,7 @@ const obj12 = {
   },
   midpointPercentage: 50
 };
-const items17 = [{}, {}, {}];
+const items17 = [{ "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": null, "Bool(true)": null }, { "Bool(true)": null, "Bool(true)": 1 }];
 items10[7] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.UNDER_THE_SEA,
@@ -387,7 +387,7 @@ const obj13 = {
   },
   midpointPercentage: 50
 };
-const items18 = [{}, {}, {}, {}];
+const items18 = [{}, {}, { "Bool(true)": true, "Bool(true)": true }, { "Bool(true)": "2025-11-overlay-chat", "Bool(true)": "user" }];
 items10[8] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.RETRO_STORM,
@@ -412,7 +412,7 @@ const obj14 = {
   },
   midpointPercentage: 61
 };
-const items19 = [{}, {}, {}];
+const items19 = [{ "Bool(true)": "<string:4150329346>", "Bool(true)": "2026-05-server-theme-user" }, { "Bool(true)": 8, "Bool(true)": 56 }, { "Bool(true)": null, "Bool(true)": null }];
 items10[9] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.NEON_NIGHTS,
@@ -437,7 +437,7 @@ const obj15 = {
   },
   midpointPercentage: 50
 };
-const items20 = [{}, {}, {}];
+const items20 = [{}, { "Bool(true)": "<string:4150329345>", "Bool(true)": "<string:26823745>" }, { "Bool(true)": true, "Bool(true)": true }];
 items10[10] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.STRAWBERRY_LEMONADE,
@@ -462,7 +462,7 @@ const obj16 = {
   },
   midpointPercentage: 32
 };
-const items21 = [{}, {}, {}, {}, {}];
+const items21 = [{ "Bool(true)": true, "Bool(true)": true }, {}, { "Bool(true)": "row", "Bool(true)": "center" }, {}, { "Bool(true)": "bind", "Bool(true)": "Array" }];
 items10[11] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.AURORA,
@@ -487,7 +487,7 @@ const obj17 = {
   },
   midpointPercentage: 34
 };
-const items22 = [{}, {}];
+const items22 = [{}, { "Bool(true)": "Array", "Bool(true)": "isArray" }];
 items10[12] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.SEPIA,
@@ -512,7 +512,7 @@ const obj19 = {
   },
   midpointPercentage: 50
 };
-const items23 = [{}, {}];
+const items23 = [{ "Bool(true)": 203580097359652360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003322731719003247 }, { "Bool(true)": "3 Days", "Bool(true)": "1week" }];
 const obj20 = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.EASTER_EGG,
@@ -525,7 +525,7 @@ const obj20 = {
   },
   midpointPercentage: 50
 };
-const items24 = [{}, {}];
+const items24 = [{ "Bool(true)": "%JSONStringify%", "Bool(true)": "../lib/querystring" }, {}];
 const items25 = [...items10, obj19, obj20];
 const items26 = [obj19, ...items1, obj20];
 const obj18 = {

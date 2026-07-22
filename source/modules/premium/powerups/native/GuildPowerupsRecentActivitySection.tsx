@@ -1,10 +1,10 @@
-// Module ID: 11601
-// Function ID: 90145
+// Module ID: 11602
+// Function ID: 90158
 // Name: GuildPowerupsRecentActivityRow
 // Dependencies: []
 // Exports: default
 
-// Module 11601 (GuildPowerupsRecentActivityRow)
+// Module 11602 (GuildPowerupsRecentActivityRow)
 function GuildPowerupsRecentActivityRow(row) {
   let boost;
   let phase;
@@ -62,7 +62,7 @@ function GuildPowerupsRecentActivityRow(row) {
       tmp36 = callback2(require(dependencyMap[13]).RoleDot, obj4);
     }
     const items2 = [tmp36, , , ];
-    obj5 = { <string:1643205302>: 1, <string:1415816450>: 1, <string:4283523744>: null };
+    obj5 = { 803799044: "fill", 1269170180: "track", 711589892: "cursor" };
     const items3 = [tmp.username, {}];
     obj5.style = items3;
     let tmp44;
@@ -93,7 +93,7 @@ obj = { marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingHorizonta
 obj.sectionContainer = obj;
 obj.boostContainer = { gap: importDefault(dependencyMap[4]).space.PX_12, marginTop: importDefault(dependencyMap[4]).space.PX_16 };
 obj.boostRowContainer = {};
-obj.boostMessage = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
+obj.boostMessage = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true };
 obj.username = {};
 obj.messageText = { flexShrink: 0 };
 obj.timestamp = { flexShrink: 0 };

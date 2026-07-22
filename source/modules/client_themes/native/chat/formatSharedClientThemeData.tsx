@@ -1,5 +1,5 @@
 // Module ID: 7903
-// Function ID: 62914
+// Function ID: 62924
 // Name: formatSharedClientThemeData
 // Dependencies: []
 // Exports: formatSharedClientThemeData

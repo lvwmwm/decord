@@ -1,8 +1,8 @@
-// Module ID: 15274
-// Function ID: 115325
+// Module ID: 15282
+// Function ID: 115368
 // Dependencies: []
 
-// Module 15274
+// Module 15282
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -10,7 +10,7 @@ const tmp2 = arg1(dependencyMap[2]);
 let obj = { container: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.round, padding: 12 };
 obj.iconWrapper = obj;
-obj.title = { "Bool(false)": "<string:2255552513>", "Bool(false)": "<string:16777216>", "Bool(false)": "%MapPrototype%" };
+obj.title = {};
 obj.subtext = {};
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo((onCreateThreadPress) => {
   const intl = arg1(dependencyMap[8]).intl;
   obj1.children = intl.string(arg1(dependencyMap[8]).t.HgTQ8p);
   items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
-  const obj2 = { listener: "png", listenerType: true, passive: "/assets/design/components/Illustration/native/redesign/generated/images", once: 254, style: tmp.subtext };
+  const obj2 = { style: tmp.subtext };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[8]).t.jmq9GC);
   items[2] = callback(arg1(dependencyMap[7]).Text, obj2);

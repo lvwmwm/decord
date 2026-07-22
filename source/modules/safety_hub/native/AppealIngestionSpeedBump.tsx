@@ -1,10 +1,10 @@
-// Module ID: 11031
-// Function ID: 85913
+// Module ID: 11032
+// Function ID: 85926
 // Name: AppealIngestionSpeedBump
 // Dependencies: []
 // Exports: default
 
-// Module 11031 (AppealIngestionSpeedBump)
+// Module 11032 (AppealIngestionSpeedBump)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[4]).EMPTY_STRING_SNOWFLAKE_
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp4 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { "Bool(false)": "LIGHT", "Bool(false)": "DARK", "Bool(false)": "backgroundColor" } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionSpeedBump.tsx");
 

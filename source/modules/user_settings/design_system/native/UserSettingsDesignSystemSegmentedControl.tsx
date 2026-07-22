@@ -1,17 +1,17 @@
-// Module ID: 14317
-// Function ID: 108144
+// Module ID: 14325
+// Function ID: 108187
 // Name: UserSettingsDesignSystemSegmentedControl
 // Dependencies: []
 // Exports: default
 
-// Module 14317 (UserSettingsDesignSystemSegmentedControl)
+// Module 14325 (UserSettingsDesignSystemSegmentedControl)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
+obj = { container: { gap: true, flexDirection: true, jsx: true, x: true } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.item = obj;
 let closure_8 = obj.createStyles(obj);
@@ -52,7 +52,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
             let tmp5 = closure_0;
             let tmp6 = closure_1;
             obj = { variant: "heading-xxl/bold" };
-            let items1 = [, num + 1];
+            let items1 = [true, num + 1];
             obj.children = items1;
             obj.children = closure_6(closure_0(closure_1[6]).Text, obj);
             obj.page = closure_7(closure_4, obj);
@@ -76,27 +76,33 @@ export default function UserSettingsDesignSystemSegmentedControl() {
   };
   const obj1 = { spacing: 24 };
   const items = [callback4(callback(dependencyMap[9]).SegmentedControl, { state: segmentedControlState }), callback4(callback(dependencyMap[10]).SegmentedControlPages, { state: segmentedControlState }), ];
-  const obj2 = { paddingVertical: 1, width: null };
-  const items1 = [
-    callback4(callback(dependencyMap[11]).Button, {
-      disabled: first >= 5,
-      onPress() {
-        const sum = first + 1;
-        callback2(sum);
-        const AccessibilityAnnouncer = callback(first[12]).AccessibilityAnnouncer;
-        AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
-      }
-    }),
-    callback4(callback(dependencyMap[11]).Button, {
-      disabled: 2 === first,
-      onPress() {
-        const diff = first - 1;
-        callback2(diff);
-        const AccessibilityAnnouncer = callback(first[12]).AccessibilityAnnouncer;
-        AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
-      }
-    })
-  ];
+  const obj2 = { "Bool(false)": 1, "Bool(false)": null };
+  const obj3 = {
+    EMOJI_PICKER_EMOJI_CLICKED: null,
+    overflow: null,
+    getOwnPropertyNames: null,
+    disabled: first >= 5,
+    onPress() {
+      const sum = first + 1;
+      callback2(sum);
+      const AccessibilityAnnouncer = callback(first[12]).AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
+    }
+  };
+  const items1 = [callback4(callback(dependencyMap[11]).Button, obj3), ];
+  const obj4 = {
+    EMOJI_PICKER_EMOJI_CLICKED: true,
+    overflow: true,
+    getOwnPropertyNames: true,
+    disabled: 2 === first,
+    onPress() {
+      const diff = first - 1;
+      callback2(diff);
+      const AccessibilityAnnouncer = callback(first[12]).AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
+    }
+  };
+  items1[1] = callback4(callback(dependencyMap[11]).Button, obj4);
   obj2.children = items1;
   items[2] = callback3(callback(dependencyMap[8]).Stack, obj2);
   obj1.children = items;

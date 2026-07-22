@@ -1,10 +1,10 @@
-// Module ID: 9553
-// Function ID: 74450
+// Module ID: 9554
+// Function ID: 74463
 // Name: ForumComposerHeader
 // Dependencies: []
 // Exports: default
 
-// Module 9553 (ForumComposerHeader)
+// Module 9554 (ForumComposerHeader)
 importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[2]);
 let closure_7 = arg1(dependencyMap[3]).createStyles((height) => {
   let obj = { headerBar: obj, headerBarContent: {} };
-  obj = { height };
+  obj = { transformOrigin: "<string:1912603085>", accessibilityLabel: true, accessible: true, height };
   obj = { marginHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
   obj.headerBarText = obj;
   const obj1 = {};
@@ -55,7 +55,7 @@ export default function ForumComposerHeader(height) {
   }
   obj2.children = title;
   const items2 = [callback(arg1(dependencyMap[10]).Text, obj2), ];
-  const obj3 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: importDefault(dependencyMap[5])(channel) };
+  const obj3 = { cachedAt: true, edpbxy: true, children: importDefault(dependencyMap[5])(channel) };
   items2[1] = callback(arg1(dependencyMap[10]).Text, obj3);
   obj1.children = items2;
   items1[1] = closure_6(closure_4, obj1);

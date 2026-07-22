@@ -1,10 +1,10 @@
-// Module ID: 11284
-// Function ID: 87825
+// Module ID: 11285
+// Function ID: 87838
 // Name: AppLauncherTextInputOption
 // Dependencies: []
 // Exports: default
 
-// Module 11284 (AppLauncherTextInputOption)
+// Module 11285 (AppLauncherTextInputOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,12 +12,12 @@ const EmojiIntention = arg1(dependencyMap[3]).EmojiIntention;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
+obj = { Mouse: 1946157652, filename: -1862270380, durationSecs: 1090519504, waveform: 84590, GET_GUILDS: "bottom", EntryPointCommandButtonActions: null, woman_in_lotus_position: null, linkedUsersProcessed: null, backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.hasError = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_FEEDBACK_CRITICAL };
 obj.stringOptionInput = {};
-obj.expressionButton = { GameIconImageSize: null, UMWBZr: null };
+obj.expressionButton = {};
 let closure_9 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_FEEDBACK_CRITICAL };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/app_launcher/native/options/text_input/AppLauncherTextInputOption.tsx");
@@ -52,7 +52,7 @@ export default function AppLauncherTextInputOption(guildId) {
   let callback = first;
   const React = tmp2[1];
   let obj = arg1(dependencyMap[7]);
-  let closure_5 = React.useRef({ bind: -536870861, cursor: -299892737 });
+  let closure_5 = React.useRef({ 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" });
   const ref = React.useRef(null);
   const EmojiIntention = ref;
   let tmp5 = option.type === arg1(dependencyMap[8]).ApplicationCommandOptionType.STRING;
@@ -160,7 +160,7 @@ export default function AppLauncherTextInputOption(guildId) {
       onPress() {
           let obj = onChangeText(closure_2[16]);
           const result = obj.dismissGlobalKeyboard();
-          obj = { flex: "absolute", height: -1, overflow: -1, pickerIntention: ref.CHAT, onPressEmoji: closure_9, guildId, onClose: closure_10 };
+          obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: ref.CHAT, onPressEmoji: closure_9, guildId, onClose: closure_10 };
           const result1 = onChangeText(closure_2[17]).openEmojiPickerActionSheet(obj);
         }
     };

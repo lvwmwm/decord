@@ -480,7 +480,7 @@ const tmp = (arg0) => {
         num2 = 64;
         if (bitLengthResult <= 64) {
           tmp7 = millerRabinTest;
-          return millerRabinTest(absResult, ["getViewManagerConfig", "hasViewManagerConfig", "blur", "focus", "genericBubblingEventTypes", "genericDirectEventTypes", "lazilyLoadView", "ltg", "lv", 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005979561717589928, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007994709531505078, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005969534407983261]);
+          return millerRabinTest(absResult, ["ch\u00E1pu", "dokonal\u00FD", "gesto OK", "jasn\u011B", "ok", "OK", "par\u00E1da", "peckovn\u00ED", "perfektn\u00ED", "prvot\u0159\u00EDdn\u00ED", "rozum\u00EDm", "ruka"]);
         } else {
           tmp8 = globalThis;
           _Math2 = Math;
@@ -2254,15 +2254,15 @@ const tmp = (arg0) => {
         const _Array6 = Array;
         const _Array7 = Array;
         const _Array8 = Array;
-        obj1.value = concat2.apply([], Array.apply(null, Array(-addResult.toJSNumber())).map(Array.prototype.valueOf, []));
+        obj1.value = concat2.apply([], Array.apply(null, Array(-addResult.toJSNumber())).map(Array.prototype.valueOf, [true, true]));
         obj1.isNegative = false;
         return obj1;
       } else {
         const _Array3 = Array;
         const _Array4 = Array;
         const _Array5 = Array;
-        const mapped = Array.apply(null, Array(addResult.toJSNumber() - 1)).map(Array.prototype.valueOf, ["replace", "then"]);
-        mapped.unshift([null]);
+        const mapped = Array.apply(null, Array(addResult.toJSNumber() - 1)).map(Array.prototype.valueOf, [77601039, 1612144654]);
+        mapped.unshift([false]);
         let obj2 = {};
         const concat = [].concat;
         obj2.value = concat.apply([], mapped);
@@ -2574,7 +2574,7 @@ const tmp = (arg0) => {
   const modInv = BigInteger.prototype.modInv;
   SmallInteger.prototype.modInv = modInv;
   NativeBigInt.prototype.modInv = modInv;
-  const items = [null];
+  const items = [false];
   if (2 * items[items.length - 1] <= 10000000) {
     class Integer {
       constructor(arg0, arg1, arg2, arg3) {
@@ -3201,7 +3201,7 @@ const tmp = (arg0) => {
           num2 = 64;
           if (bitLengthResult <= 64) {
             tmp7 = millerRabinTest;
-            return millerRabinTest(absResult, ["getViewManagerConfig", "hasViewManagerConfig", "blur", "focus", "genericBubblingEventTypes", "genericDirectEventTypes", "lazilyLoadView", "ltg", "lv", 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005979561717589928, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007994709531505078, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005969534407983261]);
+            return millerRabinTest(absResult, ["ch\u00E1pu", "dokonal\u00FD", "gesto OK", "jasn\u011B", "ok", "OK", "par\u00E1da", "peckovn\u00ED", "perfektn\u00ED", "prvot\u0159\u00EDdn\u00ED", "rozum\u00EDm", "ruka"]);
           } else {
             tmp8 = globalThis;
             _Math2 = Math;

@@ -1,25 +1,25 @@
-// Module ID: 13933
-// Function ID: 105890
+// Module ID: 13940
+// Function ID: 105930
 // Dependencies: []
 
-// Module 13933
+// Module 13940
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
-let closure_10 = {};
+let closure_10 = { marginVertical: null, maxHeight: null, maxWidth: null, minHeight: null };
 let obj1 = arg1(dependencyMap[4]);
-let obj = { wrapper: { isArray: null, diversity: null }, headerContentCopy: { isArray: null, diversity: null }, closeButton: { opacity: 0.5 }, scroll: { isArray: null, diversity: null }, scrollContent: { flexGrow: 1 } };
+let obj = { wrapper: { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" }, headerContentCopy: { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" }, closeButton: { opacity: 0.5 }, scroll: { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" }, scrollContent: { flexGrow: 1 } };
 obj = { padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.content = obj;
-obj.contentRewardsAnimatedWrapper = { isArray: null, diversity: null };
-obj.contentRewardsWrapper = { isArray: null, diversity: null };
+obj.contentRewardsAnimatedWrapper = { nestedScrollEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, scrollEventThrottle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+obj.contentRewardsWrapper = { nestedScrollEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, scrollEventThrottle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
 obj.contentRewards = { alignItems: "center" };
 obj.contentRewardsCopy = { textAlign: "center" };
 obj1 = { marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.contentEndCardHeader = obj1;
-obj.contentEndCardHeaderCopy = { isArray: null, diversity: null };
+obj.contentEndCardHeaderCopy = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" };
 const tmp3 = arg1(dependencyMap[3]);
 obj.contentEndCard = { borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, paddingTop: importDefault(dependencyMap[5]).space.PX_24, flexShrink: 0 };
 const obj2 = { borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, paddingTop: importDefault(dependencyMap[5]).space.PX_24, flexShrink: 0 };
@@ -65,7 +65,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     const obj3 = quest(isShareableQuestResult[12]);
     const obj5 = quest(isShareableQuestResult[11]);
     const obj6 = quest(isShareableQuestResult[12]);
-    obj.translateY = obj5.withDelay(125, obj6.withSpring(quest(isShareableQuestResult[11]).interpolate(sharedValue.get(), ["replace", "then"], ["<string:1189150722>", "<string:3596025858>"]), closure_10));
+    obj.translateY = obj5.withDelay(125, obj6.withSpring(quest(isShareableQuestResult[11]).interpolate(sharedValue.get(), [77601039, 1612144654], ["<string:1190526978>", "<string:3495362562>"]), closure_10));
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -114,8 +114,8 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   }
   const sum = first + 2 * importDefault(dependencyMap[5]).space.PX_16;
   obj1 = { bottom: true, style: tmp.wrapper };
-  obj2 = { "Bool(false)": "gr", "Bool(false)": null, "Bool(false)": "Outside", style: tmp.content };
-  const obj3 = { hasMaxConnections: "accessibilityLabel", isBoostOnlySubscription: "r", style: tmp.headerContentCopy };
+  obj2 = { style: tmp.content };
+  const obj3 = { cachedAt: true, edpbxy: true, style: tmp.headerContentCopy };
   const intl = arg1(dependencyMap[22]).intl;
   obj4 = { questName: quest.config.messages.questName };
   obj3.children = intl.formatToPlainString(arg1(dependencyMap[22]).t.EAYZAr, obj4);
@@ -130,7 +130,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   const tmp13 = windowDimensions.get().height < 800;
   const tmp21 = callback2;
   const tmp22 = closure_6;
-  const obj8 = { "Bool(false)": null, "Bool(false)": null, spacing: importDefault(dependencyMap[5]).space.PX_24 };
+  const obj8 = { -1493457158: null, 1677985361: null, spacing: importDefault(dependencyMap[5]).space.PX_24 };
   const items6 = [, ];
   ({ content: arr7[0], contentRewardsWrapper: arr7[1] } = tmp);
   obj8.style = items6;
@@ -153,11 +153,11 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
       const items9 = [, ];
       ({ content: arr11[0], contentEndCard: arr11[1] } = tmp);
       obj10.style = items9;
-      const obj11 = { 0: true, -9223372036854775808: true, style: tmp.contentEndCardHeader };
+      const obj11 = { "Null": true, "Null": true, style: tmp.contentEndCardHeader };
       const obj12 = { spacing: importDefault(dependencyMap[5]).space.PX_4, style: tmp.contentEndCardHeaderCopy };
-      const obj13 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000, children: quest.config.messages.gameTitle };
+      const obj13 = { children: quest.config.messages.gameTitle };
       const items10 = [callback2(arg1(dependencyMap[21]).Heading, obj13), ];
-      const obj14 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: quest.config.messages.gamePublisher };
+      const obj14 = { cachedAt: true, edpbxy: true, children: quest.config.messages.gamePublisher };
       items10[1] = callback2(arg1(dependencyMap[21]).Text, obj14);
       obj12.children = items10;
       const items11 = [callback3(arg1(dependencyMap[20]).Stack, obj12), ];
@@ -211,7 +211,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   const obj25 = { style: tmp.contentRewards, onLayout: callback1 };
   const obj26 = { size: str };
   const items14 = [callback2(importDefault(dependencyMap[25]), obj26), ];
-  let obj27 = { "Null": null, "Null": null, "Null": null, style: tmp.contentRewardsCopy };
+  let obj27 = { style: tmp.contentRewardsCopy };
   const intl2 = arg1(dependencyMap[22]).intl;
   const string = intl2.string;
   EMp8/M = arg1(dependencyMap[22]).t;

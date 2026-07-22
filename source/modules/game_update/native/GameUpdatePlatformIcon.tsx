@@ -1,10 +1,10 @@
-// Module ID: 11841
-// Function ID: 91789
+// Module ID: 11842
+// Function ID: 91803
 // Name: GameUpdatePlatformIcon
 // Dependencies: []
 // Exports: GameUpdatePlatformIcon
 
-// Module 11841 (GameUpdatePlatformIcon)
+// Module 11842 (GameUpdatePlatformIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/game_update/native/GameUpdatePlatformIcon.tsx");

@@ -1,12 +1,12 @@
 // Module ID: 4779
-// Function ID: 41544
+// Function ID: 41553
 // Name: isMissingNamespaceError
 // Dependencies: []
 
 // Module 4779 (isMissingNamespaceError)
-let closure_0 = { ix: "png", exports: true, unsafe_rawColors: "/assets/images/platforms", sr: 24, guildId: 24, useId: null, SCROLLING_MOMENTUM: "a5aa4e98136aaaae712a29ded608e4e5", WAITING_FOR_SERVICE: "img_account_sync_twitch_light_and_dark" };
+let closure_0 = { size: "png", text: true, variant: "/assets/images/platforms", title: 24, description: 24, buttonLabel: null, blur: "a5aa4e98136aaaae712a29ded608e4e5", backgroundColor: "img_account_sync_twitch_light_and_dark" };
 arg5.isMissingNamespaceError = function isMissingNamespaceError(message) {
-  const items = [1129498107, 1384408798, -1546442500, /Namespace prefix .+ is not defined/];
+  const items = [-1543897085, -1292566525, -1542586365, /Namespace prefix .+ is not defined/];
   let num = 0;
   if (0 < items.length) {
     const _RegExp = RegExp;

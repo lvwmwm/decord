@@ -1,10 +1,10 @@
-// Module ID: 11049
-// Function ID: 86029
+// Module ID: 11050
+// Function ID: 86042
 // Name: getConnectionPrereqTarget
 // Dependencies: []
 // Exports: resolveConnectionPrereqTarget
 
-// Module 11049 (getConnectionPrereqTarget)
+// Module 11050 (getConnectionPrereqTarget)
 function getConnectionPrereqTarget(teen_identity) {
   if ("ready" in teen_identity) {
     let obj = { section: frozen.REQUEST };
@@ -34,7 +34,7 @@ function _resolveConnectionPrereqTarget() {
   return obj(...arguments);
 }
 let closure_2 = importDefault(dependencyMap[0]);
-const frozen = Object.freeze({ borderRadius: false, accessible: false, mn: false, ks: false, exports: false, ks: false, channel: false, position: false, top: false });
+const frozen = Object.freeze({});
 let obj = { section: frozen.ERROR, params: obj };
 obj = { failureCode: arg1(dependencyMap[1]).FamilyCenterFailureCode.GENERIC_ERROR };
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/parent_tools/FamilyCenterModalRequestRouting.tsx");

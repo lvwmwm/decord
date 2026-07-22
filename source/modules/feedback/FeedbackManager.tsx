@@ -1,9 +1,9 @@
-// Module ID: 15912
-// Function ID: 121893
+// Module ID: 15920
+// Function ID: 121936
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15912 (_isNativeReflectConstruct)
+// Module 15920 (_isNativeReflectConstruct)
 let FeedbackGroup;
 let FeedbackType;
 function _isNativeReflectConstruct() {
@@ -214,7 +214,7 @@ let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = importDefault(dependencyMap[7]);
 ({ FeedbackGroup, FeedbackType, FeedbackTypePrecedence: closure_10, MAX_REPRESENTABLE_DATE: closure_11 } = arg1(dependencyMap[8]));
-let obj = { duration: "message", padding: "OPACITY_BLACK_92" };
+let obj = { guildId: "GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS", hash: "itemCount" };
 obj = {};
 obj = {};
 const merged = Object.assign(obj);

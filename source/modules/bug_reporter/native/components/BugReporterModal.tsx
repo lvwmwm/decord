@@ -1,10 +1,10 @@
-// Module ID: 10307
-// Function ID: 79542
+// Module ID: 10308
+// Function ID: 79555
 // Name: handleClose
 // Dependencies: []
 // Exports: default
 
-// Module 10307 (handleClose)
+// Module 10308 (handleClose)
 function handleClose() {
   state.setState({ isReportOpen: false });
   let arr = importDefault(dependencyMap[11]);
@@ -222,7 +222,7 @@ class BugCreateScreen {
     tmp33 = closure_7;
     obj2 = { spacing: 24, style: tmp.container };
     obj3 = { spacing: 8 };
-    obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    obj4 = { cachedAt: true, edpbxy: true };
     intl = arg1(dependencyMap[14]).intl;
     obj4.children = intl.string(arg1(dependencyMap[14]).t.tM969v);
     items6 = [, ];
@@ -423,10 +423,10 @@ let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-let closure_13 = Object.freeze({ body: 24, T: 24, body: null });
+let closure_13 = Object.freeze({ "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null });
 let obj = arg1(dependencyMap[7]);
 obj = { container: { padding: 16 }, attachmentCarousel: {}, attachmentContainer: {} };
-obj = { borderRadius: importDefault(dependencyMap[8]).radii.round, borderWidth: "then", containerWidth: "title", reactionEmojiWidth: "r", digitWidth: "isArray", padding: "then", display: "title", flexDirection: "r" };
+obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 const tmp3 = arg1(dependencyMap[6]);
 const importDefaultResult = importDefault(dependencyMap[9]);
 const importDefaultResultResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK);
@@ -434,15 +434,15 @@ obj.backgroundColor = importDefault(dependencyMap[9])(importDefault(dependencyMa
 obj.closeContainer = obj;
 obj.priorityIcon = {};
 obj.offButton = { marginBottom: 24 };
-const obj1 = { "Bool(false)": "<string:268435457>", "Bool(false)": "<string:1358954496>", "Bool(false)": "<string:7554242>", "Bool(false)": "isArray", "Bool(false)": "<string:268435456>", "Bool(false)": "<string:1107296256>", "Bool(false)": "text-md/normal", "Bool(false)": "text-strong", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
-obj.submittingOverlay = obj1;
+const alphaResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
+obj.submittingOverlay = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
 obj.submittingText = { marginTop: 8 };
 let closure_14 = obj.createStyles(obj);
 let closure_15 = 5 * importDefault(dependencyMap[10]).Millis.SECOND;
 let closure_16 = 10 * importDefault(dependencyMap[10]).Millis.SECOND;
 let closure_17 = 5 * importDefault(dependencyMap[10]).Millis.SECOND;
 const MINUTE = importDefault(dependencyMap[10]).Millis.MINUTE;
-const alphaResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
+const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
 const result = arg1(dependencyMap[47]).fileFinishedImporting("modules/bug_reporter/native/components/BugReporterModal.tsx");
 
 export default function BugReportModal(screenshotUri) {

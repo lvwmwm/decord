@@ -1,10 +1,10 @@
-// Module ID: 11151
-// Function ID: 86721
+// Module ID: 11152
+// Function ID: 86734
 // Name: useDeveloperActivityShelfItems
 // Dependencies: []
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11151 (useDeveloperActivityShelfItems)
+// Module 11152 (useDeveloperActivityShelfItems)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).DEFAULT_EMBEDDED_ACTIVITY_CONFIG;

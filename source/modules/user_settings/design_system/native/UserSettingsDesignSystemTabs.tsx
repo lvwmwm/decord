@@ -1,17 +1,17 @@
-// Module ID: 14319
-// Function ID: 108154
+// Module ID: 14327
+// Function ID: 108197
 // Name: UserSettingsDesignSystemTabs
 // Dependencies: []
 // Exports: default
 
-// Module 14319 (UserSettingsDesignSystemTabs)
+// Module 14327 (UserSettingsDesignSystemTabs)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsxs: closure_7, jsx: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { "Null": true, "Null": true, "Null": true } };
+obj = { container: { -391257195: true, 1677985361: true, 1553225275: true } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.item = obj;
 let closure_9 = obj.createStyles(obj);
@@ -69,7 +69,7 @@ export default function UserSettingsDesignSystemTabs() {
             let tmp7 = closure_0;
             let tmp8 = closure_2;
             obj = { variant: "heading-xxl/bold" };
-            let items1 = [, num + 1];
+            let items1 = [true, num + 1];
             obj.children = items1;
             obj.children = closure_7(closure_0(closure_2[6]).Text, obj);
             obj.page = closure_8(closure_5, obj);
@@ -105,25 +105,33 @@ export default function UserSettingsDesignSystemTabs() {
   items1[1] = tmp20;
   obj2.children = items1;
   const items2 = [callback3(closure_5, obj2), callback4(callback(closure_2[13]).SegmentedControlPages, { state: segmentedControlState }), , ];
-  const obj4 = { paddingVertical: 1, width: null };
-  const items3 = [
-    callback4(callback(closure_2[14]).Button, {
-      disabled: first >= 10,
-      onPress() {
-        return callback2(first + 1);
-      }
-    }),
-    callback4(callback(closure_2[14]).Button, {
-      disabled: 2 === first,
-      onPress() {
-        return callback2(first - 1);
-      }
-    })
-  ];
+  const obj4 = { "Bool(false)": 1, "Bool(false)": null };
+  const obj5 = {
+    EMOJI_PICKER_EMOJI_CLICKED: null,
+    overflow: null,
+    getOwnPropertyNames: null,
+    disabled: first >= 10,
+    onPress() {
+      return callback2(first + 1);
+    }
+  };
+  const items3 = [callback4(callback(closure_2[14]).Button, obj5), ];
+  const obj6 = {
+    EMOJI_PICKER_EMOJI_CLICKED: true,
+    overflow: true,
+    getOwnPropertyNames: true,
+    disabled: 2 === first,
+    onPress() {
+      return callback2(first - 1);
+    }
+  };
+  items3[1] = callback4(callback(closure_2[14]).Button, obj6);
   obj4.children = items3;
   items2[2] = callback3(callback(closure_2[10]).Stack, obj4);
   const obj7 = {};
-  const items4 = [callback4(callback(closure_2[15]).TableSwitchRow, { value: first1, onValueChange: tmp4[1] }), callback4(callback(closure_2[15]).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), callback4(callback(closure_2[15]).TableSwitchRow, { value: first2, onValueChange: tmp9[1] })];
+  const items4 = [callback4(callback(closure_2[15]).TableSwitchRow, { value: first1, onValueChange: tmp4[1] }), callback4(callback(closure_2[15]).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), ];
+  const obj8 = { "Bool(true)": null, "Bool(true)": "a252d183eacce43fd0ee5d8aedb6e162", value: first2, onValueChange: tmp9[1] };
+  items4[2] = callback4(callback(closure_2[15]).TableSwitchRow, obj8);
   obj7.children = items4;
   items2[3] = callback3(closure_5, obj7);
   obj1.children = items2;

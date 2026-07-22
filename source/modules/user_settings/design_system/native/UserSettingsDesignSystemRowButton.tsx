@@ -1,10 +1,10 @@
-// Module ID: 14307
-// Function ID: 108094
+// Module ID: 14315
+// Function ID: 108137
 // Name: UserSettingsDesignSystemRowButton
 // Dependencies: []
 // Exports: default
 
-// Module 14307 (UserSettingsDesignSystemRowButton)
+// Module 14315 (UserSettingsDesignSystemRowButton)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -18,7 +18,7 @@ export default function UserSettingsDesignSystemRowButton() {
   obj = {};
   const obj1 = { padding: importDefault(dependencyMap[5]).space.PX_16 };
   obj.style = obj1;
-  const items = [callback(arg1(dependencyMap[6]).Text, {}), callback(arg1(dependencyMap[6]).Text, { <string:1749439162>: "Array", <string:140675621>: "AppleIllocon" })];
+  const items = [callback(arg1(dependencyMap[6]).Text, {}), callback(arg1(dependencyMap[6]).Text, {})];
   obj.children = items;
   obj.description = callback2(arg1(dependencyMap[4]).Stack, obj);
   obj.children = callback(closure_3, {});
@@ -33,10 +33,10 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   const items2 = [callback(arg1(dependencyMap[7]).RowButton, obj4), , , , , , ];
   const obj5 = {
-    label: "one",
-    description: "isArrayBuffer",
-    pattern: "ASSETS_URLS",
-    position: "Component",
+    startChecked: true,
+    label: true,
+    required: true,
+    label: true,
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -44,9 +44,9 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   items2[1] = callback(arg1(dependencyMap[7]).RowButton, obj5);
   const obj6 = {
-    0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014660300777374237,
-    9223372036854775807: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004083378585264338,
-    9223372036854775807: null,
+    9223372036854775807: "Boost your Server",
+    9223372036854775807: "Unlock perks for the entire community",
+    -9223372036854775808: "No Icons",
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -54,6 +54,9 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   items2[2] = callback(arg1(dependencyMap[7]).RowButton, obj6);
   const obj7 = {
+    label: "No Icons",
+    accessible: false,
+    set: "First Item",
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -61,16 +64,13 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   items2[3] = callback(arg1(dependencyMap[7]).RowButton, obj7);
   const obj8 = {
-    <string:1448401072>: "<string:1950482433>",
-    <string:1686368849>: "<string:1560281723>",
-    <string:4222676172>: "<string:1090519421>",
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
     }
   };
   items2[4] = callback(arg1(dependencyMap[7]).RowButton, obj8);
-  const obj9 = { <string:1448401072>: 524353537, <string:1686368849>: 553648745, <string:4222676172>: 35524929 };
+  const obj9 = { label: true, accessible: true, set: true };
   const obj10 = { source: importDefault(dependencyMap[8]) };
   obj9.icon = callback(arg1(dependencyMap[7]).RowButton.Icon, obj10);
   obj9.onPress = function onPress() {

@@ -1,10 +1,10 @@
 // Module ID: 6645
-// Function ID: 51032
-// Name: UserSettingsPremium
+// Function ID: 51043
+// Name: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING
 // Dependencies: []
 // Exports: default
 
-// Module 6645 (UserSettingsPremium)
+// Module 6645 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -20,13 +20,15 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[9]);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = arg1(dependencyMap[10]));
 const jsx = arg1(dependencyMap[11]).jsx;
+let obj = arg1(dependencyMap[12]);
+obj = { markerEnd: null, clipPath: 0, clipRule: 0, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+let closure_20 = obj.createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: {}, billingInfo: {}, accountCredit: obj, loadingSpinnerContainer: {} });
 const tmp4 = arg1(dependencyMap[10]);
-let closure_20 = arg1(dependencyMap[12]).createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: {}, billingInfo: {}, accountCredit: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, loadingSpinnerContainer: { 9223372036854775807: 0, 618913616341: 0, 0: 0, 9223372036854775807: 0 } });
-const obj = arg1(dependencyMap[12]);
 const result = arg1(dependencyMap[44]).fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremium.tsx");
 
 export default function UserSettingsPremium(applicationId) {
   let isFromTextSection;
+  let isFullScreenPresentation;
   let onClose;
   let onPaymentDismiss;
   let onPaymentSuccess;
@@ -35,7 +37,11 @@ export default function UserSettingsPremium(applicationId) {
   let tmp9;
   applicationId = applicationId.applicationId;
   const arg1 = applicationId;
-  ({ activitySessionId: closure_1, channelId: closure_2, guildId: closure_3, onClose, premiumFeatureCardOrder } = applicationId);
+  ({ activitySessionId: closure_1, channelId: closure_2, guildId: closure_3, onClose, premiumFeatureCardOrder, isFullScreenPresentation } = applicationId);
+  ({ isFromTextSection, onPaymentSuccess, onPaymentDismiss } = applicationId);
+  if (isFullScreenPresentation === undefined) {
+    isFullScreenPresentation = false;
+  }
   let React;
   let closure_5;
   let closure_6;
@@ -43,7 +49,6 @@ export default function UserSettingsPremium(applicationId) {
   let closure_8;
   let closure_9;
   let closure_10;
-  ({ isFromTextSection, onPaymentSuccess, onPaymentDismiss } = applicationId);
   let tmp = callback2();
   importDefault(dependencyMap[13])();
   if (isFromTextSection) {
@@ -252,6 +257,7 @@ export default function UserSettingsPremium(applicationId) {
             obj4.entitlements = stateFromStores2;
             obj4.onPaymentSuccess = onPaymentSuccess;
             obj4.onPaymentDismiss = onPaymentDismiss;
+            obj4.isFullScreenPresentation = isFullScreenPresentation;
             tmp40Result = tmp40(importDefault(dependencyMap[41]), obj4);
             const tmp43 = importDefault(dependencyMap[41]);
           }
@@ -259,6 +265,6 @@ export default function UserSettingsPremium(applicationId) {
       }
     }
   }
-  obj8 = { style: tmp.loadingSpinnerContainer, children: <closure_5 font={397} dx={97} /> };
+  obj8 = { style: tmp.loadingSpinnerContainer, children: <closure_5 /> };
   return <closure_6 {...obj8} />;
 };

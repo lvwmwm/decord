@@ -1,13 +1,12 @@
 // Module ID: 7689
-// Function ID: 61357
+// Function ID: 61367
 // Name: createGuildDiscoveryDisqualifiedSystemMessage
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
 // Module 7689 (createGuildDiscoveryDisqualifiedSystemMessage)
-import result from "result";
-
-result = result.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
+const _module = require(dependencyMap[2]);
+const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
 
 export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuildDiscoveryDisqualifiedSystemMessage(message) {
   const obj = {};

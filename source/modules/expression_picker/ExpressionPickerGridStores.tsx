@@ -1,10 +1,10 @@
-// Module ID: 9323
-// Function ID: 72872
+// Module ID: 9324
+// Function ID: 72885
 // Name: createStore
 // Dependencies: []
 // Exports: default
 
-// Module 9323 (createStore)
+// Module 9324 (createStore)
 function createStore() {
   function getState() {
     return withEqualityFnResult.getState();
@@ -48,7 +48,7 @@ function createStore() {
   };
   return obj;
 }
-let closure_2 = Object.freeze({ inspectedExpressionPosition: { <string:1407453624>: -536870861, <string:82601002>: -299892737 } });
+let closure_2 = Object.freeze({ inspectedExpressionPosition: { callbackActionSheet: "%FunctionPrototype%", defaultReactionEmoji: "paddingStart" } });
 const store = createStore();
 const store1 = createStore();
 const store2 = createStore();

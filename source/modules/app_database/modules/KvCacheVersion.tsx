@@ -1,5 +1,5 @@
 // Module ID: 6892
-// Function ID: 54861
+// Function ID: 54872
 // Name: KvCacheVersion
 // Dependencies: []
 
@@ -13,7 +13,7 @@ importDefaultResult = new importDefaultResult("KvCacheVersion");
 let tmp5 = () => {
   class KvCacheVersion {
     constructor() {
-      f54871 = this;
+      f54882 = this;
       tmp = closure_3(this, KvCacheVersion);
       this.hasSuccessfullyConnected = false;
       this.actions = {

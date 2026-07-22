@@ -1,10 +1,10 @@
-// Module ID: 10839
-// Function ID: 84115
+// Module ID: 10840
+// Function ID: 84128
 // Name: computeTabletDrawerWidth
 // Dependencies: []
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 10839 (computeTabletDrawerWidth)
+// Module 10840 (computeTabletDrawerWidth)
 function computeTabletDrawerWidth(width, arg1) {
   if (arg1) {
     let bound = sum;

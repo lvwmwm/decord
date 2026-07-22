@@ -1,7 +1,7 @@
 // Module ID: 1009
 // Function ID: 11015
 // Name: addClsInstrumentationHandler
-// Dependencies: [66781184, 66715648, 4168679424, 4127195139, 134217731, 4227858436, 16777219, 150994948, 83886084, 4261412868, 4278190083]
+// Dependencies: [67633152, 66846720, 67174400, 67698688, 67436544, 66977792, 67043328, 4268818432, 1929379843, 6, 7]
 
 // Module 1009 (addClsInstrumentationHandler)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -30,6 +30,6 @@ export const getBodyString = require(dependencyMap[8]).getBodyString;
 export const getFetchRequestArgBody = require(dependencyMap[8]).getFetchRequestArgBody;
 export const parseXhrResponseHeaders = require(dependencyMap[8]).parseXhrResponseHeaders;
 export const serializeFormData = require(dependencyMap[8]).serializeFormData;
-export const resourceTimingToSpanAttributes = require(dependencyMap[9]).resourceTimingToSpanAttributes;
-export const registerInpInteractionListener = require(dependencyMap[10]).registerInpInteractionListener;
-export const startTrackingINP = require(dependencyMap[10]).startTrackingINP;
+export const resourceTimingToSpanAttributes = require("_classCallCheck").resourceTimingToSpanAttributes;
+export const registerInpInteractionListener = require("_defineProperties").registerInpInteractionListener;
+export const startTrackingINP = require("_defineProperties").startTrackingINP;

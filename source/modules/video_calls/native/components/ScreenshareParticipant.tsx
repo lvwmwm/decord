@@ -1,21 +1,21 @@
-// Module ID: 10743
-// Function ID: 83483
+// Module ID: 10744
+// Function ID: 83496
 // Name: ScreenshareParticipant
 // Dependencies: []
 // Exports: default
 
-// Module 10743 (ScreenshareParticipant)
+// Module 10744 (ScreenshareParticipant)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(true)": 1946157560, "Bool(true)": 4, "Bool(true)": 2, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj = { width: "ADBE Vector Group", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: 2 };
 obj.container = obj;
 obj.image = { marginBottom: 12 };
 obj.title = {};
-obj.description = { SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME: 1375732303, SCROLL_EVENT_TIMER_MS: -100662669, cutoutBottomRightSize: 1207960138 };
+obj.description = { <string:2790674827>: "a", <string:3372925522>: "p", <string:2700829437>: "midnat" };
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/video_calls/native/components/ScreenshareParticipant.tsx");
@@ -49,7 +49,7 @@ export default function ScreenshareParticipant(participant) {
   const items2 = [tmp4.container, participant.containerStyle];
   obj = { source: importDefault(dependencyMap[7]), style: tmp4.image };
   const items3 = [callback(closure_5, obj), , , ];
-  const obj1 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp4.title };
+  const obj1 = { style: tmp4.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.string(arg1(dependencyMap[9]).t.gMOwov);
   items3[1] = callback(arg1(dependencyMap[8]).Text, obj1);

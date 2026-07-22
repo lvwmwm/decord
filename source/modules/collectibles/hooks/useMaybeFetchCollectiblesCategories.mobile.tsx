@@ -1,5 +1,5 @@
 // Module ID: 7855
-// Function ID: 62607
+// Function ID: 62617
 // Name: useMaybeFetchCollectiblesCategories
 // Dependencies: []
 // Exports: default

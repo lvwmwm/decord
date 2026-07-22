@@ -1,10 +1,10 @@
-// Module ID: 10708
-// Function ID: 83365
+// Module ID: 10709
+// Function ID: 83378
 // Name: SoundboardVolume
 // Dependencies: []
 // Exports: default
 
-// Module 10708 (SoundboardVolume)
+// Module 10709 (SoundboardVolume)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;

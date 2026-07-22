@@ -1,10 +1,10 @@
-// Module ID: 15039
-// Function ID: 113257
+// Module ID: 15047
+// Function ID: 113300
 // Name: ForYouReadSectionHeader
 // Dependencies: []
 // Exports: ForYouReadSectionHeader
 
-// Module 15039 (ForYouReadSectionHeader)
+// Module 15047 (ForYouReadSectionHeader)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 const View = tmp3.View;

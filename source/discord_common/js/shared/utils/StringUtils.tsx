@@ -5,13 +5,11 @@
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
 // Module 1833 (cssValueToNumber)
-import result from "result";
-
 let closure_2 = /[\u0300-\u036f]/g;
 let closure_3 = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
-result = result.fileFinishedImporting("../discord_common/js/shared/utils/StringUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/shared/utils/StringUtils.tsx");
 
-export const cssValueToNumber = require("result").cssValueToNumber;
+export const cssValueToNumber = require("__exportStarResult1").cssValueToNumber;
 export const upperCaseFirstChar = function upperCaseFirstChar(str) {
   str = "";
   if (null != str) {

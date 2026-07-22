@@ -14,7 +14,7 @@ arg5.captureFeedback = function captureFeedback(tags) {
       if (undefined !== arguments[2]) {
         let currentScope = arguments[2];
       }
-      obj = {};
+      obj = { "Null": null, "Null": null, "Null": null };
       obj = {};
       let obj1 = {};
       ({ email: obj6.contact_email, name: obj6.name, message: obj6.message, url: obj6.url, source: obj6.source, associatedEventId: obj6.associated_event_id } = tags);

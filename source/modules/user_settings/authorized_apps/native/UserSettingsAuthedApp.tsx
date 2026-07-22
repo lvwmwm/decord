@@ -1,10 +1,10 @@
-// Module ID: 13723
-// Function ID: 103825
+// Module ID: 13730
+// Function ID: 103858
 // Name: WarningLabel
 // Dependencies: []
 // Exports: default
 
-// Module 13723 (WarningLabel)
+// Module 13730 (WarningLabel)
 function WarningLabel(children) {
   const tmp = callback3();
   let obj = { style: tmp.warningContainer };
@@ -65,10 +65,10 @@ let closure_16 = arg1(dependencyMap[10]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[11]));
 let obj = arg1(dependencyMap[12]);
-obj = { container: {}, section: { marginBottom: 24 }, header: { borderWidth: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029993938115565256, borderColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034905172952, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494916, top: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004714439513736073 }, appAboutDescription: { width: "100%" } };
-obj = { marginTop: importDefault(dependencyMap[13]).space.PX_12 };
+obj = { container: {}, section: { marginBottom: 24 }, header: { borderWidth: 275924203, borderColor: 234881024, position: 1929379840, top: 16 }, appAboutDescription: { width: "100%" } };
+obj = { <string:3427919713>: "MAX_FAVORITE_GIFS_SIZE", <string:1374118325>: "%ArrayBuffer%", <string:1632825022>: "isArrayBuffer", marginTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.warningContainer = obj;
-const obj1 = { <string:1549954009>: "usePubSub", <string:67064148>: "Array", <string:2018617953>: "ERNhYf", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
+const obj1 = { -9223372036854775808: 24, 9223372036854775807: 24, 0: null, color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
 obj.warningIcon = obj1;
 let closure_19 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[11]);
@@ -156,7 +156,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   const items7 = [stateFromStores2];
   const stateFromStoresObject = obj8.useStateFromStoresObject(items6, () => {
     if (null == stateFromStores2) {
-      let obj = { position: true, bottom: true };
+      let obj = { position: "<string:1243348993>", bottom: "<string:2137063425>" };
     } else {
       obj = { appDMChannelMuteConfig: closure_10.getChannelMuteConfig(null, stateFromStores2), muted: closure_10.isChannelMuted(null, stateFromStores2) };
     }
@@ -179,7 +179,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   obj2.iconBorderRadius = importDefault(dependencyMap[13]).radii.md;
   obj2.iconSize = 64;
   const items9 = [callback(importDefault(dependencyMap[40]), obj2), , ];
-  obj3 = {};
+  obj3 = { cachedAt: 400, edpbxy: 20 };
   const intl = arg1(dependencyMap[18]).intl;
   obj3.children = intl.format(arg1(dependencyMap[18]).t.yOApCK, { date: toLocaleDateStringResult });
   items9[1] = callback(arg1(dependencyMap[41]).Text, obj3);
@@ -187,7 +187,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   if (undefined !== description) {
     tmp18 = null;
     if ("" !== description) {
-      obj4 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.appAboutDescription };
+      obj4 = { "Null": 1, "Null": "tail", alignItems: null, style: tmp.appAboutDescription };
       let obj16 = arg1(dependencyMap[42]);
       obj4.children = obj16.parseBioReactWithCachedAST(description);
       tmp18 = callback(arg1(dependencyMap[41]).Text, obj4);
@@ -199,7 +199,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   let tmp23Result = null;
   if (null != stateFromStores2) {
     obj5 = { style: tmp.section };
-    const obj6 = { "Bool(false)": "Array", "Bool(false)": "isArray" };
+    const obj6 = { -9223372036854775808: true, 9223372036854775807: true };
     obj7 = { label: "Mute DMs" };
     let end_time;
     if (null != appDMChannelMuteConfig) {

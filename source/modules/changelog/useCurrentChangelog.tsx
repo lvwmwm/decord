@@ -1,5 +1,5 @@
 // Module ID: 7761
-// Function ID: 61628
+// Function ID: 61638
 // Name: useChangelog
 // Dependencies: []
 // Exports: useCurrentChangelog
@@ -56,7 +56,7 @@ function useChangelog(changelogId, stateFromStores) {
     }
   }, items2);
   if (null == changelogId) {
-    obj = { id: changelogId };
+    obj = { "Null": "all", "Null": true, "Null": false, id: changelogId };
     let obj1 = obj;
   } else {
     if (null == changelog) {

@@ -1,9 +1,9 @@
-// Module ID: 14836
-// Function ID: 111795
+// Module ID: 14844
+// Function ID: 111838
 // Name: getFriendInviteCode
 // Dependencies: []
 
-// Module 14836 (getFriendInviteCode)
+// Module 14844 (getFriendInviteCode)
 function getFriendInviteCode() {
   return _getFriendInviteCode(...arguments);
 }
@@ -39,9 +39,9 @@ const InstantInviteSources = arg1(dependencyMap[3]).InstantInviteSources;
 const sum = arg1(dependencyMap[5]).ICON_ACTION_BUTTON_SIZE + importDefault(dependencyMap[6]).space.PX_16;
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { -2038170168: 858993457, 2107003809: -281857229, 82601002: 443699519, 1368983650: 858993457, 1550021503: -281857229, height: sum, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+obj = { 9223372036854775807: "100%", 9223372036854775807: "100%", 9223372036854775807: null, display: "row", alignItems: 4, height: sum, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.container = obj;
-obj1 = { "Null": 7, "Null": 370, borderRadius: importDefault(dependencyMap[6]).radii.md, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_12 };
+obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", borderRadius: importDefault(dependencyMap[6]).radii.md, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_12 };
 obj.title = obj1;
 const tmp2 = arg1(dependencyMap[4]);
 obj.actions = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
       obj2 = current;
     }
     if (!tmp2) {
-      obj = { screen: "add-friends", params: { backgroundColor: "<string:1014776320>", width: "<string:3327918082>" } };
+      obj = { screen: "add-friends", params: { height: "messagePreviewString", flexDirection: "DATA_USED_FOR_RECOMMENDED" } };
       obj2.navigate("friends", obj);
     }
   }, []);
@@ -73,7 +73,7 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
   obj.accessibilityRole = "button";
   obj.onPress = callback;
   obj.style = tmp.title;
-  obj = { text: -725337376531942300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, selectionStart: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026720721802667083, selectionEnd: 1111098636640048300000000000000000000000000000000000000000, canMentionEveryone: 7981109213718733000000000000000000000000000000000000000000000000000 };
+  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   const intl2 = arg1(dependencyMap[10]).intl;
   obj.children = intl2.string(arg1(dependencyMap[10]).t.afcl67);
   obj.children = callback2(arg1(dependencyMap[15]).Text, obj);

@@ -1,10 +1,10 @@
-// Module ID: 16494
-// Function ID: 127369
+// Module ID: 16502
+// Function ID: 127411
 // Name: _executeHeadlessTask
 // Dependencies: []
 // Exports: default
 
-// Module 16494 (_executeHeadlessTask)
+// Module 16502 (_executeHeadlessTask)
 function _executeHeadlessTask() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

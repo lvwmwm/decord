@@ -37,5 +37,5 @@ arg5.throwProtectedError = function throwProtectedError(arg0, StringResult, arg2
     throw rangeError3;
   }
 };
-let closure_0 = [null, null];
-let closure_1 = ["w", "I"];
+let closure_0 = [true, true];
+let closure_1 = [true, true];

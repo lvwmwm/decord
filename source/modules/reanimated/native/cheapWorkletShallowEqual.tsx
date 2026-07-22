@@ -1,9 +1,9 @@
-// Module ID: 9415
-// Function ID: 73281
+// Module ID: 9416
+// Function ID: 73294
 // Name: cheapWorkletShallowEqual
 // Dependencies: []
 
-// Module 9415 (cheapWorkletShallowEqual)
+// Module 9416 (cheapWorkletShallowEqual)
 let closure_0 = { code: "function cheapWorkletShallowEqual_cheapWorkletShallowEqualTsx1(a,b){if(a===b)return true;if(a==null||b==null)return false;for(const key in a){if(a[key]!==b[key])return false;}return true;}" };
 let closure_1 = { code: "function cheapWorkletArrayShallowEqual_cheapWorkletShallowEqualTsx2(a,b){if(a===b)return true;if(a==null||b==null)return false;if(a.length!==b.length)return false;for(let i=0;i<a.length;i++){if(a[i]!==b[i])return false;}return true;}" };
 const tmp2 = () => {

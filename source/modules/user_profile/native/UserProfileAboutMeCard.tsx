@@ -1,10 +1,10 @@
-// Module ID: 11874
-// Function ID: 91917
+// Module ID: 11875
+// Function ID: 91931
 // Name: getStyleConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11874 (getStyleConfig)
+// Module 11875 (getStyleConfig)
 function getStyleConfig(arg0) {
   let tmp;
   if (null != arg0) {
@@ -253,7 +253,7 @@ function BotSlashCommands(channel) {
       items1[1] = callback(View, obj1);
       let tmp5 = null != application && null != application.bot;
       if (tmp5) {
-        const obj2 = {};
+        const obj2 = { <string:1986169986>: "<string:141706475>", <string:2487833047>: "<string:570425344>" };
         const intl = arg1(dependencyMap[13]).intl;
         obj2.text = intl.string(arg1(dependencyMap[13]).t.VEfKyb);
         obj2.onPress = tmp3;
@@ -278,10 +278,10 @@ const DIVIDER_DOT = tmp2.DIVIDER_DOT;
 const Routes = arg1(dependencyMap[6]).Routes;
 const AppLauncherRouteName = arg1(dependencyMap[7]).AppLauncherRouteName;
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[8]));
-let closure_14 = { 392520280: 4, -290090790: "wrap", -1564839417: null, 560192194: 60, 1420640535: 60 };
+let closure_14 = { _$esjava$b: 4, isCustom: "wrap", serverDeaf: null, updateWith: 60, getStickerPack: 60 };
 let closure_15 = { [tmp2.UserProfileThemeTypes.PREVIEW]: {} };
 const tmp3 = arg1(dependencyMap[8]);
-let closure_16 = arg1(dependencyMap[9]).createStyles({ card: { flexDirection: "column" }, textWithIcon: { "Null": 7, "Null": 370 }, memberJoinDates: { -9223372036854775808: null, 7741: null }, slashCommands: {}, policyLinks: { rowGap: 8 } });
+let closure_16 = arg1(dependencyMap[9]).createStyles({ card: { flexDirection: "column" }, textWithIcon: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, memberJoinDates: { "Bool(true)": null, "Bool(true)": null }, slashCommands: {}, policyLinks: { rowGap: 8 } });
 const obj = arg1(dependencyMap[9]);
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
 

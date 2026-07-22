@@ -1,10 +1,10 @@
-// Module ID: 11549
-// Function ID: 89906
+// Module ID: 11550
+// Function ID: 89919
 // Name: getIconForPerk
-// Dependencies: [57, 31, 11509, 2, 31, 1838, 4015, 4016, 566, 4035, 1327, 2, 5]
+// Dependencies: [57, 31, 11510, 2, 31, 1838, 4015, 4016, 566, 4035, 1327, 2, 5]
 // Exports: getIconForPerk
 
-// Module 11549 (getIconForPerk)
+// Module 11550 (getIconForPerk)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const result = asyncGeneratorStep.fileFinishedImporting("modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx");

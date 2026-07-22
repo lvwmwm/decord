@@ -1,10 +1,10 @@
-// Module ID: 14969
-// Function ID: 112667
+// Module ID: 14977
+// Function ID: 112710
 // Name: trackImpressionForCard
 // Dependencies: []
 // Exports: default
 
-// Module 14969 (trackImpressionForCard)
+// Module 14977 (trackImpressionForCard)
 function trackImpressionForCard(current, guild_id, game_id, variant, location_stack) {
   current = current.current;
   current.add(guild_id.id);
@@ -83,7 +83,7 @@ class OneColumnGuildUpsellList {
       return closure_9(stateFromStoresObject(closure_3[14]), obj, item.id);
     }, items1);
     tmp5 = useOnViewableItemsChanged(stateFromStoresObject, "one-column", tmp3(importDefault(dependencyMap[13]).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations);
-    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f112683, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
+    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f112726, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
     return jsx(arg1(dependencyMap[15]).FlashList, obj);
   }
 }
@@ -191,7 +191,7 @@ class TwoColumnGuildUpsellList {
       obj.children = items;
       return closure_10(closure_5, obj);
     }, items2);
-    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f112683, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback1 };
+    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f112726, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback1 };
     return jsx(arg1(dependencyMap[15]).FlashList, obj);
   }
 }
@@ -206,17 +206,17 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((paddingBottom, paddingTop)
   let obj = {};
   obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
   obj.container = obj;
-  obj = { "Bool(true)": null, "Bool(true)": "stretch", "Bool(true)": 16, paddingTop, minHeight: paddingTop + MIN_HEADER_HEIGHT, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
+  obj = { paddingTop, minHeight: paddingTop + MIN_HEADER_HEIGHT, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
   obj.headerWrapper = obj;
   obj.headerTitle = {};
   obj.subtitle = { alignSelf: "center", marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, marginBottom: importDefault(dependencyMap[7]).space.PX_24, marginTop: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, textAlign: "center" };
   const obj1 = { alignSelf: "center", marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, marginBottom: importDefault(dependencyMap[7]).space.PX_24, marginTop: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, textAlign: "center" };
   obj.listContent = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom };
-  const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom };
-  obj.twoColumnRow = { gap: importDefault(dependencyMap[7]).space.PX_16 };
+  const obj3 = { "Null": "<string:1895825670>", "Null": "type", "Null": "<string:33627458>", gap: importDefault(dependencyMap[7]).space.PX_16 };
+  obj.twoColumnRow = obj3;
   return obj;
 });
-let closure_12 = { "Bool(true)": "mobile-text-heading-primary", "Bool(true)": "heading-lg/bold" };
+let closure_12 = { "Bool(false)": "mobile-text-heading-primary", "Bool(false)": "heading-lg/bold" };
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellModal.tsx");
 
@@ -242,7 +242,7 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
     return items;
   }, items1);
   const memo1 = React.useMemo(() => {
-    const obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp3.subtitle };
+    const obj = { cachedAt: "y", edpbxy: "isArray", style: tmp3.subtitle };
     const intl = gradientTop(closure_3[20]).intl;
     obj.children = intl.string(gradientTop(closure_3[20]).t.PH+G/A);
     return callback(gradientTop(closure_3[19]).Text, obj);
@@ -261,7 +261,7 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[20]).t.cpT0Cq);
   const items4 = [callback(arg1(dependencyMap[23]).HeaderIconButton, obj1), , ];
   const obj2 = { style: tmp3.headerTitle };
-  const obj3 = {};
+  const obj3 = { 803799044: null, 1269170180: null, 711589892: null };
   const intl2 = arg1(dependencyMap[20]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[20]).t.fs+2Kn);
   obj2.children = callback(arg1(dependencyMap[19]).Text, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 11871
-// Function ID: 91901
+// Module ID: 11872
+// Function ID: 91915
 // Name: GuildProfileLoadingError
 // Dependencies: []
 // Exports: default
 
-// Module 11871 (GuildProfileLoadingError)
+// Module 11872 (GuildProfileLoadingError)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

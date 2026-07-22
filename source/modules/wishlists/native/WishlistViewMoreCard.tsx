@@ -1,10 +1,10 @@
-// Module ID: 9748
-// Function ID: 75846
+// Module ID: 9749
+// Function ID: 75859
 // Name: WishlistViewMoreCard
 // Dependencies: []
 // Exports: default
 
-// Module 9748 (WishlistViewMoreCard)
+// Module 9749 (WishlistViewMoreCard)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -36,7 +36,7 @@ export default function WishlistViewMoreCard(recipientName) {
   obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[5]).t.8uYD+I, { username: recipientName });
   const items = [callback(importDefault(dependencyMap[6]), { accessibilityHidden: true, sku, size, recipientName }), ];
   obj = { style: callback3().moreOverlay };
-  obj = { hasMaxConnections: "<string:3362914305>", isBoostOnlySubscription: "<string:2018574337>" };
+  obj = {};
   const intl2 = arg1(dependencyMap[5]).intl;
   obj.children = intl2.format(arg1(dependencyMap[5]).t.F6iMs4, { count: overflowCount });
   obj.children = callback(arg1(dependencyMap[7]).Text, obj);

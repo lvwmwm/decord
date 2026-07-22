@@ -1,9 +1,9 @@
-// Module ID: 14978
-// Function ID: 112756
+// Module ID: 14986
+// Function ID: 112799
 // Name: YouStatusRadioGroup
 // Dependencies: []
 
-// Module 14978 (YouStatusRadioGroup)
+// Module 14986 (YouStatusRadioGroup)
 function YouStatusRadioGroup() {
   const StatusSetting = arg1(dependencyMap[18]).StatusSetting;
   const setting = StatusSetting.useSetting();
@@ -255,7 +255,7 @@ function CustomStatus() {
   }
   let gameMentionsAsPlainText = obj2.useGameMentionsAsPlainText(state1);
   obj = { hasIcons: false };
-  obj = { style: tmp.customStatusRow };
+  obj = { "Bool(true)": true, s: true, style: tmp.customStatusRow };
   obj1 = { style: tmp.customStatusEditButton, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[22]).intl;
   const string = intl.string;
@@ -304,7 +304,7 @@ function CustomStatus() {
     tmp20 = callback(arg1(dependencyMap[57]).ReactionIcon, obj4);
   }
   const items = [tmp20, ];
-  const obj5 = { <string:1643205302>: null, <string:1415816450>: "text-sm/semibold", <string:4283523744>: "text-default", style: tmp.customStatusText };
+  const obj5 = { style: tmp.customStatusText };
   if (!tmp5) {
     const intl3 = arg1(dependencyMap[22]).intl;
     gameMentionsAsPlainText = intl3.string(arg1(dependencyMap[22]).t./UonHN);
@@ -349,12 +349,12 @@ let closure_18 = arg1(dependencyMap[9]).MultiAccountSwitchLocation;
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[10]));
 let obj1 = arg1(dependencyMap[11]);
-let obj = { account: { position: "relative" }, manage: {}, leadingIcon: { "Null": "isArray", "Null": "key", "Null": "Array" } };
-obj = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
+let obj = { account: { position: "relative" }, manage: {}, leadingIcon: { "Null": "center", "Null": "center", "Null": -352059390 } };
+obj = { <string:1199788897>: null, <string:480689183>: null, <string:3327199329>: null, tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.trailingIcon = obj;
 obj1 = { gap: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_PADDING };
 obj.customStatusRow = obj1;
-const obj2 = { "Bool(false)": 11289912320616628000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005532905043006873, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002404207391897851, "Bool(false)": -12680549038071390000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000264006681466, minHeight: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_HEIGHT, padding: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_PADDING, gap: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_PADDING };
+const obj2 = { flex: null, flexShrink: null, flexGrow: null, justifyContent: null, alignItems: null, minHeight: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_HEIGHT, padding: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_PADDING, gap: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_PADDING };
 obj.customStatusEditButton = obj2;
 const tmp4 = arg1(dependencyMap[10]);
 obj.customStatusRemoveButton = { height: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_HEIGHT, paddingHorizontal: importDefault(dependencyMap[12]).modules.mobile.TABLE_ROW_PADDING, alignItems: "center", justifyContent: "center" };
@@ -401,7 +401,7 @@ const memoResult = importAllResult.memo((statusOnly) => {
   items2[4] = tmp11;
   let tmp14 = !flag && stateFromStores1;
   if (tmp14) {
-    tmp14 = callback(importDefault(dependencyMap[64]), { borderRadius: true, paths: true });
+    tmp14 = callback(importDefault(dependencyMap[64]), { "Bool(false)": "<string:1191182934>", "Bool(false)": "<string:2617246294>" });
   }
   items2[5] = tmp14;
   obj1.children = items2;

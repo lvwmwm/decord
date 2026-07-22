@@ -1869,7 +1869,7 @@ function formatTrialCtaIntervalDuration(intervalType) {
     num = 1;
   }
   let obj = arg1(dependencyMap[22]);
-  const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { "Bool(true)": -536870861, "Bool(true)": -299892737 });
+  const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { y: "%FunctionPrototype%", getSelectedMediaSource: "paddingStart" });
   if (constants6.DAY === MONTH) {
     if (num >= 7) {
       if (num % 7 === 0) {
@@ -2288,7 +2288,7 @@ let closure_47 = arg1(dependencyMap[10]).getPremiumGroupProductName;
 const tmp2 = arg1(dependencyMap[8]);
 ({ CurrencyCodes: closure_48, PaymentGatewayToFriendlyName: closure_49, PREPAID_PAYMENT_SOURCES: closure_50 } = arg1(dependencyMap[11]));
 let closure_51 = {};
-let closure_52 = { "Null": "cmn", "Null": "hak", "Null": "nan" };
+let closure_52 = {};
 let importDefaultResult = importDefault(dependencyMap[12]);
 importDefaultResult = new importDefaultResult("PremiumUtils.tsx");
 let obj = { BUNDLE: "bundle", TIER_0: "tier_0", TIER_1: "tier_1", TIER_2: "tier_2", PREMIUM_GUILD: "premium_guild" };

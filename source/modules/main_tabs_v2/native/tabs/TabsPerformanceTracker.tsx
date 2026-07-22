@@ -1,10 +1,10 @@
-// Module ID: 14676
-// Function ID: 110666
+// Module ID: 14684
+// Function ID: 110709
 // Name: trackForScreen
 // Dependencies: []
 // Exports: trackTabPressed, useTrackTabPerformance
 
-// Module 14676 (trackForScreen)
+// Module 14684 (trackForScreen)
 function trackForScreen(tab, uiTime) {
   if (tmp) {
     let obj = importDefault(dependencyMap[3]);

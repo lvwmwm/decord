@@ -1,10 +1,10 @@
-// Module ID: 9515
-// Function ID: 74064
+// Module ID: 9516
+// Function ID: 74077
 // Name: onClose
 // Dependencies: []
 // Exports: default
 
-// Module 9515 (onClose)
+// Module 9516 (onClose)
 function onClose() {
   importDefault(dependencyMap[7]).hideActionSheet();
 }
@@ -22,12 +22,12 @@ const merged = Object.assign(importDefault(dependencyMap[5])(tmp4.Fonts.DISPLAY_
 obj["marginTop"] = 8;
 obj["marginBottom"] = 8;
 obj.title = obj;
-const obj1 = { "Null": "_oneway", "Null": "y", "Null": "isArray", color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.subtitle = obj1;
-obj.view = {};
-obj.rating = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images" };
-let closure_8 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[5]);
+obj.subtitle = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj.view = {};
+obj.rating = {};
+let closure_8 = obj.createStyles(obj);
+const obj1 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/notifications/native/NotificationSurveyResponseActionSheet.tsx");
 
 export default function NotificationSurveyResponseActionSheet(header) {

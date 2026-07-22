@@ -94,7 +94,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             tmp28 = !headers.find((arg0) => "traceparent" === arg0[0]);
           }
           if (tmp28) {
-            const items1 = [, traceparent];
+            const items1 = [null, traceparent];
             arr4.push(items1);
           }
           let tmp30 = baggage;
@@ -108,7 +108,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             });
           }
           if (tmp30) {
-            const items2 = ["Array", baggage];
+            const items2 = [false, baggage];
             arr4.push(items2);
           }
           return arr4;

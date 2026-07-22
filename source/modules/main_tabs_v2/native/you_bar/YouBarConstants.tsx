@@ -1,9 +1,9 @@
-// Module ID: 13876
-// Function ID: 104985
+// Module ID: 13883
+// Function ID: 105025
 // Name: CONNECTION_BANNER_HEIGHT
 // Dependencies: []
 
-// Module 13876 (CONNECTION_BANNER_HEIGHT)
+// Module 13883 (CONNECTION_BANNER_HEIGHT)
 const PixelRatio = require(dependencyMap[0]).PixelRatio;
 const PX_12 = importDefault(dependencyMap[1]).space.PX_12;
 const result = 2 * PX_12;

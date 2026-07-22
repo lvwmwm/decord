@@ -1,10 +1,10 @@
-// Module ID: 15698
-// Function ID: 119990
+// Module ID: 15706
+// Function ID: 120033
 // Name: UserVideoFailed
 // Dependencies: []
 // Exports: default
 
-// Module 15698 (UserVideoFailed)
+// Module 15706 (UserVideoFailed)
 const View = require(dependencyMap[0]).View;
 const VideoToggleState = require(dependencyMap[1]).VideoToggleState;
 const _module = require(dependencyMap[2]);
@@ -13,8 +13,8 @@ const _module1 = require(dependencyMap[3]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_700 };
 obj.container = obj;
-obj.placeholderImage = {};
-obj.button = { disabled: "center", sequence: "center" };
+obj.placeholderImage = { showMobileGoLiveUpsell: null, goLiveUpsellVariant: null, audioOutputPresent: null };
+obj.button = {};
 let closure_8 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[13]);
 const result = _module2.fileFinishedImporting("modules/video_calls/native/components/UserVideoFailed.tsx");
@@ -25,7 +25,7 @@ export default function UserVideoFailed(userId) {
   let removeSplashImage;
   let style;
   const require = userId.userId;
-  let obj = { body: null, fill: null, ao: null, Path: null, accessibilityRole: null };
+  let obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
   ({ style, avError, removeRetryButton, removeSplashImage } = userId);
   Object.setPrototypeOf(null);
   const merged = Object.assign(userId, obj);
@@ -42,7 +42,7 @@ export default function UserVideoFailed(userId) {
     tmp8 = callback(require(dependencyMap[6]).StreamFailed, obj1);
   }
   const items1 = [tmp8, ];
-  const obj2 = {};
+  const obj2 = { cachedAt: false, edpbxy: 700 };
   const intl = require(dependencyMap[8]).intl;
   obj2.children = intl.string(require(dependencyMap[8]).t.z+mxvo);
   items1[1] = callback(require(dependencyMap[7]).Text, obj2);

@@ -1,16 +1,16 @@
-// Module ID: 9896
-// Function ID: 76579
+// Module ID: 9897
+// Function ID: 76592
 // Name: ModalFloatingAction
 // Dependencies: []
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 9896 (ModalFloatingAction)
+// Module 9897 (ModalFloatingAction)
 let closure_3 = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ floating: {}, spacer: { height: 96 } });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ floating: { padding: "y", T: "isArray", sr: "name", ty: "scales" }, spacer: { height: 96 } });
 let closure_9 = { code: "function ModalFloatingActionNativeTsx1(){const{interpolate,sharedValue,floatingBackgroundColor,useReducedMotion}=this.__closure;return{opacity:interpolate(sharedValue.get(),[0,1],[0,1]),borderBottomColor:floatingBackgroundColor,borderBottomWidth:16,transform:[{translateY:interpolate(sharedValue.get(),[useReducedMotion?0.999999:0,1],[32,0])}]};}" };
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("design/components/Modal/native/ModalFloatingAction.native.tsx");
@@ -46,7 +46,7 @@ export const ModalFloatingAction = function ModalFloatingAction(isVisible) {
   }, items);
   let obj1 = arg1(dependencyMap[4]);
   const fn = function y() {
-    let obj = { opacity: isVisible(sharedValue[4]).interpolate(sharedValue.get(), ["replace", "then"], ["replace", "then"]), borderBottomColor: floatingBackgroundColor, borderBottomWidth: 16 };
+    let obj = { opacity: isVisible(sharedValue[4]).interpolate(sharedValue.get(), [77601039, 1612144654], [77601039, 1612144654]), borderBottomColor: floatingBackgroundColor, borderBottomWidth: 16 };
     obj = {};
     const obj2 = isVisible(sharedValue[4]);
     let num = 0;
@@ -79,7 +79,7 @@ export const ModalFloatingAction = function ModalFloatingAction(isVisible) {
   const obj6 = importDefault(dependencyMap[10])(floatingBackgroundColor);
   const items2 = [importDefault(dependencyMap[10])(floatingBackgroundColor).alpha(0).hex(), floatingBackgroundColor];
   obj2.colors = items2;
-  obj2.locations = [null, null];
+  obj2.locations = [-447601326, 1659789871];
   obj2.style = absoluteFill.absoluteFill;
   const items3 = [callback(tmp9, obj2), ];
   const obj3 = {};

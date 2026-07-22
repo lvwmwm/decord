@@ -1,10 +1,10 @@
-// Module ID: 16205
-// Function ID: 125211
+// Module ID: 16213
+// Function ID: 125253
 // Name: onMembersLoadFail
 // Dependencies: []
 // Exports: default
 
-// Module 16205 (onMembersLoadFail)
+// Module 16213 (onMembersLoadFail)
 function onMembersLoadFail() {
   let obj = importDefault(dependencyMap[8]);
   obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: importDefault(dependencyMap[9]) };
@@ -100,7 +100,7 @@ export default function GuildSettingsRoleMembers(guild) {
   const items4 = [callback, guild.id, locked, found];
   const callback1 = React.useCallback(() => {
     let obj = role(locked[17]);
-    obj.track(constants.OPEN_POPOUT, { backgroundColor: true, padding: "/assets/design/components/Illustration/native/redesign/generated/images", width: 375 });
+    obj.track(constants.OPEN_POPOUT, {});
     const obj2 = role(locked[18]);
     obj = { guild, role };
     obj2.openLazy(guild(locked[20])(locked[19], locked.paths), "role-add-members-" + guild.id + "-" + role.id, obj);

@@ -1,5 +1,5 @@
 // Module ID: 6710
-// Function ID: 52162
+// Function ID: 52173
 // Name: isPrivateChannel
 // Dependencies: []
 // Exports: isPrivateChannel

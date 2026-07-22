@@ -1,15 +1,16 @@
 // Module ID: 464
 // Function ID: 6141
 // Name: Share
-// Dependencies: []
+// Dependencies: [6, 7, 2, 6]
 
 // Module 464 (Share)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 const tmp2 = () => {
   class Share {
     constructor() {
-      tmp = closure_3(this, Share);
+      tmp = _classCallCheck(this, Share);
       return;
     }
   }

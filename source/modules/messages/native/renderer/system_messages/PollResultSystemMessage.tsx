@@ -1,18 +1,17 @@
 // Module ID: 7722
-// Function ID: 61433
+// Function ID: 61443
 // Name: castHook
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: createPollResultSystemMessage
 
 // Module 7722 (castHook)
-import { EMOJI_URL_BASE_SIZE } from "result";
-import result from "result";
+import { EMOJI_URL_BASE_SIZE } from "__exportStarResult1";
 
 function castHook(arg0) {
   const require = arg0;
   return () => arg0;
 }
-result = result.fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
   const tmp = importDefault(dependencyMap[6])(message.message.embeds[0]);
@@ -33,7 +32,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       const intl3 = require(dependencyMap[3]).intl;
       const obj2 = {};
       const merged = Object.assign(obj);
-      obj2["sadEmojiHook"] = castHook({ "Null": "icon-only", "Null": "sm", "Null": "interactive-icon-default" });
+      obj2["sadEmojiHook"] = castHook({ dark: "icon-only", light: "sm", notation: "interactive-icon-default" });
       let formatToPartsResult = intl3.formatToParts(require(dependencyMap[3]).t.9dPxsm, obj2);
     } else {
       const _Math = Math;
@@ -80,7 +79,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
             obj.surrogate = flag2.name;
             items.push(obj);
           }
-          items.push({});
+          items.push({ "Null": null, "Null": null });
         }
       }
     }

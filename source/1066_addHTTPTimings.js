@@ -69,7 +69,7 @@ let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
 const map = new Map();
-const obj = { url: "%parseFloat%", retries: "isArray", oldFormErrors: "script", rejectWithError: "isArray" };
+const obj = {};
 
 export const defaultRequestInstrumentationOptions = obj;
 export const instrumentOutgoingRequests = function instrumentOutgoingRequests(getOptions, arg1) {

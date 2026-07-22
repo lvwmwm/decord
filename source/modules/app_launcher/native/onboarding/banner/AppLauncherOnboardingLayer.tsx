@@ -1,14 +1,14 @@
-// Module ID: 11156
-// Function ID: 86765
+// Module ID: 11157
+// Function ID: 86778
 // Dependencies: []
 
-// Module 11156
+// Module 11157
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = arg1(dependencyMap[2]).useBestActiveChatInputContainerHeight;
 const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let obj = {};
-obj = { 1650260896: 1916923741, 1397860950: 16777215, 1362321786: 2147472639, -1689068311: -536870861, 1669863621: -299892737, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SCRIM };
+obj = { lastUsedCommandId: null, lastUsedTimeMs: null, alignItems: null, flexDirection: null, gap: null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SCRIM };
 obj.container = obj;
 let closure_5 = arg1(dependencyMap[4]).createStyles(obj);
 const obj2 = arg1(dependencyMap[4]);

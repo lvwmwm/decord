@@ -1,5 +1,5 @@
 // Module ID: 7565
-// Function ID: 60546
+// Function ID: 60557
 // Name: useIsGoogleWalletEnabled
 // Dependencies: []
 // Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled

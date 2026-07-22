@@ -1,9 +1,9 @@
-// Module ID: 12457
-// Function ID: 95154
+// Module ID: 12462
+// Function ID: 95182
 // Name: WorkSchedulerTelemetry
 // Dependencies: []
 
-// Module 12457 (WorkSchedulerTelemetry)
+// Module 12462 (WorkSchedulerTelemetry)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -11,8 +11,8 @@ let obj = { LONGER_DISPATCH: "longer_dispatch", EXCEEDED_MAX_CONSECUTIVE_FLUSHES
 obj = { TIME_TO_FIRE_IDLE_CALLBACK: "time_to_fire_idle_callback", TIME_TO_QUEUE_EMPTY: "time_to_flush_all_work", TIME_OVER_DEADLINE: "time_over_deadline", DEADLINE_INITIAL_TIME_REMAINING: "initial_time_of_deadline" };
 obj = { COUNT_DISPATCHES_LEFT_AFTER_YIELD: "count_dispatches_left_after_yield", COUNT_FLUSH_BEFORE_QUEUE_EMPTY: "count_flush_before_queue_empty", COUNT_INITIAL_DISPATCHS_LENGTH: "count_initial_dispatches_length" };
 let closure_5 = Object.freeze({ [obj.TIME_TO_FIRE_IDLE_CALLBACK]: null, [obj.TIME_TO_QUEUE_EMPTY]: null, [obj.TIME_OVER_DEADLINE]: null, [obj.DEADLINE_INITIAL_TIME_REMAINING]: null });
-let closure_6 = Object.freeze({ [obj.TIME_TO_FIRE_IDLE_CALLBACK]: ["<string:53040003>", "<string:806589490>"], [obj.TIME_TO_QUEUE_EMPTY]: ["<string:53040003>", "<string:806589490>"], [obj.TIME_OVER_DEADLINE]: ["<string:53040003>", "<string:806589490>"], [obj.DEADLINE_INITIAL_TIME_REMAINING]: ["<string:53040003>", "<string:806589490>"] });
-let closure_7 = Object.freeze({ [obj.COUNT_FLUSH_BEFORE_QUEUE_EMPTY]: ["<string:53040003>", "<string:806589490>"], [obj.COUNT_DISPATCHES_LEFT_AFTER_YIELD]: ["<string:53040003>", "<string:806589490>"], [obj.COUNT_INITIAL_DISPATCHS_LENGTH]: ["<string:53040003>", "<string:806589490>"] });
+let closure_6 = Object.freeze({ [obj.TIME_TO_FIRE_IDLE_CALLBACK]: ["placeholder", "aria-label"], [obj.TIME_TO_QUEUE_EMPTY]: ["placeholder", "aria-label"], [obj.TIME_OVER_DEADLINE]: ["placeholder", "aria-label"], [obj.DEADLINE_INITIAL_TIME_REMAINING]: ["placeholder", "aria-label"] });
+let closure_7 = Object.freeze({ [obj.COUNT_FLUSH_BEFORE_QUEUE_EMPTY]: ["placeholder", "aria-label"], [obj.COUNT_DISPATCHES_LEFT_AFTER_YIELD]: ["placeholder", "aria-label"], [obj.COUNT_INITIAL_DISPATCHS_LENGTH]: ["placeholder", "aria-label"] });
 let closure_8 = Object.freeze({ [obj.LONGER_DISPATCH]: 0, [obj.EXCEEDED_MAX_CONSECUTIVE_FLUSHES]: 0, [obj.FIRED_DUE_TO_MAX_TIMEOUT]: 0, [obj.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED]: 0 });
 const tmp2 = () => {
   class WorkSchedulerTelemetry {

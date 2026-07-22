@@ -184,14 +184,14 @@ const fn = function n(moment) {
   obj.weekdays = "ned\u011Ble_pond\u011Bl\u00ED_\u00FAter\u00FD_st\u0159eda_\u010Dtvrtek_p\u00E1tek_sobota".split("_");
   obj.weekdaysShort = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_");
   obj.weekdaysMin = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_");
-  obj.longDateFormat = { "Bool(true)": true, "Bool(true)": "Array", "Bool(true)": "4Z9Fbb", "Bool(true)": "Array", "Bool(true)": "alternate", "Bool(true)": "Array", "Bool(true)": "NATIVE_REQUIRED_ASSETS_ICONS" };
+  obj.longDateFormat = {};
   obj = {
-    intl: 1193934849,
-    flex: 234422273,
-    getChannel: 299892737,
-    PX_8: 299827201,
-    textAlign: -615448575,
-    unicodeVersion: 684444,
+    variant: 16777802,
+    r: 35278145,
+    now: 307709440,
+    Symbol: 309067777,
+    Symbol: 1510277121,
+    enabled: 1797390337,
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -239,11 +239,11 @@ const fn = function n(moment) {
     }
   };
   obj.calendar = obj;
-  obj = { 9223372036854775807: -3482416091957523000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017367305307133232, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
+  obj = { COZY_DRAWER: true, rootContainer: true, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
   obj.relativeTime = obj;
   obj.dayOfMonthOrdinalParse = /\d{1,2}\./;
   obj.ordinal = "%d.";
-  obj.week = { "Bool(true)": null, "Bool(true)": null };
+  obj.week = { emoji: false, me: false };
   return moment.defineLocale("cs", obj);
 };
 if ("object" === typeof exports) {
@@ -255,7 +255,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

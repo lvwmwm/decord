@@ -1,10 +1,10 @@
-// Module ID: 15661
-// Function ID: 119656
+// Module ID: 15669
+// Function ID: 119699
 // Name: isStableStreamParticipant
 // Dependencies: []
 // Exports: default, isStableParticipantWithUser, stableParticipantHasVideo
 
-// Module 15661 (isStableStreamParticipant)
+// Module 15669 (isStableStreamParticipant)
 function isStableStreamParticipant(participant) {
   let type;
   if (null != participant) {

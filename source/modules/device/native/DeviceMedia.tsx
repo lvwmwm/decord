@@ -1,11 +1,11 @@
-// Module ID: 9655
-// Function ID: 75217
+// Module ID: 9656
+// Function ID: 75230
 // Dependencies: []
 
-// Module 9655
+// Module 9656
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[1]);
-let closure_4 = _module.create(() => ({ 1414937443: false, 1627586641: false, -570404404: false, -866007455: false }));
+let closure_4 = _module.create(() => ({}));
 const _module1 = require(dependencyMap[6]);
 const result = _module1.fileFinishedImporting("modules/device/native/DeviceMedia.tsx");
 

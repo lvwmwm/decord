@@ -1,9 +1,9 @@
-// Module ID: 9633
-// Function ID: 75038
+// Module ID: 9634
+// Function ID: 75051
 // Name: HorizontalAutocompleteOption
 // Dependencies: []
 
-// Module 9633 (HorizontalAutocompleteOption)
+// Module 9634 (HorizontalAutocompleteOption)
 function HorizontalAutocompleteOption(arg0) {
   let children;
   let onPress;
@@ -38,14 +38,14 @@ const tmp4 = arg1(dependencyMap[6]);
 const ChannelTypes = tmp4.ChannelTypes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { emoji: { "Null": false, "Null": false }, emojiImage: { resizeMode: "contain" }, emojiText: { paddingVertical: true, paddingHorizontal: true, flexGrow: true }, emojiName: { marginLeft: 8 } };
+obj = { emoji: { "Null": true, "Null": true }, emojiImage: { resizeMode: "contain" }, emojiText: { -1398941826: true, 541046124: false, 1600327841: false }, emojiName: { marginLeft: 8 } };
 obj = {};
 const tmp5 = arg1(dependencyMap[7]);
 const merged = Object.assign(importDefault(dependencyMap[9])(tmp4.Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, 14));
 obj.nickname = obj;
 const importDefaultResult = importDefault(dependencyMap[9]);
 obj.status = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
-const obj2 = { <string:2946047468>: null, <string:2202189351>: null, <string:2332034131>: null, <string:1409287317>: null, <string:94374160>: null, borderRightWidth: tmp3.StyleSheet.hairlineWidth, borderRightColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
+const obj2 = { ../lib/assets: null, ../lib/constants: null, ../lib/basic-component-verification: null, ../lib/braintree-error: null, ../lib/convert-methods-to-error: null, borderRightWidth: tmp3.StyleSheet.hairlineWidth, borderRightColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
 obj.horizontalAutocompleteOption = obj2;
 obj.roleIcon = { marginRight: 4 };
 obj.channelName = { marginLeft: 8 };
@@ -65,7 +65,7 @@ const obj3 = {
     let obj = { onPress };
     obj = { status, statusStyle: tmp.status, user, size: arg1(dependencyMap[14]).AvatarSizes.SMALL, guildId, animate: true };
     const items = [callback(arg1(dependencyMap[14]).Avatar, obj), ];
-    obj = { style: { marginBottom: "da", justifyContent: "danish", inputValue: true, with_counts: "/assets/.cache/intl/aW50bA==", with_expiration: null } };
+    obj = { style: { position: "danish", left: true, right: "/assets/.cache/intl/aW50bA==", bottom: null, height: "a8305b23a6c35018f36ff43e32b2d5e2" } };
     const obj1 = { style: items1, variant: "text-sm/semibold" };
     const items1 = [tmp.nickname];
     if (null == nick) {
@@ -74,7 +74,7 @@ const obj3 = {
     }
     obj1.children = nick;
     const items2 = [callback(arg1(dependencyMap[15]).Text, obj1), ];
-    const obj2 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+    const obj2 = { cachedAt: "center", edpbxy: "center" };
     const items3 = [null, importDefault(dependencyMap[16]).getUserTag(user, { decoration: "never" })];
     obj2.children = items3;
     items2[1] = callback2(arg1(dependencyMap[15]).Text, obj2);

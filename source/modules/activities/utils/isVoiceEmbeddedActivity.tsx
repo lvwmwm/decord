@@ -1,10 +1,10 @@
-// Module ID: 10427
-// Function ID: 80321
+// Module ID: 10428
+// Function ID: 80334
 // Name: isVoiceEmbeddedActivity
 // Dependencies: []
 // Exports: default
 
-// Module 10427 (isVoiceEmbeddedActivity)
+// Module 10428 (isVoiceEmbeddedActivity)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

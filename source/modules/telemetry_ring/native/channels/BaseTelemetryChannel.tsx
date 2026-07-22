@@ -1,12 +1,16 @@
-// Module ID: 13000
-// Function ID: 98953
+// Module ID: 13007
+// Function ID: 98986
 // Name: BaseTelemetryChannel
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 13000 (BaseTelemetryChannel)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 13007 (BaseTelemetryChannel)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
+
+export default () => {
   class BaseTelemetryChannel {
     constructor(arg0, arg1) {
       tmp = BaseTelemetryChannel(this, BaseTelemetryChannel);
@@ -56,6 +60,3 @@ const tmp2 = () => {
   items[2] = obj;
   return callback(BaseTelemetryChannel, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
-
-export default tmp2;

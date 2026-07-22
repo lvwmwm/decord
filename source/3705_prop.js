@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" }, narrow: {}, short: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" } };
+    obj = { long: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" }, narrow: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, short: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" } };
     obj.conjunction = obj;
-    const obj1 = { long: { application: "L", Set: 8, Icon: 1, id: 8 }, narrow: { application: "L", Set: 8, Icon: 1, id: 8 }, short: { application: "L", Set: 8, Icon: 1, id: 8 } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, narrow: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, short: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "zh-Hans";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" }, narrow: {}, short: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" } }, disjunction: { long: { application: "L", Set: 8, Icon: 1, id: 8 }, narrow: { application: "L", Set: 8, Icon: 1, id: 8 }, short: { application: "L", Set: 8, Icon: 1, id: 8 } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "zh-Hans" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" }, narrow: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, short: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, narrow: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, short: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 } } }, locale: "zh-Hans" });

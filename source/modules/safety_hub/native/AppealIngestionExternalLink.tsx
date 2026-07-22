@@ -1,10 +1,10 @@
-// Module ID: 11035
-// Function ID: 85928
+// Module ID: 11036
+// Function ID: 85941
 // Name: AppealIngestionExternalLink
 // Dependencies: []
 // Exports: default
 
-// Module 11035 (AppealIngestionExternalLink)
+// Module 11036 (AppealIngestionExternalLink)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -12,10 +12,10 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { marginBottom: 8, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.childButton = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.childContainer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+const obj1 = { format_type: "<string:3212574722>", description: "<string:4132503554>", name: "<string:306254317>", action: "<string:1912603178>", messageReference: "toString", medium: true, action: true, threadId: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj.childContainer = obj1;
 obj.childButtonText = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+const tmp3 = arg1(dependencyMap[2]);
 obj.chevron = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_6 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -35,7 +35,7 @@ export default function AppealIngestionExternalLink(text) {
     }
   };
   obj = { style: tmp.childContainer };
-  obj = { delete: null, dispatch: null, raw: null, style: tmp.childButtonText, children: text.text };
+  obj = { "Null": true, "Null": true, alignItems: true, style: tmp.childButtonText, children: text.text };
   const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
   const obj1 = { source: arg1(dependencyMap[9]), color: tmp.chevron.color };
   items[1] = callback(arg1(dependencyMap[8]).Icon, obj1);

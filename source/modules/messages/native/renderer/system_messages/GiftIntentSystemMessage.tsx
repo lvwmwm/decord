@@ -1,5 +1,5 @@
 // Module ID: 7746
-// Function ID: 61520
+// Function ID: 61530
 // Name: createGiftIntentSystemMessage
 // Dependencies: []
 // Exports: createGiftIntentSystemMessage

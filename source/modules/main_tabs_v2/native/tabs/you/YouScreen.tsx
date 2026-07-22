@@ -1,10 +1,10 @@
-// Module ID: 15346
-// Function ID: 116876
+// Module ID: 15354
+// Function ID: 116919
 // Name: handleBackButtonPress
 // Dependencies: []
 // Exports: default
 
-// Module 15346 (handleBackButtonPress)
+// Module 15354 (handleBackButtonPress)
 function handleBackButtonPress() {
   const navigation = arg1(dependencyMap[20]).getRootNavigationRef();
   if (null != navigation) {
@@ -487,7 +487,7 @@ function UnconnectedYouScreen(arg0) {
           items16[2] = bannerAnimatedStyle;
           obj23.style = items16;
           merged = callback2;
-          obj25 = { skuId: skuId2, unicodeVersion: "info", skuId: "/", paused: tmp24 };
+          obj25 = { initialLaunchPadPosition: "<string:4149346306>", initialPullTabPosition: "<string:295619838>", initialTouchX: "<string:20046913>", skuId: skuId2, paused: tmp24 };
           const items17 = [callback2(importDefault(closure_2[62]), obj25), ];
           merged = arg1;
           if (obj53.isYouNavFloating()) {
@@ -621,7 +621,7 @@ const tmp3 = arg1(dependencyMap[8]);
 const tmp4 = arg1(dependencyMap[13]);
 let closure_22 = importDefault(dependencyMap[14]).createAnimatedComponent(importDefault(dependencyMap[15]));
 const importDefaultResult = importDefault(dependencyMap[14]);
-let closure_23 = arg1(dependencyMap[16]).createStyles((marginTop) => {
+let closure_23 = arg1(dependencyMap[16]).createStyles((minHeight) => {
   let obj = {};
   let obj1 = arg1(dependencyMap[17]);
   let xl;
@@ -646,22 +646,23 @@ let closure_23 = arg1(dependencyMap[16]).createStyles((marginTop) => {
   const merged2 = Object.assign(obj);
   obj.scrollView = obj2;
   obj.profileEffectLayer = {};
-  const obj3 = { getScaledChannelRowHeight: "Array", isConfigured: "isArray", GameDepthTier8SmallBadge: "max", shouldShowEmojiRow: "names", minHeight: marginTop };
+  const obj3 = { GUILD_CHANNEL_RESYNC_COMPLETED: true, TOO_MANY_BLOCKED_USERS: true, useForumPostMediaProperties: true, active: true, minHeight };
   obj.banner = obj3;
-  const obj4 = { 9223372036854775807: true, -9223372036854775808: true, 0: true, 9223372036854775807: true, 0: true };
+  const obj4 = {};
   const tmp10 = importDefault(dependencyMap[19]);
   const tmp10Result = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE);
   obj4.backgroundColor = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE).alpha(0.9).css();
   obj.gifTag = obj4;
   const alphaResult = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE).alpha(0.9);
   obj.gifTagText = { color: importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
-  obj.content = { marginTop };
+  const obj6 = { __workletHash: "password", messageId: "email", max: "name-prefix", marginTop: minHeight };
+  obj.content = obj6;
   return obj;
 });
 const obj2 = arg1(dependencyMap[16]);
 let closure_24 = arg1(dependencyMap[16]).createStyles(() => {
   let obj = {};
-  obj = { scale: 2, offset: "center", minimized: "center", active: 161294633293869400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, initialLaunchPadPosition: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005071684980005663, initialPullTabPosition: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115555, marginTop: importDefault(dependencyMap[18]).space.PX_4, left: importDefault(dependencyMap[18]).space.PX_16 };
+  obj = { <string:3714637141>: 2, <string:3713523030>: "center", <string:3713559591>: "center", <string:3429145281>: "<string:3942645763>", <string:1375449580>: "<string:1959657474>", <string:979475065>: "<string:3942645763>", marginTop: importDefault(dependencyMap[18]).space.PX_4, left: importDefault(dependencyMap[18]).space.PX_16 };
   obj.backButton = obj;
   return obj;
 });

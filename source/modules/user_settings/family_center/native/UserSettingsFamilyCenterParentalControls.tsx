@@ -1,10 +1,10 @@
-// Module ID: 13711
-// Function ID: 103735
+// Module ID: 13718
+// Function ID: 103768
 // Name: FamilyCenterParentalControlsSettings
 // Dependencies: []
 // Exports: default
 
-// Module 13711 (FamilyCenterParentalControlsSettings)
+// Module 13718 (FamilyCenterParentalControlsSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));

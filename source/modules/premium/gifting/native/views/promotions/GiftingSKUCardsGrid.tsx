@@ -1,10 +1,10 @@
-// Module ID: 9753
-// Function ID: 75878
+// Module ID: 9754
+// Function ID: 75891
 // Name: GiftingSKUCardsGrid
 // Dependencies: []
 // Exports: default
 
-// Module 9753 (GiftingSKUCardsGrid)
+// Module 9754 (GiftingSKUCardsGrid)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;
@@ -19,7 +19,7 @@ obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND };
 obj.selected = obj1;
 obj.claimed = { opacity: 0.4 };
 obj.checkmark = {};
-obj.checkmarkContainer = { placeholder: "Array", description: "CONTROL_RADIO_ICON_SIZE_DEFAULT", isCentered: "containerFloatingWrap", size: "Array", defaultValue: "PREMIUM_GROUP_ABOUT", onChange: "Array", keyboardType: "firstUsername", leadingIcon: "val" };
+obj.checkmarkContainer = { "Bool(true)": "Array", "Bool(true)": "FOCUS_EXPANDED_CONTROLS", "Bool(true)": "markRenderYielded", "Bool(true)": "Array", "Bool(true)": "PREMIUM_TIER_2_TRI_COLOR", "Bool(true)": "Array", "Bool(true)": "onOptionValueChange", "Bool(true)": "%Math.sign%" };
 const tmp2 = arg1(dependencyMap[4]);
 obj.textContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 let closure_9 = obj1.createStyles(obj);
@@ -86,7 +86,7 @@ let closure_10 = importAllResult.memo((rewardSkuId) => {
     }
     items3[1] = tmp16;
     const obj5 = { style: tmp.textContainer };
-    const obj6 = { children: product.name };
+    const obj6 = { 803799044: "scalar", 1269170180: 8, 711589892: "text-xs/medium", -1521221628: "text-overlay-light", children: product.name };
     const items4 = [callback(arg1(dependencyMap[14]).Text, obj6), ];
     const obj7 = {};
     const intl = arg1(dependencyMap[15]).intl;
@@ -106,7 +106,7 @@ let closure_10 = importAllResult.memo((rewardSkuId) => {
   }
 });
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_11 = arg1(dependencyMap[5]).createStyles({ grid: {} });
+let closure_11 = arg1(dependencyMap[5]).createStyles({ grid: { 9223372036854775807: "Portugu\u00EAs", -9223372036854775808: "Portuguese", 0: "pt-PT" } });
 const obj7 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 9761
-// Function ID: 75922
+// Module ID: 9762
+// Function ID: 75935
 // Name: PremiumGiftSuccessBody
 // Dependencies: []
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 9761 (PremiumGiftSuccessBody)
+// Module 9762 (PremiumGiftSuccessBody)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

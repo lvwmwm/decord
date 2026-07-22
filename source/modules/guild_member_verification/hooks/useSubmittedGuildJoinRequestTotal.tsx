@@ -1,10 +1,10 @@
-// Module ID: 14916
-// Function ID: 112342
+// Module ID: 14924
+// Function ID: 112385
 // Name: useSubmittedGuildJoinRequestTotal
 // Dependencies: []
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 14916 (useSubmittedGuildJoinRequestTotal)
+// Module 14924 (useSubmittedGuildJoinRequestTotal)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx");
 

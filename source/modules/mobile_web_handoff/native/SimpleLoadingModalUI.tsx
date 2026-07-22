@@ -1,15 +1,15 @@
-// Module ID: 5690
-// Function ID: 48989
+// Module ID: 5689
+// Function ID: 48997
 // Name: SimpleLoadingModal
 // Dependencies: []
 // Exports: default
 
-// Module 5690 (SimpleLoadingModal)
+// Module 5689 (SimpleLoadingModal)
 let closure_2 = importAll(dependencyMap[0]);
 ({ Modal: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ modalBackground: { "Null": null, "Null": null, "Null": null, "Null": null } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ modalBackground: { "Null": "mp1N/2", "Null": "ng", "Null": "EXPRESSION_PICKER_EXPRESSION_FOCUS", "Null": "ignoreClass" } });
 let closure_7 = { OPENING: 0, [0]: "OPENING", SHOWN: 1, [1]: "SHOWN", DISMISSED: 2, [2]: "DISMISSED" };
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModalUI.tsx");
@@ -80,6 +80,8 @@ export default function SimpleLoadingModal(operation) {
     operation().then((arg0) => callback(arg0)).catch((arg0) => callback2(arg0));
   }, items3);
   let obj = {
+    "Null": false,
+    "Null": false,
     onShow() {
       if (ref.current === callback1.DISMISSED) {
         D();

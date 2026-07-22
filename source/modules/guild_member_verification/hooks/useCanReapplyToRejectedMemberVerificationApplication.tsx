@@ -1,10 +1,10 @@
-// Module ID: 9155
-// Function ID: 71781
+// Module ID: 9156
+// Function ID: 71794
 // Name: useCanReapplyToRejectedMemberVerificationApplication
 // Dependencies: []
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 9155 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 9156 (useCanReapplyToRejectedMemberVerificationApplication)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

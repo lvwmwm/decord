@@ -1,16 +1,16 @@
-// Module ID: 10322
-// Function ID: 79695
+// Module ID: 10323
+// Function ID: 79708
 // Name: AlertNotification
 // Dependencies: []
 // Exports: default
 
-// Module 10322 (AlertNotification)
+// Module 10323 (AlertNotification)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-const obj = { 9223372036854775807: null, 0: null, 0: null, 0: null, 9223372036854775807: null, shape: arg1(dependencyMap[4]).CutoutShape.RoundedRect, x: arg1(dependencyMap[3]).ImageSizes[arg1(undefined, dependencyMap[3]).GuildIconSizes.NORMAL] - -6 - 24, cornerRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj = { shape: arg1(dependencyMap[4]).CutoutShape.RoundedRect, x: arg1(dependencyMap[3]).ImageSizes[arg1(undefined, dependencyMap[3]).GuildIconSizes.NORMAL] - -6 - 24, cornerRadius: importDefault(dependencyMap[5]).radii.sm };
 const tmp2 = arg1(dependencyMap[2]);
-let closure_9 = arg1(dependencyMap[6]).createStyles({ warningBadge: { backgroundColor: "{{count}} minut", flexDirection: "p\u0159ed {{count}} minutami", justifyContent: "za {{count}} minut", alignItems: "p\u0159ibli\u017En\u011B hodina", overflow: "p\u0159ibli\u017En\u011B p\u0159ed hodinou", zIndex: "p\u0159ibli\u017En\u011B za hodinu", minHeight: "p\u0159ibli\u017En\u011B {{count}} hodiny" }, warningIcon: {} });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ warningBadge: { backgroundColor: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", flexDirection: null, justifyContent: null, alignItems: null, overflow: true, zIndex: false, minHeight: true }, warningIcon: { "Null": null, "Null": null } });
 const obj2 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
 

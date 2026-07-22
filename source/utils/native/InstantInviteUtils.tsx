@@ -1,10 +1,10 @@
-// Module ID: 8477
-// Function ID: 67663
+// Module ID: 8478
+// Function ID: 67675
 // Name: makeOption
 // Dependencies: []
 // Exports: getInviteChannelId, shouldRenderInvite, useShouldShowInviteInActionBar
 
-// Module 8477 (makeOption)
+// Module 8478 (makeOption)
 import option from "module_0";
 import option1 from "module_604800";
 import option2 from "module_1209600";

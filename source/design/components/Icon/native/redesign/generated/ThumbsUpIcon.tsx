@@ -1,10 +1,10 @@
-// Module ID: 9290
-// Function ID: 72571
+// Module ID: 9291
+// Function ID: 72584
 // Name: ThumbsUpIcon
 // Dependencies: []
 // Exports: ThumbsUpIcon
 
-// Module 9290 (ThumbsUpIcon)
+// Module 9291 (ThumbsUpIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThumbsUpIcon.tsx");

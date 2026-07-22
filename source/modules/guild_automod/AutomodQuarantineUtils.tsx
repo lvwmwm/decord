@@ -1,10 +1,10 @@
-// Module ID: 11005
-// Function ID: 85635
+// Module ID: 11006
+// Function ID: 85648
 // Name: useCurrentUserHasAutomodQuarantinedProfile
 // Dependencies: []
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11005 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11006 (useCurrentUserHasAutomodQuarantinedProfile)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

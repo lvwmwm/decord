@@ -1,5 +1,5 @@
 // Module ID: 4527
-// Function ID: 39766
+// Function ID: 39774
 // Name: getBlurAmount
 // Dependencies: []
 // Exports: Backdrop
@@ -25,7 +25,7 @@ obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SCRIM
 obj.backdrop = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.backdropOpaque = { backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
-obj.accessibilityDismiss = {};
+obj.accessibilityDismiss = { <string:1373155683>: -1, <string:1397987961>: 0, <string:31251800>: 0, <string:1559979170>: 1, <string:1549292374>: 0 };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("design/components/Backdrop/native/Backdrop.native.tsx");

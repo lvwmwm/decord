@@ -1,10 +1,10 @@
-// Module ID: 8505
-// Function ID: 67861
+// Module ID: 8506
+// Function ID: 67873
 // Name: getStyleConfig
 // Dependencies: []
 // Exports: default
 
-// Module 8505 (getStyleConfig)
+// Module 8506 (getStyleConfig)
 let UserProfileThemeTypes;
 function getStyleConfig(arg0) {
   let tmp;
@@ -79,7 +79,7 @@ class DisplayName {
         tmp3 = arg1;
         tmp4 = dependencyMap;
         num = 13;
-        showChevron = jsx(arg1(dependencyMap[13]).ChevronSmallDownIcon, { accessibilityRole: "png", "": true });
+        showChevron = jsx(arg1(dependencyMap[13]).ChevronSmallDownIcon, { "Bool(false)": "png", "Bool(false)": true });
       }
       items1[2] = showChevron;
       obj.children = items1;
@@ -125,7 +125,7 @@ class UserTagAndPronouns {
       if (null == userTag) {
         return null;
       } else {
-        let obj = { <string:1643205302>: "isArray", <string:1415816450>: "accessibilityRole", <string:4283523744>: "hasDiversityParent", variant: textVariant, children: userTag };
+        let obj = { 803799044: "isArray", 1269170180: "accessibilityRole", 711589892: "pos", variant: textVariant, children: userTag };
         const tmp15 = callback(userTag(onPressUserTag[14]).Text, obj);
         if (null != onPressUserTag) {
           obj = { onPress: onPressUserTag, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp15 };
@@ -480,19 +480,19 @@ const GuildTagBadgeSize = arg1(dependencyMap[5]).GuildTagBadgeSize;
 const tmp5 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { flexDirection: "column" }, displayName: { 9223372036854775807: true, 9223372036854775807: true, 0: true }, details: {}, detailsText: {}, botTag: { marginLeft: 4 } };
-obj = { <string:140796457>: "DIS_Nitro_Gifcard_001_Gift_Loop", <string:1401660094>: 0, <string:3283472837>: 183.333, <string:979439826>: 3, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj = { container: { flexDirection: "column" }, displayName: { -871710126: "safety_user_sentiment_notice_dismissed_at", -1878764875: "message", -1956545097: null }, details: { STORE_LISTING_BUY: -12, display: null, getVoiceStateChannelSummaryFromVoiceStates: 1 }, detailsText: { <string:4233188529>: "Portugu\u00EAs", <string:1549034242>: "Portuguese", <string:3972818103>: "pt-PT", <string:508671921>: "portuguese" }, botTag: { marginLeft: 4 } };
+obj = { "Bool(true)": "r", "Bool(true)": "TOO_MANY_CONNECTIONS", "Bool(true)": "PREMIUM_TIER_1_PREMIUM_GUILD_1_MONTHLY", "Bool(false)": "Array", borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.guildTag = obj;
 obj.transparentBackground = { backgroundColor: "transparent" };
 obj.badge = { resizeMode: "contain" };
 obj.badges = {};
-const tmp6 = arg1(dependencyMap[6]);
-obj.badgeRow = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
+const obj1 = { 0: -0.000000000000000000000000000000000000000000000000000000005416512498402376, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005311660849324045, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000067606868790614, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026618315203386, -9223372036854775808: 17311091029112627000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 145578.15350649727, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.badgeRow = obj1;
 let closure_16 = obj.createStyles(obj);
 let closure_17 = { guildTagBadgeSize: GuildTagBadgeSize.SIZE_16 };
-const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, guildTagBadgeSize: GuildTagBadgeSize.SIZE_12 };
+const obj2 = { emptyStateContentContainer: "Promise", GAME_SERVERS: "Array", td: "isArray", stackParser: "accessibilityRole", FRAG_LOAD_TIMEOUT: "useStateFromStores", stripSentryFramesAndReverse: "track", TD: "key", guildTagBadgeSize: GuildTagBadgeSize.SIZE_12 };
 let closure_18 = { [UserProfileThemeTypes.PREVIEW]: obj2 };
-const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
+const tmp6 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryInfo.tsx");
 
 export default function UserProfilePrimaryInfo(arg0) {

@@ -1,14 +1,10 @@
-// Module ID: 15285
-// Function ID: 116231
+// Module ID: 15293
+// Function ID: 116274
 // Name: getItemKey
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 15285 (getItemKey)
-import closure_3 from "result";
-import { jsx } from "result";
-import result from "result";
-
+// Module 15293 (getItemKey)
 function getItemKey(items) {
   items = items.items;
   const mapped = items.map((id) => id.id);
@@ -137,12 +133,14 @@ function AnimatedTabs(state) {
 function renderItem(arg0, state, transitionState, cleanUp) {
   return <AnimatedTabs key={arg0} state={arg1} transitionState={arg2} cleanUp={arg3} />;
 }
+let closure_3 = importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
 let closure_5 = { code: "function SearchTabsTransitionGroupTsx1(){const{withSpring,opacity,springStandard,transitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&transitionState===TransitionStates.YEETED){runOnJS(cleanUp)();}}),position:opacity.get()===1?'relative':'absolute'};}" };
 let closure_6 = { code: "function SearchTabsTransitionGroupTsx2(finished){const{transitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&transitionState===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 let closure_7 = { code: "function SearchTabsTransitionGroupTsx3(){const{swipeForMemberListContext}=this.__closure;var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(false);}" };
 let closure_8 = { code: "function SearchTabsTransitionGroupTsx4(){const{state}=this.__closure;return state.scrollOffset.get()>0;}" };
 let closure_9 = { code: "function SearchTabsTransitionGroupTsx5(isOffsetFromStart,prevIsOffsetFromStart){const{swipeForMemberListContext}=this.__closure;if(isOffsetFromStart!==prevIsOffsetFromStart){var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(isOffsetFromStart);}}" };
-result = result.fileFinishedImporting("modules/search/native/components/tabs/SearchTabsTransitionGroup.tsx");
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/search/native/components/tabs/SearchTabsTransitionGroup.tsx");
 
 export default function SearchTabsTransitionGroup(state) {
   const items = [state.state];

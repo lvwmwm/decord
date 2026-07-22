@@ -1,8 +1,8 @@
-// Module ID: 11446
-// Function ID: 89132
+// Module ID: 11447
+// Function ID: 89145
 // Dependencies: []
 
-// Module 11446
+// Module 11447
 let closure_3 = importDefault(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
 const PermissionStateType = arg1(dependencyMap[2]).PermissionStateType;

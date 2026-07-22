@@ -1,16 +1,16 @@
-// Module ID: 14537
-// Function ID: 109536
+// Module ID: 14545
+// Function ID: 109579
 // Name: markAsDismissed
 // Dependencies: []
 // Exports: default
 
-// Module 14537 (markAsDismissed)
+// Module 14545 (markAsDismissed)
 let closure_3 = importAll(dependencyMap[0]);
 const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
 const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/premium/native/trials/PremiumTrialOfferActionSheet.tsx");
+const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/premium/native/trials/PremiumTrialOfferActionSheet.tsx");
 
 export default function _default(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
@@ -44,9 +44,9 @@ export default function _default(markAsDismissed) {
     obj.track(constants.PREMIUM_TRIAL_OFFER_ACTION_SHEET_CTA_CLICKED, obj);
     markAsDismissed(constants2.TAKE_ACTION);
     obj = { analyticsLocations };
-    userTrialOffer(analyticsLocations[9]).pushLazy(markAsDismissed(analyticsLocations[11])(analyticsLocations[10], analyticsLocations.paths), obj);
+    userTrialOffer(analyticsLocations[9])(obj);
   }, items1);
-  let obj = arg1(dependencyMap[12]);
+  let obj = arg1(dependencyMap[10]);
   obj = {};
   const subscription_trial = userTrialOffer.subscription_trial;
   let interval;
@@ -63,6 +63,6 @@ export default function _default(markAsDismissed) {
   const result = obj.formatIntervalDuration(obj);
   obj = { startExpanded: true, onDismiss: callback };
   const obj1 = { intervalDuration: result, trialOffer: userTrialOffer, onConfirm: callback1, fallbackPremiumType: TIER_2 };
-  obj.children = jsx(importDefault(dependencyMap[14]), obj1);
-  return jsx(arg1(dependencyMap[13]).BottomSheet, obj, userTrialOffer.id);
+  obj.children = jsx(importDefault(dependencyMap[12]), obj1);
+  return jsx(arg1(dependencyMap[11]).BottomSheet, obj, userTrialOffer.id);
 };

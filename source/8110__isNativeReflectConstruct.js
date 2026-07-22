@@ -1,5 +1,5 @@
 // Module ID: 8110
-// Function ID: 64232
+// Function ID: 64242
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -76,7 +76,7 @@ const tmp4 = (arg0) => {
       value: function render() {
         const propsAndStylesResult = Text(closure_2[9]).propsAndStyles(this.props);
         const obj = Text(closure_2[9]);
-        const tmp2Result = callback(closure_2[9])(Object.assign({}, propsAndStylesResult, {}), this);
+        const tmp2Result = callback(closure_2[9])(Object.assign({}, propsAndStylesResult, { 0: "o", 0: "o" }), this);
         const merged = Object.assign(tmp2Result, callback(closure_2[11])(propsAndStylesResult, true));
         tmp2Result.ref = this.refMethod;
         const tmp2 = callback(closure_2[9]);

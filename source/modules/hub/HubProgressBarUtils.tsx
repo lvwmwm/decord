@@ -1,16 +1,15 @@
-// Module ID: 11687
-// Function ID: 90686
+// Module ID: 11688
+// Function ID: 90699
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 11687 (_createForOfIteratorHelperLoose)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { HUB_PROGRESS_STEP_ORDER } from "result";
-import { PlatformTypes } from "result";
-import result from "result";
+// Module 11688 (_createForOfIteratorHelperLoose)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { HUB_PROGRESS_STEP_ORDER } from "__exportStarResult1";
+import { PlatformTypes } from "__exportStarResult1";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -135,7 +134,7 @@ function useCompletedStepsFromSettings(arg0) {
     return set;
   }, items1);
 }
-result = result.fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
 
 export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
   if (arg1(dependencyMap[6]).HubProgressStep.JOIN_GUILD === nextHubProgressStep) {

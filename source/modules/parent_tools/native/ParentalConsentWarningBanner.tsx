@@ -1,10 +1,10 @@
-// Module ID: 15554
-// Function ID: 118688
+// Module ID: 15562
+// Function ID: 118731
 // Name: StyleSheet
-// Dependencies: [270270464, 79429632, 37093376, 83427328, 692322304, 251133952, 1019805696, 692977664, 1019871232, 669777920, 131072, 964231168, 520093696, 721420288, 2852126736, 1291845636, 1711276048, 805306384, 905969680, 33554434, 2063597568, 31]
+// Dependencies: [270270464, 79429632, 37093376, 83427328, 692387840, 251133952, 1020329984, 693043200, 1020395520, 669843456, 131072, 964231168, 520093696, 721420288, 2852126736, 1291845636, 1711276048, 805306384, 905969680, 33554434, 2063597568, 31]
 // Exports: default
 
-// Module 15554 (StyleSheet)
+// Module 15562 (StyleSheet)
 import module_31 from "module_31";
 
 let StyleSheet;
@@ -20,7 +20,7 @@ let closure_14 = 28 + importDefault(dependencyMap[5]).space.PX_16;
 let closure_15 = [null, null];
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+obj = { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.strip = obj;
 const obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -128,7 +128,7 @@ export default function ParentalConsentWarningBanner(children) {
       const obj6 = { paddingTop: tmp2.top + 8 };
       items7[1] = obj6;
       obj5.style = items7;
-      let obj7 = { <string:1643205302>: "wePEBF", <string:1415816450>: "isArray", <string:4283523744>: "NATIVE_REQUIRED_ASSETS", style: tmp.label };
+      let obj7 = { 803799044: "FAMILY_CENTER_CONNECTION_PREREQUISITES", 1269170180: "isArray", 711589892: "TOO_MANY_CONNECTIONS", style: tmp.label };
       if (0 === tmp9) {
         const intl3 = arg1(dependencyMap[num4]).intl;
         num4 = intl3.format;

@@ -1,5 +1,5 @@
 // Module ID: 6664
-// Function ID: 51356
+// Function ID: 51367
 // Name: SyncedLoadingAlertModal
 // Dependencies: []
 // Exports: showCheckoutOrderErrorModal
@@ -42,7 +42,7 @@ function showRetryConfirmModal(dismissable) {
   let key;
   let onCloseCallback;
   ({ key, onCloseCallback } = dismissable);
-  let obj = {};
+  let obj = { 0: "spring", 9223372036854775807: 0.4, 0: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(dismissable, obj);
   obj = {};

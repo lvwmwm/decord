@@ -1,7 +1,7 @@
 // Module ID: 725
 // Function ID: 8753
 // Name: ListCache
-// Dependencies: [50003968, 3312648192, 4160749570, 4177526786, 1979711490]
+// Dependencies: [47775744, 50200576, 50266112, 49676288, 24182784]
 
 // Module 725 (ListCache)
 class ListCache {

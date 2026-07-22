@@ -1,10 +1,10 @@
-// Module ID: 15385
-// Function ID: 117322
+// Module ID: 15393
+// Function ID: 117365
 // Name: AddModeratorsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15385 (AddModeratorsActionSheet)
+// Module 15393 (AddModeratorsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

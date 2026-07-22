@@ -1,9 +1,9 @@
-// Module ID: 11090
-// Function ID: 86231
+// Module ID: 11091
+// Function ID: 86244
 // Name: ChatInputScrimGradient
 // Dependencies: []
 
-// Module 11090 (ChatInputScrimGradient)
+// Module 11091 (ChatInputScrimGradient)
 function ChatInputScrimGradient(scrimBase) {
   let gradientHeight;
   let inline;
@@ -30,7 +30,7 @@ function ChatInputScrimGradient(scrimBase) {
     str = hex2rgbResult1;
   }
   obj = {};
-  obj = { backgroundColor: null, opacity: 4, borderRadius: 4, 0: 10, 0: 8 };
+  obj = {};
   if (inline) {
     let result = tmp7;
   } else {
@@ -41,7 +41,7 @@ function ChatInputScrimGradient(scrimBase) {
   obj.pointerEvents = "none";
   const items = [str, tmp3];
   obj1 = { height: token };
-  const items1 = [callback5(importDefault(dependencyMap[25]), { colors: items, style: obj1, start: {}, end: {}, locations: ["replace", "then"] }), ];
+  const items1 = [callback5(importDefault(dependencyMap[25]), { colors: items, style: obj1, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, locations: [77601039, 1612144654] }), ];
   obj2 = { flex: 1, backgroundColor: tmp3 };
   items1[1] = callback5(View, { style: obj2 });
   obj.children = items1;
@@ -96,10 +96,10 @@ let closure_37 = arg1(dependencyMap[20]).createStyles((arg0, arg1, arg2) => {
   }
   obj1.backgroundColor = CHAT_INPUT_BACKGROUND;
   obj.input = obj1;
-  const obj2 = { top: "<string:1459617792>", bottom: "<string:1275068417>", left: "<string:218103808>", paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING };
+  const obj2 = { "Null": "<string:1459617792>", "Null": "<string:1275068417>", "Null": "<string:218103808>", paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING };
   obj.rightAccessory = obj2;
   obj.refreshButtonAlignment = { marginBottom: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH };
-  obj.accessories = { channelId: "pillIcon", selectedAnswerIds: "SIGNED", submitting: "favoriteContainer", editing: "co" };
+  obj.accessories = { canAnimate: true, style: true, url: true, isStageCall: true };
   const obj3 = { marginBottom: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH };
   const tmp3 = arg1 ? {} : {};
   obj.floatingContainer = { borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
@@ -107,10 +107,10 @@ let closure_37 = arg1(dependencyMap[20]).createStyles((arg0, arg1, arg2) => {
   obj.floatingInputBox = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   const obj5 = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   obj.floatingInputBoxPressed = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_ACTIVE, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
-  obj.floatingInputBoxTyping = { "Null": -536870861, "Null": -299892737 };
+  obj.floatingInputBoxTyping = { accessible: "%FunctionPrototype%", createStyles: "paddingStart" };
   const obj6 = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_ACTIVE, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
   obj.floatingMainContents = { paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
-  const obj8 = { "Bool(true)": "values", "Bool(true)": "Array" };
+  const obj8 = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
   const obj7 = { paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
   let num = -6;
   if (obj12.isAndroid()) {
@@ -947,7 +947,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   }
   if (tmp85Result) {
     obj11 = {};
-    obj12 = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+    obj12 = { left: "center", backgroundColor: -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" };
     let obj39 = ref(dependencyMap[24]);
     const hex2rgbResult = obj39.hex2rgb(token2, 1);
     let tmp90 = token2;

@@ -1,10 +1,10 @@
-// Module ID: 16337
-// Function ID: 126062
+// Module ID: 16345
+// Function ID: 126104
 // Name: MemberPreviews
 // Dependencies: []
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 16337 (MemberPreviews)
+// Module 16345 (MemberPreviews)
 function MemberPreviews(role) {
   role = role.role;
   const tmp = callback5();
@@ -95,10 +95,10 @@ const UPLOAD_SMALL_SIZE = arg1(dependencyMap[4]).UPLOAD_SMALL_SIZE;
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = { memberPreviews: {} };
-obj = { 0: null, 0: null, 0: null, 0: null, "Null": null, borderRadius: importDefault(dependencyMap[7]).radii.none, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG };
+obj = { borderRadius: importDefault(dependencyMap[7]).radii.none, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG };
 obj.member = obj;
-obj.memberLight = { "Null": true, "Null": 10, <string:1308773890>: 0 };
-obj.memberDark = { <string:1711427074>: true, <string:218959117>: 10, <string:2304314637>: 0 };
+obj.memberLight = { "Bool(false)": true, "Bool(false)": 10, "Bool(false)": 0 };
+obj.memberDark = { N: true, n: 10, O: 0 };
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDesignModal.tsx");

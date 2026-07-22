@@ -1,10 +1,10 @@
-// Module ID: 9496
-// Function ID: 73999
+// Module ID: 9497
+// Function ID: 74012
 // Name: RatingSelector
 // Dependencies: []
 // Exports: default
 
-// Module 9496 (RatingSelector)
+// Module 9497 (RatingSelector)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -13,7 +13,7 @@ const jsx = arg1(dependencyMap[3]).jsx;
 const tmp4 = arg1(dependencyMap[2]);
 let closure_8 = arg1(dependencyMap[4]).createStyles({ ratings: {}, rating: {}, emoji: {} });
 const obj = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ ratings: { 261970: null, 1379623171: "center", 2076015548: null, 626110817: "hidden", 1362321802: true }, rating: { width: "100%" }, emoji: { "Null": false, "Null": false } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ ratings: { 0: false, -9223372036854775808: false, 0: false, 9223372036854775807: false, 9223372036854775807: false }, rating: { width: "100%" }, emoji: { "Null": true, "Null": true } });
 const obj2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/feedback/native/RatingSelector.tsx");
 

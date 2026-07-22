@@ -19,7 +19,7 @@ function clearActiveSpanFromScope(currentScope) {
 }
 const AppState = require(dependencyMap[0]).AppState;
 let closure_3 = "Route Change";
-const obj = { construct: "Array", label: "isArray" };
+const obj = {};
 function startIdleSpan(name) {
   let finalTimeout;
   let idleTimeout;

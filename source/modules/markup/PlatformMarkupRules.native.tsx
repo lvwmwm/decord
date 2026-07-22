@@ -1,5 +1,5 @@
 // Module ID: 4588
-// Function ID: 40194
+// Function ID: 40202
 // Name: decorateWithIcon
 // Dependencies: []
 
@@ -67,7 +67,7 @@ obj["match"] = function match(arg0) {
   return regex.exec(arg0);
 };
 obj["parse"] = function parse() {
-  return { 0: "<string:3444703234>", 9223372036854775807: "<string:299071619>" };
+  return { "Null": "JPEGInterchangeFormatLength", "Null": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" };
 };
 obj.invisibleUnicode = obj;
 obj.text = {
@@ -100,7 +100,7 @@ obj.emoji = {
 };
 obj.customEmoji = {
   order: importDefault(dependencyMap[4]).order,
-  requiredFirstCharacters: [-0.00000000000000000000000000000000000000000000000000000000031878467929140456],
+  requiredFirstCharacters: ["threeFriends"],
   match(arg0) {
     return /^<(a)?:(\w+):(\d+)>/.exec(arg0);
   },
@@ -116,7 +116,7 @@ obj.customEmoji = {
     let obj = importDefault(dependencyMap[5]);
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    obj = { USE_THUMBNAIL: "errExpectingATEXT", USE_TIFF: "j", USE_JPEG: "MiniaturesSpotIllustration", id: tmp3 };
+    obj = { <string:1046953352>: 705839377, <string:1669341832>: 410124290, <string:1196828008>: 402653184, id: tmp3 };
     const emojiURL1 = importDefault(dependencyMap[5]).getEmojiURL(obj);
     const obj1 = { id: tmp3, alt: tmp2 };
     if (flag) {
@@ -168,7 +168,7 @@ obj.attachmentLink = {
 };
 const obj1 = {
   order: importDefault(dependencyMap[4]).order,
-  requiredFirstCharacters: [-0.00000000000000000000000000000000000000000000000000000000031878467929140456],
+  requiredFirstCharacters: ["threeFriends"],
   match(arg0) {
     return /^<(a)?:(\w+):(\d+)>/.exec(arg0);
   },
@@ -184,7 +184,7 @@ const obj1 = {
     let obj = importDefault(dependencyMap[5]);
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    obj = { USE_THUMBNAIL: "errExpectingATEXT", USE_TIFF: "j", USE_JPEG: "MiniaturesSpotIllustration", id: tmp3 };
+    obj = { <string:1046953352>: 705839377, <string:1669341832>: 410124290, <string:1196828008>: 402653184, id: tmp3 };
     const emojiURL1 = importDefault(dependencyMap[5]).getEmojiURL(obj);
     const obj1 = { id: tmp3, alt: tmp2 };
     if (flag) {

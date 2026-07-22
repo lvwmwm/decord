@@ -9,7 +9,7 @@ const fn = function t(moment) {
     const items = [`${arg0} Tage`, `${arg0} Tagen`];
     const items1 = [`${arg0} Monate`, `${arg0} Monaten`];
     const items2 = [`${arg0} Jahre`, `${arg0} Jahren`];
-    const tmp = { m: [], h: ["rofl", "roflmao"], d: [false, false], dd: items, M: [false, false], MM: items1, y: [935778084969865000000000000000000000000, -0.000000000000000000000000000000000000000022958929468294653], yy: items2 }[arg2];
+    const tmp = { m: [true, true], h: [null, null], d: [], dd: items, M: ["joy", "laugh"], MM: items1, y: [false, false], yy: items2 }[arg2];
     if (arg1) {
       let first = tmp[0];
     } else {
@@ -17,8 +17,8 @@ const fn = function t(moment) {
     }
     return first;
   }
-  let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: {}, calendar: { ./is-ios-google-search-app: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024183193710372743, flex: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042874130818666855, backgroundColor: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007253324863422722, justifyContent: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013671699877416496, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007558502064416258, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015124306037371821 }, relativeTime: obj, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { "Bool(true)": null, "Bool(true)": null } };
-  obj = { 9223372036854775807: "r", 0: "isArray", -9223372036854775808: "set", -9223372036854775808: "w", 0: "filter", 9223372036854775807: "r", 9223372036854775807: "isArray", 0: "Boolean", m: processRelativeTime, h: processRelativeTime, d: processRelativeTime, dd: processRelativeTime, M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime };
+  let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: {}, calendar: {}, relativeTime: obj, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { emoji: false, me: false } };
+  obj = { COZY_DRAWER: 37721600, rootContainer: 51951872, imgWumpus: 49214208, VoicePanelPIPModes: 1193757184, textAlign: 1193803778, st: 1510080514, registerAsset: -842596351, then: -842530815, m: processRelativeTime, h: processRelativeTime, d: processRelativeTime, dd: processRelativeTime, M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime };
   return moment.defineLocale("de", obj);
 };
 if ("object" === typeof exports) {
@@ -30,7 +30,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

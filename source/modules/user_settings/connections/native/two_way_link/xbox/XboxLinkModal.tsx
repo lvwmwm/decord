@@ -1,10 +1,10 @@
-// Module ID: 8929
-// Function ID: 70406
+// Module ID: 8930
+// Function ID: 70419
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 8929 (CloseButton)
+// Module 8930 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[5]),
@@ -48,7 +48,7 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 });
       },
       render() {
         return callback2(callback(closure_2[10]), {});
@@ -59,7 +59,7 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" });
       },
       render(arg0) {
         let callbackCode;

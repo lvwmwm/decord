@@ -1,5 +1,5 @@
 // Module ID: 7420
-// Function ID: 59620
+// Function ID: 59631
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
@@ -152,35 +152,35 @@ export const useActiveDiscountInfo = function useActiveDiscountInfo() {
         if (closure_14 !== active_discount_id) {
           if (closure_15 !== active_discount_id) {
             if (closure_13 === active_discount_id) {
-              obj = { "Null": "+994", <string:478102276>: "Bahamas", discountId: active_discount_id };
+              obj = { discountId: active_discount_id };
               return obj;
             } else if (closure_6 === active_discount_id) {
               obj = { discountId: active_discount_id };
               return obj;
             } else if (closure_7 === active_discount_id) {
-              const obj1 = { "Null": "r", <string:478102276>: 300.5, discountId: active_discount_id };
+              const obj1 = { discountId: active_discount_id };
               return obj1;
             } else if (closure_8 === active_discount_id) {
-              const obj2 = { "Null": null, <string:478102276>: "\u{1F595}", discountId: active_discount_id };
+              const obj2 = { "Null": null, "Null": "\u{1F595}", discountId: active_discount_id };
               return obj2;
             } else if (closure_9 === active_discount_id) {
-              const obj3 = { "Null": "<string:11497792>", <string:478102276>: "<string:1107361792>", discountId: active_discount_id };
+              const obj3 = { "Null": "<string:11497792>", "Null": "<string:1107361792>", discountId: active_discount_id };
               return obj3;
             } else if (closure_16 === active_discount_id) {
-              const obj4 = { "Null": "+994", <string:478102276>: "Bahamas", discountId: active_discount_id };
+              const obj4 = { discountId: active_discount_id };
               return obj4;
             } else if (closure_17 === active_discount_id) {
-              const obj5 = { "Null": "767971903774f3e283939a2d77b5c958", <string:478102276>: "server_boosts", discountId: active_discount_id };
+              const obj5 = { "Null": "midroll", "Null": "min", discountId: active_discount_id };
               return obj5;
             }
           }
         }
       }
-      const obj6 = { "Null": "767971903774f3e283939a2d77b5c958", <string:478102276>: "server_boosts", discountId: active_discount_id };
+      const obj6 = { "Null": "midroll", "Null": "min", discountId: active_discount_id };
       return obj6;
     }
   }
-  const obj7 = { "Null": "<string:11497792>", <string:478102276>: "<string:1107361792>", discountId: active_discount_id };
+  const obj7 = { "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037056361633470366, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009772994543110067, discountId: active_discount_id };
   return obj7;
 };
 export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscountOffer(arg0) {

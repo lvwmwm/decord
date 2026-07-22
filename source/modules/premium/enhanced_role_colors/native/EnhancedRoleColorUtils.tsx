@@ -1,5 +1,5 @@
 // Module ID: 7644
-// Function ID: 61180
+// Function ID: 61190
 // Name: processColorStringsInternal
 // Dependencies: []
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray

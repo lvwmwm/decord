@@ -1,17 +1,17 @@
-// Module ID: 10112
-// Function ID: 78277
+// Module ID: 10113
+// Function ID: 78290
 // Name: num2
 // Dependencies: []
 
-// Module 10112 (num2)
+// Module 10113 (num2)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
-let obj = { wrapper: { "Null": 7, "Null": 370 } };
-obj = { 2018655073: 858992922, 1669594568: 858993459, 1045670548: "accessibilityRole", -460645489: "name", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_ONLINE };
+let obj = { wrapper: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
+obj = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_ONLINE };
 obj.online = obj;
-obj1 = { 2018655073: 858992922, 1669594568: 858993459, 1045670548: "accessibilityRole", -460645489: "name", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_OFFLINE };
+obj1 = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_OFFLINE };
 obj.total = obj1;
 const obj2 = { textAlignVertical: "center" };
 const tmp2 = arg1(dependencyMap[2]);

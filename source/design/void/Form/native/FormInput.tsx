@@ -1,5 +1,5 @@
 // Module ID: 7498
-// Function ID: 60121
+// Function ID: 60132
 // Dependencies: []
 
 // Module 7498
@@ -7,7 +7,7 @@ const importAllResult = importAll(dependencyMap[0]);
 const KeyboardThemes = arg1(dependencyMap[1]).KeyboardThemes;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj1 = arg1(dependencyMap[3]);
-let obj = { inputViewContainer: { paddingHorizontal: null, accessible: null } };
+let obj = { inputViewContainer: { "Bool(false)": null, "Bool(false)": null } };
 obj = { color: importDefault(dependencyMap[4]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.placeholderText = obj;
 obj1 = { color: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };

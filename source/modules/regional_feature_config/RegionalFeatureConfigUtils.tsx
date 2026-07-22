@@ -1,5 +1,5 @@
 // Module ID: 3807
-// Function ID: 31399
+// Function ID: 31401
 // Name: isFeatureAgeGated
 // Dependencies: []
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault

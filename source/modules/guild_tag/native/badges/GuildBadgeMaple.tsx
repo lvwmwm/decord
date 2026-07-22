@@ -1,15 +1,15 @@
-// Module ID: 12838
-// Function ID: 98181
+// Module ID: 12845
+// Function ID: 98214
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeMaple
 
-// Module 12838 (items)
+// Module 12845 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = [];
-let closure_5 = [];
-const items = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
+let closure_5 = [1950220290, 2, 11, null, null];
+const items = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeMaple.tsx");
 
@@ -22,7 +22,7 @@ export const GuildBadgeMaple = function GuildBadgeMaple(primaryTintColor) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false };
+  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
   let obj1 = arg1(dependencyMap[2]);

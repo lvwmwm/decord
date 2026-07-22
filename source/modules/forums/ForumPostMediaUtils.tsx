@@ -1,10 +1,10 @@
-// Module ID: 8321
-// Function ID: 65925
+// Module ID: 8322
+// Function ID: 65937
 // Name: isValidImageAttachment
 // Dependencies: []
 // Exports: getEmbedColor, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostMediaThumbnail
 
-// Module 8321 (isValidImageAttachment)
+// Module 8322 (isValidImageAttachment)
 function isValidImageAttachment(filename) {
   let height;
   let width;
@@ -452,5 +452,5 @@ export const messageContainsGifOrVideo = function messageContainsGifOrVideo(medi
     }
     obj.containsGif = containsGif;
     return obj;
-  }, { <string:3189797681>: null, <string:3101277731>: null });
+  }, {});
 };

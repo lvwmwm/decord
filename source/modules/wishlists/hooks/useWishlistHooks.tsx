@@ -1,10 +1,10 @@
-// Module ID: 8668
-// Function ID: 68578
+// Module ID: 8669
+// Function ID: 68590
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useCurrentUserWishlist, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 8668 (_createForOfIteratorHelperLoose)
+// Module 8669 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -111,7 +111,7 @@ function useFetchWishlist(wishlistId) {
   const items = [closure_9];
   const tmp2 = callback(obj.useStateFromStoresArray(items, () => {
     if (null == wishlistId) {
-      const items = ["constructor", "assign", undefined, undefined];
+      const items = [null, "prototype", undefined, undefined];
       let items1 = items;
     } else {
       items1 = [store.getWishlist(wishlistId), store.getStatus(wishlistId), store.getError(wishlistId), store.getUpdatedAt(wishlistId)];

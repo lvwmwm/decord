@@ -1,10 +1,10 @@
-// Module ID: 8656
-// Function ID: 68518
+// Module ID: 8657
+// Function ID: 68530
 // Name: useDefaultVariantIndex
 // Dependencies: []
 // Exports: useDefaultVariantIndex
 
-// Module 8656 (useDefaultVariantIndex)
+// Module 8657 (useDefaultVariantIndex)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/hooks/useDefaultVariantIndex.tsx");
 

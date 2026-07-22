@@ -1,10 +1,10 @@
-// Module ID: 8294
-// Function ID: 65486
+// Module ID: 8295
+// Function ID: 65498
 // Name: HTML
 // Dependencies: []
 // Exports: createWebFileVideoControls
 
-// Module 8294 (HTML)
+// Module 8295 (HTML)
 function HTML(arg0) {
   return "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        inset: 0;\n        width: 100%;\n        height: 100%;\n        background-color: #000;\n        object-fit: contain;\n      }\n    </style>\n    <script>" + "\nfunction onReady() {\n  const player = window.player = document.createElement('video');\n  player.controls = false;\n  player.autoplay = false;\n  player.playsInline = true;\n  player.disablePictureInPicture = true;\n  const addEvent = (name, func) => {\n    player.addEventListener(name, (e) => {\n      window.ReactNativeWebView.postMessage(\n        JSON.stringify({type: name, value: func ? func() : undefined})\n      );\n    });\n  };\n  addEvent('error', () => player.error);\n  addEvent('canplay');\n  addEvent('ended');\n  addEvent('pause');\n  addEvent('play');\n  addEvent('stalled');\n  addEvent('durationchange', () => player.duration);\n  addEvent('timeupdate', () => player.currentTime);\n  addEvent('progress', () => {\n    const ranges = player.buffered;\n    let total = 0;\n    for (let i = 0; i < ranges.length; i++) {\n      total += (ranges.end(i) - ranges.start(i));\n    }\n    return total;\n  });\n  player.src = " + JSON.stringify(arg0) + ";\n  document.body.appendChild(player);\n  player.load();\n  window.ReactNativeWebView.postMessage(JSON.stringify({type: 'loaded'}));\n}\nwindow.addEventListener('load', onReady);\n" + "</script>\n  </head>\n  <body>\n  </body>\n</html>\n";
 }
@@ -19,7 +19,7 @@ const memoResult = importAllResult.memo((visible) => {
   const arg1 = visible;
   ({ source, controls } = visible);
   const importDefault = controls;
-  let obj = { sa: "ERROR", skuId: "ERROR", ind: "NOT_RESPONDER", body: "NOT_RESPONDER" };
+  let obj = { "Bool(false)": -24, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(visible, obj);
   let closure_6;
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo((visible) => {
   closure_6 = ref;
   const effect = importAllResult.useEffect(() => {
     const MediaViewerAnalytics = visible(first[5]).MediaViewerAnalytics;
-    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ marginTop: "relative", marginBottom: -50 });
+    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({});
   }, []);
   props = undefined;
   if (null != controls) {
@@ -94,7 +94,7 @@ const memoResult = importAllResult.memo((visible) => {
             let tmp60 = callback(visible(first[3]).PlayerState.ERRORED);
             let num10 = 5;
             let MediaViewerAnalytics = visible(first[5]).MediaViewerAnalytics;
-            let result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ marginTop: "center", marginBottom: 16, borderBottomLeftRadius: 4 });
+            let result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ style: false, scaleAmountInPx: false, onLayout: false });
           } else {
             let str5 = "ended";
             if ("ended" === type) {

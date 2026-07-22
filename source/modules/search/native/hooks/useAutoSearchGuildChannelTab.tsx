@@ -1,13 +1,14 @@
-// Module ID: 15287
-// Function ID: 116249
+// Module ID: 15295
+// Function ID: 116292
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 15287 (useAutoSearchGuildChannelTab)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
+// Module 15295 (useAutoSearchGuildChannelTab)
+import __exportStarResult1 from "__exportStarResult1";
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "__exportStarResult1";
+
+const result = require("__exportStarResult1").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
 
 export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTab(searchContext, arg1) {
   arg1 = searchContext;

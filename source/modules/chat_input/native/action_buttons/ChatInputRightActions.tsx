@@ -1,9 +1,9 @@
-// Module ID: 11452
-// Function ID: 89226
+// Module ID: 11453
+// Function ID: 89239
 // Name: LeftSlot
-// Dependencies: [4345, 653, 11360, 566, 2, 31, 4147, 8588, 653, 566, 8586, 8592, 2, 31, 4163, 5336]
+// Dependencies: [4345, 653, 11361, 566, 2, 31, 4147, 8589, 653, 566, 8587, 8593, 2, 31, 4163, 5063]
 
-// Module 11452 (LeftSlot)
+// Module 11453 (LeftSlot)
 import closure_3 from "_isNativeReflectConstruct";
 import importAllResult from "ME";
 import { View } from "MAX_MESSAGES_ALLOWED_FOR_GREETING";
@@ -34,9 +34,9 @@ function LeftSlot(state) {
 ({ jsx: closure_7, jsxs: closure_8 } = result2);
 let closure_9 = module_31.createStyles(() => {
   let obj = {};
-  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP };
+  obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP };
   obj.container = obj;
-  obj.leftSlot = { "Null": null, "Null": null };
+  obj.leftSlot = { <string:3596066964>: null, <string:3638417373>: null };
   return obj;
 });
 const forwardRefResult = importAllResult.forwardRef((channel) => {

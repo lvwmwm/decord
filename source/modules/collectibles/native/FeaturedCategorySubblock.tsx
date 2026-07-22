@@ -1,10 +1,10 @@
-// Module ID: 14371
-// Function ID: 108498
+// Module ID: 14379
+// Function ID: 108541
 // Name: subblock
 // Dependencies: []
 // Exports: default
 
-// Module 14371 (subblock)
+// Module 14379 (subblock)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_5 = arg1(dependencyMap[3]).CollectiblesMobileShopScreen;
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp4 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { position: "relative" }, bannerImage: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, limitedTimeBadge: {} });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { position: "relative" }, bannerImage: { "Null": "SET_AUDIO_DEVICE_BY_ID", "Null": "invalidColor", "Null": "mi" }, limitedTimeBadge: {} });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/collectibles/native/FeaturedCategorySubblock.tsx");
 

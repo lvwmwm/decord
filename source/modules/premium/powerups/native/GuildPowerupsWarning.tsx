@@ -1,10 +1,10 @@
-// Module ID: 11582
-// Function ID: 90024
+// Module ID: 11583
+// Function ID: 90037
 // Name: GuildPowerupsWarning
 // Dependencies: []
 // Exports: default
 
-// Module 11582 (GuildPowerupsWarning)
+// Module 11583 (GuildPowerupsWarning)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -34,14 +34,14 @@ export default function GuildPowerupsWarning(warnings) {
     obj = { style: tmp.contentContainer };
     obj = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING, size: "md" };
     const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, obj), , , ];
-    const obj1 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.text, children: tmp3 };
+    const obj1 = { cachedAt: false, edpbxy: false, style: tmp.text, children: tmp3 };
     items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
     const obj2 = { variant: "text-sm/medium", style: tmp.text, children: tmp4 };
     items[2] = callback(arg1(dependencyMap[7]).Text, obj2);
     let mapped;
     if (null != warnings) {
       mapped = warnings.map((children) => {
-        const obj = { hasMaxConnections: -5, isBoostOnlySubscription: 16 };
+        const obj = { cachedAt: -5, edpbxy: 16 };
         const items = [, ];
         ({ warningText: arr[0], text: arr[1] } = tmp);
         obj.style = items;

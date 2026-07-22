@@ -1,10 +1,10 @@
-// Module ID: 13497
-// Function ID: 102430
+// Module ID: 13504
+// Function ID: 102463
 // Name: EditGuildProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 13497 (EditGuildProfileBanner)
+// Module 13504 (EditGuildProfileBanner)
 let AnalyticsSections;
 function EditGuildProfileBanner(user) {
   let disabled;
@@ -69,7 +69,7 @@ function EditGuildProfileBanner(user) {
   obj.children = tmp4(importDefault(dependencyMap[12]), obj);
   return tmp3(arg1(dependencyMap[10]).AnalyticsLocationProvider, obj);
 }
-let closure_3 = ["<string:24199141>", "<string:1929379840>", "body"];
+let closure_3 = [0.6583, 1, 97];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -84,7 +84,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_18, jsxs: closure_19 } = arg1(dependencyMap[8]));
 let closure_20 = { page: tmp3.AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
 const tmp4 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[54]).fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
+const result = arg1(dependencyMap[53]).fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
 
 export default function GuildProfileEditForm(currentUser) {
   let avatarBackground;
@@ -370,7 +370,7 @@ export default function GuildProfileEditForm(currentUser) {
             tmp63 = null;
             if ("" !== stringResult) {
               const obj20 = { style: tmp2.errorContainer };
-              const obj21 = { children: stringResult };
+              const obj21 = { cachedAt: "/assets/.cache/intl/ZGVzaWdu", edpbxy: null, children: stringResult };
               obj20.children = callback2(arg1(dependencyMap[36]).Text, obj21);
               tmp63 = callback2(closure_7, obj20);
             }
@@ -502,15 +502,14 @@ export default function GuildProfileEditForm(currentUser) {
       const intl7 = arg1(dependencyMap[17]).intl;
       obj31.ctaText = intl7.string(arg1(dependencyMap[17]).t.pj0XBN);
       obj31.onPress = function onPress() {
-        let obj = guild(analyticsLocations[51]);
-        obj = {};
+        let obj = {};
         obj = {};
         const merged = Object.assign(closure_20);
         obj["object"] = constants.BUTTON_CTA;
         obj.analyticsLocation = obj;
         obj.analyticsLocations = analyticsLocations;
-        obj.premiumFeatureCardOrder = currentUser(analyticsLocations[53]).PremiumFeatureCardOrder.TIER_2_LEADING;
-        obj.pushLazy(currentUser(analyticsLocations[15])(analyticsLocations[52], analyticsLocations.paths), obj);
+        obj.premiumFeatureCardOrder = currentUser(analyticsLocations[52]).PremiumFeatureCardOrder.TIER_2_LEADING;
+        guild(analyticsLocations[51])(obj);
       };
       tmp = callback2;
       const obj33 = { variant: "text-sm/normal" };

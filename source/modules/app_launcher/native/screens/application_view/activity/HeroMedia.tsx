@@ -1,10 +1,10 @@
-// Module ID: 11192
-// Function ID: 87209
+// Module ID: 11193
+// Function ID: 87222
 // Name: useHeroMediaDimensions
 // Dependencies: []
 // Exports: default
 
-// Module 11192 (useHeroMediaDimensions)
+// Module 11193 (useHeroMediaDimensions)
 function useHeroMediaDimensions(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
@@ -38,7 +38,7 @@ export default function HeroMedia(width) {
   ({ applicationId, containerHeight } = width);
   const tmp = callback();
   const size = useHeroMediaDimensions({ width: width.width });
-  let obj = { applicationId, size: size.width, names: ["RollOutRight"] };
+  let obj = { applicationId, size: size.width, names: ["ETHERNET"] };
   const tmp2 = importDefault(dependencyMap[7])(obj);
   let obj1 = arg1(dependencyMap[8]);
   const items = [closure_3];

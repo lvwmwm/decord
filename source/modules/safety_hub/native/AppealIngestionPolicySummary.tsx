@@ -1,10 +1,10 @@
-// Module ID: 11034
-// Function ID: 85926
+// Module ID: 11035
+// Function ID: 85939
 // Name: AppealIngestionPolicySummary
 // Dependencies: []
 // Exports: default
 
-// Module 11034 (AppealIngestionPolicySummary)
+// Module 11035 (AppealIngestionPolicySummary)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -12,10 +12,10 @@ let obj = arg1(dependencyMap[3]);
 obj = { sectionTitle: { marginBottom: 8 }, policy: { marginBottom: 16 } };
 obj = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.borderColor = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.userContainer = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const obj1 = { "Bool(false)": "2026-05-quest-home-tile-redesign", "Bool(false)": "user", "Bool(false)": "2026-05-bounty-stale-refresh-quest-home", "Bool(false)": "user", "Bool(false)": "2026-06-remove-quest-home-hero", "Bool(false)": "user", borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj.userContainer = obj1;
 let closure_5 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionPolicySummary.tsx");
 
 export default function AppealIngestionPolicySummary(classification) {

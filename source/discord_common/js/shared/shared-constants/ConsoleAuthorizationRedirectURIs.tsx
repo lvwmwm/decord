@@ -1,9 +1,9 @@
-// Module ID: 8972
-// Function ID: 70739
+// Module ID: 8973
+// Function ID: 70752
 // Name: set
 // Dependencies: []
 
-// Module 8972 (set)
+// Module 8973 (set)
 const obj = { ALL: new Set(["<string:588779618>", "<string:1821061440>"]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ConsoleAuthorizationRedirectURIs.tsx");

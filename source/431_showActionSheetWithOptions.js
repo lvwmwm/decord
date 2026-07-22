@@ -1,10 +1,10 @@
 // Module ID: 431
 // Function ID: 5984
 // Name: showActionSheetWithOptions
-// Dependencies: []
+// Dependencies: [45573632, 34647296, 43376128, 30372096]
 
 // Module 431 (showActionSheetWithOptions)
-let closure_3 = [];
+let closure_3 = [false, false, false, false];
 let closure_4 = importDefault(dependencyMap[0]);
 
 export default {

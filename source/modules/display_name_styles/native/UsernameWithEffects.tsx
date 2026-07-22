@@ -1,9 +1,9 @@
-// Module ID: 8506
-// Function ID: 67879
+// Module ID: 8507
+// Function ID: 67891
 // Name: calculateStrokeWidth
 // Dependencies: []
 
-// Module 8506 (calculateStrokeWidth)
+// Module 8507 (calculateStrokeWidth)
 function calculateStrokeWidth(arg0, arg1) {
   return arg0 + 0.04 * arg1;
 }
@@ -23,7 +23,7 @@ let closure_12 = arg1(dependencyMap[5]).createStyles((color) => {
   const tmp6 = calculateStrokeWidth(closure_11[closure_0(undefined, closure_2[4]).DisplayNameEffect.POP], arg1);
   const result1 = Math.floor(tmp5 / 2) / value;
   let obj = {};
-  obj = { color: importDefault(dependencyMap[6]).colors.WHITE, textShadowColor: color, textShadowRadius: sum, textShadowOffset: { "Null": -536870861, "Null": -299892737 } };
+  obj = { color: importDefault(dependencyMap[6]).colors.WHITE, textShadowColor: color, textShadowRadius: sum, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
   let obj2 = arg1(dependencyMap[7]);
   if (obj2.isIOS()) {
     obj = {};
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo((userName) => {
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;
   }
-  let obj = { paddingHorizontal: true, accessibilityRole: "/assets/design/components/Icon/native/redesign/generated/images", isArray: 24, a: 24, bottom: null, paddingHorizontal: "99274532ad7fe616c031212e677b32e8", backgroundColor: "ThreadLockIcon" };
+  let obj = { GwAW3k: "ThreadLockIcon", parseRoom: "png", mute_config: true, en-TC: "/assets/design/components/Icon/native/redesign/generated/images", T8sBLJ: 24, useIsNewGamesCoachmarkEnabled: 24, errorApplyingMediaFilterSettings: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(userName, obj);
   let importDefault;

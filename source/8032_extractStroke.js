@@ -1,11 +1,11 @@
 // Module ID: 8032
-// Function ID: 63766
+// Function ID: 63776
 // Name: extractStroke
 // Dependencies: []
 
 // Module 8032 (extractStroke)
-let closure_2 = { 1632254648: "CONTROL_SECONDARY_BACKGROUND_ACTIVE", 571757127: "Array", 39921911: "CONTROL_SECONDARY_BACKGROUND_ACTIVE" };
-let closure_3 = { "Bool(false)": "CONTROL_SECONDARY_BACKGROUND_ACTIVE", "Bool(false)": "Array", "Bool(false)": "CONTROL_SECONDARY_BACKGROUND_ACTIVE" };
+let closure_2 = {};
+let closure_3 = {};
 let closure_4 = {};
 arg5.default = function extractStroke(arg0, arg1, arr) {
   let stroke;

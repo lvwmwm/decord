@@ -20,7 +20,7 @@ obj.topMomentumScrollBegin = { registrationName: "onMomentumScrollBegin" };
 obj.topScrollEndDrag = { registrationName: "onScrollEndDrag" };
 obj.topScroll = { registrationName: "onScroll" };
 obj.topLayout = { registrationName: "onLayout" };
-obj = {};
+obj = { -9223372036854775808: null, 0: null, 0: null };
 obj = { process: require(dependencyMap[1]).default };
 obj.backgroundColor = obj;
 obj.experimental_backgroundImage = { process: require(dependencyMap[2]).default };
@@ -202,4 +202,4 @@ obj.focusable = true;
 obj.backfaceVisibility = true;
 const obj15 = { process: require(dependencyMap[1]).default };
 
-export default { directEventTypes: obj, bubblingEventTypes: { topChange: { phasedRegistrationNames: {} }, topSelect: { phasedRegistrationNames: {} }, topTouchEnd: { phasedRegistrationNames: {} }, topTouchCancel: { phasedRegistrationNames: {} }, topTouchStart: { phasedRegistrationNames: {} }, topTouchMove: { phasedRegistrationNames: {} }, topPointerCancel: { phasedRegistrationNames: {} }, topPointerDown: { phasedRegistrationNames: {} }, topPointerEnter: { phasedRegistrationNames: { "Null": 0, "Null": null, "Null": false } }, topPointerLeave: { phasedRegistrationNames: {} }, topPointerMove: { phasedRegistrationNames: {} }, topPointerUp: { phasedRegistrationNames: {} }, topPointerOut: { phasedRegistrationNames: {} }, topPointerOver: { phasedRegistrationNames: {} }, topClick: { phasedRegistrationNames: {} }, topBlur: { phasedRegistrationNames: {} }, topFocus: { phasedRegistrationNames: {} } }, validAttributes: Object.assign({}, obj, {}) };
+export default { directEventTypes: obj, bubblingEventTypes: { topChange: { phasedRegistrationNames: {} }, topSelect: { phasedRegistrationNames: { onPress: "mode", start: "Map" } }, topTouchEnd: { phasedRegistrationNames: { onPress: 0, start: null } }, topTouchCancel: { phasedRegistrationNames: { onPress: true, start: true } }, topTouchStart: { phasedRegistrationNames: { onPress: null, start: null } }, topTouchMove: { phasedRegistrationNames: {} }, topPointerCancel: { phasedRegistrationNames: { onPress: true, start: true } }, topPointerDown: { phasedRegistrationNames: { onPress: null, start: null } }, topPointerEnter: { phasedRegistrationNames: { "Null": "messagePreviewBarV2", "Null": "MemberSafetyPagePermissions", "Null": "a" } }, topPointerLeave: { phasedRegistrationNames: {} }, topPointerMove: { phasedRegistrationNames: { onPress: "last_dismissed_at_ms", start: "scalar" } }, topPointerUp: { phasedRegistrationNames: { onPress: "scalar", start: 4 } }, topPointerOut: { phasedRegistrationNames: { onPress: false, start: false } }, topPointerOver: { phasedRegistrationNames: { onPress: null, start: null } }, topClick: { phasedRegistrationNames: { onPress: false, start: null } }, topBlur: { phasedRegistrationNames: { onPress: 0, start: 35848481 } }, topFocus: { phasedRegistrationNames: { onPress: false, start: false } } }, validAttributes: Object.assign({}, obj, {}) };

@@ -1,10 +1,10 @@
-// Module ID: 9292
-// Function ID: 72574
+// Module ID: 9293
+// Function ID: 72587
 // Name: ThumbsDownIcon
 // Dependencies: []
 // Exports: ThumbsDownIcon
 
-// Module 9292 (ThumbsDownIcon)
+// Module 9293 (ThumbsDownIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThumbsDownIcon.tsx");

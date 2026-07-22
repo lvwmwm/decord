@@ -1,10 +1,10 @@
-// Module ID: 9327
-// Function ID: 72904
+// Module ID: 9328
+// Function ID: 72917
 // Name: getEmojiHotrail
 // Dependencies: []
 // Exports: default
 
-// Module 9327 (getEmojiHotrail)
+// Module 9328 (getEmojiHotrail)
 function getEmojiHotrail(arg0) {
   let newlyAddedEmojis;
   let rowSize;

@@ -1,10 +1,10 @@
-// Module ID: 5611
-// Function ID: 47790
+// Module ID: 5610
+// Function ID: 47798
 // Name: transformStorefrontSKUPricesServer
 // Dependencies: []
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformStorefrontPricesServer, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 5611 (transformStorefrontSKUPricesServer)
+// Module 5610 (transformStorefrontSKUPricesServer)
 function transformStorefrontSKUPricesServer(arr) {
   return arr.map((currency) => ({ currency: currency.currency, amount: currency.amount }));
 }
@@ -133,7 +133,7 @@ function useSKUPrice(sku) {
   items2[7] = stateFromStoresArray;
   return React.useMemo(() => {
     if (null == sku) {
-      return { y: "onKeyPress", isArray: "onKeyPressCapture", mn: "onSubmitEditing", raw: "onSubmitEditingCapture" };
+      return { "Null": true, "Null": 5, "Null": true, "Null": true };
     } else if (storeHasPrice) {
       const found = stateFromStoresArray.find((arg0) => {
         if (null == arg0[closure_4]) {
@@ -213,7 +213,7 @@ function useSKUPrice(sku) {
       if (null != price) {
         tmp12 = price;
       }
-      obj = { pauseInvites: false, inc: false, EnableServerTrendingNotifications: null, normalPrice: tmp12, userPrice: tmp12 };
+      obj = { normalPrice: tmp12, userPrice: tmp12 };
       return obj;
     }
   }, items2);

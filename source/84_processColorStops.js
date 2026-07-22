@@ -315,8 +315,8 @@ function parseRadialGradientCSSString(str) {
             const trimmed3 = str50.toLowerCase().trim();
             const str52 = str50.toLowerCase();
             const trimmed4 = str51.toLowerCase().trim();
-            const items = ["accessibilityLabelledBy", "accessibilityLiveRegion", "accessibilityState"];
-            const items1 = [];
+            const items = [null, null, "T"];
+            const items1 = ["<string:2647432649>", "<string:2787483085>", "<string:2787747367>"];
             if (items.includes(trimmed3)) {
               if (items1.includes(trimmed4)) {
                 let str26 = "0%";
@@ -714,13 +714,13 @@ function getDirectionForKeyword(formatted) {
   } else {
     formatted = formatted.replace(/\s+/g, " ").toLowerCase();
     if ("to top" === formatted) {
-      return { onError: false, hybridRef: false };
+      return {};
     } else if ("to right" === formatted) {
-      return { onError: "<string:2515402609>", hybridRef: "LengthDelimited" };
+      return { "Null": "<string:3219128320>", "Null": "<string:4285678061>" };
     } else if ("to bottom" === formatted) {
       return {};
     } else if ("to left" === formatted) {
-      return { onError: 1105662145, hybridRef: 1071644672 };
+      return { "Null": 4294499583, "Null": 3692313855 };
     } else {
       if ("to top right" !== formatted) {
         if ("to right top" !== formatted) {
@@ -733,16 +733,16 @@ function getDirectionForKeyword(formatted) {
                       return null;
                     }
                   }
-                  return { onError: 1105289233, hybridRef: 1798307697 };
+                  return { "Null": "<string:1071644672>", "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008902029986740907 };
                 }
               }
-              return { onError: 1105704685, hybridRef: 2145386496 };
+              return { "Null": 3095792639, "Null": 2846468607 };
             }
           }
-          return { onError: 89884678807936840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, hybridRef: 89884678811215600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          return { "Null": -1946222592, "Null": 3276939 };
         }
       }
-      return { onError: 3342436, hybridRef: 893378560 };
+      return { "Null": null, "Null": null };
     }
     const str9 = formatted.replace(/\s+/g, " ");
   }

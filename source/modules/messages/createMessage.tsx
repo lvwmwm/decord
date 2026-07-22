@@ -1,5 +1,5 @@
 // Module ID: 6990
-// Function ID: 55894
+// Function ID: 55905
 // Name: userRecordToServer
 // Dependencies: []
 // Exports: createBotMessage, default
@@ -118,7 +118,7 @@ export const createBotMessage = function createBotMessage(arg0) {
   obj.flags = constants3.EPHEMERAL;
   obj.content = content;
   obj.channel_id = channelId;
-  obj = { u: 49447168, [: 53014784, i: 53014784, p: 49444096, l: 49444096, id: closure_9, discriminator: closure_10 };
+  obj = { =: 49449728, 9: 53017344, 7: 53017344, -: 49446656, 8: 49446656, id: closure_9, discriminator: closure_10 };
   obj.author = obj;
   obj.attachments = [];
   if (null == embeds) {

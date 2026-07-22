@@ -1,16 +1,18 @@
-// Module ID: 14266
-// Function ID: 107827
-// Dependencies: []
+// Module ID: 14274
+// Function ID: 107870
+// Dependencies: [4294967295, 4294967295, 0, 0, 0, 0, 0]
 
-// Module 14266
-const _module = require(dependencyMap[2]);
+// Module 14274
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 const obj = {
   useTitle() {
     const intl = require(dependencyMap[3]).intl;
     return intl.string(require(dependencyMap[3]).t.+ynK0W);
   },
   parent: null,
-  IconComponent: require(dependencyMap[4]).MobilePhoneSettingsIcon,
+  IconComponent: require("__exportStarResult1").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
     const obj = require(dependencyMap[0]);
     const clientInfoString = obj.getClientInfoString(require(dependencyMap[1]).getDeviceInfo());
@@ -18,18 +20,17 @@ const obj = {
     const obj3 = require(dependencyMap[0]);
     return "" + clientInfoString + " (" + obj3.getClientInfoString(require(dependencyMap[1]).getSystemVersion()) + ")";
   },
-  usePredicate: require(dependencyMap[5]).DeveloperMode.useSetting
+  usePredicate: require("__exportStarResult1").DeveloperMode.useSetting
 };
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DeviceInfoSetting.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/DeviceInfoSetting.tsx");
 
-export default _module.createStatic({
+export default __exportStarResult1.createStatic({
   useTitle() {
     const intl = require(dependencyMap[3]).intl;
     return intl.string(require(dependencyMap[3]).t.+ynK0W);
   },
   parent: null,
-  IconComponent: require(dependencyMap[4]).MobilePhoneSettingsIcon,
+  IconComponent: require("__exportStarResult1").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
     const obj = require(dependencyMap[0]);
     const clientInfoString = obj.getClientInfoString(require(dependencyMap[1]).getDeviceInfo());
@@ -37,5 +38,5 @@ export default _module.createStatic({
     const obj3 = require(dependencyMap[0]);
     return "" + clientInfoString + " (" + obj3.getClientInfoString(require(dependencyMap[1]).getSystemVersion()) + ")";
   },
-  usePredicate: require(dependencyMap[5]).DeveloperMode.useSetting
+  usePredicate: require("__exportStarResult1").DeveloperMode.useSetting
 });

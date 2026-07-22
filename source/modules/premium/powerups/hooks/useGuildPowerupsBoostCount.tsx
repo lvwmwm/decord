@@ -1,5 +1,5 @@
 // Module ID: 4035
-// Function ID: 33589
+// Function ID: 33591
 // Name: useGuildAppliedBoostCount
 // Dependencies: []
 // Exports: default, getGuildPowerupsBoostCount
@@ -68,7 +68,7 @@ export default function useGuildAppliedBoostCount(guildId) {
       obj.isLoading = false;
       return obj;
     }
-    obj = { "Null": "ICYMI_SET_REFRESHING", "Null": true, "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, total: num };
+    obj = { y: null, hasPremiumGroup: "5715cd5806fb4cacae2f3e063eb62255", y: "hr.messages.5715cd5806fb4cacae2f3e063eb62255.compiled.messages", containerRef: "jsona", total: num };
     return obj;
   }, items3);
 };
@@ -106,6 +106,6 @@ export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id
     obj.total = num;
     return obj;
   }
-  obj = { "Bool(true)": -536870861, "Bool(true)": -299892737, total: num };
+  obj = { variant: "%FunctionPrototype%", unsafe_rawColors: "paddingStart", total: num };
   return obj;
 };

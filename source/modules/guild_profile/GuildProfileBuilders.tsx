@@ -1,10 +1,10 @@
-// Module ID: 5396
-// Function ID: 46034
+// Module ID: 5126
+// Function ID: 44455
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5396 (_createForOfIteratorHelperLoose)
+// Module 5126 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

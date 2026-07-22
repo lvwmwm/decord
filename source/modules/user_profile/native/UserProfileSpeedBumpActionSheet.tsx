@@ -1,9 +1,9 @@
-// Module ID: 8486
-// Function ID: 67763
+// Module ID: 8487
+// Function ID: 67775
 // Name: InformationTable
 // Dependencies: []
 
-// Module 8486 (InformationTable)
+// Module 8487 (InformationTable)
 function InformationTable(speedBumpType) {
   let obj = { icon: importDefault(dependencyMap[11]) };
   const intl = arg1(dependencyMap[12]).intl;
@@ -53,9 +53,9 @@ obj.header = { marginBottom: importDefault(dependencyMap[10]).space.PX_24, margi
 obj.bodyText = { textAlign: "center" };
 obj.headerText = { textAlign: "center" };
 obj.avatar = { alignSelf: "center" };
-const obj3 = { tooltipX: 0.000000000000000000000000000000000000000000000000000000000000041337475905652505, tooltipY: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
+const obj3 = { "Null": false, "Null": false, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
 obj.avatarContainer = obj3;
-const obj4 = { justifyContent: "text-lg/normal", paddingRight: null, height: "mobile-text-heading-primary", padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.round };
+const obj4 = { "Bool(false)": "text-lg/normal", "Bool(false)": null, "Bool(false)": "mobile-text-heading-primary", padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.round };
 obj.avatarIconContainer = obj4;
 const obj2 = { marginBottom: importDefault(dependencyMap[10]).space.PX_24, marginHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.suppress = { alignSelf: "center", marginTop: importDefault(dependencyMap[10]).space.PX_16 };
@@ -218,7 +218,7 @@ const memoResult = importAllResult.memo(function UserProfileSpeedBumpActionSheet
     const intl = arg1(dependencyMap[12]).intl;
     obj9.children = intl.string(arg1(dependencyMap[12]).t.b33pLD);
     items9[1] = tmp15(arg1(dependencyMap[31]).Text, obj9);
-    const obj10 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.bodyText };
+    const obj10 = { style: tmp.bodyText };
     const intl2 = arg1(dependencyMap[12]).intl;
     const t = arg1(dependencyMap[12]).t;
     const obj11 = {};
@@ -255,7 +255,7 @@ const memoResult = importAllResult.memo(function UserProfileSpeedBumpActionSheet
               handleShowProfileActionSheet();
             }
       };
-      const obj17 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+      const obj17 = { cachedAt: true, edpbxy: true };
       const intl4 = arg1(dependencyMap[12]).intl;
       obj17.children = intl4.string(arg1(dependencyMap[12]).t.QbcRCJ);
       obj16.children = tmp15(arg1(dependencyMap[31]).Text, obj17);

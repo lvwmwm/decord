@@ -1,9 +1,9 @@
-// Module ID: 12604
-// Function ID: 96879
+// Module ID: 12609
+// Function ID: 96907
 // Name: PrivateChannelSubtitle
 // Dependencies: []
 
-// Module 12604 (PrivateChannelSubtitle)
+// Module 12609 (PrivateChannelSubtitle)
 function PrivateChannelSubtitle(channel) {
   channel = channel.channel;
   const tmp = callback2();
@@ -13,7 +13,7 @@ function PrivateChannelSubtitle(channel) {
   const items = [callback(importDefault(dependencyMap[10]), obj), , ];
   let tmp4 = state === arg1(dependencyMap[9]).CallStates.CONNECTED;
   if (tmp4) {
-    obj = { style: tmp.subtitle };
+    obj = { "Null": 130, ti: 130, tk: 256, tl: 16, style: tmp.subtitle };
     tmp4 = callback(arg1(dependencyMap[11]).Text, obj);
   }
   items[1] = tmp4;
@@ -35,15 +35,15 @@ class VoiceChannelHeader {
     items = [];
     items[0] = closure_5;
     stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(channel.getGuildId()));
-    tmp3 = f96883(dependencyMap[14])(channel);
+    tmp3 = f96911(dependencyMap[14])(channel);
     obj2 = arg1(dependencyMap[13]);
     items1 = [];
     items1[0] = closure_4;
     items2 = [];
     items2[0] = channel;
-    f96883 = obj2.useStateFromStores(items1, () => selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    f96911 = obj2.useStateFromStores(items1, () => selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(channel.id), items2);
     name = undefined;
-    tmp4 = f96883(dependencyMap[15])(channel);
+    tmp4 = f96911(dependencyMap[15])(channel);
     if (null != stateFromStores) {
       name = stateFromStores.name;
     }
@@ -91,9 +91,9 @@ class VoiceChannelHeader {
     tmp13 = jsx;
     obj3 = {};
     obj3.size = arg1(dependencyMap[19]).Icon.Sizes.MEDIUM;
-    tmp14 = f96883;
+    tmp14 = f96911;
     tmp15 = dependencyMap;
-    if (f96883(dependencyMap[20])(channel)) {
+    if (f96911(dependencyMap[20])(channel)) {
       num4 = 21;
       tmp14Result = tmp14(tmp15[21]);
     } else {
@@ -173,14 +173,14 @@ let closure_6 = importDefault(dependencyMap[4]);
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { Globe: null, trackForumPostLinkCopied: "86035f94bc8c78da758eed4788f623cf", onPressAutocompleteItem: "empty_castle", playstationVersion: "png", handleToggleMuteChannel: "sm" }, middle: { US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS: "vBfZzD", F+x38C: "USER_MODAL_UNIGNORE", ctl: "sync" } };
+obj = { container: { disabled: null, onPress: "86035f94bc8c78da758eed4788f623cf", position: "empty_castle", left: "png", right: "sm" }, middle: {} };
 obj = { flexDirection: "row", tintColor: importDefault(dependencyMap[8]).colors.WHITE };
 obj.icons = obj;
-const obj1 = { 9223372036854775807: "166185917b52ede00e3e20d3f1f7faeb", 0: "CheckmarkSmallIcon", color: importDefault(dependencyMap[8]).colors.WHITE };
-obj.subtitle = obj1;
+const tmp4 = arg1(dependencyMap[6]);
+obj.subtitle = { color: importDefault(dependencyMap[8]).colors.WHITE };
 obj.subtitleWrapper = { flexDirection: "row" };
 let closure_12 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[6]);
+const obj1 = { color: importDefault(dependencyMap[8]).colors.WHITE };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceChannelHeader.tsx");
 
 export default VoiceChannelHeader;

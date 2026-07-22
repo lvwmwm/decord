@@ -1,8 +1,8 @@
-// Module ID: 9367
-// Function ID: 73064
+// Module ID: 9368
+// Function ID: 73077
 // Dependencies: []
 
-// Module 9367
+// Module 9368
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const EmojiCategoryTypes = arg1(dependencyMap[2]).EmojiCategoryTypes;
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f73070;
+        tmp = f73083;
       }
       if (!tmp) {
         num2 = 0;

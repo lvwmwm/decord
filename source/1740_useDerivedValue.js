@@ -1,12 +1,14 @@
 // Module ID: 1740
 // Function ID: 19499
 // Name: useDerivedValue
-// Dependencies: []
+// Dependencies: [0, 1, 2, 89, 31]
 // Exports: useDerivedValue
 
 // Module 1740 (useDerivedValue)
-let closure_2 = importDefault(dependencyMap[0]);
-({ useEffect: closure_3, useRef: closure_4 } = arg1(dependencyMap[1]));
+import __exportStarResult1 from "__exportStarResult1";
+import module_1 from "module_1";
+
+({ useEffect: closure_3, useRef: closure_4 } = module_1);
 let closure_5 = { code: "function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}" };
 
 export const useDerivedValue = function useDerivedValue(fn, items) {

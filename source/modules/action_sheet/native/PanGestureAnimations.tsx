@@ -1,11 +1,11 @@
-// Module ID: 10792
-// Function ID: 83794
+// Module ID: 10793
+// Function ID: 83807
 // Name: getNearestValue
 // Dependencies: []
 // Exports: default
 
-// Module 10792 (getNearestValue)
-let obj = {};
+// Module 10793 (getNearestValue)
+let obj = { 9223372036854775807: "#EB459F", -9223372036854775808: "M242.488 14.684c-.059.22 8.288-8.651 1.03-11.14-7.258-2.488.959 4.07-1.03 11.14Z", 0: "#EB459F", -9223372036854775808: "M242.397 14.509s9.202-11.38 15.838-3.713c6.635 7.665-9.111.687-15.838 3.713Z", 0: "url(#e)", 9223372036854775807: "M223.016 61.203c11.849 0 21.455-9.605 21.455-21.455 0-11.85-9.606-21.455-21.455-21.455-11.85 0-21.455 9.606-21.455 21.455 0 11.85 9.605 21.456 21.455 21.456Z" };
 obj = { duration: 500, easing: require(dependencyMap[0]).STANDARD_EASING };
 let closure_4 = { code: "function getNearestValue_PanGestureAnimationsTsx1(array,measure,velocity=0){const unitVector=velocity<0?-1:velocity>0?1:0;function getSortedByMeasure(array,measure){'worklet';const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}if(array.length===0){return measure;}const sorted=getSortedByMeasure(array,measure);if(unitVector!==0){var _sorted$find;return(_sorted$find=sorted.find(function(value){const result=unitVector<0?measure>value:measure<value;return result;}))!==null&&_sorted$find!==void 0?_sorted$find:sorted[0];}return sorted[0];}" };
 let closure_5 = { code: "function getSortedByMeasure_PanGestureAnimationsTsx2(array,measure){const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}" };

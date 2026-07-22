@@ -1,15 +1,15 @@
-// Module ID: 15920
-// Function ID: 122043
+// Module ID: 15928
+// Function ID: 122086
 // Name: NewMemberActionsCompleted
 // Dependencies: []
 // Exports: default
 
-// Module 15920 (NewMemberActionsCompleted)
+// Module 15928 (NewMemberActionsCompleted)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { screen: { hippopotamus: true, prev: 12.1, transmitted: 103, _sentryUtils: "deferred_action", inputText: "message", getGuildInviteExtendedType: "state", useIsMobileGameCollectionExperimentEnabled: 104, PHP: "temp_banned" }, text: { marginBottom: 16 } };
+obj = { screen: { "Null": true, "Null": 12.1, "Null": 103, "Null": "deferred_action", "Null": "message", "Null": "state", "Null": 104, "Null": "temp_banned" }, text: { marginBottom: 16 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.round, height: 8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL, width: "60%" };
 obj.progressBackground = obj;
 const tmp2 = arg1(dependencyMap[2]);
@@ -47,7 +47,7 @@ export default function NewMemberActionsCompleted(arg0) {
     const timerId = setTimeout(() => callback2(closure_2[7]).popWithKey(callback(closure_2[8]).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
   }, []);
   obj = { style: tmp.screen };
-  obj1 = { delete: -1522401279, dispatch: -721419583, raw: 1929380124, style: tmp.text };
+  obj1 = { "Null": "Array", "Null": "native_tombstone_hash", alignItems: "as", style: tmp.text };
   const intl = arg1(dependencyMap[10]).intl;
   obj1.children = intl.format(arg1(dependencyMap[10]).t.pGj5u2, { count: numActions });
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj1), ];

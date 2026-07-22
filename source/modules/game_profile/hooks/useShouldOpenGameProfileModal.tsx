@@ -1,10 +1,10 @@
-// Module ID: 8581
-// Function ID: 68148
+// Module ID: 8582
+// Function ID: 68160
 // Name: getRejectionReasons
 // Dependencies: []
 // Exports: default, gameIdIsAcceptable
 
-// Module 8581 (getRejectionReasons)
+// Module 8582 (getRejectionReasons)
 function getRejectionReasons(gameFlags) {
   if (null == gameFlags) {
     const items = [closure_7.NoMatch];

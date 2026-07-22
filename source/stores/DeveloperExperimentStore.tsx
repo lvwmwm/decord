@@ -1,5 +1,5 @@
 // Module ID: 6956
-// Function ID: 55584
+// Function ID: 55595
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -80,7 +80,7 @@ let tmp3 = (Store) => {
     value() {
       let tmp = null;
       if (closure_10) {
-        const obj = { style: "/assets/design/components/Icon/native/redesign/generated/images", source: 24, muted: 24, paused: null, bucket: TREATMENT_1.TREATMENT_1 };
+        const obj = { "Null": true, "Null": true, "Null": true, "Null": true, bucket: TREATMENT_1.TREATMENT_1 };
         tmp = obj;
       }
       return tmp;

@@ -1,10 +1,10 @@
-// Module ID: 10964
-// Function ID: 85275
+// Module ID: 10965
+// Function ID: 85288
 // Name: useGuildIncidentsActionSheetStore
 // Dependencies: []
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 10964 (useGuildIncidentsActionSheetStore)
+// Module 10965 (useGuildIncidentsActionSheetStore)
 const DEFAULT_LOCKDOWN_DURATION = require(dependencyMap[0]).DEFAULT_LOCKDOWN_DURATION;
 const _module = require(dependencyMap[1]);
 const obj = _module.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION }));

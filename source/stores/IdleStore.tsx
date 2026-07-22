@@ -1,5 +1,5 @@
 // Module ID: 4940
-// Function ID: 42337
+// Function ID: 42346
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -30,7 +30,7 @@ function checkIdleAFK() {
     if (!isSystemIdle()) {
       if (closure_14) {
         let obj = importDefault(dependencyMap[11]);
-        obj.dispatch({ "Null": "Array", "Null": "SEARCH_RESULTS_LANGUAGE_CODE_PREFIX" });
+        obj.dispatch({ ao: true, ip: null });
       }
     }
     const AfkTimeout = arg1(dependencyMap[9]).AfkTimeout;
@@ -43,7 +43,7 @@ function checkIdleAFK() {
         if (diff <= Math.min(setting * importDefault(dependencyMap[10]).Millis.SECOND, closure_9)) {
           if (!isSystemIdle()) {
             if (closure_15) {
-              importDefault(dependencyMap[11]).dispatch({ -2130141102: 112, -1635888395: "center" });
+              importDefault(dependencyMap[11]).dispatch({ <string:1741837664>: 112, <string:1741711309>: "center" });
               const obj4 = importDefault(dependencyMap[11]);
             }
           }
@@ -51,12 +51,12 @@ function checkIdleAFK() {
       }
     }
     if (!closure_15) {
-      importDefault(dependencyMap[11]).dispatch({ -2130141102: "Array", -1635888395: "isArray" });
+      importDefault(dependencyMap[11]).dispatch({ <string:1741837664>: "3cb840d03313467838d658bbec801fcd", <string:1741711309>: "icon7" });
       const obj5 = importDefault(dependencyMap[11]);
     }
   }
   if (!closure_14) {
-    obj = { idleSince: closure_13 };
+    obj = { ao: "png", ip: "axo-id", idleSince: closure_13 };
     importDefault(dependencyMap[11]).dispatch(obj);
     const obj2 = importDefault(dependencyMap[11]);
   }

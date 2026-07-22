@@ -1,5 +1,5 @@
 // Module ID: 5857
-// Function ID: 49707
+// Function ID: 49718
 // Name: AppsButtonSpotIllustration
 // Dependencies: []
 // Exports: AppsButtonSpotIllustration

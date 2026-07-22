@@ -1,10 +1,10 @@
-// Module ID: 11649
-// Function ID: 90376
+// Module ID: 11650
+// Function ID: 90389
 // Name: useNativeProvisionalAccountExplainerText
 // Dependencies: []
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 11649 (useNativeProvisionalAccountExplainerText)
+// Module 11650 (useNativeProvisionalAccountExplainerText)
 function useNativeProvisionalAccountExplainerText(userId) {
   const iconSize = userId.iconSize;
   const arg1 = iconSize;
@@ -22,7 +22,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
   let obj = {};
   obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED, gap: importDefault(dependencyMap[4]).space.PX_8 };
   obj.chatContainer = obj;
-  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_4 };
+  obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_4 };
   obj.header = obj;
   return obj;
 });
@@ -38,14 +38,12 @@ export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccou
   let obj = { style: items };
   const items = [tmp.chatContainer, style];
   obj = { style: tmp.header };
-  obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+  obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.Iyka0U);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj), callback(arg1(dependencyMap[10]).CircleErrorIcon, {})];
   obj.children = items1;
-  const items2 = [callback2(View, obj), ];
-  const obj1 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", children: useNativeProvisionalAccountExplainerText({ userId, iconSize, textVariant: "text-sm/semibold" }) };
-  items2[1] = callback(arg1(dependencyMap[8]).Text, obj1);
+  const items2 = [callback2(View, obj), callback(arg1(dependencyMap[8]).Text, { children: useNativeProvisionalAccountExplainerText({ userId, iconSize, textVariant: "text-sm/semibold" }) })];
   obj.children = items2;
   return callback2(arg1(dependencyMap[7]).Card, obj);
 };
@@ -56,7 +54,7 @@ export const UserProfileProvisionalAccountExplainerCard = function UserProfilePr
   const intl = arg1(dependencyMap[9]).intl;
   obj.title = intl.string(arg1(dependencyMap[9]).t.Iyka0U);
   obj.titleIcon = callback(arg1(dependencyMap[10]).CircleErrorIcon, {});
-  obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: tmp };
+  obj = { cachedAt: 1, edpbxy: 1, children: tmp };
   obj.children = callback(arg1(dependencyMap[8]).Text, obj);
   return callback(importDefault(dependencyMap[11]), obj);
 };

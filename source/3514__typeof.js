@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const YearParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 130);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", ["Array", "fetchMemberCounts", "Array", "gradientHeight", "addOrientationListener", "VOICE_CHANNEL_TOPIC_VIEWED", "TransitionStates", "dividedBy", "AlertModalContainer", "uploadFiles"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const YearParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 130);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Array", "fetchMemberCounts", "Array", "gradientHeight", "addOrientationListener", "VOICE_CHANNEL_TOPIC_VIEWED", "TransitionStates", "dividedBy", "AlertModalContainer", "uploadFiles"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const YearParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: YearParser };
+  let obj = { "": null, children: null, "": null, value: YearParser };
   YearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class YearParser {
@@ -256,7 +256,7 @@ export const YearParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 130);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Array", "fetchMemberCounts", "Array", "gradientHeight", "addOrientationListener", "VOICE_CHANNEL_TOPIC_VIEWED", "TransitionStates", "dividedBy", "AlertModalContainer", "uploadFiles"]);
           return applyResult;
         } else {
           _TypeError = TypeError;

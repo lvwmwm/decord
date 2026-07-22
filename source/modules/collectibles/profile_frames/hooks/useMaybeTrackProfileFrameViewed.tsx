@@ -1,10 +1,10 @@
-// Module ID: 8492
-// Function ID: 67818
+// Module ID: 8493
+// Function ID: 67830
 // Name: useMaybeTrackProfileFrameViewed
 // Dependencies: []
 // Exports: default
 
-// Module 8492 (useMaybeTrackProfileFrameViewed)
+// Module 8493 (useMaybeTrackProfileFrameViewed)
 const _module = require(dependencyMap[0]);
 ({ useEffect: closure_2, useRef: closure_3 } = _module);
 let closure_4 = importDefault(dependencyMap[1]);

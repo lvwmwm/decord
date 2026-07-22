@@ -1,10 +1,10 @@
-// Module ID: 15344
-// Function ID: 116865
+// Module ID: 15352
+// Function ID: 116908
 // Name: IgnoredUserRequestsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15344 (IgnoredUserRequestsScreen)
+// Module 15352 (IgnoredUserRequestsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

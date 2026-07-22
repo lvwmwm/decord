@@ -1,10 +1,10 @@
-// Module ID: 12248
-// Function ID: 93933
+// Module ID: 12253
+// Function ID: 93961
 // Name: ReferredFriendAvatar
 // Dependencies: []
 // Exports: ReferralProgramPerkCard
 
-// Module 12248 (ReferredFriendAvatar)
+// Module 12253 (ReferredFriendAvatar)
 function ReferredFriendAvatar(user) {
   user = user.user;
   let obj = { style: callback3().referredFriendAvatar };
@@ -77,10 +77,10 @@ obj = {};
 obj = { width: 320, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, alignItems: "center" };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
 obj.container = obj;
-obj.progressIndicatorContainer = { channelInfo: true, textInput: "/assets/images/native/premium/logos", updateDmSafetyAlertsSetting: 134, shrink: 56, grow: null, Component: "5491d41ca2212b1f11c074c452801d84" };
+obj.progressIndicatorContainer = { bottom: true, width: "/assets/images/native/premium/logos", opacity: 134, accessible: 56, raw: null, textAlign: "5491d41ca2212b1f11c074c452801d84" };
+const obj1 = { ao: "$", shapes: "prefixTag", ip: "ti", op: "isArray", st: "ti", bm: "isArray", borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
+obj.availableReferralSlot = obj1;
 const tmp3 = arg1(dependencyMap[4]);
-obj.availableReferralSlot = { borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
 obj.referredFriendAvatar = { borderWidth: 2, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.contentContainer = {};
 obj.heading = { textAlign: "left" };
@@ -121,11 +121,11 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   obj = { nReferralsSent: stateFromStores.size };
   const items4 = [callback(importDefault(dependencyMap[20]), obj), callback(ProgressIndicator, { referralSentUsers }), , ];
   obj1 = { style: tmp.contentContainer };
-  const obj2 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isInTreatment", style: tmp.heading };
+  const obj2 = { cachedAt: null, edpbxy: null, style: tmp.heading };
   const intl = arg1(dependencyMap[10]).intl;
   obj2.children = intl.string(arg1(dependencyMap[10]).t.USo4s7);
   const items5 = [callback(arg1(dependencyMap[8]).Text, obj2), ];
-  obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.bodyText, children: getBodyText(false !== stateFromStores1, referralSentUsers.length, everyResult) };
+  obj3 = { cachedAt: 3, edpbxy: null, style: tmp.bodyText, children: getBodyText(false !== stateFromStores1, referralSentUsers.length, everyResult) };
   items5[1] = callback(arg1(dependencyMap[21]).TextWithIOSLinkWorkaround, obj3);
   obj1.children = items5;
   items4[2] = callback2(View, obj1);

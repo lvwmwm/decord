@@ -1,10 +1,10 @@
-// Module ID: 9929
-// Function ID: 76843
+// Module ID: 9930
+// Function ID: 76856
 // Name: useVoteReactors
 // Dependencies: []
 // Exports: default
 
-// Module 9929 (useVoteReactors)
+// Module 9930 (useVoteReactors)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).DEFAULT_NUM_REACTION_USERS;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/polls/useVoteReactors.tsx");

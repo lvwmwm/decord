@@ -1,5 +1,5 @@
 // Module ID: 4808
-// Function ID: 41963
+// Function ID: 41972
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -134,7 +134,7 @@ function calculateStartTime(startTime, position) {
 }
 function sendStoppedPlayerState(accountId) {
   let obj = importDefault(dependencyMap[18]);
-  obj = { left: true, right: "/assets/images/platforms", alignItems: 255, "Bool(false)": 255, "Bool(false)": null, "Bool(false)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(false)": "img_account_sync_youtube_white", "Bool(false)": "png", accountId };
+  obj = { "Bool(false)": true, "Bool(false)": "/assets/images/platforms", "Bool(false)": 255, "Bool(false)": 255, "Bool(false)": null, "Bool(false)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(false)": "img_account_sync_youtube_white", "Bool(false)": "png", accountId };
   obj.dispatch(obj);
 }
 function findSpotifyActivity(arg0) {
@@ -361,7 +361,7 @@ function setSpeaking(id, arg1) {
   if (id === store.getId()) {
     const result = currentClientInVoiceChannel.isCurrentClientInVoiceChannel();
     let obj = arg1(dependencyMap[25]);
-    obj = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, userId: id };
+    obj = { refId: 1567300603, sr: 221342020, ks: 822948183, userId: id };
     if (result) {
       if (obj.getIsSpeaking(obj)) {
         if (null != closure_23) {

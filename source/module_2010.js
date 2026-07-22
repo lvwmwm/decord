@@ -4,6 +4,6 @@
 
 // Module 2010
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "<string:16777600>", format: "<string:39143747>", View: "<string:39143424>", accessibilityRole: "<string:23841536>", surrogates: "<string:4264192>", url: "<string:285212989>", scales: [null] };
+const obj = { 296374: 9, 1102560849: null, 288807: 1, 1103760465: "BLUE_NEW_43", 288241: 1, 1120538193: "source", scales: [false] };
 
 export default _module.registerAsset(obj);

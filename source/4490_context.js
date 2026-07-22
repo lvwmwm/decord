@@ -1,12 +1,12 @@
 // Module ID: 4490
-// Function ID: 39621
+// Function ID: 39629
 // Name: context
 // Dependencies: []
 // Exports: useEdgeInsetApplication
 
 // Module 4490 (context)
 const importAllResult = importAll(dependencyMap[0]);
-const context = importAllResult.createContext({ posy: "#ffa813", PremiumSubscriptionType: "absolute", ks: null });
+const context = importAllResult.createContext({ 0: true, 0: false, 0: false });
 
 export const EdgeInsetApplicationContext = context;
 export const useEdgeInsetApplication = function useEdgeInsetApplication(arg0, arg1, arg2) {

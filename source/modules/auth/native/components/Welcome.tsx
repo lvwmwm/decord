@@ -1,10 +1,10 @@
-// Module ID: 14610
-// Function ID: 110163
+// Module ID: 14618
+// Function ID: 110206
 // Name: InviteCard
 // Dependencies: []
 // Exports: default
 
-// Module 14610 (InviteCard)
+// Module 14618 (InviteCard)
 function InviteCard(invite) {
   let guild;
   let inviter;
@@ -51,9 +51,9 @@ function InviteCard(invite) {
     obj1.style = items;
     const items1 = [tmp14, ];
     const obj2 = { style: tmp.text };
-    const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: stringResult };
+    const obj3 = { cachedAt: true, edpbxy: true, children: stringResult };
     const items2 = [callback2(arg1(dependencyMap[20]).Text, obj3), ];
-    const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: name };
+    const obj4 = { children: name };
     items2[1] = callback2(arg1(dependencyMap[20]).Text, obj4);
     obj2.children = items2;
     items1[1] = callback3(closure_4, obj2);
@@ -71,12 +71,10 @@ function GuildTemplateCard(arg0) {
   obj = { source: importDefault(dependencyMap[21]) };
   const items1 = [callback2(closure_5, obj), ];
   obj = { style: tmp.text };
-  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  const obj1 = { cachedAt: true, edpbxy: true };
   const intl = arg1(dependencyMap[16]).intl;
   obj1.children = intl.string(arg1(dependencyMap[16]).t.QzUORX);
-  const items2 = [callback2(arg1(dependencyMap[20]).Text, obj1), ];
-  const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: guildTemplate.name };
-  items2[1] = callback2(arg1(dependencyMap[20]).Text, obj2);
+  const items2 = [callback2(arg1(dependencyMap[20]).Text, obj1), callback2(arg1(dependencyMap[20]).Text, { children: guildTemplate.name })];
   obj.children = items2;
   items1[1] = callback3(closure_4, obj);
   obj.children = items1;
@@ -98,7 +96,7 @@ function Centerpiece(inlineButtons) {
   obj = { style: tmp2.logo, source: arg1(dependencyMap[23]) };
   const items1 = [callback2(closure_5, obj), , ];
   const obj1 = {};
-  const obj2 = { "Bool(false)": null, "Bool(false)": "38957e8b938c7ee2a40f1e8c893feb71", "Bool(false)": "welcome-bg", "Bool(false)": "png", "Bool(false)": "absolute", style: tmp2.header };
+  const obj2 = { style: tmp2.header };
   let num = 2;
   if (tmp) {
     num = 1;
@@ -107,7 +105,7 @@ function Centerpiece(inlineButtons) {
   const intl = arg1(dependencyMap[16]).intl;
   obj2.children = intl.string(arg1(dependencyMap[16]).t.3S2xmm);
   const items2 = [callback2(arg1(dependencyMap[20]).Heading, obj2), , , ];
-  const obj3 = { <string:1653988714>: "<string:3566272514>", <string:1650833672>: "<string:1239547905>", <string:1408999516>: "<string:1141964802>", <string:1688306001>: "<string:1770717186>" };
+  const obj3 = { "Bool(true)": "<string:3559849986>", "Bool(true)": "<string:1240334337>", "Bool(true)": "<string:1143341058>", "Bool(true)": "<string:1783758850>" };
   const items3 = [tmp2.subHeader, ];
   if (null != invite) {
     let subHeaderWithInvite = tmp2.subHeaderWithInvite;
@@ -155,8 +153,8 @@ const tmp3 = arg1(dependencyMap[9]);
 ({ jsx: closure_20, jsxs: closure_21 } = arg1(dependencyMap[12]));
 let obj = arg1(dependencyMap[13]);
 let closure_22 = obj.createStyles((arg0) => {
-  let obj = { container: { ../../../lib/convert-to-braintree-error: false, ../../../lib/deferred: "linear", ../../../lib/enumerate: "opacity" }, logo: { 571757226: true, 39987447: true, -740928367: true, -1595476175: true, -865755990: true, -73344925: true }, scrollViewContainer: {}, header: {} };
-  obj = { borderless: "r", foreground: 150.5, radius: 156, flex: null, flexDirection: "af47f5760d10cc835b5537c36ba26c7a", justifyContent: "redesign_notification_illustration" };
+  let obj = { container: { "Bool(true)": 8, "Bool(true)": "vertical", "Bool(true)": false }, logo: { 9223372036854775807: true, 9223372036854775807: true, 0: true, -9223372036854775808: true, 9223372036854775807: true, 0: true }, scrollViewContainer: {}, header: {} };
+  obj = { index: "r", e: 150.5, next: 156, values: null, next: "af47f5760d10cc835b5537c36ba26c7a", warn: "redesign_notification_illustration" };
   let num = 300;
   if (arg0) {
     num = 480;
@@ -165,12 +163,12 @@ let closure_22 = obj.createStyles((arg0) => {
   obj.subHeader = obj;
   obj.subHeaderWithInvite = { marginBottom: 16 };
   obj.centerpieceContainer = {};
-  obj.buttonContainer = { "Null": "<string:783482881>", "Null": "<string:2018574338>", "Null": "<string:2940338643>", "Null": "<string:536871523>" };
+  obj.buttonContainer = { -346838186: "<string:787611649>", -1564939080: "<string:4132503554>", 1446732965: "<string:3678536173>", 508715691: "<string:3103785571>" };
   return obj;
 });
 const tmp4 = arg1(dependencyMap[12]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[14]).radii.sm, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST, height: 11 };
+obj = { "Null": true, position: null, left: 11, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[14]).radii.sm };
 obj.container = obj;
 obj.text = { marginLeft: 16 };
 let closure_23 = arg1(dependencyMap[13]).createStyles(obj);
@@ -267,8 +265,8 @@ export default function Welcome() {
   obj = { style: tmp2.buttonContainer };
   obj = {};
   obj1 = {
-    text: 822084101,
-    size: null,
+    <string:1986169986>: 15183073285524370000000000000000000000000000000000000000000000000000000000000000000,
+    <string:2487833047>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000255713764154597,
     onPress: function handlePressRegister() {
       if (closure_3) {
         let obj = { fromRegister: true };

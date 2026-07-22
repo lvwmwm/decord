@@ -1,10 +1,10 @@
-// Module ID: 15742
-// Function ID: 120405
+// Module ID: 15750
+// Function ID: 120448
 // Name: VoicePanelMaxCapacityAlert
 // Dependencies: []
 // Exports: default
 
-// Module 15742 (VoicePanelMaxCapacityAlert)
+// Module 15750 (VoicePanelMaxCapacityAlert)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

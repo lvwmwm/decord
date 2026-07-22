@@ -1,10 +1,10 @@
-// Module ID: 10625
-// Function ID: 82875
+// Module ID: 10626
+// Function ID: 82888
 // Name: ConnectivityGlobalStatusContent
 // Dependencies: []
 // Exports: default
 
-// Module 10625 (ConnectivityGlobalStatusContent)
+// Module 10626 (ConnectivityGlobalStatusContent)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -19,8 +19,7 @@ obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE
 obj.bgNeutral = obj;
 const tmp3 = arg1(dependencyMap[8]);
 obj.bg = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
-const obj2 = { 235340516: -1555890173, 56972490: 167773045, 46203784: -1577057397, 782762651: 1090519925, minHeight: arg1(dependencyMap[6]).RTC_PANEL_HEIGHT };
-obj.container = obj2;
+obj.container = { minHeight: arg1(dependencyMap[6]).RTC_PANEL_HEIGHT };
 let closure_11 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/connectivity/native/components/GlobalStatusContent.tsx");

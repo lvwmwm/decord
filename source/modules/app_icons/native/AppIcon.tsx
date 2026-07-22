@@ -1,10 +1,10 @@
-// Module ID: 14236
-// Function ID: 107599
+// Module ID: 14244
+// Function ID: 107642
 // Name: AppIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14236 (AppIcon)
+// Module 14244 (AppIcon)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const getIconById = arg1(dependencyMap[2]).getIconById;

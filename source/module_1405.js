@@ -4,6 +4,6 @@
 
 // Module 1405
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": 320, "Bool(false)": 320, "Bool(false)": null, "Bool(false)": "fb3b5529cfb55c06f1bdff816af8a17a", "Bool(false)": "default_provisional_avatar_5", "Bool(false)": "png", "Bool(false)": null, "Bool(false)": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}", scales: [null] };
+const obj = { 1358955657: 320, 1279501871: 320, -100662186: null, -134216521: "fb3b5529cfb55c06f1bdff816af8a17a", 1375732845: "default_provisional_avatar_5", -1598249400: "png", -117286062: 900, 978739886: 45, scales: [false] };
 
 export default _module.registerAsset(obj);

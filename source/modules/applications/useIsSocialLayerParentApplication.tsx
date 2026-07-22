@@ -1,10 +1,10 @@
-// Module ID: 8952
-// Function ID: 70586
+// Module ID: 8953
+// Function ID: 70599
 // Name: getIsSocialLayerParentApplication
 // Dependencies: []
 // Exports: default
 
-// Module 8952 (getIsSocialLayerParentApplication)
+// Module 8953 (getIsSocialLayerParentApplication)
 function getIsSocialLayerParentApplication(application) {
   return arg1(dependencyMap[2]).hasApplicationFlag(application, ApplicationFlags.PARENT);
 }

@@ -1,10 +1,10 @@
-// Module ID: 8332
-// Function ID: 66034
+// Module ID: 8333
+// Function ID: 66046
 // Name: getHostname
 // Dependencies: []
 // Exports: getHostname, getProtocol
 
-// Module 8332 (getHostname)
+// Module 8333 (getHostname)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("stores/MaskedLinkStoreMethodsAdditional.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 13647
-// Function ID: 103404
+// Module ID: 13654
+// Function ID: 103437
 // Name: useIsParentalConsentBannerActive
 // Dependencies: []
 // Exports: useIsParentalConsentBannerActive
 
-// Module 13647 (useIsParentalConsentBannerActive)
+// Module 13654 (useIsParentalConsentBannerActive)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
 

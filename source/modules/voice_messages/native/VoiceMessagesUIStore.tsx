@@ -1,15 +1,15 @@
-// Module ID: 11092
-// Function ID: 86290
+// Module ID: 11093
+// Function ID: 86303
 // Name: VoiceMessageRecordingStatus
 // Dependencies: []
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11092 (VoiceMessageRecordingStatus)
+// Module 11093 (VoiceMessageRecordingStatus)
 const _module = require(dependencyMap[0]);
 ({ VoiceMessageAnimationState: closure_2, WAVEFORM_WAVE_MAX_VALUE: closure_3 } = _module);
 const _module1 = require(dependencyMap[1]);
 const obj = _module1.create(() => {
-  const obj = { emoji: false, me: false, me_burst: false, me_vote: false, count: false };
+  const obj = { "Bool(false)": -1, "Bool(false)": -1882570463, "Bool(false)": 1360068610, "Bool(false)": 1361143520, "Bool(false)": 1340580 };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
   obj.voiceMessageAnimationState = require(dependencyMap[2]).makeMutable(items);
@@ -87,7 +87,7 @@ export const hideVoiceMessagesTooltip = function hideVoiceMessagesTooltip() {
 export const resetVoiceMessageState = function resetVoiceMessageState() {
   const obj = require(dependencyMap[3]);
   obj.batchUpdates(() => {
-    const obj = { ao: 1092747263, ip: 142182, op: -1907003820, waveform: [], startTimeMillis: undefined, savedVoiceMessageUploadData: undefined };
+    const obj = { "Null": "_desired", "Null": "hash", "Null": "constructor", waveform: [], startTimeMillis: undefined, savedVoiceMessageUploadData: undefined };
     state.setState(obj);
   });
   const currWaveHeight = obj.getState().currWaveHeight;

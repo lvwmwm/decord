@@ -1,10 +1,10 @@
-// Module ID: 12455
-// Function ID: 95127
+// Module ID: 12460
+// Function ID: 95155
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: createDispatcherWorkScheduler
 
-// Module 12455 (_isNativeReflectConstruct)
+// Module 12460 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

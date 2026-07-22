@@ -1,10 +1,10 @@
-// Module ID: 9420
-// Function ID: 73304
+// Module ID: 9421
+// Function ID: 73317
 // Name: useReactors
 // Dependencies: []
 // Exports: MessageReactionsContent, MessageReactionsEmpty
 
-// Module 9420 (useReactors)
+// Module 9421 (useReactors)
 let Platform;
 function useReactors(channelId) {
   channelId = channelId.channelId;
@@ -441,7 +441,7 @@ function RemoveAllButton(channelId) {
     obj2.style = items4;
     const obj3 = { color: importDefault(dependencyMap[13]).unsafe_rawColors.WHITE, size: "sm" };
     const items5 = [callback2(arg1(dependencyMap[41]).TrashIcon, obj3), ];
-    obj4 = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011750085073657767, dispatch: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002225073859025267, raw: 172541955090112670000000, style: animatedStyle1 };
+    obj4 = { style: animatedStyle1 };
     const intl = arg1(dependencyMap[33]).intl;
     obj4.children = intl.string(arg1(dependencyMap[33]).t.zx/e4P);
     items5[1] = callback2(closure_18, obj4);
@@ -475,7 +475,7 @@ function EmojiOptionsButton(channelId) {
     }, items2),
     style: callback4().emojiOptionsButton
   };
-  obj = { hasMaxConnections: "<string:1864193>", isBoostOnlySubscription: "<string:2621440>" };
+  obj = { cachedAt: 500, edpbxy: 60000 };
   const intl = arg1(dependencyMap[33]).intl;
   obj.children = intl.string(arg1(dependencyMap[33]).t.pCaYID);
   const items3 = [callback2(arg1(dependencyMap[11]).Text, obj), ];
@@ -512,7 +512,7 @@ function ReactionTabs(setReactionSelectedIndex) {
   obj.initialNumTabsToRender = arg1(dependencyMap[15]).MAX_REACTIONS;
   const items = [callback2(importDefault(dependencyMap[47]), obj), callback2(importDefault(dependencyMap[31]), { outer: true }), ];
   const obj1 = { style: tmp.removeButtonContainer };
-  const obj2 = { style: tmp.emojiTextIdentifier };
+  const obj2 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.emojiTextIdentifier };
   const tmp2 = closure_17;
   const tmp3 = closure_8;
   const tmp4 = importDefault(dependencyMap[47]);
@@ -550,32 +550,32 @@ obj = { padding: 32, borderTopLeftRadius: importDefault(dependencyMap[13]).radii
 obj.containerEmpty = obj;
 obj1 = { height: 48, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.listRow = obj1;
-const obj2 = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000003742054533171631, 0: 0.975, 0: 190359829595963920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: "channelId", 0: "transform", borderRadius: importDefault(dependencyMap[13]).radii.sm };
+const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.tabContainer = obj2;
 const importDefaultResult = importDefault(dependencyMap[10]);
 obj.tabContainerSelected = { backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_SELECTED };
-obj.tab = {};
+obj.tab = { channel: "text-md/semibold", mode: "text-feedback-critical", selected: true };
 obj.tabSelected = { borderBottomColor: "transparent" };
 const obj3 = { backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_SELECTED };
 obj.tabActive = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
-obj.reactionTab = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945 };
+obj.reactionTab = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, location: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945 };
 obj.removeButtonContainer = {};
 const obj4 = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.emojiOptionsButton = { marginRight: importDefault(dependencyMap[13]).space.PX_16 };
-const obj6 = { "Null": 1361182719, "Null": 49907522, "Null": 50170624, "Null": 1506361856, "Null": 1665728515, "Null": 843186179, "Null": -1174404278, "Null": 16777979, "Null": 82326337, "Null": 1895895296, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[13]).radii.xxl };
+const obj6 = { <string:3532296225>: "\u043C\u0435\u043D\u044C\u0448\u0435 \u043C\u0438\u043D\u0443\u0442\u044B", <string:3452394210>: "\u043C\u0435\u043D\u044C\u0448\u0435 {{count}} \u043C\u0438\u043D\u0443\u0442\u044B", <string:75153729>: "\u043C\u0435\u043D\u044C\u0448\u0435 {{count}} \u043C\u0438\u043D\u0443\u0442", <string:437768192>: "\u043C\u0435\u043D\u044C\u0448\u0435 {{count}} \u043C\u0438\u043D\u0443\u0442", <string:4016692176>: 2, <string:3483100250>: 8, <string:3299821264>: 32, <string:2880609232>: "center", <string:4239360461>: "center", <string:2648145579>: 1967259651, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[13]).radii.xxl };
 obj.removeAllButton = obj6;
 const obj5 = { marginRight: importDefault(dependencyMap[13]).space.PX_16 };
 obj.reactionCountText = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj7 = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.reactionCountTextSelected = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.emoji = { marginRight: 8 };
-const obj9 = { paddingVertical: 0, paddingHorizontal: 53.614, flexGrow: 3, color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj9 = { -1398941826: 0, 541046124: 53.614, 1600327841: 3, color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.emojiText = obj9;
-obj.emojiImage = {};
+obj.emojiImage = { "Null": "<string:16777581>", "Null": "<string:34766659>", "Null": "<string:17605120>" };
 obj.emojiTextIdentifier = { padding: 16 };
 obj.avatar = { marginRight: 10 };
-obj.buttonRow = { top: true, bottom: true, left: true };
-obj.loadingSpinner = { "Null": "<string:2118254593>", "Null": "<string:3192979458>" };
+obj.buttonRow = { "Null": true, "Null": true, "Null": true };
+obj.loadingSpinner = {};
 let closure_19 = obj1.createStyles(obj);
 let closure_20 = { code: "function MessageReactionsContentTsx1(){const{useReducedMotion,buttonWidth,withTiming}=this.__closure;return{maxWidth:useReducedMotion?buttonWidth.get():withTiming(buttonWidth.get(),{duration:200})};}" };
 let closure_21 = { code: "function MessageReactionsContentTsx2(){const{useReducedMotion,textOpacity,withTiming}=this.__closure;return{opacity:useReducedMotion?textOpacity.get():withTiming(textOpacity.get(),{duration:125}),color:'white',fontSize:14,marginLeft:8,textAlignVertical:'center'};}" };

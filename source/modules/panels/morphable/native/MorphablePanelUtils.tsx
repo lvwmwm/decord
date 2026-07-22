@@ -1,9 +1,9 @@
-// Module ID: 15576
-// Function ID: 118861
+// Module ID: 15584
+// Function ID: 118904
 // Name: clamp
 // Dependencies: []
 
-// Module 15576 (clamp)
+// Module 15584 (clamp)
 const _module = require(dependencyMap[0]);
 ({ MIN_PIP_TOSS_VELOCITY: closure_0, PIP_WINDOW_OFFSET: closure_1 } = _module);
 let closure_2 = { code: "function clamp_MorphablePanelUtilsTsx1(value,min,max){return Math.min(Math.max(value,min),max);}" };
@@ -185,7 +185,7 @@ export const getClampedPIPPosition = () => {
     }
     let point = topAvoidanceRegion.positionOffset;
     if (point === undefined) {
-      point = {};
+      point = { 0: "%FunctionPrototype%", 0: "paddingStart" };
     }
     const disableHorizontalSafeAreas = topAvoidanceRegion.disableHorizontalSafeAreas;
     let obj = {};

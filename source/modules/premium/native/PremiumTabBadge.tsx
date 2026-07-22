@@ -1,13 +1,13 @@
-// Module ID: 13763
-// Function ID: 104056
+// Module ID: 13770
+// Function ID: 104089
 // Name: ThemedTabBadge
-// Dependencies: [0, 4294967295, 0, 4294967295, 0, 809566208, 131072, 2373320704, 1711276034, 3154116647, 1191182340, 385875999, 33554480, 2097152000, 31, 653, 33, 6651, 7222, 12274, 1273, 10086, 1212, 8765, 3787, 12366, 2, 167289, 2582016, 310272, 2676224, 3526656]
+// Dependencies: [0, 4294967295, 0, 4294967295, 0, 809893888, 131072, 2373320704, 1728053250, 3154116647, 1191182340, 469762079, 33554480, 2097152000, 31, 653, 33, 6651, 7222, 12279, 1273, 10087, 1212, 8766, 3787, 12371, 2, 167289, 2582272, 310272, 2676480, 3528448]
 // Exports: default
 
-// Module 13763 (ThemedTabBadge)
-import result from "result";
-import { View } from "result";
-import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_6 } from "result";
+// Module 13770 (ThemedTabBadge)
+import __exportStarResult1 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_6 } from "__exportStarResult1";
 
 function ThemedTabBadge(label) {
   const tmp = callback4();
@@ -42,7 +42,7 @@ function OfferBadge(componentId) {
     const obj1 = { style: tmp.acked };
     const obj2 = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[15]).Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color, style: tmp.icon };
     const items = [callback2(arg1(dependencyMap[15]).Icon, obj2), ];
-    const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.text, children: ackedBadgeCopy };
+    const obj3 = { cachedAt: "k", edpbxy: "Array", style: tmp.text, children: ackedBadgeCopy };
     items[1] = callback2(arg1(dependencyMap[11]).Text, obj3);
     obj1.children = items;
     let tmp6 = callback3(View, obj1);
@@ -60,20 +60,20 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.tag = obj;
+const obj1 = { "Null": "Head", "Null": 5, position: 1, bottom: null, zIndex: 0, borderTopWidth: null, borderTopColor: 0, borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj.badge = obj1;
 const tmp3 = arg1(dependencyMap[6]);
-obj.badge = { borderRadius: importDefault(dependencyMap[8]).radii.round };
-const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.badgeBackgroundLightTheme = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.badgeBackgroundDarkTheme = { backgroundColor: importDefault(dependencyMap[8]).colors.WHITE };
-const obj4 = { marginRight: 334661108634802800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000230646627327762, width: 41112922950772826000000000, borderRadius: importDefault(dependencyMap[8]).radii.round, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028661725251348014, justifyContent: 139264.30428362638, height: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005990248778258037, width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000844716175159732, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+const obj4 = { "Bool(false)": "textAlign", "Bool(false)": "Text", "Bool(false)": "Uint8ClampedArray", "Bool(false)": "TOO_MANY_CONNECTIONS", "Bool(false)": "getEffectDetailAnalyticsName", "Bool(false)": "r", "Bool(false)": "CONNECTIONS_STEP", "Bool(false)": "avatarURL", borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.acked = obj4;
 const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.WHITE };
 obj.ackedBadge = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 const obj5 = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.icon = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT, marginRight: 2 };
 obj.text = { paddingBottom: 2 };
-const obj7 = { GAME_SERVER_WAKE: "center", isInteractive: 1, isExpired: 24, nsfwAgree: 16, AutomodViolation: 480, eventCount: "center", outboundSinkWantNum: 311, borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj7 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.premiumDiscountBadge = obj7;
 let closure_10 = obj.createStyles(obj);
 const obj6 = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT, marginRight: 2 };
@@ -156,7 +156,7 @@ export default function PremiumTabBadge() {
       }
       if (tmp3) {
         obj1 = { style: string.tag, colors: Gradients.PREMIUM_TIER_2, start: arg1(dependencyMap[29]).HorizontalGradient.START, end: arg1(dependencyMap[29]).HorizontalGradient.END };
-        const obj2 = { hasMaxConnections: "<string:1090519339>", isBoostOnlySubscription: "M169.545 229.312v7.919l14.838-10.253v46.348h7.669v-55.434h-6.169l-16.338 11.42ZM225.979 274.576c13.087 0 21.34-11.003 21.34-28.842 0-17.756-8.253-29.093-21.34-29.093-13.004 0-21.173 11.254-21.173 29.009 0 17.923 8.169 28.926 21.173 28.926Zm0-7.335c-8.419 0-13.004-8.336-13.004-21.591 0-13.087 4.585-21.673 13.004-21.673 8.503 0 13.171 8.669 13.171 21.757 0 13.171-4.668 21.507-13.171 21.507Z" };
+        const obj2 = {};
         const tmp80 = callback2;
         const tmp83 = importDefault(dependencyMap[28]);
         const tmp86 = callback2;
@@ -193,7 +193,7 @@ export default function PremiumTabBadge() {
           obj4.style = items3;
           obj5 = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[15]).Icon.Sizes.EXTRA_SMALL, color: string.icon.color, style: string.icon };
           const items4 = [callback2(arg1(dependencyMap[15]).Icon, obj5), ];
-          obj6 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: string.text };
+          obj6 = { cachedAt: "k", edpbxy: "Array", style: string.text };
           const intl5 = arg1(dependencyMap[27]).intl;
           obj6.children = intl5.string(arg1(dependencyMap[27]).t./DTtr6);
           items4[1] = callback2(arg1(dependencyMap[11]).Text, obj6);
@@ -201,7 +201,7 @@ export default function PremiumTabBadge() {
           let tmp66 = callback3(View, obj4);
         } else {
           obj7 = { style: string.premiumDiscountBadge, colors: [], start: arg1(dependencyMap[29]).HorizontalGradient.START, end: arg1(dependencyMap[29]).HorizontalGradient.END };
-          obj8 = { hasMaxConnections: "<string:1090519339>", isBoostOnlySubscription: "M169.545 229.312v7.919l14.838-10.253v46.348h7.669v-55.434h-6.169l-16.338 11.42ZM225.979 274.576c13.087 0 21.34-11.003 21.34-28.842 0-17.756-8.253-29.093-21.34-29.093-13.004 0-21.173 11.254-21.173 29.009 0 17.923 8.169 28.926 21.173 28.926Zm0-7.335c-8.419 0-13.004-8.336-13.004-21.591 0-13.087 4.585-21.673 13.004-21.673 8.503 0 13.171 8.669 13.171 21.757 0 13.171-4.668 21.507-13.171 21.507Z", style: string.text };
+          obj8 = { style: string.text };
           const intl4 = arg1(dependencyMap[27]).intl;
           obj8.children = intl4.string(arg1(dependencyMap[27]).t./DTtr6);
           obj7.children = callback2(arg1(dependencyMap[11]).Text, obj8);
@@ -212,7 +212,7 @@ export default function PremiumTabBadge() {
         tmp75Result = null;
         if (null != stringResult) {
           obj9 = { style: string.tag, colors: Gradients.PREMIUM_TIER_2, start: arg1(dependencyMap[29]).HorizontalGradient.START, end: arg1(dependencyMap[29]).HorizontalGradient.END };
-          const obj10 = { hasMaxConnections: "<string:1090519339>", isBoostOnlySubscription: "M169.545 229.312v7.919l14.838-10.253v46.348h7.669v-55.434h-6.169l-16.338 11.42ZM225.979 274.576c13.087 0 21.34-11.003 21.34-28.842 0-17.756-8.253-29.093-21.34-29.093-13.004 0-21.173 11.254-21.173 29.009 0 17.923 8.169 28.926 21.173 28.926Zm0-7.335c-8.419 0-13.004-8.336-13.004-21.591 0-13.087 4.585-21.673 13.004-21.673 8.503 0 13.171 8.669 13.171 21.757 0 13.171-4.668 21.507-13.171 21.507Z" };
+          const obj10 = {};
           const tmp51 = callback2;
           const tmp54 = importDefault(dependencyMap[28]);
           const tmp57 = callback2;

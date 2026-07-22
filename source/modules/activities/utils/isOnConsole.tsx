@@ -1,10 +1,10 @@
-// Module ID: 11947
-// Function ID: 92366
+// Module ID: 11948
+// Function ID: 92380
 // Name: isOnConsole
 // Dependencies: []
 // Exports: default
 
-// Module 11947 (isOnConsole)
+// Module 11948 (isOnConsole)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/activities/utils/isOnConsole.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12273
-// Function ID: 94081
+// Module ID: 12278
+// Function ID: 94109
 // Name: isUserEligibleBasedOnCurrentOrPreviousSubs
 // Dependencies: []
 // Exports: maybeFetchActiveBogoPromotion, useIsEligibleForBogoPromotion
 
-// Module 12273 (isUserEligibleBasedOnCurrentOrPreviousSubs)
+// Module 12278 (isUserEligibleBasedOnCurrentOrPreviousSubs)
 function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
   let mostRecentSubscription;
   let premiumSubscription;

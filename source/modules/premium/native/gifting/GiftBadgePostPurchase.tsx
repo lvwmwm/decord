@@ -1,10 +1,10 @@
-// Module ID: 9798
-// Function ID: 76086
+// Module ID: 9799
+// Function ID: 76099
 // Name: PostPurchaseFooter
 // Dependencies: []
 // Exports: default
 
-// Module 9798 (PostPurchaseFooter)
+// Module 9799 (PostPurchaseFooter)
 function PostPurchaseFooter(onSendGift) {
   onSendGift = onSendGift.onSendGift;
   const arg1 = onSendGift;
@@ -23,14 +23,14 @@ function PostPurchaseFooter(onSendGift) {
       rootNavigationRef.navigate("you");
     }
   }, []);
-  obj = { FINISH: "d5c9201b5d59debfcddeffefede24edc", hasMediaOptions: "lt.messages.d5c9201b5d59debfcddeffefede24edc.compiled.messages" };
+  obj = { PresetNothing: "d7825c8630cb00012f54beafd65fb181", ThemedNotifications: "nl.messages.d7825c8630cb00012f54beafd65fb181.compiled.messages" };
   obj = { size: "sm", color: importDefault(dependencyMap[7]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
   obj.icon = callback4(arg1(dependencyMap[12]).GiftIcon, obj);
   const intl = arg1(dependencyMap[13]).intl;
   obj.text = intl.string(importDefault(dependencyMap[14]).g86YiI);
   obj.onPress = callback;
   const items1 = [callback4(arg1(dependencyMap[11]).Button, obj), ];
-  const obj1 = { FINISH: true, hasMediaOptions: true };
+  const obj1 = {};
   const intl2 = arg1(dependencyMap[13]).intl;
   obj1.text = intl2.string(importDefault(dependencyMap[14]).sa/cfM);
   obj1.onPress = callback1;
@@ -54,7 +54,7 @@ function InProgressScreen(arg0) {
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection };
   const items1 = [callback4(arg1(dependencyMap[16]).Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), ];
-  const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.centerText, children: description };
+  const obj3 = { cachedAt: 3, edpbxy: null, style: tmp.centerText, children: description };
   items1[1] = callback4(arg1(dependencyMap[16]).Text, obj3);
   obj1.children = items1;
   items[1] = callback5(View, obj1);
@@ -142,12 +142,12 @@ let closure_12 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.content = obj;
   obj = { padding: importDefault(dependencyMap[7]).space.PX_16, width: "100%", marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
   obj.progressWrapper = obj;
-  const obj1 = { "Null": true, "Null": true, "Null": true, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+  const obj1 = { ignoreMentioned: true, ignoreEmbedDescriptionCache: true, forceHideSimpleEmbedContent: true, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
   obj.messageSection = obj1;
   obj.centerText = { textAlign: "center" };
-  const obj2 = { paddingHorizontal: null, accessible: null, marginBottom: importDefault(dependencyMap[7]).space.PX_48 };
+  const obj2 = { "Bool(false)": null, "Bool(false)": null, marginBottom: importDefault(dependencyMap[7]).space.PX_48 };
   obj.levelUpIconWrapper = obj2;
-  const obj3 = { "Null": true, "Null": true, "Null": true, gap: importDefault(dependencyMap[7]).space.PX_12 };
+  const obj3 = { ignoreMentioned: true, ignoreEmbedDescriptionCache: true, forceHideSimpleEmbedContent: true, gap: importDefault(dependencyMap[7]).space.PX_12 };
   obj.levelUpBody = obj3;
   obj.levelUpProgress = { maxWidth: 260 };
   obj.footer = { width: "100%", gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_16 + arg0 };

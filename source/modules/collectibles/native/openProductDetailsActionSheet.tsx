@@ -1,10 +1,10 @@
-// Module ID: 8728
-// Function ID: 69052
+// Module ID: 8729
+// Function ID: 69064
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
 // Dependencies: []
 // Exports: openProductDetailsActionSheet
 
-// Module 8728 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+// Module 8729 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
 

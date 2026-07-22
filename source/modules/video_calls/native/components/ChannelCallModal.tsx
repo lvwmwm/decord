@@ -1,9 +1,9 @@
-// Module ID: 10517
-// Function ID: 82112
+// Module ID: 10518
+// Function ID: 82125
 // Name: ChannelCallCameraPreview
 // Dependencies: []
 
-// Module 10517 (ChannelCallCameraPreview)
+// Module 10518 (ChannelCallCameraPreview)
 class ChannelCallCameraPreview {
   constructor(arg0) {
     channel = global.channel;
@@ -38,7 +38,7 @@ class ChannelCallModal {
   constructor(arg0) {
     channel = global.channel;
     obj = { channelId: channel.id, guildId: channel.guild_id };
-    return jsx(f82119, obj);
+    return jsx(f82132, obj);
   }
 }
 let closure_3 = importDefault(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 11158
-// Function ID: 86769
+// Module ID: 11159
+// Function ID: 86782
 // Name: ActivitiesBanner
 // Dependencies: []
 // Exports: default
 
-// Module 11158 (ActivitiesBanner)
+// Module 11159 (ActivitiesBanner)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

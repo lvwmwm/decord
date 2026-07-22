@@ -1,5 +1,5 @@
 // Module ID: 3900
-// Function ID: 32275
+// Function ID: 32277
 // Name: useViewModelInstance
 // Dependencies: []
 // Exports: useViewModelInstance
@@ -73,7 +73,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
             if (viewModelName) {
               let viewModelByNameResult = getViewModelInstance.viewModelByName(viewModelName);
               if (!viewModelByNameResult) {
-                obj = { "Null": true, "Null": true };
+                obj = { enableHome: "<string:1243348993>", landOnHome: "<string:2137063425>" };
                 const _HermesInternal3 = HermesInternal;
                 obj.error = "ViewModel '" + viewModelName + "' not found";
                 return obj;
@@ -87,12 +87,12 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
               viewModelByNameResult = getViewModelInstance.defaultArtboardViewModel(ArtboardByNameResult);
               if (!viewModelByNameResult) {
                 if (artboardName) {
-                  const obj1 = { "Null": true, "Null": true };
+                  const obj1 = { enableHome: "<string:1243348993>", landOnHome: "<string:2137063425>" };
                   const _HermesInternal2 = HermesInternal;
                   obj1.error = "Artboard '" + artboardName + "' not found or has no ViewModel";
                   let obj2 = obj1;
                 } else {
-                  obj2 = { "Null": true, "Null": true };
+                  obj2 = { enableHome: "<string:1243348993>", landOnHome: "<string:2137063425>" };
                 }
                 return obj2;
               }
@@ -104,7 +104,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
             }
             if (!instanceByName) {
               if (name) {
-                obj3 = { "Null": true, "Null": true };
+                obj3 = { enableHome: "<string:1243348993>", landOnHome: "<string:2137063425>" };
                 const _HermesInternal4 = HermesInternal;
                 obj3.error = "ViewModel instance '" + name + "' not found";
               }
@@ -122,7 +122,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
             if (name) {
               let instanceByName1 = getViewModelInstance.createInstanceByName(name);
               if (!instanceByName1) {
-                const obj5 = { "Null": true, "Null": true };
+                const obj5 = { enableHome: "<string:1243348993>", landOnHome: "<string:2137063425>" };
                 const _HermesInternal = HermesInternal;
                 obj5.error = "ViewModel instance '" + name + "' not found";
                 return obj5;

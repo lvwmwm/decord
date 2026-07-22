@@ -1,12 +1,12 @@
-// Module ID: 10033
-// Function ID: 77517
+// Module ID: 10034
+// Function ID: 77530
 // Name: _isNativeReflectConstruct
 // Dependencies: [4294967295, 4294967295, 0, 4294967295, 0, 0]
 
-// Module 10033 (_isNativeReflectConstruct)
-import result from "result";
-import closure_6 from "result";
-import { DirectoryEntryCategories } from "result";
+// Module 10034 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { DirectoryEntryCategories } from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -33,7 +33,7 @@ let tmp2 = (Store) => {
       self = this;
       tmp = closure_2(this, GuildDirectoryStore);
       obj = closure_5(GuildDirectoryStore);
-      tmp2 = result;
+      tmp2 = __exportStarResult1;
       if (closure_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;

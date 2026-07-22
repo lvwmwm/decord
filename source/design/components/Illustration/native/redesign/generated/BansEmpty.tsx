@@ -1,10 +1,10 @@
-// Module ID: 16221
-// Function ID: 125405
+// Module ID: 16229
+// Function ID: 125447
 // Name: getBansEmptySource
 // Dependencies: []
 // Exports: BansEmpty
 
-// Module 16221 (getBansEmptySource)
+// Module 16229 (getBansEmptySource)
 function getBansEmptySource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

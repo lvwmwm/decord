@@ -1,10 +1,10 @@
-// Module ID: 10827
-// Function ID: 84059
+// Module ID: 10828
+// Function ID: 84072
 // Name: _launchActivityInBotDM
 // Dependencies: []
 // Exports: launchActivityInBotDM
 
-// Module 10827 (_launchActivityInBotDM)
+// Module 10828 (_launchActivityInBotDM)
 function _launchActivityInBotDM() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

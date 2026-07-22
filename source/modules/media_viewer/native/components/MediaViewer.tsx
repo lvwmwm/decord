@@ -1,9 +1,9 @@
-// Module ID: 12132
-// Function ID: 93451
+// Module ID: 12136
+// Function ID: 93477
 // Name: MediaViewer
 // Dependencies: []
 
-// Module 12132 (MediaViewer)
+// Module 12136 (MediaViewer)
 function MediaViewer(arg0) {
   let dismiss;
   let height;
@@ -71,7 +71,7 @@ function MediaViewer(arg0) {
       items[0] = -closure_2;
       items[1] = 0;
       items[2] = closure_2;
-      obj["opacity"] = Math.min(value, obj2.interpolate(translatePos.get(), items, [15400960, 14090240, 292749312]));
+      obj["opacity"] = Math.min(value, obj2.interpolate(translatePos.get(), items, [255, 235, 205]));
       return obj;
     }
   }

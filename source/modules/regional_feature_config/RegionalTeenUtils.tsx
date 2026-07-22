@@ -1,10 +1,10 @@
-// Module ID: 11447
-// Function ID: 89142
+// Module ID: 11448
+// Function ID: 89155
 // Name: useUserCountryCode
 // Dependencies: []
 // Exports: useIsTeenInStrictCountry
 
-// Module 11447 (useUserCountryCode)
+// Module 11448 (useUserCountryCode)
 function useUserCountryCode() {
   const items = [closure_3];
   const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
@@ -31,8 +31,7 @@ function useIsTeenInCountrySet(set) {
 }
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
-const items = ["String", "isArray"];
-HermesBuiltin.arraySpread(arg1(dependencyMap[2]).CountryCodesSets.EU_COUNTRIES, 2);
+const items = [...arg1(dependencyMap[2]).CountryCodesSets.EU_COUNTRIES];
 const set = new Set(items);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12893
-// Function ID: 98432
+// Module ID: 12900
+// Function ID: 98465
 // Name: WarningCircle
 // Dependencies: []
 // Exports: default
 
-// Module 12893 (WarningCircle)
+// Module 12900 (WarningCircle)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/void/WarningCircle/native/WarningCircle.tsx");
@@ -22,7 +22,7 @@ export default function WarningCircle(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { 9223372036854775807: false, 9223372036854775807: false, -9223372036854775808: false };
+  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   obj = {};

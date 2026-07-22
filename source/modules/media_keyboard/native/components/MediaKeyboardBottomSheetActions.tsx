@@ -1,8 +1,8 @@
-// Module ID: 9653
-// Function ID: 75186
+// Module ID: 9654
+// Function ID: 75199
 // Dependencies: []
 
-// Module 9653
+// Module 9654
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -89,7 +89,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetActions
   closure_4 = arg1(closure_2[8]).useToken(importDefault(closure_2[4]).modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   const items = [tmp7Result.gradient.color];
   const memo = React.useMemo(() => {
-    const obj = { start: {}, end: {} };
+    const obj = { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {} };
     const obj2 = tmp7Result(closure_2[7])(tmp7Result.gradient.color);
     const items = [tmp7Result(closure_2[7])(tmp7Result.gradient.color).alpha(0).hex(), ];
     const alphaResult = tmp7Result(closure_2[7])(tmp7Result.gradient.color).alpha(0);

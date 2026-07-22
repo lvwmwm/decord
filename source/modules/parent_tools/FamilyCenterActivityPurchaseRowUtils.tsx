@@ -1,10 +1,10 @@
-// Module ID: 13684
-// Function ID: 103583
+// Module ID: 13691
+// Function ID: 103616
 // Name: getCollectibleTypeName
 // Dependencies: []
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 13684 (getCollectibleTypeName)
+// Module 13691 (getCollectibleTypeName)
 function getCollectibleTypeName(type) {
   if (require(dependencyMap[3]).CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = require(dependencyMap[4]).intl;
@@ -43,7 +43,7 @@ export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreview
     let avatarDecorationURL = null;
     if (isAvatarDecorationRecord(first)) {
       let obj = require(dependencyMap[6]);
-      obj = { "Bool(false)": "3818ac4c74f29efdab4f75e01629dc62", "Bool(false)": "en-GB.messages.3818ac4c74f29efdab4f75e01629dc62.compiled.messages", "Bool(false)": "jsona" };
+      obj = { "Null": false, "Null": false, "Null": false };
       obj = { asset: first.asset };
       obj.avatarDecoration = obj;
       avatarDecorationURL = obj.getAvatarDecorationURL(obj);

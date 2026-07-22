@@ -1,9 +1,9 @@
-// Module ID: 12383
-// Function ID: 94667
+// Module ID: 12388
+// Function ID: 94695
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12383 (_isNativeReflectConstruct)
+// Module 12388 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +22,7 @@ const importDefaultResult = importDefault(dependencyMap[6]);
 const jsx = arg1(dependencyMap[7]).jsx;
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { 680286253: null, 2048731829: null, 1594578558: null, color: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400 };
+obj = { -9223372036854775808: null, -9223372036854775808: null, 0: null, color: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400 };
 obj.warning = obj;
 let closure_9 = obj.createLegacyClassComponentStyles(obj);
 const tmp4 = (PureComponent) => {

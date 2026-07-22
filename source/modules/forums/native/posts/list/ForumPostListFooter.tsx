@@ -1,17 +1,17 @@
-// Module ID: 11139
-// Function ID: 86642
+// Module ID: 11140
+// Function ID: 86655
 // Name: ForumPostListFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11139 (ForumPostListFooter)
+// Module 11140 (ForumPostListFooter)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticsObjects = arg1(dependencyMap[2]).AnalyticsObjects;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { footer: {} };
-obj = { "Null": null, "Null": 4, "Null": "R1", "Null": 1, "Null": 0, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { footer: { "Bool(true)": "text-sm/normal", "Bool(true)": "text-link", "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images" } };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.dot = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

@@ -1,10 +1,10 @@
-// Module ID: 9673
-// Function ID: 75298
+// Module ID: 9674
+// Function ID: 75311
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 9673 (items)
+// Module 9674 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, Pressable: closure_6, View: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[2]));
@@ -384,7 +384,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
     navigation = result;
     if (isScreenReaderEnabled) {
       navigation = first1;
-      obj10 = { 1644319569: null, -2041488286: null, contentContainerStyle: {} };
+      obj10 = { <string:3654615011>: "<string:1040334421>", <string:2849920773>: "<string:1040334338>", contentContainerStyle: { "Bool(true)": null, "Bool(true)": null } };
       navigation = items;
       obj10.children = items.map((item, index) => callback2(str, { forScreenReader: true })({ item, index }));
       navigation = navigation(first1, obj10);
@@ -514,10 +514,10 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
       }
       if (isScreenReaderEnabled) {
         const obj29 = {
-          1644319569: null,
-          -2041488286: null,
+          <string:3654615011>: "<string:1040334421>",
+          <string:2849920773>: "<string:1040334338>",
           style: tmp9.carousel,
-          contentContainerStyle: {},
+          contentContainerStyle: { "Bool(true)": null, "Bool(true)": null },
           children: items.map((item, index) => {
                   const str = "default";
                   return callback2(str, { forScreenReader: true })({ item, index });
@@ -552,7 +552,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         }
         obj31.customAnimation = tmp91;
         obj31.mode = "parallax";
-        obj31.modeConfig = { "Null": "+994", "Null": "Bahamas" };
+        obj31.modeConfig = {};
         obj31.onSnapToItem = tmp12;
         const items20 = [result(importDefault(dependencyMap[30]), obj31), ];
         const obj32 = { numberOfItems: items.length, currentIndex: first };

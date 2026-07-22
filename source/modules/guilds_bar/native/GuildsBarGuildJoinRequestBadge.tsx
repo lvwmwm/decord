@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 110969
+// Module ID: 14713
+// Function ID: 111012
 // Name: GuildsBarGuildJoinRequestBadge
 // Dependencies: []
 // Exports: default
 
-// Module 14705 (GuildsBarGuildJoinRequestBadge)
+// Module 14713 (GuildsBarGuildJoinRequestBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -12,9 +12,9 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.badgeImageContainer = obj;
-obj.badgeImage = { opacity: arg1(dependencyMap[5]).DARK_1_LIGHT_08 };
+const obj1 = { hideWhenScrolling: null, autoCapitalize: null, opacity: arg1(dependencyMap[5]).DARK_1_LIGHT_08 };
+obj.badgeImage = obj1;
 let closure_5 = obj.createStyles(obj);
-const obj1 = { opacity: arg1(dependencyMap[5]).DARK_1_LIGHT_08 };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
 
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {

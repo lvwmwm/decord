@@ -1,17 +1,17 @@
-// Module ID: 11537
-// Function ID: 89844
+// Module ID: 11538
+// Function ID: 89857
 // Name: PromoSheet
 // Dependencies: []
 // Exports: PromoSheet
 
-// Module 11537 (PromoSheet)
-let closure_3 = ["isArray", "isArray", "props", "isArray", "isArray", "isArray"];
+// Module 11538 (PromoSheet)
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { content: { <string:1421762919>: 0, <string:880337209>: 3 }, title: { textAlign: "center" }, description: { textAlign: "center" }, illustration: { 663976015: "handleHeaderLayout", 664037462: "gay-Latn-ID" } };
+obj = { content: { "Bool(false)": 0, "Bool(false)": 3 }, title: { textAlign: "center" }, description: { textAlign: "center" }, illustration: { "Null": "w", "Null": "Array" } };
 obj = { alignSelf: "center", maxWidth: importDefault(dependencyMap[5]).modules.mobile.PROMO_SHEET_GRAPHIC_MAX_WIDTH };
 obj.graphic = obj;
 let closure_9 = obj.createStyles(obj);

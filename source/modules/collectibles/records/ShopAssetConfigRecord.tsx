@@ -1,12 +1,16 @@
 // Module ID: 6782
-// Function ID: 53547
+// Function ID: 53558
 // Name: AssetDisplayConfigRecord
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 6782 (AssetDisplayConfigRecord)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
+
+export const AssetDisplayConfigRecord = () => {
   class AssetDisplayConfigRecord {
     constructor(arg0) {
       tmp = AssetDisplayConfigRecord(this, AssetDisplayConfigRecord);
@@ -62,6 +66,3 @@ const tmp2 = () => {
   const items1 = [obj];
   return callback(AssetDisplayConfigRecord, items, items1);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
-
-export const AssetDisplayConfigRecord = tmp2;

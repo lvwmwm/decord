@@ -1,10 +1,10 @@
-// Module ID: 14354
-// Function ID: 108401
+// Module ID: 14362
+// Function ID: 108444
 // Name: useHasExpiredShopBlocks
 // Dependencies: []
 // Exports: useHasExpiredShopBlocks
 
-// Module 14354 (useHasExpiredShopBlocks)
+// Module 14362 (useHasExpiredShopBlocks)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ useEffect: closure_3, useState: closure_4 } = arg1(dependencyMap[1]));
 const MAX_TIMEOUT_MS = arg1(dependencyMap[2]).MAX_TIMEOUT_MS;

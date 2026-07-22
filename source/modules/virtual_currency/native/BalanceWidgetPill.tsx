@@ -1,9 +1,9 @@
-// Module ID: 9779
-// Function ID: 76020
+// Module ID: 9780
+// Function ID: 76033
 // Name: BalanceWidgetPill
 // Dependencies: []
 
-// Module 9779 (BalanceWidgetPill)
+// Module 9780 (BalanceWidgetPill)
 class BalanceWidgetPill {
   constructor(arg0) {
     prop = global.initialRenderedBalance;
@@ -64,8 +64,8 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { minHeight: arg1(dependencyMap[4]).SMALL_BUTTON_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.round, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 };
 obj.container = obj;
-obj.orbsLottieContainer = { "Null": "DETECTED_OFF_PLATFORM_PREMIUM_PERK", "Null": "<string:898191616>", "Null": "<string:4294865153>", "Null": "<string:1375862783>", "Null": "<string:1153565118>" };
-obj.balanceCounterContainer = { margin: 22, backgroundColor: 22 };
+obj.orbsLottieContainer = { 0: "track", 0: "from", children: "content", cutouts: "type", borderRadius: "isArray" };
+obj.balanceCounterContainer = { "Bool(false)": 4211, "Bool(false)": 2048 };
 const obj1 = { color: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, textAlign: "right" };
 const tmp3 = arg1(dependencyMap[2]);
 let num;

@@ -1,13 +1,12 @@
-// Module ID: 14790
-// Function ID: 111470
+// Module ID: 14798
+// Function ID: 111513
 // Name: useSuggestedFriends
-// Dependencies: [0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14790 (useSuggestedFriends)
-import result from "result";
-import closure_4 from "result";
-
+// Module 14798 (useSuggestedFriends)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const SuggestedFriendSource = arg1(dependencyMap[3]).SuggestedFriendSource;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");

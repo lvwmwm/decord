@@ -1,14 +1,14 @@
-// Module ID: 10793
-// Function ID: 83810
+// Module ID: 10794
+// Function ID: 83823
 // Name: matchPathToRoutes
 // Dependencies: []
 // Exports: cleanupRouteManager, initializeRouteManagerIfNeeded, popVoiceRoute, transitionToVoiceRoute
 
-// Module 10793 (matchPathToRoutes)
+// Module 10794 (matchPathToRoutes)
 let Routes;
 function matchPathToRoutes(pathname, items) {
   let obj = items(dependencyMap[11]);
-  obj = { paddingLeft: "absolute", alignItems: -1, flexDirection: -1, path: items };
+  obj = { time: "HTTP", pauseInvites: "Date", pauseDms: "HTTP", path: items };
   return obj.matchPath(pathname, obj);
 }
 function extractParamsFromVoiceModalRoute(location) {
@@ -250,7 +250,7 @@ function extractParams(arg0) {
   let match;
   ({ match, location: _location } = arg0);
   if (null == match) {
-    let obj = { count: false, alignButton: false, align: false, label: false, isDestructive: false, guildId: closure_11, jumpType: arg1(dependencyMap[22]).JumpType.ANIMATED };
+    let obj = { "Null": -1, "Null": -1882570463, "Null": 1360068610, "Null": 1361143520, "Null": 1340580, guildId: closure_11, jumpType: arg1(dependencyMap[22]).JumpType.ANIMATED };
     return obj;
   } else {
     const params = match.params;
@@ -280,7 +280,7 @@ function extractParams(arg0) {
 function logRouteChange(pathname) {
   importDefaultResult.log("Navigated to: " + pathname.pathname);
 }
-let closure_3 = [967407828, 1889808960];
+let closure_3 = [-51565538125756000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 4013454016352173000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
 let closure_4 = importDefault(dependencyMap[0]);
 const setVoiceChatDrawerState = arg1(dependencyMap[1]).setVoiceChatDrawerState;
 let closure_6 = arg1(dependencyMap[2]).isGuildSelectableChannelType;

@@ -1,10 +1,10 @@
-// Module ID: 9721
-// Function ID: 75574
+// Module ID: 9722
+// Function ID: 75587
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useRecommendationsForApplicationIds, useRecommendationsForSingleUser, useWishlistRecommendationsForSingleUser
 
-// Module 9721 (_createForOfIteratorHelperLoose)
+// Module 9722 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

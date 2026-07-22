@@ -1,12 +1,10 @@
 // Module ID: 6639
-// Function ID: 50982
+// Function ID: 50993
 // Name: checkForCustomCheckoutFlow
 // Dependencies: [4294967295, 0, 0, 0, 0, 0]
 // Exports: captureMobileWebRedirectCheckoutSentryError, getCustomCheckoutFlow, getCustomCheckoutFlowForAnalytics, isMobileWebRedirectCheckoutEnabled, useGetCustomCheckoutFlow
 
 // Module 6639 (checkForCustomCheckoutFlow)
-import result from "result";
-
 function checkForCustomCheckoutFlow(pathname, deep_link_type, flow_type) {
   if (!pathname.startsWith(constants.BILLING_MANAGE_SUBSCRIPTION)) {
     if (deep_link_type === constants2.MOBILE_WEB_REDIRECT_CHECKOUT) {
@@ -18,9 +16,9 @@ function checkForCustomCheckoutFlow(pathname, deep_link_type, flow_type) {
   }
 }
 const CustomCheckoutFlow = require(dependencyMap[0]).CustomCheckoutFlow;
-({ Routes: closure_4, LinkingTypes: closure_5 } = result);
+({ Routes: closure_4, LinkingTypes: closure_5 } = require("__exportStarResult1"));
 const _module1 = require(dependencyMap[6]);
-result = _module1.fileFinishedImporting("modules/payments/utils/MobileWebRedirectCheckoutUtils.tsx");
+const result = _module1.fileFinishedImporting("modules/payments/utils/MobileWebRedirectCheckoutUtils.tsx");
 
 export const MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG = "mobile_web_redirect_checkout";
 export const captureMobileWebRedirectCheckoutSentryError = function captureMobileWebRedirectCheckoutSentryError(error, source, tags) {

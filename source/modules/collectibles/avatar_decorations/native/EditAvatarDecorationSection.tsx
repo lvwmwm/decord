@@ -1,5 +1,5 @@
 // Module ID: 7858
-// Function ID: 62623
+// Function ID: 62633
 // Name: memoResult1
 // Dependencies: []
 
@@ -11,7 +11,7 @@ const AVATAR_DECORATION_SIZE = arg1(dependencyMap[3]).AVATAR_DECORATION_SIZE;
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, paddingHorizontal: arg1(dependencyMap[6]).GUTTER_SIZE };
+obj = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", paddingHorizontal: arg1(dependencyMap[6]).GUTTER_SIZE };
 obj.row = obj;
 obj1 = { height: arg1(dependencyMap[6]).GUTTER_SIZE };
 obj.rowSpacer = obj1;

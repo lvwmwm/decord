@@ -1,10 +1,10 @@
-// Module ID: 11997
-// Function ID: 92698
+// Module ID: 12001
+// Function ID: 92724
 // Name: VerifiedIcon
 // Dependencies: []
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 11997 (VerifiedIcon)
+// Module 12001 (VerifiedIcon)
 let CARD_PADDING;
 let CARD_ROWS_COLUMN_GAP;
 function VerifiedIcon(arg0) {
@@ -53,11 +53,11 @@ const REFRESH_SMALL_16 = arg1(dependencyMap[8]).Icon.Sizes.REFRESH_SMALL_16;
 let obj1 = arg1(dependencyMap[8]);
 const iconSize = obj1.getIconSize(REFRESH_SMALL_16);
 let obj2 = arg1(dependencyMap[9]);
-let obj = { cardContainer: obj, cardTitle: { marginBottom: 0 }, connectionRow: { columnGap: CARD_ROWS_COLUMN_GAP }, connectionInfoContainer: { flexGrow: 1 }, connectedAccountName: { 9223372036854775807: true, 9223372036854775807: true, 0: true }, connectedAccountNameText: { <string:3944309467>: null, <string:714355284>: null }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: { "Null": 3375103, "Null": -8192, "Null": 4320799 }, connectionMetadata: { query: -918482477, type: 1912602979, guildId: 24, limit: 24 } };
+let obj = { cardContainer: obj, cardTitle: { marginBottom: 0 }, connectionRow: { columnGap: CARD_ROWS_COLUMN_GAP }, connectionInfoContainer: { flexGrow: 1 }, connectedAccountName: { -871710126: "safety_user_sentiment_notice_dismissed_at", -1878764875: "message", -1956545097: null }, connectedAccountNameText: { WEBP_RE_IOS: false, kkk: false }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: {}, connectionMetadata: {} };
 obj = { paddingBottom: CARD_PADDING - 12 };
 obj1 = { color: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.metadataItem = obj1;
-obj.poweredByContainer = { headerIcons: -747089664, RowButtonIconProps: 4211, headerLabel: 4096 };
+obj.poweredByContainer = {};
 obj2 = {};
 const tmp5 = arg1(dependencyMap[7]);
 obj2.borderRadius = arg1(dependencyMap[8]).getIconSize(arg1(dependencyMap[8]).Icon.Sizes.MEDIUM);
@@ -221,7 +221,7 @@ let closure_18 = importAllResult.memo((userId) => {
         obj2 = {};
         let tmp82 = null;
         if (null != createdAtDate) {
-          const obj3 = {};
+          const obj3 = { cachedAt: null, edpbxy: null };
           const intl2 = arg1(dependencyMap[27]).intl;
           obj4 = { date: createdAtDate };
           obj3.children = intl2.format(arg1(dependencyMap[27]).t.9rfonh, obj4);
@@ -276,7 +276,7 @@ let closure_18 = importAllResult.memo((userId) => {
       const items6 = [callback(arg1(dependencyMap[30]).BaseIconImage, obj10), , ];
       obj11 = { style: tmp.connectionInfoContainer };
       const obj12 = { style: tmp.connectedAccountName };
-      obj13 = { style: tmp.connectedAccountNameText, children: account.name };
+      obj13 = { -9223372036854775808: false, 0: false, 9223372036854775807: false, 9223372036854775807: false, style: tmp.connectedAccountNameText, children: account.name };
       const items7 = [callback(arg1(dependencyMap[28]).Text, obj13), ];
       let tmp56 = null;
       if (account.verified) {
@@ -288,7 +288,7 @@ let closure_18 = importAllResult.memo((userId) => {
       const items8 = [closure_14(platformUserUrl, obj12), , ];
       let tmp59 = null;
       if (null != createdAtDate) {
-        const obj15 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+        const obj15 = { cachedAt: "center", edpbxy: "center" };
         const intl = arg1(dependencyMap[27]).intl;
         const obj16 = { date: createdAtDate };
         obj15.children = intl.format(arg1(dependencyMap[27]).t.9rfonh, obj16);
@@ -416,7 +416,7 @@ let closure_19 = importAllResult.memo((application) => {
     const items3 = [tmp10, ];
     const obj3 = { style: tmp.connectionInfoContainer };
     const obj4 = { style: tmp.connectedAccountName };
-    const obj5 = { style: tmp.connectedAccountNameText, children: str };
+    const obj5 = { -9223372036854775808: false, 0: false, 9223372036854775807: false, 9223372036854775807: false, style: tmp.connectedAccountNameText, children: str };
     obj4.children = callback(arg1(dependencyMap[28]).Text, obj5);
     obj3.children = callback(closure_5, obj4);
     items3[1] = callback(closure_5, obj3);
@@ -442,7 +442,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     if (null != applicationRoleConnection.platform_name) {
       tmp30 = null;
       if (null != applicationRoleConnection.platform_username) {
-        obj1 = { children: applicationRoleConnection.platform_username };
+        obj1 = { cachedAt: null, edpbxy: null, children: applicationRoleConnection.platform_username };
         tmp30 = callback(arg1(dependencyMap[28]).Text, obj1);
       }
     }
@@ -457,7 +457,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     }
     items[1] = tmp34;
     const obj3 = { style: tmp.poweredByContainer };
-    const obj4 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+    const obj4 = { cachedAt: "center", edpbxy: "center" };
     const intl2 = arg1(dependencyMap[27]).intl;
     const obj5 = {
       applicationHook() {
@@ -488,13 +488,13 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     const obj10 = { style: tmp.connectionInfoContainer };
     let tmp12 = null;
     if (null != applicationRoleConnection.platform_name) {
-      const obj11 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: applicationRoleConnection.platform_name };
+      const obj11 = { children: applicationRoleConnection.platform_name };
       tmp12 = callback(arg1(dependencyMap[28]).Text, obj11);
     }
     const items2 = [tmp12, , , ];
     let tmp16 = null;
     if (null != applicationRoleConnection.platform_username) {
-      const obj12 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: applicationRoleConnection.platform_username };
+      const obj12 = { cachedAt: 1, edpbxy: 1, children: applicationRoleConnection.platform_username };
       tmp16 = callback(arg1(dependencyMap[28]).Text, obj12);
     }
     items2[1] = tmp16;
@@ -508,7 +508,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     }
     items2[2] = tmp20;
     const obj14 = { style: tmp.poweredByContainer };
-    const obj15 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+    const obj15 = { cachedAt: "center", edpbxy: "center" };
     const intl = arg1(dependencyMap[27]).intl;
     const obj16 = {
       applicationHook() {

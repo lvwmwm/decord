@@ -1,10 +1,10 @@
-// Module ID: 14791
-// Function ID: 111478
+// Module ID: 14799
+// Function ID: 111521
 // Name: useMessagesScrollToTop
 // Dependencies: []
 // Exports: default
 
-// Module 14791 (useMessagesScrollToTop)
+// Module 14799 (useMessagesScrollToTop)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesScrollToTop.tsx");
@@ -30,7 +30,7 @@ export default function useMessagesScrollToTop(listRef) {
               let obj = current;
             }
             if (!tmp) {
-              obj = { "Bool(false)": -536870861, "Bool(false)": -299892737, animated: !closure_4.useReducedMotion };
+              obj = { borderWidth: "%FunctionPrototype%", backgroundColor: "paddingStart", animated: !closure_4.useReducedMotion };
               obj.scrollToLocation(obj);
             }
             const current2 = ref2.current;

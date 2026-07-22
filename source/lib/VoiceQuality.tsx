@@ -1,9 +1,9 @@
-// Module ID: 12627
-// Function ID: 97080
+// Module ID: 12632
+// Function ID: 97108
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12627 (_isNativeReflectConstruct)
+// Module 12632 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -79,7 +79,7 @@ function handleCounter(lastValue) {
   let accumulated;
   let obj = arg1;
   if (null == arg1) {
-    obj = { y: -536870861, isArray: -299892737 };
+    obj = { position: "%FunctionPrototype%", top: "paddingStart" };
   }
   ({ accumulated, lastValue } = obj);
   obj = {};
@@ -569,7 +569,7 @@ const tmp2 = (arg0) => {
       histogram = new VoiceQuality(closure_2[6]).Histogram();
       obj.speakingAudioLevel = histogram;
       tmp2Result.outboundStats = obj;
-      tmp2Result.duration = { <string:3390132984>: "ERROR", <string:156495013>: "ERROR", <string:4127624198>: "NOT_RESPONDER", <string:4068496046>: "NOT_RESPONDER" };
+      tmp2Result.duration = { "Bool(true)": -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" };
       tmp2Result.periodicInboundStats = {};
       tmp2Result.inputDeviceStats = {};
       tmp2Result.outputDeviceStats = {};
@@ -597,9 +597,7 @@ const tmp2 = (arg0) => {
   obj = {
     key: "getMosStats",
     value() {
-      let obj = { "Null": -536870861, "Null": -299892737 };
       let num = 0;
-      obj.mosBuckets = [];
       const reduced = callback(closure_2[8]).reduce(this.inboundStats, (mosSum, mosSum2) => {
         mosSum.mosSum = mosSum.mosSum + mosSum2.mosSum;
         mosSum.mosCount = mosSum.mosCount + mosSum2.mosCount;
@@ -610,8 +608,8 @@ const tmp2 = (arg0) => {
           num = num + 1;
         } while (num < 5);
         return mosSum;
-      }, obj);
-      obj = {};
+      }, { mosBuckets: [] });
+      const obj = {};
       if (reduced.mosCount > 0) {
         num = reduced.mosSum / reduced.mosCount;
       }
@@ -634,7 +632,7 @@ const tmp2 = (arg0) => {
         packetsReceived.fecPacketsReceived = packetsReceived.fecPacketsReceived + packetsReceived2.fecPacketsReceived;
         packetsReceived.fecPacketsDiscarded = packetsReceived.fecPacketsDiscarded + packetsReceived2.fecPacketsDiscarded;
         return packetsReceived;
-      }, { returnKeyType: null, submitBehavior: null, value: null, maxLength: null, style: null });
+      }, { 75740481: false, 1390371072: false, -1980054378: false, 944889697: false, 1373594086: false });
       return { packets_sent: this.outboundStats.packetsSent, packets_sent_lost: this.outboundStats.packetsLost, packets_received: reduced.packetsReceived, packets_received_lost: reduced.packetsReceivedLost, num_nacks_sent: reduced.nackCount, fec_packets_received: reduced.fecPacketsReceived, fec_packets_discarded: reduced.fecPacketsDiscarded };
     }
   };
@@ -797,7 +795,7 @@ const tmp2 = (arg0) => {
           silent.cng = silent.cng + frameOpStats.frameOpStats.cng;
         }
         return silent;
-      }, { padding: true, surrogates: "/assets/design/components/Icon/native/redesign/generated/images", join: 24, start: 24, join: null, delete: "99274532ad7fe616c031212e677b32e8", useEffect: "ThreadLockIcon" });
+      }, { <string:1373593993>: "ThreadLockIcon", <string:3747735096>: "png", <string:1657050705>: true, <string:3981530682>: "/assets/design/components/Icon/native/redesign/generated/images", <string:102584993>: 24, <string:1852049058>: 24, <string:1371060202>: null });
       return { frame_op_silent: reduced.silent, frame_op_normal: reduced.normal, frame_op_merged: reduced.merged, frame_op_expanded: reduced.expanded, frame_op_accelerated: reduced.accelerated, frame_op_preemptive_expanded: reduced.preemptiveExpanded, frame_op_cng: reduced.cng };
     }
   };
@@ -871,7 +869,7 @@ const tmp2 = (arg0) => {
         }
         passthroughCount.decryptFailureAfterSuccessCount = passthroughCount.decryptFailureAfterSuccessCount + (num8 - num9);
         return passthroughCount;
-      }, { RowButtonIconProps: null, textDecorationLine: 0.6, textDecorationColor: "BounceOutRight", flexShrink: null, getEmbeddedActivityLaunchability: 0.6, FITNESS: "BounceOutLeft", wide: null, tall: 0.6 });
+      }, { unsafeStringify: 0.6, EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY: "BounceOut", fontSize: null, lineHeight: 0.6, drawerRevealX: "BounceOutRight", updateSettings: null, 0: 0.6, 9223372036854775807: "BounceOutLeft" });
       return { decrypt_passthrough_count: reduced.passthroughCount, decrypt_success_count: reduced.decryptSuccessCount, decrypt_failure_count: reduced.decryptFailureCount, decrypt_duration: reduced.decryptDuration, decrypt_attempts: reduced.decryptAttempts, decrypt_missing_key_count: reduced.decryptMissingKeyCount, decrypt_invalid_nonce_count: reduced.decryptInvalidNonceCount, decrypt_failure_after_success_count: reduced.decryptFailureAfterSuccessCount, encrypt_passthrough_count: this.outboundStats.passthroughCount, encrypt_success_count: this.outboundStats.encryptSuccessCount, encrypt_failure_count: this.outboundStats.encryptFailureCount, encrypt_duration: this.outboundStats.encryptDuration, encrypt_attempts: this.outboundStats.encryptAttempts, encrypt_max_attempts: this.outboundStats.encryptMaxAttempts, encrypt_missing_key_count: this.outboundStats.encryptMissingKeyCount };
     }
   };

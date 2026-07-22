@@ -1,10 +1,10 @@
-// Module ID: 11620
-// Function ID: 90250
+// Module ID: 11621
+// Function ID: 90263
 // Name: UserSettingsAuthedAppDeleteWarningModal
 // Dependencies: []
 // Exports: default
 
-// Module 11620 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11621 (UserSettingsAuthedAppDeleteWarningModal)
 const _module = require(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[6]);

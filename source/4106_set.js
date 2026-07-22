@@ -1,5 +1,5 @@
 // Module ID: 4106
-// Function ID: 33978
+// Function ID: 33980
 // Name: set
 // Dependencies: []
 
@@ -45,7 +45,7 @@ arg5.pattern = function pattern(items) {
       num2 = num2 + 100;
     } else if ("O" === nextResult) {
       let tmp15 = items;
-      obj = { messageId: "heading-md/normal", isExplicitUserAction: "display", trackAnalytics: false, gridDurationMs: 400 };
+      obj = {};
       let tmp16 = num2;
       obj.time = num2;
       arr = items.push(obj);

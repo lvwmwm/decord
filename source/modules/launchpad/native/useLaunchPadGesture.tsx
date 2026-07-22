@@ -1,10 +1,10 @@
-// Module ID: 15519
-// Function ID: 118423
+// Module ID: 15527
+// Function ID: 118466
 // Name: useLaunchPadGesture
 // Dependencies: []
 // Exports: default
 
-// Module 15519 (useLaunchPadGesture)
+// Module 15527 (useLaunchPadGesture)
 let closure_3 = importAll(dependencyMap[0]);
 ({ LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE: closure_4, LAUNCH_PAD_END_TRANSLATION_THRESHOLD: closure_5, LAUNCH_PAD_END_VELOCITY_THRESHOLD: closure_6, LAUNCH_PAD_PULL_TAB_HEIGHT: closure_7, LAUNCH_PAD_PULL_TAB_HIT_SLOP: closure_8, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR: closure_9, LAUNCH_PAD_PULL_TAB_WIDTH: closure_10, LaunchPadTypes: closure_11 } = arg1(dependencyMap[1]));
 let closure_12 = { code: "function useLaunchPadGestureTsx1(){const{updateSharedValueIfChanged,gestureState,updaters}=this.__closure;updateSharedValueIfChanged(gestureState,{active:false,initialLaunchPadPosition:0,initialPullTabPosition:0,initialTouchX:0,initialTouchY:0,positionOffsetX:0,positionOffsetY:0,startTime:-1});updaters.setLaunchPadPullTabScale(1.0);}" };
@@ -52,8 +52,15 @@ export default function useLaunchPadGesture(launchPadType) {
       const fn = function w(arg0) {
         let x;
         let y;
+        const obj = { <string:2897007698>: false, <string:1365402028>: false, <string:3999364003>: false, <string:1666079313>: false, <string:1673040955>: false, <string:1387789115>: false, <string:4137211654>: false };
         ({ x, y } = arg0.changedTouches[0]);
-        const result = store3.set({ initialLaunchPadPosition: store.get(), initialTouchX: x, initialTouchY: y, startTime: Date.now(), requiresPop: 0 === store.get(), startShown: 0 !== store.get() });
+        obj.initialLaunchPadPosition = store.get();
+        obj.initialTouchX = x;
+        obj.initialTouchY = y;
+        obj.startTime = Date.now();
+        obj.requiresPop = 0 === store.get();
+        obj.startShown = 0 !== store.get();
+        const result = store3.set(obj);
       };
       obj = { gestureState, launchPadSharedState };
       fn.__closure = obj;

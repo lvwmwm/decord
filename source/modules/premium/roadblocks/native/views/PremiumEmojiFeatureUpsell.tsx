@@ -1,10 +1,10 @@
-// Module ID: 9371
-// Function ID: 73105
+// Module ID: 9372
+// Function ID: 73118
 // Name: PremiumEmojiFeatureUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 9371 (PremiumEmojiFeatureUpsell)
+// Module 9372 (PremiumEmojiFeatureUpsell)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

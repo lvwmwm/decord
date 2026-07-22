@@ -1,24 +1,24 @@
-// Module ID: 13840
-// Function ID: 104617
+// Module ID: 13847
+// Function ID: 104657
 // Name: QuestHomeEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 13840 (QuestHomeEmptyState)
+// Module 13847 (QuestHomeEmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ImageBackground: closure_4 } = arg1(dependencyMap[1]));
 const VerticalGradient = arg1(dependencyMap[2]).VerticalGradient;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { flex: 1 }, emptyStateContainer: { <string:3993411370>: 1946157560, <string:3879891851>: 4, <string:3892315334>: 2 } };
+obj = { container: { flex: 1 }, emptyStateContainer: { "Bool(false)": "ADBE Vector Group", "Bool(false)": false, "Bool(false)": 2 } };
 obj = { top: -55, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_32 };
 obj.emptyStateContentContainer = obj;
 obj.emptyStateContentTitle = { textAlign: "center" };
 obj.emptyStateContentDescription = { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 };
-obj.emptyImage = {};
-obj.gradient = { ../lib/analytics: 28, ../lib/basic-component-verification: 56, ../lib/braintree-error: 56, ../lib/create-assets-url: "center" };
-obj.actionWrapper = { disabled: "center", sequence: "center" };
+obj.emptyImage = { -9223372036854775808: null, 0: 15, 0: 5, 9223372036854775807: "center", -6: 1, 0: 1, 0: "column" };
+obj.gradient = { 9223372036854775807: false, 0: false, 9223372036854775807: "never", 9223372036854775807: false };
+obj.actionWrapper = {};
 let closure_9 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/quests/native/QuestHomeEmptyState.tsx");
@@ -46,9 +46,9 @@ export default function QuestHomeEmptyState(subtitle) {
   obj = { style: tmp5.container };
   const obj1 = { style: tmp5.emptyStateContainer };
   obj2 = { style: tmp5.emptyStateContentContainer };
-  const obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp5.emptyStateContentTitle, children: title };
+  const obj3 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp5.emptyStateContentTitle, children: title };
   const items = [callback(arg1(dependencyMap[11]).Text, obj3), , ];
-  const obj4 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp5.emptyStateContentDescription, children: subtitle };
+  const obj4 = { cachedAt: 1, edpbxy: 1, style: tmp5.emptyStateContentDescription, children: subtitle };
   items[1] = callback(arg1(dependencyMap[11]).Text, obj4);
   let tmp10 = null != action;
   if (tmp10) {

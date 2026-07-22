@@ -19,7 +19,7 @@ const fn = function _(moment) {
       }
       sum = str6;
     } else {
-      const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+      const obj = {};
       let str = "\u0441\u0435\u043A\u0443\u043D\u0434\u0443_\u0441\u0435\u043A\u0443\u043D\u0434\u0438_\u0441\u0435\u043A\u0443\u043D\u0434";
       const text = `${arg0} `;
       if (arg1) {
@@ -91,7 +91,7 @@ const fn = function _(moment) {
   };
   obj.weekdaysShort = "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_");
   obj.weekdaysMin = "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_");
-  obj.longDateFormat = { "Bool(true)": 2, "Bool(true)": 6, "Bool(true)": 6, "Bool(true)": "%s\u5185", "Bool(true)": "%s\u524D", "Bool(true)": "\u51E0\u79D2" };
+  obj.longDateFormat = {};
   obj = {
     sameDay: processHoursFunction("[\u0421\u044C\u043E\u0433\u043E\u0434\u043D\u0456 "),
     nextDay: processHoursFunction("[\u0417\u0430\u0432\u0442\u0440\u0430 "),
@@ -153,7 +153,7 @@ const fn = function _(moment) {
     }
     return arg0 + "-\u0439";
   };
-  obj.week = { "Bool(true)": null, "Bool(true)": null };
+  obj.week = { emoji: "staff", me: "message" };
   return moment.defineLocale("uk", obj);
 };
 if ("object" === typeof exports) {
@@ -165,7 +165,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

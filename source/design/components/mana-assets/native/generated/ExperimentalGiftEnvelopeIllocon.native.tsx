@@ -1,14 +1,13 @@
 // Module ID: 6041
-// Function ID: 49983
+// Function ID: 49994
 // Name: ExperimentalGiftEnvelopeIllocon
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: ExperimentalGiftEnvelopeIllocon
 
 // Module 6041 (ExperimentalGiftEnvelopeIllocon)
-import { jsx } from "result";
-import result from "result";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
 
 export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelopeIllocon(size) {
   let accessibilityLabel;

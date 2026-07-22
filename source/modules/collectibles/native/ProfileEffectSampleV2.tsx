@@ -1,19 +1,19 @@
-// Module ID: 8209
-// Function ID: 64898
+// Module ID: 8210
+// Function ID: 64910
 // Name: ProfileEffectSample
 // Dependencies: []
 // Exports: default
 
-// Module 8209 (ProfileEffectSample)
+// Module 8210 (ProfileEffectSample)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[2]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);
-let obj = { profileContainer: { 1635791185: null, 67064246: null, -2041489823: null, -1235458655: null } };
+let obj = { profileContainer: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.profileBackground = obj;
 obj.sampleProfileImage = { aspectRatio: require(dependencyMap[1]).SAMPLE_PROFILE_ASPECT_RATIO };
-const obj1 = { was: null, visible: null, hasSpoiler: null, pointerEvents: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+const obj1 = { zIndex: null, width: null, backgroundColor: null, flex: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 obj.profileBorder = obj1;
 let closure_5 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[8]);
@@ -46,7 +46,7 @@ export default function ProfileEffectSample(hideBackground) {
     tmp5 = callback(View, obj1);
   }
   items2[1] = tmp5;
-  const obj2 = { tn: null, withPlaceholder: "info", VIDEO_MODAL_ICON_END_CARD: "/", skuId: hideBackground.item.skuId };
+  const obj2 = { style: "<string:4149346306>", value: "<string:295619838>", minimumValue: "<string:20046913>", skuId: hideBackground.item.skuId };
   items2[2] = callback(importDefault(dependencyMap[7]), obj2);
   obj.children = items2;
   return closure_4(View, obj);

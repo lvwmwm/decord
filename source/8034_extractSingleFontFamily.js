@@ -1,5 +1,5 @@
 // Module ID: 8034
-// Function ID: 63770
+// Function ID: 63780
 // Name: extractSingleFontFamily
 // Dependencies: []
 // Exports: default, setTSpan

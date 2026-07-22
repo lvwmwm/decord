@@ -1,8 +1,8 @@
-// Module ID: 15189
-// Function ID: 114572
+// Module ID: 15197
+// Function ID: 114615
 // Dependencies: []
 
-// Module 15189
+// Module 15197
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const MAX_CHANNEL_NAME_LENGTH = arg1(dependencyMap[2]).MAX_CHANNEL_NAME_LENGTH;

@@ -1,10 +1,10 @@
-// Module ID: 10987
-// Function ID: 85527
+// Module ID: 10988
+// Function ID: 85540
 // Name: ClockWarningIcon
 // Dependencies: []
 // Exports: ClockWarningIcon
 
-// Module 10987 (ClockWarningIcon)
+// Module 10988 (ClockWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClockWarningIcon.tsx");

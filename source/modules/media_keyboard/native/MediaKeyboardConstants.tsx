@@ -30,4 +30,4 @@ export const MediaKeyboardTarget = { CHAT: 0, [0]: "CHAT", COMMAND: 1, [1]: "COM
 export const InAppCameraUsedViews = { FULLY_EXPANDED: "fully expanded" };
 export const InAppCameraUsedCameraPreviewTypes = { CAMERA_TILE: "camera tile", CAMERA_BUTTON: "camera button", TAKE_A_PHOTO_BUTTON: "take a photo button" };
 export const MediaPickerActionSheetEngagedActions = { FULLY_EXPANDED: "fully expanded", VIEW_ALL_CLICKED: "view all clicked", MEDIA_SELECTED: "media selected" };
-export const MEDIA_PICKER_SEND_BUTTON_SPRING = { placeholder: "NATIVE_REQUIRED_ASSETS", onChange: "INTEGRATED", isClearable: "r", scaleX: "Mutation" };
+export const MEDIA_PICKER_SEND_BUTTON_SPRING = { marginVertical: null, maxHeight: null, maxWidth: null, minHeight: null };

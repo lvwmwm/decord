@@ -1,9 +1,9 @@
 // Module ID: 12380
-// Function ID: 94656
+// Function ID: 94668
 // Dependencies: []
 
 // Module 12380
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": null, "Bool(false)": "25b28a12657775964c80c08fa4bc3ce7", "Bool(false)": "ic_gift", "Bool(false)": "png", "Bool(false)": 27, "Bool(false)": 10, "Bool(false)": "95%", "Bool(false)": "95%", scales: ["Set", "ml"] };
+const obj = { 1358955657: "text-overlay-light", 1279501871: "display-sm", -100662186: null, -134216521: "text-overlay-light", 1375732845: "text-md/bold", -1598249400: null, -117286062: "text-sm/bold", 978739886: "text-overlay-light", scales: ["<string:24264687>", "isArray"] };
 
 export default _module.registerAsset(obj);

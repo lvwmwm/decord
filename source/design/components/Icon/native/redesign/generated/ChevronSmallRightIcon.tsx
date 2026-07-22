@@ -1,10 +1,10 @@
-// Module ID: 5512
-// Function ID: 46925
+// Module ID: 5511
+// Function ID: 46933
 // Name: ChevronSmallRightIcon
 // Dependencies: []
 // Exports: ChevronSmallRightIcon
 
-// Module 5512 (ChevronSmallRightIcon)
+// Module 5511 (ChevronSmallRightIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChevronSmallRightIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13947
-// Function ID: 105990
+// Module ID: 13954
+// Function ID: 106030
 // Name: MobileQuestPreviewContainer
 // Dependencies: []
 // Exports: default
 
-// Module 13947 (MobileQuestPreviewContainer)
+// Module 13954 (MobileQuestPreviewContainer)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
@@ -23,7 +23,7 @@ export default function MobileQuestPreviewContainer(title) {
   let obj = { style: tmp.container };
   let tmp4 = null != title;
   if (tmp4) {
-    obj = { style: tmp.title, children: title };
+    obj = { cachedAt: null, edpbxy: null, style: tmp.title, children: title };
     tmp4 = callback(require(dependencyMap[4]).Text, obj);
   }
   const items = [tmp4, title.children];

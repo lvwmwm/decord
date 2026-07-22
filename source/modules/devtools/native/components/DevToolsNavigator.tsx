@@ -1,10 +1,10 @@
-// Module ID: 13382
-// Function ID: 101731
+// Module ID: 13389
+// Function ID: 101764
 // Name: navigateToDevTools
 // Dependencies: []
 // Exports: navigateToDevTools
 
-// Module 13382 (navigateToDevTools)
+// Module 13389 (navigateToDevTools)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -44,7 +44,7 @@ let closure_7 = importAllResult.memo((screenKey) => {
         headerTitle() {
           let obj = { style: { flexDirection: "row" } };
           const items = [callback3(callback(closure_2[7]).HammerIcon, { size: "sm" }), ];
-          obj = { EMOJI_REACTIONS_ON_MESSAGES: null, paddingVertical: "83020ea8b4c0b0d88670e8fd546ddc69", PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: "CompassIcon", authorization: "png" };
+          obj = { "Null": null, ti: "83020ea8b4c0b0d88670e8fd546ddc69", tk: "CompassIcon", tl: "png" };
           obj = { marginLeft: callback2(closure_2[9]).space.PX_8 };
           obj.style = obj;
           items[1] = callback3(callback(closure_2[8]).Text, obj);

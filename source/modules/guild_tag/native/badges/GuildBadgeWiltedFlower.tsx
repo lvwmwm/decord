@@ -1,18 +1,18 @@
-// Module ID: 12839
-// Function ID: 98183
+// Module ID: 12846
+// Function ID: 98216
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeWiltedFlower
 
-// Module 12839 (items)
+// Module 12846 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [-4315226215028688000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1569498207454278000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019983040032295948];
-let closure_5 = ["disabled", "style", "inputTextStyle"];
-const items = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
-let closure_7 = ["notification_clicked", "experiment_user_triggered"];
-let closure_8 = [true, true];
-const items1 = [{}, { "Null": "Array", "Null": "isArray" }];
+let closure_4 = ["accessibilityRole", "raw", "textAlign"];
+let closure_5 = ["<string:937525778>", "<string:2646387679>", "<string:3702219628>"];
+const items = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
+let closure_7 = ["category", "body"];
+let closure_8 = [];
+const items1 = [{}, { accessibilityRole: "Array", s: "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeWiltedFlower.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeWiltedFlower = function GuildBadgeWiltedFlower(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -52,7 +52,7 @@ export const GuildBadgeWiltedFlower = function GuildBadgeWiltedFlower(width) {
     tmp7 = closure_7[1];
   }
   obj1.fill = tmp7;
-  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, {}), callback(arg1(dependencyMap[3]).Path, { d: "M8 11h-1v-1h1v1ZM9 10h-1v-1h1v1ZM14 10h-2v-1h2v1ZM10 9h-1v-1h1v1ZM12 9h-1v-1h1v1ZM11 8h-1v-2h1v2ZM12 6h-1V3h1v3Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, { d: "M11 9h1v1h-1v1H8v-1h1v-1h1v-1h1v1Z", fill: primaryColorsTransformed[1] }), callback(arg1(dependencyMap[3]).Path, { d: "M14 10v-1h1v2H12v-1h2ZM11 6h-1v2h-1v1h-1v-2h1V4h1v-1h1v3ZM13 4h1v5h-2v-1h-1v-2h1V3h1v1Z", fill: primaryColorsTransformed[2] }), , , ];
+  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": true, "Bool(true)": true }), callback(arg1(dependencyMap[3]).Path, { d: "M8 11h-1v-1h1v1ZM9 10h-1v-1h1v1ZM14 10h-2v-1h2v1ZM10 9h-1v-1h1v1ZM12 9h-1v-1h1v1ZM11 8h-1v-2h1v2ZM12 6h-1V3h1v3Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, { d: "M11 9h1v1h-1v1H8v-1h1v-1h1v-1h1v1Z", fill: primaryColorsTransformed[1] }), callback(arg1(dependencyMap[3]).Path, { d: "M14 10v-1h1v2H12v-1h2ZM11 6h-1v2h-1v1h-1v-2h1V4h1v-1h1v3ZM13 4h1v5h-2v-1h-1v-2h1V3h1v1Z", fill: primaryColorsTransformed[2] }), , , ];
   const obj5 = { d: "M5 14h-1v-1h1v1ZM4 13h-1v-1h1v1ZM3 12H2v-1h1v1ZM12 3H9V2h3v1Z" };
   let first;
   if (null != secondaryColorsTransformed) {
@@ -63,8 +63,8 @@ export const GuildBadgeWiltedFlower = function GuildBadgeWiltedFlower(width) {
   }
   obj5.fill = first;
   items[5] = callback(arg1(dependencyMap[3]).Path, obj5);
-  items[6] = callback(arg1(dependencyMap[3]).Path, {});
-  items[7] = callback(arg1(dependencyMap[3]).Path, {});
+  items[6] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": true, "Bool(true)": true });
+  items[7] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": true, "Bool(true)": true });
   obj["children"] = items;
   return closure_3(arg1(dependencyMap[3]).Svg, obj);
 };

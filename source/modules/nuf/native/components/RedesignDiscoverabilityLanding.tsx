@@ -1,10 +1,10 @@
-// Module ID: 16009
-// Function ID: 122857
+// Module ID: 16017
+// Function ID: 122899
 // Name: RedesignDiscoverabilityLanding
 // Dependencies: []
 // Exports: default
 
-// Module 16009 (RedesignDiscoverabilityLanding)
+// Module 16017 (RedesignDiscoverabilityLanding)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -22,7 +22,7 @@ const obj2 = { width: "100%", marginBottom: importDefault(dependencyMap[4]).spac
 obj.title = { textAlign: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 const obj3 = { textAlign: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.subtitle = { textAlign: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_32 };
-obj.info = { 1311855202: 271, 1449264127: 163, -1399893334: null, 1398973921: "37b687db1cd86ac8059d1a0342f2319c" };
+obj.info = { "Null": 377564167843241300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 391547974124783460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 405531890545774970000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 1891299054634275700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 let closure_7 = obj.createStyles(obj);
 const obj4 = { textAlign: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_32 };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/nuf/native/components/RedesignDiscoverabilityLanding.tsx");
@@ -34,7 +34,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   obj.contentContainerStyle = obj;
   obj = { style: tmp.topContainer };
   const items = [callback(closure_3, obj), , , , , , ];
-  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(dependencyMap[8]).intl;
   obj1.children = intl.string(arg1(dependencyMap[8]).t.n8nw6j);
   items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
@@ -50,14 +50,14 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const intl4 = arg1(dependencyMap[8]).intl;
   items1[2] = intl4.format(arg1(dependencyMap[8]).t.VcSQ4n, {
     learnMoreHook(children) {
-      const obj = { onPress: callback(closure_2[11]).handleOpenLearnMoreLink, children };
+      const obj = { "Null": "business", "Null": "cached", "Null": "cancel", onPress: callback(closure_2[11]).handleOpenLearnMoreLink, children };
       return callback2(callback(closure_2[7]).Text, obj, arg1);
     }
   });
   obj4.children = items1;
   items[4] = callback2(arg1(dependencyMap[7]).Text, obj4);
   items[5] = callback(closure_3, { style: tmp.growContainer });
-  const obj7 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj7 = {};
   const intl5 = arg1(dependencyMap[8]).intl;
   obj7.text = intl5.string(arg1(dependencyMap[8]).t.gHPk3I);
   obj7.onPress = onNext.onNext;

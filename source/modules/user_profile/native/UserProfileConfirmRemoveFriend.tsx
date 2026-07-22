@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 90365
+// Module ID: 11645
+// Function ID: 90378
 // Name: UserProfileConfirmRemoveFriend
 // Dependencies: []
 // Exports: default
 
-// Module 11644 (UserProfileConfirmRemoveFriend)
+// Module 11645 (UserProfileConfirmRemoveFriend)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

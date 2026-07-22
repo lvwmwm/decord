@@ -1,10 +1,10 @@
-// Module ID: 11778
-// Function ID: 91407
+// Module ID: 11779
+// Function ID: 91420
 // Name: GuildDirectoryEmpty
 // Dependencies: []
 // Exports: default
 
-// Module 11778 (GuildDirectoryEmpty)
+// Module 11779 (GuildDirectoryEmpty)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,13 +16,13 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.header = { SCROLLING_MOMENTUM: "center", GuildRoomBackgrounds: "center" };
-const tmp5 = arg1(dependencyMap[4]);
-obj.title = { fontFamily: tmp4.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.header = {};
+const obj1 = { 1936959572: "Array", -823869256: "handleActivityItemSelected", -1717677639: "dotSeparator", 1884411745: "mic", 1390895600: "handleReduceTransparencyChanged", -289491508: "ay", fontFamily: tmp4.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.title = obj1;
 obj.description = {};
 obj.ctaContainer = { marginBottom: 8 };
 let closure_9 = obj.createStyles(obj);
-const obj1 = { fontFamily: tmp4.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const tmp5 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEmpty.tsx");
 
 export default function GuildDirectoryEmpty(guild) {

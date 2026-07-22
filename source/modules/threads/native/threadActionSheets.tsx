@@ -1,10 +1,10 @@
-// Module ID: 10332
-// Function ID: 79768
+// Module ID: 10333
+// Function ID: 79781
 // Name: showThreadNotificationsBottomSheet
 // Dependencies: []
 // Exports: showThreadNotificationsBottomSheet
 
-// Module 10332 (showThreadNotificationsBottomSheet)
+// Module 10333 (showThreadNotificationsBottomSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/threads/native/threadActionSheets.tsx");
 

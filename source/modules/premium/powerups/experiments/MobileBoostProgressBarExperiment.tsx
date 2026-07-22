@@ -1,12 +1,12 @@
-// Module ID: 14864
-// Function ID: 111994
+// Module ID: 14872
+// Function ID: 112037
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getMobileBoostProgressBarEnabled, useMobileBoostProgressBarEnabled
 
-// Module 14864 (apexExperiment)
+// Module 14872 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: false, 1387159956: false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { y: false, DateToSystemTimezoneSetter: false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/MobileBoostProgressBarExperiment.tsx");

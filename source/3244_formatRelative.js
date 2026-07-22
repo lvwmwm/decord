@@ -5,8 +5,8 @@
 // Exports: default
 
 // Module 3244 (formatRelative)
-let closure_0 = { areIntervalsOverlapping: 2063597942, clamp: 1962934646, closestIndexTo: 1107296919, closestTo: 107299, compareAsc: 87987, compareDesc: 27468866 };
-let closure_1 = {};
+let closure_0 = {};
+let closure_1 = { "Bool(false)": "noin tunti", "Bool(false)": "noin {{count}} tuntia", "Bool(false)": "tunti", "Bool(false)": "{{count}} tuntia", "Bool(false)": "p\u00E4iv\u00E4", "Bool(false)": "{{count}} p\u00E4iv\u00E4\u00E4" };
 
 export default function formatRelative(arg0, getUTCHours) {
   if (1 !== getUTCHours.getUTCHours()) {

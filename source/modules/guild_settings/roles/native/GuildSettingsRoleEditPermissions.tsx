@@ -1,10 +1,10 @@
-// Module ID: 16203
-// Function ID: 125190
+// Module ID: 16211
+// Function ID: 125232
 // Name: GuildSettingsRoleEditPermission
 // Dependencies: []
 // Exports: default
 
-// Module 16203 (GuildSettingsRoleEditPermission)
+// Module 16211 (GuildSettingsRoleEditPermission)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ View: closure_6, Keyboard: closure_7, SectionList: closure_8 } = arg1(dependencyMap[2]));
@@ -73,7 +73,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp12 = tmp16;
   }
   if (tmp12) {
-    obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+    obj1 = { cachedAt: "y", edpbxy: "isArray" };
     const intl = arg1(dependencyMap[13]).intl;
     obj2 = {
       onTemplateOpen() {
@@ -143,7 +143,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
             tmp = !_undefined.can(flag, guild, null, obj);
             const obj3 = callback(closure_3[21]);
           }
-          obj = { style: tmp.subLabel, children: guild(closure_3[23]).renderDescription(description) };
+          obj = { cachedAt: null, edpbxy: null, style: tmp.subLabel, children: guild(closure_3[23]).renderDescription(description) };
           const obj5 = guild(closure_3[23]);
           const obj1 = { start: 0 === index, end: index === section.section.data.length - 1 };
           const tmp20 = callback3(guild(closure_3[22]).Text, obj);

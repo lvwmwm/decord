@@ -1,10 +1,10 @@
-// Module ID: 14234
-// Function ID: 107594
+// Module ID: 14242
+// Function ID: 107637
 // Name: DismissibleNewTag
 // Dependencies: []
 // Exports: default
 
-// Module 14234 (DismissibleNewTag)
+// Module 14242 (DismissibleNewTag)
 importAll(dependencyMap[0]);
 const Gradients = arg1(dependencyMap[1]).Gradients;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 9627
-// Function ID: 74973
+// Module ID: 9628
+// Function ID: 74986
 // Name: CATEGORY_ICON_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 9627 (CATEGORY_ICON_SIZE)
+// Module 9628 (CATEGORY_ICON_SIZE)
 let CATEGORY_ICON_SIZE;
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
@@ -19,7 +19,7 @@ const ExpressionPickerViewType = arg1(dependencyMap[6]).ExpressionPickerViewType
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
 let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, item: { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" }, itemInner: obj, fadedItem: { opacity: 0.5 } };
-obj = { margin: null, backgroundColor: null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
+obj = { "Bool(false)": null, "Bool(false)": null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj1 = { opacity: 1, backgroundColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.activeItem = obj1;
 obj.guildIcon = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
@@ -152,7 +152,7 @@ export default function _default(categories) {
         }
         if (tmp6) {
           const current = ref.current;
-          const obj = { 0: "P", 0: "DISPLAY_MEDIA_UPLOADS", 9223372036854775807: "%ErrorPrototype%", item: categoryIndex };
+          const obj = { -9223372036854775808: "decimal-pad", 0: "number-pad", 0: "phone-pad", item: categoryIndex };
           current.scrollToLocation(obj);
         }
       }
@@ -204,7 +204,7 @@ export default function _default(categories) {
   let obj = { portalHostName: "expression-footer", style: categories.style };
   const tmp17 = importDefault(closure_2[21])();
   const tmp18 = closure_15;
-  obj = { 50352482: "missed_messages_default", -1135455135: "222_social", 1635499387: null, 91181654: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp17, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
+  obj = { "Bool(false)": null, "Bool(false)": "mobile-text-heading-primary", "Bool(false)": 2, "Bool(false)": "inbox", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp17, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
   const items9 = [callback2(importDefault(closure_2[23]), obj), ];
   let tmp20 = null != first && first1;
   if (tmp20) {

@@ -1,10 +1,10 @@
-// Module ID: 10008
-// Function ID: 77339
+// Module ID: 10009
+// Function ID: 77352
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10008 (_createForOfIteratorHelperLoose)
+// Module 10009 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -111,7 +111,7 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
   if ("portrait" === arg0) {
     if (fillAspectRatio.fillAspectRatio) {
       if (arg1) {
-        let obj = { "Null": null, "Null": null };
+        let obj = { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" };
       } else {
         obj = { width: 2 };
         let num5 = 0;
@@ -121,7 +121,7 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
         obj.height = 3 + num5;
       }
     } else {
-      return { "Null": null, "Null": null };
+      return { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
     }
   } else if ("landscape" === arg0) {
     if (fillAspectRatio.fillAspectRatio) {
@@ -134,13 +134,13 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
         obj.width = 3 + num;
         obj.height = 2;
       } else {
-        obj = { "Null": null, "Null": null };
+        obj = { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" };
       }
     } else {
       return { "Null": "\u{1F4A0}", "Null": 6 };
     }
   } else if ("square" === arg0) {
-    return fillAspectRatio.enlargeSquare ? { "Null": null, "Null": null } : { "Null": null, "Null": null };
+    return fillAspectRatio.enlargeSquare ? { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" } : { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
   }
 }
 function getTargetCardSize(windowWidth) {
@@ -165,20 +165,20 @@ const VoicePanelCardItemType = tmp2.VoicePanelCardItemType;
 ({ BASE_TARGET_CARD_SIZE: closure_10, VoicePanelCTACardDimensionKeys: closure_11, VoicePanelCTACardDimensions: closure_12, VOICE_PANEL_CHUNK_DIVISOR: closure_13 } = tmp2);
 ({ EDGE_GUTTER: closure_14, CALL_TILE_GUTTER: closure_15 } = arg1(dependencyMap[7]));
 const ParticipantTypes = arg1(dependencyMap[8]).ParticipantTypes;
-let obj = { sa: null, variant: null, y: null, bottom: null, backgroundColor: null, height: null, accessibilityRole: null, type: VoicePanelCardItemType.PARTICIPANT };
+let obj = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, type: VoicePanelCardItemType.PARTICIPANT };
 const set = new Set();
-let closure_19 = { 9223372036854775807: null, -9223372036854775808: null };
+let closure_19 = { text: true, ty: true };
 obj = {};
 const tmp3 = arg1(dependencyMap[7]);
 obj.match = new Set([]);
-const items = [{ 9223372036854775807: null, -9223372036854775808: null }];
+const items = [{ text: "<string:1040334421>", ty: "<string:1040334338>" }];
 obj.layouts = items;
 obj.global = true;
 const items1 = [obj, ];
 obj = {};
 const set1 = new Set([]);
 obj.match = new Set([-229780751, 1065152063, 490364469, 1271345472, -532575945, 40976419, 822083584, 103079215]);
-const items2 = [{ 9223372036854775807: null, -9223372036854775808: null }, { 9223372036854775807: null, -9223372036854775808: null }, { 9223372036854775807: null, -9223372036854775808: null }];
+const items2 = [{ text: null, ty: null }, { text: true, ty: true }, { text: true, ty: true }];
 obj.layouts = items2;
 items1[1] = obj;
 const set2 = new Set([-229780751, 1065152063, 490364469, 1271345472, -532575945, 40976419, 822083584, 103079215]);
@@ -193,7 +193,7 @@ const tmp7 = () => {
       this.cardCoords = map1;
       map2 = new Map();
       this.chunkedCoords = map2;
-      this.contentDimensions = { "Null": -536870861, "Null": -299892737 };
+      this.contentDimensions = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
       set = new Set();
       this.layoutCallbacks = set;
       set1 = new Set();
@@ -203,8 +203,8 @@ const tmp7 = () => {
       this.mounted = false;
       this.layoutKey = 0;
       this.emitTimeout = -1;
-      this.props = { "Bool(false)": true, "Bool(false)": 6, "Bool(false)": 132, "Bool(false)": null, "Bool(false)": "\u{1F9D1}\u200D\u{1F680}", "Bool(false)": true, "Bool(false)": 12.1, "Bool(false)": 133, "Bool(false)": null };
-      this.defaultTargetCoords = { "Null": -536870861, "Null": -299892737 };
+      this.props = {};
+      this.defaultTargetCoords = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
       this.channelId = arg0;
       return;
     }
@@ -357,11 +357,11 @@ const tmp7 = () => {
     value(arg0, arg1) {
       const self = this;
       if ("portrait" === arg1) {
-        let size = { "Null": null, "Null": null };
+        let size = { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
       } else if ("landscape" === arg1) {
         size = { "Null": "\u{1F4A0}", "Null": 6 };
       } else if ("square" === arg1) {
-        size = { "Null": null, "Null": null };
+        size = { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
       }
       const size2 = self.getTargetDimensions(arg0);
       if (!tmp) {

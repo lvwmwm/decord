@@ -1,10 +1,10 @@
-// Module ID: 14110
-// Function ID: 107140
+// Module ID: 14118
+// Function ID: 107183
 // Name: DisplayNameStylesGummyColorPickerSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14110 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14118 (DisplayNameStylesGummyColorPickerSheet)
 import module_0 from "module_0";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -21,9 +21,9 @@ obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingT
 obj.body = obj;
 obj1 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_4, alignSelf: "stretch" };
 obj.colorRowInset = obj1;
-obj.optionContainer = { -9223372036854775808: null, 7741: null };
-obj.swatchWrapper = { "Bool(true)": "channelId", "Bool(true)": "channelId" };
-const obj2 = { iconPosition: "absolute", accessibilityHint: 0, iconOpticalOffsetMargin: "center", onPress: "center", size: null, text: "absolute", borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.optionContainer = { "Bool(true)": null, "Bool(true)": null };
+obj.swatchWrapper = { "Null": "channelId", "Null": "toString" };
+const obj2 = { icon: "absolute", label: 0, subLabel: "center", value: "center", onValueChange: null, disabled: "absolute", borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.swatch = obj2;
 const tmp3 = arg1(dependencyMap[5]);
 obj.swatchSelected = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
@@ -153,7 +153,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
     tmp19Result = tmp19(importDefault(dependencyMap[20]), obj7);
   }
   const items4 = [tmp19Result, ];
-  const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(arg1(dependencyMap[21]).PencilIcon, { "Null": 12, "Null": 4 }) }) };
+  const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(arg1(dependencyMap[21]).PencilIcon, {}) }) };
   items4[1] = callback2(closure_5, obj8);
   obj5.children = items4;
   obj4.children = closure_10(first1, obj5);

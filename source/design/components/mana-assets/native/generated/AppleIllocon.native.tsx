@@ -1,14 +1,14 @@
 // Module ID: 5855
-// Function ID: 49704
+// Function ID: 49715
 // Name: AppleIllocon
-// Dependencies: [131072, 561250304, 1879048192, 20]
+// Dependencies: [131072, 561250304, 3657433088, 19]
 // Exports: AppleIllocon
 
 // Module 5855 (AppleIllocon)
-import AppStartPerformance from "AppStartPerformance";
+import _setPrototypeOf from "_setPrototypeOf";
 
 const jsx = require(dependencyMap[0]).jsx;
-const result = AppStartPerformance.fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");
+const result = _setPrototypeOf.fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");
 
 export const AppleIllocon = function AppleIllocon(size) {
   let accessibilityLabel;

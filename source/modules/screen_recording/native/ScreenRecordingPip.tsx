@@ -1,10 +1,10 @@
-// Module ID: 14593
-// Function ID: 109964
+// Module ID: 14601
+// Function ID: 110007
 // Name: DraggableContainer
 // Dependencies: []
 // Exports: default
 
-// Module 14593 (DraggableContainer)
+// Module 14601 (DraggableContainer)
 function DraggableContainer(children) {
   const x = children.x;
   const arg1 = x;
@@ -154,7 +154,7 @@ function ScreenRecordingPip(surveyConfig) {
     const items2 = [callback2(importDefault(dependencyMap[16]), obj), ];
     obj1 = { x: sharedValue, y: sharedValue1, contentWidth: closure_10, contentHeight: closure_10, dragBoundsPadding: importDefault(dependencyMap[6]).space.PX_4, onChangePosition: tmp8[1] };
     let obj2 = { style: tmp.widget, accessibilityRole: "button", onPress: tmp12, activeOpacity: 0.5 };
-    const obj3 = { style: tmp.stepText };
+    const obj3 = { cachedAt: null, edpbxy: "none", style: tmp.stepText };
     let str2 = "Uploading...";
     if (!tmp6) {
       const _HermesInternal = HermesInternal;
@@ -164,8 +164,6 @@ function ScreenRecordingPip(surveyConfig) {
     const items3 = [callback2(arg1(dependencyMap[18]).Text, obj3), ];
     if (tmp6) {
       const obj4 = {
-        "Bool(true)": "<string:503578626>",
-        "Bool(true)": "<string:2018574338>",
         onPress() {
 
             }
@@ -175,7 +173,7 @@ function ScreenRecordingPip(surveyConfig) {
       const obj5 = {};
       if (isStepCompleted) {
         obj5.style = tmp.doneButton;
-        obj5.children = callback2(arg1(dependencyMap[20]).CheckmarkLargeIcon, { accessibilityRole: 20, "": 20 });
+        obj5.children = callback2(arg1(dependencyMap[20]).CheckmarkLargeIcon, {});
         let tmp31 = obj5;
       } else {
         obj5.style = tmp.stopButton;
@@ -209,10 +207,10 @@ const useScreenRecordingStore = arg1(dependencyMap[3]).useScreenRecordingStore;
 let closure_10 = 100;
 let obj = arg1(dependencyMap[5]);
 obj = { widgetContainer: { position: "absolute" } };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, gap: importDefault(dependencyMap[6]).space.PX_8, padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.xl };
+obj = { channel: null, color: null, __closure: null, e: null, __workletHash: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, gap: importDefault(dependencyMap[6]).space.PX_8, padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.xl };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_MOBILE_NAVIGATOR_X);
 obj.widget = obj;
-obj.stepText = { overflow: 1, flexWrap: 61 };
+obj.stepText = { 1372312299: 1, 996541446: 61 };
 const tmp2 = arg1(dependencyMap[4]);
 obj.stopButton = { padding: importDefault(dependencyMap[6]).space.PX_8, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.WHITE, borderRadius: importDefault(dependencyMap[6]).radii.round };
 const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_8, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.WHITE, borderRadius: importDefault(dependencyMap[6]).radii.round };

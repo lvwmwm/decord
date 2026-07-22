@@ -1,7 +1,7 @@
 // Module ID: 6770
-// Function ID: 53295
+// Function ID: 53306
 // Name: _isNativeReflectConstruct
-// Dependencies: [3992977434, 3707764757, 1409286145, 369098759, 3154116608, 2080374788, 33554458, 1912602624, 621, 2, 1654, 1792]
+// Dependencies: [3976200218, 3707764757, 1409286145, 369098759, 3154116608, 2080374788, 33554458, 1912602624, 621, 2, 1654, 1792]
 
 // Module 6770 (_isNativeReflectConstruct)
 import forwardRef from "forwardRef";

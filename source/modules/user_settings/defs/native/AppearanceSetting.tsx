@@ -1,14 +1,14 @@
-// Module ID: 14029
-// Function ID: 106685
+// Module ID: 14036
+// Function ID: 106725
 // Name: useAppearanceSettingTrailing
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14029 (useAppearanceSettingTrailing)
-import closure_3 from "result";
-import { ActiveThemeType } from "result";
-import result from "result";
-import result from "result";
+// Module 14036 (useAppearanceSettingTrailing)
+import closure_3 from "__exportStarResult1";
+import { ActiveThemeType } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function useAppearanceSettingTrailing() {
   const tmp = importDefault(dependencyMap[3])();
@@ -41,24 +41,24 @@ function useAppearanceSettingTrailing() {
   }
   const obj4 = arg1(dependencyMap[7]);
 }
-result = {
+__exportStarResult1 = {
   useTitle() {
     const intl = arg1(dependencyMap[8]).intl;
     return intl.string(arg1(dependencyMap[8]).t.iHH+ky);
   },
   parent: null,
-  IconComponent: require("result").PaintPaletteIcon,
+  IconComponent: require("__exportStarResult1").PaintPaletteIcon,
   useTrailing: useAppearanceSettingTrailing,
-  screen: result
+  screen: __exportStarResult1
 };
-result = {
-  route: require("result").UserSettingsSections.APPEARANCE,
+__exportStarResult1 = {
+  route: require("__exportStarResult1").UserSettingsSections.APPEARANCE,
   getComponent() {
     return arg1(dependencyMap[12]).default;
   }
 };
-result = result.createRoute(result);
-result = result.fileFinishedImporting("modules/user_settings/defs/native/AppearanceSetting.tsx");
+__exportStarResult1 = __exportStarResult1.createRoute(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/AppearanceSetting.tsx");
 
-export default result;
+export default __exportStarResult1;
 export { useAppearanceSettingTrailing };

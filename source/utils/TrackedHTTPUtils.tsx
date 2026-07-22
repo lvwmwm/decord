@@ -1,5 +1,5 @@
 // Module ID: 4939
-// Function ID: 42327
+// Function ID: 42336
 // Name: makeRequest
 // Dependencies: []
 
@@ -50,7 +50,7 @@ function makeRequest(arg0, trackedActionData, request_method) {
     });
   });
 }
-let closure_2 = [-777111954108288600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+let closure_2 = ["turkey"];
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
 

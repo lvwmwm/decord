@@ -1,9 +1,9 @@
-// Module ID: 13277
-// Function ID: 100840
+// Module ID: 13284
+// Function ID: 100873
 // Name: items
 // Dependencies: []
 
-// Module 13277 (items)
+// Module 13284 (items)
 let RPCCommands;
 const _module = require(dependencyMap[0]);
 ({ isVoiceChannel: closure_3, isTextChannel: closure_4 } = _module);

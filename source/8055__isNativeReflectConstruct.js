@@ -1,5 +1,5 @@
 // Module ID: 8055
-// Function ID: 63921
+// Function ID: 63931
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -63,6 +63,6 @@ const tmp3 = (arg0) => {
   return callback(FeComposite, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "FeComposite";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { <string:3095328559>: "ERROR", <string:1197558330>: "ERROR", <string:2169172>: "NOT_RESPONDER", <string:3832811791>: "NOT_RESPONDER" });
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { "Bool(true)": -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" });
 
 export default tmp3;

@@ -1,16 +1,18 @@
-// Module ID: 14436
-// Function ID: 108839
+// Module ID: 14444
+// Function ID: 108882
 // Name: getTitle
-// Dependencies: []
+// Dependencies: [2382364728, 1728053255, 33554471, 1929379840, 1428, 11997, 2, 31, 33, 13640]
 
-// Module 14436 (getTitle)
+// Module 14444 (getTitle)
+import module_33 from "module_33";
+import getPermissiveness from "getPermissiveness";
+
 function getTitle() {
   const intl = arg1(dependencyMap[5]).intl;
   return intl.string(arg1(dependencyMap[5]).t.+uI23H);
 }
 let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[8]);
-obj = {
+module_33 = {
   useTitle: getTitle,
   parent: arg1(dependencyMap[1]).MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
@@ -51,7 +53,7 @@ obj = {
   },
   unsearchable: true
 };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsExplicitMediaFiltersFriendsDMsSetting.tsx");
+module_33 = module_33.createPressable(module_33);
+const result = getPermissiveness.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsExplicitMediaFiltersFriendsDMsSetting.tsx");
 
-export default pressable;
+export default module_33;

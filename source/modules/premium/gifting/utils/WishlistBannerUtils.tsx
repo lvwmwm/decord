@@ -1,10 +1,10 @@
-// Module ID: 9725
-// Function ID: 75642
+// Module ID: 9726
+// Function ID: 75655
 // Name: getBannerMode
 // Dependencies: []
 // Exports: useWishlistBannerConfig
 
-// Module 9725 (getBannerMode)
+// Module 9726 (getBannerMode)
 function getBannerMode(wishlistInDmLength) {
   let displayItems;
   let totalUnownedWishlistItemCount;

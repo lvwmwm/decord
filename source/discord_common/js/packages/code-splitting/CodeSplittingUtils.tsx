@@ -15,7 +15,7 @@ function loaderMaker() {
   }
   const arg1 = str;
   return () => {
-    const style = { backgroundColor: str };
+    const style = { "Null": null, "Null": null, "Null": null, backgroundColor: str };
     return callback("div", { style });
   };
 }

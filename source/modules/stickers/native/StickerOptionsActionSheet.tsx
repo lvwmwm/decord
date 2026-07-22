@@ -1,10 +1,10 @@
-// Module ID: 9613
-// Function ID: 74894
+// Module ID: 9614
+// Function ID: 74907
 // Name: StickerOptionsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9613 (StickerOptionsActionSheet)
+// Module 9614 (StickerOptionsActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stickers/native/StickerOptionsActionSheet.tsx");

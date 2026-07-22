@@ -1,10 +1,10 @@
-// Module ID: 15359
-// Function ID: 116979
+// Module ID: 15367
+// Function ID: 117022
 // Name: MobileShopButtonCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 15359 (MobileShopButtonCoachmark)
+// Module 15367 (MobileShopButtonCoachmark)
 let closure_2 = importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;

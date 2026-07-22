@@ -1,10 +1,10 @@
-// Module ID: 8734
-// Function ID: 69080
+// Module ID: 8735
+// Function ID: 69092
 // Name: usePreviewCollectibleProduct
 // Dependencies: []
 // Exports: usePreviewCollectibleProduct
 
-// Module 8734 (usePreviewCollectibleProduct)
+// Module 8735 (usePreviewCollectibleProduct)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;

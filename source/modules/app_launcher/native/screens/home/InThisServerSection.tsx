@@ -1,10 +1,10 @@
-// Module ID: 11219
-// Function ID: 87372
+// Module ID: 11220
+// Function ID: 87385
 // Name: AppInThisServer
 // Dependencies: []
 // Exports: default
 
-// Module 11219 (AppInThisServer)
+// Module 11220 (AppInThisServer)
 function AppInThisServer(onAppSelected) {
   const arg1 = onAppSelected.onAppSelected;
   const tmp = callback2();
@@ -13,9 +13,6 @@ function AppInThisServer(onAppSelected) {
   let obj = arg1(dependencyMap[10]);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
-    mediaContentContainer: null,
-    pQ3bLk: 4,
-    LANDING_FRAME_NAME: "column",
     accessibilityLabel: application.name,
     onPress() {
       let tmp = null != onAppSelected;
@@ -34,7 +31,9 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
     tmp4 = callback(importDefault(dependencyMap[13]), obj);
   }
-  const items = [tmp4, callback(arg1(dependencyMap[7]).Text, { children: application.name })];
+  const items = [tmp4, ];
+  const obj1 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>", children: application.name };
+  items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
   obj.children = items;
   return closure_6(arg1(dependencyMap[11]).PressableScale, obj, application.id);
 }
@@ -43,7 +42,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { "Null": null, "Null": null }, scrollView: {}, scrollViewContentContainer: { gap: 8 } };
+obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { "Bool(false)": 40, "Bool(false)": 40 }, scrollView: { -1604222868: null, 1520073042: null }, scrollViewContentContainer: { gap: 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj["paddingLeft"] = 12;
@@ -53,7 +52,7 @@ obj["flexDirection"] = "row";
 obj["justifyContent"] = "center";
 obj["alignItems"] = "center";
 obj.appCardContainer = obj;
-obj.iconContainer = { "Bool(false)": null, "Bool(false)": null };
+obj.iconContainer = { marginRight: true, height: null };
 let closure_7 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/app_launcher/native/screens/home/InThisServerSection.tsx");

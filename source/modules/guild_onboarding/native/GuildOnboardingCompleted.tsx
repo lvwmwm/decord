@@ -1,10 +1,10 @@
-// Module ID: 5483
-// Function ID: 46779
+// Module ID: 5482
+// Function ID: 46787
 // Name: GuildOnboardingCompleted
 // Dependencies: []
 // Exports: default
 
-// Module 5483 (GuildOnboardingCompleted)
+// Module 5482 (GuildOnboardingCompleted)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -15,25 +15,25 @@ let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { screen: {}, container: {} };
+obj = { screen: {}, container: { isNewWebImplementationEnabled: null, MAX_FORUM_TAGS: "hidden", xxs: 1, xs: 0, sm: 0 } };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj.containerWithoutSplash = obj;
-obj.backgroundImage = {};
+obj.backgroundImage = { "Null": null, "Null": null, "Null": null };
 obj.title = {};
 obj.subtitle = { marginTop: 16 };
 const tmp3 = arg1(dependencyMap[7]);
 obj.card = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
 obj.username = { marginTop: 16 };
 obj.rolesHeader = { marginTop: 8 };
-obj.roles = { "Bool(false)": "enum", "Bool(false)": null, "Bool(false)": "\u{1F9CF}\u{1F3FC}\u200D\u2642\uFE0F", "Bool(false)": true };
+obj.roles = { <string:3427919713>: "enum", <string:1374118325>: null, <string:1632825022>: "\u{1F9CF}\u{1F3FB}\u200D\u2642\uFE0F", <string:1378301610>: true };
 obj.role = { marginRight: 8 };
-const obj2 = { 9223372036854775807: "CheckmarkSmallBoldIcon", 0: "png", 0: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWidth: tmp2.StyleSheet.hairlineWidth, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-obj.roleOverflow = obj2;
 const obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
+obj.roleOverflow = { borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWidth: tmp2.StyleSheet.hairlineWidth, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWidth: tmp2.StyleSheet.hairlineWidth, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.animation = { borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const items = [{ translateX: 24 }, { rotate: "5deg" }];
 obj.wave = { transform: items };
-obj.animationText = {};
+obj.animationText = { "Null": "<string:2126337>", "Null": "<string:2097152>" };
 obj.getStartedButton = { marginTop: 24 };
 let closure_12 = obj.createStyles(obj);
 let closure_13 = { code: "function GuildOnboardingCompletedTsx1(){const{withSequence,withTiming,withDelay,ANIMATION_DURATION,Easing,useReducedMotion}=this.__closure;const opacity=withSequence(withTiming(0,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(0.5,{duration:ANIMATION_DURATION})),withTiming(1,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const scale=withSequence(withTiming(1,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(1.5,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)})),withTiming(1,{duration:useReducedMotion?1:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const rawRotation=withSequence(withTiming('0deg',{duration:0}),withDelay(ANIMATION_DURATION,withTiming('-2deg',{duration:ANIMATION_DURATION})),withTiming('-5deg',{duration:ANIMATION_DURATION}));return{opacity:opacity,transform:[{rotate:rawRotation},{scale:scale}]};}" };
@@ -243,7 +243,7 @@ export default function GuildOnboardingCompleted(guildId) {
       const intl = arg1(dependencyMap[24]).intl;
       obj7.children = intl.string(arg1(dependencyMap[24]).t.PFWIYe);
       const items12 = [isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj7), , , ];
-      obj8 = { 1832956803: 75, 420134994: null, -1884532042: 1, style: tmp.subtitle };
+      obj8 = { style: tmp.subtitle };
       if (null == guildSplashURL) {
         str = "text-muted";
       }
@@ -254,11 +254,11 @@ export default function GuildOnboardingCompleted(guildId) {
       const obj9 = { style: tmp.card };
       obj10 = { size: arg1(dependencyMap[25]).AvatarSizes.XXLARGE, user: stateFromStores, guildId, animate: false };
       const items13 = [isScreenReaderEnabled(arg1(dependencyMap[25]).Avatar, obj10), , , , ];
-      obj11 = { delete: "center", dispatch: "center", raw: "hidden", style: tmp.username, children: stateFromStores.username };
+      obj11 = { style: tmp.username, children: stateFromStores.username };
       items13[1] = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj11);
       let tmp40 = null;
       if (numSharedRoleMembers > 0) {
-        obj12 = { style: tmp.rolesHeader };
+        obj12 = { "Null": false, "Null": 400, alignItems: 20, style: tmp.rolesHeader };
         const intl3 = arg1(dependencyMap[24]).intl;
         const obj13 = { numSharedRoleMembers };
         obj12.children = intl3.format(arg1(dependencyMap[24]).t.l1Jc1n, obj13);
@@ -280,7 +280,7 @@ export default function GuildOnboardingCompleted(guildId) {
         const obj15 = {};
         const items15 = [tmp.roleOverflow, obj];
         obj15.style = items15;
-        const obj16 = {};
+        const obj16 = { cachedAt: null, edpbxy: null };
         const _HermesInternal = HermesInternal;
         obj16.children = "+" + diff;
         obj15.children = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj16);
@@ -330,7 +330,7 @@ export default function GuildOnboardingCompleted(guildId) {
       let tmp61 = null;
       if (isScreenReaderEnabled) {
         const obj24 = { style: tmp.getStartedButton };
-        const obj25 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", "Bool(true)": "rgb(255, 255, 255)" };
+        const obj25 = {};
         const intl5 = arg1(dependencyMap[24]).intl;
         obj25.text = intl5.string(arg1(dependencyMap[24]).t.LhlgY9);
         obj25.onPress = onClose;

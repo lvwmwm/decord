@@ -1,10 +1,10 @@
-// Module ID: 9012
-// Function ID: 70911
+// Module ID: 9013
+// Function ID: 70924
 // Name: BotPermissions
 // Dependencies: []
 // Exports: default
 
-// Module 9012 (BotPermissions)
+// Module 9013 (BotPermissions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -59,15 +59,15 @@ export default function BotPermissions(guild) {
   const mapped1 = found2.map((arg0) => {
     let obj = permissions(onPermissionsChange[8]);
     const permissionName = obj.getPermissionName(arg0);
-    obj = { "Bool(false)": null, "Bool(false)": 8 };
-    obj = { style: obj.disabledPermissionIcon, children: callback2(permissions(onPermissionsChange[11]).XSmallIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
+    obj = { "Bool(false)": "absolute", "Bool(false)": 8 };
+    obj = { style: obj.disabledPermissionIcon, children: callback2(permissions(onPermissionsChange[11]).XSmallIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) };
     const items = [callback2(closure_5, obj), callback2(permissions(onPermissionsChange[12]).Text, { variant: "text-md/medium", children: permissionName })];
     obj.children = items;
     return callback3(permissions(onPermissionsChange[10]).Stack, obj, String(arg0));
   });
   let obj = { spacing: 16 };
   obj = {};
-  obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  obj = { cachedAt: true, edpbxy: true };
   const intl = arg1(dependencyMap[13]).intl;
   obj.children = intl.format(arg1(dependencyMap[13]).t.sOaT2j, { applicationName: application.name, guildName: guild.name });
   const items1 = [callback2(arg1(dependencyMap[12]).Text, obj), callback2(arg1(dependencyMap[10]).Stack, { spacing: 12, children: mapped })];
@@ -76,7 +76,7 @@ export default function BotPermissions(guild) {
   let tmp5 = null;
   if (mapped1.length > 0) {
     const obj2 = {};
-    const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    const obj3 = { cachedAt: true, edpbxy: true };
     const intl2 = arg1(dependencyMap[13]).intl;
     const obj4 = { applicationName: application.name };
     obj3.children = intl2.format(arg1(dependencyMap[13]).t.fsOkF4, obj4);

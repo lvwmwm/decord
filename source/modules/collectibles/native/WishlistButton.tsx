@@ -1,10 +1,10 @@
-// Module ID: 8702
-// Function ID: 68887
+// Module ID: 8703
+// Function ID: 68899
 // Name: WishlistButtonBase
 // Dependencies: []
 // Exports: default
 
-// Module 8702 (WishlistButtonBase)
+// Module 8703 (WishlistButtonBase)
 class WishlistButtonBase {
   constructor(arg0) {
     isWishlisted = global.isWishlisted;
@@ -33,7 +33,7 @@ class WishlistButtonBase {
     jsx = undefined;
     closure_13 = undefined;
     closure_14 = undefined;
-    tmp = f68906(size);
+    tmp = f68918(size);
     closure_6 = tmp;
     tmp2 = arg1(dependencyMap[14]).ICON_SIZE[closure_16[size]];
     obj = arg1(dependencyMap[13]);
@@ -165,7 +165,7 @@ class WishlistButtonBase {
     obj.SUBTLE_SPRING = arg1(dependencyMap[21]).SUBTLE_SPRING;
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f68906;
+    J.__initData = f68918;
     animatedStyle = obj4.useAnimatedStyle(J);
     obj6 = arg1(dependencyMap[9]);
     class Y {
@@ -195,7 +195,7 @@ class WishlistButtonBase {
     obj1.Extrapolation = arg1(dependencyMap[9]).Extrapolation;
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f68906;
+    Y.__initData = f68918;
     animatedStyle1 = obj6.useAnimatedStyle(Y);
     obj8 = arg1(dependencyMap[9]);
     class K {
@@ -211,7 +211,7 @@ class WishlistButtonBase {
           obj2 = isWishlisted(busy[9]);
           tmp5 = obj2;
           tmp6 = value;
-          num = obj2.interpolate(value, [], [], isWishlisted(busy[9]).Extrapolation.CLAMP);
+          num = obj2.interpolate(value, [-900634271, 1368089016], [true, true], isWishlisted(busy[9]).Extrapolation.CLAMP);
         }
         obj["opacity"] = num;
         obj = {};
@@ -229,7 +229,7 @@ class WishlistButtonBase {
     obj2.Extrapolation = arg1(dependencyMap[9]).Extrapolation;
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f68906;
+    K.__initData = f68918;
     obj3 = {
       style(pressed) {
             pressed = pressed.pressed;
@@ -319,7 +319,7 @@ class WishlistButton {
     importDefault = onPress;
     onTrackPress = global.onTrackPress;
     dependencyMap = onTrackPress;
-    obj = { 0: "ERROR", 9223372036854775807: "ERROR", 9223372036854775807: "NOT_RESPONDER", 9223372036854775807: "NOT_RESPONDER" };
+    obj = { <string:1314541995>: -24, <string:305966933>: null, <string:4056559677>: 1, <string:1641718481>: "Malaysia" };
     tmp = null;
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
@@ -400,7 +400,7 @@ let obj = { duration: 400 };
 const Easing = arg1(dependencyMap[9]).Easing;
 obj.easing = Easing.bezier(0.67, 0, 0.26, 1);
 obj = { sm: arg1(dependencyMap[10]).SMALL_BUTTON_HEIGHT, md: arg1(dependencyMap[10]).MEDIUM_BUTTON_HEIGHT };
-let closure_16 = { overflow: "d6d04f6fd100db0e028d8a7cb876c1d6", position: "PlusSmallIcon" };
+let closure_16 = { isNewWebImplementationEnabled: "d6d04f6fd100db0e028d8a7cb876c1d6", GuildBadgeSnail: "PlusSmallIcon" };
 const tmp3 = arg1(dependencyMap[8]);
 let closure_17 = arg1(dependencyMap[11]).createStyles((arg0) => {
   let obj = {};
@@ -419,8 +419,8 @@ let closure_17 = arg1(dependencyMap[11]).createStyles((arg0) => {
   const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
   obj.midnight = { borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
   obj.disabled = { opacity: 0.5 };
-  obj.iconContainer = { fr: true, fs: true, ha: true };
-  obj.animationFill = { icon: "<string:1627390343>", trailing: "<string:3175236087>", arrow: "<string:242483201>", onPress: "<string:234881024>" };
+  obj.iconContainer = { "Bool(true)": 2017525761, "Bool(true)": 1895826561, "Bool(true)": 1 };
+  obj.animationFill = { variant: "<string:4150329345>", accessibilityRole: "<string:27139649>", color: "<string:947200>", flexDirection: "<string:917504>" };
   return obj;
 });
 let closure_18 = { code: "function WishlistButtonTsx1(done){const{runOnJS,setIsClickAnimating}=this.__closure;if(done){runOnJS(setIsClickAnimating)(false);}}" };

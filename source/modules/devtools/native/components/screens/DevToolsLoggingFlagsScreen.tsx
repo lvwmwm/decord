@@ -1,10 +1,10 @@
-// Module ID: 13395
-// Function ID: 101829
+// Module ID: 13402
+// Function ID: 101862
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13395 (DevToolsLoggingFlagsScreen)
+// Module 13402 (DevToolsLoggingFlagsScreen)
 const ScrollView = require(dependencyMap[0]).ScrollView;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[2]);
@@ -28,7 +28,7 @@ export default function DevToolsLoggingFlagsScreen() {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isLoggingGatewayEvents: closure_3.isLoggingGatewayEvents, isLoggingAnalyticsEvents: closure_3.isLoggingAnalyticsEvents, isTracingRequests: closure_3.isTracingRequests }));
   obj = { style: tmp.container, contentContainerStyle: tmp.content };
   ({ isLoggingGatewayEvents, isLoggingAnalyticsEvents, isTracingRequests } = stateFromStoresObject);
-  obj = { "Bool(false)": "9e0f7ca920e7d55418409ccf322d663c", "Bool(false)": "BurgerIcon" };
+  obj = { -9223372036854775808: "9e0f7ca920e7d55418409ccf322d663c", 9223372036854775807: "BurgerIcon" };
   const items1 = [
     callback(require(dependencyMap[7]).TableSwitchRow, {
       value: isLoggingGatewayEvents,

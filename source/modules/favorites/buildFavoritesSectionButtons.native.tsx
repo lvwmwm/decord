@@ -1,10 +1,10 @@
-// Module ID: 10179
-// Function ID: 78621
+// Module ID: 10180
+// Function ID: 78634
 // Name: _addChannelToFavorites
 // Dependencies: []
 // Exports: default
 
-// Module 10179 (_addChannelToFavorites)
+// Module 10180 (_addChannelToFavorites)
 function _addChannelToFavorites() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

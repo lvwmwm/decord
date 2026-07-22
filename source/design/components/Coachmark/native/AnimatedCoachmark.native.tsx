@@ -1,10 +1,10 @@
-// Module ID: 8563
-// Function ID: 68058
+// Module ID: 8564
+// Function ID: 68070
 // Name: renderTooltipItem
 // Dependencies: []
 // Exports: AnimatedCoachmark
 
-// Module 8563 (renderTooltipItem)
+// Module 8564 (renderTooltipItem)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const StyleSheet = arg1(dependencyMap[2]).StyleSheet;

@@ -1,10 +1,10 @@
-// Module ID: 11924
-// Function ID: 92254
+// Module ID: 11925
+// Function ID: 92268
 // Name: getActivityHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11924 (getActivityHeader)
+// Module 11925 (getActivityHeader)
 const _module = require(dependencyMap[0]);
 ({ ActivityTypes: closure_3, PlatformTypes: closure_4 } = _module);
 const _module1 = require(dependencyMap[7]);

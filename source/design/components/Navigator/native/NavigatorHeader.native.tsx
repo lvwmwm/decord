@@ -1,10 +1,10 @@
-// Module ID: 5354
-// Function ID: 45843
+// Module ID: 5084
+// Function ID: 44264
 // Name: HeaderBackImage
 // Dependencies: []
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5354 (HeaderBackImage)
+// Module 5084 (HeaderBackImage)
 class HeaderBackImage {
   constructor() {
     tmp = closure_8();
@@ -105,12 +105,12 @@ const obj1 = {};
 const merged = Object.assign(arg1(dependencyMap[7]).TextStyleSheet.redesign/heading-18/bold);
 obj1["color"] = importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY;
 obj.headerTitle = obj1;
-const tmp4 = arg1(dependencyMap[4]);
-obj.headerBackTitleStyle = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj2 = { 0: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.headerBackTitleStyle = obj2;
 obj.navigatorHeaderTitleContainer = {};
-obj.navigatorHeaderContainer = { top: null, bottom: "center", left: "flex-start" };
+obj.navigatorHeaderContainer = {};
 obj.navigatorHeaderSubtitle = { marginTop: -2 };
-const obj2 = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const tmp4 = arg1(dependencyMap[4]);
 obj.headerButtonIcon = { tintColor: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const obj3 = { tintColor: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.submittingIndicator = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };

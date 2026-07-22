@@ -1,13 +1,13 @@
-// Module ID: 14457
-// Function ID: 108943
+// Module ID: 14465
+// Function ID: 108986
 // Name: useSettingSearchResults
 // Dependencies: [0, 4294967295, 0, 0, 0, 0]
 // Exports: useSettingSearchResults
 
-// Module 14457 (useSettingSearchResults)
-import result from "result";
-import closure_5 from "result";
-import closure_6 from "result";
+// Module 14465 (useSettingSearchResults)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
 
 let closure_4 = importAll(dependencyMap[1]);
 let closure_7 = [];

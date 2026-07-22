@@ -1,10 +1,10 @@
-// Module ID: 13769
-// Function ID: 104075
+// Module ID: 13776
+// Function ID: 104108
 // Name: SubscriptionIcon
-// Dependencies: [31, 27, 5246, 653, 655, 33]
+// Dependencies: [31, 27, 4973, 653, 655, 33]
 // Exports: SubscriptionIcon
 
-// Module 13769 (SubscriptionIcon)
+// Module 13776 (SubscriptionIcon)
 import "module_31";
 import { jsx } from "get ActivityIndicator";
 import module_33 from "module_33";

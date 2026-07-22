@@ -1,13 +1,14 @@
 // Module ID: 1809
 // Function ID: 19937
 // Name: Prev
-// Dependencies: []
+// Dependencies: [27, 477, 1821, 2, 648, 2, 1212]
 // Exports: default
 
 // Module 1809 (Prev)
-importDefault(dependencyMap[0]);
-arg1(dependencyMap[0]).useCallback;
-const jsx = arg1(dependencyMap[1]).jsx;
+import "get ActivityIndicator";
+import { jsx } from "module_477";
+
+require("get ActivityIndicator").useCallback;
 
 export default function Prev(icon) {
   let button;
@@ -37,8 +38,8 @@ export default function Prev(icon) {
   }
   const items = [onPress];
   obj = {
-    "Null": 2030043890,
-    "Null": 2030043890,
+    "Null": null,
+    "Null": null,
     disabled: isPrevDisabled,
     rippleRadius,
     style,

@@ -4,6 +4,6 @@
 
 // Module 2077
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "Array", format: "fr-NE", View: "DurationEnabled", accessibilityRole: "r", surrogates: "DRAG_HANDLE_PADDING", url: "thumbHashToRGBA", scales: [null] };
+const obj = { 296374: true, 1102560849: true, 288807: true, 1103760465: true, 288241: true, 1120538193: true, scales: [false] };
 
 export default _module.registerAsset(obj);

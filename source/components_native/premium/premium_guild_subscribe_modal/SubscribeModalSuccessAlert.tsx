@@ -1,10 +1,10 @@
-// Module ID: 12437
-// Function ID: 94923
+// Module ID: 12442
+// Function ID: 94951
 // Name: PremiumPaymentGuildAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 12437 (PremiumPaymentGuildAnimation)
+// Module 12442 (PremiumPaymentGuildAnimation)
 class PremiumPaymentGuildAnimation {
   constructor(arg0) {
     ({ nextScene, onSceneComplete, loop } = global);
@@ -23,16 +23,16 @@ const Gradients = arg1(dependencyMap[4]).Gradients;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { wrapper: { "Null": 1931542530, "Null": 0, "Null": 2, "Null": 3 }, animation: {}, text: { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" } };
+obj = { wrapper: {}, animation: {}, text: {} };
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.activated = obj;
-const obj1 = { -9223372036854775808: "r", 0: "%MapPrototype%", 0: "isArray", 9223372036854775807: "isArrayBuffer", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { -1419704179: "r", 1682856529: "isArray", -1196737706: "construct", 112067667: "Array", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.activatedBackground = obj1;
 obj.activatedImage = { width: 220 };
 obj.successInfo = { marginTop: 24 };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { ENTRY: "entry", IDLE: "idle" };
-let closure_12 = { [obj2.ENTRY]: { paths: null, accessible: "center" }, [obj2.IDLE]: { paths: null, accessible: null } };
+let closure_12 = { [obj2.ENTRY]: { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000054323092267, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002402388094513 }, [obj2.IDLE]: { "Bool(false)": null, "Bool(false)": null } };
 PremiumPaymentGuildAnimation.Scenes = obj2;
 const tmp3 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 7417
-// Function ID: 59611
+// Function ID: 59622
 // Name: PremiumReferralTrialPill
 // Dependencies: []
 // Exports: PremiumReferralTrialPill
@@ -8,8 +8,8 @@
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
-let obj = { pillParent: {}, pillParentExtraMargin: {} };
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.WHITE, borderRadius: importDefault(dependencyMap[3]).radii.round };
+let obj = { pillParent: { "Bool(true)": "<string:2088124827>", "Bool(true)": "<string:2840788994>", "Bool(true)": "<string:3009567769>", "Bool(true)": "<string:1755341531>" }, pillParentExtraMargin: { "Bool(true)": "<string:2088124827>", "Bool(true)": "<string:2840788994>", "Bool(true)": "<string:3009567769>", "Bool(true)": "<string:1755341531>", "Bool(true)": "<string:1912777810>", "Bool(true)": "<string:1367499156>" } };
+obj = { body: true, disabled: true, ti: true, position: true, includes: true, raw: true, textAlign: true, backgroundColor: importDefault(dependencyMap[3]).colors.WHITE, borderRadius: importDefault(dependencyMap[3]).radii.round };
 obj.pillContainer = obj;
 obj.text = {};
 let closure_4 = _module.createStyles(obj);

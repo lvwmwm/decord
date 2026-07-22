@@ -50,8 +50,8 @@ export const contextLinesIntegration = _module.defineIntegration(function _conte
                 if (null != values) {
                   if (values.length) {
                     if (_document.documentElement.innerHTML) {
-                      const items = ["<string:2797840068>", "<string:3881625437>"];
-                      const callback = items.concat(callback(str.split("\n")), ["skuId"]);
+                      const items = ["TEXT_TRUNCATED", "MAYBE_JSON_TRUNCATED"];
+                      const callback = items.concat(callback(str.split("\n")), []);
                       const item = values.forEach((stacktrace) => {
                         stacktrace = stacktrace.stacktrace;
                         if (tmp) {

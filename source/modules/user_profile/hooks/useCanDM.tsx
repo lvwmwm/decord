@@ -1,10 +1,10 @@
-// Module ID: 12025
-// Function ID: 92921
+// Module ID: 12029
+// Function ID: 92947
 // Name: useCanDM
 // Dependencies: []
 // Exports: canDm, default
 
-// Module 12025 (useCanDM)
+// Module 12029 (useCanDM)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 14057
-// Function ID: 106792
+// Module ID: 14064
+// Function ID: 106832
 // Name: ChannelListPreview
 // Dependencies: []
 // Exports: default
 
-// Module 14057 (ChannelListPreview)
+// Module 14064 (ChannelListPreview)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -16,7 +16,7 @@ const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj["borderRadius"] = importDefault(dependencyMap[4]).radii.xl;
 obj["overflow"] = "hidden";
 obj.channelPreviewGradient = obj;
-const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_8, borderRadius: importDefault(dependencyMap[4]).radii.xl };
+const obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, marginTop: importDefault(dependencyMap[4]).space.PX_8, borderRadius: importDefault(dependencyMap[4]).radii.xl };
 const merged1 = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_HIGH);
 obj1["shadowColor"] = "#000000";
 obj.channelPreviewCardContainer = obj1;
@@ -58,7 +58,7 @@ export default function ChannelListPreview(useGradientBackground) {
       return null;
     }
   }, items);
-  let obj = {};
+  let obj = { 102724325: null, -61785503: null, "Null": null };
   const items1 = [tmp.channelPreviewCardContainer, animatedStyles.borderNormal, ];
   let bgSurfaceHigh = !useGradientBackground;
   if (bgSurfaceHigh) {

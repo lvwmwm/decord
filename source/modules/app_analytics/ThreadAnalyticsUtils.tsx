@@ -1,5 +1,5 @@
 // Module ID: 7011
-// Function ID: 56251
+// Function ID: 56262
 // Name: collectThreadMetadata
 // Dependencies: []
 // Exports: collectThreadMetadata

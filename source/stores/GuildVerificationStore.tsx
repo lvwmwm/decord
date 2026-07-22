@@ -1,5 +1,5 @@
 // Module ID: 4943
-// Function ID: 42372
+// Function ID: 42381
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -308,7 +308,7 @@ let closure_11 = importDefault(dependencyMap[8]);
 let closure_12 = importDefault(dependencyMap[9]);
 ({ VerificationLevels: closure_13, VerificationCriteria: closure_14, GuildFeatures: closure_15 } = arg1(dependencyMap[10]));
 const GuildMemberFlags = arg1(dependencyMap[11]).GuildMemberFlags;
-let closure_17 = { theme: true, developerMode: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", mobileRedesignDisabled: null, timestampHourCycle: "8321c7573efa1c0254c4a9b939ac0953", launchPadMode: "ko.messages.8321c7573efa1c0254c4a9b939ac0953.compiled.messages", uiDensity: "jsona", swipeRightToLeftMode: true };
+let closure_17 = { lineClamp: "06ce787c33fd0c9cd370f243d3462ef5", allowFontScaling: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages", variant: "jsona", color: true, ellipsizeMode: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", lineClamp: true, variant: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
 const set = new Set();
 let closure_19 = {};
 let tmp4 = (Store) => {

@@ -1,10 +1,10 @@
-// Module ID: 12102
-// Function ID: 93290
+// Module ID: 12106
+// Function ID: 93316
 // Name: BlockedDomainActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12102 (BlockedDomainActionSheet)
+// Module 12106 (BlockedDomainActionSheet)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
@@ -23,7 +23,7 @@ export default function BlockedDomainActionSheet(url) {
   obj = { style: tmp.container };
   obj = {};
   const items = [callback(arg1(dependencyMap[6]).TrafficConeSpotIllustration, {}), , ];
-  const obj1 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
+  const obj1 = { style: tmp.title };
   const intl = arg1(dependencyMap[8]).intl;
   obj1.children = intl.string(arg1(dependencyMap[8]).t.2B3wj8);
   items[1] = callback(arg1(dependencyMap[7]).Text, obj1);

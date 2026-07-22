@@ -1,10 +1,10 @@
-// Module ID: 8457
-// Function ID: 67473
+// Module ID: 8458
+// Function ID: 67485
 // Name: GuildEventRecurrences
 // Dependencies: []
 // Exports: default
 
-// Module 8457 (GuildEventRecurrences)
+// Module 8458 (GuildEventRecurrences)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

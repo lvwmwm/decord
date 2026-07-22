@@ -1,5 +1,5 @@
 // Module ID: 7555
-// Function ID: 60467
+// Function ID: 60478
 // Name: useIsManualAgeVerificationHidden
 // Dependencies: []
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden

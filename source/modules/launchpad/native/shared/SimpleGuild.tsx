@@ -1,22 +1,21 @@
-// Module ID: 15527
-// Function ID: 118547
+// Module ID: 15535
+// Function ID: 118590
 // Name: SimpleGuild
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 27, 33, 15534, 15537, 2, 15534]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 27, 33, 15542, 15545, 2, 15542]
 // Exports: default
 
-// Module 15527 (SimpleGuild)
-import closure_3 from "result";
-import { View } from "result";
-import { getGuildIconSource } from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import { ME } from "result";
-import { jsx } from "result";
-import result from "result";
-import items from "items";
+// Module 15535 (SimpleGuild)
+import __exportStarResult1 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { getGuildIconSource } from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { ME } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import getLayoutStyle from "getLayoutStyle";
 
-let closure_10 = result.createStyles({ dmsWrapper: {} });
-result = items.fileFinishedImporting("modules/launchpad/native/shared/SimpleGuild.tsx");
+let closure_10 = require("__exportStarResult1").createStyles({ dmsWrapper: {} });
+const result = getLayoutStyle.fileFinishedImporting("modules/launchpad/native/shared/SimpleGuild.tsx");
 
 export default function SimpleGuild(guildId) {
   let animated;
@@ -178,7 +177,7 @@ export default function SimpleGuild(guildId) {
         const tmp28 = View;
       } else {
         if (tmp13) {
-          obj2 = { 1550043256: "isArray", -699165536: "MAX_FORUM_TAGS", 1554668838: "isArray", -1808046422: "hasConfetti", 1676466380: "center", 1380856145: "row" };
+          obj2 = { "Bool(false)": "isArray", "Bool(false)": "useValidOrderedFilterTokens", "Bool(false)": "isArray", "Bool(false)": "SenderStopped", "Bool(false)": "center", "Bool(false)": "row" };
           let num7 = 13;
           let tmp35Result = tmp35(tmp36[17]);
           if (badge2 <= 0) {

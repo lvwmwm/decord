@@ -1,9 +1,9 @@
-// Module ID: 8241
-// Function ID: 65062
+// Module ID: 8242
+// Function ID: 65074
 // Name: ProfileFrameLayerType
 // Dependencies: []
 
-// Module 8241 (ProfileFrameLayerType)
+// Module 8242 (ProfileFrameLayerType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileFrameLayerType.tsx");
 

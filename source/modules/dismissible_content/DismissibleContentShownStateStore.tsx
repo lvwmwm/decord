@@ -15,7 +15,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function initState() {
-  const obj = { names: false, surrogates: false, hasDiversityParent: null, candidates: new Map(), recentlyShown: [] };
+  const obj = { "Bool(true)": "mn", "Bool(true)": "description", "Bool(true)": "Array", candidates: new Map(), recentlyShown: [] };
   const map = new Map();
   obj.currentlyShown = new Set();
   const set = new Set();

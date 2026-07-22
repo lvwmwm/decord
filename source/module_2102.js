@@ -4,6 +4,6 @@
 
 // Module 2102
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "Gift Message (Optional)", format: null, View: "Here's a gift for you!", accessibilityRole: null, surrogates: true, url: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", scales: [null] };
+const obj = { 296374: "Gift Message (Optional)", 1102560849: null, 288807: "Here's a gift for you!", 1103760465: null, 288241: true, 1120538193: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", scales: [false] };
 
 export default _module.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 10837
-// Function ID: 84108
+// Module ID: 10838
+// Function ID: 84121
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: []
 // Exports: useShouldDisplaySpoilerObscurity
 
-// Module 10837 (computeGlobalSpoilerDisplay)
+// Module 10838 (computeGlobalSpoilerDisplay)
 function computeGlobalSpoilerDisplay(RenderSpoilers, stateFromStores) {
   if (constants.ALWAYS === RenderSpoilers) {
     return true;

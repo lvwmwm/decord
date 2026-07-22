@@ -1,10 +1,10 @@
-// Module ID: 15024
-// Function ID: 113201
+// Module ID: 15032
+// Function ID: 113244
 // Name: LightbulbIcon
 // Dependencies: []
 // Exports: LightbulbIcon
 
-// Module 15024 (LightbulbIcon)
+// Module 15032 (LightbulbIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LightbulbIcon.tsx");

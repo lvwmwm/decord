@@ -1,10 +1,10 @@
-// Module ID: 15145
-// Function ID: 114275
+// Module ID: 15153
+// Function ID: 114318
 // Name: TruncatedText
 // Dependencies: []
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15145 (TruncatedText)
+// Module 15153 (TruncatedText)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ TouchableOpacity: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -13,12 +13,12 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(true)": "start_time", "Bool(true)": "message", "Bool(true)": "absolute", "Bool(true)": "10%", borderColor: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
+obj = { 9223372036854775807: "start_time", 0: "message", -9223372036854775808: "absolute", 0: "10%", borderColor: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
 obj.toggleTruncateButton = obj;
+const obj1 = { -9223372036854775808: 24, 0: 24, 0: null, -9223372036854775808: "119c03ecfe749b5d0f4e60c612bb714f", borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
+obj.arrowButton = obj1;
+obj.arrowButtonText = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" };
 const tmp3 = arg1(dependencyMap[4]);
-obj.arrowButton = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
-obj.arrowButtonText = { isArray: null, diversity: null };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
 obj.arrowButtonIcon = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
@@ -104,7 +104,7 @@ export const ArrowButton = function ArrowButton(arg0) {
   ({ text, onPress } = arg0);
   const tmp = callback5();
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
-  obj = { hasMaxConnections: false, isBoostOnlySubscription: false, style: tmp.arrowButtonText, children: text };
+  obj = { cachedAt: null, edpbxy: "Array", style: tmp.arrowButtonText, children: text };
   const items = [callback3(arg1(dependencyMap[7]).Text, obj), ];
   obj = { size: arg1(dependencyMap[10]).Icon.Sizes.SMALL, source: importDefault(dependencyMap[11]), style: tmp.arrowButtonIcon };
   items[1] = callback3(arg1(dependencyMap[10]).Icon, obj);

@@ -1,10 +1,10 @@
-// Module ID: 11141
-// Function ID: 86649
+// Module ID: 11142
+// Function ID: 86662
 // Name: getCommandContext
 // Dependencies: []
 // Exports: useCommandContext
 
-// Module 11141 (getCommandContext)
+// Module 11142 (getCommandContext)
 function getCommandContext(type) {
   if ("contextless" === type.type) {
     let obj = { channel: undefined, guild: undefined };

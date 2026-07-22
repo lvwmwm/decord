@@ -1,10 +1,10 @@
-// Module ID: 14524
-// Function ID: 109371
+// Module ID: 14532
+// Function ID: 109414
 // Name: isValidClipboardCode
 // Dependencies: []
 // Exports: default
 
-// Module 14524 (isValidClipboardCode)
+// Module 14532 (isValidClipboardCode)
 function isValidClipboardCode(arg0) {
   let isMatch = arg0.length === arg1(dependencyMap[4]).TOTP_CODE_LENGTH;
   if (isMatch) {

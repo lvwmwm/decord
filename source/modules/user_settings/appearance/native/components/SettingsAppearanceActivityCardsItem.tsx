@@ -1,10 +1,10 @@
-// Module ID: 14060
-// Function ID: 106800
+// Module ID: 14067
+// Function ID: 106840
 // Name: ActivityCardsItem
 // Dependencies: []
 // Exports: default
 
-// Module 14060 (ActivityCardsItem)
+// Module 14067 (ActivityCardsItem)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");

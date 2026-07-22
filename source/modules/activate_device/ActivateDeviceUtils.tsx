@@ -1,13 +1,13 @@
-// Module ID: 12763
-// Function ID: 97859
+// Module ID: 12770
+// Function ID: 97892
 // Name: clientIdToActivateDevicePlatform
-// Dependencies: []
+// Dependencies: [0, 0, 0]
 // Exports: clientIdToActivateDevicePlatform
 
-// Module 12763 (clientIdToActivateDevicePlatform)
-const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/activate_device/ActivateDeviceUtils.tsx");
+// Module 12770 (clientIdToActivateDevicePlatform)
+import { PlatformTypes } from "__exportStarResult1";
+
+const result = require("__exportStarResult1").fileFinishedImporting("modules/activate_device/ActivateDeviceUtils.tsx");
 
 export const clientIdToActivateDevicePlatform = function clientIdToActivateDevicePlatform(clientId) {
   if (clientId === require(dependencyMap[1]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID) {

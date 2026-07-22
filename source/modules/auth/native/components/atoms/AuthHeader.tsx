@@ -1,10 +1,10 @@
-// Module ID: 9213
-// Function ID: 72083
+// Module ID: 9214
+// Function ID: 72096
 // Name: AuthHeader
 // Dependencies: []
 // Exports: default
 
-// Module 9213 (AuthHeader)
+// Module 9214 (AuthHeader)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);

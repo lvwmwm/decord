@@ -1,5 +1,5 @@
 // Module ID: 7321
-// Function ID: 59027
+// Function ID: 59038
 // Name: extraErrorDataIntegration
 // Dependencies: []
 
@@ -44,7 +44,7 @@ export const extraErrorDataIntegration = _module.defineIntegration(function _ext
               if (obj.originalException) {
                 if (obj2.isError(obj.originalException)) {
                   const originalException = obj.originalException;
-                  const items = [];
+                  const items = [null, null, null, null, null, null, null, null, null];
                   obj = {};
                   const _Object = Object;
                   const keys = Object.keys(originalException);

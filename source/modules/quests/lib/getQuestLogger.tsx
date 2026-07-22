@@ -1,5 +1,5 @@
 // Module ID: 6943
-// Function ID: 55487
+// Function ID: 55498
 // Name: getQuestLogger
 // Dependencies: []
 // Exports: getQuestLogger

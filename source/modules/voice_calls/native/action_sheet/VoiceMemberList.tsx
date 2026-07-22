@@ -1,9 +1,9 @@
-// Module ID: 12594
-// Function ID: 96810
+// Module ID: 12599
+// Function ID: 96838
 // Name: ItemSeparator
 // Dependencies: []
 
-// Module 12594 (ItemSeparator)
+// Module 12599 (ItemSeparator)
 function ItemSeparator() {
   const tmp = callback4();
   return callback2(arg1(dependencyMap[19]).FormDivider, { style: callback4().rowFormDivider });
@@ -11,7 +11,7 @@ function ItemSeparator() {
 function VoiceMemberListSectionHeader(title) {
   const tmp = callback4();
   let obj = { style: tmp.sectionContainer };
-  obj = { delete: true, dispatch: true, raw: true, style: tmp.sectionTitle, children: title.title.toUpperCase() };
+  obj = { "Null": true, "Null": true, alignItems: true, style: tmp.sectionTitle, children: title.title.toUpperCase() };
   obj.children = callback2(arg1(dependencyMap[25]).Text, obj);
   return callback2(closure_8, obj);
 }
@@ -92,7 +92,7 @@ const ThemeTypes = arg1(dependencyMap[13]).ThemeTypes;
 const tmp3 = arg1(dependencyMap[10]);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = arg1(dependencyMap[14]));
 const tmp4 = arg1(dependencyMap[14]);
-let closure_24 = arg1(dependencyMap[15]).createStyles({ container: { tension: null, friction: null }, sectionContainer: {}, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { -9223372036854775808: 410161191, 0: 402653184, 0: 33554432, 0: -1035681198 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
+let closure_24 = arg1(dependencyMap[15]).createStyles({ container: { <string:3429165147>: "<string:2491613185>", <string:1389933036>: "<string:2941583362>" }, sectionContainer: { -9223372036854775808: null, 9223372036854775807: null }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: {}, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
 let closure_25 = importAllResult.memo((channel) => callback2(importDefault(dependencyMap[16]), { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
@@ -146,7 +146,7 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = { enable_music_info: false, enable_timestamp: false, utm_source: false };
+  let obj = { <string:3662980731>: "spring", <string:3077322678>: 0.4, <string:1378379006>: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   let importAll;

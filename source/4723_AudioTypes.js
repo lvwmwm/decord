@@ -1,5 +1,5 @@
 // Module ID: 4723
-// Function ID: 41105
+// Function ID: 41114
 // Name: AudioTypes
 // Dependencies: []
 
@@ -13,29 +13,17 @@ class AudioTypes {
   }
 }
 const _moduleResult = _module(AudioTypes);
-let obj = { compileArgument: null, getForumTimestampFormatter: null, separatorProps: null };
 const items = [{ sequence: [], description: "MPEG-4 Advanced Audio Coding (AAC) Low Complexity (LC) audio file" }, { sequence: [], description: "MPEG-2 Advanced Audio Coding (AAC) Low Complexity (LC) audio file" }];
-obj.signatures = items;
-_moduleResult.AAC = obj;
-obj = { compileArgument: "r", getForumTimestampFormatter: "isArray", separatorProps: "sk" };
+_moduleResult.AAC = { signatures: items };
 const items1 = [{ sequence: [] }];
-obj.signatures = items1;
-_moduleResult.AMR = obj;
-obj = { compileArgument: null, getForumTimestampFormatter: null, separatorProps: null };
+_moduleResult.AMR = { signatures: items1 };
 const items2 = [{ sequence: [] }];
-obj.signatures = items2;
-_moduleResult.FLAC = obj;
-const obj1 = { compileArgument: null, getForumTimestampFormatter: "<string:1635516417>", separatorProps: "<string:3998285825>" };
+_moduleResult.FLAC = { signatures: items2 };
 const items3 = [{ sequence: [], offset: 4, compatibleExtensions: [] }];
-obj1.signatures = items3;
-_moduleResult.M4A = obj1;
-const obj2 = { compileArgument: true, getForumTimestampFormatter: true, separatorProps: true };
+_moduleResult.M4A = { signatures: items3 };
 const items4 = [{ sequence: [], description: "MPEG-1 Layer 3 file without an ID3 tag or with an ID3v1 tag (which is appended at the end of the file)" }, { sequence: [], description: "MPEG-1 Layer 3 file without an ID3 tag or with an ID3v1 tag (which is appended at the end of the file)" }, { sequence: [], description: "MPEG-1 Layer 3 file without an ID3 tag or with an ID3v1 tag (which is appended at the end of the file)" }, { sequence: [], description: "MP3 file with an ID3v2 container" }];
-obj2.signatures = items4;
-_moduleResult.MP3 = obj2;
-const obj3 = { compileArgument: true, getForumTimestampFormatter: true, separatorProps: true };
-const items5 = [{ sequence: ["<string:2013265920>", "<string:1761607680>", "<string:1711276032>", "isArray", "<string:2046820352>", 14155776, 16711680, 15204352, 5439488, 5242880, 4784128, 4587520], skippedBytes: [null, true, true, true] }];
-obj3.signatures = items5;
-_moduleResult.WAV = obj3;
+_moduleResult.MP3 = { signatures: items4 };
+const items5 = [{ sequence: ["<string:2013265920>", "<string:1761607680>", "<string:1711276032>", "isArray", "<string:2046820352>", 14155776, 16711680, 15204352, 5439488, 5242880, 4784128, 4587520], skippedBytes: ["<string:77320448>", "<string:3733213440>", "<string:1369907281>", "<string:1129440336>"] }];
+_moduleResult.WAV = { signatures: items5 };
 
 export const AudioTypes = _moduleResult;

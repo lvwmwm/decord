@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 83081
+// Module ID: 10638
+// Function ID: 83094
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 10637 (_isNativeReflectConstruct)
+// Module 10638 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

@@ -1,9 +1,9 @@
-// Module ID: 12608
-// Function ID: 96901
+// Module ID: 12613
+// Function ID: 96929
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12608 (_isNativeReflectConstruct)
+// Module 12613 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -207,7 +207,7 @@ const tmp3 = (PureComponent) => {
   items[2] = obj;
   return callback(Timer, items);
 }(importAll(dependencyMap[5]).PureComponent);
-tmp3.defaultProps = { "Null": null, "Null": null };
+tmp3.defaultProps = { -1395675954: true, -447589535: true };
 const importAllResult = importAll(dependencyMap[5]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/voice_calls/native/components/Timer.tsx");
 

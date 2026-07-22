@@ -1,10 +1,10 @@
-// Module ID: 12761
-// Function ID: 97846
+// Module ID: 12768
+// Function ID: 97879
 // Name: ActivateDevice
-// Dependencies: [342884352, 91226112, 836894720, 270270464, 297467904, 131072, 528089088, 452984832, 553648128, 503316480, 301989904, 3791650851, 469762097, 3154116624, 3137339396, 33554449, 1946157056, 4096, 12775, 1934, 2]
+// Dependencies: [333053952, 91226112, 837353472, 270270464, 297467904, 131072, 528089088, 452984832, 553648128, 503316480, 318767120, 3909091363, 469762097, 3154116624, 3137339396, 33554449, 1946157056, 4096, 12782, 1934, 2]
 // Exports: ActivateDevice
 
-// Module 12761 (ActivateDevice)
+// Module 12768 (ActivateDevice)
 import result2 from "result2";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -13,20 +13,20 @@ let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = { background: { flex: 1 } };
-obj = { "Null": "confetti", "Null": "png", backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
 obj.imageStyle = obj;
 obj.safeArea = {};
 const tmp2 = arg1(dependencyMap[2]);
-obj.content = { backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: { "Null": "<string:2754674692>", "Null": "<string:3607772528>" }, shadowRadius: 4 };
+obj.content = { backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: {}, shadowRadius: 4 };
 obj.scroller = {};
-obj.scrollerContent = {};
+obj.scrollerContent = { 9223372036854775807: "safety_state", 9223372036854775807: "message" };
 let closure_10 = obj.createStyles(obj);
 const result = result2.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
 
 export const ActivateDevice = (onClose) => {
   onClose = onClose.onClose;
   const tmp = callback2();
-  const tmp2 = callback(React.useState({ GIFS_SEARCH: null, borderWidth: null }), 2);
+  const tmp2 = callback(React.useState({ paddingBottom: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", mass: null }), 2);
   const first = tmp2[0];
   const arg1 = first;
   const importDefault = tmp4;
@@ -53,16 +53,14 @@ export const ActivateDevice = (onClose) => {
   const React = deviceCodeAuthorizeCallback;
   const items3 = [deviceCodeAuthorizeCallback];
   const items4 = [first];
-  const callback3 = React.useCallback((clientId) => {
-    const first = clientId;
-    let obj = { type: "authorization", userCodeData: clientId };
+  const callback3 = React.useCallback((userCodeData) => {
+    const first = userCodeData;
+    let obj = { type: "authorization", userCodeData };
     tmp4(obj);
-    obj = {
-      clientId: clientId.clientId,
-      scopes: clientId.scopes,
-      callbackWithoutPost(arg0) {
-        return callback(arg0, arg0);
-      }
+    obj = { "Bool(true)": "r", "Bool(true)": "isArray", "Bool(true)": "WireType", "Bool(true)": "op", "Bool(true)": "top", "Bool(true)": "r" };
+    ({ clientId: obj3.clientId, scopes: obj3.scopes } = userCodeData);
+    obj.callbackWithoutPost = function callbackWithoutPost(arg0) {
+      return callback(arg0, arg0);
     };
     first(first1[8]).openOAuth2Modal(obj);
   }, items3);
@@ -118,7 +116,7 @@ export const ActivateDevice = (onClose) => {
   obj3.imageStyle = tmp.imageStyle;
   const items6 = [tmp.background];
   obj3.style = items6;
-  const obj4 = { "Bool(false)": null, "Bool(false)": null, style: tmp.safeArea };
+  const obj4 = { "Bool(true)": null, "Bool(true)": null, style: tmp.safeArea };
   const obj5 = { style: tmp.content };
   obj6 = { bounces: false, style: tmp.scroller, contentContainerStyle: tmp.scrollerContent, children: tmp21Result };
   obj5.children = <closure_8 {...obj6} />;

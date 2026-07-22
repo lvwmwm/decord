@@ -1,5 +1,5 @@
 // Module ID: 7485
-// Function ID: 60067
+// Function ID: 60078
 // Name: _startStageInstance
 // Dependencies: []
 // Exports: endStageInstance, startStageInstance, updateStageInstance

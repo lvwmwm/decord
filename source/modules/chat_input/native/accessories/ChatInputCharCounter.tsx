@@ -1,9 +1,9 @@
-// Module ID: 11451
-// Function ID: 89220
+// Module ID: 11452
+// Function ID: 89233
 // Name: ChatInputCharCounter
 // Dependencies: []
 
-// Module 11451 (ChatInputCharCounter)
+// Module 11452 (ChatInputCharCounter)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -11,7 +11,7 @@ const UpsellTypes = arg1(dependencyMap[3]).UpsellTypes;
 const PremiumUpsellTypes = arg1(dependencyMap[4]).PremiumUpsellTypes;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { accessibilityRole: null, GuildBadgeFrog: "b28329d7d2ebd0b330f6112973e5d746" } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { "Bool(false)": null, "Bool(false)": "b28329d7d2ebd0b330f6112973e5d746" } });
 const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   analyticsLocations = analyticsLocations.analyticsLocations;
   const arg1 = analyticsLocations;

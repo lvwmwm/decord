@@ -1,10 +1,10 @@
-// Module ID: 9554
-// Function ID: 74454
+// Module ID: 9555
+// Function ID: 74467
 // Name: ForumGuidelinesActionSheet
 // Dependencies: []
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 9554 (ForumGuidelinesActionSheet)
+// Module 9555 (ForumGuidelinesActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -18,7 +18,7 @@ obj.footer = { paddingBottom: 16 };
 obj.buttonWrapper = { marginHorizontal: 16 };
 const tmp2 = arg1(dependencyMap[4]);
 obj.buttonPill = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-const obj2 = { flexDirection: 45904673, alignItems: 1048576, backgroundColor: 1310720, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderWidth: 1358955197, borderColor: 1931543551, paddingHorizontal: 800, paddingVertical: 16, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { "Null": null, "Null": null } };
+const obj2 = { accessibilityRole: false, accessibilityLabel: 600, hitSlop: 16, style: 20, onPress: "heading-md/bold", accessible: "display", accessibilityRole: false, lastValue: 700, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.floatingButtonContainer = obj2;
 obj.editButton = {};
 obj.editText = { marginRight: 4 };
@@ -162,8 +162,7 @@ export default function ForumGuidelinesActionSheet(channel) {
   const obj10 = { style: tmp.guidelinesContainer };
   const obj11 = {};
   const tmp26 = importDefault(dependencyMap[24]);
-  const obj12 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, channelId: channel.id };
-  obj11.children = importDefault(dependencyMap[26]).parseForumPostGuidelines(channel.topic, true, obj12);
+  obj11.children = importDefault(dependencyMap[26]).parseForumPostGuidelines(channel.topic, true, { channelId: channel.id });
   obj10.children = callback2(arg1(dependencyMap[22]).Text, obj11);
   items8[1] = callback2(View, obj10);
   obj3.children = items8;

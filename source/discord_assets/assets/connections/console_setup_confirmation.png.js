@@ -1,9 +1,9 @@
-// Module ID: 8974
-// Function ID: 70743
+// Module ID: 8975
+// Function ID: 70756
 // Name: metadata
 // Dependencies: []
 
-// Module 8974 (metadata)
+// Module 8975 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/connections/console_setup_confirmation.png.js");
 

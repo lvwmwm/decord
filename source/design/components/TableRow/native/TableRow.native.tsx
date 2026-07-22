@@ -1,9 +1,9 @@
-// Module ID: 5428
-// Function ID: 46512
+// Module ID: 5162
+// Function ID: 44949
 // Name: TableRowInner
 // Dependencies: []
 
-// Module 5428 (TableRowInner)
+// Module 5162 (TableRowInner)
 class TableRow {
   constructor(arg0) {
     ({ icon, disabled } = global);
@@ -30,7 +30,7 @@ class TableRow {
     obj2 = arg1(dependencyMap[7]);
     token = obj2.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
     tmp6 = jsx;
-    obj = { GuildMemberFlags: null, calendarIcon: null, RowButton: null };
+    obj = { -1861921109: 24, -1779290825: 24, -1724409913: null };
     obj.radius = token;
     str = undefined;
     if (enabled) {
@@ -114,7 +114,7 @@ class TableRowInner {
       num2 = 1.5;
       tmp6 = fontScale > 1.5;
     }
-    tmp7 = f46515(true === disabled, null != tmp2, tmp6, tmp);
+    tmp7 = f44952(true === disabled, null != tmp2, tmp6, tmp);
     obj3 = arg1(dependencyMap[7]);
     token = obj3.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
     obj4 = arg1(dependencyMap[7]);
@@ -276,7 +276,7 @@ let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   obj.iconContainer = obj;
   let num2 = 18;
   obj.trailing = { marginStart: 18 };
-  const obj1 = {};
+  const obj1 = { createStyles: null, guild_id: 1, bottom: "absolute", flexDirection: "100%", alignItems: "100%" };
   if (arg2) {
     str = "column";
   }

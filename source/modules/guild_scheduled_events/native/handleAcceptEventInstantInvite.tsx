@@ -1,10 +1,10 @@
-// Module ID: 9481
-// Function ID: 73897
+// Module ID: 9482
+// Function ID: 73910
 // Name: handleAcceptEventInstantInvite
 // Dependencies: []
 // Exports: default
 
-// Module 9481 (handleAcceptEventInstantInvite)
+// Module 9482 (handleAcceptEventInstantInvite)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
 

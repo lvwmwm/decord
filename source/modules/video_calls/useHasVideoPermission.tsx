@@ -1,10 +1,10 @@
-// Module ID: 10674
-// Function ID: 83219
+// Module ID: 10675
+// Function ID: 83232
 // Name: useHasVideoPermission
 // Dependencies: []
 // Exports: default, getVideoPermission
 
-// Module 10674 (useHasVideoPermission)
+// Module 10675 (useHasVideoPermission)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");

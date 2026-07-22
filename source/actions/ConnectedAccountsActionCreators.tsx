@@ -1,5 +1,5 @@
 // Module ID: 4935
-// Function ID: 42257
+// Function ID: 42266
 // Name: callback
 // Dependencies: []
 
@@ -28,7 +28,7 @@ importDefaultResult = new importDefaultResult("ConnectedAccounts");
 const obj = {
   fetch() {
     const HTTP = arg1(dependencyMap[4]).HTTP;
-    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_6.CONNECTIONS };
+    const obj = { y: null, isArray: null, accessible: null, url: closure_6.CONNECTIONS };
     const value = HTTP.get(obj);
     return value.then((accounts) => {
       let obj = callback(closure_2[5]);
@@ -147,7 +147,7 @@ const obj = {
     obj = { url: closure_6.INTEGRATION_JOIN(id), oldFormErrors: true, rejectWithError: arg1(dependencyMap[4]).rejectWithMigratedError() };
     HTTP.post(obj, (ok) => {
       let obj = arg1(closure_2[5]);
-      obj = { toPrecision: "accessibilityRole", JoinStagePrompt: "useStateFromStores", numCells: "context", integrationId: ok };
+      obj = { "Null": 0.5, "Null": "M15 6h-1v2h1V6Z", "Null": true, integrationId: ok };
       obj.dispatch(obj);
       if (!ok.ok) {
         obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: ok };

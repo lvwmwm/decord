@@ -16,7 +16,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [];
+let closure_2 = ["EmojiSourceDataTypes", "USN", "MEMBER_VERIFICATION_TYPE", "blockedIgnoredRedirect", "ForcedColorsPreference"];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

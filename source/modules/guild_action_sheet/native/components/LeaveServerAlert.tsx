@@ -1,10 +1,10 @@
-// Module ID: 12848
-// Function ID: 98207
+// Module ID: 12855
+// Function ID: 98240
 // Name: LeaveServerAlert
 // Dependencies: []
 // Exports: default
 
-// Module 12848 (LeaveServerAlert)
+// Module 12855 (LeaveServerAlert)
 const GuildFeatures = require(dependencyMap[0]).GuildFeatures;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);

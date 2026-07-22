@@ -1,10 +1,10 @@
-// Module ID: 13307
-// Function ID: 101122
+// Module ID: 13314
+// Function ID: 101155
 // Name: getInitialSubscriptionPayload
 // Dependencies: []
 // Exports: getInitialSubscriptionPayload
 
-// Module 13307 (getInitialSubscriptionPayload)
+// Module 13314 (getInitialSubscriptionPayload)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

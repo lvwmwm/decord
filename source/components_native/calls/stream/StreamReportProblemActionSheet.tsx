@@ -1,10 +1,10 @@
-// Module ID: 15767
-// Function ID: 120567
+// Module ID: 15775
+// Function ID: 120610
 // Name: ReportProblem
 // Dependencies: []
 // Exports: default
 
-// Module 15767 (ReportProblem)
+// Module 15775 (ReportProblem)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -40,7 +40,7 @@ export default function ReportProblem(arg0) {
     callback(closure_2[8]).track(constants.OPEN_POPOUT, obj);
   });
   const tmp = callback();
-  const mapped = importDefault(dependencyMap[12])({ y: null, isArray: null }).map((label) => {
+  const mapped = importDefault(dependencyMap[12])({}).map((label) => {
     const value = label.value;
     return callback2(value(closure_2[13]).ActionSheetRow, {
       label: label.label,

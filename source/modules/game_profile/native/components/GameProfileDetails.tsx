@@ -1,14 +1,14 @@
-// Module ID: 11840
-// Function ID: 91777
+// Module ID: 11841
+// Function ID: 91791
 // Name: GameProfileWebsiteButton
 // Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11840 (GameProfileWebsiteButton)
-import closure_4 from "result";
-import result from "result";
-import { IGDB_ATTRIBUTION_LINK } from "result";
-import result from "result";
+// Module 11841 (GameProfileWebsiteButton)
+import closure_4 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { IGDB_ATTRIBUTION_LINK } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function GameProfileWebsiteButton(action) {
   let icon;
@@ -32,28 +32,28 @@ function GameProfileWebsiteButton(action) {
     children: icon
   });
 }
-({ View: closure_5, Pressable: closure_6 } = result);
+({ View: closure_5, Pressable: closure_6 } = __exportStarResult1);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { gap: require("result").space.PX_8 };
+obj = { gap: require("__exportStarResult1").space.PX_8 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[3]);
-obj.headerText = { paddingHorizontal: require("result").space.PX_8 };
-const obj1 = { paddingHorizontal: require("result").space.PX_8 };
-obj.detailsContainer = { borderRadius: require("result").radii.lg, borderWidth: 1, borderColor: require("result").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("result").colors.BACKGROUND_BASE_LOW };
-const obj3 = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, padding: require("result").space.PX_12 };
+obj.headerText = { paddingHorizontal: require("__exportStarResult1").space.PX_8 };
+const obj1 = { paddingHorizontal: require("__exportStarResult1").space.PX_8 };
+obj.detailsContainer = { borderRadius: require("__exportStarResult1").radii.lg, borderWidth: 1, borderColor: require("__exportStarResult1").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+const obj3 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", padding: require("__exportStarResult1").space.PX_12 };
 obj.detailsRow = obj3;
-const obj2 = { borderRadius: require("result").radii.lg, borderWidth: 1, borderColor: require("result").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("result").colors.BACKGROUND_BASE_LOW };
-obj.detailsRowValue = { paddingLeft: require("result").space.PX_32 };
-const obj4 = { paddingLeft: require("result").space.PX_32 };
-obj.detailsRowBottomBorder = { borderBottomWidth: 1, borderBottomColor: require("result").colors.BORDER_SUBTLE };
-const obj6 = { "Null": 7, "Null": 370, gap: require("result").space.PX_12 };
+const obj4 = { flexDirection: "onAnimationFinishCapture", alignItems: "onAnimationFinish", paddingLeft: require("__exportStarResult1").space.PX_32 };
+obj.detailsRowValue = obj4;
+const obj2 = { borderRadius: require("__exportStarResult1").radii.lg, borderWidth: 1, borderColor: require("__exportStarResult1").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+obj.detailsRowBottomBorder = { borderBottomWidth: 1, borderBottomColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
+const obj6 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: require("__exportStarResult1").space.PX_12 };
 obj.platformsContainer = obj6;
-const obj7 = { "Null": 7, "Null": 370, gap: require("result").space.PX_12 };
+const obj7 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: require("__exportStarResult1").space.PX_12 };
 obj.linksContainer = obj7;
 let closure_10 = obj.createStyles(obj);
-result = result.fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
 
 export default function GameProfileDetails(game) {
   game = game.game;
@@ -235,7 +235,7 @@ export default function GameProfileDetails(game) {
   let tmp2 = null;
   if (0 !== memo.length) {
     let obj = { style: tmp.container };
-    obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.headerText };
+    obj = { cachedAt: "polite", edpbxy: "column", style: tmp.headerText };
     const intl = arg1(dependencyMap[8]).intl;
     obj.children = intl.string(arg1(dependencyMap[8]).t.7OjmmH);
     const items1 = [callback(arg1(dependencyMap[13]).Text, obj), ];
@@ -253,10 +253,10 @@ export default function GameProfileDetails(game) {
           }
           items[1] = prop;
           obj.style = items;
-          obj = { <string:1643205302>: true, <string:1415816450>: true, <string:4283523744>: true, children: label.label };
+          obj = { 803799044: true, 1269170180: true, 711589892: true, children: label.label };
           const items1 = [callback(game(memo[13]).Text, obj), ];
           if ("string" === typeof label.value) {
-            obj = { <string:1643205302>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, <string:1415816450>: 173030459411399400000000, <string:4283523744>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122059054016, style: tmp.detailsRowValue, children: label.value };
+            obj = { style: tmp.detailsRowValue, children: label.value };
             let value = callback(game(memo[13]).Text, obj);
           } else {
             value = label.value;

@@ -1,47 +1,44 @@
 // Module ID: 15805
-// Function ID: 120897
+// Function ID: 120924
 // Dependencies: []
 
 // Module 15805
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "lt",
+  locale: "es",
   pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr1) {
-      const first = parts[0];
-      substr = first.slice(-1);
-    }
-    if (substr1) {
-      const first1 = parts[0];
-      substr1 = first1.slice(-2);
-    }
+    let str = "other";
     let str2 = "other";
-    let str3 = "other";
     if (!arg1) {
-      if (1 != substr) {
-        if (substr >= 2) {
-          if (substr <= 9) {
-            let str7 = "few";
-            if (substr1 >= 11) {
-              str7 = "few";
-            }
-          }
-          let str5 = str7;
-        }
-        if (0 != tmp2) {
-          str2 = "many";
-        }
-        str7 = str2;
-      } else {
-        str5 = "one";
-        if (substr1 >= 11) {
-          str5 = "one";
-        }
+      if (1 == arg0) {
+        str = "one";
       }
-      str3 = str5;
+      str2 = str;
     }
-    return str3;
+    return str2;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000733033499373, 0: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008976838191217453 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: 36941056 });
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ 0: 1, 0: true });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: 2, 0: "visible" });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: "interactive-text-active", 0: "text-sm/medium" });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015526722424582328, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008622161206277315 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: -7746666924795186000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 6465352944979374000000000000000000000000000000000000000000000000000000000000000000000000 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003830796024597383, 0: 6465384988826380000000000000000000000000000000000000000000000000000000000000000000000000 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: false, 0: false });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: false, 0: false });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: false, 0: false });

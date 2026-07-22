@@ -1,17 +1,17 @@
-// Module ID: 9283
-// Function ID: 72539
+// Module ID: 9284
+// Function ID: 72552
 // Name: ConversationPreviewSkeleton
 // Dependencies: []
 // Exports: default
 
-// Module 9283 (ConversationPreviewSkeleton)
+// Module 9284 (ConversationPreviewSkeleton)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).MOBILE_PREVIEW_MESSAGE_COUNT;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_8, marginTop: importDefault(dependencyMap[5]).space.PX_4 };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_8, marginTop: importDefault(dependencyMap[5]).space.PX_4 };
 obj.row = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.rowSpacing = { marginTop: importDefault(dependencyMap[5]).space.PX_26 };
@@ -19,7 +19,7 @@ const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_26 };
 obj.avatar = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.lines = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
-const obj4 = { y: 141317.025, isArray: 0.00000000000000000000000000000000000000000000000000000000000004133483696512167, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+const obj4 = { hideWhenScrolling: 141317.025, autoCapitalize: 0.00000000000000000000000000000000000000000000000000000000000004133483696512197, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.lineName = obj4;
 const obj3 = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.lineText = { height: 10, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };

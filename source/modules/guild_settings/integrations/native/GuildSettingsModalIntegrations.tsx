@@ -1,10 +1,10 @@
-// Module ID: 16125
-// Function ID: 124305
+// Module ID: 16133
+// Function ID: 124347
 // Name: PlatformTypes
 // Dependencies: []
 // Exports: default
 
-// Module 16125 (PlatformTypes)
+// Module 16133 (PlatformTypes)
 let PlatformTypes;
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
@@ -44,7 +44,7 @@ export default function GuildSettingsModalIntegrations(contentContainerStyle) {
   const items1 = [closure_4];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => {
     if (null == stateFromStores) {
-      let guildPermissionProps = { initialPullTabPosition: null, easterEggSpacing: null };
+      let guildPermissionProps = { "Null": true, "Null": true };
     } else {
       guildPermissionProps = found.getGuildPermissionProps(stateFromStores);
     }

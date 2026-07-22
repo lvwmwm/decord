@@ -1,10 +1,10 @@
-// Module ID: 11453
-// Function ID: 89235
+// Module ID: 11454
+// Function ID: 89248
 // Name: ChatInputGuardWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 11453 (ChatInputGuardWrapper)
+// Module 11454 (ChatInputGuardWrapper)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const isThread = arg1(dependencyMap[2]).isThread;

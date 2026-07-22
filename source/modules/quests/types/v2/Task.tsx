@@ -1,5 +1,5 @@
 // Module ID: 6946
-// Function ID: 55508
+// Function ID: 55519
 // Name: _firstPartyTasksFromServer
 // Dependencies: []
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer

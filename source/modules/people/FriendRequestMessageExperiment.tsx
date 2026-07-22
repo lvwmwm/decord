@@ -1,12 +1,11 @@
-// Module ID: 12742
-// Function ID: 97764
+// Module ID: 12749
+// Function ID: 97797
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12742 (apexExperiment)
+// Module 12749 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { bottom: "Array", name: "isArray", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/people/FriendRequestMessageExperiment.tsx");
 

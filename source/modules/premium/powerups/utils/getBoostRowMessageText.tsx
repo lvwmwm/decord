@@ -1,10 +1,10 @@
-// Module ID: 11609
-// Function ID: 90179
+// Module ID: 11610
+// Function ID: 90192
 // Name: getBoostRowMessageText
 // Dependencies: []
 // Exports: default
 
-// Module 11609 (getBoostRowMessageText)
+// Module 11610 (getBoostRowMessageText)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/utils/getBoostRowMessageText.tsx");
 

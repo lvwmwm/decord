@@ -1,9 +1,9 @@
-// Module ID: 11771
-// Function ID: 91376
+// Module ID: 11772
+// Function ID: 91389
 // Name: DiscoverabilityLandingScene
 // Dependencies: []
 
-// Module 11771 (DiscoverabilityLandingScene)
+// Module 11772 (DiscoverabilityLandingScene)
 function DiscoverabilityLandingScene() {
   const navigation = arg1(dependencyMap[9]).useNavigation();
   const arg1 = navigation;

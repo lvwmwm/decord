@@ -1,10 +1,10 @@
-// Module ID: 16251
-// Function ID: 125554
+// Module ID: 16259
+// Function ID: 125596
 // Name: ApplicationStatusNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16251 (ApplicationStatusNotice)
+// Module 16259 (ApplicationStatusNotice)
 function ApplicationStatusNotice(arg0) {
   let createEnableRequest;
   let isApplicationPending;
@@ -58,7 +58,7 @@ class SectionContainer {
     tmp3 = View;
     items = [, , , ];
     items[0] = jsx(View, obj);
-    obj1 = { delete: false, dispatch: 0, raw: 4 };
+    obj1 = { "Null": false, "Null": 0, alignItems: 4 };
     obj1.style = tmp.sectionTitle;
     obj1.children = title;
     items[1] = jsx(arg1(dependencyMap[12]).Text, obj1);
@@ -68,7 +68,7 @@ class SectionContainer {
       tmp5 = jsx;
       tmp6 = arg1;
       tmp7 = dependencyMap;
-      obj2 = { delete: -1034747437, dispatch: -1274954172, raw: 94480 };
+      obj2 = { "Null": 1, "Null": "tail", alignItems: null };
       obj2.style = tmp.sectionFooter;
       obj2.children = footer;
       tmp4 = jsx(arg1(dependencyMap[12]).Text, obj2);
@@ -119,7 +119,7 @@ function StartEarningButton(isTermsAccepted) {
     return obj.openLazy(isTermsAccepted(submitAcceptTermsRequest[17])(submitAcceptTermsRequest[16], submitAcceptTermsRequest.paths), isTermsAccepted(submitAcceptTermsRequest[18]).ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   obj = { style: tmp.tos, leading: callback2(arg1(dependencyMap[19]).FormRow.Checkbox, { selected: isTermsAccepted }) };
-  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, children: acceptTermsCheckboxText };
+  obj = { cachedAt: true, edpbxy: true, children: acceptTermsCheckboxText };
   obj.label = callback2(arg1(dependencyMap[12]).Text, obj);
   obj.onPress = function onPress() {
     return callback(!isTermsAccepted);
@@ -253,13 +253,13 @@ let closure_10 = arg1(dependencyMap[5]).CreatorMonetizationOnboardingMarketingSe
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { flex: 1 }, contentContainer: { -1805531016: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021729236920285, 2095032404: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012237906228841671 }, heroImage: { <string:4069139795>: true, <string:1710685430>: true }, subtitle: { marginTop: 8 } };
+obj = { container: { flex: 1 }, contentContainer: { backgroundColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021729236920285, paddingVertical: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012237906228841671 }, heroImage: { emptyStateContentContainer: true, GAME_SERVERS: true }, subtitle: { marginTop: 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.sm, marginTop: 10 };
 obj.tos = obj;
 obj.startEarningButton = { marginTop: 12 };
 obj.startEarningButtonContainer = { marginTop: 14 };
 obj.startEarningFabContainer = { marginHorizontal: 24 };
-const obj1 = { accessibilityRole: 0, padding: -11151, "Null": 24183295, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
+const obj1 = { unicodeVersion: null, y: 1, isArray: 59, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 obj.divider = obj1;
 obj.sectionTitle = {};
 obj.sectionFooter = { marginTop: 36 };
@@ -365,7 +365,7 @@ export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
         const intl2 = arg1(dependencyMap[10]).intl;
         obj5.children = intl2.string(arg1(dependencyMap[10]).t.QYqDQ0);
         const items4 = [callback2(arg1(dependencyMap[12]).Text, obj5), , , ];
-        const obj6 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.subtitle };
+        const obj6 = { "Null": 1, "Null": "tail", alignItems: null, style: tmp.subtitle };
         const intl3 = arg1(dependencyMap[10]).intl;
         obj6.children = intl3.string(arg1(dependencyMap[10]).t.41wkMc);
         items4[1] = callback2(arg1(dependencyMap[12]).Text, obj6);

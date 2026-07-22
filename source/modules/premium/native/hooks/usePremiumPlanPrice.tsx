@@ -1,5 +1,5 @@
 // Module ID: 7995
-// Function ID: 63546
+// Function ID: 63556
 // Name: usePremiumPlanPrice
 // Dependencies: []
 // Exports: default

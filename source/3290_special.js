@@ -19,7 +19,7 @@ function special(arg0) {
 function forms(arg0) {
   return closure_0[arg0].split("_");
 }
-let closure_0 = {};
+let closure_0 = { "Null": "parseFloat", "Null": "telemetry", "Null": "%RangeError%", "Null": "multiplyMatrices", "Null": "mi", "Null": "blockSize32", "Null": "SETTINGS_BLOCKED_USERS_V2", "Null": "curryRight", "Null": "pa", "Null": "Outgoing", "Null": 216090624, "Null": -2066481149, "Null": -44433406, "Null": -1539440639, "Null": 1351483393, "Null": -324272126, "Null": -1212350462 };
 function translateSeconds(arg0, arg1, arg2, arg3) {
   let str = "kelios sekund\u0117s";
   if (arg1) {

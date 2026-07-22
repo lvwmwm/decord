@@ -1,10 +1,10 @@
-// Module ID: 12235
-// Function ID: 93875
+// Module ID: 12240
+// Function ID: 93903
 // Name: VoicePanelSpoilerAlert
 // Dependencies: []
 // Exports: default
 
-// Module 12235 (VoicePanelSpoilerAlert)
+// Module 12240 (VoicePanelSpoilerAlert)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

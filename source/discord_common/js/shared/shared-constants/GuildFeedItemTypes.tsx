@@ -1,10 +1,10 @@
-// Module ID: 16104
-// Function ID: 124144
+// Module ID: 16112
+// Function ID: 124186
 // Name: set
 // Dependencies: []
 
-// Module 16104 (set)
-const obj = { ALL: new Set([]) };
+// Module 16112 (set)
+const obj = { ALL: new Set([null, null, null, null]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildFeedItemTypes.tsx");
 

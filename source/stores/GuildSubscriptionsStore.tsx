@@ -1,9 +1,9 @@
-// Module ID: 5653
-// Function ID: 48382
+// Module ID: 5652
+// Function ID: 48390
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5653 (_isNativeReflectConstruct)
+// Module 5652 (_isNativeReflectConstruct)
 let ChannelSections;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {

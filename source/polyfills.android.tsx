@@ -1,9 +1,9 @@
-// Module ID: 13008
-// Function ID: 98980
+// Module ID: 13015
+// Function ID: 99013
 // Name: toLocaleLowerCase
 // Dependencies: []
 
-// Module 13008 (toLocaleLowerCase)
+// Module 13015 (toLocaleLowerCase)
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[1]);
 String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {

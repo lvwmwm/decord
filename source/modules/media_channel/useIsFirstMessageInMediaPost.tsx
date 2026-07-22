@@ -1,5 +1,5 @@
 // Module ID: 7625
-// Function ID: 61101
+// Function ID: 61111
 // Name: isFirstMessageInMediaPost
 // Dependencies: []
 // Exports: useIsFirstMessageInMediaPost

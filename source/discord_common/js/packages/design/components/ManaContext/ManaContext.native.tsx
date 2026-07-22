@@ -1,5 +1,5 @@
 // Module ID: 3904
-// Function ID: 32303
+// Function ID: 32305
 // Name: context
 // Dependencies: []
 // Exports: ManaContextProvider, useManaContext

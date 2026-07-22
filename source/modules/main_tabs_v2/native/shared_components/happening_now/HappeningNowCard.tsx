@@ -1,10 +1,10 @@
-// Module ID: 14063
-// Function ID: 106809
+// Module ID: 14070
+// Function ID: 106849
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
 // Dependencies: []
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14063 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14070 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 let HAPPENING_NOW_BADGE_SIZE;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -45,12 +45,12 @@ let closure_21 = obj.createStyles((arg0, arg1, arg2, arg3) => {
       obj = obj2;
     }
   } else if ("full" === arg0) {
-    obj = { width: "allNodes", height: "R", body: "isWeakSet" };
+    obj = { position: "GiftTrollIllocon", top: "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK", 0: "isWeb" };
   }
   const obj3 = {};
   const merged = Object.assign(obj);
   obj3.card = { padding: closure_5, paddingRight: closure_14, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: closure_6, flexDirection: "row", alignItems: "center" };
-  obj3.cardBadgeWrapper = { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 };
+  obj3.cardBadgeWrapper = {};
   const obj5 = { width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE };
   let prop;
   if (!arg3) {
@@ -131,7 +131,7 @@ export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNam
   let children;
   let noMargin;
   displayNameFont = displayNameFont.displayNameFont;
-  let obj = {};
+  let obj = { 9223372036854775807: "spring", 0: 0.4, 0: 1 };
   ({ children, noMargin } = displayNameFont);
   Object.setPrototypeOf(null);
   const merged = Object.assign(displayNameFont, obj);

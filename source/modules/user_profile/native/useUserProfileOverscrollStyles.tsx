@@ -1,10 +1,10 @@
-// Module ID: 8502
-// Function ID: 67847
+// Module ID: 8503
+// Function ID: 67859
 // Name: useUserProfileOverscrollStyles
 // Dependencies: []
 // Exports: default
 
-// Module 8502 (useUserProfileOverscrollStyles)
+// Module 8503 (useUserProfileOverscrollStyles)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -86,7 +86,7 @@ export default function useUserProfileOverscrollStyles(arg0) {
       items = [, ];
       items[0] = closure_3;
       items[1] = 0;
-      interpolateResult = obj.interpolate(closure_2.get(), items, []);
+      interpolateResult = obj.interpolate(closure_2.get(), items, [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001232936406047691, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240319168643]);
       obj2 = height(closure_2[5]);
       items1 = [, ];
       items1[0] = closure_3;
@@ -143,7 +143,7 @@ export default function useUserProfileOverscrollStyles(arg0) {
       obj3 = height(closure_2[5]);
       items = [0.229];
       items[1] = -height * closure_1;
-      obj.blurAmount = obj2.clamp(obj3.interpolate(closure_2.get(), items, ["replace", "then"]), 0, 1);
+      obj.blurAmount = obj2.clamp(obj3.interpolate(closure_2.get(), items, [77601039, 1612144654]), 0, 1);
       return obj;
     }
   }

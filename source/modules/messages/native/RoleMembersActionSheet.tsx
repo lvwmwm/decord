@@ -1,10 +1,10 @@
-// Module ID: 10855
-// Function ID: 84464
+// Module ID: 10856
+// Function ID: 84477
 // Name: RoleMembersActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10855 (RoleMembersActionSheet)
+// Module 10856 (RoleMembersActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4, paddingTop: importDefault(dependencyMap[7]).space.PX_12, paddingBottom: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4, paddingTop: importDefault(dependencyMap[7]).space.PX_12, paddingBottom: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
 obj.header = obj;
 obj.headerText = { flex: 1 };
 obj.roleDot = { paddingTop: 0 };

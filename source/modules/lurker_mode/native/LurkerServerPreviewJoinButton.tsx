@@ -1,8 +1,8 @@
-// Module ID: 11460
-// Function ID: 89284
+// Module ID: 11461
+// Function ID: 89297
 // Dependencies: []
 
-// Module 11460
+// Module 11461
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -43,7 +43,7 @@ const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(g
     joinSource(onBeforeJoin[11]).joinGuild(guildId, { source: joinSource });
   }, items1);
   if (null == stateFromStores) {
-    obj = {};
+    obj = { "Null": 24379393, "Null": 33554432, "Null": 0 };
     const intl = arg1(dependencyMap[13]).intl;
     obj.text = intl.string(arg1(dependencyMap[13]).t.VJlc0S);
     obj.onPress = callback;
@@ -57,7 +57,7 @@ const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(g
           return joinSource(onBeforeJoin[15]).getFormattedName(stateFromStores);
         }
     };
-    const obj1 = { text: intl2.formatToPlainString(arg1(dependencyMap[13]).t.5qtVhX, obj) };
+    const obj1 = { "Null": 24379393, "Null": 33554432, "Null": 0, text: intl2.formatToPlainString(arg1(dependencyMap[13]).t.5qtVhX, obj) };
     obj2 = { source: userAvatarSource, variant: "entity" };
     obj1.icon = jsx(arg1(dependencyMap[12]).Button.Icon, obj2);
     obj1.onPress = callback;

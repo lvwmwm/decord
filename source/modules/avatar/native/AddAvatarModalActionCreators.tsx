@@ -1,10 +1,10 @@
-// Module ID: 15989
-// Function ID: 122726
+// Module ID: 15997
+// Function ID: 122768
 // Name: closeAddAvatarModal
 // Dependencies: []
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 15989 (closeAddAvatarModal)
+// Module 15997 (closeAddAvatarModal)
 function closeAddAvatarModal(skip) {
   let obj = importDefault(dependencyMap[8]);
   obj.popWithKey(ADD_AVATAR_MODAL_KEY);

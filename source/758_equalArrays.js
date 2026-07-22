@@ -1,7 +1,7 @@
 // Module ID: 758
 // Function ID: 8815
 // Name: equalArrays
-// Dependencies: []
+// Dependencies: [2, 4294967295, 4294967295]
 
 // Module 758 (equalArrays)
 

@@ -1,10 +1,10 @@
-// Module ID: 11583
-// Function ID: 90027
+// Module ID: 11584
+// Function ID: 90040
 // Name: useGuildPowerupsWarningConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11583 (useGuildPowerupsWarningConfig)
+// Module 11584 (useGuildPowerupsWarningConfig)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsWarningConfig.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9636
-// Function ID: 75060
+// Module ID: 9637
+// Function ID: 75073
 // Name: AppliedForumTag
 // Dependencies: []
 // Exports: AppliedForumTagPill
 
-// Module 9636 (AppliedForumTag)
+// Module 9637 (AppliedForumTag)
 class AppliedForumTag {
   constructor(arg0) {
     ({ tag, containerStyle: closure_0 } = global);
@@ -14,7 +14,7 @@ class AppliedForumTag {
     obj = arg1(dependencyMap[7]);
     items = [];
     items[0] = closure_4;
-    f75062 = obj.useStateFromStores(items, () => {
+    f75075 = obj.useStateFromStores(items, () => {
       let usableCustomEmojiById = null;
       if (null != closure_3) {
         usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(closure_3);
@@ -81,13 +81,13 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[3]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { width: 1091694070, height: 141842, borderRadius: 6258, borderWidth: 6144, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, justifyContent: 1375732013, alignItems: -302633734, i: -866758143, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
 obj.pill = obj;
 obj.disableEndMargin = { marginRight: 0 };
-obj.emoji = {};
+obj.emoji = { "Null": "constructor", "Null": "dispatchFrameUrl", "Null": "<string:2639024384>", "Null": "ACTIVITY_UPSELL_MODAL" };
 obj.textEmoji = {};
 obj.tagName = { flexShrink: 1 };
-obj.container = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj.container = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/forums/native/AppliedForumTag.tsx");

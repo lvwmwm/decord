@@ -1,10 +1,10 @@
-// Module ID: 11992
-// Function ID: 92672
+// Module ID: 11996
+// Function ID: 92698
 // Name: usePrivacyNoticeContentTypes
 // Dependencies: []
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 11992 (usePrivacyNoticeContentTypes)
+// Module 11996 (usePrivacyNoticeContentTypes)
 function usePrivacyNoticeContentTypes() {
   const isInPrivateProfilesExperiment = arg1(dependencyMap[10]).useIsInPrivateProfilesExperiment("UserProfilePrivacyNotice");
   const arg1 = isInPrivateProfilesExperiment;
@@ -36,7 +36,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm, padding: importDefault(dependencyMap[7]).space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
-obj.icon = { <string:996353750>: "0 0 4px 0 hsl(none 0% 0% / 0.08)", <string:2169656156>: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" };
+obj.icon = { fontSize: "0 0 4px 0 hsl(none 0% 0% / 0.08)", lineHeight: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" };
 obj.text = { flex: 1 };
 obj.closeButton = { flexShrink: 0 };
 let closure_9 = obj.createStyles(obj);
@@ -52,8 +52,8 @@ export default function UserProfilePrivacyNotice() {
   const setting = ProfileVisibility.useSetting();
   callback = React.useCallback((children) => {
     const obj = {
-      hasMaxConnections: false,
-      isBoostOnlySubscription: false,
+      cachedAt: true,
+      edpbxy: true,
       onPress() {
         let obj = callback(closure_1[16]);
         obj = { screen: constants.DATA_AND_PRIVACY };
@@ -77,7 +77,7 @@ export default function UserProfilePrivacyNotice() {
     obj = { style: tmp.container };
     obj = { style: tmp.icon, children: callback3(callback(dependencyMap[17]).CircleInformationIcon, {}) };
     const items = [callback3(View, obj), , ];
-    const obj1 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.text };
+    const obj1 = { "Null": 1, "Null": "tail", alignItems: null, style: tmp.text };
     const intl = callback(dependencyMap[9]).intl;
     const obj2 = { privacySettingsLink: callback };
     obj1.children = intl.format(dqQ7AN, obj2);

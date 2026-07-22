@@ -1,10 +1,10 @@
-// Module ID: 15208
-// Function ID: 114760
+// Module ID: 15216
+// Function ID: 114803
 // Name: NoSearchResultsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15208 (NoSearchResultsScreen)
+// Module 15216 (NoSearchResultsScreen)
 function NoSearchResultsScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const arg1 = searchContext;
@@ -29,7 +29,7 @@ const ComponentActions = arg1(dependencyMap[6]).ComponentActions;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
 const tmp3 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[8]).createStyles({ controls: { frameId: null, syncRow: "100%" }, pages: { flex: 1 } });
+let closure_15 = arg1(dependencyMap[8]).createStyles({ controls: { "Bool(true)": null, "Bool(true)": "100%" }, pages: { flex: 1 } });
 const obj2 = arg1(dependencyMap[8]);
 let closure_16 = arg1(dependencyMap[9]).debounce((searchContext) => {
   let obj = importDefault(dependencyMap[10]);

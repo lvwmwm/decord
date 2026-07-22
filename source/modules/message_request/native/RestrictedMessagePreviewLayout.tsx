@@ -1,14 +1,13 @@
-// Module ID: 15458
-// Function ID: 117929
+// Module ID: 15466
+// Function ID: 117972
 // Name: RESTRICTED_AVATAR_SIZE
-// Dependencies: [31, 5305]
+// Dependencies: []
 
-// Module 15458 (RESTRICTED_AVATAR_SIZE)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
-const tmp2 = require("module_31").AVATAR_SIZE_MAP[require("module_31").AvatarSizes.NORMAL];
+// Module 15466 (RESTRICTED_AVATAR_SIZE)
+const tmp2 = require(dependencyMap[0]).AVATAR_SIZE_MAP[require(undefined, dependencyMap[0]).AvatarSizes.NORMAL];
 const sum = tmp2 + 18;
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewLayout.tsx");
+const _module = require(dependencyMap[1]);
+const result = _module.fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewLayout.tsx");
 
 export const RESTRICTED_AVATAR_SIZE = tmp2;
 export const RESTRICTED_CONTENT_INSET = sum;

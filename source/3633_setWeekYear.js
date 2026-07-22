@@ -1,12 +1,13 @@
 // Module ID: 3633
 // Function ID: 27900
 // Name: setWeekYear
-// Dependencies: []
+// Dependencies: [3673, 1931]
 // Exports: default
 
 // Module 3633 (setWeekYear)
-let closure_2 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_3 = _interopRequireDefault(require(dependencyMap[1]));
+import numberToLocale from "numberToLocale";
+import buildMatchFn from "buildMatchFn";
+
 let closure_4 = _interopRequireDefault(require(dependencyMap[2]));
 let closure_5 = _interopRequireDefault(require(dependencyMap[3]));
 let closure_6 = _interopRequireDefault(require(dependencyMap[4]));
@@ -66,8 +67,8 @@ export default function setWeekYear(defaultResult1, defaultResult1, firstWeekCon
   const date = new Date(0);
   date.setFullYear(defaultResult3, 0, defaultResult1);
   date.setHours(0, 0, 0, 0);
-  const defaultResult5 = closure_3.default(date, firstWeekContainsDate);
-  defaultResult5.setDate(defaultResult5.getDate() + closure_2.default(defaultResult2, closure_3.default(defaultResult2, firstWeekContainsDate)));
+  const defaultResult5 = buildMatchFn.default(date, firstWeekContainsDate);
+  defaultResult5.setDate(defaultResult5.getDate() + numberToLocale.default(defaultResult2, buildMatchFn.default(defaultResult2, firstWeekContainsDate)));
   return defaultResult5;
 };
 export default exports.default;

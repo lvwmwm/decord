@@ -1,10 +1,10 @@
-// Module ID: 9019
-// Function ID: 70933
+// Module ID: 9020
+// Function ID: 70946
 // Name: HammerIcon
 // Dependencies: []
 // Exports: HammerIcon
 
-// Module 9019 (HammerIcon)
+// Module 9020 (HammerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HammerIcon.tsx");

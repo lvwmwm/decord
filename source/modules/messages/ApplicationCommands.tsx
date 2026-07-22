@@ -1,5 +1,5 @@
 // Module ID: 7691
-// Function ID: 61364
+// Function ID: 61374
 // Name: getApplicationCommand
 // Dependencies: []
 // Exports: getApplicationCommand

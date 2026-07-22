@@ -1,8 +1,8 @@
-// Module ID: 14720
-// Function ID: 111027
+// Module ID: 14728
+// Function ID: 111070
 // Dependencies: []
 
-// Module 14720
+// Module 14728
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ getGuildIconSource: closure_5, getGuildIconURL: closure_6 } = arg1(dependencyMap[2]));
@@ -267,7 +267,7 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
   const dragDropInProgress = tmp13.dragDropInProgress;
   useItemDragState = dragDropInProgress;
   ({ dragState, overState, itemSize } = tmp13);
-  const guildsBarAnimatedWrapperStyles = obj1.useGuildsBarAnimatedWrapperStyles({ <string:3577514597>: null, <string:3965960815>: null });
+  const guildsBarAnimatedWrapperStyles = obj1.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null });
   const items6 = [closure_11];
   const stateFromStores1 = arg1(dependencyMap[21]).useStateFromStores(items6, () => isDragTarget.getGuildsTree().version);
   TRANSITION_PHYSICS = stateFromStores1;
@@ -317,9 +317,9 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
         tmp9 = closure_2;
         num = 35;
         obj3 = guildId(closure_2[35]);
-        tmp10 = f111039;
+        tmp10 = f111082;
         str = "animate-always";
-        targetOriginY = obj3.withSpring(guildId.targetOriginY, f111039, "animate-always");
+        targetOriginY = obj3.withSpring(guildId.targetOriginY, f111082, "animate-always");
       } else {
         targetOriginY = guildId.targetOriginY;
       }
@@ -329,9 +329,9 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
         tmp12 = closure_2;
         num2 = 35;
         obj4 = guildId(closure_2[35]);
-        tmp13 = f111039;
+        tmp13 = f111082;
         str2 = "animate-always";
-        targetHeight = obj4.withSpring(guildId.targetHeight, f111039, "animate-always");
+        targetHeight = obj4.withSpring(guildId.targetHeight, f111082, "animate-always");
       } else {
         targetHeight = guildId.targetHeight;
       }

@@ -1,10 +1,10 @@
-// Module ID: 12097
-// Function ID: 93279
+// Module ID: 12101
+// Function ID: 93305
 // Name: set
 // Dependencies: []
 // Exports: isSuspiciousDownload
 
-// Module 12097 (set)
+// Module 12101 (set)
 const set = new Set(importDefault(dependencyMap[0]));
 const obj = {};
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");

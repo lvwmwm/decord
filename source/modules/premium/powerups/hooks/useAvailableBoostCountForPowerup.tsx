@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 89940
+// Module ID: 11560
+// Function ID: 89953
 // Name: useAvailableBoostCountForPowerup
 // Dependencies: []
 // Exports: default
 
-// Module 11559 (useAvailableBoostCountForPowerup)
+// Module 11560 (useAvailableBoostCountForPowerup)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

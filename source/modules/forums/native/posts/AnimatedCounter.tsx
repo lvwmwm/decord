@@ -1,9 +1,9 @@
-// Module ID: 10341
-// Function ID: 79816
+// Module ID: 10342
+// Function ID: 79829
 // Name: getStartPosition
 // Dependencies: []
 
-// Module 10341 (getStartPosition)
+// Module 10342 (getStartPosition)
 function getStartPosition(context) {
   let current;
   let previous;
@@ -192,7 +192,7 @@ const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ container: {}, hidden: { opacity: 0 } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ container: { ti: null, st: null, body: null, flex: null, accessibilityRole: null, status: null }, hidden: { opacity: 0 } });
 const obj = { ABOVE: -1, [-1]: "ABOVE", NEUTRAL: 0, [0]: "NEUTRAL", BELOW: 1, [1]: "BELOW" };
 const items = [, , ];
 ({ ABOVE: arr[0], NEUTRAL: arr[1], BELOW: arr[2] } = obj);

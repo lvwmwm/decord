@@ -1,12 +1,12 @@
 // Module ID: 7743
-// Function ID: 61514
+// Function ID: 61524
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
 // Module 7743 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { bottom: null, name: null, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false, sortType: undefined }, [1]: {}, [2]: { NIO: 2, chatInputHandleSendText: "name" } } };
+const obj = { "Bool(false)": "<string:3847753826>", "Bool(false)": "<string:1305670207>", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false, sortType: undefined }, [1]: { accessibilityRole: "2a4178fd61be5173c63df5a107198d76", join: "InstagramNeutralIcon" }, [2]: { accessibilityRole: true, join: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/user_affinities/VoiceUserAffinityExperiment.tsx");

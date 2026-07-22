@@ -1,9 +1,9 @@
-// Module ID: 12377
-// Function ID: 94642
+// Module ID: 12382
+// Function ID: 94670
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12377 (_isNativeReflectConstruct)
+// Module 12382 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -31,16 +31,16 @@ const tmp4 = arg1(dependencyMap[8]);
 obj.giftCodeShare = { borderRadius: importDefault(dependencyMap[10]).radii.xs, borderWidth: tmp3.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[10]).colors.INPUT_BACKGROUND_DEFAULT };
 const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.xs, borderWidth: tmp3.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[10]).colors.INPUT_BACKGROUND_DEFAULT };
 obj.giftCodeInput = { marginTop: importDefault(dependencyMap[10]).space.PX_16, marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
-const obj3 = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, padding: importDefault(dependencyMap[10]).space.PX_8 };
+const obj3 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", padding: importDefault(dependencyMap[10]).space.PX_8 };
 obj.giftCodeInputContent = obj3;
 obj.giftCodeShareButton = { marginLeft: 12 };
 obj.codeText = { flexShrink: 1 };
-obj.subTextRow = { diversity: false, accessible: false, status: false };
-obj.expiryText = { 9223372036854775807: "166185917b52ede00e3e20d3f1f7faeb", 0: "CheckmarkSmallIcon" };
+obj.subTextRow = {};
+obj.expiryText = {};
 const obj2 = { marginTop: importDefault(dependencyMap[10]).space.PX_16, marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
 obj.revokeHint = { color: importDefault(dependencyMap[10]).unsafe_rawColors.BLUE_345 };
 obj.firstRow = { borderWidth: 0 };
-obj.buttonContainer = { "Null": null, "Null": null };
+obj.buttonContainer = {};
 let closure_13 = obj.createLegacyClassComponentStyles(obj);
 const tmp5 = (PureComponent) => {
   class GiftCodeRow {
@@ -113,7 +113,7 @@ const tmp5 = (PureComponent) => {
         obj = { style: tmp.giftCodeInput };
         obj = {};
         const obj1 = { style: tmp.giftCodeInputContent };
-        const obj2 = { isArray: "white", Button: "M327.173 68.5751L331.924 67.1099C332.025 67.0366 332.025 66.9634 331.924 66.9634L327.173 65.4249L325.051 62.0549C325.051 61.9817 324.949 61.9817 324.848 62.0549L322.827 65.4249H322.726L318.076 66.9634C317.975 66.9634 317.975 67.0366 318.076 67.1099L322.726 68.5751H322.827L324.848 71.9451C324.949 72.0183 325.051 72.0183 325.051 71.9451L327.173 68.5751Z", textAlign: "white", style: tmp.codeText };
+        const obj2 = { guild_id: "white", exports: "M327.173 68.5751L331.924 67.1099C332.025 67.0366 332.025 66.9634 331.924 66.9634L327.173 65.4249L325.051 62.0549C325.051 61.9817 324.949 61.9817 324.848 62.0549L322.827 65.4249H322.726L318.076 66.9634C317.975 66.9634 317.975 67.0366 318.076 67.1099L322.726 68.5751H322.827L324.848 71.9451C324.949 72.0183 325.051 72.0183 325.051 71.9451L327.173 68.5751Z", body: "white", style: tmp.codeText };
         let obj10 = GiftCodeRow(giftCode[11]);
         obj2.children = obj10.getGiftCodeURL(giftCode.code);
         const items1 = [callback4(GiftCodeRow(giftCode[15]).Text, obj2), ];
@@ -133,7 +133,7 @@ const tmp5 = (PureComponent) => {
         let tmp11 = callback4(closure_8, obj);
       } else {
         const obj5 = { style: tmp.giftCodeShare };
-        const obj6 = { isArray: "white", Button: "M327.173 68.5751L331.924 67.1099C332.025 67.0366 332.025 66.9634 331.924 66.9634L327.173 65.4249L325.051 62.0549C325.051 61.9817 324.949 61.9817 324.848 62.0549L322.827 65.4249H322.726L318.076 66.9634C317.975 66.9634 317.975 67.0366 318.076 67.1099L322.726 68.5751H322.827L324.848 71.9451C324.949 72.0183 325.051 72.0183 325.051 71.9451L327.173 68.5751Z", textAlign: "white", style: tmp.codeText };
+        const obj6 = { guild_id: "white", exports: "M327.173 68.5751L331.924 67.1099C332.025 67.0366 332.025 66.9634 331.924 66.9634L327.173 65.4249L325.051 62.0549C325.051 61.9817 324.949 61.9817 324.848 62.0549L322.827 65.4249H322.726L318.076 66.9634C317.975 66.9634 317.975 67.0366 318.076 67.1099L322.726 68.5751H322.827L324.848 71.9451C324.949 72.0183 325.051 72.0183 325.051 71.9451L327.173 68.5751Z", body: "white", style: tmp.codeText };
         obj3 = GiftCodeRow(giftCode[11]);
         obj6.children = obj3.getGiftCodeURL(giftCode.code);
         const items3 = [callback4(GiftCodeRow(giftCode[15]).Text, obj6), ];
@@ -154,7 +154,7 @@ const tmp5 = (PureComponent) => {
       const obj9 = { style: tmp.subTextRow };
       let tmp19 = null;
       if (null != giftCode.expiresAt) {
-        obj10 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
+        obj10 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images" };
         const intl3 = GiftCodeRow(giftCode[17]).intl;
         const obj11 = {};
         const expiresAt = giftCode.expiresAt;

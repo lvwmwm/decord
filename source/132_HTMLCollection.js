@@ -19,7 +19,7 @@ const tmp2 = () => {
       if (0 < arg0.length) {
         do {
           _Object = Object;
-          obj = { consumed: "y", ForcedColorsPreference: "isArray", MOBILE_NITRO_HOME_SETTINGS_BADGE: "Reflect", NOTIFICATION_WARNING: "container" };
+          obj = { onDownloadProgress: 300000, GUILD_TAG_AVAILABLE_COACHMARK_V2: false, _setupIntegrations: 30, blurTargetViewNativeId: 2 };
           obj.value = arg0[num];
           definePropertyResult1 = Object.defineProperty(self, num, obj);
           num = num + 1;

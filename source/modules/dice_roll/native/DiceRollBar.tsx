@@ -1,10 +1,10 @@
-// Module ID: 11417
-// Function ID: 88796
+// Module ID: 11418
+// Function ID: 88809
 // Name: DiceRollBar
 // Dependencies: []
 // Exports: default
 
-// Module 11417 (DiceRollBar)
+// Module 11418 (DiceRollBar)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ const useDiceRollState = arg1(dependencyMap[3]).useDiceRollState;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { animatedContainer: { overflow: "hidden" } };
-obj = { 109859155: 1138704895, 189886049: -144637951, 67064070: -1092796143, 1375418978: 946995201, 1415643904: 1090519040, 1657305169: 16777216, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function DiceRollBarTsx1(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };
@@ -119,7 +119,7 @@ export default function DiceRollBar(channelId) {
     obj3 = { size: "md" };
     obj2.children = callback(arg1(dependencyMap[12]).DiceIcon, obj3);
     const items4 = [callback(importDefault(dependencyMap[8]).View, obj2), ];
-    obj4 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", children: barText };
+    obj4 = { children: barText };
     items4[1] = callback(arg1(dependencyMap[13]).Text, obj4);
     obj1.children = items4;
     obj.children = callback2(View, obj1);

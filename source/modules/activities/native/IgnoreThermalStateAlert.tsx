@@ -1,10 +1,10 @@
-// Module ID: 10546
-// Function ID: 82387
+// Module ID: 10547
+// Function ID: 82400
 // Name: IgnoreThermalStateAlert
 // Dependencies: []
 // Exports: IgnoreThermalStateAlert
 
-// Module 10546 (IgnoreThermalStateAlert)
+// Module 10547 (IgnoreThermalStateAlert)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -30,7 +30,7 @@ export const IgnoreThermalStateAlert = function IgnoreThermalStateAlert(onConfir
   };
   const intl2 = arg1(dependencyMap[4]).intl;
   obj["confirmText"] = intl2.string(arg1(dependencyMap[4]).t.oEAioF);
-  obj = { delete: false, dispatch: 0, raw: 4, style: tmp3.header };
+  obj = { "Null": false, "Null": 0, alignItems: 4, style: tmp3.header };
   const intl3 = arg1(dependencyMap[4]).intl;
   obj.children = intl3.string(arg1(dependencyMap[4]).t.v5X4fZ);
   const items = [callback(arg1(dependencyMap[6]).Text, obj), ];

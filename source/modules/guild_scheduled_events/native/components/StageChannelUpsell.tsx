@@ -1,10 +1,10 @@
-// Module ID: 8398
-// Function ID: 66848
+// Module ID: 8399
+// Function ID: 66860
 // Name: StageChannelUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 8398 (StageChannelUpsell)
+// Module 8399 (StageChannelUpsell)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
@@ -16,13 +16,13 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj = { 0: "v", 0: "r", 0: "isArray", 9223372036854775807: "color", 0: "v", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.container = obj;
 obj.image = { marginBottom: 16 };
-obj.closeContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-obj.header = { 0: "y", 0: "Float16Array" };
-obj.description = { value: "/assets/design/components/Illustration/native/redesign/generated/images", marginTop: 160 };
-obj.button = { disabled: null, sequence: null };
+obj.closeContainer = { convertShortcutToName: false, hasUnreadMessages: false, CreatorMonetizationRestrictions: false };
+obj.header = { -1576657582: 17891332, 1387815174: 2161 };
+obj.description = { memo: "/assets/design/components/Illustration/native/redesign/generated/images", accessibilityRole: 160 };
+obj.button = { -2124314034: null, 529464659: null };
 let closure_12 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx");
@@ -41,7 +41,7 @@ export default function StageChannelUpsell(arg0) {
     const items = [callback3(arg1(dependencyMap[10]).PressableOpacity, obj), , , , , ];
     const obj1 = { source: importDefault(dependencyMap[13]), style: tmp.image };
     items[1] = callback3(closure_4, obj1);
-    const obj2 = { delete: "text-overlay-light", dispatch: null, raw: 3, style: tmp.header };
+    const obj2 = { "Null": "useStateFromStores", "Null": "track", alignItems: "Array", style: tmp.header };
     const intl = arg1(dependencyMap[15]).intl;
     obj2.children = intl.string(arg1(dependencyMap[15]).t.Sx8Ezi);
     items[2] = callback3(arg1(dependencyMap[14]).Text, obj2);
@@ -53,14 +53,14 @@ export default function StageChannelUpsell(arg0) {
     const intl3 = arg1(dependencyMap[15]).intl;
     const obj5 = {
       suggestionsHook(children) {
-          const obj = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", children };
+          const obj = { cachedAt: true, edpbxy: true, children };
           return callback3(callback(tmp3[14]).Text, obj, arg1);
         }
     };
     obj4.children = intl3.format(arg1(dependencyMap[15]).t.Vh7rP7, obj5);
     items[4] = callback3(arg1(dependencyMap[14]).Text, obj4);
     const obj6 = { style: tmp.button };
-    const obj7 = { "Bool(true)": null, "Bool(true)": null };
+    const obj7 = {};
     const intl4 = arg1(dependencyMap[15]).intl;
     obj7.text = intl4.string(arg1(dependencyMap[15]).t.X/3SyA);
     obj7.onPress = function onPress() {

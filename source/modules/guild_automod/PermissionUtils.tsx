@@ -1,10 +1,10 @@
-// Module ID: 15392
-// Function ID: 117430
+// Module ID: 15400
+// Function ID: 117473
 // Name: getHasAutomodAccess
 // Dependencies: []
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
 
-// Module 15392 (getHasAutomodAccess)
+// Module 15400 (getHasAutomodAccess)
 function getHasAutomodAccess(guild_id) {
   let obj = arg1;
   let obj2 = arg2;

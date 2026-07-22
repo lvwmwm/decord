@@ -1,12 +1,12 @@
 // Module ID: 7070
-// Function ID: 56519
+// Function ID: 56530
 // Name: getScreenshakeLocationName
 // Dependencies: [0, 0, 0, 0, 4294967295]
 
 // Module 7070 (getScreenshakeLocationName)
-import result from "result";
-import { AnalyticEvents } from "result";
-import importDefaultResult from "result";
+import { AnalyticEvents } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
 
 function getScreenshakeLocationName(arg0) {
   if (constants.CHAT_INPUT === arg0) {
@@ -42,11 +42,11 @@ function getListOfEnabledLocations(confettiEnabledLocations, getConfettiLocation
     return arg1(Number.parseInt(tmp));
   });
 }
-({ ShakeLocation: closure_2, ConfettiLocation: closure_3 } = result);
+({ ShakeLocation: closure_2, ConfettiLocation: closure_3 } = require("__exportStarResult1"));
 const _module1 = require(dependencyMap[4]);
-result = _module1.fileFinishedImporting("modules/poggermode/trackPoggermodeSettingsUpdated.tsx");
+const result = _module1.fileFinishedImporting("modules/poggermode/trackPoggermodeSettingsUpdated.tsx");
 
-export default require("result").throttle((arg0) => {
+export default require("__exportStarResult1").throttle((arg0) => {
   let combosEnabled;
   let combosRequiredCount;
   let confettiCount;

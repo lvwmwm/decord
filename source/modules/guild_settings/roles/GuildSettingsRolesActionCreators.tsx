@@ -1,13 +1,12 @@
-// Module ID: 16194
-// Function ID: 125117
+// Module ID: 16202
+// Function ID: 125159
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 16194 (_createForOfIteratorHelperLoose)
-import closure_3 from "result";
-import { ComponentActions } from "result";
-import result from "result";
+// Module 16202 (_createForOfIteratorHelperLoose)
+import __exportStarResult1 from "__exportStarResult1";
+import { ComponentActions } from "__exportStarResult1";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -108,8 +107,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    "Bool(false)": "o",
-    "Bool(false)": "o",
+    accessibilityRole: "o",
+    HermesInternal: "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -143,7 +142,7 @@ function _saveRoleSettings() {
   const _saveRoleSettings = obj;
   return obj(...arguments);
 }
-result = result.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesActionCreators.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesActionCreators.tsx");
 
 export const updateRoleSort = function updateRoleSort(roles) {
   let obj = importDefault(dependencyMap[2]);

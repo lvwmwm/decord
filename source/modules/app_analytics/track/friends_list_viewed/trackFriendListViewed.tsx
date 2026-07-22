@@ -1,10 +1,10 @@
-// Module ID: 15312
-// Function ID: 116473
+// Module ID: 15320
+// Function ID: 116516
 // Name: trackFriendsListViewed
 // Dependencies: []
 // Exports: default
 
-// Module 15312 (trackFriendsListViewed)
+// Module 15320 (trackFriendsListViewed)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListViewed.tsx");

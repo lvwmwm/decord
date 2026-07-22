@@ -1,10 +1,10 @@
-// Module ID: 14577
-// Function ID: 109884
+// Module ID: 14585
+// Function ID: 109927
 // Name: FRAME_BUDGET_MS
 // Dependencies: []
 // Exports: startFrameMonitor
 
-// Module 14577 (FRAME_BUDGET_MS)
+// Module 14585 (FRAME_BUDGET_MS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/devtools/native/components/screens/performance/startFrameMonitor.tsx");
 

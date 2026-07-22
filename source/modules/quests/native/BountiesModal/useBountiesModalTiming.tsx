@@ -1,10 +1,10 @@
-// Module ID: 13805
-// Function ID: 104418
+// Module ID: 13812
+// Function ID: 104451
 // Name: BountyVideoEndMode
 // Dependencies: []
 // Exports: useBountiesModalTiming
 
-// Module 13805 (BountyVideoEndMode)
+// Module 13812 (BountyVideoEndMode)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const QuestsExperimentLocations = arg1(dependencyMap[2]).QuestsExperimentLocations;

@@ -1,10 +1,10 @@
-// Module ID: 14097
-// Function ID: 107030
+// Module ID: 14105
+// Function ID: 107073
 // Name: useRoleColorSettingValue
 // Dependencies: []
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14097 (useRoleColorSettingValue)
+// Module 14105 (useRoleColorSettingValue)
 function useRoleColorSettingValue() {
   const items = [closure_3];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => roleStyle.roleStyle);

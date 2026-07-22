@@ -1,10 +1,10 @@
-// Module ID: 9730
-// Function ID: 75708
+// Module ID: 9731
+// Function ID: 75721
 // Name: useFormattedSKUPrice
 // Dependencies: []
 // Exports: useFormattedSKUPrice
 
-// Module 9730 (useFormattedSKUPrice)
+// Module 9731 (useFormattedSKUPrice)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
 
@@ -50,9 +50,9 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
       priceString = stateFromStores.priceString;
     }
     if (null != priceString) {
-      let obj = { pauseInvites: false, inc: false, EnableServerTrendingNotifications: null, normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
+      let obj = { normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
     } else {
-      obj = { y: "onKeyPress", isArray: "onKeyPressCapture", mn: "onSubmitEditing", raw: "onSubmitEditingCapture" };
+      obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
     }
     return obj;
   }, items3);

@@ -1,21 +1,21 @@
-// Module ID: 15750
-// Function ID: 120439
+// Module ID: 15758
+// Function ID: 120482
 // Name: SoundboardButton
 // Dependencies: [0, 4294967295, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15750 (SoundboardButton)
-import closure_3 from "result";
-import result from "result";
-import result from "result";
+// Module 15758 (SoundboardButton)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-result = {};
-result = { borderRadius: require("result").radii.round };
-result.circle = result;
-result.iconContainer = { <string:1446693987>: null, <string:1666068817>: "no-hide-descendants", <string:1370110668>: true, <string:1549880881>: "/assets/.cache/intl/ZGVzaWdu", <string:1638698833>: null };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
+__exportStarResult1 = {};
+__exportStarResult1 = { borderRadius: require("__exportStarResult1").radii.round };
+__exportStarResult1.circle = __exportStarResult1;
+__exportStarResult1.iconContainer = { 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/ZGVzaWdu", -9223372036854775808: null, 9223372036854775807: "89c1f821400ffcc75deeeab8c6315a88", -9223372036854775808: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages" };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
 
 export default function SoundboardButton(arg0) {
   let disabled;
@@ -24,7 +24,7 @@ export default function SoundboardButton(arg0) {
   let visible;
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[5]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
   const tmp3 = importDefault(dependencyMap[6]);

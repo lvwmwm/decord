@@ -1,10 +1,10 @@
-// Module ID: 14909
-// Function ID: 112303
+// Module ID: 14917
+// Function ID: 112346
 // Name: GuildRolesAndChannelsRow
 // Dependencies: []
 // Exports: GuildRolesAndChannelsRow
 
-// Module 14909 (GuildRolesAndChannelsRow)
+// Module 14917 (GuildRolesAndChannelsRow)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

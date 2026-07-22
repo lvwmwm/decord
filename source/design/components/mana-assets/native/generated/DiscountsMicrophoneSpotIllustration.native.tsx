@@ -1,5 +1,5 @@
 // Module ID: 6009
-// Function ID: 49935
+// Function ID: 49946
 // Name: DiscountsMicrophoneSpotIllustration
 // Dependencies: []
 // Exports: DiscountsMicrophoneSpotIllustration

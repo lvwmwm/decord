@@ -1,8 +1,8 @@
-// Module ID: 12047
-// Function ID: 93037
+// Module ID: 12051
+// Function ID: 93063
 // Dependencies: []
 
-// Module 12047
+// Module 12051
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -37,48 +37,47 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
       callback(items);
     });
   }, []);
-  obj = {
-    contentContainerStyle: items,
-    children: first.map((type) => {
-      let IconComponent;
-      let fullIcon;
-      let getLabel;
-      let icon;
-      ({ fullIcon, getLabel, icon, IconComponent, onPress: closure_0 } = type);
-      let obj = { style: obj };
-      obj = { maxWidth: 76 * callback };
-      if (null != fullIcon) {
-        obj = {
-          image: fullIcon,
-          label: getLabel(),
-          onPress() {
-              return callback(callback);
-            },
-          maxFontSizeMultiplier: 2
-        };
-        let tmp3Result = callback2(onItemPressed(closure_2[9]).ImageButton, obj);
-      } else {
-        const obj1 = { variant: "secondary" };
-        if (null == IconComponent) {
-          if (null == icon) {
-            icon = callback(closure_2[11]);
-          }
-          IconComponent = icon;
-        }
-        obj1.icon = IconComponent;
-        obj1.label = getLabel();
-        obj1.onPress = function onPress() {
-          return callback(callback);
-        };
-        obj1.maxFontSizeMultiplier = 2;
-        tmp3Result = callback2(onItemPressed(closure_2[10]).IconButton, obj1);
-        const tmp3 = callback2;
-      }
-      obj.children = tmp3Result;
-      return callback2(closure_5, obj, type.type);
-    })
-  };
+  obj = { borderRadius: 60, y: 0, x: 0 };
   const items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
+  obj.contentContainerStyle = items;
+  obj.children = first.map((type) => {
+    let IconComponent;
+    let fullIcon;
+    let getLabel;
+    let icon;
+    ({ fullIcon, getLabel, icon, IconComponent, onPress: closure_0 } = type);
+    let obj = { style: obj };
+    obj = { maxWidth: 76 * callback };
+    if (null != fullIcon) {
+      obj = {
+        image: fullIcon,
+        label: getLabel(),
+        onPress() {
+            return callback(callback);
+          },
+        maxFontSizeMultiplier: 2
+      };
+      let tmp3Result = callback2(onItemPressed(closure_2[9]).ImageButton, obj);
+    } else {
+      const obj1 = { variant: "secondary" };
+      if (null == IconComponent) {
+        if (null == icon) {
+          icon = callback(closure_2[11]);
+        }
+        IconComponent = icon;
+      }
+      obj1.icon = IconComponent;
+      obj1.label = getLabel();
+      obj1.onPress = function onPress() {
+        return callback(callback);
+      };
+      obj1.maxFontSizeMultiplier = 2;
+      tmp3Result = callback2(onItemPressed(closure_2[10]).IconButton, obj1);
+      const tmp3 = callback2;
+    }
+    obj.children = tmp3Result;
+    return callback2(closure_5, obj, type.type);
+  });
   const children = <closure_6 {...obj} />;
   return jsx(arg1(closure_2[8]).GestureDetector, { gesture, children });
 });

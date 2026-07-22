@@ -1,10 +1,10 @@
 // Module ID: 4756
-// Function ID: 41294
+// Function ID: 41303
 // Dependencies: []
 
 // Module 4756
 let closure_2 = 6;
-let closure_3 = ["content", "construct"];
+let closure_3 = [];
 arg5.default = {
   isGifFile(dataView) {
     let hasItem = !tmp;

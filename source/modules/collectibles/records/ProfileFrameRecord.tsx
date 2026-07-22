@@ -1,5 +1,5 @@
 // Module ID: 6776
-// Function ID: 53360
+// Function ID: 53371
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: isProfileFrameRecord
@@ -53,7 +53,7 @@ const tmp2 = (arg0) => {
         let overflow_bottom;
         let overflow_horizontal;
         let overflow_top;
-        let obj = { "Bool(true)": "ERROR", 918434703: "ERROR", -1682033114: "NOT_RESPONDER", -911340833: "NOT_RESPONDER" };
+        let obj = { marginHorizontal: -24, warningId: null, warningType: 1, senderId: "Malaysia" };
         ({ inner_width, overflow_top, overflow_bottom, overflow_horizontal } = arg0);
         Object.setPrototypeOf(null);
         const merged = Object.assign(arg0, obj);

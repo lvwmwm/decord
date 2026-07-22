@@ -1,24 +1,24 @@
-// Module ID: 12211
-// Function ID: 93768
+// Module ID: 12216
+// Function ID: 93796
 // Name: GuildScheduledEventPreview
 // Dependencies: []
 // Exports: default
 
-// Module 12211 (GuildScheduledEventPreview)
+// Module 12216 (GuildScheduledEventPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+obj = { container: {} };
 obj = { color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.borderColor = obj;
 obj.title = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.itemContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.guildInfo = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
-obj.guildName = { "Null": "gSbmdt", "Null": "%Int16ArrayPrototype%" };
-obj.eventName = { y: "<string:410124289>", half: "<string:402653184>" };
+obj.guildInfo = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
+obj.guildName = {};
+obj.eventName = {};
 let closure_7 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildScheduledEventPreview.tsx");
@@ -35,7 +35,7 @@ export default function GuildScheduledEventPreview(event) {
   } else {
     let obj1 = arg1(dependencyMap[7]);
     obj = { style: tmp.container };
-    obj = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp.title };
+    obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
     const intl = arg1(dependencyMap[9]).intl;
     obj.children = intl.string(arg1(dependencyMap[9]).t.SDTOL7);
     const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
@@ -54,7 +54,7 @@ export default function GuildScheduledEventPreview(event) {
     items3[1] = callback(arg1(dependencyMap[8]).Text, obj5);
     obj3.children = items3;
     const items4 = [callback2(View, obj3), ];
-    const obj6 = { delete: "text-overlay-light", dispatch: null, raw: 3, style: tmp.eventName, children: event.name };
+    const obj6 = { "Null": "useStateFromStores", "Null": "track", alignItems: "Array", style: tmp.eventName, children: event.name };
     items4[1] = callback(arg1(dependencyMap[8]).Text, obj6);
     obj1.children = items4;
     items1[1] = callback2(View, obj1);

@@ -1,19 +1,19 @@
-// Module ID: 11198
-// Function ID: 87224
+// Module ID: 11199
+// Function ID: 87237
 // Name: PlaceholderAppRow
 // Dependencies: []
 // Exports: default
 
-// Module 11198 (PlaceholderAppRow)
+// Module 11199 (PlaceholderAppRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.loadingAppIcon = obj;
-const obj1 = { enabled: "#370b1a", marginTop: "<string:24183040>", now: "<string:1929379840>", accessible: "isArray", options: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-obj.loadingTextPlaceholder = obj1;
+obj.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.loadingTextPlaceholderSmall = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[4]).radii.lg, alignSelf: "flex-start" };
 let closure_4 = obj.createStyles(obj);
 const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[4]).radii.lg, alignSelf: "flex-start" };

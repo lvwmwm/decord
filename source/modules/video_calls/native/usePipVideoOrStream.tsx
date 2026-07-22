@@ -1,20 +1,10 @@
-// Module ID: 10532
-// Function ID: 82298
+// Module ID: 10533
+// Function ID: 82311
 // Name: usePipVideoOrStream
-// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: useHasPipParticipant
 
-// Module 10532 (usePipVideoOrStream)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import result from "result";
-import result from "result";
-
+// Module 10533 (usePipVideoOrStream)
 function usePipVideoOrStream(arg0) {
   const arg1 = arg0;
   const items = [closure_4, closure_5, closure_6];
@@ -128,9 +118,17 @@ function usePipVideoOrStream(arg0) {
     return tmp18;
   }, items1);
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
-({ isStreamParticipant: closure_11, isUserParticipant: closure_12, ParticipantTypes: closure_13 } = result);
-result = result.fileFinishedImporting("modules/video_calls/native/usePipVideoOrStream.tsx");
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
+({ isStreamParticipant: closure_11, isUserParticipant: closure_12, ParticipantTypes: closure_13 } = arg1(dependencyMap[8]));
+const tmp2 = arg1(dependencyMap[8]);
+const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/video_calls/native/usePipVideoOrStream.tsx");
 
 export default usePipVideoOrStream;
 export const useHasPipParticipant = function useHasPipParticipant(isActivityViewFocused) {

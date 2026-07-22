@@ -1,10 +1,10 @@
-// Module ID: 11995
-// Function ID: 92686
+// Module ID: 11999
+// Function ID: 92712
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsInPrivateProfilesStrictGbExperiment, useIsInPrivateProfilesStrictGbExperiment
 
-// Module 11995 (apexExperiment)
+// Module 11999 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true }, [2]: { enabled: true }, [3]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

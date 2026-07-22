@@ -1,10 +1,10 @@
-// Module ID: 12096
-// Function ID: 93276
+// Module ID: 12100
+// Function ID: 93302
 // Name: isVirtualCurrencyEnabled
 // Dependencies: [6, 7]
 // Exports: isVirtualCurrencyEnabled, useVirtualCurrencyMobileEnabled
 
-// Module 12096 (isVirtualCurrencyEnabled)
+// Module 12100 (isVirtualCurrencyEnabled)
 import _defineProperties from "_defineProperties";
 
 const result = _defineProperties.fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyMobileEnabled.tsx");

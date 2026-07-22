@@ -1,14 +1,12 @@
-// Module ID: 5691
-// Function ID: 49002
+// Module ID: 5690
+// Function ID: 49010
 // Name: _createHandoffToken
-// Dependencies: [653]
+// Dependencies: []
 
-// Module 5691 (_createHandoffToken)
-import ME from "ME";
-
+// Module 5690 (_createHandoffToken)
 async function _createHandoffToken(key, arg1) {
   const HTTP = callback(closure_1[3]).HTTP;
-  let obj = { y: null, isArray: 16, context: 5, pos: false, y: 79.82, url: constants.HANDOFF };
+  let obj = { otherKey: null, showTopContainer: null, targetFrames: null, æ: null, VOICE_CHANNEL_USER_LIMIT_ICON: null, url: constants.HANDOFF };
   obj = { key };
   obj.body = obj;
   const handoff_token = yield HTTP.post(obj).body.handoff_token;
@@ -20,6 +18,7 @@ async function _createHandoffToken(key, arg1) {
     throw error;
   }
 }
+let closure_2 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/mobile_web_handoff/MobileWebHandoffUtils.tsx");
 

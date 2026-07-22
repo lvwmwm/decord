@@ -1,10 +1,10 @@
-// Module ID: 11724
-// Function ID: 91034
+// Module ID: 11725
+// Function ID: 91047
 // Name: onCreateGuild
 // Dependencies: []
 // Exports: default
 
-// Module 11724 (onCreateGuild)
+// Module 11725 (onCreateGuild)
 function onCreateGuild() {
   return _onCreateGuild(...arguments);
 }
@@ -147,8 +147,8 @@ function getScreens() {
     render(guildId) {
       guildId = guildId.guildId;
       const obj = {
-        position: null,
-        left: null,
+        position: "<string:1040334421>",
+        left: "<string:1040334338>",
         onCancel: closure_9,
         onSuccess() {
           return callback(guildId);

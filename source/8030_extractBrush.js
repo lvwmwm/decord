@@ -1,5 +1,5 @@
 // Module ID: 8030
-// Function ID: 63760
+// Function ID: 63770
 // Name: extractBrush
 // Dependencies: []
 // Exports: default

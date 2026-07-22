@@ -1,10 +1,10 @@
-// Module ID: 9489
-// Function ID: 73952
+// Module ID: 9490
+// Function ID: 73965
 // Name: openGuildHighlightNotificationForPush
 // Dependencies: []
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 9489 (openGuildHighlightNotificationForPush)
+// Module 9490 (openGuildHighlightNotificationForPush)
 let closure_3 = require(dependencyMap[0]).NotificationUserFeedbackReasons;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[7]);

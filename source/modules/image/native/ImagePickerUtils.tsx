@@ -1,5 +1,5 @@
 // Module ID: 4684
-// Function ID: 40804
+// Function ID: 40813
 // Name: isActionPickSupported
 // Dependencies: [6, 7]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported

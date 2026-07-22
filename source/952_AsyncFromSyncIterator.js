@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    "Bool(false)": "o",
-    "Bool(false)": "o",
+    accessibilityRole: "o",
+    HermesInternal: "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -74,7 +74,7 @@ function processChunk(promptFeedback, arg1, arg2, setStatus) {
         obj.message = "Content blocked: " + blockReason;
         setStatus.setStatus(obj);
         const _HermesInternal2 = HermesInternal;
-        obj = { mechanism: { id: null, gameId: null } };
+        obj = { mechanism: { priority: null, "Bool(false)": null } };
         require(dependencyMap[5]).captureException("Content blocked: " + blockReason, obj);
         flag = true;
         const obj2 = require(dependencyMap[5]);

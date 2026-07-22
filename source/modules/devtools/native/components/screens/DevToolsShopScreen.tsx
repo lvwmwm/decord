@@ -1,10 +1,10 @@
-// Module ID: 14566
-// Function ID: 109755
+// Module ID: 14574
+// Function ID: 109798
 // Name: DevToolsShopScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14566 (DevToolsShopScreen)
+// Module 14574 (DevToolsShopScreen)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -39,11 +39,11 @@ export default function DevToolsShopScreen() {
   ({ isDismissed, handleToggleDismissState } = importDefault(dependencyMap[8])(arg1(dependencyMap[9]).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING));
   obj.contentContainerStyle = obj;
   obj1 = { spacing: 16 };
-  obj2 = { "Bool(false)": "<string:3880845313>", "Bool(false)": "<string:2371109529>" };
+  obj2 = {};
   obj3 = {
-    -866014521: true,
-    -224295342: true,
-    -1595120765: true,
+    9223372036854775807: false,
+    9223372036854775807: "Reward Configuration",
+    9223372036854775807: false,
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores,
       onValueChange(arg0) {
@@ -53,9 +53,6 @@ export default function DevToolsShopScreen() {
   };
   const items4 = [callback(arg1(dependencyMap[12]).TableRow, obj3), , , , ];
   const obj5 = {
-    -866014521: -671088317,
-    -224295342: 1358954763,
-    -1595120765: -1707007073,
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores1,
       onValueChange(arg0) {
@@ -64,8 +61,12 @@ export default function DevToolsShopScreen() {
     })
   };
   items4[1] = callback(arg1(dependencyMap[12]).TableRow, obj5);
-  items4[2] = callback(arg1(dependencyMap[15]).TableSwitchRow, { value: isDismissed, onValueChange: handleToggleDismissState });
-  const obj7 = {
+  const obj7 = { 9223372036854775807: "medium", 9223372036854775807: "Medium", 9223372036854775807: "NebulaWanderer", value: isDismissed, onValueChange: handleToggleDismissState };
+  items4[2] = callback(arg1(dependencyMap[15]).TableSwitchRow, obj7);
+  const obj8 = {
+    9223372036854775807: "GESTURE_FULL",
+    9223372036854775807: "%AsyncFunctionPrototype%",
+    9223372036854775807: "targetFrames",
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores2,
       onValueChange(arg0) {
@@ -73,8 +74,8 @@ export default function DevToolsShopScreen() {
       }
     })
   };
-  items4[3] = callback(arg1(dependencyMap[12]).TableRow, obj7);
-  const obj9 = {
+  items4[3] = callback(arg1(dependencyMap[12]).TableRow, obj8);
+  const obj10 = {
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores3,
       onValueChange(arg0) {
@@ -82,7 +83,7 @@ export default function DevToolsShopScreen() {
       }
     })
   };
-  items4[4] = callback(arg1(dependencyMap[12]).TableRow, obj9);
+  items4[4] = callback(arg1(dependencyMap[12]).TableRow, obj10);
   obj2.children = items4;
   obj1.children = callback2(arg1(dependencyMap[11]).TableRowGroup, obj2);
   obj.children = callback(arg1(dependencyMap[10]).Stack, obj1);

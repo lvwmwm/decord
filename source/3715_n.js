@@ -11,8 +11,8 @@ const fn = function n(moment) {
     weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
     weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
     weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-    longDateFormat: { "Bool(true)": -1056964022, "Bool(true)": 1426063774, "Bool(true)": 1174405701, "Bool(true)": 78471, "Bool(true)": 78472, "Bool(true)": 83751 },
-    calendar: { intl: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009919227068201119, flex: 859756496762131800000000000000000000000000000000000000000000000000000000000000000000000000000, getChannel: 146589387140.0136, PX_8: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000094246457044, textAlign: 0.00000000000000000000000000000000000000000000000000000000000000002763230690774519, unicodeVersion: 59711461306563985000000000000000000 },
+    longDateFormat: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true },
+    calendar: {},
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
     ordinal(arg0) {
@@ -35,7 +35,7 @@ const fn = function n(moment) {
       }
       return arg0 + str2;
     },
-    week: { "Bool(true)": null, "Bool(true)": null }
+    week: { emoji: false, me: false }
   });
 };
 if ("object" === typeof exports) {
@@ -47,7 +47,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

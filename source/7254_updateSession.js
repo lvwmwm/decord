@@ -1,5 +1,5 @@
 // Module ID: 7254
-// Function ID: 58432
+// Function ID: 58443
 // Name: updateSession
 // Dependencies: []
 // Exports: closeSession, makeSession

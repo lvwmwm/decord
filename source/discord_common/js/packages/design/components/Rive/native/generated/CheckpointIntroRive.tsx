@@ -1,5 +1,5 @@
 // Module ID: 3919
-// Function ID: 32378
+// Function ID: 32380
 // Name: CheckpointIntroRive
 // Dependencies: []
 
@@ -8,7 +8,7 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Checkpoint Intro Desktop: { -1497314773: true, -397146015: true, 294857406: true, 24627571: true }, Globe: {}, Globe Single Line: {}, Start Button: { -1497314773: true, -397146015: true, 294857406: true, 24627571: true } };
+let closure_7 = { Checkpoint Intro Desktop: { <string:80597504>: 8.62, <string:80624128>: "BG_GRADIENT_SUNRISE_2", <string:80553984>: 48.07, <string:80639488>: "BG_GRADIENT_SUNRISE_3" }, Globe: {}, Globe Single Line: {}, Start Button: { <string:80597504>: 8.62, <string:80624128>: "BG_GRADIENT_SUNRISE_2", <string:80553984>: 48.07, <string:80639488>: "BG_GRADIENT_SUNRISE_3" } };
 let closure_8 = { Checkpoint Intro Desktop: [], Globe: [], Globe Single Line: [], Start Button: [] };
 let closure_9 = {
   Checkpoint Intro Desktop: function CheckpointIntroDesktopBindings(reducedMotionEnabled) {

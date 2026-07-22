@@ -1,16 +1,15 @@
-// Module ID: 15439
-// Function ID: 117814
+// Module ID: 15447
+// Function ID: 117857
 // Name: useMutualGuildsForMessageRequests
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 15439 (useMutualGuildsForMessageRequests)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
+// Module 15447 (useMutualGuildsForMessageRequests)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/message_request/hooks/useMutualGuilds.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/message_request/hooks/useMutualGuilds.tsx");
 
 export const useMutualGuildsForMessageRequests = function useMutualGuildsForMessageRequests(userId) {
   const arg1 = userId;

@@ -1,10 +1,10 @@
-// Module ID: 11760
-// Function ID: 91304
+// Module ID: 11761
+// Function ID: 91317
 // Name: HubEmailConnectionGuildSelectRow
 // Dependencies: []
 // Exports: default
 
-// Module 11760 (HubEmailConnectionGuildSelectRow)
+// Module 11761 (HubEmailConnectionGuildSelectRow)
 class HubEmailConnectionGuildSelectRow {
   constructor(arg0) {
     guildInfo = global.guildInfo;
@@ -26,7 +26,7 @@ class HubEmailConnectionGuildSelectRow {
 function HubEmailConnectionGuildSelectHeader() {
   const tmp = callback4();
   let obj = { style: tmp.header };
-  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.mOMeiR);
   obj.children = callback2(arg1(dependencyMap[11]).Text, obj);
@@ -73,14 +73,14 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { accessibilityLabel: 16, accessibilityUnits: 16, accessibilityIncrements: null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL };
+obj = { "Null": 16, "Null": 16, "Null": null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL };
 obj.rowContainer = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.guildIcon = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.separator = { height: 8 };
 obj.header = {};
-obj.title = { "Null": null, "Null": null };
-const obj2 = { grinning_face: "Array", smiley: "isArray", smile: "max", grin: "names", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj.title = { value: null, on: null };
+const obj2 = { y: true, isArray: true, bottom: true, flex: true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.footerSafeAreaContainer = obj2;
 obj.footerContainer = {};
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };

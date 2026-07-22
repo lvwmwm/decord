@@ -1,10 +1,10 @@
-// Module ID: 15192
-// Function ID: 114593
+// Module ID: 15200
+// Function ID: 114636
 // Name: StyleSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15192 (StyleSheet)
+// Module 15200 (StyleSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -21,15 +21,15 @@ importDefaultResult = new importDefaultResult("SwipeForMemberListWrapper");
 const context = importAllResult.createContext(undefined);
 let obj1 = arg1(dependencyMap[8]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj = { LogLevel: true, MEDIA_ATTACHMENT_PLAYBACK_ENDED: true, percent: true, ORDER_BY_GUILD_JOINED_AT_ASC: true, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.memberListPreview = obj;
 obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj1["overflow"] = "hidden";
 obj.content = obj1;
-const obj2 = { Č: 10, accessibilityDismiss: 10, backgroundColor: importDefault(dependencyMap[9]).colors.MODAL_BACKGROUND };
-obj.memberListContainer = obj2;
 const tmp5 = arg1(dependencyMap[6]);
+obj.memberListContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.MODAL_BACKGROUND };
+const obj2 = { backgroundColor: importDefault(dependencyMap[9]).colors.MODAL_BACKGROUND };
 obj.midnightBorder = { borderLeftColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
 obj.midnightRightOverflow = { right: -MIDNIGHT_BORDER_WIDTH };
 let closure_17 = obj1.createStyles(obj);
@@ -424,7 +424,7 @@ export default function _default(channelId) {
   obj4.style = items13;
   obj4.accessibilityElementsHidden = !derivedStateFromSharedValue || undefined;
   obj4.importantForAccessibility = "no-hide-descendants";
-  const items14 = [callback2(importDefault(dependencyMap[30]), { 1644019025: "\u2757", -1094364167: "isArrayBufferToString", -1092475796: "\u{1F318}" }), , ];
+  const items14 = [callback2(importDefault(dependencyMap[30]), {}), , ];
   obj5 = { children: callback2(importDefault(dependencyMap[32]), { isShowing: derivedStateFromSharedValue, channelId: tmp3[0], isSearchLocked: false, onBackPress: callback4, componentWidth: tmp6, onChannelDeleted: callback3 }) };
   items14[1] = callback2(arg1(dependencyMap[31]).LayerScope, obj5);
   obj6 = { style: items15 };

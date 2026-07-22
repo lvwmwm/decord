@@ -40,7 +40,7 @@ function generateNextCustomKeyframeName() {
   let closure_6 = tmp + 1;
   return "REA" + +closure_6;
 }
-let closure_2 = [null];
+let closure_2 = [false];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -56,7 +56,7 @@ export const createCustomKeyFrameAnimation = function createCustomKeyFrameAnimat
       tmp2.transform = closure_7(tmp2.transform);
     }
   }
-  const obj = { style: definitions, name: generateNextCustomKeyframeName() };
+  const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, style: definitions, name: generateNextCustomKeyframeName() };
   const keys = Object.keys(definitions);
   for (let num = 1; num < keys.length; num = num + 1) {
     let tmp5 = definitions[keys[num]];

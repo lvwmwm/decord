@@ -1,24 +1,27 @@
 // Module ID: 15801
-// Function ID: 120889
+// Function ID: 120914
 // Dependencies: []
 
 // Module 15801
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "hu",
+  locale: "da",
   pluralRuleFunction(arg0, arg1) {
+    const parts = String(arg0).split(".");
+    const first = parts[0];
     if (arg1) {
-      if (1 == arg0) {
-        let str2 = "one";
-      } else {
-        str2 = "other";
-      }
-      let str = str2;
+      let str3 = "other";
     } else {
-      str = "other";
-      if (1 == arg0) {
-        str = "one";
+      str3 = "one";
+      if (1 != arg0) {
+        if (!tmp3) {
+          str3 = "one";
+          if (0 != first) {
+            str3 = "one";
+          }
+        }
       }
     }
-    return str;
+    return str3;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: "anonymization_info", 0: "message" });

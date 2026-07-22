@@ -1,5 +1,5 @@
 // Module ID: 7736
-// Function ID: 61473
+// Function ID: 61483
 // Name: isReferralProgramPopoverSeen
 // Dependencies: []
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable

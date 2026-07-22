@@ -1,9 +1,9 @@
-// Module ID: 13968
-// Function ID: 106163
+// Module ID: 13975
+// Function ID: 106203
 // Name: EnrolledBodyWatchTask
 // Dependencies: []
 
-// Module 13968 (EnrolledBodyWatchTask)
+// Module 13975 (EnrolledBodyWatchTask)
 let QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
 function EnrolledBodyWatchTask(quest) {
   quest = quest.quest;
@@ -93,10 +93,10 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
 let obj = { wrapper: obj };
-obj = { isArray: -536870861, diversity: -299892737, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM, paddingTop: tmp3.QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP, paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
+obj = { nestedScrollEnabled: "%FunctionPrototype%", scrollEventThrottle: "paddingStart", paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM, paddingTop: tmp3.QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP, paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
 obj1 = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.headerWrapper = obj1;
-const obj2 = { overflow: "Group 19", position: 2, top: 2, left: 0, gap: importDefault(dependencyMap[8]).space.PX_16 };
+const obj2 = { overflow: "Group 25", position: 2, top: 2, left: 0, gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.contentWrapper = obj2;
 const tmp4 = arg1(dependencyMap[6]);
 obj.footer = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };

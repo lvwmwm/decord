@@ -1,12 +1,11 @@
 // Module ID: 1815
 // Function ID: 19971
 // Name: useEndVisible
-// Dependencies: [3, 478, 2]
+// Dependencies: []
 // Exports: useEndVisible
 
 // Module 1815 (useEndVisible)
-import { useMemo } from "timestamp";
-
+const useMemo = require(dependencyMap[0]).useMemo;
 let closure_3 = { code: "function pnpm_useEndVisibleTs1(){const{layout,size,isScrollAtEnd,scroll,inverted}=this.__closure;if(layout.value.height===0||size.value.height===0){return null;}return isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);}" };
 let closure_4 = { code: "function pnpm_useEndVisibleTs2(){const{isAtEnd}=this.__closure;return isAtEnd.value;}" };
 let closure_5 = { code: "function pnpm_useEndVisibleTs3(current,previous){const{onEndVisible,isWorklet,runOnJS}=this.__closure;if(current===null||current===previous||!onEndVisible){return;}if(isWorklet){onEndVisible(current);}else{runOnJS(onEndVisible)(current);}}" };

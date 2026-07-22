@@ -1,5 +1,5 @@
 // Module ID: 6777
-// Function ID: 53369
+// Function ID: 53380
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: isUnknownCollectiblesItemRecord

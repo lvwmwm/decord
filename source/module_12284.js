@@ -1,9 +1,9 @@
 // Module ID: 12284
-// Function ID: 94163
+// Function ID: 94169
 // Dependencies: []
 
 // Module 12284
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "/assets/images/native/premium/logos", "Bool(false)": 51, "Bool(false)": 12, "Bool(false)": null, "Bool(false)": "762c9356acc18a559214b01d8cc7bf33", "Bool(false)": "img_logo_nitro_small_light", "Bool(false)": "png", "Bool(false)": 181, scales: ["Set", "ml"] };
+const obj = { 1358955657: null, 1279501871: null, -100662186: null, -134216521: null, 1375732845: null, -1598249400: null, -117286062: null, 978739886: null, scales: ["<string:24264687>", "isArray"] };
 
 export default _module.registerAsset(obj);

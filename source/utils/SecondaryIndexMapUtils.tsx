@@ -1,5 +1,5 @@
 // Module ID: 4961
-// Function ID: 42643
+// Function ID: 42653
 // Name: isVersionEqual
 // Dependencies: []
 // Exports: isVersionEqual

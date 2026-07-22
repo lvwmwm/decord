@@ -1,10 +1,10 @@
-// Module ID: 10192
-// Function ID: 78698
+// Module ID: 10193
+// Function ID: 78711
 // Name: ChannelNotificationIcon
 // Dependencies: []
 // Exports: ChannelNotificationIcon
 
-// Module 10192 (ChannelNotificationIcon)
+// Module 10193 (ChannelNotificationIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChannelNotificationIcon.tsx");

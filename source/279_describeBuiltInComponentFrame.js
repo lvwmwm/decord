@@ -71,7 +71,7 @@ function describeNativeComponentFrame(displayName) {
                 }
                 constructResult1.call();
                 arg0.call(constructResult1.prototype);
-                const items = [true, true];
+                const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
               } else {
                 class Fake {
                   constructor() {
@@ -2484,7 +2484,7 @@ function getSuspendedCache() {
   const tmp = peekCacheFromPool();
   let tmp2 = null;
   if (null !== tmp) {
-    const obj = { parent: closure_84._currentValue, pool: tmp };
+    const obj = { parent: obj12._currentValue, pool: tmp };
     tmp2 = obj;
   }
   return tmp2;
@@ -2756,8 +2756,9 @@ function getRootForUpdatedFiber(arg0) {
     return stateNode;
   }
 }
-function initializeUpdateQueue(baseState) {
-  baseState.updateQueue = { baseState: baseState.memoizedState, shared: { <string:2801796165>: "decimal-pad", <string:2264925301>: "number-pad", <string:3120563277>: "phone-pad" } };
+function initializeUpdateQueue(memoizedState) {
+  const obj = { <string:2234961839>: 1, <string:1668074203>: "100%", <string:2755968284>: "absolute", <string:2125854999>: 0, <string:102742980>: 0, baseState: memoizedState.memoizedState, shared: { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048 } };
+  memoizedState.updateQueue = obj;
 }
 function cloneUpdateQueue(updateQueue, updateQueue2) {
   updateQueue = updateQueue.updateQueue;
@@ -3246,7 +3247,7 @@ function resetHooksOnUnwind(memoizedState) {
   let closure_118 = null;
 }
 function mountWorkInProgressHook() {
-  const obj = {};
+  const obj = { -771368826: 1, -814001609: "100%", -1919198945: "absolute", -1202995316: 0, -243338906: 0 };
   if (null === closure_113) {
     closure_113 = obj;
     closure_111.memoizedState = obj;
@@ -3370,7 +3371,7 @@ function useMemoCache(arg0) {
     tmp2 = obj;
   }
   if (null === updateQueue) {
-    obj = { unicodeVersion: "onKeyPress", TypeError: "onKeyPressCapture", body: "onSubmitEditing", variant: "onSubmitEditingCapture" };
+    obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
     _null.updateQueue = obj;
     updateQueue = obj;
   }
@@ -3546,7 +3547,7 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
       }
       let tmp27 = tmp6;
       if (null !== tmp6) {
-        obj = { <string:3625373795>: -536870861, <string:1634093829>: -299892737 };
+        obj = { MARK_CHANNEL_READ: "%FunctionPrototype%", INDEX_SIZE_ERR: "paddingStart" };
         ({ action: obj3.action, hasEagerState: obj3.hasEagerState, eagerState: obj3.eagerState } = iter2);
         obj.next = null;
         tmp6.next = obj;
@@ -3636,7 +3637,7 @@ function pushStoreConsistencyCheck(flags, getSnapshot, value) {
   let obj = { getSnapshot, value };
   const updateQueue = _null.updateQueue;
   if (null === updateQueue) {
-    obj = { unicodeVersion: "onKeyPress", TypeError: "onKeyPressCapture", body: "onSubmitEditing", variant: "onSubmitEditingCapture" };
+    obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
     _null.updateQueue = obj;
     const items = [obj];
     obj.stores = items;
@@ -3690,7 +3691,7 @@ function mountStateImpl(arg0) {
   }
   tmp.baseState = tmp2;
   tmp.memoizedState = tmp2;
-  const obj = { HierarchyRequestError: "decimal-pad", WrongDocumentError: "number-pad", InvalidCharacterError: "phone-pad", lastRenderedReducer: basicStateReducer, lastRenderedState: tmp2 };
+  const obj = { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048, lastRenderedReducer: basicStateReducer, lastRenderedState: tmp2 };
   tmp.queue = obj;
   return tmp;
 }
@@ -3828,7 +3829,7 @@ function mountActionState(action, baseState) {
   const tmp = mountWorkInProgressHook();
   tmp.baseState = baseState;
   tmp.memoizedState = baseState;
-  let obj = { HierarchyRequestError: "decimal-pad", WrongDocumentError: "number-pad", InvalidCharacterError: "phone-pad", lastRenderedReducer: actionStateReducer, lastRenderedState: baseState };
+  let obj = { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048, lastRenderedReducer: actionStateReducer, lastRenderedState: baseState };
   tmp.queue = obj;
   const bindResult = dispatchSetState.bind(null, closure_111, obj);
   obj.dispatch = bindResult;
@@ -3883,7 +3884,7 @@ function pushSimpleEffect(tag, inst, create, deps) {
   let obj = { tag, create, deps, inst, next: null };
   let updateQueue = _null.updateQueue;
   if (null === updateQueue) {
-    obj = { unicodeVersion: "onKeyPress", TypeError: "onKeyPressCapture", body: "onSubmitEditing", variant: "onSubmitEditingCapture" };
+    obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
     _null.updateQueue = obj;
     updateQueue = obj;
   }
@@ -4067,9 +4068,6 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
         dispatchSetStateInternal(arg0, arg1, function chainThenableValue(promise, arg1) {
           let closure_1 = [];
           const obj = {
-            "Null": null,
-            "Null": null,
-            "Null": null,
             then(arg0) {
 
             }
@@ -4107,9 +4105,6 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
         const tmp18 = function chainThenableValue(promise, arg1) {
           let closure_1 = [];
           const obj = {
-            "Null": null,
-            "Null": null,
-            "Null": null,
             then(arg0) {
 
             }
@@ -4184,7 +4179,7 @@ function refreshCache(arg0) {
 }
 function dispatchReducerAction(arg0, arg1, action) {
   const tmp = requestUpdateLane(arg0);
-  const obj = { "Bool(true)": "decimal-pad", "Bool(true)": "number-pad", "Bool(true)": "phone-pad", "Bool(true)": "default", "Bool(true)": "email-address", "Bool(true)": "url", lane: tmp, action };
+  const obj = { "Null": 22817347, "Null": 18467840, "Null": 21634048, "Null": 1098866944, "Bool(true)": 115359, "Bool(true)": 18280545, lane: tmp, action };
   if (isRenderPhaseUpdate(arg0)) {
     enqueueRenderPhaseUpdate(arg1, obj);
   } else {
@@ -4199,7 +4194,7 @@ function dispatchSetState(arg0, arg1, arg2) {
   dispatchSetStateInternal(arg0, arg1, arg2, requestUpdateLane(arg0));
 }
 function dispatchSetStateInternal(arg0, lastRenderedReducer, action, lane) {
-  const obj = { "Bool(true)": "decimal-pad", "Bool(true)": "number-pad", "Bool(true)": "phone-pad", "Bool(true)": "default", "Bool(true)": "email-address", "Bool(true)": "url", lane, action };
+  const obj = { "Null": 22817347, "Null": 18467840, "Null": 21634048, "Null": 1098866944, "Bool(true)": 115359, "Bool(true)": 18280545, lane, action };
   if (isRenderPhaseUpdate(arg0)) {
     enqueueRenderPhaseUpdate(lastRenderedReducer, obj);
   } else {
@@ -4246,7 +4241,7 @@ function dispatchSetStateInternal(arg0, lastRenderedReducer, action, lane) {
   return false;
 }
 function dispatchOptimisticSetState(arg0, arg1, arg2, action) {
-  const obj = { revertLane: requestTransitionLane(), action };
+  const obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Bool(true)": true, "Bool(true)": true, revertLane: requestTransitionLane(), action };
   if (isRenderPhaseUpdate(arg0)) {
     if (arg1) {
       const _Error = Error;
@@ -5583,7 +5578,7 @@ function updateOffscreenComponent(memoizedState, pendingProps) {
       return null;
     } else if (1 & pendingProps.mode) {
       if (536870912 & arg2) {
-        pendingProps.memoizedState = { 9223372036854775807: 180, 9223372036854775807: null };
+        pendingProps.memoizedState = { maxAge: "angle", updateAgeOnGet: 180 };
         if (tmp) {
           let cachePool = null;
           if (null !== memoizedState) {
@@ -5609,7 +5604,7 @@ function updateOffscreenComponent(memoizedState, pendingProps) {
         return null;
       }
     } else {
-      pendingProps.memoizedState = { 9223372036854775807: 180, 9223372036854775807: null };
+      pendingProps.memoizedState = { maxAge: "angle", updateAgeOnGet: 180 };
       if (tmp) {
         pushTransition(undefined, null);
       }
@@ -5635,7 +5630,7 @@ function deferHiddenOffscreenComponent(arg0, arg1, baseLanes) {
   const tmp = peekCacheFromPool();
   let tmp2 = null;
   if (null !== tmp) {
-    let obj = { parent: closure_84._currentValue, pool: tmp };
+    let obj = { parent: obj12._currentValue, pool: tmp };
     tmp2 = obj;
   }
   obj = { baseLanes, cachePool: tmp2 };
@@ -6151,7 +6146,7 @@ function updateSuspenseComponent(memoizedState, pendingProps, lanes) {
         } else {
           let cachePool = memoizedState.cachePool;
           if (null !== cachePool) {
-            const _currentValue = closure_84._currentValue;
+            const _currentValue = obj12._currentValue;
             if (cachePool.parent !== _currentValue) {
               const obj2 = { parent: _currentValue, pool: _currentValue };
               cachePool = obj2;
@@ -6227,7 +6222,7 @@ function scheduleSuspenseWorkOnFiber(lanes) {
 function initSuspenseListRenderState(memoizedState, isBackwards, tail, last, tailMode) {
   memoizedState = memoizedState.memoizedState;
   if (null === memoizedState) {
-    const obj = { "Null": false, "Null": false, "Null": false, isBackwards, last, tail, tailMode };
+    const obj = { isBackwards, last, tail, tailMode };
     memoizedState.memoizedState = obj;
   } else {
     memoizedState.isBackwards = isBackwards;
@@ -6441,7 +6436,7 @@ function beginWork(memoizedProps, pendingProps) {
     } else {
       if (!checkScheduledUpdateOrContext(memoizedProps, arg2)) {
         if (!(128 & pendingProps.flags)) {
-          pushProvider(undefined, closure_84, memoizedProps.memoizedState.cache);
+          pushProvider(undefined, obj12, memoizedProps.memoizedState.cache);
           bailoutOnAlreadyFinishedWork(memoizedProps, pendingProps, arg2);
           pendingProps.lanes = 0;
           updateOffscreenComponent(memoizedProps, pendingProps, arg2);
@@ -6682,7 +6677,7 @@ function unwindWork(arg0, tag) {
   }
 }
 function unwindInterruptedWork(arg0, arg1) {
-  popProvider(closure_84);
+  popProvider(obj12);
 }
 function commitHookEffectListMount(arg0, updateQueue) {
   let next2;
@@ -9105,7 +9100,7 @@ function throwAndUnwindWorkLoop(tag, arg1) {
                 } else {
                   const updateQueue2 = current.updateQueue;
                   if (null === updateQueue2) {
-                    let obj = { NewData: "o", NoData: "o" };
+                    let obj = { 9223372036854775807: "o", -9223372036854775808: "o" };
                     const _Set2 = Set;
                     const items1 = [arg2];
                     const set1 = new Set(items1);
@@ -10239,11 +10234,11 @@ obj = {
   }
 };
 let closure_31 = SyntheticEvent.extend(obj);
-const items = ["appSmallName"];
-const items1 = ["<string:1368828533>"];
-const items2 = [false, false];
+const items = [];
+const items1 = [true];
+const items2 = [];
 const items3 = [];
-const obj1 = { 0: "<string:3679518721>", "Null": "<string:3193045660>", "Null": "<string:1917108737>", "Null": "Boolean", touchBank: items3 };
+const obj1 = { alignItems: false, createStyles: false, guild_id: true, Symbol: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", touchBank: items3 };
 let closure_35 = {
   instrument(arg0) {
 
@@ -10290,7 +10285,7 @@ let closure_35 = {
 };
 let closure_36 = null;
 let closure_37 = 0;
-const obj2 = { startShouldSetResponder: { phasedRegistrationNames: { "Null": null, "Null": null }, dependencies: items }, scrollShouldSetResponder: { phasedRegistrationNames: {}, dependencies: ["Dragging"] }, selectionChangeShouldSetResponder: { phasedRegistrationNames: {}, dependencies: [null] }, moveShouldSetResponder: { phasedRegistrationNames: { "Null": null, "Null": null }, dependencies: items1 }, responderStart: { registrationName: "onResponderStart", dependencies: items }, responderMove: { registrationName: "onResponderMove", dependencies: items1 }, responderEnd: { registrationName: "onResponderEnd", dependencies: items2 }, responderRelease: { registrationName: "onResponderRelease", dependencies: items2 }, responderTerminationRequest: { registrationName: "onResponderTerminationRequest", dependencies: [] }, responderGrant: { registrationName: "onResponderGrant", dependencies: [] }, responderReject: { registrationName: "onResponderReject", dependencies: [] }, responderTerminate: { registrationName: "onResponderTerminate", dependencies: [] } };
+const obj2 = { startShouldSetResponder: { phasedRegistrationNames: { "Bool(false)": true, "Bool(false)": true }, dependencies: items }, scrollShouldSetResponder: { phasedRegistrationNames: {}, dependencies: [true] }, selectionChangeShouldSetResponder: { phasedRegistrationNames: { "Bool(false)": null, "Bool(false)": null }, dependencies: [-1618016108] }, moveShouldSetResponder: { phasedRegistrationNames: {}, dependencies: items1 }, responderStart: { registrationName: "onResponderStart", dependencies: items }, responderMove: { registrationName: "onResponderMove", dependencies: items1 }, responderEnd: { registrationName: "onResponderEnd", dependencies: items2 }, responderRelease: { registrationName: "onResponderRelease", dependencies: items2 }, responderTerminationRequest: { registrationName: "onResponderTerminationRequest", dependencies: [] }, responderGrant: { registrationName: "onResponderGrant", dependencies: [] }, responderReject: { registrationName: "onResponderReject", dependencies: [] }, responderTerminate: { registrationName: "onResponderTerminate", dependencies: [] } };
 const obj3 = {
   _getResponder() {
     return closure_36;
@@ -10640,7 +10635,7 @@ let closure_43 = {};
 let closure_44 = {};
 const customBubblingEventTypes = require(dependencyMap[2]).ReactNativeViewConfigRegistry.customBubblingEventTypes;
 const customDirectEventTypes = require(dependencyMap[2]).ReactNativeViewConfigRegistry.customDirectEventTypes;
-closure_40 = slice.call([false, false]);
+closure_40 = slice.call([null, null]);
 const result = recomputePluginOrdering();
 const obj6 = { ResponderEventPlugin: obj3, ReactNativeBridgeEventPlugin: obj7 };
 let flag = false;
@@ -10873,7 +10868,7 @@ const obj10 = {
 const get = require(dependencyMap[2]).ReactNativeViewConfigRegistry.get;
 let closure_65 = 3;
 let closure_68 = 0;
-const obj11 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, $$typeof: forResult };
+const obj11 = { position: 1, offsetY: "100%", "Bool(true)": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": "100%", $$typeof: forResult };
 let closure_70 = [];
 let closure_71 = -1;
 let closure_72 = {};
@@ -10920,7 +10915,7 @@ let closure_83 = "undefined" !== typeof AbortController ? AbortController : func
     const item = arr.forEach((arg0) => arg0());
   };
 };
-let closure_84 = { $$typeof: forResult };
+const obj12 = { pointerEvents: 1, horizontalOffset: "100%", "Bool(true)": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": "100%", $$typeof: forResult };
 let closure_85 = null;
 let closure_86 = null;
 let closure_87 = false;
@@ -11050,7 +11045,7 @@ let closure_121 = {
     }
     tmp2.baseState = tmp3;
     tmp2.memoizedState = tmp3;
-    const obj = { HierarchyRequestError: "decimal-pad", WrongDocumentError: "number-pad", InvalidCharacterError: "phone-pad", lastRenderedReducer, lastRenderedState: tmp3 };
+    const obj = { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048, lastRenderedReducer, lastRenderedState: tmp3 };
     tmp2.queue = obj;
     const bindResult = dispatchReducerAction.bind(null, closure_111, obj);
     obj.dispatch = bindResult;
@@ -11275,7 +11270,7 @@ let closure_132 = "function" === typeof reportError ? reportError : (message) =>
     const _window = window;
     if ("function" === typeof window.ErrorEvent) {
       const _window2 = window;
-      const obj = { "Null": null, "Null": null };
+      const obj = {};
       if ("object" === typeof message) {
         if (null !== message) {
           if ("string" === typeof message.message) {
@@ -11305,7 +11300,7 @@ let closure_132 = "function" === typeof reportError ? reportError : (message) =>
 };
 let closure_133 = Error("This is not a real error. It's an implementation detail of React's selective hydration feature. If this leaks into userspace, it's a bug in React. Please file an issue.");
 let closure_134 = false;
-let closure_135 = { "Null": false, "Null": false, "Null": false, "Null": false };
+let closure_135 = {};
 let closure_136 = false;
 let closure_137 = false;
 let closure_138 = "function" === typeof WeakSet ? WeakSet : Set;
@@ -11315,7 +11310,7 @@ let closure_141 = false;
 let closure_142 = 8192;
 let closure_143 = {
   getCacheForType(arg0) {
-    const tmp = readContext(closure_84);
+    const tmp = readContext(obj12);
     const data = tmp.data;
     let value = data.get(arg0);
     if (undefined === value) {
@@ -11379,7 +11374,7 @@ if ("19.1.0" !== version) {
   };
   const _Map = Map;
   const map2 = new Map();
-  const obj12 = { "Bool(true)": 3309567, "Bool(true)": 601874432, "Bool(true)": 4319821, "Bool(true)": -367009792, "Bool(true)": 1900146671, currentDispatcherRef: __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE };
+  const obj13 = { "Bool(false)": "canUnlinkLobby", "Bool(false)": "CONTEXT_MENU_OPEN_GAME_LINK", "Bool(false)": "isArray", "Bool(false)": "PARENTAL_CONSENT_CONNECTION", "Bool(false)": "pricingResultIdMap", currentDispatcherRef: __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE };
   if (null !== obj10) {
     tmp32.rendererConfig = obj10;
   }
@@ -11387,7 +11382,7 @@ if ("19.1.0" !== version) {
     __REACT_DEVTOOLS_GLOBAL_HOOK__2 = globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__;
     if (!globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__.isDisabled) {
       if (tmp25.supportsFiber) {
-        closure_57 = __REACT_DEVTOOLS_GLOBAL_HOOK__2.inject(obj12);
+        closure_57 = __REACT_DEVTOOLS_GLOBAL_HOOK__2.inject(obj13);
       }
     }
   }
@@ -11521,7 +11516,7 @@ if ("19.1.0" !== version) {
       tmp21.refCount = tmp21.refCount + 1;
       tmp14.pooledCache = tmp21;
       tmp21.refCount = tmp21.refCount + 1;
-      obj = { unsafe_rawColors: true, np: true, cache: tmp21 };
+      obj = { body: "<string:1243348993>", code: "<string:2137063425>", cache: tmp21 };
       tmp19.memoizedState = obj;
       initializeUpdateQueue(tmp19);
       const result = map2.set(containerTag, tmp14);

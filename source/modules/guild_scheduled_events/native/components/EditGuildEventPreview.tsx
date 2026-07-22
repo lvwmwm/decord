@@ -1,10 +1,10 @@
-// Module ID: 8441
-// Function ID: 67359
+// Module ID: 8442
+// Function ID: 67371
 // Name: PreviewBody
 // Dependencies: []
 // Exports: default
 
-// Module 8441 (PreviewBody)
+// Module 8442 (PreviewBody)
 function PreviewBody(event) {
   event = event.event;
   let dependencyMap;
@@ -57,7 +57,7 @@ function PreviewBody(event) {
           }
           obj.children = tmp4;
           const items = [callback(closure_4, obj), ];
-          const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false };
+          const obj1 = { y: "Text", getRow: "forEach", "Null": "url", "Null": "Array" };
           let result = null;
           if (null != locationFromEvent) {
             result = tmp(locationFromEvent[16]).guildEventDetailsParser(locationFromEvent, true);
@@ -92,18 +92,18 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.centered = { <string:1334598284>: null, <string:3229045644>: "center", <string:2213734789>: "flex-start" };
-obj.centerContainer = { textAlign: true, lineHeight: true };
-obj.flex = { Č: "Array", accessibilityDismiss: "isArray" };
-obj.header = { accessibilityRole: 24, GuildBadgeFrog: "recent_games_enabled" };
+obj.centered = {};
+obj.centerContainer = { "Bool(false)": "age", "Bool(false)": "targetFrames" };
+obj.flex = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028495694759803383, "Null": 0.000000008032402190877417 };
+obj.header = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
 obj.headerTitle = {};
 obj.headerSubtitle = { textAlign: "center" };
 const tmp2 = arg1(dependencyMap[4]);
-obj.eventContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { y: null, isArray: null }, overflow: "visible" };
+obj.eventContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { hideWhenScrolling: "\u{1F9D1}\u200D\u{1F3A8}", autoCapitalize: true }, overflow: "visible" };
 obj.channelContainer = {};
-const obj2 = { userName: "MEDIA_POST_PREVIEW_EMBED_CLICKED", effectDisplayType: "PERMISSIONS_REQUESTED", pendingDisplayNameStyles: "<string:410059264>", tintColor: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
+const obj2 = { userName: "COMMENT_NODE", effectDisplayType: "COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM", pendingDisplayNameStyles: "<string:410059264>", tintColor: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
 const obj3 = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { y: null, isArray: null }, overflow: "visible" };
+const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { hideWhenScrolling: "\u{1F9D1}\u200D\u{1F3A8}", autoCapitalize: true }, overflow: "visible" };
 if (obj7.isAndroid()) {
   num = 2;
 }
@@ -111,7 +111,7 @@ obj3.translateY = num;
 const items = [obj3];
 obj2.transform = items;
 obj.channelIcon = obj2;
-obj.buttonContainer = { channelId: null, selectedAnswerIds: null, submitting: 24, editing: "center" };
+obj.buttonContainer = { canAnimate: null, style: null, url: 24, isStageCall: "center" };
 const obj7 = arg1(dependencyMap[7]);
 obj.error = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
 let closure_8 = obj.createStyles(obj);

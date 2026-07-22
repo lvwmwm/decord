@@ -43,7 +43,7 @@ export const FeedbackWidgetProvider = (Component) => {
       }
       tmp2Result = tmp2(self, constructResult);
       FeedbackWidgetProvider = tmp2Result;
-      obj = { 9223372036854775807: true, 9223372036854775807: null, 0: 16, 9223372036854775807: 5, -9223372036854775808: false, 0: 79.82 };
+      obj = { accessibilityRole: 29709198, kind: 1156269291, kind: -336183039, body: -347013119, position: 1077828, accessibilityRole: 655360 };
       value = new closure_8.Value(0);
       obj.backgroundOpacity = value;
       value1 = new closure_8.Value(closure_10.get("screen").height);
@@ -84,8 +84,8 @@ export const FeedbackWidgetProvider = (Component) => {
                 });
                 const timingResult = closure_8.timing(tmp2Result.state.panY, obj);
               } else {
-                closure_8.spring(tmp2Result.state.panY, { resourceTimingToSpanAttributes: "info", esrb: "/" }).start();
-                const springResult = closure_8.spring(tmp2Result.state.panY, { resourceTimingToSpanAttributes: "info", esrb: "/" });
+                closure_8.spring(tmp2Result.state.panY, { GestureHandlerRootView: null, ctaOnHover: null }).start();
+                const springResult = closure_8.spring(tmp2Result.state.panY, { GestureHandlerRootView: null, ctaOnHover: null });
               }
             }
       };
@@ -172,7 +172,7 @@ export const FeedbackWidgetProvider = (Component) => {
           obj.useNativeDriver = closure_16;
           obj.easing = closure_11.in(closure_11.quad);
           const items = [timing(self.state.backgroundOpacity, obj), ];
-          obj = { 0: "<string:8912898>", 9223372036854775807: "<string:2919038977>", 9223372036854775807: "<string:2024931329>", duration: FeedbackWidgetProvider(closure_1[9]).SLIDE_ANIMATION_DURATION, easing: closure_11.in(closure_11.quad) };
+          obj = { "Bool(false)": "httpServerLocation", "Bool(false)": "hash", "Bool(false)": "httpServerLocation", duration: FeedbackWidgetProvider(closure_1[9]).SLIDE_ANIMATION_DURATION, easing: closure_11.in(closure_11.quad) };
           items[1] = RN.timing(self.state.panY, obj);
           parallel(items).start(() => {
             const debug = callback(closure_1[10]).debug;
@@ -203,7 +203,7 @@ export const FeedbackWidgetProvider = (Component) => {
       let obj = FeedbackWidgetProvider(closure_1[7]);
       if (obj.isModalSupported()) {
         ({ isButtonVisible, isScreenshotButtonVisible, isVisible, backgroundOpacity } = self.state);
-        obj = { inputRange: ["replace", "then"], outputRange: ["discord_protos.discord_users.v1.InboxTab", "discord_protos.discord_users.v1.AllGuildSettings"] };
+        obj = { inputRange: [77601039, 1612144654], outputRange: [] };
         const theme = tmp(tmp2[11]).getTheme();
         const Fragment = React.Fragment;
         const children = self.props.children;
@@ -226,7 +226,7 @@ export const FeedbackWidgetProvider = (Component) => {
           const obj1 = { backgroundColor: interpolateResult };
           items[1] = obj1;
           obj.style = items;
-          const obj2 = { visible: isVisible, onRequestClose: self._handleClose };
+          const obj2 = { 9223372036854775807: true, -1403954079: true, 1365402028: true, 1398910164: true, 1671067985: true, visible: isVisible, onRequestClose: self._handleClose };
           obj3 = {};
           ({ createElement, createElement: createElement2 } = React);
           obj3.style = FeedbackWidgetProvider(closure_1[15]).topSpacer;
@@ -240,7 +240,7 @@ export const FeedbackWidgetProvider = (Component) => {
           obj5.transform = items2;
           items1[1] = obj5;
           obj4.style = items1;
-          const obj7 = { 9223372036854775807: true, alignItems: true, accessible: true, onScroll: self._handleScroll };
+          const obj7 = { backgroundColor: 469507067, borderColor: 469508166, borderRadius: 822948183, onScroll: self._handleScroll };
           const merged = Object.assign(obj4, self._panResponder.panHandlers);
           ({ createElement: createElement3, createElement: createElement4 } = React);
           const _Object4 = Object;

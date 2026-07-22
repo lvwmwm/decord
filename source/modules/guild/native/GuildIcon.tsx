@@ -1,9 +1,9 @@
-// Module ID: 5513
-// Function ID: 46927
+// Module ID: 5512
+// Function ID: 46935
 // Name: makeSizeStyle
 // Dependencies: []
 
-// Module 5513 (makeSizeStyle)
+// Module 5512 (makeSizeStyle)
 let LARGE;
 let NORMAL;
 let SMALL;
@@ -59,10 +59,10 @@ let closure_5 = arg1(dependencyMap[2]).ExpressionSourceGuildRecord;
 const Fonts = arg1(dependencyMap[4]).Fonts;
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = { XXXSMALL: "XXXSMALL", XXSMALL_12: "XXSMALL_12", XXSMALL: "XXSMALL", XSMALL_20: "XSMALL_20", XSMALL: "XSMALL", SMALL: "SMALL", SMALL_32: "SMALL_32", SMALL_36: "SMALL_36", NORMAL: "NORMAL", LARGE: "LARGE", XLARGE: "XLARGE", XXLARGE: "XXLARGE" };
-let closure_10 = { [obj.XXXSMALL]: [], [obj.XXSMALL_12]: ["progressPath", "../../shared/constants", "../shared/constants", "share", "shared", "<string:22392647>"], [obj.XXSMALL]: ["<string:3706903233>", "<string:1843196498>", "<string:1367040453>", "<string:3227622938>", "<string:143995737>", "<string:1769380062>"], [obj.XSMALL_20]: ["top", "useMemo", "data", "disabled", "loadJsonAsset", "filter"], [obj.XSMALL]: [false, false, false, false, false, false], [obj.SMALL]: [false, false, false, false, false, false], [obj.SMALL_32]: [false, false, false, false, false, false], [obj.SMALL_36]: [false, false, false, false, false, false], [obj.NORMAL]: [false, false, false, false, false, false], [obj.LARGE]: [false, false, false, false, false, false], [obj.XLARGE]: [false, false, false, false, false, false], [obj.XXLARGE]: [false, false, false, false, false, false] };
+let closure_10 = { [obj.XXXSMALL]: [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001047163578852941, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004024391843349287, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003145604121347347, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009510963606, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001306194509129167, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013852388526558], [obj.XXSMALL_12]: [null, null, null, null, null, null], [obj.XXSMALL]: [], [obj.XSMALL_20]: [], [obj.XSMALL]: [], [obj.SMALL]: [], [obj.SMALL_32]: [], [obj.SMALL_36]: [], [obj.NORMAL]: [], [obj.LARGE]: [], [obj.XLARGE]: [], [obj.XXLARGE]: [] };
 obj = { [obj.XXXSMALL]: 10, [obj.XXSMALL_12]: 12, [obj.XXSMALL]: 16, [obj.XSMALL_20]: 20, [obj.XSMALL]: 24, [obj.SMALL]: 30, [obj.SMALL_32]: 32, [obj.SMALL_36]: 36, [obj.NORMAL]: 40, [obj.LARGE]: 48, [obj.XLARGE]: 64, [obj.XXLARGE]: 80 };
 let obj3 = arg1(dependencyMap[6]);
-const obj1 = { guildIcon: { -503191469: 0, 1638265896: -245.426, -1858318072: 3 }, [XXXSMALL]: require("module_10"), [XXSMALL_12]: require("module_12"), [XXSMALL]: require("module_16"), [XSMALL_20]: require("module_20"), [XSMALL]: require("module_24"), [SMALL]: require("module_30"), [SMALL_32]: require("module_32"), [SMALL_36]: require("module_36"), [NORMAL]: require("module_40"), [LARGE]: require("module_48"), [XLARGE]: require("module_64"), [XXLARGE]: require("module_80") };
+const obj1 = { guildIcon: { <string:3847312555>: "<string:29705451>", <string:2488558706>: "UM", <string:1817335355>: "ButtonLooks" }, [XXXSMALL]: require("module_10"), [XXSMALL_12]: require("module_12"), [XXSMALL]: require("module_16"), [XSMALL_20]: require("module_20"), [XSMALL]: require("module_24"), [SMALL]: require("module_30"), [SMALL_32]: require("module_32"), [SMALL_36]: require("module_36"), [NORMAL]: require("module_40"), [LARGE]: require("module_48"), [XLARGE]: require("module_64"), [XXLARGE]: require("module_80") };
 ({ XXXSMALL, XXSMALL_12, XXSMALL, XSMALL_20, XSMALL, SMALL, SMALL_32, SMALL_36, NORMAL, LARGE, XLARGE, XXLARGE } = obj);
 const tmp2 = arg1(dependencyMap[3]);
 obj1["guildTextContainer"] = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
@@ -254,7 +254,7 @@ const memoResult = importAllResult.memo(function GuildIconInner(guild) {
   if (tmp16) {
     obj = { style: wrapperStyle };
     let tmp31Result = tmp31(tmp32[11]);
-    obj = { "Bool(true)": null, <string:22198377>: null, <string:1627785529>: null, <string:2898023095>: null, <string:1549970575>: null, <string:1311855008>: null, style: tmp29, children: acronym };
+    obj = { fontFamily: "messageId", fontSize: "includes", marginBottom: "from", borderWidth: "end", borderColor: "from", backgroundColor: "end", style: tmp29, children: acronym };
     obj.children = tmp30(arg1(tmp32[12]).NativeText, obj);
     let tmp30Result = tmp30(tmp31Result, obj);
   } else {

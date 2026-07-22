@@ -1,22 +1,20 @@
-// Module ID: 10144
-// Function ID: 78470
+// Module ID: 10145
+// Function ID: 78483
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [5, 57, 31, 27, 1348, 33, 4126, 689, 5225, 566, 4316]
+// Dependencies: []
 // Exports: default
 
-// Module 10144 (SafetyToolsSafetyTipsActionSheet)
-import "asyncGeneratorStep";
-import { View } from "_slicedToArray";
-import { getInappropriateConversationsSafetyTips as closure_4 } from "module_31";
-import { jsx } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
-
-_isNativeReflectConstruct = {};
-_isNativeReflectConstruct = { marginHorizontal: require("module_33").space.PX_16 };
-_isNativeReflectConstruct.safetyTipsContainer = _isNativeReflectConstruct;
-_isNativeReflectConstruct = _isNativeReflectConstruct.createStyles(_isNativeReflectConstruct);
-const result = computeDefaultGroupDmNameFromUserIds.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsSafetyTipsActionSheet.tsx");
+// Module 10145 (SafetyToolsSafetyTipsActionSheet)
+importAll(dependencyMap[0]);
+const View = arg1(dependencyMap[1]).View;
+let closure_4 = arg1(dependencyMap[2]).getInappropriateConversationsSafetyTips;
+const jsx = arg1(dependencyMap[3]).jsx;
+let obj = arg1(dependencyMap[4]);
+obj = {};
+obj = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+obj.safetyTipsContainer = obj;
+let closure_6 = obj.createStyles(obj);
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsSafetyTipsActionSheet.tsx");
 
 export default function SafetyToolsSafetyTipsActionSheet(arg0) {
   let channelId;
@@ -26,7 +24,7 @@ export default function SafetyToolsSafetyTipsActionSheet(arg0) {
   let warningType;
   ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
   let obj = { hasHeaderBack: true, recipientId, warningId, warningType };
-  const tmp = _isNativeReflectConstruct();
+  const tmp = callback2();
   const intl = arg1(dependencyMap[7]).intl;
   obj.headerTitle = intl.string(arg1(dependencyMap[7]).t.EtNxi6);
   obj.channelId = channelId;

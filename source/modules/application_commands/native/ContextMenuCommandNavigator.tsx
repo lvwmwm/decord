@@ -1,10 +1,10 @@
-// Module ID: 15426
-// Function ID: 117722
+// Module ID: 15434
+// Function ID: 117765
 // Name: ContextMenuCommandNavigator
 // Dependencies: []
 // Exports: default
 
-// Module 15426 (ContextMenuCommandNavigator)
+// Module 15434 (ContextMenuCommandNavigator)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

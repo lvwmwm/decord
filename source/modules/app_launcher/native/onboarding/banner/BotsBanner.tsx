@@ -1,10 +1,10 @@
-// Module ID: 11174
-// Function ID: 86884
+// Module ID: 11175
+// Function ID: 86897
 // Name: BotsBanner
 // Dependencies: []
 // Exports: default
 
-// Module 11174 (BotsBanner)
+// Module 11175 (BotsBanner)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");

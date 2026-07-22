@@ -1,9 +1,9 @@
-// Module ID: 13827
-// Function ID: 104550
+// Module ID: 13834
+// Function ID: 104590
 // Name: metadata
 // Dependencies: []
 
-// Module 13827 (metadata)
+// Module 13834 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/quests/bounties/_3d_orbs.png.js");
 

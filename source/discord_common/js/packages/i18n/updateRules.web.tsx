@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 121007
+// Module ID: 15834
+// Function ID: 121050
 // Name: updateRules
 // Dependencies: []
 // Exports: default
 
-// Module 15826 (updateRules)
+// Module 15834 (updateRules)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/i18n/updateRules.web.tsx");

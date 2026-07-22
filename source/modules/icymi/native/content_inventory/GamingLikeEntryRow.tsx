@@ -1,10 +1,10 @@
-// Module ID: 15105
-// Function ID: 113945
+// Module ID: 15113
+// Function ID: 113988
 // Name: items
-// Dependencies: [32178176, 305528832, 438173696, 519897088, 102039552, 31260672, 351338496, 597295104, 350879744, 647168000, 131072, 124977152, 503316507, 33554458, 2030043136, 6, 7, 15, 17, 18, 31, 27, 33, 15109, 334832, 2031616, 88342528, 292552704, 121176064, 121372672, 270073856, 2162688, 37093376]
+// Dependencies: [32178176, 305528832, 438173696, 519897088, 102039552, 31260672, 333643776, 597360640, 333185024, 647233536, 131072, 124977152, 503316507, 33554458, 2030043136, 6, 7, 15, 17, 18, 31, 27, 33, 15117, 334832, 2031616, 88342528, 292552704, 121176064, 121372672, 270073856, 2162688, 37093376]
 // Exports: default
 
-// Module 15105 (items)
+// Module 15113 (items)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_6 = importDefault(dependencyMap[2]);
@@ -60,16 +60,19 @@ const obj2 = {
     return true === arg1(dependencyMap[5]).isEntryMarathon(entry);
   }
 };
-let closure_11 = arg1(dependencyMap[7]).createICYMIStyles((gap) => {
+let closure_11 = arg1(dependencyMap[7]).createICYMIStyles((arg0) => {
   let obj = {};
-  obj = { gap: gap.margin, padding: gap.margin, marginLeft: gap.inset, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+  obj = { -2108412530: "text-lg/normal", -266912356: "text-default", 1638363508: true };
+  ({ margin: obj2.gap, margin: obj2.padding, inset: obj2.marginLeft } = arg0);
+  obj.borderRadius = importDefault(dependencyMap[8]).radii.lg;
+  obj.backgroundColor = importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH;
   const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_HIGH);
   obj.card = obj;
-  obj.cardInnerContainer = { <string:1660689751>: null, <string:5332066>: null };
-  obj = { "Null": "NR", "Null": "__RRWEB_EXCLUDE_SHADOW_DOM__", borderRadius: importDefault(dependencyMap[8]).radii.sm };
+  obj.cardInnerContainer = { "Null": true, "Null": true };
+  obj = { "Null": "nativeStyles", "Null": "__handleCache", borderRadius: importDefault(dependencyMap[8]).radii.sm };
   obj.image = obj;
   obj.gameName = { maxWidth: 275, color: importDefault(dependencyMap[8]).colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY };
-  const obj2 = { 0: true, 9223372036854775807: true, 0: true, 0: true, -9223372036854775808: true, 9223372036854775807: true, gap: importDefault(dependencyMap[8]).space.PX_8 };
+  const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, gap: importDefault(dependencyMap[8]).space.PX_8 };
   obj.badges = obj2;
   return obj;
 });
@@ -175,7 +178,7 @@ export default function GamingLikeEntryRow(content) {
         obj.onPress = tmp11;
         obj1 = {};
         const isEntryActiveResult = arg1(dependencyMap[5]).isEntryActive(content);
-        obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+        obj2 = {};
         let tmp20;
         if (null != displayNameStylesFont) {
           const obj3 = { fontFamily: displayNameStylesFont };
@@ -185,14 +188,14 @@ export default function GamingLikeEntryRow(content) {
         let obj10 = importDefault(dependencyMap[25]);
         obj2.children = obj10.getName(stateFromStores);
         const items5 = [callback(arg1(dependencyMap[24]).Text, obj2), ];
-        const obj4 = { "Null": 0, "Null": 5.566, "Null": 10 };
+        const obj4 = {};
         let obj12 = arg1(dependencyMap[26]);
         let obj13 = importDefault(dependencyMap[27]);
         obj4.children = obj12.getRelativeTimestamp(obj13.extractTimestamp(content.id));
         items5[1] = callback(arg1(dependencyMap[24]).Text, obj4);
         obj1.children = items5;
         obj.title = closure_9(closure_8, obj1);
-        obj5 = { <string:2077996694>: null, <string:4179938721>: null };
+        obj5 = { -1405509148: -191638511062811800000000000000000000000000000000000000, -1376015004: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008670305676611304 };
         let obj15 = arg1(dependencyMap[5]);
         let str3 = "text-default";
         if (obj15.isEntryActive(content)) {

@@ -1,10 +1,10 @@
-// Module ID: 10227
-// Function ID: 79033
+// Module ID: 10228
+// Function ID: 79046
 // Name: canReportRaid
 // Dependencies: []
 // Exports: useCanEnableRaidAlerts, useCanReportRaid, useShowMentionRaidLimitUpsell
 
-// Module 10227 (canReportRaid)
+// Module 10228 (canReportRaid)
 function canReportRaid(guild, closure_6) {
   let obj = closure_6;
   if (closure_6 === undefined) {

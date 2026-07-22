@@ -1,5 +1,5 @@
 // Module ID: 4219
-// Function ID: 36824
+// Function ID: 36831
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,7 +18,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-let obj = { test: false, T: false, paddingHorizontal: null };
+let obj = { type: "mn", key: "description", screenId: "Array" };
 const HOUR = importDefault(dependencyMap[5]).Millis.HOUR;
 let tmp2 = (DeviceSettingsStore) => {
   class RTCRegionStore {

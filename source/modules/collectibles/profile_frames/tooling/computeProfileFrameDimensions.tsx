@@ -1,10 +1,10 @@
-// Module ID: 8243
-// Function ID: 65064
+// Module ID: 8244
+// Function ID: 65076
 // Name: maxOverflowOrFallback
 // Dependencies: []
 // Exports: computeProfileFrameDimensions
 
-// Module 8243 (maxOverflowOrFallback)
+// Module 8244 (maxOverflowOrFallback)
 function maxOverflowOrFallback(found, arg1) {
   let applyResult = arg1;
   if (found.length > 0) {

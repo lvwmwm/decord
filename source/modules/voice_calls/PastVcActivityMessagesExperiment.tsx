@@ -1,10 +1,10 @@
-// Module ID: 15886
-// Function ID: 121671
+// Module ID: 15894
+// Function ID: 121714
 // Name: experiment
 // Dependencies: []
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 15886 (experiment)
+// Module 15894 (experiment)
 const _module = require(dependencyMap[1]);
 const items = [{ config: { enabled: true } }];
 const experiment = _module.createExperiment({ commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: items });

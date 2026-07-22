@@ -1,10 +1,10 @@
-// Module ID: 11010
-// Function ID: 85664
+// Module ID: 11011
+// Function ID: 85677
 // Name: ExplicitMediaLearnMoreActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11010 (ExplicitMediaLearnMoreActionSheet)
+// Module 11011 (ExplicitMediaLearnMoreActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
@@ -129,7 +129,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   obj2.children = items5;
   items4[1] = closure_9(View, obj2);
   const obj5 = { style: tmp.buttonsContainer };
-  const obj6 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
+  const obj6 = {};
   if (memo) {
     obj6.text = stringResult;
     obj6.onPress = function handleAgeVerifyButtonPress() {
@@ -164,7 +164,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     }
   }
   const items6 = [callback(tmp4(tmp2[22]).Button, tmp22), , ];
-  const obj7 = { "Bool(true)": null, "Bool(true)": null };
+  const obj7 = {};
   const intl7 = arg1(dependencyMap[10]).intl;
   obj7.text = intl7.string(arg1(dependencyMap[10]).t.bmbHPA);
   obj7.onPress = function onPress() {

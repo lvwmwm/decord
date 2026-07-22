@@ -1,10 +1,10 @@
-// Module ID: 10003
-// Function ID: 77317
+// Module ID: 10004
+// Function ID: 77330
 // Name: ChannelSpoiler
 // Dependencies: []
 // Exports: default
 
-// Module 10003 (ChannelSpoiler)
+// Module 10004 (ChannelSpoiler)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,9 +15,9 @@ const VoicePanelControlsModes = arg1(dependencyMap[6]).VoicePanelControlsModes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = { subtitle: {}, subtitleContainer: { alignItems: "center" } };
-obj = { sa: "surrogates", Array: "y", a: "isArray", skuId: "key", backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.divider = obj;
-obj.subtitleMeasure = { "Bool(false)": "<string:3082955202>", "Bool(false)": "<string:103629460>", "Bool(false)": "<string:3630497793>", "Bool(false)": "<string:961609729>" };
+obj.subtitleMeasure = { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527 };
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/spoiler_channels/native/ChannelSpoiler.tsx");
@@ -73,7 +73,7 @@ export default function ChannelSpoiler(channelId) {
     channelIconComponent = obj3.getChannelIconComponent(stateFromStores1);
   }
   if (null != channelIconComponent) {
-    obj = { style: { 2036930899: "th", 1628470960: "recordCanvas", -154250777: "STICKER_PACK_VIEW_ALL", 1373095266: "<string:1312948480>" } };
+    obj = { style: { effectDisplayType: "ON", es-UY: "ButtonLooks", inflateEnd: "useActionBarPrimaryButton", FPS_15: "<string:104988928>" } };
     const items4 = [callback2(channelIconComponent, {}), ];
     obj = {};
     obj1 = { flexShrink: 1 };
@@ -96,7 +96,7 @@ export default function ChannelSpoiler(channelId) {
     if ("" !== str.trim()) {
       const obj2 = { spacing: 4, style: tmp2.subtitleContainer };
       obj3 = { style: tmp2.subtitleMeasure, pointerEvents: "none" };
-      const obj4 = { space: 2539982792701946800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, disabled: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012329723729218196, onTextLayout: callback1 };
+      const obj4 = { "Null": true, "Null": true, onTextLayout: callback1 };
       const obj5 = { channelId: stateFromStores1.id };
       obj4.children = importDefault(dependencyMap[20]).parseTopic(stateFromStores1.topic, true, obj5);
       obj3.children = callback2(arg1(dependencyMap[17]).Text, obj4);

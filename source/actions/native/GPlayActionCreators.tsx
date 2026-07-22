@@ -1,5 +1,5 @@
 // Module ID: 7155
-// Function ID: 57753
+// Function ID: 57764
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: downgradeSubscription, loadUserCountry, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
@@ -436,10 +436,10 @@ function withGPlayBillingErrorHandling(arg0, arg1) {
     return fn;
   });
 }
-let closure_3 = ["Kaaba"];
-let closure_4 = ["Kaaba"];
-let closure_5 = ["Kaaba"];
-let closure_6 = ["Kaaba"];
+let closure_3 = [null];
+let closure_4 = [null];
+let closure_5 = [null];
+let closure_6 = [null];
 let closure_7 = importDefault(dependencyMap[0]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 ({ deleteGPlayAnalytics: closure_9, useGPlayAnalyticsStore: closure_10 } = arg1(dependencyMap[3]));

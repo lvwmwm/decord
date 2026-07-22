@@ -1,9 +1,9 @@
-// Module ID: 14014
-// Function ID: 106594
+// Module ID: 14021
+// Function ID: 106634
 // Name: route
 // Dependencies: []
 
-// Module 14014 (route)
+// Module 14021 (route)
 let closure_2 = importDefault(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const InputModes = tmp2.InputModes;

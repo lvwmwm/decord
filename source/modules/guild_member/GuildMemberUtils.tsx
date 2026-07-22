@@ -1,10 +1,10 @@
-// Module ID: 10969
-// Function ID: 85330
+// Module ID: 10970
+// Function ID: 85343
 // Name: getGuildMemberAgeInRange
 // Dependencies: []
 // Exports: useCanBanMember, useCanKickMember, useCanManageMessages, useNewMemberBadge
 
-// Module 10969 (getGuildMemberAgeInRange)
+// Module 10970 (getGuildMemberAgeInRange)
 function getGuildMemberAgeInRange(guildId, arg1, id) {
   let maxDaysOld;
   let minDaysOld;

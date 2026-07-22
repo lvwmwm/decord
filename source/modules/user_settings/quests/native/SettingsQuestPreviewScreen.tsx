@@ -1,10 +1,10 @@
-// Module ID: 13945
-// Function ID: 105969
+// Module ID: 13952
+// Function ID: 106009
 // Name: SettingsQuestPreviewScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13945 (SettingsQuestPreviewScreen)
+// Module 13952 (SettingsQuestPreviewScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ActivityIndicator: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
@@ -19,7 +19,7 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGRO
 obj.container = obj;
 obj.controlBarContainer = { paddingHorizontal: PX_16, paddingTop: PX_16 / 2, paddingBottom: PX_16 };
 obj.segmentedControlContainer = { paddingHorizontal: PX_16 };
-obj.pagesContainer = { paddingTop: false, justifyContent: false };
+obj.pagesContainer = { backgroundColor: false, borderRadius: false };
 const tmp3 = arg1(dependencyMap[5]);
 obj.activityIndicator = { marginTop: importDefault(dependencyMap[6]).space.PX_32 };
 const obj1 = { marginTop: importDefault(dependencyMap[6]).space.PX_32 };
@@ -222,7 +222,7 @@ export default function SettingsQuestPreviewScreen() {
   if (stateFromStores2) {
     if (null == stateFromStores) {
       obj = { style: tmp.container };
-      obj = { font: 397, dx: 97, style: tmp.activityIndicator };
+      obj = { style: tmp.activityIndicator };
       obj.children = callback2(callback, obj);
       let tmp30Result = callback2(stateFromStores1, obj);
     }

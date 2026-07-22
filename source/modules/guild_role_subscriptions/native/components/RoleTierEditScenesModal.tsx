@@ -1,10 +1,10 @@
-// Module ID: 16312
-// Function ID: 125864
+// Module ID: 16320
+// Function ID: 125906
 // Name: getComponentPropsForScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16312 (getComponentPropsForScreen)
+// Module 16320 (getComponentPropsForScreen)
 function getComponentPropsForScreen(arg0, arg1, arg2) {
   let obj = arg1[arg0];
   let runtimeProps;
@@ -207,7 +207,7 @@ let closure_7 = arg1(dependencyMap[3]).GuildRoleSubscriptionsTierScenes;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ stepsIndicator: {} });
+let closure_11 = arg1(dependencyMap[5]).createStyles({ stepsIndicator: { "Null": 16, "Null": 26, "Null": 8 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/RoleTierEditScenesModal.tsx");
 

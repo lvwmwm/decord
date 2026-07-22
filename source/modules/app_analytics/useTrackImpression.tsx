@@ -1,10 +1,10 @@
-// Module ID: 8552
-// Function ID: 67986
+// Module ID: 8553
+// Function ID: 67998
 // Name: trackImpression
 // Dependencies: []
 // Exports: default
 
-// Module 8552 (trackImpression)
+// Module 8553 (trackImpression)
 function trackImpression(type, arg1, arg2) {
   let name;
   let properties;
@@ -73,7 +73,7 @@ export default function useTrackImpression(arg0) {
   let obj = arg1;
   const arg1 = arg0;
   if (arg1 === undefined) {
-    obj = { g: null, a: null };
+    obj = { 0: true, 9223372036854775807: true };
   }
   const importDefault = obj;
   const dependencyMap = arg2;

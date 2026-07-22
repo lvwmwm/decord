@@ -1,10 +1,10 @@
-// Module ID: 9932
-// Function ID: 76848
+// Module ID: 9933
+// Function ID: 76861
 // Name: _submitPollVote
 // Dependencies: []
 // Exports: endPollEarly, submitPollVote
 
-// Module 9932 (_submitPollVote)
+// Module 9933 (_submitPollVote)
 function _submitPollVote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

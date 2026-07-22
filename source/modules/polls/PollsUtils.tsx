@@ -1,5 +1,5 @@
 // Module ID: 6998
-// Function ID: 55940
+// Function ID: 55951
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
@@ -127,8 +127,7 @@ function getPollResultsPollName(merged, closure_8) {
 }
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  const obj = { top: "isArray", right: "pos", left: "ix", id };
-  const reactions = reactions.getReactions(channelId, message.id, obj, closure_9, id(dependencyMap[14]).ReactionTypes.VOTE);
+  const reactions = reactions.getReactions(channelId, message.id, { id }, closure_9, id(dependencyMap[14]).ReactionTypes.VOTE);
   const channel = channel.getChannel(channelId);
   id = channel;
   let guildId = null;
@@ -146,6 +145,7 @@ function getSampleOfVoterUsernamesForAnswer(message, id) {
   if (null == items) {
     items = [];
   }
+  const obj = { id };
   const tmp3 = importDefault(dependencyMap[15]);
   const tmp3Result = importDefault(dependencyMap[15])(Array.from(items));
   const rejectResult = importDefault(dependencyMap[15])(Array.from(items)).reject((id) => blockedOrIgnored.isBlockedOrIgnored(id.id));
@@ -394,7 +394,7 @@ export const getPollAnswerVotesTooltipText = function getPollAnswerVotesTooltipT
   if (null == message) {
     return "";
   } else {
-    const obj = { top: "isArray", right: "pos", left: "ix", id };
+    const obj = { id };
     let str = "";
     const reaction = message.getReaction(obj);
     let vote;

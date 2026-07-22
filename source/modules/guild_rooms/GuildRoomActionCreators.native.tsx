@@ -1,10 +1,10 @@
-// Module ID: 15926
-// Function ID: 122118
+// Module ID: 15934
+// Function ID: 122161
 // Name: _guildRoomConnect
 // Dependencies: []
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 15926 (_guildRoomConnect)
+// Module 15934 (_guildRoomConnect)
 function _guildRoomConnect() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

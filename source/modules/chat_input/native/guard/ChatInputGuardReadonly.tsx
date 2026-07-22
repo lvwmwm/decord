@@ -1,9 +1,9 @@
-// Module ID: 11489
-// Function ID: 89424
+// Module ID: 11490
+// Function ID: 89437
 // Name: sortChannelsByLastMessageId
 // Dependencies: []
 
-// Module 11489 (sortChannelsByLastMessageId)
+// Module 11490 (sortChannelsByLastMessageId)
 function sortChannelsByLastMessageId(id, id2) {
   const obj = importDefault(dependencyMap[18]);
   return obj.compare(closure_8.lastMessageId(id2.id), closure_8.lastMessageId(id.id));

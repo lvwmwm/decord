@@ -1,10 +1,10 @@
-// Module ID: 14034
-// Function ID: 106712
+// Module ID: 14041
+// Function ID: 106752
 // Name: getThemeOverride
 // Dependencies: []
 // Exports: default
 
-// Module 14034 (getThemeOverride)
+// Module 14041 (getThemeOverride)
 function getThemeOverride(mobileThemes, first1, stateFromStores) {
   let theme = stateFromStores;
   let tmp2;
@@ -41,8 +41,8 @@ obj.container = obj;
 const tmp3 = arg1(dependencyMap[10]);
 obj.landscapeContainer = { flexDirection: "row", gap: importDefault(dependencyMap[12]).space.PX_16 };
 obj.landscapePreview = { flex: 1 };
-obj.landscapeSelector = { <string:768902381>: true, <string:896389916>: true, <string:193613281>: true };
-const obj2 = { "Null": "isArray", "Null": "body", "Null": "message", gap: importDefault(dependencyMap[12]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, marginBottom: importDefault(dependencyMap[12]).space.PX_16 };
+obj.landscapeSelector = {};
+const obj2 = { 0: "isArray", 0: "body", 0: "message", gap: importDefault(dependencyMap[12]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, marginBottom: importDefault(dependencyMap[12]).space.PX_16 };
 obj.segmentedControlContainer = obj2;
 obj.textCentered = { textAlign: "center" };
 let closure_17 = obj.createStyles(obj);
@@ -356,7 +356,7 @@ function ThemePicker(defaultIndex) {
       tmp = mobileThemes[closure_12].type !== defaultIndex(isPreview[24]).ClientThemeType.STANDARD_BACKGROUND_THEME;
     }
     const defaultIndex = tmp;
-    const obj = {};
+    const obj = { content: null, key: null, height: null, backgroundColor: null, marginBottom: "isArray", type: "y" };
     let fn;
     if (!obj2.isIOS()) {
       fn = () => callback2(closure_5, {});
@@ -373,7 +373,7 @@ function ThemePicker(defaultIndex) {
       }
     };
     obj.headerTitle = function headerTitle() {
-      const obj = { 665604545: false, 1470947939: 400, style: closure_22.textNormal };
+      const obj = { hasMask: null, masksProperties: 2, style: closure_22.textNormal };
       if (null != closure_6) {
         let stringResult = closure_6;
       } else {

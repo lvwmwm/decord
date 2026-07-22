@@ -1,10 +1,10 @@
-// Module ID: 9942
-// Function ID: 76904
+// Module ID: 9943
+// Function ID: 76917
 // Name: ArrowAngleLeftUpIcon
 // Dependencies: []
 // Exports: ArrowAngleLeftUpIcon
 
-// Module 9942 (ArrowAngleLeftUpIcon)
+// Module 9943 (ArrowAngleLeftUpIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowAngleLeftUpIcon.tsx");

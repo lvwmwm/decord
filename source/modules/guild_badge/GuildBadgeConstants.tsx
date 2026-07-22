@@ -1,10 +1,10 @@
-// Module ID: 8578
-// Function ID: 68132
+// Module ID: 8579
+// Function ID: 68144
 // Name: getBadgeTooltip
 // Dependencies: []
 // Exports: getBadgeTooltip
 
-// Module 8578 (getBadgeTooltip)
+// Module 8579 (getBadgeTooltip)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_badge/GuildBadgeConstants.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 5889
-// Function ID: 49755
+// Function ID: 49766
 // Name: BananaSpotIllustration
 // Dependencies: []
 // Exports: BananaSpotIllustration

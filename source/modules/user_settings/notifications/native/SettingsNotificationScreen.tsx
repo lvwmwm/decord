@@ -1,9 +1,9 @@
-// Module ID: 14189
-// Function ID: 107393
+// Module ID: 14197
+// Function ID: 107436
 // Name: SystemNotificationsSubLabel
 // Dependencies: []
 
-// Module 14189 (SystemNotificationsSubLabel)
+// Module 14197 (SystemNotificationsSubLabel)
 function SystemNotificationsSubLabel() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[7]);
@@ -13,7 +13,7 @@ function SystemNotificationsSubLabel() {
   let result = obj2.hasAndroidNotificationChannels();
   obj = {};
   if (result) {
-    obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+    obj = { cachedAt: "y", edpbxy: "isArray" };
     const intl = arg1(dependencyMap[11]).intl;
     obj.children = intl.string(arg1(dependencyMap[11]).t./TZX1J);
     result = callback(arg1(dependencyMap[10]).Text, obj);
@@ -24,7 +24,7 @@ function SystemNotificationsSubLabel() {
   }
   if (showReactivationPrompt) {
     obj1 = { style: tmp.card };
-    obj2 = {};
+    obj2 = { 9223372036854775807: true, 9223372036854775807: true };
     const obj3 = { style: tmp.cardContent };
     const obj4 = { color: importDefault(dependencyMap[6]).unsafe_rawColors.YELLOW_300 };
     const items1 = [callback(arg1(dependencyMap[13]).CircleErrorIcon, obj4), ];
@@ -50,7 +50,7 @@ const MobileSetting = arg1(dependencyMap[3]).MobileSetting;
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { borderColor: importDefault(dependencyMap[6]).unsafe_rawColors.YELLOW_300, borderRadius: importDefault(dependencyMap[6]).radii.lg };
+obj = { 9223372036854775807: true, 9223372036854775807: true, 0: true, borderColor: importDefault(dependencyMap[6]).unsafe_rawColors.YELLOW_300, borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.card = obj;
 obj.cardContent = {};
 obj.text = { flex: 1 };

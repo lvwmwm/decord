@@ -1,10 +1,10 @@
-// Module ID: 5471
-// Function ID: 46745
+// Module ID: 5470
+// Function ID: 46753
 // Name: accountLinkAuthorizationStarted
-// Dependencies: [646840323, 899088385]
+// Dependencies: []
 // Exports: accountLinkAuthorizationCompleted, accountLinkAuthorizationStarted, devtoolsSetGloballyDisabledAuthorizationFlows
 
-// Module 5471 (accountLinkAuthorizationStarted)
+// Module 5470 (accountLinkAuthorizationStarted)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/application_account_linking/AccountLinkingActionCreators.tsx");
 

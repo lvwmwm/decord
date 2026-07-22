@@ -1,10 +1,10 @@
-// Module ID: 5469
-// Function ID: 46718
+// Module ID: 5468
+// Function ID: 46726
 // Name: useAuthorizedAppsTokens
 // Dependencies: []
 // Exports: useAuthorizedAppsToken
 
-// Module 5469 (useAuthorizedAppsTokens)
+// Module 5468 (useAuthorizedAppsTokens)
 function useAuthorizedAppsTokens(closure_3, arg1) {
   let obj = arg1;
   arg1 = closure_3;

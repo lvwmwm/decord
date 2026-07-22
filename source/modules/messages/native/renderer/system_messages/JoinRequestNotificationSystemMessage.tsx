@@ -1,15 +1,15 @@
 // Module ID: 7726
-// Function ID: 61446
+// Function ID: 61456
 // Name: getMessageContent
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: createJoinRequestNotificationSystemMessage
 
 // Module 7726 (getMessageContent)
-import result from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import { MessageTypes } from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { MessageTypes } from "__exportStarResult1";
 
 function getMessageContent(arg0, username, guildName) {
   if (MessageTypes.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION === arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 16150
-// Function ID: 124467
+// Module ID: 16158
+// Function ID: 124509
 // Name: GuildSettingsModalServerTag
 // Dependencies: []
 // Exports: default
 
-// Module 16150 (GuildSettingsModalServerTag)
+// Module 16158 (GuildSettingsModalServerTag)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -301,7 +301,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         };
         let tmp43Result;
         if (null != tmp33) {
-          obj4 = { "Bool(false)": null, "Bool(false)": 8, spacing: importDefault(dependencyMap[11]).space.PX_4 };
+          obj4 = { "Bool(false)": "absolute", "Bool(false)": 8, spacing: importDefault(dependencyMap[11]).space.PX_4 };
           let tmp48Result = null != stateFromStores1.badge;
           if (tmp48Result) {
             obj5 = {};
@@ -335,7 +335,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         obj6.contentContainerStyle = items13;
         obj7 = { spacing: importDefault(dependencyMap[11]).space.PX_16 };
         if (guildSupportsTagsResult) {
-          const obj8 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.description };
+          const obj8 = { cachedAt: true, edpbxy: true, style: tmp.description };
           const intl4 = arg1(tmp60[20]).intl;
           obj8.children = intl4.string(arg1(tmp60[20]).t.qVCnq+);
           const items14 = [tmp61(arg1(tmp60[30]).Text, obj8), tmp37Result, , ];

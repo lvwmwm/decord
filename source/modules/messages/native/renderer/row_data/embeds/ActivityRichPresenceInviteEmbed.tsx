@@ -1,10 +1,10 @@
-// Module ID: 12184
-// Function ID: 93651
+// Module ID: 12188
+// Function ID: 93677
 // Name: getPresenceActivity
 // Dependencies: []
 // Exports: createActivityRichPresenceInviteEmbed
 
-// Module 12184 (getPresenceActivity)
+// Module 12188 (getPresenceActivity)
 function getPresenceActivity(application, isPrivate, id) {
   if (null != application.application) {
     id = application.author.id;

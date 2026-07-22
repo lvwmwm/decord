@@ -1,9 +1,9 @@
-// Module ID: 10436
-// Function ID: 80527
+// Module ID: 10437
+// Function ID: 80540
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10436 (_isNativeReflectConstruct)
+// Module 10437 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -86,7 +86,7 @@ let tmp3 = () => {
         const _clearTimeout = clearTimeout;
         clearTimeout(tmp._nextCheck);
       }
-      callback2(StreamingPoller[12]).dispatch({ lineClamp: true, zoom: true });
+      callback2(StreamingPoller[12]).dispatch({ count: "omit", accessible: 1610613502 });
     }
   };
   items[1] = obj;

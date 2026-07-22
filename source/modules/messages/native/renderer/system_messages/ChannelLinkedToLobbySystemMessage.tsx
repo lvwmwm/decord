@@ -1,5 +1,5 @@
 // Module ID: 7724
-// Function ID: 61442
+// Function ID: 61452
 // Name: createChannelLinkedToLobbySystemMessage
 // Dependencies: []
 // Exports: createChannelLinkedToLobbySystemMessage

@@ -1,10 +1,10 @@
-// Module ID: 14114
-// Function ID: 107164
+// Module ID: 14122
+// Function ID: 107207
 // Name: DisplayNameStylesColorPickerSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14114 (DisplayNameStylesColorPickerSheet)
+// Module 14122 (DisplayNameStylesColorPickerSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6 } = arg1(dependencyMap[2]));
@@ -14,19 +14,19 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { justifyContent: false, alignItems: false, flexDirection: false, marginRight: false, flexDirection: false, paddingVertical: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12, gap: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { 9223372036854775807: false, 0: false, 0: false, 9223372036854775807: false, 9223372036854775807: false, paddingVertical: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.body = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.gradientContainer = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
-const obj2 = { useRivePlayback: true, iconPosition: "/assets/../discord_common/js/shared/images/flags", THRILLER: 70, powerup_metadata: 47, EXPLICIT_MEDIA_SCAN_CLIENT_TIMING: null, left: importDefault(dependencyMap[7]).space.PX_24, right: importDefault(dependencyMap[7]).space.PX_24 };
+const obj2 = { <string:1638279241>: true, <string:1026380163>: "/assets/../discord_common/js/shared/images/flags", <string:2946680163>: 70, <string:1632193105>: 47, <string:3090633451>: null, left: importDefault(dependencyMap[7]).space.PX_24, right: importDefault(dependencyMap[7]).space.PX_24 };
 obj.dropperContainer = obj2;
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
 obj.dropper = { borderColor: "white", padding: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.round, borderWidth: 1 };
 const obj3 = { borderColor: "white", padding: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.round, borderWidth: 1 };
 obj.gradient = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj5 = { -9223372036854775808: null, 7741: null, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4 };
+const obj5 = { "Bool(true)": null, "Bool(true)": null, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4 };
 obj.optionContainer = obj5;
-obj.swatchWrapper = { "Bool(true)": "channelId", "Bool(true)": "channelId" };
+obj.swatchWrapper = { "Null": "channelId", "Null": "toString" };
 const obj6 = { border: "de", overflow: "png", alignItems: true, justifyContent: "/assets/../discord_common/js/shared/images/flags", marginStart: 70, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.pressable = obj6;
 const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
@@ -110,7 +110,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
   obj.header = callback2(arg1(dependencyMap[15]).BottomSheetTitleHeader, obj);
   const obj2 = { style: tmp.body };
   const obj3 = { style: tmp.gradientContainer };
-  const obj4 = { style: tmp.gradient, colors: first.map((color) => selectedEffectId(tmp[19]).int2hex(color)), start: {}, end: {} };
+  const obj4 = { style: tmp.gradient, colors: first.map((color) => selectedEffectId(tmp[19]).int2hex(color)), start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } };
   const items4 = [callback2(importDefault(dependencyMap[18]), obj4), ];
   const obj5 = { style: tmp.dropperContainer };
   const tmp7 = importDefault(dependencyMap[18]);
@@ -126,7 +126,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
     obj = { number: arg1 + 1 };
     obj.accessibilityLabel = intl.formatToPlainString(selectedEffectId(tmp[17]).t.n5Ve0L, obj);
     obj.accessibilityRole = "button";
-    obj.children = callback3(selectedEffectId(tmp[20]).EyeDropperIcon, { "Null": 12, "Null": 4 });
+    obj.children = callback3(selectedEffectId(tmp[20]).EyeDropperIcon, {});
     return callback3(closure_6, obj, arg1);
   });
   items4[1] = callback2(first, obj5);
@@ -150,7 +150,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
       obj.onPress = function onPress() {
         return callback(arg0);
       };
-      const obj1 = { style: callback3.option, colors: arr.map((color) => color(closure_2[19]).int2hex(color)), start: {}, end: {} };
+      const obj1 = { style: callback3.option, colors: arr.map((color) => color(closure_2[19]).int2hex(color)), start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } };
       obj.children = callback3(onSelectColors(callback3[18]), obj1);
       obj.children = callback3(selectedEffectId(callback3[22]).PressableOpacity, obj);
       return callback3(first, obj, arg1);

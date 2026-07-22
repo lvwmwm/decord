@@ -1,5 +1,5 @@
 // Module ID: 7787
-// Function ID: 62138
+// Function ID: 62148
 // Name: TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS
 // Dependencies: []
 

@@ -1,10 +1,10 @@
-// Module ID: 16071
-// Function ID: 123481
+// Module ID: 16079
+// Function ID: 123523
 // Name: PhoneThenEmailInterstitial
 // Dependencies: []
 // Exports: default
 
-// Module 16071 (PhoneThenEmailInterstitial)
+// Module 16079 (PhoneThenEmailInterstitial)
 function PhoneThenEmailInterstitial(navigation) {
   const arg1 = navigation.navigation;
   let obj = { Illustration: arg1(dependencyMap[10]).VerifyPhone };
@@ -102,7 +102,7 @@ export default function VerificationModal() {
         obj.accessibilityLabel = intl.string(callback(closure_2[11]).t.PdRCRg);
         obj.onPress = function onPress() {
           let obj = callback(closure_2[17]);
-          obj = { position: 1914765568, width: "<string:35389440>", aspectRatio: "<string:141754368>" };
+          obj = { 0: 1914765568, 9223372036854775807: "<string:35389440>", 9223372036854775807: "<string:141754368>" };
           obj = {};
           const intl = callback(closure_2[11]).intl;
           obj.label = intl.string(callback(closure_2[11]).t.2jxGer);

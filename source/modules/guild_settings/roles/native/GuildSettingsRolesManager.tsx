@@ -1,10 +1,10 @@
-// Module ID: 16176
-// Function ID: 124829
+// Module ID: 16184
+// Function ID: 124871
 // Name: setRoleJustCreated
 // Dependencies: []
 // Exports: setRoleJustCreated
 
-// Module 16176 (setRoleJustCreated)
+// Module 16184 (setRoleJustCreated)
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => ({ roleJustCreated: false }));
 const _module1 = require(dependencyMap[2]);

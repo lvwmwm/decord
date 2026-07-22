@@ -1,13 +1,12 @@
-// Module ID: 13502
-// Function ID: 102468
+// Module ID: 13509
+// Function ID: 102501
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [0, 4294967295, 0, 0]
 
-// Module 13502 (_isNativeReflectConstruct)
-import result from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
+// Module 13509 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -18,6 +17,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_3 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = false;
 let closure_8 = [];
@@ -26,7 +26,7 @@ let tmp2 = (Store) => {
   class WebAuthnStore {
     constructor() {
       self = this;
-      tmp = result(this, WebAuthnStore);
+      tmp = __exportStarResult1(this, WebAuthnStore);
       obj = closure_5(WebAuthnStore);
       tmp2 = closure_4;
       if (closure_10()) {

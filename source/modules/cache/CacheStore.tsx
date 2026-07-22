@@ -1,5 +1,5 @@
 // Module ID: 6703
-// Function ID: 51933
+// Function ID: 51944
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -46,7 +46,7 @@ async function _loadChannelHistory(arg0, guildId, channelId, arg3) {
   }
   closure_18.verbose("skipped loaded messages (channel: " + channelId + ", database: " + arg0 + ").");
   const items1 = [performance.now() - nowResult, ];
-  obj = { children: "o", ao: "o", users: [], members: [], messages: [] };
+  obj = { "Null": "o", "Null": "o", users: [], members: [], messages: [] };
   items1[1] = obj;
   return items1;
 }
@@ -183,7 +183,7 @@ async function _loadEarlyCache(name, arg1, arg2, arg3) {
         const obj = arg1(closure_2[18]);
         arg1(closure_2[18]).time("\u{1F4BE}", "socket.processFirstQueuedDispatch()", () => {
           const dispatcher = dispatcher.dispatcher;
-          return dispatcher.processFirstQueuedDispatch(new Set([null]));
+          return dispatcher.processFirstQueuedDispatch(new Set(["Array"]));
         });
       });
     });
@@ -269,7 +269,7 @@ async function _loadInitialGuilds(arg0, page, arg2) {
 async function _loadInitialGuildChannels(arg0, page, arg2) {
   let guildId;
   if (null == arg0) {
-    return Promise.resolve({ ../../lib/once: "o", ./ajax-driver: "o" });
+    return Promise.resolve({});
   } else {
     guildId = yield guildId(closure_2[31]).getCommittedVersions().initial_guild_id;
     let tmp = null == guildId;
@@ -287,7 +287,7 @@ async function _loadInitialGuildChannels(arg0, page, arg2) {
     }
     const _HermesInternal = HermesInternal;
     closure_18.verbose("skipped loading initial guild (guild: " + guildId + ", database: " + arg0 + ")");
-    return Promise.resolve({ ../../lib/once: "o", ./ajax-driver: "o" });
+    return Promise.resolve({});
   }
 }
 async function _loadLateLazyCache(arg0, arg1, arg2, arg3, arg4) {
@@ -482,7 +482,7 @@ function resumeFluxAndSocket(arg0) {
       closure_18.verbose("Processing First Queued Dispatch");
       const dispatcher3 = lib.dispatcher;
       const _Set = Set;
-      const set = new Set(["<string:26479872>", "<string:29428224>"]);
+      const set = new Set(["<string:26535168>", "<string:29334016>"]);
       const result = dispatcher3.processFirstQueuedDispatch(set);
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {

@@ -1,10 +1,10 @@
-// Module ID: 15063
-// Function ID: 113413
+// Module ID: 15071
+// Function ID: 113456
 // Name: customScoreToIndex
 // Dependencies: []
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 15063 (customScoreToIndex)
+// Module 15071 (customScoreToIndex)
 function customScoreToIndex(first) {
   if (arg1(dependencyMap[8]).ICYMICustomScore.LESS === first) {
     return 0;
@@ -155,11 +155,11 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   }, items2);
   const tmp6 = callback3();
   obj = {};
-  obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+  obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.Clq6km);
   const items3 = [callback2(arg1(dependencyMap[18]).Text, obj), , , , ];
-  obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  obj1 = { cachedAt: true, edpbxy: true };
   const intl2 = arg1(dependencyMap[9]).intl;
   obj1.children = intl2.format(arg1(dependencyMap[9]).t.0DhU2P, { guildName: guild.name });
   items3[1] = callback2(arg1(dependencyMap[18]).Text, obj1);
@@ -247,11 +247,11 @@ export const ChannelScoreSettings = function ChannelScoreSettings(channel) {
   }, items3);
   const tmp9 = callback3();
   obj = {};
-  obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+  obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.0jRosn);
   const items4 = [callback2(arg1(dependencyMap[18]).Text, obj), , , , ];
-  obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  obj1 = { cachedAt: true, edpbxy: true };
   const intl2 = arg1(dependencyMap[9]).intl;
   obj1.children = intl2.format(arg1(dependencyMap[9]).t.KzkF1j, { channelName: tmp2 });
   items4[1] = callback2(arg1(dependencyMap[18]).Text, obj1);

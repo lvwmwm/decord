@@ -1,10 +1,10 @@
 // Module ID: 4768
-// Function ID: 41432
+// Function ID: 41441
 // Dependencies: []
 
 // Module 4768
 let closure_0 = importDefault(dependencyMap[0]);
-let obj = { -9223372036854775808: 1, 0: null, 9223372036854775807: "center", 0: null, 0: "center", 5329595: null, 8261013504: null, 400445696: null, 882811392: null, 57873107257627: null };
+let obj = { [0]: obj, [1]: obj };
 obj = {
   name: "GPSVersionID",
   description(arg0) {
@@ -24,7 +24,6 @@ obj = {
     return str;
   }
 };
-obj[0] = obj;
 obj = {
   name: "GPSLatitudeRef",
   description(join) {
@@ -40,7 +39,6 @@ obj = {
     return str;
   }
 };
-obj[1] = obj;
 obj[2] = { name: "GPSLatitude", description: arg1(dependencyMap[1]).getCalculatedGpsValue };
 obj[3] = {
   name: "GPSLongitudeRef",

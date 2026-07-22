@@ -1,5 +1,5 @@
 // Module ID: 4391
-// Function ID: 38802
+// Function ID: 38810
 // Name: StringToNumber
 // Dependencies: []
 
@@ -10,7 +10,7 @@ let closure_3 = require(dependencyMap[1])("String.prototype.slice");
 let closure_4 = require(dependencyMap[2])(/^0b[01]+$/i);
 let closure_5 = require(dependencyMap[2])(/^0o[0-7]+$/i);
 let closure_6 = require(dependencyMap[2])(/^[-+]0x[0-9a-f]+$/i);
-const items = [];
+const items = ["<string:3104788736>", "<string:2438063969>", "<string:1540309900>"];
 tmp = new tmp("[" + items.join("") + "]", "g");
 let closure_7 = require(dependencyMap[2])(tmp);
 class StringToNumber {

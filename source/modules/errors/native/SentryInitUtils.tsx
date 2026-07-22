@@ -381,12 +381,12 @@ const regExp2 = new RegExp("/v" + window.GLOBAL_ENV.API_VERSION + Endpoints.TRAC
 items[2] = regExp2;
 let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("Sentry");
-let closure_11 = [];
+let closure_11 = ["<string:25674240>", "<string:32797184>", "<string:39256064>", "<string:1430716416>", "<string:3271558348>"];
 let closure_12 = 0.05;
 let closure_13 = 0.005;
 let closure_14 = false;
 const obj = arg1(dependencyMap[4]);
-let closure_15 = arg1(dependencyMap[12]).filterThrottle({ "Null": true, "Null": true });
+let closure_15 = arg1(dependencyMap[12]).filterThrottle({ "Bool(false)": "Uint16Array", "Bool(false)": "hideBackground" });
 const obj2 = arg1(dependencyMap[12]);
 const result1 = arg1(dependencyMap[22]).fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
 
@@ -449,13 +449,13 @@ export const initSentry = function initSentry() {
           obj.tunnel = `/error-reporting-proxy/${str2}`;
           obj.autoInitializeNativeSdk = false;
           obj.beforeSend = closure_17;
-          obj.dist = "6046";
+          obj.dist = "6051";
           obj.dsn = SentryStaffDsn;
           obj.environment = ReleaseChannel;
           obj.tracesSampleRate = 0;
           obj.sampleRate = 1;
           obj.ignoreErrors = closure_11;
-          obj.release = "discord_android@340.2.0-2+340202";
+          obj.release = "discord_android@340.3.0-2+340203";
           const items = [closure_7];
           obj.tracePropagationTargets = items;
           const items1 = [closure_8, , ];
@@ -486,7 +486,7 @@ export const initSentry = function initSentry() {
           };
           obj4.init(obj);
           const obj8 = callback(closure_3[4]);
-          callback(closure_3[4]).setTag("buildNumber", "6046");
+          callback(closure_3[4]).setTag("buildNumber", "6051");
           const obj10 = callback(closure_3[4]);
           callback(closure_3[4]).setTag("appVersion", constants.Version);
           const obj11 = callback(closure_3[4]);

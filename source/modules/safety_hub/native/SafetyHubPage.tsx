@@ -1,10 +1,10 @@
-// Module ID: 13531
-// Function ID: 102661
+// Module ID: 13538
+// Function ID: 102694
 // Name: AutomatedUnderageAppealStatus
 // Dependencies: []
 // Exports: default
 
-// Module 13531 (AutomatedUnderageAppealStatus)
+// Module 13538 (AutomatedUnderageAppealStatus)
 function AutomatedUnderageAppealStatus() {
   let obj = arg1(dependencyMap[10]);
   const items = [closure_8];
@@ -14,12 +14,15 @@ function AutomatedUnderageAppealStatus() {
       const intl4 = callback(closure_3[6]).intl;
       obj = {
         loginHook(children) {
-            return callback2(callback(closure_3[7]).Text, {
+            const obj = {
+              cachedAt: "<string:3344105473>",
+              edpbxy: "<string:3465102384>",
               onPress() {
                 return callback(closure_3[8]).logout("safety_hub_page_appeal_success", constants.LOGIN);
               },
               children
-            });
+            };
+            return callback2(callback(closure_3[7]).Text, obj);
           }
       };
       obj.message = intl4.format(callback(closure_3[6]).t.hyh4ls, obj);
@@ -44,7 +47,7 @@ function AutomatedUnderageAppealStatus() {
       obj.type = callback(closure_3[9]).HelpMessageTypes.INFO;
       return obj;
     } else {
-      return { "Null": "o", "Null": "o" };
+      return { <string:2487814992>: "o", <string:1373108578>: "o" };
     }
   }(obj.useStateFromStores(items, () => ageCheckStatus.getAgeCheckStatus())).type;
   let tmp3 = null;
@@ -66,7 +69,7 @@ let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_12, paddingVertical: importDefault(dependencyMap[12]).space.PX_12 };
 obj.container = obj;
-obj.loadingIndicator = { 1400600855: 0, 685900264: 0, 140617204: 0 };
+obj.loadingIndicator = {};
 const tmp4 = arg1(dependencyMap[5]);
 obj.body = { gap: importDefault(dependencyMap[12]).space.PX_8 };
 let closure_14 = obj.createStyles(obj);
@@ -111,7 +114,7 @@ export default function SafetyHubPage(visible) {
     const items1 = [, ];
     ({ container: arr4[0], loadingIndicator: arr4[1] } = tmp);
     obj.style = items1;
-    obj.children = callback(closure_6, { font: 397, dx: 97 });
+    obj.children = callback(closure_6, {});
     let tmp6 = callback(closure_5, obj);
   } else {
     tmp6 = null;

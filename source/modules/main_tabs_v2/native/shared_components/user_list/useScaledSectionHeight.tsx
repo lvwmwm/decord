@@ -1,10 +1,10 @@
-// Module ID: 8825
-// Function ID: 69568
+// Module ID: 8826
+// Function ID: 69580
 // Name: useScaledSectionHeight
 // Dependencies: []
 // Exports: default
 
-// Module 8825 (useScaledSectionHeight)
+// Module 8826 (useScaledSectionHeight)
 const _module = require(dependencyMap[0]);
 ({ USERS_LIST_SECTION_HEIGHT: closure_2, USERS_LIST_SECTION_TEXT_HEIGHT: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

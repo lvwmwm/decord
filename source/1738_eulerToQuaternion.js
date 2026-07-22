@@ -127,7 +127,7 @@ export const useAnimatedSensor = function useAnimatedSensor(arg0, adjustToInterf
   }
   const items = [tmp.current];
   const tmp10 = tmp11(() => {
-    const obj = { "Null": false, "Null": null, iosReferenceFrame: arg0(tmp[1]).IOSReferenceFrame.Auto };
+    const obj = { 0: 1895956479, 9223372036854775807: 1, iosReferenceFrame: arg0(tmp[1]).IOSReferenceFrame.Auto };
     return Object.assign(obj, tmp.current);
   }, items);
   const obj = {

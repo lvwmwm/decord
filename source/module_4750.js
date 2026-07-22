@@ -1,5 +1,5 @@
 // Module ID: 4750
-// Function ID: 41255
+// Function ID: 41264
 // Dependencies: []
 
 // Module 4750
@@ -9,7 +9,7 @@ arg5.default = {
       const parseBoxResult = arg1(arg6[0]).parseBox(getUint32, 0);
       let tmp5 = parseBoxResult;
       if (parseBoxResult) {
-        const items = [-978714620, -978649084, -978583548, -430833660, 1102858192, 306805, 1098182993, 291942, -1147388072];
+        const items = [false, false, false, false, false, false, false, false, false];
         tmp5 = -1 !== items.indexOf(parseBoxResult.majorBrand);
       }
       return tmp5;

@@ -1,10 +1,10 @@
-// Module ID: 14102
-// Function ID: 107075
+// Module ID: 14110
+// Function ID: 107118
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [297467904, 297336832, 557776896, 557449216, 557514752, 270270464, 131072, 401604608]
+// Dependencies: [297467904, 297336832, 557842432, 557514752, 557580288, 270270464, 131072, 401604608]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 14102 (useDisplayNameStylesHandleApply)
+// Module 14110 (useDisplayNameStylesHandleApply)
 let closure_3 = importAll(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");

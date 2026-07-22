@@ -156,7 +156,7 @@ export default {
   profiledRootComponent(displayName) {
     let withProfilerResult = displayName;
     if ("canaryRelease" === obj.getConstants().ReleaseChannel) {
-      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, { explicitContentGuilds: null, explicitContentFriendDm: null });
+      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, { intl: null, bottom: null });
       const obj2 = importAll(dependencyMap[3]);
     }
     return withProfilerResult;

@@ -1,12 +1,12 @@
-// Module ID: 5322
-// Function ID: 45291
+// Module ID: 5049
+// Function ID: 43701
 // Name: createTextStyle
 // Dependencies: []
 // Exports: default
 
-// Module 5322 (createTextStyle)
+// Module 5049 (createTextStyle)
 const Fonts = require(dependencyMap[0]).Fonts;
-let closure_1 = { "Bool(false)": "center", "Bool(false)": 0.5, "Bool(false)": 0, "Bool(false)": 3, "Bool(false)": 4, "Bool(false)": "flag", "Bool(false)": 4, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": 0 };
+let closure_1 = {};
 let closure_2 = {};
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/rebrand/native/TextStyles.tsx");

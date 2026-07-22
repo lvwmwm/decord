@@ -1,9 +1,9 @@
-// Module ID: 10010
-// Function ID: 77391
+// Module ID: 10011
+// Function ID: 77404
 // Name: u
 // Dependencies: []
 
-// Module 10010 (u)
+// Module 10011 (u)
 const fn = function u(get) {
   if (globalThis._WORKLET) {
     const value = get.get();

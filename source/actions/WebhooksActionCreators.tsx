@@ -1,11 +1,11 @@
-// Module ID: 15402
-// Function ID: 117533
+// Module ID: 15410
+// Function ID: 117576
 // Dependencies: []
 
-// Module 15402
+// Module 15410
 const _module = require(dependencyMap[0]);
 ({ AbortCodes: closure_3, Endpoints: closure_4 } = _module);
-let closure_5 = ["arz", "ar"];
+let closure_5 = ["ase", "sgn"];
 const _module1 = require(dependencyMap[6]);
 const result = _module1.fileFinishedImporting("actions/WebhooksActionCreators.tsx");
 
@@ -36,7 +36,7 @@ export default {
     obj = { type: "WEBHOOKS_FETCHING", guildId, channelId };
     obj.dispatch(obj);
     const HTTP = require(dependencyMap[2]).HTTP;
-    obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_4.CHANNEL_WEBHOOKS(channelId) };
+    obj = { y: null, isArray: null, accessible: null, url: closure_4.CHANNEL_WEBHOOKS(channelId) };
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = arg1(closure_2[1]);

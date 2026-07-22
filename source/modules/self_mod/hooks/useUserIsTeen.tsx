@@ -1,5 +1,5 @@
 // Module ID: 7610
-// Function ID: 61000
+// Function ID: 61010
 // Name: useUserIsTeen
 // Dependencies: []
 // Exports: useUserIsTeen

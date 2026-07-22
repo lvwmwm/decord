@@ -1,9 +1,9 @@
-// Module ID: 15668
-// Function ID: 119703
+// Module ID: 15676
+// Function ID: 119746
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15668 (_createForOfIteratorHelperLoose)
+// Module 15676 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -148,7 +148,7 @@ class VoicePanelSettingsOverviewHeader {
       num3 = 25;
       tmp17 = importDefault(dependencyMap[21]);
       items5 = [, ];
-      items5[0] = jsx(arg1(dependencyMap[25]).LockIcon, {});
+      items5[0] = jsx(arg1(dependencyMap[25]).LockIcon, { "Bool(false)": 1058144258, "Bool(false)": -162463743 });
       tmp20 = jsx;
       obj6 = {};
       num4 = 24;
@@ -226,7 +226,7 @@ let closure_17 = arg1(dependencyMap[12]).SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_
 const tmp2 = arg1(dependencyMap[10]);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = arg1(dependencyMap[13]));
 const tmp3 = arg1(dependencyMap[13]);
-let obj = { headerContainer: { alignItems: "center" }, channelTitleWrapper: {}, channelTitle: { textAlign: "center" }, channelSubtitle: { <string:2228586213>: true, <string:1345935829>: true, <string:1384593893>: true } };
+let obj = { headerContainer: { alignItems: "center" }, channelTitleWrapper: { 0: "content", 0: "Array", -9223372036854775808: "isArray", -9223372036854775808: "isArray" }, channelTitle: { textAlign: "center" }, channelSubtitle: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true } };
 obj = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[15]).radii.sm };
 obj.secureFrames = obj;
 obj.secureFramesIcon = { marginStart: 4 };

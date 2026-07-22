@@ -1,10 +1,10 @@
-// Module ID: 13739
-// Function ID: 103907
+// Module ID: 13746
+// Function ID: 103940
 // Name: AddApplicationIdentityTableRow
 // Dependencies: []
 // Exports: default
 
-// Module 13739 (AddApplicationIdentityTableRow)
+// Module 13746 (AddApplicationIdentityTableRow)
 function AddApplicationIdentityTableRow(application) {
   let end;
   let start;
@@ -68,7 +68,7 @@ export default function AddConnectionActionSheet() {
   const tmp2 = importDefault(dependencyMap[8]);
   const found1 = importDefault(dependencyMap[8])(callback2("AddConnectionActionSheet")).filter((arg0) => null != arg0);
   const dependencyMap = found1;
-  obj = { ind: null, PX_8: null };
+  obj = { openDisableCommunication: null, freezeEnabled: null };
   obj = {};
   const intl = callback(dependencyMap[11]).intl;
   obj.title = intl.string(callback(dependencyMap[11]).t.Zhcj9X);

@@ -1,10 +1,14 @@
-// Module ID: 10816
-// Function ID: 83992
+// Module ID: 10817
+// Function ID: 84005
 // Name: _handleUsePrimaryEntryPointAppCommand
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 10816 (_handleUsePrimaryEntryPointAppCommand)
+// Module 10817 (_handleUsePrimaryEntryPointAppCommand)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+
 function _handleUsePrimaryEntryPointAppCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -17,10 +21,7 @@ function _handleUsePrimaryEntryPointAppCommandInternal() {
   const _handleUsePrimaryEntryPointAppCommandInternal = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/activities/handleUsePrimaryEntryPointAppCommand.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/activities/handleUsePrimaryEntryPointAppCommand.tsx");
 
 export default function handleUsePrimaryEntryPointAppCommand() {
   return _handleUsePrimaryEntryPointAppCommand(...arguments);

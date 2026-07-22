@@ -1,5 +1,5 @@
 // Module ID: 5766
-// Function ID: 49389
+// Function ID: 49400
 // Dependencies: [31, 33, 477, 1324, 5775, 3837, 5778, 3836, 2, 31, 27, 1452, 653]
 
 // Module 5766
@@ -12,7 +12,7 @@ import ME from "ME";
 const View = module_33.View;
 ({ jsx: closure_3, jsxs: closure_4 } = module_477);
 let obj = {};
-obj = { "Null": 7, "Null": 370, height: require("useInputStyles").NAV_BAR_HEIGHT, paddingHorizontal: require("useFocus").space.PX_16, backgroundColor: require("useFocus").colors.BACKGROUND_BASE_LOW, borderBottomWidth: module_33.StyleSheet.hairlineWidth, borderColor: require("useFocus").colors.BORDER_STRONG };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", height: require("useInputStyles").NAV_BAR_HEIGHT, paddingHorizontal: require("useFocus").space.PX_16, backgroundColor: require("useFocus").colors.BACKGROUND_BASE_LOW, borderBottomWidth: module_33.StyleSheet.hairlineWidth, borderColor: require("useFocus").colors.BORDER_STRONG };
 obj.container = obj;
 useIsMobileVisualRefreshExperimentEnabled = { paddingLeft: require("useFocus").space.PX_16 };
 obj.cancelText = useIsMobileVisualRefreshExperimentEnabled;
@@ -37,7 +37,7 @@ export default importAllResult.forwardRef((onClose, ref) => {
     obj = { style: tmp3.cancelIcon };
     let tmp5Result = tmp5(tmp6(tmp7[9]).ArrowLargeLeftIcon, obj);
   } else {
-    obj1 = { listener: "Array", listenerType: "isArray", passive: "body", once: "message", style: tmp3.cancelText };
+    obj1 = { style: tmp3.cancelText };
     const intl2 = tmp6(tmp7[7]).intl;
     obj1.children = intl2.string(tmp6(tmp7[7]).t.ETE/oC);
     tmp5Result = tmp5(tmp6(tmp7[10]).Text, obj1);
@@ -53,7 +53,7 @@ export default importAllResult.forwardRef((onClose, ref) => {
   const items = [tmp12, , ];
   const obj3 = { style: tmp3.flex };
   const obj4 = {};
-  obj5 = { <string:1439367743>: false, <string:1856005359>: false, ref };
+  obj5 = { "Null": false, "Null": false, ref };
   const merged1 = Object.assign(merged);
   obj4.children = callback(ref(dependencyMap[11]).SearchField, obj5);
   obj3.children = callback(View, obj4);

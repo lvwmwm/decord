@@ -1,5 +1,5 @@
 // Module ID: 7473
-// Function ID: 59982
+// Function ID: 59993
 // Name: openStageChannel
 // Dependencies: []
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile

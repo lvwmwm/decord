@@ -1,10 +1,10 @@
-// Module ID: 11548
-// Function ID: 89902
+// Module ID: 11549
+// Function ID: 89915
 // Name: useGuildPowerupLevelPerks
 // Dependencies: []
 // Exports: default
 
-// Module 11548 (useGuildPowerupLevelPerks)
+// Module 11549 (useGuildPowerupLevelPerks)
 let closure_3 = importAll(dependencyMap[0]);
 const GUILD_FEATURE_TO_PERK = arg1(dependencyMap[1]).GUILD_FEATURE_TO_PERK;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupLevelPerks.tsx");
@@ -13,7 +13,7 @@ export default function useGuildPowerupLevelPerks(arg0) {
   let obj = arg1;
   const arg1 = arg0;
   if (arg1 === undefined) {
-    obj = { 0: "Small", 0: "sm", 9223372036854775807: "Placeholder" };
+    obj = {};
   }
   const includeEmojis = obj.includeEmojis;
   const importDefault = includeEmojis;

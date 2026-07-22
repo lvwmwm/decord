@@ -1,10 +1,10 @@
-// Module ID: 8717
-// Function ID: 68998
+// Module ID: 8718
+// Function ID: 69010
 // Name: fetchVirtualCurrencyBalance
 // Dependencies: []
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 8717 (fetchVirtualCurrencyBalance)
+// Module 8718 (fetchVirtualCurrencyBalance)
 function fetchVirtualCurrencyBalance() {
   return _fetchVirtualCurrencyBalance(...arguments);
 }

@@ -1,10 +1,10 @@
-// Module ID: 14940
-// Function ID: 112492
+// Module ID: 14948
+// Function ID: 112535
 // Name: ScreenAlignedThemedGradient
 // Dependencies: []
 // Exports: default
 
-// Module 14940 (ScreenAlignedThemedGradient)
+// Module 14948 (ScreenAlignedThemedGradient)
 importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -21,7 +21,6 @@ export default function ScreenAlignedThemedGradient(offsetX) {
   const dependencyMap = parentSpringTranslateX;
   let obj = arg1(dependencyMap[3]);
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
-  let obj1 = arg1(dependencyMap[4]);
   const fn = function c() {
     let obj = {};
     obj = { translateX: offsetY(parentSpringTranslateX[5])(-offsetX - parentSpringTranslateX.get()) };
@@ -35,10 +34,9 @@ export default function ScreenAlignedThemedGradient(offsetX) {
   fn.__closure = obj;
   fn.__workletHash = 13846065523130;
   fn.__initData = closure_4;
-  const animatedStyle = obj1.useAnimatedStyle(fn);
+  const animatedStyle = arg1(dependencyMap[4]).useAnimatedStyle(fn);
   obj = { pointerEvents: "none", style: items };
   const items = [container.container, animatedStyle];
-  obj1 = { id: "Small", text: "sm", variant: "Placeholder", mix: isClientThemeOrCustomThemeActive };
-  obj.children = jsx(importDefault(dependencyMap[6]), obj1);
+  obj.children = jsx(importDefault(dependencyMap[6]), { mix: isClientThemeOrCustomThemeActive });
   return jsx(importDefault(dependencyMap[4]).View, obj);
 };

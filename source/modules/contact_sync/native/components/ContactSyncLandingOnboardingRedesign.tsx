@@ -1,10 +1,10 @@
-// Module ID: 11710
-// Function ID: 90950
+// Module ID: 11711
+// Function ID: 90963
 // Name: ContactSyncLandingOnboardingRedesign
 // Dependencies: []
 // Exports: default
 
-// Module 11710 (ContactSyncLandingOnboardingRedesign)
+// Module 11711 (ContactSyncLandingOnboardingRedesign)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
@@ -17,13 +17,13 @@ obj = { backgroundColor: "solid", alignItems: 2, justifyContent: "notify_friends
 const tmp3 = arg1(dependencyMap[4]);
 obj.marginTop = -importDefault(dependencyMap[6]).space.PX_32 - arg1(dependencyMap[7]).NAV_BAR_HEIGHT;
 obj.content = obj;
-const obj1 = { y: null, isArray: "v2", marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
-obj.headerImage = obj1;
 const tmp4 = -importDefault(dependencyMap[6]).space.PX_32;
+obj.headerImage = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
+const obj1 = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
 obj.title = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 const obj2 = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 obj.subtitle = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
-const obj4 = { y: false, isArray: false, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+const obj4 = { hideWhenScrolling: 1744830755, autoCapitalize: 1426063764, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.buttonContainer = obj4;
 const obj3 = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
 obj.trailing = { paddingBottom: importDefault(dependencyMap[6]).space.PX_4, justifyContent: "flex-end", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
@@ -57,7 +57,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj2.children = intl2.string(arg1(dependencyMap[11]).t.G8zcHt);
   items1[2] = callback2(arg1(dependencyMap[10]).Text, obj2);
   const obj3 = { style: tmp2.buttonContainer };
-  const obj4 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj4 = {};
   const intl3 = arg1(dependencyMap[11]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[11]).t.LhlgY9);
   obj4.onPress = callback;

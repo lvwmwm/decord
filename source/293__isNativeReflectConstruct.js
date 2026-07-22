@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = ["MAX_MESSAGE_LENGTH_PREMIUM", "TableRowTrailingText", "BY", "channelIconUnread", "F8FvUy"];
+let closure_3 = [52881784.90621606, 19991589055400618000000000000000000000, -51566351792145420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 190359856548999340000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000009458744898768167];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -23,7 +23,7 @@ let closure_9 = importDefault(dependencyMap[5]);
 const createRef = arg1(dependencyMap[6]).createRef;
 const importAllResult = importAll(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let closure_13 = [896712285, 1069547520, 1105206230];
+let closure_13 = [0.295, 0.097, 0.95];
 const tmp3 = arg1(dependencyMap[7]);
 const tmp4 = (Component) => {
   class DrawerLayoutAndroid {
@@ -212,16 +212,16 @@ const tmp4 = (Component) => {
       key: "positions",
       get() {
         console.warn("Setting DrawerLayoutAndroid drawerPosition using `DrawerLayoutAndroid.positions` is deprecated. Instead pass the string value \"left\" or \"right\"");
-        return { "Bool(true)": "%Math%", "Bool(true)": "isArrayBuffer" };
+        return { fill: "<string:3235529365>", scale-down: "<string:21823490>" };
       }
     }
   ];
   return callback(DrawerLayoutAndroid, items, items1);
 }(importAllResult.Component);
-let obj = { base: { name: "<string:4083789493>", error: "<string:3209801398>" }, mainSubview: { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 }, drawerSubview: { "Null": 3375103, "Null": -8192, "Null": 4320799 } };
+let obj = { base: { 1228397195: "vertical", 1574261717: false }, mainSubview: { left: "center", backgroundColor: -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" }, drawerSubview: {} };
 obj = { height: importDefault(dependencyMap[10]).currentHeight };
 obj.statusBar = obj;
-const obj1 = { "Bool(true)": "<string:3082955202>", "Bool(true)": "<string:103629460>", "Bool(true)": "<string:3630497793>", "Bool(true)": "<string:961609729>", "Bool(true)": "<string:259129673>", "Bool(true)": "<string:83886080>", height: importDefault(dependencyMap[10]).currentHeight };
+const obj1 = { "Bool(false)": 131420590, "Bool(false)": -1717986767, "Bool(false)": -644245095, "Bool(false)": 94527, "Bool(false)": -715784192, "Bool(false)": -706669305, height: importDefault(dependencyMap[10]).currentHeight };
 obj.drawerStatusBar = obj1;
 let closure_14 = importDefault(dependencyMap[13]).create(obj);
 

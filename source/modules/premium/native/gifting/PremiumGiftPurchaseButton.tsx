@@ -1,10 +1,10 @@
-// Module ID: 9757
-// Function ID: 75898
+// Module ID: 9758
+// Function ID: 75911
 // Name: RewardPreview
 // Dependencies: []
 // Exports: default
 
-// Module 9757 (RewardPreview)
+// Module 9758 (RewardPreview)
 function RewardPreview(arg0) {
   let collectiblesItem;
   let currentUser;
@@ -16,7 +16,7 @@ function RewardPreview(arg0) {
   if (isNameplateRecord(collectiblesItem)) {
     let obj = {};
     obj = { style: tmp.nameplateWrapper };
-    const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+    const obj1 = { -1930690556: null, -77463548: null, -1436527658: null };
     let obj8 = arg1(dependencyMap[13]);
     obj1.nameplate = obj8.getNameplateData(collectiblesItem);
     obj.children = callback(importDefault(dependencyMap[12]), obj1);
@@ -42,7 +42,7 @@ function RewardPreview(arg0) {
         num2 = gradientAngle;
       }
       obj5.angle = num2;
-      obj5.angleCenter = {};
+      obj5.angleCenter = { 0: false, 0: false };
       obj5.colors = gradientColors;
       const items1 = [callback(importDefault(dependencyMap[17]), obj5), , ];
       const obj6 = { style: tmp.singleAvatarContainer };
@@ -82,36 +82,34 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(dependencyMap[10]).space.PX_12, paddingBottom: importDefault(dependencyMap[10]).space.PX_12 + arg0, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
   const merged = Object.assign(importDefault(dependencyMap[10]).shadows.SHADOW_TOP_HIGH);
   obj.container = obj;
-  obj.chooseRewardContainer = { width: 1, resizeMode: "tail", paddingRight: "text-md/semibold" };
+  obj.chooseRewardContainer = { ellipsizeMode: null, lineClamp: null, variant: null };
   obj = {};
   const merged1 = Object.assign(closure_4.absoluteFillObject);
   obj["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
   obj["overflow"] = "hidden";
   obj.gradientBackdrop = obj;
   obj.chooseRewardText = { flex: 1, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
-  obj.backgroundImage = { "Bool(false)": true, "Bool(false)": "/assets/modules/stage_channels/native/images", "Bool(false)": 25, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "b252f7dc065300671ba9347414eb0bad" };
-  const obj2 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017800590884751058, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009919227068175748, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
+  obj.backgroundImage = { accessibilityRole: true, location: "/assets/modules/stage_channels/native/images", hash: 24, accessibilityRole: 24, apply: null, y: "adb011bbeb7f189fa87848559cc4fbc7" };
+  const obj2 = { "Null": 4223489, "Null": 4194304, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
   obj.inAppFlowImage = obj2;
-  const obj3 = { "Null": null, "Null": null };
   const items = [{ rotate: "-4deg" }, { translateY: -11 }];
-  obj3.transform = items;
-  obj.inAppFlowImageLargeTilted = obj3;
+  obj.inAppFlowImageLargeTilted = { transform: items };
   obj.singleAvatarContainer = {};
-  const obj4 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[10]).space.PX_16 };
-  obj.selectedRewardRow = obj4;
-  obj.selectedRewardBannerContainer = { accessibilityRole: 16777216, PX_8: 369, hash: 1157517824, accessibilityRole: -314486001 };
-  const obj5 = {};
+  const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[10]).space.PX_16 };
+  obj.selectedRewardRow = obj3;
+  obj.selectedRewardBannerContainer = { 1979675647: null, 1929343231: null, 1996453119: null, 2063563263: null };
+  const obj4 = {};
   const merged2 = Object.assign(closure_4.absoluteFillObject);
-  obj5["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
-  obj5["top"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj5["bottom"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj5["start"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj5["end"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj5["marginStart"] = importDefault(dependencyMap[10]).space.PX_12;
-  obj.selectedRewardBannerGradient = obj5;
+  obj4["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
+  obj4["top"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj4["bottom"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj4["start"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj4["end"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj4["marginStart"] = importDefault(dependencyMap[10]).space.PX_12;
+  obj.selectedRewardBannerGradient = obj4;
   obj.selectedRewardText = { flex: 1 };
-  const obj6 = { 1414937445: null, 710171746: null, -1884505083: null, 1632514476: null, -1072868960: null, 1549977185: null, 651579746: null, borderRadius: importDefault(dependencyMap[10]).radii.sm };
-  obj.nameplateWrapper = obj6;
+  const obj5 = { NotificationCenterTabs: null, getUTCMonth: null, borderColor: null, SpoilerRenderSetting: null, WIDGET_ENABLED: null, maskRemainder: null, offsetThreshold: null, borderRadius: importDefault(dependencyMap[10]).radii.sm };
+  obj.nameplateWrapper = obj5;
   return obj;
 });
 const obj = arg1(dependencyMap[9]);
@@ -280,7 +278,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         num9 = angle;
       }
       obj2.angle = num9;
-      obj2.angleCenter = {};
+      obj2.angleCenter = { 0: false, 0: false };
       obj2.colors = colors;
       const items5 = [callback(importDefault(dependencyMap[17]), obj2), ];
       let tmp54 = null != themeAndReducedMotionAwareAssetUrl;

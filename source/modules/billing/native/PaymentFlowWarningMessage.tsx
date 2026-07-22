@@ -1,5 +1,5 @@
 // Module ID: 7188
-// Function ID: 57852
+// Function ID: 57863
 // Name: PaymentFlowWarningMessage
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { 0: "scalar", 0: 6, 0: "emoji_frecency", 0: "message", 0: 7, 0: "All Masks", borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj = { channels: "scalar", labels: 6, enabled: "emoji_frecency", spatialBlend: "message", reflectionsEnabled: 7, roomSize: "All Masks", borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.container = obj;
 obj.icon = { marginRight: 10 };
 obj.text = { flexShrink: 1 };

@@ -1,9 +1,9 @@
-// Module ID: 8299
-// Function ID: 65587
+// Module ID: 8300
+// Function ID: 65599
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8299 (_isNativeReflectConstruct)
+// Module 8300 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -344,7 +344,7 @@ function injectRecommendedGuildsRow() {
         }
       }
     }
-    const obj = { type: arg1(dependencyMap[24]).ICYMIItemTypes.RECOMMENDED_GUILDS };
+    const obj = { getDeviceMetadata: "center", startRecording: 16, lastActionTriggered: 4, type: arg1(dependencyMap[24]).ICYMIItemTypes.RECOMMENDED_GUILDS };
     closure_39[obj.id] = obj;
     closure_38[obj.id] = obj;
     if (0 === arr.length) {

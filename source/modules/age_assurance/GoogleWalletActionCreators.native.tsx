@@ -1,5 +1,5 @@
 // Module ID: 7563
-// Function ID: 60528
+// Function ID: 60539
 // Name: _requestGoogleWalletVerification
 // Dependencies: []
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential

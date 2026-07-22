@@ -1,9 +1,9 @@
-// Module ID: 14797
-// Function ID: 111499
+// Module ID: 14805
+// Function ID: 111542
 // Name: shouldTrackViewedEvent
 // Dependencies: []
 
-// Module 14797 (shouldTrackViewedEvent)
+// Module 14805 (shouldTrackViewedEvent)
 let HAPPENING_NOW_PANELS_CONTAINER_PADDING;
 function shouldTrackViewedEvent(loading) {
   let tmp = !loading.loading;
@@ -246,7 +246,7 @@ const memoResult = importAllResult.memo((listRef) => {
     if (!isFocused) {
       const current = listRef.current;
       if (null != current) {
-        current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
+        current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
       }
       ref.current = 0;
     }
@@ -313,7 +313,7 @@ const memoResult = importAllResult.memo((listRef) => {
     tmp22(context.Provider, obj);
   }
   obj3 = { style: tmp.loading };
-  first = renderCard(first.length > 0 ? first[0] : { height: null, flexDirection: null }, { loading: tmp4 });
+  first = renderCard(first.length > 0 ? first[0] : {}, { loading: tmp4 });
   obj3.children = first;
   <num {...obj3} />;
 });

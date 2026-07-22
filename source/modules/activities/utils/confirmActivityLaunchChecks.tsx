@@ -1,10 +1,10 @@
-// Module ID: 10807
-// Function ID: 83933
+// Module ID: 10808
+// Function ID: 83946
 // Name: getOrFetchApplicationForLaunch
 // Dependencies: []
 // Exports: confirmActivityLaunchChecks
 
-// Module 10807 (getOrFetchApplicationForLaunch)
+// Module 10808 (getOrFetchApplicationForLaunch)
 function getOrFetchApplicationForLaunch() {
   return _getOrFetchApplicationForLaunch(...arguments);
 }

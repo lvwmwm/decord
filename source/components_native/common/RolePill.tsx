@@ -1,10 +1,10 @@
-// Module ID: 10175
-// Function ID: 78614
+// Module ID: 10176
+// Function ID: 78627
 // Name: RolePill
 // Dependencies: []
 // Exports: default
 
-// Module 10175 (RolePill)
+// Module 10176 (RolePill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, MAX_VISUAL_ROLE_LENGTH: closure_5 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[5]).radii.xs };
+obj = { padding: null, withSpring: null, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.pill = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
@@ -106,7 +106,7 @@ export default function RolePill(role) {
     tmp19 = callback(View, obj6);
   }
   items1[1] = tmp19;
-  const obj7 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: name };
+  const obj7 = { cachedAt: null, edpbxy: null, children: name };
   items1[2] = callback(arg1(dependencyMap[12]).Text, obj7);
   obj1.children = items1;
   obj.children = closure_7(View, obj1);

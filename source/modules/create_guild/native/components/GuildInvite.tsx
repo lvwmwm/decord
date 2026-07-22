@@ -1,10 +1,10 @@
-// Module ID: 11731
-// Function ID: 91119
+// Module ID: 11732
+// Function ID: 91132
 // Name: SeeMoreFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11731 (SeeMoreFooter)
+// Module 11732 (SeeMoreFooter)
 function SeeMoreFooter(openInviteSheet) {
   let obj = {};
   obj = { style: callback5().friendIcon, children: callback3(arg1(dependencyMap[16]).GroupIcon, { size: "sm" }) };
@@ -76,10 +76,10 @@ obj.container = obj;
 obj.header = { marginBottom: 8 };
 obj.description = {};
 obj.headerImage = { marginVertical: 16 };
-obj.linkContainer = {};
+obj.linkContainer = { "Bool(false)": "column", "Bool(false)": "flex-end" };
 const tmp4 = arg1(dependencyMap[10]);
 obj.linkButton = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
-const obj2 = { "Bool(false)": "r", "Bool(false)": "gift_info", tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj2 = { <string:3024947456>: null, <string:757573325>: null, tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.linkButtonIcon = obj2;
 obj.inviteDetail = { marginTop: 8 };
 obj.shareButton = { marginVertical: 16 };

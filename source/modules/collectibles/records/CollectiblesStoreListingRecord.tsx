@@ -1,5 +1,5 @@
 // Module ID: 6778
-// Function ID: 53378
+// Function ID: 53389
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -76,7 +76,7 @@ const tmp2 = (arg0) => {
         let sku_id;
         let store_listing_id;
         let styles;
-        let obj = { 0: false, 0: false, -9223372036854775808: false };
+        let obj = { 0: "spring", -9223372036854775808: 0.4, -7: 1 };
         ({ store_listing_id, sku_id, styles } = arg0);
         Object.setPrototypeOf(null);
         obj = {};

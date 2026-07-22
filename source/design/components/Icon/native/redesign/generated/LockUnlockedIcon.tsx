@@ -1,10 +1,10 @@
-// Module ID: 10328
-// Function ID: 79762
+// Module ID: 10329
+// Function ID: 79775
 // Name: LockUnlockedIcon
-// Dependencies: [3120562193, 469762065, 3187671056, 1711276049, 33554472, 4026531840]
+// Dependencies: [3120562193, 469762065, 3187671056, 1728053265, 33554472, 4026531840]
 // Exports: LockUnlockedIcon
 
-// Module 10328 (LockUnlockedIcon)
+// Module 10329 (LockUnlockedIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LockUnlockedIcon.tsx");

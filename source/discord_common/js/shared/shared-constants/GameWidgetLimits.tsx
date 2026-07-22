@@ -1,5 +1,5 @@
 // Module ID: 6854
-// Function ID: 54183
+// Function ID: 54194
 // Name: GAME_WIDGET_LIMITS_BY_TYPE
 // Dependencies: []
 

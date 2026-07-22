@@ -1,9 +1,9 @@
-// Module ID: 13958
-// Function ID: 106106
+// Module ID: 13965
+// Function ID: 106146
 // Name: useQuestDockSwipeGesture
-// Dependencies: [31, 27, 5246, 13873, 33, 4126, 13874, 13962, 3989, 2, 57, 31, 27, 33, 4126]
+// Dependencies: [31, 27, 4973, 13880, 33, 4126, 13881, 13969, 3989, 2, 57, 31, 27, 33, 4126]
 
-// Module 13958 (useQuestDockSwipeGesture)
+// Module 13965 (useQuestDockSwipeGesture)
 import importAllResult from "module_31";
 import { QuestDockMode } from "get ActivityIndicator";
 import QuestsExperimentLocations from "QuestsExperimentLocations";
@@ -26,7 +26,7 @@ function useQuestDockSwipeGesture() {
   const questDockOffset = context1.questDockOffset;
   const isVisibleToUser = importAllResult.useContext(importDefault(dependencyMap[7])).isVisibleToUser;
   let obj = arg1(dependencyMap[8]);
-  obj = { 0: 29250003, 0: 16956481, 0: -615448320, 9223372036854775807: 29340, 0: 0, 9223372036854775807: 1895956480, 0: 1, isDrawer: restingQuestDockMode.get() === QuestDockMode.EXPANDED };
+  obj = { -1562904123: 1090635089, 1637108049: 66256, -920562663: -1655942911, 1726867628: 114, -698106641: 0, 559086496: 24183296, "Null": 301989888, isDrawer: restingQuestDockMode.get() === QuestDockMode.EXPANDED };
   const sharedValue = obj.useSharedValue(obj);
   const sharedValue1 = arg1(dependencyMap[8]).useSharedValue(0);
   const obj3 = arg1(dependencyMap[8]);

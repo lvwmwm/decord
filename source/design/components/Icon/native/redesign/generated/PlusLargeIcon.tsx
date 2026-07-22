@@ -1,10 +1,10 @@
-// Module ID: 10184
-// Function ID: 78685
+// Module ID: 10185
+// Function ID: 78698
 // Name: PlusLargeIcon
 // Dependencies: []
 // Exports: PlusLargeIcon
 
-// Module 10184 (PlusLargeIcon)
+// Module 10185 (PlusLargeIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PlusLargeIcon.tsx");

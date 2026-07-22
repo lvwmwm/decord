@@ -1,5 +1,5 @@
 // Module ID: 4491
-// Function ID: 39624
+// Function ID: 39632
 // Name: prepareMenu
 // Dependencies: []
 // Exports: prepareHeaderBarButtonItems

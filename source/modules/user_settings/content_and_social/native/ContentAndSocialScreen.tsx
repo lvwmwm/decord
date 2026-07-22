@@ -1,10 +1,10 @@
-// Module ID: 14406
-// Function ID: 108677
+// Module ID: 14414
+// Function ID: 108720
 // Name: getSocialPermissions
 // Dependencies: []
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14406 (getSocialPermissions)
+// Module 14414 (getSocialPermissions)
 function getSocialPermissions(allServersSelected) {
   const items = [MobileSetting.SAFETY_GUILD_SETTING_GUILD_SELECT, MobileSetting.SAFETY_GUILD_SETTING_DIRECT_MESSAGES, MobileSetting.SAFETY_GUILD_SETTING_MESSAGE_REQUESTS];
   let obj = {};
@@ -188,11 +188,11 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let tmp7 = callback2(closure_5, obj);
   } else if (0 === slayerSdkApplications.length) {
     obj = { style: tmp.emptyContainer };
-    const obj1 = {};
+    const obj1 = { cachedAt: false, edpbxy: 700 };
     const intl = arg1(dependencyMap[8]).intl;
     obj1.children = intl.string(arg1(dependencyMap[8]).t.+0U77d);
     const items = [callback2(arg1(dependencyMap[18]).Text, obj1), ];
-    const obj2 = {};
+    const obj2 = { cachedAt: 400, edpbxy: 20 };
     const intl2 = arg1(dependencyMap[8]).intl;
     const obj3 = { helpdeskArticle: importDefault(dependencyMap[9]).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
     obj2.children = intl2.format(arg1(dependencyMap[8]).t.V8wClM, obj3);

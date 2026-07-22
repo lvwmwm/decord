@@ -14,7 +14,7 @@ function getState() {
     const arg1 = tmp13;
     const _default = arg1(arg6[1]).default;
     if (null == _default) {
-      let obj = { "Bool(false)": "o", "Bool(false)": "o", eventEmitter: tmp13 };
+      let obj = { <string:382774833>: "o", <string:1238898205>: "o", eventEmitter: tmp13 };
     } else {
       obj = { NativeAppearance: _default, appearance: null, eventEmitter: tmp13 };
       const arg2 = obj;

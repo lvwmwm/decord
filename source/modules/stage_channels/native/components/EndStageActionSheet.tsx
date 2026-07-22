@@ -1,13 +1,13 @@
-// Module ID: 12228
-// Function ID: 93842
+// Module ID: 12233
+// Function ID: 93870
 // Name: EndStageActionSheet
-// Dependencies: [4113, 22, 11767, 2, 3946, 653, 3948, 1198, 9137, 2, 29, 57, 646, 491, 12240, 2]
+// Dependencies: [4113, 22, 11768, 2, 3946, 653, 3948, 1198, 9138, 2, 29, 57, 646, 491, 12245, 2]
 // Exports: default
 
-// Module 12228 (EndStageActionSheet)
+// Module 12233 (EndStageActionSheet)
 import "_isNativeReflectConstruct";
 import { View } from "apply";
-import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "module_11767";
+import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "module_11768";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import result2 from "result2";
@@ -16,9 +16,9 @@ import result2 from "result2";
 ME = { container: {} };
 ME = { fontFamily: require("result2").Fonts.PRIMARY_BOLD, color: require("isTermsFormField").colors.MOBILE_TEXT_HEADING_PRIMARY };
 ME.title = ME;
-ME.subtitle = {};
-ME.cancelButton = { disabled: 600, sequence: 16 };
-ME.confirmButton = { disabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017920918199, sequence: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000543230922545 };
+ME.subtitle = { MINIMAL: null, currentScreenId: null };
+ME.cancelButton = {};
+ME.confirmButton = { -2124314034: "intlMessage", 529464659: "prefixTag" };
 ME = ME.createStyles(ME);
 const result = result2.fileFinishedImporting("modules/stage_channels/native/components/EndStageActionSheet.tsx");
 

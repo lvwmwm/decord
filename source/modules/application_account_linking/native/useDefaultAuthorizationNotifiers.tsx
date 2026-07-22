@@ -1,10 +1,10 @@
-// Module ID: 14960
-// Function ID: 112571
+// Module ID: 14968
+// Function ID: 112614
 // Name: useDefaultAuthorizationNotifiers
 // Dependencies: []
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 14960 (useDefaultAuthorizationNotifiers)
+// Module 14968 (useDefaultAuthorizationNotifiers)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AppStates = arg1(dependencyMap[2]).AppStates;

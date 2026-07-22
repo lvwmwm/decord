@@ -1,9 +1,9 @@
-// Module ID: 9356
-// Function ID: 73025
+// Module ID: 9357
+// Function ID: 73038
 // Name: getEmojiItemUrl
 // Dependencies: []
 
-// Module 9356 (getEmojiItemUrl)
+// Module 9357 (getEmojiItemUrl)
 function getEmojiItemUrl(emoji, animateEmoji) {
   let animated = animateEmoji;
   if (null == emoji.id) {
@@ -104,15 +104,14 @@ if (obj6.isAndroid()) {
 obj1.fontSize = num;
 obj1.color = importDefault(dependencyMap[7]).colors.TEXT_DEFAULT;
 obj.surrogates = obj1;
-const obj2 = { 9223372036854775807: -1661796349, -9223372036854775808: -1371340797, -4328168773: -1275067531, 9223372036854775807: -1258290315, height: tmp3.ROW_HEIGHT };
-obj.row = obj2;
-const obj3 = { EMPTY_SOUND_LIST: "number", alignContent: "number", containerSizeStyle: "mY3Y38" };
+obj.row = { height: tmp3.ROW_HEIGHT };
+const obj2 = { backgroundColor: "string", padding: "string", borderRadius: "color" };
 const obj6 = arg1(dependencyMap[8]);
-const obj9 = importDefault(dependencyMap[9])("#000000");
-obj3.backgroundColor = importDefault(dependencyMap[9])("#000000").alpha(0.2).hex();
+const obj8 = importDefault(dependencyMap[9])("#000000");
+obj2.backgroundColor = importDefault(dependencyMap[9])("#000000").alpha(0.2).hex();
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj.lockContainer = obj3;
-obj.lock = { "Bool(false)": "<string:3976200614>", "Bool(false)": "<string:1895825900>", "Bool(false)": "st" };
+obj.lockContainer = obj2;
+obj.lock = {};
 let closure_9 = obj1.createStyles(obj);
 let closure_10 = importAllResult.memo((emojis) => {
   let animateEmoji;

@@ -1,10 +1,10 @@
-// Module ID: 9425
-// Function ID: 73359
+// Module ID: 9426
+// Function ID: 73372
 // Name: ReactionEmojiOptionsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9425 (ReactionEmojiOptionsActionSheet)
+// Module 9426 (ReactionEmojiOptionsActionSheet)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_6 = importDefault(dependencyMap[2]);
@@ -15,7 +15,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { alignItems: "center", paddingTop: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.header = obj;
-const obj1 = { end: false, home: false, left: false, up: false, right: false, down: false, backgroundColor: importDefault(dependencyMap[7]).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xl, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG, paddingVertical: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { <string:328797103>: "Array", <string:1391485314>: "constructor", <string:247703438>: "op", <string:944838497>: "isArray", <string:1105551782>: "isArray", lastRequest: "isArray", backgroundColor: importDefault(dependencyMap[7]).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xl, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG, paddingVertical: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.reactionPill = obj1;
 obj.emoji = {};
 obj.emojiText = {};
@@ -117,7 +117,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   const items6 = [emoji.id, callback];
   const callback2 = React.useCallback(() => {
     function content() {
-      const obj = { style: { "Null": "noin tunti", "Null": "noin {{count}} tuntia" }, variant: "text-md/bold" };
+      const obj = { style: {}, variant: "text-md/bold" };
       const intl = callback(closure_3[17]).intl;
       const string = intl.string;
       const t = callback(closure_3[17]).t;
@@ -192,11 +192,11 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   obj3 = { src: emojiURL, name: str };
   ({ emojiText: obj11.textEmojiStyle, emoji: obj11.fastImageStyle } = tmp);
   const items9 = [callback(importDefault(dependencyMap[24]), obj3), ];
-  obj4 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.reactionText, children: reaction.burst_count > 0 ? reaction.burst_count : reaction.count };
+  obj4 = { cachedAt: null, edpbxy: null, style: tmp.reactionText, children: reaction.burst_count > 0 ? reaction.burst_count : reaction.count };
   items9[1] = callback(arg1(dependencyMap[16]).Text, obj4);
   obj2.children = items9;
   const items10 = [callback2(View, obj2), ];
-  obj5 = {};
+  obj5 = { cachedAt: null, edpbxy: null };
   let combined = str;
   if (null != emoji.id) {
     const _HermesInternal = HermesInternal;

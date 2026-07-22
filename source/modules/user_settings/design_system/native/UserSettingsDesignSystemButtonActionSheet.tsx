@@ -1,14 +1,14 @@
-// Module ID: 14301
-// Function ID: 108038
+// Module ID: 14309
+// Function ID: 108081
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14301 (items)
+// Module 14309 (items)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const items = [{ <string:2048437162>: "add", <string:2887950716>: "it" }, { <string:2048437162>: "text-sm/medium", <string:2887950716>: "text-subtle" }, {}];
-const items1 = [{ name: 1827029459, padding: -144637951 }, { name: true, padding: true }];
+const items = [{ "Null": "add", "Null": "it" }, { "Null": "text-sm/medium", "Null": "text-subtle" }, {}];
+const items1 = [{ name: 25407041, rawSpec: 1106731264 }, { name: true, rawSpec: true }];
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemButtonActionSheet.tsx");
 
@@ -121,9 +121,9 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
     })
   };
   items1[3] = callback(arg1(closure_2[6]).FormSection, obj4);
-  const obj6 = { "Null": "Array", "Null": "isArray" };
+  const obj6 = { "Null": null, "Null": null };
   const items3 = [callback(arg1(closure_2[6]).FormHint, { children: "Whether to show the example icon on the left (default) or right." }), ];
-  const items4 = [null, null];
+  const items4 = [false, false];
   items3[1] = items4.map((label) => {
     let obj = {};
     obj = {

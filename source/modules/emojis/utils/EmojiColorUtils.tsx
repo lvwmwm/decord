@@ -1,5 +1,5 @@
 // Module ID: 7640
-// Function ID: 61170
+// Function ID: 61180
 // Name: buildPlatformedThemedEmojiColorPalette
 // Dependencies: []
 // Exports: buildEmojiColorPalette

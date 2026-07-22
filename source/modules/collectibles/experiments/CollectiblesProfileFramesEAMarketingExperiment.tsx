@@ -1,10 +1,10 @@
-// Module ID: 15505
-// Function ID: 118336
+// Module ID: 15513
+// Function ID: 118379
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsProfileFramesEAMarketingEnabled, useIsProfileFramesEAMarketingEnabled
 
-// Module 15505 (apexExperiment)
+// Module 15513 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

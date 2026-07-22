@@ -1,9 +1,9 @@
-// Module ID: 13206
-// Function ID: 100085
+// Module ID: 13213
+// Function ID: 100118
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13206 (_isNativeReflectConstruct)
+// Module 13213 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -21,7 +21,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ UPDATE_CONFIG: closure_8, UPDATE_CHECK_INTERVAL: closure_9 } = arg1(dependencyMap[5]));
 let importDefaultResult = importDefault(dependencyMap[6]);
 importDefaultResult = new importDefaultResult("MobileNativeUpdateStore");
-let closure_11 = {};
+let closure_11 = { label: null, onPress: null, disabled: null };
 let closure_12 = null;
 let tmp5 = (Store) => {
   class MobileNativeUpdateStore {

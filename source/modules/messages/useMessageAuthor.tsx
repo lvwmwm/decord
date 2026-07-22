@@ -1,5 +1,5 @@
 // Module ID: 4356
-// Function ID: 38635
+// Function ID: 38643
 // Name: useNullableMessageAuthor
 // Dependencies: []
 // Exports: default, getMessageAuthor, useUserNickAndColor
@@ -242,7 +242,7 @@ function computeMessageAuthor(channel) {
         id1 = guild.id;
       }
       if (null == id1) {
-        obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: null };
+        obj = { 9223372036854775807: "mn", 9223372036854775807: "description", 0: "Array" };
         let tmp9 = str;
         if (null != friendNickname) {
           tmp9 = friendNickname;
@@ -251,7 +251,7 @@ function computeMessageAuthor(channel) {
         obj.displayNameStyles = displayNameStyles;
         let obj1 = obj;
       } else if (null == member) {
-        obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: null, nick: str, displayNameStyles };
+        obj = { 9223372036854775807: "mn", 9223372036854775807: "description", 0: "Array", nick: str, displayNameStyles };
         obj1 = obj;
       } else {
         obj1 = {};
@@ -286,7 +286,7 @@ function computeMessageAuthor(channel) {
     }
     return obj1;
   }
-  const obj2 = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: null, nick: str, displayNameStyles };
+  const obj2 = { 9223372036854775807: "mn", 9223372036854775807: "description", 0: "Array", nick: str, displayNameStyles };
   obj1 = obj2;
 }
 let closure_3 = importDefault(dependencyMap[0]);

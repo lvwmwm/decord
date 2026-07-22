@@ -1,9 +1,9 @@
-// Module ID: 9750
-// Function ID: 75859
+// Module ID: 9751
+// Function ID: 75872
 // Name: StatusBarManager
 // Dependencies: []
 
-// Module 9750 (StatusBarManager)
+// Module 9751 (StatusBarManager)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const StatusBar = arg1(dependencyMap[2]).StatusBar;

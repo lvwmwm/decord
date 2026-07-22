@@ -1,5 +1,5 @@
 // Module ID: 4587
-// Function ID: 40191
+// Function ID: 40199
 // Dependencies: []
 
 // Module 4587
@@ -10,7 +10,7 @@ const result = _module.fileFinishedImporting("modules/markup/MarkupSubtextRule.t
 
 export default {
   order: importDefault(dependencyMap[0]).defaultRules.heading.order,
-  requiredFirstCharacters: [true],
+  requiredFirstCharacters: ["translation"],
   match(arg0, arg1, str) {
     if (null != str) {
       if ("" !== str) {

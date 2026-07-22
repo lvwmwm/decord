@@ -1,10 +1,10 @@
-// Module ID: 16442
-// Function ID: 127008
+// Module ID: 16450
+// Function ID: 127050
 // Name: onTaskComplete
 // Dependencies: []
 // Exports: default
 
-// Module 16442 (onTaskComplete)
+// Module 16450 (onTaskComplete)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -48,12 +48,12 @@ export default function _default() {
   obj.onAction = callback;
   obj.submitting = tmp4[0];
   obj = { spacing: importDefault(dependencyMap[12]).space.PX_16 };
-  obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+  obj1 = { cachedAt: true, edpbxy: true };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj1.children = intl3.string(importDefault(dependencyMap[9]).aveKoG);
   const items3 = [callback(arg1(dependencyMap[13]).Text, obj1), ];
   const obj2 = { spacing: importDefault(dependencyMap[12]).space.PX_8 };
-  const obj3 = { 9223372036854775807: 49445120, 0: 49447168, 0: 49447168 };
+  const obj3 = { "Null": 49447680, "Null": 49449728, "Null": 49449728 };
   const intl4 = arg1(dependencyMap[8]).intl;
   obj3.placeholder = intl4.string(importDefault(dependencyMap[9]).d9Ykjr);
   obj3.value = first;

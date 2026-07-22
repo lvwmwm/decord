@@ -1,9 +1,9 @@
-// Module ID: 13960
-// Function ID: 106121
+// Module ID: 13967
+// Function ID: 106161
 // Name: questDockHeaderLayoutAnimation
 // Dependencies: []
 
-// Module 13960 (questDockHeaderLayoutAnimation)
+// Module 13967 (questDockHeaderLayoutAnimation)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ AccessibilityInfo: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -14,7 +14,7 @@ const ThemeTypes = arg1(dependencyMap[5]).ThemeTypes;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let obj = { questDockHeader: { height: tmp3.QUEST_DOCK_COLLAPSED_HEIGHT }, wreathImage: { "Bool(false)": "png", "Bool(false)": 99, "Bool(false)": "absolute" }, questDockHeaderPrimary: {}, logo: { marginTop: 2 }, questDockHeaderSecondary: { isArray: -536870861, diversity: -299892737 }, questDockHeaderContentCollapsed: {}, questDockHeaderContentExpanded: {}, questDockHeaderActionDisclosures: {}, questDockHeaderActionDisclosuresIcon: { y: false, isArray: false } };
+let obj = { questDockHeader: { height: tmp3.QUEST_DOCK_COLLAPSED_HEIGHT }, wreathImage: { "Bool(false)": "png", "Bool(false)": 99, "Bool(false)": "absolute" }, questDockHeaderPrimary: { width: true, marginHorizontal: true }, logo: { marginTop: 2 }, questDockHeaderSecondary: { nestedScrollEnabled: "%FunctionPrototype%", scrollEventThrottle: "paddingStart" }, questDockHeaderContentCollapsed: {}, questDockHeaderContentExpanded: {}, questDockHeaderActionDisclosures: {}, questDockHeaderActionDisclosuresIcon: { hideWhenScrolling: "<string:1912602975>", autoCapitalize: "height" } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.questDockHeaderActionSeparator = obj;
 obj.questDockHeaderTertiaryContent = { opacity: 0.7 };

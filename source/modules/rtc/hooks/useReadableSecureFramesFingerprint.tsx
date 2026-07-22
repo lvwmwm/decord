@@ -1,10 +1,10 @@
-// Module ID: 8896
-// Function ID: 70226
+// Module ID: 8897
+// Function ID: 70239
 // Name: useReadableSecureFramesFingerprint
 // Dependencies: []
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 8896 (useReadableSecureFramesFingerprint)
+// Module 8897 (useReadableSecureFramesFingerprint)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
 

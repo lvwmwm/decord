@@ -1,10 +1,10 @@
-// Module ID: 10155
-// Function ID: 78515
+// Module ID: 10156
+// Function ID: 78528
 // Name: IconUploader
 // Dependencies: []
 // Exports: default
 
-// Module 10155 (IconUploader)
+// Module 10156 (IconUploader)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));

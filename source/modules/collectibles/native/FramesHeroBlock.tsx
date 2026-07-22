@@ -1,10 +1,10 @@
-// Module ID: 14360
-// Function ID: 108435
+// Module ID: 14368
+// Function ID: 108478
 // Name: SkeletonLoading
 // Dependencies: []
 // Exports: default
 
-// Module 14360 (SkeletonLoading)
+// Module 14368 (SkeletonLoading)
 function SkeletonLoading(accessibilityLabel) {
   const obj = {
     style: callback3().skeletonContainer,
@@ -30,34 +30,34 @@ const tmp3 = arg1(dependencyMap[4]);
 const result = 0.75 * arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_WIDTH;
 let obj = arg1(dependencyMap[7]);
 obj = { heroContainer: { width: "100%" } };
-obj = { "Bool(false)": "encodingVideoBitRate", "Bool(false)": "include_google_sku_ids", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "integrationCategoryLabel", "Bool(false)": "GameDiversityTier3LargeBadge", "Bool(false)": "messageBackground", top: importDefault(dependencyMap[8]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj = { returnKeyType: 20480834254773053000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, attachReadyPayloadProperties: -1972024237490392200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, isPointInStroke: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000938732017, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000002013668175671453, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002535835848762357, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009801187377842802, "Bool(false)": 4695003774544651000000000000000000000000000000, top: importDefault(dependencyMap[8]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.framesBadgeContainer = obj;
 const tmp4 = arg1(dependencyMap[5]);
 obj.framesBannerWrapper = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-const obj2 = { 0: null, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001068, 0: NaN, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026859827852369935, -9223372036854775808: -0.0000000000000000000000000000000000000000000000000000000000000000012611300912586197, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015661112332700963, borderRadius: importDefault(dependencyMap[8]).radii.lg };
+const obj2 = { scales: null, a: 2162, paddingHorizontal: 0, apply: 29184, exports: -1048576, Array: 17956863, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.framesBannerBackgroundImage = obj2;
 const obj1 = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.framesBannerTextContainer = { flex: 1, paddingRight: importDefault(dependencyMap[8]).space.PX_4, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 const obj3 = { flex: 1, paddingRight: importDefault(dependencyMap[8]).space.PX_4, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 obj.framesBannerTitle = { marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
-const obj5 = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24 };
+const obj5 = {};
 const obj4 = { marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
 const items = [{ translateY: importDefault(dependencyMap[8]).space.PX_16 }];
 obj5.transform = items;
 obj.framesBannerForegroundImage = obj5;
 obj.heroBannerContainer = { maxHeight: 240 + result };
-obj.heroBannerImage = { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "89c1f821400ffcc75deeeab8c6315a88" };
-obj.orbsBackgroundGradient = { enableQualityMetrics: "<string:408361903>", enableOriginDetection: "<string:2920093709>", enabled: "<string:1058778651>", threshold: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, enabled: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
-obj.heroInfoContainer = { "Null": "<string:141856807>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:285212672>", "Null": "<string:38822721>" };
-const obj7 = { "Null": "y", "Null": "isArray", "Null": "Text", "Null": "Object", "Null": "Reflect", "Null": "r", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj.heroBannerImage = {};
+obj.orbsBackgroundGradient = { "Null": "center", "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" };
+obj.heroInfoContainer = {};
+const obj7 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.innerContainer = obj7;
-obj.heroLogoContainer = { "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132 };
+obj.heroLogoContainer = {};
 obj.heroLogo = {};
 const obj6 = { translateY: importDefault(dependencyMap[8]).space.PX_16 };
 obj.heroViewAllIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.orbsInnerContainer = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
-obj.orbsTitle = { 9223372036854775807: null, 0: null };
+obj.orbsTitle = {};
 obj.productCardsContainer = { zIndex: 1 };
 const obj9 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.skeletonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
@@ -111,7 +111,7 @@ export default function _default(heroBlock) {
       obj = { value: tmp8(importDefault(closure_2[19]).COLLECTIBLES_SHOP_HERO).analyticsLocations };
       obj = { onChange: obj4.useTrackProductCardImpression(heroBlock.categoryStoreListingId, "mobile_home", "hero_block").handleCardVisibilityChange, resetKey: heroBlock.categoryStoreListingId };
       obj1 = { style: tmp4.heroContainer };
-      obj2 = { style: tmp4.framesBadgeContainer, children: callback(importDefault(closure_2[26]), { "Bool(false)": null, "Bool(false)": "02378056fc9012d1e43edae8cf439ac3" }) };
+      obj2 = { style: tmp4.framesBadgeContainer, children: callback(importDefault(closure_2[26]), { "Bool(false)": null, "Bool(false)": null }) };
       const items3 = [callback(tmp5, obj2), , , , ];
       obj3 = { style: tmp4.heroBannerContainer };
       let tmp33Result = null != heroBannerUrl;
@@ -223,7 +223,7 @@ export default function _default(heroBlock) {
           tmp50 = callback(tmp5, obj18);
         }
         const items8 = [tmp50, ];
-        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[34]).ChevronSmallRightIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
+        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[34]).ChevronSmallRightIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) };
         items8[1] = callback(tmp5, obj21);
         obj17.children = items8;
         obj14.children = callback2(tmp5, obj17);
@@ -312,10 +312,10 @@ export default function _default(heroBlock) {
       stateFromStores = callback;
       stateFromStores = arg1;
       stateFromStores = closure_2;
-      const obj35 = { hasMaxConnections: 141688834, isBoostOnlySubscription: 33554432, style: tmp4.framesBannerTitle, children: bannerBlock.title };
+      const obj35 = { style: tmp4.framesBannerTitle, children: bannerBlock.title };
       const items10 = [callback(arg1(closure_2[28]).Text, obj35), ];
       stateFromStores = callback;
-      const obj36 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: bannerBlock.body };
+      const obj36 = { cachedAt: null, edpbxy: null, children: bannerBlock.body };
       items10[1] = callback(arg1(closure_2[28]).Text, obj36);
       obj34.children = items10;
       items9[1] = callback2(tmp5, obj34);

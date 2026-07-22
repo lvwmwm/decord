@@ -1,5 +1,5 @@
 // Module ID: 7895
-// Function ID: 62827
+// Function ID: 62837
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -430,17 +430,17 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           let obj = { didSelfVote: tmp7, hasVoted, isExpired, isSelected: hasItem, isLeader: num >= callback && 0 !== num, showResults };
           const match = num(layout_type[8]).match(obj);
           const str = num(layout_type[8]);
-          const withResult = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected");
-          const withResult1 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected");
-          const withResult2 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected");
-          const withResult3 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted");
-          const withResult4 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted");
-          const withResult5 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted");
-          const withResult6 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected");
+          const withResult = match.with({}, () => "victorSelected");
+          const withResult1 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected");
+          const withResult2 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected");
+          const withResult3 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted");
+          const withResult4 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ 1748712610: "<string:1040334421>", <string:3334431435>: "<string:1040334338>" }, () => "voted");
+          const withResult5 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ 1748712610: "<string:1040334421>", <string:3334431435>: "<string:1040334338>" }, () => "voted").with({ <string:3334431435>: "<string:1040334421>", <string:1172800346>: "<string:1040334338>" }, () => "notVoted");
+          const withResult6 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ 1748712610: "<string:1040334421>", <string:3334431435>: "<string:1040334338>" }, () => "voted").with({ <string:3334431435>: "<string:1040334421>", <string:1172800346>: "<string:1040334338>" }, () => "notVoted").with({ isSelected: true }, () => "selected");
           obj = { answerId: combined };
           obj = { text: answer_id.poll_media.text };
           const obj1 = { animateEmoji: num };
-          const withResult7 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected").with({}, () => "notVoted");
+          const withResult7 = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ 1748712610: "<string:1040334421>", <string:3334431435>: "<string:1040334338>" }, () => "voted").with({ <string:3334431435>: "<string:1040334421>", <string:1172800346>: "<string:1040334338>" }, () => "notVoted").with({ isSelected: true }, () => "selected").with({ <string:1564862339>: 1766088043, <string:2229119310>: 827788593 }, () => "notVoted");
           obj.emoji = stringResult(answer_id.poll_media.emoji, obj1);
           obj.stickerId = answer_id.poll_media.sticker_id;
           obj.attachmentIds = answer_id.poll_media.attachment_ids;
@@ -452,14 +452,14 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           }
           obj.isVictor = tmp11;
           obj.didSelfVote = tmp7;
-          obj.style = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected").with({}, () => "notVoted").otherwise(() => "normalVote");
+          obj.style = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ 1748712610: "<string:1040334421>", <string:3334431435>: "<string:1040334338>" }, () => "voted").with({ <string:3334431435>: "<string:1040334421>", <string:1172800346>: "<string:1040334338>" }, () => "notVoted").with({ isSelected: true }, () => "selected").with({ <string:1564862339>: 1766088043, <string:2229119310>: 827788593 }, () => "notVoted").otherwise(() => "normalVote");
           let tmp12 = closure_10;
           if (closure_10) {
             tmp12 = !useReducedMotion;
           }
           obj.shouldAnimateTransition = tmp12;
           obj.votesPercentage = Math.round(100 * num2);
-          const otherwiseResult = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected").with({}, () => "notVoted").otherwise(() => "normalVote");
+          const otherwiseResult = match.with({}, () => "victorSelected").with({}, () => "victorNotSelected").with({ 1906208881: null, 1748712610: null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ 1748712610: "<string:1040334421>", <string:3334431435>: "<string:1040334338>" }, () => "voted").with({ <string:3334431435>: "<string:1040334421>", <string:1172800346>: "<string:1040334338>" }, () => "notVoted").with({ isSelected: true }, () => "selected").with({ <string:1564862339>: 1766088043, <string:2229119310>: 827788593 }, () => "notVoted").otherwise(() => "normalVote");
           const match1 = num(layout_type[8]).match(layout_type);
           const str2 = num(layout_type[8]);
           obj.votes = match1.with(num(layout_type[18]).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => "(" + num.toLocaleString() + ")").otherwise(() => {
@@ -509,7 +509,7 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.type = "submit";
           return obj;
         }).with(obj5, () => {
-          const obj = {};
+          const obj = { round: false, 530735522: false, 710845794: false, 1273509270: false };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.XhQEh8);
           return obj;
@@ -527,11 +527,11 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.type = "submit";
           return obj;
         }).with(obj5, () => {
-          const obj = {};
+          const obj = { round: false, 530735522: false, 710845794: false, 1273509270: false };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.XhQEh8);
           return obj;
-        }).with({}, () => {
+        }).with({ ignoreMentioned: 1766088043, shouldDisableInteractiveComponents: 827788593 }, () => {
           const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.gNj6In);
@@ -551,11 +551,11 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.type = "submit";
           return obj;
         }).with(obj5, () => {
-          const obj = {};
+          const obj = { round: false, 530735522: false, 710845794: false, 1273509270: false };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.XhQEh8);
           return obj;
-        }).with({}, () => {
+        }).with({ ignoreMentioned: 1766088043, shouldDisableInteractiveComponents: 827788593 }, () => {
           const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.gNj6In);
@@ -583,20 +583,20 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
         const match1 = arg1(dependencyMap[8]).match(obj6);
         const str3 = arg1(dependencyMap[8]);
         const obj7 = { isEditingVote: true };
-        const withResult5 = match1.with({ 562587111: null, 1422536617: null }, () => {
-          const obj = {};
+        const withResult5 = match1.with({ T: true, round: true }, () => {
+          const obj = { -9223372036854775808: -1191182075, 0: -1191181817, 9223372036854775807: 285213191 };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.trrip0);
           return obj;
         });
         let tmp28;
-        const withResult6 = match1.with({ 562587111: null, 1422536617: null }, () => {
-          const obj = {};
+        const withResult6 = match1.with({ T: true, round: true }, () => {
+          const obj = { -9223372036854775808: -1191182075, 0: -1191181817, 9223372036854775807: 285213191 };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.trrip0);
           return obj;
         }).with(obj7, () => {
-          const obj = {};
+          const obj = { round: 278528.5075416566, 530735522: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000065429618290051, 710845794: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004466841621352203, 1273509270: 15183800548045980000000000000000000000000000000000000000000000000000000000000000000 };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.ETE/oC);
           return obj;
@@ -605,7 +605,7 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           if (!isExpired) {
             if (!hasVoted) {
               if (!showResults) {
-                const obj8 = {};
+                const obj8 = { round: "duration", 530735522: "duration", 710845794: "-14", 1273509270: "msg" };
                 const intl4 = arg1(dependencyMap[16]).intl;
                 obj8.label = intl4.string(arg1(dependencyMap[16]).t./KHAUF);
                 tmp28 = obj8;
@@ -614,20 +614,17 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           }
         }
         const allow_multiselect = poll.allow_multiselect;
-        const otherwiseResult1 = match1.with({ 562587111: null, 1422536617: null }, () => {
-          const obj = {};
+        const otherwiseResult1 = match1.with({ T: true, round: true }, () => {
+          const obj = { -9223372036854775808: -1191182075, 0: -1191181817, 9223372036854775807: 285213191 };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.trrip0);
           return obj;
         }).with(obj7, () => {
-          const obj = {};
+          const obj = { round: 278528.5075416566, 530735522: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000065429618290051, 710845794: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004466841621352203, 1273509270: 15183800548045980000000000000000000000000000000000000000000000000000000000000000000 };
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.ETE/oC);
           return obj;
-        }).otherwise(() => {
-          const obj = { filter: null, fontSize: null, fontWeight: null, font: null, x: null, y: null, label: closure_13, secondaryLabel: expirationLabel, accessibilityHint: stringResult };
-          return obj;
-        });
+        }).otherwise(() => ({ label: closure_13, secondaryLabel: expirationLabel, accessibilityHint: stringResult }));
         const obj9 = { isInteractive, isExpired, canSelectMultipleAnswers: allow_multiselect };
         const match2 = arg1(dependencyMap[8]).match(obj9);
         const obj10 = { isInteractive: false };

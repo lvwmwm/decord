@@ -1,10 +1,10 @@
-// Module ID: 9475
-// Function ID: 73810
+// Module ID: 9476
+// Function ID: 73823
 // Name: handleMessagesTapURLLink
 // Dependencies: []
 // Exports: handleMessagesTapLink
 
-// Module 9475 (handleMessagesTapURLLink)
+// Module 9476 (handleMessagesTapURLLink)
 function handleMessagesTapURLLink(data, channelId) {
   let flag = null != data.url;
   if (flag) {

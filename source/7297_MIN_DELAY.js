@@ -1,5 +1,5 @@
 // Module ID: 7297
-// Function ID: 58870
+// Function ID: 58881
 // Name: MIN_DELAY
 // Dependencies: []
 // Exports: makeOfflineTransport
@@ -20,7 +20,7 @@ export function makeOfflineTransport(arg0) {
     if (arg0(log[1]).DEBUG_BUILD) {
       const logger = arg0(log[2]).logger;
       const info = logger.info;
-      const items = [];
+      const items = [1636143953];
       info.apply(logger, items.concat(array));
     }
   }
@@ -64,7 +64,7 @@ export function makeOfflineTransport(arg0) {
     }
     async function _send(arg0, arg1) {
       if (!tmp) {
-        if (obj.envelopeContainsItemType(arg0, ["clock", "o\u2019clock"])) {
+        if (obj.envelopeContainsItemType(arg0, ["error", "warning"])) {
           yield closure_3.push(arg0);
           callback2(100);
           return {};

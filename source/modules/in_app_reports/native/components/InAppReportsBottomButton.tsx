@@ -1,18 +1,18 @@
-// Module ID: 12227
-// Function ID: 93839
+// Module ID: 12232
+// Function ID: 93867
 // Name: InAppReportsBottomButton
 // Dependencies: []
 // Exports: default
 
-// Module 12227 (InAppReportsBottomButton)
+// Module 12232 (InAppReportsBottomButton)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {}, paddingHorizontal: { paddingHorizontal: 16 } };
-obj = { 1549967611: null, 1391253708: null, -1436782415: null, -392742060: -16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { 9223372036854775807: 24, 0: 24, 9223372036854775807: null, -9223372036854775808: "e3a50d090de2ca1d8928677d5f100909", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.divider = obj;
-obj.descriptionText = { SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME: "<string:3362914305>", SCROLL_EVENT_TIMER_MS: "<string:2018574337>", cutoutBottomRightSize: "<string:1312887251>" };
+obj.descriptionText = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.errorText = { color: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
 let closure_6 = obj.createStyles(obj);
@@ -66,7 +66,7 @@ export default function InAppReportsBottomButton(button) {
       obj = { style: tmp.paddingHorizontal };
       let tmp20 = null;
       if (null != tmp2) {
-        const obj1 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.descriptionText, children: tmp2 };
+        const obj1 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.descriptionText, children: tmp2 };
         tmp20 = callback(arg1(dependencyMap[8]).Text, obj1);
       }
       const items1 = [tmp20, , ];

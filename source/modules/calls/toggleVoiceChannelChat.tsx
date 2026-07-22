@@ -1,10 +1,10 @@
-// Module ID: 13315
-// Function ID: 101154
+// Module ID: 13322
+// Function ID: 101187
 // Name: toggleVoiceChannelChat
 // Dependencies: []
 // Exports: toggleVoiceChannelChat
 
-// Module 13315 (toggleVoiceChannelChat)
+// Module 13322 (toggleVoiceChannelChat)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

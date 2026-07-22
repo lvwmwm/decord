@@ -1,10 +1,10 @@
-// Module ID: 12420
-// Function ID: 94845
+// Module ID: 12425
+// Function ID: 94873
 // Name: items1
 // Dependencies: []
 // Exports: default
 
-// Module 12420 (items1)
+// Module 12425 (items1)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,15 +16,15 @@ obj = { marginBottom: arg1(dependencyMap[6]).VISIBILITY_OFFSET };
 obj.wrapper = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.content = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[7]).radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
-obj.heading = { "Null": 1100505555, "Null": 126701 };
+obj.heading = { value: -1102997407, on: 2080375278 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[7]).radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
 obj.list = { borderTopColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderTopWidth: 1 };
 const obj2 = { borderTopColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderTopWidth: 1 };
 obj.listItem = { borderBottomColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderBottomWidth: 1 };
-obj.questionWrapper = {};
+obj.questionWrapper = { "Null": true, "Null": true, "Null": true };
 obj.questionWrapperExpanded = { paddingBottom: 6 };
-obj.question = {};
-const obj4 = { isArray: -536870861, diversity: -299892737, tintColor: importDefault(dependencyMap[7]).colors.ICON_MUTED };
+obj.question = { id: null, x: "07392a850e043822a5c8062588fbfbb4", y: "WaveformIcon" };
+const obj4 = { nestedScrollEnabled: "%FunctionPrototype%", scrollEventThrottle: "paddingStart", tintColor: importDefault(dependencyMap[7]).colors.ICON_MUTED };
 obj.questionIcon = obj4;
 const items = [{ rotate: "45deg" }];
 obj.questionIconExpanded = { transform: items };
@@ -197,7 +197,7 @@ export default function GuildBoostingMarketingFaq() {
         obj.children = items1;
         const items3 = [closure_8(tmp(closure_2[11]).PressableOpacity, obj), ];
         if (tmp) {
-          const obj3 = { "Bool(true)": null, "Bool(true)": "ded314673e0e4bafd84df14bbd2dcfb3", "Bool(true)": "tier_1_24px", style: tmp.answer, children: getQuestion.getAnswer() };
+          const obj3 = { -9223372036854775808: null, 9223372036854775807: "ded314673e0e4bafd84df14bbd2dcfb3", 0: "tier_1_24px", style: tmp.answer, children: getQuestion.getAnswer() };
           tmp = callback2(tmp(closure_2[10]).Text, obj3);
         }
         items3[1] = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 12625
-// Function ID: 97067
+// Module ID: 12630
+// Function ID: 97095
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12625 (apexExperiment)
+// Module 12630 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { bitrate: 3500000 }, variations: { [1]: { bitrate: 3000000 }, [2]: { bitrate: 2500000 } } });
 const _module1 = require(dependencyMap[1]);

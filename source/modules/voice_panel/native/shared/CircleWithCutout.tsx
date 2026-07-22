@@ -1,9 +1,9 @@
-// Module ID: 15745
-// Function ID: 120417
+// Module ID: 15753
+// Function ID: 120460
 // Name: getBadgeLeft
 // Dependencies: []
 
-// Module 15745 (getBadgeLeft)
+// Module 15753 (getBadgeLeft)
 const PixelRatio = arg1(dependencyMap[1]).PixelRatio;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));

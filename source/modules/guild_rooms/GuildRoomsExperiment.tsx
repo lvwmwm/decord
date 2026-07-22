@@ -1,12 +1,13 @@
-// Module ID: 15925
-// Function ID: 122117
+// Module ID: 15933
+// Function ID: 122160
 // Name: items
 // Dependencies: []
 
-// Module 15925 (items)
+// Module 15933 (items)
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, defaultConfig: { "Null": null, "Null": null } };
-const items = [{ config: { "Null": null, "Null": null } }, { config: { "Null": null, "Null": null } }];
+let obj = { shapes: null, flex: null, sk: null, defaultConfig: {} };
+obj = { displayNameStylesEnabled: "text-md/semibold", submitButtonEnabled: "interactive-text-active", config: {} };
+const items = [obj, { config: {} }];
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);

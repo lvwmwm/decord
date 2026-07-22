@@ -1,5 +1,5 @@
 // Module ID: 7763
-// Function ID: 61648
+// Function ID: 61658
 // Name: parseWithClassNameExtraction
 // Dependencies: []
 // Exports: renderChangelogMessageMarkup
@@ -176,7 +176,7 @@ export default {
   }
 };
 export const renderChangelogMessageMarkup = function renderChangelogMessageMarkup(content, arg1, changeLog) {
-  let obj = { allowLinks: null, allowDevLinks: null };
+  let obj = { st: true, Math: true };
   const obj2 = importDefault(dependencyMap[5]);
   if (null != changeLog) {
     obj = { changeLog };

@@ -29,17 +29,17 @@ obj = {
     return String(NumberResult);
   }
 };
-obj.era = obj.default({ values: { narrow: ["<string:168035074>", "<string:1285509378>"], abbreviated: ["<string:168035074>", "<string:1285509378>"], wide: [] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [null, null], abbreviated: [null, null], wide: [1615921155, 37814340] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [null, null, null, null], abbreviated: ["r", "isArray", "Icon", "channel_id"], wide: [-359858173, 1950416898, 1045495811, 36745028] },
+  values: { narrow: [], abbreviated: ["imageContainerExpiring", "locke", "imageContainerExpiring", "UNKNOWN_PLATFORM"], wide: ["isArray", "accessibilityRole", "bm", "__closure"] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
 obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: ["flags", "Array", "isArray", "Boolean", "createStyles", "Array", "isArray"] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: { Text: "parseFloat", body: "targetFrames", PX_8: "reType", y: "multiplyMatrices", isArray: "mi", accessibilityRole: "Rpc", useStateFromStores: "Float64Array", lj: "curryRight" }, abbreviated: { Text: "parseFloat", body: "targetFrames", PX_8: "reType", y: "multiplyMatrices", isArray: "mi", accessibilityRole: "Rpc", useStateFromStores: "Float64Array", lj: "curryRight" }, wide: { Text: "parseFloat", body: "targetFrames", PX_8: "reType", y: "multiplyMatrices", isArray: "mi", accessibilityRole: "Rpc", useStateFromStores: "Float64Array", lj: "curryRight" } }, defaultWidth: "wide", formattingValues: { narrow: { Text: "parseFloat", body: "targetFrames", PX_8: "reType", y: "multiplyMatrices", isArray: "mi", accessibilityRole: "Rpc", useStateFromStores: "Float64Array", lj: "curryRight" }, abbreviated: { Text: "parseFloat", body: "targetFrames", PX_8: "reType", y: "multiplyMatrices", isArray: "mi", accessibilityRole: "Rpc", useStateFromStores: "Float64Array", lj: "curryRight" }, wide: { Text: "parseFloat", body: "targetFrames", PX_8: "reType", y: "multiplyMatrices", isArray: "mi", accessibilityRole: "Rpc", useStateFromStores: "Float64Array", lj: "curryRight" } }, defaultFormattingWidth: "wide" });
 
 export default obj;
 export default exports.default;

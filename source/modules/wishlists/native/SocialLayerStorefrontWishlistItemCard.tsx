@@ -1,22 +1,22 @@
-// Module ID: 9747
-// Function ID: 75840
+// Module ID: 9748
+// Function ID: 75853
 // Name: SocialLayerStorefrontWishlistItemCard
 // Dependencies: []
 // Exports: default
 
-// Module 9747 (SocialLayerStorefrontWishlistItemCard)
+// Module 9748 (SocialLayerStorefrontWishlistItemCard)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": null, "Null": null, "Null": null, gap: null, flexGrow: null, flexShrink: null, flexDirection: null, top: importDefault(dependencyMap[5]).space.PX_8, left: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { poster: null, style: null, muted: null, disableFocus: null, pauseWhileAppInactive: null, text: null, variant: null, top: importDefault(dependencyMap[5]).space.PX_8, left: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.applicationIcon = obj;
 const tmp2 = arg1(dependencyMap[3]);
-obj.nestedCard = { shadowColor: undefined, shadowOffset: { "Null": -536870861, "Null": -299892737 }, borderRadius: importDefault(dependencyMap[5]).radii.none };
+obj.nestedCard = { shadowColor: undefined, shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, borderRadius: importDefault(dependencyMap[5]).radii.none };
 let closure_9 = obj.createStyles(obj);
-const obj1 = { shadowColor: undefined, shadowOffset: { "Null": -536870861, "Null": -299892737 }, borderRadius: importDefault(dependencyMap[5]).radii.none };
+const obj1 = { shadowColor: undefined, shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, borderRadius: importDefault(dependencyMap[5]).radii.none };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/wishlists/native/SocialLayerStorefrontWishlistItemCard.tsx");
 
 export default function SocialLayerStorefrontWishlistItemCard(sku) {
@@ -30,7 +30,7 @@ export default function SocialLayerStorefrontWishlistItemCard(sku) {
   const importDefault = wishlistOwnerId;
   const size = sku.size;
   const dependencyMap = size;
-  let obj = { duration: null, damping: null, stiffness: null, mass: null, EARN: null };
+  let obj = { "Null": false, "Null": false, "Null": false, "Null": false, gap: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(sku, obj);
   let React;

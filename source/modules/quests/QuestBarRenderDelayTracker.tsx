@@ -1,9 +1,9 @@
-// Module ID: 9447
-// Function ID: 73613
+// Module ID: 9448
+// Function ID: 73626
 // Name: QuestBarRenderDelayTracker
 // Dependencies: []
 
-// Module 9447 (QuestBarRenderDelayTracker)
+// Module 9448 (QuestBarRenderDelayTracker)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

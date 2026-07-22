@@ -1,13 +1,12 @@
 // Module ID: 408
 // Function ID: 5806
 // Name: useAndroidRippleForView
-// Dependencies: [419]
+// Dependencies: []
 // Exports: default
 
 // Module 408 (useAndroidRippleForView)
-import "oneArgumentPooler";
-import { useMemo } from "oneArgumentPooler";
-
+importAll(dependencyMap[0]);
+const useMemo = arg1(dependencyMap[0]).useMemo;
 
 export default function useAndroidRippleForView(arg0, arg1) {
   let foreground;

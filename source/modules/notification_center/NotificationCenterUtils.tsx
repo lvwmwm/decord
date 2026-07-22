@@ -1,5 +1,5 @@
 // Module ID: 6879
-// Function ID: 54563
+// Function ID: 54574
 // Name: getRelativeTimestamp
 // Dependencies: []
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem
@@ -32,13 +32,13 @@ export const isRemoteAcked = function isRemoteAcked(addResult, closure_1) {
 export const incomingFriendRequestLocalItem = function incomingFriendRequestLocalItem(user, since, origin_application_id) {
   let obj = importDefault(dependencyMap[2]);
   const fromTimestampResult = obj.fromTimestamp(new Date(since).getTime());
-  obj = { 9223372036854775807: null, 0: null, 0: null, 9223372036854775807: null, other_user: user, local_id: "incoming_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(dependencyMap[3]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, id: fromTimestampResult, applicationId: origin_application_id };
+  obj = { "Null": null, "Null": null, "Null": null, "Null": null, other_user: user, local_id: "incoming_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(dependencyMap[3]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, id: fromTimestampResult, applicationId: origin_application_id };
   return obj;
 };
 export const incomingGameFriendRequestLocalItem = function incomingGameFriendRequestLocalItem(user, since, applicationId) {
   let obj = importDefault(dependencyMap[2]);
   const fromTimestampResult = obj.fromTimestamp(new Date(since).getTime());
-  obj = { 9223372036854775807: null, 0: null, 0: null, 9223372036854775807: null, other_user: user, local_id: "incoming_game_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(dependencyMap[3]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, id: fromTimestampResult, applicationId };
+  obj = { "Null": null, "Null": null, "Null": null, "Null": null, other_user: user, local_id: "incoming_game_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(dependencyMap[3]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, id: fromTimestampResult, applicationId };
   return obj;
 };
 export const mobileNativeUpdateAvailableLocalItem = function mobileNativeUpdateAvailableLocalItem(newBuild) {

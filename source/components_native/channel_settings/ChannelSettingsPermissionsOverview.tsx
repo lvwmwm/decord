@@ -1,10 +1,10 @@
-// Module ID: 15386
-// Function ID: 117332
+// Module ID: 15394
+// Function ID: 117375
 // Name: ChannelPermissionSyncModule
 // Dependencies: []
 // Exports: default
 
-// Module 15386 (ChannelPermissionSyncModule)
+// Module 15394 (ChannelPermissionSyncModule)
 function ChannelPermissionSyncModule(channel) {
   channel = channel.channel;
   const arg1 = channel;

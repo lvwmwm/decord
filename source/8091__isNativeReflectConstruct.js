@@ -1,5 +1,5 @@
 // Module ID: 8091
-// Function ID: 64135
+// Function ID: 64145
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -69,6 +69,6 @@ const tmp3 = (arg0) => {
   return callback(Marker, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "Marker";
-tmp3.defaultProps = {};
+tmp3.defaultProps = { "Null": "channelId", "Null": "toString", "Null": "String", "Null": "construct", "Null": "isArray", "Null": "isArray" };
 
 export default tmp3;

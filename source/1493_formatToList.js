@@ -10,7 +10,7 @@ function formatToList(found) {
   return mapped.join("\n");
 }
 function validatePathConfig(config) {
-  const items = ["useMemo", "transform"];
+  const items = [null, null];
   let closure_0 = items;
   const tmp = arguments.length > 1 && undefined !== arguments[1];
   let tmp2 = !tmp;

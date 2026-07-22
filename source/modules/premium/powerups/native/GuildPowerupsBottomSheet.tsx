@@ -1,10 +1,10 @@
-// Module ID: 11540
-// Function ID: 89870
+// Module ID: 11541
+// Function ID: 89883
 // Name: GuildPowerupsBottomSheetHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11540 (GuildPowerupsBottomSheetHeader)
+// Module 11541 (GuildPowerupsBottomSheetHeader)
 function GuildPowerupsBottomSheetHeader(arg0) {
   let guildId;
   let powerup;
@@ -42,7 +42,8 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   }
   const items1 = [tmp14, ];
   const obj5 = { style: tmp.headerContainer };
-  const items2 = [callback(require(dependencyMap[15]).Text, { children: powerup.title }), ];
+  const obj6 = { tooltipText: false, contain: false, children: powerup.title };
+  const items2 = [callback(require(dependencyMap[15]).Text, obj6), ];
   const obj7 = { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer };
   items2[1] = callback(require(dependencyMap[16]).GuildPowerupsCardFooter, obj7);
   obj5.children = items2;
@@ -83,7 +84,7 @@ function GuildPowerupsBottomSheetBody(powerup) {
       const obj1 = { style: tmp.cooldownInfo };
       const obj2 = { size: "xs", color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
       const items1 = [callback(require(dependencyMap[19]).CircleInformationIcon, obj2), ];
-      const obj3 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+      const obj3 = { cachedAt: "y", edpbxy: "isArray" };
       const intl = require(dependencyMap[20]).intl;
       const obj4 = { cooldownDays: powerup.deactivationCooldownPeriodDays };
       obj3.children = intl.formatToPlainString(importDefault(dependencyMap[21]).GMhQcE, obj4);
@@ -227,13 +228,13 @@ const obj1 = { marginTop: importDefault(dependencyMap[6]).space.PX_24, alignItem
 obj.statusContainer = { justifyContent: "center", gap: importDefault(dependencyMap[6]).space.PX_8 };
 const obj2 = { justifyContent: "center", gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.levelContainer = { flexDirection: "column", gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_16 };
-obj.perkContainer = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
-obj.perkIcon = { "Null": 0, "Null": -1048576 };
+obj.perkContainer = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" };
+obj.perkIcon = {};
 const obj3 = { flexDirection: "column", gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_16 };
 obj.perkText = { marginStart: importDefault(dependencyMap[6]).space.PX_8 };
 const obj4 = { marginStart: importDefault(dependencyMap[6]).space.PX_8 };
 obj.footerContainer = { gap: importDefault(dependencyMap[6]).space.PX_12, marginTop: importDefault(dependencyMap[6]).space.PX_8 };
-obj.image = { "Null": null, "Null": "\u{1F44D}\u{1F3FC}" };
+obj.image = { "Null": "CARD", "Null": "SenderStopped" };
 const obj5 = { gap: importDefault(dependencyMap[6]).space.PX_12, marginTop: importDefault(dependencyMap[6]).space.PX_8 };
 obj.description = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_24, textAlign: "center" };
 const obj6 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_24, textAlign: "center" };

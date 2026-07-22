@@ -1,8 +1,8 @@
-// Module ID: 11285
-// Function ID: 87835
+// Module ID: 11286
+// Function ID: 87848
 // Dependencies: []
 
-// Module 11285
+// Module 11286
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/action_sheet/native/components/BottomSheetTextInput.tsx");
 

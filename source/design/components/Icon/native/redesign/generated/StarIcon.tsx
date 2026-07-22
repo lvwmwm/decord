@@ -1,10 +1,10 @@
-// Module ID: 9387
-// Function ID: 73199
+// Module ID: 9388
+// Function ID: 73212
 // Name: StarIcon
 // Dependencies: []
 // Exports: StarIcon
 
-// Module 9387 (StarIcon)
+// Module 9388 (StarIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StarIcon.tsx");

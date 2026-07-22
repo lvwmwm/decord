@@ -1,5 +1,5 @@
 // Module ID: 7141
-// Function ID: 57547
+// Function ID: 57558
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -26,22 +26,22 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftPlanSelectionCardBanner$Type);
       items = [, , , , , , , , , , , , , , , ];
-      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
-      items[1] = { 1347510942: false, 1678385745: false, 1364379111: false, 140698458: false };
+      items[0] = {};
+      items[1] = {};
       items[2] = {};
       items[3] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      items[4] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
-      items[5] = { 1347510942: 1, 1678385745: "source", 1364379111: "enum", 140698458: 1 };
+      items[4] = {};
+      items[5] = {};
       items[6] = {};
-      items[7] = {
-        T() {
-              return callback(closure_1[7]).Gradient;
-            }
+      obj = { -111020099: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002535835848762357, 1351895378: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009801187377842802, 1456955659: 4695003774544651000000000000000000000000000000 };
+      obj.T = function T() {
+        return callback(closure_1[7]).Gradient;
       };
+      items[7] = obj;
       items[8] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
@@ -57,7 +57,7 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      obj = { 9223372036854775807: true, 9223372036854775807: null, 0: 12 };
+      obj = { -111020099: true, 1351895378: null, 1456955659: 12 };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
@@ -67,33 +67,33 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj = { 9223372036854775807: true, 9223372036854775807: null, 0: 14 };
-      obj.T = function T() {
-        return callback(closure_1[8]).LocalizedString;
-      };
-      items[13] = obj;
-      obj1 = { 9223372036854775807: "<string:19702528>", 9223372036854775807: "<string:23941376>", 0: "<string:69691458>" };
+      obj1 = { -111020099: "isArray", 1351895378: "key", 1456955659: "Array" };
       obj1.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
-      items[14] = obj1;
-      obj2 = { 9223372036854775807: "isArray", 9223372036854775807: "key", 0: "Array" };
+      items[13] = obj1;
+      obj2 = { -111020099: "<string:23215616>", 1351895378: "<string:24400128>", 1456955659: "<string:69741122>" };
       obj2.T = function T() {
-        const items = [null, closure_8, "ASSET_VARIANT_"];
+        return callback(closure_1[8]).LocalizedString;
+      };
+      items[14] = obj2;
+      obj3 = { -111020099: "isArray", 1351895378: "key", 1456955659: "Array" };
+      obj3.T = function T() {
+        const items = [-1424897350, closure_8, "ASSET_VARIANT_"];
         return items;
       };
-      items[15] = obj2;
-      items1 = [232422335];
+      items[15] = obj3;
+      items1 = [null];
       items1[1] = items;
-      obj5 = closure_6(GiftPlanSelectionCardBanner$Type);
+      obj6 = closure_6(GiftPlanSelectionCardBanner$Type);
       tmp2 = closure_5;
       if (closure_9()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj5, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj6, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj5.apply(self, items1);
+        constructResult = obj6.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -103,7 +103,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { createInteractionStatus: null, timingInstant: 1, "Bool(true)": 892, "Bool(true)": -9, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 16 };
+      let obj = {};
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftPlanSelectionCardBanner$Type(closure_1[9]).MESSAGE_TYPE, obj);

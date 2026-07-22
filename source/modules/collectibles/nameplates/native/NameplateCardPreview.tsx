@@ -1,16 +1,16 @@
-// Module ID: 8691
-// Function ID: 68853
+// Module ID: 8692
+// Function ID: 68865
 // Name: NameplateCardPreview
 // Dependencies: []
 // Exports: default
 
-// Module 8691 (NameplateCardPreview)
+// Module 8692 (NameplateCardPreview)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { <string:1446693987>: null, <string:1666068817>: "no-hide-descendants", <string:1370110668>: true, <string:1549880881>: "/assets/.cache/intl/ZGVzaWdu", <string:1638698833>: null, paddingHorizontal: importDefault(dependencyMap[3]).space.PX_8 };
+obj = { 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/ZGVzaWdu", -9223372036854775808: null, 9223372036854775807: "89c1f821400ffcc75deeeab8c6315a88", -9223372036854775808: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages", paddingHorizontal: importDefault(dependencyMap[3]).space.PX_8 };
 obj.nameplatePreviewContainer = obj;
 obj.nameplateContainer = { width: "100%", backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[3]).radii.sm };
 const obj1 = { width: "100%", backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[3]).radii.sm };
@@ -35,7 +35,7 @@ export default function NameplateCardPreview(arg0) {
   const items = [{ opacity: 0.6 }];
   obj.style = items;
   const items1 = [callback(require(dependencyMap[7]).NameplateDummyUserPreview, obj), , , , ];
-  const obj1 = { width: null, marginTop: "text-feedback-positive", textAlign: "text-xs/semibold", avatarSize: require(dependencyMap[8]).AvatarSizes.XSMALL };
+  const obj1 = { avatarSize: require(dependencyMap[8]).AvatarSizes.XSMALL };
   const items2 = [{ opacity: 0.6 }];
   obj1.style = items2;
   items1[1] = callback(require(dependencyMap[7]).NameplateDummyUserPreview, obj1);
@@ -43,7 +43,7 @@ export default function NameplateCardPreview(arg0) {
   const obj3 = { width: 54, avatarSize: require(dependencyMap[8]).AvatarSizes.XSMALL, nameplate: nameplateData, style: tmp.nameplate, animate };
   obj2.children = callback(require(dependencyMap[7]).NameplateDummyUserPreview, obj3);
   items1[2] = callback(View, obj2);
-  const obj4 = { width: null, marginTop: "text-feedback-positive", textAlign: "text-xs/semibold", avatarSize: require(dependencyMap[8]).AvatarSizes.XSMALL };
+  const obj4 = { avatarSize: require(dependencyMap[8]).AvatarSizes.XSMALL };
   const items3 = [{ opacity: 0.6 }];
   obj4.style = items3;
   items1[3] = callback(require(dependencyMap[7]).NameplateDummyUserPreview, obj4);

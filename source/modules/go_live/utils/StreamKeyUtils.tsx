@@ -1,15 +1,13 @@
 // Module ID: 4190
-// Function ID: 36035
+// Function ID: 36042
 // Name: isStreamKey
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey
 
 // Module 4190 (isStreamKey)
-import closure_0 from "result";
-import { StreamTypes } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
+let closure_0 = importDefault(dependencyMap[0]);
+const StreamTypes = arg1(dependencyMap[1]).StreamTypes;
+const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
 
 export const isStreamKey = function isStreamKey(closure_29) {
   let tmp = null != closure_29;

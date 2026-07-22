@@ -1,21 +1,19 @@
 // Module ID: 407
 // Function ID: 5800
 // Name: Pressable
-// Dependencies: [29, 31, 33, 262, 46, 418, 420, 285]
+// Dependencies: []
 
 // Module 407 (Pressable)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import module_31 from "module_31";
-import "module_33";
-import module_33 from "module_33";
-import get Version from "get Version";
-
 let jsx;
-let closure_2 = [null];
-let closure_3 = [];
-({ useMemo: closure_6, useRef: closure_7, useState: closure_8 } = module_33);
-({ jsx, jsxs: closure_9 } = get_Version);
-const memoResult = module_33.memo(function Pressable(ref) {
+let closure_2 = [];
+let closure_3 = [-1768664576, 1113697248, 165542, 123657, 80500038, 30049792, 26435328, 51070208, 48285184, 55455744, -1287495424, 754975421, 1174405602, 314453, 117382, 110662, 172351, 127208, 171007, -469941663, -1991311359, 1430585345, -1979710260, 1207960371, 1174405787, 1593835952, 1627390355, 42532162, 18338816, 121131264, 80500036, 28233216];
+let closure_4 = importDefault(dependencyMap[0]);
+let closure_5 = importDefault(dependencyMap[1]);
+importAll(dependencyMap[2]);
+const obj = arg1(dependencyMap[2]);
+({ useMemo: closure_6, useRef: closure_7, useState: closure_8 } = obj);
+({ jsx, jsxs: closure_9 } = arg1(dependencyMap[3]));
+const memoResult = obj.memo(function Pressable(ref) {
   let accessibilityLabel;
   let accessibilityLiveRegion;
   let accessibilityState;

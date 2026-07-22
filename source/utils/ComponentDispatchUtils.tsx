@@ -1,14 +1,21 @@
 // Module ID: 1207
 // Function ID: 13873
-// Name: ComponentDispatcher
+// Name: reportDevtoolsEvent
 // Dependencies: []
 
-// Module 1207 (ComponentDispatcher)
+// Module 1207 (reportDevtoolsEvent)
 const ComponentActionsKeyed = require(dependencyMap[0]).ComponentActionsKeyed;
 let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult("ComponentDispatchUtils");
-let obj = {
-  logger: obj,
+const obj = {
+  389648952: "isArray",
+  -625213786: "WireType",
+  logger: {
+    warn(arg0, arg1) {
+      const items = [arg0, ...HermesBuiltin.copyRestArgs()];
+      return importDefaultResult.warn.apply(items);
+    }
+  },
   devtoolsReporter: function reportDevtoolsEvent(fullActionName, actionData, durationMs) {
     const importAll = fullActionName;
     const values = Object.values(ComponentActionsKeyed);
@@ -23,12 +30,6 @@ let obj = {
     obj.data = obj;
     obj.durationMs = durationMs;
     obj.reportEvent(obj);
-  }
-};
-obj = {
-  warn(arg0, arg1) {
-    const items = [arg0, ...HermesBuiltin.copyRestArgs()];
-    return importDefaultResult.warn.apply(items);
   }
 };
 const componentDispatcher = new require(dependencyMap[3]).ComponentDispatcher(obj);

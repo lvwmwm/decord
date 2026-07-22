@@ -1,18 +1,9 @@
 // Module ID: 7007
-// Function ID: 56187
+// Function ID: 56198
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 7007 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import { ALL_CHANNEL_TYPES } from "result";
-import closure_8 from "result";
-import result from "result";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -173,6 +164,13 @@ function updateFromServerThread(id) {
   }
   return false;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+const ALL_CHANNEL_TYPES = arg1(dependencyMap[5]).ALL_CHANNEL_TYPES;
+let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = {};
 let tmp2 = (Store) => {
   class ThreadMembersStore {
@@ -241,9 +239,9 @@ let tmp2 = (Store) => {
     }
   };
   return callback(ThreadMembersStore, items);
-}(require("result").Store);
+}(importDefault(dependencyMap[8]).Store);
 tmp2.displayName = "ThreadMembersStore";
-tmp2 = new tmp2(require("result"), {
+tmp2 = new tmp2(importDefault(dependencyMap[9]), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     let closure_9 = {};
     guilds = guilds.guilds;
@@ -309,6 +307,6 @@ tmp2 = new tmp2(require("result"), {
     return flag2;
   }
 });
-result = result.fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
 
 export default tmp2;

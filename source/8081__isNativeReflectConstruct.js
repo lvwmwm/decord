@@ -1,5 +1,5 @@
 // Module ID: 8081
-// Function ID: 64089
+// Function ID: 64099
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -64,6 +64,6 @@ const tmp3 = (arg0) => {
   return callback(ForeignObject, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "ForeignObject";
-tmp3.defaultProps = { dispatch: "r", split: "isArray", location: "accessibilityRole", __initData: "create" };
+tmp3.defaultProps = {};
 
 export default tmp3;

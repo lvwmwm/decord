@@ -1,14 +1,16 @@
-// Module ID: 15140
-// Function ID: 114256
+// Module ID: 15148
+// Function ID: 114299
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4126, 689, 1557, 14002, 15153, 5184, 4124]
 // Exports: default
 
-// Module 15140 (useTrackRoleSubscriptionUpsellAnalytics)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_role_subscriptions/useTrackRoleSubscriptionUpsellAnalytics.tsx");
+// Module 15148 (useTrackRoleSubscriptionUpsellAnalytics)
+import _slicedToArray from "_slicedToArray";
+import module_31 from "module_31";
+import { AnalyticEvents } from "get ActivityIndicator";
+import Text from "Text";
+
+const result = Text.fileFinishedImporting("modules/guild_role_subscriptions/useTrackRoleSubscriptionUpsellAnalytics.tsx");
 
 export default function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
   guildId = guildId.guildId;
@@ -22,11 +24,11 @@ export default function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
   let analyticsLocations;
   let closure_8;
   const groupListingsFetchContext = arg1(dependencyMap[3]).useGroupListingsFetchContext("useTrackRoleSubscriptionUpsellAnalytics");
-  let closure_4 = groupListingsFetchContext;
+  let module_31 = groupListingsFetchContext;
   const tmp2 = null != importDefault(dependencyMap[4])(groupListingId).activeSubscription;
   const AnalyticEvents = tmp2;
   const obj = arg1(dependencyMap[3]);
-  const items = [closure_4];
+  const items = [module_31];
   const items1 = [relevantSubscriptionListingIds];
   const stateFromStoresArray = arg1(dependencyMap[5]).useStateFromStoresArray(items, () => null != relevantSubscriptionListingIds ? relevantSubscriptionListingIds : [].filter((arg0) => {
     const subscriptionListing = subscriptionListing.getSubscriptionListing(arg0);

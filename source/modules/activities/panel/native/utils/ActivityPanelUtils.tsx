@@ -1,10 +1,10 @@
-// Module ID: 15565
-// Function ID: 118790
+// Module ID: 15573
+// Function ID: 118833
 // Name: useIsActivityPanelFullscreen
 // Dependencies: []
 // Exports: useIsActivityPanelFullscreen
 
-// Module 15565 (useIsActivityPanelFullscreen)
+// Module 15573 (useIsActivityPanelFullscreen)
 let closure_3 = importDefault(dependencyMap[0]);
 const ActivityPanelModes = arg1(dependencyMap[1]).ActivityPanelModes;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");

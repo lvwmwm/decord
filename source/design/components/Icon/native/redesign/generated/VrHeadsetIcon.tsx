@@ -1,10 +1,10 @@
-// Module ID: 13733
-// Function ID: 103893
+// Module ID: 13740
+// Function ID: 103926
 // Name: VrHeadsetIcon
 // Dependencies: []
 // Exports: VrHeadsetIcon
 
-// Module 13733 (VrHeadsetIcon)
+// Module 13740 (VrHeadsetIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VrHeadsetIcon.tsx");

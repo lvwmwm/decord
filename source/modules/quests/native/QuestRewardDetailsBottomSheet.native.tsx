@@ -1,10 +1,10 @@
-// Module ID: 10910
-// Function ID: 84791
+// Module ID: 10911
+// Function ID: 84804
 // Name: QuestRewardDetailsBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10910 (QuestRewardDetailsBottomSheet)
+// Module 10911 (QuestRewardDetailsBottomSheet)
 function QuestRewardDetailsBottomSheet(quest) {
   quest = quest.quest;
   const arg1 = quest;
@@ -34,14 +34,14 @@ function QuestRewardDetailsBottomSheet(quest) {
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { startExpanded: true };
   obj = { direction: "vertical", spacing: importDefault(dependencyMap[5]).space.PX_16, style: tmp.wrapper };
-  obj1 = { <string:1641868496>: "gr", <string:2659078597>: null, spacing: importDefault(dependencyMap[5]).space.PX_16 };
+  obj1 = { spacing: importDefault(dependencyMap[5]).space.PX_16 };
   const items3 = [callback(importDefault(dependencyMap[15]), { quest }), ];
   const obj2 = { direction: "vertical", spacing: importDefault(dependencyMap[5]).space.PX_4, style: tmp.rewardDetailsCopy };
   const obj3 = {};
   const intl = arg1(dependencyMap[11]).intl;
   obj3.children = intl.string(arg1(dependencyMap[11]).t.jyYgZ+);
   const items4 = [callback(arg1(dependencyMap[16]).Text, obj3), ];
-  const obj4 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isInTreatment", children: defaultRewardName };
+  const obj4 = { cachedAt: null, edpbxy: null, children: defaultRewardName };
   items4[1] = callback(arg1(dependencyMap[16]).Text, obj4);
   obj2.children = items4;
   items3[1] = callback2(arg1(dependencyMap[14]).Stack, obj2);

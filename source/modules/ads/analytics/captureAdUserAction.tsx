@@ -1,10 +1,10 @@
-// Module ID: 9442
-// Function ID: 73585
+// Module ID: 9443
+// Function ID: 73598
 // Name: emitClickEventWithCreative
 // Dependencies: []
 // Exports: captureAdUserAction
 
-// Module 9442 (emitClickEventWithCreative)
+// Module 9443 (emitClickEventWithCreative)
 function emitClickEventWithCreative() {
   return _emitClickEventWithCreative(...arguments);
 }

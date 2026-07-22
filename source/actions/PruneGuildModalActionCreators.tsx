@@ -1,8 +1,8 @@
-// Module ID: 15179
-// Function ID: 114496
+// Module ID: 15187
+// Function ID: 114539
 // Dependencies: []
 
-// Module 15179
+// Module 15187
 let closure_2 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("actions/PruneGuildModalActionCreators.tsx");

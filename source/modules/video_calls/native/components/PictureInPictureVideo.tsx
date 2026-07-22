@@ -1,9 +1,9 @@
-// Module ID: 10548
-// Function ID: 82414
+// Module ID: 10549
+// Function ID: 82427
 // Name: areParticipantsEqual
 // Dependencies: []
 
-// Module 10548 (areParticipantsEqual)
+// Module 10549 (areParticipantsEqual)
 function areParticipantsEqual(arg0, arg1) {
   let tmp;
   let tmp2;
@@ -39,9 +39,9 @@ obj.pip = { borderRadius: importDefault(dependencyMap[15]).radii.sm, overflow: "
 obj3 = { borderRadius: importDefault(dependencyMap[15]).radii.lg, overflow: "hidden" };
 obj.pipFab = obj3;
 obj.avatarContainer = {};
-obj.activityPipContainer = { paddingTop: false, justifyContent: false };
+obj.activityPipContainer = { backgroundColor: false, borderRadius: false };
 obj.thermalAlertIconContainer = {};
-const obj4 = { "Null": false, "Null": false, color: importDefault(dependencyMap[15]).colors.WHITE };
+const obj4 = { "Null": "<string:1912602975>", "Null": "height", color: importDefault(dependencyMap[15]).colors.WHITE };
 obj.thermalAlertIcon = obj4;
 let closure_19 = obj1.createStyles(obj);
 let closure_20 = importAllResult.memo((channel) => {
@@ -183,7 +183,7 @@ let closure_20 = importAllResult.memo((channel) => {
     const obj3 = { onSingleTap: onScreenshareTap, onDoubleTap: onScreenshareTap };
     callback3(importDefault(dependencyMap[22]), obj3);
   } else {
-    const obj4 = { height: null, justifyContent: null, resizeMode: arg1(dependencyMap[24]).ResizeMode.CONTAIN, participant: pipParticipant, onSingleTap: onPipTap, onDoubleTap: onPipTap };
+    const obj4 = { <string:140633209>: null, <string:1406208081>: null, resizeMode: arg1(dependencyMap[24]).ResizeMode.CONTAIN, participant: pipParticipant, onSingleTap: onPipTap, onDoubleTap: onPipTap };
     callback3(importDefault(dependencyMap[23]), obj4);
     const tmp26 = importDefault(dependencyMap[23]);
   }

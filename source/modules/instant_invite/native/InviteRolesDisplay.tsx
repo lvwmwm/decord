@@ -1,16 +1,16 @@
-// Module ID: 10174
-// Function ID: 78608
+// Module ID: 10175
+// Function ID: 78621
 // Name: InviteRolesDisplay
 // Dependencies: []
 // Exports: default
 
-// Module 10174 (InviteRolesDisplay)
+// Module 10175 (InviteRolesDisplay)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { marginTop: 8 }, label: { marginBottom: 4 }, rolesRow: { -9223372036854775808: null, 7741: null } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { marginTop: 8 }, label: { marginBottom: 4 }, rolesRow: { "Bool(true)": null, "Bool(true)": null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/instant_invite/native/InviteRolesDisplay.tsx");
 
@@ -30,7 +30,7 @@ export default function InviteRolesDisplay(roleIds) {
   let tmp2 = null;
   if (0 !== stateFromStoresArray.length) {
     obj = { style: tmp.container };
-    obj = { hasMaxConnections: 15, isBoostOnlySubscription: "center", style: tmp.label };
+    obj = { cachedAt: 15, edpbxy: "center", style: tmp.label };
     const intl = arg1(dependencyMap[7]).intl;
     obj.children = intl.string(arg1(dependencyMap[7]).t.stcSfI);
     const items2 = [callback(arg1(dependencyMap[6]).Text, obj), ];

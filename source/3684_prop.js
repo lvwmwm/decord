@@ -10,9 +10,9 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { application: 173030459411450930000000, Set: -2086849481348546500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Icon: -2086849481343527800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, id: 15177101876252350000000000000000000000000000000000000000000000000000000000000000000 }, narrow: {}, short: {} };
+    obj = { long: { accessibilityHint: 120, legacyCompat_selected: 80, legacyCompat_onPress: "center", eventTarget: "r" }, narrow: {}, short: { accessibilityHint: 21.599999999999998, legacyCompat_selected: 21.599999999999998, legacyCompat_onPress: null, eventTarget: null } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, narrow: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, short: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 } };
     obj.disjunction = obj1;
     const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { application: 173030459411450930000000, Set: -2086849481348546500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Icon: -2086849481343527800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, id: 15177101876252350000000000000000000000000000000000000000000000000000000000000000000 }, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: {} } }, locale: "en" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: 120, legacyCompat_selected: 80, legacyCompat_onPress: "center", eventTarget: "r" }, narrow: {}, short: { accessibilityHint: 21.599999999999998, legacyCompat_selected: 21.599999999999998, legacyCompat_onPress: null, eventTarget: null } }, disjunction: { long: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, narrow: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, short: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "en" });

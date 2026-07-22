@@ -1,10 +1,10 @@
-// Module ID: 11429
-// Function ID: 88951
+// Module ID: 11430
+// Function ID: 88964
 // Name: useCommandDiscoveryManager
 // Dependencies: []
 // Exports: updateInitialSectionId
 
-// Module 11429 (useCommandDiscoveryManager)
+// Module 11430 (useCommandDiscoveryManager)
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => ({ initialSectionId: undefined }));
 const _module1 = require(dependencyMap[2]);

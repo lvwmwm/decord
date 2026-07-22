@@ -1,5 +1,5 @@
 // Module ID: 7080
-// Function ID: 56705
+// Function ID: 56716
 // Name: getAttachmentMimeTypes
 // Dependencies: []
 // Exports: logMessageSendFailure

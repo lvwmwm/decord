@@ -1,10 +1,10 @@
-// Module ID: 13359
-// Function ID: 101618
+// Module ID: 13366
+// Function ID: 101651
 // Name: getChannelDetailsFromRoute
 // Dependencies: []
 // Exports: default
 
-// Module 13359 (getChannelDetailsFromRoute)
+// Module 13366 (getChannelDetailsFromRoute)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/getChannelDetailsFromRoute.tsx");
 

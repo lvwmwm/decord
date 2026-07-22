@@ -1,10 +1,10 @@
-// Module ID: 9879
-// Function ID: 76512
+// Module ID: 9880
+// Function ID: 76525
 // Name: usePlaygroundAccessExperiment
 // Dependencies: []
 // Exports: getHasPlaygroundAccess, useHasPlaygroundAccess
 
-// Module 9879 (usePlaygroundAccessExperiment)
+// Module 9880 (usePlaygroundAccessExperiment)
 function usePlaygroundAccessExperiment(design_systems_settings) {
   return apexExperiment.useConfig({ location: design_systems_settings }).enabled;
 }

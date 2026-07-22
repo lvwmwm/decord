@@ -1,8 +1,8 @@
-// Module ID: 8914
-// Function ID: 70322
+// Module ID: 8915
+// Function ID: 70335
 // Dependencies: []
 
-// Module 8914
+// Module 8915
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -28,7 +28,7 @@ const obj = {
       if (!blocked.isBlocked(arg3)) {
         const user2 = user.getUser(arg3);
         const HTTP = arg1(dependencyMap[5]).HTTP;
-        const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: doCall.CALL(arg0) };
+        const obj = { y: null, isArray: null, accessible: null, url: doCall.CALL(arg0) };
         const value = HTTP.get(obj);
         value.then((body) => {
           let ringable = arg2;
@@ -38,7 +38,7 @@ const obj = {
           doCall(ringable);
         }, () => {
           let obj = arg0(arg1[6]);
-          obj.track(closure_7.OPEN_POPOUT, { mustConfirmExternalLink: null, direction: null });
+          obj.track(closure_7.OPEN_POPOUT, { "Bool(false)": 234, "Bool(false)": 147.5 });
           obj = {};
           const intl = self(arg1[8]).intl;
           obj.title = intl.string(self(arg1[8]).t.My50nf);

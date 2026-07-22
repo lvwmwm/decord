@@ -1,12 +1,16 @@
-// Module ID: 10492
-// Function ID: 81916
+// Module ID: 10493
+// Function ID: 81929
 // Name: LeakyBucket
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 10492 (LeakyBucket)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 10493 (LeakyBucket)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
+
+export default () => {
   class LeakyBucket {
     constructor(arg0, arg1) {
       tmp = LeakyBucket(this, LeakyBucket);
@@ -98,6 +102,3 @@ const tmp2 = () => {
   items[2] = obj;
   return callback(LeakyBucket, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
-
-export default tmp2;

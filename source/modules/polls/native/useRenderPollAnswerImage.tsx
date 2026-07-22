@@ -1,10 +1,10 @@
-// Module ID: 11321
-// Function ID: 88096
+// Module ID: 11322
+// Function ID: 88109
 // Name: useRenderPollAnswerImage
 // Dependencies: []
 // Exports: default
 
-// Module 11321 (useRenderPollAnswerImage)
+// Module 11322 (useRenderPollAnswerImage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const ActivityIndicator = arg1(dependencyMap[2]).ActivityIndicator;

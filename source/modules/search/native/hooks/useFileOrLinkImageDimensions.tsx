@@ -1,10 +1,10 @@
-// Module ID: 15268
-// Function ID: 115261
+// Module ID: 15276
+// Function ID: 115304
 // Name: useFileOrLinkImageDimensions
 // Dependencies: []
 // Exports: useFileOrLinkImageDimensions
 
-// Module 15268 (useFileOrLinkImageDimensions)
+// Module 15276 (useFileOrLinkImageDimensions)
 let closure_0 = importAll(dependencyMap[0]);
 ({ FILES_OR_LINKS_GAP_WIDTH: closure_1, FILES_OR_LINKS_NUM_COLUMNS: closure_2, FILE_OR_LINK_IMAGE_RATIO: closure_3, SEARCH_LIST_HORIZONTAL_PADDING: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

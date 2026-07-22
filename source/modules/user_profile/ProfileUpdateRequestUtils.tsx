@@ -1,10 +1,10 @@
-// Module ID: 9772
-// Function ID: 75989
+// Module ID: 9773
+// Function ID: 76002
 // Name: getProfileChangesForUpdateRequest
 // Dependencies: []
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 9772 (getProfileChangesForUpdateRequest)
+// Module 9773 (getProfileChangesForUpdateRequest)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 

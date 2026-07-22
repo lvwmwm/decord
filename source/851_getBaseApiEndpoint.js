@@ -1,7 +1,7 @@
 // Module ID: 851
 // Function ID: 9492
 // Name: getBaseApiEndpoint
-// Dependencies: [131072]
+// Dependencies: []
 
 // Module 851 (getBaseApiEndpoint)
 function getBaseApiEndpoint(protocol) {

@@ -1,5 +1,5 @@
 // Module ID: 4952
-// Function ID: 42534
+// Function ID: 42543
 // Name: useIsStageSpeakingDisabledForCurrentUser
 // Dependencies: []
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover

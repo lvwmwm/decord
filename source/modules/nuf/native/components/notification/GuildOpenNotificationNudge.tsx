@@ -1,10 +1,10 @@
-// Module ID: 15128
-// Function ID: 114164
+// Module ID: 15136
+// Function ID: 114207
 // Name: GuildOpenNotificationNudge
 // Dependencies: []
 // Exports: default, useGuildOpenNudge
 
-// Module 15128 (GuildOpenNotificationNudge)
+// Module 15136 (GuildOpenNotificationNudge)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

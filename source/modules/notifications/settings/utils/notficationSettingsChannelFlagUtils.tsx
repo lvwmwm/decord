@@ -1,10 +1,10 @@
-// Module ID: 10274
-// Function ID: 79378
+// Module ID: 10275
+// Function ID: 79391
 // Name: useChannelPresetSettings
 // Dependencies: []
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting, useChannelPresetInheritance, useChannelPresetSettings
 
-// Module 10274 (useChannelPresetSettings)
+// Module 10275 (useChannelPresetSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -31,7 +31,7 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
   const arg1 = channel;
   let obj = arg1(dependencyMap[6]);
   const items = [closure_5];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => arg0(closure_2[8]).filterOverrides(store.getChannelOverrides(arg0.guild_id), { 1636040136: true, -1585032278: true, 50375260: true }));
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => arg0(closure_2[8]).filterOverrides(store.getChannelOverrides(arg0.guild_id), { activeOpacity: "y", borderRadius: "isArray", flexGrow: "Reflect" }));
   const importDefault = stateFromStoresArray;
   const items1 = [closure_5, closure_4];
   const items2 = [, , ];
@@ -53,7 +53,7 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
     }
     const obj = self(closure_2[7]);
     const guildUnreadSetting = store.getGuildUnreadSetting(self.guild_id);
-    items1 = [false, obj.presetName(self(closure_2[7]).presetFromSettings(guildUnreadSetting, store.getMessageNotifications(self.guild_id)))];
+    items1 = [-0.0000000000000000000000000000000000000000000000000000000000000000006398718284889051, obj.presetName(self(closure_2[7]).presetFromSettings(guildUnreadSetting, store.getMessageNotifications(self.guild_id)))];
   }, items2), 2);
   return obj;
 };

@@ -1,5 +1,5 @@
 // Module ID: 7020
-// Function ID: 56345
+// Function ID: 56356
 // Name: getURL
 // Dependencies: []
 
@@ -19,7 +19,7 @@ async function _getEmojiColors(id, arg1) {
   id = id.id;
   if (null != id) {
     let obj = callback2(closure_2[7]);
-    obj = { ddd: null, ind: null, ty: null, id };
+    obj = { ao: null, accessible: null, hasDiversityParent: null, id };
     let emojiURL = obj.getEmojiURL(obj);
   } else {
     emojiURL = callback3(tmp);

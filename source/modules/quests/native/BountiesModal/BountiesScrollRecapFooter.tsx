@@ -1,10 +1,10 @@
-// Module ID: 13824
-// Function ID: 104536
+// Module ID: 13831
+// Function ID: 104576
 // Name: BountiesScrollRecapFooter
 // Dependencies: []
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 13824 (BountiesScrollRecapFooter)
+// Module 13831 (BountiesScrollRecapFooter)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -15,9 +15,9 @@ let closure_7 = arg1(dependencyMap[4]).createStyles(() => {
   obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
   obj.container = obj;
   obj.headerLabel = { textTransform: "uppercase" };
-  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_4 };
+  obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_4 };
   obj.orbRow = obj;
-  obj.rive = { paddingTop: false, justifyContent: false };
+  obj.rive = { backgroundColor: false, borderRadius: false };
   const obj1 = {};
   let num = 0;
   if (obj5.isIOS()) {
@@ -38,9 +38,9 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   let obj = { style: tmp.container, accessibilityLabel: "" + stringResult + ", +" + orbAmount };
   obj = { style: tmp.headerLabel, children: stringResult };
   const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  obj = { style: tmp.orbRow };
-  const items1 = [callback(arg1(dependencyMap[9]).OrbsIcon, { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003576746115128254, "Null": -16293828138055107000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": NaN }), ];
-  const obj1 = { color: null, textTransform: "secondary", letterSpacing: false, style: tmp.orbAmount, children: "+" + orbAmount };
+  obj = { <string:3798542332>: 48, <string:2195412909>: 12, <string:1614302748>: 4, style: tmp.orbRow };
+  const items1 = [callback(arg1(dependencyMap[9]).OrbsIcon, { "Bool(true)": 1948506963, "Bool(true)": 19127130, "Bool(true)": 564779089 }), ];
+  const obj1 = { NOT_FOUND_ERR: null, NOT_SUPPORTED_ERR: "secondary", INUSE_ATTRIBUTE_ERR: false, style: tmp.orbAmount, children: "+" + orbAmount };
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj1);
   obj.children = items1;
   items[1] = callback2(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 16169
-// Function ID: 124663
+// Module ID: 16177
+// Function ID: 124705
 // Name: areTypesInSameSection
 // Dependencies: []
 // Exports: getDnDUpdates, getDropData
 
-// Module 16169 (areTypesInSameSection)
+// Module 16177 (areTypesInSameSection)
 function areTypesInSameSection(type, type2) {
   let tmp = null != type && null != type2;
   if (tmp) {
@@ -178,7 +178,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
           let parent_id2 = channelList[num10 - 1];
           let id2 = getFirstChannelOfType(1, localChannel2.id, localChannel.type, channelList);
           if (null == parent_id2) {
-            let obj2 = { GiftCardStack3dIllustration: "o", selected_teen_id: "o" };
+            let obj2 = { bottom: "o", raw: "o" };
           } else {
             obj2 = null;
             if (null != id2) {

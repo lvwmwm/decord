@@ -1,12 +1,11 @@
 // Module ID: 832
 // Function ID: 9263
 // Name: SentryNonRecordingSpan
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 
 // Module 832 (SentryNonRecordingSpan)
-import result from "result";
-import result from "result";
-
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const SentryNonRecordingSpan = () => {
@@ -114,5 +113,5 @@ export const SentryNonRecordingSpan = () => {
 
     }
   };
-  return result(SentryNonRecordingSpan, items);
+  return callback(SentryNonRecordingSpan, items);
 }();

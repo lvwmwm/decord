@@ -1,5 +1,5 @@
 // Module ID: 4387
-// Function ID: 38793
+// Function ID: 38801
 // Name: ToPrimitive
 // Dependencies: []
 
@@ -59,11 +59,11 @@ export default function ToPrimitive(arg0) {
               throw typeError1;
             }
           }
-          const items = [];
+          const arr = "string" === str10 ? [80257857, -1190178560] : [false, false];
           let num6 = 0;
-          if (0 < items.length) {
+          if (0 < arr.length) {
             while (true) {
-              let obj = arg0[items[num6]];
+              let obj = arg0[arr[num6]];
               let tmp24 = require;
               let tmp25 = dependencyMap;
               if (require(dependencyMap[0])(obj)) {

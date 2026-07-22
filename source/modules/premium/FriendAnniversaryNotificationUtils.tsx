@@ -1,10 +1,10 @@
-// Module ID: 14209
-// Function ID: 107483
+// Module ID: 14217
+// Function ID: 107526
 // Name: onFriendAnniversaryNotificationSettingsChanged
 // Dependencies: []
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 14209 (onFriendAnniversaryNotificationSettingsChanged)
+// Module 14217 (onFriendAnniversaryNotificationSettingsChanged)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 let closure_4 = require(dependencyMap[1]).NotificationSettingsUpdateType;
 const _module = require(dependencyMap[4]);

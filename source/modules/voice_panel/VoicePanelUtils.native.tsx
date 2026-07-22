@@ -1,16 +1,15 @@
-// Module ID: 10622
-// Function ID: 82845
+// Module ID: 10623
+// Function ID: 82858
 // Name: isVoicePanelEnabled
 // Dependencies: [0, 4294967295, 4294967295, 0, 0, 0]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 10622 (isVoicePanelEnabled)
-import closure_2 from "result";
-import result from "result";
+// Module 10623 (isVoicePanelEnabled)
+import __exportStarResult1 from "__exportStarResult1";
 
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
-result = result.fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
 
 export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
   let tmp = !arg1(dependencyMap[3]).isStageVoicePanelEnabled("voice_panel_utils");
@@ -28,12 +27,12 @@ export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
   return !tmp;
 };
 export const useIsVoicePanelShowing = function useIsVoicePanelShowing() {
-  const items = [closure_2, closure_3];
+  const items = [__exportStarResult1, closure_3];
   return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    let obj = closure_2;
+    let obj = __exportStarResult1;
     let obj2 = closure_3;
-    if (closure_2 === undefined) {
-      obj = closure_2;
+    if (__exportStarResult1 === undefined) {
+      obj = __exportStarResult1;
     }
     if (obj2 === undefined) {
       obj2 = closure_3;

@@ -1,10 +1,10 @@
-// Module ID: 10301
-// Function ID: 79520
+// Module ID: 10302
+// Function ID: 79533
 // Name: MessageNotificationReactBar
 // Dependencies: []
 // Exports: MessageNotificationReactBar
 
-// Module 10301 (MessageNotificationReactBar)
+// Module 10302 (MessageNotificationReactBar)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Keyboard: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const NOTIFICATION_MAX_WIDTH = arg1(dependencyMap[2]).NOTIFICATION_MAX_WIDTH;

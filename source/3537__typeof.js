@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+    const obj = { value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const AMPMMidnightParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 80);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", [2130707213, -2097151219, -2046819571, -2013265139, -1979710707, 1946157837]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const AMPMMidnightParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 80);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [2130707213, -2097151219, -2046819571, -2013265139, -1979710707, 1946157837]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const AMPMMidnightParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: AMPMMidnightParser };
+  let obj = { "": null, children: null, "": null, value: AMPMMidnightParser };
   AMPMMidnightParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class AMPMMidnightParser {
@@ -256,7 +256,7 @@ export const AMPMMidnightParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 80);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [2130707213, -2097151219, -2046819571, -2013265139, -1979710707, 1946157837]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -280,14 +280,14 @@ export const AMPMMidnightParser = (Parser) => {
         if ("bb" !== arg1) {
           if ("bbb" !== arg1) {
             if ("bbbbb" === arg1) {
-              return dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
+              return dayPeriod.dayPeriod(arg0, {});
             } else {
-              return dayPeriod.dayPeriod(arg0, { "Bool(true)": 52931328, "Bool(true)": -213302784 }) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
+              return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
             }
           }
         }
       }
-      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
+      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
     }
   };
   const items = [obj, ];

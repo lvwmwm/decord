@@ -1,7 +1,7 @@
 // Module ID: 4550
-// Function ID: 39882
+// Function ID: 39890
 // Name: LinearGradient
-// Dependencies: []
+// Dependencies: [4294967295, 4294967295]
 
 // Module 4550 (LinearGradient)
 const Platform = require(dependencyMap[0]).Platform;

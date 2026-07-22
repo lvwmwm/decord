@@ -1,10 +1,10 @@
-// Module ID: 9039
-// Function ID: 71008
+// Module ID: 9040
+// Function ID: 71021
 // Name: _transferToPlaystationWithAlert
 // Dependencies: []
 // Exports: transferToPlaystationWithAlert
 
-// Module 9039 (_transferToPlaystationWithAlert)
+// Module 9040 (_transferToPlaystationWithAlert)
 function _transferToPlaystationWithAlert() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

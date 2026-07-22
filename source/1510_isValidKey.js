@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 1510 (isValidKey)
-let closure_3 = [0.949019667682, 0.650980392157];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

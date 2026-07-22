@@ -9,7 +9,7 @@ if ("function" === typeof Object.create) {
       value.super_ = super_;
       const _Object = Object;
       let obj = {};
-      obj = { value };
+      obj = { 1837105156: 1, 894631940: "column", 65904547: 200, 1233076609: "", value };
       obj.constructor = obj;
       value.prototype = Object.create(super_.prototype, obj);
     }

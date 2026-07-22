@@ -1,41 +1,41 @@
 // Module ID: 15818
-// Function ID: 120925
+// Function ID: 120951
 // Dependencies: []
 
 // Module 15818
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "hi",
+  locale: "ro",
   pluralRuleFunction(arg0, arg1) {
+    const parts = String(arg0).split(".");
+    let substr = Number(parts[0]) == arg0;
+    if (substr) {
+      const first = parts[0];
+      substr = first.slice(-2);
+    }
     if (arg1) {
-      let str3 = "one";
-      if (1 != arg0) {
-        let str5 = "two";
-        if (2 != arg0) {
-          str5 = "two";
-          if (3 != arg0) {
-            let str6 = "few";
-            if (4 != arg0) {
-              let str7 = "other";
-              if (6 == arg0) {
-                str7 = "many";
-              }
-              str6 = str7;
+      let str5 = "other";
+      if (1 == arg0) {
+        str5 = "one";
+      }
+      let str2 = str5;
+    } else if (1 != arg0) {
+      if (tmp2) {
+        if (0 != arg0) {
+          let str4 = "other";
+          if (1 != arg0) {
+            str4 = "other";
+            if (substr >= 1) {
+              str4 = "other";
             }
-            str5 = str6;
           }
         }
-        str3 = str5;
+        str2 = str4;
       }
-      let str2 = str3;
+      str4 = "few";
     } else {
-      str2 = "other";
-      if (arg0 >= 0) {
-        str2 = "other";
-        if (arg0 <= 1) {
-          str2 = "one";
-        }
-      }
+      str2 = "one";
     }
     return str2;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: null, 0: null });

@@ -1,10 +1,10 @@
-// Module ID: 10281
-// Function ID: 79414
+// Module ID: 10282
+// Function ID: 79427
 // Name: NotificationSettingsMessageNotification
 // Dependencies: []
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10281 (NotificationSettingsMessageNotification)
+// Module 10282 (NotificationSettingsMessageNotification)
 class NotificationSettingsMessageNotification {
   constructor(arg0) {
     arg1 = global;
@@ -18,14 +18,14 @@ class NotificationSettingsMessageNotification {
     tmp4 = View;
     tmp5 = jsxs;
     tmp6 = View;
-    obj2 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+    obj2 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
     obj2.style = tmp.headerTitle;
     intl = arg1(dependencyMap[7]).intl;
     obj2.children = intl.string(arg1(dependencyMap[7]).t.1m22ZB);
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[6]).Text, obj2);
     tmp7 = jsx;
-    obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images" };
+    obj3 = {};
     if ("guild" === global.context) {
       tmp11 = arg1;
       tmp12 = dependencyMap;
@@ -80,7 +80,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { ip: false, op: false, w: false, h: false, nm: false, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.card = obj;
 obj.cta = { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 };
 obj.label = {};

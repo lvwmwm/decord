@@ -1,9 +1,9 @@
 // Module ID: 387
 // Function ID: 5718
 // Name: VScrollViewNativeComponent
-// Dependencies: []
+// Dependencies: [0, 0]
 
 // Module 387 (VScrollViewNativeComponent)
 
-export const VScrollViewNativeComponent = importDefault(dependencyMap[1]);
-export const VScrollContentViewNativeComponent = importDefault(dependencyMap[0]);
+export const VScrollViewNativeComponent = require("__exportStarResult1");
+export const VScrollContentViewNativeComponent = require("__exportStarResult1");

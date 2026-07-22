@@ -1,5 +1,5 @@
 // Module ID: 4398
-// Function ID: 38820
+// Function ID: 38828
 // Dependencies: []
 
 // Module 4398
@@ -16,7 +16,7 @@ if (Object.keys) {
   let closure_4 = propertyIsEnumerable.call(() => {
 
   }, "prototype");
-  let closure_5 = [];
+  let closure_5 = [null, null, null, null, null, null, null];
   function equalsConstructorPrototype(arg0) {
     const constructor = arg0.constructor;
     let tmp = constructor;

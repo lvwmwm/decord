@@ -1,10 +1,10 @@
-// Module ID: 10893
-// Function ID: 84700
+// Module ID: 10894
+// Function ID: 84713
 // Name: _getMetadata
 // Dependencies: []
 // Exports: getMetadata, play, sync
 
-// Module 10893 (_getMetadata)
+// Module 10894 (_getMetadata)
 function _getMetadata() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

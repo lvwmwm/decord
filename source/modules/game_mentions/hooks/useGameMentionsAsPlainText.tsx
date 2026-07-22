@@ -1,10 +1,10 @@
-// Module ID: 9059
-// Function ID: 71125
+// Module ID: 9060
+// Function ID: 71138
 // Name: useGameMentionsAsPlainText
 // Dependencies: []
 // Exports: useGameMentionsAsPlainText
 
-// Module 9059 (useGameMentionsAsPlainText)
+// Module 9060 (useGameMentionsAsPlainText)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

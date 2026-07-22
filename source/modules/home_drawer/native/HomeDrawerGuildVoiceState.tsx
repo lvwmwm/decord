@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 111070
+// Module ID: 14733
+// Function ID: 111113
 // Name: VoiceUsers
 // Dependencies: []
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 14725 (VoiceUsers)
+// Module 14733 (VoiceUsers)
 function VoiceUsers(arg0) {
   let voiceUsers;
   ({ voiceUsers, guildId: closure_0 } = arg0);
@@ -14,7 +14,7 @@ function VoiceUsers(arg0) {
   }
   let tmp = null;
   if (0 !== voiceUsers.length) {
-    let obj = { style: { "Null": true, "Null": true, "Bool(false)": true } };
+    let obj = { style: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null } };
     obj = {
       size: arg1(dependencyMap[11]).AvatarSizes.XSMALL,
       names: substr.map((username) => username.username),
@@ -32,7 +32,7 @@ function VoiceUsers(arg0) {
 function LiveTag() {
   const tmp = callback4();
   let obj = { style: tmp.tag };
-  obj = { style: tmp.tagText };
+  obj = { guild_id: "Array", exports: "accessibilityRole", body: "track", style: tmp.tagText };
   const intl = arg1(dependencyMap[13]).intl;
   obj.children = intl.string(arg1(dependencyMap[13]).t.dI3q4h).toUpperCase();
   obj.children = callback(arg1(dependencyMap[12]).Text, obj);
@@ -48,25 +48,25 @@ let closure_9 = importDefault(dependencyMap[5]);
 const ChannelTypes = arg1(dependencyMap[6]).ChannelTypes;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { voiceContainer: { mm: "isArray", nm: "state", mn: "textAlign", hd: "r" } };
+obj = { voiceContainer: { isLoading: "isArray", useKeyboardAwareWrapper: "y", secureTextEntry: "title", title: "r" } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const merged = Object.assign(importDefault(dependencyMap[9]).shadows.SHADOW_MEDIUM);
 obj.streamPreviewShadow = obj;
-const obj1 = { "Null": -6, "Null": -1348517615, "Null": 997326849, "Null": 922746880, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+const obj1 = { skuId: -6, product: -663207663, onPress: 997326849, onTrackPress: 922746880, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.streamPreview = obj1;
-obj.streamPreviewDarkGradient = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291123513441434, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007461734325599066, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005675969629495, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002829684455788989, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007509222090831951, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014055305205482 };
-obj.streamPreviewGradient = { "Bool(false)": -1136590402, "Bool(false)": 1358954754, "Bool(false)": -1101950937, "Bool(false)": 45891841, "Bool(false)": -1034878975, "Bool(false)": 659620164 };
-const obj2 = { <string:1454022907>: true, <string:1311854946>: "/assets/modules/stage_channels/native/images", <string:1453996901>: 25, <string:1565745756>: 24, <string:11164842>: null, <string:995910659>: "b252f7dc065300671ba9347414eb0bad", borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.streamPreviewBorder = obj2;
+obj.streamPreviewDarkGradient = { accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291123513441434, location: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016049012850650887, hash: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005676189224457, accessibilityRole: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016864607967199378, apply: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003979175292826601, y: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001088538531064784 };
+obj.streamPreviewGradient = { accessibilityRole: 101076, location: 1368388945, hash: -801046075, accessibilityRole: 1358954754, apply: -984509459, y: 47202561 };
+const tmp2 = arg1(dependencyMap[7]);
+obj.streamPreviewBorder = { borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 let closure_13 = obj.createStyles(obj);
 let obj5 = arg1(dependencyMap[8]);
 const obj3 = {};
-const tmp2 = arg1(dependencyMap[7]);
-obj3.tag = { borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400 };
-obj5 = { zIndex: -1405021741, useAngle: 822083934, angle: -1431655765, color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
+const obj4 = { marginHorizontal: true, alignContent: true, position: true, width: true, height: true, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400, opacity: true, backgroundColor: true, borderRadius: true, marginEnd: true, borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs };
+obj3.tag = obj4;
+obj5 = { marginLeft: -302624512, marginRight: 1598701841, width: -1422852095, color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
 obj3.tagText = obj5;
 let closure_14 = obj5.createStyles(obj3);
-const obj4 = { borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400 };
+const obj2 = { borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildVoiceState.tsx");
 
 export const GuildVoiceState = function GuildVoiceState(arg0) {
@@ -108,9 +108,9 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj4 = { uri: previewUrl };
       obj3.source = obj4;
       const items1 = [callback(importDefault(dependencyMap[15]), obj3), , , , ];
-      const obj5 = { colors: [], start: {}, end: {}, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
+      const obj5 = { colors: [false, false], start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
       items1[1] = callback(importDefault(dependencyMap[16]), obj5);
-      const obj6 = { colors: [], start: {}, end: {}, style: tmp.streamPreviewGradient, pointerEvents: "none" };
+      const obj6 = { colors: [true, true], start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: "<string:2491613185>", 0: "<string:2941583362>" }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
       items1[2] = callback(importDefault(dependencyMap[16]), obj6);
       const obj7 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = callback(View, obj7);

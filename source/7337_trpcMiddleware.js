@@ -1,5 +1,5 @@
 // Module ID: 7337
-// Function ID: 59169
+// Function ID: 59180
 // Name: trpcMiddleware
 // Dependencies: []
 // Exports: trpcMiddleware
@@ -64,7 +64,7 @@ export const trpcMiddleware = function trpcMiddleware() {
           obj = { name: "trpc/" + path, op: "rpc.server" };
           obj.attributes = obj(obj({}, path(closure_1[12]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "route"), path(closure_1[12]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.rpc.trpc");
           return obj.startSpanManual(obj, () => {
-            let closure_0 = callback(/* F59176 */ function*() { ... });
+            let closure_0 = callback(/* F59187 */ function*() { ... });
             return () => { ... };
           }());
         });

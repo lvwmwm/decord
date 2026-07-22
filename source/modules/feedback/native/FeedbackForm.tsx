@@ -1,19 +1,19 @@
-// Module ID: 9494
-// Function ID: 73976
+// Module ID: 9495
+// Function ID: 73989
 // Name: FeedbackForm
 // Dependencies: []
 // Exports: FeedbackForm
 
-// Module 9494 (FeedbackForm)
+// Module 9495 (FeedbackForm)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const FeedbackRating = arg1(dependencyMap[2]).FeedbackRating;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { 9223372036854775807: "usernameOnClick", 0: "headerBar", 0: "BOT_HTTP_INTERACTIONS" } };
+obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { 242550644: null, -1047526311: null, 534116827: null } };
 obj = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.reason = obj;
-const obj1 = { MKTG_HYPESQUAD_FORM_SUBMITTED: "r", marginInlineEnd: "gift_info", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.doNotShowAgainContainer = obj1;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -69,7 +69,7 @@ export const FeedbackForm = function FeedbackForm(otherKey) {
     tmp11 = null;
     if (first1.rating !== FeedbackRating.GOOD) {
       obj = {};
-      obj = { style: tmp.reasonsHeader, children: reasonsHeaderLabel };
+      obj = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.reasonsHeader, children: reasonsHeaderLabel };
       const items2 = [callback2(arg1(dependencyMap[11]).Text, obj), ];
       const obj1 = { border: "subtle", style: tmp.reasonsList, children: tmp10 };
       items2[1] = callback2(arg1(dependencyMap[12]).Card, obj1);

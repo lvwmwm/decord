@@ -1,17 +1,17 @@
-// Module ID: 13826
-// Function ID: 104545
+// Module ID: 13833
+// Function ID: 104585
 // Name: BountiesRecapOrbsBackground
 // Dependencies: []
 // Exports: BountiesScrollRecapPage
 
-// Module 13826 (BountiesRecapOrbsBackground)
+// Module 13833 (BountiesRecapOrbsBackground)
 function BountiesRecapOrbsBackground(arg0) {
   let reducedMotion;
   let style;
   ({ style, reducedMotion } = arg0);
   let obj = arg1(dependencyMap[6]);
   if (obj.isAndroid()) {
-    obj = { x-sm: "<string:285213129>", sm: "<string:560365649>", md: "list", md-lg: true, style };
+    obj = { "Null": null, "Null": null, "Null": null, "Null": null, style };
     obj = { url: importDefault(dependencyMap[8]), style: closure_3.absoluteFillObject, autoplay: !reducedMotion };
     obj.children = callback(arg1(dependencyMap[7]).APNGPlayer, obj);
     let tmpResult = tmp(closure_4, obj);
@@ -36,10 +36,10 @@ let closure_9 = arg1(dependencyMap[5]).createStyles(() => {
   let obj = {};
   obj = { overflow: "hidden", borderRadius: lg, backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj.root = obj;
-  obj = { 1414937504: "isArray", 1380856145: "Array", 86689912: "constructor", 1223236048: "values", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
+  obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
   obj.content = obj;
   obj.centeredCopy = {};
-  obj.orbsBackground = { 1416126881: 0, 251666713: -8, -1545309167: 0, 1432133730: 20, -1973072813: 300, -1032858308: 1.5 };
+  obj.orbsBackground = { "Bool(false)": 0, "Bool(false)": -8, "Bool(false)": 0, "Bool(false)": 20, "Bool(false)": 300, "Bool(false)": 1.5 };
   obj.headerLabel = { paddingBottom: importDefault(dependencyMap[4]).space.PX_4, textTransform: "uppercase" };
   const obj1 = { paddingBottom: importDefault(dependencyMap[4]).space.PX_4, textTransform: "uppercase" };
   obj.titleRow = { paddingBottom: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_8 };
@@ -71,7 +71,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: items1, pointerEvents: "box-none" };
   const items1 = [tmp.root, style];
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none" };
-  const obj1 = { 1636040136: 3434895488224299700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -2073668694: 3434895488225687000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 50398457: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000285122503799495, -359272363: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, 757560358: 3106123662674447000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1637971880: -0.000000008766564835172813, 555308136: 0.0000000000000000000000000000000000000000000000000000000000000000000000011332092618160787 };
+  const obj1 = { pointerEvents: 3434895488224299700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexGrow: 3434895488225687000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexShrink: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000263057991565038, justifyContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, direction: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003474279194579689, justify: 15574321955153270000000000000000000000000000000000000000000000000, align: 0.000000000000000000000000000000000000000000000000000000000000000000000001133208861212557 };
   const obj2 = { uri: importDefault(dependencyMap[13]) };
   obj1.source = obj2;
   obj1.style = closure_3.absoluteFillObject;
@@ -81,19 +81,19 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none" };
   const obj5 = { style: tmp.centeredCopy, pointerEvents: "none" };
-  const obj6 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.headerLabel };
+  const obj6 = { cachedAt: null, edpbxy: null, style: tmp.headerLabel };
   const intl = arg1(dependencyMap[15]).intl;
   obj6.children = intl.string(arg1(dependencyMap[15]).t.d6Rrn6);
   const items4 = [callback(arg1(dependencyMap[14]).Text, obj6), , ];
   const obj7 = { accessibilityLabel: "+" + orbAmount };
   const obj8 = { style: tmp.titleRow };
   const items5 = [callback(arg1(dependencyMap[16]).OrbsIcon, {}), ];
-  const obj9 = { color: false, textTransform: false, letterSpacing: false, style: tmp.orbAmount, children: "+" + orbAmount };
+  const obj9 = { NOT_FOUND_ERR: false, NOT_SUPPORTED_ERR: false, INUSE_ATTRIBUTE_ERR: false, style: tmp.orbAmount, children: "+" + orbAmount };
   items5[1] = callback(arg1(dependencyMap[14]).Text, obj9);
   obj8.children = items5;
   obj7.children = callback2(closure_4, obj8);
   items4[1] = callback(closure_4, obj7);
-  const obj10 = { style: { textAlign: "center" } };
+  const obj10 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, style: { textAlign: "center" } };
   const intl2 = arg1(dependencyMap[15]).intl;
   obj10.children = intl2.string(arg1(dependencyMap[15]).t.x0Ffz3);
   items4[2] = callback(arg1(dependencyMap[14]).Text, obj10);
@@ -105,7 +105,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const tmp2 = importDefault(dependencyMap[11])();
   items7[1] = { bottom: importDefault(dependencyMap[11])().bottom + importDefault(dependencyMap[4]).space.PX_8 };
   obj11.style = items7;
-  const obj13 = { 1375301351: "d5c9201b5d59debfcddeffefede24edc", 1851925612: "lt.messages.d5c9201b5d59debfcddeffefede24edc.compiled.messages", -1576709639: "jsona", 1644429137: "Clear this text" };
+  const obj13 = { borderRadius: "d7825c8630cb00012f54beafd65fb181", justifyContent: "nl.messages.d7825c8630cb00012f54beafd65fb181.compiled.messages", alignItems: "jsona", alignSelf: "Clear this text" };
   const intl3 = arg1(dependencyMap[15]).intl;
   obj13.text = intl3.string(arg1(dependencyMap[15]).t.i4jeWR);
   obj13.onPress = onClose;

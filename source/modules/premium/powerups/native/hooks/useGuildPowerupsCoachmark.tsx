@@ -1,10 +1,10 @@
-// Module ID: 14879
-// Function ID: 112068
+// Module ID: 14887
+// Function ID: 112111
 // Name: useGuildPowerupsCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14879 (useGuildPowerupsCoachmark)
+// Module 14887 (useGuildPowerupsCoachmark)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -81,7 +81,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
         guildPowerupBannerImage.markAsDismissed(constants2.USER_DISMISS);
       }
     }
-    let obj = { "Bool(false)": 311, "Bool(false)": 205.5, "Bool(false)": null, "Bool(false)": "020c495593a12ad5f00af9becbc3507d" };
+    let obj = { 9223372036854775807: 311, 0: 205.5, 9223372036854775807: null, 9223372036854775807: "020c495593a12ad5f00af9becbc3507d" };
     let str = "";
     obj.onDismiss = function onDismiss() {
 
@@ -95,7 +95,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
         const merged = Object.assign(obj);
         obj["visible"] = true;
         obj["renderImgComponent"] = function renderImgComponent() {
-          const obj = { userId: 800, userName: 16, defaultColor: "100%", style: powerup.boostGemBackground };
+          const obj = { 0: "add", -9223372036854775808: "Array", -9223372036854775808: "isArray", style: powerup.boostGemBackground };
           return callback(guildPowerupBannerImage(found1[17]), obj);
         };
         const intl24 = arg1(stateFromStores[18]).intl;
@@ -115,7 +115,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
         const merged1 = Object.assign(obj);
         obj2["visible"] = true;
         obj2["renderImgComponent"] = function renderImgComponent() {
-          const obj = { userId: 800, userName: 16, defaultColor: "100%", style: powerup.boostGemBackground };
+          const obj = { 0: "add", -9223372036854775808: "Array", -9223372036854775808: "isArray", style: powerup.boostGemBackground };
           return callback(guildPowerupBannerImage(found1[17]), obj);
         };
         const intl21 = arg1(stateFromStores[18]).intl;
@@ -343,7 +343,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
               obj14["offsetY"] = 8;
               obj14["renderImgComponent"] = function renderImgComponent() {
                 if (powerup.type === constants.LEVEL) {
-                  let obj = { userId: 800, userName: 16, defaultColor: "100%", style: powerup.boostGemBackground };
+                  let obj = { 0: "add", -9223372036854775808: "Array", -9223372036854775808: "isArray", style: powerup.boostGemBackground };
                   let tmp8Result = callback(guildPowerupBannerImage(found1[17]), obj);
                 } else {
                   obj = {};

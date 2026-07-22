@@ -1,10 +1,10 @@
-// Module ID: 9334
-// Function ID: 72945
+// Module ID: 9335
+// Function ID: 72958
 // Name: PortalKeyboardFooterIOS
 // Dependencies: []
 // Exports: default
 
-// Module 9334 (PortalKeyboardFooterIOS)
+// Module 9335 (PortalKeyboardFooterIOS)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

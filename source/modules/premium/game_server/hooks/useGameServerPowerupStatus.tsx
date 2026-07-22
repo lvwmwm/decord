@@ -1,10 +1,10 @@
-// Module ID: 11597
-// Function ID: 90134
+// Module ID: 11598
+// Function ID: 90147
 // Name: useGameServerPowerupStatus
 // Dependencies: []
 // Exports: default
 
-// Module 11597 (useGameServerPowerupStatus)
+// Module 11598 (useGameServerPowerupStatus)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/game_server/hooks/useGameServerPowerupStatus.tsx");

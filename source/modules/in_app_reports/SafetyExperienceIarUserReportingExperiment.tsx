@@ -1,13 +1,13 @@
-// Module ID: 11882
-// Function ID: 91988
+// Module ID: 11883
+// Function ID: 92002
 // Name: items
 // Dependencies: []
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 11882 (items)
+// Module 11883 (items)
 const _module = require(dependencyMap[0]);
-let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, defaultConfig: { enabled: false } };
-obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { enabled: true } };
+let obj = { shapes: true, flex: true, sk: true, defaultConfig: { enabled: false } };
+obj = { displayNameStylesEnabled: 203706476729884200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, submitButtonEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015890667570573938, config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);

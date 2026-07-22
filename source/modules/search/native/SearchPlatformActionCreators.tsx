@@ -1,14 +1,14 @@
-// Module ID: 11395
-// Function ID: 88581
+// Module ID: 11396
+// Function ID: 88594
 // Dependencies: [0, 0, 4294967295, 0, 0, 0]
 
-// Module 11395
-import { SearchTypes } from "result";
-import result from "result";
-import result from "result";
+// Module 11396
+import { SearchTypes } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 const _module1 = require(dependencyMap[2]);
-result = result.fileFinishedImporting("modules/search/native/SearchPlatformActionCreators.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/search/native/SearchPlatformActionCreators.tsx");
 
 export default {
   searchPeopleTab(closure_0, searchQueryString) {

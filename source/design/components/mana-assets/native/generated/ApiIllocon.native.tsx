@@ -1,7 +1,7 @@
 // Module ID: 5853
-// Function ID: 49701
+// Function ID: 49712
 // Name: ApiIllocon
-// Dependencies: [131072, 561250304, 1879048192, 4261412884]
+// Dependencies: [131072, 561250304, 3657433088, 4261412883]
 // Exports: ApiIllocon
 
 // Module 5853 (ApiIllocon)

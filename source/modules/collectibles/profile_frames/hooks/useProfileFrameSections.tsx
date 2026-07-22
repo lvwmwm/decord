@@ -1,10 +1,10 @@
-// Module ID: 13478
-// Function ID: 102310
+// Module ID: 13485
+// Function ID: 102343
 // Name: useProfileFrameSections
 // Dependencies: []
 // Exports: default
 
-// Module 13478 (useProfileFrameSections)
+// Module 13485 (useProfileFrameSections)
 let closure_2 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 let closure_4 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 12881
-// Function ID: 98371
+// Module ID: 12888
+// Function ID: 98404
 // Name: AnimatedEllipsisDot
 // Dependencies: []
 
-// Module 12881 (AnimatedEllipsisDot)
+// Module 12888 (AnimatedEllipsisDot)
 function AnimatedEllipsisDot(disableScale) {
   disableScale = disableScale.disableScale;
   const arg1 = disableScale;
@@ -86,8 +86,8 @@ const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let obj = { typingIndicator: {} };
-obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.round };
+let obj = { typingIndicator: { MESSAGE_REQUEST: "message", XWDihq: "filter", HAPPENING_NOW_STAGE_PREVIEW_HEIGHT: 18, display: "client_system_locale" } };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.typingIndicatorDot = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 let closure_8 = { code: "function animateValue_EllipsisTsx1(value,fromValue,toValue){const{withRepeat,withSequence,withDelay,sequenceStartDelay,withTiming,delay,animationTimeMs,sequenceEndDelay}=this.__closure;value.set(withRepeat(withSequence(withDelay(sequenceStartDelay,withTiming(fromValue,{duration:0})),withDelay(delay,withSequence(withTiming(toValue,{duration:animationTimeMs}),withTiming(fromValue,{duration:animationTimeMs}))),withDelay(sequenceEndDelay,withTiming(fromValue,{duration:0}))),-1));}" };

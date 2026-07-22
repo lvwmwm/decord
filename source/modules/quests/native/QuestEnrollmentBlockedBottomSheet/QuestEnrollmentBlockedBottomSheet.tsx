@@ -1,10 +1,10 @@
-// Module ID: 13942
-// Function ID: 105951
+// Module ID: 13949
+// Function ID: 105991
 // Name: QuestEnrollmentBlockedBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13942 (QuestEnrollmentBlockedBottomSheet)
+// Module 13949 (QuestEnrollmentBlockedBottomSheet)
 function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let minutes;
   let seconds;
@@ -25,7 +25,7 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   const padStartResult2 = String(seconds).padStart(2, "0");
   let tmp11 = null;
   if (null != questEnrollmentBlockedUntil) {
-    let obj = { "Bool(false)": null, "Bool(false)": 16, "Bool(false)": 5 };
+    let obj = { borderColor: null, borderWidth: null, style: null };
     obj = { style: tmp.heading };
     const obj1 = { variant: "heading-xl/bold" };
     const intl = arg1(dependencyMap[12]).intl;
@@ -51,11 +51,11 @@ let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 1400600855: 0, 685900264: 0, 140617204: 0, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_24 };
+obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_24 };
 obj.heading = obj;
-const obj1 = { 1400600855: 0, 685900264: 0, 140617204: 0, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_32 };
-obj.container = obj1;
+obj.container = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_32 };
 let closure_6 = obj.createStyles(obj);
+const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_32 };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/quests/native/QuestEnrollmentBlockedBottomSheet/QuestEnrollmentBlockedBottomSheet.tsx");
 
 export default function QuestEnrollmentBlockedBottomSheetConnected(questContentPosition) {

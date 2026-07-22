@@ -1,5 +1,5 @@
 // Module ID: 8087
-// Function ID: 64119
+// Function ID: 64129
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -62,6 +62,6 @@ const tmp3 = (arg0) => {
   return callback(LinearGradient, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "LinearGradient";
-tmp3.defaultProps = { "Bool(false)": "DIS_Nitro_Gifcard_004_Coffee_Loop", "Bool(false)": 0, "Bool(false)": "cover", "Bool(false)": true };
+tmp3.defaultProps = {};
 
 export default tmp3;

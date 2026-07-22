@@ -1,10 +1,10 @@
-// Module ID: 9843
-// Function ID: 76242
+// Module ID: 9844
+// Function ID: 76255
 // Name: CirclePlayIcon
 // Dependencies: []
 // Exports: CirclePlayIcon
 
-// Module 9843 (CirclePlayIcon)
+// Module 9844 (CirclePlayIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -22,7 +22,7 @@ export const CirclePlayIcon = function CirclePlayIcon(color) {
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { body: false, borderRadius: false, accessibilityRole: false };
+  let obj = { -1435702126: "spring", -1718953382: 0.4, 2085832679: 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
@@ -31,7 +31,7 @@ export const CirclePlayIcon = function CirclePlayIcon(color) {
   const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
   const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), { force: null, trackAnalytics: null }];
+  const items2 = [...items1.flat(), { 10360: 40, 10496: 40 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);

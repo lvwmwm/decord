@@ -1,5 +1,5 @@
 // Module ID: 6932
-// Function ID: 55274
+// Function ID: 55285
 // Name: useIntersectionObserver
 // Dependencies: []
 // Exports: useIsVisible
@@ -59,7 +59,7 @@ function useIntersectionObserver(current, arg1, flag) {
 const _module = require(dependencyMap[0]);
 ({ useEffect: closure_3, useMemo: closure_4, useRef: closure_5, useLayoutEffect: closure_6 } = _module);
 let closure_7 = {};
-const items = [null, { threshold: 1 }];
+const items = [false, { threshold: 1 }];
 const items1 = [items];
 const map = new Map(items1);
 const _module1 = require(dependencyMap[3]);

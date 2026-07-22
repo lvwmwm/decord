@@ -1,10 +1,10 @@
-// Module ID: 12595
-// Function ID: 96838
+// Module ID: 12600
+// Function ID: 96866
 // Name: calculateActivityPreviewImageDimensions
 // Dependencies: []
 // Exports: default
 
-// Module 12595 (calculateActivityPreviewImageDimensions)
+// Module 12600 (calculateActivityPreviewImageDimensions)
 function calculateActivityPreviewImageDimensions(bound) {
   const diff = bound - 32;
   return { width: diff, height: diff / closure_14 };
@@ -23,19 +23,19 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[8]));
 const XSMALL = arg1(dependencyMap[9]).AvatarSizes.XSMALL;
 const themedRippleConfig = arg1(dependencyMap[6]).getThemedRippleConfig({ foreground: true });
-let obj = { <string:2756006393>: "png", <string:3614898531>: "2026-04-browser-transceiver-padding-removal", <string:4190467684>: "user", <string:2756006359>: "2026-02-process-boost-on-voice" };
+let obj = { 1637108049: "png", -601009758: "2026-04-browser-transceiver-padding-removal", -671496861: "user", 1733388641: "2026-02-process-boost-on-voice" };
 let closure_14 = 1.7777777777777777;
 let obj1 = arg1(dependencyMap[10]);
-obj = { voiceMemberItemRow: { 9223372036854775807: "2026-06-server-ladder", 0: "user", 0: 9000000, -9223372036854775808: false, 0: "2026-05-av1-bitrate-tuning" }, innerRow: { y: "center", GuildThemePreviewOwner: "center" }, activityDetails: { "Bool(false)": 24541952, "Bool(false)": 24541952, "Bool(false)": 43480320 }, appIcon: obj };
+obj = { voiceMemberItemRow: { "Null": "2026-06-server-ladder", "Null": "user", "Null": 9000000, "Null": false, "Null": "2026-05-av1-bitrate-tuning" }, innerRow: {}, activityDetails: {}, appIcon: obj };
 obj = {};
 const merged = Object.assign(obj);
 obj["tintColor"] = importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT;
 obj.appIconPlaceholder = obj;
-obj.centerGroup = { "Null": null, "Null": null };
+obj.centerGroup = { location: false, hash: false };
 obj.applicationName = { lineHeight: 20 };
 obj.joinButton = { alignSelf: "center" };
-obj.joinButtonPill = { =: 1396, 9: 256 };
-obj.joinButtonContainer = { guildMemberAvatar: 9127946368865090000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, roles: 1757901959649451000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, colorString: 425617939409987050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, colorStrings: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026188167435521376, hoistRoleId: 466806679734203300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+obj.joinButtonPill = { "Null": 1396, "Null": 256 };
+obj.joinButtonContainer = {};
 obj1 = { height: arg1(dependencyMap[9]).AVATAR_SIZE_MAP[XSMALL] };
 obj.overflow = obj1;
 const tmp4 = arg1(dependencyMap[8]);
@@ -138,7 +138,7 @@ export default function VoiceMemberEmbeddedActivity(onItemPress) {
       const obj5 = { style: iconSource === importDefault(dependencyMap[18]) ? tmp.appIconPlaceholder : tmp.appIcon, source: iconSource };
       const items5 = [callback2(stateFromStores, obj5), , ];
       const obj6 = { style: tmp.centerGroup };
-      const obj7 = { delete: null, dispatch: null, raw: null, style: tmp.applicationName, children: name };
+      const obj7 = { "Null": true, "Null": true, alignItems: true, style: tmp.applicationName, children: name };
       obj6.children = callback2(arg1(dependencyMap[22]).Text, obj7);
       items5[1] = callback2(embeddedActivityLocationGuildId, obj6);
       const obj8 = { offsetAmount: -6 };

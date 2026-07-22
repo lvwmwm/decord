@@ -1,10 +1,10 @@
-// Module ID: 13937
-// Function ID: 105917
+// Module ID: 13944
+// Function ID: 105957
 // Name: NonInlineConsoleConnection
 // Dependencies: []
 // Exports: default
 
-// Module 13937 (NonInlineConsoleConnection)
+// Module 13944 (NonInlineConsoleConnection)
 let Fragment;
 let jsxs;
 function NonInlineConsoleConnection(arg0) {
@@ -69,7 +69,7 @@ const PLATFORM_XBOX = importDefault(dependencyMap[4]).unsafe_rawColors.PLATFORM_
 const PLATFORM_PLAYSTATION = importDefault(dependencyMap[4]).unsafe_rawColors.PLATFORM_PLAYSTATION;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { -11418015: -353763326, 1414947587: -352714750, 142130427: 979435522, -710814311: -1274954158, gap: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { 996475910: "<string:3942008043>", -72657350: "<string:3942907906>", 1627653713: "<string:3941990402>", -1398385861: "<string:3942907906>", gap: importDefault(dependencyMap[4]).space.PX_16 };
 obj.platformButtonsContainer = obj;
 obj.platformButton = {};
 const styles = obj.createStyles(obj);

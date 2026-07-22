@@ -32,7 +32,7 @@ function addGestureBreadcrumb(message, event) {
 }
 let closure_2 = "gesture";
 let closure_3 = "user";
-let closure_4 = { label: "bold", secureTextEntry: 20, placeholder: "left", isClearable: 1, "Null": "column", "Null": "space-between", "Null": "center", "Null": null, "Null": "uppercase", "Null": 0.5, "Null": "M11 4v1h1V4h-1ZM12 9V8h-1V6h-1v1H9v1H6V7H5v2H3v2h1v2h1v1h6v-1h1v-2h1V9h-1Z", "Null": "#fff" };
+let closure_4 = {};
 arg5.DEFAULT_BREADCRUMB_CATEGORY = "gesture";
 arg5.DEFAULT_BREADCRUMB_TYPE = "user";
 arg5.GESTURE_POSTFIX_LENGTH = 14;

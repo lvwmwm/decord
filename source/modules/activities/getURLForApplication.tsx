@@ -1,10 +1,10 @@
-// Module ID: 10470
-// Function ID: 81075
+// Module ID: 10471
+// Function ID: 81088
 // Name: getNonTestModeUrlForApplication
 // Dependencies: []
 // Exports: default
 
-// Module 10470 (getNonTestModeUrlForApplication)
+// Module 10471 (getNonTestModeUrlForApplication)
 function getNonTestModeUrlForApplication(arg0) {
   let combined = null;
   if (null != ACTIVITY_APPLICATION_HOST) {

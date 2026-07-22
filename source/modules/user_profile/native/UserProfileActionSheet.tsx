@@ -1,9 +1,9 @@
-// Module ID: 8491
-// Function ID: 67784
+// Module ID: 8492
+// Function ID: 67796
 // Name: UseAnimatedPosition
 // Dependencies: []
 
-// Module 8491 (UseAnimatedPosition)
+// Module 8492 (UseAnimatedPosition)
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   const arg1 = animatedPosition;
@@ -40,7 +40,7 @@ function ActionSheetAlignedView(children) {
     obj.transform = items;
     const value = animatedIndex.get();
     const items1 = [-1, 0];
-    obj.opacity = animatedPosition(safeAreaTop[13]).interpolate(value, items1, ["replace", "then"], animatedPosition(safeAreaTop[13]).Extrapolation.CLAMP);
+    obj.opacity = animatedPosition(safeAreaTop[13]).interpolate(value, items1, [77601039, 1612144654], animatedPosition(safeAreaTop[13]).Extrapolation.CLAMP);
     return obj;
   };
   obj = { animatedPosition, safeAreaTop, interpolate: arg1(dependencyMap[13]).interpolate, animatedIndex, Extrapolation: arg1(dependencyMap[13]).Extrapolation };
@@ -65,7 +65,7 @@ const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[9]).ACTION_SHEET_MAX_WIDTH;
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[10]));
 const tmp4 = arg1(dependencyMap[10]);
-let closure_18 = arg1(dependencyMap[11]).createStyles({ container: { flex: 1 }, profileContainer: { position: "relative" }, noPadding: { paddingHorizontal: 0 }, profileEffect: { display: "key", flexDirection: "to", rowGap: "Array", padding: "Reflect", alignItems: "Array" } });
+let closure_18 = arg1(dependencyMap[11]).createStyles({ container: { flex: 1 }, profileContainer: { position: "relative" }, noPadding: { paddingHorizontal: 0 }, profileEffect: {} });
 let closure_19 = { code: "function UserProfileActionSheetTsx1(){const{value}=this.__closure;return value.get();}" };
 let closure_20 = { code: "function UserProfileActionSheetTsx2(prepared){const{animatedPosition}=this.__closure;return animatedPosition.set(prepared);}" };
 let closure_21 = { code: "function UserProfileActionSheetTsx3(){const{animatedPosition,safeAreaTop,interpolate,animatedIndex,Extrapolation}=this.__closure;return{transform:[{translateY:animatedPosition.get()+safeAreaTop}],opacity:interpolate(animatedIndex.get(),[-1,0],[0,1],Extrapolation.CLAMP)};}" };
@@ -368,7 +368,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           tmp = isNonUserBotResult;
         }
         if (!tmp) {
-          const obj = { -77355551: 11945304078997316000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 173127328: 85803430721961170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 983589894: 35924079380512436000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1666296379: 0.0000000000000000000000000000000000000000000000000000000000000000000742174465348898, guildId: guild_id };
+          const obj = { 0: 11945304078997316000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 2888286052403451000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -8364226554049099000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000742174258080857, guildId: guild_id };
           let tmp16;
           const avatarURL = stateFromStores.getAvatarURL(guild_id, 80);
           if (null != channelId) {
@@ -545,7 +545,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           isLoaded = tmp8Result.isLoaded;
         }
         obj10.isLoaded = isLoaded;
-        obj11 = { 1162986870: true, -104504668: true, 1671815505: true, 1370923259: true, ref: bottomSheetRef.bottomSheetRef, maxHeight: diff - memo2, contentStyles: fetchStartedAt.noPadding, backdropChildren: memo1, animatedIndex: sharedValue1 };
+        obj11 = { ref: bottomSheetRef.bottomSheetRef, maxHeight: diff - memo2, contentStyles: fetchStartedAt.noPadding, backdropChildren: memo1, animatedIndex: sharedValue1 };
         let tmp81 = null != tmp32Result;
         if (tmp81) {
           const obj12 = { animatedPosition: sharedValue };
@@ -691,7 +691,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           fetchStartedAt = arg1;
           fetchStartedAt = dependencyMap;
           fetchStartedAt = stateFromStores2;
-          const obj27 = { from: false, has: false, justifyContent: null, theme: tmp60 };
+          const obj27 = { <string:3431066467>: "mn", <string:1646814289>: "description", <string:2589056999>: "Array", theme: tmp60 };
           fetchStartedAt = stateFromStores2;
           let obj28 = {};
           const intl = arg1(dependencyMap[49]).intl;

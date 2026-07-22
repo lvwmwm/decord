@@ -1,49 +1,50 @@
 // Module ID: 15808
-// Function ID: 120903
+// Function ID: 120930
 // Dependencies: []
 
 // Module 15808
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "pl",
+  locale: "hr",
   pluralRuleFunction(arg0, arg1) {
     const parts = String(arg0).split(".");
     const first = parts[0];
     const substr = first.slice(-1);
     const substr1 = first.slice(-2);
+    const substr2 = arr2.slice(-1);
+    const substr3 = arr2.slice(-2);
     let str2 = "other";
     if (!arg1) {
-      if (1 != arg0) {
+      if (tmp2) {
+        if (1 == substr) {
+          let str3 = "one";
+        }
+        str2 = str3;
+      }
+      if (1 != substr2) {
         if (tmp2) {
           if (substr >= 2) {
             if (substr <= 4) {
-              let str5 = "few";
               if (substr1 >= 12) {
-                str5 = "few";
+                str3 = str4;
               }
             }
-            let str3 = str5;
+            let str4 = "few";
           }
         }
-        if (tmp2) {
-          if (1 != first) {
-            if (0 != substr) {
-              str5 = str6;
+        str4 = "other";
+        if (substr2 >= 2) {
+          str4 = "other";
+          if (substr2 <= 4) {
+            if (substr3 >= 12) {
+              str4 = "other";
             }
-          }
-          let str6 = "many";
-        }
-        str6 = "other";
-        if (tmp2) {
-          str6 = "other";
-          if (substr1 >= 12) {
-            str6 = "other";
           }
         }
       } else {
         str3 = "one";
       }
-      str2 = str3;
     }
     return str2;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({ 0: "STEP_3", 0: "LIBDISCORE_KV_DUAL_READ_ERROR" });

@@ -1,10 +1,10 @@
-// Module ID: 9187
-// Function ID: 71947
+// Module ID: 9188
+// Function ID: 71960
 // Name: LinkButton
 // Dependencies: []
 // Exports: default
 
-// Module 9187 (LinkButton)
+// Module 9188 (LinkButton)
 class LinkButton {
   constructor(arg0) {
     str = global.variant;
@@ -56,7 +56,7 @@ const AuthStates = arg1(dependencyMap[6]).AuthStates;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
 let closure_12 = arg1(dependencyMap[8]).createStyles((arg0) => {
-  let obj = { password: { marginTop: 24 }, button: {}, hint: { marginTop: 4 }, link: {}, separator: { MKTG_HYPESQUAD_FORM_SUBMITTED: "last_payment_error", marginInlineEnd: "$" } };
+  let obj = { password: { marginTop: 24 }, button: { "Null": 1392509218, "Null": 40960407 }, hint: { marginTop: 4 }, link: {}, separator: { "Bool(false)": "useValidOrderedFilterTokens", "Bool(false)": "JPEGInterchangeFormatLength" } };
   obj = { marginTop: 32 };
   let num = 0;
   if (arg0) {
@@ -189,9 +189,9 @@ export default function Login(isMultiAccount) {
   }
   obj2 = {};
   const obj3 = {
-    test: null,
-    marginBottom: false,
-    start: "guilds-bar-view",
+    type: null,
+    accessibilityRole: false,
+    type: "guilds-bar-view",
     alpha2: stateFromStores.alpha2,
     countryCode: callback2(str.split(" "), 1)[0],
     onChange(arg0, arg1) {
@@ -253,7 +253,7 @@ export default function Login(isMultiAccount) {
   obj5.onPress = function onPress() {
     return _undefined((arg0) => !arg0);
   };
-  obj5.hitSlop = {};
+  obj5.hitSlop = { "Null": 800, "Null": 16 };
   obj4.trailingPressableProps = obj5;
   obj4.returnKeyType = "done";
   obj4.errorMessage = tmp26;

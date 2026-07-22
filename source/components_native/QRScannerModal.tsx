@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 97817
+// Module ID: 12761
+// Function ID: 97850
 // Name: DCDQRScanner
 // Dependencies: []
 // Exports: default
 
-// Module 12754 (DCDQRScanner)
+// Module 12761 (DCDQRScanner)
 function DCDQRScanner(arg0) {
   const merged = Object.assign(arg0);
   return callback2(importDefaultResult, {});
@@ -22,7 +22,7 @@ if (obj1.isAndroid()) {
 } else {
   importDefaultResult = obj.requireNativeComponent("DCDQRScanner");
 }
-obj = { scanner: {}, closeButton: { marginLeft: 8 } };
+obj = { scanner: { zIndex: null, width: null, backgroundColor: null }, closeButton: { marginLeft: 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.BLACK };
 obj.emptyView = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.BRAND_500 };

@@ -1,10 +1,10 @@
-// Module ID: 14683
-// Function ID: 110741
+// Module ID: 14691
+// Function ID: 110784
 // Name: useDrawerOpen
 // Dependencies: []
 // Exports: useDrawerOpen
 
-// Module 14683 (useDrawerOpen)
+// Module 14691 (useDrawerOpen)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");

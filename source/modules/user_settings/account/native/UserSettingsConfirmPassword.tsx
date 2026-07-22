@@ -1,10 +1,10 @@
-// Module ID: 9225
-// Function ID: 72145
+// Module ID: 9226
+// Function ID: 72158
 // Name: UserSettingsConfirmPasswordWrapped
 // Dependencies: []
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9225 (UserSettingsConfirmPasswordWrapped)
+// Module 9226 (UserSettingsConfirmPasswordWrapped)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -17,7 +17,7 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon" };
+obj.container = {};
 obj.title = { textAlign: "center" };
 obj.prompt = {};
 obj.input = { marginTop: 24 };
@@ -80,7 +80,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     }
     const items2 = [tmp13, ];
     obj = { style: tmp.container };
-    const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.x+d9t3);
     const items3 = [callback2(arg1(dependencyMap[16]).Text, obj1), , , , ];
@@ -88,7 +88,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     const intl2 = arg1(dependencyMap[14]).intl;
     obj2.children = intl2.string(arg1(dependencyMap[14]).t.vaZmAx);
     items3[1] = callback2(arg1(dependencyMap[16]).Text, obj2);
-    const obj3 = { "Bool(false)": "<string:1124139010>", "Bool(false)": "2fb9c35271fa129262898470e22001e7", "Bool(false)": "de.messages.2fb9c35271fa129262898470e22001e7.compiled.messages", "Bool(false)": "jsona", "Bool(false)": "<string:2061584433>", "Bool(false)": "<string:3846680084>" };
+    const obj3 = { 0: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, 9223372036854775807: true };
     ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
     const intl3 = arg1(dependencyMap[14]).intl;
     obj3.label = intl3.string(arg1(dependencyMap[14]).t.CIGa+7);
@@ -114,7 +114,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     }
     items3[3] = tmp25;
     const obj5 = { style: tmp.button };
-    const obj6 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+    const obj6 = {};
     const intl4 = arg1(dependencyMap[14]).intl;
     obj6.text = intl4.string(arg1(dependencyMap[14]).t.i4jeWR);
     obj6.onPress = handleSubmit;

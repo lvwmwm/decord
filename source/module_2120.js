@@ -4,6 +4,6 @@
 
 // Module 2120
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", format: null, View: "39343860c44c96ec5b677571e6fc9812", accessibilityRole: "vi.messages.39343860c44c96ec5b677571e6fc9812.compiled.messages", surrogates: "jsona", url: "guild-event", scales: [null] };
+const obj = { 296374: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", 1102560849: null, 288807: "0045ae3789acb0716784a4c313eaf437", 1103760465: "vi.messages.0045ae3789acb0716784a4c313eaf437.compiled.messages", 288241: "jsona", 1120538193: "guild-event", scales: [false] };
 
 export default _module.registerAsset(obj);

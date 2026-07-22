@@ -1,10 +1,10 @@
-// Module ID: 9828
-// Function ID: 76221
+// Module ID: 9829
+// Function ID: 76234
 // Name: AttachmentIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9828 (AttachmentIcon)
+// Module 9829 (AttachmentIcon)
 class AttachmentIcon {
   constructor(arg0) {
     fileName = global.fileName;
@@ -81,11 +81,11 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { display: "<string:4185456642>", flexDirection: "<string:2018574337>", alignItems: "<string:3376484819>", textAlignVertical: "<string:1912602979>", height: "toString", backgroundColor: "resolve", marginHorizontal: "<string:1235304961>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { 9223372036854775807: "<string:4178771970>", 0: "<string:4132503553>", 0: "<string:1262555629>", 9223372036854775807: "<string:1912602980>", 0: "toString", 9223372036854775807: "resolve", 0: "<string:1236288001>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.fileInfoAttachmentPreviewFile = obj;
 obj.attachmentFileIcon = {};
 obj.attachmentFileName = {};
-obj.videoIcon = { contentInset: false, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false, searchResultsQuery: false, isEntryLive: false, doughnut: false };
+obj.videoIcon = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
 let closure_8 = obj1.createStyles(obj);
 obj1 = { archive: importDefault(dependencyMap[5]), acrobat: importDefault(dependencyMap[6]), ae: importDefault(dependencyMap[7]), ai: importDefault(dependencyMap[8]), audio: importDefault(dependencyMap[9]), code: importDefault(dependencyMap[10]), document: importDefault(dependencyMap[11]), image: importDefault(dependencyMap[12]), photoshop: importDefault(dependencyMap[13]), sketch: importDefault(dependencyMap[14]), spreadsheet: importDefault(dependencyMap[15]), unknown: importDefault(dependencyMap[16]), video: importDefault(dependencyMap[17]), webcode: importDefault(dependencyMap[18]) };
 let closure_10 = importAllResult.memo((borderRadius) => {
@@ -188,7 +188,7 @@ export default function AttachmentPreview(height) {
         tmp10 = defaultPreview;
         if (obj3.isIOS()) {
           obj = { style };
-          let obj1 = {};
+          let obj1 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
           obj2 = { height: num, width };
           obj1.style = obj2;
           obj3 = { uri };

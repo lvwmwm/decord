@@ -1,10 +1,10 @@
-// Module ID: 10731
-// Function ID: 83435
+// Module ID: 10732
+// Function ID: 83448
 // Name: DisconnectRemoteButton
 // Dependencies: []
 // Exports: DisconnectRemoteButton
 
-// Module 10731 (DisconnectRemoteButton)
+// Module 10732 (DisconnectRemoteButton)
 importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

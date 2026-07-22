@@ -1,9 +1,9 @@
-// Module ID: 13311
-// Function ID: 101130
+// Module ID: 13318
+// Function ID: 101163
 // Name: items
 // Dependencies: []
 
-// Module 13311 (items)
+// Module 13318 (items)
 let RPCCommands;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);

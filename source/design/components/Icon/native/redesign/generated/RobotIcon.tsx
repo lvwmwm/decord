@@ -1,10 +1,10 @@
-// Module ID: 9021
-// Function ID: 70936
+// Module ID: 9022
+// Function ID: 70949
 // Name: RobotIcon
 // Dependencies: []
 // Exports: RobotIcon
 
-// Module 9021 (RobotIcon)
+// Module 9022 (RobotIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RobotIcon.tsx");

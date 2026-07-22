@@ -40,7 +40,7 @@ function getCurrentReactOwner() {
   }
   return owner;
 }
-let closure_0 = [null];
+let closure_0 = [];
 let closure_1 = importDefault(dependencyMap[0]);
 let closure_2 = importDefault(dependencyMap[1]);
 const forwardRef = arg1(dependencyMap[1]).forwardRef;

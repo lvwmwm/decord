@@ -1,10 +1,10 @@
-// Module ID: 11829
-// Function ID: 91712
+// Module ID: 11830
+// Function ID: 91726
 // Name: useShouldShowPremiumProfileFrameCTA
 // Dependencies: []
 // Exports: default
 
-// Module 11829 (useShouldShowPremiumProfileFrameCTA)
+// Module 11830 (useShouldShowPremiumProfileFrameCTA)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameCTA.tsx");
 

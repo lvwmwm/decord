@@ -1,10 +1,10 @@
-// Module ID: 8413
-// Function ID: 67032
+// Module ID: 8414
+// Function ID: 67044
 // Name: _toPropertyKey
 // Dependencies: []
 // Exports: default
 
-// Module 8413 (_toPropertyKey)
+// Module 8414 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -48,7 +48,7 @@ class AddMembersBody {
       permission = importAll(closure_3[14]).NONE;
     }
     inActionSheet = global.inActionSheet;
-    obj = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 0: true, 0: true };
+    obj = { alignSelf: "Text", opacity: "resizeMode", position: "from", top: "Array", left: "isArray", right: "braintreemasterpasslanding" };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     closure_3 = undefined;
@@ -282,7 +282,7 @@ class AddMembersBody {
       const guild = item;
       const index = item.index;
       if ("string" === typeof item) {
-        let obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "name", "Bool(false)": "Array", style: tmp5.sectionRowWrapper, children: item };
+        let obj = { style: tmp5.sectionRowWrapper, children: item };
         let tmp14Result = callback4(guild(tmp5[22]).Text, obj);
       } else {
         obj = {};
@@ -369,10 +369,10 @@ let obj = arg1(dependencyMap[12]);
 obj = { container: { flex: 1 } };
 obj = { alignItems: "stretch", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.inputContainer = obj;
-obj.tagRoleColor = { 2122157199: 881, -2108594079: 1111556352, 1371431202: 1912603304 };
+obj.tagRoleColor = {};
+const obj1 = { "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+obj.tagAvatar = obj1;
 const tmp4 = arg1(dependencyMap[11]);
-obj.tagAvatar = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
-const obj1 = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.emptyState = { paddingTop: importDefault(dependencyMap[13]).space.PX_16 };
 const obj2 = { paddingTop: importDefault(dependencyMap[13]).space.PX_16 };
 obj.emptyStateText = { color: importDefault(dependencyMap[13]).colors.TEXT_DEFAULT };

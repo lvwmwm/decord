@@ -1,10 +1,10 @@
-// Module ID: 11862
-// Function ID: 91855
+// Module ID: 11863
+// Function ID: 91869
 // Name: StyleSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11862 (StyleSheet)
+// Module 11863 (StyleSheet)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5, StyleSheet } = arg1(dependencyMap[1]));
@@ -12,20 +12,20 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { value: 35741696, onChange: 20087808, maxLength: 20087552, autoFocus: -239844096, autoCorrect: -240844798, autoCapitalize: -240713726, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { width: "header", height: "heading-md/extrabold", borderRadius: "mobile-text-heading-primary", backgroundColor: 1, accessibilityRole: "tail", s: "a", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.headerContainer = obj;
-const obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.headerRow = obj1;
-const obj2 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const obj2 = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.icon = obj2;
-const tmp3 = arg1(dependencyMap[2]);
-obj.titleContainer = { gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.headerRight = { "Null": 7, "Null": 370 };
-obj.rankPillContainer = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
+const obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj.titleContainer = obj3;
+obj.headerRight = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+obj.rankPillContainer = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function GameProfileNavigationHeaderTsx1(){const{headerRightProgress}=this.__closure;return{opacity:headerRightProgress.get()};}" };
 let closure_11 = { code: "function GameProfileNavigationHeaderTsx2(){const{headerRightProgress}=this.__closure;return{opacity:1-headerRightProgress.get()};}" };
-const obj3 = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/game_profile/native/components/GameProfileNavigationHeader.tsx");
 
 export default function GameProfileNavigationHeader(game) {
@@ -121,7 +121,7 @@ export default function GameProfileNavigationHeader(game) {
     }
     const items3 = [tmp16, , ];
     const obj3 = { style: tmp.titleContainer };
-    const obj4 = { children: name };
+    const obj4 = { 803799044: null, 1269170180: null, 711589892: null, children: name };
     const items4 = [callback(arg1(dependencyMap[9]).Heading, obj4), ];
     let l30Rank;
     if (null != game) {

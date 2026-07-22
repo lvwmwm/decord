@@ -1,17 +1,17 @@
-// Module ID: 8255
-// Function ID: 65118
+// Module ID: 8256
+// Function ID: 65130
 // Name: Caption
 // Dependencies: []
 // Exports: Caption
 
-// Module 8255 (Caption)
+// Module 8256 (Caption)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[2]).jsx;
 const _module = require(dependencyMap[3]);
 let obj = {};
 obj = { fontFamily: require(dependencyMap[1]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[4]).colors.WHITE, fontSize: 12 };
 obj.captionText = obj;
-const obj1 = {};
+const obj1 = { Emojis: "Array", è: "useLevels", é: "ox", ê: "WEBHOOK_INCOMING", ë: "%ArrayBufferPrototype%", hasNitro: "EXPRESSION_PICKER_EXPRESSION_FOCUS", showTopContainer: "__iptc" };
 const _module1 = require(dependencyMap[5]);
 obj1.backgroundColor = _module1.hexWithOpacity(importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj1.borderRadius = importDefault(dependencyMap[4]).radii.xs;

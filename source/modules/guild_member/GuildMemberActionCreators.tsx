@@ -1,10 +1,10 @@
-// Module ID: 5350
-// Function ID: 45781
+// Module ID: 5077
+// Function ID: 44191
 // Name: updateGuildSelfMember
 // Dependencies: []
 // Exports: updateGuildSelfMember
 
-// Module 5350 (updateGuildSelfMember)
+// Module 5077 (updateGuildSelfMember)
 let closure_3 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_member/GuildMemberActionCreators.tsx");

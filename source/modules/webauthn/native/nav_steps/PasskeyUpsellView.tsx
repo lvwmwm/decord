@@ -1,41 +1,40 @@
-// Module ID: 13507
-// Function ID: 102501
+// Module ID: 13514
+// Function ID: 102534
 // Name: PasskeyUpsellView
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 13507 (PasskeyUpsellView)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import { WebAuthnScreens } from "result";
-import { HelpdeskArticles } from "result";
-import { ContentDismissActionType } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
-({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = result);
-({ jsx: closure_11, jsxs: closure_12 } = result);
-result = {};
-result = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOW };
-result.container = result;
-const obj1 = { "Null": 0.129, "Null": 1, paddingHorizontal: require("result").space.PX_16 };
-result.scrollViewContainer = obj1;
-const obj2 = { "Null": null, "Null": null, gap: require("result").space.PX_16 };
-result.headerContainer = obj2;
-result.headerImage = { direction: "checkIsOnChannelNavigationRoute", style: "<string:3844887040>", borderWidth: "<string:158435740>" };
-result.headerText = { textAlign: "center" };
-result.circleIcon = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWEST, width: require("result").space.PX_32, height: require("result").space.PX_32, borderRadius: require("result").radii.round };
-const obj3 = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWEST, width: require("result").space.PX_32, height: require("result").space.PX_32, borderRadius: require("result").radii.round };
-result.listContainer = { gap: require("result").space.PX_24, marginLeft: require("result").space.PX_8, marginRight: require("result").space.PX_8 };
-const obj4 = { gap: require("result").space.PX_24, marginLeft: require("result").space.PX_8, marginRight: require("result").space.PX_8 };
-result.row = { gap: require("result").space.PX_8 };
-result.text = { flex: 1 };
-const obj5 = { gap: require("result").space.PX_8 };
-result.buttonContainer = { gap: require("result").space.PX_16, alignItems: "center" };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/webauthn/native/nav_steps/PasskeyUpsellView.tsx");
+// Module 13514 (PasskeyUpsellView)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importAll(dependencyMap[1]);
+({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
+const WebAuthnScreens = arg1(dependencyMap[3]).WebAuthnScreens;
+const HelpdeskArticles = arg1(dependencyMap[4]).HelpdeskArticles;
+const ContentDismissActionType = arg1(dependencyMap[5]).ContentDismissActionType;
+const tmp2 = arg1(dependencyMap[2]);
+({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
+let obj = arg1(dependencyMap[7]);
+obj = {};
+obj = { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003183821265432445, marginVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003136903938464816, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj.container = obj;
+const obj1 = { alignItems: 0.129, justifyContent: 1, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj.scrollViewContainer = obj1;
+const obj2 = { <string:3596066964>: null, <string:3638417373>: null, gap: importDefault(dependencyMap[8]).space.PX_16 };
+obj.headerContainer = obj2;
+obj.headerImage = { GifAutoPlay: "construct", lavender: "r", useShouldShowWishlistInDMGifting: "isArray" };
+obj.headerText = { textAlign: "center" };
+const tmp3 = arg1(dependencyMap[6]);
+obj.circleIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, width: importDefault(dependencyMap[8]).space.PX_32, height: importDefault(dependencyMap[8]).space.PX_32, borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, width: importDefault(dependencyMap[8]).space.PX_32, height: importDefault(dependencyMap[8]).space.PX_32, borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj.listContainer = { gap: importDefault(dependencyMap[8]).space.PX_24, marginLeft: importDefault(dependencyMap[8]).space.PX_8, marginRight: importDefault(dependencyMap[8]).space.PX_8 };
+const obj5 = { -2108412530: "text-lg/normal", -266912356: "text-default", 1638363508: true, gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.row = obj5;
+obj.text = { flex: 1 };
+const obj4 = { gap: importDefault(dependencyMap[8]).space.PX_24, marginLeft: importDefault(dependencyMap[8]).space.PX_8, marginRight: importDefault(dependencyMap[8]).space.PX_8 };
+obj.buttonContainer = { gap: importDefault(dependencyMap[8]).space.PX_16, alignItems: "center" };
+let closure_13 = obj.createStyles(obj);
+const obj6 = { gap: importDefault(dependencyMap[8]).space.PX_16, alignItems: "center" };
+const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/webauthn/native/nav_steps/PasskeyUpsellView.tsx");
 
 export default function PasskeyUpsellView() {
   let tmp5;
@@ -55,7 +54,7 @@ export default function PasskeyUpsellView() {
   let obj = arg1(dependencyMap[9]);
   const navigation = obj.useNavigation();
   const arg1 = navigation;
-  const tmp2 = result();
+  const tmp2 = callback3();
   const importDefault = onRegisterSuccess(React.useState(""), 2)[1];
   const tmp3 = onRegisterSuccess(React.useState(""), 2);
   [tmp5, closure_2] = onRegisterSuccess(React.useState(false), 2);
@@ -124,7 +123,7 @@ export default function PasskeyUpsellView() {
   obj5.children = items4;
   items2[1] = callback2(closure_5, obj5);
   const obj12 = { style: tmp2.buttonContainer };
-  const obj13 = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
+  const obj13 = { cachedAt: "png", edpbxy: "absolute" };
   const intl5 = arg1(dependencyMap[10]).intl;
   obj13.children = intl5.format(arg1(dependencyMap[10]).t.OeGXVv, { learnMoreLink: articleURL });
   const items6 = [callback(arg1(dependencyMap[19]).TextWithIOSLinkWorkaround, obj13), , ];

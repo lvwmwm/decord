@@ -1,12 +1,12 @@
-// Module ID: 15462
-// Function ID: 117940
+// Module ID: 15470
+// Function ID: 117983
 // Name: LeftAlignedHeaderTitle
 // Dependencies: []
 
-// Module 15462 (LeftAlignedHeaderTitle)
-function LeftAlignedHeaderTitle(title) {
-  const obj = { "Null": "M7 1v1h2V1H7Z", "Null": "<string:1111556096>", "Null": "<string:1375732392>", "Null": "<string:2394816958>", style: callback4().headerContainer, children: title.title };
-  return callback2(arg1(dependencyMap[10]).Heading, obj);
+// Module 15470 (LeftAlignedHeaderTitle)
+function LeftAlignedHeaderTitle(children) {
+  const tmp = callback4();
+  return callback2(arg1(dependencyMap[10]).Heading, { style: callback4().headerContainer, children: children.title });
 }
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
@@ -106,9 +106,9 @@ const memoResult = importAllResult.memo(() => {
   let closure_7 = React.useCallback((arg0) => () => {
     let obj = { collapsable: false };
     obj = {
-      "Null": "isArray",
-      "Null": "isArray",
-      "Null": "next",
+      771441095: "isArray",
+      743571460: "constructor",
+      1109851690: "apply",
       onPress() {
         return navigation.goBack();
       }
@@ -116,7 +116,7 @@ const memoResult = importAllResult.memo(() => {
     const intl = arg0(closure_2[26]).intl;
     obj.accessibilityLabel = intl.string(arg0(closure_2[26]).t.13/7kX);
     obj.hitSlop = arg0(closure_2[27]).BACK_ICON_WITH_BADGE_HIT_SLOP;
-    obj = { handleRewardClaimThenView: "1501ab02f5dc6a8a8a6cc03fcd7e4123", EXPIRING_SOON: "zh-TW.messages.1501ab02f5dc6a8a8a6cc03fcd7e4123.compiled.messages", overflow: "jsona", style: arg0.backIcon, children: callback(arg0(closure_2[27]).SettingsLeftIconWithBadge, { navigation: arg0 }) };
+    obj = { style: arg0.backIcon, children: callback(arg0(closure_2[27]).SettingsLeftIconWithBadge, obj1) };
     obj.children = callback(closure_5, obj);
     obj.children = callback(arg0(closure_2[25]).PressableOpacity, obj);
     return callback(closure_5, obj);
@@ -165,13 +165,10 @@ const memoResult = importAllResult.memo(() => {
   };
   obj2 = { id: "settings-navigator" };
   obj3 = {
-    cutoutTopRightInsetY: "<string:1959460867>",
-    cutoutBottomRightSize: "<string:1959723011>",
-    cutoutBottomRightInsetX: "<string:1959460867>",
     headerTitle(children) {
       return callback3(closure_14, { title: children.children });
     },
-    UNSTABLE_headerInsets: { <string:1413519603>: null, <string:1189478959>: null }
+    UNSTABLE_headerInsets: { -9223372036854775808: true, -9223372036854775808: true }
   };
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj2.screenOptions = obj3;

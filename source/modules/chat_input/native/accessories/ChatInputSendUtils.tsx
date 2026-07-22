@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 86479
+// Module ID: 11111
+// Function ID: 86492
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 11110 (_createForOfIteratorHelperLoose)
+// Module 11111 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

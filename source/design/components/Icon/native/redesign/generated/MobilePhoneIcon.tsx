@@ -1,10 +1,10 @@
-// Module ID: 9204
-// Function ID: 72050
+// Module ID: 9205
+// Function ID: 72063
 // Name: MobilePhoneIcon
 // Dependencies: []
 // Exports: MobilePhoneIcon
 
-// Module 9204 (MobilePhoneIcon)
+// Module 9205 (MobilePhoneIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MobilePhoneIcon.tsx");

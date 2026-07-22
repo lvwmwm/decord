@@ -1,10 +1,10 @@
-// Module ID: 9599
-// Function ID: 74809
+// Module ID: 9600
+// Function ID: 74822
 // Name: openStickerPackDetailActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9599 (openStickerPackDetailActionSheet)
+// Module 9600 (openStickerPackDetailActionSheet)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/stickers/native/openStickerPackDetailActionSheet.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10844
-// Function ID: 84221
+// Module ID: 10845
+// Function ID: 84234
 // Name: isSocialLayerApplication
 // Dependencies: []
 // Exports: isSocialLayerSDKAuthorization
 
-// Module 10844 (isSocialLayerApplication)
+// Module 10845 (isSocialLayerApplication)
 function isSocialLayerApplication(application) {
   let hasApplicationFlagResult = require(dependencyMap[1]).hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
   if (!hasApplicationFlagResult) {

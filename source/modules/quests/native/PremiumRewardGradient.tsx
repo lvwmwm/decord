@@ -1,10 +1,10 @@
-// Module ID: 13938
-// Function ID: 105929
+// Module ID: 13945
+// Function ID: 105969
 // Name: useGradientColors
 // Dependencies: []
 // Exports: default
 
-// Module 13938 (useGradientColors)
+// Module 13945 (useGradientColors)
 function useGradientColors() {
   const token = arg1(dependencyMap[6]).useToken(importDefault(dependencyMap[5]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
   const arg1 = token;
@@ -73,7 +73,7 @@ function PremiumRewardGlowGradient(arg0) {
   }
   items1[1] = glowLight;
   obj.style = items1;
-  obj.maskElement = callback(importDefault(dependencyMap[9]), { style: closure_4.absoluteFill, colors: ["<string:1308623423>", "<string:184549846>"], start: closure_11, end: closure_12 });
+  obj.maskElement = callback(importDefault(dependencyMap[9]), { style: closure_4.absoluteFill, colors: [null, null], start: closure_11, end: closure_12 });
   obj.children = callback(importDefault(dependencyMap[9]), { style: closure_4.absoluteFill, colors: tmp2, start: closure_9, end: closure_10 });
   const items2 = [tmp7(importDefault(dependencyMap[10]), obj), children];
   obj.children = items2;
@@ -84,9 +84,9 @@ let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ wrapper: {}, fill: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, glow: {}, glowLight: { opacity: 0.5 } });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ wrapper: {}, fill: {}, glow: {}, glowLight: { opacity: 0.5 } });
 let closure_9 = {};
-let closure_10 = {};
+let closure_10 = { 0: -721485569, 0: 3375103 };
 let closure_11 = {};
 let closure_12 = {};
 const obj = arg1(dependencyMap[3]);

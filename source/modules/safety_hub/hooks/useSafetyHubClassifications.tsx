@@ -1,10 +1,10 @@
-// Module ID: 11020
-// Function ID: 85774
+// Module ID: 11021
+// Function ID: 85787
 // Name: useSafetyHubClassifications
 // Dependencies: []
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification
 
-// Module 11020 (useSafetyHubClassifications)
+// Module 11021 (useSafetyHubClassifications)
 function useSafetyHubClassifications() {
   const items = [closure_5];
   const stateFromStoresArray = arg1(dependencyMap[3]).useStateFromStoresArray(items, () => classifications.getClassifications());

@@ -1,10 +1,10 @@
-// Module ID: 8575
-// Function ID: 68121
+// Module ID: 8576
+// Function ID: 68133
 // Name: useProfilePrimaryColor
 // Dependencies: []
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 8575 (useProfilePrimaryColor)
+// Module 8576 (useProfilePrimaryColor)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_profile/native/GuildProfileUtils.tsx");

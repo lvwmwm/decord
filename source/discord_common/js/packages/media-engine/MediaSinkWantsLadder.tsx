@@ -1,5 +1,5 @@
 // Module ID: 4274
-// Function ID: 37402
+// Function ID: 37410
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -198,7 +198,7 @@ const tmp3 = () => {
       let budgetPortion;
       let height;
       let width;
-      const set = new Set(["clientSecret", "fonts", "paymentRequest", "enabled"]);
+      const set = new Set([]);
       const items = [];
       let num = 1;
       let num2 = 1;

@@ -1,5 +1,5 @@
 // Module ID: 7760
-// Function ID: 61611
+// Function ID: 61621
 // Name: LHeading
 // Dependencies: []
 
@@ -125,10 +125,10 @@ let obj2 = arg1(dependencyMap[6]);
 obj = { flex: { flex: 1 } };
 const tmp4 = arg1(dependencyMap[4]);
 obj.container = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj2 = { "Bool(false)": 7, "Bool(false)": 370, borderTopWidth: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: 18, paddingVertical: importDefault(dependencyMap[5]).space.PX_12 };
+obj2 = { "Bool(false)": null, "Bool(false)": "\u{1F43F}\uFE0F", borderTopWidth: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: 18, paddingVertical: importDefault(dependencyMap[5]).space.PX_12 };
 obj.footer = obj2;
 obj.scrollViewContainer = { flex: 1 };
-obj.lheading = { diversity: null, accessible: "\u{1FAF6}\u{1F3FF}", status: true };
+obj.lheading = {};
 obj.lheadingText = { fontSize: 16, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
 obj.lheadingLine = {};
 const obj1 = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
@@ -176,21 +176,21 @@ const memoResult1 = importAllResult.memo((video) => {
   obj.children = items1;
   const items2 = [callback2(closure_5, obj), ];
   obj = { bottom: true, style: tmp.footer };
-  const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, icon: callback(arg1(dependencyMap[17]).XNeutralIcon, { accessibilityRole: true, "": true }) };
+  const obj1 = { "Null": 21, "Null": "cached_notification_channel_id", "Null": "scalar", icon: callback(arg1(dependencyMap[17]).XNeutralIcon, {}) };
   const intl = arg1(dependencyMap[18]).intl;
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[18]).t./lXfom);
   obj1.onPress = function onPress() {
     callback(closure_2[11]).openURL(callback(closure_2[19])(constants.TWITTER));
   };
   const items3 = [callback(arg1(dependencyMap[16]).IconButton, obj1), , ];
-  const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, icon: callback(arg1(dependencyMap[20]).FacebookNeutralIcon, { accessibilityRole: true, "": true }) };
+  const obj2 = { "Null": 21, "Null": "cached_notification_channel_id", "Null": "scalar", icon: callback(arg1(dependencyMap[20]).FacebookNeutralIcon, {}) };
   const intl2 = arg1(dependencyMap[18]).intl;
   obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.h0or/l);
   obj2.onPress = function onPress() {
     callback(closure_2[11]).openURL(constants2.FACEBOOK_URL);
   };
   items3[1] = callback(arg1(dependencyMap[16]).IconButton, obj2);
-  const obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, icon: callback(arg1(dependencyMap[21]).InstagramNeutralIcon, { accessibilityRole: true, "": true }) };
+  const obj3 = { "Null": 21, "Null": "cached_notification_channel_id", "Null": "scalar", icon: callback(arg1(dependencyMap[21]).InstagramNeutralIcon, {}) };
   const intl3 = arg1(dependencyMap[18]).intl;
   obj3.accessibilityLabel = intl3.string(arg1(dependencyMap[18]).t.5uVPyf);
   obj3.onPress = function onPress() {

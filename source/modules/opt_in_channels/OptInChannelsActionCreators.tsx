@@ -1,10 +1,10 @@
-// Module ID: 5342
-// Function ID: 45639
+// Module ID: 5069
+// Function ID: 44049
 // Name: _persistOptInChannelUpdates2
 // Dependencies: []
 // Exports: bulkOptInChannels, clearGuildNotice, dimissFavoriteSuggestion, enableGuildNotice, setGuildOptIn, setIsFavorite, setMessagesFavorite, setOptInChannel, setRecentlyActiveCollapsed, updateOptInChannelsImmediate
 
-// Module 5342 (_persistOptInChannelUpdates2)
+// Module 5069 (_persistOptInChannelUpdates2)
 async function _persistOptInChannelUpdates2(guildId, channel_overrides, arg2) {
   if (null != guildId) {
     if (!fullServerPreview.isFullServerPreview(guildId)) {

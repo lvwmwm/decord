@@ -1,10 +1,10 @@
-// Module ID: 15292
-// Function ID: 116296
+// Module ID: 15300
+// Function ID: 116339
 // Name: getSearchQueryChannelIds
 // Dependencies: []
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15292 (getSearchQueryChannelIds)
+// Module 15300 (getSearchQueryChannelIds)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

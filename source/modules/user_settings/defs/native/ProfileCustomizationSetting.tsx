@@ -1,14 +1,14 @@
-// Module ID: 13437
-// Function ID: 102056
+// Module ID: 13444
+// Function ID: 102089
 // Name: useTitle
 // Dependencies: []
 
-// Module 13437 (useTitle)
+// Module 13444 (useTitle)
 const _module = require(dependencyMap[1]);
 const obj = {
-  y: null,
-  button_action: 16,
-  y: 5,
+  -1366228988: null,
+  -867106812: null,
+  1374118307: null,
   useTitle() {
     const intl = require(dependencyMap[2]).intl;
     return intl.string(require(dependencyMap[2]).t.LYju5J);

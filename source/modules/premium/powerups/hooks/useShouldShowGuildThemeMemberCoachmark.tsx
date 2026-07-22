@@ -1,10 +1,10 @@
-// Module ID: 14865
-// Function ID: 111997
+// Module ID: 14873
+// Function ID: 112040
 // Name: useShouldShowGuildThemeMemberCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14865 (useShouldShowGuildThemeMemberCoachmark)
+// Module 14873 (useShouldShowGuildThemeMemberCoachmark)
 let closure_3 = require(dependencyMap[0]).GUILD_THEME_POWERUP_BOOST_PRICE;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useShouldShowGuildThemeMemberCoachmark.tsx");

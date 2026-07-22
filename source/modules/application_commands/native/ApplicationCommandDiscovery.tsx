@@ -1,10 +1,10 @@
-// Module ID: 11426
-// Function ID: 88917
+// Module ID: 11427
+// Function ID: 88930
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 11426 (_createForOfIteratorHelperLoose)
+// Module 11427 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -145,7 +145,7 @@ export default function ApplicationCommandDiscovery(channel) {
   obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj.applicationCommands = !canOnlyUseTextCommands;
   obj.filters = obj;
-  obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, limit: commandDiscoveryManager };
+  obj1 = { justifyContent: null, sk: null, radii: null, limit: commandDiscoveryManager };
   obj.options = obj1;
   obj.allowFetch = true;
   const discovery = obj2.useDiscovery(obj);
@@ -295,7 +295,7 @@ export default function ApplicationCommandDiscovery(channel) {
   const items7 = [channel.guild_id, callback, sectionDescriptors, first];
   const callback4 = React.useCallback((arg0, index) => {
     if (null == arg0) {
-      let obj = { "Null": -536870861, "Null": -299892737, index };
+      let obj = { <string:2690943727>: "%FunctionPrototype%", <string:1415340628>: "paddingStart", index };
       return obj;
     } else {
       const ROW2 = constants.ROW;

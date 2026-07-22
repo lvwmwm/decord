@@ -1,7 +1,7 @@
 // Module ID: 1046
 // Function ID: 11229
 // Name: _trackINP
-// Dependencies: [131072, 0, 4294967295, 0, 0]
+// Dependencies: [91684864, 956301312, 486539264, 1090519040, 100663296]
 // Exports: registerInpInteractionListener, startTrackingINP
 
 // Module 1046 (_trackINP)
@@ -105,7 +105,7 @@ export const registerInpInteractionListener = function registerInpInteractionLis
   if (obj.isBrowser()) {
     const item = keys.forEach((arg0) => {
       const WINDOW = captureElementFromEvent(closure_1[4]).WINDOW;
-      const listener = WINDOW.addEventListener(arg0, captureElementFromEvent, { allowLinks: null, allowEmojiLinks: null });
+      const listener = WINDOW.addEventListener(arg0, captureElementFromEvent, { -9223372036854775808: null, 0: null });
     });
   }
   function handleEntries(arg0) {

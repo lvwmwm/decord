@@ -109,8 +109,8 @@ function debugLogEvent(StringResult, result, logEventProperties) {
     report("Analytics", StringResult);
   }
 }
-let closure_4 = [true];
-let closure_5 = [0.271];
+let closure_4 = ["useEffect"];
+let closure_5 = [1477468749];
 let closure_6 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ setDebugTrackedData: closure_7, getLocation: closure_8 } = arg1(dependencyMap[2]));
@@ -243,11 +243,31 @@ obj3 = {
   }
 };
 const obj8 = {
-  <string:2307915780>: true,
-  <string:1838153732>: true,
-  <string:939393028>: true,
+  0: true,
+  0: true,
+  0: true,
   throttleKeys(application_id) {
     const items = [application_id.application_id];
+    return items;
+  }
+};
+const obj24 = {
+  y: 8,
+  onFulfilled: "game_activity_notifications",
+  y: "enum",
+  throttleKeys(arg0) {
+    const items = [, ];
+    ({ application_id: arr[0], command: arr[1] } = arg0);
+    return items;
+  }
+};
+const obj25 = {
+  y: 8,
+  onFulfilled: "game_activity_notifications",
+  y: "enum",
+  throttleKeys(arg0) {
+    const items = [, ];
+    ({ application_id: arr[0], event: arr[1] } = arg0);
     return items;
   }
 };
@@ -351,20 +371,6 @@ const obj23 = {
   throttlePeriod: 86400000,
   throttleKeys() {
     return [];
-  }
-};
-const obj24 = {
-  throttleKeys(arg0) {
-    const items = [, ];
-    ({ application_id: arr[0], command: arr[1] } = arg0);
-    return items;
-  }
-};
-const obj25 = {
-  throttleKeys(arg0) {
-    const items = [, ];
-    ({ application_id: arr[0], event: arr[1] } = arg0);
-    return items;
   }
 };
 const obj26 = {

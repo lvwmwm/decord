@@ -1,10 +1,10 @@
-// Module ID: 8566
-// Function ID: 68076
+// Module ID: 8567
+// Function ID: 68088
 // Name: ExpressiveGradient
 // Dependencies: []
 // Exports: ExpressiveGradient
 
-// Module 8566 (ExpressiveGradient)
+// Module 8567 (ExpressiveGradient)
 importAll(dependencyMap[0]);
 ({ View: closure_3, StyleSheet: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -23,9 +23,9 @@ obj.nitro-pink = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRAD
 const obj3 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END };
 obj.nitro-green = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END };
 let closure_8 = {};
-let closure_9 = {};
+let closure_9 = { 0: -721485569, 0: 3375103 };
 let closure_10 = {};
-let closure_11 = {};
+let closure_11 = { 0: false, 0: false };
 const obj4 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/ExpressiveGradient/native/ExpressiveGradient.native.tsx");
 

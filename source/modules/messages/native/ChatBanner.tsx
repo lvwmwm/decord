@@ -1,10 +1,10 @@
-// Module ID: 10423
-// Function ID: 80298
+// Module ID: 10424
+// Function ID: 80311
 // Name: OptInChannelBanner
 // Dependencies: []
 // Exports: default
 
-// Module 10423 (OptInChannelBanner)
+// Module 10424 (OptInChannelBanner)
 let StyleSheet;
 class OptInChannelBanner {
   constructor(arg0) {
@@ -102,7 +102,7 @@ function ArchivedLockedThreadChatBanner(channel) {
   const items1 = [callback(arg1(dependencyMap[17]).Text, obj), ];
   if (canUnarchiveThread) {
     const obj1 = { style: tmp.threadBannerButton };
-    const obj2 = { "Bool(true)": null, "Bool(true)": null };
+    const obj2 = {};
     const intl2 = arg1(dependencyMap[18]).intl;
     obj2.text = intl2.string(arg1(dependencyMap[18]).t.0dvvEi);
     obj2.onPress = function onPress() {
@@ -154,7 +154,7 @@ function LockedThreadChatBanner(channel) {
   const items1 = [callback(arg1(dependencyMap[17]).Text, obj), ];
   if (isThreadModerator) {
     const obj1 = { style: tmp.threadBannerButton };
-    const obj2 = { "Bool(true)": null, "Bool(true)": null };
+    const obj2 = {};
     const intl2 = arg1(dependencyMap[18]).intl;
     obj2.text = intl2.string(arg1(dependencyMap[18]).t.zA9d1J);
     obj2.onPress = function onPress() {
@@ -195,7 +195,7 @@ function NewMessagesChatBar(channel) {
       const isEstimatedResult = estimated.isEstimated(channel.id);
       t = { style: intl.newMessageBar };
       obj = { accessibilityRole: "button", style: intl.newMessageBarTextContainer, onPress: handleScrollToNewMessages };
-      obj = { hasMaxConnections: null, isBoostOnlySubscription: "flex-start" };
+      obj = { cachedAt: null, edpbxy: "b979d6fc20f59ff3d9b456c0fcc05d95" };
       const intl2 = arg1(dependencyMap[num2]).intl;
       const obj1 = { count: unreadCount, timestamp: channel.oldestUnreadTimestamp };
       obj.children = intl2.format(estimated.isEstimated(channel.id) ? t.wvtbbG : t.BctFH/, obj1);
@@ -232,10 +232,10 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { wishlistOwnerId: null, handleGuildRoleDelete: null, gradientContainerRefresh: null, getFullFormatter: null, SPRING_CHANNEL_DETAILS: null, sku: null, isDeadEnd: null, NAVIGATE_BACK: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { WIDGET_ENABLED: null, retries: null, hidden: null, barStyle: null, HoverEffect: null, onBeginFocus: null, _totalAmount: null, alignSelf: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.threadBannerContainer = obj;
-obj.threadBannerTitle = { "Bool(true)": true, "Bool(true)": "100%" };
-obj.threadBannerButton = { "Null": null, "Null": null, "Null": null, "Null": null };
+obj.threadBannerTitle = { 1643693300: null, 33902873: null };
+obj.threadBannerButton = { getRtcConnectionId: null, LIVE_STAGE_NOTIFICATION_BADGE: null, TOGGLE_CAMERA: null, y: null };
 const tmp4 = arg1(dependencyMap[6]);
 obj.newMessageBar = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.newMessageBarTextContainer = {};
@@ -247,7 +247,7 @@ obj.optInChannelBannerLegacyBorder = { borderBottomWidth: 1, borderBottomColor: 
 const obj3 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.topBorder = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
 obj.optInChannelBannerText = { flex: 1 };
-obj.optInChannelBannerButtonContainer = { "Bool(false)": "r", "Bool(false)": "gift_info" };
+obj.optInChannelBannerButtonContainer = { <string:3024947456>: null, <string:757573325>: null };
 let closure_14 = obj.createStyles(obj);
 const obj4 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/messages/native/ChatBanner.tsx");

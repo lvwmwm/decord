@@ -1,10 +1,10 @@
-// Module ID: 8931
-// Function ID: 70423
+// Module ID: 8932
+// Function ID: 70436
 // Name: XboxLinkLanding
 // Dependencies: []
 // Exports: default
 
-// Module 8931 (XboxLinkLanding)
+// Module 8932 (XboxLinkLanding)
 let closure_3 = importAll(dependencyMap[0]);
 const XboxLinkModalScenes = arg1(dependencyMap[1]).XboxLinkModalScenes;
 ({ HelpdeskArticles: closure_5, PlatformTypes: closure_6 } = arg1(dependencyMap[2]));

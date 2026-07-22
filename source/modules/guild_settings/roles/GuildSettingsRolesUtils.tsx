@@ -1,10 +1,10 @@
-// Module ID: 16184
-// Function ID: 124996
+// Module ID: 16192
+// Function ID: 125038
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 16184 (_createForOfIteratorHelperLoose)
+// Module 16192 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

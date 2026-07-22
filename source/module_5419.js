@@ -1,9 +1,8 @@
 // Module ID: 5419
-// Function ID: 46486
+// Function ID: 46441
 // Dependencies: []
 
 // Module 5419
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "7726a7882d06e6e78ae64010f2194cb2", "Bool(false)": "ChevronSmallRightIcon", "Bool(false)": "png", scales: ["Set", "ml"] };
+const Animated = require(dependencyMap[0]).Animated;
 
-export default _module.registerAsset(obj);
+export default Animated.createAnimatedComponent(require(dependencyMap[1]).FlashList);

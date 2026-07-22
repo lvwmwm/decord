@@ -1,9 +1,9 @@
-// Module ID: 9461
-// Function ID: 73719
+// Module ID: 9462
+// Function ID: 73732
 // Name: QuestRewardAssignmentMethods
 // Dependencies: []
 
-// Module 9461 (QuestRewardAssignmentMethods)
+// Module 9462 (QuestRewardAssignmentMethods)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardAssignmentMethods.tsx");
 

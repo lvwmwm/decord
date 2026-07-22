@@ -1,26 +1,26 @@
-// Module ID: 11715
-// Function ID: 90965
+// Module ID: 11716
+// Function ID: 90978
 // Name: ContactSyncNameInput
-// Dependencies: [0, 4294967295, 0, 0, 0, 4294967295, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0]
 // Exports: default
 
-// Module 11715 (ContactSyncNameInput)
-import closure_3 from "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
+// Module 11716 (ContactSyncNameInput)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-let closure_4 = importAll(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = result);
-result = { flex: { flex: 1 }, content: {}, title: { "Null": null, "Null": null }, subtitle: { SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME: 1375732303, SCROLL_EVENT_TIMER_MS: -100662669, cutoutBottomRightSize: 1207960138 } };
-result = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-result.input = result;
-result.formSubtitle = { lineHeight: 16 };
-result.button = { flexGrow: 0, paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_12 };
-result.error = { marginTop: 8 };
-result = result.createStyles(result);
+({ jsx: closure_6, jsxs: closure_7 } = __exportStarResult1);
+__exportStarResult1 = { flex: { flex: 1 }, content: {}, title: { value: null, on: null }, subtitle: { <string:2790674827>: "a", <string:3372925522>: "p", <string:2700829437>: "midnat" } };
+__exportStarResult1 = { "Null": "<string:1895825773>", "Null": "Array", "Null": "<string:1093094481>", "Null": "text-muted", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+__exportStarResult1.input = __exportStarResult1;
+__exportStarResult1.formSubtitle = { lineHeight: 16 };
+__exportStarResult1.button = { flexGrow: 0, paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_12 };
+__exportStarResult1.error = { marginTop: 8 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
 const obj1 = { flexGrow: 0, paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_12 };
-result = arg1(dependencyMap[12]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameInput.tsx");
+const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameInput.tsx");
 
 export default function ContactSyncNameInput(prefilledFromContactBook) {
   let error;
@@ -35,7 +35,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   ({ onNext: closure_0, onRemoveName } = prefilledFromContactBook);
   const importDefault = onRemoveName;
   let dependencyMap;
-  const tmp = result();
+  const tmp = __exportStarResult1();
   const tmp2 = callback(React.useState(initialName), 2);
   const first = tmp2[0];
   dependencyMap = first;
@@ -50,7 +50,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   let obj = { style: items };
   const items = [tmp.content, { paddingBottom: importDefault(dependencyMap[6])({ includeKeyboardHeight: true }).insets.bottom }];
   obj = { style: tmp.flex };
-  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl2 = arg1(dependencyMap[7]).intl;
   const string2 = intl2.string;
   const t2 = arg1(dependencyMap[7]).t;
@@ -72,15 +72,15 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   }
   obj1.children = string3Result;
   items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);
-  const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: null };
+  const obj2 = { cachedAt: "k", edpbxy: "Array" };
   const intl4 = arg1(dependencyMap[7]).intl;
   obj2.children = intl4.string(arg1(dependencyMap[7]).t.42/D2U);
   items1[2] = callback2(arg1(dependencyMap[8]).Text, obj2);
-  const obj3 = { value: first, onChangeText: tmp2[1], style: tmp.input, clearButtonVisibility: arg1(dependencyMap[9]).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
+  const obj3 = { absolute: "SlashBoxIcon", mix: "png", fontSize: null, lineHeight: 80, color: 80, marginTop: 16, value: first, onChangeText: tmp2[1], style: tmp.input, clearButtonVisibility: arg1(dependencyMap[9]).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
   items1[3] = callback2(arg1(dependencyMap[9]).InputView, obj3);
   let tmp12 = null;
   if (flag) {
-    const obj4 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.formSubtitle };
+    const obj4 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.formSubtitle };
     const intl5 = arg1(dependencyMap[7]).intl;
     obj4.children = intl5.string(arg1(dependencyMap[7]).t.bCQt9K);
     tmp12 = callback2(arg1(dependencyMap[8]).Text, obj4);
@@ -104,7 +104,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   let tmp17 = null;
   if (null != onRemoveName) {
     const obj6 = { style: tmp.button };
-    const obj7 = { "Bool(true)": null, "Bool(true)": null };
+    const obj7 = {};
     const intl6 = arg1(dependencyMap[7]).intl;
     obj7.text = intl6.string(arg1(dependencyMap[7]).t.91RssO);
     obj7.onPress = function onPress() {

@@ -1,17 +1,17 @@
-// Module ID: 10040
-// Function ID: 77612
+// Module ID: 10041
+// Function ID: 77625
 // Name: GuildDirectoryCreateOrAddDescription
 // Dependencies: []
 // Exports: default
 
-// Module 10040 (GuildDirectoryCreateOrAddDescription)
+// Module 10041 (GuildDirectoryCreateOrAddDescription)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { flex: 1 }, title: { "Null": null, "Null": null }, description: { textAlign: "center" }, header: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { flex: 1 }, title: { value: null, on: null }, description: { textAlign: "center" }, header: { 0: null, 9223372036854775807: null, 0: null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAddDescription.tsx");
 
@@ -29,7 +29,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   let obj = {};
   obj = { style: tmp.container, keyboardShouldPersistTaps: "handled" };
   obj = { style: tmp.header };
-  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(dependencyMap[11]).intl;
   obj1.children = intl.string(arg1(dependencyMap[11]).t.5bQcoa);
   const items = [callback(arg1(dependencyMap[10]).Text, obj1), ];

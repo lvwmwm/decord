@@ -1,10 +1,10 @@
-// Module ID: 14369
-// Function ID: 108482
+// Module ID: 14377
+// Function ID: 108525
 // Name: SkeletonLoading
 // Dependencies: []
 // Exports: default
 
-// Module 14369 (SkeletonLoading)
+// Module 14377 (SkeletonLoading)
 function SkeletonLoading(accessibilityLabel) {
   const obj = {
     style: callback2().skeletonContainer,
@@ -29,17 +29,17 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[5]));
 const result = 0.75 * arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_WIDTH;
 let obj = arg1(dependencyMap[7]);
-obj = { heroContainer: { width: "100%" }, heroBannerContainer: obj, heroBannerImage: { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "89c1f821400ffcc75deeeab8c6315a88" }, orbsBackgroundGradient: { enableQualityMetrics: "<string:408361903>", enableOriginDetection: "<string:2920093709>", enabled: "<string:1058778651>", threshold: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, enabled: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 }, fadeOutGradient: {}, heroInfoContainer: { "Null": "<string:141856807>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:285212672>", "Null": "<string:38822721>" } };
+obj = { heroContainer: { width: "100%" }, heroBannerContainer: obj, heroBannerImage: {}, orbsBackgroundGradient: { "Null": "center", "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" }, fadeOutGradient: {}, heroInfoContainer: {} };
 obj = { maxHeight: 240 + result };
-const obj1 = { "Null": "y", "Null": "isArray", "Null": "Text", "Null": "Object", "Null": "Reflect", "Null": "r", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.innerContainer = obj1;
-obj.heroLogoContainer = { "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132 };
+obj.heroLogoContainer = {};
 obj.heroLogo = {};
 const tmp4 = arg1(dependencyMap[5]);
 obj.heroViewAllIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.orbsInnerContainer = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
-obj.orbsTitle = { 9223372036854775807: null, 0: null };
+obj.orbsTitle = {};
 obj.productCardsContainer = { zIndex: 1 };
 const obj3 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.skeletonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
@@ -214,7 +214,7 @@ export default function _default(heroBlock) {
           tmp54 = callback(tmp8, obj18);
         }
         const items9 = [tmp54, ];
-        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[35]).ChevronSmallRightIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
+        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[35]).ChevronSmallRightIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) };
         items9[1] = callback(tmp8, obj21);
         obj17.children = items9;
         obj14.children = closure_13(tmp8, obj17);

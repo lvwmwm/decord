@@ -1,10 +1,10 @@
-// Module ID: 12739
-// Function ID: 97736
+// Module ID: 12746
+// Function ID: 97769
 // Name: AddFriendModalScene
 // Dependencies: []
 // Exports: default
 
-// Module 12739 (AddFriendModalScene)
+// Module 12746 (AddFriendModalScene)
 function AddFriendModalScene(onSkip) {
   onSkip = onSkip.onSkip;
   const arg1 = onSkip;
@@ -75,7 +75,7 @@ function AddFriendModalScene(onSkip) {
     navigation.setOptions(obj);
   }, items1);
   obj = { keyboardShouldPersistTaps: "handled" };
-  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerText };
+  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.headerText };
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.string(arg1(dependencyMap[17]).t.GWMTSE);
   const items2 = [callback2(arg1(dependencyMap[22]).Text, obj), , , ];
@@ -86,7 +86,7 @@ function AddFriendModalScene(onSkip) {
   obj2 = { style: tmp.input, autoFocusInput: false };
   items2[2] = callback2(importDefault(dependencyMap[23]), obj2);
   const obj3 = { style: tmp.otherOptionsContainer };
-  const obj4 = { USER_REGISTRATION: "remotePlatform", borderColor: "per", borderWidth: "MiniaturesSpotIllustration" };
+  const obj4 = { "Bool(false)": "Text", "Bool(false)": "position", "Bool(false)": "duration" };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj4.children = intl3.string(arg1(dependencyMap[17]).t.dukg0Z);
   const items3 = [callback2(arg1(dependencyMap[22]).Text, obj4), ];
@@ -121,7 +121,7 @@ obj["textAlign"] = "center";
 obj.headerText = obj;
 obj.subheaderText = {};
 obj.input = { marginTop: 16 };
-obj.otherOptionsContainer = {};
+obj.otherOptionsContainer = { flexGrow: null, gap: null };
 const importDefaultResult = importDefault(dependencyMap[8]);
 obj.rowContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, marginTop: 8 };
 let closure_12 = obj.createStyles(obj);

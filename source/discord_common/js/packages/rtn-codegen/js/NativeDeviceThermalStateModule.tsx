@@ -1,9 +1,9 @@
-// Module ID: 10501
-// Function ID: 82028
+// Module ID: 10502
+// Function ID: 82041
 // Name: enforcing
 // Dependencies: []
 
-// Module 10501 (enforcing)
+// Module 10502 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDeviceThermalStateModule");
 const _module = require(dependencyMap[1]);

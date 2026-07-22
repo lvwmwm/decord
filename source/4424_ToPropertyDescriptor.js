@@ -1,7 +1,7 @@
 // Module ID: 4424
-// Function ID: 38871
+// Function ID: 38879
 // Name: ToPropertyDescriptor
-// Dependencies: [397283552, 309072250, 333066175, 461400950, 325784233]
+// Dependencies: []
 
 // Module 4424 (ToPropertyDescriptor)
 

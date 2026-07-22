@@ -1,9 +1,9 @@
-// Module ID: 9488
-// Function ID: 73951
+// Module ID: 9489
+// Function ID: 73964
 // Name: enforcing
 // Dependencies: []
 
-// Module 9488 (enforcing)
+// Module 9489 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeCommandClipboardModule");
 const _module = require(dependencyMap[1]);

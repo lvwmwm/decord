@@ -1,10 +1,10 @@
-// Module ID: 15219
-// Function ID: 114922
+// Module ID: 15227
+// Function ID: 114965
 // Name: MessageVerticalSeparator
 // Dependencies: []
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 15219 (MessageVerticalSeparator)
+// Module 15227 (MessageVerticalSeparator)
 let FILES_OR_LINKS_GAP_WIDTH;
 let MEDIA_ITEM_GAP_WIDTH;
 importAll(dependencyMap[0]);

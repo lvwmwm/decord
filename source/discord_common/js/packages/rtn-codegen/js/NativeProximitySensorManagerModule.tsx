@@ -1,9 +1,9 @@
-// Module ID: 16035
-// Function ID: 123125
+// Module ID: 16043
+// Function ID: 123167
 // Name: enforcing
 // Dependencies: []
 
-// Module 16035 (enforcing)
+// Module 16043 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeProximitySensorManagerModule");
 const _module = require(dependencyMap[1]);

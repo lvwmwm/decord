@@ -1,9 +1,9 @@
-// Module ID: 16068
-// Function ID: 123443
+// Module ID: 16076
+// Function ID: 123485
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16068 (_isNativeReflectConstruct)
+// Module 16076 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -163,7 +163,11 @@ const importDefaultResult = importDefault(dependencyMap[9]);
 const tmp3 = arg1(dependencyMap[10]);
 const UserRequiredActions = tmp3.UserRequiredActions;
 const APP = tmp3.AppContext.APP;
-let closure_15 = {
+const obj = {
+  "Bool(false)": "SET_AUDIO_DEVICE_BY_ID",
+  "Bool(false)": "invalidColor",
+  "Bool(false)": "mi",
+  "Bool(false)": "isArrayBuffer",
   store: importDefaultResult,
   isOpen(arg0, action) {
     if (null == action) {
@@ -185,10 +189,7 @@ let closure_15 = {
     return arg1(dependencyMap[16]).default;
   }
 };
-const obj = {
-  accumulated: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==",
-  guildDirectoryEntryFromServer: null,
-  currencySpacing: "d5e8222907103de9bee7fa85e9d02eed",
+let closure_16 = {
   store: importDefaultResult,
   isOpen(arg0, arg1) {
     let action = arg1;
@@ -256,12 +257,12 @@ let tmp4 = (arg0) => {
               return callback(closure_2[18]).default;
             }
       };
-      obj2 = { "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/modules/guild_role_subscriptions/native/images" };
+      obj2 = { second_place: "png", flexGrow: true, paddingLeft: "/assets/modules/guild_role_subscriptions/native/images" };
       obj2.store = closure_11;
       obj2.getComponent = function getComponent() {
         return callback(closure_2[19]).default;
       };
-      obj3 = { "Bool(false)": "key", "Bool(false)": "Array", "Bool(false)": "isArray" };
+      obj3 = { second_place: null, flexGrow: null, paddingLeft: null };
       obj3.store = closure_10;
       obj3.getComponent = function getComponent() {
         return callback(closure_2[20]).default;

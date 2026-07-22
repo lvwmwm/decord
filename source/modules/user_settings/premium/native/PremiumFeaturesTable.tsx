@@ -1,10 +1,10 @@
-// Module ID: 12287
-// Function ID: 94166
+// Module ID: 12292
+// Function ID: 94194
 // Name: CheckIcon
 // Dependencies: []
 // Exports: default
 
-// Module 12287 (CheckIcon)
+// Module 12292 (CheckIcon)
 function CheckIcon() {
   let obj = arg1(dependencyMap[10]);
   const tmp = importDefault(dependencyMap[9])();
@@ -208,14 +208,14 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let closure_12 = "rgba(184, 69, 193, 0.5)";
 let obj = arg1(dependencyMap[6]);
-obj = { container: { "Bool(false)": -49894593232006870000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001028007493924, "Bool(false)": 14467327890716857000000000000000000000000 }, headerText: { textAlign: "center" }, logo: { size: "absolute", progress: 5 }, table: { marginTop: 16 }, row: {}, bottomBorder: {} };
+obj = { container: { 9223372036854775807: true, 0: true, 9223372036854775807: true }, headerText: { textAlign: "center" }, logo: { y: true, channelId: true }, table: { marginTop: 16 }, row: {}, bottomBorder: { height: "key", width: "default" } };
 obj = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.topBorderRadius = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.bottomBorderRadius = { borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.cell = { paddingVertical: 12 };
 obj.labelCell = {};
-obj.dataCell = { <string:2320886961>: false, <string:3901792661>: false, "Null": false, "Null": false };
+obj.dataCell = { <string:1403019876>: "isArray", <string:2479072570>: "y", <string:3429226939>: "title", <string:996319483>: "r" };
 const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.themedHighlightedCell = { backgroundColor: arg1(dependencyMap[8]).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
 obj.nitroHomeHightlightedBorderLeftRight = { "Null": 24, "Null": 16, "Null": "flex", "Null": "column" };
@@ -275,11 +275,11 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   let obj1 = arg1(dependencyMap[18]);
   const maxFileSizeForPremiumType1 = obj1.getMaxFileSizeForPremiumType(closure_8.TIER_2);
   obj = { column1: callback3(importDefault(dependencyMap[19]), obj), column2: callback3(importDefault(dependencyMap[20]), obj1), withBottomBorder: false, disableAccessibility: true };
-  obj = { style: tmp.logo };
-  obj1 = { style: tmp.logo };
+  obj = { -655593780: true, 2061642579: true, 1627506020: true, style: tmp.logo };
+  obj1 = { -655593780: "setPausedState", 2061642579: "onAddDirectoryGuildEntry", 1627506020: "extentOffset", style: tmp.logo };
   obj.hidden = !isPremiumGroup;
   const items = [obj, , , , , , , , , , ];
-  const obj2 = {};
+  const obj2 = { isPurchasing: null, purchasingProductId: null, NATIVE_REQUIRED_ASSETS: null, setShowBackdrop: null, QUEST_VIDEO_PROGRESSED: null };
   const obj3 = { accessible: true };
   const intl = arg1(dependencyMap[15]).intl;
   obj3.accessibilityLabel = intl.string(arg1(dependencyMap[15]).t.t9uG/o);
@@ -425,7 +425,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const intl30 = arg1(dependencyMap[15]).intl;
   obj23.column2AccessibilityLabel = intl30.string(arg1(dependencyMap[15]).t.tq+6t/);
   items[9] = obj23;
-  items[10] = { "Bool(false)": "hidden", "Bool(false)": "all", "Bool(false)": true };
+  items[10] = {};
   const found = items.filter((hidden) => null != hidden && !hidden.hidden);
   const obj25 = { style: items1 };
   const items1 = [tmp.container, highlightNitroBasic.style];

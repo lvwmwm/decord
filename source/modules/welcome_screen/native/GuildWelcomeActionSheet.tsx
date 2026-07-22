@@ -1,10 +1,10 @@
-// Module ID: 11678
-// Function ID: 90606
+// Module ID: 11679
+// Function ID: 90619
 // Name: WelcomeChannelRow
 // Dependencies: []
 // Exports: default
 
-// Module 11678 (WelcomeChannelRow)
+// Module 11679 (WelcomeChannelRow)
 let Fonts;
 class WelcomeChannelRow {
   constructor(arg0) {
@@ -114,7 +114,7 @@ class WelcomeChannelRow {
         obj6.leading = tmp16;
         tmp28 = jsx;
         num8 = 22;
-        obj7 = { hasMaxConnections: 1626341378, isBoostOnlySubscription: -1035927550 };
+        obj7 = { cachedAt: null, edpbxy: null };
         obj7.children = welcomeChannel.description;
         obj6.label = jsx(arg1(dependencyMap[22]).Text, obj7);
         tmp29 = null;
@@ -157,10 +157,10 @@ let obj = arg1(dependencyMap[12]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-const obj1 = { paths: null, accessibilityRole: "343480e621e13dced5261af60d8976f8", create: "graggle", parent: "png", borderRadius: importDefault(dependencyMap[13]).radii.sm };
-obj.guildIcon = obj1;
-const obj2 = {};
 const tmp4 = arg1(dependencyMap[11]);
+obj.guildIcon = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
+const obj2 = {};
+const obj1 = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
 const merged = Object.assign(importDefault(dependencyMap[14])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[13]).colors.TEXT_SUBTLE, 24));
 obj2["marginBottom"] = 8;
 obj2["textAlign"] = "center";
@@ -270,7 +270,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       obj = { contentContainerStyle: tmp.container };
       obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: importDefault(dependencyMap[30]).Sizes.MEDIUM, textScale: 2 };
       const items9 = [callback(importDefault(dependencyMap[30]), obj1), , , , ];
-      const obj2 = { delete: "/assets/modules/contact_sync/native/images", dispatch: 215.5, raw: 135, style: tmp.header };
+      const obj2 = { "Null": null, "Null": null, alignItems: null, style: tmp.header };
       const intl = arg1(dependencyMap[31]).intl;
       const obj3 = {
         guildName: stateFromStores.name,
@@ -282,7 +282,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       items9[1] = callback(arg1(dependencyMap[22]).Text, obj2);
       const obj4 = { style: tmp.guildDescription, children: welcomeScreen.description };
       items9[2] = callback(arg1(dependencyMap[22]).Text, obj4);
-      const obj5 = { style: tmp.channelsTitle };
+      const obj5 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.channelsTitle };
       const intl2 = arg1(dependencyMap[31]).intl;
       const tmp18 = importDefault(dependencyMap[30]);
       obj5.children = intl2.string(arg1(dependencyMap[31]).t.haj5+i).toUpperCase();

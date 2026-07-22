@@ -1,15 +1,15 @@
-// Module ID: 8470
-// Function ID: 67574
+// Module ID: 8471
+// Function ID: 67586
 // Name: GuildStageChannelSelection
 // Dependencies: []
 // Exports: default
 
-// Module 8470 (GuildStageChannelSelection)
+// Module 8471 (GuildStageChannelSelection)
 importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ channelText: { "Null": 24541952, "Null": 24541952 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ channelText: { duration: "alrededor de 1 semana", dampingRatio: "alrededor de {{count}} semanas" } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/stage_channels/native/modals/GuildStageChannelSelection.tsx");
 
@@ -50,14 +50,13 @@ export default function GuildStageChannelSelection(channel) {
     obj2.openLazy(channel(handleSelectChannel[10])(handleSelectChannel[9], handleSelectChannel.paths), "SelectUpdatesChannel", obj);
   }
   function renderChannelHook(children) {
-    const obj = { hasMaxConnections: -956300828, isBoostOnlySubscription: 1358955199, children };
-    return callback(channel(handleSelectChannel[12]).Text, obj, arg1);
+    return callback(channel(handleSelectChannel[12]).Text, { children }, arg1);
   }
   let obj = arg1(handleSelectChannel[5]);
   const channelsUserCanStartStageIn = obj.useChannelsUserCanStartStageIn(channel.guild);
   importAll = channelsUserCanStartStageIn;
   const tmp3 = importDefault(handleSelectChannel[6])(channel);
-  obj = { delete: "a", dispatch: "isArray", raw: "textAlign", style: callback().channelText };
+  obj = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: callback().channelText };
   const intl = arg1(handleSelectChannel[11]).intl;
   const format = intl.format;
   const t = arg1(handleSelectChannel[11]).t;
@@ -66,8 +65,7 @@ export default function GuildStageChannelSelection(channel) {
       stageName: tmp3,
       stageHook: renderChannelHook,
       changeHook(children) {
-          const obj = { -1398216365: "<string:3661824003>", 1403823626: "<string:3674211254>", -1397974005: "<string:3707765686>", onPress: handleSelectChannel, children };
-          return callback(channel(handleSelectChannel[12]).Text, obj, arg1);
+          return callback(channel(handleSelectChannel[12]).Text, { onPress: handleSelectChannel, children }, arg1);
         }
     };
     obj.children = format(t.AkzLcV, obj);

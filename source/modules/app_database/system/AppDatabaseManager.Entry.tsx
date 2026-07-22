@@ -1,12 +1,16 @@
 // Module ID: 6884
-// Function ID: 54625
+// Function ID: 54636
 // Name: Entry
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 6884 (Entry)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
+
+export const Entry = () => {
   class Entry {
     constructor(arg0, arg1) {
       tmp = Entry(this, Entry);
@@ -65,6 +69,3 @@ const tmp2 = () => {
   };
   return callback(Entry, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
-
-export const Entry = tmp2;

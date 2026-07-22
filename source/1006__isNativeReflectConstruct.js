@@ -1,7 +1,7 @@
 // Module ID: 1006
 // Function ID: 10983
 // Name: _isNativeReflectConstruct
-// Dependencies: [66977792, 67043328, 67108864, 67436544, 66650112, 4151508992, 3, 4177526788, 1979711491]
+// Dependencies: []
 
 // Module 1006 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
@@ -49,7 +49,7 @@ export const BrowserClient = (Client) => {
         SENTRY_SDK_SOURCE = obj.getSDKSource();
       }
       obj2 = BrowserClient(sendClientReports[7]);
-      applySdkMetadataResult = obj2.applySdkMetadata(tmp2, "browser", [10388708784503762000000000000000000], SENTRY_SDK_SOURCE);
+      applySdkMetadataResult = obj2.applySdkMetadata(tmp2, "browser", [false], SENTRY_SDK_SOURCE);
       _metadata = tmp2._metadata;
       tmp6 = null != _metadata && _metadata.sdk;
       if (tmp6) {

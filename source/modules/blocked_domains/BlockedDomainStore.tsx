@@ -1,9 +1,9 @@
-// Module ID: 8330
-// Function ID: 66017
+// Module ID: 8331
+// Function ID: 66029
 // Name: BlockedDomainStore
 // Dependencies: []
 
-// Module 8330 (BlockedDomainStore)
+// Module 8331 (BlockedDomainStore)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

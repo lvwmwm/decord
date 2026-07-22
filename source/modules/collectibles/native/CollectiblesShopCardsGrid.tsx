@@ -1,10 +1,10 @@
-// Module ID: 14368
-// Function ID: 108475
+// Module ID: 14376
+// Function ID: 108518
 // Name: ShopCardGridItem
 // Dependencies: []
 // Exports: default
 
-// Module 14368 (ShopCardGridItem)
+// Module 14376 (ShopCardGridItem)
 function ShopCardGridItem(index) {
   let cardWidth;
   let disableBundleStaticBackground;
@@ -26,7 +26,7 @@ let closure_6 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { gap: arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_GAP };
+obj = { 1426971212: true, 1282719710: true, gap: arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_GAP };
 obj.rowContainer = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[1]);

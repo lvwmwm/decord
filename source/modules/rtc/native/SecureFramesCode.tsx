@@ -1,10 +1,10 @@
-// Module ID: 8903
-// Function ID: 70269
+// Module ID: 8904
+// Function ID: 70282
 // Name: SecureFramesCodeGrid
 // Dependencies: []
 // Exports: default
 
-// Module 8903 (SecureFramesCodeGrid)
+// Module 8904 (SecureFramesCodeGrid)
 function SecureFramesCodeGrid(chunks) {
   chunks = chunks.chunks;
   const arg1 = chunks;
@@ -33,7 +33,7 @@ function SecureFramesCodeGrid(chunks) {
       obj = {
         style: closure_2.row,
         children: arr.map((children) => {
-          const obj = { delete: null, dispatch: 1, raw: 1, style: codeText.codeText, children };
+          const obj = { "Null": null, "Null": 1, alignItems: 1, style: codeText.codeText, children };
           return callback2(callback(closure_1[6]).Text, obj, "" + children + "-" + arg1);
         })
       };
@@ -54,17 +54,17 @@ let closure_2 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { codeText: obj, row: { "Null": 2, "Null": "platform_name", "Null": "scalar" } };
+obj = { codeText: obj, row: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
 obj = { fontFamily: arg1(dependencyMap[2]).Fonts.CODE_NORMAL };
 const tmp3 = arg1(dependencyMap[3]);
 obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.codeHeader = obj2;
-const obj3 = { -9223372036854775808: null, -9223372036854775808: null, 9223372036854775807: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.lg, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.lg };
+const obj1 = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.codeHeader = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
+const obj3 = { "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.lg, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.code = obj3;
 obj.loading = { minHeight: 126 };
 let closure_8 = obj.createStyles(obj);
-const obj1 = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/rtc/native/SecureFramesCode.tsx");
 
 export default function SecureFramesCode(chunks) {
@@ -76,20 +76,19 @@ export default function SecureFramesCode(chunks) {
   const tmp = callback3();
   let obj = {};
   obj = { style: tmp.codeHeader };
-  obj = { "Null": "", "Null": "", children: title };
-  const items = [callback(arg1(dependencyMap[6]).Text, obj), trailing];
+  const items = [callback(arg1(dependencyMap[6]).Text, { children: title }), trailing];
   obj.children = items;
   const items1 = [callback2(closure_4, obj), ];
-  const obj1 = { style: tmp.code };
+  obj = { style: tmp.code };
   if (null != chunks) {
-    const obj2 = { chunks, columns };
-    let tmp8 = callback(SecureFramesCodeGrid, obj2);
+    const obj1 = { chunks, columns };
+    let tmp8 = callback(SecureFramesCodeGrid, obj1);
   } else {
-    const obj3 = { style: tmp.loading };
-    tmp8 = callback(closure_3, obj3);
+    const obj2 = { style: tmp.loading };
+    tmp8 = callback(closure_3, obj2);
   }
-  obj1.children = tmp8;
-  items1[1] = callback(closure_4, obj1);
+  obj.children = tmp8;
+  items1[1] = callback(closure_4, obj);
   obj.children = items1;
   return callback2(closure_7, obj);
 };

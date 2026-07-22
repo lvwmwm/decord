@@ -1,20 +1,20 @@
-// Module ID: 12965
-// Function ID: 98647
+// Module ID: 12972
+// Function ID: 98680
 // Name: StepModal
 // Dependencies: [161, 219, 0, 4, 65, 57, 6, 7, 15, 17]
 // Exports: StepModal
 
-// Module 12965 (StepModal)
+// Module 12972 (StepModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import WebSocketModule from "WebSocketModule";
-import { View } from "result";
+import { View } from "__exportStarResult1";
 import log from "log";
 import _toConsumableArray from "_toConsumableArray";
 import _getPrototypeOf from "_getPrototypeOf";
 
 ({ jsx: closure_6, jsxs: closure_7 } = log);
 _toConsumableArray = { container: { height: "100%" } };
-_toConsumableArray = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, height: require("_slicedToArray").NAV_BAR_HEIGHT };
+_toConsumableArray = { 0: -95027199, 0: 2010710017, 9223372036854775807: -1150550015, 0: 709951489, "Bool(false)": -1823407817, "Bool(false)": 732123400, height: require("_slicedToArray").NAV_BAR_HEIGHT };
 _toConsumableArray.stepContainer = _toConsumableArray;
 _toConsumableArray = _toConsumableArray.createStyles(_toConsumableArray);
 const result = _getPrototypeOf.fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");

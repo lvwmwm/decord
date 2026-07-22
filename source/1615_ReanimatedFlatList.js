@@ -63,7 +63,7 @@ export const ReanimatedFlatList = arg1(dependencyMap[7]).componentWithRef(functi
   const tmp4 = <closure_7 {...Object.assign(obj, tmp, obj)} />;
   let tmp5 = tmp4;
   if (undefined !== skipEnteringExitingAnimations.skipEnteringExitingAnimations) {
-    obj = { children: tmp4 };
+    obj = { container: null, status: null, children: tmp4 };
     tmp5 = jsx(ref(dependencyMap[6]).LayoutAnimationConfig, obj);
   }
   return tmp5;

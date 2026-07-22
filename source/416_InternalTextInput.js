@@ -64,7 +64,7 @@ function InternalTextInput(props) {
     first = tmp[0];
     const setLastNativeText = tmp[1];
     const editable = setLastNativeText;
-    const tmp4 = hitSlop(callback4({ selection: { bind: "<string:1876819969>", cursor: "<string:2170814465>" }, mostRecentEventCount }), 2);
+    const tmp4 = hitSlop(callback4({ selection: { 400888199: "pow", 2091392542: "decorationCutout" }, mostRecentEventCount }), 2);
     const setLastNativeSelection = tmp4[1];
     const hitSlop = setLastNativeSelection;
     const selection2 = tmp4[0].selection;
@@ -159,7 +159,7 @@ function InternalTextInput(props) {
     first = tmp[0];
     const setLastNativeText = tmp[1];
     const editable = setLastNativeText;
-    const tmp4 = hitSlop(callback4({ selection: { bind: "<string:1876819969>", cursor: "<string:2170814465>" }, mostRecentEventCount }), 2);
+    const tmp4 = hitSlop(callback4({ selection: { 400888199: "pow", 2091392542: "decorationCutout" }, mostRecentEventCount }), 2);
     const setLastNativeSelection = tmp4[1];
     const hitSlop = setLastNativeSelection;
     const selection2 = tmp4[0].selection;
@@ -539,7 +539,7 @@ function InternalTextInput(props) {
   children = <closure_5 {...Object.assign({ ref: tmp15 }, tmp6, obj4, tmp20, obj6)} />;
   return jsx(importDefault(dependencyMap[13]), { value: true, children });
 }
-let closure_2 = [null, null, null, null, null, null, null, "\u00D7", "annuler", "croix noire", "multiplication", "multiplier"];
+let closure_2 = [];
 let closure_3 = [];
 let closure_4 = [];
 let closure_7 = importDefault(dependencyMap[0]);
@@ -549,9 +549,9 @@ let closure_9 = importAll(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let closure_5 = arg1(dependencyMap[4]).default;
 const Commands = arg1(dependencyMap[4]).Commands;
-let closure_16 = {};
+let closure_16 = { <string:555757>: true, <string:720896>: true, <string:851968>: true, <string:983040>: true, <string:1114112>: true, <string:1179648>: true, <string:1572864>: true };
 let closure_17 = {};
-let closure_18 = {};
+let closure_18 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "size", "Bool(false)": "o", "Bool(false)": "Array", 1179783485: "isArray", 735109082: "push", 669338063: "o", 2090873474: "Array", 1549274622: "isArray", 299569651: "pos", 612241874: "o", 958626988: "Array", -1962929323: "isArray", 2091719004: "enumerable", 1377667846: "max", 853309665: "Array", 2147103453: "isArray", 1656585401: "enumerable", 2092465339: "concat", 2091142316: "Array", 611876005: "isArray", -1962705754: "url", 355349114: "HTTP", 301937271: "Array", 400888199: "isArray", 2091392542: "alignItems", 1572233113: "l", 160579: "Array", 65536: "isArray" };
 class TextInput {
   constructor(arg0) {
     allowFontScaling = global.allowFontScaling;
@@ -607,6 +607,6 @@ let obj = { currentlyFocusedInput: importDefault(dependencyMap[5]).currentlyFocu
 TextInput.State = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj = importDefault(dependencyMap[14]).create({ multilineDefault: { paddingTop: 5 } });
-let closure_19 = { <string:50352600>: "en-US", <string:1650218083>: 0, <string:1644429137>: null, <string:4182944342>: true };
+let closure_19 = { accessibilityRole: "en-US", apply: 0, "Null": null, "Null": true };
 
 export default TextInput;

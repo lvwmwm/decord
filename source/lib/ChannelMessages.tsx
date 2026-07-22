@@ -1,5 +1,5 @@
 // Module ID: 4800
-// Function ID: 41721
+// Function ID: 41730
 // Name: mergeMessage
 // Dependencies: []
 // Exports: flatMapChannelMessages
@@ -1290,7 +1290,7 @@ const tmp6 = () => {
       }
       let mergeResult = self;
       if (null == value) {
-        const mutation = self.mutate({ NO_CLASSIFICATION: null, INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER: null });
+        const mutation = self.mutate({ display: null, flexDirection: null });
         const items = [callback3(self, nonce)];
         mergeResult = mutation.merge(items);
       }
@@ -1371,7 +1371,7 @@ const tmp6 = () => {
           if (self.ready) {
             let mergeResult = self.merge(valueResult, tmp, true);
           }
-          obj = { isNewBackTitleImplementation: null, usesHeaderFlexboxImplementation: null };
+          obj = { 0: "<string:1040334421>", 9223372036854775807: "<string:1040334338>" };
           let jumpType;
           if (null != tmp3) {
             jumpType = tmp3.jumpType;

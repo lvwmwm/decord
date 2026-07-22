@@ -1,10 +1,10 @@
-// Module ID: 10070
-// Function ID: 77839
+// Module ID: 10071
+// Function ID: 77852
 // Name: getMonths
 // Dependencies: []
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 10070 (getMonths)
+// Module 10071 (getMonths)
 let SearchTokenTypes;
 function getMonths() {
   const obj = importDefault(dependencyMap[10]);
@@ -531,10 +531,10 @@ function getChannelAutocompletions(arg0) {
     if (obj3.isGuildLikeSearchContext(searchContext)) {
       let items = function getGuildChannelAutocompletions(substr1, guildId, maxResults) {
         let obj = callback2(closure_2[18]);
-        obj = { -504805752: 1358954806, 343974744: 1091687288, -1355458075: 151651, -1098993861: 6258, -2006322853: 6144, 1491200326: -364838656, -451641181: 1375732290, query: substr1, type: closure_5, guildId, boosters: callback(closure_2[18]).getBoosterMap(callback(closure_2[19]).AutocompleterResultTypes.TEXT_CHANNEL) };
+        obj = { "Null": "png", "Null": "text-xs/medium", "Null": 1, "Null": 1, "Null": "row", "Null": "center", "Null": 4, query: substr1, type: closure_5, guildId, boosters: callback(closure_2[18]).getBoosterMap(callback(closure_2[19]).AutocompleterResultTypes.TEXT_CHANNEL) };
         const obj3 = callback(closure_2[18]);
         const queryChannelsResult = obj.queryChannels(obj);
-        obj = { 9223372036854775807: null, 9223372036854775807: "88df5c832b935fed96e52c66883efce1", 0: "CircleXIcon", 9223372036854775807: "png", 9223372036854775807: "absolute", 0: "100%", query: substr1, type: closure_6, guildId };
+        obj = { "Bool(true)": 4, "Bool(true)": "hidden", "Bool(true)": 1, "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, query: substr1, type: closure_6, guildId };
         const obj5 = callback2(closure_2[18]);
         obj.boosters = callback(closure_2[18]).getBoosterMap(callback(closure_2[19]).AutocompleterResultTypes.VOICE_CHANNEL);
         const combined = queryChannelsResult.concat(obj5.queryChannels(obj));

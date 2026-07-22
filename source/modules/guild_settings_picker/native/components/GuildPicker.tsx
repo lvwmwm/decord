@@ -1,10 +1,10 @@
-// Module ID: 12780
-// Function ID: 97929
+// Module ID: 12787
+// Function ID: 97962
 // Name: GuildPicker
 // Dependencies: []
 // Exports: default
 
-// Module 12780 (GuildPicker)
+// Module 12787 (GuildPicker)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_settings_picker/native/components/GuildPicker.tsx");

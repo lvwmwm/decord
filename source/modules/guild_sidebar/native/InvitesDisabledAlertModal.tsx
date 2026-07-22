@@ -1,10 +1,10 @@
-// Module ID: 11386
-// Function ID: 88529
+// Module ID: 11387
+// Function ID: 88542
 // Name: InvitesDisabledAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 11386 (InvitesDisabledAlertModal)
+// Module 11387 (InvitesDisabledAlertModal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_sidebar/native/InvitesDisabledAlertModal.tsx");

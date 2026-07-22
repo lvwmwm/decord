@@ -33,7 +33,7 @@ export const useSyncExternalStoreWithSelector = (arg0, arg1, arg2, arg3, arg4) =
   const is = arg3;
   const tmp = arg4(null);
   if (null === tmp.current) {
-    const obj = { "Bool(false)": null, "Bool(false)": null };
+    const obj = { stores: "L", memoCache: "L" };
     let current = obj;
     tmp.current = obj;
   } else {

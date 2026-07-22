@@ -1,9 +1,13 @@
 // Module ID: 0
 // Function ID: 81
-// Name: result
-// Dependencies: []
+// Name: __exportStarResult1
+// Dependencies: [4, 12, 2]
 
-// Module 0 (result)
+// Module 0 (__exportStarResult1)
+import log from "log";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import result2 from "result2";
+
 function registerHeadlessTask(BackgroundSync, arg1) {
   const require = BackgroundSync;
   const dependencyMap = arg1;
@@ -12,9 +16,6 @@ function registerHeadlessTask(BackgroundSync, arg1) {
     return (arg0) => callback(callback, closure_1, arg0);
   });
 }
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
-const _module2 = require(dependencyMap[2]);
 const _module3 = require(dependencyMap[3]);
 const polyfillsEnd = require(dependencyMap[4]).default.imports.polyfillsEnd;
 polyfillsEnd.record();

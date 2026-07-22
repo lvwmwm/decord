@@ -1,5 +1,5 @@
 // Module ID: 8064
-// Function ID: 63976
+// Function ID: 63986
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -63,6 +63,6 @@ const tmp3 = (arg0) => {
   return callback(FeOffset, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "FeOffset";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { <string:2027256080>: -536870861, <string:2406433493>: -299892737 });
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { -1827298222: "%FunctionPrototype%", -715401892: "paddingStart" });
 
 export default tmp3;

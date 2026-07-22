@@ -1,10 +1,10 @@
-// Module ID: 13499
-// Function ID: 102444
+// Module ID: 13506
+// Function ID: 102477
 // Name: EditGuildIdentityAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 13499 (EditGuildIdentityAvatar)
+// Module 13506 (EditGuildIdentityAvatar)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const PremiumUpsellTypes = arg1(dependencyMap[4]).PremiumUpsellTypes;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-let closure_12 = arg1(dependencyMap[6]).createStyles({ editAvatarIcon: { "Null": null, "Null": null } });
+let closure_12 = arg1(dependencyMap[6]).createStyles({ editAvatarIcon: { "Bool(false)": 40, "Bool(false)": 40 } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/guild_identity/native/EditGuildIdentityAvatar.tsx");
 

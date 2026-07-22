@@ -1,10 +1,10 @@
-// Module ID: 11353
-// Function ID: 88306
+// Module ID: 11354
+// Function ID: 88319
 // Name: useVoiceMessageTooltip
 // Dependencies: []
 // Exports: default
 
-// Module 11353 (useVoiceMessageTooltip)
+// Module 11354 (useVoiceMessageTooltip)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ hideVoiceMessagesTooltip: closure_4, showVoiceMessagesTooltip: closure_5, useVoiceMessagesUIStore: closure_6 } = arg1(dependencyMap[2]));

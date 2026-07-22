@@ -1,10 +1,10 @@
-// Module ID: 11422
-// Function ID: 88878
+// Module ID: 11423
+// Function ID: 88891
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getChannelHighlightNodes, getEmojiHighlightNodes, getMatchedOptions, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getUsernameHighlightNodes
 
-// Module 11422 (_createForOfIteratorHelperLoose)
+// Module 11423 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

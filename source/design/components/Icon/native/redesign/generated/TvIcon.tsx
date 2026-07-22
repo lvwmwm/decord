@@ -1,10 +1,10 @@
-// Module ID: 9062
-// Function ID: 71135
+// Module ID: 9063
+// Function ID: 71148
 // Name: TvIcon
 // Dependencies: []
 // Exports: TvIcon
 
-// Module 9062 (TvIcon)
+// Module 9063 (TvIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TvIcon.tsx");

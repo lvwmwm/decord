@@ -1,10 +1,10 @@
-// Module ID: 10952
-// Function ID: 85169
+// Module ID: 10953
+// Function ID: 85182
 // Name: MessageGameIconActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10952 (MessageGameIconActionSheet)
+// Module 10953 (MessageGameIconActionSheet)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -13,7 +13,7 @@ const HelpdeskArticles = arg1(dependencyMap[3]).HelpdeskArticles;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(true)": "<string:1091687288>", "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images" };
+obj = {};
 const tmp3 = arg1(dependencyMap[4]);
 if (obj4.isAndroid()) {
   num = 16;

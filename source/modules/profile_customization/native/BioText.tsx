@@ -1,10 +1,10 @@
-// Module ID: 11875
-// Function ID: 91936
+// Module ID: 11876
+// Function ID: 91950
 // Name: LinkButton
 // Dependencies: []
 // Exports: default
 
-// Module 11875 (LinkButton)
+// Module 11876 (LinkButton)
 function LinkButton(arg0) {
   let lineClamp;
   let text;
@@ -21,7 +21,7 @@ function LinkButton(arg0) {
     children: callback(arg1(dependencyMap[8]).Text, obj)
   };
   obj = { lineClamp, style: tmp.link, children: items };
-  const items = ["twoFriends", text];
+  const items = ["<string:1792496273>", text];
   return callback2(Pressable, obj);
 }
 let closure_3 = importAll(dependencyMap[0]);
@@ -30,7 +30,7 @@ const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
 const CHANGELOG_URL = arg1(dependencyMap[3]).CHANGELOG_URL;
 ({ jsxs: closure_7, jsx: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ text: { -1231789368: -2029633279, 2035366753: 24182785, -1433115960: 1090519040, 999576422: 170930, 1365420630: 1348682001, 1398910140: 410124290 }, span: { INVITER_ID: -1184825343, enableGameUpdateNotifications: 4977, _monthsRegex: 1555054848, 9223372036854775807: -1184825340, 0: 342950161, 0: 1090519040 }, link: {} });
+let closure_10 = arg1(dependencyMap[5]).createStyles({ text: { responsesApiToolCalls: -2015280895, shouldListenToVisibleIndices: 24182785, stickerOpaque: 1090519040, -9223372036854775808: 170969, 9223372036854775807: 705839377, 0: 410124290 }, span: { "Null": -1168048127, "Null": 4977, "Null": 1558003968, "Null": -1168048124, "Null": 342950161, "Null": 1090519040 }, link: { lane: 1364934929, revertLane: 275906562, pending: 268435456, lanes: 16777216, dispatch: 38257729, lastRenderedReducer: 1878741504 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/profile_customization/native/BioText.tsx");
 

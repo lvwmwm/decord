@@ -1,10 +1,10 @@
-// Module ID: 5477
-// Function ID: 46755
+// Module ID: 5476
+// Function ID: 46763
 // Name: ConnectionCardView
 // Dependencies: []
 // Exports: default
 
-// Module 5477 (ConnectionCardView)
+// Module 5476 (ConnectionCardView)
 importAll(dependencyMap[0]);
 ({ View: closure_2, ActivityIndicator: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -15,10 +15,10 @@ obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFA
 obj.card = obj;
 const tmp4 = arg1(dependencyMap[2]);
 obj.leftContent = { marginRight: importDefault(dependencyMap[4]).space.PX_12 };
-const obj2 = { <string:1549954009>: false, <string:67064148>: false, <string:2018617953>: false, <string:2856019144>: false, <string:1399038036>: false, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
+const obj2 = { -9223372036854775808: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
 obj.icon = obj2;
 obj.textContent = { flex: 1 };
-const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.connectedStatus = obj3;
 let closure_6 = obj.createStyles(obj);
 const obj1 = { marginRight: importDefault(dependencyMap[4]).space.PX_12 };
@@ -39,14 +39,14 @@ export default function ConnectionCardView(description) {
   obj = { style: tmp.icon, children: icon };
   const items = [callback(closure_2, obj), ];
   const obj1 = { style: tmp.textContent };
-  const obj2 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, children: displayName };
+  const obj2 = { cachedAt: null, edpbxy: null, children: displayName };
   const items1 = [callback(arg1(dependencyMap[5]).Text, obj2), ];
   let tmp4 = null != description;
   if (tmp4) {
     tmp4 = description.length > 0;
   }
   if (tmp4) {
-    const obj3 = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000, children: description };
+    const obj3 = { children: description };
     tmp4 = callback(arg1(dependencyMap[5]).Text, obj3);
   }
   items1[1] = tmp4;
@@ -59,10 +59,10 @@ export default function ConnectionCardView(description) {
     let tmp11 = callback(closure_3, obj4);
   } else if (isConnected) {
     const obj5 = { style: tmp.connectedStatus };
-    const obj6 = { hasMaxConnections: "center", isBoostOnlySubscription: "center" };
+    const obj6 = { cachedAt: null, edpbxy: null };
     const intl2 = arg1(dependencyMap[6]).intl;
     obj6.children = intl2.string(arg1(dependencyMap[6]).t.LV+CXH);
-    const items3 = [callback(arg1(dependencyMap[5]).Text, obj6), callback(arg1(dependencyMap[7]).CircleCheckIcon, {})];
+    const items3 = [callback(arg1(dependencyMap[5]).Text, obj6), callback(arg1(dependencyMap[7]).CircleCheckIcon, { "Bool(false)": null, "Bool(false)": "row" })];
     obj5.children = items3;
     tmp11 = callback2(closure_2, obj5);
   } else {

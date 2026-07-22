@@ -1,18 +1,16 @@
-// Module ID: 14529
-// Function ID: 109428
+// Module ID: 14537
+// Function ID: 109471
 // Name: PasswordScreen
-// Dependencies: [503316501, 4177526810, 2969567236, 3238002690, 503316507, 419430416, 26, 3372220432, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14529 (PasswordScreen)
-import result from "result";
-
+// Module 14537 (PasswordScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
 const View = arg1(dependencyMap[3]).View;
 const jsx = arg1(dependencyMap[4]).jsx;
-result = result.fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
+const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
 
 export default function PasswordScreen(finish) {
   let tmp6;

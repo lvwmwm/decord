@@ -1,18 +1,18 @@
-// Module ID: 8665
-// Function ID: 68571
+// Module ID: 8666
+// Function ID: 68583
 // Name: SourceIcon
 // Dependencies: []
 // Exports: default
 
-// Module 8665 (SourceIcon)
+// Module 8666 (SourceIcon)
 function SourceIcon(toastText) {
   const arg1 = toastText.toastText;
   let obj = {
-    "Null": "hidden",
-    "Null": "flex-end",
-    "Null": "row",
     "Null": "center",
-    "Null": 8,
+    "Null": "center",
+    "Null": 64,
+    "Null": 16,
+    "Null": 137,
     style: callback2().sourceIcon,
     onPress() {
       let obj = callback(closure_2[5]);
@@ -30,7 +30,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj = { borderWidth: true, horizontal: true, showsHorizontalScrollIndicator: true, contentContainerStyle: true, role: true, backgroundColor: true, borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 obj.card = obj;
 const obj1 = {};
 const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);
@@ -105,9 +105,9 @@ export default function WishlistItemCardBase(username) {
   }
   items1[2] = tmp8;
   const found = items1.filter(arg1(dependencyMap[12]).isNotNullish);
-  obj2 = { -1884505006: "50%", -1436392532: 60, -1585032362: 60, -1501868495: true, style: tmp.ownedOverlay };
+  obj2 = { 1649302097: "50%", -866014378: 60, 77722194: 60, -1594137938: true, style: tmp.ownedOverlay };
   const joined = found.join(", ");
-  const obj3 = { color: importDefault(dependencyMap[4]).colors.WHITE, size: "custom", style: {} };
+  const obj3 = { color: importDefault(dependencyMap[4]).colors.WHITE, size: "custom", style: { "Null": "isArray", "Null": "c" } };
   obj2.children = callback(arg1(dependencyMap[13]).CheckmarkLargeBoldIcon, obj3);
   const obj4 = {};
   const obj5 = {};

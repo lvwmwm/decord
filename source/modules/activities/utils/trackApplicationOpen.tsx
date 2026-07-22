@@ -1,10 +1,10 @@
-// Module ID: 10818
-// Function ID: 84007
+// Module ID: 10819
+// Function ID: 84020
 // Name: trackApplicationOpen
 // Dependencies: [670, 2, 6]
 // Exports: default
 
-// Module 10818 (trackApplicationOpen)
+// Module 10819 (trackApplicationOpen)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

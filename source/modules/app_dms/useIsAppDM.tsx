@@ -1,10 +1,10 @@
-// Module ID: 11257
-// Function ID: 87572
+// Module ID: 11258
+// Function ID: 87585
 // Name: useIsAppDM
 // Dependencies: []
 // Exports: default
 
-// Module 11257 (useIsAppDM)
+// Module 11258 (useIsAppDM)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
 

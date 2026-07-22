@@ -1,10 +1,10 @@
-// Module ID: 9731
-// Function ID: 75713
+// Module ID: 9732
+// Function ID: 75726
 // Name: useMobileSocialLayerPurchaseSKU
 // Dependencies: []
 // Exports: default
 
-// Module 9731 (useMobileSocialLayerPurchaseSKU)
+// Module 9732 (useMobileSocialLayerPurchaseSKU)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).PriceSetAssignmentPurchaseTypes;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");

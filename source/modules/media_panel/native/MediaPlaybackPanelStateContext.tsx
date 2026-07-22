@@ -1,9 +1,9 @@
-// Module ID: 15773
-// Function ID: 120598
+// Module ID: 15781
+// Function ID: 120641
 // Name: setMode
 // Dependencies: []
 
-// Module 15773 (setMode)
+// Module 15781 (setMode)
 const obj = {};
 const importAllResult = importAll(dependencyMap[0]);
 obj.mode = arg1(dependencyMap[3]).createFakeSharedValue(arg1(dependencyMap[1]).MediaPlaybackPanelModes.PIP);
@@ -14,13 +14,13 @@ obj.setMode = function setMode() {
 const obj3 = arg1(dependencyMap[3]);
 obj.morphablePanelMode = arg1(dependencyMap[3]).createFakeSharedValue(arg1(dependencyMap[2]).MorphablePanelModes.PIP);
 const obj4 = arg1(dependencyMap[3]);
-obj.wrapperDimensions = arg1(dependencyMap[3]).createFakeSharedValue({ "Null": -536870861, "Null": -299892737 });
+obj.wrapperDimensions = arg1(dependencyMap[3]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
 const obj5 = arg1(dependencyMap[3]);
 obj.useReducedMotion = arg1(dependencyMap[3]).createFakeSharedValue(false);
 const obj6 = arg1(dependencyMap[3]);
-obj.pipState = arg1(dependencyMap[3]).createFakeSharedValue({});
+obj.pipState = arg1(dependencyMap[3]).createFakeSharedValue({ 0: "pow", 0: "decorationCutout" });
 const obj7 = arg1(dependencyMap[3]);
-obj.pipAvoidanceSpecs = arg1(dependencyMap[3]).createFakeSharedValue({ paddingVertical: -536870861, paddingHorizontal: -299892737 });
+obj.pipAvoidanceSpecs = arg1(dependencyMap[3]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
 obj.dismissToPipGestureRef = { current: undefined };
 obj.dismissPanel = function dismissPanel() {
   const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");

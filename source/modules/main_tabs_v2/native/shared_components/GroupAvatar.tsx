@@ -1,10 +1,10 @@
-// Module ID: 11949
-// Function ID: 92372
+// Module ID: 11950
+// Function ID: 92386
 // Name: AnimatedContainer
 // Dependencies: []
 // Exports: default
 
-// Module 11949 (AnimatedContainer)
+// Module 11950 (AnimatedContainer)
 function AnimatedContainer(scale) {
   let children;
   let shadow;
@@ -165,8 +165,8 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const createElement = arg1(dependencyMap[0]).createElement;
-let closure_9 = { "Null": 8, "Null": "navigable_storefront_application_id" };
-let closure_10 = { "Null": 8, "Null": "navigable_storefront_application_id" };
+let closure_9 = { "Null": 1, "Null": "last_impression_time" };
+let closure_10 = { "Null": 1, "Null": "last_impression_time" };
 const tmp2 = arg1(dependencyMap[3]);
 let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   let obj = { groupContainer: { position: "relative" } };
@@ -178,7 +178,7 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj.shadowColor = BLACK;
   obj = undefined;
   if (!arg0) {
-    obj = { "Null": -536870861, "Null": -299892737 };
+    obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
   }
   obj.shadowOffset = obj;
   obj.shadowRadius = 5;
@@ -215,7 +215,7 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   }
   obj4.backgroundColor = prop1;
   obj.gradientContainer = obj4;
-  const obj5 = { 9223372036854775807: "<string:408361903>", 9223372036854775807: "<string:2920093709>", 0: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+  const obj5 = { playerState: "center", onDataReceived: -24, baseURL: null, injectedJavaScript: 1, panGestureConfig: "Malaysia" };
   let prop2;
   if (!arg0) {
     prop2 = importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE;
@@ -249,7 +249,7 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj7.shadowOffset = obj8;
   obj7.shadowRadius = 2;
   obj.shadow = obj7;
-  obj.avatar = { -9223372036854775808: "2026-07-mobile-game-collection", "Bool(false)": "user", "Bool(false)": "flex", "Bool(false)": "row" };
+  obj.avatar = { y: true, isArray: "/assets/design/components/Icon/native/redesign/generated/images", createStyles: 24, push: 24 };
   const obj9 = {};
   let prop3;
   if (!arg0) {
@@ -257,19 +257,19 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   }
   obj9.backgroundColor = prop3;
   obj.avatarWrapper = obj9;
-  const obj10 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": "icon-feedback-info", "Bool(true)": "2026-02-private-profiles", "Bool(true)": "user", "Bool(true)": "2026-03-private-profiles-strict" };
+  const obj10 = {};
   const colors = importDefault(dependencyMap[5]).colors;
   obj10.backgroundColor = arg0 ? colors.BACKGROUND_MOD_SUBTLE : colors.BACKGROUND_BASE_LOWER;
   obj.overflowCount = obj10;
   return obj;
 });
-const items = [{}, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }];
+const items = [{}, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }];
 const items1 = [items, , , ];
-const items2 = [{}, { "Bool(true)": 1900038762, "Bool(true)": 3, "Bool(true)": 46185025 }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }];
+const items2 = [{}, { "Bool(false)": 1900038762, "Bool(false)": 3, "Bool(false)": 46199617 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }];
 items1[1] = items2;
-const items3 = [{ "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, {}, { "Bool(true)": "ThreadMinusIcon", "Bool(true)": "png", "Bool(true)": true }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }];
+const items3 = [{ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, { "Bool(false)": "ThreadMinusIcon", "Bool(false)": "png", "Bool(false)": true }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }];
 items1[2] = items3;
-const items4 = [{}, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, {}, { "Bool(true)": 388251943, "Bool(true)": 1752236034, "Bool(true)": 822083584 }];
+const items4 = [{}, { "Bool(false)": "<string:1912602975>", "Bool(false)": "height", "Bool(false)": "height" }, {}, { "Bool(false)": "cursorHead", "Bool(false)": "fi", "Bool(false)": "paddingStart" }];
 items1[3] = items4;
 let closure_13 = { code: "function GroupAvatarTsx1(){const{withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE}=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};}" };
 const obj = arg1(dependencyMap[4]);

@@ -1,15 +1,15 @@
-// Module ID: 13458
-// Function ID: 102194
+// Module ID: 13465
+// Function ID: 102227
 // Name: EditUserProfileAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 13458 (EditUserProfileAvatar)
+// Module 13465 (EditUserProfileAvatar)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ editIcon: { "Null": false, "Null": false } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ editIcon: { "Bool(false)": false, "Bool(false)": false } });
 let closure_8 = { code: "function EditUserProfileAvatarTsx1(){const{rotation}=this.__closure;return{transform:[{rotateZ:rotation.get()+\"deg\"}]};}" };
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/user_profile/native/EditUserProfileAvatar.tsx");

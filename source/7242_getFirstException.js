@@ -1,5 +1,5 @@
 // Module ID: 7242
-// Function ID: 58316
+// Function ID: 58327
 // Name: getFirstException
 // Dependencies: []
 
@@ -55,7 +55,7 @@ arg5.addExceptionMechanism = function addExceptionMechanism(arg0, data) {
     const mechanism = tmp.mechanism;
     const _Object = Object;
     const _Object2 = Object;
-    tmp.mechanism = Object.assign({}, {}, mechanism, data);
+    tmp.mechanism = Object.assign({}, { -1604557429: 295321873, -564905130: -1101987839 }, mechanism, data);
     if (data) {
       if ("data" in data) {
         data = mechanism;

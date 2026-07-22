@@ -1,10 +1,10 @@
-// Module ID: 10110
-// Function ID: 78255
+// Module ID: 10111
+// Function ID: 78268
 // Name: TitleWrapper
 // Dependencies: []
 // Exports: renderChannelIcon, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 10110 (TitleWrapper)
+// Module 10111 (TitleWrapper)
 function TitleWrapper(headerAccessibilityLabel) {
   let children;
   let onPress;
@@ -200,7 +200,7 @@ function MemberCountText(withSeparator) {
   const items = [closure_9(importDefault(dependencyMap[18]), obj), ];
   let tmp9Result = null;
   if (withSeparator.withSeparator) {
-    obj = { deer: false, Ufm9XX: false, playstationVersion: false };
+    obj = {};
     let str3 = "text-xs/medium";
     if (tmp) {
       str3 = "text-sm/normal";
@@ -216,7 +216,7 @@ function MemberCountText(withSeparator) {
 function ParentChannelSubTitle(channel) {
   channel = channel.channel;
   const tmp = importDefault(dependencyMap[9])("ChannelHeaderShared");
-  let obj = { accessibilityRole: false, split: "y", top: "USER_GUILD_EVENT" };
+  let obj = {};
   const intl = arg1(dependencyMap[19]).intl;
   obj = {};
   const tmp2 = callback3(tmp);
@@ -260,16 +260,16 @@ let closure_12 = arg1(dependencyMap[7]).createStyles((arg0) => {
   obj.channelContent = obj;
   obj.nameWithArrow = {};
   obj = { flexShrink: 1 };
-  const merged = Object.assign(arg0 ? {} : { 9223372036854775807: "r", 0: "isArray" });
+  const merged = Object.assign(arg0 ? {} : {});
   obj.channelName = obj;
   obj.arrowIcon = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.channelIcon = { backgroundColor: 136025, flex: 36591426 };
-  obj.channelIconWrapper = { 2130673151: -2025455614, -2097184513: -2013265614, -2030074625: 671088946, -2113961985: -117440185 };
+  obj.channelIcon = {};
+  obj.channelIconWrapper = { "Null": "title", "Null": "__closure", "Null": "right", "Null": "content" };
   const obj1 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const tmp = arg0 ? {} : { 9223372036854775807: "r", 0: "isArray" };
+  const tmp = arg0 ? {} : {};
   obj.guildChannelIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_STRONG };
-  obj.subTitleContainer = { size: false, style: false, color: false, channel: false };
-  obj.parentChannelName = { "Bool(true)": "Group 11", "Bool(true)": 2 };
+  obj.subTitleContainer = { -110959999: null, -1227664409: null, -1649041997: null, 1860687715: null };
+  obj.parentChannelName = { 1658746193: null, -162338875: "Group 11" };
   return obj;
 });
 const obj = arg1(dependencyMap[7]);

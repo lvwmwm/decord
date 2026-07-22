@@ -1,19 +1,17 @@
 // Module ID: 7561
-// Function ID: 60489
+// Function ID: 60500
 // Name: useAgeVerificationMethods
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
 // Module 7561 (useAgeVerificationMethods)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
-import result from "result";
-
-({ VERIFICATION_METHOD_TITLE_MAP: closure_7, VerificationMethod: closure_8 } = result);
-result = result.fileFinishedImporting("modules/age_assurance/hooks/useAgeVerificationMethods.tsx");
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importAll(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+({ VERIFICATION_METHOD_TITLE_MAP: closure_7, VerificationMethod: closure_8 } = arg1(dependencyMap[4]));
+const tmp2 = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/age_assurance/hooks/useAgeVerificationMethods.tsx");
 
 export default function useAgeVerificationMethods(onGoogleWalletSelect) {
   let classificationId;

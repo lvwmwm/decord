@@ -1,5 +1,5 @@
 // Module ID: 7002
-// Function ID: 56029
+// Function ID: 56040
 // Name: patchThread
 // Dependencies: []
 
@@ -211,7 +211,7 @@ const obj = {
     obj = { parentMessageId: id, isPrivate: false, location: SUMMARY_ACTION_SHEET };
     importDefault(dependencyMap[15]).changeThreadSettings(channel.id, obj);
     if (null == id) {
-      const obj1 = { channelId: channel.id };
+      const obj1 = { y: "mn", <string:1372913668>: "description", <string:1373110276>: "Array", channelId: channel.id };
       id(dependencyMap[16]).setActiveCommand(obj1);
       const obj5 = id(dependencyMap[16]);
     }

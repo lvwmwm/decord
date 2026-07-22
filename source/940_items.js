@@ -5,8 +5,8 @@
 
 // Module 940 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["<string:26251520>", "<string:655118592>", "<string:1100027217>", "http.response.status_code"];
-const items1 = [false, false, false, false, false, false, false];
+const items = [];
+const items1 = ["drawerBackgroundColor", "onDrawerStateChanged", "renderNavigationView", "onDrawerOpen", "onDrawerClose", "Idle", "Dragging"];
 arg5.INSTRUMENTED_METHODS = [];
 arg5.OPENAI_INTEGRATION_NAME = "OpenAI";
 arg5.RESPONSES_TOOL_CALL_EVENT_TYPES = items;

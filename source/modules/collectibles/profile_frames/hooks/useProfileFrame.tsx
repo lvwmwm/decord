@@ -1,10 +1,10 @@
-// Module ID: 8246
-// Function ID: 65076
+// Module ID: 8247
+// Function ID: 65088
 // Name: useProfileFrame
 // Dependencies: []
 // Exports: default
 
-// Module 8246 (useProfileFrame)
+// Module 8247 (useProfileFrame)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const isProfileFrameRecord = arg1(dependencyMap[2]).isProfileFrameRecord;

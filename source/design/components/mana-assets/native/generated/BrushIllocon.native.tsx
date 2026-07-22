@@ -1,14 +1,12 @@
 // Module ID: 5911
-// Function ID: 49788
+// Function ID: 49799
 // Name: BrushIllocon
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: BrushIllocon
 
 // Module 5911 (BrushIllocon)
-import result from "result";
-
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/BrushIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BrushIllocon.native.tsx");
 
 export const BrushIllocon = function BrushIllocon(size) {
   let accessibilityLabel;

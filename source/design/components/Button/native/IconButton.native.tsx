@@ -1,5 +1,5 @@
 // Module ID: 7765
-// Function ID: 61684
+// Function ID: 61694
 // Name: IconButton
 // Dependencies: []
 
@@ -26,7 +26,7 @@ const forwardRefResult = importAllResult.forwardRef((grow, ref) => {
   let label;
   let maxFontSizeMultiplier;
   ({ label, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint } = grow);
-  let obj = {};
+  let obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(grow, obj);
   const tmp3 = callback3(grow.grow);
@@ -43,7 +43,7 @@ const forwardRefResult = importAllResult.forwardRef((grow, ref) => {
     obj["size"] = "lg";
     obj["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
     const items = [callback(ref(dependencyMap[5]).BaseIconButton, obj), ];
-    const obj1 = { delete: 1, dispatch: 22, raw: "exposure_tracking", style: tmp3.label, maxFontSizeMultiplier, children: label };
+    const obj1 = { "Null": "construct", "Null": "y", alignItems: "isArray", style: tmp3.label, maxFontSizeMultiplier, children: label };
     items[1] = callback(ref(dependencyMap[6]).Text, obj1);
     obj["children"] = items;
     let tmp10 = callback2(ref(dependencyMap[4]).BaseButton, obj);

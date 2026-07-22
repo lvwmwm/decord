@@ -1,10 +1,10 @@
-// Module ID: 10623
-// Function ID: 82857
+// Module ID: 10624
+// Function ID: 82870
 // Name: useMyCurrentStageChannel
 // Dependencies: []
 // Exports: default
 
-// Module 10623 (useMyCurrentStageChannel)
+// Module 10624 (useMyCurrentStageChannel)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");

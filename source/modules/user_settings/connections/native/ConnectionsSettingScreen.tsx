@@ -1,9 +1,9 @@
-// Module ID: 13738
-// Function ID: 103902
+// Module ID: 13745
+// Function ID: 103935
 // Name: onPress
 // Dependencies: []
 
-// Module 13738 (onPress)
+// Module 13745 (onPress)
 function onPress() {
   importDefault(dependencyMap[2]).openLazy(arg1(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), "AddConnection");
 }

@@ -1,10 +1,10 @@
-// Module ID: 10705
-// Function ID: 83358
+// Module ID: 10706
+// Function ID: 83371
 // Name: VolumeSlider
 // Dependencies: []
 // Exports: default
 
-// Module 10705 (VolumeSlider)
+// Module 10706 (VolumeSlider)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).MAX_EMBEDDED_VOLUME_PERCEPTUAL;
@@ -17,7 +17,7 @@ if (obj.isAndroid()) {
 const tmp3 = arg1(dependencyMap[3]);
 obj = { marginRight: num };
 obj = { marginLeft: num };
-let closure_7 = arg1(dependencyMap[5]).createStyles({ volumerSlider: { "Null": 7, "Null": 370 }, leftIcon: obj, rightIcon: obj, volumerSliderNative: {} });
+let closure_7 = arg1(dependencyMap[5]).createStyles({ volumerSlider: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, leftIcon: obj, rightIcon: obj, volumerSliderNative: {} });
 const obj2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("components_native/common/VolumeSlider.tsx");
 
@@ -34,7 +34,7 @@ export default function VolumeSlider(maxTrackTintColor) {
     maxVolume = closure_4;
   }
   ({ onValueChange: closure_0, onResponderGrant } = maxTrackTintColor);
-  let obj = { with_sku: true, with_application: true, type: true, nonce: true, fill: true, d: true };
+  let obj = { 0: "Text", 0: "resizeMode", 9223372036854775807: "from", 0: "Array", 0: "isArray", 0: "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(maxTrackTintColor, obj);
   const tmp5 = callback2();

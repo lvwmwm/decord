@@ -1,10 +1,10 @@
-// Module ID: 14528
-// Function ID: 109414
+// Module ID: 14536
+// Function ID: 109457
 // Name: SmsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14528 (SmsScreen)
+// Module 14536 (SmsScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -95,7 +95,7 @@ export default function SmsScreen(mfaChallenge) {
   obj1.placeholder = intl5.string(arg1(closure_2[8]).t.tARzgo);
   obj1.errorMessage = tmp3[0];
   const items1 = [handleChange(arg1(closure_2[12]).TextInput, obj1), ];
-  const obj2 = { _monthsRegex: 44, overflow: null, messageHasObscurableMedia: true };
+  const obj2 = { EMOJI_PICKER_EMOJI_CLICKED: 44, overflow: null, getOwnPropertyNames: true };
   const intl6 = arg1(closure_2[8]).intl;
   obj2.text = intl6.string(arg1(closure_2[8]).t.WbaP3r);
   obj2.onPress = function handleResend() {

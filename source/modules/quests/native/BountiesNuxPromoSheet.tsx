@@ -1,10 +1,10 @@
-// Module ID: 13843
-// Function ID: 104622
+// Module ID: 13850
+// Function ID: 104662
 // Name: BountiesNuxPromoSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13843 (BountiesNuxPromoSheet)
+// Module 13850 (BountiesNuxPromoSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -26,7 +26,7 @@ export default function BountiesNuxPromoSheet() {
   obj.description = intl2.string(arg1(dependencyMap[8]).t.LY+igv);
   obj = { style: callback().illustrationContainer, children: jsx(arg1(dependencyMap[9]).BountiesPosterSpotIllustration, {}) };
   obj.illustration = <View {...obj} />;
-  obj = { "Null": "<string:1431437314>", "Null": null, "Null": null };
+  obj = { <string:2812997771>: "<string:1615986690>", <string:1672384813>: "<string:300807816>", <string:1362501123>: "/assets/design/components/Icon/native/redesign/generated/images" };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj.text = intl3.string(arg1(dependencyMap[8]).t.cpT0Cq);
   obj.onPress = callback;

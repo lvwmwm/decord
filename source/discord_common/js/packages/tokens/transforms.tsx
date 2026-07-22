@@ -28,10 +28,10 @@ function interpolate(arg0, arg1, arg2) {
 let closure_2 = { BACKGROUND_LIGHTNESS_LIGHT_THEME: "*0.975", BACKGROUND_LIGHTNESS_DARK_THEME: "*1.6", BACKGROUND_SATURATION: "*0.8", TEXT_LIGHTNESS_LIGHT_THEME: "*1.05", TEXT_LIGHTNESS_MULTIPLIER_DARK_THEME: 0.85, [0.85]: "TEXT_LIGHTNESS_MULTIPLIER_DARK_THEME", TEXT_LIGHTNESS_MAX_DARK_THEME: 0.6, [0.6]: "TEXT_LIGHTNESS_MAX_DARK_THEME" };
 let closure_3 = { BORDER_MIN_OPACITY: 0.3, [0.3]: "BORDER_MIN_OPACITY", TEXT_LIGHTNESS_LIGHT_THEME: "*0.6", TEXT_LIGHTNESS_DARK_THEME: "*1.5", TEXT_SATURATION: "*2", BACKGROUND_LIGHTNESS_DARK_THEME: "*0.9" };
 let closure_4 = [];
-let closure_5 = [];
-let closure_6 = [null, null];
-let closure_7 = [];
-let closure_8 = [null, null];
+let closure_5 = [null, null];
+let closure_6 = [-2026378413, 1384641947];
+let closure_7 = ["<string:1358954496>", "<string:2521754>"];
+let closure_8 = ["string", "user"];
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/tokens/transforms.tsx");
 
@@ -96,8 +96,8 @@ export const transformColorForReducedSaturation = function transformColorForRedu
   let tmp5;
   const obj = importDefault(dependencyMap[0])(arg0);
   if ("background" === category) {
-    [tmp2, tmp3] = ["replace", "then"];
-    [tmp4, tmp5] = [];
+    [tmp2, tmp3] = [77601039, 1612144654];
+    [tmp4, tmp5] = ["<string:3813801986>", "<string:1419299473>"];
     const _HermesInternal2 = HermesInternal;
     const result = obj.set("hsl.s", "*" + tmp4 + (saturation - tmp2) / (tmp3 - tmp2) * (tmp5 - tmp4));
     return result.hex();

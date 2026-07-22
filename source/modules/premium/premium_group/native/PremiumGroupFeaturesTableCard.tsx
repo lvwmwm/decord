@@ -1,10 +1,10 @@
-// Module ID: 12296
-// Function ID: 94188
+// Module ID: 12301
+// Function ID: 94216
 // Name: BetaPill
 // Dependencies: []
 // Exports: default
 
-// Module 12296 (BetaPill)
+// Module 12301 (BetaPill)
 class BetaPill {
   constructor() {
     tmp = closure_7();
@@ -24,8 +24,8 @@ const _module1 = require(dependencyMap[3]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm - 2, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.premiumGroupCard = obj;
-obj.headerContainer = { "Bool(true)": 8, "Bool(true)": "8", "Bool(true)": null, "Bool(true)": "\u{1F44D}\u{1F3FE}", "Bool(true)": true };
-const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj.headerContainer = {};
+const obj1 = { paddingTop: false, paddingBottom: false, width: false, height: false, marginRight: false, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE };
 obj.betaPill = obj1;
 obj.betaText = { color: importDefault(dependencyMap[4]).colors.BLACK };
 const obj2 = { color: importDefault(dependencyMap[4]).colors.BLACK };
@@ -49,7 +49,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   } else {
     ({ subheaderString, bodyString } = tmp2);
     let obj = { borderWidth: 2, direction: require(dependencyMap[8]).GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: importDefault(dependencyMap[4]).radii.sm, style };
-    obj = { start: {}, end: {} };
+    obj = { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } };
     let obj2 = require(dependencyMap[10]);
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
     const tmp9 = importDefault(dependencyMap[9]);
@@ -57,10 +57,10 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     const obj4 = require(dependencyMap[10]);
     items[2] = require(dependencyMap[10]).hexWithOpacity("#AB5D8A", 0.15);
     obj.colors = items;
-    obj.locations = [];
+    obj.locations = ["isRobloxSubgameGame", "MedalIcon", "isArray"];
     obj.style = tmp.premiumGroupCard;
     obj = { style: tmp.headerContainer };
-    const items1 = [callback(importDefault(dependencyMap[11]), { "Null": 2017530323, "Null": 1912603050 }), callback(BetaPill, {})];
+    const items1 = [callback(importDefault(dependencyMap[11]), { "Null": -1429716719, "Null": -1536032767 }), callback(BetaPill, {})];
     obj.children = items1;
     const items2 = [callback2(View, obj), , ];
     const obj1 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };

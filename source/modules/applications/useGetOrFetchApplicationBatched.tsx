@@ -1,10 +1,10 @@
-// Module ID: 9975
-// Function ID: 77164
+// Module ID: 9976
+// Function ID: 77177
 // Name: useRequestApplication
 // Dependencies: []
 // Exports: useGetOrFetchApplicationBatched
 
-// Module 9975 (useRequestApplication)
+// Module 9976 (useRequestApplication)
 function useRequestApplication(applicationId) {
   const arg1 = applicationId;
   const items = [applicationId];

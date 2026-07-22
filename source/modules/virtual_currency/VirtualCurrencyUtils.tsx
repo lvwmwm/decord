@@ -1,10 +1,10 @@
-// Module ID: 9444
-// Function ID: 73600
+// Module ID: 9445
+// Function ID: 73613
 // Name: get1PShopApplicationIdForSKU
 // Dependencies: []
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 9444 (get1PShopApplicationIdForSKU)
+// Module 9445 (get1PShopApplicationIdForSKU)
 let closure_2 = require(dependencyMap[0]).COLLECTIBLES_APPLICATION_ID;
 const EXTERNAL_PRODUCT_SKU_IDS = require(dependencyMap[1]).EXTERNAL_PRODUCT_SKU_IDS;
 const _module = require(dependencyMap[2]);

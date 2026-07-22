@@ -1,15 +1,14 @@
-// Module ID: 9891
-// Function ID: 76568
+// Module ID: 9892
+// Function ID: 76581
 // Name: isVisualMedia
 // Dependencies: [0, 4294967295, 0, 0, 0]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 9891 (isVisualMedia)
-import { MessageAttachmentFlags } from "result";
-import result from "result";
+// Module 9892 (isVisualMedia)
+import { MessageAttachmentFlags } from "__exportStarResult1";
 
 let closure_3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
-result = result.fileFinishedImporting("modules/messages/MosaicMediaType.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/MosaicMediaType.tsx");
 
 export function isVisualMedia(arg0) {
   let tmp = "IMAGE" === arg0;

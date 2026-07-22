@@ -1,17 +1,17 @@
-// Module ID: 9849
-// Function ID: 76250
+// Module ID: 9850
+// Function ID: 76263
 // Name: ForumPostTagsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9849 (ForumPostTagsActionSheet)
+// Module 9850 (ForumPostTagsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 const MAX_FORUM_POST_TAGS = arg1(dependencyMap[3]).MAX_FORUM_POST_TAGS;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { 979464370: true, 1637975633: true, 50352554: true }, saveButton: {}, subtitle: { marginTop: 4 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, location: 0.000000007919535119815975, body: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164 }, saveButton: {}, subtitle: { marginTop: 4 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
 

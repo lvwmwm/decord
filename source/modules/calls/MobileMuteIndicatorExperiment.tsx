@@ -1,10 +1,9 @@
-// Module ID: 15611
-// Function ID: 119217
+// Module ID: 15619
+// Function ID: 119260
 // Dependencies: []
 
-// Module 15611
-const obj = { bottom: 812777474, name: 805306368, defaultConfig: { enableMuteWarning: false }, variations: { [1]: { enableMuteWarning: true } } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
+// Module 15619
+const tmp2 = importDefault(dependencyMap[0])({ defaultConfig: { enableMuteWarning: false }, variations: { [1]: { enableMuteWarning: true } } });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/calls/MobileMuteIndicatorExperiment.tsx");
 
 export default tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 11561
-// Function ID: 89956
+// Module ID: 11562
+// Function ID: 89969
 // Name: useGuildPowerupOnShowDeactivate
 // Dependencies: []
 // Exports: default
 
-// Module 11561 (useGuildPowerupOnShowDeactivate)
+// Module 11562 (useGuildPowerupOnShowDeactivate)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = importAllResult.lazy(() => arg1(dependencyMap[3])(dependencyMap[2], dependencyMap.paths));

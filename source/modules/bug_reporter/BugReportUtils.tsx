@@ -1,10 +1,10 @@
-// Module ID: 10309
-// Function ID: 79594
+// Module ID: 10310
+// Function ID: 79607
 // Name: _fetchBugReportConfig
 // Dependencies: []
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10309 (_fetchBugReportConfig)
+// Module 10310 (_fetchBugReportConfig)
 function _fetchBugReportConfig() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

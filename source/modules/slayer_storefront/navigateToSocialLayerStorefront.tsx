@@ -1,10 +1,16 @@
 // Module ID: 7453
-// Function ID: 59764
+// Function ID: 59775
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
 // Module 7453 (navigateToSocialLayerStorefrontWithGuildPreview)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function navigateToSocialLayerStorefrontWithGuildPreview(arg0) {
   return _navigateToSocialLayerStorefrontWithGuildPreview(...arguments);
 }
@@ -62,12 +68,8 @@ async function _navigateToSocialLayerStorefrontWithGuildPreview(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ GuildFeatures: closure_6, Routes: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
+({ GuildFeatures: closure_6, Routes: closure_7 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
 
 export default function navigateToSocialLayerStorefront(arg0) {
   let applicationId;

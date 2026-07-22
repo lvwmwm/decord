@@ -1,10 +1,10 @@
-// Module ID: 9174
-// Function ID: 71858
+// Module ID: 9175
+// Function ID: 71871
 // Name: closeModal
 // Dependencies: []
 // Exports: default
 
-// Module 9174 (closeModal)
+// Module 9175 (closeModal)
 function closeModal() {
   resetChangeEmailStore();
   importDefault(dependencyMap[6]).close();

@@ -1,10 +1,10 @@
-// Module ID: 13885
-// Function ID: 105035
+// Module ID: 13892
+// Function ID: 105075
 // Name: QuestDisclosureModalInner
 // Dependencies: []
 // Exports: default
 
-// Module 13885 (QuestDisclosureModalInner)
+// Module 13892 (QuestDisclosureModalInner)
 const View = require(dependencyMap[0]).View;
 const HelpdeskArticles = require(dependencyMap[1]).HelpdeskArticles;
 const _module = require(dependencyMap[2]);
@@ -17,7 +17,7 @@ obj.illustration = { alignSelf: "center", marginBottom: importDefault(dependency
 const obj1 = { alignSelf: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
 obj.closeButton = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
 obj.targetList = { padding: 0 };
-const obj3 = { query: "center", type: "r", guildId: "isArray", paddingLeft: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
+const obj3 = { onValueChange: "r", value: "isArray", start: "Boolean", paddingLeft: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
 obj.targetItem = obj3;
 obj.lastTargetItem = { borderBottomWidth: 0 };
 const obj2 = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
@@ -108,7 +108,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   obj10.children = intl5.format(require(dependencyMap[7]).t.tzq9Wa, obj11);
   items2[3] = callback(require(dependencyMap[15]).TextWithIOSLinkWorkaround, obj10);
   const obj12 = { style: tmp.closeButton };
-  const obj13 = { "Null": "Boolean", "Null": "isArray", "Null": "values" };
+  const obj13 = {};
   const intl6 = require(dependencyMap[7]).intl;
   obj13.text = intl6.string(require(dependencyMap[7]).t.cpT0Cq);
   obj13.onPress = onClose;

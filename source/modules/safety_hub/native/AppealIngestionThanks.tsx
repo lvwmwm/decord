@@ -1,10 +1,10 @@
-// Module ID: 11042
-// Function ID: 85960
+// Module ID: 11043
+// Function ID: 85973
 // Name: AppealIngestionThanks
 // Dependencies: []
 // Exports: default
 
-// Module 11042 (AppealIngestionThanks)
+// Module 11043 (AppealIngestionThanks)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

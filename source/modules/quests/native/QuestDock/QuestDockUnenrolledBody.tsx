@@ -1,9 +1,9 @@
-// Module ID: 13967
-// Function ID: 106156
+// Module ID: 13974
+// Function ID: 106196
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
 // Dependencies: []
 
-// Module 13967 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 13974 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,17 +16,17 @@ const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
 let obj = { wrapper: obj };
-obj = { <string:2277974433>: 1, <string:4153897662>: true, <string:1378584774>: "/assets/design/components/Icon/native/redesign/generated/images", paddingHorizontal: tmp3.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM };
-obj1 = { flexDirection: "sensitivityMin", justifyContent: "asset", borderWidth: "ME", borderStyle: "errExpectingATEXT", borderRadius: importDefault(dependencyMap[9]).modules.mobile.QUEST_DOCK_BORDER_RADIUS };
+obj = { hasHandledScroll: 1, isAtBottom: true, isNearBottom: "/assets/design/components/Icon/native/redesign/generated/images", paddingHorizontal: tmp3.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM };
+obj1 = { -9223372036854775808: "Text", 9223372036854775807: "r", -9223372036854775808: "tag", 9223372036854775807: "r", borderRadius: importDefault(dependencyMap[9]).modules.mobile.QUEST_DOCK_BORDER_RADIUS };
 obj.rewardContentWrapper = obj1;
 obj.rewardContent = {};
 obj.rewardContentCopy = {};
 obj.premiumRewardPerkPill = { alignSelf: "flex-start" };
-const obj2 = { 0: 24, -9223372036854775808: 24, 0: null, 0: "d415e9ae6db962a437b5c21e64fa1fc3", gap: importDefault(dependencyMap[9]).space.PX_8 };
+const obj2 = { -816084447: 24, 1949176163: 24, -1309881245: null, 1694899793: "d415e9ae6db962a437b5c21e64fa1fc3", gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.titleRow = obj2;
 const tmp4 = arg1(dependencyMap[7]);
 obj.questDockRewardTile = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
-obj.questDockCtaWrapper = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24 };
+obj.questDockCtaWrapper = { borderRadius: true, enabled: "/assets/design/components/Icon/native/redesign/generated/images", type: 24, body: 24 };
 const obj3 = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
 obj.questDockCta = { borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.questDockCtaRow = { alignSelf: "stretch" };

@@ -1,10 +1,10 @@
-// Module ID: 12243
-// Function ID: 93917
+// Module ID: 12248
+// Function ID: 93945
 // Name: useFormatStringWithCommonPremiumParams
 // Dependencies: []
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12243 (useFormatStringWithCommonPremiumParams)
+// Module 12248 (useFormatStringWithCommonPremiumParams)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ PremiumSubscriptionSKUs: closure_4, SubscriptionPlans: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

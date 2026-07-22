@@ -1,9 +1,9 @@
-// Module ID: 10854
-// Function ID: 84451
+// Module ID: 10855
+// Function ID: 84464
 // Name: onLongPressLink
 // Dependencies: []
 
-// Module 10854 (onLongPressLink)
+// Module 10855 (onLongPressLink)
 const importDefaultResult = importDefault(dependencyMap[0]);
 const obj = { onLongPressLink };
 function onLongPressLink(nativeEvent) {

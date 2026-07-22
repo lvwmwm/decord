@@ -1,5 +1,5 @@
 // Module ID: 6975
-// Function ID: 55739
+// Function ID: 55750
 // Name: getEstablishedDate
 // Dependencies: []
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
@@ -21,7 +21,7 @@ export const getEstablishedDate = function getEstablishedDate(arg0, locale) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(locale, { getApplication: "", ENABLE_COMMUNITY_FLOW_MODAL_KEY: "" });
+          toLocaleDateStringResult = date.toLocaleDateString(locale, {});
         }
       }
       return toLocaleDateStringResult;

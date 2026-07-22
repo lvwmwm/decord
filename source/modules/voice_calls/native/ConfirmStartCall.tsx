@@ -1,10 +1,10 @@
-// Module ID: 10101
-// Function ID: 78215
+// Module ID: 10102
+// Function ID: 78228
 // Name: ConfirmStartCall
 // Dependencies: []
 // Exports: confirmStartCall
 
-// Module 10101 (ConfirmStartCall)
+// Module 10102 (ConfirmStartCall)
 function ConfirmStartCall(onConfirm) {
   let obj = {};
   const intl = arg1(dependencyMap[3]).intl;

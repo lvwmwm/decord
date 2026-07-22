@@ -1,10 +1,10 @@
-// Module ID: 14058
-// Function ID: 106796
+// Module ID: 14065
+// Function ID: 106836
 // Name: ChannelRowItem
 // Dependencies: []
 // Exports: default
 
-// Module 14058 (ChannelRowItem)
+// Module 14065 (ChannelRowItem)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -14,17 +14,17 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).radii.sm, paddingVertical: importDefault(dependencyMap[5]).space.PX_8, paddingRight: importDefault(dependencyMap[5]).space.PX_16, paddingLeft: importDefault(dependencyMap[5]).space.PX_8 };
 obj.channelItemContainer = obj;
-obj.channelItemLeft = { "Null": null, "Null": null };
+obj.channelItemLeft = { <string:3596066964>: null, <string:3638417373>: null };
 const tmp3 = arg1(dependencyMap[3]);
 obj.channelItemUnreadIndicator = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { borderRadius: "number", backgroundColor: "number", paddingHorizontal: "mY3Y38", marginRight: importDefault(dependencyMap[5]).space.PX_8 };
+const obj2 = { adjustPan: "string", adjustResize: "string", variant: "color", marginRight: importDefault(dependencyMap[5]).space.PX_8 };
 obj.channelItemAvatar = obj2;
-obj.channelItemContent = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
-obj.channelItemTop = { gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj.channelItemContent = { avatar: "low", name: "subtle", channel: null };
+const obj3 = { alignSelf: "{0} og {1}", top: "{0}, {1}", left: "{0} og {1}", borderColor: "{0}, {1}", gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj.channelItemTop = obj3;
 let closure_6 = obj.createStyles(obj);
 const obj4 = { direction: arg1(dependencyMap[6]).CutoutDirection.BOTTOM_RIGHT };
-const obj3 = { gap: importDefault(dependencyMap[5]).space.PX_4 };
+const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
 const statusSize = arg1(dependencyMap[6]).getStatusSize(arg1(dependencyMap[6]).AvatarSizes.LARGE_48);
 if (null != statusSize) {
   num = statusSize;
@@ -84,7 +84,9 @@ export default function ChannelRowItem(isUnread) {
   items1[1] = callback(View, obj2);
   const obj5 = { style: tmp2.channelItemContent };
   const obj6 = { style: tmp2.channelItemTop };
-  const items3 = [callback(arg1(dependencyMap[8]).Text, { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: title }), callback(arg1(dependencyMap[8]).Text, { style: animatedStyles.textMuted, children: timestamp })];
+  const items3 = [callback(arg1(dependencyMap[8]).Text, { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: title }), ];
+  const obj8 = { canCreateGuild: -18, _hasMore: -12, GameDepthTier9LargeBadge: 0.625, style: animatedStyles.textMuted, children: timestamp };
+  items3[1] = callback(arg1(dependencyMap[8]).Text, obj8);
   obj6.children = items3;
   const items4 = [closure_5(View, obj6), ];
   if (null == preview) {

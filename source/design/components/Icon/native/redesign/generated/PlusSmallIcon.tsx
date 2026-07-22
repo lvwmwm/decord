@@ -1,10 +1,10 @@
-// Module ID: 8726
-// Function ID: 69049
+// Module ID: 8727
+// Function ID: 69061
 // Name: PlusSmallIcon
 // Dependencies: []
 // Exports: PlusSmallIcon
 
-// Module 8726 (PlusSmallIcon)
+// Module 8727 (PlusSmallIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PlusSmallIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15398
-// Function ID: 117484
+// Module ID: 15406
+// Function ID: 117527
 // Name: ChannelsFollowedIcon
 // Dependencies: []
 // Exports: ChannelsFollowedIcon
 
-// Module 15398 (ChannelsFollowedIcon)
+// Module 15406 (ChannelsFollowedIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChannelsFollowedIcon.tsx");

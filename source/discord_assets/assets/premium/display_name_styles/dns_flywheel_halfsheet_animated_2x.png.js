@@ -1,9 +1,9 @@
-// Module ID: 15495
-// Function ID: 118252
+// Module ID: 15503
+// Function ID: 118295
 // Name: metadata
 // Dependencies: []
 
-// Module 15495 (metadata)
+// Module 15503 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/display_name_styles/dns_flywheel_halfsheet_animated_2x.png.js");
 

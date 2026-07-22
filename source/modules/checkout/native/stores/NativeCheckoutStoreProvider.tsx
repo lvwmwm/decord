@@ -1,5 +1,5 @@
 // Module ID: 7190
-// Function ID: 57855
+// Function ID: 57866
 // Name: NativeCheckoutStoreProvider
 // Dependencies: []
 // Exports: default
@@ -62,7 +62,7 @@ const View = arg1(dependencyMap[3]).View;
 const ItemPurchaseType = arg1(dependencyMap[5]).ItemPurchaseType;
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp2 = arg1(dependencyMap[4]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ loadingSpinnerContainer: { 9223372036854775807: 0, 618913616341: 0, 0: 0, 9223372036854775807: 0 } });
+let closure_12 = arg1(dependencyMap[7]).createStyles({ loadingSpinnerContainer: {} });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx");
 
@@ -188,7 +188,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     }
   }, items2);
   if (tmp3[0]) {
-    obj = { style: tmp.loadingSpinnerContainer, children: jsx(arg1(dependencyMap[12]).ActivityIndicator, { font: 397, dx: 97 }) };
+    obj = { style: tmp.loadingSpinnerContainer, children: jsx(arg1(dependencyMap[12]).ActivityIndicator, {}) };
     let tmp10Result = tmp10(View, obj);
   } else {
     obj = {};

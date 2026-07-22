@@ -1,15 +1,15 @@
-// Module ID: 12028
-// Function ID: 92954
+// Module ID: 12032
+// Function ID: 92980
 // Name: UserProfileIncomingFriendRequest
 // Dependencies: []
 // Exports: default
 
-// Module 12028 (UserProfileIncomingFriendRequest)
+// Module 12032 (UserProfileIncomingFriendRequest)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(true)": 5, "Bool(true)": "order" }, buttons: {}, gameIcon: { paddingTop: 2 } };
+obj = { container: { flexDirection: "readFileAsBase64", alignItems: "sync" }, buttons: {}, gameIcon: { paddingTop: 2 } };
 obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
 obj.friendRequestNote = obj;
 let closure_7 = obj.createStyles(obj);
@@ -83,7 +83,7 @@ export default function UserProfileIncomingFriendRequest(style) {
   const items2 = [tmp.container, importDefault(dependencyMap[5])().card, style.style];
   let tmp12 = getOrFetchApplication;
   let Text = arg1(dependencyMap[11]).Text;
-  obj1 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
+  obj1 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
   intl = arg1(dependencyMap[12]).intl;
   let intl2 = intl.format;
   if (null != applicationId) {
@@ -123,7 +123,7 @@ export default function UserProfileIncomingFriendRequest(style) {
   tmp12 = View;
   const obj5 = { style: tmp.buttons };
   intl = arg1;
-  const obj6 = { text: true, size: true };
+  const obj6 = { <string:1986169986>: true, <string:2487833047>: true };
   intl = arg1(dependencyMap[12]).intl;
   obj6.text = intl.string(arg1(dependencyMap[12]).t.Zcibdf);
   obj6.onPress = string;

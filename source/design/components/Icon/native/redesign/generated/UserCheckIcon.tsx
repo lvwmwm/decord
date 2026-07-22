@@ -1,15 +1,13 @@
-// Module ID: 11971
-// Function ID: 92546
+// Module ID: 11972
+// Function ID: 92560
 // Name: UserCheckIcon
-// Dependencies: [0, 0, 0, 4294967295, 0, 0]
+// Dependencies: []
 // Exports: UserCheckIcon
 
-// Module 11971 (UserCheckIcon)
-import "result";
-import { jsx } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/UserCheckIcon.tsx");
+// Module 11972 (UserCheckIcon)
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UserCheckIcon.tsx");
 
 export const UserCheckIcon = function UserCheckIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

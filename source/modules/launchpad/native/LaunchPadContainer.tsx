@@ -1,10 +1,10 @@
-// Module ID: 15516
-// Function ID: 118392
+// Module ID: 15524
+// Function ID: 118435
 // Name: LaunchPadContainer
 // Dependencies: []
 // Exports: default
 
-// Module 15516 (LaunchPadContainer)
+// Module 15524 (LaunchPadContainer)
 let StyleSheet;
 importAll(dependencyMap[0]);
 ({ View: closure_3, StyleSheet } = arg1(dependencyMap[1]));
@@ -66,20 +66,20 @@ export default function LaunchPadContainer(children) {
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   let obj1 = arg1(dependencyMap[9]);
   const fn3 = function v() {
-    let obj = { borderRadius: launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), ["replace", "then"], [1646871040, -128712700]) };
+    let obj = { borderRadius: launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), [77601039, 1612144654], ["y", "isArray"]) };
     obj = {};
     const obj2 = launchPadSharedState(tmp5[9]);
     const obj4 = launchPadSharedState(tmp5[10]);
     const value = launchPadSharedState.get();
     const diff = tmp5.get().width - 48;
-    const items = [null, diff / tmp5.get().width];
-    obj.scale = obj4.withSpring(launchPadSharedState(tmp5[9]).interpolate(value, ["replace", "then"], items), closure_4, "animate-always");
+    const items = [false, diff / tmp5.get().width];
+    obj.scale = obj4.withSpring(launchPadSharedState(tmp5[9]).interpolate(value, [77601039, 1612144654], items), closure_4, "animate-always");
     const items1 = [obj, ];
     obj = {};
     const obj5 = launchPadSharedState(tmp5[9]);
     const obj7 = launchPadSharedState(tmp5[10]);
     const items2 = [0.229, -4];
-    obj.translateY = obj7.withSpring(launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), ["replace", "then"], items2), closure_4, "animate-always");
+    obj.translateY = obj7.withSpring(launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), [77601039, 1612144654], items2), closure_4, "animate-always");
     items1[1] = obj;
     obj.transform = items1;
     return obj;

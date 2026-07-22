@@ -1,10 +1,10 @@
-// Module ID: 10721
-// Function ID: 83412
+// Module ID: 10722
+// Function ID: 83425
 // Name: ChannelCallMicButton
 // Dependencies: []
 // Exports: ChannelCallMicButton
 
-// Module 10721 (ChannelCallMicButton)
+// Module 10722 (ChannelCallMicButton)
 let closure_4 = importAll(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

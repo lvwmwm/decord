@@ -1,10 +1,10 @@
-// Module ID: 10962
-// Function ID: 85257
+// Module ID: 10963
+// Function ID: 85270
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 // Dependencies: []
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 10962 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+// Module 10963 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");

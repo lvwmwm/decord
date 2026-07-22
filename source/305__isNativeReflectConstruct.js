@@ -1,9 +1,22 @@
 // Module ID: 305
 // Function ID: 4607
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 31, 44, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0]
 
 // Module 305 (_isNativeReflectConstruct)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+import module_31 from "module_31";
+import invariant from "invariant";
+import closure_13 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 let Platform;
 let StyleSheet;
 function _isNativeReflectConstruct() {
@@ -18,38 +31,27 @@ function _isNativeReflectConstruct() {
 function getScrollingThreshold(arg0, arg1) {
   return arg0 * arg1 / 2;
 }
-let closure_4 = ["<string:3571449856>"];
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importAll(dependencyMap[8]);
-({ cloneElement: closure_14, isValidElement: closure_15 } = arg1(dependencyMap[8]));
-const tmp3 = arg1(dependencyMap[9]);
-({ I18nManager: closure_16, Platform, RefreshControl: closure_17, ScrollView: closure_18, StyleSheet } = tmp3);
-({ View: closure_20, findNodeHandle: closure_21 } = tmp3);
-const tmp2 = arg1(dependencyMap[8]);
-({ jsx: closure_22, jsxs: closure_23 } = arg1(dependencyMap[10]));
+let closure_4 = ["View"];
+({ cloneElement: closure_14, isValidElement: closure_15 } = __exportStarResult1);
+({ I18nManager: closure_16, Platform, RefreshControl: closure_17, ScrollView: closure_18, StyleSheet } = __exportStarResult1);
+({ View: closure_20, findNodeHandle: closure_21 } = __exportStarResult1);
+({ jsx: closure_22, jsxs: closure_23 } = __exportStarResult1);
 let closure_24 = false;
 let closure_25 = "";
 const tmp5 = (arg0) => {
   class VirtualizedList {
     constructor(arg0) {
       self = this;
-      tmp = closure_8(this, VirtualizedList);
+      tmp = _getPrototypeOf(this, VirtualizedList);
       items = [];
       items[0] = arg0;
-      obj = closure_11(VirtualizedList);
-      tmp2 = closure_10;
+      obj = module_31(VirtualizedList);
+      tmp2 = _inherits;
       if (closure_27()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_11;
-        constructResult = Reflect.construct(obj, items, closure_11(self).constructor);
+        tmp5 = module_31;
+        constructResult = Reflect.construct(obj, items, module_31(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -885,8 +887,8 @@ const tmp5 = (arg0) => {
       const VirtualizedList = items;
       const self = this;
       const props = this.props;
-      ({ CellRendererComponent: closure_6, ItemSeparatorComponent: closure_7, ListItemComponent: closure_8, data } = props);
-      ({ debug: closure_10, getItem: closure_11, getItemLayout: closure_12, horizontal: closure_13, renderItem: closure_14 } = props);
+      ({ CellRendererComponent: _defineProperties, ItemSeparatorComponent: _possibleConstructorReturn, ListItemComponent: _getPrototypeOf, data } = props);
+      ({ debug: _inherits, getItem: module_31, getItemLayout: invariant, horizontal: closure_13, renderItem: closure_14 } = props);
       let num = 0;
       if (props.ListHeaderComponent) {
         num = 1;
@@ -904,18 +906,18 @@ const tmp5 = (arg0) => {
             if (arg2.has(sum + num)) {
               arg1.push(self.length);
             }
-            let enabledResult = null == closure_12 || closure_10;
+            let enabledResult = null == invariant || _inherits;
             if (!enabledResult) {
               const _fillRateHelper = self._fillRateHelper;
               enabledResult = _fillRateHelper.enabled();
             }
-            let obj = { CellRendererComponent: closure_6 };
+            let obj = { CellRendererComponent: _defineProperties };
             let tmp12;
             if (sum < diff) {
-              tmp12 = closure_7;
+              tmp12 = _possibleConstructorReturn;
             }
             obj.ItemSeparatorComponent = tmp12;
-            obj.ListItemComponent = closure_8;
+            obj.ListItemComponent = _getPrototypeOf;
             obj.cellKey = _keyExtractorResult;
             obj.horizontal = closure_13;
             obj.index = sum;
@@ -1617,7 +1619,7 @@ const tmp5 = (arg0) => {
           if (null == items1) {
             items1 = [];
           }
-          const combined = items.concat(closure_5(items1));
+          const combined = items.concat(_classCallCheck(items1));
           for (const item10047 of combined) {
             let tmp8 = cellRenderMask;
             let addCellsResult = obj.addCells(item10047);
@@ -1628,7 +1630,7 @@ const tmp5 = (arg0) => {
           const _Set = Set;
           const set = new Set(getItemCount.stickyHeaderIndices);
           const result = VirtualizedList._ensureClosestStickyHeader(getItemCount, set, obj, _initialRenderRegionResult.first);
-          const tmp22 = closure_5;
+          const tmp22 = _classCallCheck;
         }
         return cellRenderMask;
       }
@@ -1763,6 +1765,6 @@ const tmp5 = (arg0) => {
 tmp5.contextType = arg1(dependencyMap[21]).VirtualizedListContext;
 const items = [{ scale: -1 }];
 const items1 = [{ scaleX: -1 }];
-const styles = StyleSheet.create({ verticallyInverted: { transform: items }, horizontallyInverted: { transform: items1 }, debug: { flex: 1 }, debugOverlayBase: { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 }, debugOverlay: { 274075244: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239810391647, -1084878250: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002397949144405, 641612039: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009775796379274282, 700589506: 676738643357675550000000000000000000000000000000000000000000000 }, debugOverlayFrame: { -505053635: "tab", 1586939254: "interactionStart" }, debugOverlayFrameLast: { name: null, x: null, header: null }, debugOverlayFrameVis: {} });
+const styles = StyleSheet.create({ verticallyInverted: { transform: items }, horizontallyInverted: { transform: items1 }, debug: { flex: 1 }, debugOverlayBase: {}, debugOverlay: { flexWrap: "<string:1396845823>", justifyContent: "<string:1392509191>", alignItems: "<string:1627390215>", "Bool(true)": "<string:7414527>" }, debugOverlayFrame: {}, debugOverlayFrameLast: {}, debugOverlayFrameVis: {} });
 
 export default tmp5;

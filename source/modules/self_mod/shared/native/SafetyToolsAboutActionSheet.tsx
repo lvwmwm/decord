@@ -1,29 +1,27 @@
-// Module ID: 10146
-// Function ID: 78476
+// Module ID: 10147
+// Function ID: 78489
 // Name: SafetyToolsAboutScreen
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 10146 (SafetyToolsAboutScreen)
-import closure_3 from "result";
-import closure_4 from "result";
-import { View } from "result";
-import { getSafetyToolsActionSheetKey as closure_6 } from "result";
-import { HelpdeskArticles } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
-({ jsx: closure_8, jsxs: closure_9 } = result);
-result = {};
-result = { marginHorizontal: require("result").space.PX_32 };
-result.aboutContainer = result;
-const obj1 = { body: null, ctaLabel: null, marginBottom: require("result").space.PX_24 };
-result.description = obj1;
-const obj2 = { body: null, ctaLabel: null, marginTop: require("result").space.PX_8 };
-result.reportFalsePositive = obj2;
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsAboutActionSheet.tsx");
+// Module 10147 (SafetyToolsAboutScreen)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importAll(dependencyMap[1]);
+const View = arg1(dependencyMap[2]).View;
+let closure_6 = arg1(dependencyMap[3]).getSafetyToolsActionSheetKey;
+const HelpdeskArticles = arg1(dependencyMap[4]).HelpdeskArticles;
+({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
+let obj = arg1(dependencyMap[6]);
+obj = {};
+obj = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_32 };
+obj.aboutContainer = obj;
+const obj1 = { lottieComponent: null, GiftBackgroundSelect: null, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
+obj.description = obj1;
+const obj2 = { lottieComponent: null, GiftBackgroundSelect: null, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
+obj.reportFalsePositive = obj2;
+let closure_10 = obj.createStyles(obj);
+const tmp2 = arg1(dependencyMap[5]);
+const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsAboutActionSheet.tsx");
 
 export default function SafetyToolsAboutScreen(channelId) {
   channelId = channelId.channelId;
@@ -38,7 +36,7 @@ export default function SafetyToolsAboutScreen(channelId) {
   const first = tmp[0];
   const React = first;
   let closure_5 = tmp[1];
-  const tmp3 = result();
+  const tmp3 = callback4();
   let obj = arg1(dependencyMap[8]);
   const tmp4 = null != obj.useSafetyToolsButtonTooltipForChannel(channelId);
   let closure_6 = tmp4;
@@ -92,7 +90,7 @@ export default function SafetyToolsAboutScreen(channelId) {
   obj2.learnMoreLink = obj5.getArticleURL(constants.SAFETY_ALERTS);
   obj1.children = intl2.format(arg1(dependencyMap[13]).t.njJ/Cg, obj2);
   const items2 = [callback2(arg1(dependencyMap[16]).TextWithIOSLinkWorkaround, obj1), ];
-  const obj3 = { "Bool(true)": 1124139009, "Bool(true)": 153708, disabled: first };
+  const obj3 = { disabled: first };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj3.text = intl3.string(arg1(dependencyMap[13]).t.Xb2REN);
   obj3.onPress = callback;
@@ -103,7 +101,8 @@ export default function SafetyToolsAboutScreen(channelId) {
   const intl4 = arg1(dependencyMap[13]).intl;
   obj5 = {
     reportFalsePositiveHook(children) {
-      return callback2(channelId(warningId[19]).Text, { disabled: first, onPress: closure_7, children }, arg1);
+      const obj = { cachedAt: "<string:3344105473>", edpbxy: "<string:3465102384>", disabled: first, onPress: closure_7, children };
+      return callback2(channelId(warningId[19]).Text, obj, arg1);
     }
   };
   obj4.children = intl4.format(arg1(dependencyMap[13]).t.2uYViD, obj5);

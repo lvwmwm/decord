@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 91946
+// Module ID: 11878
+// Function ID: 91960
 // Name: useBotProfileCommands
 // Dependencies: [1194, 4213, 653, 566]
 // Exports: default
 
-// Module 11877 (useBotProfileCommands)
+// Module 11878 (useBotProfileCommands)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import initialize from "initialize";
 

@@ -1,5 +1,5 @@
 // Module ID: 5977
-// Function ID: 49887
+// Function ID: 49898
 // Name: DeprecatedPaintPaletteSpotIllustration
 // Dependencies: []
 // Exports: DeprecatedPaintPaletteSpotIllustration

@@ -1,14 +1,14 @@
-// Module ID: 9625
-// Function ID: 74969
+// Module ID: 9626
+// Function ID: 74982
 // Dependencies: []
 
-// Module 9625
+// Module 9626
 const importAllResult = importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 const EXPRESSION_FOOTER_HEIGHT = arg1(dependencyMap[2]).EXPRESSION_FOOTER_HEIGHT;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
-let obj = { emptyStateContainer: { <string:80631552>: null, <string:80637696>: null } };
+let obj = { emptyStateContainer: {} };
 obj = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 obj.emptyStateBody = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[5]).space.PX_8, marginTop: 0 };

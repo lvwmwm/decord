@@ -1,10 +1,10 @@
-// Module ID: 10821
-// Function ID: 84027
+// Module ID: 10822
+// Function ID: 84040
 // Name: openOAuth2Modal
 // Dependencies: []
 // Exports: installApplication, installPrivateChannelIntegration
 
-// Module 10821 (openOAuth2Modal)
+// Module 10822 (openOAuth2Modal)
 function openOAuth2Modal(arg0) {
   const require = arg0;
   let obj = importDefault(dependencyMap[7]);

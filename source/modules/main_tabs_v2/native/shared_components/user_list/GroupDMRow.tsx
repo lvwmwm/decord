@@ -1,10 +1,10 @@
-// Module ID: 9087
-// Function ID: 71191
+// Module ID: 9088
+// Function ID: 71204
 // Name: GroupDMRow
 // Dependencies: []
 // Exports: default
 
-// Module 9087 (GroupDMRow)
+// Module 9088 (GroupDMRow)
 let closure_3 = importAll(dependencyMap[0]);
 const UserRowModes = arg1(dependencyMap[1]).UserRowModes;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -27,7 +27,7 @@ export default function GroupDMRow(channel) {
   }
   const onPress = channel.onPress;
   const importDefault = onPress;
-  let obj = {};
+  let obj = { 9223372036854775807: false, 0: false, 0: false, -9223372036854775808: false, -9223372036854775808: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   const tmp4 = importDefault(dependencyMap[3])(channel);
@@ -46,7 +46,7 @@ export default function GroupDMRow(channel) {
   obj["disabled"] = flag2;
   let tmp10;
   if (null != recipientsLabel) {
-    const obj1 = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, children: recipientsLabel };
+    const obj1 = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821, children: recipientsLabel };
     tmp10 = jsx(arg1(dependencyMap[7]).Text, obj1);
   }
   obj["subLabel"] = tmp10;

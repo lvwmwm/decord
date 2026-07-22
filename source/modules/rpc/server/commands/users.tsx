@@ -1,9 +1,9 @@
-// Module ID: 13308
-// Function ID: 101124
+// Module ID: 13315
+// Function ID: 101157
 // Name: RPC_EMBEDDED_APP_SCOPE
 // Dependencies: []
 
-// Module 13308 (RPC_EMBEDDED_APP_SCOPE)
+// Module 13315 (RPC_EMBEDDED_APP_SCOPE)
 let RPC_EMBEDDED_APP_SCOPE;
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;

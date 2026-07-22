@@ -1,9 +1,9 @@
-// Module ID: 8432
-// Function ID: 67225
+// Module ID: 8433
+// Function ID: 67237
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8432 (_isNativeReflectConstruct)
+// Module 8433 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -173,9 +173,9 @@ const MFALevels = tmp2.MFALevels;
 ({ GuildSettingsSections: closure_18, GuildSettingsSubsections: closure_19, Endpoints: closure_20, GuildFeatures: closure_21 } = tmp2);
 const DEFAULT_DISCOVERY_CATEGORY_ID = arg1(dependencyMap[14]).DEFAULT_DISCOVERY_CATEGORY_ID;
 ({ PUBLIC_SUCCESS_MODAL_SEEN_KEY: closure_23, CREATE_NEW_CHANNEL_VALUE: closure_24 } = arg1(dependencyMap[15]));
-let closure_35 = ["HAS_APPLICATION", "$", "platformTypes", "marginHorizontal", "VIBES_OFF", "ng", "SOLID", "marginHorizontal", "fontText", "H", "i-tsu", "na", "y1", "try", "attachGestureHandler", "USE_JPEG", "PLATFORM_GITHUB", "%URIError%", "numpad -", "mi", "textDecoder", "li", "PERMISSIONS_REQUESTED"];
+let closure_35 = [];
 let closure_36 = [];
-set = new Set([null, null, null, null, null]);
+set = new Set([]);
 let closure_38 = {};
 let closure_39 = false;
 const CLOSED = FormStates.CLOSED;
@@ -536,7 +536,7 @@ obj = {
         }
       }
       const HTTP = arg1(dependencyMap[18]).HTTP;
-      obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_20.GUILD_INSTANT_INVITES(user.id) };
+      obj = { y: null, isArray: null, accessible: null, url: closure_20.GUILD_INSTANT_INVITES(user.id) };
       const value = HTTP.get(obj);
       value.then((body) => {
         let obj = callback(closure_2[19]);

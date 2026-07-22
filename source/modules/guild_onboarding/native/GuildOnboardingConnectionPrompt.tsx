@@ -1,10 +1,10 @@
-// Module ID: 5459
-// Function ID: 46626
+// Module ID: 5458
+// Function ID: 46634
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 5459 (_createForOfIteratorHelperLoose)
+// Module 5458 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -110,9 +110,9 @@ const obj3 = { marginBottom: importDefault(dependencyMap[13]).space.PX_8 };
 obj.description = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
 const obj4 = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
 obj.connectionsList = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
+const obj6 = { updateWith: "row", addDependencies: "center", addWindow: "center", onBeginFocus: "hidden", GF: 100, useFramePreviewOverrideStore: 45, explicitContentGuilds: null, handleUserUpdate: "text-sm/semibold", paddingBottom: importDefault(dependencyMap[13]).space.PX_8, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
+obj.footer = obj6;
 const obj5 = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
-obj.footer = { paddingBottom: importDefault(dependencyMap[13]).space.PX_8, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-const obj6 = { paddingBottom: importDefault(dependencyMap[13]).space.PX_8, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
 obj.footerContent = { width: "100%", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 let closure_16 = obj.createStyles(obj);
 const obj7 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
@@ -262,7 +262,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
   ({ flex: arr12[0], container: arr12[1] } = tmp);
   if (stateFromStores3) {
     obj = {};
-    const items10 = [tmp.flex, { margin: null, backgroundColor: null }];
+    const items10 = [tmp.flex, { "Bool(false)": null, "Bool(false)": null }];
     obj.style = items10;
     obj1 = {};
     const intl4 = arg1(dependencyMap[23]).intl;

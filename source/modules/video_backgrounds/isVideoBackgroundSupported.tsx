@@ -1,10 +1,10 @@
-// Module ID: 8847
-// Function ID: 69833
+// Module ID: 8848
+// Function ID: 69846
 // Name: isVideoBackgroundSupported
 // Dependencies: []
 // Exports: default
 
-// Module 8847 (isVideoBackgroundSupported)
+// Module 8848 (isVideoBackgroundSupported)
 let closure_0 = importDefault(dependencyMap[0]);
 const Features = arg1(dependencyMap[1]).Features;
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");

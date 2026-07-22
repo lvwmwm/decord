@@ -12,7 +12,7 @@ if (Intl.ListFormat) {
     obj = {};
     obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { application: "isArray", Set: "now", Icon: "content", id: "a" }, narrow: { application: "isArray", Set: "now", Icon: "content", id: "a" }, short: { application: "isArray", Set: "now", Icon: "content", id: "a" } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
     const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: "isArray", Set: "now", Icon: "content", id: "a" }, narrow: { application: "isArray", Set: "now", Icon: "content", id: "a" }, short: { application: "isArray", Set: "now", Icon: "content", id: "a" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "pl" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: {} } }, locale: "pl" });

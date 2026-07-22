@@ -1,14 +1,15 @@
-// Module ID: 8508
-// Function ID: 67886
+// Module ID: 8509
+// Function ID: 67898
 // Name: apexExperiment
 // Dependencies: []
 // Exports: useIsDisplayNameStylesFlywheelSettersEnabled, useIsDisplayNameStylesFlywheelViewersEnabled
 
-// Module 8508 (apexExperiment)
+// Module 8509 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+let obj = { "Bool(false)": false, "Bool(false)": false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[0]);
-const obj = { bottom: false, name: false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+obj = { "Bool(false)": false, "Bool(false)": false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment1 = _module1.createApexExperiment(obj);
 const _module2 = require(dependencyMap[1]);
 const result = _module2.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFlywheelExperiment.tsx");

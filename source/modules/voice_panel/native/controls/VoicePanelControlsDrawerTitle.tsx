@@ -1,14 +1,14 @@
-// Module ID: 11368
-// Function ID: 88391
-// Dependencies: []
+// Module ID: 11369
+// Function ID: 88404
+// Dependencies: [1140850707, 2097152005, 2365587463, 1006632962, 553648135, 503316480, 2969567248, 1879048194, 3690987522, 469762064, 3154116624, 4177526788]
 
-// Module 11368
+// Module 11369
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = { titleWrapper: obj };
-obj = { <string:2038909267>: 20, <string:640898370>: null, <string:1630821457>: "row", <string:1914433812>: "center", <string:3357282920>: "center", <string:3026206311>: null, <string:4084393489>: 6, height: arg1(dependencyMap[2]).CONTROLS_DRAWER_HEADER_SIZE };
+obj = { -429783202: 20, -153232592: null, 137452091: "row", 71893785: "center", 137955502: "center", 141232221: null, 63768138: 6, height: arg1(dependencyMap[2]).CONTROLS_DRAWER_HEADER_SIZE };
 obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.titlePill = obj1;
 const tmp2 = arg1(dependencyMap[3]);
@@ -16,19 +16,19 @@ obj.titlePillBG = { backgroundColor: importDefault(dependencyMap[5]).colors.BACK
 let closure_6 = obj1.createStyles(obj);
 let closure_7 = { code: "function VoicePanelControlsDrawerTitleTsx1(){const{shown,_shown,disablePill,backgroundColor}=this.__closure;const showBGColor=shown!=null?shown.get():_shown.get();return{backgroundColor:showBGColor&&!disablePill?backgroundColor:'transparent'};}" };
 const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(shown) {
+const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(children) {
   let blurStyle;
   let style;
-  shown = shown.shown;
+  const shown = children.shown;
   const arg1 = shown;
-  let flag = shown.disablePill;
+  let flag = children.disablePill;
   if (flag === undefined) {
     flag = false;
   }
   const importDefault = flag;
   let dependencyMap;
   let StyleSheet;
-  ({ style, blurStyle } = shown);
+  ({ style, blurStyle } = children);
   const tmp = callback2();
   let obj = arg1(dependencyMap[6]);
   let sharedValue = obj.useSharedValue(true);
@@ -74,8 +74,7 @@ const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(s
   const obj2 = { style: items2 };
   const items2 = [tmp.titlePill, animatedStyle];
   const tmp7 = importDefault(dependencyMap[8]);
-  const obj3 = { handleMessageFocus: 17, enableHome: "message_display_compact", afterMs: "message", children: shown.title };
-  obj2.children = callback(arg1(dependencyMap[10]).Text, obj3);
+  obj2.children = callback(arg1(dependencyMap[10]).Text, { children: children.title });
   items1[1] = callback(importDefault(dependencyMap[9]), obj2);
   obj.children = items1;
   return tmp4(tmp5, obj);

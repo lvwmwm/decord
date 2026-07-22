@@ -1,10 +1,10 @@
-// Module ID: 16247
-// Function ID: 125534
+// Module ID: 16255
+// Function ID: 125576
 // Name: FinishingTouchesScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16247 (FinishingTouchesScreen)
+// Module 16255 (FinishingTouchesScreen)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ Image: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -109,9 +109,9 @@ export default function FinishingTouchesScreen() {
   const intl = arg1(dependencyMap[18]).intl;
   obj.buttonText = intl.string(arg1(dependencyMap[18]).t.XGl4ba);
   obj = { style: enableCommunitySharedStyles.content };
-  obj1 = { "Bool(false)": 2137542913, "Bool(false)": 1359050337, "Bool(false)": 507643607, "Bool(false)": 2113930363, ref };
+  obj1 = { "Bool(false)": -1480503039, "Bool(false)": 1359050337, "Bool(false)": -1136523533, "Bool(false)": 989856819, ref };
   const intl2 = arg1(dependencyMap[18]).intl;
-  obj1.children = intl2.formatToPlainString(arg1(dependencyMap[18]).t.tInpJj, { constructor: "\u{1F994}", height: 10 });
+  obj1.children = intl2.formatToPlainString(arg1(dependencyMap[18]).t.tInpJj, {});
   const items2 = [callback2(arg1(dependencyMap[19]).Text, obj1), , , ];
   obj2 = { resizeMode: "contain", source: importDefault(dependencyMap[15])().finishingTouches };
   items2[1] = callback2(closure_6, obj2);
@@ -119,7 +119,7 @@ export default function FinishingTouchesScreen() {
   const intl3 = arg1(dependencyMap[18]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[18]).t.Pj/s/a);
   items2[2] = callback2(arg1(dependencyMap[19]).Heading, obj3);
-  const obj4 = { delete: true, dispatch: true, raw: true, style: enableCommunitySharedStyles.description };
+  const obj4 = { "Null": null, "Null": 3, alignItems: null, style: enableCommunitySharedStyles.description };
   const intl4 = arg1(dependencyMap[18]).intl;
   obj4.children = intl4.string(arg1(dependencyMap[18]).t.IL7/no);
   items2[3] = callback2(arg1(dependencyMap[19]).Text, obj4);
@@ -179,7 +179,7 @@ export default function FinishingTouchesScreen() {
   items5[1] = callback2(arg1(dependencyMap[21]).TableRowGroup, obj13);
   obj5.children = items5;
   items3[1] = callback3(arg1(dependencyMap[20]).Stack, obj5);
-  const obj15 = { delete: "boolean", dispatch: "boolean", raw: "number", style: enableCommunitySharedStyles.formHint };
+  const obj15 = { "Null": null, "Null": null, alignItems: null, style: enableCommunitySharedStyles.formHint };
   const intl9 = arg1(dependencyMap[18]).intl;
   const obj16 = {};
   const obj12 = {

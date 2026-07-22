@@ -1,10 +1,10 @@
-// Module ID: 8550
-// Function ID: 67965
+// Module ID: 8551
+// Function ID: 67977
 // Name: useTieredTenureBadge
 // Dependencies: []
 // Exports: useTieredTenureBadgeData, useTieredTenureBadgesFromSubscriptionData
 
-// Module 8550 (useTieredTenureBadge)
+// Module 8551 (useTieredTenureBadge)
 function useTieredTenureBadge() {
   let id;
   const items = [closure_4];

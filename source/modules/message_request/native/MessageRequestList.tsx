@@ -1,10 +1,10 @@
-// Module ID: 15434
-// Function ID: 117786
+// Module ID: 15442
+// Function ID: 117829
 // Name: PendingMessageRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 15434 (PendingMessageRequestRow)
+// Module 15442 (PendingMessageRequestRow)
 function PendingMessageRequestRow(isRestricted) {
   let hasSingleMessageRequest;
   let isAcceptLoading;
@@ -151,7 +151,7 @@ function PendingMessageRequestRow(isRestricted) {
         const items5 = [handleSelectRow(closure_5, obj3), ];
         let tmp29 = null;
         if (!isRestricted.isLastRow) {
-          tmp29 = handleAcceptMessageRequest(arg1(dependencyMap[18]).FormDivider, { justifyContent: null, alignItems: null });
+          tmp29 = handleAcceptMessageRequest(arg1(dependencyMap[18]).FormDivider, { "Bool(true)": null, "Bool(true)": null });
         }
         items5[1] = tmp29;
         obj.children = items5;
@@ -171,22 +171,22 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(false)": 1744764930, "Bool(false)": -162463743, "Bool(false)": 1262555629, "Bool(false)": 1912602980, "Bool(false)": 23, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.sectionContainer = obj;
 obj.rowContainer = {};
-obj.actionContainer = { width: "k", resizeMode: "r", paddingRight: "isArray" };
+obj.actionContainer = { ellipsizeMode: -1023409591, lineClamp: 1358954962, variant: 426962422 };
 const tmp3 = arg1(dependencyMap[3]);
 obj.actionButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.acceptButton = { marginRight: 16 };
 obj.acceptButtonRestricted = { marginRight: 12 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.pressableRow = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.activityIndicator = {};
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.list = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj.activityIndicator = { hideWhenScrolling: null, autoCapitalize: null };
+const obj3 = { 2022013060: false, 2022144134: false, 395540617: false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj.list = obj3;
 let closure_10 = obj.createStyles(obj);
 let closure_11 = { ACCEPT_MESSAGE_REQUEST: "accept-message-request", IGNORE_MESSAGE_REQUEST: "ignore-message-request", PREVIEW_MESSAGE_REQUEST: "preview-message-request" };
-const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.md };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/message_request/native/MessageRequestList.tsx");
 
 export default function MessageRequestList(goToMessageRequestPreview) {
@@ -206,7 +206,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
     obj.bodyText = intl.string(arg1(dependencyMap[6]).t.SXrqTf);
     return callback(importDefault(dependencyMap[23]), obj);
   } else {
-    const items = ["<string:4166254596>"];
+    const items = [1649885696];
     HermesBuiltin.arraySpread(arr, 1);
     obj = {};
     const items1 = [tmp.list, ];
@@ -227,7 +227,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
       const goToMessageRequestPreview = item;
       if ("string" === typeof item) {
         let obj = { style: tmp.sectionContainer };
-        obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+        obj = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
         const intl = goToMessageRequestPreview(arr[6]).intl;
         const obj1 = { pendingRequestNumber: arr.length };
         obj.children = intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj1);

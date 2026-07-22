@@ -1,10 +1,10 @@
-// Module ID: 11462
-// Function ID: 89302
+// Module ID: 11463
+// Function ID: 89315
 // Name: useIsMessageRequestRestrictedViewer
 // Dependencies: []
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 11462 (useIsMessageRequestRestrictedViewer)
+// Module 11463 (useIsMessageRequestRestrictedViewer)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/message_request/hooks/useIsMessageRequestRestrictedViewer.tsx");
 

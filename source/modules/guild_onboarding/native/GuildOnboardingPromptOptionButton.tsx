@@ -1,10 +1,10 @@
-// Module ID: 5414
-// Function ID: 46436
+// Module ID: 5144
+// Function ID: 44857
 // Name: PromptOptionButton
 // Dependencies: []
 // Exports: default
 
-// Module 5414 (PromptOptionButton)
+// Module 5144 (PromptOptionButton)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,17 +14,17 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[5]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { debugger: true, stringify: true, showVoiceSettingsActionSheet: true, maybeOpenAgeGateForVoiceChannel: true, borderRadius: importDefault(dependencyMap[8]).radii.md };
+obj = { -9223372036854775808: false, 0: false, -9223372036854775808: false, -9223372036854775808: false, borderRadius: importDefault(dependencyMap[8]).radii.md };
 obj.container = obj;
-obj.optionButton = { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon", BILLING_SUBSCRIPTION: "png", GameDepthTier1SmallBadge: 24, UMWBZr: 24 };
-obj.optionTextEmoji = { numberOfLines: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288229756056495, ellipsizeMode: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009532402967, accessible: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008487983168, accessibilityRole: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200995461696194 };
+obj.optionButton = {};
+obj.optionTextEmoji = {};
 obj.optionImageEmoji = {};
 obj.optionText = { flexShrink: 1 };
 const tmp2 = arg1(dependencyMap[6]);
 obj.checkIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.newBadgeWrapper = {};
 obj.newBadge = { fontWeight: "bold" };
-const obj2 = { "Bool(false)": "Bluesky", "Bool(false)": null, "Bool(false)": true, "Bool(false)": null, "Bool(false)": true, "Bool(false)": true, "Bool(false)": 10, "Bool(false)": "trigger", "Bool(false)": "boolean", "Bool(false)": "color", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
+const obj2 = { convertShortcutToName: true, hasUnreadMessages: null, CreatorMonetizationRestrictions: true, screenBottomOffset: true, GameDepthTier9LargeBadge: 10, SUPER_REACTION_PICKER: "trigger", progressiveRenderingEnabled: "boolean", fadeDuration: "color", borderBottomRightRadius: "boolean", borderTopRightRadius: "color", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.roleCount = obj2;
 let closure_11 = obj.createStyles(obj);
 let closure_12 = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
@@ -109,9 +109,9 @@ export default function PromptOptionButton(option) {
         num3 = 12;
         obj6 = option(onSelect[12]);
         num4 = 1.2;
-        withSpringResult = obj6.withSpring(1.2 * num2, {});
+        withSpringResult = obj6.withSpring(1.2 * num2, { "Null": -6513120128233750000000000000000000000000000000000000000, "Null": 36507222016.22072, "Null": 1962934870 });
         obj7 = option(onSelect[12]);
-        withSequenceResult = obj5.withSequence(withSpringResult, obj7.withSpring(num2, {}));
+        withSequenceResult = obj5.withSequence(withSpringResult, obj7.withSpring(num2, { "Null": -6513120128233750000000000000000000000000000000000000000, "Null": 36507222016.22072, "Null": 1962934870 }));
       }
       obj2.scale = withSequenceResult;
       items = [];
@@ -432,7 +432,7 @@ export default function PromptOptionButton(option) {
     tmp34Result = null != name2;
   }
   if (tmp34Result) {
-    obj4 = { style: { <string:29557293>: true, <string:45941405>: true } };
+    obj4 = { style: { "Null": true, "Null": true } };
     const obj5 = {};
     ({ optionTextEmoji: obj19.textEmojiStyle, optionImageEmoji: obj19.fastImageStyle } = tmp);
     let emojiURL;
@@ -463,11 +463,11 @@ export default function PromptOptionButton(option) {
   }
   const items8 = [tmp34Result, ];
   obj7 = { style: tmp.optionText };
-  obj8 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: option.title };
+  obj8 = { children: option.title };
   const items9 = [callback2(arg1(dependencyMap[21]).Text, obj8), ];
   let tmp46 = null != option.description && option.description.length > 0;
   if (tmp46) {
-    obj9 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: option.description };
+    obj9 = { cachedAt: true, edpbxy: true, children: option.description };
     tmp46 = callback2(arg1(dependencyMap[21]).Text, obj9);
   }
   items9[1] = tmp46;
@@ -480,7 +480,7 @@ export default function PromptOptionButton(option) {
     obj10 = {};
     const items11 = [tmp.roleCount, animatedStyle1];
     obj10.style = items11;
-    obj11 = {};
+    obj11 = { cachedAt: null, edpbxy: "none" };
     const intl = arg1(dependencyMap[15]).intl;
     const obj12 = { memberCount: num };
     obj11.children = intl.format(arg1(dependencyMap[15]).t.EgKsZA, obj12);

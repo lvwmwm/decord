@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 91571
+// Module ID: 11800
+// Function ID: 91584
 // Name: hideLaunchPad
 // Dependencies: []
 // Exports: default
 
-// Module 11799 (hideLaunchPad)
+// Module 11800 (hideLaunchPad)
 const ComponentActions = require(dependencyMap[0]).ComponentActions;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/launchpad/native/hideLaunchPad.tsx");

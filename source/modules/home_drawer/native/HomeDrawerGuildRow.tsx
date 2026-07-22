@@ -1,10 +1,10 @@
-// Module ID: 14721
-// Function ID: 111047
+// Module ID: 14729
+// Function ID: 111090
 // Name: GuildRowWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 14721 (GuildRowWrapper)
+// Module 14729 (GuildRowWrapper)
 function GuildRowWrapper(guild) {
   guild = guild.guild;
   const arg1 = guild;
@@ -27,7 +27,7 @@ function GuildRowWrapper(guild) {
   const items2 = [stateFromStores1];
   const memo = React.useMemo(() => {
     if (null == stateFromStores1) {
-      let obj = { no: null, bottom: null };
+      let obj = { "Bool(false)": true, "Bool(false)": true };
     } else {
       obj = {};
       let tmp2 = null == stateFromStores1.end_time;
@@ -57,7 +57,7 @@ function GuildRowWrapper(guild) {
       }
     } else {
       let obj = { style: tmp.guildName };
-      obj = { isArray: "absolute", Button: "useUserIsTeen", textAlign: "isArrayBufferToString", style: voiceUsers1.guildNameText };
+      obj = { guild_id: "_desired", exports: "hash", body: "content", style: voiceUsers1.guildNameText };
       let str = "text-default";
       if (memo.isMuted) {
         str = "text-muted";
@@ -274,7 +274,7 @@ const tmp2 = arg1(dependencyMap[10]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
 const obj = { STREAMING: "streaming", VOICE: "voice", MENTION: "mention", TYPING: "typing", UNREAD: "unread", NONE: "none" };
 const tmp3 = arg1(dependencyMap[12]);
-let closure_19 = arg1(dependencyMap[13]).createStyles({ guildName: { "Null": true, "Null": true, "Bool(false)": true }, guildNameText: { flexShrink: 1 } });
+let closure_19 = arg1(dependencyMap[13]).createStyles({ guildName: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null }, guildNameText: { flexShrink: 1 } });
 const obj2 = arg1(dependencyMap[13]);
 const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildRow.tsx");
 

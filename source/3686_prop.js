@@ -12,7 +12,7 @@ if (Intl.ListFormat) {
     obj = {};
     obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { accessibilityHint: 48, legacyCompat_selected: "center", legacyCompat_onPress: "center", eventTarget: "a" }, narrow: { accessibilityHint: 48, legacyCompat_selected: "center", legacyCompat_onPress: "center", eventTarget: "a" }, short: { accessibilityHint: 48, legacyCompat_selected: "center", legacyCompat_onPress: "center", eventTarget: "a" } };
     obj.disjunction = obj1;
     const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: {} } }, locale: "fi" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { accessibilityHint: 48, legacyCompat_selected: "center", legacyCompat_onPress: "center", eventTarget: "a" }, narrow: { accessibilityHint: 48, legacyCompat_selected: "center", legacyCompat_onPress: "center", eventTarget: "a" }, short: { accessibilityHint: 48, legacyCompat_selected: "center", legacyCompat_onPress: "center", eventTarget: "a" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "fi" });

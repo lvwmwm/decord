@@ -1,10 +1,10 @@
-// Module ID: 14086
-// Function ID: 106929
+// Module ID: 14093
+// Function ID: 106969
 // Name: useLatestChannelMessage
 // Dependencies: []
 // Exports: default
 
-// Module 14086 (useLatestChannelMessage)
+// Module 14093 (useLatestChannelMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 const useEffect = arg1(dependencyMap[1]).useEffect;
 let closure_5 = importDefault(dependencyMap[2]);

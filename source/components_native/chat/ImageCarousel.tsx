@@ -1,9 +1,9 @@
-// Module ID: 9640
-// Function ID: 75071
+// Module ID: 9641
+// Function ID: 75084
 // Name: useTileEntranceAnimatedStyle
 // Dependencies: []
 
-// Module 9640 (useTileEntranceAnimatedStyle)
+// Module 9641 (useTileEntranceAnimatedStyle)
 let StyleSheet;
 function useTileEntranceAnimatedStyle(arg0) {
   let obj = arg1(dependencyMap[8]);
@@ -21,7 +21,7 @@ function useTileEntranceAnimatedStyle(arg0) {
     obj.opacity = sharedValue(closure_2[9]).withTiming(value, obj, "respect-motion-settings");
     obj = {};
     const obj2 = sharedValue(closure_2[9]);
-    obj.scale = sharedValue(closure_2[11]).withSpring(sharedValue.get(), {}, "respect-motion-settings");
+    obj.scale = sharedValue(closure_2[11]).withSpring(sharedValue.get(), { "Null": -6513120128233750000000000000000000000000000000000000000, "Null": 36507222016.22072, "Null": 1962934870 }, "respect-motion-settings");
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -177,7 +177,7 @@ function Tile(onEdit) {
       }
       tmp21 = null;
       if (length > 0) {
-        const obj5 = { "Null": "bb53327d21615c77cfbccb9f06aeb711", "Null": "wumpus-link", "Null": "png", style: tmp.altTagText };
+        const obj5 = { style: tmp.altTagText };
         const intl = onEdit(channelId[20]).intl;
         obj5.children = intl.string(onEdit(channelId[20]).t.QEW81z);
         tmp21 = flag(onEdit(channelId[19]).Text, obj5);
@@ -186,7 +186,7 @@ function Tile(onEdit) {
     const items3 = [tmp21, ];
     let tmp29 = null;
     if (isVideo) {
-      const obj6 = { style: tmp.iconContainer, children: flag(onEdit(channelId[21]).PlayIcon, {}) };
+      const obj6 = { style: tmp.iconContainer, children: flag(onEdit(channelId[21]).PlayIcon, { "Bool(false)": "text-overlay-light", "Bool(false)": "text-xs/bold" }) };
       tmp29 = flag(tmp, obj6);
     }
     items3[1] = tmp29;
@@ -194,7 +194,7 @@ function Tile(onEdit) {
     items2[1] = stateFromStores(tmp, obj4);
     let tmp36 = null;
     if (stateFromStores) {
-      const obj7 = { style: tmp.iconContainer, children: flag(onEdit(channelId[22]).EyeIcon, {}) };
+      const obj7 = { style: tmp.iconContainer, children: flag(onEdit(channelId[22]).EyeIcon, { "Bool(false)": "text-overlay-light", "Bool(false)": "text-xs/bold" }) };
       tmp36 = flag(tmp, obj7);
     }
     items2[2] = tmp36;
@@ -243,7 +243,7 @@ function Tile(onEdit) {
   obj3.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[20]).t.FxKgb3, obj4);
   obj3.style = tmp.closeButton;
   obj3.onPress = callback1;
-  obj3.hitSlop = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
+  obj3.hitSlop = { wideBannerAnimatedUrl: "<string:5259856>", SPACE_32: "<string:3935895705>", np: "flags", linkedUsers: "ti" };
   const obj5 = { style: items9 };
   const items9 = [tmp.closeContainer, tmp9Result];
   const obj6 = { source: importDefault(dependencyMap[24]), size: arg1(dependencyMap[10]).Icon.Sizes.MEDIUM, color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_500, style: tmp.closeButtonIcon };
@@ -302,7 +302,7 @@ obj1["justifyContent"] = "space-between";
 obj1["alignItems"] = "flex-end";
 obj1["padding"] = 4;
 obj.decorationsContainer = obj1;
-const obj2 = { <string:80175360>: 5, <string:80175872>: 4, <string:2412663040>: "absolute", <string:1594430144>: 8, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj2 = { 0: "absolute", 0: 8, 0: 8, 0: null, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.highlightedTileContainer = obj2;
 obj.closeButton = { top: -1 * IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN };
 obj.scrollview = { paddingTop: IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING };

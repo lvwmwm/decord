@@ -1,10 +1,10 @@
-// Module ID: 14852
-// Function ID: 111934
+// Module ID: 14860
+// Function ID: 111977
 // Name: getVoiceUserHeight
 // Dependencies: []
 // Exports: getVoiceUserHeight
 
-// Module 14852 (getVoiceUserHeight)
+// Module 14860 (getVoiceUserHeight)
 import merged from "module_14";
 
 const View = arg1(dependencyMap[1]).View;
@@ -13,8 +13,8 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const XSMALL_20 = arg1(dependencyMap[4]).AvatarSizes.XSMALL_20;
 let obj1 = arg1(dependencyMap[6]);
-let obj = { voiceState: { "Null": 13341462741429672000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494985, "Null": 35786643594475160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexDirection: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122058707738 }, disabled: { opacity: 0.5 } };
-obj = { iconPosition: 10, style: 17, horizontal: 2, showsHorizontalScrollIndicator: 13, style: 4, contentContainerStyle: 4, decelerationRate: 2, snapToInterval: 0, snapToStart: true, borderRadius: importDefault(dependencyMap[7]).radii.lg, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+let obj = { voiceState: { Text: "<string:1312900331>", applicationId: "<string:1912602886>", message: "l", y: "Boolean" }, disabled: { opacity: 0.5 } };
+obj = { <string:2343141277>: 10, <string:259581577>: 17, <string:1173760085>: 2, <string:85391537>: 13, <string:1675319350>: 4, <string:1408999628>: 4, <string:2899575814>: 2, <string:1650568364>: 0, <string:1632524881>: true, borderRadius: importDefault(dependencyMap[7]).radii.lg, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.voiceStateCollapsed = obj;
 obj1 = { marginLeft: 6 };
 const tmp2 = arg1(dependencyMap[3]);
@@ -104,7 +104,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
     obj2.style = items1;
     const obj3 = { source: getSource, size: XSMALL_20 };
     const items2 = [callback(arg1(dependencyMap[4]).Avatar, obj3), , , , , , , ];
-    const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: null };
+    const obj4 = { cachedAt: null, edpbxy: null };
     const merged = Object.assign(arg0);
     items2[1] = callback(importDefault(dependencyMap[13]), obj4);
     if (disabled) {
@@ -115,7 +115,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         if (video) {
           tmp39 = null;
           if (!disabled) {
-            const obj5 = { accessibilityRole: true, "": true, style: tmp.voiceStateIcon };
+            const obj5 = { "Bool(false)": "Array", "Bool(false)": "isArray", style: tmp.voiceStateIcon };
             tmp39 = callback(arg1(dependencyMap[18]).VideoIcon, obj5);
           }
         }
@@ -151,7 +151,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         tmp5Result = tmp5(importDefault(dependencyMap[10]).View, obj2);
         const tmp50 = importDefault(dependencyMap[20]);
       } else if (serverDeaf) {
-        const obj9 = { style: tmp.voiceStateIcon };
+        const obj9 = { height: "chatInputNodes", opacity: "%Uint32Array%", accessible: "TOO_MANY_CONNECTIONS", style: tmp.voiceStateIcon };
         let tmp31 = callback(arg1(dependencyMap[16]).HeadphonesDenyIcon, obj9);
       } else {
         tmp31 = null;
@@ -161,7 +161,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         }
       }
     } else if (serverMute) {
-      const obj11 = { style: tmp.voiceStateIcon };
+      const obj11 = { height: "chatInputNodes", opacity: "%Uint32Array%", accessible: "TOO_MANY_CONNECTIONS", style: tmp.voiceStateIcon };
       let tmp19 = callback(arg1(dependencyMap[14]).MicrophoneDenyIcon, obj11);
     } else if (localMute) {
       obj12 = { style: tmp.voiceStateIcon };

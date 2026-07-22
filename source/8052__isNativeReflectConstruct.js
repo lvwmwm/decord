@@ -1,5 +1,5 @@
 // Module ID: 8052
-// Function ID: 63904
+// Function ID: 63914
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -65,6 +65,6 @@ const tmp3 = (arg0) => {
   return callback(FeColorMatrix, items);
 }(importDefault(dependencyMap[9]));
 tmp3.displayName = "FeColorMatrix";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { height: null, parent: null });
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { <string:2996641271>: false, <string:4003559907>: false });
 
 export default tmp3;

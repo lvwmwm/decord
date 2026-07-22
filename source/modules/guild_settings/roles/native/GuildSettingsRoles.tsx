@@ -1,10 +1,10 @@
-// Module ID: 16173
-// Function ID: 124741
+// Module ID: 16181
+// Function ID: 124783
 // Name: hasSearchQuery
 // Dependencies: []
 // Exports: default
 
-// Module 16173 (hasSearchQuery)
+// Module 16181 (hasSearchQuery)
 function hasSearchQuery(first) {
   return "" !== first.trim();
 }
@@ -79,28 +79,28 @@ obj = { paddingTop: importDefault(dependencyMap[16]).space.PX_16, paddingHorizon
 obj.searchWrapper = obj;
 const tmp4 = arg1(dependencyMap[14]);
 obj.subheaderContainer = { paddingVertical: importDefault(dependencyMap[16]).space.PX_16, gap: importDefault(dependencyMap[16]).space.PX_16 };
-obj.emptySubheaderContainer = { 0: "center", -9223372036854775808: "center" };
+obj.emptySubheaderContainer = {};
 const obj1 = { paddingVertical: importDefault(dependencyMap[16]).space.PX_16, gap: importDefault(dependencyMap[16]).space.PX_16 };
 obj.emptyIlloContainer = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
-obj.emptyIllo = { "Bool(false)": "Array", "Bool(false)": "isArray" };
+obj.emptyIllo = { name: "key", opacity: "Text" };
 obj.emptyIlloLarge = {};
-obj.emptySubheaderBody = { isChannelNSFWGated: 271, showIconSparkle: 163, paddingTop: null, paddingBottom: "37b687db1cd86ac8059d1a0342f2319c" };
+obj.emptySubheaderBody = { "Bool(false)": 377564167843241300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 391547974124783460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 405531890545774970000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 1891299054634275700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 const obj3 = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(importDefault(dependencyMap[17])(tmp3.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[16]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj3["marginTop"] = 16;
 obj.subheader = obj3;
-obj.subheaderBody = {};
+obj.subheaderBody = { MINIMAL: null, currentScreenId: null };
 obj.subheaderButton = {};
-obj.subheaderDescription = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
+obj.subheaderDescription = {};
 obj.divider = { height: tmp2.StyleSheet.hairlineWidth, width: "100%" };
-obj.everyoneWrapper = { size: false, progress: false };
+obj.everyoneWrapper = { y: false, channelId: false };
 const importDefaultResult = importDefault(dependencyMap[17]);
 obj.edittingRolesHeader = { marginTop: importDefault(dependencyMap[16]).space.PX_16, marginLeft: importDefault(dependencyMap[16]).space.PX_16 };
-obj.rolesHeader = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r" };
-obj.reorderButton = { diversity: false, accessible: false, status: false };
+obj.rolesHeader = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r" };
+obj.reorderButton = {};
 obj.reorderButtonText = { marginLeft: 8 };
-obj.rolesBody = { <string:2076015548>: 400, <string:1683379298>: 1, <string:1446732380>: null };
+obj.rolesBody = { marginEnd: 400, position: 1, paddingTop: null };
 obj.emptyRolesIcon = { opacity: 0.4 };
 let closure_24 = obj.createStyles(obj);
 const obj4 = { marginTop: importDefault(dependencyMap[16]).space.PX_16, marginLeft: importDefault(dependencyMap[16]).space.PX_16 };
@@ -375,7 +375,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         obj2.style = tmp.reorderButton;
         const obj3 = { color: tmp(tmp4[16]).colors.TEXT_LINK, size: "sm" };
         const items2 = [hasRoles(guildId(tmp4[33]).ArrowsUpDownIcon, obj3), ];
-        const obj4 = { style: tmp.reorderButtonText };
+        const obj4 = { "Null": "business", "Null": "cached", alignItems: "cancel", style: tmp.reorderButtonText };
         const intl3 = guildId(tmp4[31]).intl;
         obj4.children = intl3.string(guildId(tmp4[31]).t.0dOFq+);
         items2[1] = hasRoles(guildId(tmp4[34]).Text, obj4);
@@ -634,7 +634,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       const obj5 = {};
       const obj6 = { style: tmp.emptyRolesIcon, size: arg1(dependencyMap[51]).Icon.Sizes.LARGE, source: importDefault(dependencyMap[52]) };
       obj5.leading = hasRoles(arg1(dependencyMap[51]).Icon, obj6);
-      const obj7 = { hasMaxConnections: null, isBoostOnlySubscription: null };
+      const obj7 = { cachedAt: "String", edpbxy: "r" };
       const intl = arg1(dependencyMap[31]).intl;
       obj7.children = intl.string(arg1(dependencyMap[31]).t.nZfHsf);
       obj5.label = hasRoles(arg1(dependencyMap[34]).Text, obj7);

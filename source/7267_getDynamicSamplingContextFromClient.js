@@ -1,5 +1,5 @@
 // Module ID: 7267
-// Function ID: 58561
+// Function ID: 58572
 // Name: getDynamicSamplingContextFromClient
 // Dependencies: []
 

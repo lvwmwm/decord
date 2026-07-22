@@ -1,10 +1,10 @@
-// Module ID: 16207
-// Function ID: 125258
+// Module ID: 16215
+// Function ID: 125300
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 16207 (Header)
+// Module 16215 (Header)
 function Header(arg0) {
   let applicationId;
   let integration;
@@ -615,13 +615,13 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.numericalInputContainerBase = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.numericalInput = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
-const obj2 = { GuildBadgeForce: -738197503, useIsMobileGameCollectionExperimentEnabled: 16777216, _monthsRegex: 38608706, 0: 21417216, padding: -747089664, borderRadius: importDefault(dependencyMap[7]).radii.xs, borderWidth: 4096, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
+const obj2 = { -9223372036854775808: -738197503, 0: 16777216, -9223372036854775808: 19065922, "Bool(false)": 32280064, "Bool(false)": -302624512, "Bool(false)": 116, "Bool(false)": 4096, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.appNumericalInput = obj2;
-obj.appNumericalInputContainer = { "Null": 7, "Null": 370 };
+obj.appNumericalInputContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.appNumericalInputText = { flexShrink: 1 };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.numericalInputDisabled = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
-obj.metadataRow = {};
+obj.metadataRow = { onValueChange: "Portugu\u00EAs", value: "Portuguese", start: "pt-PT" };
 obj.metadataRowText = { lineHeight: 32 };
 let closure_15 = obj.createStyles(obj);
 const obj3 = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };

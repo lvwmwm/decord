@@ -1,5 +1,5 @@
 // Module ID: 6957
-// Function ID: 55596
+// Function ID: 55607
 // Name: isAdSessionExpired
 // Dependencies: []
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession

@@ -1,9 +1,9 @@
-// Module ID: 11803
-// Function ID: 91594
+// Module ID: 11804
+// Function ID: 91608
 // Name: metadata
 // Dependencies: []
 
-// Module 11803 (metadata)
+// Module 11804 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/collectibles/previews/sample_profile_small.png.js");
 

@@ -1,9 +1,9 @@
-// Module ID: 11188
-// Function ID: 87085
+// Module ID: 11189
+// Function ID: 87098
 // Name: PortalKeyboardBottomSheetHeader
 // Dependencies: []
 
-// Module 11188 (PortalKeyboardBottomSheetHeader)
+// Module 11189 (PortalKeyboardBottomSheetHeader)
 let Platform;
 function PortalKeyboardBottomSheetHeader(arg0) {
   let handleCollapse;
@@ -50,7 +50,7 @@ obj1 = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.none, border
 obj.headerContainer = obj1;
 obj2 = { marginBottom: -importDefault(dependencyMap[7]).space.PX_8 };
 obj.headerContainerScreenReaderEnabled = obj2;
-obj.roundingView = {};
+obj.roundingView = { pickerIntention: false, autoFocus: false };
 let closure_10 = obj2.createStyles(obj);
 let closure_11 = { code: "function PortalKeyboardBottomSheetTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get()>0.975;}" };
 let closure_12 = { code: "function PortalKeyboardBottomSheetTsx2(){const{isFullyExpanded}=this.__closure;return isFullyExpanded.get();}" };

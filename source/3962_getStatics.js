@@ -1,5 +1,5 @@
 // Module ID: 3962
-// Function ID: 32814
+// Function ID: 32816
 // Name: getStatics
 // Dependencies: []
 
@@ -13,8 +13,8 @@ function getStatics(arg0) {
   }
   return tmp2;
 }
-let closure_2 = {};
-let closure_3 = { "Null": "force", "Null": "forceChange", "Null": "rotation", "Null": "rotationChange", "Null": "scale", "Null": "scaleChange", "Null": "duration" };
+let closure_2 = { accessible: false, Promise: false, apply: false, icon: false, apply: false, body: false, flex: false, accessibilityRole: false, icon: false, apply: false, borderRadius: false };
+let closure_3 = {};
 let obj = {};
 obj = {};
 obj[require(dependencyMap[0]).ForwardRef] = {};

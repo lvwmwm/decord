@@ -1,5 +1,5 @@
 // Module ID: 3937
-// Function ID: 32451
+// Function ID: 32453
 // Name: toRGBAString
 // Dependencies: []
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
@@ -10,7 +10,7 @@ function toRGBAString(rgba) {
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 }
 let closure_2 = importDefault(dependencyMap[0]);
-const obj = {};
+const obj = { "Null": "3.112.1", "Null": 19, "Null": "clips" };
 const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/Colors/shared/Colors.tsx");
 
 export const WCAGContrastRatios = obj;

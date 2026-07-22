@@ -1,5 +1,5 @@
 // Module ID: 6948
-// Function ID: 55517
+// Function ID: 55528
 // Name: videoAssetFromServer
 // Dependencies: []
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer

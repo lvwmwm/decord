@@ -1,5 +1,5 @@
 // Module ID: 7568
-// Function ID: 60553
+// Function ID: 60564
 // Name: AgeVerificationMethodsContainer
 // Dependencies: []
 // Exports: AgeVerificationMethodsContainer
@@ -41,9 +41,9 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
       obj.increment(obj);
     }
   }, items);
-  obj = { 2077523921: null, -643619887: null };
+  obj = { inlineEmbedMedia: null, inlineAttachmentMedia: null };
   obj = { spacing: 16, style: tmp.content };
-  const obj1 = { "Null": 24, "Null": 24, "Null": null, messageType: arg1(dependencyMap[10]).HelpMessageTypes.INFO };
+  const obj1 = { ThemedNotifications: 24, HEIGHT: 24, dataAttributes: null, messageType: arg1(dependencyMap[10]).HelpMessageTypes.INFO };
   const intl = arg1(dependencyMap[11]).intl;
   obj1.children = intl.string(arg1(dependencyMap[11]).t.El4aXl);
   const items1 = [callback(arg1(dependencyMap[10]).HelpMessage, obj1), ];
@@ -81,13 +81,13 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
     obj.children = items2;
     return tmp4(arg1(dependencyMap[9]).Stack, obj);
   }
-  const obj5 = { -643619887: 0.442, 1402774484: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030486261302323793, 2092958861: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044470615978203315, style: tmp.errorContainer };
-  const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.noMethodsText };
+  const obj5 = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030486261302323793, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044470615978203315, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000332440887383777, style: tmp.errorContainer };
+  const obj6 = { cachedAt: true, edpbxy: true, style: tmp.noMethodsText };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj6.children = intl2.string(importDefault(dependencyMap[14]).cR6336);
   const items3 = [callback(arg1(dependencyMap[13]).Text, obj6), ];
   const obj7 = { style: tmp.buttonGroup };
-  const obj8 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj8 = {};
   const intl3 = arg1(dependencyMap[11]).intl;
   obj8.text = intl3.string(importDefault(dependencyMap[14]).hDvmYP);
   obj8.onPress = arg1(dependencyMap[17]).getAgeVerificationMethods;

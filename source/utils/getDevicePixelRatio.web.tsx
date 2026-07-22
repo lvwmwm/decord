@@ -1,10 +1,10 @@
-// Module ID: 8574
-// Function ID: 68119
+// Module ID: 8575
+// Function ID: 68131
 // Name: getDevicePixelRatio
 // Dependencies: []
 // Exports: default
 
-// Module 8574 (getDevicePixelRatio)
+// Module 8575 (getDevicePixelRatio)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("utils/getDevicePixelRatio.web.tsx");
 

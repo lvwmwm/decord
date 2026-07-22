@@ -1,5 +1,5 @@
 // Module ID: 4650
-// Function ID: 40314
+// Function ID: 40322
 // Name: StageIcon
 // Dependencies: []
 // Exports: StageIcon

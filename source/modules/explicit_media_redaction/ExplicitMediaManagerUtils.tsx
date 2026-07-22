@@ -1,5 +1,5 @@
 // Module ID: 6841
-// Function ID: 54084
+// Function ID: 54095
 // Name: hasAttachmentsEmbedsOrComponents
 // Dependencies: []
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots

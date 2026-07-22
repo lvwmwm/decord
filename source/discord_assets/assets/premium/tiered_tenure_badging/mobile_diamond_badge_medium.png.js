@@ -1,9 +1,9 @@
-// Module ID: 8538
-// Function ID: 67951
+// Module ID: 8539
+// Function ID: 67963
 // Name: metadata
 // Dependencies: []
 
-// Module 8538 (metadata)
+// Module 8539 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_diamond_badge_medium.png.js");
 

@@ -1,10 +1,10 @@
-// Module ID: 16369
-// Function ID: 126331
+// Module ID: 16377
+// Function ID: 126373
 // Name: InviteSelectActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16369 (InviteSelectActionSheet)
+// Module 16377 (InviteSelectActionSheet)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

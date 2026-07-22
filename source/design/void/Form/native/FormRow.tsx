@@ -1,9 +1,9 @@
-// Module ID: 5425
-// Function ID: 46502
+// Module ID: 5155
+// Function ID: 44923
 // Name: renderCustom
 // Dependencies: []
 
-// Module 5425 (renderCustom)
+// Module 5155 (renderCustom)
 let Platform;
 function renderCustom(label) {
   let tmp = null;
@@ -34,9 +34,9 @@ let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
   obj = {};
   const merged = Object.assign(getPadding());
   obj.container = obj;
-  obj.label = {};
+  obj.label = { ao: "tax", __d: "targetFrames", __closure: "png" };
   obj.leading = {};
-  obj.trailing = { <string:257031009>: "soundboard_picker_collapsed_sections", <string:3063964329>: "scalar", <string:3644247378>: 2, <string:1415340651>: 9 };
+  obj.trailing = { "Bool(true)": "soundboard_picker_collapsed_sections", "Bool(true)": "scalar", "Bool(true)": 2, "Bool(true)": 9 };
   obj.disabled = { opacity: 0.5 };
   obj = { borderColor: importDefault(dependencyMap[4]).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
   const merged1 = Object.assign(getPadding(-2));

@@ -1,10 +1,10 @@
-// Module ID: 9987
-// Function ID: 77228
+// Module ID: 9988
+// Function ID: 77241
 // Name: ArrowSmallLeftIcon
 // Dependencies: []
 // Exports: ArrowSmallLeftIcon
 
-// Module 9987 (ArrowSmallLeftIcon)
+// Module 9988 (ArrowSmallLeftIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowSmallLeftIcon.tsx");

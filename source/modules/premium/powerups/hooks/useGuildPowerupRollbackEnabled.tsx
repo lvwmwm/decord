@@ -1,10 +1,10 @@
-// Module ID: 11517
-// Function ID: 89754
+// Module ID: 11518
+// Function ID: 89767
 // Name: useGuildPowerupRollbackEnabled
 // Dependencies: []
 // Exports: default, isGuildPowerupRollbackEnabled
 
-// Module 11517 (useGuildPowerupRollbackEnabled)
+// Module 11518 (useGuildPowerupRollbackEnabled)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");
 

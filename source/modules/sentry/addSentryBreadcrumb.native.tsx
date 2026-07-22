@@ -8,10 +8,8 @@
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/sentry/addSentryBreadcrumb.native.tsx");
 
-export default function addSentryBreadcrumb(arg0) {
+export default function addSentryBreadcrumb(category) {
   let obj = importAll(dependencyMap[0]);
-  obj = { "Null": true, "Null": true };
-  ({ category: obj2.category, message: obj2.message, data: obj2.data } = arg0);
-  obj.timestamp = Date.now();
+  obj = { category: category.category, message: category.message, data: category.data, timestamp: Date.now() };
   obj.addBreadcrumb(obj);
 };

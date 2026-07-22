@@ -1,10 +1,10 @@
-// Module ID: 9075
-// Function ID: 71161
+// Module ID: 9076
+// Function ID: 71174
 // Name: VoiceActivityStatus
 // Dependencies: []
 // Exports: default
 
-// Module 9075 (VoiceActivityStatus)
+// Module 9076 (VoiceActivityStatus)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -29,7 +29,7 @@ export default function VoiceActivityStatus(hideText) {
     let obj = {};
     let tmp5 = !hideIcon;
     if (tmp5) {
-      obj = { channel };
+      obj = { marginVertical: "abb394aed71d149627aa4dc597482f89", padding: "stack-nav-back", paddingTop: "png", channel };
       const items = [tmp.icon, hideText.iconStyle];
       obj.style = items;
       tmp5 = callback(importDefault(dependencyMap[3]), obj);

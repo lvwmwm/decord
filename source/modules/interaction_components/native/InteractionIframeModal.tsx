@@ -1,10 +1,10 @@
-// Module ID: 15960
-// Function ID: 122423
+// Module ID: 15968
+// Function ID: 122465
 // Name: InteractionIframeModal
 // Dependencies: []
 // Exports: default
 
-// Module 15960 (InteractionIframeModal)
+// Module 15968 (InteractionIframeModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,8 +15,8 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
 obj.wrapper = obj;
 obj.header = {};
-obj.headerCenterContainer = {};
-obj.headerTitleContainer = {};
+obj.headerCenterContainer = { <string:3814666730>: 8, <string:1280564396>: 18 };
+obj.headerTitleContainer = { sampleAnimationId: "Mobile-Export", marginEnd: 0 };
 obj.closeButton = { marginEnd: 8 };
 obj.spacerView = {};
 obj.botTag = { marginStart: 4 };
@@ -24,13 +24,13 @@ let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/interaction_components/native/InteractionIframeModal.tsx");
 
-export default function InteractionIframeModal(children) {
+export default function InteractionIframeModal(application) {
   const tmp = callback3();
-  const application = children.application;
+  application = application.application;
   const id = application.id;
   const arg1 = id;
   let obj = arg1(dependencyMap[7]);
-  const iframeModalState = obj.useIframeModalState(children);
+  const iframeModalState = obj.useIframeModalState(application);
   const queryParams = iframeModalState.queryParams;
   const tmp3 = callback(React.useState(false), 2);
   const importDefault = tmp3[1];
@@ -94,7 +94,8 @@ export default function InteractionIframeModal(children) {
   const items3 = [callback2(arg1(dependencyMap[16]).PressableOpacity, obj2), , ];
   const obj3 = { style: tmp.headerCenterContainer };
   const obj4 = { style: tmp.headerTitleContainer };
-  const items4 = [callback2(arg1(dependencyMap[18]).Text, { children: application.name }), ];
+  const obj5 = { cachedAt: "scalar", edpbxy: 8, children: application.name };
+  const items4 = [callback2(arg1(dependencyMap[18]).Text, obj5), ];
   const obj6 = { type: BotTagTypes.BOT };
   const bot = application.bot;
   let verified;
@@ -105,7 +106,9 @@ export default function InteractionIframeModal(children) {
   obj6.style = tmp.botTag;
   items4[1] = callback2(importDefault(dependencyMap[19]), obj6);
   obj4.children = items4;
-  const items5 = [closure_8(View, obj4), callback2(arg1(dependencyMap[18]).Text, { children: children.title })];
+  const items5 = [closure_8(View, obj4), ];
+  const obj7 = { cachedAt: "he", edpbxy: "<string:105791744>", children: application.title };
+  items5[1] = callback2(arg1(dependencyMap[18]).Text, obj7);
   obj3.children = items5;
   items3[1] = closure_8(View, obj3);
   items3[2] = callback2(View, { style: tmp.spacerView });

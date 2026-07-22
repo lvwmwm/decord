@@ -1,12 +1,12 @@
-// Module ID: 15271
-// Function ID: 115283
+// Module ID: 15279
+// Function ID: 115326
 // Name: ThreadListSection
 // Dependencies: []
 // Exports: default
 
-// Module 15271 (ThreadListSection)
+// Module 15279 (ThreadListSection)
 function ThreadListSection(title) {
-  const obj = { Opened: "/assets/images/native/premium/logos", marginVertical: 158, marginStart: 32, marginEnd: null, style: callback().section, children: title.title.toUpperCase() };
+  const obj = { alignSelf: "/assets/images/native/premium/logos", justifyContent: 158, alignItems: 32, backgroundColor: null, style: callback().section, children: title.title.toUpperCase() };
   return jsx(arg1(dependencyMap[4]).Text, obj);
 }
 function renderItem(item) {
@@ -90,7 +90,7 @@ let closure_3 = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { SDK_VERSION: null, numberOfLines: null }, center: { margin: null, backgroundColor: null }, header: { size: "200%", progress: 0.15 }, footer: {}, section: {} });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" }, center: { "Bool(false)": null, "Bool(false)": null }, header: { y: "200%", channelId: 0.15 }, footer: {}, section: {} });
 const set = new Set();
 let closure_9 = { code: "function ThreadListTsx1(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
 let closure_10 = { code: "function ThreadListTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
@@ -178,7 +178,7 @@ export default function ThreadList(onCreateThreadPress) {
   const memo2 = React.useMemo(() => {
     let tmp = null;
     if (null != onCreateThreadPress) {
-      let obj = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000230329911188219, "Bool(true)": -172403270113748460000000, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039776031867697785, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112201225582, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122019556398, "Bool(true)": 0 };
+      let obj = { "Bool(false)": "2025-12-proportional-vad-indicator", "Bool(false)": "text", "Bool(false)": "", "Bool(false)": 255, "Bool(false)": 0, "Bool(false)": 256 };
       obj = { IconComponent: onThreadPress(contentContainerStyle[16]).ThreadPlusIcon };
       obj.icon = threadIds(onThreadPress(contentContainerStyle[15]).RowButton.Icon, obj);
       obj.onPress = onCreateThreadPress;

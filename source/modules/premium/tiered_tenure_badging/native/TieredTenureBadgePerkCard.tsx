@@ -1,10 +1,10 @@
-// Module ID: 12244
-// Function ID: 93921
+// Module ID: 12249
+// Function ID: 93949
 // Name: TieredTenureBadgePerkCard
 // Dependencies: []
 // Exports: TieredTenureBadgePerkCard
 
-// Module 12244 (TieredTenureBadgePerkCard)
+// Module 12249 (TieredTenureBadgePerkCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -88,7 +88,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     }
     obj2 = {};
     obj3 = { style: tmp4.badgeNameContainer };
-    obj4 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/images/native/icons/voice_calls/dark_theme" };
+    obj4 = { cachedAt: true, edpbxy: "/assets/modules/stage_channels/native/images" };
     const intl6 = arg1(dependencyMap[15]).intl;
     obj4.children = intl6.string(tieredTenureBadgeData.nameUnformatted);
     const items2 = [callback(arg1(dependencyMap[17]).Text, obj4), ];
@@ -98,7 +98,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     const items3 = [callback2(View, obj3), ];
     let tmp41 = null != formatResult;
     if (tmp41) {
-      const obj6 = { hasMaxConnections: false, isBoostOnlySubscription: "2026-03-bogo-promotion-marketing-materials-v2", children: formatResult };
+      const obj6 = { cachedAt: false, edpbxy: "2026-03-bogo-promotion-marketing-materials-v2", children: formatResult };
       tmp41 = callback(arg1(dependencyMap[17]).Text, obj6);
     }
     items3[1] = tmp41;

@@ -1,5 +1,5 @@
 // Module ID: 7408
-// Function ID: 59558
+// Function ID: 59569
 // Name: SubscriptionRenewalMutationsNotice
 // Dependencies: []
 // Exports: default
@@ -11,14 +11,14 @@ const isNoneSubscription = arg1(dependencyMap[2]).isNoneSubscription;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: arg1(dependencyMap[6]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj = { pointerEvents: null, display: 14, flexDirection: 14, alignItems: 1, marginBottom: null, paddingLeft: null, flexShrink: "center", borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: arg1(dependencyMap[6]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.container = obj;
+const obj1 = { -1252912056: null, 1635872382: null, color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
+obj.icon = obj1;
 const tmp3 = arg1(dependencyMap[3]);
-obj.icon = { color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
-const obj2 = { "Null": -33283686791197806000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010061404906786437, color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
-obj.text = obj2;
+obj.text = { color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 let closure_7 = obj.createStyles(obj);
-const obj1 = { color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
+const obj2 = { color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/SubscriptionRenewalMutationsNotice.tsx");
 
 export default function SubscriptionRenewalMutationsNotice(arg0) {

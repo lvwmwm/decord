@@ -1,10 +1,10 @@
-// Module ID: 10114
-// Function ID: 78281
+// Module ID: 10115
+// Function ID: 78294
 // Name: useIsForumChannelSearchActive
 // Dependencies: []
 // Exports: useIsForumChannelSearchActive
 
-// Module 10114 (useIsForumChannelSearchActive)
+// Module 10115 (useIsForumChannelSearchActive)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/forums/native/hooks/useIsForumChannelSearchActive.tsx");
 

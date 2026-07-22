@@ -1,10 +1,10 @@
-// Module ID: 12011
-// Function ID: 92833
+// Module ID: 12015
+// Function ID: 92859
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [788070400, 778698752, 541261824, 357957632, 359268352, 516489216, 584056832, 584122368, 359727104, 560463872]
+// Dependencies: [788332544, 778764288, 541327360, 357892096, 359202816, 516489216, 584122368, 584187904, 359661568, 560529408]
 // Exports: default
 
-// Module 12011 (useWishlistSuggestionsDismissibleContent)
+// Module 12015 (useWishlistSuggestionsDismissibleContent)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

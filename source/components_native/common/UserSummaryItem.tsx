@@ -1,26 +1,26 @@
-// Module ID: 9985
-// Function ID: 77217
+// Module ID: 9986
+// Function ID: 77230
 // Name: UserSummaryItem
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 9985 (UserSummaryItem)
-import "result";
-import { View } from "result";
-import closure_4 from "result";
-import { jsx } from "result";
-import result from "result";
-import result from "result";
+// Module 9986 (UserSummaryItem)
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-result = { container: { flexDirection: "row" }, names: {} };
-result = { color: require("result").colors.TEXT_SUBTLE };
-result.namesLegacy = result;
-const obj1 = { -1396905285: "<string:1895826088>", "Null": "Boolean", "Null": null, backgroundColor: require("result").colors.BACKGROUND_BASE_LOWEST };
-result.plusCountContainer = obj1;
-result.cutout = { marginRight: -4 };
-result = result.createStyles(result);
-const obj2 = { direction: require("result").CutoutDirection.RIGHT };
-result = result.fileFinishedImporting("components_native/common/UserSummaryItem.tsx");
+__exportStarResult1 = { container: { flexDirection: "row" }, names: { id: null, parent_id: null } };
+__exportStarResult1 = { id: null, parent_id: null, color: require("__exportStarResult1").colors.TEXT_SUBTLE };
+__exportStarResult1.namesLegacy = __exportStarResult1;
+const obj1 = { resizeMode: "jsx", left: "r", has: "isArray", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST };
+__exportStarResult1.plusCountContainer = obj1;
+__exportStarResult1.cutout = { marginRight: -4 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const obj2 = { direction: require("__exportStarResult1").CutoutDirection.RIGHT };
+const result = __exportStarResult1.fileFinishedImporting("components_native/common/UserSummaryItem.tsx");
 
 export default function UserSummaryItem(users) {
   let avatarSize;
@@ -56,13 +56,13 @@ export default function UserSummaryItem(users) {
   }
   let closure_4 = cutout;
   const jsx = users.cutoutStyle;
-  let result;
+  let __exportStarResult1;
   let obj2;
   let closure_8;
   let items1;
   let closure_10;
-  const tmp3 = result();
-  result = tmp3;
+  const tmp3 = __exportStarResult1();
+  __exportStarResult1 = tmp3;
   const tmp4 = renderedUsers.length > 0 ? renderedUsers.length : users.length;
   const bound = Math.min(tmp4, max);
   obj2 = bound;
@@ -182,7 +182,7 @@ export default function UserSummaryItem(users) {
         const obj3 = { borderRadius: tmp28, width: tmp28, height: tmp28, padding: tmp28 / 8 };
         items4[1] = obj3;
         obj2.style = items4;
-        const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "0fef0a9d83d27dc691bf77b0bdae0680", children: text };
+        const obj4 = { cachedAt: null, edpbxy: "0fef0a9d83d27dc691bf77b0bdae0680", children: text };
         obj2.children = jsx(arg1(dependencyMap[11]).Text, obj4);
         const _HermesInternal = HermesInternal;
         items1.push(<View key={"plus-" + `+${tmp4 + 1 - max}`} {...obj2} />);

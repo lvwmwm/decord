@@ -1,13 +1,13 @@
-// Module ID: 15885
-// Function ID: 121669
+// Module ID: 15893
+// Function ID: 121712
 // Name: experiment
 // Dependencies: []
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 15885 (experiment)
+// Module 15893 (experiment)
 const _module = require(dependencyMap[1]);
-const items = [{ config: { right: null, paddingHorizontal: null } }, { config: { right: null, paddingHorizontal: null } }];
-const experiment = _module.createExperiment({ commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { right: null, paddingHorizontal: null }, treatments: items });
+const items = [{ config: { 1385720913: null, 1352505702: null } }, { config: { 1385720913: "<string:1040334421>", 1352505702: "<string:1040334338>" } }];
+const experiment = _module.createExperiment({ commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { 1385720913: true, 1352505702: true }, treatments: items });
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/channel/VoiceChannelHoistingExperiment.tsx");
 

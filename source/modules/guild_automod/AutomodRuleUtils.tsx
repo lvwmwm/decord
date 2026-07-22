@@ -1,10 +1,10 @@
-// Module ID: 16105
-// Function ID: 124145
+// Module ID: 16113
+// Function ID: 124187
 // Name: getNewAutomodRuleMockId
 // Dependencies: []
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, isRuleDefaultKeywordListFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateRuleBeforeSaveOrThrow
 
-// Module 16105 (getNewAutomodRuleMockId)
+// Module 16113 (getNewAutomodRuleMockId)
 function getNewAutomodRuleMockId(guildId, triggerType) {
   return "" + guildId + "-" + triggerType + "-new-rule";
 }

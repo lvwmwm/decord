@@ -1,5 +1,5 @@
 // Module ID: 7137
-// Function ID: 57507
+// Function ID: 57518
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -27,13 +27,13 @@ let tmp2 = (MessageType) => {
       items = [, , , ];
       items[0] = {};
       items[1] = {};
-      items[2] = { 1347510942: "card_asset_url", 1678385745: "scalar", 1364379111: 9, 140698458: 7 };
-      obj = { 9223372036854775807: 1, 9223372036854775807: "center", 0: "flex-start" };
+      items[2] = {};
+      obj = { -111020099: true, 1351895378: true, 1456955659: true };
       obj.T = function T() {
         return callback(closure_1[6]).Gradient;
       };
       items[3] = obj;
-      items1 = [true];
+      items1 = [];
       items1[1] = items;
       obj2 = closure_6(GiftIcon$Type);
       tmp2 = closure_5;
@@ -53,7 +53,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Null": "fr", "Null": "french", "Null": true };
+      let obj = { 1628560391: "french", 1729205265: true, 336657939: "/assets/.cache/intl/aW50bA==" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftIcon$Type(closure_1[7]).MESSAGE_TYPE, obj);

@@ -16,7 +16,7 @@ function getSanitizedUrlStringFromUrlObject(result) {
     const str = new URL(result);
     str.search = "";
     str.hash = "";
-    const items = [];
+    const items = ["Array", "isArray"];
     if (items.includes(str.port)) {
       str.port = "";
     }

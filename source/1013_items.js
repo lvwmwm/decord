@@ -5,7 +5,7 @@
 
 // Module 1013 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [null, null];
+const items = ["Array", "isArray"];
 arg5.FCPThresholds = items;
 arg5.onFCP = function onFCP(arg0) {
   const arg1 = arg0;

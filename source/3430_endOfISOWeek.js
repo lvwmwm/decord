@@ -5,12 +5,11 @@
 // Exports: default
 
 // Module 3430 (endOfISOWeek)
-import result from "result";
-
+_interopRequireDefault(require("__exportStarResult1"));
 let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function endOfISOWeek(defaultResult1) {
   closure_1.default(1, arguments);
-  return result.default(defaultResult1, { weekStartsOn: 1 });
+  return __exportStarResult1.default(defaultResult1, { weekStartsOn: 1 });
 };
 export default exports.default;

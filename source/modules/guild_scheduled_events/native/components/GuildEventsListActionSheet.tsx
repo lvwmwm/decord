@@ -1,10 +1,10 @@
-// Module ID: 8446
-// Function ID: 67380
+// Module ID: 8447
+// Function ID: 67392
 // Name: GuildEventsListHeader
 // Dependencies: []
 // Exports: default
 
-// Module 8446 (GuildEventsListHeader)
+// Module 8447 (GuildEventsListHeader)
 function GuildEventsListHeader(arg0) {
   let eventCount;
   let guild;

@@ -1,9 +1,9 @@
-// Module ID: 15689
-// Function ID: 119853
+// Module ID: 15697
+// Function ID: 119896
 // Name: SelfStreamCard
 // Dependencies: []
 
-// Module 15689 (SelfStreamCard)
+// Module 15697 (SelfStreamCard)
 function SelfStreamCard(sharedCoords) {
   sharedCoords = sharedCoords.sharedCoords;
   const arg1 = sharedCoords;
@@ -59,11 +59,11 @@ function SelfStreamCard(sharedCoords) {
   let tmp12 = null;
   if (isFocused) {
     const obj2 = {};
-    const obj3 = { style: tmp.selfStreamFocusedSubtitle };
+    const obj3 = { "Null": "Update build ", "Null": "<string:13762560>", alignItems: "<string:1090584576>", style: tmp.selfStreamFocusedSubtitle };
     const intl2 = arg1(dependencyMap[22]).intl;
     obj3.children = intl2.string(arg1(dependencyMap[22]).t.dKeLGt);
     const items2 = [callback2(arg1(dependencyMap[15]).Text, obj3), ];
-    const obj4 = { text: 822084101, size: null, onPress: callback };
+    const obj4 = { <string:1986169986>: 15183073285524370000000000000000000000000000000000000000000000000000000000000000000, <string:2487833047>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000255713764154597, onPress: callback };
     const intl3 = arg1(dependencyMap[22]).intl;
     obj4.text = intl3.string(arg1(dependencyMap[22]).t.CpkXwZ);
     items2[1] = callback2(arg1(dependencyMap[23]).Button, obj4);
@@ -741,7 +741,7 @@ function AnimatedWrapper(cleanUp) {
         gestureActive = 0 === value.y;
       }
       if (!gestureActive) {
-        const result = store.set({ "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
+        const result = store.set({ progressViewOffset: true, refreshing: true, id: true });
       }
     };
     return obj;
@@ -788,7 +788,7 @@ const importDefaultResult = importDefault(dependencyMap[14]);
 obj.positionWrapper = { backgroundColor: importDefault(dependencyMap[18]).colors.BLACK };
 const obj1 = { backgroundColor: importDefault(dependencyMap[18]).colors.BLACK };
 obj.userRoundedCard = { backgroundColor: importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_800 };
-obj3 = { MODE_NUMBER: null, MODE_ALPHA_NUM: "no-hide-descendants", MODE_8BIT_BYTE: true, MODE_KANJI: "/assets/.cache/intl/ZGVzaWdu", L: null, backgroundColor: importDefault(dependencyMap[18]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj3 = { <string:1887505649>: true, <string:1979858516>: "/assets/.cache/intl/ZGVzaWdu", <string:470248193>: null, <string:2950128130>: "89c1f821400ffcc75deeeab8c6315a88", <string:3147057490>: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages", backgroundColor: importDefault(dependencyMap[18]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.nonUserRoundedCard = obj3;
 const obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
@@ -1068,7 +1068,7 @@ let closure_36 = importAllResult.memo(function AnimatedUserCardInner(isRinging) 
   const items1 = [tmp.userRoundedCard, animatedStyle];
   let tmp22 = null;
   if (null != videoTileGradientColors) {
-    obj2 = { colors: videoTileGradientColors, start: {}, end: {}, style: StyleSheet.absoluteFill, pointerEvents: "none" };
+    obj2 = { colors: videoTileGradientColors, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, style: StyleSheet.absoluteFill, pointerEvents: "none" };
     tmp22 = callback2(importDefault(dependencyMap[41]), obj2);
   }
   const items2 = [tmp22, ];
@@ -1088,7 +1088,7 @@ let closure_36 = importAllResult.memo(function AnimatedUserCardInner(isRinging) 
       const obj5 = { source: cachedSourceFromURI, size: arg1(dependencyMap[16]).AvatarSizes.XXLARGE, avatarDecoration };
       let tmp28Result = tmp28(arg1(dependencyMap[16]).Avatar, obj5);
     } else {
-      obj6 = { <string:3221529379>: null, <string:4051562876>: null, <string:2769035526>: null, <string:3891930452>: null, source: cachedSourceFromURI, style: tmp.image };
+      obj6 = { 1376225494: null, -1745793575: null, -1241292462: null, 1372348801: null, source: cachedSourceFromURI, style: tmp.image };
       tmp28Result = tmp28(importDefault(dependencyMap[42]), obj6);
     }
     obj4.children = tmp28Result;
@@ -1136,7 +1136,7 @@ let closure_41 = { code: "function VoicePanelCardTsx9(){const{focused}=this.__cl
 let closure_42 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 let closure_43 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 let closure_44 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-const obj10 = { "Bool(true)": null, "Bool(true)": null, user: { id: undefined } };
+const obj10 = { textAlign: true, opacity: true, user: { id: undefined } };
 let closure_46 = { code: "function layoutTransitionFunction_VoicePanelCardTsx13(values,physics,disableAnimation=false){const{withSpring}=this.__closure;return{animations:{originX:withSpring(values.targetOriginX,physics,!disableAnimation?'animate-always':'animate-never'),originY:withSpring(values.targetOriginY,physics,!disableAnimation?'animate-always':'animate-never'),width:withSpring(values.targetWidth,physics,!disableAnimation?'animate-always':'animate-never'),height:withSpring(values.targetHeight,physics,!disableAnimation?'animate-always':'animate-never')},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};}" };
 let closure_47 = () => {
   function layoutTransitionFunction(originX, closure_8) {

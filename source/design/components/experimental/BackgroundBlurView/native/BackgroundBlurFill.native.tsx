@@ -1,5 +1,5 @@
 // Module ID: 7495
-// Function ID: 60104
+// Function ID: 60115
 // Name: useBlurTheme
 // Dependencies: []
 // Exports: BackgroundBlurFill, BackgroundBlurFillAnimated, BackgroundBlurFillWithPress
@@ -115,7 +115,7 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
   let style;
   pressed = pressed.pressed;
   const arg1 = pressed;
-  let obj = { paddingHorizontal: false, ref: false, getChannel: false };
+  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
   ({ style, blurTheme } = pressed);
   Object.setPrototypeOf(null);
   let importDefault;
@@ -147,7 +147,7 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       items = [, ];
       items[0] = closure_3;
       items[1] = closure_4;
-      interpolateColorResult = obj3.interpolateColor(pressed.get(), ["replace", "then"], items);
+      interpolateColorResult = obj3.interpolateColor(pressed.get(), [77601039, 1612144654], items);
       obj.backgroundColor = obj2.withSpring(interpolateColorResult, pressed(closure_2[11]).ON_PRESS_SPRING, "animate-always");
       return obj;
     }
@@ -165,8 +165,8 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       const obj2 = pressed(tmp7[10]);
       const items = [tmp6, tmp7];
       const obj3 = pressed(tmp7[9]);
-      withSpringResult = obj2.withSpring(pressed(tmp7[9]).interpolateColor(pressed.get(), ["replace", "then"], items), pressed(tmp7[11]).ON_PRESS_SPRING, "animate-always");
-      const interpolateColorResult = pressed(tmp7[9]).interpolateColor(pressed.get(), ["replace", "then"], items);
+      withSpringResult = obj2.withSpring(pressed(tmp7[9]).interpolateColor(pressed.get(), [77601039, 1612144654], items), pressed(tmp7[11]).ON_PRESS_SPRING, "animate-always");
+      const interpolateColorResult = pressed(tmp7[9]).interpolateColor(pressed.get(), [77601039, 1612144654], items);
     }
     obj.blurTintRgba = withSpringResult;
     return obj;

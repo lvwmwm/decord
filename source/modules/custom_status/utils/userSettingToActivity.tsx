@@ -1,10 +1,10 @@
-// Module ID: 8232
-// Function ID: 65006
+// Module ID: 8233
+// Function ID: 65018
 // Name: _activityFromSetting
 // Dependencies: []
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8232 (_activityFromSetting)
+// Module 8233 (_activityFromSetting)
 function _activityFromSetting(emojiName) {
   if (null != arg1) {
     let obj = {};

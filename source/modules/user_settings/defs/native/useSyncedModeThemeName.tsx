@@ -1,23 +1,22 @@
-// Module ID: 14072
-// Function ID: 106872
+// Module ID: 14079
+// Function ID: 106912
 // Name: useSyncedModeThemeName
 // Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0]
 // Exports: useSyncedModeThemeName
 
-// Module 14072 (useSyncedModeThemeName)
-import closure_3 from "result";
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "result";
-import result from "result";
+// Module 14079 (useSyncedModeThemeName)
+import __exportStarResult1 from "__exportStarResult1";
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");
 
 export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
   const arg1 = DARK;
   const importDefault = importDefault(dependencyMap[2])("useSyncedModeThemeName");
-  const items = [closure_3];
+  const items = [__exportStarResult1];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const syncedClientTheme = closure_3.getSyncedClientTheme(arg0);
-    const themeName = arg0(closure_2[4]).getThemeName(closure_3.themePreferenceForSystemTheme(arg0), callback);
+    const syncedClientTheme = __exportStarResult1.getSyncedClientTheme(arg0);
+    const themeName = arg0(closure_2[4]).getThemeName(__exportStarResult1.themePreferenceForSystemTheme(arg0), callback);
     let prop;
     if (null != syncedClientTheme) {
       prop = syncedClientTheme.customUserThemeSettings;

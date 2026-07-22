@@ -1,10 +1,10 @@
-// Module ID: 10295
-// Function ID: 79462
+// Module ID: 10296
+// Function ID: 79475
 // Name: VideoBadge
 // Dependencies: []
 // Exports: MediaPreviewRightAccessory
 
-// Module 10295 (VideoBadge)
+// Module 10296 (VideoBadge)
 let StyleSheet;
 function VideoBadge() {
   const tmp = callback3();
@@ -12,10 +12,8 @@ function VideoBadge() {
   obj = { style: tmp.icon };
   return callback(View, obj);
 }
-function CountBadge(total) {
-  let obj = { style: callback4().badge, children: callback(arg1(dependencyMap[8]).Text, obj) };
-  obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images", children: total.total };
-  return callback(View, obj);
+function CountBadge(children) {
+  return callback(View, { style: callback4().badge, children: callback(arg1(dependencyMap[8]).Text, { children: children.total }) });
 }
 function ObscuredMediaOverlay(isSpoiler) {
   let children;
@@ -50,9 +48,9 @@ function ObscuredMediaOverlay(isSpoiler) {
   items[2] = tmp8;
   const obj2 = { style: tmp.spoilerIconContainer };
   if (isObscured) {
-    let tmp15Result = tmp15(arg1(dependencyMap[12]).ImageWarningIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" });
+    let tmp15Result = tmp15(arg1(dependencyMap[12]).ImageWarningIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" });
   } else {
-    const obj3 = { style: tmp.spoilerPill, children: callback(arg1(dependencyMap[13]).EyeIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
+    const obj3 = { style: tmp.spoilerPill, children: callback(arg1(dependencyMap[13]).EyeIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }) };
     tmp15Result = tmp15(View, obj3);
   }
   obj2.children = tmp15Result;
@@ -290,13 +288,13 @@ let closure_7 = importDefault(dependencyMap[2]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(false)": 128815952648808600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000518728505263, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010448442992080079, color: 85627340933120.02, paths: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002337166164516237, skuId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003808224048673753, get: 0.000000000000000000000000000000000000000000000000000000000000000000000000006426460613097344, category: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004383619097214926, width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026201586904100594, backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { hasVoted: "<string:30564096>", isExpired: "<string:306254080>", is_contact: false, NEW_ASSET: false, rotl: false, alignButton: false, discardSectionChanges: false, enableCppPropsIteratorSetter: false, current_tier: false, backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.badge = obj;
-obj.icon = { "Null": -2089807793, "Null": 72864577 };
+obj.icon = { "Null": "r", "Null": "PUBLIC_UPDATES_CHANNEL_ID" };
 let closure_11 = obj.createStyles(obj);
 let obj3 = arg1(dependencyMap[5]);
 const obj1 = {};
-const obj2 = { "Bool(false)": null, "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": "LIGHT", "Bool(false)": "useEffect", "Bool(false)": "ref", "Bool(false)": "_distance", "Bool(false)": "borderRadius", spriteIndex: "values", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.round };
+const obj2 = { "Bool(false)": 129.998, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "100%", "Bool(false)": "center", "Bool(false)": null, "Bool(false)": 16, "Bool(false)": 144.002, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj1.badge = obj2;
 let closure_12 = obj3.createStyles(obj1);
 let obj6 = arg1(dependencyMap[5]);
@@ -304,7 +302,7 @@ obj3 = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj3.mediaThumbnailContainer = { borderRadius: importDefault(dependencyMap[6]).radii.sm, overflow: "hidden" };
 obj3.mediaThumbnail = {};
-const obj5 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+const obj5 = { <string:3596066964>: null, <string:3638417373>: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj3.iconContainer = obj5;
 obj6 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

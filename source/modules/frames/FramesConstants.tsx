@@ -1,9 +1,9 @@
-// Module ID: 10469
-// Function ID: 81074
+// Module ID: 10470
+// Function ID: 81087
 // Name: FrameLayoutModes
 // Dependencies: []
 
-// Module 10469 (FrameLayoutModes)
+// Module 10470 (FrameLayoutModes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/frames/FramesConstants.tsx");
 

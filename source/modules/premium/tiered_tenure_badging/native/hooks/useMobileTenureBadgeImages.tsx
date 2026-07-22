@@ -1,10 +1,10 @@
-// Module ID: 8524
-// Function ID: 67935
+// Module ID: 8525
+// Function ID: 67947
 // Name: getMobileTenureBadgeImages
 // Dependencies: []
 // Exports: useMobileTenureBadgeImages
 
-// Module 8524 (getMobileTenureBadgeImages)
+// Module 8525 (getMobileTenureBadgeImages)
 function getMobileTenureBadgeImages(id) {
   return obj[id];
 }

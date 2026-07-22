@@ -1,39 +1,35 @@
 // Module ID: 9113
-// Function ID: 71378
+// Function ID: 71387
 // Name: useInvalidPreventRemoveError
 // Dependencies: []
 // Exports: default
 
 // Module 9113 (useInvalidPreventRemoveError)
-let closure_2 = importAll(dependencyMap[0]);
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importAll(dependencyMap[1]);
 
-export default function useInvalidPreventRemoveError(arg0) {
-  const first = Object.keys(arg1(dependencyMap[1]).usePreventRemoveContext().preventedRoutes)[0];
-  const arg1 = first;
-  let prop;
-  if (null != arg0[first]) {
-    const options = tmp2.options;
-    if (null != options) {
-      prop = options.headerBackButtonMenuEnabled;
+export default function useInvalidPreventRemoveError(routes) {
+  const setNextDismissedKey = callback(React.useState(null), 2);
+  const first = setNextDismissedKey[0];
+  const callback = first;
+  let tmp3 = null;
+  if (first) {
+    routes = routes.routes;
+    const found = routes.find((key) => key.key === first);
+    let name;
+    if (null != found) {
+      name = found.name;
     }
+    tmp3 = name;
   }
-  const dependencyMap = prop;
-  let name;
-  if (null != arg0[first]) {
-    const route = tmp2.route;
-    if (null != route) {
-      name = route.name;
-    }
-  }
-  const React = name;
-  const items = [first, prop, name];
+  const React = tmp3;
+  const items = [tmp3];
   const effect = React.useEffect(() => {
-    if (null != first) {
-      if (prop) {
-        const _HermesInternal = HermesInternal;
-        const _console = console;
-        console.error("The screen " + name + " uses 'usePreventRemove' hook alongside 'headerBackButtonMenuEnabled: true', which is not supported. \n\nConsider removing 'headerBackButtonMenuEnabled: true' from " + name + " screen to get rid of this error.");
-      }
+    if (tmp3) {
+      const _HermesInternal = HermesInternal;
+      const _console = console;
+      console.error("The screen '" + tmp3 + "' was removed natively but didn't get removed from JS state. This can happen if the action was prevented in a 'beforeRemove' listener, which is not fully supported in native-stack.\n\nConsider using a 'usePreventRemove' hook with 'headerBackButtonMenuEnabled: false' to prevent users from natively going back multiple screens.");
     }
   }, items);
+  return { setNextDismissedKey: setNextDismissedKey[1] };
 };

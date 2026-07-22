@@ -1,10 +1,10 @@
-// Module ID: 12731
-// Function ID: 97673
+// Module ID: 12738
+// Function ID: 97706
 // Name: ChannelListMagnifyingGlassIcon
 // Dependencies: []
 // Exports: ChannelListMagnifyingGlassIcon
 
-// Module 12731 (ChannelListMagnifyingGlassIcon)
+// Module 12738 (ChannelListMagnifyingGlassIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChannelListMagnifyingGlassIcon.tsx");

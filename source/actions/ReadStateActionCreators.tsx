@@ -1,10 +1,10 @@
-// Module ID: 5339
-// Function ID: 45589
+// Module ID: 5066
+// Function ID: 43999
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck
 
-// Module 5339 (_createForOfIteratorHelperLoose)
+// Module 5066 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

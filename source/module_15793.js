@@ -1,27 +1,72 @@
 // Module ID: 15793
-// Function ID: 120871
+// Function ID: 120835
 // Dependencies: []
 
 // Module 15793
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "da",
-  pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    const first = parts[0];
-    if (arg1) {
-      let str3 = "other";
-    } else {
-      str3 = "one";
-      if (1 != arg0) {
-        if (!tmp3) {
-          str3 = "one";
-          if (0 != first) {
-            str3 = "one";
-          }
+const definePropertyResult = Object.defineProperty({}, "a", {});
+while (true) {
+  if (definePropertyResult) {
+    break;
+  } else {
+    let tmp2 = globalThis;
+    let _Object = Object;
+    // break
+  }
+  if (definePropertyResult) {
+    let tmp3 = globalThis;
+    let _Object2 = Object;
+    let fn = Object.defineProperty;
+  } else {
+    fn = (__defineGetter__, arg1, get) => {
+      if ("get" in get) {
+        if (__defineGetter__.__defineGetter__) {
+          __defineGetter__.__defineGetter__(arg1, get.get);
         }
       }
-    }
-    return str3;
+      const hop = arg1(arg6[0]).hop;
+      let callResult = hop.call(__defineGetter__, arg1);
+      if (callResult) {
+        callResult = !("value" in get);
+      }
+      if (!callResult) {
+        __defineGetter__[arg1] = get.value;
+      }
+    };
   }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: 80, deviceWidth: 80 });
+  let tmp4 = globalThis;
+  let _Object3 = Object;
+  let tmp5 = Object.create || (arg0, obj) => {
+    class F {
+      constructor() {
+        return;
+      }
+    }
+    F.prototype = arg0;
+    const f = new F();
+    for (const key10012 in arg1) {
+      let tmp3 = key10012;
+      class F {
+        constructor() {
+          return;
+        }
+      }
+      let tmp4 = closure_1;
+      let hop = closure_0(closure_1[0]).hop;
+      if (!hop.call(arg1, key10012)) {
+        continue;
+      } else {
+        let tmp2 = closure_2;
+        class F {
+          constructor() {
+            return;
+          }
+        }
+        // continue
+      }
+      continue;
+    }
+    return f;
+  };
+  arg5.defineProperty = fn;
+  arg5.objCreate = tmp5;
+}

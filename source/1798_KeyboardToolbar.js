@@ -5,7 +5,7 @@
 
 // Module 1798 (KeyboardToolbar)
 let StyleSheet;
-let closure_3 = [13018645, 695675, 1027403, 747943, 11080677, 14287177, 16332578, 716088946, -3895296, -1318817280, -352387034, -9305968, -536812450, 1912612477, 9452762];
+let closure_3 = [null, "BoostPurchaseIntent", "variant", "arrow_up_down", "historyAction", "paidURL", "\u017F", "prefixTag", "reviewRowNotLast", "Button", "offsetX", "fileFinishedImporting", "\u012D", "labelType", "roundedCard"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 ({ useEffect: closure_6, useMemo: closure_7, useState: closure_8 } = arg1(dependencyMap[2]));
@@ -68,7 +68,7 @@ class KeyboardToolbar {
     obj2 = arg1(closure_2[7]);
     keyboardState = obj2.useKeyboardState((appearance) => appearance.appearance);
     closure_5 = keyboardState;
-    tmp10 = insets(useState({ <string:80649984>: -536870861, <string:80654336>: -299892737 }), 2);
+    tmp10 = insets(useState({ -1862269746: "%FunctionPrototype%", -1509948210: "paddingStart" }), 2);
     first = tmp10[0];
     useEffect = tmp10[1];
     tmp12 = 0 === first.current;
@@ -305,12 +305,12 @@ class KeyboardToolbar {
   }
 }
 let obj = {};
-obj = { height: arg1(dependencyMap[6]).KEYBOARD_TOOLBAR_HEIGHT };
+obj = { <string:80590080>: 131420590, <string:80590336>: -1717986767, <string:80597504>: -644245095, <string:80624128>: 94527, height: arg1(dependencyMap[6]).KEYBOARD_TOOLBAR_HEIGHT };
 obj.sticky = obj;
-obj = { height: arg1(dependencyMap[6]).KEYBOARD_TOOLBAR_HEIGHT };
+obj = { <string:80553984>: 40, <string:80639488>: 40, <string:80599808>: 20, <string:80553728>: "Closes the keyboard", <string:80639232>: "Done", height: arg1(dependencyMap[6]).KEYBOARD_TOOLBAR_HEIGHT };
 obj.toolbar = obj;
 obj.arrows = {};
-obj.floating = {};
+obj.floating = { createStyles: 49450240, guild_id: 49450240, body: 49450240 };
 const styles = StyleSheet.create(obj);
 KeyboardToolbar.Background = arg1(dependencyMap[11]).Background;
 KeyboardToolbar.Content = arg1(dependencyMap[11]).Content;

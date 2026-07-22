@@ -1,10 +1,10 @@
-// Module ID: 5700
-// Function ID: 49060
+// Module ID: 5699
+// Function ID: 49068
 // Name: isPremiumGuild
 // Dependencies: []
 // Exports: getGuildTraits, isDiscoverableGuild
 
-// Module 5700 (isPremiumGuild)
+// Module 5699 (isPremiumGuild)
 function isPremiumGuild(fromGuildProfileResult) {
   let premiumTier = fromGuildProfileResult;
   if (null == fromGuildProfileResult) {

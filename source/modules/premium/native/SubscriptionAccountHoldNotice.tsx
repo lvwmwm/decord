@@ -1,5 +1,5 @@
 // Module ID: 7409
-// Function ID: 59560
+// Function ID: 59571
 // Name: SubscriptionAccountHoldNotice
 // Dependencies: []
 // Exports: default
@@ -12,11 +12,11 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { maxRanking: 800, minRanking: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
 obj.textContainer = { flexDirection: "row" };
 obj.icon = { marginRight: 4 };
-obj.text = { "Null": null, "Null": null };
+obj.text = { duration: null, percentage: null };
 let closure_8 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/SubscriptionAccountHoldNotice.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 14421
-// Function ID: 108769
+// Module ID: 14429
+// Function ID: 108812
 // Dependencies: []
 
-// Module 14421
+// Module 14429
 const _module = require(dependencyMap[0]);
 const obj = {
   useTitle() {

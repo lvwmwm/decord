@@ -1,5 +1,5 @@
 // Module ID: 6451
-// Function ID: 50598
+// Function ID: 50609
 // Name: SafetyShieldIllocon
 // Dependencies: []
 // Exports: SafetyShieldIllocon

@@ -1,5 +1,5 @@
 // Module ID: 6692
-// Function ID: 51807
+// Function ID: 51818
 // Name: stopAnalyticsHeartbeat
 // Dependencies: []
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
@@ -171,7 +171,7 @@ function handleAuthenticationChange() {
     closure_24 = token;
     const Storage = arg1(dependencyMap[15]).Storage;
     Storage.remove(closure_13);
-    let closure_20 = { "Null": "SectionItemType", "Null": "tagAvatar" };
+    let closure_20 = { instrumentOutgoingRequests: 958236370018977700000000000000000000000000, reflectionLongConvert: -433230013678698700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     stopAnalyticsHeartbeat();
     let closure_19 = 0;
   }

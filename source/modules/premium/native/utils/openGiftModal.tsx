@@ -1,10 +1,10 @@
-// Module ID: 9671
-// Function ID: 75281
+// Module ID: 9672
+// Function ID: 75294
 // Name: openGiftModal
 // Dependencies: []
 // Exports: openGiftModal
 
-// Module 9671 (openGiftModal)
+// Module 9672 (openGiftModal)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/native/utils/openGiftModal.tsx");
 

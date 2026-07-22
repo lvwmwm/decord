@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 3278 (formatDistance)
-let closure_0 = { lessThanXSeconds: { "Null": 1296171011, "Null": 1627390709, "Null": 1107297142, "Null": 193840 }, xSeconds: {}, halfAMinute: "30\u79D2", lessThanXMinutes: { "Null": "1\uC2DC\uAC04", "Null": "{{count}}\uC2DC\uAC04", "Null": "1\uC77C", "Null": "{{count}}\uC77C" }, xMinutes: {}, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: { "Bool(false)": ":", "Bool(false)": "BUTTON_BORDER_WIDTH" }, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: {}, xSeconds: { removeInternalFields: -536870035, ga: 2030044010 }, halfAMinute: "30\u79D2", lessThanXMinutes: {}, xMinutes: { removeInternalFields: null, ga: null }, aboutXHours: {}, xHours: { removeInternalFields: "1\uCD08 \uBBF8\uB9CC", ga: "{{count}}\uCD08 \uBBF8\uB9CC" }, xDays: { removeInternalFields: "1\uCD08", ga: "{{count}}\uCD08" }, aboutXWeeks: { removeInternalFields: "1\uBD84 \uBBF8\uB9CC", ga: "{{count}}\uBD84 \uBBF8\uB9CC" }, xWeeks: { removeInternalFields: "1\uBD84", ga: "{{count}}\uBD84" }, aboutXMonths: { removeInternalFields: "\uC57D 1\uC2DC\uAC04", ga: "\uC57D {{count}}\uC2DC\uAC04" }, xMonths: { removeInternalFields: "1\uC2DC\uAC04", ga: "{{count}}\uC2DC\uAC04" }, aboutXYears: { removeInternalFields: "1\uC77C", ga: "{{count}}\uC77C" }, xYears: { removeInternalFields: "\uC57D 1\uC8FC", ga: "\uC57D {{count}}\uC8FC" }, overXYears: { removeInternalFields: "1\uC8FC", ga: "{{count}}\uC8FC" }, almostXYears: { removeInternalFields: "\uC57D 1\uAC1C\uC6D4", ga: "\uC57D {{count}}\uAC1C\uC6D4" } };
 
 export default function formatDistance(arg0, arg1, arg2) {
   let obj = arg2;

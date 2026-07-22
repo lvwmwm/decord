@@ -1,10 +1,10 @@
-// Module ID: 8482
-// Function ID: 67735
+// Module ID: 8483
+// Function ID: 67747
 // Name: openInstantInviteActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8482 (openInstantInviteActionSheet)
+// Module 8483 (openInstantInviteActionSheet)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
 

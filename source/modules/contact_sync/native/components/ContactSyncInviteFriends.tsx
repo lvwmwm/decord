@@ -1,10 +1,10 @@
-// Module ID: 11718
-// Function ID: 90984
+// Module ID: 11719
+// Function ID: 90997
 // Name: ContactSyncInviteFriends
 // Dependencies: []
 // Exports: default
 
-// Module 11718 (ContactSyncInviteFriends)
+// Module 11719 (ContactSyncInviteFriends)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { overflow: "isArray", isInitial: "op", Wp9bEl: "start", GemLeftUpwards3dIllustration: "r" }, art: { marginBottom: 16 }, title: { "Null": null, "Null": null }, subtitle: { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" } };
+obj = { container: { onPressEdit: null, borderTopLeftRadius: 50, borderTopRightRadius: 101, overflow: 0 }, art: { marginBottom: 16 }, title: { value: null, on: null }, subtitle: {} };
 obj = { marginTop: importDefault(dependencyMap[6]).space.PX_24, marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 obj.button = obj;
 let closure_10 = obj.createStyles(obj);
@@ -28,7 +28,7 @@ export default function ContactSyncInviteFriends() {
   obj = { style: tmp.container };
   const obj1 = { style: tmp.art, source: importDefault(dependencyMap[9]) };
   const items1 = [callback2(importDefault(dependencyMap[8]), obj1), , ];
-  const obj2 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj2 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = callback(dependencyMap[11]).intl;
   obj2.children = intl.string(callback(dependencyMap[11]).t.ZxBpLf);
   items1[1] = callback2(callback(dependencyMap[10]).Text, obj2);
@@ -39,7 +39,7 @@ export default function ContactSyncInviteFriends() {
   obj.children = items1;
   const items2 = [callback3(View, obj), ];
   const obj4 = { style: tmp.button };
-  const obj5 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj5 = {};
   const intl3 = callback(dependencyMap[11]).intl;
   obj5.text = intl3.string(callback(dependencyMap[11]).t.6Qgrev);
   obj5.onPress = function onPress() {

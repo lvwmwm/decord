@@ -1,10 +1,10 @@
-// Module ID: 15343
-// Function ID: 116856
+// Module ID: 15351
+// Function ID: 116899
 // Name: SpamRequestsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15343 (SpamRequestsScreen)
+// Module 15351 (SpamRequestsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 14390
-// Function ID: 108584
+// Module ID: 14398
+// Function ID: 108627
 // Name: CollectiblesProgressiveImage
-// Dependencies: [7656, 653, 10086, 1212, 14398, 2]
+// Dependencies: [7656, 653, 10087, 1212, 14406, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 14390 (CollectiblesProgressiveImage)
+// Module 14398 (CollectiblesProgressiveImage)
 import "MobileSetting";
 import ME from "ME";
 import { jsx } from "createToggle";

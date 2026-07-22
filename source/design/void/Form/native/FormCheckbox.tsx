@@ -1,17 +1,15 @@
-// Module ID: 5446
-// Function ID: 46560
+// Module ID: 5180
+// Function ID: 44997
 // Name: FormCheckbox
-// Dependencies: [31, 27, 5352, 5336, 4809]
+// Dependencies: []
 // Exports: default
 
-// Module 5446 (FormCheckbox)
-import "module_31";
-import { jsx } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
-let closure_3 = _isNativeReflectConstruct.createStyles({ checkbox: {} });
-const result = _isNativeReflectConstruct.fileFinishedImporting("design/void/Form/native/FormCheckbox.tsx");
+// Module 5180 (FormCheckbox)
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+let closure_3 = arg1(dependencyMap[2]).createStyles({ checkbox: {} });
+const obj = arg1(dependencyMap[2]);
+const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/Form/native/FormCheckbox.tsx");
 
 export default function FormCheckbox(selected) {
   const tmp = callback();

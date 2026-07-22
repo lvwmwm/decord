@@ -1,5 +1,5 @@
 // Module ID: 7210
-// Function ID: 58064
+// Function ID: 58075
 // Name: getPendingPurchasesIOS
 // Dependencies: []
 // Exports: buyPromotedProductIOS, clearProductsIOS, clearTransactionIOS, deepLinkToSubscriptionsIos, getPromotedProductIOS
@@ -46,7 +46,7 @@ const tmp4 = () => {
 }();
 let closure_5 = () => {
   let closure_0 = callback(async (arg0, arg1) => {
-    let obj = { method: "POST", headers: { 268438398: "r", 313070216: "PAYMENT_GATEWAY" }, body: JSON.stringify(arg1) };
+    let obj = { method: "POST", headers: { "Bool(false)": "a_20", "Bool(false)": "rect" }, body: JSON.stringify(arg1) };
     const obj2 = yield fetch(arg0, obj);
     if (obj2.ok) {
       return obj2.json();

@@ -1,10 +1,10 @@
-// Module ID: 8592
-// Function ID: 68244
+// Module ID: 8593
+// Function ID: 68256
 // Name: GameProfileEmbedAction
 // Dependencies: []
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 8592 (GameProfileEmbedAction)
+// Module 8593 (GameProfileEmbedAction)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ AnalyticEvents: closure_4, GuildFeatures: closure_5 } = arg1(dependencyMap[1]));
 const ContentInventoryFeedKey = arg1(dependencyMap[2]).ContentInventoryFeedKey;

@@ -1,9 +1,13 @@
 // Module ID: 317
 // Function ID: 4829
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [1333002240, 100663296, 822083585, 771751936, 1375731712, 1968939652, 6, 7, 209, 294, 333, 8052]
 
 // Module 317 (_isNativeReflectConstruct)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import NativeEventEmitter from "NativeEventEmitter";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -39,7 +43,7 @@ function ItemWithSeparator(leadingItem) {
   let obj = { leadingItem: leadingItem.leadingItem, leadingSection: leadingItem.leadingSection, section: leadingItem.section, trailingItem: leadingItem.item, trailingSection: leadingItem.trailingSection };
   const tmp3 = callback(first1(obj), 2);
   const first = tmp3[0];
-  let closure_10 = first;
+  let _classCallCheck = first;
   const callback4 = tmp3[1];
   obj = { leadingItem: leadingItem.item, leadingSection: leadingItem.leadingSection, section: leadingItem.section, trailingItem: leadingItem.trailingItem, trailingSection: leadingItem.trailingSection };
   const tmp5 = callback(first1(obj), 2);
@@ -127,18 +131,15 @@ function ItemWithSeparator(leadingItem) {
   obj3.children = items1;
   return closure_15(closure_14, obj3);
 }
-let closure_3 = [];
+let closure_3 = [true, true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
 let closure_7 = importDefault(dependencyMap[3]);
 let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const importAllResult = importAll(dependencyMap[7]);
-({ useEffect: closure_11, useState: closure_12 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[8]));
+({ useEffect: closure_11, useState: closure_12 } = _defineProperties);
+({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = NativeEventEmitter);
 
 export default (PureComponent) => {
   class VirtualizedSectionList {
@@ -534,4 +535,4 @@ export default (PureComponent) => {
     }
   };
   return callback2(VirtualizedSectionList, items);
-}(importAllResult.PureComponent);
+}(require("_defineProperties").PureComponent);

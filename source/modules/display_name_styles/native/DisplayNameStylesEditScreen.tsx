@@ -1,10 +1,10 @@
-// Module ID: 14100
-// Function ID: 107048
+// Module ID: 14108
+// Function ID: 107091
 // Name: ApplyButton
 // Dependencies: []
 // Exports: default
 
-// Module 14100 (ApplyButton)
+// Module 14108 (ApplyButton)
 function ApplyButton(onPress) {
   onPress = onPress.onPress;
   const arg1 = onPress;
@@ -80,7 +80,7 @@ function ApplyButton(onPress) {
   }, items1);
   obj = { style: animatedStyle };
   obj1 = { style: { marginBottom: importDefault(dependencyMap[52])().bottom }, animatedProps };
-  obj2 = { "Bool(false)": "displayName", "Bool(false)": "r", "Bool(false)": "isArray", onPress: callback };
+  obj2 = { marginEnd: "<string:3167354881>", hasBottomSafeArea: "<string:3550216193>", hasLeftSafeArea: "<string:1983971329>", onPress: callback };
   const intl = arg1(dependencyMap[38]).intl;
   obj2.text = intl.string(arg1(dependencyMap[38]).t.1Qm822);
   obj1.children = callback2(arg1(dependencyMap[49]).Button, obj2);
@@ -105,15 +105,15 @@ const tmp3 = arg1(dependencyMap[7]);
 obj.contentContainer = { padding: importDefault(dependencyMap[10]).space.PX_16 };
 const obj1 = { padding: importDefault(dependencyMap[10]).space.PX_16 };
 obj.fieldButtonGroup = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.md };
-const obj3 = { 1655329890: -1661796349, -1135455284: -1371340797, 1702608251: -1275067531, -1437140064: -1258290315, padding: importDefault(dependencyMap[10]).space.PX_12 };
-obj.fieldButton = obj3;
 const obj2 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.md };
+obj.fieldButton = { padding: importDefault(dependencyMap[10]).space.PX_12 };
+const obj3 = { padding: importDefault(dependencyMap[10]).space.PX_12 };
 obj.fieldButtonBorder = { borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
 const obj4 = { borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
 obj.fieldButtonLabel = { flex: 1, marginRight: importDefault(dependencyMap[10]).space.PX_12 };
-const obj6 = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": "end_time", gap: importDefault(dependencyMap[10]).space.PX_8 };
+const obj6 = { 0: null, 0: 4, 0: "end_time", gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.fieldButtonChevron = obj6;
-const obj7 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[10]).space.PX_8 };
+const obj7 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.fieldButtonTrailing = obj7;
 const obj5 = { flex: 1, marginRight: importDefault(dependencyMap[10]).space.PX_12 };
 obj.buttonContainer = { marginVertical: importDefault(dependencyMap[10]).space.PX_16, paddingVertical: importDefault(dependencyMap[10]).space.PX_16, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED, gap: importDefault(dependencyMap[10]).space.PX_16 };
@@ -440,7 +440,7 @@ export default function DisplayNameStylesEditScreen() {
       }
       obj9.accessibilityLabel = combined;
       obj10 = {};
-      const obj11 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
+      const obj11 = {};
       const intl4 = arg1(dependencyMap[38]).intl;
       obj11.children = intl4.string(importDefault(dependencyMap[43]).0JCuGm);
       const items10 = [callback2(arg1(dependencyMap[44]).Text, obj11), ];
@@ -501,7 +501,7 @@ export default function DisplayNameStylesEditScreen() {
       stringResult2 = callback2;
       stringResult2 = arg1;
       stringResult2 = dependencyMap;
-      const obj18 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
+      const obj18 = {};
       const intl7 = arg1(dependencyMap[38]).intl;
       stringResult2 = importDefault;
       obj18.children = intl7.string(importDefault(dependencyMap[43]).RVtMxT);
@@ -549,12 +549,12 @@ export default function DisplayNameStylesEditScreen() {
       const obj24 = { style: stringResult2.fieldButtonLabel };
       stringResult2 = callback2;
       stringResult2 = tmp7Result;
-      const obj25 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
+      const obj25 = {};
       const intl9 = arg1(dependencyMap[38]).intl;
       obj25.children = intl9.string(importDefault(dependencyMap[43]).6OxgN7);
       const items19 = [callback2(arg1(dependencyMap[44]).Text, obj25), ];
       stringResult2 = callback2;
-      const obj26 = {};
+      const obj26 = { 803799044: false, 1269170180: false, 711589892: false };
       if (isDisplayNameStylesFlywheelSettersEnabled) {
         str9 = "text-sm/normal";
       }
@@ -584,7 +584,7 @@ export default function DisplayNameStylesEditScreen() {
       items9[1] = colors(tmp7Result, obj8);
       const obj30 = { style: stringResult2.buttonContainer };
       stringResult2 = callback2;
-      const obj31 = {};
+      const obj31 = { getNextAssetPage: true, trackFeedEmptyLoadingSeen: "/assets/../discord_common/js/shared/images/flags", addWindow: 70, questDockHeaderActionDisclosures: 47, EMOJI_PICKER_EMOJI_CLICKED: null, borderWidth: "3590df6f2ae2f7202dab15c0bd3aca9a", getDefaultLayout: "da" };
       const intl10 = arg1(dependencyMap[38]).intl;
       obj31.text = intl10.string(importDefault(dependencyMap[43]).NOGFds);
       obj31.onPress = callback1;
@@ -596,7 +596,7 @@ export default function DisplayNameStylesEditScreen() {
         stringResult2 = callback2;
         stringResult2 = arg1;
         stringResult2 = dependencyMap;
-        const obj32 = {};
+        const obj32 = { getNextAssetPage: true, trackFeedEmptyLoadingSeen: "/assets/../discord_common/js/shared/images/flags", addWindow: 70, questDockHeaderActionDisclosures: 47, EMOJI_PICKER_EMOJI_CLICKED: null, borderWidth: "3590df6f2ae2f7202dab15c0bd3aca9a", getDefaultLayout: "da" };
         const intl11 = arg1(dependencyMap[38]).intl;
         stringResult2 = importDefault;
         obj32.text = intl11.string(importDefault(dependencyMap[43]).ymq8WQ);
@@ -614,7 +614,7 @@ export default function DisplayNameStylesEditScreen() {
         stringResult2 = callback2;
         stringResult2 = arg1;
         stringResult2 = dependencyMap;
-        const obj33 = {};
+        const obj33 = { getNextAssetPage: true, trackFeedEmptyLoadingSeen: "/assets/../discord_common/js/shared/images/flags", addWindow: 70, questDockHeaderActionDisclosures: 47, EMOJI_PICKER_EMOJI_CLICKED: null, borderWidth: "3590df6f2ae2f7202dab15c0bd3aca9a", getDefaultLayout: "da" };
         const intl12 = arg1(dependencyMap[38]).intl;
         stringResult2 = importDefault;
         obj33.text = intl12.string(importDefault(dependencyMap[43]).j/KRxc);

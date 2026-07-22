@@ -1,17 +1,17 @@
-// Module ID: 13566
-// Function ID: 102880
+// Module ID: 13573
+// Function ID: 102913
 // Name: PageMarker
 // Dependencies: []
 
-// Module 13566 (PageMarker)
+// Module 13573 (PageMarker)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_1, jsxs: closure_2 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
-let obj = { pageMarkerContainer: { 9223372036854775807: 1908422878, 9223372036854775807: 3, 9223372036854775807: 33750337, 0: 834232576 } };
-obj = { allowed: -197062189, reason: 1912603177, BANNER: 433, MODAL: 231, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+let obj = { pageMarkerContainer: { 2022275207: 1908422878, 1756305299: 3, 1637488532: 33719105, 70668098: 1908039936 } };
+obj = { "Null": 1350123793, "Null": -1317928958, "Null": -419430399, "Null": 16777216, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.circleIcon = obj;
-obj1 = { 1364418824: null, -1218379181: "a255589f0ef23e06a175ac0fc6767b9f", -1604166557: "blocked_darker", -112316076: "png", -14232062: true, 1446732547: "/assets/images/native/empties", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
+obj1 = { "Bool(false)": null, "Bool(false)": "a255589f0ef23e06a175ac0fc6767b9f", "Bool(false)": "blocked_darker", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/empties", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
 obj.horizontalLine = obj1;
 const tmp2 = arg1(dependencyMap[2]);
 obj.filledCircle = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_BRAND, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };

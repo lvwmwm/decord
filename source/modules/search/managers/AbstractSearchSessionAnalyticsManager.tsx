@@ -1,9 +1,9 @@
-// Module ID: 10083
-// Function ID: 78108
+// Module ID: 10084
+// Function ID: 78121
 // Name: createDefaultSessionState
 // Dependencies: []
 
-// Module 10083 (createDefaultSessionState)
+// Module 10084 (createDefaultSessionState)
 function createDefaultSessionState() {
   const obj = { sessionId: arg1(dependencyMap[2]).v4(), searchQueryId: null };
   return obj;

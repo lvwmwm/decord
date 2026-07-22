@@ -1,10 +1,10 @@
-// Module ID: 9349
-// Function ID: 73005
+// Module ID: 9350
+// Function ID: 73018
 // Name: useEmojiPickerData
 // Dependencies: []
 // Exports: default
 
-// Module 9349 (useEmojiPickerData)
+// Module 9350 (useEmojiPickerData)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const LoadState = arg1(dependencyMap[1]).LoadState;

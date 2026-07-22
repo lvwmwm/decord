@@ -1,10 +1,10 @@
-// Module ID: 5509
-// Function ID: 46917
+// Module ID: 5508
+// Function ID: 46925
 // Name: Divider
 // Dependencies: []
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 5509 (Divider)
+// Module 5508 (Divider)
 let CARD_ROWS_COLUMN_GAP;
 let CARD_ROWS_ICON_SIZE;
 function Divider() {
@@ -16,59 +16,75 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_5 } = tmp2);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { title: {}, text: { flexShrink: 1 } };
-obj = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -tmp2.CARD_PADDING };
-obj.rowDivider = obj;
-obj.row = { "Bool(true)": -4230758200257680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -0.0013427734375204973 };
-const obj1 = { "Null": 7, "Null": 370, columnGap: CARD_ROWS_COLUMN_GAP };
-obj.rowLabel = obj1;
+obj = {};
+obj = { 0: "<string:1912603085>", 0: true, 0: true, marginBottom: importDefault(dependencyMap[5]).space.PX_12, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj.title = obj;
+const obj1 = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj.titleContent = obj1;
+obj.text = { flexShrink: 1 };
+const tmp3 = arg1(dependencyMap[3]);
+obj.rowDivider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -tmp2.CARD_PADDING };
+obj.row = { "Bool(false)": false, "Bool(false)": false };
+const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", columnGap: CARD_ROWS_COLUMN_GAP };
+obj.rowLabel = obj3;
 obj.rowLabelText = { flex: 1, lineHeight: CARD_ROWS_ICON_SIZE };
 obj.rowSublabel = { marginHorizontal: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP };
 let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
+const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -tmp2.CARD_PADDING };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_profile/native/UserProfileCard.tsx");
 
-export default function UserProfileCard(title) {
+export default function UserProfileCard(arg0) {
   let children;
   let style;
+  let title;
   let titleIcon;
   let titleStyle;
-  title = title.title;
-  let obj = { __initData: null, application: null, y: null, y: null, useCallback: null };
-  ({ titleIcon, titleStyle, children, style } = title);
+  let trailingAction;
+  ({ title, trailingAction } = arg0);
+  let obj = {};
+  ({ titleIcon, titleStyle, children, style } = arg0);
   Object.setPrototypeOf(null);
-  const merged = Object.assign(title, obj);
+  const merged = Object.assign(arg0, obj);
   const tmp3 = callback2();
   const tmp4 = importDefault(dependencyMap[9])("UserProfileCard");
   obj = { style };
   const merged1 = Object.assign(merged);
-  let tmp9Result = null != title;
+  let tmp9Result = null != title || null != trailingAction;
   if (tmp9Result) {
     obj = {};
     const items = [tmp3.title, titleStyle];
     obj.style = items;
-    const obj1 = { style: tmp3.text, accessibilityRole: "header" };
-    let str2 = "text-sm/semibold";
-    if (tmp4) {
-      str2 = "text-sm/medium";
+    let tmp12Result = null != title;
+    if (tmp12Result) {
+      const obj1 = { style: tmp3.titleContent };
+      const obj2 = { style: tmp3.text, accessibilityRole: "header" };
+      let str2 = "text-sm/semibold";
+      if (tmp4) {
+        str2 = "text-sm/medium";
+      }
+      obj2.variant = str2;
+      let str3 = "text-default";
+      if (tmp4) {
+        str3 = "text-strong";
+      }
+      obj2.color = str3;
+      obj2.lineClamp = 1;
+      obj2.children = title;
+      const items1 = [closure_6(arg1(dependencyMap[7]).Text, obj2), titleIcon];
+      obj1.children = items1;
+      tmp12Result = closure_7(View, obj1);
+      const tmp12 = closure_7;
+      const tmp13 = View;
+      const tmp14 = closure_6;
     }
-    obj1.variant = str2;
-    let str3 = "text-default";
-    if (tmp4) {
-      str3 = "text-strong";
-    }
-    obj1.color = str3;
-    obj1.lineClamp = 1;
-    obj1.children = title;
-    const items1 = [closure_6(arg1(dependencyMap[7]).Text, obj1), titleIcon];
-    obj.children = items1;
+    const items2 = [tmp12Result, trailingAction];
+    obj.children = items2;
     tmp9Result = closure_7(View, obj);
     const tmp10 = View;
-    const tmp11 = closure_6;
     const tmp9 = closure_7;
   }
-  const items2 = [tmp9Result, children];
-  obj["children"] = items2;
+  const items3 = [tmp9Result, children];
+  obj["children"] = items3;
   return closure_7(View, obj);
 };
 export const UserProfileFormRow = function UserProfileFormRow(arg0) {

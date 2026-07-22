@@ -1,18 +1,18 @@
-// Module ID: 11934
-// Function ID: 92287
+// Module ID: 11935
+// Function ID: 92301
 // Name: UserProfileActivityVoiceChannel
 // Dependencies: []
 // Exports: default
 
-// Module 11934 (UserProfileActivityVoiceChannel)
+// Module 11935 (UserProfileActivityVoiceChannel)
 const View = require(dependencyMap[0]).View;
 let closure_4 = importDefault(dependencyMap[1]);
 const Permissions = require(dependencyMap[2]).Permissions;
 const _module = require(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = _module);
 const _module1 = require(dependencyMap[4]);
-let obj = { container: { -9223372036854775808: true, 33490952505578: "/assets/images/native", 9223372036854775807: 18, 9223372036854775807: 18 }, channelButton: {} };
-obj = { Č: 10, accessibilityDismiss: 10 };
+let obj = { container: {}, channelButton: {} };
+obj = {};
 const _module2 = require(dependencyMap[5]);
 let num = -1;
 if (_module2.isAndroid()) {

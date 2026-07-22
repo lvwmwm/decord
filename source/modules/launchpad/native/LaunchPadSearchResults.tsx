@@ -1,9 +1,9 @@
-// Module ID: 15533
-// Function ID: 118576
+// Module ID: 15541
+// Function ID: 118619
 // Name: renderItemJSX
 // Dependencies: []
 
-// Module 15533 (renderItemJSX)
+// Module 15541 (renderItemJSX)
 function renderItemJSX(result) {
   result = result.result;
   if (null == result) {
@@ -14,7 +14,7 @@ function renderItemJSX(result) {
       let obj = { guild: result.record };
       return callback(closure_14, obj);
     } else if (arg1(dependencyMap[20]).AutocompleterResultTypes.TEXT_CHANNEL === type) {
-      obj = { "Null": null, "Null": null, "Null": null, channel: result.record };
+      obj = { THUMBNAIL_WIDTH_MARGIN: null, useIsTeenInStrictCountry: null, QUEST_REWARD_CODE_PLATFORMS_SET: null, channel: result.record };
       return callback(importDefault(dependencyMap[21]), obj);
     } else if (arg1(dependencyMap[20]).AutocompleterResultTypes.GROUP_DM === type) {
       let obj1 = { channel: result.record, navigationReplace: true };
@@ -50,7 +50,7 @@ const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let closure_12 = { bottom: 24 };
 let obj1 = arg1(dependencyMap[7]);
-let obj = { listContainer: { minHeight: 16 }, list: { right: true, height: true } };
+let obj = { listContainer: { minHeight: 16 }, list: { loginWebAuthn: true, Ŕ: true } };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.guildIcon = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };

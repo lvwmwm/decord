@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    "Bool(false)": "o",
-    "Bool(false)": "o",
+    accessibilityRole: "o",
+    HermesInternal: "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -182,7 +182,7 @@ function processResponsesApiEvent(type, responsesApiToolCalls, arg2, setStatus) 
       if (type instanceof Error) {
         let obj = { code: require(dependencyMap[4]).SPAN_STATUS_ERROR, message: "internal_error" };
         setStatus.setStatus(obj);
-        obj = { mechanism: { id: null, gameId: null } };
+        obj = { mechanism: { priority: null, "Bool(false)": null } };
         require(dependencyMap[5]).captureException(type, obj);
       } else if ("type" in type) {
         const RESPONSE_EVENT_TYPES = require(dependencyMap[6]).RESPONSE_EVENT_TYPES;
@@ -251,7 +251,7 @@ function processResponsesApiEvent(type, responsesApiToolCalls, arg2, setStatus) 
 }
 async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
   let obj2;
-  const obj = { eventTypes: [], responseTexts: [], finishReasons: [], promptTokens: undefined, completionTokens: undefined, totalTokens: undefined, chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
+  const obj = { autoPlayReverse: "mn", for: "description", class: "Array", getHours: "isArray", useIsParentallyControlled: "key", keywordLists: "accessibilityRole", eventTypes: [], responseTexts: [], finishReasons: [], promptTokens: undefined, completionTokens: undefined, totalTokens: undefined, chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
   if ("undefined" !== typeof Symbol) {
     const _Symbol = Symbol;
     let str = Symbol.asyncIterator;

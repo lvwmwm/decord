@@ -1,10 +1,10 @@
-// Module ID: 10931
-// Function ID: 85019
+// Module ID: 10932
+// Function ID: 85032
 // Name: useGuildProfileCTA
 // Dependencies: []
 // Exports: default, getGuildProfileCTAType
 
-// Module 10931 (useGuildProfileCTA)
+// Module 10932 (useGuildProfileCTA)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -81,7 +81,7 @@ export default function useGuildProfileCTA(id) {
         return obj;
       }
     }
-    obj = {};
+    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   }, items7);
   const validInviteKey = stateFromStoresObject.validInviteKey;
   const isBypassInvite = stateFromStoresObject.isBypassInvite;

@@ -1,12 +1,12 @@
-// Module ID: 12923
-// Function ID: 98517
+// Module ID: 12930
+// Function ID: 98550
 // Name: MenuItem
 // Dependencies: []
 
-// Module 12923 (MenuItem)
+// Module 12930 (MenuItem)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_5 = arg1(dependencyMap[2]).createStyles({ formIcon: { "Null": 0, "Null": -1048576 }, formLabel: {} });
+let closure_5 = arg1(dependencyMap[2]).createStyles({ formIcon: {}, formLabel: {} });
 const obj2 = arg1(dependencyMap[2]);
 const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   let IconComponent;

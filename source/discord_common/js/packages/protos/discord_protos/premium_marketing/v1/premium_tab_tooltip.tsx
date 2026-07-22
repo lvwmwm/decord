@@ -1,5 +1,5 @@
 // Module ID: 7146
-// Function ID: 57619
+// Function ID: 57630
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,34 +25,34 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PremiumTabTooltip$Type);
       items = [, , , , ];
-      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
-      items[1] = { 1347510942: "background_asset", 1678385745: "message", 1364379111: 0, 140698458: 50.06 };
-      obj = { 9223372036854775807: "onPressBack", 9223372036854775807: "pow", 0: "MiniaturesSpotIllustration" };
+      items[0] = {};
+      items[1] = {};
+      obj = { -111020099: "Text", 1351895378: "diversity", 1456955659: "cursor" };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
       items[2] = obj;
-      obj = { 9223372036854775807: "3", 9223372036854775807: 3, 0: "mobile_body" };
+      items[3] = {
+        T() {
+              return callback(closure_1[7]).LocalizedString;
+            }
+      };
+      obj = { -111020099: null, 1351895378: 9, 1456955659: null };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
-      items[3] = obj;
-      obj1 = { 9223372036854775807: null, 9223372036854775807: 9, 0: null };
-      obj1.T = function T() {
-        return callback(closure_1[7]).LocalizedString;
-      };
-      items[4] = obj1;
-      items1 = ["pos"];
+      items[4] = obj;
+      items1 = [160866722];
       items1[1] = items;
-      obj4 = closure_6(PremiumTabTooltip$Type);
+      obj3 = closure_6(PremiumTabTooltip$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj4, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj3, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj4.apply(self, items1);
+        constructResult = obj3.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -62,7 +62,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": null, "Bool(true)": null };
+      let obj = { 0: "Normal", 0: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumTabTooltip$Type(closure_1[8]).MESSAGE_TYPE, obj);

@@ -1,10 +1,10 @@
-// Module ID: 9295
-// Function ID: 72607
+// Module ID: 9296
+// Function ID: 72620
 // Name: updateContextMenuState
 // Dependencies: []
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, useActiveContextMenu, useContextMenuState
 
-// Module 9295 (updateContextMenuState)
+// Module 9296 (updateContextMenuState)
 let closure_2 = importAll(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
 obj = obj.create(() => ({ menu: null }));

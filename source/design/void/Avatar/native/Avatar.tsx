@@ -1,9 +1,9 @@
-// Module ID: 12905
-// Function ID: 98463
+// Module ID: 12912
+// Function ID: 98496
 // Name: getStatusSize
 // Dependencies: []
 
-// Module 12905 (getStatusSize)
+// Module 12912 (getStatusSize)
 function getStatusSize(arg0) {
   if (arg1(dependencyMap[7]).AvatarSizes.XXSMALL !== arg0) {
     if (arg1(dependencyMap[7]).AvatarSizes.XSMALL !== arg0) {
@@ -53,10 +53,10 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[4]);
 let closure_10 = arg1(dependencyMap[5]).createStyles((closure_10) => {
   let obj = { status: {} };
-  obj = { "Bool(false)": 6, "Bool(false)": 85, "Bool(false)": null, "Bool(false)": "\u{1F482}\u200D\u2640\uFE0F", "Bool(false)": true, borderColor: importDefault(dependencyMap[6]).colors.STATUS_SPEAKING };
+  obj = { <string:2523247253>: 6, <string:2320388538>: 85, <string:3852532579>: null, <string:1634712657>: "\u{1F482}\u200D\u2640\uFE0F", <string:2443006858>: true, borderColor: importDefault(dependencyMap[6]).colors.STATUS_SPEAKING };
   obj.speaking = obj;
-  obj.stageSpeaking = { "Bool(false)": 6, "Bool(false)": 85, "Bool(false)": null };
-  obj = { 1364605794: "<string:1107361794>", -1436482816: "heading-xl/semibold", 1672109137: "text-strong", 1403688096: "<string:105029473>", 101254666: "<string:3187671461>", 1851852428: "Array", 154730835: "isArray", 1627819014: "x", backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[6]).radii.md };
+  obj.stageSpeaking = { 1191129599: 6, 314226: 85, 315873: null };
+  obj = { 9223372036854775807: "center", 9223372036854775807: "#FFEAA0", -9223372036854775808: null, 0: "heading-xl/semibold", 9223372036854775807: "text-strong", 0: "header", -9223372036854775808: "heading-xl/medium", 0: "mobile-text-heading-primary", backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[6]).radii.md };
   obj.voiceStatus = obj;
   obj.decoration = { position: "absolute", top: -getAvatarDecorationMargin(closure_10), left: -getAvatarDecorationMargin(closure_10) };
   obj.container = { position: "relative" };

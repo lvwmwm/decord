@@ -1,5 +1,5 @@
 // Module ID: 7003
-// Function ID: 56080
+// Function ID: 56091
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -412,7 +412,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     }
     const value = map.get(tmp3);
     if (null == value) {
-      const obj = { SharedTransitionType: "<string:4128768>", addData: "isArray", getContextBarCancelReason: "<string:2335309824>", HERO_VIDEO: "<string:2851858284>", getApplication: "<string:1514128113>", SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP: "<string:1340029796>", threads: [] };
+      const obj = { threads: [] };
       ({ channelId: obj.channelId, sortOrder: obj.sortOrder } = tagFilter);
       obj.tagFilter = tagFilter;
       obj.tagSetting = tagFilter.tagSetting;

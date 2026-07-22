@@ -1,10 +1,10 @@
-// Module ID: 5636
-// Function ID: 48196
+// Module ID: 5635
+// Function ID: 48204
 // Name: canUserSeeMonetizationOnboarding
 // Dependencies: []
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 5636 (canUserSeeMonetizationOnboarding)
+// Module 5635 (canUserSeeMonetizationOnboarding)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");
 

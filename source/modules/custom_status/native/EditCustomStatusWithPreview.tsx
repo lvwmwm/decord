@@ -1,12 +1,12 @@
-// Module ID: 11887
-// Function ID: 92017
+// Module ID: 11888
+// Function ID: 92031
 // Name: ClearInputButton
 // Dependencies: []
 // Exports: default
 
-// Module 11887 (ClearInputButton)
+// Module 11888 (ClearInputButton)
 function ClearInputButton(onPress) {
-  let obj = { style: { "Bool(true)": true, "Bool(true)": true }, accessibilityRole: "button" };
+  let obj = { style: { display: true, justifyContent: true }, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[11]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[11]).t.VkKicb);
   obj.onPress = onPress.onPress;
@@ -318,14 +318,14 @@ const tmp2 = arg1(dependencyMap[5]);
 const EmojiIntention = arg1(dependencyMap[6]).EmojiIntention;
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: {}, statusSection: { rowGap: 8 } };
-obj = { Date: false, apply: false, end: false, apply: false, body: false, backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[9]).radii.lg };
+obj = { container: { <string:2315014815>: 1649267441, <string:996259895>: -1443086512, <string:1633821009>: 1649267441 }, statusSection: { rowGap: 8 } };
+obj = { borderWidth: 1929380725, alignSelf: 2030044021, paddingVertical: 1124074357, fontSize: 235044, padding: 236311, backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[9]).radii.lg };
 obj.statusInput = obj;
-obj.statusInputRow = { "Null": 7, "Null": 370 };
+obj.statusInputRow = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.emoji = { marginRight: 8 };
-const obj1 = { sku: "message", wishlistId: "row", analyticsLocations: 16, flexDirection: 24, alignItems: "center", justifyContent: null, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
-obj.status = obj1;
 const tmp3 = arg1(dependencyMap[7]);
+obj.status = { color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
+const obj1 = { color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.statusText = { fontFamily: tmp2.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 const obj2 = { fontFamily: tmp2.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.inputPlaceholder = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
@@ -334,7 +334,7 @@ obj.previewContainer = { alignItems: "center" };
 const obj3 = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 const obj4 = { alignItems: "center" };
 obj.closeIcon = { tintColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
-obj.statusSectionHeader = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
+obj.statusSectionHeader = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" };
 let closure_14 = obj.createStyles(obj);
 const obj5 = { tintColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
 const result = arg1(dependencyMap[43]).fileFinishedImporting("modules/custom_status/native/EditCustomStatusWithPreview.tsx");

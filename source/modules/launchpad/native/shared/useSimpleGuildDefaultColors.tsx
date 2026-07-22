@@ -1,9 +1,9 @@
-// Module ID: 15528
-// Function ID: 118552
+// Module ID: 15536
+// Function ID: 118595
 // Name: styles
 // Dependencies: []
 
-// Module 15528 (styles)
+// Module 15536 (styles)
 const _module = require(dependencyMap[0]);
 let obj = {};
 obj = { color: importDefault(dependencyMap[1]).colors.BACKGROUND_MOD_STRONG };

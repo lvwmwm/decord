@@ -163,7 +163,7 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
 }
 function getElementScrollValue(offsetParent) {
   let parentElement = offsetParent;
-  const obj = { 9223372036854775807: -536870861, 9223372036854775807: -299892737 };
+  const obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
   if (offsetParent) {
     do {
       let tmp = 0 !== parentElement.scrollTop && 0 === obj.scrollTopOffset;

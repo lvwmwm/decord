@@ -1,5 +1,5 @@
 // Module ID: 4013
-// Function ID: 33334
+// Function ID: 33336
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: timeoutPromise
@@ -229,7 +229,7 @@ const tmp5 = () => {
       fn = arg1;
       num = arg2;
       self = this;
-      f33363 = this;
+      f33365 = this;
       if (arg1 === undefined) {
         fn = function r() {
           return true;

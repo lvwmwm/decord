@@ -1,10 +1,10 @@
-// Module ID: 15871
-// Function ID: 121500
+// Module ID: 15879
+// Function ID: 121543
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: backgroundSync
 
-// Module 15871 (_createForOfIteratorHelperLoose)
+// Module 15879 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 107425
+// Module ID: 14201
+// Function ID: 107468
 // Name: NotificationPermissionSettingsHeader
 // Dependencies: []
 // Exports: default
 
-// Module 14193 (NotificationPermissionSettingsHeader)
+// Module 14201 (NotificationPermissionSettingsHeader)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ AnalyticEvents: closure_5, NOOP: closure_6 } = arg1(dependencyMap[2]));
@@ -41,17 +41,17 @@ export default function NotificationPermissionSettingsHeader() {
   let tmp5 = null;
   if (canSeePushNotificationNudge) {
     obj = { style: tmp.container };
-    obj = {};
+    obj = { 9223372036854775807: true, 9223372036854775807: true };
     const obj1 = { style: tmp.cardContent };
     const obj2 = { style: tmp.iconCircle };
     const obj3 = { size: "md", color: importDefault(dependencyMap[6]).colors.ICON_STRONG };
     obj2.children = callback(arg1(dependencyMap[10]).BellSlashIcon, obj3);
     const items1 = [callback(View, obj2), , , ];
-    const obj4 = {};
+    const obj4 = { cachedAt: null, edpbxy: null };
     const intl = arg1(dependencyMap[12]).intl;
     obj4.children = intl.string(arg1(dependencyMap[12]).t.MUwOvc);
     items1[1] = callback(arg1(dependencyMap[11]).Text, obj4);
-    const obj5 = { flexShrink: "isArray", flexGrow: "fill", zIndex: "transform", style: tmp.body };
+    const obj5 = { minWidth: null, height: null, top: null, style: tmp.body };
     const intl2 = arg1(dependencyMap[12]).intl;
     obj5.children = intl2.string(arg1(dependencyMap[12]).t.G4uKoe);
     items1[2] = callback(arg1(dependencyMap[11]).Text, obj5);

@@ -61,13 +61,7 @@ const fn = function _(moment) {
   obj.monthsStrictRegex = /^(январ[яь]|феврал[яь]|марта?|апрел[яь]|ма[яй]|июн[яь]|июл[яь]|августа?|сентябр[яь]|октябр[яь]|ноябр[яь]|декабр[яь])/i;
   obj.monthsShortStrictRegex = /^(янв\.|февр?\.|мар[т.]|апр\.|ма[яй]|июн[ья.]|июл[ья.]|авг\.|сент?\.|окт\.|нояб?\.|дек\.)/i;
   obj.longDateFormat = {};
-  const obj2 = {
-    "Null": "flex",
-    "Null": "stretch",
-    "Null": "bottom",
-    "Null": "100%",
-    "Null": 1,
-    "Bool(true)": "flex",
+  obj.calendar = {
     nextWeek(week) {
       const self = this;
       if (weekResult === this.week()) {
@@ -119,8 +113,8 @@ const fn = function _(moment) {
       const weekResult = week.week();
     }
   };
-  obj.calendar = obj2;
-  obj.relativeTime = { ss: relativeTimeWithPlural, m: relativeTimeWithPlural, mm: relativeTimeWithPlural, h: "\u0447\u0430\u0441", hh: relativeTimeWithPlural, d: "\u0434\u0435\u043D\u044C", dd: relativeTimeWithPlural, M: "\u043C\u0435\u0441\u044F\u0446", MM: relativeTimeWithPlural, y: "\u0433\u043E\u0434", yy: relativeTimeWithPlural };
+  const obj2 = { COZY_DRAWER: "r", rootContainer: "ref_type", imgWumpus: "r", ss: relativeTimeWithPlural, m: relativeTimeWithPlural, mm: relativeTimeWithPlural, h: "\u0447\u0430\u0441", hh: relativeTimeWithPlural, d: "\u0434\u0435\u043D\u044C", dd: relativeTimeWithPlural, M: "\u043C\u0435\u0441\u044F\u0446", MM: relativeTimeWithPlural, y: "\u0433\u043E\u0434", yy: relativeTimeWithPlural };
+  obj.relativeTime = obj2;
   obj.meridiemParse = /ночи|утра|дня|вечера/i;
   obj.isPM = function isPM(arg0) {
     return /^(дня|вечера)$/.test(arg0);
@@ -160,7 +154,7 @@ const fn = function _(moment) {
     }
     return arg0 + "-\u0439";
   };
-  obj.week = { "Bool(true)": null, "Bool(true)": null };
+  obj.week = { emoji: false, me: false };
   return moment.defineLocale("ru", obj);
 };
 if ("object" === typeof exports) {
@@ -172,7 +166,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

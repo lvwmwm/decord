@@ -1,10 +1,13 @@
 // Module ID: 7931
-// Function ID: 63334
+// Function ID: 63344
 // Name: getAutoArchiveOptions
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4120, 1278, 1280]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
 // Module 7931 (getAutoArchiveOptions)
+import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_3 } from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function getAutoArchiveOptions() {
   let obj = { id: "1hour" };
   const intl = require(dependencyMap[2]).intl;
@@ -28,14 +31,12 @@ function getAutoArchiveOptions() {
   items[3] = obj1;
   return items;
 }
-let closure_3 = require(dependencyMap[0]).DEFAULT_AUTO_ARCHIVE_DURATION;
-const items = [importDefault(dependencyMap[1]).Minutes.HOUR, importDefault(dependencyMap[1]).Minutes.DAY, 3 * importDefault(dependencyMap[1]).Minutes.DAY, importDefault(dependencyMap[1]).Minutes.WEEK];
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx");
+const items = [require("module_31").Minutes.HOUR, require("module_31").Minutes.DAY, 3 * require("module_31").Minutes.DAY, require("module_31").Minutes.WEEK];
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx");
 
 export const AUTO_ARCHIVE_OPTION_VALUES = items;
 export { getAutoArchiveOptions };
-export const getAutoArchiveDurations = importDefault(dependencyMap[3])(() => getAutoArchiveOptions().map((value) => value.value));
+export const getAutoArchiveDurations = require("_isNativeReflectConstruct")(() => getAutoArchiveOptions().map((value) => value.value));
 export const getAutoArchiveDurationText = function getAutoArchiveDurationText(arg0) {
   const require = arg0;
   const found = getAutoArchiveOptions().find((value) => value.value === value);

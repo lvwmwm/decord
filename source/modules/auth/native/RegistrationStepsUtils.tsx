@@ -1,10 +1,10 @@
-// Module ID: 14607
-// Function ID: 110110
+// Module ID: 14615
+// Function ID: 110153
 // Name: getRegistrationSteps
 // Dependencies: []
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, handleNextOrSubmitRegistration
 
-// Module 14607 (getRegistrationSteps)
+// Module 14615 (getRegistrationSteps)
 function getRegistrationSteps() {
   return items;
 }
@@ -68,6 +68,11 @@ export { getRegistrationSteps };
 export const getAllAuthScreens = function getAllAuthScreens() {
   let obj = {};
   obj = {
+    position: true,
+    top: true,
+    left: true,
+    width: true,
+    height: true,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_WELCOME,
     headerTitle,
     render() {
@@ -76,8 +81,8 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   };
   obj[AuthStates.WELCOME] = obj;
   obj = {
-    1364605794: null,
-    -1805531015: null,
+    -2080983400: null,
+    1402255458: null,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION,
     impressionProperties: { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY },
     headerTitle,
@@ -92,7 +97,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     }
   };
   obj[AuthStates.REGISTER_IDENTITY] = obj;
-  const obj2 = { 1364605794: null, -1805531015: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
+  const obj2 = { -2080983400: null, 1402255458: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
   const obj1 = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY };
   obj2.impressionProperties = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
   obj2.headerTitle = headerTitle;
@@ -106,7 +111,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     return callback3(callback2(closure_2[12]), {});
   };
   obj[AuthStates.REGISTER_DISPLAY_NAME] = obj2;
-  const obj4 = { 1364605794: null, -1805531015: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
+  const obj4 = { -2080983400: null, 1402255458: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
   const obj3 = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
   obj4.impressionProperties = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.ACCOUNT_INFORMATION };
   obj4.headerTitle = headerTitle;
@@ -135,7 +140,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     return callback3(callback2(closure_2[14]), {});
   };
   obj[AuthStates.VERIFY_PHONE] = obj6;
-  const obj8 = { 1364605794: null, -1805531015: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_LOGIN };
+  const obj8 = { -2080983400: null, 1402255458: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_LOGIN };
   const obj7 = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW };
   obj8.impressionProperties = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_LOGIN_FLOW };
   obj8.headerTitle = headerTitle;
@@ -143,22 +148,27 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     return callback3(callback2(closure_2[15]), {});
   };
   obj[AuthStates.LOGIN] = obj8;
-  obj[AuthStates.MFA] = {
+  const obj10 = {
+    "Null": 1312620548,
+    "Null": 487325697,
+    "Null": -213712895,
+    "Null": -855636958,
     headerTitle,
     render() {
       return callback3(callback2(closure_2[16]), { inContainer: true });
     }
   };
-  const obj10 = {
-    1364605794: null,
-    -1805531015: null,
+  obj[AuthStates.MFA] = obj10;
+  const obj11 = {
+    -2080983400: null,
+    1402255458: null,
     headerTitle,
     render(arg0) {
       const merged = Object.assign(arg0);
       return callback3(callback2(closure_2[17]), {});
     }
   };
-  obj[AuthStates.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED] = obj10;
+  obj[AuthStates.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED] = obj11;
   obj[AuthStates.COUNTRY_SELECT] = {
     ignoreKeyboard: true,
     headerTitle,
@@ -181,9 +191,9 @@ export const getAllAuthScreens = function getAllAuthScreens() {
       return callback3(callback2(closure_2[20]), {});
     }
   };
-  const obj11 = {
-    1364605794: null,
-    -1805531015: null,
+  const obj12 = {
+    -2080983400: null,
+    1402255458: null,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_AGE_GATE,
     headerTitle,
     headerLeft(arg0) {
@@ -196,10 +206,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
       return callback3(callback2(closure_2[21]), {});
     }
   };
-  obj[AuthStates.AGE_GATE] = obj11;
-  const obj12 = {
-    1364605794: null,
-    -1805531015: null,
+  obj[AuthStates.AGE_GATE] = obj12;
+  const obj13 = {
+    -2080983400: null,
+    1402255458: null,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_AGE_GATE_UNDERAGE,
     impressionProperties(existingUser) {
       return { impression_group: callback(closure_2[8]).ImpressionGroups.USER_REGISTRATION_FLOW, existing_user: existingUser.existingUser };
@@ -214,16 +224,16 @@ export const getAllAuthScreens = function getAllAuthScreens() {
       });
     }
   };
-  obj[AuthStates.AGE_GATE_UNDERAGE] = obj12;
-  const obj13 = {
-    1364605794: null,
-    -1805531015: null,
+  obj[AuthStates.AGE_GATE_UNDERAGE] = obj13;
+  const obj14 = {
+    -2080983400: null,
+    1402255458: null,
     headerTitle,
     render() {
       return callback3(callback(closure_2[23]).CompanionRemoteAuth, {});
     }
   };
-  obj[AuthStates.COMPANION_REMOTE_AUTH] = obj13;
+  obj[AuthStates.COMPANION_REMOTE_AUTH] = obj14;
   return obj;
 };
 export { getNextAuthState };

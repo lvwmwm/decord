@@ -4,6 +4,6 @@
 
 // Module 1977
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "row", format: "flex-end", View: 16, accessibilityRole: "column", surrogates: "space-between", url: 16, scales: [null] };
+const obj = { 296374: "<string:3550216194>", 1102560849: "<string:1107361793>", 288807: "text-sm/semibold", 1103760465: "text-muted", 288241: "<string:1234321681>", 1120538193: "<string:1124139010>", scales: [false] };
 
 export default _module.registerAsset(obj);

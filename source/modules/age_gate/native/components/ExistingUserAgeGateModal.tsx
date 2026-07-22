@@ -1,10 +1,10 @@
-// Module ID: 15855
-// Function ID: 121336
+// Module ID: 15863
+// Function ID: 121379
 // Name: onClose
 // Dependencies: []
 // Exports: default
 
-// Module 15855 (onClose)
+// Module 15863 (onClose)
 function onClose() {
   arg1(dependencyMap[10]).closeAgeGateModal();
 }

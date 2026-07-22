@@ -1,10 +1,10 @@
-// Module ID: 9464
-// Function ID: 73722
+// Module ID: 9465
+// Function ID: 73735
 // Name: questHomeHeroFromServer
 // Dependencies: []
 // Exports: questHomeHeroFromServer
 
-// Module 9464 (questHomeHeroFromServer)
+// Module 9465 (questHomeHeroFromServer)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/ads/QuestHomeHeroTypes.tsx");
 

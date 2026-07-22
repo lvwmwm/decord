@@ -1,10 +1,10 @@
-// Module ID: 16110
-// Function ID: 124221
+// Module ID: 16118
+// Function ID: 124263
 // Name: GuildSettingsModalAuditLogFilter
 // Dependencies: []
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 16110 (GuildSettingsModalAuditLogFilter)
+// Module 16118 (GuildSettingsModalAuditLogFilter)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_16 };
 obj.searchBar = obj;
-obj.allUsersIconContainer = {};
+obj.allUsersIconContainer = { disableControlsUpdate: "Array", addWindow: "GiftCardFan3dIllustration", parseRoom: "r" };
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLogFilter.tsx");

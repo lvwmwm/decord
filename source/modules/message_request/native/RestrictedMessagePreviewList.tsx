@@ -1,10 +1,10 @@
-// Module ID: 15457
-// Function ID: 117916
+// Module ID: 15465
+// Function ID: 117959
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15457 (_createForOfIteratorHelperLoose)
+// Module 15465 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -91,8 +91,8 @@ function HiddenMedia(length) {
   const items = [
     Array.from({ length: length.count }, (arg0, arg1) => {
       let obj = { style: tmp.mediaPlaceholderCard };
-      const items = [callback(tmp(closure_2[7]).ImageWarningIcon, {}), ];
-      obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+      const items = [callback(tmp(closure_2[7]).ImageWarningIcon, { "Bool(false)": "text-link", "Bool(false)": "text-sm/normal" }), ];
+      obj = { cachedAt: "y", edpbxy: "isArray" };
       const intl = tmp(closure_2[9]).intl;
       obj.children = intl.string(tmp(closure_2[9]).t.B2xSxL);
       items[1] = callback(tmp(closure_2[8]).Text, obj);
@@ -103,7 +103,7 @@ function HiddenMedia(length) {
   ];
   obj = { style: tmp.mediaHiddenRow };
   const items1 = [callback(arg1(dependencyMap[10]).CircleInformationIcon, {}), ];
-  obj = {};
+  obj = { cachedAt: 400, edpbxy: 20 };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.VGf+K3);
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj);
@@ -116,7 +116,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = {};
+let closure_9 = { grow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010061202988173046, accessibilityLabel: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778309797938844, maxFontSizeMultiplier: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008347376505644786, accessibilityHint: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029560810505976, flexShrink: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293802354993027, flexGrow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022357496646633032, alignSelf: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010242004964635269, type: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002094012059866823, guildId: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001966906527891313, expand: 0.00000000000000000000000000000000000000000000000000035497714504717675, 530735522: "<string:285278209>", 710845794: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 1273509270: null, 1886478582: "8915080f4bfd7f0d822009e14ea151a4", "Bool(true)": "tr.messages.8915080f4bfd7f0d822009e14ea151a4.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "BACKROOM_SEAT_2", "Bool(true)": null, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(true)": null, "Bool(true)": "8346f3201160fa23b5df96de0246b3b6", "Bool(true)": "uk.messages.8346f3201160fa23b5df96de0246b3b6.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "BACKROOM_SEAT_3", "Bool(true)": null };
 let obj = arg1(dependencyMap[4]);
 obj = { container: { flexDirection: "column" } };
 obj = { marginLeft: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET };
@@ -124,16 +124,16 @@ obj.hiddenMedia = obj;
 obj.messageRow = { position: "relative" };
 const tmp2 = arg1(dependencyMap[3]);
 obj.avatarHitbox = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
-const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_8, marginVertical: importDefault(dependencyMap[6]).space.PX_12 };
+const obj2 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[6]).space.PX_8, marginVertical: importDefault(dependencyMap[6]).space.PX_12 };
 obj.dateDivider = obj2;
-const obj3 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderWidth: "<string:2941583362>" };
 obj.dividerLine = obj3;
-const obj1 = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
-obj.mediaPlaceholderCard = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-const obj5 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, marginBottom: importDefault(dependencyMap[6]).space.PX_4 };
+const obj4 = { customContainer: 0, dup: 0, useCanManageGuildRoleSubscriptions: false, STICKERS_UPLOAD: false, gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj.mediaPlaceholderCard = obj4;
+const obj5 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, marginBottom: importDefault(dependencyMap[6]).space.PX_4 };
 obj.mediaHiddenRow = obj5;
 let closure_10 = obj.createStyles(obj);
-const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewList.tsx");
 
 export default function RestrictedMessagePreviewList(channelId) {
@@ -251,7 +251,7 @@ export default function RestrictedMessagePreviewList(channelId) {
           obj = { style: tmp.dateDivider };
           const obj1 = { style: tmp.dividerLine };
           const items = [items4(memo, obj1), , ];
-          const obj2 = { hasMaxConnections: 15, isBoostOnlySubscription: "center", children: channelId(analyticsLocations[11]).dateFormat(message.timestamp, "LL") };
+          const obj2 = { cachedAt: 15, edpbxy: "center", children: channelId(analyticsLocations[11]).dateFormat(message.timestamp, "LL") };
           items[1] = items4(channelId(analyticsLocations[8]).Text, obj2);
           const obj3 = { style: tmp.dividerLine };
           items[2] = items4(memo, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 9207
-// Function ID: 72067
+// Module ID: 9208
+// Function ID: 72080
 // Name: PhoneOrEmailSelectorForceMode
 // Dependencies: []
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
-// Module 9207 (PhoneOrEmailSelectorForceMode)
+// Module 9208 (PhoneOrEmailSelectorForceMode)
 const obj = { PHONE: "phone", EMAIL: "email" };
 let closure_1 = /^[-() \d]+$/;
 const _module = require(dependencyMap[0]);

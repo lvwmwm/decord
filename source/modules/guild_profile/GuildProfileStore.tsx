@@ -1,9 +1,9 @@
-// Module ID: 8410
-// Function ID: 66987
+// Module ID: 8411
+// Function ID: 66999
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8410 (_isNativeReflectConstruct)
+// Module 8411 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +18,7 @@ function handleUpdateStart(guildId) {
   const value = map.get(guildId);
   if (null == value) {
     let obj = {};
-    const merged = Object.assign(obj);
+    const merged = Object.assign(closure_12);
     obj["isUpdating"] = true;
     const result = map.set(guildId, obj);
   } else {
@@ -35,7 +35,7 @@ function handleUpdateFailure(arg0) {
   const value = map.get(guildId);
   if (null == value) {
     let obj = {};
-    const merged = Object.assign(obj);
+    const merged = Object.assign(closure_12);
     obj["error"] = error;
     const result = map.set(guildId, obj);
   } else {
@@ -53,7 +53,7 @@ function handleInviteResolveOrCreate(invite) {
     const guildProfileFromServer = arg1(dependencyMap[7]).buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(closure_12);
       obj["profile"] = guildProfileFromServer;
       const _Date2 = Date;
       obj["lastSyncTimestamp"] = Date.now();
@@ -80,8 +80,7 @@ const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 const map = new Map();
 const map1 = new Map();
-obj = { flex: "<string:3611820033>", op: "<string:3338666764>", String: "<string:3321889412>", then: "<string:1342177789>", mn: "<string:2046820995>", bottom: "<string:3607102032>" };
-obj.fetchStatus = obj.NOT_FETCHED;
+let closure_12 = { fetchStatus: obj.NOT_FETCHED };
 let tmp4 = (Store) => {
   class GuildProfileStore {
     constructor() {
@@ -230,7 +229,7 @@ obj = {
     const value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(closure_12);
       obj["fetchStatus"] = obj.FETCHING;
       const result = map.set(guildId, obj);
     } else {
@@ -252,7 +251,7 @@ obj = {
     value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(closure_12);
       obj["profile"] = profile;
       const _Date2 = Date;
       obj["lastSyncTimestamp"] = Date.now();
@@ -286,7 +285,7 @@ obj = {
     value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(closure_12);
       obj["error"] = error;
       obj["fetchStatus"] = obj.FETCHED;
       obj["nextFetchAllowedAt"] = sum;
@@ -308,7 +307,7 @@ obj = {
     const value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(closure_12);
       obj["profile"] = profile;
       const result = map.set(guildId, obj);
     } else {
@@ -332,7 +331,7 @@ obj = {
       const value = map.get(guildId);
       if (null == value) {
         let obj = {};
-        const merged = Object.assign(obj);
+        const merged = Object.assign(closure_12);
         obj["profile"] = profile;
         const _Date2 = Date;
         obj["lastSyncTimestamp"] = Date.now();

@@ -1,8 +1,8 @@
-// Module ID: 10574
-// Function ID: 82550
+// Module ID: 10575
+// Function ID: 82563
 // Dependencies: []
 
-// Module 10574
+// Module 10575
 const obj = { componentName: "DCDVideoRenderer", componentFoundInstance: importDefault(dependencyMap[1]) };
 const importDefaultResult = importDefault(dependencyMap[0]);
 const importDefaultResultResult = importDefault(dependencyMap[0])(obj);

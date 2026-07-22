@@ -1,29 +1,29 @@
-// Module ID: 9235
-// Function ID: 72238
+// Module ID: 9236
+// Function ID: 72251
 // Name: ViewEmptyState
-// Dependencies: [0, 0, 4294967295, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 9235 (ViewEmptyState)
-import "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
-({ View: closure_2, Image: closure_3 } = result);
+// Module 9236 (ViewEmptyState)
+importAll(dependencyMap[0]);
+({ View: closure_2, Image: closure_3 } = arg1(dependencyMap[1]));
 const Fonts = arg1(dependencyMap[2]).Fonts;
-({ jsx: closure_4, jsxs: closure_5 } = result);
+const tmp3 = arg1(dependencyMap[1]);
+({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { emptyContainer: { 9223372036854775807: null, height: null, backgroundColor: null, borderWidth: null }, emptyImage: {}, fixOpticalIllusion: {} };
+obj = { emptyContainer: { GestureHandlerRootView: null, textAndImages: null, selectedIcon: null, GameDepthTier9LargeBadge: null }, emptyImage: {}, fixOpticalIllusion: { "Bool(false)": "<string:1301872642>", "Bool(false)": "<string:3613261825>" } };
 obj = {};
-const merged = Object.assign(require("result")(Fonts.DISPLAY_SEMIBOLD, require("result").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+const tmp4 = arg1(dependencyMap[3]);
+const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 obj["textAlign"] = "center";
 obj["marginTop"] = 32;
 obj["opacity"] = 0.8;
 obj.emptyLabel = obj;
 obj.emptyText = { fontFamily: Fonts.PRIMARY_MEDIUM };
 let closure_6 = obj.createStyles(obj);
-result = result.fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
+const importDefaultResult = importDefault(dependencyMap[5]);
+const obj1 = { fontFamily: Fonts.PRIMARY_MEDIUM };
+const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
 
 export default function ViewEmptyState(arg0) {
   let label;

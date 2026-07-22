@@ -451,7 +451,7 @@ class Url {
       tmp8 = arg6;
       num2 = 0;
       obj = arg1(arg6[0]);
-      str11 = obj.stringify(self.query, { textInputNativeID: true, onKeyboardMoveStart: true });
+      str11 = obj.stringify(self.query, {});
     }
     str12 = self.search;
     if (!str12) {
@@ -1015,17 +1015,17 @@ function urlParse(arg0, arg1, arg2) {
 let closure_2 = /^([a-z0-9.+-]+:)/i;
 let closure_3 = /:[0-9]*$/;
 let closure_4 = /^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$/;
-const items = [537171358830907500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 546024957129728100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -20441487807705380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 5760897429875254000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004715313869507937, 71010546402816410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-const items1 = [null];
-const combined = items1.concat(items.concat(["ios", "android", "android", "ios", "onFocus", "onBlur", "Array", "registerAsset"]));
-const items2 = ["<string:30343520>", "<string:17563919>", "<string:19661103>", "<string:1262682404>", "<string:1174406298>"];
+const items = [null, "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite"];
+const items1 = ["hasDiversityParent"];
+const combined = items1.concat(items.concat(["<string:3848036803>", "<string:2716463218>", "<string:1532062049>", "<string:3130868189>", "<string:3881893892>", "<string:1653906513>", "<string:2052221415>", "<string:1359516168>"]));
+const items2 = [true, true, true, true, true];
 let closure_6 = items2.concat(combined);
 let closure_7 = [];
 let closure_8 = /^[+a-z0-9A-Z_-]{0,63}$/;
 let closure_9 = /^([+a-z0-9A-Z_-]{0,63})(.*)$/;
-let closure_10 = { EyeSlashIcon: null, writeUint: null };
-let closure_11 = { EyeSlashIcon: null, writeUint: null };
-let closure_12 = { <string:3965987452>: null, <string:1373135792>: null, <string:3177287049>: true, <string:1640119121>: true, <string:1137332488>: true, interpolator: true, showOnSwipeUp: true, enableSwipeToDismiss: true, <string:1099572561>: null, textInputNativeID: null };
+let closure_10 = { top: null, bottom: null };
+let closure_11 = { top: null, bottom: null };
+let closure_12 = {};
 arg5.parse = urlParse;
 arg5.resolve = function urlResolve(arg0, arg1) {
   return urlParse(arg0, false, true).resolve(arg1);

@@ -1,5 +1,5 @@
 // Module ID: 3827
-// Function ID: 31804
+// Function ID: 31806
 // Name: t
 // Dependencies: []
 
@@ -760,7 +760,7 @@ const fn = function t() {
       return htmlTag("pre", htmlTag("code", sanitizeText(lang.content), obj));
     };
     obj.codeBlock = obj5;
-    let obj6 = {};
+    let obj6 = { y: 10200565344.750004, nP+Ykd: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001482341380528866, messageDetails: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003766908679896434, isStyle: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", messageBackground: "bun run write-native-version" };
     let num11 = 6;
     let num12 = 6;
     obj6.match = blockRegex(/^ *(`{3,}|~{3,}) *(?:(\S+) *)?\n([\s\S]+?)\n?\1 *(?:\n *)+\n/);
@@ -965,7 +965,7 @@ const fn = function t() {
     let num21 = 11;
     let num22 = 11;
     obj11.order = 10;
-    obj11.requiredFirstCharacters = ["twoFriends"];
+    obj11.requiredFirstCharacters = ["<string:1792496273>"];
     obj11.match = blockRegex(/^(?:\n *)*\n/);
     obj11.parse = ignoreCapture;
     obj11.react = function react(arg0, arg1, arg2) {
@@ -988,7 +988,7 @@ const fn = function t() {
       return htmlTag("div", arg1(content.content, arg2), { class: "paragraph" });
     };
     obj.paragraph = obj12;
-    let obj13 = { 16668672: "Array", -1701227520: "isArray", -815960339: "accessibilityRole", -1839132596: "c", 1169792597: "sa", 767553779: "Text" };
+    let obj13 = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
     let num24 = 13;
     let num25 = 13;
     obj13.requiredFirstCharacters = [true];
@@ -1019,9 +1019,9 @@ const fn = function t() {
       return " &vert; ";
     };
     obj.tableSeparator = obj14;
-    let obj15 = { 16668672: null, -1701227520: 14, -815960339: null, -1839132596: "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FD}", 1169792597: true, 767553779: null };
+    let obj15 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
     let num27 = 15;
-    obj15.requiredFirstCharacters = [-0.00000000000000000000000000000000000000000000000000000000031878467929140456];
+    obj15.requiredFirstCharacters = ["threeFriends"];
     obj15.match = inlineRegex(/^<([^: >]+:\/[^ >]+)>/);
     obj15.parse = function parse(content) {
       let obj = { type: "link", content: items, target: content[1] };
@@ -1030,7 +1030,7 @@ const fn = function t() {
       return obj;
     };
     obj.autolink = obj15;
-    let obj16 = {};
+    let obj16 = { y: null, nP+Ykd: "\u{1F91F}\u{1F3FE}", messageDetails: true, isStyle: null, messageBackground: 10 };
     let num28 = 16;
     obj16.match = inlineRegex(/^<([^ >]+@[^ >]+)>/);
     obj16.parse = function parse(content) {
@@ -1047,7 +1047,7 @@ const fn = function t() {
     let obj17 = {};
     let num29 = 17;
     let num30 = 17;
-    obj17.requiredFirstCharacters = [];
+    obj17.requiredFirstCharacters = [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
     obj17.match = inlineRegex(/^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/);
     obj17.parse = function parse(content) {
       let obj = { type: "link", content: items, target: content[1], title: undefined };
@@ -1060,7 +1060,7 @@ const fn = function t() {
     let num31 = 18;
     let num32 = 18;
     obj18.order = 17;
-    obj18.requiredFirstCharacters = [];
+    obj18.requiredFirstCharacters = [null];
     let _RegExp = RegExp;
     let tmp11 = new.target;
     let str2 = "^\\[((?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*)\\]\\(\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*\\)";
@@ -1111,7 +1111,7 @@ const fn = function t() {
       return parseRef(alt, _defs, { type: "link", content: arg1(alt[1], _defs) });
     };
     obj.reflink = obj20;
-    let obj21 = {};
+    let obj21 = { y: 1874522307104028600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, nP+Ykd: 373503044309087300000000000000000000000000000000000000000000000000000000000000000000000000000000, messageDetails: -9901170973718475000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, isStyle: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682771962, messageBackground: 18347989026509565000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     let num35 = 21;
     let num36 = 21;
     let _RegExp4 = RegExp;
@@ -1158,7 +1158,7 @@ const fn = function t() {
     let obj23 = {};
     let num37 = 21;
     obj23.order = num36;
-    obj23.requiredFirstCharacters = [];
+    obj23.requiredFirstCharacters = [null];
     obj23.match = inlineRegex(/^\*\*((?:\\[\s\S]|[^\\])+?)\*\*(?!\*)/);
     obj23.quality = function quality(arg0) {
       return arg0[0].length + 0.1;
@@ -1176,7 +1176,7 @@ const fn = function t() {
     let sum = tmp31 + 1;
     let tmp33 = sum;
     obj24.order = tmp31;
-    obj24.requiredFirstCharacters = [-18353818653307860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+    obj24.requiredFirstCharacters = [null];
     obj24.match = inlineRegex(/^__((?:\\[\s\S]|[^\\])+?)__(?!_)/);
     obj24.quality = function quality(arg0) {
       return arg0[0].length;
@@ -1194,7 +1194,7 @@ const fn = function t() {
     let sum1 = tmp34 + 1;
     let tmp36 = sum1;
     obj25.order = tmp34;
-    obj25.requiredFirstCharacters = [];
+    obj25.requiredFirstCharacters = [null];
     obj25.match = inlineRegex(/^~~(?=\S)((?:\\[\s\S]|~(?!~)|[^\s~]|\s(?!~~))+?)~~/);
     obj25.parse = parseCaptureInline;
     obj25.react = function react(content, arg1, key) {
@@ -1226,7 +1226,7 @@ const fn = function t() {
     let sum3 = tmp40 + 1;
     let tmp42 = sum3;
     obj27.order = tmp40;
-    obj27.requiredFirstCharacters = [-1402750382];
+    obj27.requiredFirstCharacters = [false];
     let tmp43 = anyScopeRegex;
     obj27.match = anyScopeRegex(/^ {2,}\n/);
     obj27.parse = ignoreCapture;

@@ -1,9 +1,9 @@
-// Module ID: 11144
-// Function ID: 86668
+// Module ID: 11145
+// Function ID: 86681
 // Name: KEYBOARD_ANIMATION_DURATION
 // Dependencies: []
 
-// Module 11144 (KEYBOARD_ANIMATION_DURATION)
+// Module 11145 (KEYBOARD_ANIMATION_DURATION)
 const _module = require(dependencyMap[0]);
 const keyboardAnimationConfigs = _module.getKeyboardAnimationConfigs("keyboard", 250);
 const _module1 = require(dependencyMap[1]);

@@ -1,5 +1,5 @@
 // Module ID: 7006
-// Function ID: 56167
+// Function ID: 56178
 // Name: getForumChannelSessionId
 // Dependencies: []
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads

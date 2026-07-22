@@ -1,17 +1,17 @@
-// Module ID: 8934
-// Function ID: 70431
+// Module ID: 8935
+// Function ID: 70444
 // Name: TwoWayLinkLanding
 // Dependencies: []
 // Exports: TwoWayLinkLanding
 
-// Module 8934 (TwoWayLinkLanding)
+// Module 8935 (TwoWayLinkLanding)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ image: { marginBottom: 32 }, valueProps: { IRRELEVANT_CHANNEL: true, minResolutionHeight: true } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ image: { marginBottom: 32 }, valueProps: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkLanding.tsx");
 
@@ -52,7 +52,7 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   items1[1] = tmp9;
   obj2.style = items1;
   const items2 = [callback(closure_2, obj2), , , ];
-  const obj3 = { style: twoWayLinkStyles.title };
+  const obj3 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, paddingHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003202169671031755, backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062920633412691296, style: twoWayLinkStyles.title };
   let tmp11 = headerConnect;
   if (stateFromStores) {
     tmp11 = headerConnect;
@@ -71,7 +71,7 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
       label = label.label;
       ({ subLabel, icon } = label);
       let obj = { start: 0 === arg1, end: arg1 === valueProps.length - 1, subLabel };
-      obj = { hasMaxConnections: false, isBoostOnlySubscription: false, children: label };
+      obj = { cachedAt: -8364226096399416000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012460413631725481, children: label };
       obj.label = callback2(callback(valueProps[7]).Text, obj);
       obj.icon = callback2(callback(valueProps[8]).TableRow.Icon, { IconComponent: icon });
       return callback2(callback(valueProps[8]).TableRow, obj, label);
@@ -81,7 +81,7 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   const items3 = [closure_7(closure_3, obj1), ];
   let tmp12 = null;
   if (null != learnMoreLink) {
-    const obj6 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: twoWayLinkStyles.body };
+    const obj6 = { cachedAt: 1, edpbxy: 1, style: twoWayLinkStyles.body };
     const intl = arg1(dependencyMap[10]).intl;
     const obj7 = { helpCenterLink: learnMoreLink };
     obj6.children = intl.format(arg1(dependencyMap[10]).t./l3n+1, obj7);
@@ -91,8 +91,8 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   obj.children = items3;
   const items4 = [closure_7(closure_4, obj), ];
   const obj8 = { bottom: true, style: twoWayLinkStyles.footerContainer };
-  const obj9 = { paddingVertical: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001728076652293636, width: 0.0005190304624491661, style: twoWayLinkStyles.footerButton };
-  const obj10 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj9 = { "Bool(false)": false, "Bool(false)": false, style: twoWayLinkStyles.footerButton };
+  const obj10 = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj10.text = intl2.string(arg1(dependencyMap[10]).t.LhlgY9);
   obj10.onPress = onNext;

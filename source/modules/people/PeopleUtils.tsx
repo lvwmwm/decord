@@ -1,9 +1,9 @@
-// Module ID: 9049
-// Function ID: 71054
+// Module ID: 9050
+// Function ID: 71067
 // Name: acceptFriendRequest
 // Dependencies: []
 
-// Module 9049 (acceptFriendRequest)
+// Module 9050 (acceptFriendRequest)
 function acceptFriendRequest(location) {
   let applicationId;
   let confirmStrangerRequest;
@@ -34,7 +34,7 @@ function handleFriendRequestAcceptError(body, userId) {
     }
   }
   if (code === AbortCodes.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
-    let obj = { "Null": true, "Null": "/assets/images/native/premium/illustrations", "Null": 397, userId: userId.userId };
+    let obj = { height: null, flexDirection: null, GameDepthTier8SmallBadge: null, userId: userId.userId };
     let flag = true;
     importDefault(dependencyMap[8]).dispatch(obj);
     const obj3 = importDefault(dependencyMap[8]);

@@ -1,8 +1,8 @@
-// Module ID: 11659
-// Function ID: 90431
+// Module ID: 11660
+// Function ID: 90444
 // Dependencies: []
 
-// Module 11659
+// Module 11660
 const importAllResult = importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[2]).useChatInputContainerHeight;
 const jsx = arg1(dependencyMap[3]).jsx;
@@ -21,7 +21,7 @@ const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
   const height = importDefault(dependencyMap[8])().height;
   const dependencyMap = height;
   const rect = importDefault(dependencyMap[6])();
-  const insets = importDefault(dependencyMap[7])({}).insets;
+  const insets = importDefault(dependencyMap[7])({ "Bool(false)": 1766088043, "Bool(false)": 827788593 }).insets;
   const obj = { containerBottomInset: insets.bottom - rect.bottom, windowVerticalInset: rect.top + insets.bottom };
   const containerBottomInset = obj.containerBottomInset;
   const windowVerticalInset = obj.windowVerticalInset;
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
     } while (num < diff);
     return items;
   }, items1);
-  const style = [tmp.placeholder, memo, importDefault(dependencyMap[9])({ "Null": null, "Null": null })];
+  const style = [tmp.placeholder, memo, importDefault(dependencyMap[9])({ -1359411683: null, -106827182: null })];
   return jsx(importDefault(dependencyMap[12]).View, { style, pointerEvents: "none", children });
 });
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");

@@ -456,7 +456,7 @@ function handleConnectionOpen(arg0) {
     });
   });
   if (null != obj[closure_11.getId(closure_11)]) {
-    const obj = { backgroundColor: "contain", paddingHorizontal: 72, flex: true, alignContent: "#078292", justifyContent: -18, id: closure_18 };
+    const obj = { 2076835844: "contain", -1993080828: 60, -1841692668: true, 1838481412: "#f29cc3", 835911684: null, id: closure_18 };
     const prototype = ctor.prototype;
     const tmp10 = new ctor(obj);
     obj[closure_18] = tmp10;
@@ -1131,7 +1131,7 @@ let closure_15 = arg1(dependencyMap[10]).UNSELECTED_PREMIUM_TYPE_OVERRIDE;
 const obj = {};
 let closure_17 = 0;
 let closure_18 = "47835198259242069";
-let closure_19 = ["<string:2113994386>", "<string:1191196141>", "isArray", "ref", "_desired", ""];
+let closure_19 = [];
 let tmp4 = (importDefaultResult) => {
   class UserStore {
     constructor() {

@@ -1,5 +1,5 @@
 // Module ID: 4198
-// Function ID: 36085
+// Function ID: 36092
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -220,7 +220,7 @@ let tmp5 = (Store) => {
     key: "initialize",
     value() {
       this.waitFor(closure_9, closure_8, closure_10);
-      const result = RTCConnectionStore(closure_2[18]).setVideoToggleAnalyticsParams(this.getRTCConnectionId, this.getMediaSessionId);
+      const result = RTCConnectionStore(closure_2[19]).setVideoToggleAnalyticsParams(this.getRTCConnectionId, this.getMediaSessionId);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
@@ -508,7 +508,7 @@ let tmp5 = (Store) => {
     }
   };
   return callback(RTCConnectionStore, items);
-}(importDefault(dependencyMap[19]).Store);
+}(importDefault(dependencyMap[20]).Store);
 tmp5.displayName = "RTCConnectionStore";
 tmp5 = new tmp5(importDefault(dependencyMap[13]), {
   CONNECTION_OPEN: function handleConnectionOpen(sessionId) {
@@ -725,8 +725,16 @@ tmp5 = new tmp5(importDefault(dependencyMap[13]), {
   AUDIO_SET_AUDIO_MIXER_SETTINGS: function handleAudioSetAudioMixerSettings(context) {
     if (context.context !== MediaEngineContextTypes.DEFAULT) {
       return false;
-    } else if (null != closure_15) {
-      const result = closure_15.setSpatialAudioEnabled(context.settings.enabled);
+    } else {
+      const enabled = context.settings.enabled;
+      let result = null != enabled && enabled;
+      if (result) {
+        result = arg1(dependencyMap[18]).isSpatialAudioAvailable("RTCConnectionStore");
+        const obj = arg1(dependencyMap[18]);
+      }
+      if (null != closure_15) {
+        const result1 = closure_15.setSpatialAudioEnabled(result);
+      }
     }
   },
   VOICE_SERVER_UPDATE: function handleVoiceServerUpdate(guildId) {
@@ -1004,8 +1012,16 @@ const obj = {
   AUDIO_SET_AUDIO_MIXER_SETTINGS: function handleAudioSetAudioMixerSettings(context) {
     if (context.context !== MediaEngineContextTypes.DEFAULT) {
       return false;
-    } else if (null != closure_15) {
-      const result = closure_15.setSpatialAudioEnabled(context.settings.enabled);
+    } else {
+      const enabled = context.settings.enabled;
+      let result = null != enabled && enabled;
+      if (result) {
+        result = arg1(dependencyMap[18]).isSpatialAudioAvailable("RTCConnectionStore");
+        const obj = arg1(dependencyMap[18]);
+      }
+      if (null != closure_15) {
+        const result1 = closure_15.setSpatialAudioEnabled(result);
+      }
     }
   },
   VOICE_SERVER_UPDATE: function handleVoiceServerUpdate(guildId) {
@@ -1069,12 +1085,12 @@ const obj = {
   }
 };
 const tmp2 = arg1(dependencyMap[8]);
-arg1(dependencyMap[21])(dependencyMap[20], dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
+arg1(dependencyMap[22])(dependencyMap[21], dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator((arg0) => {
     arg0.client_rtc_state = state.getState();
   });
 });
-const promise = arg1(dependencyMap[21])(dependencyMap[20], dependencyMap.paths);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("stores/RTCConnectionStore.tsx");
+const promise = arg1(dependencyMap[22])(dependencyMap[21], dependencyMap.paths);
+const result = arg1(dependencyMap[23]).fileFinishedImporting("stores/RTCConnectionStore.tsx");
 
 export default tmp5;

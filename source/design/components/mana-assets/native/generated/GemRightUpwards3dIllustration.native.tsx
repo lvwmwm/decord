@@ -1,5 +1,5 @@
 // Module ID: 6179
-// Function ID: 50190
+// Function ID: 50201
 // Name: GemRightUpwards3dIllustration
 // Dependencies: []
 // Exports: GemRightUpwards3dIllustration

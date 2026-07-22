@@ -1,5 +1,5 @@
 // Module ID: 7750
-// Function ID: 61587
+// Function ID: 61597
 // Name: getFriendAnniversaryGateConfig
 // Dependencies: []
 // Exports: getFriendAnniversaryGateConfig

@@ -1,10 +1,10 @@
-// Module ID: 14409
-// Function ID: 108698
+// Module ID: 14417
+// Function ID: 108741
 // Name: getAllServersSearchableSelectOption
 // Dependencies: []
 // Exports: default
 
-// Module 14409 (getAllServersSearchableSelectOption)
+// Module 14417 (getAllServersSearchableSelectOption)
 function getAllServersSearchableSelectOption() {
   let obj = { type: arg1(dependencyMap[8]).SelectOptionType.GUILD };
   obj = { id: closure_7 };
@@ -54,7 +54,7 @@ export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
     obj = callback4();
   }();
   const importDefault = tmp4;
-  let obj = { "Bool(false)": null, "Bool(false)": null };
+  let obj = { 1646736977: "<string:2491613185>", 1986177878: "<string:2941583362>" };
   const intl = arg1(dependencyMap[10]).intl;
   obj.placeholder = intl.string(arg1(dependencyMap[10]).t.ZImm/x);
   callback = React.useCallback((query) => function queryGuilds(query) {

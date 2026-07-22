@@ -1,5 +1,5 @@
 // Module ID: 7620
-// Function ID: 61030
+// Function ID: 61040
 // Name: generateMessageRowData
 // Dependencies: []
 // Exports: generateMessageRowData
@@ -66,5 +66,11 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   obj.forwardAccessibilityLabel = intl4.string(options(dependencyMap[3]).t.I3ltXO);
   const intl5 = options(dependencyMap[3]).intl;
   obj.threadAccessibilityLabel = intl5.string(options(dependencyMap[3]).t.rBIGBL);
+  const forcedTheme = options.forcedTheme;
+  let tmp9;
+  if (null != forcedTheme) {
+    tmp9 = forcedTheme;
+  }
+  obj.forcedTheme = tmp9;
   return obj;
 };

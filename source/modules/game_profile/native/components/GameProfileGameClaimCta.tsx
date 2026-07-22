@@ -1,10 +1,10 @@
-// Module ID: 11857
-// Function ID: 91814
+// Module ID: 11858
+// Function ID: 91828
 // Name: GameProfileGameClaimCta
 // Dependencies: []
 // Exports: default
 
-// Module 11857 (GameProfileGameClaimCta)
+// Module 11858 (GameProfileGameClaimCta)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const RelativeMarketingURLs = arg1(dependencyMap[2]).RelativeMarketingURLs;
@@ -23,7 +23,7 @@ export default function GameProfileGameClaimCta(trackAction) {
     someResult = linkedApplications.some((type) => type.type === trackAction(closure_2[6]).GameLinkTypes.OFFICIAL);
   }
   if (null == someResult) {
-    const obj = { "Bool(true)": null, "Bool(true)": null };
+    const obj = {};
     const intl = arg1(dependencyMap[8]).intl;
     obj.text = intl.string(arg1(dependencyMap[8]).t.mqg+to);
     obj.onPress = callback;

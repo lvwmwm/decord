@@ -1,10 +1,10 @@
-// Module ID: 8743
-// Function ID: 69140
+// Module ID: 8744
+// Function ID: 69152
 // Name: AvatarDecorationProductPreview
 // Dependencies: []
 // Exports: default
 
-// Module 8743 (AvatarDecorationProductPreview)
+// Module 8744 (AvatarDecorationProductPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

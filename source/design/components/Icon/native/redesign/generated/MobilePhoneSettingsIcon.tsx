@@ -1,10 +1,10 @@
-// Module ID: 14267
-// Function ID: 107830
+// Module ID: 14275
+// Function ID: 107873
 // Name: MobilePhoneSettingsIcon
 // Dependencies: []
 // Exports: MobilePhoneSettingsIcon
 
-// Module 14267 (MobilePhoneSettingsIcon)
+// Module 14275 (MobilePhoneSettingsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MobilePhoneSettingsIcon.tsx");

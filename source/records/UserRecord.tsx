@@ -233,7 +233,7 @@ let tmp5 = (importDefaultResult) => {
         storeCountry = importDefaultResult.storeCountry;
       }
       tmp2Result.storeCountry = obj8.parseStoreCountry(storeCountry);
-      obj = { "": "#ffa813", "": "absolute", channel: null };
+      obj = { "": true, ix: false, "": false };
       obj.value = function value(arg0) {
         if (arg0 <= 1073741824) {
           return ((tmp2Result.flags | tmp2Result.publicFlags) & arg0) === arg0;
@@ -248,11 +248,11 @@ let tmp5 = (importDefaultResult) => {
           return obj4.has(callback(closure_3[14]).combine(deserializeResult, deserializeResult1), deserializeResult2);
         }
       };
-      obj1 = { "": "#ffa813", "": "absolute", channel: null };
+      obj1 = { "": true, ix: false, "": false };
       obj1.value = function value() {
         return tmp2Result.hasFlag(constants.STAFF);
       };
-      obj2 = { "": "#ffa813", "": "absolute", channel: null };
+      obj2 = { "": true, ix: false, "": false };
       obj2.value = function value() {
         let tmp = !tmp2Result.hasFlag(constants.STAFF);
         if (tmp) {
@@ -260,7 +260,7 @@ let tmp5 = (importDefaultResult) => {
         }
         return tmp;
       };
-      obj3 = { "": "#ffa813", "": "absolute", channel: null };
+      obj3 = { "": true, ix: false, "": false };
       obj3.value = function value() {
         let hasFlagResult = tmp2Result.hasFlag(constants.STAFF);
         if (!hasFlagResult) {

@@ -1,7 +1,7 @@
 // Module ID: 1000
 // Function ID: 10732
 // Name: feedbackAsyncIntegration
-// Dependencies: [1010, 1034, 1040, 1035, 1041, 1042, 1043, 1044, 1045, 1039, 1046, 1011, 794, 1012, 1027, 1030, 1031, 1022, 1013, 1024, 1020, 1016, 1025, 1026, 1022, 1023, 1015, 1014, 1016, 1020, 1018, 1022, 1023, 1015, 1015, 1017, 1018]
+// Dependencies: [1010, 1034, 1040, 1035, 1041, 1042, 1043, 1044, 1045, 1039, 1046, 1011, 794, 1012, 1027, 1030, 1031, 1022, 1013, 1024, 1020, 1016, 1025, 1026, 1022, 1023, 1015, 1014, 1016, 1020, 1018, 1022, 1023, 1015, 1015, 1017, 1018, 1019, 1019, 1015]
 
 // Module 1000 (feedbackAsyncIntegration)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -140,7 +140,7 @@ export const OpenFeatureIntegrationHook = require("WINDOW").OpenFeatureIntegrati
 export const openFeatureIntegration = require("WINDOW").openFeatureIntegration;
 export const unleashIntegration = require("addPageListener").unleashIntegration;
 export const growthbookIntegration = require("getActivationStart").growthbookIntegration;
-export const statsigIntegration = require(dependencyMap[37]).statsigIntegration;
-export const diagnoseSdkConnectivity = require(dependencyMap[38]).diagnoseSdkConnectivity;
-export const registerWebWorker = require(dependencyMap[39]).registerWebWorker;
-export const webWorkerIntegration = require(dependencyMap[39]).webWorkerIntegration;
+export const statsigIntegration = require("getNavigationEntry").statsigIntegration;
+export const diagnoseSdkConnectivity = require("getNavigationEntry").diagnoseSdkConnectivity;
+export const registerWebWorker = require("WINDOW").registerWebWorker;
+export const webWorkerIntegration = require("WINDOW").webWorkerIntegration;

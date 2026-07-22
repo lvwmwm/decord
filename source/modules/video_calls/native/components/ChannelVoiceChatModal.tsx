@@ -1,10 +1,10 @@
-// Module ID: 10195
-// Function ID: 78704
+// Module ID: 10196
+// Function ID: 78717
 // Name: ChannelVoiceChatModal
 // Dependencies: []
 // Exports: default
 
-// Module 10195 (ChannelVoiceChatModal)
+// Module 10196 (ChannelVoiceChatModal)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");

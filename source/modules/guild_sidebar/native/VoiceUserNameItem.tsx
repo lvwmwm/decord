@@ -1,16 +1,16 @@
-// Module ID: 14853
-// Function ID: 111940
+// Module ID: 14861
+// Function ID: 111983
 // Name: VoiceUserNameItem
 // Dependencies: []
 // Exports: default
 
-// Module 14853 (VoiceUserNameItem)
+// Module 14861 (VoiceUserNameItem)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, tag: {}, measuringTag: { opacity: 0 } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { height: null, width: null, marginLeft: null }, tag: {}, measuringTag: { opacity: 0 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
 
@@ -74,7 +74,7 @@ export default function VoiceUserNameItem(arg0) {
   }
   const items1 = [nick, ];
   if (isGuest) {
-    const obj2 = { <string:2077996694>: null, <string:4179938721>: null, <string:3800758922>: null };
+    const obj2 = { -1405509148: -191638511062811800000000000000000000000000000000000000, -1376015004: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008670305676611304, 1209511425: 15186158511464794000000000000000000000000000000000000000000000000000000000000000000 };
     const intl = callback(dependencyMap[9]).intl;
     const items2 = ["\u2196", intl.string(callback(dependencyMap[9]).t.pFO/Ph)];
     obj2.children = items2;

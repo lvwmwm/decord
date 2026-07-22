@@ -1,5 +1,5 @@
 // Module ID: 7627
-// Function ID: 61110
+// Function ID: 61120
 // Name: getEmbedThemeColors
 // Dependencies: []
 // Exports: useEmbedThemeColors

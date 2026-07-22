@@ -1,5 +1,5 @@
 // Module ID: 4357
-// Function ID: 38653
+// Function ID: 38661
 // Name: useDisplayNameStyles
 // Dependencies: []
 // Exports: default

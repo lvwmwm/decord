@@ -1,10 +1,10 @@
-// Module ID: 5684
-// Function ID: 48927
+// Module ID: 5683
+// Function ID: 48935
 // Name: subscribeChannel
 // Dependencies: []
 // Exports: subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 5684 (subscribeChannel)
+// Module 5683 (subscribeChannel)
 function subscribeChannel(guildId, channelId, DEFAULT_RANGES) {
   let obj = importDefault(dependencyMap[0]);
   obj = { type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges: DEFAULT_RANGES };

@@ -1,10 +1,10 @@
-// Module ID: 16403
-// Function ID: 126735
+// Module ID: 16411
+// Function ID: 126777
 // Name: getCommonErrorContext
 // Dependencies: []
 // Exports: getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 16403 (getCommonErrorContext)
+// Module 16411 (getCommonErrorContext)
 function getCommonErrorContext() {
   const obj = {};
   const videoDevices = store.getVideoDevices();

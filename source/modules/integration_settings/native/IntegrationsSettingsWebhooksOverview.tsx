@@ -1,10 +1,10 @@
-// Module ID: 15400
-// Function ID: 117487
+// Module ID: 15408
+// Function ID: 117530
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15400 (_isNativeReflectConstruct)
+// Module 15408 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -144,7 +144,7 @@ let obj = arg1(dependencyMap[16]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[17]).colors.BACKGROUND_BASE_LOWER, paddingTop: 16 };
 obj.form = obj;
-obj.hint = {};
+obj.hint = { "Bool(false)": null, "Bool(false)": null };
 const tmp5 = arg1(dependencyMap[15]);
 obj.row = { padding: importDefault(dependencyMap[17]).modules.mobile.TABLE_ROW_PADDING };
 let closure_26 = obj.createLegacyClassComponentStyles(obj);
@@ -203,7 +203,7 @@ const tmp6 = (PureComponent) => {
       }
       let obj = {};
       const helpText = self.getHelpText();
-      obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: helpText };
+      obj = { cachedAt: "y", edpbxy: "isArray", children: helpText };
       const items = [callback4(WebhooksOverview(closure_2[30]).Text, obj), , ];
       let tmp4 = webhookType === constants2.INCOMING;
       if (tmp4) {

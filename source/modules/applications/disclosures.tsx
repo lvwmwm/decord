@@ -1,10 +1,10 @@
-// Module ID: 8949
-// Function ID: 70549
+// Module ID: 8950
+// Function ID: 70562
 // Name: _getDisclosures
 // Dependencies: []
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 8949 (_getDisclosures)
+// Module 8950 (_getDisclosures)
 function _getDisclosures() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

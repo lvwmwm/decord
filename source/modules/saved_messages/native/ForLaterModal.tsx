@@ -1,16 +1,16 @@
-// Module ID: 9906
-// Function ID: 76638
+// Module ID: 9907
+// Function ID: 76651
 // Name: ForLaterModal
 // Dependencies: []
 // Exports: default
 
-// Module 9906 (ForLaterModal)
+// Module 9907 (ForLaterModal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
+obj = { 9223372036854775807: null, 9223372036854775807: "hidden", 9223372036854775807: 1, 9223372036854775807: 84, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.modal = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.headerContainer = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingTop: importDefault(dependencyMap[4]).space.PX_8 };

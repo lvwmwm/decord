@@ -4,9 +4,9 @@
 // Dependencies: [0, 4294967295]
 
 // Module 1578 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "result";
+import { codegenNativeComponent } from "__exportStarResult1";
 
-const obj = { uiViewClassName: "ClippingScrollViewDecoratorView", validAttributes: { renderProductDetails: "Small", GameDepthTier5SmallBadge: "sm", EMOJI_SENTINEL: "Placeholder" } };
+const obj = { uiViewClassName: "ClippingScrollViewDecoratorView", validAttributes: {} };
 const _module = require(dependencyMap[1]);
 
 export default _module.get("ClippingScrollViewDecoratorView", () => obj);

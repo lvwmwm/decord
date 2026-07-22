@@ -1,10 +1,10 @@
-// Module ID: 11782
-// Function ID: 91415
+// Module ID: 11783
+// Function ID: 91428
 // Name: GuildDirectoryCategorySelector
 // Dependencies: []
 // Exports: default
 
-// Module 11782 (GuildDirectoryCategorySelector)
+// Module 11783 (GuildDirectoryCategorySelector)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

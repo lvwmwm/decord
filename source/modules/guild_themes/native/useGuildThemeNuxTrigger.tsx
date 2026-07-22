@@ -1,15 +1,14 @@
-// Module ID: 14867
-// Function ID: 112002
+// Module ID: 14875
+// Function ID: 112045
 // Name: useGuildThemeNuxTrigger
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14867 (useGuildThemeNuxTrigger)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
+// Module 14875 (useGuildThemeNuxTrigger)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");
 
 export default function useGuildThemeNuxTrigger(arg0) {
   const items = [closure_4];

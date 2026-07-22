@@ -1,12 +1,11 @@
-// Module ID: 14693
-// Function ID: 110838
+// Module ID: 14701
+// Function ID: 110881
 // Name: showGuildsBarFolderModal
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0]
 // Exports: hideGuildsBarFolderModal, showGuildsBarFolderModal
 
-// Module 14693 (showGuildsBarFolderModal)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModalActionCreators.tsx");
+// Module 14701 (showGuildsBarFolderModal)
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModalActionCreators.tsx");
 
 export const showGuildsBarFolderModal = function showGuildsBarFolderModal(folderId) {
   let obj = importDefault(dependencyMap[0]);

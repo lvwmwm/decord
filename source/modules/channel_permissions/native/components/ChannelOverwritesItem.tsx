@@ -1,10 +1,10 @@
-// Module ID: 8414
-// Function ID: 67057
+// Module ID: 8415
+// Function ID: 67069
 // Name: RemoveIcon
 // Dependencies: []
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 8414 (RemoveIcon)
+// Module 8415 (RemoveIcon)
 function RemoveIcon(item) {
   item = item.item;
   const arg1 = item;
@@ -205,7 +205,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 const RowType = arg1(dependencyMap[3]).RowType;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ nameWrapper: {}, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: { y: 1, isArray: 1 }, rowRemoveIconDisabled: { opacity: 0.3 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ nameWrapper: { fontWeight: null, allFiles: 0.3, audio: "PinwheelIn" }, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: {}, rowRemoveIconDisabled: { opacity: 0.3 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/channel_permissions/native/components/ChannelOverwritesItem.tsx");
 

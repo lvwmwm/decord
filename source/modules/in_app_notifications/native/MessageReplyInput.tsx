@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 79863
+// Module ID: 10351
+// Function ID: 79876
 // Name: AnimatedChatInputReplyBar
 // Dependencies: []
 // Exports: MessageReplyInput
 
-// Module 10350 (AnimatedChatInputReplyBar)
+// Module 10351 (AnimatedChatInputReplyBar)
 function AnimatedChatInputReplyBar(replying) {
   let onToggleReplyMention;
   let pendingReply;
@@ -28,7 +28,7 @@ function AnimatedChatInputReplyBar(replying) {
   }, items);
   const obj2 = arg1(dependencyMap[10]);
   const fn = function y() {
-    const obj = { height: replying(closure_2[10]).interpolate(sharedValue.get(), ["replace", "then"], [0.274, 0.101]), opacity: sharedValue.get() };
+    const obj = { height: replying(closure_2[10]).interpolate(sharedValue.get(), [77601039, 1612144654], [false, false]), opacity: sharedValue.get() };
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[10]).interpolate, sv: sharedValue, REPLY_BAR_HEIGHT: 40 };
@@ -51,18 +51,18 @@ const EmojiIntention = arg1(dependencyMap[5]).EmojiIntention;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { "Bool(true)": 1665208787, "Bool(true)": 1912603216, "Bool(true)": 24, "Bool(true)": 24, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT, marginHorizontal: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_4, borderRadius: importDefault(dependencyMap[8]).radii.lg, overflow: "hidden" };
+obj = { "Null": 705839377, "Null": 410124290, "Null": 402653184, "Null": 16777216, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT, marginHorizontal: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_4, borderRadius: importDefault(dependencyMap[8]).radii.lg, overflow: "hidden" };
 obj.inputContainer = obj;
-obj.iconsContainer = { "Null": true, "Null": true, "Bool(false)": true };
+obj.iconsContainer = { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null };
 const tmp3 = arg1(dependencyMap[6]);
 obj.input = { borderRadius: importDefault(dependencyMap[8]).radii.none, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.none, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.inputRow = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_12 };
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_12 };
 obj.placeholderText = { color: importDefault(dependencyMap[8]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-const obj4 = { no: null, name: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
-obj.replyBarContainer = obj4;
 const obj3 = { color: importDefault(dependencyMap[8]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+obj.replyBarContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
+const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
 obj.replyBarNoRedesign = { paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_8 };
 const obj5 = { paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_8 };
 obj.replyBarRedesign = { paddingLeft: importDefault(dependencyMap[8]).space.PX_4 };
@@ -199,7 +199,7 @@ export const MessageReplyInput = function MessageReplyInput(notification) {
   obj6.onChangeText = tmp2[1];
   items4[1] = callback2(arg1(dependencyMap[27]).NativeTextInput, obj6);
   const obj7 = { style: tmp11.iconsContainer };
-  const obj8 = { "Bool(true)": false, "Bool(true)": false };
+  const obj8 = {};
   const obj9 = { size: "sm", color: importDefault(dependencyMap[8]).colors.CHAT_INPUT_ICON_DEFAULT_TINT };
   obj8.icon = callback2(arg1(dependencyMap[28]).ReactionIcon, obj9);
   obj8.onPress = callback;

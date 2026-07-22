@@ -295,7 +295,7 @@ if (tmp6) {
   tmp6 = "getHighEntropyValues" in userAgentData;
 }
 if (tmp6) {
-  const highEntropyValues = userAgentData.getHighEntropyValues(["3", "3:30", "30", "clock", "thirty"]);
+  const highEntropyValues = userAgentData.getHighEntropyValues(["x", "exports", "isArray", "Array", "isArray"]);
   highEntropyValues.then((platform) => {
     let closure_6 = platform.platform || "";
     let closure_8 = platform.architecture || "";

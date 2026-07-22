@@ -5,9 +5,9 @@
 // Exports: default
 
 // Module 413 (returnsFalse)
-let closure_3 = [null];
-let closure_4 = [null, null, null, null, null, null, null, null];
-let closure_5 = ["\u00D7", "bot\u00F3n con marca de cruz"];
+let closure_3 = [];
+let closure_4 = ["x", 399769602, 944832513, -866827257, -1362231292, -639238143, -162529279, 1985019905];
+let closure_5 = ["<string:3655729153>", "<string:4132438017>"];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

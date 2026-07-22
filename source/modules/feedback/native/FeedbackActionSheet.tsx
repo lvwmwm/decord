@@ -1,10 +1,10 @@
-// Module ID: 9513
-// Function ID: 74046
+// Module ID: 9514
+// Function ID: 74059
 // Name: closeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9513 (closeActionSheet)
+// Module 9514 (closeActionSheet)
 function closeActionSheet() {
   importDefault(dependencyMap[7]).hideActionSheet();
 }
@@ -179,7 +179,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
   items3[2] = tmp31;
   let tmp36 = null;
   if (!hideDontShowAgainCheckbox) {
-    const obj6 = { bind: null, cursor: null, checked: first2 };
+    const obj6 = { 400888199: null, 2091392542: null, checked: first2 };
     const intl = arg1(dependencyMap[25]).intl;
     obj6.label = intl.string(arg1(dependencyMap[25]).t.5E9SB9);
     obj6.onPress = function onPress() {

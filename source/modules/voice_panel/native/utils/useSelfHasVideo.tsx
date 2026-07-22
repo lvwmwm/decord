@@ -1,10 +1,10 @@
-// Module ID: 15642
-// Function ID: 119474
+// Module ID: 15650
+// Function ID: 119517
 // Name: useSelfHasVideo
 // Dependencies: []
 // Exports: default
 
-// Module 15642 (useSelfHasVideo)
+// Module 15650 (useSelfHasVideo)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

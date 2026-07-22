@@ -1,5 +1,5 @@
 // Module ID: 4773
-// Function ID: 41460
+// Function ID: 41469
 // Name: getResourceBlock
 // Dependencies: []
 
@@ -82,7 +82,7 @@ function parseTags(byteLength, size) {
 }
 function readTag(getUint8, offset) {
   if (getUint8.getUint8(offset) !== 28) {
-    return { <string:1890668892>: "decimal-pad", <string:3159512673>: "number-pad" };
+    return { "Null": 22817347, "Null": 18467840 };
   } else {
     const uint16 = getUint8.getUint16(offset + 1);
     const uint161 = getUint8.getUint16(offset + 3);

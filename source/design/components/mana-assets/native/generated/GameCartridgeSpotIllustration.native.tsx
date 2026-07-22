@@ -1,5 +1,5 @@
 // Module ID: 6065
-// Function ID: 50019
+// Function ID: 50030
 // Name: GameCartridgeSpotIllustration
 // Dependencies: []
 // Exports: GameCartridgeSpotIllustration

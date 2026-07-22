@@ -1,14 +1,12 @@
 // Module ID: 6429
-// Function ID: 50565
+// Function ID: 50576
 // Name: QrCodeLoginSpotIllustration
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: QrCodeLoginSpotIllustration
 
 // Module 6429 (QrCodeLoginSpotIllustration)
-import result from "result";
-
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeLoginSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeLoginSpotIllustration.native.tsx");
 
 export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(width) {
   let accessibilityLabel;

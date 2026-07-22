@@ -1,10 +1,10 @@
-// Module ID: 13433
-// Function ID: 101976
+// Module ID: 13440
+// Function ID: 102009
 // Name: formatSettingsRowTrailing
 // Dependencies: []
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 13433 (formatSettingsRowTrailing)
+// Module 13440 (formatSettingsRowTrailing)
 function formatSettingsRowTrailing(trailing) {
   if (null != trailing) {
     let tmp = trailing;
@@ -55,7 +55,7 @@ function SettingSearchResultBreadcrumbs(breadcrumbs) {
   breadcrumbs = breadcrumbs.breadcrumbs;
   let tmp = null;
   if (0 !== breadcrumbs.length) {
-    const obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children: breadcrumbs.join(" \u2192 ") };
+    const obj = { cachedAt: "center", edpbxy: "center", children: breadcrumbs.join(" \u2192 ") };
     tmp = callback3(arg1(dependencyMap[32]).Text, obj);
   }
   return tmp;
@@ -201,8 +201,8 @@ function SettingSearchResultPlaceholder(arg0) {
   obj.icon = callback3(View, obj);
   return callback3(arg1(dependencyMap[12]).TableRow, obj);
 }
-let closure_3 = ["<string:4109424709>", "<string:1072585034>", "<string:3999473546>", "<string:1071923802>", "%MapPrototype%", "<string:20542208>", "<string:10289152>", "isArray", "<string:2457010176>"];
-let closure_4 = [null];
+let closure_3 = [];
+let closure_4 = ["kok-Latn"];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -219,7 +219,7 @@ obj = { marginTop: importDefault(dependencyMap[10]).space.PX_16, marginBottom: i
 obj.slider = obj;
 obj.sliderTitle = { "Bool(false)": false, "Bool(false)": 0 };
 obj.radioSettingHighlight = { top: 26 };
-obj1 = { "Bool(false)": "number", "Bool(false)": "number", "Bool(false)": "mY3Y38", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
+obj1 = { __v_isVNode: "string", _$esjava$I_x: "string", EmbeddedActivitiesStore: "color", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 obj.defaultIcon = obj1;
 const obj2 = { width: arg1(dependencyMap[11]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[11]).AvatarSizes.REFRESH_MEDIUM_32], height: arg1(dependencyMap[11]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[11]).AvatarSizes.REFRESH_MEDIUM_32], borderRadius: importDefault(dependencyMap[10]).radii.xl, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
 obj.placeholderAvatar = obj2;
@@ -478,7 +478,7 @@ let closure_22 = importAllResult.memo((arg0) => {
   };
   const items = [callback3(arg1(dependencyMap[23]).TableRadioGroup, obj, combined), ];
   if (highlightSettingItem) {
-    const obj1 = { bind: null, cursor: null, style: tmp.radioSettingHighlight };
+    const obj1 = { 400888199: null, 2091392542: null, style: tmp.radioSettingHighlight };
     highlightSettingItem = callback3(importDefault(dependencyMap[20]), obj1);
   }
   items[1] = highlightSettingItem;
@@ -701,14 +701,14 @@ let closure_25 = importAllResult.memo((useTrailing) => {
   }
   obj = { start, end, shadow: "none", border: "none" };
   obj = {};
-  const obj1 = { 0: true, -9223372036854775808: true };
+  const obj1 = { "Null": true, "Null": true };
   const obj2 = { style: tmp4.sliderTitle };
   const items7 = [callback3(arg1(dependencyMap[32]).Text, { variant: "text-md/semibold", children: title }), trailing];
   obj2.children = items7;
   const items8 = [callback4(closure_8, obj2), ];
   let tmp20Result = null != first;
   if (tmp20Result) {
-    const obj3 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+    const obj3 = { cachedAt: "y", edpbxy: "isArray" };
     if (null == formatPercentResult) {
       let obj6 = arg1(dependencyMap[33]);
       const formatPercentResult = obj6.formatPercent(stateFromStores, first);

@@ -1,5 +1,5 @@
 // Module ID: 6976
-// Function ID: 55742
+// Function ID: 55753
 // Name: _findPlayingActivity
 // Dependencies: []
 // Exports: useGetStreamApplication

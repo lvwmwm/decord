@@ -1,9 +1,9 @@
-// Module ID: 13969
-// Function ID: 106175
+// Module ID: 13976
+// Function ID: 106215
 // Name: QUEST_DOCK_EXPANDED_HEIGHT
 // Dependencies: []
 
-// Module 13969 (QUEST_DOCK_EXPANDED_HEIGHT)
+// Module 13976 (QUEST_DOCK_EXPANDED_HEIGHT)
 let QUEST_DOCK_EXPANDED_HEIGHT;
 let StyleSheet;
 let closure_3 = importDefault(dependencyMap[0]);

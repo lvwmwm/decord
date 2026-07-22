@@ -1,10 +1,10 @@
-// Module ID: 15707
-// Function ID: 120049
+// Module ID: 15715
+// Function ID: 120092
 // Name: ActivityActionOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 15707 (ActivityActionOverlay)
+// Module 15715 (ActivityActionOverlay)
 function ActivityActionOverlay(arg0) {
   let action;
   let activityItem;
@@ -65,7 +65,7 @@ function ParticipantsText(arg0) {
   ({ participantsContainer: arr2[0], overlayBubble: arr2[1] } = tmp);
   obj = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[19]).Icon.Sizes.EXTRA_SMALL, color: "white" };
   const items1 = [callback(arg1(dependencyMap[19]).Icon, obj), ];
-  const obj1 = { style: tmp.participantsText };
+  const obj1 = { -9223372036854775808: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, style: tmp.participantsText };
   if (action === arg1(dependencyMap[7]).ActivityAction.START) {
     const maxParticipants = activityItem.application.maxParticipants;
     let num4 = 0;
@@ -94,18 +94,18 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.container = obj;
-obj.imageOuterContainer = { margin: null, backgroundColor: null };
-obj.ongoingActivityJoinedContainer = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.imageOuterContainer = { "Bool(false)": null, "Bool(false)": null };
+obj.ongoingActivityJoinedContainer = { <string:3429215444>: null, <string:2700849644>: null, <string:1682856529>: null, <string:1649667276>: null, <string:1689048145>: null };
 const obj1 = {};
 const tmp2 = arg1(dependencyMap[2]);
 obj1.backgroundColor = arg1(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[4]).unsafe_rawColors.BLACK, 0.5);
 obj1.borderRadius = importDefault(dependencyMap[4]).radii.round;
 obj.overlayBubble = obj1;
 obj.participantsContainer = {};
-obj.participantsText = { <string:2529515178>: true, <string:1538995952>: true };
+obj.participantsText = { position: false, opacity: false };
+const obj2 = { <string:1515313329>: false, <string:1927696974>: false, <string:4132668422>: false, <string:2917373318>: false, <string:67523048>: false, <string:2488679268>: false, <string:50090844>: false, <string:2858461793>: false, <string:55685473>: false, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
+obj.developerIconContainer = obj2;
 const obj5 = arg1(dependencyMap[5]);
-obj.developerIconContainer = { borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
-const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
 obj.developerIconColor = { color: importDefault(dependencyMap[4]).colors.WHITE };
 let closure_8 = obj.createStyles(obj);
 const obj3 = { color: importDefault(dependencyMap[4]).colors.WHITE };
@@ -137,11 +137,11 @@ export default function ActivityShelfItem(arg0) {
   ({ width, height } = itemDimensions);
   const result = width * importDefault(dependencyMap[10])();
   const id = closure_3.useId();
-  let obj = { activityItem, context, guildId, locationObject, onActivityItemSelected, embeddedActivitiesManager: importDefault(dependencyMap[11]), backgroundResolution: result, assetNames: ["RollOutRight"], launchingComponentId: id, commandOrigin: arg1(dependencyMap[12]).CommandOrigin.VOICE_UI };
+  let obj = { activityItem, context, guildId, locationObject, onActivityItemSelected, embeddedActivitiesManager: importDefault(dependencyMap[11]), backgroundResolution: result, assetNames: ["ETHERNET"], launchingComponentId: id, commandOrigin: arg1(dependencyMap[12]).CommandOrigin.VOICE_UI };
   const tmp5Result = importDefault(dependencyMap[7])(obj);
   const activityAction = tmp5Result.activityAction;
   ({ imageBackground, onActivityItemSelected: onActivityItemSelected2, labelType } = tmp5Result);
-  obj = { applicationId: activityItem.application.id, size: result, names: [-242739878136961300000000000000000] };
+  obj = { applicationId: activityItem.application.id, size: result, names: [240518194] };
   let tmp7 = importDefault(dependencyMap[13])(obj);
   let tmp8 = !disableBadges;
   if (tmp8) {

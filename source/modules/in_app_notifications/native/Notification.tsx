@@ -1,10 +1,10 @@
-// Module ID: 10296
-// Function ID: 79475
+// Module ID: 10297
+// Function ID: 79488
 // Name: NotificationPressable
 // Dependencies: []
 // Exports: NotificationPressable
 
-// Module 10296 (NotificationPressable)
+// Module 10297 (NotificationPressable)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ MIN_SWIPE_VELOCITY: closure_4, STARTED_SWIPE_THRESHOLD: closure_5 } = tmp2);
@@ -19,15 +19,17 @@ obj["borderRadius"] = importDefault(dependencyMap[5]).radii.lg;
 obj["maxWidth"] = tmp2.NOTIFICATION_MAX_WIDTH;
 obj["width"] = "100%";
 obj["alignSelf"] = "center";
+obj["borderWidth"] = 1;
+obj["borderColor"] = importDefault(dependencyMap[5]).colors.BORDER_SUBTLE;
 obj.shadow = obj;
 const tmp3 = arg1(dependencyMap[3]);
-obj.container = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, overflow: "hidden" };
+obj.container = { borderRadius: importDefault(dependencyMap[5]).radii.lg, overflow: "hidden" };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = {};
 let closure_11 = { code: "function NotificationTsx1(){const{withSpring,scale,ON_PRESS_SPRING_CONFIG}=this.__closure;return{transform:[{scale:withSpring(scale.get(),ON_PRESS_SPRING_CONFIG)}]};}" };
 let closure_12 = { code: "function NotificationTsx2(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('timeout');}}" };
 let closure_13 = { code: "function NotificationTsx3(){const{withTiming,expandedSV,tokens,Easing}=this.__closure;return{borderRadius:withTiming(expandedSV.get()?tokens.radii.xl:tokens.radii.lg,{duration:220,easing:Easing.bezier(0.16,1,0.3,1)})};}" };
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, overflow: "hidden" };
+const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.lg, overflow: "hidden" };
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/in_app_notifications/native/Notification.tsx");
 
 export const NotificationPressable = function NotificationPressable(notification) {
@@ -232,13 +234,7 @@ export const NotificationPressable = function NotificationPressable(notification
   obj2["onAccessibilityEscape"] = function onAccessibilityEscape() {
     return handleDismissNotification("accessibility_escape");
   };
-  const items9 = [tmp3.container, ];
-  let tmp22 = null;
-  if (isExpandableNotification) {
-    tmp22 = animatedStyle1;
-  }
-  items9[1] = tmp22;
-  obj2["style"] = items9;
+  obj2["style"] = tmp3.container;
   obj2["androidRippleConfig"] = memo1;
   obj2["onPress"] = callback4;
   obj2["onPressIn"] = callback;
@@ -246,15 +242,15 @@ export const NotificationPressable = function NotificationPressable(notification
   obj2["onLongPress"] = callback5;
   obj2["accessibilityRole"] = "button";
   obj3 = { icon, children, accessoryLabelNode, rightAccessory, header, showDragHandle: flag, onAccessibilityExpand, bodyStyle, expandedContentVisible };
-  const items10 = [notificationGestureY(importDefault(dependencyMap[14]), obj3), , ];
-  let tmp23 = null;
+  const items9 = [notificationGestureY(importDefault(dependencyMap[14]), obj3), , ];
+  let tmp22 = null;
   if (tmp12) {
     const obj4 = { canExpand: obj6.useCanExpandInAppNotification("NotificationPressable").canExpand, percent: sharedValue1, type };
-    tmp23 = notificationGestureY(importDefault(dependencyMap[15]), obj4);
+    tmp22 = notificationGestureY(importDefault(dependencyMap[15]), obj4);
   }
-  items10[1] = tmp23;
-  items10[2] = expandableContent;
-  obj2["children"] = items10;
+  items9[1] = tmp22;
+  items9[2] = expandableContent;
+  obj2["children"] = items9;
   obj1.children = velocityY(arg1(dependencyMap[13]).PressableHighlight, obj2);
   return notificationGestureY(importDefault(dependencyMap[8]).View, obj1);
 };

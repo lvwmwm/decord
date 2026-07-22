@@ -1,10 +1,10 @@
-// Module ID: 13789
-// Function ID: 104283
+// Module ID: 13796
+// Function ID: 104316
 // Name: getRevealProgress
 // Dependencies: []
 // Exports: useBountiesRecapScroll
 
-// Module 13789 (getRevealProgress)
+// Module 13796 (getRevealProgress)
 let closure_0 = importAll(dependencyMap[0]);
 let closure_1 = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
 const tmp2 = () => {

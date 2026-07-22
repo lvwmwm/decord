@@ -1,10 +1,10 @@
-// Module ID: 13899
-// Function ID: 105131
+// Module ID: 13906
+// Function ID: 105171
 // Name: openVideoQuestModal
 // Dependencies: []
 // Exports: default
 
-// Module 13899 (openVideoQuestModal)
+// Module 13906 (openVideoQuestModal)
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/quests/native/VideoQuestModal/openVideoQuestModal.tsx");
 

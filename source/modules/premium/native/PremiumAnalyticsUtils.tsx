@@ -1,5 +1,5 @@
 // Module ID: 7151
-// Function ID: 57702
+// Function ID: 57713
 // Name: getBaseAnalyticsFields
 // Dependencies: []
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted

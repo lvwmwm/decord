@@ -1,5 +1,5 @@
 // Module ID: 7518
-// Function ID: 60197
+// Function ID: 60208
 // Name: _getRequireWildcardCache
 // Dependencies: []
 
@@ -84,7 +84,7 @@ if (!_module1) {
 let closure_5 = require(dependencyMap[4]);
 let closure_6 = _module(require(dependencyMap[5]));
 let closure_7 = require(dependencyMap[6]);
-let closure_8 = [278959, 75742532, 72731904, 74502400, 70346496, 1592082944, 1592131588, -1438253052, 939524580, 1224737072, -1862270350, 771752394];
+let closure_8 = ["ignore_users", "block_users", "leave_guild", "delete_message", "deauthorize_app", "share_with_parents", "YouTube", "TikTok", "strong", "em", "u", "text"];
 
 export default value.default.forwardRef(function SliderComponent(onSlidingComplete, ref) {
   let onSlidingStart;
@@ -244,7 +244,7 @@ export default value.default.forwardRef(function SliderComponent(onSlidingComple
   }
   obj4.thumbImage = thumbImage;
   obj4.ref = ref;
-  const items4 = [{ zIndex: 1, width: tmp16 }, defaultSlider, { flexDirection: null, justifyContent: null }];
+  const items4 = [{ zIndex: 1, width: tmp16 }, defaultSlider, { "Bool(true)": null, "Bool(true)": null }];
   obj4.style = items4;
   obj4.onChange = onValueChangeEvent;
   obj4.onRNCSliderSlidingStart = fn;

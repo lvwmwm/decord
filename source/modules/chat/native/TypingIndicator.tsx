@@ -1,9 +1,9 @@
-// Module ID: 11361
-// Function ID: 88347
+// Module ID: 11362
+// Function ID: 88360
 // Name: TypingIndicatorInner
 // Dependencies: []
 
-// Module 11361 (TypingIndicatorInner)
+// Module 11362 (TypingIndicatorInner)
 function TypingIndicatorInner(cleanUp) {
   let channel;
   let transitionState;
@@ -144,12 +144,12 @@ const SlowmodeType = arg1(dependencyMap[3]).SlowmodeType;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { paddingTop: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_PADDING_TOP, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT };
+obj = { -2130739457: false, -2063629569: false, 2147452671: false, -2080407041: false, paddingTop: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_PADDING_TOP, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT };
 obj.typingWrapper = obj;
 obj1 = { backgroundColor: "transparent", paddingRight: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
 obj.floatingWrapper = obj1;
-obj.wrapperHoriz = { resultCount: true, stickerResults: true, nonStickerResults: true };
-const obj2 = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, marginRight: importDefault(dependencyMap[6]).space.PX_8 };
+obj.wrapperHoriz = { "Null": "w", "Null": "Array", "Null": "isArray" };
+const obj2 = { backgroundColor: null, accessibilityRole: 0, "Null": null, "Null": 128, marginRight: importDefault(dependencyMap[6]).space.PX_8 };
 obj.horiz = obj2;
 obj.text = { flex: 1 };
 let closure_9 = obj1.createStyles(obj);

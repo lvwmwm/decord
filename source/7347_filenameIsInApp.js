@@ -1,7 +1,7 @@
 // Module ID: 7347
-// Function ID: 59241
+// Function ID: 59252
 // Name: filenameIsInApp
-// Dependencies: [465895424]
+// Dependencies: []
 
 // Module 7347 (filenameIsInApp)
 function filenameIsInApp(str) {
@@ -138,6 +138,6 @@ function _parseIntOrUndefined(replaced) {
 arg5.filenameIsInApp = filenameIsInApp;
 arg5.node = node;
 arg5.nodeStackLineParser = function nodeStackLineParser(arg0) {
-  const items = [, node(arg0)];
+  const items = ["<string:176378432>", node(arg0)];
   return items;
 };

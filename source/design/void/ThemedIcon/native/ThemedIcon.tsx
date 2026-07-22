@@ -1,10 +1,10 @@
-// Module ID: 12889
-// Function ID: 98423
+// Module ID: 12896
+// Function ID: 98456
 // Name: ThemedIcon
 // Dependencies: []
 // Exports: default
 
-// Module 12889 (ThemedIcon)
+// Module 12896 (ThemedIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/ThemedIcon/native/ThemedIcon.tsx");

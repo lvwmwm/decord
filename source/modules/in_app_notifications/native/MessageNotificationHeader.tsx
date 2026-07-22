@@ -1,10 +1,10 @@
-// Module ID: 10299
-// Function ID: 79506
+// Module ID: 10300
+// Function ID: 79519
 // Name: LocationText
 // Dependencies: []
 // Exports: SimpleNotificationHeader, default
 
-// Module 10299 (LocationText)
+// Module 10300 (LocationText)
 function LocationText(channel) {
   let _location;
   let author;
@@ -50,7 +50,7 @@ function LocationText(channel) {
     tmp5 = callback(arg1(dependencyMap[8]).Text, obj);
   }
   const items1 = [tmp5, memo, ];
-  obj = { <string:1643205302>: 220545491, <string:1415816450>: -144637950, <string:4283523744>: 684545, color: str, style: tmp.secondaryText, children: _location };
+  obj = { 803799044: 19066945, 1269170180: 32989440, 711589892: 2674, color: str, style: tmp.secondaryText, children: _location };
   items1[2] = callback(arg1(dependencyMap[8]).Text, obj);
   obj.children = items1;
   return closure_8(View, obj);
@@ -65,13 +65,13 @@ let closure_9 = Object.freeze({ radius: 12 });
 let closure_10 = Object.freeze({});
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
-obj.headerContent = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
-obj.primaryText = { "Bool(false)": null, "Bool(false)": null };
+obj.headerContent = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true };
+obj.primaryText = { "Bool(false)": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
 obj.secondaryTextContainer = {};
 obj.separator = { marginHorizontal: 2 };
-obj.icon = {};
+obj.icon = { "Null": null, "Null": null };
 obj.secondaryText = { flex: 1 };
 let closure_11 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
@@ -150,7 +150,7 @@ export default function MessageNotificationHeader(arg0) {
   const obj1 = { style: tmp.headerContent };
   let tmp25 = null != author;
   if (tmp25) {
-    obj2 = {};
+    obj2 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>" };
     const items1 = [tmp.primaryText, tmp4];
     obj2.style = items1;
     obj2.children = author.nick;
@@ -177,7 +177,7 @@ export default function MessageNotificationHeader(arg0) {
     obj4.onPress = function onPress() {
       return onDismiss("close_from_expanded");
     };
-    const obj5 = { color: "icon-subtle", style: { y: 0, isArray: -1048576 } };
+    const obj5 = { color: "icon-subtle", style: {} };
     obj4.children = callback(arg1(dependencyMap[17]).XSmallIcon, obj5);
     expanded = callback(arg1(dependencyMap[15]).PressableOpacity, obj4);
   }
@@ -192,15 +192,18 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   ({ text, labelStyle } = secondaryText);
   const tmp = callback3();
   let obj = { style: tmp.container };
+  obj = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>" };
   const items = [tmp.primaryText, labelStyle];
-  const items1 = [callback(arg1(dependencyMap[8]).Text, { style: items, children: text }), ];
+  obj.style = items;
+  obj.children = text;
+  const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
   let tmp4 = null != secondaryText;
   if (tmp4) {
     obj = { style: tmp.secondaryTextContainer };
-    obj = { paddingTop: null, textTransform: 10, absolute: -2, tall: true, wide: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
-    const items2 = [callback(arg1(dependencyMap[8]).Text, obj), ];
-    const obj1 = { style: tmp.secondaryText, children: secondaryText };
-    items2[1] = callback(arg1(dependencyMap[8]).Text, obj1);
+    const obj1 = { 9223372036854775807: null, 9223372036854775807: 10, -9223372036854775808: -2, 9223372036854775807: true, -3686377997734313984: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
+    const items2 = [callback(arg1(dependencyMap[8]).Text, obj1), ];
+    const obj2 = { style: tmp.secondaryText, children: secondaryText };
+    items2[1] = callback(arg1(dependencyMap[8]).Text, obj2);
     obj.children = items2;
     tmp4 = callback2(View, obj);
   }

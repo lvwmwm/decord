@@ -1,10 +1,10 @@
-// Module ID: 11310
-// Function ID: 87993
+// Module ID: 11311
+// Function ID: 88006
 // Name: PollDurationRadioGroup
 // Dependencies: []
 // Exports: default
 
-// Module 11310 (PollDurationRadioGroup)
+// Module 11311 (PollDurationRadioGroup)
 function PollDurationRadioGroup(onChange) {
   onChange = onChange.onChange;
   const arg1 = onChange;

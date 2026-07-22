@@ -1,9 +1,9 @@
-// Module ID: 15593
-// Function ID: 119012
+// Module ID: 15601
+// Function ID: 119055
 // Name: BaseLeaveActivityButton
 // Dependencies: []
 
-// Module 15593 (BaseLeaveActivityButton)
+// Module 15601 (BaseLeaveActivityButton)
 class BaseLeaveActivityButton {
   constructor(arg0) {
     obj = { onPress: global.onPress };

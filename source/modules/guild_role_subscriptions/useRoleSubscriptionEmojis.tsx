@@ -1,10 +1,10 @@
-// Module ID: 16320
-// Function ID: 125943
+// Module ID: 16328
+// Function ID: 125985
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 16320 (items)
+// Module 16328 (items)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const items = [];

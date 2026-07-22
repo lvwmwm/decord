@@ -1,14 +1,13 @@
-// Module ID: 15882
-// Function ID: 121657
+// Module ID: 15890
+// Function ID: 121700
 // Name: showTakeoverModal
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: showTakeoverModal
 
-// Module 15882 (showTakeoverModal)
-import { TAKEOVER_MODAL_KEY } from "result";
-import result from "result";
+// Module 15890 (showTakeoverModal)
+import { TAKEOVER_MODAL_KEY } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx");
 
 export const showTakeoverModal = function showTakeoverModal(arg0) {
   let channelId;

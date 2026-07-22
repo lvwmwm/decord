@@ -1,8 +1,8 @@
-// Module ID: 11286
-// Function ID: 87836
+// Module ID: 11287
+// Function ID: 87849
 // Dependencies: []
 
-// Module 11286
+// Module 11287
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_5 = arg1(dependencyMap[2]).createStyles((arg0, arg1, height) => {
@@ -13,7 +13,7 @@ let closure_5 = arg1(dependencyMap[2]).createStyles((arg0, arg1, height) => {
   obj.height = height;
   obj.width = height;
   if (arg0) {
-    obj = { "Null": null, "Null": null };
+    obj = { <string:3596066964>: null, <string:3638417373>: null };
   } else {
     obj = { paddingHorizontal: importDefault(dependencyMap[3]).modules.mobile.CHAT_INPUT_PILL_PADDING, paddingVertical: importDefault(dependencyMap[3]).modules.mobile.CHAT_INPUT_PILL_PADDING };
   }

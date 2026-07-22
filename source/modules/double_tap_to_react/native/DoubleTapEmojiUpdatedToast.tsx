@@ -1,10 +1,10 @@
-// Module ID: 9331
-// Function ID: 72923
+// Module ID: 9332
+// Function ID: 72936
 // Name: ToastEmoji
 // Dependencies: []
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9331 (ToastEmoji)
+// Module 9332 (ToastEmoji)
 class ToastEmoji {
   constructor(arg0) {
     emoji = global.emoji;

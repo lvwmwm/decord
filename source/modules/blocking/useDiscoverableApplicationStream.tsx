@@ -1,10 +1,10 @@
-// Module ID: 9057
-// Function ID: 71113
+// Module ID: 9058
+// Function ID: 71126
 // Name: getDiscoverableApplicationStream
 // Dependencies: []
 // Exports: default
 
-// Module 9057 (getDiscoverableApplicationStream)
+// Module 9058 (getDiscoverableApplicationStream)
 function getDiscoverableApplicationStream(id) {
   let obj;
   let obj2;

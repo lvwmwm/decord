@@ -1,5 +1,5 @@
 // Module ID: 7476
-// Function ID: 60005
+// Function ID: 60016
 // Name: StartStageChannelEventActionSheet
 // Dependencies: []
 // Exports: default
@@ -17,14 +17,14 @@ let closure_12 = arg1(dependencyMap[7]).GuildScheduledEventPrivacyLevel;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { padding: 16 }, header: { accessibilityRole: 24, GuildBadgeFrog: "recent_games_enabled" }, headerTitle: {}, headerSubtitle: { textAlign: "center" } };
+obj = { container: { padding: 16 }, header: { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 }, headerTitle: {}, headerSubtitle: { textAlign: "center" } };
 obj = { borderRadius: importDefault(dependencyMap[10]).radii.xs, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.textInput = obj;
 obj.startButton = { marginTop: 16 };
-obj.buttonSubtitle = { "Bool(false)": null, "Bool(false)": null };
+obj.buttonSubtitle = { selected: null, align: null };
 const tmp4 = arg1(dependencyMap[8]);
 obj.ageVerificationNotice = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-const obj2 = { getCurrentUser: false, useMemo: false, fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
+const obj2 = { "Bool(true)": null, "Bool(true)": null, fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
 obj.error = obj2;
 let closure_15 = obj.createStyles(obj);
 const obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
@@ -177,7 +177,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   items2[5] = callback(View, obj8);
   let tmp44 = null != stringResult2 && !shouldAgeVerifyToSpeakForCurrentUser;
   if (tmp44) {
-    const obj10 = { 9223372036854775807: "{{count}} \u0433\u043E\u0434", 0: "{{count}} \u0433\u043E\u0434\u0430", 9223372036854775807: "{{count}} \u043B\u0435\u0442", 0: "\u0431\u043E\u043B\u044C\u0448\u0435 {{count}} \u0433\u043E\u0434\u0430", style: tmp.buttonSubtitle };
+    const obj10 = { style: tmp.buttonSubtitle };
     const intl11 = arg1(closure_3[21]).intl;
     obj10.children = intl11.string(arg1(closure_3[21]).t.gR66jX);
     tmp44 = callback(arg1(closure_3[20]).Text, obj10);

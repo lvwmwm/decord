@@ -1,10 +1,10 @@
-// Module ID: 10001
-// Function ID: 77306
+// Module ID: 10002
+// Function ID: 77319
 // Name: GuildNSFW
 // Dependencies: []
 // Exports: default
 
-// Module 10001 (GuildNSFW)
+// Module 10002 (GuildNSFW)
 let closure_3 = [8.477];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);

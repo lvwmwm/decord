@@ -1,10 +1,10 @@
-// Module ID: 15390
-// Function ID: 117423
+// Module ID: 15398
+// Function ID: 117466
 // Name: isGuildEligibleForStageChannels
 // Dependencies: []
 // Exports: useGuildEligibleForStageChannels
 
-// Module 15390 (isGuildEligibleForStageChannels)
+// Module 15398 (isGuildEligibleForStageChannels)
 function isGuildEligibleForStageChannels(id) {
   let obj;
   let tmp = arg1;

@@ -1,11 +1,11 @@
 // Module ID: 14262
-// Function ID: 107803
+// Function ID: 107792
 // Dependencies: []
 
 // Module 14262
-Object.defineProperty(arg5, "WebView", {
-  enumerable: true,
-  get() {
-    return arg1(arg6[0]).WebView;
-  }
-});
+const _module = require(dependencyMap[0]);
+
+export const getYoutubeMeta = require(dependencyMap[2]).PLAYER_ERROR_NAMES;
+export const PLAYER_STATES = require(dependencyMap[2]).PLAYER_ERROR_NAMES;
+export const PLAYER_ERRORS = require(dependencyMap[2]).PLAYER_ERROR_NAMES;
+export default _module(require(dependencyMap[3])).default;

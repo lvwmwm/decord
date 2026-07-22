@@ -15,7 +15,7 @@ async function _diagnoseSdkConnectivity() {
       if (!tunnel) {
         str3 = "https://o447951.ingest.sentry.io/api/4509632503087104/envelope/?sentry_version=7&sentry_key=c1dfb07d783ad5325c245c1fd3725390&sentry_client=sentry.javascript.browser%2F1.33.7";
       }
-      yield str3(closure_1[1]).suppressTracing(() => fetch(str3, { "Null": true, "Null": true, "Null": true, "Null": true }));
+      yield str3(closure_1[1]).suppressTracing(() => fetch(str3, { <string:2690405947>: "scaleChange", <string:140796500>: "getVoiceChannelBadgeExperiment", <string:1401660095>: "mediaType", <string:3279245136>: "MAX_MESSAGE_CACHE_SIZE" }));
     } else {
       return "no-dsn-configured";
     }

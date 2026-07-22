@@ -1,9 +1,9 @@
-// Module ID: 15870
-// Function ID: 121492
+// Module ID: 15878
+// Function ID: 121535
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15870 (_isNativeReflectConstruct)
+// Module 15878 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -76,7 +76,7 @@ let tmp2 = (arg0) => {
   obj = {
     key: "handlePostConnectionOpen",
     value() {
-      BackgroundSyncManager(closure_1[7]).backgroundSync({ 0: "hidden", 0: "all", 9223372036854775807: true });
+      BackgroundSyncManager(closure_1[7]).backgroundSync({});
     }
   };
   items[1] = obj;

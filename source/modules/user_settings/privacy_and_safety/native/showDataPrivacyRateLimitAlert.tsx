@@ -1,10 +1,10 @@
-// Module ID: 13638
-// Function ID: 103340
+// Module ID: 13645
+// Function ID: 103373
 // Name: showDataPrivacyRateLimitAlert
 // Dependencies: []
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 13638 (showDataPrivacyRateLimitAlert)
+// Module 13645 (showDataPrivacyRateLimitAlert)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/showDataPrivacyRateLimitAlert.tsx");
 

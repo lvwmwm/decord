@@ -1,5 +1,5 @@
 // Module ID: 8023
-// Function ID: 63689
+// Function ID: 63699
 // Name: peg$SyntaxError
 // Dependencies: []
 
@@ -214,13 +214,13 @@ function peg$subclass(peg$SyntaxError, Error) {
 }(peg$SyntaxError, Error);
 
 export default {
-  StartRules: ["<string:1078129006>"],
+  StartRules: ["alignItems"],
   SyntaxError: peg$SyntaxError,
   parse: function peg$parse(str) {
     let obj = arg1;
     let closure_0 = str;
     function peg$literalExpectation(text, arg1) {
-      const obj = { v: true, w: true, x: true, text };
+      const obj = { -1298326025: "mi", -291407389: "n", -889765512: "morning", text };
       return obj;
     }
     function peg$classExpectation(items, arg1, arg2) {
@@ -1200,9 +1200,9 @@ export default {
     let closure_31 = peg$otherExpectation("skewY");
     let closure_32 = peg$literalExpectation("skewY(", false);
     let closure_33 = peg$otherExpectation("space or comma");
-    let closure_34 = peg$classExpectation(["useCallback", "x", "String", "kind", "Array"], false, false);
+    let closure_34 = peg$classExpectation(["mixAmount", "useFocus", "Array", "searchesBots", "Array"], false, false);
     let closure_35 = peg$otherExpectation("whitespace");
-    let closure_36 = peg$classExpectation([false, false, false, false], false, false);
+    let closure_36 = peg$classExpectation(["", "HermesInternal", "x", "values"], false, false);
     let closure_37 = peg$classExpectation([], false, false);
     const items = [[]];
     let closure_38 = peg$classExpectation(items, false, false);
@@ -1281,7 +1281,7 @@ export default {
       return parseFloat(arg0.substring(tmp, tmp));
     }
     const tmp = obj.peg$currPos | 0;
-    const items1 = [{ "Bool(true)": null, "Bool(true)": null }];
+    const items1 = [{ options: "<string:2491613185>", paths: "<string:2941583362>" }];
     let closure_53 = tmp;
     let closure_54 = obj.peg$maxFailExpected || [];
     let closure_55 = obj.peg$silentFails | 0;

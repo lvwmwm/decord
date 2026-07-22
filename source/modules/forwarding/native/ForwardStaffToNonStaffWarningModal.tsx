@@ -1,10 +1,10 @@
-// Module ID: 9869
-// Function ID: 76421
+// Module ID: 9870
+// Function ID: 76434
 // Name: ForwardStaffToNonStaffWarningModal
 // Dependencies: []
 // Exports: default
 
-// Module 9869 (ForwardStaffToNonStaffWarningModal)
+// Module 9870 (ForwardStaffToNonStaffWarningModal)
 const _module = require(dependencyMap[0]);
 ({ jsx: closure_2, Fragment: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);

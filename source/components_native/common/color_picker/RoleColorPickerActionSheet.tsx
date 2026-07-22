@@ -1,10 +1,10 @@
-// Module ID: 14697
-// Function ID: 110859
+// Module ID: 14705
+// Function ID: 110902
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14697 (items)
+// Module 14705 (items)
 let ROLE_COLORS;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -16,12 +16,12 @@ const tmp3 = arg1(dependencyMap[3]);
 const items = [...require("module_0"), ...require("module_10"), ...require("module_5"), ...require("module_15")];
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { bottom: 14, variant: "es-419", onPress: "es", text: "flex", paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
+obj = { 671204708: 14, 1685738134: "en-PR", -413072144: "en", -1028273069: "flex", paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
 obj.body = obj;
-const tmp4 = arg1(dependencyMap[4]);
-obj.colorWrap = { marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
+const obj1 = { toValue: null, friction: null, tension: null, useNativeDriver: null, expanded: null, marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
+obj.colorWrap = obj1;
 let closure_11 = obj.createStyles(obj);
-const obj1 = { marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
+const tmp4 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("components_native/common/color_picker/RoleColorPickerActionSheet.tsx");
 
 export default function RoleColorPickerActionSheet(color) {

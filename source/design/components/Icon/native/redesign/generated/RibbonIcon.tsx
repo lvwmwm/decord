@@ -1,10 +1,10 @@
-// Module ID: 11977
-// Function ID: 92611
+// Module ID: 11978
+// Function ID: 92630
 // Name: RibbonIcon
 // Dependencies: []
 // Exports: RibbonIcon
 
-// Module 11977 (RibbonIcon)
+// Module 11978 (RibbonIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RibbonIcon.tsx");

@@ -1,9 +1,13 @@
-// Module ID: 15475
-// Function ID: 118059
+// Module ID: 15483
+// Function ID: 118102
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
-// Module 15475 (_createForOfIteratorHelperLoose)
+// Module 15483 (_createForOfIteratorHelperLoose)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 function _createForOfIteratorHelperLoose(@@iterator) {
   let closure_0 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -59,14 +63,14 @@ function _createForOfIteratorHelperLoose(@@iterator) {
     if (tmp) {
       closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let module_511 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (module_511 >= tmp.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        module_511 = tmp3 + 1;
+        obj.value = tmp[+module_511];
       }
       return obj;
     };
@@ -83,9 +87,9 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+const result = items.fileFinishedImporting("lib/ModalRegistry.tsx");
+
+export default () => {
   class ModalRegistry {
     constructor(arg0) {
       tmp = ModalRegistry(this, ModalRegistry);
@@ -146,6 +150,3 @@ const tmp2 = () => {
   items[1] = obj;
   return callback(ModalRegistry, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("lib/ModalRegistry.tsx");
-
-export default tmp2;

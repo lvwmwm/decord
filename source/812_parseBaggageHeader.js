@@ -1,12 +1,10 @@
 // Module ID: 812
 // Function ID: 9098
 // Name: parseBaggageHeader
-// Dependencies: [800, 801, 810, 65]
+// Dependencies: []
 // Exports: baggageHeaderToDynamicSamplingContext, dynamicSamplingContextToSentryBaggageHeader
 
 // Module 812 (parseBaggageHeader)
-import module_800 from "module_800";
-
 function parseBaggageHeader(arr) {
   if (arr) {
     if (!obj.isString(arr)) {
@@ -79,6 +77,7 @@ function objectToBaggageHeader(arg0) {
     }, "");
   }
 }
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const tmp2 = /^sentry-/;
 

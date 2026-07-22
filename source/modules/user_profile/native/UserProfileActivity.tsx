@@ -1,10 +1,10 @@
-// Module ID: 11905
-// Function ID: 92138
+// Module ID: 11906
+// Function ID: 92152
 // Name: ActivityCardText
 // Dependencies: []
 // Exports: default
 
-// Module 11905 (ActivityCardText)
+// Module 11906 (ActivityCardText)
 function ActivityCardText(children) {
   let obj = Object.create(null);
   obj.children = 0;
@@ -102,7 +102,7 @@ function ActivityCardBody(user) {
             if (null != trimmed) {
               tmp15 = null;
               if ("" !== trimmed) {
-                let obj = {};
+                let obj = { -1405509148: -2817, -1376015004: 12799 };
                 obj = {
                   artists: trimmed,
                   activity,
@@ -126,7 +126,7 @@ function ActivityCardBody(user) {
               state = activity.state;
             }
             obj = { href: activity.state_url };
-            const obj1 = { children: state };
+            const obj1 = { -1405509148: -2817, -1376015004: 12799, children: state };
             obj.children = callback(closure_25, obj1);
             return callback(closure_26, obj);
           }
@@ -154,7 +154,7 @@ function ActivityCardBody(user) {
             tmp77 = activity.party.size.length >= 2;
           }
           if (!tmp77) {
-            let obj5 = {};
+            let obj5 = { -1405509148: -2817, -1376015004: 12799 };
             const items2 = [activity.state, ""];
             obj5.children = items2.join(" ");
             tmp70Result = callback2(ActivityCardText, obj5);
@@ -175,7 +175,7 @@ function ActivityCardBody(user) {
             large_url = assets3.large_url;
           }
           obj8.href = large_url;
-          let obj9 = {};
+          let obj9 = { -1405509148: -2817, -1376015004: 12799 };
           const assets4 = activity.assets;
           let large_text;
           if (null != assets4) {
@@ -719,18 +719,18 @@ function VoiceCallActivityCard(arg0) {
         const obj2 = stateFromStores(newestAnalyticsLocation[67]);
         channel(newestAnalyticsLocation[68]).openGuildVoiceModal(channel, newestAnalyticsLocation);
       };
-      const obj7 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+      const obj7 = {};
       const obj8 = { style: tmp.voiceCallNameIconWrapper };
-      const obj9 = { accessible: "%Math%", test: "isArrayBuffer", "Bool(false)": "<string:1153585664>", channel };
+      const obj9 = { marginVertical: "constructor", padding: "Array", paddingTop: "isArray", channel };
       obj8.children = callback2(importDefault(dependencyMap[65]), obj9);
       const items4 = [callback2(closure_7, obj8), tmp3];
       obj7.children = items4;
       obj5.children = callback3(arg1(dependencyMap[18]).Text, obj7);
       let tmp33 = callback2(arg1(dependencyMap[41]).PressableOpacity, obj5);
     } else {
-      const obj10 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+      const obj10 = {};
       const obj11 = { style: tmp.voiceCallNameIconWrapper };
-      const obj12 = { accessible: "%Math%", test: "isArrayBuffer", "Bool(false)": "<string:1153585664>", channel };
+      const obj12 = { marginVertical: "constructor", padding: "Array", paddingTop: "isArray", channel };
       obj11.children = callback2(importDefault(dependencyMap[65]), obj12);
       const items5 = [callback2(closure_7, obj11), tmp3];
       obj10.children = items5;
@@ -794,28 +794,28 @@ obj = { card: { gap: 12 }, cardTitle: { marginBottom: 0 } };
 obj = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE };
 let num = 16;
 obj.cardTitleIcon = obj;
-obj.body = { "Null": "center", "Null": "center", "Bool(false)": "100%" };
+obj.body = { "Bool(false)": 930167211465604600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000007836384246803317, "Bool(false)": 28788265.235748198 };
 obj.content = { flex: 1 };
 obj.imageContainer = { position: "relative" };
-obj.imageAspectRatio = { alignItems: "100%", backgroundColor: "100%", borderRadius: 0.5 };
+obj.imageAspectRatio = { "Null": false, "Null": false, "Null": false };
 obj.crunchyrollImageAspectRatio = {};
-const obj1 = { "Null": "dopoledne", "Null": "odpoledne", "Null": "p\u016Flnoc", borderRadius: importDefault(dependencyMap[16]).radii.xs };
+const obj1 = { "Null": 0.00000000000000000001694070304517163, "Null": 83777698839543900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 563394388164717.1, borderRadius: importDefault(dependencyMap[16]).radii.xs };
 obj.largeImage = obj1;
-const obj2 = { calendarIcon: "png", ThemeContext: "iconOriginalMd5", onDrawerSlide: "bannerOriginalMd5", onDrawerStateChanged: "splashOriginalMd5", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { 0: "png", 0: "iconOriginalMd5", 0: "bannerOriginalMd5", 0: "splashOriginalMd5", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 obj.smallImageBackground = obj2;
 obj.smallImage = {};
-obj.badges = { "Null": -3329, "Null": 12799, "Null": 0, "Null": -59621400, "Null": 285212671 };
-const obj3 = { removeDirectoryGuildEntry: "/assets/images/native/community", body: 62, RulebookSpotIllustration: 65, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+obj.badges = {};
+const obj3 = { borderColor: "/assets/images/native/community", alignItems: 62, justifyContent: 65, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.voiceChannelDivider = obj3;
-obj.customButtons = {};
-const obj4 = { position: false, top: false, left: false, borderRadius: importDefault(dependencyMap[16]).radii.xs };
+obj.customButtons = { 9223372036854775807: "<string:1126170625>", 9223372036854775807: "<string:1598160898>" };
+const obj4 = { "Bool(false)": 49450240, "Bool(false)": 54358528, "Bool(false)": 50691840, borderRadius: importDefault(dependencyMap[16]).radii.xs };
 obj.streamPreview = obj4;
 obj.voiceActivityCard = { padding: 0 };
-obj.voiceSettings = { TypeError: 16, sr: 49 };
+obj.voiceSettings = { editable: 0.875, value: -18 };
 const tmp4 = arg1(dependencyMap[14]);
 obj.voiceSettingsDivider = { borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
-obj.voiceCallContent = { "Bool(false)": null, "Bool(false)": null };
-const obj6 = { -2146320533: -1655570431, 1244786459: 299071617, -871786476: 38822721 };
+obj.voiceCallContent = { 1515479866: false, 741818958: false };
+const obj6 = { REMEDIATION_ELEMENT_TYPES: true, "Null": true, "Null": true };
 const obj5 = { borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
 if (obj10.isAndroid()) {
   num = 12;

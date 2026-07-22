@@ -1,10 +1,10 @@
-// Module ID: 13725
-// Function ID: 103852
+// Module ID: 13732
+// Function ID: 103885
 // Name: AuthorizedAppPermissionsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13725 (AuthorizedAppPermissionsScreen)
+// Module 13732 (AuthorizedAppPermissionsScreen)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppPermissionsScreen.tsx");

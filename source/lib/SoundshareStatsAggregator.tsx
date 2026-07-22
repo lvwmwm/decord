@@ -1,16 +1,20 @@
 // Module ID: 4220
-// Function ID: 36839
+// Function ID: 36846
 // Name: SoundshareStatsAggregator
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 4220 (SoundshareStatsAggregator)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("lib/SoundshareStatsAggregator.tsx");
+
+export default () => {
   class SoundshareStatsAggregator {
     constructor() {
       tmp = SoundshareStatsAggregator(this, SoundshareStatsAggregator);
-      this._report = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+      this._report = { useTier0UpsellContent: null, createRadio: null, permissionOverwriteForRole: null, imageSource: null, deleteEmoji: null, customStatusActivity: null, hasCustomProfileTheme: null, showFullStatus: null, MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END: null, handled: null, ho: null, DEVICE_INFO: null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
       set = new Set();
       this._pids = set;
       return;
@@ -64,6 +68,3 @@ const tmp2 = () => {
   items[1] = obj;
   return callback(SoundshareStatsAggregator, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("lib/SoundshareStatsAggregator.tsx");
-
-export default tmp2;

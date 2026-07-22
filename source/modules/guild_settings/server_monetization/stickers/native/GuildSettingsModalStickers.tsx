@@ -1,9 +1,9 @@
-// Module ID: 16138
-// Function ID: 124405
+// Module ID: 16146
+// Function ID: 124447
 // Name: BoostedGuildTiers
 // Dependencies: []
 
-// Module 16138 (BoostedGuildTiers)
+// Module 16146 (BoostedGuildTiers)
 let BoostedGuildTiers;
 const importAllResult = importAll(dependencyMap[0]);
 ({ ScrollView: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
@@ -46,8 +46,8 @@ let closure_15 = arg1(dependencyMap[12]).createStyles((arg0) => {
   obj.divider = { marginTop: importDefault(dependencyMap[13]).space.PX_16, marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
   const obj1 = { marginTop: importDefault(dependencyMap[13]).space.PX_16, marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
   obj.stickerSlot = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.lg, width: importDefault(dependencyMap[13]).space.PX_64, height: importDefault(dependencyMap[13]).space.PX_64, overflow: "hidden", alignItems: "center", justifyContent: "center" };
-  const obj2 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.lg, width: importDefault(dependencyMap[13]).space.PX_64, height: importDefault(dependencyMap[13]).space.PX_64, overflow: "hidden", alignItems: "center", justifyContent: "center" };
-  obj.userRow = { gap: importDefault(dependencyMap[13]).space.PX_8 };
+  const obj3 = { "Bool(false)": "<string:1912603085>", "Bool(false)": true, "Bool(false)": true, gap: importDefault(dependencyMap[13]).space.PX_8 };
+  obj.userRow = obj3;
   return obj;
 });
 const obj6 = arg1(dependencyMap[12]);
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo(function GuildSettingsModalStickers(guil
     const intl = arg1(dependencyMap[8]).intl;
     obj.children = intl.string(arg1(dependencyMap[8]).t.yxVsBJ);
     const items2 = [callback(arg1(dependencyMap[20]).Text, obj), , , , ];
-    obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp.label };
+    obj1 = { cachedAt: "y", edpbxy: "isArray", style: tmp.label };
     const intl2 = arg1(dependencyMap[8]).intl;
     const obj2 = {};
     let obj6 = arg1(dependencyMap[21]);
@@ -188,14 +188,14 @@ const memoResult = importAllResult.memo(function GuildSettingsModalStickers(guil
                 obj.children = callback2(lib(closure_2[29]), obj1);
                 obj.icon = callback2(callback, obj);
                 const obj2 = {};
-                let obj3 = { hasMaxConnections: -1, isBoostOnlySubscription: 75635, style: lib.label, children: tmp2.name };
+                let obj3 = { cachedAt: -1, edpbxy: 75635, style: lib.label, children: tmp2.name };
                 const items = [callback2(tmp2(closure_2[20]).Text, obj3), ];
                 let tmp11 = null;
                 if (null != user) {
                   obj = { style: lib.userRow };
                   const obj4 = { user, size: tmp2(closure_2[30]).AvatarSizes.XSMALL_20, guildId: tmp2 };
                   const items1 = [callback2(tmp2(closure_2[30]).Avatar, obj4), ];
-                  const obj5 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+                  const obj5 = { cachedAt: true, edpbxy: true };
                   obj3 = lib(closure_2[31]);
                   obj5.children = obj3.getName(user);
                   items1[1] = callback2(tmp2(closure_2[20]).Text, obj5);

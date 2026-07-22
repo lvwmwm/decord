@@ -1,10 +1,10 @@
-// Module ID: 8560
-// Function ID: 68033
+// Module ID: 8561
+// Function ID: 68045
 // Name: tooltipEnterExitAnimation
 // Dependencies: []
 // Exports: tooltipEnterExitAnimation
 
-// Module 8560 (tooltipEnterExitAnimation)
+// Module 8561 (tooltipEnterExitAnimation)
 let closure_2 = {};
 let closure_3 = { code: "function TooltipConstantsNativeTsx1(visible,cleanUp){const{withSpring,translateY,TOOLTIP_SPRING}=this.__closure;return{transform:[{translateY:withSpring(visible===1?0:translateY,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)}],opacity:withSpring(visible,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)};}" };
 const _module = require(dependencyMap[1]);

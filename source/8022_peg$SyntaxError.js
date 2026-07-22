@@ -1,5 +1,5 @@
 // Module ID: 8022
-// Function ID: 63635
+// Function ID: 63645
 // Name: peg$SyntaxError
 // Dependencies: []
 
@@ -103,7 +103,7 @@ export default {
     let obj = arg1;
     const peg$SyntaxError = str;
     function peg$literalExpectation(matrix, arg1) {
-      const obj = { v: true, w: true, x: true, text: matrix };
+      const obj = { -1298326025: "mi", -291407389: "n", -889765512: "morning", text: matrix };
       return obj;
     }
     function peg$classExpectation(items, arg1, arg2) {
@@ -1442,7 +1442,7 @@ export default {
     let closure_12 = peg$literalExpectation("translate", false);
     function peg$c11(arr2, arr22) {
       let num = arr22;
-      const items = [, , arr2, 0, 1];
+      const items = [true, true, arr2, 0, 1];
       if (!arr22) {
         num = 0;
       }
@@ -1478,13 +1478,13 @@ export default {
     let closure_20 = "skewX";
     let closure_21 = peg$literalExpectation("skewX", false);
     function peg$c20(arr2) {
-      const items = [null, Math.tan(closure_53 * arr2), 0, 0, 1, 0];
+      const items = [false, Math.tan(closure_53 * arr2), 0, 0, 1, 0];
       return items;
     }
     let closure_23 = "skewY";
     let closure_24 = peg$literalExpectation("skewY", false);
     function peg$c23(arr2) {
-      const items = [false, false, false, Math.tan(closure_53 * arr2), 1, 0];
+      const items = [, , , Math.tan(closure_53 * arr2), 1, 0];
       return items;
     }
     function peg$c24(join) {
@@ -1511,7 +1511,7 @@ export default {
     function peg$c32(join) {
       return join.join("");
     }
-    let closure_35 = { "Null": true, "Null": true };
+    let closure_35 = {};
     let closure_36 = ".";
     let closure_37 = peg$literalExpectation(".", false);
     function peg$c36(join, join2) {
@@ -1536,7 +1536,7 @@ export default {
     let closure_46 = /^[ \t\r\n]/;
     let closure_47 = peg$classExpectation([], false, false);
     let closure_48 = 0;
-    const items1 = [{ "Bool(true)": null, "Bool(true)": null }];
+    const items1 = [{ options: "<string:2491613185>", paths: "<string:2941583362>" }];
     let closure_50 = 0;
     let closure_51 = [];
     let closure_52 = 0;

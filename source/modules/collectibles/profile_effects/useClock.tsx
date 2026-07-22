@@ -1,10 +1,10 @@
-// Module ID: 8216
-// Function ID: 64940
+// Module ID: 8217
+// Function ID: 64952
 // Name: allowableMinInterval
 // Dependencies: []
 // Exports: default
 
-// Module 8216 (allowableMinInterval)
+// Module 8217 (allowableMinInterval)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 14006
-// Function ID: 106547
+// Module ID: 14013
+// Function ID: 106587
 // Name: GuildRoleSubscriptionMemberPreview
 // Dependencies: []
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14006 (GuildRoleSubscriptionMemberPreview)
+// Module 14013 (GuildRoleSubscriptionMemberPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,7 +15,7 @@ obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: imp
 obj.container = obj;
 obj.avatar = {};
 obj.content = { marginStart: 16 };
-obj.contextRow = { "Null": 7, "Null": 370 };
+obj.contextRow = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 let closure_9 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
@@ -58,7 +58,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     const items2 = [callback(importDefault(dependencyMap[11]), obj), ];
     const obj1 = { style: tmp3.content };
     obj2 = { style: tmp3.contextRow };
-    obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004345847379953, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002999363228337182 };
+    obj3 = { cachedAt: null, edpbxy: null };
     const obj4 = {};
     let obj10 = importAll(dependencyMap[13]);
     obj4.color = obj10.int2hex(role.color);
@@ -90,10 +90,10 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     items3[1] = tmp19Result;
     const obj9 = { size: 8 };
     items3[2] = callback(arg1(dependencyMap[14]).Spacer, obj9);
-    items3[3] = callback(arg1(dependencyMap[12]).Text, { deer: "description", Ufm9XX: "Array", playstationVersion: "bow_and_arrow" });
+    items3[3] = callback(arg1(dependencyMap[12]).Text, { category: "exports", position: "isArray", top: "Array" });
     obj2.children = items3;
     const items5 = [closure_8(View, obj2), ];
-    obj10 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: textStyle, children: content };
+    obj10 = { cachedAt: 1, edpbxy: 1, style: textStyle, children: content };
     items5[1] = callback(arg1(dependencyMap[12]).Text, obj10);
     obj1.children = items5;
     items2[1] = closure_8(View, obj1);

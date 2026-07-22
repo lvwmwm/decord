@@ -1,10 +1,10 @@
-// Module ID: 8922
-// Function ID: 70384
+// Module ID: 8923
+// Function ID: 70397
 // Name: ClearAllIncomingRequestsConfirmationModal
 // Dependencies: []
 // Exports: default
 
-// Module 8922 (ClearAllIncomingRequestsConfirmationModal)
+// Module 8923 (ClearAllIncomingRequestsConfirmationModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -14,14 +14,14 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
 obj.root = obj;
-obj.closeButton = { 1449338582: null, -865846725: null };
+obj.closeButton = { WAVE_EMPHASIZE: null, marginVertical: null };
 const tmp3 = arg1(dependencyMap[3]);
 obj.content = { flexGrow: 1, padding: importDefault(dependencyMap[5]).space.PX_16 };
-const obj2 = { -2036989357: "<string:354549762>", 996371416: "<string:3477209090>", 5330602: "<string:587203104>", marginTop: importDefault(dependencyMap[5]).space.PX_24 };
-obj.container = obj2;
-const obj3 = { isArray: null, diversity: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, paddingVertical: importDefault(dependencyMap[5]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-obj.footer = obj3;
 const obj1 = { flexGrow: 1, padding: importDefault(dependencyMap[5]).space.PX_16 };
+obj.container = { marginTop: importDefault(dependencyMap[5]).space.PX_24 };
+const obj2 = { marginTop: importDefault(dependencyMap[5]).space.PX_24 };
+obj.footer = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, paddingVertical: importDefault(dependencyMap[5]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, paddingVertical: importDefault(dependencyMap[5]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.header = { marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 const obj4 = { marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.headerText = { marginTop: importDefault(dependencyMap[5]).space.PX_16, marginBottom: importDefault(dependencyMap[5]).space.PX_4 };
@@ -101,7 +101,7 @@ export default function ClearAllIncomingRequestsConfirmationModal(incomingReques
   obj11.children = callback3(callback(dependencyMap[14]).Button, obj12);
   const items5 = [callback3(closure_5, obj11), ];
   const obj13 = { style: tmp.buttonWrapper };
-  const obj14 = {};
+  const obj14 = { <string:3562165089>: "/assets/.cache/intl/aW50bA==", <string:1383310252>: null, <string:3767060185>: "de0c5291417ca85ca49b63cd365d8403", <string:74212417>: "en-GB.messages.de0c5291417ca85ca49b63cd365d8403.compiled.messages", <string:2982962944>: "jsona" };
   const intl5 = callback(dependencyMap[8]).intl;
   obj14.text = intl5.string(callback(dependencyMap[8]).t.ETE/oC);
   obj14.onPress = importDefault(dependencyMap[6]).pop;

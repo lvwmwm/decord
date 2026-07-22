@@ -1,10 +1,10 @@
-// Module ID: 7574
-// Function ID: 60580
+// Module ID: 7573
+// Function ID: 60589
 // Name: ScrollHandlingActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 7574 (ScrollHandlingActionSheet)
+// Module 7573 (ScrollHandlingActionSheet)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/native/components/ScrollHandlingActionSheet.tsx");

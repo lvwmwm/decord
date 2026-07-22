@@ -1,9 +1,9 @@
-// Module ID: 15283
-// Function ID: 116210
+// Module ID: 15291
+// Function ID: 116253
 // Name: InitialPinsScreen
-// Dependencies: [31, 9095, 10067, 2, 57, 31, 1348, 3765, 1849, 10071, 10068, 9095, 653, 33, 566, 15216, 11387, 11395]
+// Dependencies: [31, 9096, 10068, 2, 57, 31, 1348, 3765, 1849, 10072, 10069, 9096, 653, 33, 566, 15224, 11388, 11396]
 
-// Module 15283 (InitialPinsScreen)
+// Module 15291 (InitialPinsScreen)
 import importAllResult from "module_31";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import { FetchState } from "SearchAutocompleteSelectAnalyticsActions";
@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray";
 import { SearchResultContentEntityTypes as closure_11 } from "module_31";
 import { SearchTypes } from "_isNativeReflectConstruct";
 import { jsx } from "_isNativeReflectConstruct";
-import module_11395 from "module_11395";
+import module_11396 from "module_11396";
 
 function InitialPinsScreen(searchContext) {
   searchContext = searchContext.searchContext;
@@ -145,7 +145,7 @@ function InitialPinsScreen(searchContext) {
   return jsx(importDefault(dependencyMap[14]), obj);
 }
 ({ MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_8, SearchListItemTypes: closure_9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: closure_10 } = _slicedToArray);
-const result = module_11395.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
+const result = module_11396.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
 
 export default importAllResult.memo(function PinsScreen(searchContext) {
   let isFocused;

@@ -1,8 +1,8 @@
-// Module ID: 9622
-// Function ID: 74934
+// Module ID: 9623
+// Function ID: 74947
 // Dependencies: []
 
-// Module 9622
+// Module 9623
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,13 +15,13 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { color: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 obj.listPlaceholder = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj1 = { WAVE_EMPHASIZE: "png", alignContent: true, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.section = obj1;
 const tmp3 = arg1(dependencyMap[6]);
 obj.sectionSticker = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj3 = { height: "isArray", right: "key", position: "Array", height: "LIGHT", width: "limit", right: "limit", borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL };
+const obj3 = { "Null": 10, "Null": null, "Null": "\u{1F9D3}\u{1F3FD}", <string:1638001930>: true, <string:2717012566>: null, <string:996246631>: 10, borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL };
 obj.nsfwContainer = obj3;
-obj.nsfwText = { paddingHorizontal: null, paddingVertical: 1 };
+obj.nsfwText = { guildInfoIcon: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, toExpPos: 131072.0007038191 };
 let closure_13 = obj1.createStyles(obj);
 let closure_14 = importAllResult.memo((height) => {
   const tmp = callback4();
@@ -29,7 +29,7 @@ let closure_14 = importAllResult.memo((height) => {
   const items = [tmp.nsfwContainer, { height: height.height }];
   obj = { source: importDefault(dependencyMap[10]), size: arg1(dependencyMap[9]).Icon.Sizes.SMALL };
   const items1 = [callback2(arg1(dependencyMap[9]).Icon, obj), ];
-  obj = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001191393554252316, dispatch: 557056.0015292466, raw: 1112527108802911800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.nsfwText };
+  obj = { style: tmp.nsfwText };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.uy25Qz);
   items1[1] = callback2(arg1(dependencyMap[11]).Text, obj);
@@ -135,7 +135,7 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
         index.scrollTo = setTimeout(() => {
           const current = ref.current;
           if (null != current) {
-            const obj = { 0: null, 0: "info", 9223372036854775807: "/", section: index };
+            const obj = { -9223372036854775808: "<string:4149346306>", 0: "<string:295619838>", 0: "<string:20046913>", section: index };
             current.scrollToLocation(obj);
           }
           callback(null);

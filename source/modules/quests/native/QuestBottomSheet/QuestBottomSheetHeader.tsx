@@ -1,10 +1,10 @@
-// Module ID: 13896
-// Function ID: 105092
+// Module ID: 13903
+// Function ID: 105132
 // Name: QuestBottomSheetHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13896 (QuestBottomSheetHeader)
+// Module 13903 (QuestBottomSheetHeader)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,15 +12,15 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { overflow: null, position: null, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingTop: importDefault(dependencyMap[6]).space.PX_8 };
+obj = { overflow: 12, position: 625, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingTop: importDefault(dependencyMap[6]).space.PX_8 };
 obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.containerWithActionSheet = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+const obj1 = { width: true, marginHorizontal: true, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+obj.containerWithActionSheet = obj1;
 obj.title = { textAlign: "center" };
-obj.titleWithActionSheet = { "Null": 1, "Null": null };
-obj.actionSheetButton = { isArray: -536870861, diversity: -299892737 };
+obj.titleWithActionSheet = { slategray: null, EPHEMERAL_MESSAGES: null };
+obj.actionSheetButton = { nestedScrollEnabled: "%FunctionPrototype%", scrollEventThrottle: "paddingStart" };
 let closure_9 = obj.createStyles(obj);
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+const tmp2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetHeader.tsx");
 
 export default function QuestBottomSheetHeader(step) {

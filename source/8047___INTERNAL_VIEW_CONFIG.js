@@ -1,11 +1,11 @@
 // Module ID: 8047
-// Function ID: 63871
+// Function ID: 63881
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 8047 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "RNSVGEllipse", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
-obj = { <string:2700805186>: null, <string:4186739027>: null, <string:1690863533>: null, <string:2700805186>: null, <string:1754042706>: null, <string:1359503846>: null, <string:3393416392>: null, <string:2801796171>: null, <string:4278191135>: null, <string:1375732832>: null, <string:2317682078>: null, <string:4211360356>: null, <string:1671778976>: null, <string:3194351416>: null, <string:4221568066>: null, <string:946054482>: null, <string:71460079>: null, <string:642883835>: null, <string:3334365818>: null, <string:1709668186>: null, <string:799613320>: null, <string:1278825674>: null, <string:1773490101>: null, <string:3221487602>: null, <string:2439930378>: null, <string:2542954588>: null, <string:819189447>: null, <string:2868326903>: null, <string:3873681308>: null, <string:796444832>: null, <string:985169655>: null };
+obj = { verifyCard: "shards", DISCOUNT_PERCENTAGE_FALLBACK: "scalar", getBuildNumberLabel: 1, PinwheelOut: 5, presetRow: "center", landscapePreview: -72, isDragScrolling: 16, child: "100%", mutateUserChannelSettings: "contain", CONTROL_RADIO_ICON_SIZE_DEFAULT: false, useGameProfileShopCollection: false, rejectedSyncPromise: false, src: false, align: null, meetOrSlice: 0, enteringV: 0, audioJitterTarget: 0, currentPurchaseError: 0, trackBountyCarouselScroll: 0, allocUnsafeSlow: 0, CheckmarkSmallIcon: 0, serializeEnvelope: 0, innerTextContainer: 0, AUTH_SESSIONS: 0, RTC: "granted", SUPPORT: "denied", METHOD_CALLED_AFTER_TEARDOWN: "never_ask_again", $link: "android.permission.READ_CALENDAR", evergreen_tree: "android.permission.WRITE_CALENDAR", canChannelBeDefault: "android.permission.CAMERA", brightenColor: "android.permission.READ_CONTACTS" };
 obj = { process: require(dependencyMap[0]).default };
 obj.color = obj;
 const _module = require(dependencyMap[1]);

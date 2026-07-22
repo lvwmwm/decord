@@ -1,10 +1,10 @@
-// Module ID: 14112
-// Function ID: 107155
+// Module ID: 14120
+// Function ID: 107198
 // Name: DisplayNameStylesGummyCustomColorSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14112 (DisplayNameStylesGummyCustomColorSheet)
+// Module 14120 (DisplayNameStylesGummyCustomColorSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_5, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_6 } = arg1(dependencyMap[2]));
@@ -16,8 +16,8 @@ obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingT
 obj.body = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.huePickerInset = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 + 2, alignSelf: "stretch" };
-obj.previewWrapper = { "Bool(true)": "channelId", "Bool(true)": "channelId" };
-const obj2 = { justifyContent: "absolute", alignItems: 0, <string:1052178556>: "center", <string:4156880577>: "center", borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.previewWrapper = { "Null": "channelId", "Null": "toString" };
+const obj2 = { "Bool(false)": "absolute", "Bool(false)": 0, "Bool(false)": "center", "Bool(false)": "center", borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.preview = obj2;
 let closure_9 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 + 2, alignSelf: "stretch" };

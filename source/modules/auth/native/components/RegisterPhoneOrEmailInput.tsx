@@ -1,17 +1,17 @@
-// Module ID: 14625
-// Function ID: 110298
+// Module ID: 14633
+// Function ID: 110341
 // Name: RegisterPhoneOrEmailInput
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: RegisterPhoneOrEmailInput
 
-// Module 14625 (RegisterPhoneOrEmailInput)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import { jsx } from "result";
+// Module 14633 (RegisterPhoneOrEmailInput)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ setRegistrationErrors: closure_5, useRegistrationUIStore: closure_6 } = result);
-result = arg1(dependencyMap[11]).fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
+({ setRegistrationErrors: closure_5, useRegistrationUIStore: closure_6 } = require("__exportStarResult1"));
+const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
 
 export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(loginPhone) {
   let autoFocus;

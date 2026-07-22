@@ -1,10 +1,10 @@
-// Module ID: 5244
-// Function ID: 44432
+// Module ID: 4971
+// Function ID: 42844
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5244 (_createForOfIteratorHelperLoose)
+// Module 4971 (_createForOfIteratorHelperLoose)
 let ChannelTypes;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -140,7 +140,7 @@ function isValidGuildMember(joinedAt) {
 }
 function stripAndNormalize(arg0) {
   if (null == arg0) {
-    return [true, true];
+    return [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
   } else {
     const stripDiacriticsResult = arg1(dependencyMap[35]).stripDiacritics(arg0);
     const items = [stripDiacriticsResult, ];
@@ -2270,7 +2270,7 @@ obj = {
               }
               return mentionable;
             }).value();
-            obj = { keys: [true] };
+            obj = { keys: ["SOCIAL_LAYER_STOREFRONTS_ALL"] };
             const obj5 = arg1(dependencyMap[47]);
             const substr = arg1(dependencyMap[47]).matchSorter(valueResult, query, obj).slice(0, limit - closure_7);
             closure_9 = substr;
@@ -2304,9 +2304,8 @@ obj = {
           closure_7 = closure_7 + 1;
         }
       }
-      const GameMentionsExperiment = arg1(dependencyMap[48]).GameMentionsExperiment;
-      const obj1 = { location: "mention autocomplete" };
-      const config = GameMentionsExperiment.getConfig(obj1);
+      const tmp10 = !channel.isPrivate() && flag && flag4;
+      const gameMentionsAutocompleteConfig = arg1(dependencyMap[48]).getGameMentionsAutocompleteConfig("mention autocomplete");
       if (tmp31) {
         let tmp34;
         if (null != MENTION_GAME) {
@@ -2319,8 +2318,8 @@ obj = {
         tmp39 = MENTION_TIMESTAMP();
       }
       maybePushOtherGlobal(tmp39);
-      const obj2 = { users: items, globals: items2, roles: tmp5 };
-      return obj2;
+      const obj1 = { users: items, globals: items2, roles: tmp5 };
+      return obj1;
     }
   },
   queryGuildMentionResults(canMentionUsers) {

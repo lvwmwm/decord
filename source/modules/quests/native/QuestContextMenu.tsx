@@ -1,9 +1,9 @@
-// Module ID: 13927
-// Function ID: 105853
+// Module ID: 13934
+// Function ID: 105893
 // Name: renderDefaultButton
 // Dependencies: []
 
-// Module 13927 (renderDefaultButton)
+// Module 13934 (renderDefaultButton)
 function renderDefaultButton(ref) {
   const obj = { ref: ref.ref };
   const merged = Object.assign(callback(ref, closure_3));
@@ -15,7 +15,7 @@ function renderDefaultButton(ref) {
   obj["accessibilityHint"] = intl2.string(arg1(dependencyMap[7]).t.hd0b7t);
   return jsx(arg1(dependencyMap[5]).IconButton, obj);
 }
-let closure_3 = [null];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

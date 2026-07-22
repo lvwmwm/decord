@@ -1,21 +1,21 @@
-// Module ID: 12269
-// Function ID: 94063
+// Module ID: 12274
+// Function ID: 94091
 // Name: LargeCountDownPill
 // Dependencies: []
 // Exports: default
 
-// Module 12269 (LargeCountDownPill)
+// Module 12274 (LargeCountDownPill)
 const _module = require(dependencyMap[0]);
 ({ TouchableOpacity: closure_3, View: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = _module1);
 const _module2 = require(dependencyMap[2]);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[3]).radii.round };
+obj = { <string:342307422>: "NOT_RESPONDER", <string:838011290>: "NOT_RESPONDER", <string:227742241>: "NOT_RESPONDER", <string:293426922>: "NOT_RESPONDER", <string:209522001>: "NOT_RESPONDER", <string:1892762434>: "stopLurkingAll", <string:1877234952>: "FormRow", <string:270281126>: "SOUNDBOARD_DEFAULT_SOUNDS", borderRadius: importDefault(dependencyMap[3]).radii.round };
 obj.largeCountdownPill = obj;
-const obj1 = { "Bool(true)": 3, "Bool(true)": 2, "Bool(true)": "auto", "Bool(true)": 1, "Bool(true)": null, color: importDefault(dependencyMap[3]).colors.TEXT_STATUS_IDLE };
+const obj1 = { -9223372036854775808: null, 0: 8, -9223372036854775808: null, "Null": 3, "Null": 2, color: importDefault(dependencyMap[3]).colors.TEXT_STATUS_IDLE };
 obj.largeCountdownPillText = obj1;
-obj.iconStyle = {};
+obj.iconStyle = { "Null": null, "Null": null };
 let closure_7 = _module2.createStyles(obj);
 const _module3 = require(dependencyMap[8]);
 const result = _module3.fileFinishedImporting("modules/premium/fractional/native/LargeCountDownPill.tsx");

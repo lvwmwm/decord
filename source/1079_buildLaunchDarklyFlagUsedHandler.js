@@ -9,13 +9,17 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const _module = require(dependencyMap[0]);
 
 export const buildLaunchDarklyFlagUsedHandler = function buildLaunchDarklyFlagUsedHandler() {
-  return {
+  const obj = {
+    traceFetch: true,
+    traceXHR: true,
+    enableHTTPTimings: true,
     method(first) {
       const result = callback(closure_1[0])._INTERNAL_insertFlagToScope(first, arg1.value);
       const obj = callback(closure_1[0]);
       const result1 = callback(closure_1[0])._INTERNAL_addFeatureFlagToActiveSpan(first, arg1.value);
     }
   };
+  return obj;
 };
 export const launchDarklyIntegration = _module.defineIntegration(() => ({
   name: "LaunchDarkly",

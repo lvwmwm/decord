@@ -1,10 +1,10 @@
-// Module ID: 10646
-// Function ID: 83118
+// Module ID: 10647
+// Function ID: 83131
 // Name: RequestToSpeakRow
 // Dependencies: []
 // Exports: default
 
-// Module 10646 (RequestToSpeakRow)
+// Module 10647 (RequestToSpeakRow)
 function RequestToSpeakRow(channel) {
   let obj = callback(dependencyMap[9]);
   const tmp = callback2(obj.useRequestToSpeakPermission(channel.channel.id), 2);
@@ -155,7 +155,7 @@ export default function RequestToSpeakActionSheet(channelId) {
     const obj7 = {};
     const obj8 = { paddingHorizontal: token };
     obj7.style = obj8;
-    const obj9 = { USER_REGISTRATION: "remotePlatform", borderColor: "per", borderWidth: "MiniaturesSpotIllustration" };
+    const obj9 = { "Bool(false)": "Text", "Bool(false)": "position", "Bool(false)": "duration" };
     const intl = arg1(closure_2[11]).intl;
     const obj10 = {};
     const _HermesInternal = HermesInternal;

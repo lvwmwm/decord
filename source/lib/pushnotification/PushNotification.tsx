@@ -1,9 +1,9 @@
-// Module ID: 10627
-// Function ID: 82890
+// Module ID: 10628
+// Function ID: 82903
 // Name: createNotification
 // Dependencies: []
 
-// Module 10627 (createNotification)
+// Module 10628 (createNotification)
 function createNotification(arg0) {
   const require = arg0;
   let tmp = null;

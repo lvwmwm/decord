@@ -1,10 +1,10 @@
-// Module ID: 8694
-// Function ID: 68864
+// Module ID: 8695
+// Function ID: 68876
 // Name: useWishlistButtonState
 // Dependencies: []
 // Exports: useWishlistButtonState
 
-// Module 8694 (useWishlistButtonState)
+// Module 8695 (useWishlistButtonState)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

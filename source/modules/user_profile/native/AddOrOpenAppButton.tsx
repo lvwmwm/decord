@@ -1,10 +1,10 @@
-// Module ID: 11904
-// Function ID: 92127
+// Module ID: 11905
+// Function ID: 92141
 // Name: AddAppButton
 // Dependencies: []
 // Exports: default
 
-// Module 11904 (AddAppButton)
+// Module 11905 (AddAppButton)
 function AddAppButton(application) {
   application = application.application;
   const arg1 = application;

@@ -1,9 +1,9 @@
-// Module ID: 12453
-// Function ID: 95095
+// Module ID: 12458
+// Function ID: 95123
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12453 (_createForOfIteratorHelperLoose)
+// Module 12458 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -113,9 +113,9 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).DISPATCHER_IDEAL_TIME_LIMIT_MS;
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("GatewaySocket");
-const set = new Set([null, null]);
-const set1 = new Set(["<string:26479872>", "<string:29428224>"]);
-const set2 = new Set(["<string:29428480>", "<string:29607168>", "<string:29607424>"]);
+const set = new Set(["Array", "isArray"]);
+const set1 = new Set(["<string:26535168>", "<string:29334016>"]);
+const set2 = new Set([0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003340063016611036, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043797997971787605, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004877760655646392]);
 const set3 = new Set([]);
 let closure_12 = { NotStarted: 0, [0]: "NotStarted", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded" };
 let closure_13 = {};
@@ -389,7 +389,7 @@ const tmp8 = () => {
               let items = closure_13[type];
               let tmp9 = closure_6;
               if (null == items) {
-                items = ["<string:53040003>", "<string:806589490>"];
+                items = ["placeholder", "aria-label"];
               }
               let tmp11 = callback;
               let tmp12 = callback(items, 2);

@@ -1,5 +1,5 @@
 // Module ID: 5893
-// Function ID: 49761
+// Function ID: 49772
 // Name: BeeIllocon
 // Dependencies: []
 // Exports: BeeIllocon

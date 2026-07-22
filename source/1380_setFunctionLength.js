@@ -1,7 +1,7 @@
 // Module ID: 1380
 // Function ID: 16528
 // Name: setFunctionLength
-// Dependencies: [2147483653, 2164260869, 2181038085, 2197815301, 2214592517]
+// Dependencies: []
 
 // Module 1380 (setFunctionLength)
 let closure_2 = require(dependencyMap[0])();

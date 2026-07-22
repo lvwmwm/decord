@@ -1,10 +1,10 @@
-// Module ID: 16360
-// Function ID: 126212
+// Module ID: 16368
+// Function ID: 126254
 // Name: MessagePreview
 // Dependencies: []
 // Exports: default
 
-// Module 16360 (MessagePreview)
+// Module 16368 (MessagePreview)
 function MessagePreview(theme) {
   let animatedStyles;
   let selectedColor;
@@ -78,7 +78,7 @@ obj.chatContainer = { paddingVertical: importDefault(dependencyMap[11]).space.PX
 const obj3 = { paddingVertical: importDefault(dependencyMap[11]).space.PX_24, borderRadius: importDefault(dependencyMap[11]).radii.xl, borderWidth: tmp2.StyleSheet.hairlineWidth };
 obj.chatContainerInner = { flexDirection: "row", backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW, gap: importDefault(dependencyMap[11]).space.PX_8 };
 obj.chatContent = { flex: 1 };
-obj.chatHeader = {};
+obj.chatHeader = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 obj.chatTimestamp = { marginTop: -8 };
 let closure_14 = obj.createStyles(obj);
 let obj7 = arg1(dependencyMap[16]);

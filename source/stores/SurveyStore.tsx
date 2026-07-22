@@ -1,9 +1,9 @@
-// Module ID: 9269
-// Function ID: 72427
+// Module ID: 9270
+// Function ID: 72440
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 9269 (_isNativeReflectConstruct)
+// Module 9270 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -124,7 +124,7 @@ function meetsSurveyRequirements(closure_22) {
   }
   let guild_size = closure_22.guild_size;
   if (undefined === guild_size) {
-    guild_size = [true, true];
+    guild_size = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
   }
   let guild_permissions = closure_22.guild_permissions;
   if (undefined === guild_permissions) {
@@ -433,7 +433,7 @@ let closure_11 = importDefault(dependencyMap[7]);
 let closure_12 = importDefault(dependencyMap[8]);
 let closure_13 = importDefault(dependencyMap[9]);
 ({ GuildFeatures: closure_14, Permissions: closure_15, FIRST_RUN_DATE_KEY: closure_16 } = arg1(dependencyMap[10]));
-let obj = { hiddenSurveys: {} };
+let obj = { accessibilityLabel: 1, text: "100%", split: "absolute", useStateFromStores: 0, T: 0, hiddenSurveys: {} };
 let closure_19 = false;
 let closure_20 = false;
 let closure_21 = {};

@@ -1,9 +1,9 @@
-// Module ID: 16487
-// Function ID: 127304
+// Module ID: 16495
+// Function ID: 127346
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16487 (_createForOfIteratorHelperLoose)
+// Module 16495 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -256,7 +256,7 @@ let tmp9 = () => {
                     HermesBuiltin.arraySpread(metrics.timings, 1);
                     if (closure_5.get("libdiscore_verbose_telemetry_logging")) {
                       const mapped = items1.map((kind) => " - " + kind.kind + ": " + kind.durationMillis + "ms");
-                      const items2 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040848882568606484, mapped.join("\n")];
+                      const items2 = [, mapped.join("\n")];
                       const items3 = [items2, , ];
                       const mutations = metrics.mutations;
                       const mapped1 = mutations.map((metrics) => {
@@ -274,7 +274,7 @@ let tmp9 = () => {
                         });
                         return " * Record Type: " + metrics.recordType + "\n" + mapped.join("\n");
                       });
-                      const items4 = [1073685247, mapped1.join("\n")];
+                      const items4 = [1090469887, mapped1.join("\n")];
                       items3[1] = items4;
                       const memory = metrics.memory;
                       const mapped2 = memory.map((statistics) => {
@@ -287,7 +287,7 @@ let tmp9 = () => {
                         });
                         return " * Record Type: " + statistics.recordType + "\n" + mapped.join("\n");
                       });
-                      const items5 = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026881571506148153, mapped2.join("\n")];
+                      const items5 = [, mapped2.join("\n")];
                       items3[2] = items5;
                       const found = items3.filter((arg0) => {
                         let arr;
@@ -338,7 +338,7 @@ let tmp9 = () => {
           }, DispatcherBridge(FLUX_API[14]).DispatchBand.Database);
           num2 = 15;
           _default = DispatcherBridge(FLUX_API[15]).default;
-          f127327 = _default;
+          f127369 = _default;
           addChangeListenerResult = _default.addChangeListener(() => {
             if ("active" !== _default.getState()) {
               const _Date = Date;
@@ -478,7 +478,7 @@ let tmp9 = () => {
   };
   return callback(DispatcherBridge, items);
 }();
-const set = new Set([1023359999, 1056914943]);
+const set = new Set([1040137471, 553598719]);
 tmp9 = new tmp9(function filterStores(items) {
   return items.filter((getMode) => set.has(getMode.getMode()));
 }(items));

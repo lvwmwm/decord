@@ -1,11 +1,11 @@
 // Module ID: 4005
-// Function ID: 33263
+// Function ID: 33265
 // Name: usePortalState
 // Dependencies: [0, 0]
 // Exports: usePortalState
 
 // Module 4005 (usePortalState)
-import { useContext } from "result";
+import { useContext } from "__exportStarResult1";
 
 
 export const usePortalState = function usePortalState(name) {

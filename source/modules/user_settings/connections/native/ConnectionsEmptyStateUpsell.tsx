@@ -1,10 +1,10 @@
-// Module ID: 13741
-// Function ID: 103927
+// Module ID: 13748
+// Function ID: 103960
 // Name: EmptyStateCard
 // Dependencies: []
 // Exports: default
 
-// Module 13741 (EmptyStateCard)
+// Module 13748 (EmptyStateCard)
 function EmptyStateCard(platform) {
   platform = platform.platform;
   const arg1 = platform;
@@ -61,10 +61,10 @@ const AnalyticsLocations = arg1(dependencyMap[2]).AnalyticsLocations;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
 let closure_8 = arg1(dependencyMap[4]).createStyles(() => {
-  let obj = { container: { 9223372036854775807: "values", 9223372036854775807: "Array" }, content: {}, card: {}, textContainer: { marginTop: 32 }, text: { textAlign: "center" } };
+  let obj = { container: { surrogates: "<string:3942646034>", accessibilityRole: "<string:3355444267>" }, content: {}, card: {}, textContainer: { marginTop: 32 }, text: { textAlign: "center" } };
   obj = { borderRadius: importDefault(dependencyMap[5]).radii.round };
   obj.iconContainer = obj;
-  obj.icon = { "Null": null, "Null": null };
+  obj.icon = { experimental_withBlurBackground: "<string:2491613185>", label: "<string:2941583362>" };
   return obj;
 });
 const obj = arg1(dependencyMap[4]);
@@ -85,16 +85,16 @@ export default function ConnectionsEmptyStateUpsell() {
   items2[1] = obj;
   obj.style = items2;
   const obj1 = { style: tmp.content };
-  const obj2 = { <string:2494184035>: "r", <string:4146205778>: "honeydew", <string:2432852520>: "getRRule", style: tmp.textContainer };
-  const obj3 = { "Bool(false)": 1090519040, "Bool(false)": 269589, 1385235042: 100417793, children: memo.map((platform) => callback(closure_9, { platform }, platform.type)) };
+  const obj2 = { <string:2494249571>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061520605953252, <string:1638682449>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001415738928680176, <string:180507111>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000073088767196, style: tmp.textContainer };
+  const obj3 = { "Bool(false)": null, "Bool(false)": "e3a50d090de2ca1d8928677d5f100909", "Bool(false)": "HubIcon", children: memo.map((platform) => callback(closure_9, { platform }, platform.type)) };
   const items3 = [callback(arg1(dependencyMap[20]).Stack, obj3), ];
-  const obj4 = { "Bool(false)": 1090519040, "Bool(false)": 269589, 1385235042: 100417793 };
+  const obj4 = { "Bool(false)": null, "Bool(false)": "e3a50d090de2ca1d8928677d5f100909", "Bool(false)": "HubIcon" };
   const items4 = [memo1.map((platform) => callback(closure_9, { platform }, platform.type)), callback(OtherConnectionsCard, { count: emptyStatePlatforms.length - 5 })];
   obj4.children = items4;
   items3[1] = callback2(arg1(dependencyMap[20]).Stack, obj4);
   obj2.children = items3;
   const items5 = [callback2(arg1(dependencyMap[20]).Stack, obj2), ];
-  const obj6 = { 2077523921: null, -643619887: null, style: tmp.textContainer };
+  const obj6 = { inlineEmbedMedia: null, inlineAttachmentMedia: null, style: tmp.textContainer };
   const obj7 = { style: tmp.text };
   const intl = arg1(dependencyMap[21]).intl;
   obj7.children = intl.string(arg1(dependencyMap[21]).t.JlrHXb);

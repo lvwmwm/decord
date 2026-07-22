@@ -1,10 +1,10 @@
-// Module ID: 15691
-// Function ID: 119965
+// Module ID: 15699
+// Function ID: 120008
 // Name: VoicePanelModes
 // Dependencies: []
 // Exports: default
 
-// Module 15691 (VoicePanelModes)
+// Module 15699 (VoicePanelModes)
 const _module = require(dependencyMap[0]);
 const VoicePanelModes = _module.VoicePanelModes;
 const DEFAULT_BORDER_RADIUS_PIP = _module.DEFAULT_BORDER_RADIUS_PIP;

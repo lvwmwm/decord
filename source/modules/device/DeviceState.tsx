@@ -1,5 +1,5 @@
 // Module ID: 6987
-// Function ID: 55886
+// Function ID: 55897
 // Name: DeviceState
 // Dependencies: []
 // Exports: logDeviceState

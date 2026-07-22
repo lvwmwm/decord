@@ -1,9 +1,9 @@
-// Module ID: 10343
-// Function ID: 79835
+// Module ID: 10344
+// Function ID: 79848
 // Name: NotificationAvatar
 // Dependencies: []
 
-// Module 10343 (NotificationAvatar)
+// Module 10344 (NotificationAvatar)
 function NotificationAvatar(arg0) {
   let guildId;
   let user;
@@ -66,8 +66,8 @@ const tmp2 = arg1(dependencyMap[4]);
 const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
 const tmp3 = arg1(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ cutoutIconContainer: { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 }, avatarContainer: { position: "relative" }, rightAccessoryContainer: { marginLeft: tmp2.RIGHT_ACCESSORY_LEFT_MARGIN } });
-const obj = { "Null": "/assets/images/channel_following", "Null": 400, "Null": 96, direction: arg1(dependencyMap[8]).CutoutDirection.BOTTOM_RIGHT };
+let closure_13 = arg1(dependencyMap[7]).createStyles({ cutoutIconContainer: {}, avatarContainer: { position: "relative" }, rightAccessoryContainer: { marginLeft: tmp2.RIGHT_ACCESSORY_LEFT_MARGIN } });
+const obj = { broadcastStatus: "/assets/images/channel_following", broadcastType: 400, damping: 96, direction: arg1(dependencyMap[8]).CutoutDirection.BOTTOM_RIGHT };
 let closure_15 = importAllResult.memo((message) => {
   message = message.message;
   let obj = arg1(dependencyMap[11]);

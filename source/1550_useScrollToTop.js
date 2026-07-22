@@ -47,11 +47,11 @@ export default function useScrollToTop(ref) {
               if ("scrollToTop" in null) {
                 null.scrollToTop();
               } else if ("scrollTo" in null) {
-                null.scrollTo({ "Bool(false)": "info", "Bool(false)": "/" });
+                null.scrollTo({ <string:1667345620>: null, <string:1638680913>: null });
               } else if ("scrollToOffset" in null) {
-                null.scrollToOffset({ "Null": "info", "Null": "/" });
+                null.scrollToOffset({ <string:1438146821>: null, <string:39547134>: null });
               } else if ("scrollResponderScrollTo" in null) {
-                const result = null.scrollResponderScrollTo({ "Bool(false)": "info", "Bool(false)": "/" });
+                const result = null.scrollResponderScrollTo({ <string:1667345620>: null, <string:1638680913>: null });
               }
             }
           } else {

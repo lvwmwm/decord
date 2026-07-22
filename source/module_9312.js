@@ -1,9 +1,9 @@
 // Module ID: 9312
-// Function ID: 72792
+// Function ID: 72804
 // Dependencies: []
 
 // Module 9312
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "f5a4357d7c0b7e1db64214ae6f5682c3", "Bool(false)": "ic_premium_channel_16px", "Bool(false)": "png", "Bool(false)": 28, "Bool(false)": 1, "Bool(false)": "center", "Bool(false)": "flex", "Bool(false)": "100%", scales: [null] };
+const obj = { 1358955657: "9a7cbd196902440a5e0240c4f2a08774", 1279501871: "nsfw_gate", -100662186: "png", -134216521: true, 1375732845: "/assets/modules/guild_role_subscriptions/native/images", -1598249400: 16, -117286062: 16, 978739886: null, scales: [false] };
 
 export default _module.registerAsset(obj);

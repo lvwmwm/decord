@@ -1,10 +1,10 @@
-// Module ID: 10554
-// Function ID: 82448
+// Module ID: 10555
+// Function ID: 82461
 // Name: useVideoStreamErrorContext
 // Dependencies: []
 // Exports: default
 
-// Module 10554 (useVideoStreamErrorContext)
+// Module 10555 (useVideoStreamErrorContext)
 function useVideoStreamErrorContext(arg0, arg1) {
   arg1 = arg0;
   const dependencyMap = arg1;

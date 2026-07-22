@@ -1,11 +1,11 @@
 // Module ID: 3875
-// Function ID: 32137
+// Function ID: 32139
 // Name: getHostComponent
 // Dependencies: [0, 4294967295]
 // Exports: callback, getHostComponent
 
 // Module 3875 (getHostComponent)
-import { Platform } from "result";
+import { Platform } from "__exportStarResult1";
 
 
 export const getHostComponent = function getHostComponent(RiveView, arg1) {

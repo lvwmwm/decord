@@ -1,10 +1,10 @@
-// Module ID: 10217
-// Function ID: 78947
+// Module ID: 10218
+// Function ID: 78960
 // Name: useFocusModeEnabled
 // Dependencies: []
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10217 (useFocusModeEnabled)
+// Module 10218 (useFocusModeEnabled)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).NotificationSettingsUpdateType;
 ({ AnalyticEvents: closure_5, StatusTypes: closure_6 } = arg1(dependencyMap[2]));

@@ -1,5 +1,5 @@
 // Module ID: 6385
-// Function ID: 50499
+// Function ID: 50510
 // Name: NitroWumpusWishlistingSpotIllustration
 // Dependencies: []
 // Exports: NitroWumpusWishlistingSpotIllustration

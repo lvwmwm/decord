@@ -1,10 +1,10 @@
-// Module ID: 16133
-// Function ID: 124381
+// Module ID: 16141
+// Function ID: 124423
 // Name: HeaderRow
 // Dependencies: []
 // Exports: ConnectedHeaderRow
 
-// Module 16133 (HeaderRow)
+// Module 16141 (HeaderRow)
 function HeaderRow(guild) {
   let description;
   let isUploading;
@@ -70,12 +70,12 @@ function HeaderRow(guild) {
   const items1 = [canCreateExpressions, , ];
   let tmp16 = null != tmp5;
   if (tmp16) {
-    const obj3 = { delete: "%MapPrototype%", dispatch: "<string:1153585408>", raw: "sent", style: tmp.errorText, children: tmp5 };
+    const obj3 = { "Null": "ars", "Null": "<string:1156272384>", alignItems: "AccountAgeTier9LargeBadge", style: tmp.errorText, children: tmp5 };
     tmp16 = callback3(arg1(dependencyMap[17]).Text, obj3);
   }
   items1[1] = tmp16;
   const obj4 = { style: tmp.uploadInstructionsContainer };
-  const obj5 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: description };
+  const obj5 = { cachedAt: "y", edpbxy: "isArray", children: description };
   const items2 = [callback3(arg1(dependencyMap[17]).Text, obj5), , ];
   const obj6 = { style: tmp.uploadInstructionsHeading };
   const intl6 = arg1(dependencyMap[13]).intl;
@@ -94,7 +94,7 @@ function HeaderRow(guild) {
     },
     renderItem: function renderUploadInstructionsListItem(item) {
       item = item.item;
-      const items = [null, null, item.text];
+      const items = ["Array", "GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE", item.text];
       return callback(guild(closure_2[17]).Text, { style: tmp.uploadListItem, accessibilityLabel: item.text, children: items });
     }
   });

@@ -1,10 +1,10 @@
-// Module ID: 9100
-// Function ID: 71316
+// Module ID: 9101
+// Function ID: 71329
 // Name: ChatGDMCustomizeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9100 (ChatGDMCustomizeActionSheet)
+// Module 9101 (ChatGDMCustomizeActionSheet)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/group_dm/native/ChatGDMCustomizeActionSheet.tsx");

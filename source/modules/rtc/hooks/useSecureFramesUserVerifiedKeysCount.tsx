@@ -1,10 +1,10 @@
-// Module ID: 8902
-// Function ID: 70264
+// Module ID: 8903
+// Function ID: 70277
 // Name: useSecureFramesUserVerifiedKeysCount
 // Dependencies: []
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 8902 (useSecureFramesUserVerifiedKeysCount)
+// Module 8903 (useSecureFramesUserVerifiedKeysCount)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");

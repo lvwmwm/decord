@@ -1,10 +1,10 @@
-// Module ID: 14952
-// Function ID: 112544
+// Module ID: 14960
+// Function ID: 112587
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 14952 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 14960 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 const isGuildOwner = require(dependencyMap[0]).isGuildOwner;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

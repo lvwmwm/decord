@@ -1,5 +1,5 @@
 // Module ID: 6887
-// Function ID: 54722
+// Function ID: 54733
 // Name: isCacheEnabled
 // Dependencies: []
 // Exports: isCacheEnabled

@@ -1,9 +1,9 @@
-// Module ID: 11340
-// Function ID: 88173
+// Module ID: 11341
+// Function ID: 88186
 // Name: renderChatInputActionButtonGiftAndThread
 // Dependencies: []
 
-// Module 11340 (renderChatInputActionButtonGiftAndThread)
+// Module 11341 (renderChatInputActionButtonGiftAndThread)
 function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, cleanup) {
   let accessible;
   let canStartThreads;

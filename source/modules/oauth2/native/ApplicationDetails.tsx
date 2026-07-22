@@ -1,12 +1,12 @@
-// Module ID: 9014
-// Function ID: 70923
+// Module ID: 9015
+// Function ID: 70936
 // Name: ApplicationDetailsEntry
 // Dependencies: []
 // Exports: default
 
-// Module 9014 (ApplicationDetailsEntry)
-function ApplicationDetailsEntry(iconComponent) {
-  iconComponent = iconComponent.iconComponent;
+// Module 9015 (ApplicationDetailsEntry)
+function ApplicationDetailsEntry(children) {
+  const iconComponent = children.iconComponent;
   const tmp = callback2();
   let obj = { style: tmp.entry };
   let iconComponentResult = null;
@@ -15,7 +15,7 @@ function ApplicationDetailsEntry(iconComponent) {
     iconComponentResult = iconComponent(obj);
   }
   const items = [iconComponentResult, ];
-  obj = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.entryText, children: iconComponent.text };
+  obj = { style: tmp.entryText, children: children.text };
   items[1] = callback(arg1(dependencyMap[19]).TextWithIOSLinkWorkaround, obj);
   obj.children = items;
   return closure_5(View, obj);
@@ -24,8 +24,8 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { applicationDetails: {}, entry: {}, entryText: { flex: 1 } };
-obj = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
+obj = { applicationDetails: { 9223372036854775807: "safety_state", 9223372036854775807: "message" }, entry: {}, entryText: { flex: 1 } };
+obj = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
 obj.entryIcon = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

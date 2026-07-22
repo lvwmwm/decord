@@ -1,17 +1,17 @@
-// Module ID: 8230
-// Function ID: 64993
+// Module ID: 8231
+// Function ID: 65005
 // Name: useProfileThemeOverrideStore
 // Dependencies: []
 // Exports: useEffectiveThemeOverride, useHasNonNitroThemeOverride, useIsBannerDisabledByOverride
 
-// Module 8230 (useProfileThemeOverrideStore)
+// Module 8231 (useProfileThemeOverrideStore)
 const ThemeTypes = require(dependencyMap[0]).ThemeTypes;
 const _module = require(dependencyMap[1]);
 const tmp2 = _module.create()((arg0) => {
   const require = arg0;
   const obj = {
-    "Null": "o",
-    "Null": "o",
+    to: "o",
+    borderRadius: "o",
     setThemeOverride(themeOverride) {
       return themeOverride({ themeOverride });
     },

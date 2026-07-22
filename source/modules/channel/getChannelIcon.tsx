@@ -1,10 +1,10 @@
-// Module ID: 11940
-// Function ID: 92328
+// Module ID: 11941
+// Function ID: 92342
 // Name: getChannelIconURL
 // Dependencies: []
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 11940 (getChannelIconURL)
+// Module 11941 (getChannelIconURL)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const ChannelTypes = arg1(dependencyMap[2]).ChannelTypes;

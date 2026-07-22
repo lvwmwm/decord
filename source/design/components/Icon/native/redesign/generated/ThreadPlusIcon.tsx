@@ -1,10 +1,10 @@
-// Module ID: 11332
-// Function ID: 88148
+// Module ID: 11333
+// Function ID: 88161
 // Name: ThreadPlusIcon
 // Dependencies: []
 // Exports: ThreadPlusIcon
 
-// Module 11332 (ThreadPlusIcon)
+// Module 11333 (ThreadPlusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadPlusIcon.tsx");

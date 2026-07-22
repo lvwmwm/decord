@@ -119,7 +119,7 @@ let tmp3 = (importDefaultResult) => {
           if (variantId !== self.lastEmittedDebugVariantId) {
             self.lastEmittedDebugVariantId = variantId;
             let obj = callback(closure_2[10]);
-            obj = { apex_debug_variant: variantId };
+            obj = { -9223372036854775808: -299958271, 0: -867106815, 9223372036854775807: 981025026, apex_debug_variant: variantId };
             obj.track(constants.EXPERIMENT_APEX_DEBUGGING_EVENT, obj);
           }
         }

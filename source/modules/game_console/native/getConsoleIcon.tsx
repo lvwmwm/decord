@@ -1,18 +1,17 @@
-// Module ID: 9046
-// Function ID: 71046
+// Module ID: 9047
+// Function ID: 71059
 // Name: PlatformTypes
-// Dependencies: []
+// Dependencies: [2013265955, 1761607715, 33554467, 1962934272, 0]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 9046 (PlatformTypes)
+// Module 9047 (PlatformTypes)
 let PLAYSTATION;
 let PLAYSTATION_STAGING;
 const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
 const VoicePlatforms = require(dependencyMap[1]).VoicePlatforms;
 const obj = { [PlatformTypes.XBOX]: importDefault(dependencyMap[2]), [PLAYSTATION]: importDefault(dependencyMap[3]), [PLAYSTATION_STAGING]: importDefault(dependencyMap[3]) };
 ({ PLAYSTATION, PLAYSTATION_STAGING } = PlatformTypes);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/game_console/native/getConsoleIcon.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/game_console/native/getConsoleIcon.tsx");
 
 export default function getConsoleIcon(arg0) {
   return obj[arg0];

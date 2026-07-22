@@ -1,10 +1,10 @@
-// Module ID: 5390
-// Function ID: 45965
+// Module ID: 5120
+// Function ID: 44386
 // Name: PromptHeader
 // Dependencies: []
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5390 (PromptHeader)
+// Module 5120 (PromptHeader)
 function PromptHeader(currentPrompt) {
   let currentPromptIndex;
   let numberOfPrompts;
@@ -129,14 +129,14 @@ function PromptFooter(lastPrompt) {
   obj2 = { style: tmp.footerContent };
   let tmp21 = null;
   if (tmp8) {
-    obj3 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.helpText };
+    obj3 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.helpText };
     const intl2 = arg1(dependencyMap[21]).intl;
     obj3.children = intl2.string(arg1(dependencyMap[21]).t.dA1dSf);
     tmp21 = callback2(arg1(dependencyMap[20]).Text, obj3);
   }
   const items6 = [tmp21, , ];
   if ("" !== helpText) {
-    const obj4 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.helpText };
+    const obj4 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.helpText };
     const items7 = [helpText, " ", helpTextAdditional];
     obj4.children = items7;
     let tmp25 = callback3(arg1(dependencyMap[20]).Text, obj4);
@@ -144,7 +144,7 @@ function PromptFooter(lastPrompt) {
     tmp25 = null;
   }
   items6[1] = tmp25;
-  obj5 = { "Bool(true)": 40, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+  obj5 = {};
   let str4 = "primary";
   if (tmp3) {
     str4 = "primary";
@@ -232,27 +232,27 @@ obj = { marginTop: arg1(dependencyMap[11]).NAV_BAR_HEIGHT, backgroundColor: impo
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[9]);
 obj.scrollContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
-obj.scrollContainerGradient = { 47317962: "Array", 227555106: "isArray", 36766276: "icon", 28115668: "Set", 64121911: null };
+obj.scrollContainerGradient = {};
 obj.promptHeader = { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true };
-const obj2 = { ref: "r", a: "gift_info", formatToPlainString: "isArray", apply: "NATIVE_REQUIRED_ASSETS", v: "activeOpacity", Array: "r", color: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[12]).radii.xs };
+const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.requiredSeparator = obj2;
 obj.countText = {};
 obj.title = { marginBottom: 32 };
-obj.helpText = {};
+obj.helpText = { "Null": 800, "Null": 16, "Null": 20 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
 obj.footer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
 obj.footerText = {};
-obj.footerContent = {};
-obj.optionTextEmoji = { create: 4432600148405143000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 498062566744412800000, "Bool(false)": 15474262483324400000000000000 };
+obj.footerContent = { "Bool(false)": 1392509218, "Bool(false)": 40960407 };
+obj.optionTextEmoji = { "Bool(false)": 46991793620966230000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 251456793115290500000000000, "Bool(false)": 588190258415559700000000000000000 };
 obj.optionImageEmoji = {};
-obj.emojiContainer = { <string:29557293>: true, <string:45941405>: true };
-const obj4 = { "Bool(true)": "1 Stunde", "Bool(true)": "{{count}} Stunden", "Bool(true)": "1 Tag", "Bool(true)": "{{count}} Tage", "Bool(true)": "1 Tag", "Bool(true)": "{{count}} Tagen", "Bool(true)": "etwa 1 Woche", "Bool(true)": "etwa {{count}} Wochen", "Bool(true)": "1 Woche", "Bool(true)": "{{count}} Wochen", borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST };
+obj.emojiContainer = { "Null": true, "Null": true };
+const obj4 = { "Null": 4, "Null": "center", "Bool(false)": "center", "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST };
 obj.dropdownContainer = obj4;
 obj.emptyDropdownText = { marginTop: 16 };
 const obj3 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
 obj.dropdownPill = { borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 obj.dropdownIconContainer = {};
-obj.dropdownIcon = { y: false, isArray: false };
+obj.dropdownIcon = { hideWhenScrolling: true, autoCapitalize: true };
 let closure_18 = obj.createStyles(obj);
 const obj5 = { borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPrompt.tsx");
@@ -339,7 +339,7 @@ export const RulesPrompt = function RulesPrompt(guildId) {
     obj5 = arg1;
     Text = dependencyMap;
     Button = arg1(dependencyMap[22]).Button;
-    const obj6 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", "Bool(true)": "rgb(255, 255, 255)", disabled: !string };
+    const obj6 = { disabled: !string };
     intl = arg1(dependencyMap[num3]).intl;
     string = intl.string;
     num3 = string(arg1(dependencyMap[num3]).t.0KL0ot);
@@ -504,7 +504,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
   const obj3 = { style: tmp.dropdownContainer, onPress: callback };
   let tmp11 = 0 === found.length;
   if (tmp11) {
-    const obj4 = { EMOJI_REACTIONS_ON_MESSAGES: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002752361127590651, paddingVertical: 15181894558241420000000000000000000000000000000000000000000000000000000000000000000, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001573908129898106, authorization: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000658992158950013, style: tmp.emptyDropdownText };
+    const obj4 = { "Null": "y", ti: "ACCOUNT_DISABLE", tk: "Array", tl: "flattenDepth", style: tmp.emptyDropdownText };
     tmp11 = callback2(arg1(dependencyMap[20]).Text, obj4);
   }
   const items5 = [tmp11, found.map((id) => callback(closure_22, { option: id }, id.id)), ];

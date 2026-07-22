@@ -1,10 +1,10 @@
-// Module ID: 14854
-// Function ID: 111945
+// Module ID: 14862
+// Function ID: 111988
 // Name: num2
 // Dependencies: []
 // Exports: default
 
-// Module 14854 (num2)
+// Module 14862 (num2)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
@@ -18,7 +18,7 @@ if (obj.isAndroid()) {
 let obj1 = arg1(dependencyMap[6]);
 obj = { gapContainer: obj };
 obj = { height: num };
-obj1 = { IconComponent: "<string:3219259393>", title: "<string:2018574338>", borderRadius: "<string:4097905107>", height: "<string:1912603177>", opacity: "floor", accessible: "int64", right: "<string:3459662337>", getChannel: "<string:3219324929>", displayName: "<string:2018574338>", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
+obj1 = { borderTopRightRadius: null, borderTopLeftRadius: null, position: null, top: null, left: null, right: null, bottom: null, borderTopRightRadius: null, borderTopLeftRadius: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
 let num2 = 16;
 obj1.marginVertical = (num - 16) / 2;
 obj.tagContainer = obj1;
@@ -61,7 +61,7 @@ export default function VoiceGuildTagChiplet(userId) {
       obj1.source = obj2;
       obj1.size = GuildTagBadgeSize.SIZE_12;
       const items2 = [callback(arg1(dependencyMap[10]).GuildTagBadge, obj1), ];
-      const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images", style: tmp.tag, children: tag };
+      const obj3 = { style: tmp.tag, children: tag };
       items2[1] = callback(arg1(dependencyMap[11]).Text, obj3);
       obj.children = items2;
       obj.children = callback2(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 8269
-// Function ID: 65229
+// Module ID: 8270
+// Function ID: 65241
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: downloadMediaAsset, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedImageSource, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
 
-// Module 8269 (_createForOfIteratorHelperLoose)
+// Module 8270 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

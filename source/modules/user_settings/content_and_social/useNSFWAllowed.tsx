@@ -1,5 +1,5 @@
 // Module ID: 7921
-// Function ID: 63149
+// Function ID: 63159
 // Name: useNSFWAllowed
 // Dependencies: []
 // Exports: useNSFWAllowed

@@ -1,8 +1,8 @@
-// Module ID: 13925
-// Function ID: 105843
+// Module ID: 13932
+// Function ID: 105883
 // Dependencies: []
 
-// Module 13925
+// Module 13932
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -35,12 +35,12 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
     obj = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj);
   }, items);
-  obj = { hideTitle: null, initialRouteName: null, spacing: importDefault(dependencyMap[7]).space.PX_24, style: withQuestName.style };
+  obj = { 1632524954: null, -1703325236: null, spacing: importDefault(dependencyMap[7]).space.PX_24, style: withQuestName.style };
   obj = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
   const items1 = [callback(importDefault(dependencyMap[8]), obj), ];
   obj1 = { align: "center", spacing: importDefault(dependencyMap[7]).space.PX_4, onLayout: onTextBlockLayout };
   if (tmp) {
-    const obj2 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isInTreatment", style: tmp5.questName };
+    const obj2 = { cachedAt: null, edpbxy: null, style: tmp5.questName };
     const intl = arg1(dependencyMap[10]).intl;
     const obj3 = { questName: quest.config.messages.questName };
     obj2.children = intl.formatToPlainString(arg1(dependencyMap[10]).t.EAYZAr, obj3);
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
   }
   const items2 = [tmp, ];
   if (tmp2) {
-    const obj4 = { hasMaxConnections: "<string:2740060162>", isBoostOnlySubscription: "<string:299071596>" };
+    const obj4 = { cachedAt: "<string:3813801986>", edpbxy: "<string:300807788>" };
     const intl2 = arg1(dependencyMap[10]).intl;
     obj4.children = intl2.string(arg1(dependencyMap[10]).t.1Wvve2);
     tmp2 = callback(arg1(dependencyMap[9]).Text, obj4);

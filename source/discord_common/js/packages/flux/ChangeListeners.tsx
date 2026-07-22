@@ -1,12 +1,16 @@
 // Module ID: 569
 // Function ID: 6904
 // Name: ChangeListeners
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 569 (ChangeListeners)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
+
+export const ChangeListeners = () => {
   class ChangeListeners {
     constructor() {
       ChangeListeners = this;
@@ -81,6 +85,3 @@ const tmp2 = () => {
   items[2] = obj;
   return callback(ChangeListeners, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
-
-export const ChangeListeners = tmp2;

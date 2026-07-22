@@ -1,8 +1,8 @@
-// Module ID: 10790
-// Function ID: 83785
+// Module ID: 10791
+// Function ID: 83798
 // Dependencies: []
 
-// Module 10790
+// Module 10791
 let closure_3 = importDefault(dependencyMap[0]);
 const View = arg1(dependencyMap[2]).View;
 let closure_5 = importDefault(dependencyMap[3]);
@@ -11,13 +11,13 @@ const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { container: { title: "isArray", body: "BUTTON_BORDER_WIDTH", isDismissable: "isArray", downloaded: "isArrayBuffer" } };
-obj = { 1655329890: false, -1135455284: false, 1702608251: false, -1437140064: false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.round };
+let obj = { container: { "Bool(false)": "isArray", "Bool(false)": "SURVEY_ACTION_SAMPLE_PERCENTS", "Bool(false)": "isArray", "Bool(false)": "isArrayBuffer" } };
+obj = { GiftingBadgeExperiment: "isArray", EmojiInteractionPoint: "key", lieTqU: "Array", macosTransportType: "construct", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.participantItemContainer = obj;
-obj.participantAvatarContainer = { "Null": null, "Null": null };
+obj.participantAvatarContainer = { <string:3596066964>: null, <string:3638417373>: null };
 obj1 = { fontSize: 12, fontFamily: arg1(dependencyMap[5]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY, lineHeight: 18 };
 obj.participantAvatarText = obj1;
-obj.participantNameplateContainer = { mui: "gift_info", y: "<string:2631618816>", _onCellFocusCapture: "content", y: "isArray" };
+obj.participantNameplateContainer = { paddingBottom: "cardsScroller", borderBottomWidth: "<string:2639024384>", borderBottomColor: "content", marginBottom: "isArray" };
 const tmp3 = arg1(dependencyMap[6]);
 obj.participantNameplateSpeakingText = { lineHeight: 18, color: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 let closure_10 = obj1.createStyles(obj);
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj1.children = callback3(importDefault(dependencyMap[12]), obj2);
       const items2 = [callback3(View, obj1), ];
       const obj3 = { style: tmp.participantNameplateContainer };
-      const obj4 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.participantNameplateSpeakingText };
+      const obj4 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.participantNameplateSpeakingText };
       const intl = arg1(dependencyMap[14]).intl;
       const obj5 = { count: first.length };
       obj4.children = intl.format(arg1(dependencyMap[14]).t.+dia6l, obj5);

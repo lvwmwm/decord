@@ -1,10 +1,10 @@
-// Module ID: 13340
-// Function ID: 101419
+// Module ID: 13347
+// Function ID: 101452
 // Name: getVolumeForSound
 // Dependencies: []
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 13340 (getVolumeForSound)
+// Module 13347 (getVolumeForSound)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/soundboard/getVolumeForSound.tsx");
 

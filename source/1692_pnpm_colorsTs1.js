@@ -116,7 +116,7 @@ let closure_13 = () => {
   unprocessColorNumber.__initData = closure_12;
   return unprocessColorNumber;
 }();
-let closure_14 = ["onChange", "children", "offset", "style"];
+let closure_14 = [];
 let closure_15 = { code: "function processDynamicColorObjectIOS_Pnpm_colorsTs11(value){const{DynamicColorIOSProperties,processColorNumber}=this.__closure;const result={};for(const property of DynamicColorIOSProperties){if(value.dynamic[property]===undefined){continue;}const processed=processColorNumber(value.dynamic[property]);if(processed===null){return null;}result[property]=processed;}return{dynamic:result};}" };
 let closure_16 = () => {
   function processDynamicColorObjectIOS(arg0) {

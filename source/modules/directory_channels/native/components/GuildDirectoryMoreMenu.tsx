@@ -1,10 +1,10 @@
-// Module ID: 10034
-// Function ID: 77541
+// Module ID: 10035
+// Function ID: 77554
 // Name: GuildDirectoryMoreMenu
 // Dependencies: []
 // Exports: default
 
-// Module 10034 (GuildDirectoryMoreMenu)
+// Module 10035 (GuildDirectoryMoreMenu)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx");

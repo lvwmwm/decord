@@ -1,7 +1,7 @@
 // Module ID: 809
 // Function ID: 9071
 // Name: isMatchingPattern
-// Dependencies: []
+// Dependencies: [4294967295, 0]
 
 // Module 809 (isMatchingPattern)
 function isMatchingPattern(arr, test) {

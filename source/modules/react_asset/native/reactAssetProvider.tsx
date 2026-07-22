@@ -1,10 +1,10 @@
-// Module ID: 16469
-// Function ID: 127282
+// Module ID: 16477
+// Function ID: 127324
 // Name: NativeReactAssetModule
 // Dependencies: []
 // Exports: default
 
-// Module 16469 (NativeReactAssetModule)
+// Module 16477 (NativeReactAssetModule)
 const _module = require(dependencyMap[0]);
 const Image = _module.Image;
 const _module1 = require(dependencyMap[1]);

@@ -128,7 +128,9 @@ class PseudoMap {
   clear() {
     obj = Object.create(null);
     obj.size = 0;
-    definePropertyResult = Object.defineProperty(this, "_data", { value: obj });
+    obj = { onDownloadProgress: 60, GUILD_TAG_AVAILABLE_COACHMARK_V2: 0, _setupIntegrations: 0, blurTargetViewNativeId: 0 };
+    obj.value = obj;
+    definePropertyResult = Object.defineProperty(this, "_data", obj);
     return;
   }
 }

@@ -1,8 +1,8 @@
-// Module ID: 11343
-// Function ID: 88196
+// Module ID: 11344
+// Function ID: 88209
 // Dependencies: []
 
-// Module 11343
+// Module 11344
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,9 +14,9 @@ const ContentDismissActionType = arg1(dependencyMap[6]).ContentDismissActionType
 const tmp2 = arg1(dependencyMap[7]);
 let closure_12 = arg1(dependencyMap[8]).createStyles(() => {
   let obj = {};
-  obj = { backgroundColor: 24182785, opacity: 16777216, borderRadius: importDefault(dependencyMap[9]).radii.round, 0: 7668224, 0: 2013265920, left: importDefault(dependencyMap[9]).space.PX_4, right: importDefault(dependencyMap[9]).space.PX_4 };
+  obj = { left: importDefault(dependencyMap[9]).space.PX_4, backgroundColor: 16777216, "Bool(true)": 113, "Bool(true)": 7668224, "Bool(true)": 2013265920, right: importDefault(dependencyMap[9]).space.PX_4, borderRadius: importDefault(dependencyMap[9]).radii.round };
   obj.gradientContainer = obj;
-  obj = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[9]).radii.sm, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+  obj = { left: "center", backgroundColor: -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia", borderRadius: importDefault(dependencyMap[9]).radii.sm };
   obj.gradientContainerRefresh = obj;
   obj.transparentBackground = { backgroundColor: "transparent" };
   return obj;
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(function ChatInputActionButtonGift(arg0)
         num3 = angle;
       }
       obj2.angle = num3;
-      obj2.angleCenter = {};
+      obj2.angleCenter = { 0: false, 0: false };
       obj2.colors = gradient.colors;
       tmp25Result = callback2(importDefault(dependencyMap[19]), obj2);
       const tmp25 = callback2;

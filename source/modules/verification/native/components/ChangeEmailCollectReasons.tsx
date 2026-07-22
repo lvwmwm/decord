@@ -1,10 +1,10 @@
-// Module ID: 9176
-// Function ID: 71884
+// Module ID: 9177
+// Function ID: 71897
 // Name: ChangeEmailCollectReasons
 // Dependencies: []
 // Exports: default
 
-// Module 9176 (ChangeEmailCollectReasons)
+// Module 9177 (ChangeEmailCollectReasons)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -61,15 +61,15 @@ export default function ChangeEmailCollectReasons(changeEmailReason) {
   const items3 = [changeEmailReason, callback1];
   let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { onUnexpectedItemSize: null, minResolutionHeight: null, style: tmp.background };
+    obj = { "Bool(true)": true, "Bool(true)": true, style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
     const intl = arg1(dependencyMap[16]).intl;
     obj1.children = intl.string(arg1(dependencyMap[16]).t.41NIIh);
     const items4 = [callback(arg1(dependencyMap[15]).Text, obj1), , ];
     const obj2 = { style: tmp.radioGroup, children: tmp6 };
     items4[1] = callback(closure_4, obj2);
-    const obj3 = { text: true, size: true, onPress: callback };
+    const obj3 = { onPress: callback };
     const intl2 = arg1(dependencyMap[16]).intl;
     obj3.text = intl2.string(arg1(dependencyMap[16]).t.XiOHRX);
     obj3.disabled = null == changeEmailReason;

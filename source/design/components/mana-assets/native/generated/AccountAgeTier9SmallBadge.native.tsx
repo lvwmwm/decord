@@ -1,7 +1,7 @@
 // Module ID: 5841
-// Function ID: 49683
+// Function ID: 49694
 // Name: AccountAgeTier9SmallBadge
-// Dependencies: [131072, 561250304, 1879048192, 4060086292]
+// Dependencies: [131072, 561250304, 3657433088, 4060086291]
 // Exports: AccountAgeTier9SmallBadge
 
 // Module 5841 (AccountAgeTier9SmallBadge)

@@ -1,10 +1,10 @@
-// Module ID: 12394
-// Function ID: 94736
+// Module ID: 12399
+// Function ID: 94764
 // Name: GuildBoostingMarketingWave
 // Dependencies: []
 // Exports: default
 
-// Module 12394 (GuildBoostingMarketingWave)
+// Module 12399 (GuildBoostingMarketingWave)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11567
-// Function ID: 89981
+// Module ID: 11568
+// Function ID: 89994
 // Name: GuildPowerupsDisabledWarning
 // Dependencies: []
 // Exports: default
 
-// Module 11567 (GuildPowerupsDisabledWarning)
+// Module 11568 (GuildPowerupsDisabledWarning)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
@@ -22,7 +22,7 @@ export default function GuildPowerupsDisabledWarning(text) {
   let obj = { style: tmp.container };
   obj = { color: importDefault(dependencyMap[3]).colors.TEXT_FEEDBACK_WARNING, size: "md" };
   const items = [callback(require(dependencyMap[4]).WarningIcon, obj), ];
-  obj = { delete: "931bea5d9b6a7fc7a53130a431abe666", dispatch: "no_mutual_servers_dark", raw: "png", style: tmp.text, children: text.text };
+  obj = { "Null": "931bea5d9b6a7fc7a53130a431abe666", "Null": "no_mutual_servers_dark", alignItems: "png", style: tmp.text, children: text.text };
   items[1] = callback(require(dependencyMap[5]).Text, obj);
   obj.children = items;
   return callback2(View, obj);

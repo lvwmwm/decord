@@ -1,18 +1,18 @@
-// Module ID: 13459
-// Function ID: 102205
+// Module ID: 13466
+// Function ID: 102238
 // Name: useUploadAvatar
 // Dependencies: [0, 131072, 0, 0, 0]
 // Exports: default
 
-// Module 13459 (useUploadAvatar)
-import closure_3 from "result";
-import closure_5 from "result";
-import result from "result";
-import { PremiumUpsellTypes } from "result";
+// Module 13466 (useUploadAvatar)
+import closure_3 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import { PremiumUpsellTypes } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 arg1(dependencyMap[1]).useCallback;
-({ AnalyticsPages: closure_6, UPLOAD_MEDIUM_SIZE: closure_7, Base64GIFPrefix: closure_8, AnalyticsSections: closure_9, UpsellTypes: closure_10 } = result);
-result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_profile/hooks/native/useUploadAvatar.tsx");
+({ AnalyticsPages: closure_6, UPLOAD_MEDIUM_SIZE: closure_7, Base64GIFPrefix: closure_8, AnalyticsSections: closure_9, UpsellTypes: closure_10 } = require("__exportStarResult1"));
+const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_profile/hooks/native/useUploadAvatar.tsx");
 
 export default function useUploadAvatar(guildId) {
   guildId = guildId.guildId;

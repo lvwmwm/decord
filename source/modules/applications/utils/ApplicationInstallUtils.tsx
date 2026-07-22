@@ -1,10 +1,10 @@
-// Module ID: 8184
-// Function ID: 64656
+// Module ID: 8185
+// Function ID: 64668
 // Name: canInstallApplication
 // Dependencies: []
 // Exports: isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8184 (canInstallApplication)
+// Module 8185 (canInstallApplication)
 function canInstallApplication(application) {
   const integrationTypesConfig = application.integrationTypesConfig;
   let tmp = null != application.customInstallUrl || null != application.installParams;

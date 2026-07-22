@@ -1,10 +1,10 @@
-// Module ID: 10169
-// Function ID: 78587
+// Module ID: 10170
+// Function ID: 78600
 // Name: InstantInviteDetails
 // Dependencies: []
 // Exports: default
 
-// Module 10169 (InstantInviteDetails)
+// Module 10170 (InstantInviteDetails)
 class InstantInviteDetails {
   constructor(arg0) {
     ({ channel, expiresAt } = global);
@@ -19,10 +19,11 @@ class InstantInviteDetails {
     }
     tmp4 = jsxs;
     obj = {};
-    obj1 = { "Bool(false)": null, "Bool(false)": 8 };
+    obj1 = { "Bool(false)": "absolute", "Bool(false)": 8 };
     items = [, ];
-    items[0] = jsx(TextIcon, { "Null": null, "Null": "row" });
-    obj2 = { style: tmp.channel };
+    items[0] = jsx(TextIcon, {});
+    obj2 = { -9223372036854775808: "<string:1359050337>", 0: "<string:3158443763>", 9223372036854775807: "<string:989856819>", 9223372036854775807: "<string:1627390474>" };
+    obj2.style = tmp.channel;
     obj5 = arg1(dependencyMap[12]);
     obj2.children = obj5.computeChannelName(channel, closure_7, closure_6, false);
     items[1] = jsx(arg1(dependencyMap[11]).Text, obj2);
@@ -34,13 +35,13 @@ class InstantInviteDetails {
       tmp6 = jsxs;
       tmp7 = arg1;
       tmp8 = dependencyMap;
-      obj3 = { "Bool(false)": null, "Bool(false)": 8 };
+      obj3 = { "Bool(false)": "absolute", "Bool(false)": 8 };
       tmp9 = jsx;
       num2 = 13;
       items2 = [, , ];
-      items2[0] = jsx(arg1(dependencyMap[13]).ClockIcon, {});
+      items2[0] = jsx(arg1(dependencyMap[13]).ClockIcon, { "Bool(false)": 1, "Bool(false)": -76 });
       tmp10 = jsx;
-      obj4 = { hasMaxConnections: "default", isBoostOnlySubscription: "body" };
+      obj4 = { cachedAt: "<string:1359050337>", edpbxy: "<string:3158443763>" };
       num3 = 14;
       intl = arg1(dependencyMap[14]).intl;
       obj4.children = intl.string(arg1(dependencyMap[14]).t.aTABYx);
@@ -81,7 +82,7 @@ export default function InstantInviteCode(invite) {
   let obj = { style: callback3().flex };
   const memo = React.useMemo(() => callback(invite.channel), items);
   obj = {};
-  obj = { Set: null, Icon: null, children: invite.code };
+  obj = { "Bool(false)": null, "Bool(false)": null, children: invite.code };
   const items1 = [callback(arg1(dependencyMap[11]).Text, obj), ];
   const tmp = callback3();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });

@@ -1,10 +1,10 @@
-// Module ID: 15947
-// Function ID: 122312
+// Module ID: 15955
+// Function ID: 122354
 // Name: onClose
 // Dependencies: []
 // Exports: openInteractionModal
 
-// Module 15947 (onClose)
+// Module 15955 (onClose)
 function onClose() {
   return importDefault(dependencyMap[6]).popWithKey(closure_8);
 }
@@ -30,7 +30,7 @@ class InteractionModal {
     items1 = [, , ];
     items1[0] = jsx(arg1(dependencyMap[9]).Avatar, obj2);
     obj3 = { style: tmp.titleView, children: jsx(arg1(dependencyMap[11]).Text, obj4) };
-    obj4 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+    obj4 = { cachedAt: false, edpbxy: false };
     obj4.children = global.title;
     items1[1] = jsx(View, obj3);
     obj5 = { accessibilityRole: "button" };

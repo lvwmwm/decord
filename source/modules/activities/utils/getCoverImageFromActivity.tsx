@@ -1,10 +1,10 @@
-// Module ID: 12191
-// Function ID: 93711
+// Module ID: 12195
+// Function ID: 93737
 // Name: getCoverImageFromActivity
 // Dependencies: []
 // Exports: default
 
-// Module 12191 (getCoverImageFromActivity)
+// Module 12195 (getCoverImageFromActivity)
 let closure_2 = require(dependencyMap[0]).ACTIVITY_INVITE_COVER_IMAGE_SIZE;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/activities/utils/getCoverImageFromActivity.tsx");

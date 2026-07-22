@@ -1,10 +1,10 @@
-// Module ID: 12401
-// Function ID: 94760
+// Module ID: 12406
+// Function ID: 94788
 // Name: TierFeatures
 // Dependencies: []
 // Exports: default
 
-// Module 12401 (TierFeatures)
+// Module 12406 (TierFeatures)
 let BoostedGuildTiers;
 function TierFeatures(features) {
   const tmp = callback4();
@@ -53,9 +53,9 @@ function TierFeatures(features) {
     }
     items[2] = cardFeatureLast;
     obj.style = items;
-    obj = { borderColor: "<string:141706434>", borderRadius: "<string:33554432>", borderStyle: "<string:1358954496>", style: closure_10.cardFeatureIcon };
+    obj = { style: tmp.cardFeatureIcon };
     const items1 = [callback(isIncluded.IconComponent, obj), ];
-    obj = { "Bool(true)": "<string:2803236866>", "Bool(true)": "<string:2018574338>", "Bool(true)": "<string:3342930387>" };
+    obj = { -9223372036854775808: "Array", 9223372036854775807: "atan2", 0: "r" };
     let cardFeatureExcludedCopy = !isIncluded.isIncluded;
     if (cardFeatureExcludedCopy) {
       cardFeatureExcludedCopy = tmp.cardFeatureExcludedCopy;
@@ -87,8 +87,8 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = { tier: BoostedGuildTiers.TIER_1 };
 obj = {
-  guildId: "info",
-  channelId: "/",
+  "Bool(false)": null,
+  "Bool(false)": null,
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -122,8 +122,8 @@ items[2] = {
   }
 };
 const obj3 = {
-  guildId: null,
-  channelId: null,
+  "Bool(false)": "center",
+  "Bool(false)": 16,
   IconComponent: arg1(dependencyMap[10]).VoiceNormalIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -301,8 +301,8 @@ items2[1] = {
   }
 };
 const obj14 = {
-  guildId: "info",
-  channelId: "/",
+  "Bool(false)": null,
+  "Bool(false)": null,
   IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -402,6 +402,26 @@ items2[7] = {
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.aFRl53, obj);
   }
 };
+const obj20 = {
+  "Bool(false)": "100%",
+  "Bool(false)": 16,
+  IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.1a5rjl);
+  }
+};
+items2[8] = obj20;
+const obj21 = {
+  "Bool(false)": "center",
+  "Bool(false)": 16,
+  IconComponent: arg1(dependencyMap[6]).ReactionIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.6PV6Qc);
+  }
+};
+items2[9] = obj21;
 const obj19 = {
   IconComponent: arg1(dependencyMap[14]).UploadIcon,
   getCopy() {
@@ -411,30 +431,6 @@ const obj19 = {
     obj = { size: BoostedGuildFeatures[closure_7.TIER_2].limits.fileSize / 1024 / 1024 };
     obj.uploadSizeLimit = intl2.formatToPlainString(arg1(dependencyMap[7]).t.pIn7Af, obj);
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.aFRl53, obj);
-  }
-};
-items2[8] = {
-  IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.1a5rjl);
-  }
-};
-const obj21 = {
-  guildId: null,
-  channelId: null,
-  IconComponent: arg1(dependencyMap[6]).ReactionIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.6PV6Qc);
-  }
-};
-items2[9] = obj21;
-const obj20 = {
-  IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.1a5rjl);
   }
 };
 items2[10] = {
@@ -510,8 +506,8 @@ items3[2] = {
   }
 };
 const obj27 = {
-  guildId: null,
-  channelId: null,
+  "Bool(false)": "center",
+  "Bool(false)": 16,
   IconComponent: arg1(dependencyMap[10]).VoiceNormalIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -524,8 +520,8 @@ const obj27 = {
 };
 items3[3] = obj27;
 const obj28 = {
-  guildId: null,
-  channelId: null,
+  "Bool(false)": "isArray",
+  "Bool(false)": "HTTP",
   IconComponent: arg1(dependencyMap[11]).StageIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -533,6 +529,16 @@ const obj28 = {
   }
 };
 items3[4] = obj28;
+const obj29 = {
+  "Bool(false)": "100%",
+  "Bool(false)": 16,
+  IconComponent: arg1(dependencyMap[12]).GifIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
+  }
+};
+items3[5] = obj29;
 const obj26 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
@@ -540,20 +546,6 @@ const obj26 = {
     const intl = arg1(dependencyMap[7]).intl;
     const obj = { resolution: arg1(dependencyMap[16]).getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.Jbg8oY, obj);
-  }
-};
-items3[5] = {
-  IconComponent: arg1(dependencyMap[12]).GifIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
-  }
-};
-const obj29 = {
-  IconComponent: arg1(dependencyMap[12]).GifIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
   }
 };
 items3[6] = {
@@ -619,8 +611,8 @@ items3[9] = {
   }
 };
 const obj34 = {
-  guildId: "info",
-  channelId: "/",
+  "Bool(false)": null,
+  "Bool(false)": null,
   IconComponent: arg1(dependencyMap[15]).LinkIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -631,7 +623,7 @@ items3[10] = obj34;
 obj23.features = items3;
 items1[2] = obj23;
 let obj37 = arg1(dependencyMap[17]);
-const obj35 = { cardWrapper: { getCategoryRecord: "/assets/modules/guild_boosting/native/images", showName: 23 } };
+const obj35 = { cardWrapper: { "Bool(false)": "/assets/modules/guild_boosting/native/images", "Bool(false)": 23 } };
 const obj33 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
@@ -641,16 +633,16 @@ const obj33 = {
   }
 };
 obj35.card = { borderRadius: importDefault(dependencyMap[18]).radii.lg, height: "100%" };
-obj35.cardContent = {};
+obj35.cardContent = { style: true, variant: true, color: true };
 obj37 = { borderRadius: importDefault(dependencyMap[18]).radii.lg };
 obj35.pressableWrapper = obj37;
 obj35.cardHeading = {};
 obj35.cardTierName = { marginRight: 10 };
 obj35.cardTierBoostcount = { opacity: 0.7 };
-obj35.cardFeatures = { isArray: null, diversity: null };
+obj35.cardFeatures = { nestedScrollEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, scrollEventThrottle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
 obj35.cardFeaturesInvisible = {};
-obj35.cardFeaturesWrapper = {};
-obj35.cardFeature = { "Bool(false)": "<string:1883373569>", "Bool(false)": "<string:1895825684>", "Bool(false)": "<string:1358954831>", "Bool(false)": "<string:2906719178>" };
+obj35.cardFeaturesWrapper = { -430812319: false, 1634795890: false, -1436461740: false };
+obj35.cardFeature = {};
 obj35.cardFeatureExcluded = { opacity: 0.5 };
 obj35.cardFeatureExcludedCopy = { textDecorationLine: "line-through" };
 obj35.cardFeatureLast = { marginBottom: 0 };
@@ -658,21 +650,21 @@ const obj36 = { borderRadius: importDefault(dependencyMap[18]).radii.lg, height:
 obj35.cardsScroller = { flex: 1, marginTop: arg1(dependencyMap[19]).PROGRESS_BAR_SPACING };
 obj35.cardsScrollerContent = {};
 obj35.cardFeatureIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-obj35.cardFooter = { 1585096451: null, 1039032302: null, 1636983294: null };
-obj35.cardFooterIcon = { transform: "r", Path: "%Math%", withTiming: "isArray", body: "isArrayBuffer", flags: "isArray" };
+obj35.cardFooter = { -131509629: null, body: null, enabled: null };
+obj35.cardFooterIcon = { "Bool(true)": "r", "Bool(true)": "%JSONStringify%", "Bool(true)": "isArray", "Bool(true)": "isArrayBuffer", "Bool(true)": "isArray" };
 const obj38 = { flex: 1, marginTop: arg1(dependencyMap[19]).PROGRESS_BAR_SPACING };
 obj35.cardTierBadge = { borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj35.cardTierBadgeCopy = { textTransform: "uppercase" };
 const obj39 = { borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj35.sparkleStar = { position: "absolute", tintColor: arg1(dependencyMap[20]).DARK_WHITE_500_LIGHT_GUILD_BOOSTING_PINK };
 obj35.sparkleStarPointed = {};
-obj35.sparkleStarElongated = { y: "column", isArray: "center" };
+obj35.sparkleStarElongated = { hideWhenScrolling: "column", autoCapitalize: "center" };
 obj35.sparkleStarPointed1 = {};
 obj35.sparkleStarPointed2 = {};
 obj35.sparkleStarPointed3 = {};
-obj35.sparkleStarElongated1 = { ig: "Array", ik: "isArray" };
-obj35.gradientHighlight = { was: false, visible: false, hasSpoiler: false };
-obj35.gradientHighlightTop = { ig: null, ik: "36d299b9a20b89def78675ec02a95049" };
+obj35.sparkleStarElongated1 = { it-CH: -302624512, heroInfoContainer: -1429651183 };
+obj35.gradientHighlight = { zIndex: false, width: false, backgroundColor: false };
+obj35.gradientHighlightTop = { it-CH: null, heroInfoContainer: "36d299b9a20b89def78675ec02a95049" };
 obj35.gradientHighlightBottom = {};
 let closure_13 = obj37.createStyles(obj35);
 let closure_14 = { code: "function GuildBoostingMarketingTierCardsTsx1(){const{withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing}=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};}" };
@@ -720,14 +712,14 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     stringResult = string(t.agC5xg);
   }
   obj = { style: tmp.cardWrapper, ref };
-  obj = { angle: 45, angleCenter: {} };
+  obj = { angle: 45, angleCenter: { 0: false, 0: false } };
   const isThemeDarkResult = obj.isThemeDark(importDefault(dependencyMap[24])());
   const tmp10 = View;
   const tmp11 = callback2;
   const tmp9 = callback3;
   const items1 = [importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj.colors = items1;
-  obj.locations = ["replace", "then"];
+  obj.locations = [77601039, 1612144654];
   obj.style = tmp.card;
   obj.useAngle = true;
   const obj1 = { style: tmp.pressableWrapper };
@@ -737,7 +729,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   let obj7 = ref(dependencyMap[28]);
   obj4.children = obj7.getTierName(tier, { useLevels: false });
   const items2 = [callback2(ref(dependencyMap[23]).Text, obj4), ];
-  const obj5 = { "Null": "Shooting Lines_03", "Null": 1, "Null": 1, style: tmp.cardTierBoostcount };
+  const obj5 = { style: tmp.cardTierBoostcount };
   const intl2 = ref(dependencyMap[7]).intl;
   obj5.children = intl2.format(ref(dependencyMap[7]).t.gDsyB9, { numSubscriptions: closure_6[tier] });
   items2[1] = callback2(ref(dependencyMap[23]).Text, obj5);
@@ -748,7 +740,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   obj7.children = items4;
   items3[1] = callback3(View, obj7);
   const obj9 = { style: tmp.cardFooter };
-  const obj10 = { "Null": null, "Null": null, children: stringResult };
+  const obj10 = { children: stringResult };
   const items5 = [callback2(ref(dependencyMap[23]).Text, obj10), ];
   if (isExpanded) {
     let ChevronLargeDownIcon = tmp19(tmp20[29]).ChevronLargeUpIcon;
@@ -791,8 +783,8 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       const tmp40 = importDefault(dependencyMap[26]);
       items7[2] = ref(dependencyMap[31]).hexWithOpacity(tmp7, 0);
       obj13.colors = items7;
-      obj13.start = {};
-      obj13.end = {};
+      obj13.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+      obj13.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
       obj13.locations = [false, false, false];
       const items8 = [, ];
       ({ gradientHighlight: arr10[0], gradientHighlightTop: arr10[1] } = tmp);
@@ -807,8 +799,8 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       const obj25 = ref(dependencyMap[31]);
       items10[2] = ref(dependencyMap[31]).hexWithOpacity(tmp7, 0);
       obj14.colors = items10;
-      obj14.start = {};
-      obj14.end = {};
+      obj14.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+      obj14.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
       obj14.locations = [false, false, false];
       const items11 = [, ];
       ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp);
@@ -845,10 +837,10 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     obj19 = { angle: 3, angleCenter: {} };
     const items16 = [importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
     obj19.colors = items16;
-    obj19.locations = ["replace", "then"];
+    obj19.locations = [77601039, 1612144654];
     obj19.style = tmp.cardTierBadge;
     obj19.useAngle = true;
-    obj20 = { "Null": "r", "Null": "BLgIrk", "Null": "<string:1912722296>", style: tmp.cardTierBadgeCopy };
+    obj20 = { "Bool(true)": "r", "Bool(true)": "LinearTransition", "Bool(true)": "<string:1912729078>", style: tmp.cardTierBadgeCopy };
     const intl3 = ref(dependencyMap[7]).intl;
     const string2 = intl3.string;
     if (tmp5) {

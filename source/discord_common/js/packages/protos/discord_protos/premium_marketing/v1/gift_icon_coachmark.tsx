@@ -1,5 +1,5 @@
 // Module ID: 7139
-// Function ID: 57526
+// Function ID: 57537
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,25 +25,25 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftIconCoachmark$Type);
       items = [, , , , , ];
-      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
-      items[1] = { 1347510942: "background_asset", 1678385745: "message", 1364379111: 0, 140698458: 50.06 };
+      items[0] = {};
+      items[1] = {};
       items[2] = {};
       items[3] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      obj = { 9223372036854775807: "message", 9223372036854775807: 0, 0: 16.95 };
+      obj = { -111020099: "message", 1351895378: 0, 1456955659: 61.05 };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[4] = obj;
-      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj = { -111020099: "startLocalAudioRecording", 1351895378: "isArray", 1456955659: "dispatchFrameUrl" };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[5] = obj;
-      items1 = [true];
+      items1 = ["<string:3543538205>"];
       items1[1] = items;
       obj3 = closure_6(GiftIconCoachmark$Type);
       tmp2 = closure_5;
@@ -63,7 +63,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(false)": "fr", "Bool(false)": "french", "Bool(false)": true };
+      let obj = { "Bool(true)": "french", key: true, style: "/assets/.cache/intl/aW50bA==" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftIconCoachmark$Type(closure_1[8]).MESSAGE_TYPE, obj);

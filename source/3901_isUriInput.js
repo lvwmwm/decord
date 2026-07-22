@@ -1,5 +1,5 @@
 // Module ID: 3901
-// Function ID: 32281
+// Function ID: 32283
 // Name: isUriInput
 // Dependencies: []
 // Exports: useRiveFile
@@ -92,7 +92,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
       let obj = arguments[1];
     }
     arg1 = obj;
-    obj = { "Bool(true)": "BG_GRADIENT_RETRO_RAINCLOUD_1", "Bool(true)": 73.12, registerAsset: "BG_GRADIENT_HANAMI_1", riveFile: undefined };
+    obj = { riveFile: undefined };
     [tmp4, closure_1] = callback(str(obj), 2);
     const items = [obj.referencedAssets];
     const tmp6 = riveFile(() => callback(obj.referencedAssets), items);
@@ -118,7 +118,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
             tmp = closure_5;
           }
           if (null == tmp) {
-            obj = { "Bool(true)": true, "Bool(true)": true };
+            obj = {};
             const _Error = Error;
             const error = new Error("No Rive file input provided.");
             obj.error = error;

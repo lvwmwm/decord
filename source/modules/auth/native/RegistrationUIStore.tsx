@@ -1,10 +1,10 @@
-// Module ID: 14608
-// Function ID: 110148
+// Module ID: 14616
+// Function ID: 110191
 // Name: useRegistrationUIStore
 // Dependencies: []
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 14608 (useRegistrationUIStore)
+// Module 14616 (useRegistrationUIStore)
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: undefined }));
 const _module1 = require(dependencyMap[2]);

@@ -1,11 +1,13 @@
 // Module ID: 1858
 // Function ID: 20497
 // Name: Record
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 1858 (Record)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 const tmp2 = () => {
   class Record {
     constructor() {
@@ -146,7 +148,10 @@ const tmp2 = () => {
   };
   return callback(Record, items);
 }();
-const tmp3 = () => {
+const result = items.fileFinishedImporting("lib/Record.tsx");
+
+export default tmp2;
+export const TypedRecord = () => {
   class TypedRecord {
     constructor() {
       tmp = TypedRecord(this, TypedRecord);
@@ -240,7 +245,3 @@ const tmp3 = () => {
   };
   return callback(TypedRecord, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("lib/Record.tsx");
-
-export default tmp2;
-export const TypedRecord = tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 12175
-// Function ID: 93622
+// Module ID: 12179
+// Function ID: 93648
 // Name: createGuildTemplateEmbed
 // Dependencies: []
 // Exports: createGuildTemplateEmbed
 
-// Module 12175 (createGuildTemplateEmbed)
+// Module 12179 (createGuildTemplateEmbed)
 const Image = require(dependencyMap[0]).Image;
 let closure_4 = importDefault(dependencyMap[1]);
 const GuildTemplateStates = require(dependencyMap[2]).GuildTemplateStates;

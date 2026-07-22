@@ -1,9 +1,9 @@
-// Module ID: 9288
-// Function ID: 72563
+// Module ID: 9289
+// Function ID: 72576
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 9288 (__INTERNAL_VIEW_CONFIG)
+// Module 9289 (__INTERNAL_VIEW_CONFIG)
 const obj = { uiViewClassName: "DCDAutoModerationSystemMessageView", validAttributes: { row: true } };
 const _module = require(dependencyMap[0]);
 const value = _module.get("DCDAutoModerationSystemMessageView", () => obj);

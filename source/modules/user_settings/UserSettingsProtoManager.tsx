@@ -1,9 +1,9 @@
-// Module ID: 13265
-// Function ID: 100670
+// Module ID: 13272
+// Function ID: 100703
 // Name: handleConnectionOpen
 // Dependencies: []
 
-// Module 13265 (handleConnectionOpen)
+// Module 13272 (handleConnectionOpen)
 function handleConnectionOpen() {
   const fullState = fullState.getFullState();
   const arg1 = fullState;

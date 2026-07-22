@@ -1,10 +1,10 @@
-// Module ID: 13748
-// Function ID: 104001
+// Module ID: 13755
+// Function ID: 104034
 // Name: OneWayToTwoWayNewTag
 // Dependencies: []
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 13748 (OneWayToTwoWayNewTag)
+// Module 13755 (OneWayToTwoWayNewTag)
 function OneWayToTwoWayNewTag(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const arg1 = markAsDismissed;
@@ -23,7 +23,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.container = obj;
 obj.header = {};
-obj.titleContainer = { isArray: null, diversity: null };
+obj.titleContainer = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" };
 const obj1 = {};
 const tmp2 = arg1(dependencyMap[4]);
 const merged = Object.assign(importDefault(dependencyMap[7])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[6]).colors.TEXT_DEFAULT, 16));
@@ -32,7 +32,7 @@ const importDefaultResult = importDefault(dependencyMap[7]);
 const obj2 = {};
 const merged1 = Object.assign(importDefault(dependencyMap[7])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[6]).colors.TEXT_DEFAULT, 14));
 obj.body = obj2;
-obj.newContainer = {};
+obj.newContainer = { "Null": null, "Null": "relative", "Null": 1, "Null": null };
 obj.reconnectButton = { marginTop: 8 };
 let closure_8 = obj.createStyles(obj);
 const importDefaultResult1 = importDefault(dependencyMap[7]);

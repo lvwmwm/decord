@@ -1,10 +1,10 @@
-// Module ID: 5501
-// Function ID: 46888
+// Module ID: 5500
+// Function ID: 46896
 // Name: TableRowGroupTitle
 // Dependencies: []
 // Exports: TableRowGroup
 
-// Module 5501 (TableRowGroupTitle)
+// Module 5500 (TableRowGroupTitle)
 class TableRowGroupTitle {
   constructor(arg0) {
     ({ title, style, lineClamp } = global);
@@ -36,7 +36,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { container: { flexShrink: 0 } };
-obj = { "Null": "Array", "Null": "panResponder", "Null": "GEN_AI_EXECUTE_TOOL_OPERATION_ATTRIBUTE", "Null": "USE_DATA_TO_CUSTOMIZE_DISCORD", "Null": "r", borderRadius: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
+obj = { alignItems: "absolute", justifyContent: 5, position: "#000", height: 0.3, width: 0, borderRadius: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
 obj.content = obj;
 obj.title = { marginBottom: 8 };
 obj.description = { marginBottom: 8 };
@@ -90,7 +90,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   const items = [tmp7, , , ];
   let tmp10 = null != description;
   if (tmp10) {
-    const obj2 = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000, style: tmp.description, children: description };
+    const obj2 = { style: tmp.description, children: description };
     tmp10 = callback(arg1(dependencyMap[6]).Text, obj2);
   }
   items[1] = tmp10;

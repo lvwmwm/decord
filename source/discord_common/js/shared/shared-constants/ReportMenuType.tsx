@@ -1,16 +1,16 @@
 // Module ID: 7597
-// Function ID: 60843
+// Function ID: 60853
 // Name: set
 // Dependencies: []
 
 // Module 7597 (set)
-const obj = { IN_APP: new Set([]) };
-const set = new Set([]);
-obj.REPORT_TO_MOD = new Set([]);
-const set1 = new Set([]);
-obj.UNAUTHENTICATED = new Set([]);
-const set2 = new Set([]);
-obj.CONSOLE = new Set([1090519488, 105974]);
+const obj = { IN_APP: new Set(["discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier"]) };
+const set = new Set(["discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier"]);
+obj.REPORT_TO_MOD = new Set([false]);
+const set1 = new Set([false]);
+obj.UNAUTHENTICATED = new Set([false, false, false, false]);
+const set2 = new Set([false, false, false, false]);
+obj.CONSOLE = new Set([]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ReportMenuType.tsx");
 

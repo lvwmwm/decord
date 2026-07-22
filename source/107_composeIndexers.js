@@ -1,7 +1,7 @@
 // Module ID: 107
 // Function ID: 1599
 // Name: composeIndexers
-// Dependencies: []
+// Dependencies: [520093696]
 
 // Module 107 (composeIndexers)
 function composeIndexers(bubblingEventTypes, bubblingEventTypes2) {

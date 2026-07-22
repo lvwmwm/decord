@@ -1,10 +1,10 @@
-// Module ID: 5321
-// Function ID: 45289
+// Module ID: 5048
+// Function ID: 43699
 // Name: QuarantineModeInfoAlert
 // Dependencies: []
 // Exports: default
 
-// Module 5321 (QuarantineModeInfoAlert)
+// Module 5048 (QuarantineModeInfoAlert)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);

@@ -1,10 +1,10 @@
-// Module ID: 10314
-// Function ID: 79626
+// Module ID: 10315
+// Function ID: 79639
 // Name: serializePushNotificationLogs
 // Dependencies: []
 // Exports: default
 
-// Module 10314 (serializePushNotificationLogs)
+// Module 10315 (serializePushNotificationLogs)
 const _module = require(dependencyMap[0]);
 ({ DEVICE_TOKEN: closure_2, DEVICE_VOIP_TOKEN: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

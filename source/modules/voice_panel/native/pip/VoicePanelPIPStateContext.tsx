@@ -1,13 +1,12 @@
-// Module ID: 15649
-// Function ID: 119523
+// Module ID: 15657
+// Function ID: 119566
 // Name: context
 // Dependencies: []
 // Exports: usePIPState
 
-// Module 15649 (context)
+// Module 15657 (context)
 const importAllResult = importAll(dependencyMap[0]);
-const obj = { "Null": 24182785, "Null": 16777216, "Null": 117, "Null": 0, "Null": 38400, "Null": 0, id: undefined, mode: undefined };
-const context = importAllResult.createContext(obj);
+const context = importAllResult.createContext({ id: undefined, mode: undefined });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPStateContext.tsx");
 
 export const VoicePanelPIPStateContext = context;

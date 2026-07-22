@@ -1,9 +1,9 @@
-// Module ID: 15991
-// Function ID: 122733
+// Module ID: 15999
+// Function ID: 122775
 // Name: AddAvatarScreen
 // Dependencies: []
 
-// Module 15991 (AddAvatarScreen)
+// Module 15999 (AddAvatarScreen)
 let Fonts;
 let ModalAnimation;
 function AddAvatarScreen() {
@@ -55,11 +55,11 @@ function AddAvatarScreen() {
   obj.style = items1;
   const obj2 = { style: tmp.headerContainer };
   obj3 = {};
-  obj4 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj4 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = callback(dependencyMap[20]).intl;
   obj4.children = intl.string(callback(dependencyMap[20]).t.XQRWvR);
   const items2 = [callback2(callback(dependencyMap[19]).Text, obj4), ];
-  const obj5 = { delete: null, dispatch: null, raw: 20, style: tmp.subtitle };
+  const obj5 = { style: tmp.subtitle };
   const intl2 = callback(dependencyMap[20]).intl;
   obj5.children = intl2.string(callback(dependencyMap[20]).t.fH9TLT);
   items2[1] = callback2(callback(dependencyMap[19]).Text, obj5);
@@ -140,13 +140,13 @@ const UPLOAD_MEDIUM_SIZE = tmp2.UPLOAD_MEDIUM_SIZE;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[9]).NAV_BAR_HEIGHT + 32 };
+obj = { right: -142023909551200940000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, left: 0.02148440477799341, flexDirection: -28131405935401280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005078706568911639, "Bool(false)": -10388020412470994000000000000000000, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[9]).NAV_BAR_HEIGHT + 32 };
 obj.container = obj;
-obj.headerContainer = { <string:29557293>: true, <string:45941405>: true };
-obj.buttonContainer = {};
-obj.title = { "Null": null, "Null": null };
+obj.headerContainer = { "Null": true, "Null": true };
+obj.buttonContainer = { -840892412: null, -840761340: null };
+obj.title = { value: null, on: null };
 obj.subtitle = { textAlign: "center" };
-obj.errorContainer = { 0: 24, 0: "recent_games_enabled" };
+obj.errorContainer = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
 const obj1 = {};
 const tmp3 = arg1(dependencyMap[6]);
 const merged = Object.assign(importDefault(dependencyMap[10])(Fonts.DISPLAY_MEDIUM, importDefault(dependencyMap[8]).unsafe_rawColors.RED_400, 12));

@@ -1,5 +1,5 @@
 // Module ID: 4557
-// Function ID: 39916
+// Function ID: 39924
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -54,7 +54,7 @@ const obj2 = { height: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDef
 obj.body = { marginTop: 16, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.buttons = { marginTop: 24 };
 obj.cancelButton = { marginTop: 8 };
-obj.secondaryConfirm = { disabled: "center", sequence: "center" };
+obj.secondaryConfirm = {};
 const obj3 = { marginTop: 16, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.gradient = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
 let closure_15 = obj1.createLegacyClassComponentStyles(obj);
@@ -187,7 +187,7 @@ const tmp4 = (PureComponent) => {
         tmp6Result = null;
         if ("" !== title) {
           let obj = {};
-          obj = { "Null": 0.5, "Null": 15, "Null": 200, "Null": true, "Null": "/assets/images/native/auto_moderation", ref: self.titleRef, style: tmp.titleText };
+          obj = { -44163245: null, 1641869966: null, 154554773: null, -497906335: null, -804702556: null, ref: self.titleRef, style: tmp.titleText };
           let renderContentResult = title;
           if ("string" === typeof title) {
             renderContentResult = self.renderContent(title);
@@ -264,7 +264,7 @@ const tmp4 = (PureComponent) => {
         let tmp12;
         if (null != secondaryConfirmText) {
           obj = { accessibilityRole: "button", style: tmp.secondaryConfirm, onPress: self.handleSecondaryConfirm };
-          const obj1 = { hasMaxConnections: 1665208787, isBoostOnlySubscription: 1912603216, children: secondaryConfirmText };
+          const obj1 = { cachedAt: false, edpbxy: false, children: secondaryConfirmText };
           obj.children = callback5(Alert(closure_3[14]).Text, obj1);
           tmp12 = callback5(Alert(closure_3[17]).PressableOpacity, obj);
         }

@@ -1,9 +1,9 @@
-// Module ID: 11212
-// Function ID: 87282
+// Module ID: 11213
+// Function ID: 87295
 // Name: getApplicationIdFromApplicationItem
 // Dependencies: []
 
-// Module 11212 (getApplicationIdFromApplicationItem)
+// Module 11213 (getApplicationIdFromApplicationItem)
 function getApplicationIdFromApplicationItem(type) {
   let id;
   if (type.type !== obj.PLACERHOLDER) {
@@ -138,13 +138,13 @@ let obj5 = arg1(dependencyMap[7]);
 const obj1 = { sectionHeader: { marginBottom: 8 } };
 const tmp3 = arg1(dependencyMap[6]);
 obj1.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-const obj3 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
+const obj3 = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
 obj1.loadingCommandAppIcon = obj3;
-const obj4 = { enabled: "#370b1a", marginTop: "<string:24183040>", now: "<string:1929379840>", accessible: "isArray", options: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-obj1.loadingTextPlaceholder = obj4;
+const obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+obj1.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj5 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start" };
 obj1.loadingTextPlaceholderSmall = obj5;
-const obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj1.divider = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };
 obj1.commandsHeaderContainer = {};
 const obj6 = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };
@@ -354,7 +354,7 @@ const forwardRefResult = importAllResult.forwardRef((context) => {
   if (0 !== memo.length) {
     const obj2 = {};
     obj3 = { style: tmp.commandsHeaderContainer };
-    obj4 = { USER_REGISTRATION: "<string:16777216>", borderColor: "%MapPrototype%", borderWidth: "<string:188694784>", style: tmp.sectionHeader };
+    obj4 = { style: tmp.sectionHeader };
     const intl4 = arg1(dependencyMap[24]).intl;
     obj4.children = intl4.string(arg1(dependencyMap[24]).t.0hKkS+);
     const items10 = [applicationResults(arg1(dependencyMap[29]).Text, obj4), ];
@@ -378,7 +378,7 @@ const forwardRefResult = importAllResult.forwardRef((context) => {
       }
       obj6.accessibilityLabel = stringResult;
       obj6.onPress = tmp12.toggleCommandsExpanded;
-      let obj7 = {};
+      let obj7 = { "Null": "tertiary", "Null": "sm" };
       const intl2 = arg1(dependencyMap[24]).intl;
       const string2 = intl2.string;
       let nPGLFQ = arg1(dependencyMap[24]).t;
@@ -410,7 +410,7 @@ const forwardRefResult = importAllResult.forwardRef((context) => {
   items12[1] = tmp44;
   let tmp47 = null;
   if (0 !== memo1.length) {
-    const obj9 = { USER_REGISTRATION: "<string:16777216>", borderColor: "%MapPrototype%", borderWidth: "<string:188694784>", style: tmp.sectionHeader };
+    const obj9 = { style: tmp.sectionHeader };
     const intl3 = arg1(dependencyMap[24]).intl;
     obj9.children = intl3.string(arg1(dependencyMap[24]).t.PHjkRE);
     tmp47 = applicationResults(arg1(dependencyMap[29]).Text, obj9);

@@ -1,10 +1,10 @@
-// Module ID: 11418
-// Function ID: 88803
+// Module ID: 11419
+// Function ID: 88816
 // Name: sumResults
 // Dependencies: []
 // Exports: getBarText
 
-// Module 11418 (sumResults)
+// Module 11419 (sumResults)
 function sumResults(arr) {
   return arr.reduce((arg0, arg1) => arg0 + arg1, 0);
 }

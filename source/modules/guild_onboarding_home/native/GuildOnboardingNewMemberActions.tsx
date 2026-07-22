@@ -1,10 +1,10 @@
-// Module ID: 15166
-// Function ID: 114373
+// Module ID: 15174
+// Function ID: 114416
 // Name: MemberActionRow
 // Dependencies: []
 // Exports: default
 
-// Module 15166 (MemberActionRow)
+// Module 15174 (MemberActionRow)
 function MemberActionRow(channelId) {
   let completed;
   let icon;
@@ -81,7 +81,7 @@ function MemberActionRow(channelId) {
       const obj7 = { onPress: tmp7, style: tmp.actionContainer };
       const items4 = [tmp17, , ];
       const obj8 = { style: tmp.channelNameContainer };
-      const obj9 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: title };
+      const obj9 = { children: title };
       const items5 = [callback(arg1(dependencyMap[21]).Text, obj9), ];
       const obj10 = {};
       const intl = arg1(dependencyMap[25]).intl;
@@ -122,15 +122,15 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[10]).EMOJI_URL_BASE_SIZE;
 const GuildMemberFlags = arg1(dependencyMap[11]).GuildMemberFlags;
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[12]));
 let obj = arg1(dependencyMap[13]);
-obj = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { "Bool(true)": "<string:7525240>", "Bool(true)": "<string:536870912>" } };
+obj = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: {} };
 obj = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[14]).radii.sm };
 obj.actionContainer = obj;
 obj.channelNameContainer = {};
-const tmp2 = arg1(dependencyMap[12]);
-obj.icon = { borderRadius: importDefault(dependencyMap[14]).radii.xs };
-obj.emoji = {};
+const obj1 = { "Null": "isArray", "Null": "c", borderRadius: importDefault(dependencyMap[14]).radii.xs };
+obj.icon = obj1;
+obj.emoji = { "Null": "isArray", "Null": "c" };
 obj.textEmoji = {};
-const obj1 = { borderRadius: importDefault(dependencyMap[14]).radii.xs };
+const tmp2 = arg1(dependencyMap[12]);
 obj.emojiPlaceholder = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST };
 let closure_17 = obj.createStyles(obj);
 const obj2 = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST };
@@ -194,7 +194,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
       if (0 !== stateFromStores.length) {
         obj = { style: tmp.actionsContainer };
         obj = { style: tmp.actionsHeader };
-        obj1 = {};
+        obj1 = { cachedAt: true, edpbxy: true };
         const intl2 = arg1(dependencyMap[25]).intl;
         obj1.children = intl2.string(arg1(dependencyMap[25]).t.LhlgY9);
         obj.children = callback(arg1(dependencyMap[21]).Text, obj1);
@@ -223,7 +223,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
           obj3.children = callback(arg1(dependencyMap[22]).Icon, obj4);
           const items7 = [callback(View, obj3), ];
           const obj5 = { style: tmp.channelNameContainer };
-          const obj6 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+          const obj6 = {};
           const intl = arg1(dependencyMap[25]).intl;
           obj6.children = intl.string(arg1(dependencyMap[25]).t.K/i3iQ);
           obj5.children = callback(arg1(dependencyMap[21]).Text, obj6);

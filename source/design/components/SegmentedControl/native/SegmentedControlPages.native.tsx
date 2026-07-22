@@ -1,10 +1,10 @@
-// Module ID: 8750
-// Function ID: 69160
+// Module ID: 8751
+// Function ID: 69172
 // Name: SegmentedControlPage
 // Dependencies: []
 // Exports: SegmentedControlPages
 
-// Module 8750 (SegmentedControlPage)
+// Module 8751 (SegmentedControlPage)
 function SegmentedControlPage(children) {
   const reportedPageIndex = children.reportedPageIndex;
   const arg1 = reportedPageIndex;
@@ -18,7 +18,7 @@ function SegmentedControlPage(children) {
   const React = activePageRangeStart;
   const activePageRangeEnd = children.activePageRangeEnd;
   const jsx = activePageRangeEnd;
-  let obj = { -1048944770: true, 1364700386: "/assets/design/components/Icon/native/redesign/generated/images", -614072001: 24, 944643202: 24, 1301435232: null, -385617478: "99274532ad7fe616c031212e677b32e8", 2024359764: "ThreadLockIcon" };
+  let obj = { <string:508780600>: "ThreadLockIcon", <string:4059146414>: "png", <string:2366002408>: true, <string:2844240276>: "/assets/design/components/Icon/native/redesign/generated/images", <string:996441698>: 24, <string:1364474454>: 24, <string:1415774972>: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   let obj1 = arg1(dependencyMap[4]);
@@ -546,7 +546,7 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
   if (0 === pageWidth) {
     return null;
   } else {
-    obj5 = { <string:2454937656>: "<string:54657025>", <string:66173517>: "<string:1073742270>", <string:2840024297>: "<string:285213260>", <string:2842143096>: "<string:38369345>", <string:996441633>: "<string:893583616>", <string:1364474454>: "<string:872415532>", ref: pagerRef };
+    obj5 = { "Bool(false)": "<string:1124139010>", "Bool(false)": "050b067757351137956c6a52fd597e47", "Bool(false)": "da.messages.050b067757351137956c6a52fd597e47.compiled.messages", "Bool(false)": "jsona", "Bool(false)": "<string:29201474>", "Bool(false)": "<string:38555392>", ref: pagerRef };
     const items6 = [memo, style];
     obj5.style = items6;
     obj5.contentOffset = memo1;

@@ -1,10 +1,10 @@
-// Module ID: 11084
-// Function ID: 86201
+// Module ID: 11085
+// Function ID: 86214
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 11084 (_createForOfIteratorHelperLoose)
+// Module 11085 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -269,7 +269,7 @@ export default function createChannelStream(forceRender) {
         let obj2 = self(closure_2[9]);
         flag = true;
       }
-      obj = { padding: true, backgroundColor: null, overflow: null, mass: true, stiffness: true, damping: true, roleStyle };
+      obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, roleStyle };
       obj.message = obj;
       obj.content = [];
       let tmp28 = items[closure_13.length - 1];

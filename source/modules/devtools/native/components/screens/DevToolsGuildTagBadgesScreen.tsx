@@ -1,10 +1,10 @@
-// Module ID: 14554
-// Function ID: 109667
+// Module ID: 14562
+// Function ID: 109710
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14554 (items)
+// Module 14562 (items)
 let GUILD_TAG_BADGE_PALETTE_PRESETS;
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
@@ -35,11 +35,11 @@ const tmp4 = arg1(dependencyMap[4]);
 obj.contentContainer = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 obj.controlRow = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_8 };
-const obj3 = { -9223372036854775808: null, 7741: null, gap: importDefault(dependencyMap[6]).space.PX_8 };
+const obj3 = { "Bool(true)": null, "Bool(true)": null, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.grid = obj3;
-const obj4 = { alignItems: null, position: null, width: null, zIndex: null, bottom: null, name: null, description: null, gap: importDefault(dependencyMap[6]).space.PX_4, padding: importDefault(dependencyMap[6]).space.PX_8 };
+const obj4 = { subLabel: null, trailing: null, disabled: null, accessibilityHint: null, variant: null, border: null, width: null, gap: importDefault(dependencyMap[6]).space.PX_4, padding: importDefault(dependencyMap[6]).space.PX_8 };
 obj.tile = obj4;
-obj.badgeBox = { "Bool(true)": "isArray", "Bool(true)": "warn", 266603034: "textAlign" };
+obj.badgeBox = {};
 let closure_12 = obj.createStyles(obj);
 const obj2 = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_8 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesScreen.tsx");
@@ -60,8 +60,8 @@ export default function DevToolsGuildTagBadgesScreen() {
   const items = [null, closure_9.length, " badge kinds. Tint: ", tmp5.label, " \u00B7 Size: ", tmp6, "px. 2c = two-color badge."];
   const items1 = [callback2(arg1(dependencyMap[8]).Text, { variant: "text-md/normal", children: items }), , , ];
   obj = {
-    1644319569: null,
-    -2041488286: null,
+    <string:3654615011>: "<string:1040334421>",
+    <string:2849920773>: "<string:1040334338>",
     children: callback3(tmp6, {
       style: tmp.controlRow,
       children: items.map((label) => {

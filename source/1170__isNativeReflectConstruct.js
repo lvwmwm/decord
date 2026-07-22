@@ -318,8 +318,7 @@ const tmp4 = (Component) => {
   return callback(TouchEventBoundary, items);
 }(importAllResult.Component);
 tmp4.displayName = "__Sentry.TouchEventBoundary";
-const obj = { <string:977738754>: 0.5, <string:1690134814>: "M11 4v1h1V4h-1ZM12 9V8h-1V6h-1v1H9v1H6V7H5v2H3v2h1v2h1v1h6v-1h1v-2h1V9h-1Z", <string:3086702139>: "#fff", <string:1370142306>: null, ignoreNames: [] };
-tmp4.defaultProps = obj;
+tmp4.defaultProps = { ignoreNames: [] };
 
 export const TouchEventBoundary = tmp4;
 export const withTouchEventBoundary = function withTouchEventBoundary(arg0, arg1) {

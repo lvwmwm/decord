@@ -1,8 +1,8 @@
-// Module ID: 15011
-// Function ID: 113031
+// Module ID: 15019
+// Function ID: 113074
 // Dependencies: []
 
-// Module 15011
+// Module 15019
 const _module = require(dependencyMap[0]);
 ({ Endpoints: closure_3, MAX_MENTIONS_PER_FETCH: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);
@@ -47,8 +47,9 @@ export default {
     obj = { type: "LOAD_RECENT_MENTIONS", guildId };
     obj.dispatch(obj);
     const HTTP = require(dependencyMap[2]).HTTP;
-    obj = { url: closure_3.MENTIONS, query: obj1 };
+    obj = { applicationCommands: "jsx", isEncryptionAvailable: "r", flexGrow: "isArray", flexShrink: "accessibilityRole", alignSelf: "track", url: closure_3.MENTIONS };
     const obj1 = { before, limit, guild_id: guildId, roles: flag, everyone: flag2, feature: before.feature };
+    obj.query = obj1;
     const value = HTTP.get(obj);
     return value.then((body) => {
       body = body.body;
@@ -61,7 +62,7 @@ export default {
   },
   deleteRecentMention(id) {
     const HTTP = require(dependencyMap[2]).HTTP;
-    let obj = { toValue: true, duration: true, useNativeDriver: true, visible: true, url: closure_3.MENTIONS_MESSAGE_ID(id) };
+    let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, url: closure_3.MENTIONS_MESSAGE_ID(id) };
     HTTP.del(obj);
     obj = { type: "RECENT_MENTION_DELETE", id };
     importDefault(dependencyMap[1]).dispatch(obj);

@@ -1,18 +1,17 @@
-// Module ID: 15562
-// Function ID: 118745
+// Module ID: 15570
+// Function ID: 118788
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15562 (_createForOfIteratorHelperLoose)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import { ParticipantTypes } from "result";
-import result from "result";
+// Module 15570 (_createForOfIteratorHelperLoose)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { ParticipantTypes } from "__exportStarResult1";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -333,7 +332,7 @@ function useSelectedParticipant(channelId) {
   }, items3);
   return stateFromStoresObject;
 }
-result = result.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 
 export default function useExternalPipParticipant() {
   let focusedParticipantType;
@@ -352,7 +351,7 @@ export default function useExternalPipParticipant() {
   const tmp3 = function useFocusedParticipant(channelId) {
     channelId = channelId.channelId;
     let closure_1 = React.useRef(undefined);
-    let closure_2 = React.useRef(undefined);
+    let __exportStarResult1 = React.useRef(undefined);
     const items = [closure_4];
     return channelId(closure_1[7]).useStateFromStoresObject(items, () => {
       let selectedParticipantId = null;

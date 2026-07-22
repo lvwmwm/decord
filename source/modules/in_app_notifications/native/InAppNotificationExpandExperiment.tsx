@@ -1,12 +1,13 @@
-// Module ID: 10239
-// Function ID: 79139
+// Module ID: 10240
+// Function ID: 79152
 // Name: useCanExpandInAppNotification
 // Dependencies: []
 // Exports: useCanExpandInAppNotification
 
-// Module 10239 (useCanExpandInAppNotification)
+// Module 10240 (useCanExpandInAppNotification)
 const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { "Null": null, oldFormErrors: null }, variations: { [1]: { "Null": null, oldFormErrors: null }, [2]: { "Null": null, oldFormErrors: null } } });
+const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { TV: true, entanglements: true }, variations: { [1]: { TV: null, entanglements: null }, [2]: { TV: "<string:1040334421>", entanglements: "<string:1040334338>" } } };
+let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationExpandExperiment.tsx");
 

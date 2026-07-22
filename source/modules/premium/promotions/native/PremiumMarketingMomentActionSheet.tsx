@@ -1,10 +1,10 @@
-// Module ID: 15491
-// Function ID: 118226
+// Module ID: 15499
+// Function ID: 118269
 // Name: PremiumMarketingMomentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15491 (PremiumMarketingMomentActionSheet)
+// Module 15499 (PremiumMarketingMomentActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,16 +15,16 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.container = obj;
-const obj1 = { "Bool(true)": 255, "Bool(true)": 812777728, "Bool(true)": 805306368, marginTop: importDefault(dependencyMap[7]).space.PX_24 };
+const obj1 = { padding: 255, spriteIndex: 812777728, Date: 805306368, marginTop: importDefault(dependencyMap[7]).space.PX_24 };
 obj.buttonContainer = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.header = { marginBottom: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center" };
 obj.body = { textAlign: "center" };
-const obj3 = { y: 1, isArray: 6, borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
-obj.image = obj3;
 const obj2 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center" };
+obj.image = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
+const obj3 = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj.video = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { options: "100%", body: null, transform: null };
 let closure_10 = obj.createStyles(obj);
 const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
@@ -106,7 +106,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   let obj6 = arg1(dependencyMap[17]);
   obj3 = { uri: bottomSheetData.assetUrl };
   if (obj6.getFile(obj3).isVideo) {
-    const obj4 = { accessible: true, jsx: true, _distance: true, o: true, done: true, category: true, position: true };
+    const obj4 = {};
     ({ assetUrl: obj12.videoURI, assetUrl: obj12.uri } = bottomSheetData);
     obj4.src = {};
     obj4.style = tmp.video;
@@ -122,21 +122,21 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
     tmp15Result = tmp15(tmp16(tmp17[19]), obj6);
   }
   const items5 = [tmp15Result, , , ];
-  const obj8 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  const obj8 = { -9223372036854775808: null, 9223372036854775807: null, 0: null };
   const items6 = [tmp.header];
   obj8.style = items6;
   obj8.children = bottomSheetData.header;
   items5[1] = callback(arg1(dependencyMap[20]).Text, obj8);
-  const obj9 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
+  const obj9 = { -9223372036854775808: 285212971, 9223372036854775807: "/assets/modules/premium/referral_program/native/images", 0: 180 };
   const items7 = [tmp.body];
   obj9.style = items7;
   const items8 = [bottomSheetData.body, " ", ];
   let tmp20 = null != helpArticleLinkProps;
   if (tmp20) {
     const obj10 = {
-      "Bool(false)": 13567,
-      "Bool(false)": 13312,
-      "Bool(false)": -615447808,
+      lastEffect: 13567,
+      events: 13312,
+      stores: 1280377600,
       onPress() {
           return bottomSheetData(promotionId[22]).openURL(helpArticleLinkProps.url);
         },

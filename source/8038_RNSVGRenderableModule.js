@@ -1,5 +1,5 @@
 // Module ID: 8038
-// Function ID: 63816
+// Function ID: 63826
 // Name: RNSVGRenderableModule
 // Dependencies: []
 

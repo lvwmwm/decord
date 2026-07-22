@@ -1,10 +1,10 @@
-// Module ID: 15089
-// Function ID: 113730
+// Module ID: 15097
+// Function ID: 113773
 // Name: useSharedICYMILogic
 // Dependencies: []
 // Exports: useSharedICYMILogic
 
-// Module 15089 (useSharedICYMILogic)
+// Module 15097 (useSharedICYMILogic)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -192,9 +192,9 @@ export const useSharedICYMILogic = function useSharedICYMILogic(notificationItem
   }, []);
   const items9 = [callback, callback1, callback2];
   const memo = React.useMemo(() => {
-    let obj = { viewabilityConfig: { 1694760785: null, 1420449339: "slide_from_bottom", -1396944286: "gr" }, onViewableItemsChanged: callback };
+    let obj = { viewabilityConfig: { position: null, top: "slide_from_bottom", right: "gr" }, onViewableItemsChanged: callback };
     const items = [obj, , ];
-    obj = { viewabilityConfig: { 1694760785: false, 1420449339: false, -1396944286: false }, onViewableItemsChanged: callback1 };
+    obj = { viewabilityConfig: {}, onViewableItemsChanged: callback1 };
     items[1] = obj;
     obj = { viewabilityConfig: {}, onViewableItemsChanged: callback2 };
     items[2] = obj;

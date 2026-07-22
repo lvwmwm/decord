@@ -1,5 +1,5 @@
 // Module ID: 7935
-// Function ID: 63357
+// Function ID: 63367
 // Name: usePremiumUpsellConfig
 // Dependencies: []
 // Exports: getUpsellItems, usePremiumUpsellConfig
@@ -69,16 +69,15 @@ function usePremiumUpsellConfig(initialUpsellKey, analyticsLocations2, analytics
     arg1(arg2[20]).track(tmp3.PREMIUM_PROMOTION_OPENED, obj);
     const obj3 = arg1(arg2[20]);
     arg1(arg2[21]).hideActionSheet();
-    const obj5 = arg1(arg2[21]);
     obj = {};
     const obj1 = {};
-    const obj6 = arg1(arg2[22]);
+    const obj5 = arg1(arg2[21]);
     const merged = Object.assign(arg2);
     obj1["object"] = memo.BUTTON_CTA;
     obj.analyticsLocation = obj1;
     obj.analyticsLocations = null != arg1 ? arg1 : [];
     obj.premiumFeatureCardOrder = memo;
-    obj6.pushLazy(arg0(arg2[15])(arg2[23], arg2.paths), obj);
+    arg1(arg2[22])(obj);
   }, items2);
   obj = {
     useTier0UpsellContent: tmp3,
@@ -214,7 +213,7 @@ const obj = {
   usePremiumUpsellConfig
 };
 const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("utils/native/PremiumUpsellUtils.tsx");
+const result = arg1(dependencyMap[23]).fileFinishedImporting("utils/native/PremiumUpsellUtils.tsx");
 
 export default obj;
 export const getUpsellItems = function getUpsellItems() {

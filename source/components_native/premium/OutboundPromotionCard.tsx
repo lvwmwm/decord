@@ -1,10 +1,10 @@
-// Module ID: 12368
-// Function ID: 94591
+// Module ID: 12373
+// Function ID: 94619
 // Name: TermsAndConditionsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12368 (TermsAndConditionsActionSheet)
+// Module 12373 (TermsAndConditionsActionSheet)
 function TermsAndConditionsActionSheet(termsAndConditions) {
   let obj = {};
   obj = {};
@@ -24,10 +24,10 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { paddingHorizontal: arg1(dependencyMap[3]).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { UNKNOWN_EMOJI: "String", paddingVertical: "Array", renderImage: 1, presences: "column", GameIconImageSize: "center", GameDiversityTier3LargeBadge: 12, paddingHorizontal: arg1(dependencyMap[3]).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.card = obj;
 obj.mainContainer = {};
-obj.textContainer = { 1364605794: "24c4788690396bae9cc4c1af395a6a87", 1398890993: "BicycleIcon", 306464658: "png" };
+obj.textContainer = { flexDirection: "24c4788690396bae9cc4c1af395a6a87", alignItems: "BicycleIcon", paddingTop: "png" };
 const tmp3 = arg1(dependencyMap[4]);
 obj.imageContainer = { borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: arg1(dependencyMap[7]).DARK_BLACK_500_LIGHT_PRIMARY_100 };
 obj.image = {};
@@ -35,8 +35,8 @@ obj.title = { lineHeight: 20 };
 obj.subText = { lineHeight: 18 };
 obj.claimButton = { paddingHorizontal: 12 };
 obj.moreDetails = { marginLeft: 40 };
-obj.termsAndConditionsText = {};
-obj.buttonContainer = {};
+obj.termsAndConditionsText = { label: null, subLabel: null };
+obj.buttonContainer = { "Null": null, "Null": null, "Null": null, "Null": null };
 let closure_9 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: arg1(dependencyMap[7]).DARK_BLACK_500_LIGHT_PRIMARY_100 };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("components_native/premium/OutboundPromotionCard.tsx");
@@ -113,8 +113,8 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const obj3 = { style: tmp.imageContainer, children: callback2(closure_6, obj4) };
   const obj7 = { style: tmp.title, children: outboundPromotion.outboundTitle };
   const obj11 = {
-    0: "errExpectingATEXT",
-    0: "j",
+    0: "Text",
+    0: "keys",
     text: stringResult,
     onPress() {
       return callback(true);

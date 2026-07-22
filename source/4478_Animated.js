@@ -1,12 +1,12 @@
 // Module ID: 4478
-// Function ID: 39557
+// Function ID: 39565
 // Name: Animated
 // Dependencies: []
 
 // Module 4478 (Animated)
-let closure_3 = [" ", "\u2022", " "];
-let closure_4 = [66958, 1645250129, 591470102, 1375732939, 277417630, 1107231569, 164318, -1013228458, -670810618];
-let closure_5 = [];
+let closure_3 = ["guild", "code", "includes"];
+let closure_4 = ["start", "style", " ", "\u2022", " ", ">", "h", "s", "\u00AF"];
+let closure_5 = [true, true, true, true];
 let closure_6 = importDefault(dependencyMap[0]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 const Animated = arg1(dependencyMap[2]).Animated;
@@ -57,7 +57,7 @@ const forwardRefResult = importDefaultResult.forwardRef(function InnerScreen(act
   const tmp10 = callback(activityState, closure_3);
   let sheetAllowedDetents = tmp10.sheetAllowedDetents;
   if (undefined === sheetAllowedDetents) {
-    sheetAllowedDetents = [null];
+    sheetAllowedDetents = [false];
   }
   let SHEET_DIMMED_ALWAYS = tmp10.sheetLargestUndimmedDetentIndex;
   if (undefined === SHEET_DIMMED_ALWAYS) {

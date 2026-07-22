@@ -1,9 +1,9 @@
-// Module ID: 8707
-// Function ID: 68920
+// Module ID: 8708
+// Function ID: 68932
 // Name: PurchasedAssetOverlay
 // Dependencies: []
 
-// Module 8707 (PurchasedAssetOverlay)
+// Module 8708 (PurchasedAssetOverlay)
 function PurchasedAssetOverlay() {
   const tmp = callback3();
   let obj = { style: tmp.overlayContainer, children: callback2(arg1(dependencyMap[8]).CheckmarkLargeBoldIcon, obj) };
@@ -32,7 +32,7 @@ function ProductPreview(arg0) {
     if (productType !== arg1(dependencyMap[11]).CollectiblesItemType.PROFILE_FRAME) {
       let str = "75%";
     }
-    obj = { <string:1707113641>: null, <string:1403672123>: null, <string:1311855202>: null };
+    obj = { <string:1850961868>: null, <string:1027274021>: null, <string:3662041617>: null };
     const items = [tmp.overlayContainer, , ];
     if (!isPurchased) {
       isPurchased = isDisabled;
@@ -132,7 +132,7 @@ function AssetTileInternal(solidBackground) {
   if (flag) {
     num = 1;
   }
-  obj = { handleRewardClaimThenView: "1501ab02f5dc6a8a8a6cc03fcd7e4123", EXPIRING_SOON: "zh-TW.messages.1501ab02f5dc6a8a8a6cc03fcd7e4123.compiled.messages", overflow: "jsona" };
+  obj = {};
   const items = [tmp.assetContainer, ];
   obj = {};
   obj.backgroundColor = obj.hexToRgbaString(obj2.hexWithOpacity(token, num));
@@ -150,7 +150,7 @@ const EXTERNAL_PRODUCT_SKU_IDS = arg1(dependencyMap[3]).EXTERNAL_PRODUCT_SKU_IDS
 const diff = arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_HEIGHT - 2 * importDefault(dependencyMap[6]).space.PX_16;
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.assetContainer = obj;
 obj1 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
@@ -161,7 +161,7 @@ obj1["height"] = "75%";
 obj.overlayContainer = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.profileEffectContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-const obj3 = { "Null": "isArray", "Null": "body", "Null": "message", height: diff };
+const obj3 = { reportedPageIndex: "isArray", pageIndex: "body", scrollTargetPageIndex: "message", height: diff };
 obj.profileFrameContainer = obj3;
 obj.externalProductImage = {};
 obj.purchasedOrDisabled = { opacity: 0.4 };

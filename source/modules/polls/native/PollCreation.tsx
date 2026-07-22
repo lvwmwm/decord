@@ -1,10 +1,10 @@
-// Module ID: 11307
-// Function ID: 87972
+// Module ID: 11308
+// Function ID: 87985
 // Name: UnsavedChangesAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 11307 (UnsavedChangesAlertModal)
+// Module 11308 (UnsavedChangesAlertModal)
 function UnsavedChangesAlertModal(onConfirm) {
   let obj = {};
   const intl = arg1(dependencyMap[8]).intl;
@@ -32,7 +32,7 @@ function AddAnswerButton(onPress) {
   const intl = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.B2Uvme);
   const items = [callback(arg1(dependencyMap[10]).Icon, obj), ];
-  obj = {};
+  obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj.children = intl2.string(arg1(dependencyMap[8]).t.B2Uvme);
   items[1] = callback(arg1(dependencyMap[12]).Text, obj);
@@ -71,10 +71,10 @@ let obj1 = arg1(dependencyMap[4]);
 let obj = { viewPadding: { paddingHorizontal: 18 }, scrollContainer: {} };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.safeAreaContainer = obj;
-obj.header = {};
+obj.header = { id: "r", np: "isArray", category: "_desired" };
 obj.actionButton = {};
 obj.postButton = { justifyContent: "flex-end" };
-obj.title = { end: null, apply: null };
+obj.title = {};
 obj.label = { fontSize: 14 };
 obj.answerInputsContainer = {};
 obj1 = {};
@@ -260,7 +260,7 @@ export default function PollCreation(channel) {
   obj3.source = importDefault(closure_2[33]);
   obj3.style = tmp4.actionButton;
   const items3 = [callback(arg1(closure_2[32]).HeaderActionButton, obj3), , ];
-  obj4 = { style: tmp4.title };
+  obj4 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, style: tmp4.title };
   const intl2 = arg1(closure_2[8]).intl;
   obj4.children = intl2.string(arg1(closure_2[8]).t.Flr51u);
   items3[1] = callback(arg1(closure_2[12]).Text, obj4);

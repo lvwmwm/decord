@@ -1,5 +1,5 @@
 // Module ID: 7005
-// Function ID: 56145
+// Function ID: 56156
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -20,7 +20,7 @@ function isForumLikeChannel(channelId) {
 function getOrCreateSearchState(arg0) {
   let obj = closure_6[arg0];
   if (null == obj) {
-    obj = {};
+    obj = { sr: null, ks: null, ao: null };
   }
   closure_6[arg0] = obj;
   return obj;

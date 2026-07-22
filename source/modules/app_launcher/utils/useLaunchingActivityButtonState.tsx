@@ -1,10 +1,10 @@
-// Module ID: 11253
-// Function ID: 87557
+// Module ID: 11254
+// Function ID: 87570
 // Name: useLaunchingActivityButtonState
 // Dependencies: []
 // Exports: default
 
-// Module 11253 (useLaunchingActivityButtonState)
+// Module 11254 (useLaunchingActivityButtonState)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

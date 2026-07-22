@@ -1,10 +1,10 @@
-// Module ID: 11290
-// Function ID: 87856
+// Module ID: 11291
+// Function ID: 87869
 // Name: MentionableIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11290 (MentionableIcon)
+// Module 11291 (MentionableIcon)
 function MentionableIcon(mentionable) {
   mentionable = mentionable.mentionable;
   let obj = arg1(dependencyMap[9]);

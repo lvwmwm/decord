@@ -1,10 +1,10 @@
-// Module ID: 10451
-// Function ID: 80699
+// Module ID: 10452
+// Function ID: 80712
 // Name: makeClientVariant
 // Dependencies: []
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 10451 (makeClientVariant)
+// Module 10452 (makeClientVariant)
 function makeClientVariant(id) {
   return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: arg1(dependencyMap[3]).Variation_Type.UNSPECIFIED };
 }

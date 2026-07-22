@@ -1,5 +1,5 @@
 // Module ID: 4451
-// Function ID: 39146
+// Function ID: 39154
 // Name: t
 // Dependencies: []
 
@@ -78,7 +78,7 @@ const fn = function t(exports, React) {
   function _defineProperty(arg0, arg1, value) {
     if (arg1 in arg0) {
       const _Object = Object;
-      const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
+      const obj = { value };
       Object.defineProperty(arg0, arg1, obj);
     } else {
       arg0[arg1] = value;
@@ -545,7 +545,7 @@ const fn = function t(exports, React) {
       items = [];
       items[0] = stripe;
       memo = React.useMemo(() => callback2(stripe), items);
-      f39185 = memo;
+      f39193 = memo;
       tmp2 = _slicedToArray(React.useState(() => {
         const obj = {};
         let stripe = null;
@@ -623,14 +623,14 @@ const fn = function t(exports, React) {
         }
       }, items2);
       tmp7 = usePrevious(options);
-      f39187 = tmp7;
+      f39195 = tmp7;
       items3 = [, , ];
       items3[0] = options;
       items3[1] = tmp7;
       items3[2] = first.elements;
       effect2 = React.useEffect(() => {
         if (value.elements) {
-          const tmp4 = callback(options, tmp7, ["guild", "toString"]);
+          const tmp4 = callback(options, tmp7, [null, null]);
           if (tmp4) {
             const elements = value.elements;
             elements.update(tmp4);
@@ -660,7 +660,7 @@ const fn = function t(exports, React) {
   }
   obj = { children: _default.func.isRequired };
   ElementsConsumer.propTypes = obj;
-  let closure_17 = [];
+  let closure_17 = ["chatInputCharCounter", "onTapLink"];
   const context1 = React.createContext(null);
   context1.displayName = "CheckoutSdkContext";
   function parseCheckoutSdkContext(context, arg1) {
@@ -702,7 +702,7 @@ const fn = function t(exports, React) {
       }), 2);
       first1 = tmp6[0];
       closure_5 = first1;
-      f39200 = tmp6[1];
+      f39208 = tmp6[1];
       safeSetContext = function safeSetContext(checkoutSdk) {
         const stripe = checkoutSdk;
         const options = arg1;
@@ -876,7 +876,7 @@ const fn = function t(exports, React) {
     }
     return context1;
   }
-  let closure_22 = ["locations"];
+  let closure_22 = [true];
   function createElementComponent(address, arg1) {
     arg1 = address;
     const formatted = address.charAt(0).toUpperCase();
@@ -998,7 +998,7 @@ const fn = function t(exports, React) {
       const items1 = [options, tmp23];
       const effect = options.useEffect(() => {
         if (closure_6.current) {
-          const tmp4 = callback2(options, tmp23, [true]);
+          const tmp4 = callback2(options, tmp23, ["colors"]);
           let tmp5 = tmp4;
           if (tmp4) {
             tmp5 = "update" in closure_6.current;
@@ -1292,7 +1292,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([true, true], fn);
+    globalThis.define([null, null], fn);
   }
 }
 if ("undefined" !== typeof globalThis) {

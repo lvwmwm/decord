@@ -1,5 +1,5 @@
 // Module ID: 7275
-// Function ID: 58612
+// Function ID: 58623
 // Name: forEachEnvelopeItem
 // Dependencies: []
 // Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
@@ -33,7 +33,7 @@ function encodeUTF8(arg0) {
 }
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
-let closure_4 = { "Bool(true)": "_headers", "Bool(true)": "png", "Bool(true)": "fr-NE", "Bool(true)": "QogHld", "Bool(true)": "Array", "Bool(true)": "_updateLastHeartbeatAckTime", "Bool(true)": "Array", "Bool(true)": "captureStackTrace", "Bool(true)": "isArray", "Bool(true)": "isArrayBuffer", "Bool(true)": "useHandleActivityItemSelected", "Bool(true)": "ng", "Bool(true)": "onGameSheetOpened", "Bool(true)": "th", "Bool(true)": "_headers", "Bool(true)": "png" };
+let closure_4 = { 1448360803: "targetFrames", 71893785: "png", 142346333: "SETTINGS_PREMIUM_MANAGE_PLAN", 284363030: "QuestsVisibleMessagesChangedSource", 1242081109: "Array", -620185082: "afterSubmit", 1662055176: "Array", 827760723: "settingsButton", 1560561928: "isArray", 369654792: "isArrayBuffer", 1477505801: "RNSVGEllipse", 0: "LI", "Null": "RecyclerViewManager", "Null": "gif", "Null": "targetFrames", "Null": "png" };
 
 export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
   const tmp = callback2(arg0, 2);

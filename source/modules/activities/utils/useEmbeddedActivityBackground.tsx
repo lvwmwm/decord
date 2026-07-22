@@ -1,16 +1,15 @@
-// Module ID: 10603
-// Function ID: 82730
+// Module ID: 10604
+// Function ID: 82743
 // Name: useEmbeddedActivityBackground
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 10603 (useEmbeddedActivityBackground)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
+// Module 10604 (useEmbeddedActivityBackground)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
 
-let closure_4 = [-0.0000000000000000000000000000000000000000000000000000000000000000005414752679591707, 23221564579311383000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-result = result.fileFinishedImporting("modules/activities/utils/useEmbeddedActivityBackground.tsx");
+let closure_4 = [null, null];
+const result = require("__exportStarResult1").fileFinishedImporting("modules/activities/utils/useEmbeddedActivityBackground.tsx");
 
 export default function useEmbeddedActivityBackground(applicationId) {
   let names;

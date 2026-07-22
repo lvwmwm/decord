@@ -1,10 +1,10 @@
-// Module ID: 5517
-// Function ID: 46968
+// Module ID: 5516
+// Function ID: 46976
 // Name: NavigationStack
 // Dependencies: []
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 5517 (NavigationStack)
+// Module 5516 (NavigationStack)
 let StyleSheet;
 function NavigationStack(screens) {
   let detachInactiveScreens;
@@ -115,7 +115,7 @@ function NavigationStack(screens) {
       obj.headerBackImage = renderBackImage;
       obj.headerBackTitleVisible = false;
       let str2 = "center";
-      const items1 = [{}, headerTitleContainerStyle];
+      const items1 = [{ <string:1643586129>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004789945341679744, <string:2583581156>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000362298761508198 }, headerTitleContainerStyle];
       obj.headerTitleContainerStyle = items1;
       const items2 = [tmp.headerLeftContainerStyle, headerLeftContainerStyle];
       obj.headerLeftContainerStyle = items2;
@@ -148,7 +148,7 @@ function NavigationStack(screens) {
       if (navigatorShouldCrossfade) {
         let fn2 = (current) => {
           let obj = {};
-          obj = { opacity: progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"] }) };
+          obj = { opacity: progress.interpolate({ inputRange: [77601039, 1612144654], outputRange: [77601039, 1612144654] }) };
           const progress = current.current.progress;
           obj.cardStyle = obj;
           return obj;
@@ -219,7 +219,7 @@ function WrappedNavigationStack(arg0) {
   let navigationTheme;
   let onStateChange;
   ({ initialRouteStack: closure_0, initialRouteState, navigationTheme } = arg0);
-  let obj = {};
+  let obj = { 0: false, 0: false, 0: false, 0: false, 0: false };
   ({ initialRouteName, onStateChange } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

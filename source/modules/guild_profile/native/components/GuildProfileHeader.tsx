@@ -1,10 +1,10 @@
-// Module ID: 8577
-// Function ID: 68126
+// Module ID: 8578
+// Function ID: 68138
 // Name: styles
-// Dependencies: [31, 5468, 6860, 2, 44, 4096, 8587, 1934, 686, 2, 57, 31, 27, 8588, 33, 4126, 689, 4539, 1212, 7181, 8589, 3825, 8592, 6860]
+// Dependencies: [31, 5467, 6860, 2, 44, 4096, 8588, 1934, 686, 2, 57, 31, 27, 8589, 33, 4126, 689, 4539, 1212, 7181, 8590, 3825, 8593, 6860]
 // Exports: default
 
-// Module 8577 (styles)
+// Module 8578 (styles)
 import module_31 from "module_31";
 import { View } from "useGetOrFetchApplications";
 import importDefaultResult1 from "importDefaultResult1";
@@ -15,19 +15,19 @@ import GetButton from "GetButton";
 import maybeLoadBundle from "maybeLoadBundle";
 
 ({ jsx: closure_9, jsxs: closure_10 } = GetButton);
-maybeLoadBundle = { header: { "Bool(false)": null, "Bool(false)": "f1c8eb967129922c017ed22ec1b6aff1", "Bool(false)": "MinecraftNeutralIcon-secondary", "Bool(false)": "png", "Bool(false)": true } };
+maybeLoadBundle = { header: { flexDirection: null, alignItems: "f1c8eb967129922c017ed22ec1b6aff1", gap: "MinecraftNeutralIcon-secondary", marginTop: "png", flex: true } };
 maybeLoadBundle = { backgroundColor: require("dispatcher").colors.BACKGROUND_BASE_LOW };
 maybeLoadBundle.avatarBackground = maybeLoadBundle;
-maybeLoadBundle.members = {};
-maybeLoadBundle.memberCount = {};
-const obj1 = { 2018655073: null, 1669594568: null, 1045670548: null, backgroundColor: require("dispatcher").colors.TEXT_STATUS_OFFLINE };
+maybeLoadBundle.members = { "Bool(true)": 9126805527, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000273953900656662, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002040683002168536 };
+maybeLoadBundle.memberCount = { 9223372036854775807: "suppress_editor_mention", -9223372036854775808: "scalar", 0: 8, 9223372036854775807: 33 };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: require("dispatcher").colors.TEXT_STATUS_OFFLINE };
 maybeLoadBundle.dot = obj1;
-const obj2 = { 2018655073: null, 1669594568: null, 1045670548: null, backgroundColor: require("dispatcher").colors.TEXT_STATUS_ONLINE };
+const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: require("dispatcher").colors.TEXT_STATUS_ONLINE };
 maybeLoadBundle.dotOnline = obj2;
 maybeLoadBundle.established = { display: "flex" };
-maybeLoadBundle.nameRow = {};
+maybeLoadBundle.nameRow = { right: 44, bottom: "suppress_editor_mention", title: "scalar", options: 8 };
 maybeLoadBundle.guildName = { flexShrink: 1 };
-maybeLoadBundle.guildIcon = { flexDirection: false, gap: false, flex: false };
+maybeLoadBundle.guildIcon = { ti: "<string:191299586>", scales: "<string:3948019713>", flexDirection: "<string:1359192132>" };
 maybeLoadBundle = maybeLoadBundle.createStyles(maybeLoadBundle);
 const result = require("importDefaultResult1").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
 
@@ -131,7 +131,7 @@ export default function GuildProfileHeader(icon) {
   obj6.children = items8;
   items5[2] = callback2(View, obj6);
   const obj15 = { style: tmp.established };
-  const obj16 = {};
+  const obj16 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
   const intl3 = arg1(dependencyMap[22]).intl;
   obj16.children = intl3.format(arg1(dependencyMap[22]).t.zb2Q56, { createdAtDate: establishedDate });
   obj15.children = callback(arg1(dependencyMap[19]).Text, obj16);

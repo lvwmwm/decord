@@ -1,10 +1,10 @@
-// Module ID: 11902
-// Function ID: 92122
+// Module ID: 11903
+// Function ID: 92136
 // Name: useIsUserProfileObfuscated
 // Dependencies: []
 // Exports: default
 
-// Module 11902 (useIsUserProfileObfuscated)
+// Module 11903 (useIsUserProfileObfuscated)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
 

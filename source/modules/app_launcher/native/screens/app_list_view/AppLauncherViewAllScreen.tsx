@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 87946
+// Module ID: 11305
+// Function ID: 87959
 // Name: DEFAULT_CONTENT_PADDING
 // Dependencies: []
 // Exports: default
 
-// Module 11304 (DEFAULT_CONTENT_PADDING)
+// Module 11305 (DEFAULT_CONTENT_PADDING)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
@@ -14,11 +14,11 @@ let closure_6 = tmp2.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;
 let closure_9 = { bottom: 4 };
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 1453996899: "shouldPressibilityUseW3CPointerEventsForHover", 1556521059: "%Float64Array%", -1594110875: "_headers", 1372374626: "row", 996410367: "failure", backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.container = obj;
-const obj1 = { <string:2700856421>: 858849576, <string:1372374626>: 858993459, <string:996410367>: 1111479091, <string:1364483158>: 84760, <string:2018706176>: 150952, <string:176422344>: "LightSpeedOutLeft", <string:3942343174>: null, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingHorizontal: DEFAULT_CONTENT_PADDING };
-obj.header = obj1;
 const tmp3 = arg1(dependencyMap[3]);
+obj.header = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingHorizontal: DEFAULT_CONTENT_PADDING };
+const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingHorizontal: DEFAULT_CONTENT_PADDING };
 obj.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: importDefault(dependencyMap[5]).space.PX_4 };
 const obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: importDefault(dependencyMap[5]).space.PX_4 };
 obj.backButton = { width: arg1(dependencyMap[6]).BACK_BUTTON_SIZE, height: arg1(dependencyMap[6]).BACK_BUTTON_SIZE, alignItems: "center", justifyContent: "center" };

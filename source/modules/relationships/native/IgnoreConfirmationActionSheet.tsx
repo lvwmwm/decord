@@ -1,9 +1,9 @@
-// Module ID: 10411
-// Function ID: 80206
+// Module ID: 10412
+// Function ID: 80219
 // Name: IgnoredInformationTable
 // Dependencies: []
 
-// Module 10411 (IgnoredInformationTable)
+// Module 10412 (IgnoredInformationTable)
 function IgnoredInformationTable() {
   const obj = {
     hasIcons: true,
@@ -32,7 +32,7 @@ const tmp2 = arg1(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj1 = arg1(dependencyMap[9]);
-let obj = { button: { "Null": null, "Null": null } };
+let obj = { button: { marginBottom: null, borderRadius: null } };
 obj = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 obj.tableContainer = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_24 };
@@ -44,9 +44,9 @@ const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[10
 obj.container = { flex: 1, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_16 };
 const obj3 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_16 };
 obj.header = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-const obj5 = { tooltipX: 0.000000000000000000000000000000000000000000000000000000000000041337475905652505, tooltipY: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
+const obj5 = { "Null": false, "Null": false, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 obj.avatarContainer = obj5;
-const obj6 = { justifyContent: "text-lg/normal", paddingRight: null, height: "mobile-text-heading-primary", padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.round };
+const obj6 = { "Bool(false)": "text-lg/normal", "Bool(false)": null, "Bool(false)": "mobile-text-heading-primary", padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.round };
 obj.avatarIconContainer = obj6;
 obj.avatar = { alignSelf: "center" };
 const obj4 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };

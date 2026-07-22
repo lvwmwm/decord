@@ -1,10 +1,10 @@
-// Module ID: 15427
-// Function ID: 117730
+// Module ID: 15435
+// Function ID: 117773
 // Name: ContextMenuCommandRootScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15427 (ContextMenuCommandRootScreen)
+// Module 15435 (ContextMenuCommandRootScreen)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

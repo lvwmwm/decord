@@ -1,10 +1,10 @@
-// Module ID: 10977
-// Function ID: 85461
+// Module ID: 10978
+// Function ID: 85474
 // Name: GuildEnableCommunicationAlert
 // Dependencies: []
 // Exports: default
 
-// Module 10977 (GuildEnableCommunicationAlert)
+// Module 10978 (GuildEnableCommunicationAlert)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);
@@ -26,7 +26,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const arg1 = guildId;
   const userId = guildId.userId;
   const importDefault = userId;
-  let obj = { <string:1986114432>: false, <string:2636683858>: false, <string:3607714181>: false };
+  let obj = { "Bool(true)": "spring", "Bool(true)": 0.4, "Bool(true)": 1 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(guildId, obj);
   function _handleConfirmRemoveTimeout(arg0, arg1) {

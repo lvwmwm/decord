@@ -1,9 +1,9 @@
-// Module ID: 5238
-// Function ID: 44261
+// Module ID: 4965
+// Function ID: 42673
 // Name: PremiumGuildSubscribeModalScenes
 // Dependencies: []
 
-// Module 5238 (PremiumGuildSubscribeModalScenes)
+// Module 4965 (PremiumGuildSubscribeModalScenes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildSubscribeConstants.tsx");
 

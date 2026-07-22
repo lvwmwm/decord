@@ -1,9 +1,9 @@
-// Module ID: 8747
-// Function ID: 69155
+// Module ID: 8748
+// Function ID: 69167
 // Name: metadata
 // Dependencies: []
 
-// Module 8747 (metadata)
+// Module 8748 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/fn_pdp_preview_header.png.js");
 

@@ -1,5 +1,5 @@
 // Module ID: 7818
-// Function ID: 62400
+// Function ID: 62410
 // Name: items
 // Dependencies: []
 // Exports: getCardAssetUrl, getCheckpointPowerBarUnits, getVoiceDurationString

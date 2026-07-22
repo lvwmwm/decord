@@ -1,17 +1,17 @@
-// Module ID: 16444
-// Function ID: 127022
+// Module ID: 16452
+// Function ID: 127064
 // Name: UpdateAppScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16444 (UpdateAppScreen)
+// Module 16452 (UpdateAppScreen)
 const _module = require(dependencyMap[0]);
 ({ NativeModules: closure_3, View: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = _module1);
 const _module2 = require(dependencyMap[2]);
 let obj = {};
-obj = { gap: importDefault(dependencyMap[3]).space.PX_8 };
+obj = { "Bool(false)": 8, "Bool(false)": 18, gap: importDefault(dependencyMap[3]).space.PX_8 };
 obj.container = obj;
 obj.buttonContainer = { marginTop: importDefault(dependencyMap[3]).space.PX_8 };
 let closure_7 = _module2.createStyles(obj);

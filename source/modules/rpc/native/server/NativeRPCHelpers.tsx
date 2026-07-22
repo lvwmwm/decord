@@ -1,10 +1,10 @@
-// Module ID: 10489
-// Function ID: 81868
+// Module ID: 10490
+// Function ID: 81881
 // Name: validateSocketClient
 // Dependencies: []
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings
 
-// Module 10489 (validateSocketClient)
+// Module 10490 (validateSocketClient)
 let closure_3 = importDefault(dependencyMap[0]);
 const TransportTypes = arg1(dependencyMap[1]).TransportTypes;
 const RPCCloseCodes = arg1(dependencyMap[2]).RPCCloseCodes;

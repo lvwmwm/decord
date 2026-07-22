@@ -1,12 +1,11 @@
 // Module ID: 5779
-// Function ID: 49447
+// Function ID: 49458
 // Name: getKeyboardIsOpen
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: default, subscribeToKeyboardIsOpen
 
 // Module 5779 (getKeyboardIsOpen)
-import closure_3 from "result";
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
 
 function getKeyboardIsOpen(arg0) {
   let tmp = arg0;
@@ -35,7 +34,7 @@ function getKeyboardIsOpen(arg0) {
   return tmp5;
 }
 let closure_4 = {};
-result = result.fileFinishedImporting("modules/keyboard/native/useKeyboardIsOpen.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/keyboard/native/useKeyboardIsOpen.tsx");
 
 export default function useKeyboardIsOpen() {
   let tmp = arg0;

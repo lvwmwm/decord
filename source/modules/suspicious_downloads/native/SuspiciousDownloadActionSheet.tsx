@@ -1,11 +1,11 @@
-// Module ID: 12100
-// Function ID: 93284
+// Module ID: 12104
+// Function ID: 93310
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [789643264, 131072, 485490688, 57, 31, 27, 33, 4126, 689, 5388, 8467, 1212, 12111, 10730]
+// Dependencies: [789905408, 131072, 485490688, 57, 31, 27, 33, 4126, 689, 5118, 8468, 1212, 12115, 10731]
 // Exports: default
 
-// Module 12100 (SuspiciousDownloadActionSheet)
-import module_10730 from "module_10730";
+// Module 12104 (SuspiciousDownloadActionSheet)
+import module_10731 from "module_10731";
 
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
@@ -16,7 +16,7 @@ obj.container = obj;
 obj.title = { textAlign: "center" };
 obj.body = { textAlign: "center" };
 let closure_5 = obj.createStyles(obj);
-const result = module_10730.fileFinishedImporting("modules/suspicious_downloads/native/SuspiciousDownloadActionSheet.tsx");
+const result = module_10731.fileFinishedImporting("modules/suspicious_downloads/native/SuspiciousDownloadActionSheet.tsx");
 
 export default function SuspiciousDownloadActionSheet(href) {
   const arg1 = href.href;
@@ -26,7 +26,7 @@ export default function SuspiciousDownloadActionSheet(href) {
   const items = [tmp.container, { paddingBottom: importDefault(dependencyMap[4])().bottom }];
   obj = {};
   const items1 = [callback(arg1(dependencyMap[7]).TrafficConeSpotIllustration, {}), , ];
-  const obj1 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
+  const obj1 = { style: tmp.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.string(arg1(dependencyMap[9]).t.XtDo9Z);
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj1);

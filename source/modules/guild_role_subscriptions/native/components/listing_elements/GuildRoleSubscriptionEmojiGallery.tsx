@@ -1,10 +1,10 @@
-// Module ID: 14007
-// Function ID: 106550
+// Module ID: 14014
+// Function ID: 106590
 // Name: EmojiGallery
 // Dependencies: []
 // Exports: default
 
-// Module 14007 (EmojiGallery)
+// Module 14014 (EmojiGallery)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

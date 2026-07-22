@@ -1,5 +1,5 @@
 // Module ID: 6243
-// Function ID: 50286
+// Function ID: 50297
 // Name: HdAudioSpotIllustration
 // Dependencies: []
 // Exports: HdAudioSpotIllustration

@@ -1,5 +1,5 @@
 // Module ID: 7291
-// Function ID: 58827
+// Function ID: 58838
 // Name: parseStackFrames
 // Dependencies: []
 // Exports: eventFromMessage, eventFromUnknownInput
@@ -201,7 +201,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, 
     data = data.data.mechanism;
   }
   if (!data) {
-    data = { id: false, gameId: false };
+    data = { priority: "IE", "Bool(false)": "MSIE" };
   }
   const tmp = callback(getException(arg0, data, arg2, data), 2);
   let obj = {};

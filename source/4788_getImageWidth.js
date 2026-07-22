@@ -1,5 +1,5 @@
 // Module ID: 4788
-// Function ID: 41637
+// Function ID: 41646
 // Name: getImageWidth
 // Dependencies: []
 
@@ -72,7 +72,7 @@ function getInterlace(byteLength, arg1) {
   if (arg1 + 12 + 1 <= byteLength.byteLength) {
     let obj = arg2(arg6[0]);
     const byteAt = obj.getByteAt(byteLength, arg1 + 12);
-    obj = { value: byteAt, description: { <string:80614912>: null, <string:80546816>: null }[byteAt] || "Unknown" };
+    obj = { value: byteAt, description: { <string:80623616>: null, <string:80555520>: null }[byteAt] || "Unknown" };
     return obj;
   }
 }

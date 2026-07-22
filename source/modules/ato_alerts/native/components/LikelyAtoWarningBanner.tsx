@@ -1,9 +1,9 @@
-// Module ID: 10398
-// Function ID: 80126
+// Module ID: 10399
+// Function ID: 80139
 // Name: LikelyAtoWarningBanner
 // Dependencies: []
 
-// Module 10398 (LikelyAtoWarningBanner)
+// Module 10399 (LikelyAtoWarningBanner)
 class LikelyAtoWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;
@@ -43,7 +43,7 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f80131 = handleLearnMore.useCallback((cta) => {
+    f80144 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: constants2.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);
@@ -74,7 +74,7 @@ class LikelyAtoWarningBanner {
         let obj = {};
         obj = { children: children.title };
         const items = [callback3(callback(closure_2[18]).Text, obj, arg1), ];
-        obj = { children: children.description };
+        obj = { cachedAt: null, edpbxy: null, children: children.description };
         items[1] = callback3(callback(closure_2[18]).Text, obj, arg1);
         obj.children = items;
         return callback4(closure_11, obj);
@@ -86,7 +86,7 @@ class LikelyAtoWarningBanner {
         }
       };
       obj.actionItems = callback2(warningId(senderId[19]), obj);
-      const obj1 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+      const obj1 = { cachedAt: true, edpbxy: true };
       const intl2 = channelId(senderId[15]).intl;
       obj1.children = intl2.format(channelId(senderId[15]).t.UkH122, { learnMoreLink: handleLearnMore });
       obj.learnMore = callback2(channelId(senderId[20]).TextWithIOSLinkWorkaround, obj1);

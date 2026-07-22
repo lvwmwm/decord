@@ -1,27 +1,27 @@
-// Module ID: 12370
-// Function ID: 94605
+// Module ID: 12375
+// Function ID: 94633
 // Name: OutboundPromotionClaimAlert
 // Dependencies: []
 // Exports: default
 
-// Module 12370 (OutboundPromotionClaimAlert)
+// Module 12375 (OutboundPromotionClaimAlert)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, View: closure_6, Image: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { 0: "<string:1091687288>", 0: "/assets/design/components/Icon/native/redesign/generated/images" }, bodyText: {} };
+obj = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: {}, bodyText: { 9223372036854775807: 49450240, 0: 49450240 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.copyInputContainer = obj;
-obj.copyInputLabel = { 0: "<string:410124289>", 0: "<string:402653184>" };
+obj.copyInputLabel = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.copyInput = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.copyInputCopied = { borderColor: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_POSITIVE };
-obj.copyButton = {};
+obj.copyButton = { ipVersion: 800, javascript: 16 };
 obj.promotionArt = {};
-obj.errorArt = { <string:651579779>: "isArray", <string:4249959009>: "GuildRoleSubscriptionTierDetailsTab", <string:1446732419>: "isArray" };
+obj.errorArt = { "Bool(false)": "isArray", "Bool(false)": "disablePowerupForGuild", "Bool(false)": "isArray" };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { borderColor: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_POSITIVE };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("components_native/premium/OutboundPromotionClaimAlert.tsx");
@@ -70,7 +70,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
     const obj2 = { style: tmp.bodyText, variant: "text-md/medium", children: outboundPromotion.outboundRedemptionModalBody };
     items1[2] = callback2(arg1(dependencyMap[11]).Text, obj2);
     let obj3 = { style: tmp.copyInputContainer };
-    const obj4 = { delete: null, dispatch: null, raw: null, style: tmp.copyInputLabel };
+    const obj4 = { "Null": true, "Null": true, alignItems: true, style: tmp.copyInputLabel };
     const intl2 = arg1(dependencyMap[12]).intl;
     obj4.children = intl2.string(arg1(dependencyMap[12]).t.s9LFQh);
     const items2 = [callback2(arg1(dependencyMap[11]).Text, obj4), , ];
@@ -85,7 +85,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
       tmp19 = copyInput;
     }
     obj5.style = tmp19;
-    const obj7 = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509 };
+    const obj7 = { "Null": 1567300603, "Null": 221342020, "Null": 822948183 };
     const obj8 = { flex: 1 };
     obj7.style = obj8;
     const obj9 = {
@@ -121,7 +121,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
     items2[1] = callback3(tmp6, obj5);
     obj11 = callback2;
     items3 = arg1(dependencyMap[11]).Text;
-    obj5 = callback2(items3, { deer: "isArray", Ufm9XX: "isArray", playstationVersion: "isArray" });
+    obj5 = callback2(items3, { category: "isArray", position: "isArray", top: "isArray" });
     items2[2] = obj5;
     obj3.children = items2;
     obj3 = tmp12(tmp13, obj3);

@@ -1,5 +1,5 @@
 // Module ID: 6781
-// Function ID: 53487
+// Function ID: 53498
 // Name: getPriceForCollectiblesProduct
 // Dependencies: []
 // Exports: canActionOnProduct, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getProductDiscount, getProductTypeNameForLogging, getProfileEffects, getProfileFrames, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice, sortProductsByUserDiscounts
@@ -203,7 +203,7 @@ const _module1 = require(dependencyMap[6]);
 const CurrencyCodes = require(dependencyMap[7]).CurrencyCodes;
 let obj = { NITRO: "nitro", THIRDPARTY: "thirdparty" };
 let closure_16 = { [obj.NITRO]: "nitro", [obj.THIRDPARTY]: "xbox" };
-obj = { year: "<string:1876819969>", month: "<string:2170814465>" };
+obj = { -9223372036854775808: "pow", 9223372036854775807: "decorationCutout" };
 const items = [, , ];
 ({ KZT: arr[0], NGN: arr[1], EGP: arr[2] } = CurrencyCodes);
 const _module2 = require(dependencyMap[18]);

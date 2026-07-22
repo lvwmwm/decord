@@ -1,19 +1,19 @@
-// Module ID: 11822
-// Function ID: 91664
+// Module ID: 11823
+// Function ID: 91678
 // Name: OrbCheckoutErrorCard
 // Dependencies: []
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 11822 (OrbCheckoutErrorCard)
+// Module 11823 (OrbCheckoutErrorCard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { topRowWrapper: {}, rowWrapper: {} };
+obj = { topRowWrapper: { "Bool(false)": true, "Bool(false)": true }, rowWrapper: { 1858522211: true, 1633627985: true } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.rowDetailsContainer = obj;
-obj.orbPaymentSourceDetails = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r" };
+obj.orbPaymentSourceDetails = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r" };
 const tmp3 = arg1(dependencyMap[2]);
 obj.sectionTitle = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
 const obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
@@ -27,8 +27,8 @@ const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/virtual_cu
 
 export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(children) {
   let obj = { style: callback3().errorCard };
-  obj = { 9223372036854775807: "fi", 9223372036854775807: "pillIcon", -9223372036854775808: "VOICE_CHANNEL_ACTIVITY" };
-  const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, { accessibilityRole: "%Math%", "": "isArrayBuffer" }), callback(arg1(dependencyMap[7]).Text, { children: children.error })];
+  obj = {};
+  const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, { "Bool(false)": "%JSONStringify%", "Bool(false)": "isArrayBuffer" }), callback(arg1(dependencyMap[7]).Text, { children: children.error })];
   obj.children = items;
   obj.children = callback2(arg1(dependencyMap[5]).Stack, obj);
   return callback(closure_4, obj);
@@ -49,7 +49,7 @@ export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product)
     tmp5 = callback(importDefault(dependencyMap[8]), obj);
   }
   const obj1 = { style: tmp.topRowWrapper };
-  const obj2 = { style: tmp.sectionTitle };
+  const obj2 = { cachedAt: "scalar", edpbxy: 8, style: tmp.sectionTitle };
   const intl = arg1(dependencyMap[9]).intl;
   obj2.children = intl.string(arg1(dependencyMap[9]).t.hws7bC);
   const items1 = [callback(arg1(dependencyMap[7]).Text, obj2), tmp5];
@@ -59,7 +59,7 @@ export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product)
 export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSourceDetails(orbAmount) {
   const tmp = callback3();
   let obj = { style: tmp.rowWrapper };
-  obj = { style: tmp.sectionTitle };
+  obj = { cachedAt: "scalar", edpbxy: 8, style: tmp.sectionTitle };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.zLch/S);
   const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
@@ -81,7 +81,7 @@ export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
   const arg1 = skuId;
   const items = [skuId];
   const memo = React.useMemo(() => skuId(closure_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
-  obj = { style: callback3().disclaimer, children: memo };
+  obj = { "Null": null, "Null": "Path 3", alignItems: "ADBE Vector Shape - Group", style: callback3().disclaimer, children: memo };
   return callback(arg1(dependencyMap[13]).TextWithIOSLinkWorkaround, obj);
 };
 export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPress) {

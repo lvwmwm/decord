@@ -1,13 +1,13 @@
-// Module ID: 14544
-// Function ID: 109584
+// Module ID: 14552
+// Function ID: 109627
 // Name: BalanceWidgetMenuSection
 // Dependencies: []
 
-// Module 14544 (BalanceWidgetMenuSection)
+// Module 14552 (BalanceWidgetMenuSection)
 function BalanceWidgetMenuSection() {
   const tmp = callback5();
   let obj = { spacing: 16, style: tmp.container };
-  obj = { EMPTY_SOUND_LIST: null, paddingTop: null, HAPPENING_NOW_PANELS_CONTAINER_PADDING: null, style: tmp.title };
+  obj = { borderRadius: null, left: null, top: null, style: tmp.title };
   const items = [callback3(arg1(dependencyMap[11]).Text, obj), callback3(importDefault(dependencyMap[12]), {})];
   obj.children = items;
   return callback4(arg1(dependencyMap[10]).Stack, obj);
@@ -57,7 +57,7 @@ function BalanceWidgetPillSection() {
     obj.openLazy(() => callback(paths[15])(paths[14], paths.paths).then((arg0) => arg0.default), "OrbsFlowTestModalBalanceWidgetMenuKey", obj);
   }, items1);
   let obj = { spacing: 16, style: tmp.container };
-  obj = { EMPTY_SOUND_LIST: "Disable collectibles shop cache", paddingTop: "shop_disable_cache", HAPPENING_NOW_PANELS_CONTAINER_PADDING: 1, style: tmp.title };
+  obj = { borderRadius: "Disable collectibles shop cache", left: "shop_disable_cache", top: 1, style: tmp.title };
   const items2 = [callback3(arg1(dependencyMap[11]).Text, obj), callback3(arg1(dependencyMap[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), callback3(arg1(dependencyMap[18]).Button, { onPress: callback1 }), ];
   obj = { style: tmp.balancePillContainer };
   const items3 = [callback3(arg1(dependencyMap[19]).BalanceWidgetPill, { balance: first }), callback3(arg1(dependencyMap[20]).BalanceWidgetPillButton, { balance: first, onPress: callback2 })];
@@ -90,7 +90,7 @@ obj.wrap = obj;
 obj1 = { padding: importDefault(dependencyMap[9]).space.PX_16 };
 obj.container = obj1;
 obj.title = { marginBottom: 8 };
-obj2 = { "Bool(false)": 7, "Bool(false)": 370, marginBottom: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj2 = { "Bool(false)": null, "Bool(false)": "\u{1F43F}\uFE0F", marginBottom: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_16 };
 obj.balancePillContainer = obj2;
 let closure_10 = obj2.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

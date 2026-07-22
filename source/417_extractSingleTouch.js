@@ -1,14 +1,13 @@
 // Module ID: 417
 // Function ID: 5857
 // Name: extractSingleTouch
-// Dependencies: [0, 4294967295, 0, 0, 0, 0, 4294967295, 0]
+// Dependencies: []
 
 // Module 417 (extractSingleTouch)
-import { jsx } from "result";
-
 let touchableHandleBlur;
 let touchableHandleFocus;
 importAll(dependencyMap[1]);
+const jsx = arg1(dependencyMap[2]).jsx;
 function extractSingleTouch(nativeEvent) {
   let changedTouches;
   let touches;
@@ -33,11 +32,11 @@ function extractSingleTouch(nativeEvent) {
   }
   first = first1;
 }
-let obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Null": null };
-let closure_3 = Object.assign({}, obj, {});
-let closure_4 = Object.assign({}, obj, { "Bool(true)": "Small", "Bool(true)": "sm", "Bool(true)": "Placeholder" });
+let obj = {};
+let closure_3 = Object.assign({}, obj, { label_from: null, SenderStopped: null });
+let closure_4 = Object.assign({}, obj, {});
 let closure_5 = Object.assign({}, obj, { RESPONDER_ACTIVE_LONG_PRESS_IN: true });
-let closure_6 = { NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "constructor", "Bool(false)": "apply" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, error: {} };
+let closure_6 = { NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, error: {} };
 obj = {
   componentDidMount() {
     const isTV = importDefault(dependencyMap[3]).isTV;
@@ -442,7 +441,7 @@ obj = {
   withoutDefaultFocusAndBlur: {}
 };
 ({ touchableHandleFocus, touchableHandleBlur } = obj);
-obj.withoutDefaultFocusAndBlur = require("result")(obj, ["<string:28222976>", "<string:19552256>"]);
+obj.withoutDefaultFocusAndBlur = importDefault(dependencyMap[0])(obj, ["useStateFromStores", "Date"]);
 
 export default {
   Mixin: obj,

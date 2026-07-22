@@ -1,10 +1,10 @@
-// Module ID: 10538
-// Function ID: 82350
+// Module ID: 10539
+// Function ID: 82363
 // Name: ActionButton
 // Dependencies: []
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10538 (ActionButton)
+// Module 10539 (ActionButton)
 class ActionButton {
   constructor(arg0) {
     flag = global.appearsDisabled;
@@ -134,11 +134,11 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 let closure_9 = obj.hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.WHITE, 0.24);
-let closure_10 = Object.freeze({ <string:2638434640>: 110, <string:2857778020>: null, <string:2075939155>: "1116b1666a9928acf5e5ec15dec8e3d4" });
+let closure_10 = Object.freeze({ youtube_video_id: 110, queryGroupDMs: null, 9223372036854775807: "1116b1666a9928acf5e5ec15dec8e3d4" });
 const frozen = Object.freeze({});
 let closure_12 = 24 + 2 * frozen.buttonRadius * 5 + 96;
 let obj1 = arg1(dependencyMap[6]);
-obj = { buttonContainer: { position: "absolute" }, iconContainer: { 1879049349: null, "Null": "no-hide-descendants", "Null": true }, badge: {} };
+obj = { buttonContainer: { position: "absolute" }, iconContainer: { <string:4175141322>: true, <string:2410893134>: "/assets/.cache/intl/ZGVzaWdu", <string:2325658035>: null }, badge: {} };
 obj = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_760 };
 obj.notificationArea = obj;
 obj.notificationText = { lineHeight: 16 };
@@ -170,7 +170,7 @@ export const ToggledActionButton = function ToggledActionButton(showBadge) {
     flag2 = false;
   }
   ({ backgroundColor, tintColor } = showBadge);
-  let obj = { 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, 0: true, 0: true };
+  let obj = { 1515301718: "Text", 102650446: "resizeMode", 1415906845: "from", -868526421: "Array", 1454088292: "isArray", -1571204805: "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(showBadge, obj);
   let WHITE = null;

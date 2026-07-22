@@ -1,10 +1,10 @@
-// Module ID: 13818
-// Function ID: 104511
+// Module ID: 13825
+// Function ID: 104551
 // Name: result
 // Dependencies: []
 // Exports: default
 
-// Module 13818 (result)
+// Module 13825 (result)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -20,7 +20,7 @@ const tmp2 = arg1(dependencyMap[2]);
 let closure_12 = importDefault(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[5]).Circle);
 let obj1 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.round, width: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT, height: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT };
+obj = { <string:3596066964>: null, <string:3638417373>: null, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.round, width: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT, height: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT };
 obj.progress = obj;
 const items = [{ rotate: "-90deg" }];
 obj.ring = { position: "absolute", transform: items };
@@ -34,10 +34,10 @@ if (obj7.isAndroid()) {
 }
 obj2.lineHeight = num;
 obj.countdownText = obj2;
-obj.checkmarkLayer = {};
-const obj3 = { "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[7]).radii.round };
+obj.checkmarkLayer = { variant: 66925056, accessibilityRole: 50096384, color: 51459584, flexDirection: 66500352 };
+const obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.checkmarkBackground = obj3;
-obj.checkmarkIcon = { "Null": 0, "Null": -1048576 };
+obj.checkmarkIcon = {};
 let closure_13 = obj1.createStyles(obj);
 let closure_14 = { code: "function BountiesModalTimerTsx1(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE-PROGRESS_CIRCUMFERENCE*animatedProgress.get()};}" };
 let closure_15 = { code: "function BountiesModalTimerTsx2(){const{checkmarkBackgroundScale}=this.__closure;return{transform:[{scale:checkmarkBackgroundScale.get()}]};}" };
@@ -163,13 +163,13 @@ export default function BountiesModalTimer(arg0) {
   obj1 = { height: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT, width: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT, style: tmp.ring };
   obj2 = { cx: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT / 2, cy: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT / 2, r: result, fill: "none", stroke: tmp.trackPath.color, strokeWidth: 4 };
   const items2 = [callback(arg1(dependencyMap[5]).Circle, obj2), ];
-  obj3 = { padding: "/assets/images/user_settings", create: 224, <string:1632514435>: 104, <string:180376379>: null, <string:2214447224>: "a2009aeba6d9e049dbc8c9ac25b7dc92", <string:1716759137>: "crunchyroll_link_success", cx: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT / 2, cy: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT / 2, r: result, strokeDasharray: closure_8, strokeLinecap: "round", animatedProps };
+  obj3 = { cx: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT / 2, cy: arg1(dependencyMap[3]).SMALL_BUTTON_HEIGHT / 2, r: result, strokeDasharray: closure_8, strokeLinecap: "round", animatedProps };
   items2[1] = callback(closure_12, obj3);
   obj1.children = items2;
   const items3 = [callback2(importDefault(dependencyMap[5]), obj1), , , ];
   let tmp16 = !tmp2;
   if (tmp16) {
-    const obj4 = { style: tmp.countdownText, children: bound };
+    const obj4 = { blacklist: true, frecencyBoosters: true, userFilters: true, style: tmp.countdownText, children: bound };
     tmp16 = callback(arg1(dependencyMap[10]).Text, obj4);
   }
   items3[1] = tmp16;

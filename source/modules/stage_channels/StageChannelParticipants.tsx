@@ -1,9 +1,19 @@
 // Module ID: 4954
-// Function ID: 42544
+// Function ID: 42553
 // Name: sortKey
-// Dependencies: []
+// Dependencies: [0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0]
 
 // Module 4954 (sortKey)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import closure_11 from "__exportStarResult1";
+import { getComparator } from "__exportStarResult1";
+import closure_13 from "__exportStarResult1";
+
 function sortKey(speaker) {
   let connectedOn;
   let role;
@@ -95,24 +105,15 @@ function getParticipantIndex(arg0) {
   }
   return items;
 }
-let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const getComparator = arg1(dependencyMap[9]).getComparator;
-let closure_13 = importDefault(dependencyMap[10]);
 let closure_14 = importDefault(dependencyMap[11]);
 let obj = { SPEAKER: "SPEAKER", AUDIENCE: "AUDIENCE", NO_ROLE: "NO_ROLE", ALL_REQUESTED_TO_SPEAK: "ALL_REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_ONLY: "REQUESTED_TO_SPEAK_ONLY", BLOCKED: "BLOCKED", IGNORED: "IGNORED", FRIEND: "FRIEND", SELECTED: "SELECTED", MEDIA: "MEDIA" };
 obj = { VOICE: "VOICE", STREAM: "STREAM" };
 const tmp2 = () => {
   class StageChannelParticipants {
     constructor(arg0) {
-      tmp = closure_3(this, StageChannelParticipants);
+      tmp = __exportStarResult1(this, StageChannelParticipants);
       this.participants = {};
       secondaryIndexMap = new StageChannelParticipants(closure_2[14]).SecondaryIndexMap(closure_20, closure_17);
       this._participantsIndex = secondaryIndexMap;

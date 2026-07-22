@@ -1,10 +1,10 @@
-// Module ID: 11175
-// Function ID: 86886
+// Module ID: 11176
+// Function ID: 86899
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useBannerBots
 
-// Module 11175 (_createForOfIteratorHelperLoose)
+// Module 11176 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -95,7 +95,7 @@ export const useBannerBots = function useBannerBots(context) {
   let arg1;
   let obj = function useAppsMap(context) {
     let obj = first1(closure_1[5]);
-    obj = { 2018655073: "y", 1636040136: "isArray", 91574711: "Reflect", -1185715871: "container", -1814212491: "s", context: context.context };
+    obj = { 0: 300000, 0: false, -9223372036854775808: 30, "Bool(false)": 2, "Bool(false)": 0, context: context.context };
     const apps = obj.useApplicationsInContext(obj).apps;
     const first1 = apps;
     const items = [apps];
@@ -117,7 +117,7 @@ export const useBannerBots = function useBannerBots(context) {
     }, items);
   }({ context });
   let obj1 = arg1(dependencyMap[5]);
-  obj = { 2018655073: "y", 1636040136: "isArray", 91574711: "Reflect", -1185715871: "container", -1814212491: "s", context };
+  obj = { 0: 300000, 0: false, -9223372036854775808: 30, "Bool(false)": 2, "Bool(false)": 0, context };
   const apps = obj1.useApplicationsInContext(obj).apps;
   const obj4 = function useCommandsMap(context) {
     const commands = first1(closure_1[5]).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;

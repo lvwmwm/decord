@@ -1,11 +1,11 @@
-// Module ID: 5433
-// Function ID: 46539
+// Module ID: 5167
+// Function ID: 44976
 // Name: TableRowIcon
 // Dependencies: []
 // Exports: TableRowIcon
 
-// Module 5433 (TableRowIcon)
-let closure_3 = ["<string:865601114>"];
+// Module 5167 (TableRowIcon)
+let closure_3 = ["onFocus"];
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

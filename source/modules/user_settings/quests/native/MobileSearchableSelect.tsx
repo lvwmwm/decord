@@ -1,9 +1,9 @@
-// Module ID: 13953
-// Function ID: 106049
+// Module ID: 13960
+// Function ID: 106089
 // Name: MobileSearchableSelect
 // Dependencies: []
 
-// Module 13953 (MobileSearchableSelect)
+// Module 13960 (MobileSearchableSelect)
 class MobileSearchableSelect {
   constructor(arg0) {
     options = global.options;
@@ -36,7 +36,7 @@ class MobileSearchableSelect {
     closure_9 = undefined;
     intl = undefined;
     closure_11 = undefined;
-    f106057 = undefined;
+    f106097 = undefined;
     tmp3 = closure_9();
     closure_5 = tmp3;
     str = "";
@@ -130,7 +130,7 @@ class MobileSearchableSelect {
         _undefined(false);
       }
     }, items3);
-    f106057 = closure_3.useCallback((arg0) => {
+    f106097 = closure_3.useCallback((arg0) => {
       callback(arg0);
       onChange(arg0);
       callback2(false);
@@ -146,7 +146,7 @@ class MobileSearchableSelect {
       }
       closure_8(tmp2);
     }, items5);
-    obj = { style: {} };
+    obj = { style: { maxWidth: "displayName", accessible: "useStateFromStores", importantForAccessibility: "alignItems" } };
     callback3 = closure_3.useCallback(() => {
       _undefined(false);
       callback2(false);
@@ -179,7 +179,7 @@ class MobileSearchableSelect {
       obj1.style = tmp3.dropdownContainer;
       tmp19 = closure_7;
       tmp20 = closure_5;
-      obj2 = { overflow: "14a4fdad987e2761599ba055042fdafa", borderWidth: "EyeSlashIcon", borderColor: "png" };
+      obj2 = {};
       obj2.children = memo.map((children) => {
         const options = children;
         let obj = {};

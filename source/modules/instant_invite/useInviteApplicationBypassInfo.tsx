@@ -1,10 +1,10 @@
-// Module ID: 16366
-// Function ID: 126311
+// Module ID: 16374
+// Function ID: 126353
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [555352064, 488570880, 250937344, 131072]
+// Dependencies: [555417600, 488570880, 250937344, 131072]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 16366 (useInviteApplicationBypassInfo)
+// Module 16374 (useInviteApplicationBypassInfo)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ GuildFeatures: closure_3, Permissions: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

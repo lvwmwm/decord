@@ -1,5 +1,5 @@
 // Module ID: 7512
-// Function ID: 60170
+// Function ID: 60181
 // Name: FormRadioRow
 // Dependencies: []
 // Exports: default
@@ -21,7 +21,7 @@ export default function FormRadioRow(arg0) {
     align = "left";
   }
   ({ leading, onPress } = arg0);
-  let obj = { masonryAndHorizontalIncompatible: true, processColorStrings: true, GuildOnboardingStatus: true, unstable_shouldYield: true, MAX_VISUAL_ROLE_LENGTH: true, tintColor: true };
+  let obj = { alignSelf: "Text", justifyContent: "resizeMode", alignItems: "from", 758616325: "Array", -1724212937: "isArray", 592615367: "braintreemasterpasslanding" };
   ({ value, style } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 78900
+// Module ID: 10211
+// Function ID: 78913
 // Name: canViewPotentiallyNSFWChannel
 // Dependencies: []
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10210 (canViewPotentiallyNSFWChannel)
+// Module 10211 (canViewPotentiallyNSFWChannel)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/MessageUtils.tsx");

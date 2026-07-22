@@ -1,11 +1,11 @@
-// Module ID: 12619
-// Function ID: 97058
+// Module ID: 12624
+// Function ID: 97086
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12619 (apexExperiment)
+// Module 12624 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: "user", 1387159956: "2025-12-wmf-gpu-encode", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { y: "user", DateToSystemTimezoneSetter: "2025-08-browser-hevc", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/media_engine/BrowserTransceiverPaddingRemovalExperiment.tsx");

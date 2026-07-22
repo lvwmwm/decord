@@ -1,5 +1,5 @@
 // Module ID: 7840
-// Function ID: 62504
+// Function ID: 62514
 // Name: getProfilePreviewValue
 // Dependencies: []
 // Exports: announcePendingAvatarChange, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame

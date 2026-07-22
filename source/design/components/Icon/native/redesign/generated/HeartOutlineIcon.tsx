@@ -1,10 +1,10 @@
-// Module ID: 8703
-// Function ID: 68908
+// Module ID: 8704
+// Function ID: 68920
 // Name: HeartOutlineIcon
 // Dependencies: []
 // Exports: HeartOutlineIcon
 
-// Module 8703 (HeartOutlineIcon)
+// Module 8704 (HeartOutlineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HeartOutlineIcon.tsx");

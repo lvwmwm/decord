@@ -1,10 +1,10 @@
-// Module ID: 14398
-// Function ID: 108627
+// Module ID: 14406
+// Function ID: 108670
 // Name: VerificationListItem
 // Dependencies: []
 // Exports: default
 
-// Module 14398 (VerificationListItem)
+// Module 14406 (VerificationListItem)
 function VerificationListItem(userId) {
   let end;
   let index;
@@ -70,7 +70,7 @@ function ClearVerificationsListFooter(userId) {
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t.2xL5lu);
   obj.label = jsx(arg1(dependencyMap[10]).Text, obj);
-  obj = {};
+  obj = { cachedAt: null, edpbxy: null };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj.children = intl2.string(arg1(dependencyMap[7]).t.kgAfXN);
   obj.subLabel = jsx(arg1(dependencyMap[10]).Text, obj);
@@ -83,7 +83,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ list: { flexGrow: 1 }, listContent: { paddingHorizontal: -0.000000015832525233992072, accessible: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001855055024309289 }, listFooter: { marginTop: 32 }, section: { marginBottom: 8 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ list: { flexGrow: 1 }, listContent: { "Bool(false)": "a", "Bool(false)": "oldRule" }, listFooter: { marginTop: 32 }, section: { marginBottom: 8 } });
 let closure_8 = { VERIFICATION: "VERIFICATION", SECTION: "SECTION" };
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");

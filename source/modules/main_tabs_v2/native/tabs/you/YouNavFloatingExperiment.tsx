@@ -1,10 +1,10 @@
-// Module ID: 15348
-// Function ID: 116923
+// Module ID: 15356
+// Function ID: 116966
 // Name: isYouNavFloating
 // Dependencies: []
 // Exports: isYouNavFloating
 
-// Module 15348 (isYouNavFloating)
+// Module 15356 (isYouNavFloating)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const enabled = apexExperiment.getConfig({ location: "you-nav-floating" }).enabled;

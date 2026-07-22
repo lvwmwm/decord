@@ -1,10 +1,10 @@
-// Module ID: 15264
-// Function ID: 115244
+// Module ID: 15272
+// Function ID: 115287
 // Name: HistoricalIndexingHeader
 // Dependencies: []
 // Exports: default
 
-// Module 15264 (HistoricalIndexingHeader)
+// Module 15272 (HistoricalIndexingHeader)
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_ROW_TAP_STATE_PADDING;
 let closure_3 = importAll(dependencyMap[0]);
@@ -43,7 +43,7 @@ export default function HistoricalIndexingHeader(searchContext) {
   }, items2);
   let obj = { style: items3 };
   const items3 = [tmp.header, memo1];
-  obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
+  obj = { cachedAt: false, edpbxy: false };
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.format(arg1(dependencyMap[8]).t.4Y3O+O, { count: memo });
   obj.children = jsx(arg1(dependencyMap[7]).Text, obj);

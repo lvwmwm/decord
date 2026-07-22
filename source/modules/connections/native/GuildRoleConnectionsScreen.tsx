@@ -1,10 +1,10 @@
-// Module ID: 9983
-// Function ID: 77196
+// Module ID: 9984
+// Function ID: 77209
 // Name: GuildRoleConnectionsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 9983 (GuildRoleConnectionsScreen)
+// Module 9984 (GuildRoleConnectionsScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
@@ -20,19 +20,19 @@ let obj = arg1(dependencyMap[9]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj.container = obj;
-obj.content = { 822894183: 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 400842798: 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, 1120077519: 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 };
+obj.content = { "Null": 0.0000000000000000000000000000000000000000000000000000000009659784425801879, "Null": 15177101141243970000000000000000000000000000000000000000000000000000000000000000000, "Null": 15186806633716527000000000000000000000000000000000000000000000000000000000000000000 };
 obj.infoText = { marginTop: 24 };
-obj.verifiedRoles = { paddingHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000011816418034244918, width: "allNodes", marginTop: "R" };
-const obj1 = { animateEmoji: true, scrollFastOptimizationEnabled: "/assets/images/native", scrollFastVelocity: 24, disableAnimationsOnScroll: 24, config: null, paddingTop: "f2561d66a35f036565003b940731b99f", paddingBottom: "ic_verified_check_24px", useTier0UpsellContent: "png", emojiData: true, emojiMargin: 20, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[10]).radii.md };
+obj.verifiedRoles = { title: 0.0000000000000000000000000000000000000000000000000000000000000000011816418034244918, fullscreen: "GiftTrollIllocon", headerShown: "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" };
+const obj1 = { manageChildren: true, EMOJI_MAX_FILESIZE_KB: "/assets/images/native", alignContent: 24, bgMutedWrap: 24, addWindow: null, PortalKeyboard: "f2561d66a35f036565003b940731b99f", doNotNotifyOnError: "ic_verified_check_24px", CollectiblesShopHomeRecord: "png", y: true, CollectiblesShopOpenTriggerPoint: 20, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.verifiedRole = obj1;
 const tmp4 = arg1(dependencyMap[8]);
 obj.verifiedRoleHasRole = { borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 const obj2 = { borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.verifiedRolePressed = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED };
 obj.verifiedRoleIcon = { marginRight: 12 };
-const obj4 = { onCreate: false, guildTemplate: false, autoFocus: false, onHubGuildInfoSet: false, isCommunityIntent: false, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND, paddingHorizontal: false };
+const obj4 = { <string:1352487535>: true, <string:1751234419>: true, <string:1676458833>: true, <string:1672192084>: true, <string:1421343572>: true, <string:56998353>: true, <string:3936662576>: true, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 obj.roleCheckmark = obj4;
-obj.verifiedRoleName = { "Bool(true)": -146028888078.88293, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012366668433734714, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000145176880826883 };
+obj.verifiedRoleName = { windowWidth: null, windowHeight: null, chunkSize: null };
 obj.platformIconContainer = { flexDirection: "row" };
 obj.cutout = { marginRight: -6 };
 let closure_16 = obj.createStyles(obj);
@@ -80,7 +80,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     const found = stateFromStores.filter((tags) => null === tags.tags.guild_connections);
     obj = { style: tmp.container };
     obj = { contentContainerStyle: tmp.content };
-    obj1 = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.infoText };
+    obj1 = { "Null": "String", "Null": "justifyContent", alignItems: "np", style: tmp.infoText };
     const intl = arg1(dependencyMap[26]).intl;
     obj2 = { helpdeskArticleUrl: importDefault(dependencyMap[27]).getArticleURL(constants.CONNECTION_DETAILS) };
     obj1.children = intl.format(arg1(dependencyMap[26]).t.Y+TsEV, obj2);
@@ -138,7 +138,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
             tmp5 = callback(stateFromStores1, obj);
           }
           const items = [tmp5, callback(onCloseModal(tmp[29]), { style: tmp.verifiedRoleIcon, guildId, role: id, size: 24 }), , ];
-          const obj2 = { <string:1643205302>: null, <string:1415816450>: 103, <string:4283523744>: 153, style: tmp.verifiedRoleName, children: id.name };
+          const obj2 = { 803799044: null, 1269170180: null, 711589892: null, style: tmp.verifiedRoleName, children: id.name };
           items[2] = callback(guildId(tmp[30]).Text, obj2);
           const obj3 = {
             style: tmp.platformIconContainer,

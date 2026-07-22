@@ -1,10 +1,10 @@
-// Module ID: 12202
-// Function ID: 93747
+// Module ID: 12206
+// Function ID: 93773
 // Name: createSafetyPolicyNoticeEmbed
 // Dependencies: []
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12202 (createSafetyPolicyNoticeEmbed)
+// Module 12206 (createSafetyPolicyNoticeEmbed)
 const Image = require(dependencyMap[0]).Image;
 const MessageEmbedTypes = require(dependencyMap[1]).MessageEmbedTypes;
 const SafetyHubPolicyNoticeKeys = require(dependencyMap[2]).SafetyHubPolicyNoticeKeys;

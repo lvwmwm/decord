@@ -47,7 +47,7 @@ export const browserReplayIntegration = function browserReplayIntegration() {
         mask = [];
       }
       obj.mask = items.concat(closure_2(mask));
-      const items1 = ["thirty"];
+      const items1 = [null];
       let unmask = first.unmask;
       if (!unmask) {
         unmask = [];

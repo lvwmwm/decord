@@ -1,7 +1,7 @@
 // Module ID: 552
 // Function ID: 6669
 // Name: addNumericSeparator
-// Dependencies: []
+// Dependencies: [0]
 
 // Module 552 (addNumericSeparator)
 function addNumericSeparator(name, typeError1) {
@@ -130,7 +130,7 @@ function inspectString(slice, maxStringLength) {
 }
 function lowbyte(str) {
   str = str.charCodeAt(0);
-  const tmp = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }[str];
+  const tmp = {}[str];
   if (tmp) {
     let text = `\${tmp}`;
   } else {
@@ -392,8 +392,8 @@ if (!getPrototypeOf) {
   getPrototypeOf = fn;
 }
 let custom = null;
-if (isSymbol(require(dependencyMap[0]).custom)) {
-  custom = require(dependencyMap[0]).custom;
+if (isSymbol(require("__exportStarResult1").custom)) {
+  custom = require("__exportStarResult1").custom;
 }
 let obj = Object.create(null);
 obj.double = "\"";

@@ -1,9 +1,9 @@
-// Module ID: 11182
-// Function ID: 87034
+// Module ID: 11183
+// Function ID: 87047
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11182 (_isNativeReflectConstruct)
+// Module 11183 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -91,13 +91,13 @@ obj = {
     let obj = { surface: collections.surface, activeState: collections.activeState };
     const tmp = getKey(obj);
     const mapped = collections.map((application_directory_collection_items) => {
-      application_directory_collection_items.application_directory_collection_items = callback(closure_1[5]).sortBy(application_directory_collection_items.application_directory_collection_items, ["Set", "shapes"]);
+      application_directory_collection_items.application_directory_collection_items = callback(closure_1[5]).sortBy(application_directory_collection_items.application_directory_collection_items, ["getClaimedOutboundPromotionCodeMap", "analytics"]);
       return application_directory_collection_items;
     });
     let obj1 = importDefault(dependencyMap[5]);
     obj = {};
     const merged = Object.assign(closure_9);
-    obj[tmp] = obj1.sortBy(mapped, ["Set", "shapes"]);
+    obj[tmp] = obj1.sortBy(mapped, ["getClaimedOutboundPromotionCodeMap", "analytics"]);
     closure_9 = obj;
     obj = {};
     const merged1 = Object.assign(closure_10);

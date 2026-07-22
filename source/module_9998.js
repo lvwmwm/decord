@@ -1,9 +1,9 @@
 // Module ID: 9998
-// Function ID: 77301
+// Function ID: 77313
 // Dependencies: []
 
 // Module 9998
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "png", "Bool(false)": 16, "Bool(false)": 110, "Bool(false)": "center", "Bool(false)": "50%", "Bool(false)": "center", "Bool(false)": 4, "Bool(false)": 40, scales: ["Set", "ml"] };
+const obj = { 1358955657: null, 1279501871: null, -100662186: null, -134216521: null, 1375732845: null, -1598249400: null, -117286062: null, 978739886: null, scales: ["<string:24264687>", "isArray"] };
 
 export default _module.registerAsset(obj);

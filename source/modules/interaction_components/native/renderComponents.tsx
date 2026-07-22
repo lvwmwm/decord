@@ -1,9 +1,9 @@
-// Module ID: 15949
-// Function ID: 122344
+// Module ID: 15957
+// Function ID: 122386
 // Name: renderComponents
 // Dependencies: []
 
-// Module 15949 (renderComponents)
+// Module 15957 (renderComponents)
 function renderComponents(components) {
   return components.map((arg0, arg1) => callback(arg0, arg1.toString()));
 }

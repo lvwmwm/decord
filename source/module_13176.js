@@ -1,8 +1,29 @@
 // Module ID: 13176
-// Function ID: 99613
+// Function ID: 99623
 // Dependencies: []
 
 // Module 13176
-const Platform = require(dependencyMap[0]).Platform;
-const _module = require(dependencyMap[1]);
-_module.setupURLPolyfill();
+let getOwnPropertyDescriptor = require(dependencyMap[0]);
+if (getOwnPropertyDescriptor) {
+  const _Object = Object;
+  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+}
+const tmp = require(dependencyMap[1])(prototype, "name");
+let tmp2 = tmp;
+if (tmp) {
+  tmp2 = "something" === function something() {
+
+  }.name;
+}
+let tmp3 = tmp;
+if (tmp) {
+  let tmp4 = !require(dependencyMap[0]);
+  if (!tmp4) {
+    tmp4 = require(dependencyMap[0]) && getOwnPropertyDescriptor(prototype, "name").configurable;
+    const tmp5 = require(dependencyMap[0]) && getOwnPropertyDescriptor(prototype, "name").configurable;
+  }
+  tmp3 = tmp4;
+}
+const obj = { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+
+export default obj;

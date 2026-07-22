@@ -1,9 +1,9 @@
-// Module ID: 11668
-// Function ID: 90511
+// Module ID: 11669
+// Function ID: 90524
 // Name: WaveformBar
 // Dependencies: []
 
-// Module 11668 (WaveformBar)
+// Module 11669 (WaveformBar)
 function WaveformBar(value) {
   value = value.value;
   const arg1 = value;
@@ -196,14 +196,14 @@ let obj2 = arg1(dependencyMap[9]);
 let obj = {};
 obj = { paddingVertical: importDefault(dependencyMap[10]).modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, borderRadius: importDefault(dependencyMap[10]).radii.xxl };
 obj.container = obj;
-obj.loading = { position: "isArray", shadowRadius: "isArray" };
+obj.loading = {};
 const importDefaultResult = importDefault(dependencyMap[8]);
 obj.dot = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
 obj.dotDismissed = { backgroundColor: "transparent" };
 obj.waveformContainer = {};
 obj2 = { backgroundColor: importDefault(dependencyMap[10]).colors.WHITE, borderRadius: 1 };
 obj.waveformBar = obj2;
-obj.durationContainer = { "Null": 7, "Null": 370 };
+obj.durationContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 const obj3 = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
 const obj9 = arg1(dependencyMap[11]);

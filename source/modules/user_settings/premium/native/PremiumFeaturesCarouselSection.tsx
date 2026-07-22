@@ -1,10 +1,10 @@
-// Module ID: 12282
-// Function ID: 94147
+// Module ID: 12287
+// Function ID: 94175
 // Name: PremiumFeaturesCardBackground
 // Dependencies: []
 // Exports: default
 
-// Module 12282 (PremiumFeaturesCardBackground)
+// Module 12287 (PremiumFeaturesCardBackground)
 class PremiumFeaturesCardBackground {
   constructor(arg0) {
     ({ style, children } = global);
@@ -31,7 +31,7 @@ function CarouselCard(arg0) {
   ({ style, title, imageSrc, imageStyle } = arg0);
   const tmp = callback5();
   let obj = { style };
-  obj = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.cardTitle, children: title };
+  obj = { cachedAt: 19992262345853362000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026497373346151588, style: tmp.cardTitle, children: title };
   const items = [callback2(arg1(dependencyMap[11]).Text, obj), ];
   const items1 = [tmp.image, imageStyle];
   items[1] = callback2(importDefault(dependencyMap[12]), { source: imageSrc, style: items1, resizeMode: "contain" });
@@ -142,7 +142,7 @@ function PremiumFeaturesCarousel(arg0) {
     obj.children = items2;
     return closure_11(closure_6, obj);
   }
-  const obj2 = { 9223372036854775807: "<string:1497759745>", 0: "<string:1124073754>", 0: "<string:570426015>", 0: "<string:3405775312>", -9223372036854775808: "<string:3774873862>", 9223372036854775807: "<string:822084035>", 0: "<string:3221225850>", style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, snapToOffsets: arr.map((arg0, arg1) => arg1 * sum), onScroll: callback, children: arr };
+  const obj2 = { width: null, borderBottomWidth: null, borderColor: null, marginLeft: null, marginTop: null, marginRight: null, marginLeft: null, style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, snapToOffsets: arr.map((arg0, arg1) => arg1 * sum), onScroll: callback, children: arr };
   tmp16 = callback2(closure_5, obj2);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -159,19 +159,19 @@ let obj = arg1(dependencyMap[8]);
 obj = { container: { flex: 1 }, headerText: { textAlign: "center" } };
 obj = { flex: 1, marginTop: importDefault(dependencyMap[7]).space.PX_16 };
 obj.carouselContainer = obj;
-obj.carousel = { frameId: "<string:863109121>", syncRow: "<string:218103808>" };
+obj.carousel = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013682801433969713, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044717168594946655 };
 const tmp3 = arg1(dependencyMap[6]);
 obj.indicators = { marginBottom: -importDefault(dependencyMap[7]).space.PX_48 };
 let closure_14 = obj.createStyles(obj);
 let obj4 = arg1(dependencyMap[8]);
 const obj2 = { cardContainer: { flex: 1 } };
-const obj1 = { marginBottom: -importDefault(dependencyMap[7]).space.PX_48 };
-obj2.card = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
+const obj3 = { "Null": "subtle", "Null": null, accessibilityRole: "heading-md/semibold", r: "text-default", applicationId: 64, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+obj2.card = obj3;
 obj2.image = { alignSelf: "center" };
 obj4 = { marginTop: importDefault(dependencyMap[7]).space.PX_24, marginHorizontal: importDefault(dependencyMap[7]).space.PX_24 };
 obj2.cardTitle = obj4;
 let closure_15 = obj4.createStyles(obj2);
-const obj3 = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
+const obj1 = { marginBottom: -importDefault(dependencyMap[7]).space.PX_48 };
 let closure_16 = arg1(dependencyMap[8]).createStyles({ emojiImage: { alignSelf: "flex-end" } });
 const obj9 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesCarouselSection.tsx");

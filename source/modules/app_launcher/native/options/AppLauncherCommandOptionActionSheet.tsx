@@ -1,10 +1,10 @@
-// Module ID: 11278
-// Function ID: 87790
+// Module ID: 11279
+// Function ID: 87803
 // Name: AppLauncherCommandOptionActionSheet
 // Dependencies: []
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11278 (AppLauncherCommandOptionActionSheet)
+// Module 11279 (AppLauncherCommandOptionActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const DEFAULT_CONTENT_PADDING = arg1(dependencyMap[2]).DEFAULT_CONTENT_PADDING;
@@ -34,7 +34,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   if (flag === undefined) {
     flag = true;
   }
-  let obj = { SharedTransitionType: null, addData: null, GUILD_SETTINGS_GUILD_THEME_SAVE_SUCCESS: null, getCellMetrics: null, GuildRoleSubscriptionListingPreview: null };
+  let obj = { ServerThemeApexShadowExperiment: false, pipMode: false, getAttachmentUrl: false, getChangelogLoadStatus: false, LevelInfo: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(startExpanded, obj);
   const arg1 = merged;

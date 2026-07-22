@@ -1,10 +1,10 @@
-// Module ID: 9720
-// Function ID: 75555
+// Module ID: 9721
+// Function ID: 75568
 // Name: PremiumGiftWishlistBanner
 // Dependencies: []
 // Exports: PremiumGiftWishlistBanner
 
-// Module 9720 (PremiumGiftWishlistBanner)
+// Module 9721 (PremiumGiftWishlistBanner)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ScrollView: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -156,7 +156,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
       obj3.children = Array.from(obj4, (arg0, arg1) => tmp9(totalUnownedWishlistItemCount, { style: tmp9.placeholder }, arg1));
       let tmp19Result = tmp9(totalUnownedWishlistItemCount, obj3);
     } else {
-      obj5 = { buttonBlur: "Array", alertWrapper: "isArray", FITNESS: "__d", EMPTY_MEDIA_RESULTS: "count", marginHorizontal: "type", receiveMessage: "a", snapToInterval: arg1(dependencyMap[11]).COLLECTIBLES_SHOP_CARD_WIDTH + PX_16 };
+      obj5 = { opacity: "ChangePhoneReason", zIndex: "chr", position: "a", top: "XgH9eh", bottom: "Array", flexShrink: "AnalyticsLocations", snapToInterval: arg1(dependencyMap[11]).COLLECTIBLES_SHOP_CARD_WIDTH + PX_16 };
       const obj6 = { gap: PX_16, paddingHorizontal: PX_16, paddingVertical: importDefault(dependencyMap[9]).space.PX_8 };
       obj5.contentContainerStyle = obj6;
       const items6 = [

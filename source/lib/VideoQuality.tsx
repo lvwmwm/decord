@@ -1,9 +1,9 @@
-// Module ID: 12631
-// Function ID: 97165
+// Module ID: 12636
+// Function ID: 97193
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12631 (_createForOfIteratorHelperLoose)
+// Module 12636 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -569,8 +569,8 @@ const tmp2 = (arg0) => {
             }
           });
         }
-        const items = ["locomotive", "bus", "car", "tram", "trolley", "trolleybus"];
-        const items1 = ["google.protobuf.Timestamp", "google.protobuf.DoubleValue", "google.protobuf.FloatValue", "arrows_clockwise", -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003065641165576845, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000188703258491505, -0.000000000000000000000000000000000000000000000000032412492445407077];
+        const items = ["<string:2957312001>", "<string:234881335>", "<string:587203222>", "<string:4110418229>", "<string:1224737290>", "<string:1258291850>"];
+        const items1 = [];
         vmafHistogram = vmafHistogram.vmafHistogram;
         const report = vmafHistogram.getReport(items);
         const psnrHistogram = vmafHistogram.psnrHistogram;
@@ -955,17 +955,17 @@ const tmp2 = (arg0) => {
         }
         const _Math = Math;
         const result = Math.max(aggregationDuration.aggregationDuration, 0) / 1000;
-        const items = ["locomotive", "bus", "car", "tram", "trolley", "trolleybus"];
+        const items = ["<string:2957312001>", "<string:234881335>", "<string:587203222>", "<string:4110418229>", "<string:1224737290>", "<string:1258291850>"];
         const fpsHistogram = aggregationDuration.fpsHistogram;
         const report = fpsHistogram.getReport(items);
         const bitrateHistogram = aggregationDuration.bitrateHistogram;
-        const report1 = bitrateHistogram.getReport(["google.protobuf.Timestamp", "google.protobuf.DoubleValue", "google.protobuf.FloatValue", "arrows_clockwise", -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003065641165576845, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000188703258491505, -0.000000000000000000000000000000000000000000000000032412492445407077]);
+        const report1 = bitrateHistogram.getReport([]);
         const resolutionHistogram = aggregationDuration.resolutionHistogram;
         const report2 = resolutionHistogram.getReport(items);
         const inboundBitrateEstimateHistogram = aggregationDuration.inboundBitrateEstimateHistogram;
-        const report3 = inboundBitrateEstimateHistogram.getReport(["google.protobuf.Timestamp", "google.protobuf.DoubleValue", "google.protobuf.FloatValue", "arrows_clockwise", -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003065641165576845, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000188703258491505, -0.000000000000000000000000000000000000000000000000032412492445407077]);
+        const report3 = inboundBitrateEstimateHistogram.getReport([]);
         const localWantHistogram = aggregationDuration.localWantHistogram;
-        const report4 = localWantHistogram.getReport([]);
+        const report4 = localWantHistogram.getReport([1447100418, 1090519369, 177638, 22809409, -1243266816, 138477570, 1090519388, 75889]);
         const systemResources = aggregationDuration.systemResources;
         const stats = systemResources.getStats();
         let obj = {};

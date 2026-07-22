@@ -1,5 +1,5 @@
 // Module ID: 4759
-// Function ID: 41309
+// Function ID: 41318
 // Name: getByteAt
 // Dependencies: []
 
@@ -14,7 +14,7 @@ function getSlongAt(getInt32, arg1, arg2) {
   return getInt32.getInt32(arg1, arg2 === arg2(arg6[0]).LITTLE_ENDIAN);
 }
 let obj = {};
-obj = { "01": -2098101519, "02": 465443825, value: 330699710, attributes: 330699702, description: -826487114, xmp: -826487108, tiff: -1749510212, exif: -1749510216, dc: -1749510216 };
+obj = {};
 arg5.default = {
   getAsciiValue(items) {
     return items.map((arg0) => String.fromCharCode(arg0));

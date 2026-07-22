@@ -1,20 +1,20 @@
-// Module ID: 10289
-// Function ID: 79445
+// Module ID: 10290
+// Function ID: 79458
 // Name: NotificationSettingsMockChannels
 // Dependencies: []
 // Exports: default
 
-// Module 10289 (NotificationSettingsMockChannels)
+// Module 10290 (NotificationSettingsMockChannels)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UnreadSetting = arg1(dependencyMap[2]).UnreadSetting;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.card = obj;
-obj.channel = {};
-obj.channelName = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj.channel = { id: "suppress_editor_mention", title: "scalar", options: 8, singleSelect: 33, required: "archive_at", inOnboarding: "message" };
+obj.channelName = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMockChannels.tsx");
@@ -22,15 +22,15 @@ const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/notificati
 export default function NotificationSettingsMockChannels(unreadSetting) {
   const tmp = callback2();
   const arg1 = tmp;
-  let obj = { resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
+  let obj = { 0: null, 9223372036854775807: null, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
   const intl = arg1(dependencyMap[6]).intl;
   obj.name = intl.string(arg1(dependencyMap[6]).t.EjLobP);
   const items = [obj, , ];
-  obj = { resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
+  obj = { 0: 1766088043, 9223372036854775807: 827788593, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj.name = intl2.string(arg1(dependencyMap[6]).t.Wgpwpp);
   items[1] = obj;
-  obj = { resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
+  obj = { 0: true, 9223372036854775807: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
   const intl3 = arg1(dependencyMap[6]).intl;
   obj.name = intl3.string(arg1(dependencyMap[6]).t.g9VImh);
   items[2] = obj;

@@ -1,9 +1,9 @@
-// Module ID: 13844
-// Function ID: 104625
+// Module ID: 13851
+// Function ID: 104665
 // Name: EmptyState
 // Dependencies: []
 
-// Module 13844 (EmptyState)
+// Module 13851 (EmptyState)
 function EmptyState(reason) {
   reason = reason.reason;
   const tmp = callback4();
@@ -24,9 +24,9 @@ function EmptyState(reason) {
   obj = { style: tmp.emptyState };
   const items = [callback2(arg1(dependencyMap[12]).BountiesPosterIllocon, { size: 32 }), ];
   obj = { style: tmp.emptyStateText };
-  const obj1 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum", children: stringResult };
+  const obj1 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", children: stringResult };
   const items1 = [callback2(arg1(dependencyMap[13]).Text, obj1), ];
-  const obj2 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+  const obj2 = { cachedAt: "center", edpbxy: "center" };
   const intl3 = arg1(dependencyMap[11]).intl;
   obj2.children = intl3.format(ReqPds, {
     onClickLearnMore() {
@@ -358,7 +358,7 @@ let closure_14 = arg1(dependencyMap[9]).createStyles(() => {
   obj = { paddingLeft: PX_16 };
   obj.listContentContainer = obj;
   obj.emptyState = { gap: importDefault(dependencyMap[7]).space.PX_12, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: 14, marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-  obj.emptyStateText = { "Bool(false)": null, "Bool(false)": null };
+  obj.emptyStateText = { 1515479866: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 741818958: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
   return obj;
 });
 const obj2 = arg1(dependencyMap[9]);

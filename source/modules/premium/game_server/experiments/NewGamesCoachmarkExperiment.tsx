@@ -1,10 +1,10 @@
-// Module ID: 11529
-// Function ID: 89815
+// Module ID: 11530
+// Function ID: 89828
 // Name: useIsNewGamesCoachmarkEnabled
 // Dependencies: []
 // Exports: useIsNewGamesCoachmarkEnabled
 
-// Module 11529 (useIsNewGamesCoachmarkEnabled)
+// Module 11530 (useIsNewGamesCoachmarkEnabled)
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

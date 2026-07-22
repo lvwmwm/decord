@@ -1,10 +1,10 @@
-// Module ID: 8622
-// Function ID: 68317
+// Module ID: 8623
+// Function ID: 68329
 // Name: GameProfileHeader
 // Dependencies: []
 // Exports: default
 
-// Module 8622 (GameProfileHeader)
+// Module 8623 (GameProfileHeader)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
@@ -14,26 +14,26 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-const obj1 = { icon: 994646680318997200000000000000000000000000000000000000000000000000000000000000000000000, iconPosition: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008936294221126, onPress: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017383389522623, variant: 73333360044616460000000000000000000000000000000000000000000000000000000000000000000000000000, size: -0.000000016042267410368247, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115503, bottom: -importDefault(dependencyMap[5]).space.PX_80 };
-obj.artHero = obj1;
-obj.artHeroImage = { direction: "/assets/.cache/intl/ZGVzaWdu", style: null, borderWidth: "89c1f821400ffcc75deeeab8c6315a88" };
-obj.artHeroGradient = { 0: "<string:408361903>", 9223372036854775807: "<string:2920093709>", -9223372036854775808: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+const tmp3 = arg1(dependencyMap[3]);
+obj.artHero = { bottom: -importDefault(dependencyMap[5]).space.PX_80 };
+obj.artHeroImage = { GifAutoPlay: "89c1f821400ffcc75deeeab8c6315a88", lavender: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages", useShouldShowWishlistInDMGifting: "jsona" };
+obj.artHeroGradient = {};
 const obj2 = { "Null": "png", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24, "Null": null, "Null": "e8a96141e48bf46350215d4dadeaaebc", "Null": "ExperimentalGameControllerLinkIcon", paddingTop: importDefault(dependencyMap[5]).space.PX_32, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_12 };
 obj.headerContent = obj2;
-const tmp3 = arg1(dependencyMap[3]);
+const obj1 = { bottom: -importDefault(dependencyMap[5]).space.PX_80 };
 const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
 obj.shadowContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const obj4 = { mn: "concat", ks: "isArray", body: "shouldPressibilityUseW3CPointerEventsForHover", borderRadius: importDefault(dependencyMap[5]).radii.sm, accessibilityRole: "_headers", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const obj4 = { borderColor: "concat", justifyContent: "isArray", alignItems: "isArray", overflow: "isArray", style: "Text", borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.coverContainer = obj4;
 const obj3 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.iconContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.image = {};
-obj.titleContainer = { "Null": "largeTitleColor", "Null": "%Number%", "Null": "generateIdFn" };
+obj.titleContainer = { Text: null, applicationId: null, message: null };
 const obj5 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": -536870861, "Null": -299892737 }, textShadowRadius: 1 };
+obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, textShadowRadius: 1 };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function GameProfileHeaderTsx1(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
-const obj6 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": -536870861, "Null": -299892737 }, textShadowRadius: 1 };
+const obj6 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, textShadowRadius: 1 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
 
 export default function GameProfileHeader(game) {
@@ -135,7 +135,7 @@ export default function GameProfileHeader(game) {
     tmp15 = callback2(closure_6, obj2);
   }
   const items5 = [tmp15, ];
-  const items6 = ["makeShareableCloneOnUIRecursive", tmp.container.backgroundColor];
+  const items6 = [843081088, tmp.container.backgroundColor];
   items5[1] = callback2(importDefault(dependencyMap[8]), { colors: items6, style: tmp.artHeroGradient });
   obj1.children = items5;
   const items7 = [closure_8(importDefault(dependencyMap[6]).View, obj1), ];
@@ -170,13 +170,13 @@ export default function GameProfileHeader(game) {
     tmp28 = callback2(importDefault(dependencyMap[9]), obj14);
   }
   const items9 = [tmp28, , ];
-  const obj15 = { <string:1643205302>: true, <string:1415816450>: true, <string:4283523744>: true, style: tmp.textShadow, children: name };
+  const obj15 = { style: tmp.textShadow, children: name };
   items9[1] = callback2(arg1(dependencyMap[10]).Text, obj15);
   let tmp32 = null;
   if (null != joined) {
     tmp32 = null;
     if ("" !== joined) {
-      const obj16 = { style: tmp.textShadow, children: joined };
+      const obj16 = { 803799044: "position", 1269170180: "scalar", 711589892: 13, style: tmp.textShadow, children: joined };
       tmp32 = callback2(arg1(dependencyMap[10]).Text, obj16);
     }
   }

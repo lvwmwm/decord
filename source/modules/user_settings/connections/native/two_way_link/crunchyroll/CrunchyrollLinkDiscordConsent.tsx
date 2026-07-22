@@ -1,10 +1,10 @@
-// Module ID: 8987
-// Function ID: 70787
+// Module ID: 8988
+// Function ID: 70800
 // Name: CrunchyrollLinkDiscordConsent
 // Dependencies: []
 // Exports: default
 
-// Module 8987 (CrunchyrollLinkDiscordConsent)
+// Module 8988 (CrunchyrollLinkDiscordConsent)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).CrunchyrollLinkModalScenes;
 const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;

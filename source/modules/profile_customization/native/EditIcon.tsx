@@ -1,19 +1,19 @@
-// Module ID: 13462
-// Function ID: 102223
+// Module ID: 13469
+// Function ID: 102256
 // Name: EditIcon
 // Dependencies: []
 // Exports: default
 
-// Module 13462 (EditIcon)
+// Module 13469 (EditIcon)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { <string:3596066964>: null, <string:3638417373>: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.editIcon = obj;
 obj.xs = { borderRadius: importDefault(dependencyMap[4]).radii.md };
-const obj2 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const obj2 = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.sm = obj2;
 let closure_5 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.md };

@@ -1,10 +1,10 @@
-// Module ID: 11759
-// Function ID: 91294
+// Module ID: 11760
+// Function ID: 91307
 // Name: HubEmailConnectionSubmitSchool
 // Dependencies: []
 // Exports: default
 
-// Module 11759 (HubEmailConnectionSubmitSchool)
+// Module 11760 (HubEmailConnectionSubmitSchool)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,9 +14,9 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = { container: { paddingHorizontal: 16 } };
-obj = { fontFamily: arg1(dependencyMap[5]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj = { 1936959572: "Array", -823869256: "handleActivityItemSelected", -1717677639: "dotSeparator", 1884411745: "mic", 1390895600: "handleReduceTransparencyChanged", fontFamily: arg1(dependencyMap[5]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.description = { value: 24, marginTop: "recent_games_enabled" };
+obj.description = { memo: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
 obj.scrollViewContainer = { flexGrow: 2 };
 obj.input = { marginBottom: 8 };
 const tmp3 = arg1(dependencyMap[6]);

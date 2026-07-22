@@ -1,8 +1,8 @@
-// Module ID: 14717
-// Function ID: 111017
+// Module ID: 14725
+// Function ID: 111060
 // Dependencies: []
 
-// Module 14717
+// Module 14725
 let closure_3 = importDefault(dependencyMap[1]);
 const FAVORITES = arg1(dependencyMap[2]).FAVORITES;
 const jsx = arg1(dependencyMap[3]).jsx;

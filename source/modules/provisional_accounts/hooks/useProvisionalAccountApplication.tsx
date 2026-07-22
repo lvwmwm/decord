@@ -1,10 +1,10 @@
-// Module ID: 11652
-// Function ID: 90389
+// Module ID: 11653
+// Function ID: 90402
 // Name: useProvisionalAccountApplication
-// Dependencies: []
+// Dependencies: [491454464, 325189632, 297467904, 131072]
 // Exports: default
 
-// Module 11652 (useProvisionalAccountApplication)
+// Module 11653 (useProvisionalAccountApplication)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
 

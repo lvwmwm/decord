@@ -1,10 +1,10 @@
-// Module ID: 14574
-// Function ID: 109855
+// Module ID: 14582
+// Function ID: 109898
 // Name: makeUniqueName
 // Dependencies: []
 // Exports: default
 
-// Module 14574 (makeUniqueName)
+// Module 14582 (makeUniqueName)
 function makeUniqueName(closure_0) {
   const length = String(Math.max(arg2 - 1, 0)).length;
   const padStartResult = String(arg1).padStart(length, "0");
@@ -29,11 +29,9 @@ function OptionButtons(caption) {
   let options;
   ({ options, value: closure_0, onChange: closure_1 } = caption);
   let obj = { spacing: 8 };
-  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, children: caption.caption };
+  obj = { cachedAt: true, edpbxy: true, children: caption.caption };
   const items = [callback2(arg1(dependencyMap[14]).Text, obj), ];
   obj = {
-    "Bool(false)": "fi",
-    "Bool(false)": "pillIcon",
     style: callback4().optionButtons,
     children: options.map((label) => {
       const obj = { size: "sm", text: label.label };
@@ -73,7 +71,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const items = [...arg1(dependencyMap[4]).EFFECT_ORDER, arg1(dependencyMap[6]).DisplayNameEffect.GUMMY];
 let closure_11 = [true, true, true, true];
-const items1 = [{}, {}, { 1727786082: "<string:1912685762>", 1672539340: "toString", 189938648: "values" }];
+const items1 = [{ 1852068463: "<string:24182785>", 256142949: "<string:1929379840>", 218104907: "isArray" }, {}, { 1852068463: 18, 256142949: "center", 218104907: "center" }];
 let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16 };
@@ -178,7 +176,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   }, items7);
   obj = { style: tmp.wrap, contentContainerStyle: tmp.container };
   obj = { spacing: 16 };
-  obj1 = {};
+  obj1 = { -9223372036854775808: true, 9223372036854775807: true };
   obj2 = {};
   const obj3 = { spacing: 8 };
   const items8 = [run(arg1(dependencyMap[14]).Text, {}), ];
@@ -209,8 +207,8 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   items9[2] = run(arg1(dependencyMap[21]).TableRow, obj7);
   obj1.children = items9;
   const items10 = [begin(arg1(dependencyMap[20]).TableRowGroup, obj1), , , ];
-  const obj9 = { "Bool(false)": true, "Bool(false)": true };
-  const obj10 = { 9223372036854775807: "\u{1F450}\u{1F3FF}", -9223372036854775808: true, 0: null, disabled: !(null != stateFromStores && memo2.length > 0), onPress: callback1 };
+  const obj9 = { -9223372036854775808: "<string:17524545>", 9223372036854775807: "<string:1732864>" };
+  const obj10 = { user: "\u{1F450}\u{1F3FF}", formatToPlainString: true, jsx: null, disabled: !(null != stateFromStores && memo2.length > 0), onPress: callback1 };
   const items11 = [run(arg1(dependencyMap[21]).TableRow, obj10), run(arg1(dependencyMap[19]).ScrollBenchmark, { onResult: callback, subLabel: "Records frame times while you scroll the batch below." })];
   obj9.children = items11;
   items10[1] = begin(arg1(dependencyMap[20]).TableRowGroup, obj9);

@@ -1,10 +1,10 @@
-// Module ID: 8964
-// Function ID: 70706
+// Module ID: 8965
+// Function ID: 70719
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 8964 (CloseButton)
+// Module 8965 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[4]),
@@ -49,7 +49,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_6,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
+        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 });
       },
       render() {
         return callback(arg0(closure_2[9]).PlayStationLinkPreConnect, { platformType: arg0 });
@@ -60,7 +60,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_6,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
+        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" });
       },
       render(arg0) {
         let callbackCode;

@@ -85,20 +85,14 @@ const fn = function n(moment) {
     weekdays: "niedziela_poniedzia\u0142ek_wtorek_\u015Broda_czwartek_pi\u0105tek_sobota".split("_"),
     weekdaysShort: "ndz_pon_wt_\u015Br_czw_pt_sob".split("_"),
     weekdaysMin: "Nd_Pn_Wt_\u015Ar_Cz_Pt_So".split("_"),
-    longDateFormat: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null },
+    longDateFormat: { "Bool(true)": 49996544, "Bool(true)": -294763776, "Bool(true)": -294715390, "Bool(true)": -1271463934, "Bool(true)": 1380450307, "Bool(true)": 1392509235 },
     calendar: obj,
     relativeTime: obj,
     dayOfMonthOrdinalParse: /\d{1,2}\./,
     ordinal: "%d.",
-    week: { "Bool(true)": null, "Bool(true)": null }
+    week: { emoji: false, me: false }
   };
   obj = {
-    intl: "r",
-    flex: "lockEnabled",
-    getChannel: "REVERSE_TRIAL_NITRO_TAB_BADGE",
-    PX_8: "SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH",
-    textAlign: "REVERSE_TRIAL_NITRO_TAB_BADGE",
-    unicodeVersion: "AutocompleteTypes",
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -126,7 +120,7 @@ const fn = function n(moment) {
       }
     }
   };
-  obj = { 9223372036854775807: 1661534209, 0: 1661468674, -9223372036854775808: 1802502146, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", M: "miesi\u0105c", MM: translate, y: "rok", yy: translate };
+  obj = { COZY_DRAWER: "BigUint64Array", rootContainer: "telemetry", imgWumpus: "encodeURI", ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", M: "miesi\u0105c", MM: translate, y: "rok", yy: translate };
   return moment.defineLocale("pl", obj);
 };
 if ("object" === typeof exports) {
@@ -138,7 +132,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

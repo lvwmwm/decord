@@ -1,10 +1,10 @@
-// Module ID: 9068
-// Function ID: 71146
+// Module ID: 9069
+// Function ID: 71159
 // Name: MusicIcon
 // Dependencies: []
 // Exports: MusicIcon
 
-// Module 9068 (MusicIcon)
+// Module 9069 (MusicIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MusicIcon.tsx");

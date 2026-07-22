@@ -1,9 +1,9 @@
-// Module ID: 10440
-// Function ID: 80575
+// Module ID: 10441
+// Function ID: 80588
 // Name: LAUNCH_PAD_SPRING_CONFIG
 // Dependencies: []
 
-// Module 10440 (LAUNCH_PAD_SPRING_CONFIG)
+// Module 10441 (LAUNCH_PAD_SPRING_CONFIG)
 const Dimensions = require(dependencyMap[0]).Dimensions;
 const size = Dimensions.get("screen");
 const _module = require(dependencyMap[1]);

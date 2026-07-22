@@ -1,7 +1,7 @@
 // Module ID: 743
 // Function ID: 8789
 // Name: hasPath
-// Dependencies: [699, 779, 702, 780, 782, 787]
+// Dependencies: []
 
 // Module 743 (hasPath)
 

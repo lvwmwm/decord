@@ -1,10 +1,10 @@
-// Module ID: 11165
-// Function ID: 86830
+// Module ID: 11166
+// Function ID: 86843
 // Name: EntityBorderAppIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11165 (EntityBorderAppIcon)
+// Module 11166 (EntityBorderAppIcon)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const sm = importDefault(dependencyMap[2]).radii.sm;

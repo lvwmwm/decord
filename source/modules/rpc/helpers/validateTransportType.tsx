@@ -1,10 +1,10 @@
-// Module ID: 13300
-// Function ID: 101059
+// Module ID: 13307
+// Function ID: 101092
 // Name: validateTransportType
 // Dependencies: []
 // Exports: validateTransportType
 
-// Module 13300 (validateTransportType)
+// Module 13307 (validateTransportType)
 const TransportTypes = require(dependencyMap[0]).TransportTypes;
 const RPCErrors = require(dependencyMap[1]).RPCErrors;
 const _module = require(dependencyMap[3]);

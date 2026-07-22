@@ -1,10 +1,10 @@
-// Module ID: 14556
-// Function ID: 109696
+// Module ID: 14564
+// Function ID: 109739
 // Name: fuzzySearchToggle
 // Dependencies: []
 // Exports: default
 
-// Module 14556 (fuzzySearchToggle)
+// Module 14564 (fuzzySearchToggle)
 function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
@@ -112,7 +112,7 @@ export default function DevToolsTogglesScreen() {
   items2[1] = obj;
   obj.contentContainerStyle = items2;
   const obj1 = { spacing: 16 };
-  const obj2 = { "Bool(false)": null, "Bool(false)": null };
+  const obj2 = { -9223372036854775808: false, 9223372036854775807: false };
   const items3 = [
     callback2(arg1(dependencyMap[9]).TableRow, {
       onPress() {
@@ -123,13 +123,15 @@ export default function DevToolsTogglesScreen() {
     }),
 
   ];
-  const obj4 = { label: callback2(arg1(dependencyMap[18]).SearchField, { onChange: tmp2[1] }) };
+  const obj4 = {};
+  const obj5 = { "Null": 1090584577, "Null": 83399, onChange: tmp2[1] };
+  obj4.label = callback2(arg1(dependencyMap[18]).SearchField, obj5);
   items3[1] = callback2(arg1(dependencyMap[9]).TableRow, obj4);
   obj2.children = items3;
   const items4 = [callback3(arg1(dependencyMap[13]).TableRowGroup, obj2), , ];
   let tmp7 = null;
   if (stateFromStores.length > 0) {
-    const obj5 = {
+    const obj6 = {
       children: stateFromStores.map((arg0) => {
           let tmp;
           let tmp2;
@@ -145,7 +147,7 @@ export default function DevToolsTogglesScreen() {
           }, tmp);
         })
     };
-    tmp7 = callback2(arg1(dependencyMap[13]).TableRowGroup, obj5);
+    tmp7 = callback2(arg1(dependencyMap[13]).TableRowGroup, obj6);
   }
   items4[1] = tmp7;
   const entries = Object.entries(CATEGORY_LABELS);

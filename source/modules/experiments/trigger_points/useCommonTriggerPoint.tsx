@@ -1,10 +1,10 @@
-// Module ID: 12263
-// Function ID: 94047
+// Module ID: 12268
+// Function ID: 94075
 // Name: useCommonTriggerPoint
-// Dependencies: [270270464, 804847616, 488308736, 523829248, 804913152]
+// Dependencies: [270270464, 805175296, 488308736, 523829248, 805240832]
 // Exports: useCommonTriggerPoint
 
-// Module 12263 (useCommonTriggerPoint)
+// Module 12268 (useCommonTriggerPoint)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

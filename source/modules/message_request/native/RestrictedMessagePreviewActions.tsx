@@ -1,10 +1,10 @@
-// Module ID: 15456
-// Function ID: 117904
+// Module ID: 15464
+// Function ID: 117947
 // Name: RestrictedMessagePreviewActions
 // Dependencies: []
 // Exports: default
 
-// Module 15456 (RestrictedMessagePreviewActions)
+// Module 15464 (RestrictedMessagePreviewActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[7]).space.PX_8, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
 obj.container = obj;
-const obj1 = { -9223372036854775808: null, 7741: null, gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { "Bool(true)": null, "Bool(true)": null, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.buttonRow = obj1;
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -118,7 +118,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     let tmp22 = null;
     let tmp24 = null;
     if (!user.bot) {
-      obj1 = {};
+      obj1 = { <string:1986169986>: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", <string:2487833047>: null };
       const intl8 = arg1(dependencyMap[20]).intl;
       obj1.text = intl8.string(arg1(dependencyMap[20]).t.PMsq/b);
       obj1.onPress = callback;
@@ -132,7 +132,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     let obj7 = importDefault(dependencyMap[13]);
     obj2.username = obj7.getName(user);
     formatResult = intl5.format(arg1(dependencyMap[20]).t.uIomXw, obj2);
-    const obj3 = {};
+    const obj3 = { <string:1986169986>: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", <string:2487833047>: null };
     const intl6 = arg1(dependencyMap[20]).intl;
     obj3.text = intl6.string(arg1(dependencyMap[20]).t.+WbSn5);
     obj3.onPress = callback1;
@@ -175,7 +175,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const obj8 = { style: tmp.container };
   let tmp37 = null != formatResult;
   if (tmp37) {
-    const obj9 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", children: formatResult };
+    const obj9 = { children: formatResult };
     tmp37 = callback(arg1(dependencyMap[21]).Text, obj9);
   }
   const items9 = [tmp37, ];

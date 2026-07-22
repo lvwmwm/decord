@@ -1,10 +1,10 @@
-// Module ID: 9248
-// Function ID: 72290
+// Module ID: 9249
+// Function ID: 72303
 // Name: getFastestListVisibleItemsDefault
 // Dependencies: []
 // Exports: default
 
-// Module 9248 (getFastestListVisibleItemsDefault)
+// Module 9249 (getFastestListVisibleItemsDefault)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
 
@@ -18,7 +18,7 @@ export default function getFastestListVisibleItemsDefault(arg0) {
   let sectionsVersioned;
   ({ estimatedListSize, sectionsVersioned } = arg0);
   ({ itemSizes, listHeaderSize, sections, sectionFooterSizes, sectionHeaderSizes } = sectionsVersioned);
-  const obj = { get: true, borderRadius: "/assets/design/components/Icon/native/redesign/generated/images", disabled: 24, onPress: 24, position: null, sectionsId: sectionsVersioned.sectionsId };
+  const obj = { 9223372036854775807: true, 0: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, 9223372036854775807: 24, 9223372036854775807: null, sectionsId: sectionsVersioned.sectionsId };
   if (listHeaderSize >= estimatedListSize) {
     return obj;
   } else {

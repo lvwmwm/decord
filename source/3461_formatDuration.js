@@ -1,17 +1,16 @@
 // Module ID: 3461
 // Function ID: 26812
 // Name: formatDuration
-// Dependencies: [3396, 3493]
+// Dependencies: []
 // Exports: default
 
 // Module 3461 (formatDuration)
-import differenceInCalendarWeeks from "differenceInCalendarWeeks";
-
-if (!differenceInCalendarWeeks) {
-  const obj = { default: differenceInCalendarWeeks };
+const _module = require(dependencyMap[0]);
+if (!_module) {
+  const obj = { default: _module };
   let tmp3 = obj;
 } else {
-  tmp3 = differenceInCalendarWeeks;
+  tmp3 = _module;
 }
 let closure_3 = [];
 

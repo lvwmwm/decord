@@ -1,10 +1,10 @@
-// Module ID: 12885
-// Function ID: 98395
+// Module ID: 12892
+// Function ID: 98428
 // Name: NewTag
 // Dependencies: []
 // Exports: default
 
-// Module 12885 (NewTag)
+// Module 12892 (NewTag)
 let Platform;
 importAll(dependencyMap[0]);
 ({ View: closure_3, Platform } = arg1(dependencyMap[1]));
@@ -12,7 +12,7 @@ const HorizontalGradient = arg1(dependencyMap[2]).HorizontalGradient;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { <string:2671951487>: "flexDirection", <string:968847091>: "r", <string:1451901352>: "isArray", <string:3377594372>: "data", <string:1478961645>: "_oneway", <string:3704099450>: "r", backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { 1101563286: false, 284337: false, -487740590: false, -591374204: false, -137306943: false, -1550821992: false, backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.tagContainer = obj;
 obj.tagText = { textTransform: "uppercase" };
 let closure_6 = obj.createStyles(obj);
@@ -44,7 +44,7 @@ export default function NewTag(color) {
     const items = [importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PINK];
     colors = items;
   }
-  let obj = { -9223372036854775808: true, -9223372036854775808: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, 9223372036854775807: 24, -9223372036854775808: null, 0: "99274532ad7fe616c031212e677b32e8", 9223372036854775807: "ThreadLockIcon" };
+  let obj = { y: "ThreadLockIcon", bezierFn: "png", isUserEntitledToLibraryApplication: true, VIOLET: "/assets/design/components/Icon/native/redesign/generated/images", inactiveDotOpacity: 24, inactiveDotScale: 24, vertical: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   const tmp7 = callback();

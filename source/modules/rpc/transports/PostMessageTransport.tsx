@@ -1,20 +1,20 @@
-// Module ID: 10483
-// Function ID: 81201
+// Module ID: 10484
+// Function ID: 81214
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4031, 653, 10485, 10484, 10495, 2, 6, 7, 653, 22, 10485, 2, 7, 6, 15, 17]
+// Dependencies: [10495, 10483, 2, 6, 7, 15, 17, 18, 4031, 653, 10486, 10485, 10496, 2, 6, 7, 653, 22, 10486, 2, 7]
 
-// Module 10483 (_isNativeReflectConstruct)
+// Module 10484 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import stripSensitiveLoggingData from "stripSensitiveLoggingData";
+import result2 from "result2";
 import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+import closure_7 from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
-import closure_6 from "_getPrototypeOf";
-import _inherits from "_inherits";
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
-import ME from "ME";
-import module_10485 from "module_10485";
-import { RPC_EMBEDDED_APP_SCOPE } from "module_10484";
-import BaseSocket from "BaseSocket";
 import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { RPC_EMBEDDED_APP_SCOPE } from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+import _defineProperties from "_defineProperties";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -25,28 +25,28 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-({ AnalyticEvents: closure_12, ComponentActions: closure_13, RPCCloseCodes: closure_14, RPCErrors: closure_15 } = BaseSocket);
-let closure_16 = 10 * require("result2").Millis.SECOND;
+({ AnalyticEvents: closure_12, ComponentActions: closure_13, RPCCloseCodes: closure_14, RPCErrors: closure_15 } = ME);
+let closure_16 = 10 * require("module_10486").Millis.SECOND;
 const map = new Map();
 const set = new Set();
 function postClose(origin, arg1, postMessageToRPCClient) {
   const items = [importDefault(dependencyMap[11]).CLOSE, arg1];
   postMessageToRPCClient(items, origin);
 }
-const result = _getPrototypeOf.fileFinishedImporting("modules/rpc/transports/PostMessageTransport.tsx");
+const result = _defineProperties.fileFinishedImporting("modules/rpc/transports/PostMessageTransport.tsx");
 
 export default (EventEmitter) => {
   class PostMessageTransport {
     constructor(arg0, arg1, arg2, arg3) {
       self = this;
-      tmp = _possibleConstructorReturn(this, PostMessageTransport);
-      obj = RPC_SCOPE_CONFIG(PostMessageTransport);
-      tmp2 = _inherits;
+      tmp = result2(this, PostMessageTransport);
+      obj = _possibleConstructorReturn(PostMessageTransport);
+      tmp2 = closure_7;
       if (closure_20()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = RPC_SCOPE_CONFIG;
-        constructResult = Reflect.construct(obj, [], RPC_SCOPE_CONFIG(self).constructor);
+        tmp5 = _possibleConstructorReturn;
+        constructResult = Reflect.construct(obj, [], _possibleConstructorReturn(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
@@ -74,7 +74,7 @@ export default (EventEmitter) => {
           return tmp === arg0;
         });
         if (null == found) {
-          found = [true, true];
+          found = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
         }
         const first = callback3(found, 1)[0];
         if (null != first) {
@@ -107,7 +107,7 @@ export default (EventEmitter) => {
           return tmp.frameId === id;
         });
         if (null == found) {
-          found = [true, true];
+          found = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
         }
         const tmp2 = callback3(found, 2);
         const first = tmp2[0];
@@ -218,4 +218,4 @@ export default (EventEmitter) => {
     }
   ];
   return callback(PostMessageTransport, items);
-}(require("_possibleConstructorReturn").EventEmitter);
+}(require("result2").EventEmitter);

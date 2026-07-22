@@ -1,10 +1,10 @@
-// Module ID: 14276
-// Function ID: 107883
+// Module ID: 14284
+// Function ID: 107926
 // Name: UserSettingsPushNotificationLogs
 // Dependencies: []
 // Exports: default
 
-// Module 14276 (UserSettingsPushNotificationLogs)
+// Module 14284 (UserSettingsPushNotificationLogs)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -16,9 +16,9 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.wrap = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.list = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+const obj2 = { <string:3645437925>: "<string:1912603085>", <string:1554053987>: true, <string:1672411473>: true, padding: importDefault(dependencyMap[7]).space.PX_16 };
+obj.searchWrap = obj2;
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj.searchWrap = { padding: importDefault(dependencyMap[7]).space.PX_16 };
-const obj2 = { padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.shareButton = { backgroundColor: importDefault(dependencyMap[7]).colors.INPUT_BACKGROUND_DEFAULT, marginLeft: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.md, height: arg1(dependencyMap[8]).InputHeights.MD, width: arg1(dependencyMap[8]).InputHeights.MD, justifyContent: "center", alignItems: "center" };
 const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.INPUT_BACKGROUND_DEFAULT, marginLeft: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.md, height: arg1(dependencyMap[8]).InputHeights.MD, width: arg1(dependencyMap[8]).InputHeights.MD, justifyContent: "center", alignItems: "center" };
 obj.log = { paddingBottom: importDefault(dependencyMap[7]).space.PX_16 };
@@ -92,7 +92,7 @@ export default function UserSettingsPushNotificationLogs() {
   const callback2 = tmp10;
   let obj = { style: tmp10.wrap };
   obj = { style: tmp10.searchWrap };
-  obj = { "Null": "useStateFromStores", "Null": "Array", onChange: tmp2[1], defaultValue: first };
+  obj = { "Null": false, "Null": false, onChange: tmp2[1], defaultValue: first };
   const items1 = [callback3(arg1(closure_2[12]).SearchField, obj), ];
   const obj1 = { style: tmp10.shareButton };
   const intl = arg1(closure_2[14]).intl;

@@ -1,36 +1,36 @@
 // Module ID: 388
 // Function ID: 5719
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [31, 380, 319]
+// Dependencies: []
 
 // Module 388 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "RCTScrollView", bubblingEventTypes: {}, directEventTypes: { topMomentumScrollBegin: { registrationName: "onMomentumScrollBegin" }, topMomentumScrollEnd: { registrationName: "onMomentumScrollEnd" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" } } };
-obj = { 0: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, 0: null, marginRight: null, width: null, marginLeft: null, marginRight: null, NonText: null, Text: null, HighContrastText: null, <string:1554045104>: null, <string:2717818913>: null, <string:2784272897>: null, <string:2490864758>: null, <string:2071901857>: null };
-obj = { diff: require("module_31").default };
+obj = { "Bool(false)": "getBackgroundGradientColors", "Bool(false)": "allowTimeMentionInput", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "call", "Bool(false)": "isArray", "Bool(false)": "useAnimatedScrollHandler", "Bool(false)": "handleHistoryStoreNavigationChange", "Bool(false)": "\u0173", "Bool(false)": "isArrayBufferToString", "Bool(false)": "values", "Bool(false)": "isArray", "Bool(false)": "100%", "Bool(false)": "contain", "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": null };
+obj = { diff: arg1(dependencyMap[0]).default };
 obj.contentOffset = obj;
-obj.borderRightColor = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-const obj1 = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-obj.borderColor = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-const obj2 = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-obj.borderBottomColor = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
+obj.borderRightColor = { process: arg1(dependencyMap[1]).default };
+const obj1 = { process: arg1(dependencyMap[1]).default };
+obj.borderColor = { process: arg1(dependencyMap[1]).default };
+const obj2 = { process: arg1(dependencyMap[1]).default };
+obj.borderBottomColor = { process: arg1(dependencyMap[1]).default };
 obj.persistentScrollbar = true;
 obj.horizontal = true;
-const obj3 = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-obj.endFillColor = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
+const obj3 = { process: arg1(dependencyMap[1]).default };
+obj.endFillColor = { process: arg1(dependencyMap[1]).default };
 obj.fadingEdgeLength = true;
 obj.overScrollMode = true;
 obj.borderTopLeftRadius = true;
 obj.scrollPerfTag = true;
-const obj4 = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-obj.borderTopColor = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
+const obj4 = { process: arg1(dependencyMap[1]).default };
+obj.borderTopColor = { process: arg1(dependencyMap[1]).default };
 obj.removeClippedSubviews = true;
 obj.borderTopRightRadius = true;
-const obj5 = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
-obj.borderLeftColor = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
+const obj5 = { process: arg1(dependencyMap[1]).default };
+obj.borderLeftColor = { process: arg1(dependencyMap[1]).default };
 obj.pointerEvents = true;
 obj.isInvertedVirtualizedList = true;
 obj.validAttributes = obj;
-const obj6 = { process: require("unstable_createAnimatedComponentWithAllowlist").default };
+const obj6 = { process: arg1(dependencyMap[1]).default };
 
-export default require("prefetch").get("RCTScrollView", () => obj);
+export default importAll(dependencyMap[2]).get("RCTScrollView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

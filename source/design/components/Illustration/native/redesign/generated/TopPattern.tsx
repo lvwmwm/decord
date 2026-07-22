@@ -1,10 +1,10 @@
-// Module ID: 12330
-// Function ID: 94414
+// Module ID: 12335
+// Function ID: 94442
 // Name: getTopPatternSource
 // Dependencies: []
 // Exports: TopPattern
 
-// Module 12330 (getTopPatternSource)
+// Module 12335 (getTopPatternSource)
 function getTopPatternSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

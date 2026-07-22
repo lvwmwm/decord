@@ -1,9 +1,9 @@
-// Module ID: 11588
-// Function ID: 90093
+// Module ID: 11589
+// Function ID: 90106
 // Name: BoostedGuildTiers
 // Dependencies: []
 
-// Module 11588 (BoostedGuildTiers)
+// Module 11589 (BoostedGuildTiers)
 const _module = require(dependencyMap[0]);
 const BoostedGuildTiers = _module.BoostedGuildTiers;
 let closure_3 = _module.MAX_STAGE_VIDEO_USER_LIMIT_TIER3;

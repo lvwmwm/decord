@@ -1,5 +1,5 @@
 // Module ID: 8121
-// Function ID: 64328
+// Function ID: 64338
 // Name: _fetchText
 // Dependencies: []
 // Exports: fetchText

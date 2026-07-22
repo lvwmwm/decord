@@ -1,25 +1,25 @@
-// Module ID: 14815
-// Function ID: 111680
+// Module ID: 14823
+// Function ID: 111723
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: CustomStatusActivityCard
 
-// Module 14815 (HAPPENING_NOW_CONTENT_HEIGHT)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import closure_8 from "result";
-import result from "result";
-import { StatusTypes } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 14823 (HAPPENING_NOW_CONTENT_HEIGHT)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { StatusTypes } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ View: closure_6, Image: closure_7 } = result);
-const HAPPENING_NOW_CONTENT_HEIGHT = result.HAPPENING_NOW_CONTENT_HEIGHT;
-const STATUS_CUTOUT_SMALL = result.STATUS_CUTOUT_SMALL;
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = result);
+({ View: closure_6, Image: closure_7 } = __exportStarResult1);
+const HAPPENING_NOW_CONTENT_HEIGHT = __exportStarResult1.HAPPENING_NOW_CONTENT_HEIGHT;
+const STATUS_CUTOUT_SMALL = __exportStarResult1.STATUS_CUTOUT_SMALL;
+({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = __exportStarResult1);
 let obj = { left: (HAPPENING_NOW_CONTENT_HEIGHT - 16) / 2, top: -3, transform: items };
 const items = [{ rotate: "24deg" }];
 const items1 = [obj, , , , , ];
@@ -35,8 +35,8 @@ const items5 = [{ rotate: "12deg" }];
 items1[4] = { left: -3, top: (HAPPENING_NOW_CONTENT_HEIGHT - 16 + 32) / 2, transform: items5 };
 const items6 = [{ rotate: "-12deg" }];
 items1[5] = { left: -3, top: (HAPPENING_NOW_CONTENT_HEIGHT - 32 - 16) / 2, transform: items6 };
-let closure_16 = result.createStyles((arg0) => {
-  let obj = { customStatusContainer: { onChange: null, alpha2: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", countryCode: true }, customStatusContextContainer: {}, statusAvatar: { marginBottom: 2 }, largeEmoji: {}, smallEmoji: { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true } };
+let closure_16 = __exportStarResult1.createStyles((arg0) => {
+  let obj = { customStatusContainer: { <string:3949163632>: null, <string:1550302891>: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", <string:1649621818>: true }, customStatusContextContainer: {}, statusAvatar: { marginBottom: 2 }, largeEmoji: {}, smallEmoji: { text: true, selectionStart: true, selectionEnd: true, canMentionEveryone: true, canMentionHere: true } };
   obj = { justifyContent: "center" };
   let num;
   if (arg0) {
@@ -44,11 +44,11 @@ let closure_16 = result.createStyles((arg0) => {
   }
   obj.paddingLeft = num;
   obj.cardContainer = obj;
-  obj = { flexDirection: -566160941, alignItems: 1912603002, paddingLeft: 90, zIndex: 90, users: 1204109825, max: -140640254, width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+  obj = { "Bool(true)": "isArray", "Bool(true)": "isArrayBuffer", "Bool(true)": "GUILD_INVITE_REMINDER", "Bool(true)": "se", "Bool(true)": "device_platform", "Bool(true)": "isFinite", width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[9]).radii.sm };
   obj.emojisContainer = obj;
   return obj;
 });
-result = result.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx");
 
 export const CustomStatusActivityCard = function CustomStatusActivityCard(user) {
   let activity;

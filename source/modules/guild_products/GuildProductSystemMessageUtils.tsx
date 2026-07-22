@@ -1,5 +1,5 @@
 // Module ID: 7675
-// Function ID: 61319
+// Function ID: 61329
 // Name: getGuildProductPurchaseSystemMessageContentMobile
 // Dependencies: []
 // Exports: getGuildProductPurchaseSystemMessageContentMobile

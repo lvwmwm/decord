@@ -1,10 +1,10 @@
-// Module ID: 13658
-// Function ID: 103455
+// Module ID: 13665
+// Function ID: 103488
 // Name: FamilyCenterTeenQRCodeButtonInner
 // Dependencies: []
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 13658 (FamilyCenterTeenQRCodeButtonInner)
+// Module 13665 (FamilyCenterTeenQRCodeButtonInner)
 function FamilyCenterTeenQRCodeButtonInner() {
   const callback = React.useCallback(() => {
     const intl = getLinkCode(stateFromStores[12]).intl;
@@ -64,20 +64,20 @@ function FamilyCenterTeenQRCodeButtonInner() {
     }
   }, items4);
   obj = { direction: "horizontal", spacing: importDefault(dependencyMap[9]).space.PX_8, style: tmp.container };
-  obj = { zIndex: null, alignItems: null, paddingLeft: null, paddingRight: null };
+  obj = {};
   const intl = arg1(dependencyMap[12]).intl;
   obj.text = intl.string(arg1(dependencyMap[12]).t.Ej3B3Y);
   obj.disabled = null == userQRLinkUrl || null == stateFromStores1 || null == stateFromStores2;
   obj.onPress = callback1;
-  obj.icon = callback(arg1(dependencyMap[23]).ShareIcon, { accessibilityRole: null, "": null });
+  obj.icon = callback(arg1(dependencyMap[23]).ShareIcon, { "Bool(false)": "%Float64Array%", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" });
   obj.iconPosition = "start";
   const items5 = [callback(arg1(dependencyMap[22]).Button, obj), ];
-  obj1 = { zIndex: "3.41.0", alignItems: null, paddingLeft: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", paddingRight: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE" };
+  obj1 = {};
   const intl2 = arg1(dependencyMap[12]).intl;
   obj1.text = intl2.string(importDefault(dependencyMap[24]).wd4yrz);
   obj1.disabled = null == userQRLinkUrl || null == stateFromStores1 || null == stateFromStores2;
   obj1.onPress = callback2;
-  obj1.icon = callback(arg1(dependencyMap[25]).QrCodeIcon, { accessibilityRole: 1, "": 12 });
+  obj1.icon = callback(arg1(dependencyMap[25]).QrCodeIcon, { "Bool(false)": 1, "Bool(false)": 12 });
   obj1.iconPosition = "start";
   items5[1] = callback(arg1(dependencyMap[22]).Button, obj1);
   obj.children = items5;
@@ -88,10 +88,7 @@ class FamilyCenterBannerButton {
     ({ onPress, text, loading } = global);
     tmp = closure_15();
     obj = { style: tmp.button };
-    obj = { zIndex: null, alignItems: null, paddingLeft: null, paddingRight: null };
-    obj.text = text;
-    obj.onPress = onPress;
-    obj.loading = loading;
+    obj = { text, onPress, loading };
     obj1 = { style: tmp.art };
     obj.icon = jsx(arg1(dependencyMap[25]).QrCodeIcon, obj1);
     obj.iconPosition = "start";
@@ -114,7 +111,7 @@ obj = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
 obj.container = obj;
 let closure_14 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[8]).createStyles({ button: {}, art: { <string:1549954009>: 0, <string:67064148>: 1, <string:2018617953>: 3 } });
+let closure_15 = arg1(dependencyMap[8]).createStyles({ button: {}, art: { -9223372036854775808: 0, 9223372036854775807: 1, 0: 3 } });
 const obj4 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterBannerButton.tsx");
 

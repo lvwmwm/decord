@@ -4,6 +4,5 @@
 
 // Module 1425
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, scales: [null] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [false] });

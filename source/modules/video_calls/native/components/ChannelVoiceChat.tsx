@@ -1,23 +1,23 @@
-// Module ID: 10196
-// Function ID: 78709
+// Module ID: 10197
+// Function ID: 78722
 // Dependencies: []
 
-// Module 10196
+// Module 10197
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const useIsVoiceChatFocused = arg1(dependencyMap[2]).useIsVoiceChatFocused;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { borderWidth: true, width: 6, height: 117, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.chat = obj;
 obj1 = { height: 44, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.chatHeaderSpacer = obj1;
-const tmp2 = arg1(dependencyMap[3]);
-obj.chatHeader = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { -9223372036854775808: "XSmallIcon", -9223372036854775808: "png", -9223372036854775808: null, 9223372036854775807: "flex", -9223372036854775808: 1, -9223372036854775808: "center", 9223372036854775807: 16, 0: 0, 9223372036854775807: "absolute", 0: 48, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj.chatHeader = obj2;
 obj.chatHeaderBackIconContainer = {};
 obj.chatHeaderTitleContainer = {};
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const tmp2 = arg1(dependencyMap[3]);
 obj.safeAreaTop = { alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 let closure_8 = obj1.createStyles(obj);
 const obj3 = { alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj.importantForAccessibility = str;
   obj.accessibilityElementsHidden = !tmp2;
   obj.style = tmp.chat;
-  const items1 = [callback(importDefault(dependencyMap[12]), { "Bool(true)": null, "Bool(true)": null }), ];
+  const items1 = [callback(importDefault(dependencyMap[12]), { "Bool(false)": null, "Bool(false)": null }), ];
   obj = { guildId: guild_id, channelId: id };
   let tmp15Result = null;
   if (!flag) {

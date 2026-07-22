@@ -1,5 +1,5 @@
 // Module ID: 3851
-// Function ID: 32052
+// Function ID: 32054
 // Name: createThemedContext
 // Dependencies: []
 // Exports: UseThemeContext, createThemedContext
@@ -24,7 +24,7 @@ function useThemeContext() {
 }
 const importAllResult = importAll(dependencyMap[0]);
 ({ Fragment: closure_1, jsx: closure_2 } = arg1(dependencyMap[1]));
-const themedContext = createThemedContext({ test: 6, clean: 48, release: "center", @types/jest: 1, @types/react: 0, jest: "hidden", react: "100%", react-native: "100%", react-native-builder-bob: null, react-native-worklets: "hidden" });
+const themedContext = createThemedContext({});
 const context = importAllResult.createContext(themedContext);
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContext.tsx");

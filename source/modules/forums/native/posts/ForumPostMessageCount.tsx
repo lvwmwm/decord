@@ -1,10 +1,10 @@
-// Module ID: 11131
-// Function ID: 86615
+// Module ID: 11132
+// Function ID: 86628
 // Name: num2
 // Dependencies: []
 // Exports: default
 
-// Module 11131 (num2)
+// Module 11132 (num2)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ if (obj6.isAndroid()) {
 obj1.marginTop = num2;
 obj.iconUnread = obj1;
 obj.messageUnreadCount = { marginStart: 4 };
-obj.container = { "Null": 7, "Null": 370 };
+obj.container = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 let closure_6 = obj.createStyles(obj);
 const obj6 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
@@ -71,7 +71,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   items1[1] = tmp6Result;
   let tmp12 = null != unreadCount;
   if (tmp12) {
-    const obj3 = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute", style: tmp.messageUnreadCount };
+    const obj3 = { cachedAt: "png", edpbxy: "absolute", style: tmp.messageUnreadCount };
     const intl2 = arg1(dependencyMap[7]).intl;
     const obj4 = { count: unreadCount };
     const items2 = [null, intl2.format(arg1(dependencyMap[7]).t.z3PEth, obj4), ")"];

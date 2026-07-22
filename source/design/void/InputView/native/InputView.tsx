@@ -1,9 +1,9 @@
-// Module ID: 12982
-// Function ID: 98820
+// Module ID: 12989
+// Function ID: 98853
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12982 (_isNativeReflectConstruct)
+// Module 12989 (_isNativeReflectConstruct)
 let Platform;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -27,23 +27,23 @@ const Fonts = arg1(dependencyMap[8]).Fonts;
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { disabled: { opacity: 0.5 }, topContainer: { "Bool(false)": 107378, "Bool(false)": -1783082751, "Bool(false)": 37536833, "Bool(false)": -347995904, "Bool(false)": -989855310 }, inputViewTitle: { marginRight: 5 } };
+obj = { disabled: { opacity: 0.5 }, topContainer: { "Bool(false)": "onAnimationFailure", "Bool(false)": "onAnimationLoadedCapture", "Bool(false)": "onAnimationLoaded", "Bool(false)": true, "Bool(false)": true }, inputViewTitle: { marginRight: 5 } };
 obj = { fontSize: 10, color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
 obj.inputViewError = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.inputBorder = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
 const obj2 = { "Bool(false)": "30", "Bool(false)": "true", "Bool(false)": "am", "Bool(false)": "30", "Bool(false)": "true", color: arg1(dependencyMap[12]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
 obj.inputView = obj2;
-obj.inputViewBorder = { "Null": "noin tunti", "Null": "noin {{count}} tuntia" };
+obj.inputViewBorder = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
 obj.inputViewBorderActive = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
-obj.inputContainer = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
+obj.inputContainer = { bitrateFloor: "/assets/design/components/Icon/native/redesign/generated/images", createHDR: 24, frameRate: 24 };
 obj.bottomContainer = { marginTop: 5 };
 const obj3 = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
 obj.charactersLength = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
 const obj4 = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
 obj.closeIcon = { tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.clearButton = {};
+obj.clearButton = { "Bool(false)": 66925056, "Bool(false)": 50096384 };
 const obj5 = { tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.required = { color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
 let closure_16 = obj.createLegacyClassComponentStyles(obj);
@@ -294,7 +294,7 @@ const tmp5 = (PureComponent) => {
       ({ trailingButton, clearButtonVisibility, clearButtonAccessibilityLabel } = this.props);
       if (null == trailingButton) {
         if (clearButtonVisibility === constants2.ALWAYS) {
-          let obj = { "Null": 1839726594, "Null": 1912668161, "Null": 48, "Null": 32, "Null": -1035681198, style: tmp.clearButton, onPress: self.handleClear };
+          let obj = { 929628993: false, -1309881243: false, -883819560: false, -322149210: false, -1924015951: false, style: tmp.clearButton, onPress: self.handleClear };
           if (null == clearButtonAccessibilityLabel) {
             const intl = InputView(closure_2[15]).intl;
             clearButtonAccessibilityLabel = intl.string(InputView(closure_2[15]).t.VkKicb);

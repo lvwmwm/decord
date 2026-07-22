@@ -1,7 +1,7 @@
 // Module ID: 4435
-// Function ID: 38893
+// Function ID: 38901
 // Name: OrdinaryDefineOwnProperty
-// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 4294967295, 0]
+// Dependencies: []
 
 // Module 4435 (OrdinaryDefineOwnProperty)
 

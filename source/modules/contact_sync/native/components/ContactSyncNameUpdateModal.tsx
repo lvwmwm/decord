@@ -1,10 +1,10 @@
-// Module ID: 13627
-// Function ID: 103250
+// Module ID: 13634
+// Function ID: 103283
 // Name: onClose
 // Dependencies: []
 // Exports: default
 
-// Module 13627 (onClose)
+// Module 13634 (onClose)
 function onClose() {
   let arr = importDefault(dependencyMap[6]);
   arr = arr.pop();
@@ -61,11 +61,6 @@ obj.container = obj;
 let closure_9 = obj.createStyles(obj);
 const obj1 = {};
 const obj2 = {
-  -1335636893: "source",
-  1632514385: "Array",
-  -1220844714: "isArray",
-  1408024150: "constructor",
-  1708473420: "",
   render() {
     return <ContactSyncNameInputScreen />;
   },

@@ -1,10 +1,10 @@
-// Module ID: 14694
-// Function ID: 110841
+// Module ID: 14702
+// Function ID: 110884
 // Name: GuildFolderSettingsScene
 // Dependencies: []
 // Exports: default
 
-// Module 14694 (GuildFolderSettingsScene)
+// Module 14702 (GuildFolderSettingsScene)
 function GuildFolderSettingsScene(arg0) {
   let color;
   let name;
@@ -15,7 +15,7 @@ function GuildFolderSettingsScene(arg0) {
   obj = {};
   const intl = arg1(dependencyMap[7]).intl;
   obj.title = intl.string(arg1(dependencyMap[7]).t.tGRbjA);
-  obj = { "Bool(true)": "r", "Bool(true)": "key", "Bool(true)": "Text", "Bool(true)": "paddingHorizontal", "Bool(true)": "delete", "Bool(true)": "Array" };
+  obj = { "Bool(false)": "<string:1091633703>", "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(false)": "<string:2475967233>", "Bool(false)": "<string:2475884546>", "Bool(false)": "<string:3550216194>", "Bool(false)": "<string:3980460033>" };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj.placeholder = intl2.string(arg1(dependencyMap[7]).t.xV9hVh);
   obj.value = name;

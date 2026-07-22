@@ -1,16 +1,16 @@
-// Module ID: 12843
-// Function ID: 98191
+// Module ID: 12850
+// Function ID: 98224
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeSpider
 
-// Module 12843 (items)
+// Module 12850 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [];
-let closure_5 = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012360955650050655, -32.00003449711949];
-const items = [{}, { "Null": "Array", "Null": "isArray" }];
-let closure_7 = ["<string:19872512>"];
+let closure_4 = ["<string:29054720>", "<string:26470144>"];
+let closure_5 = [];
+const items = [{}, { accessibilityRole: "Array", s: "isArray" }];
+let closure_7 = [];
 let closure_8 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013844199082474493];
 const items1 = [{}];
 const tmp3 = arg1(dependencyMap[1]);
@@ -29,7 +29,7 @@ export const GuildBadgeSpider = function GuildBadgeSpider(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -57,9 +57,9 @@ export const GuildBadgeSpider = function GuildBadgeSpider(width) {
   obj2.fill = str;
   items[1] = callback(arg1(dependencyMap[3]).Path, obj2);
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M9 13v1h-2v-1h2ZM7 12h-1v-1h1v1ZM10 12h-1v-1h1v1ZM9 7h-2v-1h2v1ZM7 6h-1v-1h1v1ZM10 6h-1v-1h1v1ZM6 5h-1v-1h1v1ZM11 5h-1v-1h1v1Z", fill: primaryColorsTransformed[0] });
-  items[3] = callback(arg1(dependencyMap[3]).Path, {});
-  items[4] = callback(arg1(dependencyMap[3]).Path, {});
-  items[5] = callback(arg1(dependencyMap[3]).Path, {});
+  items[3] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": -4022393458639600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -4022393458639600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  items[4] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "spriteIndex", "Bool(true)": "left", "Bool(true)": "spriteIndex" });
+  items[5] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null });
   obj["children"] = items;
   return closure_3(arg1(dependencyMap[3]).Svg, obj);
 };

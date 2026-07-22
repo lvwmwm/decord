@@ -1,11 +1,11 @@
-// Module ID: 12494
-// Function ID: 95769
+// Module ID: 12499
+// Function ID: 95797
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12494 (apexExperiment)
+// Module 12499 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: null, 1387159956: null, defaultConfig: { timeoutMs: undefined, hidden: true }, variations: { [1]: { 0: "r", -9223372036854775808: "isArray" }, [2]: {}, [3]: {}, [4]: { 0: "<string:16777600>", -9223372036854775808: "<string:16911427>" } } };
+const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { timeoutMs: undefined, hidden: true }, variations: { [1]: { PremiumSubscriptionSKUToPremiumType: true, _httpStatus: true }, [2]: {}, [3]: {}, [4]: { PremiumSubscriptionSKUToPremiumType: true, _httpStatus: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionIndicatorExperiment.tsx");

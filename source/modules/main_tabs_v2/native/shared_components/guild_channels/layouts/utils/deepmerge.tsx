@@ -1,9 +1,9 @@
-// Module ID: 10250
-// Function ID: 79232
+// Module ID: 10251
+// Function ID: 79245
 // Name: isObject
 // Dependencies: []
 
-// Module 10250 (isObject)
+// Module 10251 (isObject)
 function isObject(arg0) {
   if ("object" === typeof arg0) {
     if (null !== arg0) {
@@ -34,7 +34,7 @@ function merge(arg0) {
       const item = keys.forEach((arg0) => {
         let _Array3;
         let _Set;
-        const items = [];
+        const items = [null, null, null];
         if (!items.includes(arg0)) {
           let tmp = globalThis;
           const _Array = Array;

@@ -1,5 +1,5 @@
 // Module ID: 7796
-// Function ID: 62235
+// Function ID: 62245
 // Name: getSnowflakeSelectDefaultValues
 // Dependencies: []
 // Exports: getInitialSnowflakeSelectOptions, queryChannels, queryMentionables

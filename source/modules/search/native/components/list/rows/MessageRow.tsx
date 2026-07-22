@@ -1,9 +1,9 @@
-// Module ID: 15239
-// Function ID: 115058
+// Module ID: 15247
+// Function ID: 115101
 // Name: GuildChannelMessageRowHeader
 // Dependencies: []
 
-// Module 15239 (GuildChannelMessageRowHeader)
+// Module 15247 (GuildChannelMessageRowHeader)
 let Platform;
 function GuildChannelMessageRowHeader(channel) {
   let isFavorite;
@@ -27,23 +27,21 @@ function GuildChannelMessageRowHeader(channel) {
   const channelIcon = obj1.getChannelIcon(channel, obj);
   obj = { style: tmp.header };
   obj1 = { source: channelIcon, size: arg1(dependencyMap[14]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon };
-  const items1 = [callback(arg1(dependencyMap[14]).Icon, obj1), , , , ];
-  const obj2 = { "Null": true, "Null": true, "Null": true, children: importDefault(dependencyMap[13])(channel) };
-  items1[1] = callback(arg1(dependencyMap[15]).Text, obj2);
+  const items1 = [callback(arg1(dependencyMap[14]).Icon, obj1), callback(arg1(dependencyMap[15]).Text, { children: importDefault(dependencyMap[13])(channel) }), , , ];
   if (muted) {
-    const obj3 = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[14]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    muted = callback(arg1(dependencyMap[14]).Icon, obj3);
+    const obj2 = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[14]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    muted = callback(arg1(dependencyMap[14]).Icon, obj2);
   }
   items1[2] = muted;
   if (isFavorite) {
-    const obj4 = { source: importDefault(dependencyMap[17]), size: arg1(dependencyMap[14]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    isFavorite = callback(arg1(dependencyMap[14]).Icon, obj4);
+    const obj3 = { source: importDefault(dependencyMap[17]), size: arg1(dependencyMap[14]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    isFavorite = callback(arg1(dependencyMap[14]).Icon, obj3);
   }
   items1[3] = isFavorite;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj5 = { type: importDefault(dependencyMap[18]).Types.SYSTEM_DM, verified: true };
-    isSystemDMResult = callback(importDefault(dependencyMap[18]), obj5);
+    const obj4 = { type: importDefault(dependencyMap[18]).Types.SYSTEM_DM, verified: true };
+    isSystemDMResult = callback(importDefault(dependencyMap[18]), obj4);
     const tmp19 = importDefault(dependencyMap[18]);
   }
   items1[4] = isSystemDMResult;
@@ -97,7 +95,7 @@ function PrivateChannelMessageRowLabel(message) {
   items2[2] = isSystemDMResult;
   obj.children = items2;
   const items3 = [closure_12(closure_4, obj), , , ];
-  const obj3 = { <string:1643205302>: null, <string:1415816450>: "text-xs/medium", <string:4283523744>: 12, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
+  const obj3 = { 803799044: null, 1269170180: "text-xs/medium", 711589892: 12, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
   items3[1] = callback(arg1(dependencyMap[15]).Text, obj3);
   let tmp18 = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
@@ -149,7 +147,7 @@ function GuildChannelMessageRowLabel(arg0) {
       tmp19 = callback(arg1(dependencyMap[14]).RoleDot, obj2);
     }
     const items1 = [tmp19, ];
-    obj3 = { <string:1643205302>: 1626341378, <string:1415816450>: -1035927550, <string:4283523744>: 16777503, style: {} };
+    obj3 = { style: {} };
     let tmp27;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp27 = processColorStringsArray;
@@ -159,7 +157,7 @@ function GuildChannelMessageRowLabel(arg0) {
     items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
     obj1.children = items1;
     const items2 = [closure_12(closure_4, obj1), , , ];
-    obj4 = { <string:1643205302>: 1961492483, <string:1415816450>: 1964048387, <string:4283523744>: -398262269, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
+    obj4 = { 803799044: true, 1269170180: true, 711589892: true, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
     items2[1] = callback(arg1(dependencyMap[15]).Text, obj4);
     let tmp32 = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
@@ -188,11 +186,11 @@ const MessageFlags = arg1(dependencyMap[7]).MessageFlags;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp3 = arg1(dependencyMap[8]);
-let obj = { channelIcon: { 1449338582: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", -865846725: "{0}, {1}" } };
-obj = { 9223372036854775807: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", 9223372036854775807: "{0}, {1}", tintColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
+let obj = { channelIcon: { WAVE_EMPHASIZE: -352059389, marginVertical: 1280376834 } };
+obj = { borderRadius: -352059389, paddingHorizontal: 1280376834, tintColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.channelStatus = obj;
-obj.labelContainer = { "Bool(true)": "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", "Bool(true)": "{0}, {1}", "Bool(true)": "{0}\u0E2B\u0E23\u0E37\u0E2D{1}", "Bool(true)": "{0}, {1}" };
-obj.authorRow = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+obj.labelContainer = {};
+obj.authorRow = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
 obj.timestamp = { marginLeft: 8 };
 obj.header = {};
 obj.body = { alignItems: "flex-start" };
@@ -265,7 +263,7 @@ const memoResult = importAllResult.memo(function MessageRow(message) {
     obj1 = { message, channel: stateFromStores, muted: stateFromStores2 };
     obj.label = callback(memo, obj1);
     if (isChannelSpoilerGated) {
-      obj2 = { style: body.spoilerText };
+      obj2 = { cachedAt: 400, edpbxy: 20, style: body.spoilerText };
       const intl = tmp18(tmp19[28]).intl;
       obj2.children = intl.string(tmp18(tmp19[28]).t.5uaI/7);
       let tmp17Result = tmp17(tmp18(tmp19[15]).Text, obj2);

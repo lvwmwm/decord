@@ -1,10 +1,10 @@
-// Module ID: 10119
-// Function ID: 78336
+// Module ID: 10120
+// Function ID: 78349
 // Name: useSafetyToolsButtonTooltipForChannel
 // Dependencies: []
 // Exports: useSafetyToolsButtonTooltipForChannel
 
-// Module 10119 (useSafetyToolsButtonTooltipForChannel)
+// Module 10120 (useSafetyToolsButtonTooltipForChannel)
 const SafetyWarningTypes = require(dependencyMap[0]).SafetyWarningTypes;
 const HOUR = importDefault(dependencyMap[1]).Millis.HOUR;
 let closure_4 = 12 * importDefault(dependencyMap[1]).Millis.HOUR;

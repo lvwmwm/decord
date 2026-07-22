@@ -1,10 +1,10 @@
-// Module ID: 10474
-// Function ID: 81088
+// Module ID: 10475
+// Function ID: 81101
 // Name: _launchFrame
 // Dependencies: []
 // Exports: launchFrame, refreshProxyTicket, stopFrame, updateFrameLayoutMode, updateFramePanelMode
 
-// Module 10474 (_launchFrame)
+// Module 10475 (_launchFrame)
 function _launchFrame() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

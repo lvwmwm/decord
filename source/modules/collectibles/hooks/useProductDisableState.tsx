@@ -1,10 +1,10 @@
-// Module ID: 8758
-// Function ID: 69250
+// Module ID: 8759
+// Function ID: 69262
 // Name: useProductDisableState
 // Dependencies: []
 // Exports: useProductDisableState
 
-// Module 8758 (useProductDisableState)
+// Module 8759 (useProductDisableState)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
 
@@ -29,7 +29,7 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     }
     obj.disabledReason = stringResult;
   } else {
-    obj = { accessibilityRole: null, GUILD_WEBHOOKS: null };
+    obj = { usePlaceholderAnimatedStyle: "L", GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: "L" };
   }
   return obj;
 };

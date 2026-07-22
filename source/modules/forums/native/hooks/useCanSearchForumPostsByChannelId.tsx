@@ -1,10 +1,10 @@
-// Module ID: 10093
-// Function ID: 78168
+// Module ID: 10094
+// Function ID: 78181
 // Name: useCanSearchForumPostsByChannelId
 // Dependencies: []
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 10093 (useCanSearchForumPostsByChannelId)
+// Module 10094 (useCanSearchForumPostsByChannelId)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const Permissions = arg1(dependencyMap[2]).Permissions;

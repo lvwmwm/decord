@@ -249,7 +249,7 @@ const tmp5 = () => {
         }
         PushNotificationIOS(closure_1[3])(PushNotificationIOS(closure_1[4]), "PushNotificationManager is not available.");
         const tmp2 = PushNotificationIOS(closure_1[3]);
-        return PushNotificationIOS(closure_1[4]).requestPermissions({ UNDEFINED: "Small", BEGAN: "sm", START: "Placeholder" });
+        return PushNotificationIOS(closure_1[4]).requestPermissions({});
       }
     },
     {

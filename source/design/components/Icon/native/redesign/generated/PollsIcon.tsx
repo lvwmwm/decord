@@ -1,10 +1,10 @@
-// Module ID: 9647
-// Function ID: 75175
+// Module ID: 9648
+// Function ID: 75188
 // Name: PollsIcon
 // Dependencies: []
 // Exports: PollsIcon
 
-// Module 9647 (PollsIcon)
+// Module 9648 (PollsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PollsIcon.tsx");

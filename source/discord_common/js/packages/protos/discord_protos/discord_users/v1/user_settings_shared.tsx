@@ -26,8 +26,8 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, Versions$Type);
       items = [, , ];
       items[0] = {};
-      items[1] = { 1347510942: 0, 1678385745: 29250337, 1364379111: -1325579070, 140698458: 625 };
-      items[2] = { 1347510942: -42.712, 1678385745: 3, 1364379111: "favorite_stickers", 140698458: "message" };
+      items[1] = {};
+      items[2] = {};
       items1 = [];
       items1[1] = items;
       obj = closure_6(Versions$Type);
@@ -48,7 +48,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { <string:348294315>: false, <string:1473732916>: false, <string:3991323447>: false };
+      let obj = { justifyContent: "spring", width: 0.4, height: 1 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Versions$Type(closure_1[6]).MESSAGE_TYPE, obj);

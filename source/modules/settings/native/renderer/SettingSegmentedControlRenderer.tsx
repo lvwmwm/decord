@@ -1,10 +1,10 @@
-// Module ID: 14462
-// Function ID: 108984
+// Module ID: 14470
+// Function ID: 109027
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14462 (_createForOfIteratorHelperLoose)
+// Module 14470 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -92,7 +92,7 @@ const NodeType = arg1(dependencyMap[4]).NodeType;
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj.controlContainer = obj;
 obj.pageContainer = { flex: 1 };
 let closure_11 = obj.createStyles(obj);

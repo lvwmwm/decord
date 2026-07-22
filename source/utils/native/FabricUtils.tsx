@@ -1,5 +1,5 @@
 // Module ID: 3992
-// Function ID: 33118
+// Function ID: 33120
 // Name: isFabric
 // Dependencies: []
 // Exports: isIosFabric

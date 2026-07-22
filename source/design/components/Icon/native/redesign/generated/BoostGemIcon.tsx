@@ -1,5 +1,5 @@
 // Module ID: 8007
-// Function ID: 63591
+// Function ID: 63601
 // Name: BoostGemIcon
 // Dependencies: []
 // Exports: BoostGemIcon

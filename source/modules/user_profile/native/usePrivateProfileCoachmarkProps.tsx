@@ -1,10 +1,10 @@
-// Module ID: 14975
-// Function ID: 112746
+// Module ID: 14983
+// Function ID: 112789
 // Name: PrivateProfileCoachmarkImage
 // Dependencies: []
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 14975 (PrivateProfileCoachmarkImage)
+// Module 14983 (PrivateProfileCoachmarkImage)
 function PrivateProfileCoachmarkImage() {
   return <View style={callback().imageContainer}>{jsx(arg1(dependencyMap[6]).PrivateProfileAbstractUI, {})}</View>;
 }
@@ -13,7 +13,7 @@ const View = arg1(dependencyMap[1]).View;
 const UserSettingsSections = arg1(dependencyMap[2]).UserSettingsSections;
 const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_7 = arg1(dependencyMap[5]).createStyles({ imageContainer: { "Null": null, "Null": null } });
+let closure_7 = arg1(dependencyMap[5]).createStyles({ imageContainer: { <string:3596066964>: null, <string:3638417373>: null } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");
 

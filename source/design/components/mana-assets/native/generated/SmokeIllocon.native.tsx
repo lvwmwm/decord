@@ -1,5 +1,5 @@
 // Module ID: 6511
-// Function ID: 50688
+// Function ID: 50699
 // Name: SmokeIllocon
 // Dependencies: []
 // Exports: SmokeIllocon

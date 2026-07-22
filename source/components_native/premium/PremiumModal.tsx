@@ -1,5 +1,5 @@
 // Module ID: 6644
-// Function ID: 51023
+// Function ID: 51034
 // Name: getScreens
 // Dependencies: []
 // Exports: default
@@ -21,7 +21,7 @@ function getScreens(arg0) {
   let obj2 = arg1(dependencyMap[4]);
   obj.headerLeft = obj2.getHeaderCloseButton(onClose);
   obj.render = function render() {
-    return callback2(onClose(closure_2[5]), { applicationId: closure_5, onClose, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11 });
+    return callback2(onClose(closure_2[5]), { applicationId: closure_5, onClose, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11, isFullScreenPresentation: true });
   };
   obj[UserSettingsSections.PREMIUM] = obj;
   obj = {};

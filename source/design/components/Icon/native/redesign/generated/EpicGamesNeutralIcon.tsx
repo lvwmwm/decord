@@ -1,10 +1,10 @@
-// Module ID: 8603
-// Function ID: 68283
+// Module ID: 8604
+// Function ID: 68295
 // Name: EpicGamesNeutralIcon
-// Dependencies: [31, 27, 33, 4126, 689, 5462]
+// Dependencies: [31, 27, 33, 4126, 689, 5461]
 // Exports: EpicGamesNeutralIcon
 
-// Module 8603 (EpicGamesNeutralIcon)
+// Module 8604 (EpicGamesNeutralIcon)
 import "module_31";
 import { jsx } from "get ActivityIndicator";
 import mergeLocations from "mergeLocations";

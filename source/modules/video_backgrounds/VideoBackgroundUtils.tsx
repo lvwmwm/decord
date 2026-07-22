@@ -1,10 +1,10 @@
-// Module ID: 8842
-// Function ID: 69786
+// Module ID: 8843
+// Function ID: 69799
 // Name: isCustomBackgroundOption
 // Dependencies: []
 // Exports: getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 8842 (isCustomBackgroundOption)
+// Module 8843 (isCustomBackgroundOption)
 function isCustomBackgroundOption(lastUsedVideoBackgroundOption) {
   let tmp = null != lastUsedVideoBackgroundOption;
   if (tmp) {

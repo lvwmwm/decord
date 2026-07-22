@@ -1,10 +1,10 @@
-// Module ID: 15514
-// Function ID: 118388
+// Module ID: 15522
+// Function ID: 118431
 // Name: updateVisualRefresh
 // Dependencies: []
 // Exports: updateVisualRefresh
 
-// Module 15514 (updateVisualRefresh)
+// Module 15522 (updateVisualRefresh)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");

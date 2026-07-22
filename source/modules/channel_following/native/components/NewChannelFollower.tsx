@@ -1,10 +1,10 @@
-// Module ID: 10360
-// Function ID: 79952
+// Module ID: 10361
+// Function ID: 79965
 // Name: NewChannelFollower
 // Dependencies: []
 // Exports: default
 
-// Module 10360 (NewChannelFollower)
+// Module 10361 (NewChannelFollower)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ImageBackground: closure_6 } = arg1(dependencyMap[2]));
@@ -19,17 +19,17 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { container: {}, header: {}, headerGuildIcon: {} };
+obj = { container: { 9223372036854775807: null, -9223372036854775808: 1, 0: "#FFC619", 9223372036854775807: 123, 0: null }, header: { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false }, headerGuildIcon: { 105995362: null, 1454072324: null } };
 obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, height: 32 };
 obj.headerChannelContainer = obj;
-const tmp4 = arg1(dependencyMap[9]);
-obj.headerChannel = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
-obj.headerChannelIcon = {};
+const obj1 = { marginLeft: null, marginVertical: null, alignSelf: null, resizeMode: null, renderMode: null, borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
+obj.headerChannel = obj1;
+obj.headerChannelIcon = { "Null": null, "Null": null, -9223372036854775808: null, 0: null };
 obj.ctaHeader = {};
 obj.ctaSubhead = {};
-obj.channelIcon = { convert: 134, allowUnknown: null, <string:3307565226>: 1 };
+obj.channelIcon = { "Null": "Array", "Null": "isArray", "Null": "construct" };
 let closure_18 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
+const tmp4 = arg1(dependencyMap[9]);
 const result = arg1(dependencyMap[39]).fileFinishedImporting("modules/channel_following/native/components/NewChannelFollower.tsx");
 
 export default function NewChannelFollower(targetChannelId) {
@@ -80,7 +80,7 @@ export default function NewChannelFollower(targetChannelId) {
   } else {
     tmp13Result = tmp13(tmp14[19]);
   }
-  obj = { "Bool(true)": "Small", "Bool(true)": "sm", "Bool(true)": "Placeholder", ref: bottomSheetRef };
+  obj = { ref: bottomSheetRef };
   obj = {};
   obj1 = { source: tmp13Result, style: tmp.header };
   obj2 = { style: tmp.header };
@@ -104,7 +104,7 @@ export default function NewChannelFollower(targetChannelId) {
   obj1.children = callback3(closure_5, obj2);
   const items4 = [callback2(closure_6, obj1), ];
   const obj7 = { style: tmp.container };
-  const obj8 = { delete: true, dispatch: true, raw: true, style: tmp.ctaHeader };
+  const obj8 = { "Null": -43.296, "Null": 4, alignItems: "score", style: tmp.ctaHeader };
   const intl = arg1(dependencyMap[26]).intl;
   obj8.children = intl.string(arg1(dependencyMap[26]).t.mvPFbA);
   const items5 = [callback2(arg1(dependencyMap[25]).Text, obj8), , , , , ];

@@ -1,10 +1,10 @@
-// Module ID: 9337
-// Function ID: 72957
+// Module ID: 9338
+// Function ID: 72970
 // Name: useNativeAndroidEmojiPickerEnabled
 // Dependencies: []
 // Exports: default
 
-// Module 9337 (useNativeAndroidEmojiPickerEnabled)
+// Module 9338 (useNativeAndroidEmojiPickerEnabled)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx");
 

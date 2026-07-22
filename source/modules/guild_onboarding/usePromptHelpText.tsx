@@ -1,10 +1,10 @@
-// Module ID: 5413
-// Function ID: 46420
+// Module ID: 5143
+// Function ID: 44841
 // Name: formatRoleString
 // Dependencies: []
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 5413 (formatRoleString)
+// Module 5143 (formatRoleString)
 function formatRoleString(mapped, itemHook, arg2) {
   let num = 0;
   if (0 === mapped.length) {

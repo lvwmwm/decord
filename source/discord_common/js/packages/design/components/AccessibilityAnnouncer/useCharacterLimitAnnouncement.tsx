@@ -1,5 +1,5 @@
 // Module ID: 7506
-// Function ID: 60146
+// Function ID: 60157
 // Name: useCharacterLimitAnnouncement
 // Dependencies: []
 // Exports: useCharacterLimitAnnouncement

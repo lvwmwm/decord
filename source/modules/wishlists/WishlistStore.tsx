@@ -1,9 +1,9 @@
-// Module ID: 8669
-// Function ID: 68612
+// Module ID: 8670
+// Function ID: 68624
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8669 (_isNativeReflectConstruct)
+// Module 8670 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,7 +16,7 @@ function _isNativeReflectConstruct() {
 function getOrCreateEntry(wishlistId) {
   let tmp2 = closure_11[wishlistId];
   if (tmp2 == null) {
-    const obj = { "Bool(false)": false, "Bool(false)": false };
+    const obj = { 9223372036854775807: "IconComponent", 0: "useStateFromStores" };
     tmp[wishlistId] = obj;
     tmp2 = obj;
   }
@@ -58,7 +58,7 @@ let tmp3 = (Store) => {
     value(arg0) {
       let obj = closure_11[arg0];
       if (null == obj) {
-        obj = { "Bool(false)": false, "Bool(false)": false };
+        obj = { 9223372036854775807: "IconComponent", 0: "useStateFromStores" };
       }
       return obj;
     }

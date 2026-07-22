@@ -1,5 +1,5 @@
 // Module ID: 7928
-// Function ID: 63297
+// Function ID: 63307
 // Name: getMaxMessageLength_
 // Dependencies: []
 // Exports: default, getMaxMessageLength

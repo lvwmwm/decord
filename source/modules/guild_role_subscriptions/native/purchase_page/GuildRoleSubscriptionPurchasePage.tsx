@@ -1,12 +1,22 @@
-// Module ID: 15139
-// Function ID: 114244
+// Module ID: 15147
+// Function ID: 114287
 // Name: Separator
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15139 (Separator)
+// Module 15147 (Separator)
+import "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function Separator() {
-  return callback(closure_6, { style: callback2().separator });
+  return callback(closure_6, { style: __exportStarResult1().separator });
 }
 function LegalDisclaimer() {
   let obj = {};
@@ -20,7 +30,7 @@ function SocialBadge(onPress) {
   let text;
   onPress = onPress.onPress;
   ({ iconSource, text } = onPress);
-  const tmp = callback2();
+  const tmp = __exportStarResult1();
   let tmp2 = null != onPress;
   let obj = { style: tmp.socialBadge };
   let num = 1;
@@ -39,42 +49,33 @@ function SocialBadge(onPress) {
   obj.children = items;
   return closure_15(closure_5, obj);
 }
-importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_4, TouchableOpacity: closure_5, View: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[1]));
-let closure_8 = importDefault(dependencyMap[2]);
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-const tmp3 = arg1(dependencyMap[1]);
-({ AnalyticsLocations: closure_11, GuildFeatures: closure_12, MarketingURLs: closure_13 } = arg1(dependencyMap[5]));
-const tmp4 = arg1(dependencyMap[5]);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.container = obj;
-obj.heroImage = { "Null": null, "Null": null };
-const tmp5 = arg1(dependencyMap[6]);
-obj.guildIconContainer = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
-const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
-obj.guildIcon = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
-const obj2 = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
-obj.contentCard = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.md, borderTopRightRadius: importDefault(dependencyMap[8]).radii.md };
-obj.loadingContainer = {};
-obj.socialContainer = { flexDirection: "row" };
-const obj4 = { 0: null, 0: 16, 9223372036854775807: "hidden", 0: 64, 0: null, 9223372036854775807: "center", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.xl };
-obj.socialBadge = obj4;
-obj.socialBadgeIcon = {};
-const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.md, borderTopRightRadius: importDefault(dependencyMap[8]).radii.md };
-obj.socialBadgeArrow = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-const obj6 = { bounces: null, originWhitelist: "91cf7e45c8979413a0ad2486eb772598", allowsInlineMediaPlayback: "ic_nitro_wheel", style: "png", backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.separator = obj6;
-obj.moneyBirbPlaceholder = {};
-obj.gatedChannel = { -9223372036854775808: null, "Null": null, "Null": null };
-const obj5 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.gatedChannelIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
-let closure_17 = obj.createStyles(obj);
-const obj7 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
-const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePage.tsx");
+({ ActivityIndicator: closure_4, TouchableOpacity: closure_5, View: closure_6, ScrollView: closure_7 } = __exportStarResult1);
+({ AnalyticsLocations: closure_11, GuildFeatures: closure_12, MarketingURLs: closure_13 } = __exportStarResult1);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { flex: 1, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1.heroImage = { "Null": null, "Null": null };
+const obj1 = { <string:542769156>: 13340560293673744000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1562509316>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, <string:1536229380>: -0.0015869157818465542, <string:513343492>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025661846016371153, <string:1571880964>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000556268465209624, <string:490930180>: -53729471827996090000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1582366724>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017800590884751322, borderRadius: require("__exportStarResult1").radii.md, borderColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+__exportStarResult1.guildIconContainer = obj1;
+__exportStarResult1.guildIcon = { borderRadius: require("__exportStarResult1").radii.sm };
+const obj2 = { borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.contentCard = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: require("__exportStarResult1").radii.md, borderTopRightRadius: require("__exportStarResult1").radii.md };
+__exportStarResult1.loadingContainer = { "Null": null, "Null": 1, "Null": "text-sm/semibold", "Null": "interactive-text-default" };
+__exportStarResult1.socialContainer = { flexDirection: "row" };
+const obj4 = { <string:1383261810>: 4, <string:2575998389>: 4, <string:492007009>: 4, <string:788963846>: 2, <string:2976080991>: null, <string:1549987032>: "center", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW, borderRadius: require("__exportStarResult1").radii.xl };
+__exportStarResult1.socialBadge = obj4;
+__exportStarResult1.socialBadgeIcon = {};
+const obj3 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: require("__exportStarResult1").radii.md, borderTopRightRadius: require("__exportStarResult1").radii.md };
+__exportStarResult1.socialBadgeArrow = { tintColor: require("__exportStarResult1").colors.INTERACTIVE_TEXT_DEFAULT };
+const obj6 = { style: "Array", mediaPlaybackRequiresUserAction: "isArray", muteVideo: "constructor", unMuteVideo: "Boolean", backgroundColor: require("__exportStarResult1").colors.INTERACTIVE_BACKGROUND_HOVER };
+__exportStarResult1.separator = obj6;
+__exportStarResult1.moneyBirbPlaceholder = {};
+__exportStarResult1.gatedChannel = { 0: null, 0: null, 9223372036854775807: null };
+const obj5 = { tintColor: require("__exportStarResult1").colors.INTERACTIVE_TEXT_DEFAULT };
+__exportStarResult1.gatedChannelIcon = { tintColor: require("__exportStarResult1").colors.TEXT_DEFAULT };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePage.tsx");
 
 export default function GuildRoleSubscriptionPurchasePage(guildId) {
   guildId = guildId.guildId;
@@ -84,7 +85,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
   let dependencyMap;
   let closure_4;
   let store_page_trailer_url;
-  const tmp = callback2();
+  const tmp = __exportStarResult1();
   const importAll = tmp;
   importDefault(dependencyMap[14])({ forceRestore: true });
   let obj = arg1(dependencyMap[15]);
@@ -143,7 +144,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
                               obj = { size: guildId(stateFromStores1[11]).Icon.Sizes.SMALL_20, style: tmp.gatedChannelIcon, source: guildId(stateFromStores1[23]).getChannelIcon(stateFromStores1) };
                               items[1] = callback(guildId(stateFromStores1[11]).Icon, obj);
                               items[2] = callback(guildId(stateFromStores1[11]).Spacer, { size: 3 });
-                              obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images", children: closure_4 };
+                              obj = { children: closure_4 };
                               items[3] = callback(guildId(stateFromStores1[12]).Text, obj);
                               obj.children = items;
                               return callback2(closure_6, obj);
@@ -161,14 +162,14 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             obj6 = { size: arg1(dependencyMap[25]).GuildIconSizes.XLARGE, guild: stateFromStores, style: tmp.guildIcon };
             obj5.children = callback(importDefault(dependencyMap[25]), obj6);
             const items5 = [callback(closure_6, obj5), , , , , , , , , , ];
-            obj7 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
+            obj7 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817 };
             const intl3 = arg1(dependencyMap[10]).intl;
             const obj8 = { serverName: stateFromStores.name };
             obj7.children = intl3.format(arg1(dependencyMap[10]).t.mqCkpl, obj8);
             items5[1] = callback(arg1(dependencyMap[12]).Text, obj7);
             const obj9 = { size: 8 };
             items5[2] = callback(arg1(dependencyMap[11]).Spacer, obj9);
-            const obj10 = { <string:1643205302>: "<string:254083074>", <string:1415816450>: "<string:2018574338>", <string:4283523744>: "<string:3393262035>", children: subscriptionsSettings.description };
+            const obj10 = { 803799044: "<string:246415362>", 1269170180: "<string:4132503554>", 711589892: "<string:2269188589>", children: subscriptionsSettings.description };
             items5[3] = callback(arg1(dependencyMap[26]).TruncatedText, obj10);
             let tmp38Result = hasItem;
             if (!hasItem) {
@@ -215,7 +216,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             items5[5] = callback(arg1(dependencyMap[11]).Spacer, obj17);
             items5[6] = callback(LegalDisclaimer, {});
             items5[7] = callback(Separator, {});
-            const obj18 = { hasMaxConnections: 15, isBoostOnlySubscription: "center" };
+            const obj18 = { cachedAt: 15, edpbxy: "center" };
             const obj19 = { textTransform: "uppercase" };
             obj18.style = obj19;
             obj18.children = formatResult;

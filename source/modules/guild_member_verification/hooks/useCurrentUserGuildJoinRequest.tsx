@@ -1,10 +1,10 @@
-// Module ID: 9154
-// Function ID: 71778
+// Module ID: 9155
+// Function ID: 71791
 // Name: useCurrentUserGuildJoinRequest
 // Dependencies: [131072, 368050176, 5]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 9154 (useCurrentUserGuildJoinRequest)
+// Module 9155 (useCurrentUserGuildJoinRequest)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let closure_2 = importDefault(dependencyMap[0]);

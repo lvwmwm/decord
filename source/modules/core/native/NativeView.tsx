@@ -1,8 +1,8 @@
-// Module ID: 5515
-// Function ID: 46966
+// Module ID: 5514
+// Function ID: 46974
 // Dependencies: []
 
-// Module 5515
+// Module 5514
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/core/native/NativeView.tsx");
 

@@ -5,7 +5,7 @@
 
 // Module 290 (NativeText)
 let closure_2 = { validAttributes: {}, directEventTypes: { topTextLayout: { registrationName: "onTextLayout" } }, uiViewClassName: "RCTText" };
-let closure_3 = { validAttributes: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": null, "Bool(true)": null }, uiViewClassName: "RCTVirtualText" };
+let closure_3 = { validAttributes: {}, uiViewClassName: "RCTVirtualText" };
 const tmp2 = importDefault(dependencyMap[0])("RCTText", () => arg1(dependencyMap[1]).createViewConfig(closure_2));
 if (global.RN$Bridgeless) {
   let tmp3 = importDefault(dependencyMap[0])("RCTVirtualText", () => arg1(dependencyMap[1]).createViewConfig(closure_3));

@@ -1,19 +1,19 @@
-// Module ID: 11238
-// Function ID: 87477
+// Module ID: 11239
+// Function ID: 87490
 // Name: PlaceholderCommandRow
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11238 (PlaceholderCommandRow)
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import result from "result";
-import { AnalyticEvents } from "result";
-import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_12 } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 11239 (PlaceholderCommandRow)
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { AnalyticEvents } from "__exportStarResult1";
+import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_12 } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function PlaceholderCommandRow(isFirstRow) {
   let flag = isFirstRow.isFirstRow;
@@ -24,7 +24,7 @@ function PlaceholderCommandRow(isFirstRow) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[11]);
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
   let obj1 = arg1(dependencyMap[11]);
@@ -53,7 +53,7 @@ class CommandRow {
     importAll = context;
     ({ section: closure_3, location: closure_4, sectionName } = global);
     ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = global);
-    obj = require("result");
+    obj = require("__exportStarResult1");
     View = obj.useAppLauncherContext().entrypoint;
     tmp = useUserIndexState(true, true);
     tmp2 = useContextIndexState(context, true, true);
@@ -82,7 +82,7 @@ class CommandRow {
       onExecuteCommand
     };
     tmp6 = undefined;
-    tmp5 = require("result");
+    tmp5 = require("__exportStarResult1");
     if (installOnDemand) {
       tmp6 = () => {
         // CreateGeneratorClosureLongIndex (0x67)
@@ -95,39 +95,39 @@ class CommandRow {
     obj1.tryExecuteCommand = tmp6;
     obj1.sectionName = sectionName;
     obj.trailing = tmp4(tmp5, obj1);
-    return tmp3(require("result").TableRow, obj);
+    return tmp3(require("__exportStarResult1").TableRow, obj);
   }
 }
 const View = arg1(dependencyMap[2]).View;
-({ useContextIndexState: closure_7, useUserIndexState: closure_8 } = result);
-const DEFAULT_CONTENT_PADDING = result.DEFAULT_CONTENT_PADDING;
-const useAppLauncherNavigation = result.useAppLauncherNavigation;
-({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = result);
-result = {};
-result = { height: require("result").EXPANDED_HEADER_HEIGHT - require("result").SHEET_HANDLE_CONTAINER_HEIGHT };
-result.headerSpacer = result;
-result.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING };
-result.commandsHeaderContainer = { paddingVertical: "<string:3019899258>", paddingHorizontal: "<string:1241514242>", flexDirection: "<string:1358955059>", alignItems: "<string:123048254>" };
-result.commandsHeaderTextContainer = {};
-result.viewContainerStyle = { borderRadius: require("result").radii.lg };
-const obj1 = { borderRadius: require("result").radii.lg };
-result.mainContainerStyle = { backgroundColor: require("result").colors.CARD_BACKGROUND_DEFAULT };
-result.expandDescriptionCTAStyle = {};
-const obj2 = { backgroundColor: require("result").colors.CARD_BACKGROUND_DEFAULT };
-result.monetizationDisclosureTextStyle = { marginLeft: require("result").space.PX_4 };
-const obj4 = { "Null": 7, "Null": 370, marginBottom: require("result").space.PX_24, gap: require("result").space.PX_16 };
-result.monetizationDisclosureContainerStyle = obj4;
-result.monetizationDisclosureStyle = { "Null": 7, "Null": 370 };
-const obj5 = { enabled: "#370b1a", marginTop: "<string:24183040>", now: "<string:1929379840>", accessible: "isArray", options: null, backgroundColor: require("result").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("result").radii.lg };
-result.loadingTextPlaceholder = obj5;
-const obj3 = { marginLeft: require("result").space.PX_4 };
-result.loadingTextPlaceholderSmall = { backgroundColor: require("result").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("result").radii.lg, alignSelf: "flex-start" };
-result.noCommandsTextContainer = { alignItems: "center" };
-result = result.createStyles(result);
+({ useContextIndexState: closure_7, useUserIndexState: closure_8 } = __exportStarResult1);
+const DEFAULT_CONTENT_PADDING = __exportStarResult1.DEFAULT_CONTENT_PADDING;
+const useAppLauncherNavigation = __exportStarResult1.useAppLauncherNavigation;
+({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { height: require("__exportStarResult1").EXPANDED_HEADER_HEIGHT - require("__exportStarResult1").SHEET_HANDLE_CONTAINER_HEIGHT };
+__exportStarResult1.headerSpacer = __exportStarResult1;
+__exportStarResult1.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING };
+__exportStarResult1.commandsHeaderContainer = {};
+__exportStarResult1.commandsHeaderTextContainer = {};
+__exportStarResult1.viewContainerStyle = { borderRadius: require("__exportStarResult1").radii.lg };
+const obj1 = { borderRadius: require("__exportStarResult1").radii.lg };
+__exportStarResult1.mainContainerStyle = { backgroundColor: require("__exportStarResult1").colors.CARD_BACKGROUND_DEFAULT };
+__exportStarResult1.expandDescriptionCTAStyle = { <string:1627544401>: null, <string:3359199659>: null };
+const obj2 = { backgroundColor: require("__exportStarResult1").colors.CARD_BACKGROUND_DEFAULT };
+__exportStarResult1.monetizationDisclosureTextStyle = { marginLeft: require("__exportStarResult1").space.PX_4 };
+const obj4 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginBottom: require("__exportStarResult1").space.PX_24, gap: require("__exportStarResult1").space.PX_16 };
+__exportStarResult1.monetizationDisclosureContainerStyle = obj4;
+__exportStarResult1.monetizationDisclosureStyle = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+const obj3 = { marginLeft: require("__exportStarResult1").space.PX_4 };
+__exportStarResult1.loadingTextPlaceholder = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("__exportStarResult1").radii.lg };
+const obj5 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("__exportStarResult1").radii.lg };
+__exportStarResult1.loadingTextPlaceholderSmall = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("__exportStarResult1").radii.lg, alignSelf: "flex-start" };
+__exportStarResult1.noCommandsTextContainer = { alignItems: "center" };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
 const obj7 = { PLACEHOLDER: 0, [0]: "PLACEHOLDER", COMMAND: 1, [1]: "COMMAND" };
 const array = new Array(6);
 let closure_18 = array.fill({ type: obj7.PLACEHOLDER });
-result = result.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailContent.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailContent.tsx");
 
 export default function AppDetailContent(context) {
   let commands;
@@ -149,12 +149,12 @@ export default function AppDetailContent(context) {
   const React = onCommandExecuted;
   const View = context.onAauth2Cancel;
   let tmp13;
-  let result;
+  let __exportStarResult1;
   let obj7;
   let closure_18;
   let PlaceholderCommandRow;
   ({ onPressBack, onActivityItemSelected } = context);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[13]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
   const chatInputRef = requiredAppLauncherContext.chatInputRef;
@@ -166,7 +166,7 @@ export default function AppDetailContent(context) {
   const items = [arg1(dependencyMap[19]).ApplicationCommandType.CHAT];
   obj.commandTypes = items;
   obj.filters = obj;
-  obj1 = { "Bool(false)": "<string:8912898>", "Bool(false)": "<string:2919038977>", "Bool(false)": "<string:2024931329>", limit: closure_12, allowApplicationState: installOnDemand, installOnDemand, applicationId: application.id };
+  obj1 = { justifyContent: "httpServerLocation", sk: "hash", radii: "httpServerLocation", limit: closure_12, allowApplicationState: installOnDemand, installOnDemand, applicationId: application.id };
   obj.options = obj1;
   obj.allowFetch = true;
   const discovery = obj1.useDiscovery(obj);
@@ -179,7 +179,7 @@ export default function AppDetailContent(context) {
   const tmp4 = importDefault(dependencyMap[20])({ sectionId: application.id, commandsByActiveSection: discovery.commandsByActiveSection });
   ({ setSortOrder: closure_13, commands } = tmp4);
   let canSort = tmp4.canSort;
-  result = chatInputRef(true, true).result;
+  const result = chatInputRef(true, true).result;
   let tmp5;
   if (null != result) {
     tmp5 = result.sections[application.id];
@@ -222,7 +222,7 @@ export default function AppDetailContent(context) {
     obj = { location: APP_LAUNCHER_APPLICATION_VIEW, context, command, section, sectionDescriptors, query: "", navigation: tmp13, installOnDemand, sectionName, entrypoint, onCommandExecuted };
     const result = obj.handleApplicationCommandSelected(obj);
   }, items3);
-  result = callback;
+  __exportStarResult1 = callback;
   const items4 = [chatInputRef, keyboardCloseReasonRef, onCommandExecuted];
   const callback1 = React.useCallback(() => {
     const current = chatInputRef.current;
@@ -269,7 +269,7 @@ export default function AppDetailContent(context) {
     let tmp6 = null;
     if (result) {
       obj = { style: tmp.monetizationDisclosureStyle };
-      const items = [callback(context(sectionName[25]).BillIcon, { accessibilityRole: "png", "": true }), ];
+      const items = [callback(context(sectionName[25]).BillIcon, { "Bool(false)": "png", "Bool(false)": true }), ];
       obj = { style: tmp.monetizationDisclosureTextStyle };
       const intl = context(sectionName[27]).intl;
       obj.children = intl.string(context(sectionName[27]).t.5khEk8);
@@ -280,7 +280,7 @@ export default function AppDetailContent(context) {
     let tmp14 = null;
     if (isAndroidResult) {
       obj1 = { style: tmp.monetizationDisclosureStyle };
-      const items1 = [callback(context(sectionName[28]).ShopIcon, { accessibilityRole: "png", "": true }), ];
+      const items1 = [callback(context(sectionName[28]).ShopIcon, { "Bool(false)": "png", "Bool(false)": true }), ];
       obj2 = { style: tmp.monetizationDisclosureTextStyle };
       const intl2 = context(sectionName[27]).intl;
       obj2.children = intl2.string(context(sectionName[27]).t.8z5B2U);
@@ -347,7 +347,7 @@ export default function AppDetailContent(context) {
     tmp38 = null;
     if (!obj17.isEmbeddedApp(application)) {
       const obj11 = { style: tmp.noCommandsTextContainer };
-      obj12 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+      obj12 = {};
       const intl = arg1(dependencyMap[27]).intl;
       obj12.children = intl.string(arg1(dependencyMap[27]).t.w8+YDM);
       obj11.children = callback3(arg1(dependencyMap[26]).Text, obj12);

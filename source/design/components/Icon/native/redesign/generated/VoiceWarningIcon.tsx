@@ -1,5 +1,5 @@
 // Module ID: 4652
-// Function ID: 40318
+// Function ID: 40326
 // Name: VoiceWarningIcon
 // Dependencies: []
 // Exports: VoiceWarningIcon

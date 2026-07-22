@@ -1,10 +1,10 @@
-// Module ID: 15376
-// Function ID: 117222
+// Module ID: 15384
+// Function ID: 117265
 // Name: getIsChannelNameSettingEditable
 // Dependencies: []
 // Exports: getIsChannelNameSettingEditable
 
-// Module 15376 (getIsChannelNameSettingEditable)
+// Module 15384 (getIsChannelNameSettingEditable)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("components_native/channel_settings/ChannelSettingsUtils.tsx");
 

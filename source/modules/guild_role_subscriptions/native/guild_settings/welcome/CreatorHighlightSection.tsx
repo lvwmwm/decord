@@ -1,10 +1,10 @@
-// Module ID: 16277
-// Function ID: 125663
+// Module ID: 16285
+// Function ID: 125705
 // Name: GuildServerSubscriberCount
 // Dependencies: []
 // Exports: default
 
-// Module 16277 (GuildServerSubscriberCount)
+// Module 16285 (GuildServerSubscriberCount)
 function GuildServerSubscriberCount(arg0) {
   let style;
   let subscriberCount;
@@ -14,7 +14,7 @@ function GuildServerSubscriberCount(arg0) {
   const items = [, , ];
   ({ horizontalContainer: arr[0], subscriberCountContainer: arr[1] } = tmp);
   items[2] = style;
-  obj = { style: tmp.subscriberCount, children: subscriberCount };
+  obj = { "Null": "Update build ", "Null": "<string:13762560>", alignItems: "<string:1090584576>", style: tmp.subscriberCount, children: subscriberCount };
   const items1 = [callback(arg1(dependencyMap[5]).Text, obj), , ];
   obj = { size: arg1(dependencyMap[6]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[4]).unsafe_rawColors.WHITE, style: tmp.subscriberCountIcon, source: importDefault(dependencyMap[7]) };
   items1[1] = callback(arg1(dependencyMap[6]).Icon, obj);
@@ -71,9 +71,9 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     items1[1] = closure_7(closure_4, obj3);
     obj.children = items1;
     const items3 = [closure_7(closure_4, obj), , , , ];
-    const obj6 = { delete: null, dispatch: 1, raw: 1, style: tmp.ownerQuote, children: quote };
+    const obj6 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.ownerQuote, children: quote };
     items3[1] = callback(arg1(dependencyMap[5]).Text, obj6);
-    const obj7 = { "Bool(true)": -1034747437, "Bool(true)": -1274954172, "Bool(true)": 94480, "Bool(true)": 1359020032, "Bool(true)": 1111557363, style: tmp.ownerUsername };
+    const obj7 = { sample_hostname: 1, sample_port: "tail", vip: null, deprecated: null, optimal: null, style: tmp.ownerUsername };
     const intl = arg1(dependencyMap[8]).intl;
     const obj8 = { attributionName: quote_attribution };
     if (null == quote_attribution_title) {
@@ -89,7 +89,7 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     }
     if (tmp27Result) {
       const obj9 = { style: tmp.emojiSectionContainer };
-      const obj10 = { style: tmp.premiumEmojisTitle };
+      const obj10 = { "Null": 16, "Null": true, alignItems: "/assets/modules/polls/native/images", style: tmp.premiumEmojisTitle };
       const intl3 = arg1(dependencyMap[8]).intl;
       obj10.children = intl3.string(arg1(dependencyMap[8]).t.wg53L8);
       const items4 = [callback(arg1(dependencyMap[5]).Text, obj10), ];
@@ -143,7 +143,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { horizontalContainer: { flexDirection: "row" }, serverSubscriberCount: { marginTop: 8 } };
-obj = { 9223372036854775807: "public.item", -9223372036854775808: "public.audio", 0: "public.comma-separated-values-text", "Bool(false)": "com.microsoft.word.doc", "Bool(false)": "org.openxmlformats.wordprocessingml.document", backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_530, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { validators: "percent", propagationContextFromHeaders: 0, END_STREAM: null, fontSize: 6, STAFF: "done", backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_530, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.subscriberCountContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.subscriberCount = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_630 };
@@ -151,12 +151,12 @@ obj.subscriberCountIcon = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_630 };
 obj.cardContainer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.cardHeaderContainer = {};
-obj.guildIcon = { <string:1041126390>: null, <string:2664543392>: "stretch", <string:2790316114>: 54, <string:1182744880>: 1 };
+obj.guildIcon = { -9223372036854775808: 24, 9223372036854775807: 24, -9223372036854775808: null, 0: "4e2695064a96facdf08d029a4fb1d275" };
 obj.ownerQuote = { marginTop: 24 };
 obj.ownerUsername = { marginTop: 8 };
-obj.premiumEmojisTitle = {};
+obj.premiumEmojisTitle = { european_castle: null, _unsubscribeIntlLoadingStore: null };
 obj.viewServerButtonContainer = {};
-const obj3 = { handleShowStreamFeedback: null, artHero: 10, GEN_AI_EXECUTE_TOOL_OPERATION_ATTRIBUTE: "grab", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+const obj3 = { "Bool(false)": null, "Bool(false)": 0, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.viewServerButton = obj3;
 obj.emojiSectionContainer = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };

@@ -1,10 +1,10 @@
-// Module ID: 10214
-// Function ID: 78931
+// Module ID: 10215
+// Function ID: 78944
 // Name: isChannelCurrentlyVisible
 // Dependencies: []
 // Exports: isChannelCurrentlyVisible
 
-// Module 10214 (isChannelCurrentlyVisible)
+// Module 10215 (isChannelCurrentlyVisible)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

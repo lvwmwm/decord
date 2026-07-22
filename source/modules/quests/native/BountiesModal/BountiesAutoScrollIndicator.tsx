@@ -1,10 +1,10 @@
-// Module ID: 13831
-// Function ID: 104556
+// Module ID: 13838
+// Function ID: 104596
 // Name: BouncingArrow
 // Dependencies: []
 // Exports: default
 
-// Module 13831 (BouncingArrow)
+// Module 13838 (BouncingArrow)
 function BouncingArrow(children) {
   const sharedValue = arg1(dependencyMap[3]).useSharedValue(0);
   const arg1 = sharedValue;
@@ -45,7 +45,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { alignItems: "center", gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.root = obj;
-obj.ringContainer = { 9223372036854775807: 104, 0: "temp_banned", 0: "message", 0: "state" };
+obj.ringContainer = { <string:3426444977>: 104, <string:2874585443>: "temp_banned", <string:1648074851>: "message", <string:1666079313>: "state" };
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesAutoScrollIndicator.tsx");
@@ -63,13 +63,21 @@ export default function BountiesAutoScrollIndicator(showProgressRing) {
   const tmp3 = callback(arg1(dependencyMap[8]).ArrowSmallUpIcon, obj);
   arg1 = tmp3;
   obj = { style: tmp.root };
-  const obj1 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+  const obj1 = { cachedAt: null, edpbxy: "Array" };
   const intl = arg1(dependencyMap[10]).intl;
   obj1.children = intl.string(arg1(dependencyMap[10]).t.eafsh4);
   const items = [callback(arg1(dependencyMap[9]).Text, obj1), ];
   const obj2 = { style: tmp.ringContainer };
   if (flag) {
     const obj3 = {
+      "Bool(false)": "isArray",
+      "Bool(false)": "constructor",
+      "Bool(false)": "toString",
+      "Bool(false)": "isArray",
+      "Bool(false)": "isArray",
+      "Bool(false)": "isArray",
+      "Bool(false)": "toString",
+      "Bool(false)": "isArray",
       fill: 100 * showProgressRing.progress,
       tintColor: token,
       children() {

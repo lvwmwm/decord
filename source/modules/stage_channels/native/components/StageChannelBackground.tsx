@@ -1,10 +1,10 @@
-// Module ID: 10760
-// Function ID: 83626
+// Module ID: 10761
+// Function ID: 83639
 // Name: StageChannelBackground
 // Dependencies: []
 // Exports: default
 
-// Module 10760 (StageChannelBackground)
+// Module 10761 (StageChannelBackground)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

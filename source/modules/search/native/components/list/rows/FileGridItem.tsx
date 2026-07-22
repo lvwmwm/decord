@@ -1,9 +1,9 @@
-// Module ID: 15247
-// Function ID: 115108
+// Module ID: 15255
+// Function ID: 115151
 // Name: getAttachmentIcon
 // Dependencies: []
 
-// Module 15247 (getAttachmentIcon)
+// Module 15255 (getAttachmentIcon)
 function getAttachmentIcon(filename) {
   if (obj.isImageFile(filename)) {
     let tmp3Result = callback(arg1(dependencyMap[7]).ImageIcon, {});
@@ -25,7 +25,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const tmp4 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ icon: { "Null": null, "Null": null } });
+let closure_11 = arg1(dependencyMap[5]).createStyles({ icon: { <string:3596066964>: null, <string:3638417373>: null } });
 const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo(function FileGridItem(containerStyle) {
   const data = containerStyle.data;

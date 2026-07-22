@@ -1,10 +1,10 @@
-// Module ID: 13909
-// Function ID: 105223
+// Module ID: 13916
+// Function ID: 105263
 // Name: useVideoQuestPlayerAnalytics
 // Dependencies: []
 // Exports: default
 
-// Module 13909 (useVideoQuestPlayerAnalytics)
+// Module 13916 (useVideoQuestPlayerAnalytics)
 let closure_3 = importAll(dependencyMap[0]);
 const AppState = arg1(dependencyMap[1]).AppState;
 let closure_5 = importDefault(dependencyMap[2]);

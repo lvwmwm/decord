@@ -1,5 +1,5 @@
 // Module ID: 6939
-// Function ID: 55458
+// Function ID: 55469
 // Name: _toPropertyKey
 // Dependencies: []
 
@@ -118,7 +118,7 @@ const obj5 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
 
 export default withEqualityFnResult;
-export const DEFAULT_VIDEO_PROGRESS = { ddd: 1, ind: null, ty: 0 };
+export const DEFAULT_VIDEO_PROGRESS = { "Bool(true)": 1, "Bool(true)": null, "Bool(true)": 0 };
 export const VideoProgressState = obj;
 export const FetchStatus = { NONE: "NONE", FETCHING: "FETCHING", SUCCESS: "SUCCESS", FAILURE: "FAILURE" };
 export const useVideoQuestUIStore = withEqualityFnResult;

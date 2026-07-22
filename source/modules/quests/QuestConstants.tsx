@@ -1,10 +1,10 @@
-// Module ID: 5246
-// Function ID: 44530
+// Module ID: 4973
+// Function ID: 42942
 // Name: QuestsExperimentLocations
 // Dependencies: []
 // Exports: getQuestHomeFilterOptionItem
 
-// Module 5246 (QuestsExperimentLocations)
+// Module 4973 (QuestsExperimentLocations)
 const items = [require(dependencyMap[0]).QuestVariants.NITRO_2_POINT_0_CTA, require(dependencyMap[0]).QuestVariants.ORBS_MULTIPLIER_QUEST, require(dependencyMap[0]).QuestVariants.XBOX_GAME_PASS_QUEST];
 const result = importDefault(dependencyMap[1]).Millis.MINUTE * require(dependencyMap[2]).Quests.ConsecutiveHeartbeatPeriodMinutes;
 const _module = require(dependencyMap[3]);
@@ -52,7 +52,7 @@ export const QuestVariants = require(dependencyMap[0]).QuestVariants;
 export const NitroQuestVariants = set;
 export const QUESTS_SETTINGS_SECTION = "inventory";
 export const CONSECUTIVE_HEARTBEAT_PERIOD_MS = result;
-export const QUEST_BAR_SPRING_CONFIG_QUEST_ACCEPTED = {};
+export const QUEST_BAR_SPRING_CONFIG_QUEST_ACCEPTED = { apply: "df3228db1e67e406cba743551d2b055e", y: "clyde-avatar", borderRadius: "png" };
 export const QUEST_BAR_SPRING_CONFIG_QUEST_UNACCEPTED = {};
 export const MIN_SEC_UNTIL_NEXT_PROGRESS_UPDATE = 6;
 export const MIN_SEC_NOISE_PROGRESS_UPDATE = 2;

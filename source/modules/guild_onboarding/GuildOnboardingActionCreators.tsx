@@ -1,9 +1,9 @@
-// Module ID: 5333
-// Function ID: 45434
+// Module ID: 5060
+// Function ID: 43844
 // Name: _updateOnboardingResponses
 // Dependencies: []
 
-// Module 5333 (_updateOnboardingResponses)
+// Module 5060 (_updateOnboardingResponses)
 function _updateOnboardingResponses(guildId, arg1) {
   let flag = arg1;
   arg1 = guildId;

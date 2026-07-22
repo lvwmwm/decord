@@ -1,10 +1,10 @@
-// Module ID: 8611
-// Function ID: 68295
+// Module ID: 8612
+// Function ID: 68307
 // Name: MinecraftNeutralIcon
 // Dependencies: []
 // Exports: MinecraftNeutralIcon
 
-// Module 8611 (MinecraftNeutralIcon)
+// Module 8612 (MinecraftNeutralIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -26,7 +26,7 @@ export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor
   if (str2 === undefined) {
     str2 = "#fff";
   }
-  let obj = { -1399870276: "ERROR", 827417185: "ERROR", 1364418894: "NOT_RESPONDER", 1986308700: "NOT_RESPONDER" };
+  let obj = { paddingRight: -24, text: null, onPress: 1, size: "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(secondaryColor, obj);
   obj = {};
@@ -35,13 +35,13 @@ export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor
   const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), , ];
   const obj1 = { source: arg1(dependencyMap[6]), color: str };
   const items1 = [style];
-  const items2 = [...items1.flat(), { force: null, trackAnalytics: null }];
+  const items2 = [...items1.flat(), { 10360: 40, 10496: 40 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);
   const obj2 = { source: arg1(dependencyMap[7]), color: str2 };
   const items3 = [style];
-  const items4 = [...items3.flat(), { force: null, trackAnalytics: null }];
+  const items4 = [...items3.flat(), { 10360: 40, 10496: 40 }];
   obj2.style = items4;
   const merged3 = Object.assign(merged);
   items[2] = callback(arg1(dependencyMap[4]).BaseIconImage, obj2);

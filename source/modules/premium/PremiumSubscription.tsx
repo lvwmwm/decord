@@ -1,13 +1,10 @@
 // Module ID: 3786
 // Function ID: 29524
 // Name: getNonePlanIdForIntervalType
-// Dependencies: [1889, 2]
+// Dependencies: []
 // Exports: getBasePlanIdForSubscriptionItems, getNonePlanIdForSubscription
 
 // Module 3786 (getNonePlanIdForIntervalType)
-import TableId from "TableId";
-import result2 from "result2";
-
 function getNonePlanIdForIntervalType(interval, intervalCount) {
   let num = intervalCount;
   if (intervalCount === undefined) {
@@ -35,8 +32,10 @@ function getNonePlanIdForIntervalType(interval, intervalCount) {
 function getBaseSubscriptionItemForSubscriptionItems(arr) {
   return arr.find((arg0) => null != closure_1[arg0.planId] && null != closure_1[arg0.planId].premiumType);
 }
-({ SubscriptionPlans: closure_0, SubscriptionPlanInfo: closure_1, PremiumSubscriptionSKUs: closure_2 } = TableId);
-const result = result2.fileFinishedImporting("modules/premium/PremiumSubscription.tsx");
+const _module = require(dependencyMap[0]);
+({ SubscriptionPlans: closure_0, SubscriptionPlanInfo: closure_1, PremiumSubscriptionSKUs: closure_2 } = _module);
+const _module1 = require(dependencyMap[1]);
+const result = _module1.fileFinishedImporting("modules/premium/PremiumSubscription.tsx");
 
 export { getNonePlanIdForIntervalType };
 export const getNonePlanIdForSubscription = function getNonePlanIdForSubscription(arg0) {

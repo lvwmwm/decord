@@ -1,10 +1,10 @@
-// Module ID: 10529
-// Function ID: 82283
+// Module ID: 10530
+// Function ID: 82296
 // Name: usePipPosition
 // Dependencies: []
 // Exports: default
 
-// Module 10529 (usePipPosition)
+// Module 10530 (usePipPosition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/native/components/usePipPosition.tsx");

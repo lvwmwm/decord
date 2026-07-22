@@ -1,10 +1,10 @@
-// Module ID: 10187
-// Function ID: 78690
+// Module ID: 10188
+// Function ID: 78703
 // Name: InboxIcon
 // Dependencies: []
 // Exports: InboxIcon
 
-// Module 10187 (InboxIcon)
+// Module 10188 (InboxIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/InboxIcon.tsx");

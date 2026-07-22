@@ -1,10 +1,10 @@
-// Module ID: 14120
-// Function ID: 107207
+// Module ID: 14128
+// Function ID: 107250
 // Name: useShowLinkDecorationsSettingValue
 // Dependencies: []
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 14120 (useShowLinkDecorationsSettingValue)
+// Module 14128 (useShowLinkDecorationsSettingValue)
 function useShowLinkDecorationsSettingValue() {
   const items = [closure_2];
   return arg1(dependencyMap[2]).useStateFromStores(items, () => obj.alwaysShowLinkDecorations);

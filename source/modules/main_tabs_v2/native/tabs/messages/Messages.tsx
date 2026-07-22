@@ -1,9 +1,9 @@
-// Module ID: 14769
-// Function ID: 111339
+// Module ID: 14777
+// Function ID: 111382
 // Dependencies: []
 
-// Module 14769
-let closure_3 = [];
+// Module 14777
+let closure_3 = ["<string:3318677508>"];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

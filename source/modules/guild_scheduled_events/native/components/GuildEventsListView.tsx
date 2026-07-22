@@ -1,10 +1,10 @@
-// Module ID: 8451
-// Function ID: 67453
+// Module ID: 8452
+// Function ID: 67465
 // Name: FormSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 8451 (FormSeparator)
+// Module 8452 (FormSeparator)
 function FormSeparator() {
   const obj = { style: obj.spacer };
   return <closure_3 {...obj} />;

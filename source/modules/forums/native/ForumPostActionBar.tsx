@@ -1,33 +1,33 @@
-// Module ID: 10418
-// Function ID: 80277
+// Module ID: 10419
+// Function ID: 80290
 // Name: ForumPostActionBar
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 10418 (ForumPostActionBar)
-import closure_3 from "result";
-import closure_4 from "result";
-import { View } from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import { AnalyticsSections } from "result";
-import result from "result";
-import result from "result";
+// Module 10419 (ForumPostActionBar)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import { AnalyticsSections } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ jsx: closure_10, jsxs: closure_11 } = result);
+({ jsx: closure_10, jsxs: closure_11 } = __exportStarResult1);
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
 obj.actionBarContainer = obj;
-obj.actionRow = { positionBottom: null, positionRight: 0, text: 360, state: 0 };
-obj.reactionRow = { positionBottom: null, positionRight: 0, text: 360, state: 0 };
-obj.actionButton = { borderRadius: require("result").radii.xs, backgroundColor: require("result").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: require("result").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+obj.actionRow = {};
+obj.reactionRow = {};
+obj.actionButton = { borderRadius: require("__exportStarResult1").radii.xs, backgroundColor: require("__exportStarResult1").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: require("__exportStarResult1").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
 obj.actionButtonsContainer = { justifyContent: "flex-end" };
 obj.lastActionButton = { marginRight: 0 };
 obj.buttonText = { marginLeft: 8 };
 let closure_12 = obj.createStyles(obj);
-result = result.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
 
 export default function ForumPostActionBar(channel) {
   channel = channel.channel;
@@ -131,7 +131,7 @@ export default function ForumPostActionBar(channel) {
       obj5.onPress = items9;
       const obj7 = { size: "xs" };
       const items11 = [callback2(tmp20(tmp21[20]).BellIcon, obj7), ];
-      const obj8 = { delete: "2026-05-app-store-overlay-feature-gate", dispatch: "user", raw: "2026-03-quest-reload-video-on-obscured", style: tmp.buttonText };
+      const obj8 = { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011542551594659, "Null": 1758014435012901800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: -1096315541048896000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.buttonText };
       const intl2 = tmp20(tmp21[num3]).intl;
       obj8.children = intl2.string(tmp20(tmp21[num3]).t.0rQinA);
       items11[1] = callback2(tmp20(tmp21[19]).Text, obj8);

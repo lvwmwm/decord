@@ -1,9 +1,9 @@
-// Module ID: 10358
-// Function ID: 79941
+// Module ID: 10359
+// Function ID: 79954
 // Name: AnnouncementChannelLurkerBar
 // Dependencies: []
 
-// Module 10358 (AnnouncementChannelLurkerBar)
+// Module 10359 (AnnouncementChannelLurkerBar)
 class AnnouncementChannelLurkerBar {
   constructor(arg0) {
     arg1 = global.channel;

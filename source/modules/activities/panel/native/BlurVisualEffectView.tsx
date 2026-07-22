@@ -1,8 +1,8 @@
-// Module ID: 15582
-// Function ID: 118916
+// Module ID: 15590
+// Function ID: 118959
 // Dependencies: []
 
-// Module 15582
+// Module 15590
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
@@ -11,7 +11,7 @@ const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(() => {
   let obj = arg1(dependencyMap[5]);
   const token = obj.useToken(importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, "dark");
-  obj = { menuItems: "c67b491c21edfc140b968b3afa5e6528", position: "ic_video_disabled", align: "png", voiceUpsellDismissed: 16, showSparkles: 16, defaultSpeakerForGuildCall: 8, style: StyleSheet.absoluteFill };
+  obj = { "Null": "c67b491c21edfc140b968b3afa5e6528", "Null": "ic_video_disabled", defaultSpeakerForGuildCall: "png", defaultSpeakerForDMCall: 16, borderRadius: 16, padding: 8, style: StyleSheet.absoluteFill };
   const tmp2 = importDefault(dependencyMap[6]);
   obj.blurTintRgba = arg1(dependencyMap[3]).hexToRgbaString(closure_5);
   obj.android_fallbackColor = token;

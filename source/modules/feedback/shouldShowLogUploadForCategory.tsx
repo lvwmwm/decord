@@ -1,10 +1,10 @@
-// Module ID: 15901
-// Function ID: 121860
+// Module ID: 15909
+// Function ID: 121903
 // Name: shouldShowLogUploadForCategory
 // Dependencies: []
 // Exports: shouldShowLogUploadForCategory
 
-// Module 15901 (shouldShowLogUploadForCategory)
+// Module 15909 (shouldShowLogUploadForCategory)
 const FeedbackRating = require(dependencyMap[0]).FeedbackRating;
 let closure_1 = {};
 const _module = require(dependencyMap[1]);

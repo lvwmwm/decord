@@ -1,5 +1,5 @@
 // Module ID: 7451
-// Function ID: 59752
+// Function ID: 59763
 // Name: MarketingPageBannerTile
 // Dependencies: []
 // Exports: default
@@ -14,13 +14,13 @@ let obj = arg1(dependencyMap[4]);
 obj = { container: { width: "100%" } };
 obj = { padding: importDefault(dependencyMap[5]).space.PX_16, borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SECONDARY_ALT, overflow: "hidden" };
 obj.card = obj;
+const obj1 = { blurTheme: "9RNkeF", pressed: "VOICE_CHANNEL_EFFECTS_COACH_MARK", width: "OKzaN3", borderRadius: importDefault(dependencyMap[5]).radii.md, marginBottom: importDefault(dependencyMap[5]).space.PX_16, padding: importDefault(dependencyMap[5]).space.PX_8, alignSelf: "center" };
+obj.image = obj1;
 const tmp4 = arg1(dependencyMap[3]);
-obj.image = { borderRadius: importDefault(dependencyMap[5]).radii.md, marginBottom: importDefault(dependencyMap[5]).space.PX_16, padding: importDefault(dependencyMap[5]).space.PX_8, alignSelf: "center" };
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.md, marginBottom: importDefault(dependencyMap[5]).space.PX_16, padding: importDefault(dependencyMap[5]).space.PX_8, alignSelf: "center" };
 obj.bodyText = { marginTop: importDefault(dependencyMap[5]).space.PX_4 };
 const obj2 = { marginTop: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ctaButton = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { options: "100%", body: null, transform: null };
 let closure_8 = obj.createStyles(obj);
 const obj3 = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/premium/promotions/native/MarketingPageBannerTile.tsx");
@@ -85,16 +85,16 @@ export default function MarketingPageBannerTile(bannerFields) {
     tmp13 = callback(closure_3, obj4);
   }
   const items3 = [tmp13, , , ];
-  obj6 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014916683320921945, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044239101729723755, children: bannerFields.header };
+  obj6 = { "Null": "row", "Null": 32, children: bannerFields.header };
   items3[1] = callback(arg1(dependencyMap[13]).Text, obj6);
   const obj7 = { style: tmp.bodyText };
   const items4 = [formatStringWithCommonPremiumParams, " ", ];
   let tmp17 = null != helpArticleLinkProps;
   if (tmp17) {
     const obj8 = {
-      "Bool(false)": 292062.0791016034,
-      "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048046228771135,
-      "Bool(false)": -4169419838257399500000000000000000000000000000000000000000000000000000000000000,
+      lastEffect: "key",
+      events: "Text",
+      stores: "label",
       onPress() {
           return callback(closure_2[15]).openURL(helpArticleLinkProps.url);
         },

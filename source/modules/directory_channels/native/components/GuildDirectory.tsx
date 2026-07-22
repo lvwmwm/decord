@@ -1,10 +1,10 @@
-// Module ID: 11686
-// Function ID: 90663
+// Module ID: 11687
+// Function ID: 90676
 // Name: keyExtractor
 // Dependencies: []
 // Exports: default
 
-// Module 11686 (keyExtractor)
+// Module 11687 (keyExtractor)
 import ArrayResult from "module_20";
 
 function keyExtractor(type) {
@@ -41,7 +41,7 @@ function renderItem(item) {
   }
 }
 function GuildDirectoryHeaderRowItem(children) {
-  const obj = { delete: null, dispatch: null, raw: null, style: callback3().categorySectionText, children: children.children };
+  const obj = { "Null": true, "Null": true, alignItems: true, style: callback3().categorySectionText, children: children.children };
   return callback(arg1(dependencyMap[15]).Text, obj);
 }
 function GuildDirectoryHeader(guild) {
@@ -56,16 +56,17 @@ function GuildDirectoryHeader(guild) {
   obj.style = tmp.backgroundImage;
   const items = [callback(closure_6, obj), ];
   const obj1 = { style: tmp.textWrapper };
-  const obj2 = { delete: true, dispatch: true, raw: true, style: tmp.headerTitle };
+  const obj2 = { "Null": false, "Null": false, alignItems: false, style: tmp.headerTitle };
   const intl = arg1(dependencyMap[17]).intl;
   obj2.children = intl.string(arg1(dependencyMap[17]).t.IT7qoC);
   const items1 = [callback(arg1(dependencyMap[15]).Text, obj2), , , ];
-  const obj3 = { style: items2 };
+  const obj3 = { "Null": "Update build ", "Null": "<string:13762560>", alignItems: "<string:1090584576>" };
   const items2 = [tmp.headerDescription];
+  obj3.style = items2;
   const intl2 = arg1(dependencyMap[17]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[17]).t.5PoYts);
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
-  const obj4 = { variant: "primary-overlay", icon: callback(arg1(dependencyMap[19]).MagnifyingGlassIcon, {}) };
+  const obj4 = { variant: "primary-overlay", icon: callback(arg1(dependencyMap[19]).MagnifyingGlassIcon, { "Bool(false)": true, "Bool(false)": "/assets/modules/contact_sync/native/images" }) };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[17]).t.nL2wKD);
   obj4.onPress = guild.onPressSearch;
@@ -105,7 +106,7 @@ function GuildDirectoryFooter(hideFooter) {
       obj = { style: tmp.footer };
       const obj1 = { style: tmp.addIcon, children: callback(arg1(dependencyMap[25]).PlusMediumIcon, {}) };
       const items = [callback(closure_5, obj1), ];
-      const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+      const obj2 = {};
       const intl2 = arg1(dependencyMap[17]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[17]).t.H9jxS1);
       items[1] = callback(arg1(dependencyMap[15]).Text, obj2);
@@ -138,15 +139,15 @@ obj.border = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.list = obj1;
 obj.headerWrapper = { overflow: "hidden", height: GUILD_DIRECTORY_BASE_HEADER_HEIGHT };
-obj.backgroundImage = { <string:4069139795>: true, <string:1710685430>: true };
-obj.textWrapper = {};
+obj.backgroundImage = { emptyStateContentContainer: true, GAME_SERVERS: true };
+obj.textWrapper = { <string:1371037954>: -1, <string:1650820102>: 0, <string:1454062428>: 0, <string:1666079313>: 1, <string:1656272724>: 0, <string:491869806>: 0 };
 obj.headerTitle = {};
-obj.headerDescription = {};
+obj.headerDescription = { apply: true, y: true, bottom: true, flexDirection: true };
 obj.footer = {};
-const obj2 = { active: "r", activeIndex: "PAYMENT_GATEWAY", hoveringIndex: "r", "Null": "PAYMENT_GATEWAY", "Null": "r", "Null": "CONFERENCE_MODE_GUILDS", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
-obj.addIcon = obj2;
-obj.categorySectionText = {};
+obj.addIcon = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj.categorySectionText = { <string:2839314540>: "useValidOrderedFilterTokens", <string:172088541>: "JPEGInterchangeFormatLength" };
 let closure_23 = obj1.createStyles(obj);
+const obj2 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectory.tsx");
 
 export default function GuildDirectory(channel) {

@@ -1,10 +1,10 @@
-// Module ID: 11533
-// Function ID: 89831
+// Module ID: 11534
+// Function ID: 89844
 // Name: useGuildPowerupRollbackModalConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11533 (useGuildPowerupRollbackModalConfig)
+// Module 11534 (useGuildPowerupRollbackModalConfig)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

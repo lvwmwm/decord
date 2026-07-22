@@ -1,5 +1,5 @@
 // Module ID: 7191
-// Function ID: 57875
+// Function ID: 57886
 // Name: useNativeIAPPayments
 // Dependencies: []
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
@@ -186,7 +186,7 @@ let closure_9 = importDefault(dependencyMap[6]);
 ({ PurchaseTypeToAnalyticsPaymentType: closure_10, PurchaseTypes: closure_11, SubscriptionTypes: closure_12 } = arg1(dependencyMap[7]));
 let importDefaultResult = importDefault(dependencyMap[8]);
 importDefaultResult = new importDefaultResult("NativePaymentHooks.ios.tsx");
-let closure_14 = { "Bool(false)": null, "Bool(false)": null };
+let closure_14 = { "Bool(true)": "L", "Bool(true)": "L" };
 let closure_15 = false;
 const tmp2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.ios.tsx");

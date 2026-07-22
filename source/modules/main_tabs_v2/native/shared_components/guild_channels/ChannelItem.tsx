@@ -1,10 +1,10 @@
-// Module ID: 15232
-// Function ID: 115009
+// Module ID: 15240
+// Function ID: 115052
 // Name: LaunchpadChannelIcon
 // Dependencies: []
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15232 (LaunchpadChannelIcon)
+// Module 15240 (LaunchpadChannelIcon)
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -49,7 +49,7 @@ const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
 const tmp3 = arg1(dependencyMap[6]);
 let closure_11 = arg1(dependencyMap[9]).createStyles((layout) => {
   let obj = {};
-  obj = { "Bool(true)": "String", "Null": "construct", "Null": "a", "Null": "isArray", "Null": "isArray", "Null": "isArray", borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
+  obj = { GIFT_INFO_OPTIONS_MISSING: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000047872310352241, EmptyServerSettingsEmoji: 1758583134256773600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, editId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011273447027010936, focused: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000179210413226, selectionStart: -2852683437278811300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, selectionEnd: 131072.00119210233, borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
   let num = 6;
   if (obj3.isLayoutCozy(layout)) {
     num = 9;
@@ -67,7 +67,7 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let unread;
   let voiceStates;
   channel = channel.channel;
-  let obj = { fontFamily: null, fontSize: null };
+  let obj = { marginBottom: null, borderWidth: null };
   ({ unread, mentionCount, voiceStates, embeddedActivitiesCount } = channel);
   obj.accessibilityLabel = importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
   if (channel.isGuildVoice()) {
@@ -141,7 +141,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
-  obj1 = { stroke: true, strokeWidth: true, strokeDasharray: true, strokeLinecap: true, position: true, bottom: true, borderRadius: importDefault(dependencyMap[10]).radii.round };
+  obj1 = { FPS_15: "shapes", getImageSourcesFromImageProps: "Symbol", numpad 4: "accessibilityRole", useIsWindowSmall: "Reflect", maskRemainder: "HTTP", overflow: "Reflect", borderRadius: importDefault(dependencyMap[10]).radii.round };
   let obj6 = arg1(dependencyMap[11]);
   const merged = Object.assign(obj6.makeSizeStyle(layoutStyles.icon.wrapper.size));
   const merged1 = Object.assign(layoutStyles.icon.margin);

@@ -1,9 +1,9 @@
-// Module ID: 14967
-// Function ID: 112658
+// Module ID: 14975
+// Function ID: 112701
 // Name: handleJoinGuild
 // Dependencies: []
 
-// Module 14967 (handleJoinGuild)
+// Module 14975 (handleJoinGuild)
 function handleJoinGuild() {
   const result = importDefault(dependencyMap[11]).openGuildJoinServerScreen();
 }
@@ -13,7 +13,7 @@ function handleCreateGuild() {
 class GuildsEmptyContent {
   constructor(arg0) {
     tmp = jsxs();
-    obj = { top: null, y: null };
+    obj = { url: true, y: true };
     obj.style = tmp.scrollView;
     items = [, ];
     items[0] = tmp.scrollViewContentContainer;
@@ -34,7 +34,8 @@ class GuildsEmptyContent {
     obj5.children = intl.string(arg1(dependencyMap[13]).t.Y7Ml/I);
     items3 = [, ];
     items3[0] = jsx(arg1(dependencyMap[10]).Heading, obj5);
-    obj6 = { style: tmp.text };
+    obj6 = { "Null": "row", "Null": "center" };
+    obj6.style = tmp.text;
     intl2 = arg1(dependencyMap[13]).intl;
     obj6.children = intl2.string(arg1(dependencyMap[13]).t.kuyE4r);
     items3[1] = jsx(arg1(dependencyMap[10]).Text, obj6);
@@ -50,7 +51,7 @@ class GuildsEmptyContent {
     obj8.onPress = handleJoinGuild;
     items5 = [, ];
     items5[0] = jsx(arg1(dependencyMap[15]).Button, obj8);
-    obj9 = {};
+    obj9 = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7" };
     intl4 = arg1(dependencyMap[13]).intl;
     obj9.text = intl4.string(arg1(dependencyMap[13]).t.BetvT+);
     obj9.onPress = handleCreateGuild;
@@ -78,16 +79,16 @@ obj = { borderTopLeftRadius: importDefault(dependencyMap[9]).radii.xxl, borderTo
 obj.scrollView = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj1;
-obj.headerTitle = { y: "<string:410141890>", COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: "<string:402653184>", y: "<string:1358954496>", SlashIcon: "<string:1091642574>", y: true };
-const obj2 = { "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj.headerTitle = { enableObfuscation: 278976659549652240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, enableIntegrityCheck: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003198800546870335, channelId: -53935518247296530000000000000000000000000000000000000000000000000000, selfMute: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001433180125142404 };
+const obj2 = { alignItems: false, justifyContent: false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.scrollViewContentContainer = obj2;
-obj.headerInner = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
-const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
+obj.headerInner = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true };
+const obj3 = { 9223372036854775807: "row", 0: null, 9223372036854775807: null, 0: 4, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
 obj.content = obj3;
-obj.illustrationWrapper = { <string:2892040516>: 15, <string:2181768798>: "unit_id_in_range_by_hash" };
-const obj4 = { -9223372036854775808: 4, 0: 8, marginBottom: importDefault(dependencyMap[9]).space.PX_24 };
-obj.illustration = obj4;
+obj.illustrationWrapper = { "Bool(false)": "<string:1816203508>", "Bool(false)": "<string:1895826088>" };
 const tmp4 = arg1(dependencyMap[7]);
+obj.illustration = { marginBottom: importDefault(dependencyMap[9]).space.PX_24 };
+const obj4 = { marginBottom: importDefault(dependencyMap[9]).space.PX_24 };
 obj.buttonContainer = { paddingBottom: importDefault(dependencyMap[9]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 const obj5 = { paddingBottom: importDefault(dependencyMap[9]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.textWrapper = { marginHorizontal: importDefault(dependencyMap[9]).space.PX_16, marginVertical: importDefault(dependencyMap[9]).space.PX_24 };

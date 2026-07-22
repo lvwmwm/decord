@@ -1,5 +1,5 @@
 // Module ID: 8061
-// Function ID: 63959
+// Function ID: 63969
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -63,7 +63,7 @@ const tmp3 = (arg0) => {
         const items = [callback3(FeDropShadow(closure_1[7]), obj), callback3(FeDropShadow(closure_1[8]), { dx, dy, result: "offsetblur" }), , , ];
         obj = { floodColor: self.props.floodColor, floodOpacity: self.props.floodOpacity };
         items[2] = callback3(FeDropShadow(closure_1[9]), obj);
-        items[3] = callback3(FeDropShadow(closure_1[10]), { 454523917: "096be4aa10b9fbca63cf553105f899c4", -1576578797: "hi.messages.096be4aa10b9fbca63cf553105f899c4.compiled.messages" });
+        items[3] = callback3(FeDropShadow(closure_1[10]), { "Bool(true)": null, "Null": null });
         const obj1 = { result };
         const items1 = [callback3(FeDropShadow(closure_1[12]), {}), ];
         const obj2 = { in: str };

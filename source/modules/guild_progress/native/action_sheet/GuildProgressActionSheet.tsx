@@ -1,10 +1,10 @@
-// Module ID: 11498
-// Function ID: 89596
+// Module ID: 11499
+// Function ID: 89609
 // Name: GuildProgressHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11498 (GuildProgressHeader)
+// Module 11499 (GuildProgressHeader)
 class GuildProgressHeader {
   constructor(arg0) {
     ({ title, subtitle } = global);
@@ -30,7 +30,7 @@ const tmp2 = arg1(dependencyMap[5]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { padding: 16 }, header: {}, headerTitle: { "Null": null, "Null": null } };
+obj = { container: { padding: 16 }, header: {}, headerTitle: { value: null, on: null } };
 obj = { color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE };
 obj.headerSubtitle = obj;
 obj.footer = { marginTop: 4 };
@@ -228,7 +228,7 @@ export default function GuildProgressActionSheet(guild) {
   const tmp23 = View;
   const tmp24 = callback;
   const tmp25 = View;
-  const obj14 = { marginVertical: null, GUILDS_EMPTY_NUX: null, children: closure_15(View, obj7) };
+  const obj14 = { topOffset: null, marginLeft: null, children: closure_15(View, obj7) };
   return callback(arg1(dependencyMap[32]).ActionSheet, obj14);
 };
 export { GuildProgressHeader };

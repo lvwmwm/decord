@@ -1,20 +1,20 @@
-// Module ID: 11222
-// Function ID: 87384
+// Module ID: 11223
+// Function ID: 87397
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 11222 (EmptyState)
+// Module 11223 (EmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Null": "%MapIteratorPrototype%", "Null": "customEmojiSize", "Null": "encode", "Null": "vmafScore", "Null": "ncode", "Null": "B_found_wrong_ending", "Null": "AsyncIterator", "Null": "UNSET_EXPLICIT_CONTENT_REDACTION", "Null": "cc", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.container = obj;
 obj.textContainer = { flexShrink: 1 };
-obj.image = { "Null": 308491901604568800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000004667261458395371 };
+obj.image = { "Null": 3434895488224188400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000004133748112172252 };
 let closure_7 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");

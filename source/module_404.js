@@ -9,7 +9,7 @@ if (importDefault(dependencyMap[0])) {
   ({ isRTL: obj3.isRTL, doLeftAndRightSwapInRTL: obj3.doLeftAndRightSwapInRTL, localeIdentifier: obj3.localeIdentifier } = constants);
   const importDefaultResult = importDefault(dependencyMap[0]);
 } else {
-  obj = {};
+  obj = { GUILD_ROLE_UPDATE: 1766088043, GameDepthTier8LargeBadge: 827788593 };
 }
 obj = {
   getConstants() {

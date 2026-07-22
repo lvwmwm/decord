@@ -1,17 +1,17 @@
-// Module ID: 14907
-// Function ID: 112297
+// Module ID: 14915
+// Function ID: 112340
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14907 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 14915 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { online: 1, total: "Golive Simulcast without prober 720p@500k", paddingLeft: 144.002, paddingRight: null, tintColor: importDefault(dependencyMap[5]).colors.CHANNEL_ICON };
+obj = { tintColor: importDefault(dependencyMap[5]).colors.CHANNEL_ICON };
 obj.headerIcon = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

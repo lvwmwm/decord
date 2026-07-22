@@ -1,10 +1,10 @@
-// Module ID: 11351
-// Function ID: 88281
+// Module ID: 11352
+// Function ID: 88294
 // Name: generateBase64EncodedWaveform
 // Dependencies: []
 // Exports: emitVoiceMessageRecorded, endAudioRecording, startAudioRecording, triggerHaptic
 
-// Module 11351 (generateBase64EncodedWaveform)
+// Module 11352 (generateBase64EncodedWaveform)
 function generateBase64EncodedWaveform(waveform) {
   let arr = waveform;
   if (waveform.length > closure_16) {

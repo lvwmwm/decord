@@ -1,9 +1,9 @@
-// Module ID: 14358
-// Function ID: 108428
+// Module ID: 14366
+// Function ID: 108471
 // Dependencies: []
 // Exports: default
 
-// Module 14358
+// Module 14366
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).CollectiblesMobileShopScreen;

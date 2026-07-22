@@ -1,10 +1,10 @@
-// Module ID: 8408
-// Function ID: 66967
+// Module ID: 8409
+// Function ID: 66979
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8408 (_createForOfIteratorHelperLoose)
+// Module 8409 (_createForOfIteratorHelperLoose)
 let GuildSettingsSections;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;

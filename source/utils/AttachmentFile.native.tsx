@@ -1,5 +1,5 @@
 // Module ID: 4670
-// Function ID: 40603
+// Function ID: 40612
 // Name: _getAttachmentFile
 // Dependencies: []
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile

@@ -1,10 +1,10 @@
-// Module ID: 15006
-// Function ID: 113003
+// Module ID: 15014
+// Function ID: 113046
 // Name: IconWithBadge
 // Dependencies: []
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15006 (IconWithBadge)
+// Module 15014 (IconWithBadge)
 function IconWithBadge(includeNotificationsCount) {
   let flag = includeNotificationsCount.includeNotificationsCount;
   if (flag === undefined) {
@@ -80,7 +80,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { badgeWrapper: {}, backIcon: {} };
-obj = { _monthsRegex: 1.1, display: 27, CONNECTIONS_CALLBACK: "dm_spam_filter_v2", isFinalAmount: "enum", trackForumPostLinkCopied: null, video_source_codec: "\u2639\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+obj = { -9223372036854775808: 1.1, 0: 27, -9223372036854775808: "dm_spam_filter_v2", 0: "enum", 9223372036854775807: null, 0: "\u2639\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
 obj.iconWithBadge = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -116,7 +116,7 @@ export const LeftBackIconWithBadge = function LeftBackIconWithBadge(includeNotif
 export const CloseIconWithBadgeOnSide = function CloseIconWithBadgeOnSide(count) {
   count = count.count;
   let obj = { style: callback2().iconWithBadge };
-  const items = [callback(arg1(dependencyMap[13]).XLargeIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }), ];
+  const items = [callback(arg1(dependencyMap[13]).XLargeIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" }), ];
   let tmp3 = null;
   if (count > 0) {
     obj = { value: count };

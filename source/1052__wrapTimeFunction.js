@@ -1,7 +1,7 @@
 // Module ID: 1052
 // Function ID: 11260
 // Name: _wrapTimeFunction
-// Dependencies: [68747264, 69009408]
+// Dependencies: []
 
 // Module 1052 (_wrapTimeFunction)
 function _wrapTimeFunction(arg0) {
@@ -37,7 +37,7 @@ function _wrapXHR(arg0) {
   const require = arg0;
   return function() {
     const arg0 = this;
-    const items = [true, true, true, true];
+    const items = [null, null, null, "options"];
     const item = items.forEach((arg0) => {
       const self = arg0;
       let tmp = arg0 in self;
@@ -83,7 +83,7 @@ export const browserApiErrorsIntegration = _module.defineIntegration(function _b
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({}, {});
+    let closure_0 = Object.assign({ HUB_PROGRESS_ACTION_SHEET_ID: null, OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED: true, logo_display_config: "adjustable", toggleLocalSoundboardMute: "Bottom Sheet", canManageChannel: "image/webp", Ordering: 0.25 }, {});
     const obj = {
       name: "BrowserApiErrors",
       setupOnce() {

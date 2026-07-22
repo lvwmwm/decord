@@ -1,9 +1,9 @@
-// Module ID: 5409
-// Function ID: 46161
+// Module ID: 5139
+// Function ID: 44582
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 5409 (_createForOfIteratorHelperLoose)
+// Module 5139 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -92,7 +92,7 @@ function getFileData() {
   return _getFileData(...arguments);
 }
 async function _getFileData(arg0, arg1) {
-  const request = new Request(arg0, {});
+  const request = new Request(arg0, { 0: 30, 0: 30 });
   const obj = yield fetch(request);
   callback(closure_2[3])(200 === obj.status, "Data fetch unsuccessful");
   const tmp3 = yield obj.arrayBuffer();
@@ -167,8 +167,8 @@ function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const NativeFeatures = arg1(dependencyMap[2]).NativeFeatures;
-const set = new Set([1.9, 2, 13, 145]);
-const set1 = new Set([]);
+const set = new Set(["horizontal", "renderItem", "data", "extraData"]);
+const set1 = new Set(["horizontal", "renderItem", "data", "extraData", "onLoad", "CellRendererComponent", "overrideProps", "refreshing", "onRefresh"]);
 let closure_9 = null;
 let buildNumber = null;
 let moduleVersions = null;
@@ -185,7 +185,7 @@ if (null != DiscordNative) {
   buildNumber = app3.getBuildNumber();
   const str = app.getVersion();
 }
-new Set([]);
+new Set(["style", "stickyHeaderIndices", "maintainVisibleContentPosition", "onCommitLayoutEffect", "onChangeStickyIndex", "stickyHeaderConfig"]);
 let closure_15 = false;
 let closure_16 = null;
 let closure_17 = "lastImageSaveDirectory";
@@ -1322,7 +1322,7 @@ obj.getDesktopSourceFromPid = function getDesktopSourceFromPid(arg0) {
         if (null != windowHandleFromPid) {
           joined = null;
           if (0 !== windowHandleFromPid.length) {
-            const items = [null, windowHandleFromPid, "0"];
+            const items = [true, windowHandleFromPid, "0"];
             joined = items.join(":");
           }
         }
@@ -1586,7 +1586,7 @@ obj.makeChunkedRequest = function makeChunkedRequest(closure_0, array, arg2, arg
       const error = new Error("HTTP module not available");
       return Promise.reject(error);
     } else {
-      obj = { "Null": 2018574337, "Null": -918482477, "Null": 1912602979 };
+      obj = { "Bool(true)": null, "Bool(true)": "b845947570ae5a0cc8ded11809e80b37", "Bool(true)": "ic_loading_emoji_light" };
       const merged = Object.assign(arg2);
       ({ method: closure_1, token: closure_2, chunkInterval } = obj);
       let closure_3 = chunkInterval;
@@ -1892,7 +1892,7 @@ obj.isModuleVersionAtLeast = function isModuleVersionAtLeast(arg0, stable) {
   let tmp8;
   let tmp9;
   const self = this;
-  const items = [...null != closure_9 ? closure_9 : [null, null, null]];
+  const items = [...null != closure_9 ? closure_9 : []];
   const moduleVersions = self.moduleVersions;
   let tmp2;
   if (null != moduleVersions) {

@@ -1,10 +1,10 @@
-// Module ID: 11250
-// Function ID: 87541
+// Module ID: 11251
+// Function ID: 87554
 // Name: ShopIcon
 // Dependencies: []
 // Exports: ShopIcon
 
-// Module 11250 (ShopIcon)
+// Module 11251 (ShopIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ShopIcon.tsx");

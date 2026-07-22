@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} };
+    obj = { long: {}, narrow: {}, short: { accessibilityHint: "title", legacyCompat_selected: "__closure", legacyCompat_onPress: "props", eventTarget: "content" } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { accessibilityHint: "flex-start", legacyCompat_selected: 16, legacyCompat_onPress: 32, eventTarget: "relative" }, narrow: { accessibilityHint: "flex-start", legacyCompat_selected: 16, legacyCompat_onPress: 32, eventTarget: "relative" }, short: { accessibilityHint: "flex-start", legacyCompat_selected: 16, legacyCompat_onPress: 32, eventTarget: "relative" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "nl";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} } }, locale: "nl" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: { accessibilityHint: "title", legacyCompat_selected: "__closure", legacyCompat_onPress: "props", eventTarget: "content" } }, disjunction: { long: { accessibilityHint: "flex-start", legacyCompat_selected: 16, legacyCompat_onPress: 32, eventTarget: "relative" }, narrow: { accessibilityHint: "flex-start", legacyCompat_selected: 16, legacyCompat_onPress: 32, eventTarget: "relative" }, short: { accessibilityHint: "flex-start", legacyCompat_selected: 16, legacyCompat_onPress: 32, eventTarget: "relative" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "nl" });

@@ -1,10 +1,10 @@
-// Module ID: 16450
-// Function ID: 127077
+// Module ID: 16458
+// Function ID: 127119
 // Name: PendingRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 16450 (PendingRequestRow)
+// Module 16458 (PendingRequestRow)
 class PendingRequestRow {
   constructor(arg0) {
     request = global.request;
@@ -63,7 +63,7 @@ class PendingRequestRow {
     obj3 = { style: tmp.details };
     tmp11 = jsxs;
     tmp12 = View;
-    obj4 = {};
+    obj4 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>" };
     obj4.children = globalName;
     items2 = [, , ];
     items2[0] = jsx(arg1(dependencyMap[11]).Text, obj4);
@@ -77,7 +77,7 @@ class PendingRequestRow {
       tmp13 = jsx(arg1(dependencyMap[11]).Text, obj5);
     }
     items2[1] = tmp13;
-    obj6 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+    obj6 = { cachedAt: "center", edpbxy: "center" };
     obj6.children = result;
     items2[2] = jsx(arg1(dependencyMap[11]).Text, obj6);
     obj3.children = items2;
@@ -86,7 +86,7 @@ class PendingRequestRow {
       tmp42 = arg1;
       tmp43 = dependencyMap;
       tmp41 = jsx;
-      obj7 = {};
+      obj7 = { cachedAt: 400, edpbxy: 20 };
       num10 = 12;
       intl3 = arg1(dependencyMap[12]).intl;
       tmp44 = importDefault;
@@ -206,7 +206,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj.card = obj;
-const obj1 = { "Null": 7, "Null": 370, paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.row = obj1;
 const obj2 = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 const sum = importDefault(dependencyMap[5]).space.PX_16 + arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.NORMAL];
@@ -214,9 +214,9 @@ obj2.marginLeft = sum + importDefault(dependencyMap[5]).space.PX_12;
 obj.divider = obj2;
 const obj3 = { borderRadius: arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST };
 obj.avatar = obj3;
-const obj4 = { isArray: null, diversity: null, paddingLeft: importDefault(dependencyMap[5]).space.PX_12, paddingRight: importDefault(dependencyMap[5]).space.PX_4 };
+const obj4 = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>", paddingLeft: importDefault(dependencyMap[5]).space.PX_12, paddingRight: importDefault(dependencyMap[5]).space.PX_4 };
 obj.details = obj4;
-obj.actions = { "Null": 7, "Null": 370 };
+obj.actions = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 const tmp3 = arg1(dependencyMap[3]);
 obj.actionButton = { borderRadius: importDefault(dependencyMap[5]).radii.round };
 const obj5 = { borderRadius: importDefault(dependencyMap[5]).radii.round };
@@ -233,10 +233,10 @@ const obj9 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DE
 obj.inviteQrButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 const obj11 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.inviteShareButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.dividerRow = { "Null": 7, "Null": 370 };
+obj.dividerRow = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+const obj13 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.dividerLine = obj13;
 const obj12 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.dividerLine = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj13 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.dividerLabel = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
 let closure_9 = obj.createStyles(obj);
 const obj14 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
@@ -317,11 +317,11 @@ export default function PendingRequestList(arg0) {
   ({ card: arr3[0], row: arr3[1] } = tmp);
   const items3 = [callback(closure_5, { style: tmp.inviteIconContainer, children: callback(arg1(dependencyMap[21]).PlaneIllocon, { size: 32 }) }), , ];
   const obj8 = { style: tmp.details };
-  const obj9 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+  const obj9 = {};
   const intl2 = arg1(dependencyMap[12]).intl;
   obj9.children = intl2.string(importDefault(dependencyMap[13]).z9gkwZ);
   const items4 = [callback(arg1(dependencyMap[11]).Text, obj9), ];
-  const obj10 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+  const obj10 = { cachedAt: true, edpbxy: true };
   const intl3 = arg1(dependencyMap[12]).intl;
   obj10.children = intl3.string(importDefault(dependencyMap[13]).9t4+vC);
   items4[1] = callback(arg1(dependencyMap[11]).Text, obj10);

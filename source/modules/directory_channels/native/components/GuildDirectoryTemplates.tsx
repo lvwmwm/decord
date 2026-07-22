@@ -1,10 +1,18 @@
-// Module ID: 10044
-// Function ID: 77633
+// Module ID: 10045
+// Function ID: 77646
 // Name: GuildTemplatesItem
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 10044 (GuildTemplatesItem)
+// Module 10045 (GuildTemplatesItem)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { GuildDirectoryCreate } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 class GuildTemplatesItem {
   constructor(arg0) {
     guildTemplate = global.guildTemplate;
@@ -12,7 +20,7 @@ class GuildTemplatesItem {
     importDefault = global.onGuildTemplatePress;
     obj = {
       Icon() {
-            const obj = { source: guildTemplate(closure_2[8]).GUILD_TEMPLATE_ICONS[closure_0.id], disableColor: true, style: { "Null": "row", "Null": "center" } };
+            const obj = { source: guildTemplate(closure_2[8]).GUILD_TEMPLATE_ICONS[closure_0.id], disableColor: true, style: {} };
             return callback(guildTemplate(closure_2[7]).Icon, obj);
           },
       message: guildTemplate.label,
@@ -20,20 +28,14 @@ class GuildTemplatesItem {
             return onGuildTemplatePress(guildTemplate);
           }
     };
-    return jsx(importDefault(dependencyMap[6]), obj);
+    return jsx(require("__exportStarResult1"), obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ getHubGuildTemplatesMap: closure_6, HubGuildTemplateId: closure_7 } = arg1(dependencyMap[2]));
-const GuildDirectoryCreate = arg1(dependencyMap[3]).GuildDirectoryCreate;
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ label: { 0: "usePubSub", 9223372036854775807: "Array", 9223372036854775807: "ERNhYf" }, title: { "Null": null, "Null": null }, description: { textAlign: "center" }, header: {}, templateGroup: { marginHorizontal: 16 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryTemplates.tsx");
+({ View: closure_4, ScrollView: closure_5 } = __exportStarResult1);
+({ getHubGuildTemplatesMap: closure_6, HubGuildTemplateId: closure_7 } = __exportStarResult1);
+({ jsx: closure_9, jsxs: closure_10 } = __exportStarResult1);
+let closure_11 = __exportStarResult1.createStyles({ label: { 9223372036854775807: 24, 9223372036854775807: 24, -9223372036854775808: null }, title: { value: null, on: null }, description: { textAlign: "center" }, header: { 0: null, 9223372036854775807: null, 0: null }, templateGroup: { marginHorizontal: 16 } });
+const result = __exportStarResult1.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryTemplates.tsx");
 
 export default function GuildDirectoryTemplates(directoryGuildName) {
   const arg1 = directoryGuildName;
@@ -53,7 +55,7 @@ export default function GuildDirectoryTemplates(directoryGuildName) {
   obj = {};
   obj = { contentContainerStyle: obj1 };
   const obj2 = { style: tmp.header };
-  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   obj3.children = intl.format(arg1(dependencyMap[13]).t.T7aLYT, { guildName: directoryGuildName.directoryGuildName });
   const items1 = [callback2(arg1(dependencyMap[12]).Text, obj3), ];

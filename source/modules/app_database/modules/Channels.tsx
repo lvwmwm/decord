@@ -1,14 +1,13 @@
 // Module ID: 6885
-// Function ID: 54633
+// Function ID: 54644
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 0]
 
 // Module 6885 (_createForOfIteratorHelperLoose)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
@@ -94,7 +93,7 @@ let tmp2 = () => {
   class Channels {
     constructor() {
       Channels = this;
-      tmp = closure_2(this, Channels);
+      tmp = __exportStarResult1(this, Channels);
       this.privateChannels = [];
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
@@ -334,6 +333,6 @@ let tmp2 = () => {
   return callback(Channels, items);
 }();
 tmp2 = new tmp2();
-result = result.fileFinishedImporting("modules/app_database/modules/Channels.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/app_database/modules/Channels.tsx");
 
 export default tmp2;

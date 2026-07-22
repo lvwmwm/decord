@@ -1,10 +1,10 @@
-// Module ID: 11594
-// Function ID: 90119
+// Module ID: 11595
+// Function ID: 90132
 // Name: GuildPowerupsMultiPerkCard
 // Dependencies: []
 // Exports: default
 
-// Module 11594 (GuildPowerupsMultiPerkCard)
+// Module 11595 (GuildPowerupsMultiPerkCard)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

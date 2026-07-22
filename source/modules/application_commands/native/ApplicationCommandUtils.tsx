@@ -1,10 +1,10 @@
-// Module ID: 11326
-// Function ID: 88115
+// Module ID: 11327
+// Function ID: 88128
 // Name: getApplicationCommandsIconSource
 // Dependencies: []
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11326 (getApplicationCommandsIconSource)
+// Module 11327 (getApplicationCommandsIconSource)
 const DraftType = require(dependencyMap[0]).DraftType;
 let closure_4 = importDefault(dependencyMap[1]);
 const BuiltInSectionId = require(dependencyMap[2]).BuiltInSectionId;

@@ -1,12 +1,10 @@
 // Module ID: 6636
-// Function ID: 50958
+// Function ID: 50969
 // Name: _launchGuildBoostFlowOrAlert
-// Dependencies: [379322368, 131072, 963969024, 989855744, 4093640711, 3187671061, 33554446, 2097152000, 31, 653, 33, 1212]
+// Dependencies: []
 // Exports: launchGuildBoostFlowOrAlert
 
 // Module 6636 (_launchGuildBoostFlowOrAlert)
-import getSystemLocale from "getSystemLocale";
-
 async function _launchGuildBoostFlowOrAlert(arg0, arg1) {
   const fn = function*(source) {
     let analyticsLocations;
@@ -34,6 +32,8 @@ async function _launchGuildBoostFlowOrAlert(arg0, arg1) {
         const obj7 = callback(closure_2[6]);
       } else {
         obj1 = {
+          "Null": 1766088043,
+          "Null": 827788593,
           predicate(premiumTier) {
                 let num = 0;
                 if (premiumTier.premiumTier === TIER_2.TIER_2) {
@@ -72,7 +72,8 @@ let closure_4 = importDefault(dependencyMap[1]);
 ({ AnalyticEvents: closure_5, AnalyticsSections: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_7, PremiumTypes: closure_8 } = arg1(dependencyMap[3]));
-const result = getSystemLocale.fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
+const tmp3 = arg1(dependencyMap[3]);
+const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
 
 export const launchGuildBoostFlowOrAlert = function launchGuildBoostFlowOrAlert(arg0) {
   return _launchGuildBoostFlowOrAlert(...arguments);

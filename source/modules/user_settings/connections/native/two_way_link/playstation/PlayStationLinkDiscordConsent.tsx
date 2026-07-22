@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 70734
+// Module ID: 8971
+// Function ID: 70747
 // Name: PlayStationLinkDiscordConsent
 // Dependencies: []
 // Exports: PlayStationLinkDiscordConsent
 
-// Module 8970 (PlayStationLinkDiscordConsent)
+// Module 8971 (PlayStationLinkDiscordConsent)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
 const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;

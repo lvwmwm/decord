@@ -1,10 +1,10 @@
-// Module ID: 13482
-// Function ID: 102329
+// Module ID: 13489
+// Function ID: 102362
 // Name: EditNameplateInner
 // Dependencies: []
 // Exports: default
 
-// Module 13482 (EditNameplateInner)
+// Module 13489 (EditNameplateInner)
 function EditNameplateInner(user) {
   let selectedNameplate;
   let setSelectedNameplate;
@@ -139,7 +139,7 @@ function NameplateActionSheetPreview(arg0) {
   obj.accessible = true;
   obj = { style: tmp.nameplateGradientContainer };
   const items1 = [callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 100 }), callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 140 }), ];
-  const obj1 = { style: tmp.nameplatePreviewGradient, start: {}, end: {} };
+  const obj1 = { style: tmp.nameplatePreviewGradient, start: { 0: "M16.403 92.8191C15.5427 92.2796 14.8122 91.5563 14.264 90.701C13.7289 89.8425 13.373 88.8845 13.2177 87.8846L12.7062 84.4398C12.6818 84.3629 12.6423 84.2917 12.59 84.2303C12.5238 84.1762 12.4427 84.1438 12.3575 84.1372C12.2732 84.1475 12.1931 84.1796 12.125 84.2303C12.0713 84.2877 12.0385 84.3615 12.032 84.4398L11.4972 87.8846C11.3407 88.8878 10.9764 89.8471 10.4277 90.701C9.88799 91.5553 9.16531 92.2788 8.31198 92.8191L7.87023 93.1217C7.82068 93.1479 7.78017 93.1885 7.75398 93.2381C7.72292 93.2867 7.70642 93.3433 7.70642 93.401C7.70642 93.4587 7.72292 93.5153 7.75398 93.5639L7.87023 93.6803L8.31198 93.9829C9.16531 94.5232 9.88799 95.2467 10.4277 96.101C10.9764 96.9549 11.3407 97.9142 11.4972 98.9174L12.032 102.362C12.0432 102.44 12.0824 102.512 12.1423 102.563C12.2022 102.614 12.2786 102.642 12.3575 102.642C12.4404 102.643 12.5217 102.619 12.59 102.572C12.6374 102.507 12.6764 102.437 12.7062 102.362L13.2177 98.9174C13.3767 97.9185 13.7323 96.9611 14.264 96.101C14.8122 95.2457 15.5427 94.5224 16.403 93.9829L16.868 93.6803C16.9109 93.6528 16.9436 93.6119 16.961 93.5639C16.992 93.5153 17.0085 93.4587 17.0085 93.401C17.0085 93.3433 16.992 93.2867 16.961 93.2381C16.9436 93.1901 16.9109 93.1492 16.868 93.1217L16.403 92.8191Z", 0: "#FF78B7" }, end: {} };
   const items2 = [tmp.nameplatePreviewGradient.color, "" + tmp.nameplatePreviewGradient.color + "00"];
   obj1.colors = items2;
   items1[2] = callback2(importDefault(dependencyMap[28]), obj1);
@@ -147,7 +147,7 @@ function NameplateActionSheetPreview(arg0) {
   const items3 = [callback3(View, obj), callback2(arg1(dependencyMap[29]).NameplatePreview, { nameplate: memo, user, guildId, animate: true, aria-hidden: true }), ];
   const obj2 = { style: tmp.nameplateGradientContainer };
   const items4 = [callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 140 }), callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 100 }), ];
-  const obj3 = { style: tmp.nameplatePreviewGradient, start: {}, end: {} };
+  const obj3 = { style: tmp.nameplatePreviewGradient, start: { 0: "Array", 0: "isArray" }, end: { 0: "<string:691339265>", 0: "<string:1157300225>" } };
   const tmp11 = importDefault(dependencyMap[28]);
   const tmp4 = callback3;
   const tmp5 = View;
@@ -171,15 +171,15 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
-const tmp2 = arg1(dependencyMap[7]);
-obj.title = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.nameplatePreviewContainer = { 9223372036854775807: "\u0431\u0456\u043B\u044C\u0448\u0435 {{count}} \u0440\u043E\u043A\u0443", 0: "\u0431\u0456\u043B\u044C\u0448\u0435 {{count}} \u0440\u043E\u043A\u0456\u0432", 0: "\u0431\u0456\u043B\u044C\u0448\u0435 {{count}} \u0440\u043E\u043A\u0456\u0432", 9223372036854775807: "\u0431\u0456\u043B\u044C\u0448\u0435, \u043D\u0456\u0436 \u0437\u0430 {{count}} \u0440\u0456\u043A" };
+obj.bounceOffset = { "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "flex-start", "Bool(false)": 40, "Bool(false)": null };
+const obj1 = { width: "isArray", height: "AGE_VERIFICATION_GET_STARTED_MODAL_KEY", pointerEvents: 28928, color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.title = obj1;
+obj.nameplatePreviewContainer = {};
 obj.nameplateGradientContainer = { width: "100%" };
-const obj1 = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.nameplatePreviewGradient = { color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj2 = { "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.nameplatePreviewGradient = obj2;
 let closure_13 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const tmp2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/user_profile/native/EditNameplateActionSheet.tsx");
 
 export default function EditNameplateActionSheet(arg0) {
@@ -218,7 +218,7 @@ export default function EditNameplateActionSheet(arg0) {
   obj = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true };
   const obj1 = { style: tmp.container };
   const items1 = [callback2(View, { style: tmp.bounceOffset }), , ];
-  const obj3 = { "Null": "<string:552206337>", "Null": "<string:621281281>", "Null": "<string:1643511809>", style: tmp.title };
+  const obj3 = { <string:3339517956>: "<string:567803905>", <string:3335454724>: "<string:631111681>", <string:2271412228>: "<string:1649868801>", style: tmp.title };
   const intl = arg1(dependencyMap[17]).intl;
   obj3.children = intl.string(arg1(dependencyMap[17]).t.BwdeM1);
   items1[1] = callback2(arg1(dependencyMap[16]).Text, obj3);

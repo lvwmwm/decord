@@ -1,10 +1,10 @@
-// Module ID: 10182
-// Function ID: 78682
+// Module ID: 10183
+// Function ID: 78695
 // Name: GroupPlusIcon
 // Dependencies: []
 // Exports: GroupPlusIcon
 
-// Module 10182 (GroupPlusIcon)
+// Module 10183 (GroupPlusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GroupPlusIcon.tsx");

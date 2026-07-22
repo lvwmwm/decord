@@ -12,9 +12,9 @@ if (Intl.ListFormat) {
     obj = {};
     obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, narrow: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, short: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: {}, narrow: { accessibilityHint: null, legacyCompat_selected: 16, legacyCompat_onPress: 16, eventTarget: "flex" }, short: { accessibilityHint: null, legacyCompat_selected: 16, legacyCompat_onPress: 16, eventTarget: "flex" } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "bg";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, narrow: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, short: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "bg" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: { accessibilityHint: null, legacyCompat_selected: 16, legacyCompat_onPress: 16, eventTarget: "flex" }, short: { accessibilityHint: null, legacyCompat_selected: 16, legacyCompat_onPress: 16, eventTarget: "flex" } } }, locale: "bg" });

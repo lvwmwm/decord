@@ -1,10 +1,10 @@
-// Module ID: 12173
-// Function ID: 93608
+// Module ID: 12177
+// Function ID: 93634
 // Name: useEmbeddedActivityParticipantAvatarUris
 // Dependencies: []
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 12173 (useEmbeddedActivityParticipantAvatarUris)
+// Module 12177 (useEmbeddedActivityParticipantAvatarUris)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

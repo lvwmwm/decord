@@ -1,9 +1,9 @@
-// Module ID: 8317
-// Function ID: 65919
+// Module ID: 8318
+// Function ID: 65931
 // Name: hide_icymi_tab
 // Dependencies: []
 
-// Module 8317 (hide_icymi_tab)
+// Module 8318 (hide_icymi_tab)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/labs/LabFeatures.tsx");
 

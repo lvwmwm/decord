@@ -1,17 +1,17 @@
-// Module ID: 8998
-// Function ID: 70838
+// Module ID: 8999
+// Function ID: 70851
 // Name: FederatedSocialModal
 // Dependencies: []
 // Exports: default
 
-// Module 8998 (FederatedSocialModal)
+// Module 8999 (FederatedSocialModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
 const WebBrowserType = arg1(dependencyMap[3]).WebBrowserType;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { "Bool(true)": 16, "Bool(true)": 20, "Bool(true)": null } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { "Null": 16, "Null": 20, "Null": null } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
 
@@ -71,7 +71,7 @@ export default function FederatedSocialModal(platformType) {
       const exampleHandle = obj1.getExampleHandle(platformType);
       let obj2 = callback(platformType[10]);
       obj = { bottom: true, style: tmp.container };
-      obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
+      obj = { cachedAt: 1, edpbxy: 1, style: tmp.description };
       const intl2 = callback(platformType[7]).intl;
       obj1 = { serviceName: name };
       obj.children = intl2.formatToPlainString(callback(platformType[7]).t.7TByKh, obj1);

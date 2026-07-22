@@ -1,5 +1,5 @@
 // Module ID: 7631
-// Function ID: 61133
+// Function ID: 61143
 // Name: createDefaultReaction
 // Dependencies: []
 // Exports: createDefaultReaction, createForumPostActions
@@ -61,7 +61,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
   }
   let tmp13;
   if (null != tmp2) {
-    const obj4 = { disableAutoBlockNewlines: null, useActiveEvent: "2eaff20be2a75be7ccdd4c6f19f0eb36", fetchDirectoryCounts: "img_account_sync_youtube_white", emoji: tmp2 };
+    const obj4 = { "Bool(false)": null, "Bool(false)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(false)": "img_account_sync_youtube_white", emoji: tmp2 };
     tmp13 = obj4;
   }
   return tmp13;

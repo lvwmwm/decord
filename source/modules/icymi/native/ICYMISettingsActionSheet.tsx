@@ -1,10 +1,10 @@
-// Module ID: 15058
-// Function ID: 113363
+// Module ID: 15066
+// Function ID: 113406
 // Name: ICYMISettingsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15058 (ICYMISettingsActionSheet)
+// Module 15066 (ICYMISettingsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -28,7 +28,7 @@ export default function ICYMISettingsActionSheet() {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => state.getState());
   const arg1 = stateFromStoresObject;
   const ICYMIStaffDebuggingUtilityExperiment = arg1(dependencyMap[11]).ICYMIStaffDebuggingUtilityExperiment;
-  obj = { marginVertical: null, GUILDS_EMPTY_NUX: null };
+  obj = { topOffset: null, marginLeft: null };
   obj = {};
   const intl = arg1(dependencyMap[14]).intl;
   obj.title = intl.string(arg1(dependencyMap[14]).t.7Si8Ul);
@@ -94,7 +94,7 @@ export default function ICYMISettingsActionSheet() {
   obj5.onPress = function onPress() {
     let obj = callback(paths[16]);
     obj.itemInteracted("icymi_settings_action_sheet", "icymi_settings_action_sheet", "custom_scoring_button");
-    callback(paths[16]).feedPageActioned({ actionParameters: {} });
+    callback(paths[16]).feedPageActioned({ actionParameters: { "Bool(false)": "<string:3556770137>", "Bool(false)": "<string:553648603>", "Bool(false)": "<string:1092682005>", "Bool(false)": "auto.browser.browserapierrors.requestAnimationFrame" } });
     const obj2 = callback(paths[16]);
     const obj3 = callback(paths[24]);
     obj = { presentation: "modal" };

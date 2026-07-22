@@ -1,9 +1,9 @@
-// Module ID: 10417
-// Function ID: 80257
+// Module ID: 10418
+// Function ID: 80270
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10417 (_isNativeReflectConstruct)
+// Module 10418 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -53,7 +53,7 @@ function startInterval() {
 }
 function getOrCreateChannelState(arg0) {
   if (!(arg0 in closure_19.channels)) {
-    closure_19.channels[arg0] = { includesSingle: false, includesOne: false, includesOneSingle: false };
+    closure_19.channels[arg0] = { base: "spring", min: 0.4, max: 1 };
   }
   return closure_19.channels[arg0];
 }

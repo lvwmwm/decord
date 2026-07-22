@@ -1,9 +1,9 @@
-// Module ID: 11666
-// Function ID: 90451
+// Module ID: 11667
+// Function ID: 90464
 // Name: useDerivedColors
 // Dependencies: []
 
-// Module 11666 (useDerivedColors)
+// Module 11667 (useDerivedColors)
 function useDerivedColors(voiceMessageAnimationState, BRAND_600, RED_500, BRAND_6002, BRAND_6003) {
   BRAND_600 = voiceMessageAnimationState;
   const importDefault = BRAND_600;
@@ -138,14 +138,14 @@ function LockPill(safeAreaBottom) {
     const fn4 = function c() {
       const obj = { width: arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []) };
       const obj2 = arg0(tmp9[11]);
-      obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [false, false, false, false]);
       obj.opacity = derivedValue1.get();
       obj.backgroundColor = tmp3Result.get();
       const obj3 = arg0(tmp9[11]);
-      const items = ["<string:53040003>", "<string:806589490>", -8, -8];
+      const items = ["placeholder", "aria-label", -8, -8];
       obj.marginHorizontal = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
       const obj4 = arg0(tmp9[11]);
-      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [null, null, null, null]);
       return obj;
     };
     obj3 = { interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25, lockContainerOpacity: derivedValue1, lockedBackgroundColor: tmp3Result };
@@ -159,7 +159,7 @@ function LockPill(safeAreaBottom) {
       const obj2 = arg0(tmp9[11]);
       obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       const obj3 = arg0(tmp9[11]);
-      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [null, null, null, null]);
+      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       obj.tintColor = tmp9.get();
       return obj;
     };
@@ -250,14 +250,14 @@ function LockPill(safeAreaBottom) {
     const fn4 = function c() {
       const obj = { width: arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []) };
       const obj2 = arg0(tmp9[11]);
-      obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [false, false, false, false]);
       obj.opacity = derivedValue1.get();
       obj.backgroundColor = tmp3Result.get();
       const obj3 = arg0(tmp9[11]);
-      const items = ["<string:53040003>", "<string:806589490>", -8, -8];
+      const items = ["placeholder", "aria-label", -8, -8];
       obj.marginHorizontal = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
       const obj4 = arg0(tmp9[11]);
-      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [null, null, null, null]);
       return obj;
     };
     obj3 = { interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25, lockContainerOpacity: derivedValue1, lockedBackgroundColor: tmp3Result };
@@ -271,7 +271,7 @@ function LockPill(safeAreaBottom) {
       const obj2 = arg0(tmp9[11]);
       obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       const obj3 = arg0(tmp9[11]);
-      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [null, null, null, null]);
+      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       obj.tintColor = tmp9.get();
       return obj;
     };
@@ -348,12 +348,13 @@ let closure_23 = arg1(dependencyMap[17]).createStyles((width) => {
   obj.trashContainer = { width, height: width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   const obj1 = { width, height: width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   obj.sendContainer = { width, height: width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
-  obj.voiceChatContainer = { height: width };
+  const obj3 = { backgroundColor: true, borderWidth: 6, borderRadius: 2, justifyContent: null, height: width };
+  obj.voiceChatContainer = obj3;
   const obj2 = { width, height: width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   obj.lockContainer = { width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, shadowColor: importDefault(dependencyMap[18]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: arg1(dependencyMap[19]).DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj.lockParentContainer = { position: "absolute", right: closure_15, width };
-  const obj4 = { alignSelf: "usePubSub", fontSize: "Array", marginBottom: "ERNhYf", tintColor: importDefault(dependencyMap[18]).colors.ICON_SUBTLE };
-  obj.chevon = obj4;
+  const obj5 = { alignSelf: 24, fontSize: 24, marginBottom: null, tintColor: importDefault(dependencyMap[18]).colors.ICON_SUBTLE };
+  obj.chevon = obj5;
   return obj;
 });
 const PLUM_13 = importDefault(dependencyMap[18]).unsafe_rawColors.PLUM_13;
@@ -535,7 +536,7 @@ let closure_33 = importAllResult.memo((initialAnimation) => {
   if (null == stringResult) {
     return null;
   } else {
-    obj = { style: tmp35 };
+    obj = { "Null": "Update build ", "Null": "<string:13762560>", alignItems: "<string:1090584576>", style: tmp35 };
     if (obj.useMobileVisualRefreshConfig({ location: "VoiceMessagePrompt" }).enabled) {
       obj1 = { maxFontSizeMultiplier: 2 };
       let obj2 = obj1;
@@ -577,7 +578,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   const importDefault = exiting;
   let obj = arg1(dependencyMap[21]);
   const tmp2 = callback5(obj.useToken(importDefault(dependencyMap[18]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  const insets = importDefault(dependencyMap[31])({ MKTG_HYPESQUAD_FORM_SUBMITTED: null, afterMs: null }).insets;
+  const insets = importDefault(dependencyMap[31])({ -1397959526: null, 1449288620: null }).insets;
   const tmp3 = importDefault(dependencyMap[32])();
   const dependencyMap = tmp3;
   const diff = insets.bottom - tmp3.bottom;
@@ -748,7 +749,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   const derivedValue1 = obj10.useDerivedValue(ue);
   obj2 = { style: items1, pointerEvents: "none" };
   const items1 = [tmp2.container, animatedStyle5];
-  obj3 = { -1135386015: null, 833392556: null, 1381785934: null, height: derivedValue, radius: result, voiceMessageAnimationState };
+  obj3 = { -732732831: null, 1521265836: null, 1381785934: null, height: derivedValue, radius: result, voiceMessageAnimationState };
   const items2 = [callback2(memoResult, obj3), callback2(memoResult, { height: derivedValue1, offsetThreshold: 30, radius: result, voiceMessageAnimationState })];
   obj2.children = items2;
   const items3 = [callback3(importDefault(dependencyMap[11]).View, obj2), , ];

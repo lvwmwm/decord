@@ -1,10 +1,10 @@
-// Module ID: 10228
-// Function ID: 79043
+// Module ID: 10229
+// Function ID: 79056
 // Name: isInMentionRaidExperiment
 // Dependencies: []
 // Exports: isInMentionRaidExperiment, useIsMentionRaidExperimentEnabled
 
-// Module 10228 (isInMentionRaidExperiment)
+// Module 10229 (isInMentionRaidExperiment)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_automod/ExperimentUtils.tsx");
 

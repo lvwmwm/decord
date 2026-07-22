@@ -11,7 +11,7 @@ const fn = function t(moment) {
     weekdays: "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split("_"),
     weekdaysShort: "\u5468\u65E5_\u5468\u4E00_\u5468\u4E8C_\u5468\u4E09_\u5468\u56DB_\u5468\u4E94_\u5468\u516D".split("_"),
     weekdaysMin: "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split("_"),
-    longDateFormat: {},
+    longDateFormat: { "Bool(true)": "A h:mm \u092C\u091C\u0947", "Bool(true)": "A h:mm:ss \u092C\u091C\u0947", "Bool(true)": "DD/MM/YYYY", "Bool(true)": "D MMMM YYYY", "Bool(true)": "D MMMM YYYY, A h:mm \u092C\u091C\u0947", "Bool(true)": "dddd, D MMMM YYYY, A h:mm \u092C\u091C\u0947", "Bool(true)": "%s \u092E\u0947\u0902", "Bool(true)": "%s \u092A\u0939\u0932\u0947", "Bool(true)": "\u0915\u0941\u091B \u0939\u0940 \u0915\u094D\u0937\u0923", "Bool(true)": "%d \u0938\u0947\u0915\u0902\u0921" },
     meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
     meridiemHour(arg0, arg1) {
       let num = arg0;
@@ -84,7 +84,7 @@ const fn = function t(moment) {
       return arg0 + "\u65E5";
     },
     relativeTime: {},
-    week: { "Bool(true)": null, "Bool(true)": null }
+    week: { emoji: false, me: false }
   });
 };
 if ("object" === typeof exports) {
@@ -96,7 +96,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

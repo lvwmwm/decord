@@ -1,9 +1,9 @@
-// Module ID: 11356
-// Function ID: 88320
+// Module ID: 11357
+// Function ID: 88333
 // Name: ChatInputAccessibilityDivider
 // Dependencies: []
 
-// Module 11356 (ChatInputAccessibilityDivider)
+// Module 11357 (ChatInputAccessibilityDivider)
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -14,7 +14,7 @@ const memoResult = importAllResult.memo(() => {
   if (obj.useIsScreenReaderEnabled()) {
     tmp = null;
     if (!obj2.isAndroid()) {
-      obj = {};
+      obj = { method: "<string:1607073794>", referrerPolicy: "<string:899678210>", 0: "<string:606208001>", 0: "<string:1607335938>" };
       const intl = arg1(dependencyMap[5]).intl;
       obj.accessibilityLabel = intl.string(arg1(dependencyMap[5]).t.uKZtC/);
       const items = [absoluteFill.absoluteFill, ];

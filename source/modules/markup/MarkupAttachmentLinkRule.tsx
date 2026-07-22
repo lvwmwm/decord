@@ -1,5 +1,5 @@
 // Module ID: 4572
-// Function ID: 40076
+// Function ID: 40084
 // Dependencies: []
 
 // Module 4572
@@ -7,7 +7,7 @@ let closure_0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discord
 let obj = {};
 obj = {
   order: importDefault(dependencyMap[0]).defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [],
+  requiredFirstCharacters: [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000],
   match(arg0) {
     return regex.exec(arg0);
   },

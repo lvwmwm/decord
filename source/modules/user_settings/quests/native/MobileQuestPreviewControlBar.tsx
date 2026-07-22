@@ -1,9 +1,9 @@
-// Module ID: 13949
-// Function ID: 105997
+// Module ID: 13956
+// Function ID: 106037
 // Name: MobileQuestPreviewControlBar
 // Dependencies: []
 
-// Module 13949 (MobileQuestPreviewControlBar)
+// Module 13956 (MobileQuestPreviewControlBar)
 class MobileQuestPreviewControlBar {
   constructor(arg0) {
     questId = global.questId;
@@ -205,7 +205,7 @@ class MobileQuestPreviewControlBar {
       tmp33 = arg1;
       tmp34 = dependencyMap;
       num2 = 20;
-      obj7 = { hasMaxConnections: 1, isBoostOnlySubscription: "center" };
+      obj7 = { cachedAt: 1, edpbxy: "center" };
       obj7.style = tmp.errorText;
       obj7.children = stateFromStores.message;
       tmp31 = jsx(arg1(dependencyMap[20]).Text, obj7);
@@ -223,7 +223,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 const AppRoutes = arg1(dependencyMap[5]).AppRoutes;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { "Bool(false)": null, "Bool(false)": null } };
+obj = { container: { 9223372036854775807: null, 9223372036854775807: null } };
 obj = { gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.questInputContainer = obj;
 obj.searchField = {};

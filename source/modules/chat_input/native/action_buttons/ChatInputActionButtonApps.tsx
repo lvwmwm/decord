@@ -1,8 +1,8 @@
-// Module ID: 11336
-// Function ID: 88157
+// Module ID: 11337
+// Function ID: 88170
 // Dependencies: []
 
-// Module 11336
+// Module 11337
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ChatInputActionType = arg1(dependencyMap[2]).ChatInputActionType;

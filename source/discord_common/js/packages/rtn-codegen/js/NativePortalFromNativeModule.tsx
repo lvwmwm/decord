@@ -1,9 +1,9 @@
-// Module ID: 8274
-// Function ID: 65324
+// Module ID: 8275
+// Function ID: 65336
 // Name: enforcing
 // Dependencies: []
 
-// Module 8274 (enforcing)
+// Module 8275 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativePortalFromNativeModule");
 const _module = require(dependencyMap[1]);

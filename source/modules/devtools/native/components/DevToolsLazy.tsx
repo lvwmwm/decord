@@ -1,17 +1,17 @@
-// Module ID: 13380
-// Function ID: 101721
+// Module ID: 13387
+// Function ID: 101754
 // Name: NativeModules
 // Dependencies: []
 // Exports: default
 
-// Module 13380 (NativeModules)
+// Module 13387 (NativeModules)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const NativeModules = arg1(dependencyMap[2]).NativeModules;
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const jsx = arg1(dependencyMap[5]).jsx;
-const obj = {};
+const obj = { flexDirection: false, alignItems: false, gap: false, width: false };
 if (obj2.isAndroid()) {
   let keyModifierControl = importDefault(dependencyMap[7]).getConstants().keyModifierControl;
   const importDefaultResult = importDefault(dependencyMap[7]);

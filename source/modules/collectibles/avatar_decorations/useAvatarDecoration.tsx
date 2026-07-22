@@ -1,10 +1,10 @@
-// Module ID: 9080
-// Function ID: 71172
+// Module ID: 9081
+// Function ID: 71185
 // Name: getAvatarDecoration
 // Dependencies: []
 // Exports: useAvatarDecoration
 
-// Module 9080 (getAvatarDecoration)
+// Module 9081 (getAvatarDecoration)
 function getAvatarDecoration(user, guildId) {
   let tmp = arg2;
   if (arg2 === undefined) {

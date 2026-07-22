@@ -1,10 +1,10 @@
-// Module ID: 12796
-// Function ID: 98036
+// Module ID: 12803
+// Function ID: 98069
 // Name: HideMutedChannelsOption
 // Dependencies: []
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction
 
-// Module 12796 (HideMutedChannelsOption)
+// Module 12803 (HideMutedChannelsOption)
 function HideMutedChannelsOption(guild) {
   const arg1 = guild.guild;
   let obj = arg1(dependencyMap[17]);
@@ -134,7 +134,7 @@ function ServerTagOption(guild) {
     const guildTagBadgeUrl = obj1.getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
     obj = {};
     obj = { style: tmp.serverTagLabel };
-    obj1 = { "Null": "Array", "Null": "label_type" };
+    obj1 = { y: "BG_GRADIENT_NEON_NIGHTS_3", getRow: 100 };
     const obj2 = {};
     const profile2 = guild.profile;
     let tag;
@@ -150,7 +150,7 @@ function ServerTagOption(guild) {
     obj2.badgeSize = GuildTagBadgeSize.SIZE_16;
     obj1.children = callback3(arg1(dependencyMap[42]).BaseGuildTagChiplet, obj2);
     const items = [callback3(View, obj1), ];
-    const obj3 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
+    const obj3 = {};
     const intl = arg1(dependencyMap[19]).intl;
     obj3.children = intl.string(arg1(dependencyMap[19]).t.2QmKZ2);
     items[1] = callback3(arg1(dependencyMap[43]).Text, obj3);
@@ -242,7 +242,7 @@ obj = { guildServerAvatar: { marginRight: 4 } };
 obj = { color: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, fontSize: 12 };
 obj.identityName = obj;
 obj.identitySublabel = { flexDirection: "row" };
-const obj1 = { "Null": 7, "Null": 370, columnGap: importDefault(dependencyMap[16]).space.PX_8 };
+const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", columnGap: importDefault(dependencyMap[16]).space.PX_8 };
 obj.serverTagLabel = obj1;
 let closure_23 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[14]);

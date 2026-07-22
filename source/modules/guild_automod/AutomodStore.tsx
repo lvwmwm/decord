@@ -1,10 +1,10 @@
-// Module ID: 16106
-// Function ID: 124163
+// Module ID: 16114
+// Function ID: 124205
 // Name: useSyncAutomodRules
 // Dependencies: []
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRulesEffect
 
-// Module 16106 (useSyncAutomodRules)
+// Module 16114 (useSyncAutomodRules)
 function useSyncAutomodRules(arg0) {
   const arg1 = arg0;
   const tmp2 = callback(React.useState(false), 2);
@@ -33,6 +33,9 @@ const withEqualityFn = arg1(dependencyMap[5]).createWithEqualityFn((arg0, arg1) 
   arg1 = arg0;
   const dependencyMap = arg1;
   const obj = {
+    1649826915: null,
+    1749965393: null,
+    -322133765: null,
     rules: {},
     updateRule(guildId) {
       let triggerType;
@@ -82,8 +85,7 @@ const withEqualityFn = arg1(dependencyMap[5]).createWithEqualityFn((arg0, arg1) 
         obj.error = null;
         arg0(obj);
       });
-    },
-    removeRule
+    }
   };
   function removeRule(arg0, arg1) {
     const rules = arg1().rules;
@@ -109,6 +111,7 @@ const withEqualityFn = arg1(dependencyMap[5]).createWithEqualityFn((arg0, arg1) 
       arg0(obj);
     });
   }
+  obj.removeRule = removeRule;
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_2 = callback2(removeRule);
   obj.syncRules = function() {

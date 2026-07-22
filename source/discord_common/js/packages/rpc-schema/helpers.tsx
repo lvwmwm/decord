@@ -1,10 +1,10 @@
-// Module ID: 13284
-// Function ID: 100910
+// Module ID: 13291
+// Function ID: 100943
 // Name: RPCCommands
 // Dependencies: []
 // Exports: joiEnum, joiReqObj
 
-// Module 13284 (RPCCommands)
+// Module 13291 (RPCCommands)
 let RPCCommands;
 let RPCEvents;
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 11800
-// Function ID: 91573
+// Module ID: 11801
+// Function ID: 91586
 // Name: useCanPinChannelsInGuild
 // Dependencies: []
 // Exports: useCanPinChannelsInGuild
 
-// Module 11800 (useCanPinChannelsInGuild)
+// Module 11801 (useCanPinChannelsInGuild)
 const _module = require(dependencyMap[0]);
 let closure_2 = _module.createApexExperiment({ defaultConfig: { canPinEverywhere: false }, variations: { [1]: { canPinEverywhere: true } } });
 const _module1 = require(dependencyMap[2]);

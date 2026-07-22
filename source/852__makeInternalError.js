@@ -1189,7 +1189,7 @@ export const Client = () => {
       }).then(null, (originalException) => {
         if (!callback4(originalException)) {
           if (!callback3(originalException)) {
-            let obj = { mechanism: { id: false, gameId: false } };
+            let obj = { mechanism: { priority: false, "Bool(false)": false } };
             obj = { __sentry__: true };
             obj.data = obj;
             obj.originalException = originalException;

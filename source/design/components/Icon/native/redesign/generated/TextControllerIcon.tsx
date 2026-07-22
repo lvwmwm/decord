@@ -1,5 +1,5 @@
 // Module ID: 4633
-// Function ID: 40280
+// Function ID: 40288
 // Name: TextControllerIcon
 // Dependencies: []
 // Exports: TextControllerIcon

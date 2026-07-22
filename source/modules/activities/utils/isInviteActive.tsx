@@ -1,10 +1,10 @@
-// Module ID: 10895
-// Function ID: 84712
+// Module ID: 10896
+// Function ID: 84725
 // Name: result
 // Dependencies: []
 // Exports: default
 
-// Module 10895 (result)
+// Module 10896 (result)
 const result = 2 * importDefault(dependencyMap[0]).Millis.HOUR;
 const result1 = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");
 

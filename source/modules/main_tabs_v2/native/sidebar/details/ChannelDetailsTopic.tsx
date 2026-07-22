@@ -1,9 +1,9 @@
-// Module ID: 15299
-// Function ID: 116355
+// Module ID: 15307
+// Function ID: 116398
 // Name: GuildChannelDetailsTopic
 // Dependencies: []
 
-// Module 15299 (GuildChannelDetailsTopic)
+// Module 15307 (GuildChannelDetailsTopic)
 function GuildChannelDetailsTopic(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -138,9 +138,8 @@ function GuildChannelDetailsTopic(channel) {
     PressableOpacity = arg1(dependencyMap[15]).PressableOpacity;
   }
   obj2 = {};
-  obj3 = { Globe: null, FITNESS: 0, audioJitterBufferHistogram: 0, invalidatePushSyncTokens: null, style: tmp.hidden };
+  obj3 = { style: tmp.hidden, children: callback2(arg1(dependencyMap[16]).Text, obj4) };
   obj4 = { variant: "heading-sm/normal", style: tmp.topicText, onTextLayout: callback, onLayout: callback1, children: memo3 };
-  obj3.children = callback2(arg1(dependencyMap[16]).Text, obj4);
   const items8 = [callback2(first1, obj3), ];
   const obj5 = { style: items9 };
   const items9 = [tmp.topic, animatedStyle];
@@ -200,7 +199,7 @@ function PrivateChannelDetailsTopic(channel) {
   });
   let tmp2 = null;
   if (null != stateFromStores) {
-    obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
+    obj = { cachedAt: false, edpbxy: false };
     obj = { textAlign: channel.textAlign };
     obj.style = obj;
     obj.children = stateFromStores;
@@ -215,7 +214,7 @@ function GroupDMChannelDetailsTopic(channel) {
   const stateFromStores = obj.useStateFromStores(items, () => channel(closure_2[20]).getPrivateChannelUserTagsString(channel.recipients, closure_7));
   let tmp2 = null;
   if (null != stateFromStores) {
-    obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
+    obj = { cachedAt: false, edpbxy: false };
     obj = { textAlign: channel.textAlign };
     obj.style = obj;
     obj.children = stateFromStores;
@@ -238,7 +237,7 @@ if (obj2.isAndroid()) {
   num = 4;
 }
 const obj2 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[8]).createStyles({ hidden: { 9223372036854775807: "<string:1425887744>", 9223372036854775807: "<string:1312936824>", overflow: "<string:1627390343>", OPERATION_CANCELED: "<string:3175236087>" }, topic: { overflow: "hidden" }, gradient: { SDK_VERSION: null, numberOfLines: null }, expanded: { textAlign: "center" }, topicText: { paddingVertical: 5 } });
+let closure_15 = arg1(dependencyMap[8]).createStyles({ hidden: { flex: "<string:1429688832>", height: "<string:3225546230>", borderRadius: "<string:1627390254>", backgroundColor: "<string:2652783095>" }, topic: { overflow: "hidden" }, gradient: { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" }, expanded: { textAlign: "center" }, topicText: { paddingVertical: 5 } });
 let closure_16 = {};
 let closure_17 = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
 let closure_18 = { code: "function ChannelDetailsTopicTsx1(){const{expandedHeight,truncatedHeight,EMPTY_STYLE,withSpring,expanded,SPRING_CHANNEL_DETAILS}=this.__closure;const _expandedHeight=expandedHeight.get();const _truncatedHeight=truncatedHeight.get();if(_truncatedHeight==null||_expandedHeight==null)return EMPTY_STYLE;return{height:withSpring(expanded?_expandedHeight:_truncatedHeight,SPRING_CHANNEL_DETAILS)};}" };

@@ -1,24 +1,24 @@
-// Module ID: 12117
-// Function ID: 93351
+// Module ID: 12121
+// Function ID: 93377
 // Name: MediaModalOverlayHeader
 // Dependencies: []
 // Exports: MediaModalOverlayHeader
 
-// Module 12117 (MediaModalOverlayHeader)
+// Module 12121 (MediaModalOverlayHeader)
 importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { getApplication: null, bodyContent: "Shape 2", timestampSeparator: 3, alertInfoBox: 2, bottomSheetPosition: 0, REFRESH_SMALL_16: 2, height: arg1(dependencyMap[4]).NAV_BAR_HEIGHT };
+obj = { "Bool(true)": "<string:1900043246>", "Bool(true)": "View", "Bool(true)": "container", "Bool(true)": "typingUserIds", "Bool(true)": "dispatchFrameUrl", "Bool(true)": "<string:3252764928>", height: arg1(dependencyMap[4]).NAV_BAR_HEIGHT };
 obj.navbarInner = obj;
 obj.navbarLeft = {};
-obj.navbarRight = { guildsBarIconDrawerStyle: 1, STAGES: 0, display: 10, flexGrow: 1 };
-obj.navbarName = { createStyles: "Text", left: "Array", ddd: "isArray", values: "limit" };
-obj.navbarNameInner = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000106099789588, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013274422650155, "Null": -0.00000000000000000000000000000002773345591782207, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007364491566969292, "Null": 0.00000000000000000000000000000000000000000000000000000000031861838222649046, "Null": 78804276603829520000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001811340995047904 };
+obj.navbarRight = { "Bool(false)": 1, "Bool(false)": 0, "Bool(false)": 10, "Bool(false)": 1 };
+obj.navbarName = { flexDirection: false, gap: false, flexWrap: false, alignItems: false };
+obj.navbarNameInner = {};
 obj.navbarNameShrinkWrapper = { flexShrink: 1 };
-obj.contextIcon = { <string:1549954009>: 0, <string:67064148>: 1, <string:2018617953>: 3 };
+obj.contextIcon = { -9223372036854775808: 0, 9223372036854775807: 1, 0: 3 };
 let closure_7 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayHeader.tsx");
@@ -46,7 +46,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   obj["bottom"] = undefined;
   const items = [obj, headerLayoutAnimation];
   obj.style = items;
-  obj1 = { onLoadEnd: "Chat perks and 2 Boosts (Monthly Sub)", useInsertionEffect: "Nitro Monthly", FAB_BUTTON_ICON_SIZE: "premium_tier_0_monthly", buttonLabel: 2.99 };
+  obj1 = { "Bool(false)": "Chat perks and 2 Boosts (Monthly Sub)", "Bool(false)": "Nitro Monthly", "Bool(false)": "premium_tier_0_monthly", "Bool(false)": 2.99 };
   const obj2 = { style: tmp.navbarInner, pointerEvents: "box-none" };
   const obj3 = { style: tmp.navbarLeft };
   const obj4 = {};
@@ -67,7 +67,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     }
     const items2 = [tmp14, ];
     const obj8 = { style: tmp.navbarNameShrinkWrapper };
-    const obj9 = { "Bool(true)": "<string:1389590646>", "Bool(true)": "<string:661923562>", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, children: contextName };
+    const obj9 = { description: null, main: null, module: null, types: null, react-native: null, children: contextName };
     obj8.children = callback(arg1(dependencyMap[15]).Text, obj9);
     items2[1] = callback(closure_4, obj8);
     obj6.children = items2;

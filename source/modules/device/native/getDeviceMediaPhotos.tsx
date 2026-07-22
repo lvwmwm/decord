@@ -1,10 +1,10 @@
-// Module ID: 9656
-// Function ID: 75233
+// Module ID: 9657
+// Function ID: 75246
 // Name: getDeviceMediaPhotos
 // Dependencies: []
 // Exports: default
 
-// Module 9656 (getDeviceMediaPhotos)
+// Module 9657 (getDeviceMediaPhotos)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("DeviceMedia.tsx");
@@ -30,7 +30,7 @@ export default function getDeviceMediaPhotos(arg0) {
   let obj = require(dependencyMap[3]);
   if (obj.isIOS()) {
     if (null != importDefault(dependencyMap[4])) {
-      obj = { first: batchSize, after: endCursor, extensions };
+      obj = { <string:3981552443>: null, <string:1710973345>: null, <string:2976115943>: null, first: batchSize, after: endCursor, extensions };
       const photos = importDefault(dependencyMap[4]).getPhotos(obj);
       const obj3 = importDefault(dependencyMap[4]);
       photos.then(onFetched).catch(onError);

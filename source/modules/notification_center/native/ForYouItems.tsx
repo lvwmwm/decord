@@ -1,9 +1,9 @@
-// Module ID: 15022
-// Function ID: 113166
+// Module ID: 15030
+// Function ID: 113209
 // Name: ForYouFooter
 // Dependencies: []
 
-// Module 15022 (ForYouFooter)
+// Module 15030 (ForYouFooter)
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
@@ -331,13 +331,13 @@ let closure_27 = obj10.createStyles(obj5);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
 let obj13 = arg1(dependencyMap[13]);
 obj7 = { container: { flex: 1 } };
-const obj8 = { accessibilityRole: true, Easing: "/assets/images/native/main_tabs", flexGrow: 24, flexShrink: 24, "Null": null, "Null": "afec4e7bfe67c8da93450ca26af6a62e", "Null": "NotificationCenter", borderRadius: importDefault(dependencyMap[15]).radii.lg };
+const obj8 = { usePlaceholderAnimatedStyle: true, Stopped: "/assets/images/native/main_tabs", flexGrow: 24, flexShrink: 24, "Bool(true)": null, "Bool(true)": "afec4e7bfe67c8da93450ca26af6a62e", "Bool(true)": "NotificationCenter", borderRadius: importDefault(dependencyMap[15]).radii.lg };
 obj7.row = obj8;
 obj7.rowCompact = { paddingVertical: 6 };
 const obj6 = { color: importDefault(dependencyMap[15]).colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
 obj7.rowActive = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_MOD_MUTED };
-obj7.col = {};
-obj10 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[15]).radii.xs };
+obj7.col = { 1649697713: "onAnimationFinishCapture", 106012843: "onAnimationFinish" };
+obj10 = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[15]).radii.xs };
 obj7.unreadIndicatorV2 = obj10;
 obj7.unreadIndicatorCompactV2 = { top: 18 };
 obj7.rowText = { flex: 1 };
@@ -349,12 +349,12 @@ obj7.rowBodyAcked = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED 
 obj7.rowTime = { lineHeight: 20 };
 obj7.rowTimeV2 = { marginLeft: -24 };
 obj7.itemV2 = {};
-obj7.calloutContainer = { call: null, icon: null, bottom: null };
+obj7.calloutContainer = {};
 const obj11 = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj7.calloutTextAcked = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj13 = { color: importDefault(dependencyMap[15]).colors.TEXT_DEFAULT };
 obj7.calloutTextNotAcked = obj13;
-obj7.messagePreviewContainerV2 = { call: null, icon: null, bottom: null };
+obj7.messagePreviewContainerV2 = {};
 const obj12 = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj7.messagePreviewBarV2 = { borderLeftColor: importDefault(dependencyMap[15]).colors.BORDER_SUBTLE };
 obj7.messagePreviewIconV2Container = { paddingTop: 4 };
@@ -364,7 +364,7 @@ const obj15 = { marginLeft: 4, tintColor: importDefault(dependencyMap[15]).color
 obj7.messagePreviewTextV2Acked = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 const obj16 = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj7.messagePreviewTextV2NotAcked = { color: importDefault(dependencyMap[15]).colors.TEXT_DEFAULT };
-obj7.messagePreviewSystemTextV2 = { paleturquoise: null, 0: null };
+obj7.messagePreviewSystemTextV2 = { paleturquoise: null, palevioletred: null };
 const obj17 = { color: importDefault(dependencyMap[15]).colors.TEXT_DEFAULT };
 obj7.refreshSpinner = { color: importDefault(dependencyMap[15]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj18 = { color: importDefault(dependencyMap[15]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -409,7 +409,7 @@ let closure_31 = importAllResult.memo((item) => {
   const items = [item];
   callback = importAllResult.useCallback(() => {
     if (null != item.deeplink) {
-      const obj = { 1670668744: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, 1365400635: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, 1415742461: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, payload: rowIndex(notificationCenterItemAcked[31])(item.deeplink).payload };
+      const obj = { paddingHorizontal: 1567300603, gap: 221342020, minHeight: 822948183, payload: rowIndex(notificationCenterItemAcked[31])(item.deeplink).payload };
       rowIndex(notificationCenterItemAcked[32])(obj);
     }
   }, items);
@@ -486,9 +486,7 @@ let closure_31 = importAllResult.memo((item) => {
       };
       items.unshift(obj);
     }
-    let obj1 = item(notificationCenterItemAcked[45]);
-    obj1 = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003060722793, width: 278528.0009553582, aspectRatio: -3371258726436104800000000000000000000000000000000000000000000000000000, options: items };
-    const result = obj1.showSimpleActionSheet(obj1);
+    const result = item(notificationCenterItemAcked[45]).showSimpleActionSheet({ options: items });
   }, items2);
   const tmp7 = callback(importAllResult.useState(undefined), 2);
   let first = tmp7[0];
@@ -508,7 +506,7 @@ let closure_31 = importAllResult.memo((item) => {
   }
   let tmp15 = null;
   if (!notificationCenterItemAcked) {
-    obj = { indicatorSpace: "<string:503578626>", indicatorSize: "<string:2018574338>", item, rowIndex, onSoftAckItem, actionButtons, actionsNode, compactMode };
+    obj = { indicatorSpace: "<string:498401282>", indicatorSize: "<string:4132503554>", item, rowIndex, onSoftAckItem, actionButtons, actionsNode, compactMode };
     tmp15 = callback2(arg1(dependencyMap[46]).ForYouItemActionButtons, obj);
   }
   let str = "text-md/semibold";
@@ -559,7 +557,7 @@ let closure_31 = importAllResult.memo((item) => {
   const items5 = [tmp25Result, , ];
   obj3 = { style: tmp.itemV2, children: callback2(arg1(dependencyMap[50]).ForYouItemImage, { item, compactMode }) };
   items5[1] = callback2(closure_7, obj3);
-  obj4 = { style: {} };
+  obj4 = { style: { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013132815383737633, marginVertical: 203722238426496480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
   const obj5 = { style: tmp.col };
   const obj6 = { style: items6 };
   const items6 = [, ];
@@ -577,7 +575,7 @@ let closure_31 = importAllResult.memo((item) => {
   if ("string" !== typeof first) {
     obj7.children = first;
     const items8 = [callback2(arg1(dependencyMap[14]).Text, obj7), ];
-    const obj8 = { flexShrink: true, flexGrow: true, zIndex: true };
+    const obj8 = { minWidth: true, height: true, top: true };
     const items9 = [, , ];
     ({ rowTime: arr10[0], rowTimeV2: arr10[1] } = tmp);
     let rowBodyAcked2 = !tmp40;
@@ -740,7 +738,7 @@ const memoResult = importAllResult.memo((loadMore) => {
     if (shouldScrollToTop) {
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({});
+        current.scrollToOffset({ getChangeSentinel: true, VIBE_WITH_WUMPUS: true });
       }
     }
   }, items4);

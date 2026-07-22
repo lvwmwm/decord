@@ -1,10 +1,10 @@
-// Module ID: 15902
-// Function ID: 121862
+// Module ID: 15910
+// Function ID: 121905
 // Name: UploadLogsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15902 (UploadLogsActionSheet)
+// Module 15910 (UploadLogsActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ AnalyticEvents: closure_4, DebugLogCategory: closure_5 } = arg1(dependencyMap[2]));
@@ -31,7 +31,7 @@ export default function UploadLogsActionSheet(arg0) {
   obj.title = intl.string(arg1(dependencyMap[8]).t.KTjjrG);
   obj.header = callback(arg1(dependencyMap[7]).BottomSheetTitleHeader, obj);
   obj = { style: tmp.container };
-  const obj1 = { style: tmp.body };
+  const obj1 = { cachedAt: 400, edpbxy: 20, style: tmp.body };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[8]).t.ZvRR/t);
   const items = [callback(arg1(dependencyMap[9]).Text, obj1), , , ];

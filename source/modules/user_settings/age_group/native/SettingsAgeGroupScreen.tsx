@@ -1,21 +1,21 @@
-// Module ID: 13552
-// Function ID: 102805
+// Module ID: 13559
+// Function ID: 102838
 // Name: SettingsAgeGroupHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13552 (SettingsAgeGroupHeader)
+// Module 13559 (SettingsAgeGroupHeader)
 function SettingsAgeGroupHeader() {
   let obj = { style: callback3().headerContainer };
   const callback = React.useCallback(() => {
     const obj = callback(closure_2[7]);
     obj.openUrl(callback(closure_2[8]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  obj = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole" };
+  obj = { cachedAt: true, edpbxy: true };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(importDefault(dependencyMap[11]).PY4MA0);
   const items = [callback(arg1(dependencyMap[9]).Text, obj), ];
-  obj = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
+  obj = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj.children = intl2.format(importDefault(dependencyMap[11]).1DN29p, { handleOnHelpUrlHook: callback });
   items[1] = callback(arg1(dependencyMap[9]).Text, obj);

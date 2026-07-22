@@ -1,10 +1,10 @@
-// Module ID: 11044
-// Function ID: 85964
+// Module ID: 11045
+// Function ID: 85977
 // Name: useSafetyHubInitialized
 // Dependencies: []
 // Exports: useSafetyHubInitialized
 
-// Module 11044 (useSafetyHubInitialized)
+// Module 11045 (useSafetyHubInitialized)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 15414
-// Function ID: 117654
+// Module ID: 15422
+// Function ID: 117697
 // Name: ChannelSettingsEditForumTag
 // Dependencies: []
 // Exports: default
 
-// Module 15414 (ChannelSettingsEditForumTag)
+// Module 15422 (ChannelSettingsEditForumTag)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -20,10 +20,10 @@ obj.container = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.sections = { paddingHorizontal: 12, paddingTop: importDefault(dependencyMap[8]).space.PX_16 };
 obj.hint = { marginTop: 8 };
-obj.emojiIconWrapper = { tintColor: "<string:1111573698>", alignSelf: "<string:1627390632>", marginBottom: "<string:29250106>", position: "<string:1061242050>", borderRadius: null };
-obj.imageEmoji = { y: 0, isArray: -1048576 };
-obj.textEmoji = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001904963454849727, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032593855356872 };
-obj.nameInput = {};
+obj.emojiIconWrapper = { it-CH: "<string:1816216811>", CHANGE_EMAIL_REASONS_ORDER: "<string:1627390632>", addWindow: "<string:29708858>", FilterSettingsGraph: "<string:1732330731>", role2: null };
+obj.imageEmoji = {};
+obj.textEmoji = {};
+obj.nameInput = { pending: 0, lanes: "#dfdfdf" };
 obj.saveButton = { flex: 0 };
 let closure_12 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: 12, paddingTop: importDefault(dependencyMap[8]).space.PX_16 };
@@ -151,7 +151,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
   const layoutEffect = React.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle() {
-        const obj = { handleMessageFocus: 17, enableHome: "message_display_compact", afterMs: "message" };
+        const obj = {};
         const intl = callback(closure_2[12]).intl;
         const string = intl.string;
         const t = callback(closure_2[12]).t;
@@ -281,7 +281,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       obj3.children = tmp30(arg1(dependencyMap[17]).TableRow, obj4);
       const items6 = [tmp30(arg1(dependencyMap[16]).TableRowGroup, obj3), ];
       const obj9 = { style: tmp.hint };
-      const obj10 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
+      const obj10 = { cachedAt: "y", edpbxy: "isArray" };
       const intl2 = arg1(dependencyMap[12]).intl;
       obj10.children = intl2.string(arg1(dependencyMap[12]).t.3v8kZH);
       obj9.children = callback2(arg1(dependencyMap[11]).Text, obj10);

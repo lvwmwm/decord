@@ -1,5 +1,5 @@
 // Module ID: 3819
-// Function ID: 31735
+// Function ID: 31737
 // Name: _openURL
 // Dependencies: []
 // Exports: default

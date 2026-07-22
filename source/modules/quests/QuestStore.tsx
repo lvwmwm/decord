@@ -1,5 +1,5 @@
 // Module ID: 6937
-// Function ID: 55344
+// Function ID: 55355
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -848,7 +848,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
       const _Map = Map;
       const map = new Map(map);
       const result = map.set(placement, false);
-      obj = { addData: "o", registerGuildVisibilityMethod: "o", fetchedAt, ttlMillis: arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds) };
+      obj = { fetchedAt, ttlMillis: arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds) };
       const _Map2 = Map;
       const map1 = new Map(map1);
       const result1 = map1.set(placement, obj);

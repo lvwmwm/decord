@@ -33,7 +33,7 @@ arg5.createTransport = function createTransport(bufferSize) {
             closure_1 = arg0(closure_1[1]).createEnvelope(arg0[0], items);
             function recordEnvelopeLoss(arg0) {
               const items = arg0;
-              if (obj.envelopeContainsItemType(closure_1, [null])) {
+              if (obj.envelopeContainsItemType(closure_1, [])) {
                 if (tmp(tmp2[3]).DEBUG_BUILD) {
                   const debug = items(closure_1[4]).debug;
                   const _HermesInternal = HermesInternal;

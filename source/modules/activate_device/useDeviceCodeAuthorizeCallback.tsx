@@ -1,10 +1,10 @@
-// Module ID: 12764
-// Function ID: 97861
+// Module ID: 12771
+// Function ID: 97894
 // Name: _createTwoWayLink
 // Dependencies: []
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 12764 (_createTwoWayLink)
+// Module 12771 (_createTwoWayLink)
 function _createTwoWayLink() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

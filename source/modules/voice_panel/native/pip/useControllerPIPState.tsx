@@ -1,10 +1,10 @@
-// Module ID: 15641
-// Function ID: 119452
+// Module ID: 15649
+// Function ID: 119495
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useControllerPIPState
 
-// Module 15641 (_createForOfIteratorHelperLoose)
+// Module 15649 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -108,8 +108,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const layoutManager = channelId.layoutManager;
   const dependencyMap = layoutManager;
   const mode = channelId.mode;
-  let obj = { "Null": 24182785, "Null": 16777216, "Null": 117, "Null": 0, "Null": 38400, "Null": 0, id: undefined, mode: undefined };
-  const ref = React.useRef(obj);
+  const ref = React.useRef({ id: undefined, mode: undefined });
   const tmp2 = callback(React.useState(undefined), 2);
   const first = tmp2[0];
   const callback = first;
@@ -177,7 +176,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const items = [first1];
   const layoutEffect = React.useLayoutEffect(() => () => closure_6.cancel(), items);
   [tmp10, closure_7] = callback(React.useState(() => layoutManager.getTargetDimensions(focusedId)), 2);
-  obj = { connected, mode, focusedId, participantTargetDimensions: tmp10, selfHasVideo: tmp6, showSecondaryPIP: tmp5 };
+  let obj = { connected, mode, focusedId, participantTargetDimensions: tmp10, selfHasVideo: tmp6, showSecondaryPIP: tmp5 };
   const tmp9 = callback(React.useState(() => layoutManager.getTargetDimensions(focusedId)), 2);
   ({ participant, dimensions } = importDefault(dependencyMap[16])(channelId, layoutManager, focusedId, first, obj));
   obj = {};
@@ -192,7 +191,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const tmp11 = importDefault(dependencyMap[16])(channelId, layoutManager, focusedId, first, obj);
   obj["mode"] = arg1(dependencyMap[17]).getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp6 });
   const items1 = [channelId, first1];
-  const obj4 = arg1(dependencyMap[17]);
+  const obj3 = arg1(dependencyMap[17]);
   const effect = React.useEffect(() => {
     const items = [closure_9, first1];
     const batchedStoreListener = new channelId(layoutManager[10]).BatchedStoreListener(items, () => {

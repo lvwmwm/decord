@@ -1,10 +1,10 @@
-// Module ID: 10325
-// Function ID: 79717
+// Module ID: 10326
+// Function ID: 79730
 // Name: useNativeForumPostHandlers
 // Dependencies: []
 // Exports: default
 
-// Module 10325 (useNativeForumPostHandlers)
+// Module 10326 (useNativeForumPostHandlers)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 10380
-// Function ID: 80044
+// Module ID: 10381
+// Function ID: 80057
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isAnimatedAndroidKeyboard
 
-// Module 10380 (apexExperiment)
+// Module 10381 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const enabled = apexExperiment.getConfig({ location: "isAnimatedKeyboardEnabled" }).enabled;

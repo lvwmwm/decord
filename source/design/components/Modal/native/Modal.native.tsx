@@ -1,10 +1,10 @@
-// Module ID: 11062
-// Function ID: 86086
+// Module ID: 11063
+// Function ID: 86099
 // Name: Modal
 // Dependencies: []
 // Exports: Modal
 
-// Module 11062 (Modal)
+// Module 11063 (Modal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Modal/native/Modal.native.tsx");

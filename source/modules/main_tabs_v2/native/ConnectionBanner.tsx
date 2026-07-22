@@ -1,10 +1,10 @@
-// Module ID: 14999
-// Function ID: 112965
+// Module ID: 15007
+// Function ID: 113008
 // Name: getBannerLabel
 // Dependencies: []
 // Exports: default
 
-// Module 14999 (getBannerLabel)
+// Module 15007 (getBannerLabel)
 function getBannerLabel(state) {
   if (constants.WAITING_FOR_NETWORK === state) {
     const intl3 = arg1(dependencyMap[9]).intl;
@@ -42,7 +42,7 @@ function ConnectionBannerContent(state) {
   state = state.state;
   let obj = { style: callback3().content };
   const items = [callback2(ConnectionBannerIcon, { state }), ];
-  obj = { 1448895712: null, -1135386053: "38485069fbc14bffd27bdd20bfea4ac1", 833392556: "pending-alert" };
+  obj = { 0: null, -9223372036854775808: "38485069fbc14bffd27bdd20bfea4ac1", 9223372036854775807: "pending-alert" };
   let str = "text-muted";
   if (state === constants.BACK_ONLINE) {
     str = "text-feedback-positive";
@@ -177,17 +177,17 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let closure_14 = [];
-let closure_15 = [97.646, 171.162, 0, 95.94];
+let closure_15 = [36, 97.646, 171.162, 0];
 let closure_16 = {};
-let closure_17 = {};
-let closure_18 = [0.167, 0.167, 16.667, 59.6];
-let closure_19 = {};
+let closure_17 = { 0: -721485569, 0: 3375103 };
+let closure_18 = [0, 0.167, 0.167, 16.667];
+let closure_19 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
 let closure_20 = {};
 let obj = arg1(dependencyMap[7]);
-obj = { container: {}, glow: { 0: "<string:408361903>", 9223372036854775807: "<string:2920093709>", -9223372036854775808: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 }, glowMaskGradient: { flex: 1 } };
+obj = { container: { <string:80590080>: 131420590, <string:80590336>: -1717986767, <string:80597504>: -644245095, <string:80624128>: 94527 }, glow: {}, glowMaskGradient: { flex: 1 } };
 obj = { height: CONNECTION_BANNER_HEIGHT, gap: importDefault(dependencyMap[8]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12 };
 obj.content = obj;
-obj.leadingSlot = {};
+obj.leadingSlot = { <string:80863488>: 9, <string:80450560>: 7, <string:80862976>: "header_localized", <string:80864000>: "message" };
 const items = [{ scale: 0.8 }];
 obj.spinner = { transform: items };
 let closure_21 = obj.createStyles(obj);

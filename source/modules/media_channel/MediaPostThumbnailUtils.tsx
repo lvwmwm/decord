@@ -1,5 +1,5 @@
 // Module ID: 4312
-// Function ID: 37781
+// Function ID: 37789
 // Name: MAX_THUMBNAIL_COUNT
 // Dependencies: []
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage

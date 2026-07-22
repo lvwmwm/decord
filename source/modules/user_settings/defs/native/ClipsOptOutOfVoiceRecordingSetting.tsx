@@ -1,9 +1,9 @@
-// Module ID: 13757
-// Function ID: 104021
+// Module ID: 13764
+// Function ID: 104054
 // Name: _updateClipsAllowVoiceRecording
 // Dependencies: []
 
-// Module 13757 (_updateClipsAllowVoiceRecording)
+// Module 13764 (_updateClipsAllowVoiceRecording)
 function _updateClipsAllowVoiceRecording() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

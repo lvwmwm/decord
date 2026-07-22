@@ -220,8 +220,7 @@ export const processTransformOrigin = () => {
     }
     return items;
   }
-  const obj = { "Null": "CONTROL_SECONDARY_BACKGROUND_ACTIVE", "Null": "Array", "Null": "CONTROL_SECONDARY_BACKGROUND_ACTIVE", "Null": "Array", validateTransformOrigin: closure_4 };
-  processTransformOrigin.__closure = obj;
+  processTransformOrigin.__closure = { validateTransformOrigin: closure_4 };
   processTransformOrigin.__workletHash = 11541675557002;
   processTransformOrigin.__initData = closure_5;
   return processTransformOrigin;

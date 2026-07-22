@@ -1,5 +1,5 @@
 // Module ID: 7423
-// Function ID: 59655
+// Function ID: 59666
 // Name: usePerkCardHeight
 // Dependencies: []
 // Exports: default, usePremiumPerkCard
@@ -16,7 +16,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const obj = { NARROW: 0, [0]: "NARROW", WIDE: 1, [1]: "WIDE" };
-const frozen = Object.freeze({ [obj.NARROW]: {}, [obj.WIDE]: {} });
+const frozen = Object.freeze({ [obj.NARROW]: { "Null": "cd214b5502d42e0d86b5bf4c01260ed5", "Null": "grey_server_boosts", height: "png" }, [obj.WIDE]: { "Null": "/assets/modules/premium/native/images/perks", "Null": 300, height: 175 } });
 const tmp4 = arg1(dependencyMap[4]);
 let closure_13 = arg1(dependencyMap[30]).createStyles((arg0) => {
   let obj = {};
@@ -26,7 +26,7 @@ let closure_13 = arg1(dependencyMap[30]).createStyles((arg0) => {
   obj = { width: "100%", borderTopLeftRadius: importDefault(dependencyMap[31]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[31]).radii.sm, overflow: "hidden" };
   obj.headerComponent = obj;
   obj.image = { width: "100%", borderTopLeftRadius: importDefault(dependencyMap[31]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[31]).radii.sm };
-  obj.title = {};
+  obj.title = { "Null": null, "Null": null };
   const obj2 = {};
   let num = 8;
   if (arg0 === obj.WIDE) {
@@ -41,7 +41,7 @@ let closure_13 = arg1(dependencyMap[30]).createStyles((arg0) => {
   const merged1 = Object.assign(tmp2);
   obj.description = obj2;
   obj.button = {};
-  obj.imageContainer = { fr: true, fs: true, ha: true };
+  obj.imageContainer = { "Bool(true)": 2017525761, "Bool(true)": 1895826561, "Bool(true)": 1 };
   const obj1 = { width: "100%", borderTopLeftRadius: importDefault(dependencyMap[31]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[31]).radii.sm };
   obj.imageOverlayText = { color: importDefault(dependencyMap[31]).colors.WHITE, fontSize: 14 };
   const obj4 = { color: importDefault(dependencyMap[31]).colors.WHITE, fontSize: 14 };
@@ -130,7 +130,7 @@ export default function PremiumPerkCard(variant) {
       tmp28 = callback(importDefault(dependencyMap[34]), obj7);
     }
     const items4 = [tmp28, tmp6, , , ];
-    const obj8 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+    const obj8 = { vy: false, numberActiveTouches: false, _accountsForMovesUpTo: false };
     const items5 = [tmp4.title, titleStyle];
     obj8.style = items5;
     obj8.children = title;

@@ -1,9 +1,9 @@
-// Module ID: 16045
-// Function ID: 123207
+// Module ID: 16053
+// Function ID: 123249
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16045 (_isNativeReflectConstruct)
+// Module 16053 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -98,7 +98,7 @@ let tmp3 = (arg0) => {
   obj = {
     key: "handleLogout",
     value() {
-      callback(closure_2[12]).dispatch({});
+      callback(closure_2[12]).dispatch({ "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null });
     }
   };
   items[2] = obj;

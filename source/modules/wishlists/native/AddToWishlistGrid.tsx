@@ -1,10 +1,10 @@
-// Module ID: 12015
-// Function ID: 92852
+// Module ID: 12019
+// Function ID: 92878
 // Name: AddToWishlistGrid
 // Dependencies: []
 // Exports: default
 
-// Module 12015 (AddToWishlistGrid)
+// Module 12019 (AddToWishlistGrid)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[3]).jsx;

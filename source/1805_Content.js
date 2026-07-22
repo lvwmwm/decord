@@ -1,12 +1,13 @@
 // Module ID: 1805
 // Function ID: 19925
 // Name: Content
-// Dependencies: []
+// Dependencies: [0, 4294967295, 4294967295, 4294967295]
 // Exports: default
 
 // Module 1805 (Content)
+import "__exportStarResult1";
+
 let StyleSheet;
-importDefault(dependencyMap[0]);
 ({ StyleSheet, View: closure_2 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const styles = StyleSheet.create({ flex: { flex: 1 } });

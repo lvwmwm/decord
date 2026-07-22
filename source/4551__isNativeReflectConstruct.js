@@ -1,17 +1,15 @@
 // Module ID: 4551
-// Function ID: 39883
+// Function ID: 39891
 // Name: _isNativeReflectConstruct
-// Dependencies: [4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 4294967295, 0, 0, 0]
 
 // Module 4551 (_isNativeReflectConstruct)
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import result from "result";
-import "result";
-import result from "result";
-import result from "result";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let Component;
 function _isNativeReflectConstruct() {
@@ -23,12 +21,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-({ createRef: closure_10, Component } = result);
-({ processColor: closure_11, StyleSheet: closure_12, View: closure_13 } = result);
-({ jsx: closure_14, jsxs: closure_15 } = result);
+let closure_3 = ["<string:1102092548>", "http:", "<string:1151741777>", "discord:", "tel:", "sms:", "mailto:", "<string:58267718>", "<string:65005056>"];
+let closure_8 = importDefault(dependencyMap[4]);
+let closure_9 = importDefault(dependencyMap[5]);
+({ createRef: closure_10, Component } = arg1(dependencyMap[6]));
+importDefault(dependencyMap[6]);
+({ processColor: closure_11, StyleSheet: closure_12, View: closure_13 } = __exportStarResult1);
+({ jsx: closure_14, jsxs: closure_15 } = __exportStarResult1);
 function convertPoint(arg0, arg1) {
   let tmp = arg1;
   if (Array.isArray(arg1)) {
@@ -118,7 +117,7 @@ const tmp6 = (Component) => {
       const items = [tmp7(tmp5.borderTopLeftRadius), tmp7(tmp5.borderTopLeftRadius), tmp7(tmp5.borderTopRightRadius), tmp7(tmp5.borderTopRightRadius), tmp7(tmp5.borderBottomRightRadius), tmp7(tmp5.borderBottomRightRadius), tmp7(tmp5.borderBottomLeftRadius), tmp7(tmp5.borderBottomLeftRadius)];
       let obj = { ref: this.gradientRef };
       obj = { style };
-      obj = { style: { enableQualityMetrics: "<string:408361903>", enableOriginDetection: "<string:2920093709>", enabled: "<string:1058778651>", threshold: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, enabled: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 } };
+      obj = { style: { "Null": "center", "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" } };
       let mapped = colors;
       const tmp = callback2(props, closure_3);
       const tmp10 = closure_14;

@@ -19,7 +19,7 @@ function _addMeasureSpans(activeSpan, detail) {
     if (tmp4) {
       break;
     } else {
-      let items = [null, null];
+      let items = [];
       if (!items.includes(detail.entryType)) {
         let tmp8 = require;
         let tmp9 = dependencyMap;
@@ -151,7 +151,7 @@ function _addNavigationSpans(activeSpan, requestStart) {
   const require = activeSpan;
   const dependencyMap = requestStart;
   let closure_2 = arg2;
-  const items = [];
+  const items = [53, 48, 50, 56, 72];
   const item = items.forEach((arg0) => {
     callback(arg0, arg1, arg0, arg2);
   });
@@ -235,7 +235,7 @@ function _addResourceSpans(activeSpan, initiatorType, arr, arg3, arg4, arg5, arr
           tmp6.server.address = url.host;
         }
         tmp6.url.same_origin = arr.includes(require(dependencyMap[4]).WINDOW.location.origin);
-        const items = [[], ["r", "isArray"], ["onload", "onerror"], ["string", "onPress"], [], []];
+        const items = [[false, false], [], [], [], [true, true], [-450953215, 810614786]];
         _setResourceRequestAttributes(initiatorType, tmp6, items);
         const _Object = Object;
         const sum = arg5 + arg3;
@@ -545,7 +545,7 @@ export const startTrackingLongAnimationFrames = function startTrackingLongAnimat
           let tmp34 = activeSpan;
           let tmp35 = msToSecResult;
           let tmp36 = msToSecResult1;
-          obj = {};
+          obj = { "Bool(false)": null, "Bool(false)": null };
           let tmp37 = tmp21;
           obj.attributes = tmp22;
           let tmp38 = obj6;
@@ -557,7 +557,7 @@ export const startTrackingLongAnimationFrames = function startTrackingLongAnimat
       }
     }
   });
-  performanceObserver.observe({ 9223372036854775807: 17141313, 0: 110842112 });
+  performanceObserver.observe({ subLabel: null, disabled: null });
 };
 export const startTrackingLongTasks = function startTrackingLongTasks() {
   const result = require(dependencyMap[7]).addPerformanceInstrumentationHandler("longtask", (arg0) => {
@@ -599,7 +599,7 @@ export const startTrackingLongTasks = function startTrackingLongTasks() {
           let tmp17 = msToSecResult;
           let tmp18 = msToSecResult1;
           let sum = msToSecResult + msToSecResult1;
-          obj = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007040431797029554, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004323753079722544 };
+          obj = {};
           let tmp20 = callback2;
           obj.attributes = callback2({}, callback(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.metrics");
           let tmp21 = obj3;

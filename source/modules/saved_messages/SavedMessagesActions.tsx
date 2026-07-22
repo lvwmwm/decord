@@ -1,10 +1,14 @@
-// Module ID: 9905
-// Function ID: 76624
+// Module ID: 9906
+// Function ID: 76637
 // Name: _upsertSavedMessage
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 9905 (_upsertSavedMessage)
+// Module 9906 (_upsertSavedMessage)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { Endpoints } from "__exportStarResult1";
+
 function _upsertSavedMessage() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -23,10 +27,7 @@ function _fetchAndUpdateSavedMessages() {
   const _fetchAndUpdateSavedMessages = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
 
 export const upsertSavedMessage = function upsertSavedMessage() {
   return _upsertSavedMessage(...arguments);

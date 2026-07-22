@@ -1,9 +1,9 @@
-// Module ID: 12512
-// Function ID: 95945
+// Module ID: 12517
+// Function ID: 95973
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12512 (_isNativeReflectConstruct)
+// Module 12517 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -219,14 +219,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
   CHANNEL_DELETE: handleChannelDelete,
   THREAD_DELETE: handleChannelDelete,
   ACTIVE_CHANNELS_FETCH_START: function handleActiveChannelsFetchStart(guildId) {
-    const obj = { "Null": 131122.52832032426, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174, fetchedAt: Date.now() };
-    closure_14[guildId.guildId] = obj;
+    closure_14[guildId.guildId] = { fetchedAt: Date.now() };
   },
   ACTIVE_CHANNELS_FETCH_SUCCESS: function handleActiveChannelsFetchSuccess(guildId) {
     guildId = guildId.guildId;
     const importDefault = guildId;
     const channels = guildId.channels;
-    const obj = { "Null": null, "Null": null, fetchedAt: Date.now() };
+    const obj = { "Null": "L", "Null": "L", fetchedAt: Date.now() };
     closure_14[guildId] = obj;
     closure_11[guildId] = new Set();
     const item = channels.forEach((arg0) => {
@@ -238,7 +237,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
     });
   },
   ACTIVE_CHANNELS_FETCH_FAILURE: function handleActiveChannelsFetchFailure(error) {
-    closure_14[error.guildId] = { error: error.error };
+    const obj = { "Null": true, "Null": true, "Null": true, error: error.error };
+    closure_14[error.guildId] = obj;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
     const guildId = guildId.getGuildId();

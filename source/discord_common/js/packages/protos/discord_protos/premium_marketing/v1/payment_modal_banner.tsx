@@ -1,5 +1,5 @@
 // Module ID: 7135
-// Function ID: 57473
+// Function ID: 57484
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,30 +25,30 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PaymentModalBanner$Type);
       items = [, , , , ];
-      items[0] = { 1347510942: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004780256688701622, 1678385745: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473800797, 1364379111: 131072.00412178785, 140698458: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034032482983877397 };
-      items[1] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
+      items[0] = {};
+      items[1] = {};
       items[2] = {};
-      obj = { 9223372036854775807: "3", 9223372036854775807: 3, 0: "mobile_body" };
-      obj.T = function T() {
-        return callback(closure_1[6]).LocalizedString;
+      items[3] = {
+        T() {
+              return callback(closure_1[6]).LocalizedString;
+            }
       };
-      items[3] = obj;
-      obj = { 9223372036854775807: null, 9223372036854775807: 9, 0: null };
+      obj = { -111020099: null, 1351895378: 9, 1456955659: null };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[4] = obj;
-      items1 = ["reason:unsupported_issuing_country"];
+      items1 = [null];
       items1[1] = items;
-      obj3 = closure_6(PaymentModalBanner$Type);
+      obj2 = closure_6(PaymentModalBanner$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj3, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj3.apply(self, items1);
+        constructResult = obj2.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -58,7 +58,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { CA: "fr", ES: "french", AU: true };
+      let obj = { scales: "french", it: true, size: "/assets/.cache/intl/aW50bA==" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PaymentModalBanner$Type(closure_1[7]).MESSAGE_TYPE, obj);

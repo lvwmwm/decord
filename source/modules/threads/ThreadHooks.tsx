@@ -1,10 +1,10 @@
-// Module ID: 5646
-// Function ID: 48261
+// Module ID: 5645
+// Function ID: 48269
 // Name: useCanStartPublicThread
 // Dependencies: []
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useIsNonModInLockedThread
 
-// Module 5646 (useCanStartPublicThread)
+// Module 5645 (useCanStartPublicThread)
 function useCanStartPublicThread(parentChannel, hasFlag) {
   hasFlag = parentChannel;
   const items = [closure_8];
@@ -177,10 +177,8 @@ let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 ({ Permissions: closure_10, MessageFlags: closure_11, ChannelTypes: closure_12 } = arg1(dependencyMap[7]));
-const obj = { WebAnalyticsPageLoads: "Rollback UI for File Upload 250MB Powerup", inc: "guild", consumedInboundPromotionId: "2026-04_server_theme", defaultConfig: { enabled: false } };
 const items = [{ config: { enabled: true } }];
-obj.treatments = items;
-const importDefaultResultResult = importDefaultResult(obj);
+const importDefaultResultResult = importDefaultResult({ defaultConfig: { enabled: false }, treatments: items });
 const tmp3 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/threads/ThreadHooks.tsx");
 

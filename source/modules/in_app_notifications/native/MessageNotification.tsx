@@ -1,9 +1,9 @@
-// Module ID: 10240
-// Function ID: 79141
+// Module ID: 10241
+// Function ID: 79154
 // Name: useSetHeightOnLayout
 // Dependencies: []
 
-// Module 10240 (useSetHeightOnLayout)
+// Module 10241 (useSetHeightOnLayout)
 function useSetHeightOnLayout(expandedPreviewHeight) {
   const arg1 = expandedPreviewHeight;
   const items = [expandedPreviewHeight];
@@ -26,7 +26,7 @@ let closure_13 = arg1(dependencyMap[6]).isAndroid();
 const PX_12 = importDefault(dependencyMap[7]).space.PX_12;
 const PX_8 = importDefault(dependencyMap[7]).space.PX_8;
 const obj2 = arg1(dependencyMap[6]);
-let closure_16 = arg1(dependencyMap[8]).createStyles({ newContainerRoleDot: {}, initialPreviewOverlay: {}, expandedPreviewOverlay: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" }, gradientStyles: { height: 32 } });
+let closure_16 = arg1(dependencyMap[8]).createStyles({ newContainerRoleDot: {}, initialPreviewOverlay: {}, expandedPreviewOverlay: { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527 }, gradientStyles: { height: 32 } });
 let closure_17 = importAllResult.memo((message) => callback(importDefault(dependencyMap[9]), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
 let closure_18 = { code: "function MessageNotificationTsx1(){const{contentHeight,EXPANDED_MAX_HEIGHT,TRUNCATED_MESSAGE_HEIGHT_OFFSET,EXPANDED_SHORT_PREVIEW_PADDING}=this.__closure;const isGradientShown=contentHeight.get()>=EXPANDED_MAX_HEIGHT-TRUNCATED_MESSAGE_HEIGHT_OFFSET;const isShortPreview=contentHeight.get()>0&&!isGradientShown;return{paddingBottom:isShortPreview?EXPANDED_SHORT_PREVIEW_PADDING:0};}" };
 let closure_19 = { code: "function MessageNotificationTsx2(){const{IS_ANDROID,hasPreviewableMedia,hasTextContent,hasEmbedMedia,fadeProgress,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(IS_ANDROID&&hasPreviewableMedia&&hasTextContent&&!hasEmbedMedia){return{opacity:fadeProgress.get()};}if(!hasTextContent||hasEmbedMedia){return{opacity:fadeProgress.get(),transform:[{translateY:(1-fadeProgress.get())*ACCESSORY_EXIT_THRESHOLD}]};}return{opacity:1};}" };

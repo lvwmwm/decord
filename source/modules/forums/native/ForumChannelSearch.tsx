@@ -1,14 +1,14 @@
-// Module ID: 10092
-// Function ID: 78159
+// Module ID: 10093
+// Function ID: 78172
 // Name: ForumChannelCloseSearchButton
 // Dependencies: []
 
-// Module 10092 (ForumChannelCloseSearchButton)
+// Module 10093 (ForumChannelCloseSearchButton)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ inputContainer: {}, cancelButtonContainer: { paddingLeft: 8 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ inputContainer: { "Null": "<string:2126337>", "Null": "<string:2097152>" }, cancelButtonContainer: { paddingLeft: 8 } });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;

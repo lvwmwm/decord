@@ -1,14 +1,14 @@
-// Module ID: 11134
-// Function ID: 86627
+// Module ID: 11135
+// Function ID: 86640
 // Name: useForumPostContainerPressedIn
 // Dependencies: []
 // Exports: ForumPostDisabledContainer, ForumPostPressableContainer, useForumPostContainerPressedIn
 
-// Module 11134 (useForumPostContainerPressedIn)
+// Module 11135 (useForumPostContainerPressedIn)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let obj = { childContainer: { "Bool(false)": false, "Bool(false)": 0, "Bool(false)": 0 }, card: { marginBottom: 12 } };
+let obj = { childContainer: {}, card: { marginBottom: 12 } };
 obj = { marginBottom: 12, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.md, overflow: "hidden" };
 obj.disabledContainer = obj;
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);

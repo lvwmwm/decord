@@ -1,10 +1,10 @@
-// Module ID: 12179
-// Function ID: 93633
+// Module ID: 12183
+// Function ID: 93659
 // Name: createVoiceChannelLinkEmbed
 // Dependencies: []
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12179 (createVoiceChannelLinkEmbed)
+// Module 12183 (createVoiceChannelLinkEmbed)
 let closure_3 = importDefault(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const getGuildAcronym = arg1(dependencyMap[2]).getGuildAcronym;

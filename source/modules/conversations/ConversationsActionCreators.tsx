@@ -1,10 +1,10 @@
-// Module ID: 9265
-// Function ID: 72377
+// Module ID: 9266
+// Function ID: 72390
 // Name: _fetchChannelConversations
 // Dependencies: []
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9265 (_fetchChannelConversations)
+// Module 9266 (_fetchChannelConversations)
 function _fetchChannelConversations() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -41,7 +41,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
   let obj = importDefault(dependencyMap[6]);
   obj = { type: "SET_SELECTED_CONVERSATION", channelId, conversationId };
   obj.dispatch(obj);
-  fetchConversationMessages(channelId, guildId, conversationId, { "Null": null, "Null": null });
+  fetchConversationMessages(channelId, guildId, conversationId, { <string:2874563683>: null, <string:1658610769>: null });
   const conversationMetadata = conversationMetadata.getConversationMetadata(channelId, conversationId);
   if (flag) {
     let startMessageId;

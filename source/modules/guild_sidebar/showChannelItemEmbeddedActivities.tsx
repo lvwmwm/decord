@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 112405
+// Module ID: 14938
+// Function ID: 112448
 // Name: showChannelItemEmbeddedActivities
 // Dependencies: []
 // Exports: showChannelItemEmbeddedActivities
 
-// Module 14930 (showChannelItemEmbeddedActivities)
+// Module 14938 (showChannelItemEmbeddedActivities)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_sidebar/showChannelItemEmbeddedActivities.tsx");
 

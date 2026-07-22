@@ -1,10 +1,10 @@
-// Module ID: 15702
-// Function ID: 120029
+// Module ID: 15710
+// Function ID: 120072
 // Name: ActivitiesDebugOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 15702 (ActivitiesDebugOverlay)
+// Module 15710 (ActivitiesDebugOverlay)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsxs: closure_4, jsx: closure_5 } = arg1(dependencyMap[2]));
@@ -48,9 +48,10 @@ export default function ActivitiesDebugOverlay() {
   obj = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
   items[1] = obj;
   obj = { style: tmp.row };
-  const items1 = [callback(arg1(dependencyMap[8]).Text, { children: [false, false] }), ];
-  const obj1 = { variant: "text-md/normal", color: str2, children: str };
-  items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);
+  const obj1 = { cachedAt: "position", edpbxy: "scalar", children: [false, false] };
+  const items1 = [callback(arg1(dependencyMap[8]).Text, obj1), ];
+  const obj2 = { variant: "text-md/normal", color: str2, children: str };
+  items1[1] = callback2(arg1(dependencyMap[8]).Text, obj2);
   obj.children = items1;
   obj.children = callback(View, obj);
   return callback2(View, obj);

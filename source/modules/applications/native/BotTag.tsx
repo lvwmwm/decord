@@ -1,9 +1,9 @@
-// Module ID: 8516
-// Function ID: 67910
+// Module ID: 8517
+// Function ID: 67922
 // Name: getBotLabel
 // Dependencies: []
 
-// Module 8516 (getBotLabel)
+// Module 8517 (getBotLabel)
 function getBotLabel(BOT) {
   if (BOT === undefined) {
     BOT = BotTagTypes.BOT;
@@ -94,18 +94,22 @@ class BotTag {
         stringResult = intl.string(arg1(dependencyMap[6]).t.qwJHjo);
       }
     }
-    obj = { style: items };
+    obj = { 102724325: null, -61785503: null, "Null": null };
     items = [, , , ];
     items[0] = tmp2.tag;
     items[1] = tmp11;
     items[2] = global.style;
     items[3] = prop;
+    obj.style = items;
     obj.accessibilityLabel = stringResult;
     items1 = [, ];
     items1[0] = tmp6;
+    obj1 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
     items2 = [];
     items2[0] = tmp12;
-    items1[1] = jsx(arg1(dependencyMap[8]).Text, { style: items2, children: tmp3 });
+    obj1.style = items2;
+    obj1.children = tmp3;
+    items1[1] = jsx(arg1(dependencyMap[8]).Text, obj1);
     obj.children = items1;
     return jsxs(View, obj);
   }
@@ -116,7 +120,7 @@ const BotTagTypes = arg1(dependencyMap[2]).BotTagTypes;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { useIdentityRegistrationStep: 1895826078, GiftingTier5SmallBadge: 1, crystal_ball: 30465, channels: 2621440, isStreamInfoOverlayEnabled: 2621440, EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: 2293760, overflow: 7798784, Č: 0, borderRadius: importDefault(dependencyMap[5]).radii.xs };
+obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.tag = obj;
 obj.verifiedTagLeftPadding = { paddingLeft: 1 };
 const tmp3 = arg1(dependencyMap[3]);

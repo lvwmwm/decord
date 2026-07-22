@@ -1,10 +1,10 @@
-// Module ID: 10640
-// Function ID: 83105
+// Module ID: 10641
+// Function ID: 83118
 // Name: MusicSlashIcon
 // Dependencies: []
 // Exports: MusicSlashIcon
 
-// Module 10640 (MusicSlashIcon)
+// Module 10641 (MusicSlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MusicSlashIcon.tsx");

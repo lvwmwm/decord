@@ -1,10 +1,10 @@
-// Module ID: 9755
-// Function ID: 75890
+// Module ID: 9756
+// Function ID: 75903
 // Name: useGiftingPromotionDefaultSelectionV2
 // Dependencies: []
 // Exports: useGiftingPromotionDefaultSelectionV2
 
-// Module 9755 (useGiftingPromotionDefaultSelectionV2)
+// Module 9756 (useGiftingPromotionDefaultSelectionV2)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionDefaultSelection.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12349
-// Function ID: 94460
+// Module ID: 12354
+// Function ID: 94488
 // Name: GuildBoostingGuildListItem
 // Dependencies: []
 // Exports: default
 
-// Module 12349 (GuildBoostingGuildListItem)
+// Module 12354 (GuildBoostingGuildListItem)
 function GuildBoostingGuildListItem(guildId) {
   const arg1 = guildId.guildId;
   const tmp = callback3();
@@ -64,11 +64,11 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { height: "Atomics", marginLeft: "chatInputHandleSendText", marginRight: "RegExp", flexDirection: "_headers", alignItems: "OPERATION_CANCELED", marginLeft: "expiredImage", marginRight: "_value", width: "rankRtcRegions", borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
+obj = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.guildCard = obj;
 obj.guildIcon = { marginRight: 16 };
 obj.guildCardDescription = { flex: 1 };
-obj.subscriptionInfo = { "Null": 7, "Null": 370 };
+obj.subscriptionInfo = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
 obj.premiumGuildImage = {};
 let closure_10 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);

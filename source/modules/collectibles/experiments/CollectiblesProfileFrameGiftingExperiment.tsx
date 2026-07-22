@@ -1,12 +1,12 @@
-// Module ID: 8661
-// Function ID: 68545
+// Module ID: 8662
+// Function ID: 68557
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsProfileFrameGiftingEnabled, useIsProfileFrameGiftingEnabled
 
-// Module 8661 (apexExperiment)
+// Module 8662 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 844175713: "/assets/design/components/Icon/native/redesign/generated/images", 1387159956: 24, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const obj = { y: "/assets/design/components/Icon/native/redesign/generated/images", DateToSystemTimezoneSetter: 24, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFrameGiftingExperiment.tsx");

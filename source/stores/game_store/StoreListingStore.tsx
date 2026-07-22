@@ -1,16 +1,16 @@
-// Module ID: 13302
-// Function ID: 101071
+// Module ID: 13309
+// Function ID: 101104
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 653, 13282, 13270, 10490, 7366, 10485, 13274, 10475, 2, 6937]
+// Dependencies: [5, 653, 13289, 13277, 10491, 7366, 10486, 13281, 10476, 2, 6937]
 
-// Module 13302 (_isNativeReflectConstruct)
+// Module 13309 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import ME from "ME";
 import createRPCCommand from "createRPCCommand";
 import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants";
 import recurseReplaceContentTree from "recurseReplaceContentTree";
 import getApplicationFlags from "getApplicationFlags";
-import module_10485 from "module_10485";
+import module_10486 from "module_10486";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function _isNativeReflectConstruct() {
@@ -105,7 +105,7 @@ function addRegularStoreListing(storeListing) {
   let deleteResult = storeListing;
   const id = storeListing.id;
   let id2 = storeListing.sku.id;
-  const fromServer = module_10485.createFromServer(storeListing);
+  const fromServer = module_10486.createFromServer(storeListing);
   let tmp2 = null;
   if (!tmp3) {
     if (false === deleteResult.published) {
@@ -294,7 +294,7 @@ tmp3 = new tmp3(require("result2"), {
     let storeListing;
     ({ storeListing, channelId } = arg0);
     if (null != channelId) {
-      const fromServer = module_10485.createFromServer(storeListing);
+      const fromServer = module_10486.createFromServer(storeListing);
       closure_11[getChannelSkuComboId(channelId, fromServer.skuId)] = fromServer;
       closure_13[fromServer.skuId] = fromServer.id;
     } else {

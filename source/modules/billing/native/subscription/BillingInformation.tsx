@@ -1,5 +1,5 @@
 // Module ID: 7412
-// Function ID: 59567
+// Function ID: 59578
 // Name: getBillingInformationStringNative
 // Dependencies: []
 // Exports: getBillingInformationStringNative

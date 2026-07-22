@@ -1,16 +1,16 @@
-// Module ID: 14856
-// Function ID: 111950
+// Module ID: 14864
+// Function ID: 111993
 // Name: VOICE_USER_SUMMARY_HEIGHT
 // Dependencies: []
 
-// Module 14856 (VOICE_USER_SUMMARY_HEIGHT)
+// Module 14864 (VOICE_USER_SUMMARY_HEIGHT)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_6 = Object.freeze({ direction: arg1(dependencyMap[3]).CutoutDirection.RIGHT, inset: -2 });
 const obj = { direction: arg1(dependencyMap[3]).CutoutDirection.RIGHT, inset: -2 };
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, containerNoPadding: {}, iconContainer: { height: 40 }, redesignChannelIcon: { marginRight: 4 }, overflow: { right: -851969, bottom: 3276799, add: 0, right: 1916791808, ix: -18, getChannel: 18 }, transparentBorder: { borderColor: "transparent" } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { -9223372036854775808: 24, 0: 24, 0: null, -9223372036854775808: "119c03ecfe749b5d0f4e60c612bb714f" }, containerNoPadding: {}, iconContainer: { height: 40 }, redesignChannelIcon: { marginRight: 4 }, overflow: {}, transparentBorder: { borderColor: "transparent" } });
 const obj3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((guildId) => {
   let max;
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo((guildId) => {
     if (stageIcon) {
       let VoiceNormalIcon = arg1(dependencyMap[7]).StageIcon;
     }
-    obj = { accessibilityRole: false, "": false, style: tmp.redesignChannelIcon };
+    obj = { "Bool(false)": false, "Bool(false)": false, style: tmp.redesignChannelIcon };
     const items1 = [tmp5(VoiceNormalIcon, obj), ];
     const obj1 = { offsetAmount: -6, style: tmp.iconContainer };
     const items2 = [tmp.overflow, transparentBorder];

@@ -1,10 +1,10 @@
-// Module ID: 11591
-// Function ID: 90112
+// Module ID: 11592
+// Function ID: 90125
 // Name: GuildPowerupPerksSection
 // Dependencies: []
 // Exports: default
 
-// Module 11591 (GuildPowerupPerksSection)
+// Module 11592 (GuildPowerupPerksSection)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = _module);

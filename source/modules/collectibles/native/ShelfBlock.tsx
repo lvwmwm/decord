@@ -1,10 +1,10 @@
-// Module ID: 14380
-// Function ID: 108526
+// Module ID: 14388
+// Function ID: 108569
 // Name: ListEdgeSpacer
 // Dependencies: []
 // Exports: default
 
-// Module 14380 (ListEdgeSpacer)
+// Module 14388 (ListEdgeSpacer)
 function ListEdgeSpacer() {
   return callback(closure_5, { style: callback2().listEdgeSpacer });
 }
@@ -24,8 +24,8 @@ obj = { width: "100%", paddingTop: importDefault(dependencyMap[7]).space.PX_16, 
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.containerWithBackground = { marginTop: importDefault(dependencyMap[7]).space.PX_24, paddingTop: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_24, overflow: "hidden" };
-obj.backgroundImage = { isRecording: true, microphoneEnabled: true, isUploading: true, currentStep: true, stepStartedTime: true, isCompleted: true, currentSurveyId: true };
-const obj2 = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16, zIndex: 1 };
+obj.backgroundImage = {};
+const obj2 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16, zIndex: 1 };
 obj.header = obj2;
 obj.headingWrapper = { flexShrink: 1 };
 const obj1 = { marginTop: importDefault(dependencyMap[7]).space.PX_24, paddingTop: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_24, overflow: "hidden" };
@@ -133,7 +133,7 @@ export default function _default(block) {
     const items6 = [callback(tmp6, obj4), ];
     let tmp28Result = block.showButton && null != stateFromStores;
     if (tmp28Result) {
-      const obj7 = { size: 1665208787, variant: 1912603216, type: 24, itemType: 24 };
+      const obj7 = { grow: 705839377, handleInvertColorsChanged: 410124290, setViewRef: 402653184, PARTNER_PROMOTIONS_UNKNOWN_GIFT: 16777216 };
       let str3 = "secondary";
       if (tmp42) {
         str3 = "primary-overlay";
@@ -149,7 +149,7 @@ export default function _default(block) {
     obj3.children = items6;
     items5[1] = closure_10(tmp6, obj3);
     const obj8 = {};
-    const obj9 = { "Bool(false)": -19496671207239274000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -19496450042518790000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, accessibilityLabel: block.name, data: filteredAndSortedProducts, keyExtractor: tmp10, onScroll: obj2.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback1, decelerationRate: "fast", snapToInterval: arg1(dependencyMap[17]).COLLECTIBLES_SHOP_CARD_WIDTH + importDefault(dependencyMap[7]).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
+    const obj9 = { "Null": 950738584148872700000000000000, "Null": 0.00019836452249855088, accessibilityLabel: block.name, data: filteredAndSortedProducts, keyExtractor: tmp10, onScroll: obj2.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback1, decelerationRate: "fast", snapToInterval: arg1(dependencyMap[17]).COLLECTIBLES_SHOP_CARD_WIDTH + importDefault(dependencyMap[7]).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
     obj8.children = callback(arg1(dependencyMap[22]).FlashList, obj9);
     items5[2] = callback(arg1(dependencyMap[21]).LayerScope, obj8);
     obj.children = items5;

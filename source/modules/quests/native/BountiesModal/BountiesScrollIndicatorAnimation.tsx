@@ -1,10 +1,10 @@
-// Module ID: 13815
-// Function ID: 104498
+// Module ID: 13822
+// Function ID: 104538
 // Name: BountiesScrollIndicatorAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 13815 (BountiesScrollIndicatorAnimation)
+// Module 13822 (BountiesScrollIndicatorAnimation)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

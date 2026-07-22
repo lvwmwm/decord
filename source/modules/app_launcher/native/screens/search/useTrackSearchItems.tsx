@@ -1,10 +1,10 @@
-// Module ID: 11215
-// Function ID: 87351
+// Module ID: 11216
+// Function ID: 87364
 // Name: useTrackSearchItems
 // Dependencies: []
 // Exports: useTrackSearchItems
 
-// Module 11215 (useTrackSearchItems)
+// Module 11216 (useTrackSearchItems)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_launcher/native/screens/search/useTrackSearchItems.tsx");
 

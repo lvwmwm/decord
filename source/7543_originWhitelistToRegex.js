@@ -1,5 +1,5 @@
 // Module ID: 7543
-// Function ID: 60387
+// Function ID: 60398
 // Name: originWhitelistToRegex
 // Dependencies: []
 // Exports: defaultRenderError, defaultRenderLoading, useWebWiewLogic
@@ -105,7 +105,7 @@ function createOnShouldStartLoadWithRequest(arg0, arg1, arg2) {
   };
 }
 
-export const defaultOriginWhitelist = [false, false];
+export const defaultOriginWhitelist = ["Array", "innerStroke"];
 export { createOnShouldStartLoadWithRequest };
 export const defaultRenderLoading = function defaultRenderLoading() {
   return callback(closure_7, { style: importDefault(dependencyMap[4]).loadingOrErrorView, children: callback(closure_8, {}) });

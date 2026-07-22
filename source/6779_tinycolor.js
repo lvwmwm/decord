@@ -1,5 +1,5 @@
 // Module ID: 6779
-// Function ID: 53389
+// Function ID: 53400
 // Name: tinycolor
 // Dependencies: []
 
@@ -25,7 +25,7 @@
           tmp9 = function inputToRGB(toHslResult) {
             let b;
             let g;
-            let obj = { isArray: false, fileFinishedImporting: false, string: false };
+            let obj = { 9223372036854775807: "spring", 0: 0.4, -9223372036854775808: 1 };
             if ("string" !== typeof toHslResult) {
               let num36 = 1;
               let tmp30 = obj;
@@ -371,7 +371,7 @@
       obj = arg2;
       readabilityResult = tinycolor.readability(Math, arg1);
       if (!arg2) {
-        obj = { ChatCheckIcon: "localhost", currencyDisplay: 9090 };
+        obj = {};
       }
       str = obj.level || "AA";
       str2 = str.toUpperCase();
@@ -1142,7 +1142,7 @@
             tmp9 = function inputToRGB(toHslResult) {
               let b;
               let g;
-              let obj = { isArray: false, fileFinishedImporting: false, string: false };
+              let obj = { 9223372036854775807: "spring", 0: 0.4, -9223372036854775808: 1 };
               if ("string" !== typeof toHslResult) {
                 let num36 = 1;
                 let tmp30 = obj;
@@ -1488,7 +1488,7 @@
         obj = arg2;
         readabilityResult = tinycolor.readability(arg0, arg1);
         if (!arg2) {
-          obj = { ChatCheckIcon: "localhost", currencyDisplay: 9090 };
+          obj = {};
         }
         str = obj.level || "AA";
         str2 = str.toUpperCase();
@@ -1615,7 +1615,7 @@
             tmp9 = function inputToRGB(toHslResult) {
               let b;
               let g;
-              let obj = { isArray: false, fileFinishedImporting: false, string: false };
+              let obj = { 9223372036854775807: "spring", 0: 0.4, -9223372036854775808: 1 };
               if ("string" !== typeof toHslResult) {
                 let num36 = 1;
                 let tmp30 = obj;
@@ -1961,7 +1961,7 @@
         obj = arg2;
         readabilityResult = tinycolor.readability(Math, arg1);
         if (!arg2) {
-          obj = { ChatCheckIcon: "localhost", currencyDisplay: 9090 };
+          obj = {};
         }
         str = obj.level || "AA";
         str2 = str.toUpperCase();

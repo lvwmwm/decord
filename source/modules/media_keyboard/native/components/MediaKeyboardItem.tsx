@@ -1,15 +1,15 @@
-// Module ID: 9659
-// Function ID: 75240
+// Module ID: 9660
+// Function ID: 75253
 // Name: isSpecialMediaGridNode
 // Dependencies: []
 // Exports: isAttachFilesNode, isMediaCameraNode, isViewAllPhotosNode
 
-// Module 9659 (isSpecialMediaGridNode)
+// Module 9660 (isSpecialMediaGridNode)
 let Pressable;
 function isSpecialMediaGridNode(type) {
   let hasItem = "type" in type;
   if (hasItem) {
-    const items = [true, true, true];
+    const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012649669402721746, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009042807719543704, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003656370687005138];
     hasItem = items.includes(type.type);
   }
   return hasItem;
@@ -77,7 +77,7 @@ function NewCaption(arg0) {
   const items = [tmp.labelContainer, style];
   obj = { source: importDefault(dependencyMap[10]), style: tmp.icon };
   const items1 = [callback(arg1(dependencyMap[9]).Icon, obj), ];
-  obj = { "Bool(true)": "<string:3573548165>", "Bool(true)": "<string:1107296649>", "Bool(true)": "text-md/normal", style: textStyle, children: label };
+  obj = { -9223372036854775808: "<string:1107296621>", 9223372036854775807: "text-lg/semibold", 0: "text-strong", style: textStyle, children: label };
   items1[1] = callback(arg1(dependencyMap[11]).Text, obj);
   obj.children = items1;
   return callback2(closure_4, obj);
@@ -195,7 +195,7 @@ function MediaKeyboardImage(draftType) {
       items3[1] = imageDisabled;
       items3[2] = useLayoutStyle(index, numItemsPerRow, totalNumItems);
       obj2.style = items3;
-      let obj4 = { "Bool(false)": null, "Bool(false)": null };
+      let obj4 = { position: true, top: true };
       const items4 = [tmp.image, ];
       const obj5 = { height: size, width: size };
       items4[1] = obj5;
@@ -275,7 +275,7 @@ function MediaKeyboardSpecialButton(arg0) {
     const obj3 = sharedValue(pressedBackgroundColor[5]);
     const Easing = sharedValue(pressedBackgroundColor[5]).Easing;
     obj.easing = Easing.out(sharedValue(pressedBackgroundColor[5]).Easing.quad);
-    obj.backgroundColor = obj2.withTiming(sharedValue(pressedBackgroundColor[5]).interpolateColor(sharedValue.get(), ["replace", "then"], items), obj);
+    obj.backgroundColor = obj2.withTiming(sharedValue(pressedBackgroundColor[5]).interpolateColor(sharedValue.get(), [77601039, 1612144654], items), obj);
     return obj;
   };
   obj = { withTiming: arg1(dependencyMap[20]).withTiming, interpolateColor: arg1(dependencyMap[5]).interpolateColor, pressed: sharedValue, backgroundColor, pressedBackgroundColor, Easing: arg1(dependencyMap[5]).Easing };
@@ -318,12 +318,12 @@ const tmp3 = arg1(dependencyMap[3]);
 const tmp4 = arg1(dependencyMap[4]);
 let closure_11 = importDefault(dependencyMap[5]).createAnimatedComponent(Pressable);
 let obj2 = arg1(dependencyMap[6]);
-let obj = { container: {} };
+let obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.image = obj;
-const obj1 = { variant: "LightSpeedOutLeft", text: null, size: 0.3, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+const obj1 = { "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": false, borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.imageContainer = obj1;
-obj2 = { 1650524755: "<string:3248439569>", 1674082385: "<string:1107361793>", 1364481706: "heading-sm/medium", 1650656000: "text-overlay-light", 2018589526: "<string:17282625>", -1438948664: "<string:1153585408>", 1637974353: "<string:38123329>", -320379397: "<string:1514275072>", 1389932643: "<string:3573547418>" };
+obj2 = {};
 let obj7 = arg1(dependencyMap[8]);
 obj2.backgroundColor = obj7.hexWithOpacity(importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_700, 0.6);
 obj2.borderRadius = importDefault(dependencyMap[7]).radii.xs;
@@ -331,9 +331,9 @@ obj.labelContainer = obj2;
 obj.mediaKeyboardItemLabelContainer = { right: 10 };
 const importDefaultResult = importDefault(dependencyMap[5]);
 obj.icon = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
-const obj4 = { "Null": false, "Null": false, color: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
+const obj4 = { "Null": "<string:1912602975>", "Null": "height", color: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
 obj.checkIcon = obj4;
-const obj5 = { "Bool(false)": null, "Bool(false)": "header", "Bool(false)": "heading-xl/bold", "Bool(false)": "mobile-text-heading-primary", "Bool(false)": null, "Bool(false)": "header", "Bool(false)": "heading-md/semibold", "Bool(false)": "mobile-text-heading-primary", "Bool(false)": "aa-ET", "Bool(false)": "af-ZA", borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
+const obj5 = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
 const obj3 = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
 obj5.borderColor = arg1(dependencyMap[8]).hexWithOpacity(importDefault(dependencyMap[7]).unsafe_rawColors.BLACK, 0.1);
 obj.checkIconContainer = obj5;

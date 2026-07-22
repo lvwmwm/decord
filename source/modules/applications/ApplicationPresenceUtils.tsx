@@ -1,10 +1,10 @@
-// Module ID: 8494
-// Function ID: 67824
+// Module ID: 8495
+// Function ID: 67836
 // Name: shouldDisableUserPresenceInChannel
 // Dependencies: []
 // Exports: shouldDisableUserPresenceInChannel
 
-// Module 8494 (shouldDisableUserPresenceInChannel)
+// Module 8495 (shouldDisableUserPresenceInChannel)
 let closure_0 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");
 

@@ -1,19 +1,19 @@
-// Module ID: 15227
-// Function ID: 114995
+// Module ID: 15235
+// Function ID: 115038
 // Dependencies: []
 
-// Module 15227
+// Module 15235
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).createStyles((height) => {
   let obj = { container: {} };
-  obj = { 0: "r", 0: "isArray", 0: "Array", 0: "Text", 0: "get", 9223372036854775807: "jsx", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[4]).radii.round, height, width: height };
+  obj = { USER_BANNER: "r", discardSectionChanges: "isArray", IOS_TWO_FA_MODAL: "Array", blowfish: "Text", EMOJI_SEARCH: "top", arrow: "jsx", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[4]).radii.round, height, width: height };
   obj.overflowCircle = obj;
   obj = { borderRadius: importDefault(dependencyMap[4]).radii.round, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderWidth: 2 };
   obj.wrapper = obj;
-  const obj1 = { friendMessageContainer: "<string:17891332>", recurrenceRule: "dsnToString", LaunchPadModeSetting: "<string:8929536>", GetStringOrBooleanOption: "<string:1090584577>", GiftCardStack3dIllustration: "\u{1F44D}\u{1F3FE}", borderRadius: importDefault(dependencyMap[4]).radii.round, height };
+  const obj1 = { "Bool(false)": "w", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "constructor", "Bool(false)": "isArray", borderRadius: importDefault(dependencyMap[4]).radii.round, height };
   obj.badge = obj1;
   obj.audienceBadge = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
   return obj;
@@ -100,7 +100,7 @@ const memoResult = importAllResult.memo(function VoiceOrStageSummaryRow(layout) 
     const items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp2);
     obj3.style = items3;
-    const obj4 = { size: arg1(dependencyMap[7]).Icon.Sizes.CUSTOM, style: { y: false, isArray: false }, source: importDefault(dependencyMap[8]) };
+    const obj4 = { size: arg1(dependencyMap[7]).Icon.Sizes.CUSTOM, style: { hideWhenScrolling: "<string:1912602975>", autoCapitalize: "height" }, source: importDefault(dependencyMap[8]) };
     const items4 = [tmp2(arg1(dependencyMap[7]).Icon, obj4), ];
     const obj5 = { variant: "text-sm/bold" };
     const obj6 = { marginLeft: 4 };

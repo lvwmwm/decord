@@ -1,10 +1,10 @@
-// Module ID: 11227
-// Function ID: 87395
+// Module ID: 11228
+// Function ID: 87408
 // Name: useFetchDeveloperActivityShelfItems
 // Dependencies: []
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 11227 (useFetchDeveloperActivityShelfItems)
+// Module 11228 (useFetchDeveloperActivityShelfItems)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const DevShelfFetchState = arg1(dependencyMap[1]).DevShelfFetchState;

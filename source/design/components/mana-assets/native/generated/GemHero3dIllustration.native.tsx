@@ -1,5 +1,5 @@
 // Module ID: 6155
-// Function ID: 50154
+// Function ID: 50165
 // Name: GemHero3dIllustration
 // Dependencies: []
 // Exports: GemHero3dIllustration

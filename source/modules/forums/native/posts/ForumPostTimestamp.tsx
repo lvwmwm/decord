@@ -1,14 +1,14 @@
-// Module ID: 11127
-// Function ID: 86607
+// Module ID: 11128
+// Function ID: 86620
 // Name: ForumPostTimestamp
 // Dependencies: []
 // Exports: default
 
-// Module 11127 (ForumPostTimestamp)
+// Module 11128 (ForumPostTimestamp)
 importAll(dependencyMap[0]);
 const useForumChannelStore = arg1(dependencyMap[1]).useForumChannelStore;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = arg1(dependencyMap[3]).createStyles({ text: { -9223372036854775808: false, 0: false } });
+let closure_4 = arg1(dependencyMap[3]).createStyles({ text: { 1630339076: null, 392232964: null } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/forums/native/posts/ForumPostTimestamp.tsx");
 

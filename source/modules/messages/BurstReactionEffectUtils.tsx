@@ -1,5 +1,5 @@
 // Module ID: 7059
-// Function ID: 56454
+// Function ID: 56465
 // Name: replaceAnimationColors
 // Dependencies: []
 // Exports: replaceAnimationColors

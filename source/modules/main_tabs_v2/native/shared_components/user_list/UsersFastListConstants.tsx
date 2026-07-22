@@ -1,9 +1,9 @@
-// Module ID: 8818
-// Function ID: 69543
+// Module ID: 8819
+// Function ID: 69555
 // Name: PX_24
 // Dependencies: []
 
-// Module 8818 (PX_24)
+// Module 8819 (PX_24)
 const PX_24 = importDefault(dependencyMap[0]).space.PX_24;
 const PX_8 = importDefault(dependencyMap[0]).space.PX_8;
 const sum = 18 + PX_24 + PX_8;

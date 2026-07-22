@@ -1,12 +1,12 @@
-// Module ID: 9512
-// Function ID: 74042
+// Module ID: 9513
+// Function ID: 74055
 // Name: trackOpen
 // Dependencies: []
 // Exports: default
 
-// Module 9512 (trackOpen)
+// Module 9513 (trackOpen)
 function trackOpen() {
-  importDefault(dependencyMap[5]).track(AnalyticEvents.OPEN_POPOUT, { mustConfirmExternalLink: -12657841733197165000000000000000000000000000000000000000000000000000000000000000000000000000000, direction: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312423307660342 });
+  importDefault(dependencyMap[5]).track(AnalyticEvents.OPEN_POPOUT, {});
 }
 importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).NotificationUserFeedbackReasons;
@@ -28,7 +28,7 @@ export default function NotificationSurveyActionSheet(arg0) {
   const intl3 = arg1(dependencyMap[4]).intl;
   obj.label = intl3.string(arg1(dependencyMap[4]).t.glUMhg);
   items[2] = obj;
-  const obj1 = { "Null": null, "Null": null, "Null": null };
+  const obj1 = { aspectRatio: null, marginVertical: null, width: null };
   const intl4 = arg1(dependencyMap[4]).intl;
   obj1.headerLabel = intl4.string(arg1(dependencyMap[4]).t.wGioO1);
   const intl5 = arg1(dependencyMap[4]).intl;

@@ -1,10 +1,10 @@
-// Module ID: 8183
-// Function ID: 64655
+// Module ID: 8184
+// Function ID: 64667
 // Name: set
 // Dependencies: []
 
-// Module 8183 (set)
-const obj = { ALL: new Set([]) };
+// Module 8184 (set)
+const obj = { ALL: new Set([-1509949129, 1895825713, 855638518]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDirectoryCollectionItemType.tsx");
 

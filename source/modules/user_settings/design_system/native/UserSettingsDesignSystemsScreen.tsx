@@ -1,10 +1,10 @@
-// Module ID: 13428
-// Function ID: 101952
+// Module ID: 13435
+// Function ID: 101985
 // Name: SettingsDesignSystemsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13428 (SettingsDesignSystemsScreen)
+// Module 13435 (SettingsDesignSystemsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const MobileSetting = arg1(dependencyMap[1]).MobileSetting;
 const jsx = arg1(dependencyMap[2]).jsx;

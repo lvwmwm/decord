@@ -1,10 +1,10 @@
-// Module ID: 12411
-// Function ID: 94823
+// Module ID: 12416
+// Function ID: 94851
 // Name: Card
 // Dependencies: []
 // Exports: default
 
-// Module 12411 (Card)
+// Module 12416 (Card)
 function Card(arg0) {
   let IconComponent;
   let children;
@@ -29,7 +29,7 @@ obj.description = { textAlign: "center" };
 obj.iconContainer = {};
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { 0: 0, -9987282: 2, 9223372036854775807: 3, -9223372036854775808: "crystal_pos" }, title: {}, recognitionCardsContainer: {} });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { right: 0, bottom: 2, title: 3, options: "crystal_pos" }, title: {}, recognitionCardsContainer: { textAlignVertical: 30, textColor: "negate", text: "scalar", variant: 8, grow: 2 } });
 const obj4 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingBoosterRecognitionCards.tsx");
 

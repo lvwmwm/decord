@@ -1,10 +1,10 @@
-// Module ID: 9340
-// Function ID: 72979
+// Module ID: 9341
+// Function ID: 72992
 // Name: isNSFWInvite
 // Dependencies: []
 // Exports: handleNSFWGuildInvite, shouldNSFWGateGuild
 
-// Module 9340 (isNSFWInvite)
+// Module 9341 (isNSFWInvite)
 function isNSFWInvite(guild) {
   let nsfw_level;
   if (null != guild) {

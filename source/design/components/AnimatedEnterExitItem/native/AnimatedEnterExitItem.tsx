@@ -1,10 +1,10 @@
-// Module ID: 8561
-// Function ID: 68036
+// Module ID: 8562
+// Function ID: 68048
 // Name: AnimatedRenderItem
 // Dependencies: []
 // Exports: default
 
-// Module 8561 (AnimatedRenderItem)
+// Module 8562 (AnimatedRenderItem)
 function AnimatedRenderItem(shouldAnimate) {
   let item;
   let renderItem;

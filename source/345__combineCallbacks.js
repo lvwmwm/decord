@@ -1,7 +1,7 @@
 // Module ID: 345
 // Function ID: 5062
 // Name: _combineCallbacks
-// Dependencies: []
+// Dependencies: [353, 6, 7, 15, 17, 102, 18, 355, 44, 39, 38, 348, 357, 356]
 
 // Module 345 (_combineCallbacks)
 function _combineCallbacks(arg0, onComplete) {
@@ -338,15 +338,15 @@ function parallelImpl(items, stopTogether) {
 function delayImpl(delay) {
   let tmp = arg2(arg6[13]);
   tmp = new tmp(0);
-  const obj = { isArray: -1, ao: -1, test: false, y: "auto.ai.google_genai", delay };
+  const obj = { "Null": null, "Null": null, "Null": null, "Null": null, delay };
   return timingImpl(tmp, obj);
 }
 arg5.default = {
-  Value: arg2(arg6[13]),
-  ValueXY: arg2(arg6[6]),
-  Color: arg2(arg6[7]),
+  Value: require("A"),
+  ValueXY: require("_inherits"),
+  Color: require("module_355"),
   Interpolation: arg2(arg6[15]),
-  Node: arg2(arg6[8]),
+  Node: require("invariant"),
   decay: decayImpl,
   timing: timingImpl,
   spring: springImpl,

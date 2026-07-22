@@ -1,10 +1,10 @@
-// Module ID: 11881
-// Function ID: 91970
+// Module ID: 11882
+// Function ID: 91984
 // Name: BotUserProfileOverflowMenu
 // Dependencies: []
 // Exports: default
 
-// Module 11881 (BotUserProfileOverflowMenu)
+// Module 11882 (BotUserProfileOverflowMenu)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -187,7 +187,7 @@ export default function BotUserProfileOverflowMenu(application) {
       trackUserProfileAction({ action: "COPY_USERNAME", analyticsLocations });
       const obj = { action: "COPY_USERNAME", analyticsLocations };
       const obj2 = application(channel[27]);
-      obj2.copy(user(channel[28]).getUserTag(user, { allowSnowflake: true, gay-Latn-ID: true }));
+      obj2.copy(user(channel[28]).getUserTag(user, { y: true, getEventLocationIconSource: true }));
       const obj3 = user(channel[28]);
       const result = application(channel[29]).presentUsernameCopied();
       callback();

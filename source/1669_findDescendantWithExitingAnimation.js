@@ -198,7 +198,7 @@ arg5.addHTMLMutationObserver = function addHTMLMutationObserver() {
       }
     });
     const _document = document;
-    mutationObserver.observe(document.body, {});
+    mutationObserver.observe(document.body, { string: null, Button: null });
   }
 };
 arg5.areDOMRectsEqual = function areDOMRectsEqual(size, arg1) {

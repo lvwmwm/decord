@@ -1,10 +1,10 @@
-// Module ID: 9000
-// Function ID: 70849
+// Module ID: 9001
+// Function ID: 70862
 // Name: styles
 // Dependencies: []
 // Exports: default
 
-// Module 9000 (styles)
+// Module 9001 (styles)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, StyleSheet } = arg1(dependencyMap[1]));
@@ -22,9 +22,9 @@ obj.descriptionContainer = { backgroundColor: importDefault(dependencyMap[4]).co
 obj.descriptionMainContainer = { padding: 8 };
 const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT, width: "100%", borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.expandDescriptionCTA = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
+const obj4 = { hideWhenScrolling: true, autoCapitalize: true, borderRadius: importDefault(dependencyMap[4]).radii.xl };
+obj.appIcon = obj4;
 const obj3 = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
-obj.appIcon = { borderRadius: importDefault(dependencyMap[4]).radii.xl };
-const obj4 = { borderRadius: importDefault(dependencyMap[4]).radii.xl };
 obj.appIconMask = { padding: 4, borderRadius: importDefault(dependencyMap[4]).radii.xl + 4 };
 const obj5 = { padding: 4, borderRadius: importDefault(dependencyMap[4]).radii.xl + 4 };
 obj.loadingIcon = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED };
@@ -85,7 +85,9 @@ export default function IntegrationTypeSelector(application) {
   obj = { style: tmp.container };
   const obj1 = { style: tmp.header };
   const obj2 = { style: tmp.appIconMask, children: tmp5 };
-  const items3 = [callback(closure_4, obj2), callback(arg1(dependencyMap[11]).Text, { children: application.name }), ];
+  const items3 = [callback(closure_4, obj2), , ];
+  const obj3 = { cachedAt: true, edpbxy: true, children: application.name };
+  items3[1] = callback(arg1(dependencyMap[11]).Text, obj3);
   let tmp11 = null != application.description;
   if (tmp11) {
     const obj4 = { hideName: true, application };

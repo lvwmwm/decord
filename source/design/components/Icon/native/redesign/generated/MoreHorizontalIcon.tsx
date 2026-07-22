@@ -1,10 +1,10 @@
-// Module ID: 8960
-// Function ID: 70694
+// Module ID: 8961
+// Function ID: 70707
 // Name: MoreHorizontalIcon
 // Dependencies: []
 // Exports: MoreHorizontalIcon
 
-// Module 8960 (MoreHorizontalIcon)
+// Module 8961 (MoreHorizontalIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MoreHorizontalIcon.tsx");

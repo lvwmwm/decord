@@ -1,10 +1,10 @@
-// Module ID: 11402
-// Function ID: 88719
+// Module ID: 11403
+// Function ID: 88732
 // Name: ChevronLargeRightIcon
 // Dependencies: []
 // Exports: ChevronLargeRightIcon
 
-// Module 11402 (ChevronLargeRightIcon)
+// Module 11403 (ChevronLargeRightIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChevronLargeRightIcon.tsx");

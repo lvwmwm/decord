@@ -83,7 +83,7 @@ obj = {
     for (let num = 0; num < length; num = num + 1) {
       array[num] = arguments[num];
     }
-    const items = ["<string:1750073345>"];
+    const items = [null];
     _maybeLog.apply(undefined, items.concat(array));
   },
   error() {
@@ -92,11 +92,11 @@ obj = {
     for (let num = 0; num < length; num = num + 1) {
       array[num] = arguments[num];
     }
-    const items = [null];
+    const items = [false];
     _maybeLog.apply(undefined, items.concat(array));
   }
 };
-arg5.CONSOLE_LEVELS = [];
+arg5.CONSOLE_LEVELS = ["\u00D7", "annuleren", "teken", "vermenigvuldigen", "x", "Array", "UB2gG2"];
 arg5.consoleSandbox = consoleSandbox;
 arg5.debug = obj;
 arg5.originalConsoleMethods = obj;

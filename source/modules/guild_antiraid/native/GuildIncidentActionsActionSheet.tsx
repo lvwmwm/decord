@@ -1,9 +1,9 @@
-// Module ID: 10963
-// Function ID: 85259
+// Module ID: 10964
+// Function ID: 85272
 // Name: DurationSelectionActionSheet
 // Dependencies: []
 
-// Module 10963 (DurationSelectionActionSheet)
+// Module 10964 (DurationSelectionActionSheet)
 function DurationSelectionActionSheet(onClose) {
   const arg1 = onClose.onClose;
   let obj = {};
@@ -115,7 +115,7 @@ class GuildIncidentActionsActionSheet {
     obj1.leading = jsx(arg1(dependencyMap[14]).BetaTag, obj2);
     obj.header = jsx(arg1(dependencyMap[8]).BottomSheetTitleHeader, obj1);
     tmp13 = jsx;
-    obj3 = { channelId: false, rolling: false, dismissing: false, diceCount: false, diceSides: false, results: false };
+    obj3 = {};
     tmp14 = jsx;
     obj4 = {};
     str = "";

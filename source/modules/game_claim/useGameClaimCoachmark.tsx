@@ -1,10 +1,10 @@
-// Module ID: 14961
-// Function ID: 112576
+// Module ID: 14969
+// Function ID: 112619
 // Name: useCanShowGameClaimCoachmark
 // Dependencies: []
 // Exports: useCanShowGameClaimCoachmark
 
-// Module 14961 (useCanShowGameClaimCoachmark)
+// Module 14969 (useCanShowGameClaimCoachmark)
 let closure_2 = importDefault(dependencyMap[0]);
 const Permissions = arg1(dependencyMap[1]).Permissions;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/game_claim/useGameClaimCoachmark.tsx");

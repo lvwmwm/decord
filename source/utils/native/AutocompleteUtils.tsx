@@ -1,8 +1,8 @@
-// Module ID: 5314
-// Function ID: 45167
+// Module ID: 5041
+// Function ID: 43577
 // Dependencies: []
 
-// Module 5314
+// Module 5041
 require(dependencyMap[0]).AutoCompleteResultTypes;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("utils/native/AutocompleteUtils.tsx");

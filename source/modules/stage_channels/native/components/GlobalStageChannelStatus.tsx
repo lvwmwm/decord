@@ -1,10 +1,10 @@
-// Module ID: 10626
-// Function ID: 82878
+// Module ID: 10627
+// Function ID: 82891
 // Name: getText
 // Dependencies: []
 // Exports: default
 
-// Module 10626 (getText)
+// Module 10627 (getText)
 function getText(number, number2) {
   if (number > 0) {
     if (number2 > 0) {
@@ -29,7 +29,7 @@ class StageChannelRaiseHandAck {
     channel = global.channel;
     arg1 = channel;
     closure_1 = undefined;
-    f82884 = undefined;
+    f82897 = undefined;
     closure_3 = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
       // CreateGeneratorClosureLongIndex (0x67)
@@ -53,7 +53,7 @@ class StageChannelRaiseHandAck {
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => stageInstanceByChannel.getStageInstanceByChannel(channel.id), items1);
-    f82884 = stateFromStores;
+    f82897 = stateFromStores;
     tmp6 = closure_1(closure_3[13])(() => {
       let obj = stringResult(closure_3[14]);
       obj = {};
@@ -208,11 +208,11 @@ const obj4 = { color: importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, font
 obj.channel = { color: importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
 const obj5 = { color: importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.invitedHeaderText = { color: importDefault(dependencyMap[10]).colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
-const obj7 = { "Bool(false)": 338755588, "Bool(false)": 336860180, "Bool(false)": 1094689812, "Bool(false)": 274098, "Bool(false)": 0.6392156862745098, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: importDefault(dependencyMap[10]).space.PX_4 };
+const obj7 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: importDefault(dependencyMap[10]).space.PX_4 };
 obj.noticeContainer = obj7;
-const obj8 = { "Null": "mniej ni\u017C minuta", "Null": "mniej ni\u017C minut\u0119", "Null": "mniej ni\u017C minut\u0119", "Null": null, gap: importDefault(dependencyMap[10]).space.PX_4 };
-obj.row = obj8;
 const obj6 = { color: importDefault(dependencyMap[10]).colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
+obj.row = { gap: importDefault(dependencyMap[10]).space.PX_4 };
+const obj8 = { gap: importDefault(dependencyMap[10]).space.PX_4 };
 obj.buttonWrapper = { flexGrow: 1, margin: importDefault(dependencyMap[10]).space.PX_8 };
 const obj9 = { flexGrow: 1, margin: importDefault(dependencyMap[10]).space.PX_8 };
 obj.declineButtonPill = { borderColor: importDefault(dependencyMap[10]).colors.WHITE };

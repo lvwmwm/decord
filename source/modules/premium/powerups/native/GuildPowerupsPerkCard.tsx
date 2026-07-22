@@ -1,10 +1,10 @@
-// Module ID: 11593
-// Function ID: 90117
+// Module ID: 11594
+// Function ID: 90130
 // Name: GuildPowerupsPerkCard
 // Dependencies: []
 // Exports: default
 
-// Module 11593 (GuildPowerupsPerkCard)
+// Module 11594 (GuildPowerupsPerkCard)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -12,11 +12,11 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { marginHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.card = { 1446730851: "c5a514a204d76328abe2ecbd82735ce3", 2021915988: "no_mutual_friends_dark" };
+obj.card = { zIndex: "c5a514a204d76328abe2ecbd82735ce3", elevation: "no_mutual_friends_dark" };
 const tmp3 = arg1(dependencyMap[2]);
 obj.contentContainer = { gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.imageContainer = { "Null": null, "Null": "\u{1F44D}\u{1F3FC}" };
-obj.gradient = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.imageContainer = { "Null": "CARD", "Null": "SenderStopped" };
+obj.gradient = { COUNTRY: null, guildItem: null, gatewaySeenTimestamp: null, PRK: null, connectedAccountNameContainer: null };
 const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.headerContainer = { gap: importDefault(dependencyMap[4]).space.PX_4 };
 const obj2 = { gap: importDefault(dependencyMap[4]).space.PX_4 };
@@ -41,7 +41,7 @@ export default function GuildPowerupsPerkCard(arg0) {
     isImageAnimated = true;
   }
   ({ riveComponent, status, badge } = arg0);
-  let obj = { calendarIcon: true, MEDIA_PICKER_ACTION_SHEET_ENGAGED: 6, quest: 132, /bdaNN: null, VIDEO_QUALITY_1080_60FPS: "\u{1F9D1}\u200D\u{1F680}", GemLevel2SpotIllustration: true, measureFill: 12.1, snowballStem: 133, priceTierState: null };
+  let obj = {};
   ({ style, onPress } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

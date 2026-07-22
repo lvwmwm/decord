@@ -1,5 +1,5 @@
 // Module ID: 4746
-// Function ID: 41223
+// Function ID: 41232
 // Dependencies: []
 
 // Module 4746
@@ -17,7 +17,7 @@ arg5.default = {
   },
   findTiffOffsets() {
     if (arg2(arg6[1]).USE_EXIF) {
-      return { GuildEventDescription: null, GuildBadgeGoat: null };
+      return {};
     } else {
       return {};
     }

@@ -1,10 +1,10 @@
-// Module ID: 14729
-// Function ID: 111108
+// Module ID: 14737
+// Function ID: 111151
 // Name: VoiceSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14729 (VoiceSubtitle)
+// Module 14737 (VoiceSubtitle)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 15592
-// Function ID: 119010
+// Module ID: 15600
+// Function ID: 119053
 // Dependencies: []
 
-// Module 15592
+// Module 15600
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const memoResult = importAllResult.memo(importAllResult.forwardRef((overrideVariant, ref) => {
   let layout;
   let style;
   overrideVariant = overrideVariant.overrideVariant;
-  let obj = { position: false, left: false, right: false };
+  let obj = { position: "spring", top: 0.4, left: 1 };
   ({ style, layout } = overrideVariant);
   Object.setPrototypeOf(null);
   const merged = Object.assign(overrideVariant, obj);

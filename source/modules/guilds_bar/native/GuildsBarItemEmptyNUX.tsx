@@ -1,8 +1,8 @@
-// Module ID: 14755
-// Function ID: 111239
+// Module ID: 14763
+// Function ID: 111282
 // Dependencies: []
 
-// Module 14755
+// Module 14763
 const importAllResult = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, Image: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -15,13 +15,12 @@ let closure_13 = {};
 const tmp4 = arg1(dependencyMap[5]);
 let closure_14 = arg1(dependencyMap[6]).createStyles((width) => {
   let obj = {};
-  obj = { "Null": "heading-xxl/semibold", "Null": "text-overlay-light", "Null": 2, "Null": "last_dismissed_version", "Null": "scalar", marginTop: importDefault(dependencyMap[7]).modules.mobile.GUILD_BAR_ITEM_PADDING, width };
+  obj = { "Null": "heading-xxl/semibold", "Null": "text-overlay-light", "Null": 2, "Null": "last_dismissed_version", alignItems: "scalar", marginTop: importDefault(dependencyMap[7]).modules.mobile.GUILD_BAR_ITEM_PADDING, width };
   obj.container = obj;
-  obj = { "Null": "Array", "Null": "isArray", "Null": "constructor", left: -closure_8 - width / 2 };
+  obj = { left: -closure_8 - width / 2 };
   obj.guildIndicator = obj;
-  obj.icon = {};
-  const obj1 = { force: "row", trackAnalytics: "space-between", width, height: width - 10, borderRadius: width / 3 };
-  obj.backdrop = obj1;
+  obj.icon = { -9223372036854775808: true, 0: true, -9223372036854775808: true, 9223372036854775807: true };
+  obj.backdrop = { width, height: width - 10, borderRadius: width / 3 };
   return obj;
 });
 let closure_15 = { code: "function GuildsBarItemEmptyNUXTsx1(){const{withSpring,selected,activeColor,inactiveColor,MODE_CHANGE_PHYSICS}=this.__closure;return{backgroundColor:withSpring(selected?activeColor:inactiveColor,MODE_CHANGE_PHYSICS,'animate-always')};}" };

@@ -1,14 +1,14 @@
-// Module ID: 15972
-// Function ID: 122526
+// Module ID: 15980
+// Function ID: 122568
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: queueMessageLinkFetch
 
-// Module 15972 (importDefaultResult1)
+// Module 15980 (importDefaultResult1)
 let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult("codedLinkQueue");
 let importDefaultResult1 = importDefault(dependencyMap[1]);
-importDefaultResult1 = new importDefaultResult1({ searchProvider: null, CONNECT: null, emoticonsByName: null });
+importDefaultResult1 = new importDefaultResult1({});
 importDefaultResult1.on("add", () => {
   if (importDefaultResult1.size > 0) {
     importDefaultResult.warn("Message link fetch queue backlog:", importDefaultResult1.size);

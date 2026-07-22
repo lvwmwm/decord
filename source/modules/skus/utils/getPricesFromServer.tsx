@@ -1,5 +1,5 @@
 // Module ID: 4167
-// Function ID: 35363
+// Function ID: 35365
 // Name: getPricesFromServer
 // Dependencies: []
 // Exports: default

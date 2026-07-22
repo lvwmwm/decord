@@ -1,9 +1,9 @@
-// Module ID: 12048
-// Function ID: 93047
+// Module ID: 12052
+// Function ID: 93073
 // Name: SHARE_APPS_KEY
 // Dependencies: []
 
-// Module 12048 (SHARE_APPS_KEY)
+// Module 12052 (SHARE_APPS_KEY)
 const Linking = require(dependencyMap[0]).Linking;
 const _module = require(dependencyMap[1]);
 const SHARE_APPS_KEY = _module.SHARE_APPS_KEY;

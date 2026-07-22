@@ -1,5 +1,5 @@
 // Module ID: 7628
-// Function ID: 61123
+// Function ID: 61133
 // Name: shouldUseOldMaxMessageCount
 // Dependencies: []
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel

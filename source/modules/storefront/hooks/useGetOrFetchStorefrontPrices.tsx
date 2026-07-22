@@ -1,10 +1,10 @@
-// Module ID: 8676
-// Function ID: 68724
+// Module ID: 8677
+// Function ID: 68736
 // Name: useGetOrFetchStorefrontPricesForApplicationId
 // Dependencies: []
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 8676 (useGetOrFetchStorefrontPricesForApplicationId)
+// Module 8677 (useGetOrFetchStorefrontPricesForApplicationId)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/storefront/hooks/useGetOrFetchStorefrontPrices.tsx");
 

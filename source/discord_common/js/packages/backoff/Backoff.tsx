@@ -1,12 +1,16 @@
 // Module ID: 561
 // Function ID: 6784
 // Name: Backoff
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 561 (Backoff)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
+const result = items.fileFinishedImporting("../discord_common/js/packages/backoff/Backoff.tsx");
+
+export default () => {
   class Backoff {
     constructor() {
       num = arg0;
@@ -126,6 +130,3 @@ const tmp2 = () => {
   };
   return callback(Backoff, items);
 }();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/backoff/Backoff.tsx");
-
-export default tmp2;

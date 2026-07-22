@@ -1,5 +1,5 @@
 // Module ID: 7211
-// Function ID: 58094
+// Function ID: 58105
 // Name: sync
 // Dependencies: []
 // Exports: beginRefundRequest, currentEntitlement, finishTransaction, isEligibleForIntroOffer, latestTransaction, showManageSubscriptions, subscriptionStatus, sync

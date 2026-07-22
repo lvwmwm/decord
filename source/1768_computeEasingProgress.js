@@ -75,13 +75,13 @@ arg5.getSwipeSimulator = () => {
     const signResult = Math.sign(value.translationX);
     const signResult1 = Math.sign(value.translationY);
     if (isTransitionCanceled) {
-      let point2 = {};
+      let point2 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
     } else {
       point2 = { x: signResult * screenDimensions.width, y: signResult1 * screenDimensions.height };
     }
     const point3 = { x: Math.abs(point2.x - point.x), y: Math.abs(point2.y - point.y) };
-    let closure_10 = {};
-    const point4 = {};
+    let closure_10 = { 0: true, 0: true };
+    const point4 = { 0: "GAME_CLAIM", 0: "purchaseErrorListener" };
     if ("x" === arg2) {
       point4.y = 0;
       point4.x = point4.x + 400 * point3.x / screenDimensions.width;

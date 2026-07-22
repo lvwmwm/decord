@@ -1,5 +1,5 @@
 // Module ID: 7287
-// Function ID: 58787
+// Function ID: 58798
 // Name: setupIntegration
 // Dependencies: []
 // Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations

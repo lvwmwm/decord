@@ -1,10 +1,10 @@
-// Module ID: 9089
-// Function ID: 71201
+// Module ID: 9090
+// Function ID: 71214
 // Name: useRecipientsLabel
 // Dependencies: []
 // Exports: useRecipientsLabel
 
-// Module 9089 (useRecipientsLabel)
+// Module 9090 (useRecipientsLabel)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/main_tabs_v2/useRecipientsLabel.tsx");

@@ -1,13 +1,11 @@
-// Module ID: 9224
-// Function ID: 72143
+// Module ID: 9225
+// Function ID: 72156
 // Name: showInvalidUsernameToast
 // Dependencies: [0, 0, 0, 0]
 // Exports: showInvalidUsernameToast
 
-// Module 9224 (showInvalidUsernameToast)
-import result from "result";
-
-result = result.fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");
+// Module 9225 (showInvalidUsernameToast)
+const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");
 
 export const showInvalidUsernameToast = function showInvalidUsernameToast() {
   let obj = importDefault(dependencyMap[0]);

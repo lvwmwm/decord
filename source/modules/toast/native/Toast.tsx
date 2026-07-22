@@ -1,10 +1,10 @@
-// Module ID: 15512
-// Function ID: 118377
+// Module ID: 15520
+// Function ID: 118420
 // Name: ToastIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15512 (ToastIcon)
+// Module 15520 (ToastIcon)
 function ToastIcon(recolorLegacyIcon) {
   let IconComponent;
   let icon;
@@ -47,7 +47,7 @@ function ToastContent(content) {
     let obj = { style: tmp.contentContainer, children: content() };
     let tmp5 = callback2(View, obj);
   } else {
-    obj = { 9223372036854775807: null, 0: 16, 0: -2, 9223372036854775807: "text-sm/medium", 9223372036854775807: "text-strong", onTextLayout: content.onTextLayout, style: tmp.contentContainer, children: content };
+    obj = { onTextLayout: content.onTextLayout, style: tmp.contentContainer, children: content };
     tmp5 = callback2(arg1(dependencyMap[8]).Text, obj);
   }
   return tmp5;
@@ -58,12 +58,12 @@ const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": 7, "Null": 370, borderRadius: importDefault(dependencyMap[5]).radii.xxl, padding: importDefault(dependencyMap[5]).space.PX_8, paddingRight: importDefault(dependencyMap[5]).space.PX_12, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderWidth: 1 };
+obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", borderRadius: importDefault(dependencyMap[5]).radii.xxl, padding: importDefault(dependencyMap[5]).space.PX_8, paddingRight: importDefault(dependencyMap[5]).space.PX_12, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderWidth: 1 };
 const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_HIGH);
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.multilineContainer = { paddingLeft: importDefault(dependencyMap[5]).space.PX_12 };
-obj.contentContainer = { 0: null, 9223372036854775807: null };
+obj.contentContainer = { "Null": null, "Null": null };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { paddingLeft: importDefault(dependencyMap[5]).space.PX_12 };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/toast/native/Toast.tsx");

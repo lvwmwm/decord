@@ -184,7 +184,7 @@ const tmp4 = (Component) => {
                 let callResult;
                 if (null !== launchImageLibraryAsync) {
                   if (undefined !== launchImageLibraryAsync) {
-                    const obj = { mediaTypes: [], base64: self(fileName[9]).isWeb() };
+                    const obj = { mediaTypes: [null], base64: self(fileName[9]).isWeb() };
                     callResult = launchImageLibraryAsync.call(imagePicker, obj);
                     const obj2 = self(fileName[9]);
                   }
@@ -365,7 +365,7 @@ const tmp4 = (Component) => {
         tmp2Result._savedState = Object.assign({}, tmp2Result.state);
       };
       tmp2Result._clearFormState = () => {
-        const obj = { "Bool(true)": "fr", "Bool(true)": "french", "Bool(true)": true, filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { "Bool(false)": "french", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/aW50bA==", filename: undefined, attachment: undefined, attachmentUri: undefined };
         tmp2Result._savedState = obj;
       };
       tmp2Result._hasScreenshot = () => {
@@ -544,7 +544,7 @@ const tmp4 = (Component) => {
         } else if (capturedScreenshot) {
           const result = self._setCapturedScreenshot(capturedScreenshot);
         }
-        obj = { "Bool(true)": "absolute", "Bool(false)": -1, "Bool(false)": -1 };
+        obj = { 1449306720: "HTTP", 1643143851: "Date", 1642052689: "HTTP" };
         let obj3 = FeedbackWidget(props2[9]);
         let dismiss;
         if (obj3.notWeb()) {
@@ -679,7 +679,7 @@ const tmp4 = (Component) => {
     {
       key: "reset",
       value: function reset() {
-        const obj = { "Bool(true)": "fr", "Bool(true)": "french", "Bool(true)": true, filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { "Bool(false)": "french", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/aW50bA==", filename: undefined, attachment: undefined, attachmentUri: undefined };
         FeedbackWidget._savedState = obj;
       }
     }
@@ -687,7 +687,7 @@ const tmp4 = (Component) => {
   return callback(FeedbackWidget, items, items1);
 }(importAllResult.Component);
 tmp4.defaultProps = arg1(dependencyMap[11]).defaultConfiguration;
-const obj = { "Bool(true)": "fr", "Bool(true)": "french", "Bool(true)": true, filename: undefined, attachment: undefined, attachmentUri: undefined };
+const obj = { "Bool(false)": "french", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/aW50bA==", filename: undefined, attachment: undefined, attachmentUri: undefined };
 tmp4._savedState = obj;
 
 export const FeedbackWidget = tmp4;

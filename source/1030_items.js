@@ -5,7 +5,7 @@
 
 // Module 1030 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["Array", "isArray"];
+const items = ["Array", "_isInitialized"];
 function whenReady(backgroundifyResult, arg1) {
   arg1 = backgroundifyResult;
   const _document = arg1(arg6[0]).WINDOW.document;

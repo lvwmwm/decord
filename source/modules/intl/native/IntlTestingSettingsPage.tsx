@@ -1,10 +1,10 @@
-// Module ID: 14470
-// Function ID: 109054
+// Module ID: 14478
+// Function ID: 109097
 // Name: TestLocaleSelector
 // Dependencies: []
 // Exports: default
 
-// Module 14470 (TestLocaleSelector)
+// Module 14478 (TestLocaleSelector)
 function TestLocaleSelector() {
   const obj = {
     defaultValue: arg1(dependencyMap[10]).intl.currentLocale,
@@ -16,7 +16,7 @@ function TestLocaleSelector() {
       };
     }()
   };
-  const items = [callback3(arg1(dependencyMap[12]).TableRadioRow, {}), callback3(arg1(dependencyMap[12]).TableRadioRow, { <string:2048437162>: "895275c6d10d8df54595628c903e365d", <string:2887950716>: "hu.messages.895275c6d10d8df54595628c903e365d.compiled.messages" })];
+  const items = [callback3(arg1(dependencyMap[12]).TableRadioRow, {}), callback3(arg1(dependencyMap[12]).TableRadioRow, { "Null": "895275c6d10d8df54595628c903e365d", "Null": "hu.messages.895275c6d10d8df54595628c903e365d.compiled.messages" })];
   obj.children = items;
   return callback4(arg1(dependencyMap[9]).TableRadioGroup, obj);
 }
@@ -117,7 +117,7 @@ export default function IntlTestingSettingsPage() {
   obj6.children = intl6.format(importDefault(dependencyMap[20]).XOdbAy, {
     username: "some user",
     usernameHook(children) {
-      let obj = { style: {}, children: callback2(callback(closure_2[19]).Text, obj) };
+      let obj = { style: { Emojis: "text-subtle", è: "An action sheet with a centered title and subtitle, with optional leading and Trailing elements.", é: "text-lg/bold", ê: "Promo Sheet" }, children: callback2(callback(closure_2[19]).Text, obj) };
       obj = { children };
       return callback2(closure_6, obj);
     }

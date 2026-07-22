@@ -1,10 +1,10 @@
-// Module ID: 12297
-// Function ID: 94191
+// Module ID: 12302
+// Function ID: 94219
 // Name: getPremiumGroupFeaturesTableCardSubheaderString
 // Dependencies: []
 // Exports: default
 
-// Module 12297 (getPremiumGroupFeaturesTableCardSubheaderString)
+// Module 12302 (getPremiumGroupFeaturesTableCardSubheaderString)
 function getPremiumGroupFeaturesTableCardSubheaderString(arg0, primaryName, stateFromStores) {
   if (arg0 === primaryName(dependencyMap[4]).PremiumSubscriptionGroupRole.PRIMARY) {
     let obj = { withIntervals: true };

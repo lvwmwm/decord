@@ -1,10 +1,12 @@
 // Module ID: 840
 // Function ID: 9330
 // Name: forEachEnvelopeItem
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 0, 0, 0]
 // Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
 
 // Module 840 (forEachEnvelopeItem)
+import "__exportStarResult1";
+
 function forEachEnvelopeItem(arg0, arg1) {
   const iter = arg0[1][Symbol.iterator]();
   const nextResult = iter.next();
@@ -31,17 +33,16 @@ function encodeUTF8(arg0) {
   }
   return encodePolyfillResult;
 }
-let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_4 = {};
 
 export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
-  const tmp = callback2(arg0, 2);
+  const tmp = callback(arg0, 2);
   const items = [tmp[0], ];
   const items1 = [];
   const items2 = [arg1];
-  items[1] = items1.concat(callback(tmp[1]), items2);
+  items[1] = items1.concat(__exportStarResult1(tmp[1]), items2);
   return items;
 };
 export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeItem(data) {
@@ -170,11 +171,11 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
       arr = arr.push(tmp2);
     }
   }
-  const tmp = callback2(arg0, 2);
+  const tmp = callback(arg0, 2);
   let closure_0 = JSON.stringify(tmp[0]);
   while (tmp2 !== undefined) {
-    let tmp15 = callback2;
-    let tmp16 = callback2(tmp3, 2);
+    let tmp15 = callback;
+    let tmp16 = callback(tmp3, 2);
     let tmp17 = tmp16[1];
     let tmp18 = tmp17;
     let tmp19 = append;

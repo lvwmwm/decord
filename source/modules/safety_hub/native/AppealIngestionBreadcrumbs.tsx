@@ -1,15 +1,15 @@
-// Module ID: 11039
-// Function ID: 85952
+// Module ID: 11040
+// Function ID: 85965
 // Name: AppealIngestionBreadcrumbs
 // Dependencies: []
 // Exports: default
 
-// Module 11039 (AppealIngestionBreadcrumbs)
+// Module 11040 (AppealIngestionBreadcrumbs)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, title: {}, breadCrumbItemContainer: {} };
+obj = { container: { borderWidth: "<string:1145171446>", borderColor: "<string:1627390498>", borderStyle: "<string:4294013687>" }, title: {}, breadCrumbItemContainer: { "Bool(true)": 4095, alignSelf: 259064320, minHeight: 1358954496, flexDirection: 979450364, paddingHorizontal: 1649 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
 obj.breadCrumbDot = obj;
 const tmp3 = arg1(dependencyMap[2]);
@@ -26,7 +26,7 @@ export default function AppealIngestionBreadcrumbs(reasons) {
   let tmp2 = null;
   if (0 !== reasons.length) {
     let obj = { style: tmp.container };
-    obj = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp.title };
+    obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
     const intl = arg1(dependencyMap[6]).intl;
     obj.children = intl.string(arg1(dependencyMap[6]).t.eQg0Ck);
     const items = [

@@ -1,13 +1,13 @@
-// Module ID: 13651
-// Function ID: 103427
+// Module ID: 13658
+// Function ID: 103460
 // Name: FamilyCenterLoading
 // Dependencies: []
 // Exports: default
 
-// Module 13651 (FamilyCenterLoading)
+// Module 13658 (FamilyCenterLoading)
 let FamilyCenterSubPages;
 function FamilyCenterLoading() {
-  const obj = { hideTitle: null, initialRouteName: null, style: callback3().loadingContainer, children: callback2(closure_6, {}) };
+  const obj = { 1632524954: null, -1703325236: null, style: callback3().loadingContainer, children: callback2(closure_6, {}) };
   return callback2(arg1(dependencyMap[10]).Stack, obj);
 }
 function FamilyCenter() {

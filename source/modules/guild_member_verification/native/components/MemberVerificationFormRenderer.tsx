@@ -1,15 +1,15 @@
-// Module ID: 9169
-// Function ID: 71835
+// Module ID: 9170
+// Function ID: 71848
 // Name: MemberVerificationFormRenderer
 // Dependencies: []
 // Exports: default
 
-// Module 9169 (MemberVerificationFormRenderer)
+// Module 9170 (MemberVerificationFormRenderer)
 importAll(dependencyMap[0]);
 ({ Keyboard: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp3 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { "Null": -1421737985, "Null": 16777472, -279845023: 15477, -1901173863: 0 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationFormRenderer.tsx");
 

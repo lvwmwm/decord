@@ -1,10 +1,10 @@
-// Module ID: 9167
-// Function ID: 71815
+// Module ID: 9168
+// Function ID: 71828
 // Name: useVerificationForm
 // Dependencies: []
 // Exports: default
 
-// Module 9167 (useVerificationForm)
+// Module 9168 (useVerificationForm)
 function useVerificationForm(guild) {
   function getFormFields() {
     if (!memo) {
@@ -93,7 +93,7 @@ let closure_8 = arg1(dependencyMap[4]).NO_MEMBER_VERIFICATION_FORM;
 const VerificationLevels = arg1(dependencyMap[5]).VerificationLevels;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ container: {}, submitButton: { size: "<string:2552889346>", progress: "<string:2938503170>" }, error: { names: "<string:2255552513>", accessible: "<string:16777216>", Array: "%MapPrototype%" } });
+let closure_12 = arg1(dependencyMap[7]).createStyles({ container: {}, submitButton: { y: null, channelId: null }, error: {} });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
 
@@ -197,7 +197,7 @@ export default function MemberVerificationForm(guild) {
     }
     items2[1] = tmp16;
     const obj2 = { style: tmp.submitButton };
-    const obj3 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", "Bool(true)": "rgb(255, 255, 255)" };
+    const obj3 = {};
     const intl = arg1(dependencyMap[9]).intl;
     obj3.text = intl.string(arg1(dependencyMap[9]).t.r8/DT+);
     obj3.loading = tmp8;

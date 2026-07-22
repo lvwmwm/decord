@@ -1,10 +1,17 @@
 // Module ID: 7598
-// Function ID: 60844
+// Function ID: 60854
 // Name: getReportMenu
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
 // Module 7598 (getReportMenu)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { SafetyToastType } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function getReportMenu(name, arg1) {
   return _getReportMenu(...arguments);
 }
@@ -79,7 +86,7 @@ async function _submitHeadlessReport(arg0, arg1, arg2) {
   const HTTP = callback(closure_2[5]).HTTP;
   let obj = { url: closure_7.SUBMIT_REPORT_MENU(callback2(arg0)), body: callback3(tmp2, arg0, items1), rejectWithError: false };
   obj = { nodeRef: tmp2.root_node_id, destination: items };
-  const items = ["<string:2246337460>", tmp2.success_node_id];
+  const items = [2060509169, tmp2.success_node_id];
   const items1 = [obj];
   yield HTTP.post(obj);
 }
@@ -314,13 +321,8 @@ function genSubmitData(language, name, arr, arg3) {
   obj11["message_id"] = id3;
   return obj11;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ AnalyticEvents: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[3]));
-const SafetyToastType = arg1(dependencyMap[4]).SafetyToastType;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
+({ AnalyticEvents: closure_6, Endpoints: closure_7 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
 
 export { getReportMenu };
 export const getReportMenuForModeratorReport = function getReportMenuForModeratorReport(name, arg1) {

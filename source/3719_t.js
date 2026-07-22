@@ -92,14 +92,14 @@ const fn = function t(moment) {
   obj.weekdaysShort = "ned._pon._uto._sri._\u010Det._pet._sub.".split("_");
   obj.weekdaysMin = "ne_po_ut_sr_\u010De_pe_su".split("_");
   obj.weekdaysParseExact = true;
-  obj.longDateFormat = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  obj.longDateFormat = { "Bool(true)": null, "Bool(true)": "L", "Bool(true)": 1000, "Bool(true)": true, "Bool(true)": true, "Bool(true)": false };
   obj = {
-    intl: "<string:386400258>",
-    flex: "<string:4274520065>",
-    getChannel: "<string:4274585602>",
-    PX_8: "<string:191889410>",
-    textAlign: "<string:3947757571>",
-    unicodeVersion: "<string:3892314863>",
+    variant: -269352958,
+    r: -52363262,
+    now: -272760829,
+    Symbol: -183762942,
+    Symbol: -273612798,
+    enabled: -182648830,
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -130,7 +130,7 @@ const fn = function t(moment) {
   obj.relativeTime = { ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "dan", dd: translate, M: "mjesec", MM: translate, y: "godinu", yy: translate };
   obj.dayOfMonthOrdinalParse = /\d{1,2}\./;
   obj.ordinal = "%d.";
-  obj.week = { "Bool(true)": null, "Bool(true)": null };
+  obj.week = { emoji: "staff", me: "message" };
   return moment.defineLocale("hr", obj);
 };
 if ("object" === typeof exports) {
@@ -142,7 +142,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HH:mm:ss"], fn);
+    globalThis.define(["HHmmss.SSSS"], fn);
   }
 }
 fn(this.moment);

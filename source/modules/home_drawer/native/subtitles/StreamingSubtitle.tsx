@@ -1,10 +1,10 @@
-// Module ID: 14728
-// Function ID: 111106
+// Module ID: 14736
+// Function ID: 111149
 // Name: StreamingSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14728 (StreamingSubtitle)
+// Module 14736 (StreamingSubtitle)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/home_drawer/native/subtitles/StreamingSubtitle.tsx");

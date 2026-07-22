@@ -1,10 +1,10 @@
-// Module ID: 12032
-// Function ID: 92976
+// Module ID: 12036
+// Function ID: 93002
 // Name: RemediatedUserNotice
 // Dependencies: []
 // Exports: default
 
-// Module 12032 (RemediatedUserNotice)
+// Module 12036 (RemediatedUserNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -32,7 +32,7 @@ export default function RemediatedUserNotice(user) {
     const items1 = [tmp.container, tmp2.card, user.style];
     obj.style = items1;
     if (isBlocked) {
-      obj = { <string:1643205302>: -1488907821, <string:1415816450>: 1912603216, <string:4283523744>: 60 };
+      obj = { 803799044: 1354449169, 1269170180: 1014104066, 711589892: 1006632960 };
       const intl = arg1(dependencyMap[10]).intl;
       obj.children = intl.string(arg1(dependencyMap[10]).t.oC/fU6);
       isBlocked = callback(arg1(dependencyMap[9]).Text, obj);
@@ -40,23 +40,19 @@ export default function RemediatedUserNotice(user) {
     const items2 = [isBlocked, ];
     if (isIgnored) {
       const obj1 = {};
-      const obj2 = { <string:1643205302>: -1488907821, <string:1415816450>: 1912603216, <string:4283523744>: 60 };
+      const obj2 = { 803799044: 1354449169, 1269170180: 1014104066, 711589892: 1006632960 };
       const intl2 = arg1(dependencyMap[10]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[10]).t.HXz5An);
-      const items3 = [callback(arg1(dependencyMap[9]).Text, obj2), callback(arg1(dependencyMap[9]).Text, { 272491: "QrCodeIcon", 1377634897: "png", -1750624138: 128, 1169302736: "#ffffff", -1234645957: "#000000" }), ];
+      const items3 = [callback(arg1(dependencyMap[9]).Text, obj2), callback(arg1(dependencyMap[9]).Text, { AUD: "QrCodeIcon", shouldNotify: "png", CONTROLS_BUTTON_SIZE_LARGE: 128, ActivityCard: "#ffffff", y: "#000000" }), ];
       const intl3 = arg1(dependencyMap[10]).intl;
       const obj3 = {
         unignoreHook(children) {
-              const obj = {
-                "Bool(true)": "<string:911278084>",
-                "Bool(true)": "<string:16806146>",
-                "Bool(true)": "<string:24379392>",
+              return callback(user(closure_2[9]).Text, {
                 onPress() {
                   return callback(closure_2[11]).unignoreUser(id.id, "UserProfileRemediatedNotice");
                 },
                 children
-              };
-              return callback(user(closure_2[9]).Text, obj);
+              });
             }
       };
       items3[2] = intl3.format(arg1(dependencyMap[10]).t.PrtAqy, obj3);

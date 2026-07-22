@@ -1,10 +1,10 @@
-// Module ID: 13941
-// Function ID: 105942
+// Module ID: 13948
+// Function ID: 105982
 // Name: Footer
 // Dependencies: []
 // Exports: default
 
-// Module 13941 (Footer)
+// Module 13948 (Footer)
 function Footer(eligibleToReceivePremiumRewards) {
   let loading;
   let onPress;
@@ -28,12 +28,12 @@ function Footer(eligibleToReceivePremiumRewards) {
   }, []);
   const Button = arg1(dependencyMap[11]).Button;
   if (eligibleToReceivePremiumRewards.eligibleToReceivePremiumRewards) {
-    obj = {};
+    obj = { mm: "Boolean", nm: "isArray", mn: "isArray" };
     const intl3 = tmp9(tmp10[12]).intl;
     obj.text = intl3.string(tmp9(tmp10[12]).t.hvVgAZ);
     obj.onPress = callback1;
     const items = [tmp8(Button, obj), ];
-    obj = {};
+    obj = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7" };
     const intl4 = tmp9(tmp10[12]).intl;
     obj.text = intl4.string(tmp9(tmp10[12]).t.cpT0Cq);
     obj.onPress = callback2;
@@ -41,13 +41,13 @@ function Footer(eligibleToReceivePremiumRewards) {
     obj.children = items;
     let tmp12 = obj;
   } else {
-    const obj1 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
+    const obj1 = { <string:1986169986>: true, <string:2487833047>: true };
     const intl = tmp9(tmp10[12]).intl;
     obj1.text = intl.string(tmp9(tmp10[12]).t.pj0XBN);
     obj1.onPress = onPress;
     obj1.loading = loading;
     const items1 = [tmp8(Button, obj1), ];
-    const obj2 = {};
+    const obj2 = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7" };
     const intl2 = tmp9(tmp10[12]).intl;
     obj2.text = intl2.string(tmp9(tmp10[12]).t.PcTCB7);
     obj2.onPress = callback;
@@ -69,7 +69,7 @@ function SheetContent(arg0) {
   const items1 = [tmp.container, { marginBottom: importDefault(dependencyMap[13])().bottom }];
   obj = { style: tmp.contentContainer };
   const items2 = [callback(View, { style: tmp.riveContainer, children: callback(arg1(dependencyMap[15]).NitroQuestOrbsMultiplierRive, {}) }), , , ];
-  const obj2 = { <string:4003527526>: 1, <string:2924932188>: 1, <string:1546256390>: 4, <string:2324728136>: "row" };
+  const obj2 = { "Null": 1, "Null": 1, "Null": 4, "Null": "row" };
   const items3 = [, ];
   ({ text: arr4[0], title: arr4[1] } = tmp);
   obj2.style = items3;
@@ -99,8 +99,8 @@ const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_48 };
 obj.text = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 const obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.buttonContainer = { width: "100%", gap: importDefault(dependencyMap[5]).space.PX_12, marginVertical: importDefault(dependencyMap[5]).space.PX_16 };
-obj.title = { 1565696390: 225662533318658800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1376127658: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000787260438456, 651560459: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002172923690075, -1202400671: 16380441158462474000000000000000000000000000000000000000000000000000000000000000000 };
-obj.riveContainer = { "Null": null, "Null": "\u{1F44D}\u{1F3FC}" };
+obj.title = { alignContent: "Array", justifyContent: "onMomentumBegin", sectionIndex: "<string:275841477>", itemIndex: "<string:1929379840>" };
+obj.riveContainer = { "Null": "CARD", "Null": "SenderStopped" };
 let closure_12 = obj.createStyles(obj);
 const obj3 = { width: "100%", gap: importDefault(dependencyMap[5]).space.PX_12, marginVertical: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkInfoActionSheet.tsx");
@@ -148,7 +148,7 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
     }
     return formatResult;
   }, items1);
-  obj = { style: "hidden", x: "all", y: true, contentStyles: closure_11 };
+  obj = { contentStyles: closure_11 };
   obj = { visible: tmp2, children: callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
   obj.children = callback(importDefault(dependencyMap[20]), obj);
   return callback(arg1(dependencyMap[19]).BottomSheet, obj);

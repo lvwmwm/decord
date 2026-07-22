@@ -1,7 +1,7 @@
 // Module ID: 178
 // Function ID: 2584
 // Name: _allocateCallback
-// Dependencies: [196, 6, 7]
+// Dependencies: [1627390328, 1654, 1792]
 
 // Module 178 (_allocateCallback)
 function _allocateCallback(loop, queueReactNativeMicrotask) {
@@ -323,14 +323,14 @@ let obj = {
   }
 };
 let tmp2 = obj;
-if (!require("_classCallCheck")) {
+if (!require("withClamp")) {
   const _console = console;
   console.warn("Timing native module is not available, can't set timers.");
   obj = {};
   ({ callReactNativeMicrotasks: obj2.callReactNativeMicrotasks, queueReactNativeMicrotask: obj2.queueReactNativeMicrotask } = obj);
   tmp2 = obj;
 }
-const result = require("_defineProperties").default.setReactNativeMicrotasksCallback(obj.callReactNativeMicrotasks);
+const result = require("forwardRef").default.setReactNativeMicrotasksCallback(obj.callReactNativeMicrotasks);
 global._flushReactNativeMicrotasks = () => obj.callReactNativeMicrotasks();
 
 export default tmp2;

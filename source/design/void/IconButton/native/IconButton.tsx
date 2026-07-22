@@ -1,9 +1,9 @@
-// Module ID: 12272
-// Function ID: 94077
+// Module ID: 12277
+// Function ID: 94105
 // Name: SquareIconButton
 // Dependencies: []
 
-// Module 12272 (SquareIconButton)
+// Module 12277 (SquareIconButton)
 class SquareIconButton {
   constructor(arg0) {
     size = global.size;
@@ -69,7 +69,7 @@ class SquareIconButton {
 class CircularIconButton {
   constructor(arg0) {
     size = global.size;
-    obj = { flexWrap: false, borderRadius: false, padding: false };
+    obj = { flexWrap: "spring", fontSize: 0.4, marginLeft: 1 };
     ({ style, disableColor } = global);
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
@@ -105,7 +105,7 @@ const jsx = arg1(dependencyMap[1]).jsx;
 let obj = { SMALL_24: 24, [24]: "SMALL_24", MEDIUM_32: 32, [32]: "MEDIUM_32", LARGE_40: 40, [40]: "LARGE_40" };
 let obj1 = arg1(dependencyMap[2]);
 obj = {};
-obj = { "Null": "number", "Null": "number", "Null": "mY3Y38", borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: arg1(dependencyMap[4]).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
+obj = { "Null": "string", "Null": "string", "Null": "color", borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: arg1(dependencyMap[4]).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
 obj.container = obj;
 obj.small = { height: obj.SMALL_24, width: obj.SMALL_24 };
 obj.medium = { height: obj.MEDIUM_32, width: obj.MEDIUM_32 };

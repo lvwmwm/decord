@@ -1,5 +1,5 @@
 // Module ID: 7911
-// Function ID: 62930
+// Function ID: 62940
 // Name: canViewInteractionInfo
 // Dependencies: []
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage

@@ -1,9 +1,9 @@
-// Module ID: 15675
-// Function ID: 119751
+// Module ID: 15683
+// Function ID: 119794
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15675 (_createForOfIteratorHelperLoose)
+// Module 15683 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -83,7 +83,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = [null];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const NativeModules = arg1(dependencyMap[2]).NativeModules;

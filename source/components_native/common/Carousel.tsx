@@ -1,5 +1,5 @@
 // Module ID: 7992
-// Function ID: 63521
+// Function ID: 63531
 // Name: _callSuper
 // Dependencies: []
 
@@ -85,7 +85,7 @@ const tmp5 = (Component) => {
   return callback(PageIndicator, items);
 }(importAllResult.Component);
 tmp5.contextType = arg1(dependencyMap[11]).ThemeContext;
-tmp5.defaultProps = { "Bool(true)": null, "Bool(true)": null };
+tmp5.defaultProps = { style: "<string:44660545>", body: "<string:2465943808>" };
 const tmp6 = (Component) => {
   class Carousel {
     constructor(arg0) {
@@ -148,7 +148,7 @@ const tmp6 = (Component) => {
   return callback(Carousel, items);
 }(importAllResult.Component);
 tmp6.contextType = arg1(dependencyMap[11]).ThemeContext;
-tmp6.defaultProps = { <string:3095328559>: "numeric", <string:1197558330>: "numeric" };
+tmp6.defaultProps = { b: true, c: false };
 const obj1 = { color: importDefault(dependencyMap[9]).colors.ICON_SUBTLE };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("components_native/common/Carousel.tsx");
 

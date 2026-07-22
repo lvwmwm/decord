@@ -1,5 +1,5 @@
 // Module ID: 4585
-// Function ID: 40183
+// Function ID: 40191
 // Name: match
 // Dependencies: []
 
@@ -7,7 +7,7 @@
 let closure_2 = /\n$/;
 const obj = {};
 const merged = Object.assign(importDefault(dependencyMap[0]).defaultRules.heading);
-obj["requiredFirstCharacters"] = ["f", "image/png"];
+obj["requiredFirstCharacters"] = [];
 obj["match"] = function match(arg0, allowHeading, str) {
   let tmp = null;
   if (allowHeading.allowHeading) {

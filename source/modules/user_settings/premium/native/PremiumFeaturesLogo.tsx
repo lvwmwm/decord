@@ -1,5 +1,5 @@
 // Module ID: 8124
-// Function ID: 64341
+// Function ID: 64351
 // Name: PremiumFeaturesLogo
 // Dependencies: []
 // Exports: default
@@ -17,7 +17,7 @@ export default function PremiumFeaturesLogo(premiumType) {
   } else {
     tmp3 = importDefault(dependencyMap[4]);
   }
-  const obj = { 9223372036854775807: "r", 0: "BWD8fs", 0: "Array", -9223372036854775808: "commandsDisabled", 0: "Array" };
+  const obj = { is_pip_mode: "r", handlePressEmoji: "BackgroundGradientPresetId", Pawtect: "Array", makeViewDescriptorsSet: "MONOPOLY_GO", numOfEmbeds: "r" };
   const tmp6 = importDefault(dependencyMap[5]);
   obj.accessibilityLabel = arg1(dependencyMap[6]).getPremiumTypeDisplayName(premiumType);
   obj.style = premiumType.style;

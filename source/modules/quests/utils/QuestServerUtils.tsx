@@ -1,5 +1,5 @@
 // Module ID: 6944
-// Function ID: 55489
+// Function ID: 55500
 // Name: questConfigFromServer
 // Dependencies: []
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questWithUserStatusFromServer, questsEntitlementsFromServer

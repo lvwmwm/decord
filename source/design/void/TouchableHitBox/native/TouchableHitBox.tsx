@@ -1,9 +1,9 @@
-// Module ID: 8467
-// Function ID: 67558
+// Module ID: 8468
+// Function ID: 67570
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8467 (_isNativeReflectConstruct)
+// Module 8468 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,9 +22,9 @@ const ActivityIndicator = arg1(dependencyMap[6]).ActivityIndicator;
 const jsx = arg1(dependencyMap[7]).jsx;
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { width: "edittingRolesHeader", height: "Array", marginHorizontal: "ACCEPT", justifyContent: "sMsaLg", alignItems: "STICKER_PACK_VIEW_ALL", 0: "MiniaturesSpotIllustration", borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj = { 9223372036854775807: true, 0: true, -9223372036854775808: false, 9223372036854775807: false, 0: false, 9223372036854775807: false, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.button = obj;
-obj.buttonText = { -9223372036854775808: "sensitivityMin", 0: "getChannelIconComponentWithGuild", 9223372036854775807: "MiniaturesSpotIllustration", 9223372036854775807: "height" };
+obj.buttonText = {};
 obj.buttonIcon = { margin: 10 };
 obj.buttonSpinner = { margin: 12 };
 obj.buttonDisabled = { opacity: 0.6 };

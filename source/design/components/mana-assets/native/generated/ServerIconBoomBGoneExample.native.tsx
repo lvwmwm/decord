@@ -1,5 +1,5 @@
 // Module ID: 6469
-// Function ID: 50625
+// Function ID: 50636
 // Name: ServerIconBoomBGoneExample
 // Dependencies: []
 // Exports: ServerIconBoomBGoneExample

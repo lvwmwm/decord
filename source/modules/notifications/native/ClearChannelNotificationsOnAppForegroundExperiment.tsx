@@ -1,12 +1,13 @@
-// Module ID: 16376
-// Function ID: 126456
+// Module ID: 16384
+// Function ID: 126498
 // Name: shouldClearChannelNotificationsOnAppForeground
 // Dependencies: []
 // Exports: shouldClearChannelNotificationsOnAppForeground
 
-// Module 16376 (shouldClearChannelNotificationsOnAppForeground)
+// Module 16384 (shouldClearChannelNotificationsOnAppForeground)
 const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+const obj = { y: null, DateToSystemTimezoneSetter: "04c46d63a9ed0af066e3c9c84ab9d498", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/notifications/native/ClearChannelNotificationsOnAppForegroundExperiment.tsx");
 

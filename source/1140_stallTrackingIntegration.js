@@ -99,7 +99,7 @@ export const stallTrackingIntegration = function stallTrackingIntegration() {
           debug.error("[StallTracking] Tried to start stall tracking on a transaction already being tracked. Measurements might be lost.");
         } else {
           _startTracking();
-          obj = { "Null": 180, "Null": null, atStart: _getCurrentStats(activeSpan) };
+          obj = { "Null": "angle", "Null": 180, atStart: _getCurrentStats(activeSpan) };
           const result = map.set(activeSpan, obj);
           _flushLeakedTransactions();
         }

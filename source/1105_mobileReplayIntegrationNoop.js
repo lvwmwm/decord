@@ -62,7 +62,7 @@ if (!fn) {
   };
 }
 let closure_3 = "MobileReplay";
-let closure_4 = { 0: "%parseFloat%", -228170655217551392: "isArray", -9223372036854775808: "script", 9223372036854775807: "isArray", 661318738762: "sequenceId", 0: "isArray", 0: "premiumSince" };
+let closure_4 = {};
 function mobileReplayIntegrationNoop() {
   return {
     name: closure_3,

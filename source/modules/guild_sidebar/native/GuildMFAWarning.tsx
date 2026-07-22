@@ -1,10 +1,10 @@
-// Module ID: 14904
-// Function ID: 112284
+// Module ID: 14912
+// Function ID: 112327
 // Name: handlePress
 // Dependencies: []
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 14904 (handlePress)
+// Module 14912 (handlePress)
 function handlePress() {
   return _handlePress(...arguments);
 }
@@ -22,7 +22,7 @@ const HelpdeskArticles = tmp3.HelpdeskArticles;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { marginEnd: "isArray", top: "accessible", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.MFAWarning = obj;
 obj.MFAWarningIcon = {};
 const tmp4 = arg1(dependencyMap[4]);
@@ -36,12 +36,12 @@ export default function GuildMFAWarning() {
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress };
   obj = { style: tmp.MFAWarningIcon, source: importDefault(dependencyMap[12]) };
   const items = [callback2(Image, obj), ];
-  obj = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+  obj = { cachedAt: true, edpbxy: true };
   const intl = arg1(dependencyMap[14]).intl;
   const items1 = [intl.string(arg1(dependencyMap[14]).t.ZIf8Ag), ];
   const obj1 = { style: tmp.MFAWarningLink };
   const intl2 = arg1(dependencyMap[14]).intl;
-  const items2 = [-1402750382, intl2.string(arg1(dependencyMap[14]).t.hvVgAZ)];
+  const items2 = [false, intl2.string(arg1(dependencyMap[14]).t.hvVgAZ)];
   obj1.children = items2;
   items1[1] = callback3(arg1(dependencyMap[15]).LegacyText, obj1);
   obj.children = items1;

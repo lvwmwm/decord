@@ -1,10 +1,10 @@
-// Module ID: 15363
-// Function ID: 116995
+// Module ID: 15371
+// Function ID: 117038
 // Name: YouAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 15363 (YouAvatar)
+// Module 15371 (YouAvatar)
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
     const result = callback(closure_2[10]).trackYouTabAvatarPress();

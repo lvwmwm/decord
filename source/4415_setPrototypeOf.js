@@ -1,5 +1,5 @@
 // Module ID: 4415
-// Function ID: 38853
+// Function ID: 38861
 // Name: setPrototypeOf
 // Dependencies: []
 

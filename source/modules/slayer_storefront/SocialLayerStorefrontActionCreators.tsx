@@ -1,5 +1,5 @@
 // Module ID: 7454
-// Function ID: 59772
+// Function ID: 59783
 // Name: _fetchSocialLayerStorefront
 // Dependencies: []
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAffinity, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
@@ -216,7 +216,7 @@ async function _fetchSocialLayerStorefrontEntries(arg0, arg1) {
         obj = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD", applicationId: tmp };
         obj.dispatch(obj);
         const HTTP = callback(closure_2[8]).HTTP;
-        obj = { li: 994899974124757700000000000000000000000000000000000000000000000000000000000000000000000, ld: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002004549023389057, lo: 131072.0539264679, url: closure_6.SOCIAL_LAYER_STOREFRONTS_ALL(tmp) };
+        obj = { url: closure_6.SOCIAL_LAYER_STOREFRONTS_ALL(tmp) };
         const body = yield HTTP.get(obj).body;
         obj6.succeed();
         const obj1 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_SUCCESS", applicationId: tmp, entries: body.map(callback(closure_2[6]).transformSlayerApplicationStorefrontSummaryServer) };

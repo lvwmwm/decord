@@ -1,12 +1,16 @@
-// Module ID: 9908
-// Function ID: 76652
+// Module ID: 9909
+// Function ID: 76665
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 9908 (_createForOfIteratorHelperLoose)
+// Module 9909 (_createForOfIteratorHelperLoose)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+
 function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
+  let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
   if (Symbol_iterator) {
     const _Symbol = Symbol;
@@ -58,7 +62,7 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      arg1 = tmp;
     }
     let closure_1 = 0;
     return () => {
@@ -88,27 +92,25 @@ function getKeys() {
   const savedMessages = store.getSavedMessages();
   return savedMessages.map((saveData) => saveData.saveData);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/saved_messages/useSavedMessagesForPage.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/saved_messages/useSavedMessagesForPage.tsx");
 
 export default function useSavedMessagesForPage() {
-  const tmp = callback(React.useState(getKeys), 2);
+  const tmp = callback2(React.useState(getKeys), 2);
+  const callback = tmp[0];
   const importDefault = tmp[1];
-  let closure_1 = React.useRef(store.getIsStale());
+  let closure_2 = React.useRef(store.getIsStale());
   const effect = React.useEffect(() => {
     function handleChange() {
       const lastChanged = store.getLastChanged();
-      if (callback !== lastChanged) {
-        const callback = lastChanged;
-        if (handleChange.current) {
+      if (closure_0 !== lastChanged) {
+        closure_0 = lastChanged;
+        if (ref.current) {
           if (!store.getIsStale()) {
-            handleChange.current = false;
-            callback(callback2());
+            ref.current = false;
+            handleChange(callback());
           }
         }
-        callback((arg0) => {
+        handleChange((arg0) => {
           let done;
           let iter2;
           const items = [...arg0];
@@ -146,12 +148,16 @@ export default function useSavedMessagesForPage() {
       }
     }
     let closure_1 = handleChange;
-    const lastChanged = closure_4.getLastChanged();
-    closure_4.addChangeListener(handleChange);
+    const lastChanged = closure_5.getLastChanged();
+    closure_5.addChangeListener(handleChange);
     return () => {
       store.removeChangeListener(handleChange);
     };
   }, []);
-  importDefault(closure_1[3])();
-  return tmp[0];
+  importDefault(closure_2[3])();
+  const items = [store];
+  return callback(closure_2[4]).useStateFromStoresArray(items, () => {
+    const mapped = lib.map((channelId) => savedMessage.getSavedMessage(channelId.channelId, channelId.messageId));
+    return mapped.filter(lib(closure_2[5]).isNotNullish);
+  });
 };

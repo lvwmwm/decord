@@ -1,5 +1,5 @@
 // Module ID: 4471
-// Function ID: 39494
+// Function ID: 39502
 // Name: getAlertModalItemKey
 // Dependencies: []
 // Exports: showConfirmModal, useDismissModalCallback
@@ -194,7 +194,7 @@ class AlertModal {
         return obj;
       }
     }
-    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: arg1(dependencyMap[9]).TransitionStates, runOnJS: arg1(dependencyMap[11]).runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39526, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
+    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: arg1(dependencyMap[9]).TransitionStates, runOnJS: arg1(dependencyMap[11]).runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39534, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
     B.__closure = obj;
     B.__workletHash = 655123755546;
     B.__initData = memo;
@@ -373,10 +373,10 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
 const tmp3 = arg1(dependencyMap[6]);
 let obj = { root: {} };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014059549379171, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009471827915, "Null": 122885184.00000012, "Null": 145578.1250019923, "Null": 4256883512725890400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 8053403418624.005, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000145261221907486, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_TOP_HIGH);
 obj.content = obj;
-obj.overflow = { 179809: "TEXT_STATUS_ONLINE", 0: "%DataView%", 0: "velocity", 0: "%Float64Array%", 0: "kSplineTableSize" };
+obj.overflow = {};
 obj.body = { alignItems: "center" };
 obj.contentText = { textAlign: "center" };
 let closure_13 = arg1(dependencyMap[7]).createStyles(obj);
@@ -411,7 +411,7 @@ const memoResult = importAllResult.memo(() => {
     if (0 === alertStore.length) {
       return [];
     } else {
-      const items = [{ "Bool(false)": 0, "Bool(false)": 0 }];
+      const items = [{ "Bool(false)": true, "Bool(false)": null }];
       const substr = alertStore.slice(0, 3);
       const item = substr.forEach((alert, index) => {
         items.push({ type: "alert", alert, key: alert.key, index });

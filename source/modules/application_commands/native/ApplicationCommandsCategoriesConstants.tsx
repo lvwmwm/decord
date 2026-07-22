@@ -1,9 +1,9 @@
-// Module ID: 11427
-// Function ID: 88947
+// Module ID: 11428
+// Function ID: 88960
 // Name: ICON_SIZE
 // Dependencies: []
 
-// Module 11427 (ICON_SIZE)
+// Module 11428 (ICON_SIZE)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/application_commands/native/ApplicationCommandsCategoriesConstants.tsx");
 

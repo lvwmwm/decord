@@ -1,10 +1,10 @@
-// Module ID: 14213
-// Function ID: 107496
+// Module ID: 14221
+// Function ID: 107539
 // Name: onFriendOnlineNotificationSettingsChanged
 // Dependencies: []
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 14213 (onFriendOnlineNotificationSettingsChanged)
+// Module 14221 (onFriendOnlineNotificationSettingsChanged)
 let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[4]);

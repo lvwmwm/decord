@@ -1,10 +1,10 @@
-// Module ID: 8946
-// Function ID: 70527
+// Module ID: 8947
+// Function ID: 70540
 // Name: filterScopes
 // Dependencies: []
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 8946 (filterScopes)
+// Module 8947 (filterScopes)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ EMPTY_NUX_SERVER: closure_5, FAVORITES: closure_6, ME: closure_7 } = arg1(dependencyMap[2]));

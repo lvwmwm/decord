@@ -1,9 +1,9 @@
-// Module ID: 14020
-// Function ID: 106629
+// Module ID: 14027
+// Function ID: 106669
 // Name: getActiveApplicationStream
 // Dependencies: []
 
-// Module 14020 (getActiveApplicationStream)
+// Module 14027 (getActiveApplicationStream)
 function getActiveApplicationStream() {
   let obj;
   let obj2;

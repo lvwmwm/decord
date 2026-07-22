@@ -1,10 +1,10 @@
-// Module ID: 9220
-// Function ID: 72098
+// Module ID: 9221
+// Function ID: 72111
 // Name: EnterEmail
 // Dependencies: []
 // Exports: default
 
-// Module 9220 (EnterEmail)
+// Module 9221 (EnterEmail)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -19,7 +19,7 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon" };
+obj.container = {};
 obj.title = { textAlign: "center" };
 obj.prompt = {};
 obj.input = {};
@@ -80,7 +80,7 @@ export default function EnterEmail(isChangeEmail) {
   if (null != stateFromStores) {
     obj = { style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
     if (null != stateFromStores.email) {
       const intl2 = arg1(dependencyMap[16]).intl;
       let stringResult = intl2.string(arg1(dependencyMap[16]).t.Vm8akB);

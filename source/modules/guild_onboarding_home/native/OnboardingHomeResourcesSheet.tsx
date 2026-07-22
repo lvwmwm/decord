@@ -1,10 +1,10 @@
-// Module ID: 15164
-// Function ID: 114361
+// Module ID: 15172
+// Function ID: 114404
 // Name: OnboardingHomeResourcesSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15164 (OnboardingHomeResourcesSheet)
+// Module 15172 (OnboardingHomeResourcesSheet)
 importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 const jsx = arg1(dependencyMap[2]).jsx;

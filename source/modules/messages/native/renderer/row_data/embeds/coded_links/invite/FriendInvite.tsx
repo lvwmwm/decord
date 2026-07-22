@@ -1,10 +1,10 @@
-// Module ID: 12169
-// Function ID: 93596
+// Module ID: 12173
+// Function ID: 93622
 // Name: createFriendInvite
 // Dependencies: []
 // Exports: createFriendInvite
 
-// Module 12169 (createFriendInvite)
+// Module 12173 (createFriendInvite)
 const Image = require(dependencyMap[0]).Image;
 let closure_4 = importDefault(dependencyMap[1]);
 const InviteTypes = require(dependencyMap[2]).InviteTypes;

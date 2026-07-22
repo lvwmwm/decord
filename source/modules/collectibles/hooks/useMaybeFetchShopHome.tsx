@@ -1,10 +1,10 @@
-// Module ID: 14353
-// Function ID: 108391
+// Module ID: 14361
+// Function ID: 108434
 // Name: useMaybeFetchCollectiblesShopHome
 // Dependencies: []
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 14353 (useMaybeFetchCollectiblesShopHome)
+// Module 14361 (useMaybeFetchCollectiblesShopHome)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ useEffect: closure_3, useCallback: closure_4, useMemo: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);

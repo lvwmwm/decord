@@ -1,10 +1,10 @@
-// Module ID: 14461
-// Function ID: 108978
+// Module ID: 14469
+// Function ID: 109021
 // Name: SettingSearchBar
 // Dependencies: []
 // Exports: default
 
-// Module 14461 (SettingSearchBar)
+// Module 14469 (SettingSearchBar)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -19,12 +19,12 @@ const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/settings/na
 export default function SettingSearchBar() {
   const tmp = callback();
   const callback = React.useCallback(() => {
-    store.setState({ presentation: "resizeMode", animation: "formatToPlainString", animation: "construct" });
+    store.setState({ <string:2937152404>: "resizeMode", <string:2874959295>: "formatToPlainString", <string:1492885590>: "construct" });
     const result = callback(closure_1[6]).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
     const result = callback(closure_1[7]).trackSettingSearchInputFocused();
-    store.setState({ "Null": null, "Null": null });
+    store.setState({ FITNESS: null, useIsNewGamesCoachmarkEnabled: null });
   }, []);
   const callback2 = React.useCallback(() => {
     store.setState({ isFocused: false });

@@ -29,12 +29,12 @@ export const createLangChainCallbackHandler = function createLangChainCallbackHa
     }
     const obj = {
       lc_serializable: false,
-      lc_namespace: ["<string:8471360>", "<string:117768193>", "<string:132972545>"],
+      lc_namespace: [19.98, 0, 62.246],
       lc_secrets: undefined,
       lc_attributes: undefined,
       lc_aliases: undefined,
       lc_serializable_keys: undefined,
-      lc_id: ["<string:8471360>", "<string:117768193>", "<string:132972545>"],
+      lc_id: [19.98, 0, 62.246],
       lc_kwargs: {},
       name: "SentryCallbackHandler",
       ignoreLLM: false,
@@ -175,13 +175,11 @@ export const createLangChainCallbackHandler = function createLangChainCallbackHa
           return obj;
         },
       toJSON() {
-          const obj = { style: null, lineClamp: 0 };
-          obj.id = obj.lc_id;
+          const obj = { id: obj.lc_id };
           return obj;
         },
       toJSONNotImplemented() {
-          const obj = { style: null, lineClamp: 0 };
-          obj.id = obj.lc_id;
+          const obj = { id: obj.lc_id };
           return obj;
         }
     };

@@ -1,10 +1,10 @@
-// Module ID: 10246
-// Function ID: 79204
+// Module ID: 10247
+// Function ID: 79217
 // Name: defaultReactFn
 // Dependencies: []
 // Exports: default
 
-// Module 10246 (defaultReactFn)
+// Module 10247 (defaultReactFn)
 function defaultReactFn(content, output, state) {
   if ("string" === typeof content.content) {
     content = content.content;

@@ -1,10 +1,10 @@
-// Module ID: 15775
-// Function ID: 120615
+// Module ID: 15783
+// Function ID: 120658
 // Name: convertMsToSecs
 // Dependencies: []
 // Exports: default
 
-// Module 15775 (convertMsToSecs)
+// Module 15783 (convertMsToSecs)
 let StyleSheet;
 function convertMsToSecs(arg0) {
   let result;
@@ -86,9 +86,9 @@ function MediaInfo(message) {
           const obj2 = {};
           const obj3 = { flex: 1 };
           obj2.style = obj3;
-          const obj4 = { "Null": 1524689557511356700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 15184880218815420000000000000000000000000000000000000000000000000000000000000000000, children: tmp15 };
+          const obj4 = { "Null": 0.0000000000000000000000000004598235998175359, <string:2102460420>: true, children: tmp15 };
           const items3 = [callback2(arg1(closure_2[17]).Marquee, obj4), ];
-          const obj5 = { start: {}, end: {}, locations: [null, null, null, null, null, null] };
+          const obj5 = { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, locations: [null, null, null, null, null, null] };
           const items4 = [token, `${tmp2}CC`, `${tmp2}00`, `${tmp2}00`, `${tmp2}CC`, token];
           obj5.colors = items4;
           obj5.style = tmp.infoContainerGradient;
@@ -99,7 +99,7 @@ function MediaInfo(message) {
         const items5 = [tmp20, ];
         let tmp28 = null != stateFromStores;
         if (tmp28) {
-          const obj6 = { <string:1643205302>: "ks", <string:1415816450>: "bottom", <string:4283523744>: "ks", children: stateFromStores };
+          const obj6 = { 803799044: true, 1269170180: true, 711589892: true, children: stateFromStores };
           tmp28 = callback2(arg1(closure_2[16]).Text, obj6);
         }
         items5[1] = tmp28;
@@ -130,7 +130,7 @@ function PiPControls(message) {
           if (null != channel) {
             guildId = channel.getGuildId();
           }
-          visible(closure_2[20])(closure_14.CHANNEL(guildId, message.channel_id, message.id), { "Bool(false)": null, "Bool(false)": null });
+          visible(closure_2[20])(closure_14.CHANNEL(guildId, message.channel_id, message.id), { borderRadius: null, height: null });
           const tmp4 = visible(closure_2[20]);
         }
       }
@@ -198,13 +198,13 @@ const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
 obj = { container: obj };
-obj = { margin: null, backgroundColor: null };
+obj = { "Bool(false)": null, "Bool(false)": null };
 ({ height: obj3.height, width: obj3.width } = arg1(dependencyMap[8]).SquarePIPReferenceDimensions);
 const obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj1["zIndex"] = 5;
 obj.pipControls = obj1;
-const obj2 = { y: "[1-9]", yM: "[1-9]", yMEd: "class", yMMM: "[^{}\\\\\\0-\\x1F\u007F \\t\\n\\r]", yMMMEd: "[^{}\\\\\\0-\\x1F\u007F \\t\\n\\r]", borderRadius: importDefault(dependencyMap[11]).radii.round, borderColor: importDefault(dependencyMap[11]).colors.CONTROL_SECONDARY_BORDER_DEFAULT, tintColor: importDefault(dependencyMap[11]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[11]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+const obj2 = { hmv: "[1-9]", ms: "[1-9]", y: "class", yM: "[^{}\\\\\\0-\\x1F\u007F \\t\\n\\r]", yMEd: "[^{}\\\\\\0-\\x1F\u007F \\t\\n\\r]", borderRadius: importDefault(dependencyMap[11]).radii.round, borderColor: importDefault(dependencyMap[11]).colors.CONTROL_SECONDARY_BORDER_DEFAULT, tintColor: importDefault(dependencyMap[11]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[11]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
 const merged1 = Object.assign(importDefault(dependencyMap[11]).shadows.SHADOW_LOW_HOVER);
 obj.pipButton = obj2;
 obj.dismissButton = { right: 8 };
@@ -213,9 +213,9 @@ obj.infoContainer = {};
 const obj3 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj.infoContainerGradient = obj3;
-obj.infoContent = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000783586393787, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001241636414595177, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045494664875347395, 9223372036854775807: -290200853345032500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-obj.actionContainer = { -1321732576: 1375862783, 898018812: 1153565118, -865871004: 44581442, -11273312: 17514240, -1884505085: 908087552 };
-const obj4 = { -1321732576: 35924116695241770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 898018812: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011824268191791547, -865871004: true, -11273312: true, -1884505085: true, borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };
+obj.infoContent = { "Null": null, "Null": null, "Null": null, "Null": null };
+obj.actionContainer = {};
+const obj4 = { <string:67523579>: -1081933822, <string:2896997588>: -162463742, <string:1515283041>: 88211949, <string:1364418894>: 352322073, <string:1986308704>: 1358954784, borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };
 obj.playPauseButton = obj4;
 const obj5 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);

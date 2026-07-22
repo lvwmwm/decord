@@ -1,10 +1,10 @@
-// Module ID: 10608
-// Function ID: 82757
+// Module ID: 10609
+// Function ID: 82770
 // Name: getScreens
 // Dependencies: []
 // Exports: default
 
-// Module 10608 (getScreens)
+// Module 10609 (getScreens)
 let StyleSheet;
 function getScreens(channel) {
   const arg1 = channel.channel;
@@ -64,7 +64,7 @@ function CallWithVoiceChat(channel) {
       num = value;
     }
     const items = [-result, 0];
-    obj.opacity = result(tmp10[12]).interpolate(num, items, [1580547965, 1074678202]);
+    obj.opacity = result(tmp10[12]).interpolate(num, items, [1.025, 3.786]);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[12]).interpolate, translateX, width: result };
@@ -230,7 +230,7 @@ let closure_11 = arg1(dependencyMap[7]).OAUTH2_AUTHORIZE_MODAL_KEY;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { flex: { <string:2786488292>: null, <string:1399406675>: null } };
+obj = { flex: { -1395371693: null, -1403887007: null } };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["right"] = undefined;

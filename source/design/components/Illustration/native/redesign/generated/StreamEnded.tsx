@@ -1,10 +1,10 @@
-// Module ID: 10557
-// Function ID: 82471
+// Module ID: 10558
+// Function ID: 82484
 // Name: getStreamEndedSource
 // Dependencies: []
 // Exports: StreamEnded
 
-// Module 10557 (getStreamEndedSource)
+// Module 10558 (getStreamEndedSource)
 function getStreamEndedSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

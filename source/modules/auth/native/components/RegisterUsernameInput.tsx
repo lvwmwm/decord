@@ -1,15 +1,15 @@
-// Module ID: 14634
-// Function ID: 110370
+// Module ID: 14642
+// Function ID: 110413
 // Name: UsernameStatusMessage
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: RegisterUsernameInput
 
-// Module 14634 (UsernameStatusMessage)
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
-import result from "result";
+// Module 14642 (UsernameStatusMessage)
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function UsernameStatusMessage(arg0) {
   let isUsernameFocused;
@@ -21,7 +21,7 @@ function UsernameStatusMessage(arg0) {
     type = usernameStatus.type;
   }
   if (type === arg1(dependencyMap[7]).NameValidationState.ERROR) {
-    let obj = { 9223372036854775807: null, 9223372036854775807: "\u{1F44A}\u{1F3FC}", -9223372036854775808: true };
+    let obj = { "Null": null, "Null": "\u{1F44A}\u{1F3FC}", "Null": true };
     obj = { size: "xs", color: importDefault(dependencyMap[10]).colors.TEXT_FEEDBACK_CRITICAL };
     const items = [callback3(arg1(dependencyMap[9]).CircleErrorIcon, obj), ];
     const obj1 = { style: tmp.status };
@@ -45,7 +45,7 @@ function UsernameStatusMessage(arg0) {
         obj2["style"] = tmp.status;
         obj2["variant"] = "text-xs/medium";
         obj2["animated"] = true;
-        const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "text-lg/semibold", children: usernameStatus.message };
+        const obj3 = { cachedAt: null, edpbxy: "text-lg/semibold", children: usernameStatus.message };
         obj2["children"] = callback3(arg1(dependencyMap[11]).Text, obj3);
         tmp6 = callback3(arg1(dependencyMap[11]).Text, obj2);
       }
@@ -67,8 +67,8 @@ function UsernameStatusMessage(arg0) {
   return tmp6;
 }
 let closure_3 = [];
-({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = result);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = result);
+({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = __exportStarResult1);
+({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = __exportStarResult1);
 let obj = arg1(dependencyMap[5]);
 let closure_12 = obj.createStyles({ status: { width: "90%" }, inputHint: { width: "100%" } });
 obj = {};
@@ -81,7 +81,7 @@ const LinearTransition = arg1(dependencyMap[6]).LinearTransition;
 const Easing = arg1(dependencyMap[6]).Easing;
 obj.layout = require("module_300");
 const easingResult = LinearTransition.easing(Easing.inOut(arg1(dependencyMap[6]).Easing.quad));
-result = arg1(dependencyMap[16]).fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
+const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
 
 export const RegisterUsernameInput = function RegisterUsernameInput(setUsername) {
   let autoFocus;

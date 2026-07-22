@@ -1,10 +1,10 @@
-// Module ID: 14690
-// Function ID: 110818
+// Module ID: 14698
+// Function ID: 110861
 // Name: GUILD_ITEM_SIZE
 // Dependencies: []
 // Exports: useGuildWrapperSize
 
-// Module 14690 (GUILD_ITEM_SIZE)
+// Module 14698 (GUILD_ITEM_SIZE)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 
@@ -19,5 +19,5 @@ export const useGuildWrapperSize = function useGuildWrapperSize() {
   return token + 2 * require(dependencyMap[0]).useToken(importDefault(dependencyMap[1]).modules.mobile.GUILD_BAR_ITEM_MARGIN);
 };
 export const FastListRenderSections = { MESSAGES: 0, [0]: "MESSAGES", FAVORITES: 1, [1]: "FAVORITES", PENDING_JOIN_REQUESTS: 2, [2]: "PENDING_JOIN_REQUESTS", LURKING_GUILDS: 3, [3]: "LURKING_GUILDS", GUEST_GUILDS: 4, [4]: "GUEST_GUILDS", UNREAD_PRIVATE_CHANNELS: 5, [5]: "UNREAD_PRIVATE_CHANNELS", SEPARATOR: 6, [6]: "SEPARATOR", GUILDS: 7, [7]: "GUILDS" };
-export const FOLDER_SPRING_PHYSICS = {};
+export const FOLDER_SPRING_PHYSICS = { 84079581: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT", -79768422: "isArray", -618226596: "\u096E" };
 export const TRANSITION_PHYSICS = {};

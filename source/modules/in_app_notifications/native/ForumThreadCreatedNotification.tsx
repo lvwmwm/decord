@@ -1,10 +1,10 @@
-// Module ID: 10304
-// Function ID: 79530
+// Module ID: 10305
+// Function ID: 79543
 // Name: ForumThreadCreatedNotification
 // Dependencies: []
 // Exports: default
 
-// Module 10304 (ForumThreadCreatedNotification)
+// Module 10305 (ForumThreadCreatedNotification)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).NOTIFICATION_PREVIEW_LINE_CLAMP;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -35,7 +35,7 @@ export default function ForumThreadCreatedNotification(notification) {
   const items = [parentChannel, guild, userAuthor];
   const items1 = [thread];
   const memo = React.useMemo(() => {
-    const obj = { participantActionContainer: "message", guild_events_size: null, fish_cake: "\u{1F9B6}\u{1F3FB}", channel: parentChannel, guild, author: userAuthor };
+    const obj = { addExtraAnalyticsDecorator: "message", Gesture: null, GUILD_THEME_POWERUP_BOOST_PRICE: "\u{1F9B6}\u{1F3FB}", channel: parentChannel, guild, author: userAuthor };
     return obj;
   }, items);
   const items2 = [notification.parentChannel.id];

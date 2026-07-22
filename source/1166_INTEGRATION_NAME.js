@@ -99,7 +99,7 @@ export const reactNativeNavigationIntegration = function reactNativeNavigationIn
         currentRoute.setCurrentRoute(componentId.componentName);
       }
       const tmp13Result = 3(obj, currentRoute(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component");
-      obj = {};
+      obj = { 478255568: "channelId", 1636470997: "channelId" };
       const _HermesInternal = HermesInternal;
       obj.message = "Navigation to " + componentId.componentName;
       const obj1 = {};

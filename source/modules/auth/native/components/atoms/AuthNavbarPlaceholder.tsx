@@ -1,10 +1,10 @@
-// Module ID: 9217
-// Function ID: 72090
+// Module ID: 9218
+// Function ID: 72103
 // Name: AuthNavbarPlaceholder
 // Dependencies: [79429632, 498139136, 131072, 368050176, 5, 57]
 // Exports: default
 
-// Module 9217 (AuthNavbarPlaceholder)
+// Module 9218 (AuthNavbarPlaceholder)
 import _slicedToArray from "_slicedToArray";
 
 importAll(dependencyMap[0]);

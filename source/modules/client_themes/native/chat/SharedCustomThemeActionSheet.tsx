@@ -1,10 +1,10 @@
-// Module ID: 11080
-// Function ID: 86165
+// Module ID: 11081
+// Function ID: 86178
 // Name: sharedClientThemeToThemeSettings
 // Dependencies: []
 // Exports: default
 
-// Module 11080 (sharedClientThemeToThemeSettings)
+// Module 11081 (sharedClientThemeToThemeSettings)
 function sharedClientThemeToThemeSettings(sharedClientTheme) {
   if (undefined !== sharedClientTheme) {
     const obj = {};
@@ -63,7 +63,7 @@ const PremiumTypes = arg1(dependencyMap[5]).PremiumTypes;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { contentWrapper: { MKTG_HYPESQUAD_FORM_SUBMITTED: null, marginInlineEnd: null }, centeredText: { textAlign: "center" }, ctaContainer: { 1311854946: 3327, -1326658460: 160000, 1382179270: 659619840, -1399870276: 74711440 }, nitroWheelButton: { variant: 24, color: 24, accessibilityRole: null } };
+obj = { contentWrapper: { "Bool(false)": null, "Bool(false)": null }, centeredText: { textAlign: "center" }, ctaContainer: { 1314541922: null, -1309881244: null, 1382179270: null, -1397969708: null }, nitroWheelButton: { <string:1694692740>: 24, <string:2875367675>: 24, <string:2899595606>: null } };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.getNitroButton = obj;
 let closure_14 = obj.createStyles(obj);

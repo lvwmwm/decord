@@ -1,5 +1,5 @@
 // Module ID: 4528
-// Function ID: 39770
+// Function ID: 39778
 // Name: animatedComponent
 // Dependencies: []
 

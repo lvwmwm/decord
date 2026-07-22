@@ -64,7 +64,7 @@ export const SafeAreaProvider = function SafeAreaProvider(arg0) {
     context1 = frame;
   }
   if (null == context1) {
-    let obj = { width: store.get("window").width, height: store.get("window").height };
+    let obj = { 0: "%FunctionPrototype%", 0: "paddingStart", width: store.get("window").width, height: store.get("window").height };
     context1 = obj;
   }
   const tmp12 = callback2(importAllResult.useState(context1), 2);

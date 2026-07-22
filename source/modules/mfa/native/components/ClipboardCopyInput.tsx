@@ -1,10 +1,10 @@
-// Module ID: 14526
-// Function ID: 109390
+// Module ID: 14534
+// Function ID: 109433
 // Name: ClipboardCopyInput
 // Dependencies: []
 // Exports: default
 
-// Module 14526 (ClipboardCopyInput)
+// Module 14534 (ClipboardCopyInput)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

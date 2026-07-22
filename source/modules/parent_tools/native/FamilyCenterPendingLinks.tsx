@@ -1,10 +1,10 @@
-// Module ID: 13706
-// Function ID: 103695
+// Module ID: 13713
+// Function ID: 103728
 // Name: FamilyCenterPendingLinkRow
 // Dependencies: []
 // Exports: default
 
-// Module 13706 (FamilyCenterPendingLinkRow)
+// Module 13713 (FamilyCenterPendingLinkRow)
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const arg1 = str;
@@ -97,7 +97,7 @@ const UserLinkStatus = arg1(dependencyMap[2]).UserLinkStatus;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: { marginTop: 24 } };
-obj = { 1979675647: true, 1895788287: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { 0: true, 0: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.content = obj;
 obj.header = { marginBottom: 10 };
 let closure_8 = obj.createStyles(obj);
@@ -123,7 +123,7 @@ export default function FamilyCenterPendingLinks() {
   let tmp5 = null;
   if (0 !== usersForLinkStatus.length) {
     obj = { style: tmp.container };
-    const obj1 = { style: tmp.header, children: tmp4 };
+    const obj1 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.header, children: tmp4 };
     const items = [callback(arg1(dependencyMap[10]).Text, obj1), ];
     const obj2 = { style: tmp.content, children: usersForLinkStatus.map((id) => callback(closure_10, { otherUser: id }, "pending-" + id.id)) };
     items[1] = callback(View, obj2);

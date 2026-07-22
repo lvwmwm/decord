@@ -1,10 +1,10 @@
-// Module ID: 12007
-// Function ID: 92804
+// Module ID: 12011
+// Function ID: 92830
 // Name: useTrackUserProfileWishlistView
 // Dependencies: []
 // Exports: default
 
-// Module 12007 (useTrackUserProfileWishlistView)
+// Module 12011 (useTrackUserProfileWishlistView)
 const _module = require(dependencyMap[0]);
 ({ useEffect: closure_2, useRef: closure_3 } = _module);
 let closure_4 = importDefault(dependencyMap[1]);

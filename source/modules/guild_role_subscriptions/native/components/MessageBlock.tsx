@@ -1,10 +1,10 @@
-// Module ID: 11319
-// Function ID: 88080
+// Module ID: 11320
+// Function ID: 88093
 // Name: getContainerStyles
 // Dependencies: []
 // Exports: default
 
-// Module 11319 (getContainerStyles)
+// Module 11320 (getContainerStyles)
 function getContainerStyles(arg0) {
   if (obj.RED === arg0) {
     let obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderColor: importDefault(dependencyMap[3]).colors.BORDER_FEEDBACK_CRITICAL };

@@ -1,5 +1,5 @@
 // Module ID: 4229
-// Function ID: 37077
+// Function ID: 37085
 // Name: Camera
 // Dependencies: []
 
@@ -35,7 +35,7 @@ class Camera {
 }
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
-Camera.defaultProps = { registerAsset: 2, bottom: "dashed", flex: "center" };
+Camera.defaultProps = {};
 const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Camera.tsx");
 
 export default Camera;

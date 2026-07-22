@@ -60,7 +60,7 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ "Null": null, 0: null }, {});
+    let closure_0 = Object.assign({ 24740291: null, 33554432: null }, {});
     const obj = {
       name: "GlobalHandlers",
       setupOnce() {

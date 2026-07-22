@@ -1,9 +1,9 @@
-// Module ID: 15560
-// Function ID: 118728
+// Module ID: 15568
+// Function ID: 118771
 // Name: ExternalPipViewVideoUnavailable
 // Dependencies: []
 
-// Module 15560 (ExternalPipViewVideoUnavailable)
+// Module 15568 (ExternalPipViewVideoUnavailable)
 let StyleSheet;
 function ExternalPipViewVideoUnavailable(wasStream) {
   wasStream = wasStream.wasStream;
@@ -16,7 +16,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     tmp4Result = tmp4(tmp5(tmp6[10]).CircleInformationIcon, {});
   }
   const items = [tmp4Result, ];
-  obj = { isArray: 220545491, Button: -144637950, textAlign: 684545, style: tmp.unavailableText };
+  obj = { guild_id: 19066945, exports: 32989440, body: 2674, style: tmp.unavailableText };
   const intl = arg1(dependencyMap[12]).intl;
   if (wasStream) {
     let result = intl.formatToMarkdownString(tmp9(tmp10[12]).t.1Ww0Hi, {});
@@ -162,7 +162,7 @@ const obj3 = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };
 obj.unavailable = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm, padding: importDefault(dependencyMap[8]).space.PX_8, margin: importDefault(dependencyMap[8]).space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
 const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm, padding: importDefault(dependencyMap[8]).space.PX_8, margin: importDefault(dependencyMap[8]).space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
 obj.unavailableText = { marginLeft: importDefault(dependencyMap[8]).space.PX_4, textAlign: "center" };
-const obj6 = { content: 78561460204375980000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, duration: 5222685582656.002, body: 85108253353844740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flex: 104748736507408540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
+const obj6 = { 979471010: 3142458405845922000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1661208145: 6322197226688.002, 1403737659: 0.000000000000000000000000000000000008651649628586183, 1927661827: 3770953570047519000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
 obj.unavaiableImage = obj6;
 const obj7 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);

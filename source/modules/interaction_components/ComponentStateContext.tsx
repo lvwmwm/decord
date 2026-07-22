@@ -1,5 +1,5 @@
 // Module ID: 7788
-// Function ID: 62139
+// Function ID: 62149
 // Name: isInteractionComponent
 // Dependencies: []
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext

@@ -1,10 +1,10 @@
-// Module ID: 10934
-// Function ID: 85038
+// Module ID: 10935
+// Function ID: 85051
 // Name: ConnectedAcceptGuildTemplate
 // Dependencies: []
 // Exports: default
 
-// Module 10934 (ConnectedAcceptGuildTemplate)
+// Module 10935 (ConnectedAcceptGuildTemplate)
 function ConnectedAcceptGuildTemplate(code) {
   code = code.code;
   const arg1 = code;
@@ -68,6 +68,8 @@ export default function AcceptGuildTemplateModal(code) {
   const screens = React.useMemo(() => function getScreens(arg0) {
     let obj = {};
     obj = {
+      "Null": "r",
+      "Null": "snapToOffsets",
       headerLeft: arg0(closure_3[16]).getHeaderCloseButton(() => callback(closure_3[15]).hideModal()),
       render() {
         const merged = Object.assign(arg0);

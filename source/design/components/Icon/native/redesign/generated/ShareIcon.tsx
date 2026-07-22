@@ -1,10 +1,10 @@
-// Module ID: 12109
-// Function ID: 93311
+// Module ID: 12113
+// Function ID: 93337
 // Name: ShareIcon
 // Dependencies: []
 // Exports: ShareIcon
 
-// Module 12109 (ShareIcon)
+// Module 12113 (ShareIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ShareIcon.tsx");

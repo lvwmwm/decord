@@ -1,10 +1,10 @@
-// Module ID: 10253
-// Function ID: 79241
+// Module ID: 10254
+// Function ID: 79254
 // Name: HighlightText
 // Dependencies: []
 // Exports: default
 
-// Module 10253 (HighlightText)
+// Module 10254 (HighlightText)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);

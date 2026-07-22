@@ -1,10 +1,10 @@
-// Module ID: 12984
-// Function ID: 98851
+// Module ID: 12991
+// Function ID: 98884
 // Name: EmptyState
 // Dependencies: []
 // Exports: ThemedEmptyState
 
-// Module 12984 (EmptyState)
+// Module 12991 (EmptyState)
 class EmptyState {
   constructor(arg0) {
     ({ source, title, callToAction } = global);
@@ -79,7 +79,7 @@ const Fonts = arg1(dependencyMap[2]).Fonts;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
+obj = { container: { 0: null, 9223372036854775807: null, 0: null } };
 obj = {};
 const tmp4 = arg1(dependencyMap[3]);
 const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
@@ -92,7 +92,7 @@ const merged1 = Object.assign(importDefault(dependencyMap[5])(Fonts.PRIMARY_MEDI
 obj1["textAlign"] = "center";
 obj.body = obj1;
 obj.image = { marginBottom: 32 };
-obj.cta = { dampingRatio: 52881784.83212474, stiffness: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.cta = { 1817312097: 52881784.83212474, 1386242432: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 let closure_7 = obj.createStyles(obj);
 const importDefaultResult1 = importDefault(dependencyMap[5]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");

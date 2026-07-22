@@ -1,10 +1,10 @@
-// Module ID: 10143
-// Function ID: 78468
+// Module ID: 10144
+// Function ID: 78481
 // Name: EducationIcon
 // Dependencies: []
 // Exports: EducationIcon
 
-// Module 10143 (EducationIcon)
+// Module 10144 (EducationIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/EducationIcon.tsx");

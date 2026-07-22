@@ -1,10 +1,10 @@
-// Module ID: 11339
-// Function ID: 88171
+// Module ID: 11340
+// Function ID: 88184
 // Name: AppLauncherButtonIcon
 // Dependencies: []
 // Exports: AppLauncherButtonIcon
 
-// Module 11339 (AppLauncherButtonIcon)
+// Module 11340 (AppLauncherButtonIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

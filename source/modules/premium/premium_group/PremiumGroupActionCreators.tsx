@@ -1,10 +1,10 @@
-// Module ID: 12301
-// Function ID: 94236
+// Module ID: 12306
+// Function ID: 94264
 // Name: _fetchPremiumGroupMembership
 // Dependencies: []
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 12301 (_fetchPremiumGroupMembership)
+// Module 12306 (_fetchPremiumGroupMembership)
 function _fetchPremiumGroupMembership() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

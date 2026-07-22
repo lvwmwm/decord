@@ -1,5 +1,5 @@
 // Module ID: 7591
-// Function ID: 60763
+// Function ID: 60773
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -169,7 +169,7 @@ function handleSetSection(arg0) {
   if (tmp) {
     let closure_26 = true;
     const HTTP = arg1(dependencyMap[15]).HTTP;
-    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_14.INSTANT_INVITES(store2.id) };
+    const obj = { y: null, isArray: null, accessible: null, url: closure_14.INSTANT_INVITES(store2.id) };
     const value = HTTP.get(obj);
     value.then((body) => {
       let closure_26 = false;
@@ -280,7 +280,7 @@ let closure_25 = {};
 let closure_26 = false;
 let closure_27 = false;
 let closure_28 = null;
-let closure_29 = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+let closure_29 = ["discord_protos.discord_experimentation.v1.Override", "discord_protos.discord_experimentation.v1.Filter", "discord_protos.discord_experimentation.v1.StaffUsers", "discord_protos.discord_experimentation.v1.UserInGuild", "discord_protos.discord_experimentation.v1.UserIds", "discord_protos.discord_experimentation.v1.UserLocale", "discord_protos.discord_experimentation.v1.ClientLocale", "discord_protos.discord_experimentation.v1.ClientSystemLocale", "discord_protos.discord_experimentation.v1.ClientLocation", "discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientPlatform", "discord_protos.discord_experimentation.v1.PlatformVersion"];
 const tmp2 = arg1(dependencyMap[9]);
 let closure_30 = importDefault(dependencyMap[17]).debounce(() => {
   if (null != store2) {

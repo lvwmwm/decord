@@ -1,10 +1,10 @@
-// Module ID: 10323
-// Function ID: 79699
+// Module ID: 10324
+// Function ID: 79712
 // Name: ReactorNotificationIcon
 // Dependencies: []
 // Exports: default
 
-// Module 10323 (ReactorNotificationIcon)
+// Module 10324 (ReactorNotificationIcon)
 function ReactorNotificationIcon(isMilestone) {
   let guild;
   let user;
@@ -39,7 +39,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp4 = arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.NORMAL];
 let obj = arg1(dependencyMap[7]);
 obj = { newContainerRoleDot: {}, container: { flexDirection: "column" }, textEmoji: { fontSize: 12 } };
-obj = {};
+obj = { hideWhenScrolling: null, autoCapitalize: null };
 let obj3 = arg1(dependencyMap[8]);
 let tmp5;
 if (!obj3.isIOS()) {
@@ -68,7 +68,7 @@ obj.italic = obj3;
 let closure_12 = obj.createStyles(obj);
 const obj9 = arg1(dependencyMap[8]);
 const obj4 = {};
-const obj5 = { "Bool(false)": "number", "Bool(false)": "number", "Bool(false)": "mY3Y38", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND, width: tmp4, height: tmp4, borderRadius: tmp4 / 2 };
+const obj5 = { __v_isVNode: "string", _$esjava$I_x: "string", EmbeddedActivitiesStore: "color", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND, width: tmp4, height: tmp4, borderRadius: tmp4 / 2 };
 obj4.clydeNotificationIcon = obj5;
 let closure_13 = arg1(dependencyMap[7]).createStyles(obj4);
 const obj10 = arg1(dependencyMap[7]);

@@ -1,5 +1,5 @@
 // Module ID: 3958
-// Function ID: 32781
+// Function ID: 32783
 // Name: parse
 // Dependencies: []
 
@@ -418,7 +418,7 @@ function pathToRegexp(source, items, id) {
       let num2 = 0;
       if (0 < match.length) {
         do {
-          obj = { name: num2 };
+          obj = { "Bool(true)": "<string:1375732459>", "Bool(true)": "<string:4293132276>", "Bool(true)": "<string:48972353>", "Bool(true)": "<string:4293021952>", "Bool(true)": "\u00A0\u2013\u00A0", "Bool(true)": "\n", "Bool(true)": "\u00A0", "Bool(true)": "\u{1F355}", name: num2 };
           let arr = items.push(obj);
           num2 = num2 + 1;
           length2 = match.length;

@@ -1,10 +1,10 @@
-// Module ID: 10742
-// Function ID: 83478
+// Module ID: 10743
+// Function ID: 83491
 // Name: SingleScreenshare
 // Dependencies: []
 // Exports: default
 
-// Module 10742 (SingleScreenshare)
+// Module 10743 (SingleScreenshare)
 importAll(dependencyMap[0]);
 ({ resetFocus: closure_2, toggleFocus: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

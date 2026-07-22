@@ -1,10 +1,10 @@
-// Module ID: 14711
-// Function ID: 110978
+// Module ID: 14719
+// Function ID: 111021
 // Name: Wrapper
 // Dependencies: []
 // Exports: default
 
-// Module 14711 (Wrapper)
+// Module 14719 (Wrapper)
 function Wrapper(folder) {
   folder = folder.folder;
   const arg1 = folder;
@@ -128,7 +128,7 @@ function Wrapper(folder) {
     }
     let obj = { style: tmp.title };
     const items = [callback(BellSlashIcon, { size: "xs" }), ];
-    obj = { isArray: "absolute", Button: "useUserIsTeen", textAlign: "isArrayBufferToString", y: "valueProps", style: tmp.titleText };
+    obj = { guild_id: "_desired", exports: "hash", body: "content", type: "withSpring", style: tmp.titleText };
     let folderName = folder.folderName;
     if (null == folderName) {
       const intl = folder(memo[13]).intl;
@@ -155,7 +155,7 @@ function Wrapper(folder) {
     }
     const items7 = [tmp12, str];
     const memo2 = React.useMemo(() => {
-      const obj = { <string:1643205302>: "7", <string:1415816450>: "channel-row", <string:4283523744>: "10", color: closure_7, children: formatResult3 };
+      const obj = { 803799044: "7", 1269170180: "channel-row", 711589892: "10", color: closure_7, children: formatResult3 };
       return callback(folder(memo[12]).Text, obj);
     }, items7);
     obj1 = { title: memo1 };
@@ -202,7 +202,7 @@ let closure_9 = importDefault(dependencyMap[6]);
 const NOOP = arg1(dependencyMap[7]).NOOP;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp2 = arg1(dependencyMap[8]);
-let closure_13 = arg1(dependencyMap[9]).createStyles({ title: { "Null": true, "Null": true, "Bool(false)": true }, titleText: { flexShrink: 1 } });
+let closure_13 = arg1(dependencyMap[9]).createStyles({ title: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null }, titleText: { flexShrink: 1 } });
 const obj = arg1(dependencyMap[9]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerFolderRow.tsx");
 

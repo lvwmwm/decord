@@ -1,9 +1,9 @@
-// Module ID: 8293
-// Function ID: 65479
+// Module ID: 8294
+// Function ID: 65491
 // Name: PlayerState
 // Dependencies: []
 
-// Module 8293 (PlayerState)
+// Module 8294 (PlayerState)
 const importAllResult = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -15,7 +15,7 @@ if (obj2.isIOS()) {
 }
 const obj = { UNREADY: 0, [0]: "UNREADY", READY: 1, [1]: "READY", ERRORED: 2, [2]: "ERRORED", UNSTARTED: 3, [3]: "UNSTARTED", ENDED: 4, [4]: "ENDED", PLAYING: 5, [5]: "PLAYING", PAUSED: 6, [6]: "PAUSED", BUFFERING: 7, [7]: "BUFFERING", VIDEO_CUED: 8, [8]: "VIDEO_CUED" };
 const obj2 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ loading: { 9223372036854775807: 1879048719, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, 9223372036854775807: null, 0: null } });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ loading: {} });
 let closure_11 = { code: "function MediaModalWebViewTsx1(){const{withTiming,webviewOpacity}=this.__closure;return{opacity:withTiming(webviewOpacity.get())};}" };
 let closure_12 = { code: "function MediaModalWebViewTsx2(){const{withTiming,loaderOpacity}=this.__closure;return{opacity:withTiming(loaderOpacity.get())};}" };
 const obj4 = arg1(dependencyMap[4]);
@@ -29,7 +29,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((playerState)
   const baseURL = playerState.baseURL;
   const dependencyMap = baseURL;
   const panGestureConfig = playerState.panGestureConfig;
-  let obj = { LIGHT: true, st: true, accessible: true, hash: true, height: true, getChannel: true };
+  let obj = { title: "Text", ix: "resizeMode", title: "from", borderRadius: "Array", backgroundColor: "isArray", padding: "braintreemasterpasslanding" };
   ({ style, injectedJavaScript } = playerState);
   Object.setPrototypeOf(null);
   const merged = Object.assign(playerState, obj);

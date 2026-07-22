@@ -1,10 +1,10 @@
-// Module ID: 12194
-// Function ID: 93720
+// Module ID: 12198
+// Function ID: 93746
 // Name: _getPresenceActivityInviteCoverImageURL
 // Dependencies: []
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12194 (_getPresenceActivityInviteCoverImageURL)
+// Module 12198 (_getPresenceActivityInviteCoverImageURL)
 function _getPresenceActivityInviteCoverImageURL(messageId) {
   let application;
   let presenceActivity;
@@ -12,7 +12,7 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
   let obj = { messageId: messageId.messageId };
   let coverImageURL = coverImageURL.getCoverImageURL(obj);
   if (null === coverImageURL) {
-    return { "Bool(false)": "o", "Bool(false)": "o" };
+    return { 979479382: "o", 1677917265: "o" };
   } else {
     const result = 600 * importDefault(dependencyMap[2])();
     obj = { cachedImageURL: coverImageURL };

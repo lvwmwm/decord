@@ -1,16 +1,16 @@
-// Module ID: 9013
-// Function ID: 70920
+// Module ID: 9014
+// Function ID: 70933
 // Name: Checkbox
 // Dependencies: []
 // Exports: Checkbox
 
-// Module 9013 (Checkbox)
+// Module 9014 (Checkbox)
 const _module = require(dependencyMap[0]);
 ({ Pressable: closure_2, View: closure_3 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module1);
 const _module2 = require(dependencyMap[2]);
-let closure_6 = _module2.createStyles({ textContainer: { flex: 1 }, labelContainer: { enableGameUpdateNotifications: null, EXPERIMENT_GUILD_EVALUATION_EXPOSED: null } });
+let closure_6 = _module2.createStyles({ textContainer: { flex: 1 }, labelContainer: { flex: true, alignItems: null } });
 const _module3 = require(dependencyMap[8]);
 const result = _module3.fileFinishedImporting("design/components/Checkbox/native/Checkbox.native.tsx");
 
@@ -53,7 +53,7 @@ export const Checkbox = function Checkbox(onToggle) {
     const obj4 = {};
     const intl2 = require(dependencyMap[4]).intl;
     obj4.aria-label = intl2.string(require(dependencyMap[4]).t.EkokLy);
-    obj4.children = [null, null];
+    obj4.children = [-10111734812216596000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009748035637130972];
     required = callback2(require(dependencyMap[7]).Text, obj4);
   }
   items1[1] = required;
@@ -62,7 +62,7 @@ export const Checkbox = function Checkbox(onToggle) {
   const items2 = [callback(closure_3, obj2), ];
   let tmp16 = null != description;
   if (tmp16) {
-    const obj5 = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000, children: description };
+    const obj5 = { children: description };
     tmp16 = callback(require(dependencyMap[7]).Text, obj5);
   }
   items2[1] = tmp16;

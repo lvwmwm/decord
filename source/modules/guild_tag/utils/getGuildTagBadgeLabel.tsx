@@ -1,10 +1,10 @@
-// Module ID: 16157
-// Function ID: 124538
+// Module ID: 16165
+// Function ID: 124580
 // Name: getGuildTagBadgeLabel
 // Dependencies: []
 // Exports: default
 
-// Module 16157 (getGuildTagBadgeLabel)
+// Module 16165 (getGuildTagBadgeLabel)
 const GuildTagBadgeKind = require(dependencyMap[0]).GuildTagBadgeKind;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_tag/utils/getGuildTagBadgeLabel.tsx");

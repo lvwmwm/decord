@@ -1,10 +1,10 @@
-// Module ID: 11570
-// Function ID: 89991
+// Module ID: 11571
+// Function ID: 90004
 // Name: useGuildPowerupColorConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11570 (useGuildPowerupColorConfig)
+// Module 11571 (useGuildPowerupColorConfig)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupColorConfig.tsx");
 

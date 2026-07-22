@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 3302 (formatDistance)
-let closure_0 = { lessThanXSeconds: { "Bool(false)": "%Reflect%", "Bool(false)": "STEALTH" }, xSeconds: { "Bool(false)": 1896611843, "Bool(false)": null }, halfAMinute: "et halvt minutt", lessThanXMinutes: { "Bool(false)": null, "Bool(false)": null }, xMinutes: {}, aboutXHours: {}, xHours: { "Bool(false)": null, "Bool(false)": null }, xDays: {}, aboutXWeeks: { "Bool(false)": "<string:2757623809>", "Bool(false)": "<string:3528196097>" }, xWeeks: {}, aboutXMonths: {}, xMonths: { "Bool(false)": null, "Bool(false)": "mniej ni\u017C {{count}} sekundy" }, aboutXYears: {}, xYears: {}, overXYears: { "Bool(false)": null, "Bool(false)": null }, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { removeInternalFields: false, ga: false }, xSeconds: { removeInternalFields: null, ga: null }, halfAMinute: "et halvt minutt", lessThanXMinutes: {}, xMinutes: {}, aboutXHours: { removeInternalFields: "Array", ga: "ensureValidMode" }, xHours: { removeInternalFields: 1006043139, ga: null }, xDays: { removeInternalFields: null, ga: null }, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: { removeInternalFields: 543621123, ga: 1107361795 }, xMonths: { removeInternalFields: "mniej ni\u017C {{count}} sekundy", ga: "mniej ni\u017C {{count}} sekund" }, aboutXYears: { removeInternalFields: "mniej ni\u017C sekunda", ga: "mniej ni\u017C sekund\u0119" }, xYears: { removeInternalFields: "a", ga: "isArray" }, overXYears: {}, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

@@ -1,10 +1,10 @@
-// Module ID: 8700
-// Function ID: 68884
+// Module ID: 8701
+// Function ID: 68896
 // Name: OrbsIcon
 // Dependencies: []
 // Exports: OrbsIcon
 
-// Module 8700 (OrbsIcon)
+// Module 8701 (OrbsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/OrbsIcon.tsx");

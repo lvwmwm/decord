@@ -1,9 +1,18 @@
 // Module ID: 7623
-// Function ID: 61060
+// Function ID: 61070
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 7623 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -43,16 +52,8 @@ function deleteNonce(nonce) {
     delete r3[r2];
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const result = 5 * importDefault(dependencyMap[8]).Millis.MINUTE;
-const result1 = 10 * importDefault(dependencyMap[8]).Millis.SECOND;
+const result = 5 * require("__exportStarResult1").Millis.MINUTE;
+const result1 = 10 * require("__exportStarResult1").Millis.SECOND;
 let closure_13 = {};
 let closure_14 = {};
 let closure_15 = {};
@@ -63,7 +64,7 @@ let tmp4 = (Store) => {
   class InteractionStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, InteractionStore);
+      tmp = __exportStarResult1(this, InteractionStore);
       obj = closure_6(InteractionStore);
       tmp2 = closure_5;
       if (closure_19()) {
@@ -170,9 +171,9 @@ let tmp4 = (Store) => {
     }
   };
   return callback(InteractionStore, items);
-}(importDefault(dependencyMap[12]).Store);
+}(require("__exportStarResult1").Store);
 tmp4.displayName = "InteractionStore";
-tmp4 = new tmp4(importDefault(dependencyMap[13]), {
+tmp4 = new tmp4(require("__exportStarResult1"), {
   LOGOUT: function handleInit() {
     let closure_13 = {};
     let closure_14 = {};
@@ -338,7 +339,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[13]), {
     }
   }
 });
-const result2 = arg1(dependencyMap[14]).fileFinishedImporting("modules/interactions/InteractionStore.tsx");
+const result2 = require("__exportStarResult1").fileFinishedImporting("modules/interactions/InteractionStore.tsx");
 
 export default tmp4;
 export const STALE_INTERACTION_INTERVAL = result;

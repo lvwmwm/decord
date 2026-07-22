@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 49 (getFabricUIManager)
-let closure_4 = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+let closure_4 = ["raw", "textAlign", "ref", "count", "body", "onPress", "backgroundColor", "cix", "title", "ix", "title", "push", "valueOf", "length", "Object", true, true, true, true, true, true, true, true, true];
 arg5.getFabricUIManager = function getFabricUIManager() {
   let tmp = null == closure_3;
   if (tmp) {

@@ -1,10 +1,10 @@
-// Module ID: 10809
-// Function ID: 83964
+// Module ID: 10810
+// Function ID: 83977
 // Name: confirmActivityChangeModal
-// Dependencies: [358023168, 535625728, 283115520, 261292032, 709165056, 131072, 2373713920]
+// Dependencies: [357957632, 535691264, 283115520, 261292032, 709230592, 131072, 423821312]
 // Exports: default
 
-// Module 10809 (confirmActivityChangeModal)
+// Module 10810 (confirmActivityChangeModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");

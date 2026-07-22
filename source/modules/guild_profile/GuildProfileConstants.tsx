@@ -1,9 +1,9 @@
-// Module ID: 8571
-// Function ID: 68107
+// Module ID: 8572
+// Function ID: 68119
 // Name: BannerPalettePresets
 // Dependencies: []
 
-// Module 8571 (BannerPalettePresets)
+// Module 8572 (BannerPalettePresets)
 let obj = { BOULDER: "Boulder", CASCADE: "Cascade", THUNDER: "Thunder", SOUL: "Soul", MARSH: "Marsh", VOLCANO: "Volcano", EARTH: "Earth", ZEPHYR: "Zephyr", RISING: "Rising" };
 obj = { name: obj.SOUL, color: "#ff1c90" };
 const items = [obj, , , , , , , , ];

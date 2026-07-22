@@ -1,16 +1,16 @@
-// Module ID: 8206
-// Function ID: 64888
+// Module ID: 8208
+// Function ID: 64901
 // Name: InfoBox
 // Dependencies: []
 // Exports: default
 
-// Module 8206 (InfoBox)
+// Module 8208 (InfoBox)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs, borderColor: importDefault(dependencyMap[4]).colors.TEXT_LINK, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_INFO };
+obj = { "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", "Bool(true)": "construct", "Bool(true)": "type", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "Array", borderRadius: importDefault(dependencyMap[4]).radii.xs, borderColor: importDefault(dependencyMap[4]).colors.TEXT_LINK, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_INFO };
 obj.infoBox = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.infoBoxWarning = { borderColor: importDefault(dependencyMap[4]).colors.ICON_FEEDBACK_WARNING, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING };

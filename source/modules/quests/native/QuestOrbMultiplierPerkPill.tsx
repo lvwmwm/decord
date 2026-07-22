@@ -1,25 +1,25 @@
-// Module ID: 13939
-// Function ID: 105936
+// Module ID: 13946
+// Function ID: 105976
 // Name: QuestOrbMultiplierPerkPill
 // Dependencies: []
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 13939 (QuestOrbMultiplierPerkPill)
+// Module 13946 (QuestOrbMultiplierPerkPill)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = {};
-let closure_9 = {};
+let closure_8 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+let closure_9 = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { style: null, pointerEvents: "80a1b67e775ddb8de80fde27e63a5302", accessibilityElementsHidden: "CircleQuestionIcon-secondary", importantForAccessibility: "png", borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { "Bool(true)": null, "Bool(true)": "80a1b67e775ddb8de80fde27e63a5302", "Bool(true)": "CircleQuestionIcon-secondary", "Bool(true)": "png", borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.fullGradientContainer = obj;
 const obj1 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj1["borderRadius"] = importDefault(dependencyMap[4]).radii.round;
 obj.fullGradient = obj1;
-const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
+const obj2 = { <string:2700827751>: "Array", <string:3639397474>: "isArray", <string:1554053987>: "accessibilityRole", <string:3568086098>: "useStateFromStores", <string:1122461100>: "track", <string:1369504516>: "constructor", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
 obj.fullGradientContent = obj2;
 let closure_10 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
@@ -71,13 +71,16 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp15 = !tmp10;
     let tmp16 = tmp15;
     if (!tmp10) {
-      tmp16 = questOrbRewardMultiplier(arg1(dependencyMap[12]).NitroWheelIcon, {});
+      tmp16 = questOrbRewardMultiplier(arg1(dependencyMap[12]).NitroWheelIcon, { "Bool(false)": false, "Bool(false)": null });
     }
     const items2 = [tmp16, ];
-    obj2 = { children: formatToPlainStringResult };
+    obj2 = { cachedAt: null, edpbxy: "none", children: formatToPlainStringResult };
     items2[1] = questOrbRewardMultiplier(arg1(dependencyMap[13]).Text, obj2);
     obj1.children = items2;
     obj3 = {
+      position: null,
+      top: null,
+      left: null,
       onPress() {
           if (null != questOrbRewardMultiplier) {
             orbMultiplierEligibility(isThemeDarkResult[15])(questOrbRewardMultiplier, orbMultiplierEligibility);

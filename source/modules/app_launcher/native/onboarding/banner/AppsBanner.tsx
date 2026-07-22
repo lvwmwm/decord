@@ -1,14 +1,14 @@
-// Module ID: 11172
-// Function ID: 86880
+// Module ID: 11173
+// Function ID: 86893
 // Name: AppsBaner
 // Dependencies: []
 // Exports: default
 
-// Module 11172 (AppsBaner)
+// Module 11173 (AppsBaner)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ rocketIconContainer: { force: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004952955703652415, trackAnalytics: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003159253962115964 }, rocketIcon: { "Null": true, "Null": true } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ rocketIconContainer: { 10360: "b", 10496: 30.613 }, rocketIcon: { "Null": true, "Null": true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppsBanner.tsx");
 

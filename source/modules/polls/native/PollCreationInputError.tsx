@@ -1,15 +1,15 @@
-// Module ID: 11325
-// Function ID: 88112
+// Module ID: 11326
+// Function ID: 88125
 // Name: PollCreationInputError
 // Dependencies: []
 // Exports: default
 
-// Module 11325 (PollCreationInputError)
+// Module 11326 (PollCreationInputError)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { headerIcons: 0, RowButtonIconProps: 0, headerLabel: null } };
+obj = { container: {} };
 obj = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_CRITICAL };
 obj.icon = obj;
 let closure_6 = obj.createStyles(obj);
@@ -32,7 +32,7 @@ export default function PollCreationInputError(message) {
     }
   }, items);
   let obj = { style: tmp.container };
-  obj = { style: tmp.icon };
+  obj = { "Null": null, "Null": null, style: tmp.icon };
   const items1 = [callback(arg1(dependencyMap[6]).WarningCircle, obj), callback(arg1(dependencyMap[7]).Text, { children: message })];
   obj.children = items1;
   return callback2(View, obj);

@@ -1,9 +1,9 @@
-// Module ID: 10024
-// Function ID: 77446
+// Module ID: 10025
+// Function ID: 77459
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10024 (_isNativeReflectConstruct)
+// Module 10025 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -123,7 +123,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     closure_8[channelId] = obj;
   },
   GUILD_DIRECTORY_SEARCH_CLEAR: function handleSearchClear(channelId) {
-    closure_8[channelId.channelId] = { User: "<string:3349217282>", getLastRouteChangeSourceLocationStack: "<string:160104449>" };
+    closure_8[channelId.channelId] = { dmsDisabled: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", invitesDisabled: null };
   },
   GUILD_DIRECTORY_CACHED_SEARCH: function handleUpdateQuery(mostRecentQuery) {
     closure_8[mostRecentQuery.channelId] = { fetching: false, mostRecentQuery: mostRecentQuery.query };

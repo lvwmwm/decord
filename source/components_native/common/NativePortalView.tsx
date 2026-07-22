@@ -1,10 +1,10 @@
-// Module ID: 8272
-// Function ID: 65303
+// Module ID: 8273
+// Function ID: 65315
 // Name: MediaPlayerManager
 // Dependencies: []
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8272 (MediaPlayerManager)
+// Module 8273 (MediaPlayerManager)
 let NativeEventEmitter;
 let NativeModules;
 const importAllResult = importAll(dependencyMap[0]);
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo((muted) => {
   const importDefault = muted;
   const onLoad = muted.onLoad;
   const dependencyMap = onLoad;
-  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+  let obj = { -9223372036854775808: false, 0: false, 0: false, 0: false, 9223372036854775807: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(muted, obj);
   const tmp3 = callback();

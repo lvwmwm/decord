@@ -1,9 +1,9 @@
-// Module ID: 16323
-// Function ID: 125978
+// Module ID: 16331
+// Function ID: 126020
 // Name: DeleteButton
 // Dependencies: []
 
-// Module 16323 (DeleteButton)
+// Module 16331 (DeleteButton)
 function DeleteButton(onDelete) {
   const tmp = callback4();
   let obj = { style: items, accessibilityRole: "button", onPress: onDelete.onDelete };
@@ -30,11 +30,11 @@ const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
 let obj = {};
-obj = { <string:22413314>: true, <string:16843009>: "/assets/modules/guild_role_subscriptions/native/images", <string:16843009>: 40, <string:1711341825>: 40, <string:50529027>: null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.scrollContainer = { flexGrow: 1 };
-obj.deleteButton = { "Null": null, "Null": "4b2e500a83e119218e6e2834f09f9cd5", "Null": "ic_add_tier_40px", "Null": "png" };
-obj.deleteIcon = { "Null": 0, "Null": -1048576 };
+obj.deleteButton = { <string:1268252674>: 800, <string:22413314>: 16, <string:16843009>: "100%", <string:16843009>: 296 };
+obj.deleteIcon = {};
 obj1 = {};
 const tmp4 = arg1(dependencyMap[9]);
 const merged = Object.assign(importDefault(dependencyMap[12])(arg1(dependencyMap[8]).Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[11]).unsafe_rawColors.RED_400, 16));
@@ -130,7 +130,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       };
       let tmp40 = callback2(importDefault(dependencyMap[19]), obj);
     } else {
-      obj = { "Null": "absolute", "Null": -1, a: -1, style: tmp2.textInput, maxLength: closure_12, value: first };
+      obj = { style: tmp2.textInput, maxLength: closure_12, value: first };
       const intl9 = arg1(dependencyMap[17]).intl;
       obj.placeholder = intl9.string(arg1(dependencyMap[17]).t.kV54/Y);
       obj.onChange = tmp4;
@@ -149,7 +149,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       listingId: benefitType.listingId
     };
     const items = [callback2(importDefault(dependencyMap[22]), obj1), ];
-    const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+    const obj2 = { -397224337: "DenyIcon", 1671428002: "png", 1364634426: true };
     const items1 = [tmp.scrollContainer, ];
     const obj3 = { paddingBottom: importDefault(dependencyMap[18])().bottom + 32 + 16 };
     items1[1] = obj3;

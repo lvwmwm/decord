@@ -1,10 +1,10 @@
-// Module ID: 11937
-// Function ID: 92314
+// Module ID: 11938
+// Function ID: 92328
 // Name: AvatarPile
 // Dependencies: []
 // Exports: AvatarPile
 
-// Module 11937 (AvatarPile)
+// Module 11938 (AvatarPile)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

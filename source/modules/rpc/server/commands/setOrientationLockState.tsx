@@ -1,8 +1,8 @@
-// Module ID: 13297
-// Function ID: 101003
+// Module ID: 13304
+// Function ID: 101036
 // Dependencies: []
 
-// Module 13297
+// Module 13304
 const OrientationLockState = require(dependencyMap[0]).OrientationLockState;
 const _module = require(dependencyMap[1]);
 const RPCErrors = _module.RPCErrors;

@@ -1,5 +1,5 @@
 // Module ID: 3935
-// Function ID: 32445
+// Function ID: 32447
 // Name: ThemeAwareNitroWishlistingWumpusRive
 // Dependencies: []
 
@@ -8,7 +8,7 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Nitro Wishlist: {} };
+let closure_7 = { Nitro Wishlist: { type: "BG_GRADIENT_SUNRISE_1", revision: 8.62 } };
 let closure_8 = { Nitro Wishlist: [] };
 let closure_9 = {
   Nitro Wishlist: function NitroWishlistBindings(reducedMotionEnabled) {

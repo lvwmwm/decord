@@ -1,10 +1,10 @@
-// Module ID: 11003
-// Function ID: 85623
+// Module ID: 11004
+// Function ID: 85636
 // Name: ChatBlockedAlert
 // Dependencies: []
 // Exports: default
 
-// Module 11003 (ChatBlockedAlert)
+// Module 11004 (ChatBlockedAlert)
 function ChatBlockedAlert(arg0) {
   let buttonCta;
   let description;
@@ -28,7 +28,7 @@ function ChatBlockedAlert(arg0) {
   obj = { style: tmp2.body };
   obj = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[15]).Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
   const items = [callback4(arg1(dependencyMap[15]).Icon, obj), , ];
-  const obj1 = { Opened: null, marginVertical: null, marginStart: null, marginEnd: null, style: tmp2.title, children: title };
+  const obj1 = { alignSelf: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001527215472222581, justifyContent: 426842918701969100000000000000000000000000000000000000000000, alignItems: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001602054596697116, backgroundColor: 15177100720513510000000000000000000000000000000000000000000000000000000000000000000, style: tmp2.title, children: title };
   items[1] = callback4(arg1(dependencyMap[17]).Text, obj1);
   items[2] = callback4(arg1(dependencyMap[17]).Text, { style: tmp2.description, children: description });
   obj.children = items;
@@ -89,8 +89,8 @@ function ServerTagAlert(guildName) {
   };
   return callback4(ChatBlockedAlert, obj);
 }
-let closure_3 = ["<string:1070034059>", "<string:171798692>", "<string:1071686615>", 0.19];
-let closure_4 = [null, null, null];
+let closure_3 = [false, false, false, false];
+let closure_4 = [0.52, -24391440060893210000000000000000000000000, -0.000001449584960937496];
 let closure_5 = ["LengthDelimited"];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
@@ -105,10 +105,10 @@ const GuildMemberFlags = arg1(dependencyMap[9]).GuildMemberFlags;
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
-obj = { wrapper: { padding: 16 }, body: {} };
+obj = { wrapper: { padding: 16 }, body: { <string:3814666730>: 8, <string:1280564396>: 18 } };
 obj = { "Bool(false)": null, "Bool(false)": "b7eca7761481c5ff3cc170b16fbdff57", "Bool(false)": "img_no_results", "Bool(false)": "png", tintColor: importDefault(dependencyMap[12]).colors.TEXT_FEEDBACK_CRITICAL };
 obj.mainIcon = obj;
-obj.title = { "Null": "center", "Null": "center" };
+obj.title = {};
 obj.description = { textAlign: "center" };
 let closure_18 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[10]);

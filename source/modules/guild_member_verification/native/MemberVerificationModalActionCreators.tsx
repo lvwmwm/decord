@@ -1,8 +1,8 @@
-// Module ID: 9138
-// Function ID: 71643
+// Module ID: 9139
+// Function ID: 71656
 // Dependencies: []
 
-// Module 9138
+// Module 9139
 const _module = require(dependencyMap[0]);
 ({ MEMBER_VERIFICATION_TYPE: closure_3, IN_APP_MEMBER_VERIFICATION_MODAL_KEY: closure_4 } = _module);
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;

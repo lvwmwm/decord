@@ -1,10 +1,10 @@
-// Module ID: 9644
-// Function ID: 75107
+// Module ID: 9645
+// Function ID: 75120
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addAttachmentForCommand, cropResultToUploadItem, handleSelectGift, handleSelectThread
 
-// Module 9644 (_createForOfIteratorHelperLoose)
+// Module 9645 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -213,7 +213,7 @@ function handleViewAllDialog(arg0) {
           found = uploads.filter((id) => closure_3.includes(id.id));
           arr2 = found;
         }
-        obj = { fetchedAt: false, width: false };
+        obj = { -9223372036854775808: "<string:2664235009>", 9223372036854775807: "<string:3550216193>" };
         if (closure_2 <= 1) {
           obj.selectionLimit = 1;
           obj.selections = arr2.map((id) => id.id);

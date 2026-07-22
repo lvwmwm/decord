@@ -1,10 +1,10 @@
-// Module ID: 5230
-// Function ID: 44222
+// Module ID: 5447
+// Function ID: 46576
 // Name: useInitialValue
 // Dependencies: []
 // Exports: default
 
-// Module 5230 (useInitialValue)
+// Module 5447 (useInitialValue)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("hooks/useInitialValue.tsx");
 

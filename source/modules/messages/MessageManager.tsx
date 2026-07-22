@@ -1,9 +1,9 @@
-// Module ID: 9870
-// Function ID: 76423
+// Module ID: 9871
+// Function ID: 76436
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 9870 (_isNativeReflectConstruct)
+// Module 9871 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -48,7 +48,7 @@ function fetchMessages(arg0) {
           }
           let obj7 = orCreate1;
           if (tmp15) {
-            let obj = { items: true, keyboardShouldPersistTaps: true, jumpType: arg1(dependencyMap[21]).JumpType.ANIMATED };
+            let obj = { "Null": "<string:1243348993>", "Null": "<string:2137063425>", jumpType: arg1(dependencyMap[21]).JumpType.ANIMATED };
             const mutation = orCreate1.mutate(obj);
             let obj9 = importDefault(dependencyMap[19]);
             obj9.commit(mutation);
@@ -136,7 +136,7 @@ function fetchMessages(arg0) {
                         obj5 = { channelId };
                         const obj18 = importDefault(dependencyMap[23]);
                         obj5.limit = arg1(dependencyMap[24]).getMessageLimit("MessageManager.threadUnread");
-                        obj6 = { messageId: trackedAckMessageId };
+                        obj6 = { 0: true, 0: "/assets/design/components/Icon/native/redesign/generated/images", 0: 24, messageId: trackedAckMessageId };
                         obj5.jump = obj6;
                         obj5.isPreload = isPreload;
                         obj5.skipLocalFetch = skipLocalFetch;

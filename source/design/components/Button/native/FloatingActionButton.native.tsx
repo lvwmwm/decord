@@ -1,10 +1,10 @@
-// Module ID: 8372
-// Function ID: 66701
+// Module ID: 8373
+// Function ID: 66713
 // Name: styles
 // Dependencies: []
 // Exports: FloatingActionButton
 
-// Module 8372 (styles)
+// Module 8373 (styles)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const styles = arg1(dependencyMap[2]).createStyles(() => {
@@ -41,7 +41,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   const arg1 = positionBottom;
   positionRight = positionRight.positionRight;
   const importDefault = positionRight;
-  let obj = { paddingHorizontal: "ERROR", alignItems: "ERROR", flexGrow: "NOT_RESPONDER", width: "NOT_RESPONDER" };
+  let obj = { <string:3429227929>: -24, <string:1675145708>: null, <string:1671067985>: 1, <string:1372388256>: "Malaysia" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(positionRight, obj);
   const tmp3 = styles(importDefault(dependencyMap[5])("FloatingActionButton"));

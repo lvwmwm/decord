@@ -1,10 +1,10 @@
-// Module ID: 12350
-// Function ID: 94467
+// Module ID: 12355
+// Function ID: 94495
 // Name: PremiumSubscriptionUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 12350 (PremiumSubscriptionUpsell)
+// Module 12355 (PremiumSubscriptionUpsell)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ View: closure_3, Image: closure_4 } = tmp3);
@@ -15,20 +15,20 @@ const Gradients = arg1(dependencyMap[5]).Gradients;
 const tmp4 = arg1(dependencyMap[6]);
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { title: { textAlign: "center" }, subtitle: { startExpanded: "<string:410124289>", scrollable: "<string:402653184>", handleDisabled: "<string:16777216>" } };
+obj = { title: { textAlign: "center" }, subtitle: {} };
 obj = { paddingTop: 32, borderTopWidth: 2 * tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.upsell = obj;
 const tmp5 = arg1(dependencyMap[7]);
 obj.upsellCard = { borderRadius: importDefault(dependencyMap[9]).radii.xs };
 const obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.xs };
 obj.upsellFeatures = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-obj.upsellFeatureSubLogo = {};
+obj.upsellFeatureSubLogo = { _hasMore: "<string:422301>", u6708: "<string:3948019712>", JUMP_TO_PRESENT_BUTTON_SIZE: "<string:2638539588>" };
 obj.upsellFeatureList = { marginTop: 8 };
 obj.upsellButton = { marginTop: 16 };
 obj.upsellFeatureLogoTier2 = {};
 const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.upsellLabel = { color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE, fontFamily: arg1(dependencyMap[4]).Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
-const obj4 = { inOnboarding: "r", GUILD_EVENT_DETAILS: "gift_info", color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
+const obj4 = { justifyContent: null, gap: null, color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
 obj.upsellRow = obj4;
 let closure_13 = obj.createStyles(obj);
 const obj3 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE, fontFamily: arg1(dependencyMap[4]).Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
@@ -57,7 +57,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
       const intl2 = arg1(dependencyMap[11]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[11]).t.YYfHlx);
       const items2 = [callback(arg1(dependencyMap[17]).Text, obj2), ];
-      const obj3 = { delete: null, dispatch: null, raw: null, style: tmp.subtitle };
+      const obj3 = { "Null": null, "Null": null, alignItems: null, style: tmp.subtitle };
       const intl3 = arg1(dependencyMap[11]).intl;
       obj4 = { numFreeGuildSubscriptions: closure_8 };
       obj3.children = intl3.format(arg1(dependencyMap[11]).t.Af0zEZ, obj4);

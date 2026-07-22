@@ -1,20 +1,20 @@
-// Module ID: 11037
-// Function ID: 85939
+// Module ID: 11038
+// Function ID: 85952
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11037 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11038 (AppealIngestionFreeTextAppealReasonActionSheet)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_5 = importDefault(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { footerText: { textAlign: "center" }, textArea: { size: "/assets/design/components/Icon/native/redesign/generated/images", progress: 24 } };
-obj = { 0: null, 0: null, 0: null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { footerText: { textAlign: "center" }, textArea: { y: "/assets/design/components/Icon/native/redesign/generated/images", channelId: 24 } };
+obj = { -1201886378: 137, 1661379153: null, 1656272874: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.separator = obj;
-obj.closeIcon = {};
+obj.closeIcon = { "Null": -1, "Null": 1, marginBottom: 15 };
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionFreeTextAppealReasonActionSheet.tsx");
@@ -50,7 +50,7 @@ export default function AppealIngestionFreeTextAppealReasonActionSheet(onPress) 
   obj3.onChange = tmp3[1];
   items1[2] = callback2(arg1(dependencyMap[14]).TextArea, obj3);
   items1[3] = callback2(View, { style: tmp.separator });
-  const obj5 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: tmp.footerText };
+  const obj5 = { cachedAt: true, edpbxy: true, style: tmp.footerText };
   const intl5 = arg1(dependencyMap[8]).intl;
   obj5.children = intl5.string(arg1(dependencyMap[8]).t.xfNY3L);
   items1[4] = callback2(arg1(dependencyMap[15]).Text, obj5);

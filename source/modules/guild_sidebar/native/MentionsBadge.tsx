@@ -1,10 +1,10 @@
-// Module ID: 14929
-// Function ID: 112403
+// Module ID: 14937
+// Function ID: 112446
 // Name: MentionsBadge
 // Dependencies: []
 // Exports: default
 
-// Module 14929 (MentionsBadge)
+// Module 14937 (MentionsBadge)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_sidebar/native/MentionsBadge.tsx");

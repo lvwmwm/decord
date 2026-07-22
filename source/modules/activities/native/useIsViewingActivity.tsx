@@ -1,10 +1,10 @@
-// Module ID: 10535
-// Function ID: 82324
+// Module ID: 10536
+// Function ID: 82337
 // Name: useIsViewingActivity
 // Dependencies: []
 // Exports: useIsViewingActivity
 
-// Module 10535 (useIsViewingActivity)
+// Module 10536 (useIsViewingActivity)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
 

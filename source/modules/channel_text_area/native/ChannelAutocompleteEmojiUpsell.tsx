@@ -1,19 +1,19 @@
-// Module ID: 11421
-// Function ID: 88875
+// Module ID: 11422
+// Function ID: 88888
 // Name: ChannelAutocompleteEmojiUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 11421 (ChannelAutocompleteEmojiUpsell)
+// Module 11422 (ChannelAutocompleteEmojiUpsell)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { upsell: { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 }, title: { "Bool(false)": "Group 11", "Bool(false)": 2 }, emojis: { height: 28 } };
+obj = { upsell: { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" }, title: { -105930140: null, -1504685627: "Group 11" }, emojis: { height: 28 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.emojiWrapper = obj;
-obj.emoji = {};
+obj.emoji = { "Null": null, "Null": null };
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteEmojiUpsell.tsx");

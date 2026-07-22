@@ -1,9 +1,9 @@
-// Module ID: 16408
-// Function ID: 126754
+// Module ID: 16416
+// Function ID: 126796
 // Name: AVErrorStreamSendHighPacketLossDefinition
 // Dependencies: []
 
-// Module 16408 (AVErrorStreamSendHighPacketLossDefinition)
+// Module 16416 (AVErrorStreamSendHighPacketLossDefinition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSendHighPacketLoss.tsx");

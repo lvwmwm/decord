@@ -1,10 +1,10 @@
-// Module ID: 10319
-// Function ID: 79663
+// Module ID: 10320
+// Function ID: 79676
 // Name: BugReporterFeatureActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10319 (BugReporterFeatureActionSheet)
+// Module 10320 (BugReporterFeatureActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -127,7 +127,7 @@ export default function BugReporterFeatureActionSheet(features) {
   const items2 = [tmp6, items];
   callback = importAllResult.useCallback((arg0, arg1) => callback(closure_10, { item: items[arg0].data[arg1], feature, setFeature, start: 0 === arg1, end: arg1 === items[arg0].data.length - 1 }), items1);
   const callback1 = importAllResult.useCallback((arg0) => callback(closure_9, { title: items[arg0].title, height: tmp6 }), items2);
-  let obj = { ind: null, PX_8: null };
+  let obj = { openDisableCommunication: null, freezeEnabled: null };
   obj = {};
   const intl = arg1(dependencyMap[18]).intl;
   obj.title = intl.string(arg1(dependencyMap[18]).t.77VVd8);

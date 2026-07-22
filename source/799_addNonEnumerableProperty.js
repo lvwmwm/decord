@@ -5,7 +5,8 @@
 
 // Module 799 (addNonEnumerableProperty)
 function addNonEnumerableProperty(arg0, arg1, value) {
-  Object.defineProperty(arg0, arg1, { value });
+  const obj = { "": null, children: null, "": null, value };
+  Object.defineProperty(arg0, arg1, obj);
 }
 function markFunctionWrapped(arg0, arg1) {
   const prototype = arg1.prototype;

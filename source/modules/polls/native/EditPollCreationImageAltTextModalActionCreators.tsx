@@ -1,10 +1,10 @@
-// Module ID: 11323
-// Function ID: 88106
+// Module ID: 11324
+// Function ID: 88119
 // Name: openEditPollCreationImageAltTextModal
 // Dependencies: []
 // Exports: closeEditPollCreationImageAltTextModal, openEditPollCreationImageAltTextModal
 
-// Module 11323 (openEditPollCreationImageAltTextModal)
+// Module 11324 (openEditPollCreationImageAltTextModal)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/polls/native/EditPollCreationImageAltTextModalActionCreators.tsx");
 

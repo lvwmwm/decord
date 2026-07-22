@@ -1,10 +1,10 @@
-// Module ID: 16160
-// Function ID: 124549
+// Module ID: 16168
+// Function ID: 124591
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16160 (_isNativeReflectConstruct)
+// Module 16168 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,7 +28,7 @@ function GraceOption(option) {
 }
 function ForceSyncIcon(isSyncing) {
   if (isSyncing.isSyncing) {
-    let tmp2Result = tmp2(closure_9, { font: null, dx: null });
+    let tmp2Result = tmp2(closure_9, { "Null": "Array", "Null": "isArray" });
   } else {
     let obj = { accessibilityRole: "button" };
     const intl = arg1(dependencyMap[11]).intl;
@@ -67,7 +67,7 @@ let closure_11 = importDefault(dependencyMap[8]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[12]);
-obj = { integrationLabel: { fontSize: 24 }, integrationIcon: { <string:1549954009>: -12512813, <string:67064148>: 1912603216, <string:2018617953>: 660 }, forceSyncIcon: { marginLeft: 10 }, value: { textAlign: "right" } };
+obj = { integrationLabel: { fontSize: 24 }, integrationIcon: {}, forceSyncIcon: { marginLeft: 10 }, value: { textAlign: "right" } };
 obj = { paddingHorizontal: importDefault(dependencyMap[13]).modules.mobile.TABLE_ROW_PADDING };
 obj.stackPadding = obj;
 let closure_15 = obj.createLegacyClassComponentStyles(obj);
@@ -137,7 +137,7 @@ const tmp5 = (PureComponent) => {
           let obj = {};
           const intl = GuildSettingsModalIntegrationSettings(closure_2[11]).intl;
           obj.label = intl.string(GuildSettingsModalIntegrationSettings(closure_2[11]).t.eBtNBa);
-          obj = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: iter.value, children: tmp.name };
+          obj = { style: iter.value, children: tmp.name };
           obj.trailing = callback3(GuildSettingsModalIntegrationSettings(closure_2[21]).Text, obj);
           const tmp2 = callback3(GuildSettingsModalIntegrationSettings(closure_2[16]).TableRow, obj);
         }

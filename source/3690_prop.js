@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: { application: 172, Set: 172, Icon: "center", id: 16 }, short: { application: 172, Set: 172, Icon: "center", id: 16 } };
+    obj = { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } };
     obj.conjunction = obj;
-    const obj1 = { long: { application: true, Set: true, Icon: true, id: true }, narrow: { application: true, Set: true, Icon: true, id: true }, short: { application: true, Set: true, Icon: true, id: true } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: {}, short: { application: 172, Set: 172, Icon: "center", id: 16 } };
+    const obj2 = { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: {}, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "it";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: { application: 172, Set: 172, Icon: "center", id: 16 }, short: { application: 172, Set: 172, Icon: "center", id: 16 } }, disjunction: { long: { application: true, Set: true, Icon: true, id: true }, narrow: { application: true, Set: true, Icon: true, id: true }, short: { application: true, Set: true, Icon: true, id: true } }, unit: { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: {}, short: { application: 172, Set: 172, Icon: "center", id: 16 } } }, locale: "it" });
+prop.push({ data: { conjunction: { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: {}, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } } }, locale: "it" });

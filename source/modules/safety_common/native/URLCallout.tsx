@@ -1,16 +1,16 @@
-// Module ID: 12103
-// Function ID: 93293
+// Module ID: 12107
+// Function ID: 93319
 // Name: URLCallout
 // Dependencies: []
 // Exports: URLCallout
 
-// Module 12103 (URLCallout)
+// Module 12107 (URLCallout)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 ({ jsxs: closure_3, jsx: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(true)": null, "Bool(true)": 0.3, "Bool(true)": "-100vw", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
+obj = { "Bool(false)": "0vh", "Bool(false)": 1, "Bool(false)": "row", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.linkCalloutContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.linkCalloutContainerText = { padding: importDefault(dependencyMap[4]).space.PX_8, paddingVertical: importDefault(dependencyMap[4]).space.PX_12, textAlign: "center" };
@@ -30,7 +30,7 @@ export const URLCallout = function URLCallout(url) {
   obj = { style: tmp.linkCalloutContainerText, variant: "text-md/normal" };
   const items = [protocol, "//"];
   const items1 = [callback(arg1(dependencyMap[6]).Text, { children: items }), , ];
-  const obj1 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: hostname };
+  const obj1 = { cachedAt: null, edpbxy: "Array", children: hostname };
   items1[1] = callback2(arg1(dependencyMap[6]).Text, obj1);
   items1[2] = callback2(arg1(dependencyMap[6]).Text, { children: theRestOfTheUrl });
   obj.children = items1;

@@ -1,10 +1,10 @@
-// Module ID: 10686
-// Function ID: 83282
+// Module ID: 10687
+// Function ID: 83295
 // Name: SpeedometerIcon
 // Dependencies: []
 // Exports: SpeedometerIcon
 
-// Module 10686 (SpeedometerIcon)
+// Module 10687 (SpeedometerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SpeedometerIcon.tsx");

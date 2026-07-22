@@ -1,10 +1,10 @@
-// Module ID: 16201
-// Function ID: 125182
+// Module ID: 16209
+// Function ID: 125224
 // Name: InRolePromptNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16201 (InRolePromptNotice)
+// Module 16209 (InRolePromptNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const RoleFlags = arg1(dependencyMap[2]).RoleFlags;
@@ -15,7 +15,7 @@ obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingB
 obj.promptRow = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.promptText = { marginLeft: importDefault(dependencyMap[5]).space.PX_4 };
-obj.icon = {};
+obj.icon = { hideWhenScrolling: null, autoCapitalize: null };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { marginLeft: importDefault(dependencyMap[5]).space.PX_4 };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");

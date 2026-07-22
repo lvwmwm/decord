@@ -1,10 +1,10 @@
-// Module ID: 14523
-// Function ID: 109369
+// Module ID: 14531
+// Function ID: 109412
 // Name: MFAButton
 // Dependencies: []
 // Exports: default
 
-// Module 14523 (MFAButton)
+// Module 14531 (MFAButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/mfa/native/components/button.tsx");

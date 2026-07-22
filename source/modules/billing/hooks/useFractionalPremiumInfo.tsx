@@ -1,5 +1,5 @@
 // Module ID: 6631
-// Function ID: 50868
+// Function ID: 50879
 // Name: calculateFractionalPremiumInfo
 // Dependencies: []
 // Exports: default
@@ -144,7 +144,7 @@ export default function useFractionalPremiumInfo() {
   let excludeReverseTrialFromCountdown;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { key: "#ffa813", onCloseCallback: "absolute", dismissable: null };
+    obj = { "Null": true, "Null": false, "Null": false };
   }
   const forceFetch = obj.forceFetch;
   const arg1 = forceFetch;

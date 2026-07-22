@@ -1,9 +1,9 @@
-// Module ID: 12775
-// Function ID: 97895
+// Module ID: 12782
+// Function ID: 97928
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [837746688, 699269120, 837812224, 554893312, 131072, 2373255168, 503316482, 3388997648, 2969567252, 33554434, 2113929216, 5, 57, 31, 1348]
+// Dependencies: [838205440, 699334656, 838270976, 554958848, 131072, 2373255168, 503316482, 3103784976, 2969567251, 33554434, 2113929216, 5, 57, 31, 1348]
 
-// Module 12775 (GuildSettingsPickerBottomSheet)
+// Module 12782 (GuildSettingsPickerBottomSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 importAll(dependencyMap[0]);

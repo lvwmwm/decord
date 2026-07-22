@@ -1,8 +1,8 @@
-// Module ID: 15250
-// Function ID: 115120
+// Module ID: 15258
+// Function ID: 115163
 // Dependencies: []
 
-// Module 15250
+// Module 15258
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -25,12 +25,12 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
   const items = [onPress, text];
   let obj = { style: tmp2.title };
   const callback = importAllResult.useCallback(callback(tmp), items);
-  obj = { "Null": 0, "Null": null, "Null": 103, style: tmp2.container, children: text };
+  obj = { style: tmp2.container, children: text };
   obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
   obj = {};
   let tmp6 = null != icon;
   if (tmp6) {
-    tmp6 = <icon accessibilityRole="%Math%" ="isArrayBuffer" />;
+    tmp6 = <icon Bool(false)="%JSONStringify%" Bool(false)="isArrayBuffer" />;
   }
   obj.icon = tmp6;
   obj.label = <View {...obj} />;

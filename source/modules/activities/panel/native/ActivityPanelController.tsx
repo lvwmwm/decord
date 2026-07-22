@@ -1,10 +1,10 @@
-// Module ID: 15564
-// Function ID: 118768
+// Module ID: 15572
+// Function ID: 118811
 // Name: BaseActivityPanelController
 // Dependencies: []
 // Exports: default
 
-// Module 15564 (BaseActivityPanelController)
+// Module 15572 (BaseActivityPanelController)
 class BaseActivityPanelController {
   constructor(arg0) {
     ({ orientationLockStateForApp, mode } = global);
@@ -20,7 +20,7 @@ class BaseActivityPanelController {
     tmp = importDefault(dependencyMap[15])();
     tmp2 = importDefault(dependencyMap[16])();
     obj = arg1(dependencyMap[12]);
-    sharedValue = obj.useSharedValue({});
+    sharedValue = obj.useSharedValue({ 0: "pow", 0: "decorationCutout" });
     dependencyMap = sharedValue;
     tmp4 = importDefault(dependencyMap[17])(tmp);
     closure_4 = tmp4;
@@ -41,7 +41,7 @@ class BaseActivityPanelController {
       defaultOrientationLockState = obj4.getDefaultOrientationLockState(currentApp);
     }
     closure_9 = defaultOrientationLockState;
-    tmp11 = f118786(tmp2, tmp.top, defaultOrientationLockState, isTabletActivitySurface);
+    tmp11 = f118829(tmp2, tmp.top, defaultOrientationLockState, isTabletActivitySurface);
     closure_10 = tmp11;
     OrientationLockState = closure_5.useRef(connectedActivityAppId);
     obj5 = arg1(dependencyMap[20]);

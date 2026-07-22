@@ -1,27 +1,27 @@
-// Module ID: 12790
-// Function ID: 98009
+// Module ID: 12797
+// Function ID: 98042
 // Name: ShareEmbed
 // Dependencies: []
 // Exports: default
 
-// Module 12790 (ShareEmbed)
+// Module 12797 (ShareEmbed)
 let closure_2 = importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { 9223372036854775807: "r", 0: "D5xGUK", 0: "r", -2: "getHttpRequestSampleRate", 9223372036854775807: "errno", 9223372036854775807: "textDecoder", 9223372036854775807: "PRESS_ADD_WISHLIST_ITEM", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { right: "r", accessible: "MODERN_ANDROID_BLURRING_AVAILABLE", valueOf: "r", call: "SAFETY_WARNING_CTA_CLICKED", rejectWithError: "ring", call: "PREMIUM_GIFT_MONTH_TIER_1", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
 obj.container = obj;
 obj.containerRevamp = { borderWidth: 0 };
 obj.thumbnail = { width: 80 };
-obj.contentContainer = { label: null, subLabel: 128, disabled: 143, onPress: 65, accessibilityHint: 0 };
+obj.contentContainer = {};
 obj.authorView = {};
-const tmp3 = arg1(dependencyMap[2]);
-obj.authorThumbnail = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const obj1 = { "Null": 994646680318997200000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015450822626952, "Null": -6513116333360348000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000695335580830366, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj.authorThumbnail = obj1;
 obj.loadingSpinner = { flex: 1 };
 let closure_8 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/share/native/ShareEmbed.tsx");
 
 export default function ShareEmbed(embed) {
@@ -117,7 +117,7 @@ export default function ShareEmbed(embed) {
     if (null == memo3) {
       tmp2 = null;
       if (null != description) {
-        let obj = { "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "textAlign", "Bool(false)": "content", "Bool(false)": "a" };
+        let obj = {};
         obj = { marginVertical: 1 };
         obj.style = obj;
         obj.children = description;

@@ -1,10 +1,10 @@
-// Module ID: 9593
-// Function ID: 74743
+// Module ID: 9594
+// Function ID: 74756
 // Name: _fetchStickerPack
 // Dependencies: []
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9593 (_fetchStickerPack)
+// Module 9594 (_fetchStickerPack)
 function _fetchStickerPack() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 9325
-// Function ID: 72892
+// Module ID: 9326
+// Function ID: 72905
 // Name: fetchTopEmojis
 // Dependencies: []
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9325 (fetchTopEmojis)
+// Module 9326 (fetchTopEmojis)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/emojis/top_emojis/TopEmojisActionCreators.tsx");
@@ -16,7 +16,7 @@ export const fetchTopEmojis = function fetchTopEmojis(guildId) {
     obj = { type: "TOP_EMOJIS_FETCH", guildId };
     importDefault(dependencyMap[2]).dispatch(obj);
     const HTTP = require(dependencyMap[3]).HTTP;
-    obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: Endpoints.TOP_EMOJIS_FOR_GUILD(guildId) };
+    obj = { y: null, isArray: null, accessible: null, url: Endpoints.TOP_EMOJIS_FOR_GUILD(guildId) };
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = callback(closure_2[2]);

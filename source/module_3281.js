@@ -47,17 +47,17 @@ obj = {
     }
   }
 };
-obj.era = obj.default({ values: { narrow: ["r", "hak"], abbreviated: [], wide: [] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: ["<string:2194604034>", "<string:2194669570>"], abbreviated: ["<string:594477059>", "<string:1944125442>"], wide: ["<string:594477059>", "<string:1944125442>"] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [null, null, null, null], abbreviated: ["r", "isArray", "Icon", "channel_id"], wide: [] },
+  values: { narrow: [], abbreviated: ["imageContainerExpiring", "locke", "imageContainerExpiring", "UNKNOWN_PLATFORM"], wide: [49724672, 49747200, 49765376, 49775616] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return Number(arg0) - 1;
   }
 });
 obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [null, null, null, null, null, null, null], short: [null, null, null, null, null, null, null], abbreviated: [null, null, null, null, null, null, null], wide: ["<string:305266691>", "<string:2457337858>", "<string:1948450817>", "<string:1045495811>", "<string:23447620>", "<string:23447296>", "<string:23447040>"] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [false, false, false, false, false, false, false], short: [false, false, false, false, false, false, false], abbreviated: [false, false, false, false, false, false, false], wide: [false, false, false, false, false, false, false] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: { Text: "P", body: 1, PX_8: 24, y: 18, isArray: 12, accessibilityRole: "100%", useStateFromStores: 0, lj: 5.907 }, abbreviated: { Text: "P", body: 1, PX_8: 24, y: 18, isArray: 12, accessibilityRole: "100%", useStateFromStores: 0, lj: 5.907 }, wide: { Text: "P", body: 1, PX_8: 24, y: 18, isArray: 12, accessibilityRole: "100%", useStateFromStores: 0, lj: 5.907 } }, defaultWidth: "wide", formattingValues: { narrow: { Text: "P", body: 1, PX_8: 24, y: 18, isArray: 12, accessibilityRole: "100%", useStateFromStores: 0, lj: 5.907 }, abbreviated: { Text: "P", body: 1, PX_8: 24, y: 18, isArray: 12, accessibilityRole: "100%", useStateFromStores: 0, lj: 5.907 }, wide: { Text: "P", body: 1, PX_8: 24, y: 18, isArray: 12, accessibilityRole: "100%", useStateFromStores: 0, lj: 5.907 } }, defaultFormattingWidth: "wide" });
 
 export default obj;
 export default exports.default;

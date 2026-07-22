@@ -1,10 +1,10 @@
-// Module ID: 8807
-// Function ID: 69428
+// Module ID: 8808
+// Function ID: 69440
 // Name: SelectedUserField
 // Dependencies: []
 // Exports: default
 
-// Module 8807 (SelectedUserField)
+// Module 8808 (SelectedUserField)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -19,13 +19,13 @@ obj.opener = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.openerWithClearButton = { paddingRight: 0 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.searchIcon = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-const obj3 = { category: true, flexDirection: "/assets/images/native/icons/voice_calls", alignItems: 24, borderRadius: importDefault(dependencyMap[4]).radii.lg, paddingHorizontal: null, accessible: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
+const obj3 = { <string:3159517537>: true, <string:1468736940>: "/assets/images/native/icons/voice_calls", <string:1903353148>: 24, <string:3093014844>: 24, <string:2595485336>: null, <string:2673977675>: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.userPill = obj3;
 obj.userPillText = { marginLeft: 6 };
-const obj2 = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-obj.clearButton = { paddingRight: importDefault(dependencyMap[4]).space.PX_16, paddingLeft: importDefault(dependencyMap[4]).space.PX_8 };
+const obj4 = { 751154927: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008090826109680138, 2104241004: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000410125039584637, 143479472: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007927036650347631, 1449329397: 0.00000000000000000001715903478031357, paddingRight: importDefault(dependencyMap[4]).space.PX_16, paddingLeft: importDefault(dependencyMap[4]).space.PX_8 };
+obj.clearButton = obj4;
 let closure_7 = obj.createStyles(obj);
-const obj4 = { paddingRight: importDefault(dependencyMap[4]).space.PX_16, paddingLeft: importDefault(dependencyMap[4]).space.PX_8 };
+const obj2 = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/checkout/native/gifting/SelectedUserField.tsx");
 
 export default function SelectedUserField(onPress) {
@@ -59,8 +59,7 @@ export default function SelectedUserField(onPress) {
     const stringResult1 = intl4.string(arg1(dependencyMap[6]).t.xFn72s);
   }
   obj1.accessibilityLabel = combined;
-  const obj2 = { Gateway: "lag", communicationDisabledUntilTimestamp: "isArrayBuffer", withMutualGuilds: "<string:2631618816>", style: tmp.searchIcon };
-  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, obj2), ];
+  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, { style: tmp.searchIcon }), ];
   if (null != selectedUser) {
     const obj3 = { style: tmp.userPill };
     obj4 = { user: selectedUser, guildId: undefined, size: arg1(dependencyMap[9]).AvatarSizes.XSMALL_20 };
@@ -71,7 +70,7 @@ export default function SelectedUserField(onPress) {
     let tmp15 = callback2(closure_4, obj3);
     const obj11 = importDefault(dependencyMap[7]);
   } else {
-    const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.userPillText };
+    const obj6 = { cachedAt: true, edpbxy: true, style: tmp.userPillText };
     const intl2 = arg1(dependencyMap[6]).intl;
     obj6.children = intl2.string(arg1(dependencyMap[6]).t.R0vK0N);
     tmp15 = callback(arg1(dependencyMap[10]).Text, obj6);

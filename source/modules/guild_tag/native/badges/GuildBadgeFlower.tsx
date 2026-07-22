@@ -1,18 +1,18 @@
-// Module ID: 12815
-// Function ID: 98133
+// Module ID: 12822
+// Function ID: 98166
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeFlower
 
-// Module 12815 (items)
+// Module 12822 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = [true, true, true];
-let closure_5 = [true, "<string:1329725442>", "<string:1358955076>"];
+let closure_5 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003152909256905305, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002353652551387877, 0.00000000000000000000000000000000000000000000000000000000000004667307916202893];
 let closure_6 = ["channelId", "channelId", "channelId"];
-const items = [{ "Null": null, "Null": null }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }, {}];
+const items = [{ accessibilityRole: null, s: null }, { accessibilityRole: null, s: null }, {}];
 let closure_8 = [];
-const items1 = [{ "Null": null, "Null": null }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }, {}];
+const items1 = [{ accessibilityRole: null, s: null }, { accessibilityRole: null, s: null }, {}];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeFlower.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeFlower = function GuildBadgeFlower(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
+  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

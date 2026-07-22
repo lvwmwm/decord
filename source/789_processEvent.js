@@ -222,10 +222,10 @@ if (!fn) {
     return _Promise;
   };
 }
-const items = [];
+const items = [null, null];
 const regExp = new RegExp(items.join("|"));
 
-export const debugSymbolicatorIntegration = function debugSymbolicatorIntegration() {
+export const debugSymbolicatorIntegration = function debugSymbolicatorIntegration(arg0) {
   return {
     name: "DebugSymbolicator",
     setupOnce() {

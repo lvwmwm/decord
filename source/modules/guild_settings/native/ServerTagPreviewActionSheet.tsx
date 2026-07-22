@@ -1,10 +1,10 @@
-// Module ID: 12798
-// Function ID: 98088
+// Module ID: 12805
+// Function ID: 98121
 // Name: ServerTagPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12798 (ServerTagPreviewActionSheet)
+// Module 12805 (ServerTagPreviewActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildProfileFetchStatus = arg1(dependencyMap[2]).GuildProfileFetchStatus;
@@ -38,7 +38,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
     let tmp7 = callback(importDefault(dependencyMap[8]), obj);
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: tmp.error };
-    const obj1 = {};
+    const obj1 = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
     const intl = arg1(dependencyMap[11]).intl;
     obj1.children = intl.string(arg1(dependencyMap[11]).t.tmGHjc);
     const items1 = [callback(arg1(dependencyMap[10]).Text, obj1), ];

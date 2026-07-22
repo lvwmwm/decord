@@ -1,10 +1,10 @@
-// Module ID: 16185
-// Function ID: 125014
+// Module ID: 16193
+// Function ID: 125056
 // Name: _toPropertyKey
 // Dependencies: []
 // Exports: default
 
-// Module 16185 (_toPropertyKey)
+// Module 16193 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -244,9 +244,9 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.inputContainer = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_12 };
+const obj2 = { "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj.tagAvatar = obj2;
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_12 };
-obj.tagAvatar = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.emptyStateText = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 const obj3 = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.addMembersDescription = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };

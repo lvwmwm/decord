@@ -1,10 +1,10 @@
-// Module ID: 9126
-// Function ID: 71463
+// Module ID: 9127
+// Function ID: 71476
 // Name: PhoneHangUpIcon
 // Dependencies: []
 // Exports: PhoneHangUpIcon
 
-// Module 9126 (PhoneHangUpIcon)
+// Module 9127 (PhoneHangUpIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PhoneHangUpIcon.tsx");

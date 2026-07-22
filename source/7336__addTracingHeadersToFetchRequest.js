@@ -1,7 +1,7 @@
 // Module ID: 7336
-// Function ID: 59159
+// Function ID: 59170
 // Name: _addTracingHeadersToFetchRequest
-// Dependencies: [7358, 5, 7363, 4171, 653, 686, 4365, 507, 3797, 7364, 6819, 4027, 3796, 3789, 4447, 4456, 1327, 2, 7365]
+// Dependencies: [7358, 5, 7363, 4171, 653, 686, 4365, 507, 3797, 7364, 6819, 4027, 3796, 3789, 4447, 4456, 1327, 2]
 // Exports: addTracingHeadersToFetchRequest, instrumentFetchRequest
 
 // Module 7336 (_addTracingHeadersToFetchRequest)
@@ -96,7 +96,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span) {
             return arg0;
           })), items2);
           if (baggage) {
-            const items3 = ["Array", baggage];
+            const items3 = [false, baggage];
             combined1.push(items3);
           }
           return combined1;

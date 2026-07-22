@@ -1,10 +1,10 @@
-// Module ID: 16086
-// Function ID: 123698
+// Module ID: 16094
+// Function ID: 123740
 // Name: ChannelListIcon
 // Dependencies: []
 // Exports: ChannelListIcon
 
-// Module 16086 (ChannelListIcon)
+// Module 16094 (ChannelListIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChannelListIcon.tsx");

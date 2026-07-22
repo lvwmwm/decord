@@ -1,10 +1,10 @@
-// Module ID: 9528
-// Function ID: 74223
+// Module ID: 9529
+// Function ID: 74236
 // Name: hasForLaterPremiumType
 // Dependencies: []
 // Exports: default
 
-// Module 9528 (hasForLaterPremiumType)
+// Module 9529 (hasForLaterPremiumType)
 let closure_2 = importDefault(dependencyMap[0]);
 const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");

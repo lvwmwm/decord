@@ -1,10 +1,10 @@
-// Module ID: 8647
-// Function ID: 68460
+// Module ID: 8648
+// Function ID: 68472
 // Name: maybeCreateMessageRecordFromSnapshot
 // Dependencies: []
 // Exports: default
 
-// Module 8647 (maybeCreateMessageRecordFromSnapshot)
+// Module 8648 (maybeCreateMessageRecordFromSnapshot)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/forwarding/maybeCreateMessageRecordFromSnapshot.tsx");
 

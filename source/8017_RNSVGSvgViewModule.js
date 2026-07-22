@@ -1,5 +1,5 @@
 // Module ID: 8017
-// Function ID: 63616
+// Function ID: 63626
 // Name: RNSVGSvgViewModule
 // Dependencies: []
 

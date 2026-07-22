@@ -1,25 +1,25 @@
-// Module ID: 9393
-// Function ID: 73211
+// Module ID: 9394
+// Function ID: 73224
 // Name: ExpressionGuildDetails
 // Dependencies: []
 
-// Module 9393 (ExpressionGuildDetails)
+// Module 9394 (ExpressionGuildDetails)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).ExpressionSourceGuildRecord;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { guildDetailsContainer: { flexDirection: "column" }, guildDetailsContent: {} };
-obj = { 2018655073: false, 1669594568: false, 1045670548: false, -460645489: false, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.guildIcon = obj;
 obj.guildNameAndOnlineMembers = { flexDirection: "column" };
-obj.guildNameWrapper = { 33964765073235: 1, -9223372036854775808: 71, -9223372036854775808: null };
+obj.guildNameWrapper = { fontWeight: "center", allFiles: "center", audio: "hidden" };
 obj.guildPartnerIcon = { marginRight: 8 };
-obj.guildDescriptionSection = { headerIcons: true, RowButtonIconProps: true, headerLabel: true };
+obj.guildDescriptionSection = { 9223372036854775807: "safety_user_sentiment_notice_dismissed_at", 9223372036854775807: "message", 0: null };
 const tmp3 = arg1(dependencyMap[3]);
 obj.dotSeparator = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
-obj.joinGuildButton = { borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
+const obj2 = { now: false, ref: false, colors: false, cursor: false, concat: false, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
+obj.joinGuildButton = obj2;
 let closure_8 = obj.createStyles(obj);
 class ExpressionGuildDetails {
   constructor(arg0) {
@@ -58,7 +58,7 @@ class ExpressionGuildDetails {
       tmp13 = dependencyMap;
       obj16 = 9;
       tmp11 = jsx;
-      obj3 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
+      obj3 = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
       obj3.children = title;
       items = [, ];
       items[0] = jsx(arg1(dependencyMap[9]).Text, obj3);
@@ -82,7 +82,7 @@ class ExpressionGuildDetails {
       obj7.disableColor = true;
       items2 = [, ];
       items2[0] = jsx(tmp15, obj7);
-      obj8 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray" };
+      obj8 = { cachedAt: 1231704321, edpbxy: 32296513 };
       obj8.children = guild.name;
       items2[1] = jsx(arg1(dependencyMap[9]).Text, obj8);
       obj6.children = items2;
@@ -99,7 +99,7 @@ class ExpressionGuildDetails {
           tmp24 = dependencyMap;
           tmp20 = jsxs;
           tmp21 = Fragment;
-          obj11 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+          obj11 = { cachedAt: true, edpbxy: true };
           num7 = 10;
           intl2 = arg1(dependencyMap[10]).intl;
           obj12 = {};
@@ -122,7 +122,7 @@ class ExpressionGuildDetails {
               obj14.onPress = function onPress() {
                 return guild(closure_2[12]).handleJoinGuild(guild.id);
               };
-              obj15 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+              obj15 = { cachedAt: true, edpbxy: true };
               intl3 = arg1(dependencyMap[10]).intl;
               obj15.children = intl3.string(arg1(dependencyMap[10]).t.riu2R5);
               obj14.children = jsx(arg1(dependencyMap[obj16]).Text, obj15);
@@ -135,7 +135,7 @@ class ExpressionGuildDetails {
           tmp30 = jsx;
           tmp31 = arg1;
           tmp32 = dependencyMap;
-          obj16 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+          obj16 = { cachedAt: true, edpbxy: true };
           intl4 = arg1(dependencyMap[10]).intl;
           obj16.children = intl4.string(arg1(dependencyMap[10]).t.inyJqO);
           tmp29 = jsx(arg1(dependencyMap[obj16]).Text, obj16);
@@ -144,7 +144,7 @@ class ExpressionGuildDetails {
       tmp17 = jsx;
       tmp18 = arg1;
       tmp19 = dependencyMap;
-      obj17 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
+      obj17 = { cachedAt: true, edpbxy: true };
       num6 = 10;
       intl = arg1(dependencyMap[10]).intl;
       obj17.children = intl.string(arg1(dependencyMap[10]).t.H29mx4);
@@ -165,7 +165,7 @@ class ExpressionGuildDetails {
     return;
   }
 }
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
+const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/messages/native/emoji/ExpressionGuildDetails.tsx");
 
 export default ExpressionGuildDetails;

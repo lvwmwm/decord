@@ -1,10 +1,10 @@
-// Module ID: 5715
-// Function ID: 49131
+// Module ID: 5714
+// Function ID: 49139
 // Name: createResolvedGuildTemplate
 // Dependencies: []
 // Exports: default
 
-// Module 5715 (createResolvedGuildTemplate)
+// Module 5714 (createResolvedGuildTemplate)
 const GuildTemplateStates = require(dependencyMap[0]).GuildTemplateStates;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_templates/createResolvedGuildTemplate.tsx");

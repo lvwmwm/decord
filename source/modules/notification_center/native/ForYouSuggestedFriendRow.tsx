@@ -1,10 +1,10 @@
-// Module ID: 15043
-// Function ID: 113265
+// Module ID: 15051
+// Function ID: 113308
 // Name: ForYouSuggestedFriendRow
 // Dependencies: []
 // Exports: default
 
-// Module 15043 (ForYouSuggestedFriendRow)
+// Module 15051 (ForYouSuggestedFriendRow)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -31,7 +31,7 @@ let closure_12 = arg1(dependencyMap[6]).createStyles((layout) => {
   }
   obj2.marginBottom = num;
   obj.nameText = obj2;
-  const obj3 = { stroke: true, strokeWidth: true, strokeDasharray: true, strokeLinecap: true, position: true, bottom: true, borderRadius: importDefault(dependencyMap[8]).radii.round };
+  const obj3 = { FPS_15: "shapes", getImageSourcesFromImageProps: "Symbol", numpad 4: "accessibilityRole", useIsWindowSmall: "Reflect", maskRemainder: "HTTP", overflow: "Reflect", borderRadius: importDefault(dependencyMap[8]).radii.round };
   const merged = Object.assign(sizeStyle);
   obj3["marginRight"] = layoutStyles.icon.margin.marginRight + 4;
   obj.avatar = obj3;

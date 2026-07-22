@@ -1,9 +1,9 @@
-// Module ID: 10410
-// Function ID: 80184
+// Module ID: 10411
+// Function ID: 80197
 // Name: BlockedInformationTable
 // Dependencies: []
 
-// Module 10410 (BlockedInformationTable)
+// Module 10411 (BlockedInformationTable)
 function BlockedInformationTable() {
   const obj = {
     hasIcons: true,
@@ -33,7 +33,7 @@ const tmp2 = arg1(dependencyMap[7]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { button: { "Null": null, "Null": null } };
+let obj = { button: { marginBottom: null, borderRadius: null } };
 obj = { marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
 obj.tableContainer = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[11]).space.PX_24 };
@@ -43,9 +43,9 @@ const tmp4 = arg1(dependencyMap[9]);
 obj.container = { flex: 1, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_16 };
 const obj2 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_16 };
 obj.header = { marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
-const obj4 = { tooltipX: 0.000000000000000000000000000000000000000000000000000000000000041337475905652505, tooltipY: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
+const obj4 = { "Null": false, "Null": false, marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
 obj.avatarContainer = obj4;
-const obj5 = { justifyContent: "text-lg/normal", paddingRight: null, height: "mobile-text-heading-primary", padding: importDefault(dependencyMap[11]).space.PX_4, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.round };
+const obj5 = { "Bool(false)": "text-lg/normal", "Bool(false)": null, "Bool(false)": "mobile-text-heading-primary", padding: importDefault(dependencyMap[11]).space.PX_4, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.round };
 obj.avatarIconContainer = obj5;
 obj.avatar = { alignSelf: "center" };
 const obj3 = { marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
@@ -263,7 +263,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     }
     items10[2] = tmp31;
     const obj16 = { style: tmp.button };
-    const obj17 = {};
+    const obj17 = { <string:1986169986>: "sortType", <string:2487833047>: "ENABLE_EMOTICONS" };
     const intl7 = arg1(dependencyMap[13]).intl;
     obj17.text = intl7.string(arg1(dependencyMap[13]).t.l4Emac);
     obj17.onPress = function onPress() {
@@ -287,7 +287,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj17.disabled = first;
     obj17.loading = first;
     const items11 = [callback2(arg1(dependencyMap[34]).Button, obj17), ];
-    const obj18 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.footerText };
+    const obj18 = { "Null": 1, "Null": "tail", alignItems: null, style: tmp.footerText };
     const intl8 = arg1(dependencyMap[13]).intl;
     const obj19 = {
       articleLink() {

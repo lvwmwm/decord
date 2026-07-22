@@ -1,9 +1,9 @@
-// Module ID: 10785
-// Function ID: 83755
+// Module ID: 10786
+// Function ID: 83768
 // Name: RaisedHandIcon
 // Dependencies: []
 
-// Module 10785 (RaisedHandIcon)
+// Module 10786 (RaisedHandIcon)
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
   let activeBackground = rtsState.rtsState === arg1(dependencyMap[6]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
@@ -27,12 +27,12 @@ let closure_4 = importDefault(dependencyMap[2]);
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { "Bool(false)": "#000", "Bool(false)": "m245.41 73.425 30.126 4.095a3.057 3.057 0 0 1 2.541 3.86 3.057 3.057 0 0 1-.915 1.46c-3.24 2.839-8.56 5.457-16.323 2.67l4.322 3.61a2.41 2.41 0 0 1 .793 2.5 2.416 2.416 0 0 1-1.953 1.75c-3.35.474-8.339-.388-13.841-6.693l-.35 2.637a3.06 3.06 0 0 1-4.536 2.274 16.336 16.336 0 0 1-7.458-8.89 7.04 7.04 0 0 1 4.075-8.844 7.043 7.043 0 0 1 3.519-.429Z", "Bool(false)": "#8CD9FF", "Bool(false)": "m192.968 47.66-.136-3.052c2.249-1.587 2.139-6.033 2.139-6.033l-16.2-.382c.11 3.836 3.622 6.195 3.622 6.195l.039 3.493s-.11 15.889 9.908 23.84l12.312-5.664s-10.485-5.987-11.684-18.397Z" } };
+let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { "Bool(false)": 1107296966, "Bool(false)": 83081, "Bool(false)": 152244, "Bool(false)": 21293378 } };
 obj = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_800, backgroundColor: importDefault(dependencyMap[5]).colors.WHITE };
 obj.raisedHandContainer = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360 };
 obj.activeBackground = obj1;
-obj.raisedHand = {};
+obj.raisedHand = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 obj.nameplateContainer = {};
 const tmp2 = arg1(dependencyMap[3]);
 obj.usernameText = { fontSize: 14, color: importDefault(dependencyMap[5]).colors.WHITE };

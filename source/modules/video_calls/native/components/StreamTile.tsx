@@ -1,10 +1,10 @@
-// Module ID: 10553
-// Function ID: 82439
+// Module ID: 10554
+// Function ID: 82452
 // Name: StreamTextOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 10553 (StreamTextOverlay)
+// Module 10554 (StreamTextOverlay)
 let StyleSheet;
 class StreamTextOverlay {
   constructor(arg0) {
@@ -13,7 +13,7 @@ class StreamTextOverlay {
     obj = { style: tmp.screenMessageContainer };
     tmp2 = jsxs;
     tmp3 = View;
-    obj = { delete: null, dispatch: null, raw: null };
+    obj = { "Null": null, "Null": null, alignItems: null };
     obj.style = tmp.screenMessageText;
     obj.children = global.title;
     items = [, ];
@@ -63,7 +63,7 @@ const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_3
 obj3.backgroundColor = arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj3.borderRadius = importDefault(dependencyMap[8]).radii.md;
 obj.statusWrapper = obj3;
-obj.liveTag = { <string:3250345558>: "isArray", <string:553825121>: "Text", <string:1935339265>: "marginTop" };
+obj.liveTag = { st: "Array", sv: "parseSemver", sw: "Array" };
 let closure_13 = obj1.createStyles(obj);
 let closure_14 = importAllResult.memo((participant) => {
   let gestureEnabled;
@@ -143,7 +143,7 @@ let closure_15 = importAllResult.memo((arg0) => {
   let onFullScreen;
   let style;
   ({ onFullScreen, style } = arg0);
-  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { emitDefaultValues: true, enumAsInteger: true, useProtoFieldName: true, prettySpaces: true } };
+  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { <string:2874954499>: "<string:5259856>", <string:879673916>: "<string:3935895705>", size: "flags", secureTextEntry: "ti" } };
   const items = [callback2().statusWrapper, style];
   obj = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[11]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[8]).unsafe_rawColors.WHITE };
   obj.children = callback(arg1(dependencyMap[11]).Icon, obj);

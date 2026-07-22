@@ -1,10 +1,10 @@
-// Module ID: 13397
-// Function ID: 101839
+// Module ID: 13404
+// Function ID: 101872
 // Name: PoolIdInput
 // Dependencies: []
 // Exports: default
 
-// Module 13397 (PoolIdInput)
+// Module 13404 (PoolIdInput)
 function PoolIdInput(onSubmit) {
   let tmp8;
   onSubmit = onSubmit.onSubmit;
@@ -24,7 +24,7 @@ function PoolIdInput(onSubmit) {
   callback = React.useCallback(callback(tmp), items);
   let obj = { spacing: 4, style: tmp2.inputContainer };
   const items1 = [callback3(arg1(dependencyMap[29]).TextInput, { onChange: tmp3[1] }), , ];
-  obj = { arrayFormat: false, addQueryPrefix: false, animated: false, barStyle: false, -1387384493: false, 1386297258: false, -1820902222: false, 1849471570: false, onChange: tmp5[1] };
+  obj = { <string:1436649421>: false, <string:3464026829>: false, <string:2774973365>: false, <string:3856097825>: false, <string:1322502738>: false, <string:2898223754>: false, <string:1636907601>: false, <string:3744617224>: false, onChange: tmp5[1] };
   items1[1] = callback3(arg1(dependencyMap[29]).TextInput, obj);
   obj = {};
   let tmp12 = 0 === first.length;
@@ -68,7 +68,7 @@ function UserActionSheet(pool) {
       obj.disabled = id.id === closure_2;
       let tmp3;
       if (id.id === closure_2) {
-        tmp3 = callback(pool(closure_2[37]).CheckmarkLargeIcon, { accessibilityRole: false, "": false });
+        tmp3 = callback(pool(closure_2[37]).CheckmarkLargeIcon, { "Bool(false)": "<string:300807801>", "Bool(false)": "<string:36311617>" });
       }
       obj.trailing = tmp3;
       obj.start = 0 === arg1;
@@ -107,7 +107,7 @@ let closure_9 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 const items = [arg1(dependencyMap[7]).UserIcon, arg1(dependencyMap[8]).ShieldIcon, arg1(dependencyMap[9]).GiftIcon, arg1(dependencyMap[10]).AchievementsIcon, arg1(dependencyMap[11]).PiggyBankIcon, arg1(dependencyMap[12]).TreehouseIcon, arg1(dependencyMap[13]).SpeedometerIcon, arg1(dependencyMap[14]).CompassIcon, arg1(dependencyMap[15]).SignPostIcon, arg1(dependencyMap[16]).CarIcon, arg1(dependencyMap[17]).TrainIcon, arg1(dependencyMap[18]).TeacupIcon, arg1(dependencyMap[19]).InventoryIcon, arg1(dependencyMap[20]).FoodIcon, arg1(dependencyMap[21]).BurgerIcon, arg1(dependencyMap[22]).MagicDoorIcon, arg1(dependencyMap[23]).PawPrintIcon, arg1(dependencyMap[24]).RecordPlayerIcon, arg1(dependencyMap[25]).SettingsIcon];
-let closure_13 = [1, 285, 381, 0, 0.1916, 0.9484];
+let closure_13 = [];
 let obj = arg1(dependencyMap[26]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_BASE_LOW, flex: 1 };
@@ -148,7 +148,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
   obj.contentContainerStyle = items1;
   const obj2 = { spacing: 16 };
   const items2 = [callback3(PoolIdInput, { onSubmit: callback }), ];
-  const obj3 = { "Bool(false)": "MESSAGE_CREATE", "Bool(false)": null };
+  const obj3 = { -9223372036854775808: "MESSAGE_CREATE", 9223372036854775807: null };
   let tmp9 = 0 === stateFromStoresArray.length;
   if (tmp9) {
     const obj4 = { label: "No pools available." };

@@ -15,7 +15,7 @@ function noopFactory(defaultReturnValue) {
 let closure_2 = { code: "function pnpm_RNScreensTurboModuleTs1(){const{logger,defaultReturnValue}=this.__closure;logger.warn('RNScreensTurboModule has not been found. Check that you have installed `react-native-screens@3.30.0` or newer in your project and rebuilt your app.');return defaultReturnValue;}" };
 RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
 if (!RNScreensTurboModule) {
-  const obj = { startTransition: noopFactory({ "Bool(false)": "<string:1876819969>", "Bool(false)": "<string:2170814465>", "Bool(false)": "<string:592707585>" }), updateTransition: noopFactory(), finishTransition: noopFactory() };
+  const obj = { startTransition: noopFactory({ "Bool(false)": "pow", "Bool(false)": "decorationCutout", "Bool(false)": "%Error%" }), updateTransition: noopFactory(), finishTransition: noopFactory() };
   RNScreensTurboModule = obj;
 }
 arg5.RNScreensTurboModule = RNScreensTurboModule;

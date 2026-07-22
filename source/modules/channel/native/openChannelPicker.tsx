@@ -1,10 +1,10 @@
-// Module ID: 10363
-// Function ID: 79969
+// Module ID: 10364
+// Function ID: 79982
 // Name: openChannelPicker
 // Dependencies: []
 // Exports: default
 
-// Module 10363 (openChannelPicker)
+// Module 10364 (openChannelPicker)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
@@ -21,7 +21,7 @@ export default function openChannelPicker(onClose) {
       return true;
     };
   }
-  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+  let obj = { <string:3029674277>: false, <string:1045353029>: false, <string:1360093674>: false, <string:3361801618>: false, <string:2701284434>: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onClose, obj);
   const guild = guild.getGuild(guildId);

@@ -1,10 +1,10 @@
-// Module ID: 16225
-// Function ID: 125415
+// Module ID: 16233
+// Function ID: 125457
 // Name: GuildSettingsModalCommunity
 // Dependencies: []
 // Exports: default
 
-// Module 16225 (GuildSettingsModalCommunity)
+// Module 16233 (GuildSettingsModalCommunity)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -107,7 +107,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       const set = new Set(guild.features);
       set.delete(constants.COMMUNITY);
       set.delete(constants.DISCOVERABLE);
-      const obj = { -563583299616914: false, 0: false, 9223372036854775807: null, features: set, preferredLocale: guild.preferredLocale };
+      const obj = { "Null": "mn", "Null": "description", "Null": "Array", features: set, preferredLocale: guild.preferredLocale };
       onClose(navigation[15]).saveGuild(guild.id, obj);
       const obj2 = onClose(navigation[15]);
     }

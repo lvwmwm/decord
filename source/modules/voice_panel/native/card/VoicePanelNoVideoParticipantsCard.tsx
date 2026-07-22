@@ -1,8 +1,8 @@
-// Module ID: 15696
-// Function ID: 119983
+// Module ID: 15704
+// Function ID: 120026
 // Dependencies: []
 
-// Module 15696
+// Module 15704
 const importAllResult = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -10,8 +10,8 @@ let obj1 = arg1(dependencyMap[3]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.container = obj;
-obj.label = { "Null": "center", "Null": "center" };
-obj1 = { round: "text-sm/bold", justifyContent: "interactive-text-active", withSpring: 22, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj.label = {};
+obj1 = { width: "text-sm/bold", height: "interactive-text-active", marginBottom: 22, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.button = obj1;
 const tmp2 = arg1(dependencyMap[2]);
 obj.buttonText = { color: importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_860 };
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCa
     const result = callback(closure_2[6]).toggleVoiceParticipantsHidden(channelId, false);
   }, items);
   let obj = { style: tmp.container };
-  obj = { delete: null, dispatch: null, raw: null, style: tmp.label };
+  obj = { "Null": null, "Null": null, alignItems: null, style: tmp.label };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.8eBJ73);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];

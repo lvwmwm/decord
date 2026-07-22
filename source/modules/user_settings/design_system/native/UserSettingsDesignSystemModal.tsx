@@ -1,10 +1,10 @@
-// Module ID: 14337
-// Function ID: 108245
+// Module ID: 14345
+// Function ID: 108288
 // Name: useScreens
 // Dependencies: []
 // Exports: default
 
-// Module 14337 (useScreens)
+// Module 14345 (useScreens)
 function useScreens() {
   return arg1(dependencyMap[6]).useNavigatorScreens(() => {
     let obj = {};
@@ -23,13 +23,13 @@ function useScreens() {
     };
     obj.render = function render(arg0, arg1) {
       const obj = {
-        string: "<string:718164314>",
-        track: "<string:17244737>",
-        body: "<string:2885701888>",
-        name: "<string:20401986>",
-        padding: "<string:17262336>",
-        format: "<string:3040825600>",
-        colors: "<string:27702851>",
+        <string:1642972817>: 0.000000000000000000000000000000000000000002690494990015162,
+        <string:1875399615>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009781756198506656,
+        <string:108398005>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013561487012820162,
+        <string:2404452449>: 15183223580850670000000000000000000000000000000000000000000000000000000000000000000,
+        <string:814110078>: 960822361483930500000000000000,
+        <string:2302972493>: 0.0000000000000000000000000000000000000037212547712193413,
+        <string:1024645044>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019640532953923946,
         onAction() {
           return arg1.push(constants.WHO_DAT);
         },
@@ -45,16 +45,12 @@ function useScreens() {
       return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.WHO_DAT });
     };
     obj.render = function render(arg0, arg1) {
-      const obj = {
-        challenge: "Triple Click",
-        mfaChallenge: "o.o.o",
-        finish: "tripleClick",
+      return callback3(closure_14, {
         onAction() {
           return arg1.push(constants.EVERYBODY);
         },
         children: callback3(arg1(closure_2[11]).TextInput, { placeholder: "My friend Jake" })
-      };
-      return callback3(closure_14, obj);
+      });
     };
     obj[constants.WHO_DAT] = obj;
     const obj1 = {};
@@ -83,11 +79,11 @@ function useScreens() {
     };
     obj2.render = function render(arg0, arg1) {
       const obj = {
-        "Bool(true)": "Notification",
-        "Bool(true)": "o-O=o",
-        "Bool(true)": "notification",
-        "Bool(true)": "text-lg/bold",
-        "Bool(true)": "Semantic Types",
+        "Bool(true)": false,
+        "Bool(true)": false,
+        "Bool(true)": false,
+        "Bool(true)": false,
+        "Bool(true)": false,
         onAction() {
           return arg1.push(constants.LIMIT);
         }
@@ -105,12 +101,20 @@ function useScreens() {
       return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.LIMIT });
     };
     obj3.render = function render() {
-      return callback3(closure_14, {
+      const obj = {
+        <string:1642972817>: null,
+        <string:1875399615>: null,
+        <string:108398005>: null,
+        <string:2404452449>: null,
+        <string:814110078>: null,
+        <string:2302972493>: null,
+        <string:1024645044>: null,
         onAction: callback2(closure_2[8]).pop,
         onSecondaryAction() {
           return callback(closure_2[12]).openURL("https://www.youtube.com/watch?v=votBDwhTu1E");
         }
-      });
+      };
+      return callback3(closure_14, obj);
     };
     obj[constants.LIMIT] = obj3;
     return obj;
@@ -188,7 +192,7 @@ function SwitchesScreen(onAction) {
   const tmp2 = callback(React.useState(parts.map(() => false)), 2);
   const first = tmp2[0];
   let closure_1 = tmp2[1];
-  let obj = {};
+  let obj = { height: "WEEKEND_ONLY", right: "useActionBarPrimaryButton" };
   obj = { isVisible: first.some((arg0) => arg0), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction.onAction };
   obj.footer = callback2(arg1(dependencyMap[21]).ModalFloatingAction, obj);
   obj = { style: tmp.tableRows };
@@ -231,17 +235,17 @@ let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { -9223372036854775808: null, -9223372036854775808: "\u{1F468}\u200D\u{1F468}\u200D\u{1F466}\u200D\u{1F466}", 9223372036854775807: 6, 0: 188 } };
+obj = { container: {} };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.screen = obj;
-const obj1 = { keyboardType: -1758369715761618200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, autoCapitalize: 292062.0791015852, autoCorrect: false, defaultValue: false, placeholder: false, dateInput: false, GUILD_SETTINGS_SET_SECTION: false, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.emojiContainer = obj1;
+const tmp3 = arg1(dependencyMap[3]);
+obj.emojiContainer = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.emoji = {};
 obj.title = { marginBottom: 16 };
 obj.tableRows = { width: "100%" };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { START: "Come on fhqwhgads", WHO_DAT: "Who's that?", EVERYBODY: "Everybody come on fhqwhgads", JOCKIN: "I see you jockin' me", LIMIT: "Everybody to the limit" };
-const tmp3 = arg1(dependencyMap[3]);
+const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemModal.tsx");
 
 export default function UserSettingsDesignSystemModal() {

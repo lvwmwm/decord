@@ -1,16 +1,16 @@
-// Module ID: 12131
-// Function ID: 93449
+// Module ID: 12135
+// Function ID: 93475
 // Dependencies: []
 
-// Module 12131
+// Module 12135
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { spoilerOverlayContainer: { no: 1946157560, name: 4, kind: 2 } };
-obj = { commandId: 1308623700, accessibilityRole: 1107297016, variant: 196236, lineClamp: 223799, gap: importDefault(dependencyMap[5]).space.PX_4 };
+let obj = { spoilerOverlayContainer: {} };
+obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.obscureContentContainer = obj;
 obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, borderRadius: importDefault(dependencyMap[5]).radii.lg, height: importDefault(dependencyMap[5]).space.PX_32 };
 const tmp3 = arg1(dependencyMap[3]);
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(function MediaModalSpoilerOverlay(source
     if (source.obscure) {
       const obj2 = { style: tmp.obscureContentContainer };
       const items2 = [callback2(arg1(dependencyMap[11]).ImageWarningIcon, {}), ];
-      const obj3 = { USER_REGISTRATION: "isArray", borderColor: "isArray", borderWidth: "isArray" };
+      const obj3 = { "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray" };
       const intl2 = arg1(dependencyMap[13]).intl;
       obj3.children = intl2.string(arg1(dependencyMap[13]).t.SpxcUR);
       tmp = callback2(arg1(dependencyMap[12]).Text, obj3);
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo(function MediaModalSpoilerOverlay(source
       let tmp20 = callback3(closure_5, obj2);
     } else {
       obj4 = { style: tmp.spoilerOverlayBackground };
-      const obj5 = { USER_REGISTRATION: "isArray", borderColor: "isArray", borderWidth: "isArray" };
+      const obj5 = { "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray" };
       const intl = arg1(dependencyMap[13]).intl;
       obj5.children = intl.string(arg1(dependencyMap[13]).t.F+x38C).toUpperCase();
       obj4.children = callback2(arg1(dependencyMap[12]).Text, obj5);

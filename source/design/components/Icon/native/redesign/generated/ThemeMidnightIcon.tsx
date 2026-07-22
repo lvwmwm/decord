@@ -1,10 +1,10 @@
-// Module ID: 14037
-// Function ID: 106749
+// Module ID: 14044
+// Function ID: 106789
 // Name: ThemeMidnightIcon
 // Dependencies: []
 // Exports: ThemeMidnightIcon
 
-// Module 14037 (ThemeMidnightIcon)
+// Module 14044 (ThemeMidnightIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThemeMidnightIcon.tsx");

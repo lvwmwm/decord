@@ -1,5 +1,5 @@
 // Module ID: 7280
-// Function ID: 58682
+// Function ID: 58693
 // Name: applyClientOptions
 // Dependencies: []
 // Exports: parseEventHintOrCaptureContext, prepareEvent
@@ -119,7 +119,7 @@ function applyDebugMeta(exception) {
 }
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
-let closure_4 = ["memo", "withSpring", "formatToPlainString", "icon", "LIGHT", "getChannel", "__workletHash", "t"];
+let closure_4 = ["guild_directory_entry", "guild_discovery", "guild_scheduled_event", "message", "report_to_mod_message", "stage_channel", "user", "widget"];
 
 export { applyClientOptions };
 export { applyDebugIds };

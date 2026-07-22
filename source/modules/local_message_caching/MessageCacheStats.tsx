@@ -1,14 +1,16 @@
 // Module ID: 6715
-// Function ID: 52187
+// Function ID: 52198
 // Name: makeLogKey
-// Dependencies: []
+// Dependencies: [513, 511, 513]
 
 // Module 6715 (makeLogKey)
+import closure_0 from "items";
+import module_511 from "module_511";
+import items from "items";
+
 function makeLogKey(arg0, arg1, arg2, arg3, arg4) {
   return "" + arg0 + ":" + arg1 + ":" + arg2 + ":" + arg3 + ":" + arg4;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
 let tmp2 = () => {
   class MessageCacheStats {
     constructor() {
@@ -121,7 +123,7 @@ let tmp2 = () => {
   return callback(MessageCacheStats, items);
 }();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/local_message_caching/MessageCacheStats.tsx");
+const result = items.fileFinishedImporting("modules/local_message_caching/MessageCacheStats.tsx");
 
 export default tmp2;
 export const INITIAL_MESSAGE_FETCH_KEY = "NativeAppStartup";

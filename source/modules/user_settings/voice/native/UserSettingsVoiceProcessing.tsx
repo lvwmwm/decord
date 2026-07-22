@@ -1,10 +1,10 @@
-// Module ID: 10711
-// Function ID: 83373
+// Module ID: 10712
+// Function ID: 83386
 // Name: VoiceProcessingOptions
 // Dependencies: []
 // Exports: default
 
-// Module 10711 (VoiceProcessingOptions)
+// Module 10712 (VoiceProcessingOptions)
 class VoiceProcessingOptions {
   constructor() {
     tmp = closure_8();
@@ -70,7 +70,7 @@ class VoiceProcessingOptions {
       tmp17 = jsxs;
       tmp18 = View;
       Text = arg1(dependencyMap[13]).Text;
-      obj6 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
+      obj6 = { cachedAt: "center", edpbxy: "center" };
       tmp20 = arg1;
       tmp21 = dependencyMap;
       intl7 = arg1(dependencyMap[11]).intl;

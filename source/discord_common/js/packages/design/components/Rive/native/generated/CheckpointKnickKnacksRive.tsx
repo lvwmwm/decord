@@ -1,5 +1,5 @@
 // Module ID: 3921
-// Function ID: 32385
+// Function ID: 32387
 // Name: CheckpointKnickKnacksRive
 // Dependencies: []
 
@@ -8,8 +8,8 @@ let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Preview: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Friends: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Globe: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Globe Single Line: {}, Emojis: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Wave Line: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Games: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Voice: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Looping Checkboard: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, CheckRow: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Quests: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Entry: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Messages: { 0: "<string:2066808836>", 0: "<string:3779571220>" }, Servers: { 0: "<string:2066808836>", 0: "<string:3779571220>" } };
-let closure_8 = { Preview: [], Friends: [], Globe: [], Globe Single Line: [], Emojis: [], Wave Line: [], Games: [], Voice: [], Looping Checkboard: [], CheckRow: [], Quests: [], Entry: [], Messages: [], Servers: [] };
+let closure_7 = { Preview: {}, Friends: {}, Globe: {}, Globe Single Line: {}, Emojis: {}, Wave Line: {}, Games: {}, Voice: {}, Looping Checkboard: {}, CheckRow: {}, Quests: {}, Entry: {}, Messages: {}, Servers: {} };
+let closure_8 = { Preview: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Friends: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Globe: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Globe Single Line: [], Emojis: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Wave Line: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Games: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Voice: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Looping Checkboard: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], CheckRow: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Quests: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Entry: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Messages: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"], Servers: ["memo", "id", "borderRadius", "LengthDelimited", "url", "bind"] };
 let closure_9 = {
   Preview: function PreviewBindings(reducedMotionEnabled) {
     let dataBinding;

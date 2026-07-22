@@ -1,10 +1,10 @@
-// Module ID: 8752
-// Function ID: 69201
+// Module ID: 8753
+// Function ID: 69213
 // Name: SegmentedControl
 // Dependencies: []
 // Exports: SegmentedControl
 
-// Module 8752 (SegmentedControl)
+// Module 8753 (SegmentedControl)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -13,11 +13,11 @@ let closure_8 = {};
 const tmp3 = arg1(dependencyMap[2]);
 let closure_9 = arg1(dependencyMap[3]).createStyles((borderRadius, paddingVertical) => {
   let obj = { scrollContentContainer: { flexGrow: 1 } };
-  obj = { accessibilityRole: "Array", GuildBadgeFrog: "meanBy", connectedEmbeddedActivity: "APPEARANCE", GIFS_SEARCH: "AUTO_MODERATION_BLOCKED_MESSAGE", 1364605794: "%Date%", -1604188661: "ME", backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical };
+  obj = { backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical };
   obj.controlsContainer = obj;
-  obj = { Wp9bEl: 11289912320616628000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, PremiumSKUPreview: 231584247876275150000000000000000000000000000000000000000000000000000000000000, UMWBZr: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053474810762224517, display: -12680549025477242000000000000000000000000000000000000000000000000000000000000000000000000000000, CONNECTIONS_CALLBACK: 33348160424430016000000000000000000000000000000000000000000000000000000000000000, borderRadius };
-  obj.indicatorContainer = obj;
-  obj.indicator = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND, borderRadius };
+  obj.indicatorContainer = { borderRadius };
+  obj = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND, borderRadius };
+  obj.indicator = obj;
   return obj;
 });
 let closure_10 = { code: "function SegmentedControlNativeTsx1(){const{indicatorWidth}=this.__closure;return indicatorWidth.get();}" };
@@ -364,7 +364,7 @@ export const SegmentedControl = function SegmentedControl(state) {
   const items4 = [setActiveIndex(items, obj2), memo1];
   obj1.children = items4;
   const tmp16 = tmp(items, obj1, items.length);
-  obj3 = { <string:1806389752>: null, <string:123181409>: null, contentContainerStyle: tmp2.scrollContentContainer, keyboardShouldPersistTaps: state.keyboardShouldPersistTaps, children: tmp16 };
+  obj3 = { 1933304872: "<string:1040334421>", -229249902: "<string:1040334338>", contentContainerStyle: tmp2.scrollContentContainer, keyboardShouldPersistTaps: state.keyboardShouldPersistTaps, children: tmp16 };
   let tmp17 = setActiveIndex(pressedIndex, obj3);
   if (tmp) {
     obj4 = { gesture: onEndResult, children: tmp16 };

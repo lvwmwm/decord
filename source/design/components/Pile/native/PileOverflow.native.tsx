@@ -1,10 +1,10 @@
-// Module ID: 9902
-// Function ID: 76608
+// Module ID: 9903
+// Function ID: 76621
 // Name: map
 // Dependencies: []
 // Exports: PileOverflow
 
-// Module 9902 (map)
+// Module 9903 (map)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.container = obj;
 let closure_6 = obj.createStyles(obj);
-const items = [[], [], [], ["isArray", "MAX_FORUM_TAGS"], [1074859868, -1408749273], ["Array", "commonProperty"]];
+const items = [["jsxs", "View"], [], [1106717986, 135250], [], [1074859868, -1408749273], [null, null]];
 const map = new Map(items);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Pile/native/PileOverflow.native.tsx");
@@ -37,7 +37,7 @@ export const PileOverflow = function PileOverflow(size) {
   obj.paddingHorizontal = num;
   items1[1] = obj;
   obj.style = items1;
-  const obj1 = { 2085692463: null, 839748315: null };
+  const obj1 = { "Bool(true)": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
   value = map.get(size);
   let str = "text-md/semibold";
   if (null != value) {

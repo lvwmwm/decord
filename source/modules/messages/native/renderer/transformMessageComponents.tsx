@@ -1,5 +1,5 @@
 // Module ID: 7786
-// Function ID: 62120
+// Function ID: 62130
 // Name: transformToRowGeneratedComponent
 // Dependencies: []
 // Exports: default
@@ -408,7 +408,7 @@ function transformToRowGeneratedComponent(message, type) {
                                         if (checkpointData.version === CheckpointVersions.V2025) {
                                           const _Intl = Intl;
                                           const prototype = NumberFormat.prototype;
-                                          const numberFormat = new NumberFormat(type(dependencyMap[8]).intl.currentLocale, { flexDirection: true, justifyContent: true });
+                                          const numberFormat = new NumberFormat(type(dependencyMap[8]).intl.currentLocale, { alignSelf: "<string:4216455170>", alignItems: "<string:1374549615>" });
                                           obj12 = {};
                                           const merged5 = Object.assign(tmp10);
                                           const obj13 = {};
@@ -595,7 +595,7 @@ function renderMarkdownText(textDisplayComponent, id, content) {
     return parseToASTResult;
   }
 }
-let closure_3 = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009267453305058687];
+let closure_3 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005737334791877656];
 let closure_4 = importDefault(dependencyMap[0]);
 const processColor = arg1(dependencyMap[1]).processColor;
 const CheckpointVersions = arg1(dependencyMap[2]).CheckpointVersions;

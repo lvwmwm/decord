@@ -1,18 +1,18 @@
-// Module ID: 11369
-// Function ID: 88394
+// Module ID: 11370
+// Function ID: 88407
 // Name: StyleSheet
 // Dependencies: []
 
-// Module 11369 (StyleSheet)
+// Module 11370 (StyleSheet)
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
-let obj = { trackForumPostLinkCopied: 3375103, isStreamInfoOverlayEnabled: -8192, _monthsRegex: 4320799, bottom: -StyleSheet.hairlineWidth, height: StyleSheet.hairlineWidth };
+let obj = { bottom: -StyleSheet.hairlineWidth, height: StyleSheet.hairlineWidth };
 obj = { height: StyleSheet.hairlineWidth };
 obj1 = { height: StyleSheet.hairlineWidth };
 const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, height: StyleSheet.hairlineWidth };
-let closure_6 = obj1.createStyles({ blur: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" }, strokeContainer: obj, stroke: obj, strokeAlt: obj1, strokeAltLight: obj2 });
+let closure_6 = obj1.createStyles({ blur: { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527 }, strokeContainer: obj, stroke: obj, strokeAlt: obj1, strokeAltLight: obj2 });
 const tmp2 = arg1(dependencyMap[2]);
 let closure_7 = arg1(dependencyMap[4]).isAndroid();
 let closure_8 = { code: "function VoicePanelHeaderGlassBlurTsx1(){const{shown,IS_ANDROID}=this.__closure;return{opacity:shown.get()?IS_ANDROID?0.7:1:0};}" };

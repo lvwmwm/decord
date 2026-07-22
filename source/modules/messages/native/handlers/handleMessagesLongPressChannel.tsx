@@ -1,10 +1,10 @@
-// Module ID: 10000
-// Function ID: 77304
+// Module ID: 10001
+// Function ID: 77317
 // Name: handleMessagesLongPressChannel
 // Dependencies: []
 // Exports: handleMessagesLongPressChannel
 
-// Module 10000 (handleMessagesLongPressChannel)
+// Module 10001 (handleMessagesLongPressChannel)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/messages/native/handlers/handleMessagesLongPressChannel.tsx");
 

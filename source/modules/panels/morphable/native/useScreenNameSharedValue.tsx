@@ -1,14 +1,13 @@
-// Module ID: 15568
-// Function ID: 118799
+// Module ID: 15576
+// Function ID: 118842
 // Name: useScreenNameSharedValue
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 15568 (useScreenNameSharedValue)
-import closure_2 from "result";
-import result from "result";
+// Module 15576 (useScreenNameSharedValue)
+import __exportStarResult1 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
   const rootNavigationRef = arg1(dependencyMap[1]).getRootNavigationRef();

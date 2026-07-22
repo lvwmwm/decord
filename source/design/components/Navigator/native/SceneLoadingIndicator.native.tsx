@@ -1,15 +1,15 @@
-// Module ID: 5583
-// Function ID: 47383
+// Module ID: 5582
+// Function ID: 47391
 // Name: SceneLoadingIndicator
 // Dependencies: []
 // Exports: SceneLoadingIndicator
 
-// Module 5583 (SceneLoadingIndicator)
+// Module 5582 (SceneLoadingIndicator)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ loadingContainer: { 314319: "+994", 315874: "Bahamas" } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ loadingContainer: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/Navigator/native/SceneLoadingIndicator.native.tsx");
 

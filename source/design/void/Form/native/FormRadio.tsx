@@ -1,10 +1,10 @@
-// Module ID: 5443
-// Function ID: 46556
+// Module ID: 5177
+// Function ID: 44993
 // Name: FormRadio
 // Dependencies: []
 // Exports: default
 
-// Module 5443 (FormRadio)
+// Module 5177 (FormRadio)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;

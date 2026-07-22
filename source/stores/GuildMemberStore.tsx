@@ -161,7 +161,7 @@ function getGuildIdFromCommunicationDisabledUserKey(communicationDisabledUserKey
 function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let iter;
   if (0 === roles.length) {
-    let obj = { "Bool(false)": "o", "Bool(false)": "o", colorRoleId: undefined, hoistRoleId: undefined, iconRoleId: undefined, highestRoleId: undefined };
+    let obj = { useState: "o", hasDiversityParent: "o", colorRoleId: undefined, hoistRoleId: undefined, iconRoleId: undefined, highestRoleId: undefined };
     return obj;
   } else {
     const tmp40 = _createForOfIteratorHelperLoose(roles);

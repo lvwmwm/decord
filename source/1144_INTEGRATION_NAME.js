@@ -1,11 +1,12 @@
 // Module ID: 1144
 // Function ID: 13047
 // Name: INTEGRATION_NAME
-// Dependencies: []
+// Dependencies: [6, 7, 794, 977, 1130, 977, 991, 990, 1111, 793, 978, 27]
 // Exports: getReactNavigationIntegration, reactNavigationIntegration
 
 // Module 1144 (INTEGRATION_NAME)
-let closure_2 = importDefault(dependencyMap[0]);
+import _classCallCheck from "_classCallCheck";
+
 
 export const INTEGRATION_NAME = "ReactNavigation";
 export const reactNavigationIntegration = function reactNavigationIntegration() {
@@ -59,7 +60,7 @@ export const reactNavigationIntegration = function reactNavigationIntegration() 
       }
       if (tmp4) {
         if (tmp4) {
-          const items = ["crash", "deprecation", "intervention", 500, 599];
+          const items = [];
           if (items.includes(tmp4)) {
             const debug2 = store(currentRoute[3]).debug;
             const _HermesInternal2 = HermesInternal;
@@ -110,7 +111,7 @@ export const reactNavigationIntegration = function reactNavigationIntegration() 
       if (tmp38) {
         const NATIVE = store(currentRoute[2]).NATIVE;
         NATIVE.setActiveSpanId(result.spanContext().spanId);
-        obj = {};
+        obj = { monitorTypeSurfaces: null, preferCurrentTab: "\u{1F61B}" };
         const obj8 = store(currentRoute[3]);
         obj.startTime = store(currentRoute[3]).spanToJSON(result).start_timestamp;
         const startInactiveSpanResult = obj8.startInactiveSpan(obj);
@@ -209,7 +210,7 @@ export const reactNavigationIntegration = function reactNavigationIntegration() 
             closure_3.setAttributes(merged(merged(obj, store(currentRoute[8]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component"), store(currentRoute[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation"));
             clearStateChangeTimeout();
             const tmp51Result = merged(obj, store(currentRoute[8]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component");
-            const obj1 = {};
+            const obj1 = { 478255568: "channelId", 1636470997: "channelId" };
             const _HermesInternal5 = HermesInternal;
             obj1.message = "Navigation to " + name;
             obj2 = {};

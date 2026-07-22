@@ -1,5 +1,5 @@
 // Module ID: 6971
-// Function ID: 55723
+// Function ID: 55734
 // Name: getOrCreateQuestHomeSearchSession
 // Dependencies: []
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession

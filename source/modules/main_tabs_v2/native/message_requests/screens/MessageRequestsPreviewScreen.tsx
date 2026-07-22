@@ -1,10 +1,10 @@
-// Module ID: 15453
-// Function ID: 117884
+// Module ID: 15461
+// Function ID: 117927
 // Name: MessageRequestsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15453 (MessageRequestsScreen)
+// Module 15461 (MessageRequestsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const ME = arg1(dependencyMap[2]).ME;

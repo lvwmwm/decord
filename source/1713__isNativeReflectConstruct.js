@@ -4,11 +4,11 @@
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 
 // Module 1713 (_isNativeReflectConstruct)
-import result from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -24,7 +24,7 @@ const tmp2 = (BaseAnimationBuilder) => {
   class FadingTransition {
     constructor() {
       self = this;
-      tmp = result(this, FadingTransition);
+      tmp = __exportStarResult1(this, FadingTransition);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -75,7 +75,7 @@ const tmp2 = (BaseAnimationBuilder) => {
     }
   ];
   return callback(FadingTransition, null, items);
-}(require("result").BaseAnimationBuilder);
+}(require("__exportStarResult1").BaseAnimationBuilder);
 tmp2.presetName = "FadingTransition";
 
 export const FadingTransition = tmp2;

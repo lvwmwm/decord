@@ -1,10 +1,10 @@
-// Module ID: 8518
-// Function ID: 67915
+// Module ID: 8519
+// Function ID: 67927
 // Name: ChevronSmallDownIcon
 // Dependencies: []
 // Exports: ChevronSmallDownIcon
 
-// Module 8518 (ChevronSmallDownIcon)
+// Module 8519 (ChevronSmallDownIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChevronSmallDownIcon.tsx");

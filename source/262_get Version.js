@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 262 (get Version)
-const obj = { resolve: "selectedIconImageSource", fill: "\u7096\u9505" };
+const obj = { "Null": null, "Null": null };
 Object.defineProperty(obj, "Version", {
   get: function() {
     return this.constants.Version;

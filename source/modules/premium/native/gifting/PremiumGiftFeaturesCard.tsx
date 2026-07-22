@@ -1,8 +1,8 @@
-// Module ID: 9679
-// Function ID: 75347
+// Module ID: 9680
+// Function ID: 75360
 // Dependencies: []
 
-// Module 9679
+// Module 9680
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -68,8 +68,8 @@ let closure_17 = arg1(dependencyMap[8]).createStyles(() => {
   const merged1 = Object.assign(importDefault(dependencyMap[9])(Fonts.PRIMARY_NORMAL, importDefault(dependencyMap[7]).colors.WHITE, 16));
   obj9["marginStart"] = -8;
   obj.featureText = obj9;
-  obj.wumpusNoPrice = { display: true, flexDirection: true };
-  obj.promotionalCardImage = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+  obj.wumpusNoPrice = { "Bool(false)": true, "Bool(false)": true };
+  obj.promotionalCardImage = { left: "center", backgroundColor: -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" };
   obj.promotionalBackground = {};
   return obj;
 });
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   if (str === undefined) {
     str = "default";
   }
-  let obj = { -9223372036854775808: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true };
+  let obj = { <string:793888460>: "Text", <string:67522911>: "resizeMode", <string:961624929>: "from", <string:1403740616>: "Array", <string:1504487751>: "isArray", <string:1112702430>: "braintreemasterpasslanding" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(variant, obj);
   let callback;
@@ -263,7 +263,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
       obj.children = items2;
       return tmp18(tmp19, obj);
     } else if (config.useNewCopy) {
-      const obj16 = {};
+      const obj16 = { "Null": "Update build ", "Null": "<string:13762560>", alignItems: "<string:1090584576>" };
       const items10 = [tmp9.pricing, obj6[str]];
       obj16.style = items10;
       const items11 = [stringResult1, " ", ];
@@ -273,7 +273,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
       obj16.children = items11;
       let tmp49 = callback4(callback(dependencyMap[22]).Text, obj16);
     } else {
-      const obj17 = {};
+      const obj17 = { "Null": "Update build ", "Null": "<string:13762560>", alignItems: "<string:1090584576>" };
       const items12 = [tmp9.pricing, obj6[str]];
       obj17.style = items12;
       const intl = callback(dependencyMap[23]).intl;

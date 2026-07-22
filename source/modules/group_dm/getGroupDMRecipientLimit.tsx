@@ -1,10 +1,10 @@
-// Module ID: 15318
-// Function ID: 116545
+// Module ID: 15326
+// Function ID: 116588
 // Name: getGroupDMRecipientLimit
 // Dependencies: []
 // Exports: default
 
-// Module 15318 (getGroupDMRecipientLimit)
+// Module 15326 (getGroupDMRecipientLimit)
 let closure_0 = importDefault(dependencyMap[0]);
 ({ MAX_GROUP_DM_PARTICIPANTS: closure_1, MAX_GROUP_DM_STAFF_PARTICIPANTS: closure_2 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

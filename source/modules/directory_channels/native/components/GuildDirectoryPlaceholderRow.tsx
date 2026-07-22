@@ -1,8 +1,8 @@
-// Module ID: 10064
-// Function ID: 77709
+// Module ID: 10065
+// Function ID: 77722
 // Dependencies: []
 
-// Module 10064
+// Module 10065
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -10,9 +10,9 @@ let obj1 = arg1(dependencyMap[3]);
 let obj = { row: {}, rowInner: { flex: 1 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderAvatar = obj;
-obj1 = { "Bool(true)": true, "Bool(true)": true, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+obj1 = { backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderText = obj1;
-obj.placeholderBody = {};
+obj.placeholderBody = { "Null": true, "Null": true };
 let closure_5 = obj1.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
 const memoResult = importAllResult.memo(() => {

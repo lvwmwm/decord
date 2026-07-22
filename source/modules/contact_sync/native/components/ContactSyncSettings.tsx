@@ -1,10 +1,10 @@
-// Module ID: 13626
-// Function ID: 103234
+// Module ID: 13633
+// Function ID: 103267
 // Name: syncContacts
 // Dependencies: []
 // Exports: default
 
-// Module 13626 (syncContacts)
+// Module 13633 (syncContacts)
 function syncContacts(arg0, arg1, arg2) {
   return _syncContacts(...arguments);
 }
@@ -80,7 +80,7 @@ export default function ContactSyncSettings() {
   let tmp10 = null;
   if (isStaffResult) {
     obj1 = {};
-    const obj2 = { <string:2048437162>: null, <string:2887950716>: null, onValueChange: arg1(dependencyMap[6]).adminDeleteContactSync };
+    const obj2 = { "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", "Null": null, onValueChange: arg1(dependencyMap[6]).adminDeleteContactSync };
     const items1 = [callback2(arg1(dependencyMap[16]).FormSwitchRow, obj2), callback2(arg1(dependencyMap[16]).FormDivider, {})];
     obj1.children = items1;
     tmp10 = callback3(closure_11, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 9223
-// Function ID: 72141
+// Module ID: 9224
+// Function ID: 72154
 // Name: trackUserAvatarUpdated
 // Dependencies: []
 // Exports: trackUserAvatarUpdated
 
-// Module 9223 (trackUserAvatarUpdated)
+// Module 9224 (trackUserAvatarUpdated)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");

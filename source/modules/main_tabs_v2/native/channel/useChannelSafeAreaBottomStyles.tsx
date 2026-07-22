@@ -1,10 +1,10 @@
-// Module ID: 10386
-// Function ID: 80085
+// Module ID: 10387
+// Function ID: 80098
 // Name: useChannelSafeAreaBottomStyles
 // Dependencies: []
 // Exports: default
 
-// Module 10386 (useChannelSafeAreaBottomStyles)
+// Module 10387 (useChannelSafeAreaBottomStyles)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

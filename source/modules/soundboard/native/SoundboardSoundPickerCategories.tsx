@@ -1,9 +1,9 @@
-// Module ID: 15636
-// Function ID: 119394
+// Module ID: 15644
+// Function ID: 119437
 // Name: SoundCategoryItem
 // Dependencies: []
 
-// Module 15636 (SoundCategoryItem)
+// Module 15644 (SoundCategoryItem)
 let CATEGORY_ICON_SIZE;
 let NODE_SIZE;
 function SoundCategoryItem(style) {
@@ -104,7 +104,7 @@ obj1 = { opacity: 1, backgroundColor: importDefault(dependencyMap[7]).colors.INT
 obj.activeItem = obj1;
 obj.guildItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
 obj.keyboardItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE };
-const obj2 = { <string:1401708816>: 0.000000000000000000000000000000000000000001525050860536844, <string:2085500511>: 0.00000000000000000000000000000000000000000000000000000000000004665176389013498, <string:3635438091>: 141317.275, <string:1330024018>: false, <string:2356957445>: false, <string:80489538>: "isArray", <string:80491008>: "key", <string:1284003840>: "Array", <string:277479363>: "construct", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
+const obj2 = { "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", mountSheet: "construct", ChoiceOrder: "View", SEND_ANALYTICS_EVENT: "isArray", maxValueLength: "isArray", time_to_full_display: "isArray", firstProposalsFinishedTime: "Array", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.lockContainer = obj2;
 const obj3 = { "Null": null, "Null": 1, tintColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.lock = obj3;

@@ -1,10 +1,10 @@
-// Module ID: 15571
-// Function ID: 118823
+// Module ID: 15579
+// Function ID: 118866
 // Name: useHandleOAuthNavigation
 // Dependencies: []
 // Exports: default
 
-// Module 15571 (useHandleOAuthNavigation)
+// Module 15579 (useHandleOAuthNavigation)
 let closure_3 = importAll(dependencyMap[0]);
 const ComponentActions = arg1(dependencyMap[1]).ComponentActions;
 let closure_5 = arg1(dependencyMap[2]).OAUTH2_AUTHORIZE_MODAL_KEY;

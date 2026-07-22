@@ -1,5 +1,5 @@
 // Module ID: 10796
-// Function ID: 83837
+// Function ID: 83839
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,16 +18,14 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const Linking = arg1(dependencyMap[7]).Linking;
-const jsx = arg1(dependencyMap[8]).jsx;
-let closure_10 = /.*?:\/\//g;
+arg1(dependencyMap[6]).BackHandler;
+const jsx = arg1(dependencyMap[7]).jsx;
 
 export default (Component) => {
-  class DeepLinking {
+  class BackButton {
     constructor() {
       self = this;
-      tmp = closure_3(this, DeepLinking);
+      tmp = closure_2(this, BackButton);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -35,54 +33,52 @@ export default (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_6(DeepLinking);
-      tmp3 = closure_5;
-      if (closure_11()) {
+      obj = closure_5(BackButton);
+      tmp3 = closure_4;
+      if (closure_9()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, combined, closure_6(self).constructor);
+        tmp5 = closure_5;
+        constructResult = Reflect.construct(obj, combined, closure_5(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp3Result = tmp3(self, constructResult);
-      apply = tmp3Result;
-      tmp3Result.handleChange = (url) => {
-        tmp3Result.push(url.url);
+      BackButton = tmp3Result;
+      tmp3Result.handleBack = () => {
+        let flag = 0 !== tmp3Result.history.index;
+        if (flag) {
+          const history = tmp3Result.history;
+          history.goBack();
+          flag = true;
+        }
+        return flag;
       };
       return tmp3Result;
     }
   }
-  const dependencyMap = DeepLinking;
-  callback3(DeepLinking, Component);
+  const arg1 = BackButton;
+  callback2(BackButton, Component);
   let obj = {
-    key: "push",
-    value: function push(str) {
-      const history = this.history;
-      history.push(str.replace(closure_10, ""));
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      const listener = closure_7.addEventListener("hardwareBackPress", this.handleBack);
     }
   };
-  const items = [obj, , , ];
-  obj = { key: "componentDidMount" };
-  // CreateGeneratorClosureLongIndex (0x67)
-  let closure_0 = callback(tmp);
-  obj.value = function componentDidMount() {
-    return callback(...arguments);
-  };
-  items[1] = obj;
+  const items = [obj, , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
-      const removed = closure_8.removeEventListener("url", this.handleChange);
+      const removed = closure_7.removeEventListener("hardwareBackPress", this.handleBack);
     }
   };
-  items[2] = obj;
-  items[3] = {
+  items[1] = obj;
+  obj = {
     key: "render",
     value: function render() {
-      const callback = this;
-      return callback4(callback(DeepLinking[9]).__HistoryContext.Consumer, {
+      const BackButton = this;
+      return callback3(BackButton(closure_1[8]).__HistoryContext.Consumer, {
         children(history) {
           self.history = history;
           return self.props.children || null;
@@ -90,5 +86,6 @@ export default (Component) => {
       });
     }
   };
-  return callback2(DeepLinking, items);
-}(importDefault(dependencyMap[6]).Component);
+  items[2] = obj;
+  return callback(BackButton, items);
+}(importDefault(dependencyMap[5]).Component);

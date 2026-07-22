@@ -1,10 +1,10 @@
-// Module ID: 11769
-// Function ID: 91363
+// Module ID: 11770
+// Function ID: 91376
 // Name: ChannelPrompt
 // Dependencies: []
 // Exports: default
 
-// Module 11769 (ChannelPrompt)
+// Module 11770 (ChannelPrompt)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,9 +19,9 @@ obj = { marginTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT, flex: 1 };
 obj.safePadding = obj;
 obj.contentContainer = { paddingHorizontal: 16 };
 obj.guildIcon = { alignSelf: "center" };
-obj.guildName = {};
+obj.guildName = { MINIMAL: null, currentScreenId: null };
 obj.title = {};
-obj.subTitle = {};
+obj.subTitle = { MINIMAL: null, currentScreenId: null };
 obj.topicInput = { marginTop: 24 };
 obj.buttonWrapper = { marginTop: 8 };
 obj.error = { marginTop: 4 };
@@ -81,7 +81,7 @@ export default function ChannelPrompt(guildId) {
   let tmp13Result = null;
   if (null != stateFromStores) {
     obj = { top: true, style: tmp2.safePadding };
-    obj = { style: tmp2.flex };
+    obj = { <string:1675145676>: 44, <string:2591642016>: 45, <string:2985086052>: 45, <string:1927697147>: 22, <string:3429125722>: 26, style: tmp2.flex };
     const obj1 = { top: 0 };
     obj.contentInset = obj1;
     obj.contentContainerStyle = tmp2.contentContainer;
@@ -100,7 +100,7 @@ export default function ChannelPrompt(guildId) {
     const items3 = [callback3(importDefault(dependencyMap[16]), obj2), , , , , , ];
     const obj4 = { style: tmp2.guildName, children: stateFromStores.name };
     items3[1] = callback3(arg1(dependencyMap[18]).Text, obj4);
-    const obj5 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title };
+    const obj5 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp2.title };
     const intl = arg1(dependencyMap[12]).intl;
     obj5.children = intl.string(arg1(dependencyMap[12]).t.8VRa7d);
     items3[2] = callback3(arg1(dependencyMap[18]).Text, obj5);

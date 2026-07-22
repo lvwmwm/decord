@@ -1,5 +1,5 @@
 // Module ID: 7713
-// Function ID: 61415
+// Function ID: 61425
 // Name: nativeStyleProperties
 // Dependencies: []
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
@@ -25,7 +25,7 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   if ("" !== message.content) {
     const _Date = Date;
     const date = new Date(message.content);
-    str = date.toLocaleString(arg1(dependencyMap[6]).intl.currentLocale, { state: false, sk: false });
+    str = date.toLocaleString(arg1(dependencyMap[6]).intl.currentLocale, { -17117184: true, 0: true });
   }
   obj.time = str;
   const tmp = importDefault(dependencyMap[3])(theme);

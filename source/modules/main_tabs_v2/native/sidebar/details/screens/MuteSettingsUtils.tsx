@@ -1,10 +1,10 @@
-// Module ID: 10268
-// Function ID: 79349
+// Module ID: 10269
+// Function ID: 79362
 // Name: getMuteSettingLabel
 // Dependencies: []
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10268 (getMuteSettingLabel)
+// Module 10269 (getMuteSettingLabel)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -65,7 +65,7 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
       const result = tmp6Result.setNotificationSettings(channel, obj);
     } else {
       tmp6Result = tmp6(tmp7[11]);
-      const result1 = tmp6Result.updateChannelOverrideSettings(guildId, channel.id, { 1382179230: null, -2080520072: null }, guildId(tmp7[12]).NotificationLabels.Unmuted);
+      const result1 = tmp6Result.updateChannelOverrideSettings(guildId, channel.id, { <string:173114209>: "L", <string:1364287903>: "L" }, guildId(tmp7[12]).NotificationLabels.Unmuted);
     }
   }
 };

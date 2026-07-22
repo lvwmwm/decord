@@ -1,10 +1,10 @@
-// Module ID: 11744
-// Function ID: 91225
+// Module ID: 11745
+// Function ID: 91238
 // Name: InviteErrorBase
 // Dependencies: []
 // Exports: default
 
-// Module 11744 (InviteErrorBase)
+// Module 11745 (InviteErrorBase)
 function InviteErrorBase(invite) {
   let inviteError;
   ({ onPressClose: closure_0, inviteError } = invite);
@@ -50,7 +50,7 @@ function InviteErrorBase(invite) {
   items[1] = callback(arg1(dependencyMap[12]).Text, obj1);
   const obj2 = { style: tmp.expiredBody, children: stringResult };
   items[2] = callback(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+  const obj3 = {};
   const intl4 = arg1(dependencyMap[11]).intl;
   obj3.text = intl4.string(arg1(dependencyMap[11]).t.wcqOoF);
   obj3.onPress = function handlePressClose() {
@@ -81,18 +81,18 @@ function InviteDisabledError(onPressClose) {
     items[1] = callback(importDefault(dependencyMap[17]), obj3);
     obj1.children = items;
     const items1 = [callback2(closure_4, obj1), , , ];
-    const obj4 = { delete: -1663348269, dispatch: 113, raw: 7405824, style: tmp.disabledTitle };
+    const obj4 = { "Null": 1906134097, "Null": 0, alignItems: 28929, style: tmp.disabledTitle };
     const intl = arg1(dependencyMap[11]).intl;
     obj4.children = intl.string(arg1(dependencyMap[11]).t.jlLX2Z);
     items1[1] = callback(arg1(dependencyMap[12]).Text, obj4);
-    const obj5 = { delete: null, dispatch: 1, raw: 1, style: tmp.disabledBody };
+    const obj5 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.disabledBody };
     const intl2 = arg1(dependencyMap[11]).intl;
     const obj6 = {};
     const tmp11 = importDefault(dependencyMap[17]);
     obj6.articleLink = importDefault(dependencyMap[19]).getArticleURL(constants2.INVITE_DISABLED);
     obj5.children = intl2.format(arg1(dependencyMap[11]).t.RXSeLl, obj6);
     items1[2] = callback(arg1(dependencyMap[18]).TextWithIOSLinkWorkaround, obj5);
-    const obj7 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
+    const obj7 = {};
     const intl3 = arg1(dependencyMap[11]).intl;
     obj7.text = intl3.string(arg1(dependencyMap[11]).t.yD/zkn);
     obj7.onPress = function handlePressClose() {
@@ -110,13 +110,13 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { expiredImage: { size: false, progress: false }, expiredTitle: { "Bool(false)": true, "Bool(false)": null, "Bool(false)": null }, expiredBody: { -519529133: "allow_multiselect", 996616402: "Array" }, disabledView: { margin: null, backgroundColor: null } };
-obj = { tintColor: importDefault(dependencyMap[5]).colors.WHITE };
+obj = { expiredImage: { y: true, channelId: true }, expiredTitle: { 1927661619: null, -229505374: null, 1627791265: null }, expiredBody: { "Bool(false)": "defineProperty", "Bool(false)": "includes" }, disabledView: { "Bool(false)": null, "Bool(false)": null } };
+obj = { 976442257: "keys", -314972670: "disabled", -2091808671: "names", 478307844: "paths", 2126648843: "httpServerLocation", tintColor: importDefault(dependencyMap[5]).colors.WHITE };
 obj.disabledPauseIcon = obj;
 const tmp5 = arg1(dependencyMap[3]);
 obj.guildIcon = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.disabledTitle = {};
-obj.disabledBody = { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.disabledBody = { memo: 52881784.83212474, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 let closure_11 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");

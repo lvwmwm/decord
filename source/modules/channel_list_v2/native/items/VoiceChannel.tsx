@@ -1,9 +1,9 @@
-// Module ID: 14933
-// Function ID: 112413
+// Module ID: 14941
+// Function ID: 112456
 // Name: _handleVoiceChannelPress
 // Dependencies: []
 
-// Module 14933 (_handleVoiceChannelPress)
+// Module 14941 (_handleVoiceChannelPress)
 function _handleVoiceChannelPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -23,7 +23,7 @@ const jsx = arg1(dependencyMap[10]).jsx;
 let obj = {};
 obj = { gap: importDefault(dependencyMap[11]).space.PX_8 };
 obj.channelInfo = obj;
-obj.voiceStates = { -1361444630: "LengthDelimited", 1381786073: "isArray", -1359566243: "%parseFloat%" };
+obj.voiceStates = { <string:3562168929>: "LengthDelimited", <string:1655483564>: "isArray", <string:1347507883>: "isArray" };
 obj.voiceStatesCollapsed = { marginLeft: 16 };
 const tmp2 = arg1(dependencyMap[9]);
 obj.container = { marginVertical: arg1(dependencyMap[8]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[11]).radii.md };
@@ -133,7 +133,7 @@ let closure_15 = importAllResult.memo((channel) => {
   let tmp20 = null;
   if (0 !== ensureSyncedChannelVoiceStates.length) {
     if (collapsed) {
-      obj2 = { EMPHASIZE_NOTICE: false, maxHeight: false, hideFriendRequestNotes: null };
+      obj2 = { <string:879400349>: "mn", <string:2858505162>: "description", <string:1927653984>: "Array" };
       const items3 = [channel];
       obj2.channels = items3;
       obj3 = {};

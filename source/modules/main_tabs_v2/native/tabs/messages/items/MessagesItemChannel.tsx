@@ -1,10 +1,10 @@
-// Module ID: 14774
-// Function ID: 111379
+// Module ID: 14782
+// Function ID: 111422
 // Name: getMessagesItemChannelSizes
 // Dependencies: []
 // Exports: getMessagesItemChannelSizes
 
-// Module 14774 (getMessagesItemChannelSizes)
+// Module 14782 (getMessagesItemChannelSizes)
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

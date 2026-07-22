@@ -233,7 +233,7 @@ function resolveGuildTheme(theme, guildTheme) {
     if (null != theme) {
       let fromServerGuildThemeResult = require(dependencyMap[5]).fromServerGuildTheme(theme);
       if (null == fromServerGuildThemeResult) {
-        fromServerGuildThemeResult = { "Null": null, "Null": null };
+        fromServerGuildThemeResult = { "Null": "L", "Null": "L" };
       }
       tmp2 = fromServerGuildThemeResult;
       const obj = require(dependencyMap[5]);

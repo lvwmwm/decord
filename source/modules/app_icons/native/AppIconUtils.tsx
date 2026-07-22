@@ -1,10 +1,10 @@
-// Module ID: 12261
-// Function ID: 94022
+// Module ID: 12266
+// Function ID: 94050
 // Name: fetchCurrentAppIcon
 // Dependencies: []
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons
 
-// Module 12261 (fetchCurrentAppIcon)
+// Module 12266 (fetchCurrentAppIcon)
 function fetchCurrentAppIcon() {
   return _fetchCurrentAppIcon(...arguments);
 }

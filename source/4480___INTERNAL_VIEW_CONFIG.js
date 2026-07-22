@@ -1,5 +1,5 @@
 // Module ID: 4480
-// Function ID: 39566
+// Function ID: 39574
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
@@ -11,7 +11,7 @@ obj = { process: require(dependencyMap[1]).default };
 obj.statusBarColor = obj;
 obj.navigationBarColor = { process: require(dependencyMap[1]).default };
 const _module = require(dependencyMap[2]);
-obj.validAttributes = Object.assign(obj, _module.ConditionallyIgnoredEventHandlers({}));
+obj.validAttributes = Object.assign(obj, _module.ConditionallyIgnoredEventHandlers({ "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }));
 const _module1 = require(dependencyMap[3]);
 
 export default _module1.get("RNSModalScreen", () => obj);

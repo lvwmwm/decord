@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 94067
+// Module ID: 12275
+// Function ID: 94095
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 12270 (items)
+// Module 12275 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -14,10 +14,10 @@ const FractionalPremiumStates = arg1(dependencyMap[5]).FractionalPremiumStates;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { display: "flex" }, scrollContainer: { headerIcons: 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, RowButtonIconProps: 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, headerLabel: 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 } };
+obj = { container: { display: "flex" }, scrollContainer: { 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000009659784425801879, 9223372036854775807: 15177101141243970000000000000000000000000000000000000000000000000000000000000000000, 0: 15186806633716527000000000000000000000000000000000000000000000000000000000000000000 } };
 obj = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.arrowIcon = obj;
-const obj1 = { flexDirection: false, justifyContent: false, alignItems: false };
+const obj1 = { 961631329: false, 102585544: false, 1389626910: false };
 const items = [{ scaleX: -1 }];
 obj1.transform = items;
 obj.backButton = obj1;
@@ -40,6 +40,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let applicationId;
   let billingInfo;
   let entitlements;
+  let isFullScreenPresentation;
   let onClose;
   let onPaymentDismiss;
   let onPaymentSuccess;
@@ -47,29 +48,40 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let subscriptionDetails;
   userHasSubscription = userHasSubscription.userHasSubscription;
   const arg1 = userHasSubscription;
-  ({ applicationId, onClose, entitlements, onPaymentSuccess, onPaymentDismiss } = userHasSubscription);
-  let tmp6;
+  ({ applicationId, onClose, entitlements, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = userHasSubscription);
+  ({ subscriptionDetails, billingInfo, accountCredit, premiumFeatureCardOrder } = userHasSubscription);
+  if (isFullScreenPresentation === undefined) {
+    isFullScreenPresentation = false;
+  }
+  let importDefault;
+  let dependencyMap;
+  let callback;
+  let React;
+  let tmp5;
   let closure_6;
   let closure_7;
   let ContentDismissActionType;
   let FractionalPremiumStates;
   onClose = undefined;
-  ({ subscriptionDetails, billingInfo, accountCredit, premiumFeatureCardOrder } = userHasSubscription);
   let obj = arg1(dependencyMap[10]);
   const commonTriggerPoint = obj.useCommonTriggerPoint(arg1(dependencyMap[11]).OpenNitroTriggerPoint);
   const tmp2 = callback2();
   let obj1 = arg1(dependencyMap[12]);
-  const youBarSettingsCustomHeaderPaddingTop = obj1.useYouBarSettingsCustomHeaderPaddingTop();
-  let obj2 = arg1(dependencyMap[13]);
-  const navigation = obj2.useNavigation();
-  const importDefault = navigation;
-  const dependencyMap = importDefault(dependencyMap[14])().analyticsLocations;
-  const tmp5 = callback(React.useState(false), 2);
-  let callback = tmp5[0];
-  const React = tmp5[1];
+  const navigation = obj1.useNavigation();
+  importDefault = navigation;
+  dependencyMap = importDefault(dependencyMap[13])().analyticsLocations;
+  const tmp4 = callback(React.useState(false), 2);
+  callback = tmp4[0];
+  React = tmp4[1];
+  let obj2 = arg1(dependencyMap[14]);
+  let top = obj2.useYouBarSettingsCustomHeaderPaddingTop();
+  const rect = importDefault(dependencyMap[15])();
+  if (isFullScreenPresentation) {
+    top = rect.top;
+  }
   let obj3 = importDefault(dependencyMap[16]);
   const enabled = obj3.useConfig({ location: "PremiumMarketingPage" }).enabled;
-  tmp6 = !userHasSubscription && enabled;
+  tmp5 = !userHasSubscription && enabled;
   closure_6 = React.useRef(0);
   closure_7 = React.useRef(0);
   let obj4 = arg1(dependencyMap[17]);
@@ -107,8 +119,8 @@ export default function PremiumMarketingPage(userHasSubscription) {
   if (null == onClose) {
     onClose = (CircularIconButton, arg1) => navigation.pop();
   }
-  let tmp13 = !userHasSubscription;
-  if (tmp13) {
+  let tmp12 = !userHasSubscription;
+  if (tmp12) {
     obj = {};
     const items2 = [, ];
     ({ backButton: arr3[0], backButtonBackground: arr3[1] } = tmp2);
@@ -121,7 +133,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
     obj.onPress = function onPress() {
       return onClose();
     };
-    tmp13 = onClose(arg1(dependencyMap[23]).CircularIconButton, obj);
+    tmp12 = onClose(arg1(dependencyMap[23]).CircularIconButton, obj);
   }
   let hasAccountCreditResult = null != entitlements;
   if (hasAccountCreditResult) {
@@ -138,7 +150,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
   obj1 = {};
   let num5 = 0;
   if (!userHasSubscription) {
-    num5 = youBarSettingsCustomHeaderPaddingTop;
+    num5 = top;
   }
   obj1.paddingTop = num5;
   items3[2] = obj1;
@@ -154,9 +166,9 @@ export default function PremiumMarketingPage(userHasSubscription) {
         obj = { location_stack: analyticsLocations };
         obj.track(ref2.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
         callback(true);
-        const tmp6 = analyticsLocations;
+        const tmp5 = ref2;
       }
-      if (tmp6) {
+      if (tmp5) {
         const sum = ref.current + ref2.current;
         let tmp14 = sum > 0;
         if (tmp14) {
@@ -168,14 +180,14 @@ export default function PremiumMarketingPage(userHasSubscription) {
     scrollEventThrottle: 0,
     showsVerticalScrollIndicator: false
   };
-  const items5 = [tmp13, subscriptionDetails, billingInfo, , , , , , , , , ];
+  const items5 = [tmp12, subscriptionDetails, billingInfo, , , , , , , , , ];
   if (!hasAccountCreditResult) {
     items5[3] = null;
     obj3 = {};
     const items6 = [userHasSubscription ? tmp2.sectionWithTopMargin : {}, tmp2.sectionWidth];
     obj3.style = items6;
     items5[4] = onClose(importDefault(dependencyMap[31]), obj3);
-    let tmp32 = isEligibleForBogoPromotion;
+    let tmp31 = isEligibleForBogoPromotion;
     if (isEligibleForBogoPromotion) {
       obj4 = {};
       const items7 = [, ];
@@ -185,9 +197,9 @@ export default function PremiumMarketingPage(userHasSubscription) {
       const intl2 = arg1(dependencyMap[24]).intl;
       obj5.children = intl2.string(arg1(dependencyMap[24]).t.QPC/ee);
       obj4.children = onClose(arg1(dependencyMap[32]).Text, obj5);
-      tmp32 = onClose(tmp6, obj4);
+      tmp31 = onClose(tmp5, obj4);
     }
-    items5[5] = tmp32;
+    items5[5] = tmp31;
     if (isEligibleForBogoPromotion) {
       const obj6 = {};
       const items8 = [, ];
@@ -199,11 +211,11 @@ export default function PremiumMarketingPage(userHasSubscription) {
       isEligibleForBogoPromotion = onClose(importDefault(dependencyMap[33]), obj6);
     }
     items5[6] = isEligibleForBogoPromotion;
-    let tmp40 = null != promotionMarketingComponent1;
-    if (tmp40) {
-      tmp40 = "marketingPageBanner" === promotionMarketingComponent1.properties.properties.oneofKind;
+    let tmp39 = null != promotionMarketingComponent1;
+    if (tmp39) {
+      tmp39 = "marketingPageBanner" === promotionMarketingComponent1.properties.properties.oneofKind;
     }
-    if (tmp40) {
+    if (tmp39) {
       obj7 = {};
       const items9 = [, , ];
       ({ sectionWithPadding: arr11[0], sectionWidth: arr11[1] } = tmp2);
@@ -215,10 +227,10 @@ export default function PremiumMarketingPage(userHasSubscription) {
       obj7.onPaymentSuccess = onPaymentSuccess;
       obj7.onPaymentDismiss = onPaymentDismiss;
       obj7.componentId = promotionMarketingComponent1.id;
-      tmp40 = onClose(importDefault(dependencyMap[34]), obj7);
-      const tmp44 = importDefault(dependencyMap[34]);
+      tmp39 = onClose(importDefault(dependencyMap[34]), obj7);
+      const tmp43 = importDefault(dependencyMap[34]);
     }
-    items5[7] = tmp40;
+    items5[7] = tmp39;
     obj9 = {};
     const items10 = [, ];
     ({ sectionWithPadding: arr12[0], sectionWidth: arr12[1] } = tmp2);
@@ -239,37 +251,37 @@ export default function PremiumMarketingPage(userHasSubscription) {
     const items12 = [, , ];
     ({ sectionWithTopMargin: arr14[0], sectionWithPadding: arr14[1], sectionWidth: arr14[2] } = tmp2);
     obj11.style = items12;
-    obj11.isFractionalOnly = tmp21.fractionalState === FractionalPremiumStates.FP_ONLY;
+    obj11.isFractionalOnly = tmp20.fractionalState === FractionalPremiumStates.FP_ONLY;
     items5[10] = onClose(importDefault(dependencyMap[37]), obj11);
     const obj12 = {};
     const items13 = [, , , ];
     ({ sectionWithTopMargin: arr15[0], sectionWithPadding: arr15[1], sectionWidth: arr15[2] } = tmp2);
-    let tmp50 = null;
-    if (tmp6) {
+    let tmp49 = null;
+    if (tmp5) {
       const obj13 = {};
       const _Math = Math;
-      obj13.marginBottom = Math.max(importDefault(dependencyMap[15])().bottom, importDefault(dependencyMap[8]).space.PX_16) + 48;
-      tmp50 = obj13;
+      obj13.marginBottom = Math.max(rect.bottom, importDefault(dependencyMap[8]).space.PX_16) + 48;
+      tmp49 = obj13;
     }
-    items13[3] = tmp50;
+    items13[3] = tmp49;
     obj12.style = items13;
     obj12.showSubscribeButton = !userHasSubscription && !enabled;
     items5[11] = onClose(importDefault(dependencyMap[38]), obj12);
     obj2.children = items5;
-    items4[1] = tmp26(tmp27, obj2);
-    let tmp54 = null;
-    if (tmp6) {
+    items4[1] = tmp25(tmp26, obj2);
+    let tmp53 = null;
+    if (tmp5) {
       const obj14 = { style: tmp2.sectionWidth, isVisible: sharedValue, backgroundColor: tmp2.themedBackground.backgroundColor };
-      tmp54 = onClose(importDefault(dependencyMap[39]), obj14);
+      tmp53 = onClose(importDefault(dependencyMap[39]), obj14);
     }
-    items4[2] = tmp54;
+    items4[2] = tmp53;
     obj.children = items4;
-    return closure_11(tmp6, obj);
+    return closure_11(tmp5, obj);
   } else {
     const obj15 = {};
     const items14 = [tmp2.accountCreditContainer, userHasSubscription ? {} : tmp2.accountCreditContainerWithSpacing];
     obj15.style = items14;
     obj15.children = accountCredit;
-    onClose(tmp6, obj15);
+    onClose(tmp5, obj15);
   }
 };

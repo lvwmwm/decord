@@ -1,8 +1,8 @@
-// Module ID: 8362
-// Function ID: 66660
+// Module ID: 8363
+// Function ID: 66672
 // Dependencies: []
 
-// Module 8362
+// Module 8363
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
@@ -10,7 +10,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { surrogates: true, paths: true, data: true, flags: true, start: true, names: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.flex = { flex: 1 };
 obj.scroller = { paddingHorizontal: 16 };
@@ -27,7 +27,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const importDefault = tmp2[1];
   const insets = importDefault(dependencyMap[6])().insets;
   let obj = { style: tmp.container };
-  obj = { "Bool(false)": "toString", "Bool(false)": "o", "Bool(false)": "ao", ref };
+  obj = { <string:1378320438>: null, <string:3273081386>: null, <string:2708976053>: null, ref };
   const items = [tmp.flex, { marginBottom: tmp2[0] + insets.bottom }];
   obj.style = items;
   obj.contentContainerStyle = tmp.scroller;

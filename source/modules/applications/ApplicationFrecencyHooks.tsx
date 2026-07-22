@@ -1,10 +1,10 @@
-// Module ID: 11230
-// Function ID: 87430
+// Module ID: 11231
+// Function ID: 87443
 // Name: useSortApplicationsViaFrecency
 // Dependencies: []
 // Exports: useSortApplicationsViaFrecency
 
-// Module 11230 (useSortApplicationsViaFrecency)
+// Module 11231 (useSortApplicationsViaFrecency)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const UserSettingsTypes = arg1(dependencyMap[2]).UserSettingsTypes;

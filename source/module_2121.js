@@ -4,6 +4,6 @@
 
 // Module 2121
 const _module = require(dependencyMap[0]);
-const obj = { runOnJS: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", format: null, View: "550a2030cc096bcb50a6945a95ee1b56", accessibilityRole: "zh-CN.messages.550a2030cc096bcb50a6945a95ee1b56.compiled.messages", surrogates: "jsona", url: "REDESIGN_SUGGESTED_CHANNELS_CLEAR", scales: [null] };
+const obj = { 296374: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", 1102560849: null, 288807: "3abcc316b77520750274343f458bfbf8", 1103760465: "zh-CN.messages.3abcc316b77520750274343f458bfbf8.compiled.messages", 288241: "jsona", 1120538193: "REDESIGN_SUGGESTED_CHANNELS_CLEAR", scales: [false] };
 
 export default _module.registerAsset(obj);

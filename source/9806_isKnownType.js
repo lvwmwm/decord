@@ -1,11 +1,17 @@
 // Module ID: 9806
-// Function ID: 76125
+// Function ID: 76137
 // Name: isKnownType
-// Dependencies: [643891200]
+// Dependencies: []
 
 // Module 9806 (isKnownType)
-arg5.isKnownType = function isKnownType(kind, value) {
-  ({ kind, value } = kind);
-  const NativeDocumentPicker = value(arg6[0]).NativeDocumentPicker;
-  return NativeDocumentPicker.isKnownType(kind, value);
-};
+
+export const isKnownType = require(dependencyMap[0]).isKnownType;
+export const keepLocalCopy = require(dependencyMap[1]).keepLocalCopy;
+export const types = require(dependencyMap[2]).types;
+export const errorCodes = require(dependencyMap[3]).errorCodes;
+export const isErrorWithCode = require(dependencyMap[3]).isErrorWithCode;
+export const pickDirectory = require(dependencyMap[4]).pickDirectory;
+export const pick = require(dependencyMap[5]).pick;
+export const saveDocuments = require(dependencyMap[6]).saveDocuments;
+export const releaseLongTermAccess = require(dependencyMap[7]).releaseLongTermAccess;
+export const releaseSecureAccess = require(dependencyMap[7]).releaseSecureAccess;

@@ -1,10 +1,10 @@
-// Module ID: 9141
-// Function ID: 71663
+// Module ID: 9142
+// Function ID: 71676
 // Name: useUserVerificationState
 // Dependencies: []
 // Exports: useSetInitialVerificationEffect
 
-// Module 9141 (useUserVerificationState)
+// Module 9142 (useUserVerificationState)
 function useUserVerificationState() {
   const items = [closure_3];
   return arg1(dependencyMap[3]).useStateFromStoresObject(items, () => {

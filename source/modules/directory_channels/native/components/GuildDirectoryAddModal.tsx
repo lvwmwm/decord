@@ -1,10 +1,10 @@
-// Module ID: 10030
-// Function ID: 77487
+// Module ID: 10031
+// Function ID: 77500
 // Name: GuildDirectoryAddModal
 // Dependencies: []
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10030 (GuildDirectoryAddModal)
+// Module 10031 (GuildDirectoryAddModal)
 importAll(dependencyMap[0]);
 const GuildDirectoryCreate = arg1(dependencyMap[1]).GuildDirectoryCreate;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 15748
-// Function ID: 120428
+// Module ID: 15756
+// Function ID: 120471
 // Name: VideoButtonRive
 // Dependencies: []
 // Exports: default
 
-// Module 15748 (VideoButtonRive)
+// Module 15756 (VideoButtonRive)
 function VideoButtonRive(arg0) {
   let color;
   let isVideoEnabled;

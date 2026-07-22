@@ -1,10 +1,10 @@
-// Module ID: 13678
-// Function ID: 103552
+// Module ID: 13685
+// Function ID: 103585
 // Name: FamilyCenterTopActivity
 // Dependencies: []
 // Exports: default
 
-// Module 13678 (FamilyCenterTopActivity)
+// Module 13685 (FamilyCenterTopActivity)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,10 +12,10 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { 979464370: true, 1637975633: true, 50352554: true, gap: importDefault(dependencyMap[6]).space.PX_8 };
+obj = { position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, location: 0.000000007919535119815975, body: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.container = obj;
 obj.section = { flex: 1 };
-const obj1 = { 0: "row", 9223372036854775807: "center", 0: "cryptorFailureBeforeSuccessCount", 0: "ay", gap: importDefault(dependencyMap[6]).space.PX_4, paddingTop: importDefault(dependencyMap[6]).space.PX_12, paddingBottom: importDefault(dependencyMap[6]).space.PX_12 };
+const obj1 = { "Bool(false)": "onPress", "Bool(false)": "Array", "Bool(false)": "title", "Bool(false)": "__closure", gap: importDefault(dependencyMap[6]).space.PX_4, paddingTop: importDefault(dependencyMap[6]).space.PX_12, paddingBottom: importDefault(dependencyMap[6]).space.PX_12 };
 obj.avatarList = obj1;
 obj.touchableHitBox = {};
 const tmp2 = arg1(dependencyMap[4]);

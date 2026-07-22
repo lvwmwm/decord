@@ -1,5 +1,5 @@
 // Module ID: 7667
-// Function ID: 61263
+// Function ID: 61273
 // Name: getSystemMessageUserJoinMobile
 // Dependencies: []
 
@@ -305,7 +305,7 @@ const obj = {
                                                   if ("" !== content) {
                                                     const _Date = Date;
                                                     const date = new Date(content);
-                                                    str3 = date.toLocaleString(isForumPost(dependencyMap[8]).intl.currentLocale, { state: false, sk: false });
+                                                    str3 = date.toLocaleString(isForumPost(dependencyMap[8]).intl.currentLocale, { -17117184: true, 0: true });
                                                   }
                                                   obj16.time = str3;
                                                   astToStringResult6 = obj5.astToString(intl2.formatToParts(isForumPost(dependencyMap[8]).t.iOuWPk, obj16));

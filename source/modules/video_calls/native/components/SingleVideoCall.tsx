@@ -1,10 +1,10 @@
-// Module ID: 10745
-// Function ID: 83491
+// Module ID: 10746
+// Function ID: 83504
 // Name: SingleVideoCall
 // Dependencies: []
 // Exports: default
 
-// Module 10745 (SingleVideoCall)
+// Module 10746 (SingleVideoCall)
 let closure_3 = importAll(dependencyMap[0]);
 ({ resetFocus: closure_4, toggleFocus: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

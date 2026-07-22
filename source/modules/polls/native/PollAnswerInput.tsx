@@ -1,19 +1,19 @@
-// Module ID: 11320
-// Function ID: 88085
+// Module ID: 11321
+// Function ID: 88098
 // Name: ImageInput
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
 // Exports: default
 
-// Module 11320 (ImageInput)
-import closure_3 from "result";
-import result from "result";
-import closure_7 from "result";
-import { DraftType } from "result";
-import result from "result";
-import { EmojiIntention } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 11321 (ImageInput)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { DraftType } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { EmojiIntention } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function ImageInput(openImageInputActionSheet) {
   let answerIndex;
@@ -89,7 +89,7 @@ function ImageInput(openImageInputActionSheet) {
     tmp9 = callback;
   }
   obj.onLayout = tmp9;
-  const items2 = [openImageInputActionSheet.containerStyle, null != upload && result().uploadContainer];
+  const items2 = [openImageInputActionSheet.containerStyle, null != upload && __exportStarResult1().uploadContainer];
   obj.style = items2;
   if (tmp5) {
     obj = { children: tmp2.renderImage };
@@ -101,21 +101,21 @@ function ImageInput(openImageInputActionSheet) {
   obj.children = tmp10Result;
   return closure_12(arg1(dependencyMap[12]).PressableOpacity, obj);
 }
-({ Keyboard: closure_4, TouchableOpacity: closure_5, View: closure_6 } = result);
-({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: closure_10 } = result);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = result);
-result = { defaultContainer: { "Null": 7, "Null": 370 } };
-result = { backgroundColor: require("result").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("result").radii.lg };
-result.defaultImageAndTextContainer = result;
-result.cannotRemove = { marginRight: 30 };
-result.defaultImageContainer = {};
-result.pollAnswerTextInput = { end: null, apply: null };
-const obj1 = { "Null": -1141243901, "Null": -1141178365, "Null": -1141112829, color: require("result").colors.TEXT_MUTED };
-result.defaultRemoveButtonContainer = obj1;
-result.uploadContainer = { alignItems: "flex-start" };
-result.errorInput = { borderColor: require("result").colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/polls/native/PollAnswerInput.tsx");
+({ Keyboard: closure_4, TouchableOpacity: closure_5, View: closure_6 } = __exportStarResult1);
+({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: closure_10 } = __exportStarResult1);
+({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = __exportStarResult1);
+__exportStarResult1 = { defaultContainer: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
+__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("__exportStarResult1").radii.lg };
+__exportStarResult1.defaultImageAndTextContainer = __exportStarResult1;
+__exportStarResult1.cannotRemove = { marginRight: 30 };
+__exportStarResult1.defaultImageContainer = { "Null": true, "Null": true, "Null": true, "Null": true };
+__exportStarResult1.pollAnswerTextInput = { icon: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, apply: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+const obj1 = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000004133748228085058, "Bool(true)": 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000004667261426595996, color: require("__exportStarResult1").colors.TEXT_MUTED };
+__exportStarResult1.defaultRemoveButtonContainer = obj1;
+__exportStarResult1.uploadContainer = { alignItems: "flex-start" };
+__exportStarResult1.errorInput = { borderColor: require("__exportStarResult1").colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/polls/native/PollAnswerInput.tsx");
 
 export default function PollAnswerInput(answer) {
   let canRemoveAnswer;
@@ -153,7 +153,7 @@ export default function PollAnswerInput(answer) {
     obj.update(channelId, answer.localCreationAnswerId, openExpressionPicker.Poll, obj);
   }
   ({ inputRef, onSubmitEditing } = answer);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   const localCreationAnswerId = answer.localCreationAnswerId;
   let closure_7 = localCreationAnswerId;
   let tmp2 = null != error;
@@ -195,7 +195,7 @@ export default function PollAnswerInput(answer) {
     }),
 
   ];
-  const obj2 = { ref: inputRef };
+  const obj2 = { usePlaceholderAnimatedStyle: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011659129370058801, GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009371452544228291, GENERIC_REGEX: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000119768426936, overflow: -198606573258742300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ref: inputRef };
   const intl = arg1(dependencyMap[10]).intl;
   obj2.placeholder = intl.string(arg1(dependencyMap[10]).t.NNHVlv);
   obj2.onChange = function onChange(text) {

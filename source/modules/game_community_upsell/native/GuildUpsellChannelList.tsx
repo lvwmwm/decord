@@ -1,10 +1,10 @@
-// Module ID: 14965
-// Function ID: 112645
+// Module ID: 14973
+// Function ID: 112688
 // Name: GuildUpsellChannelList
 // Dependencies: []
 // Exports: default
 
-// Module 14965 (GuildUpsellChannelList)
+// Module 14973 (GuildUpsellChannelList)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_6 = importDefault(dependencyMap[2]);
@@ -14,13 +14,13 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.PANEL_BG };
 obj.container = obj;
-const obj1 = { 0: false, 9223372036854775807: false, 9223372036854775807: false, marginHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+const obj1 = { transformOrigin: null, accessibilityLabel: null, accessible: null, marginHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.header = obj1;
 obj.headerTitle = { flex: 1 };
-const tmp2 = arg1(dependencyMap[4]);
-obj.twoColumnRow = { gap: importDefault(dependencyMap[6]).space.PX_16 };
+const obj2 = { "Null": "<string:1895825670>", "Null": "type", "Null": "<string:33627458>", gap: importDefault(dependencyMap[6]).space.PX_16 };
+obj.twoColumnRow = obj2;
 obj.listContainer = { flex: 1 };
-const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
+const tmp2 = arg1(dependencyMap[4]);
 obj.subheaderWrapper = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 const obj3 = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 obj.createCard = { backgroundColor: importDefault(dependencyMap[6]).colors.BG_SURFACE_RAISED, gap: importDefault(dependencyMap[6]).space.PX_4, marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
@@ -78,7 +78,7 @@ export default function GuildUpsellChannelList(style) {
     const intl2 = tmp(youBarTotalHeight[14]).intl;
     obj1.children = intl2.string(tmp(youBarTotalHeight[14]).t.l0tmhq);
     items[1] = callback(tmp(youBarTotalHeight[13]).Text, obj1);
-    const obj2 = {};
+    const obj2 = { <string:3562165089>: 16777601, <string:1383310252>: 44349251, <string:3767060185>: 44348928, <string:74212417>: 30645248, <string:2982962944>: 1196491008 };
     const intl3 = tmp(youBarTotalHeight[14]).intl;
     obj2.text = intl3.string(tmp(youBarTotalHeight[14]).t.CumH4u);
     obj2.onPress = callback1;
@@ -90,7 +90,7 @@ export default function GuildUpsellChannelList(style) {
     const intl4 = tmp(youBarTotalHeight[14]).intl;
     obj4.children = intl4.string(tmp(youBarTotalHeight[14]).t.rJRote);
     const items2 = [callback(tmp(youBarTotalHeight[13]).Text, obj4), ];
-    const obj5 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.descriptionSpacing };
+    const obj5 = { cachedAt: true, edpbxy: true, style: tmp.descriptionSpacing };
     const intl5 = tmp(youBarTotalHeight[14]).intl;
     obj5.children = intl5.string(tmp(youBarTotalHeight[14]).t.pJT2DK);
     items2[1] = callback(tmp(youBarTotalHeight[13]).Text, obj5);

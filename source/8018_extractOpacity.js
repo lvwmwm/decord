@@ -1,5 +1,5 @@
 // Module ID: 8018
-// Function ID: 63617
+// Function ID: 63627
 // Name: extractOpacity
 // Dependencies: []
 

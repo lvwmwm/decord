@@ -1,10 +1,10 @@
-// Module ID: 11237
-// Function ID: 87473
+// Module ID: 11238
+// Function ID: 87486
 // Name: useNavigationTransitionEnded
 // Dependencies: []
 // Exports: default
 
-// Module 11237 (useNavigationTransitionEnded)
+// Module 11238 (useNavigationTransitionEnded)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const useAppLauncherNavigation = arg1(dependencyMap[2]).useAppLauncherNavigation;

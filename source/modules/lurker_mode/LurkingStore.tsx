@@ -4,29 +4,29 @@
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1194, 653, 3768, 3769]
 
 // Module 3757 (_isNativeReflectConstruct)
-import result from "result";
-import closure_1 from "result";
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { isGuildLurker } from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_1 from "__exportStarResult1";
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { isGuildLurker } from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 function _isNativeReflectConstruct() {
-  let result = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let __exportStarResult1 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return result;
+    return __exportStarResult1;
   }
   const result = _isNativeReflectConstruct();
 }
 function _createForOfIteratorHelperLoose(@@iterator) {
-  let result = Symbol_iterator;
+  let __exportStarResult1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
   if (Symbol_iterator) {
     const _Symbol = Symbol;
@@ -78,7 +78,7 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      result = tmp;
+      __exportStarResult1 = tmp;
     }
     let closure_1 = 0;
     return () => {
@@ -168,7 +168,7 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let result = LurkingStore;
+  let __exportStarResult1 = LurkingStore;
   callback2(LurkingStore, Store);
   let obj = {
     key: "initialize",

@@ -1,5 +1,5 @@
 // Module ID: 4936
-// Function ID: 42284
+// Function ID: 42293
 // Name: officialApplicationIds
 // Dependencies: []
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/connections/ConnectionsUtils.tsx");
 
-export const officialApplicationIds = ["system_channel_flags", "linkTextLocalized", "bbuXIn", "ACCOUNT_STANDING_CATEGORY", "focusHook", "scrollEventsHandlersHook"];
+export const officialApplicationIds = [null, null, null, null, null, null];
 export const ConnectionConfigurationRuleOperator = { AND: 0, [0]: "AND", OR: 1, [1]: "OR" };
 export const getCallbackParamsFromURL = function getCallbackParamsFromURL(closure_1) {
   let code;
@@ -437,7 +437,7 @@ export const getCreatedAtDate = function getCreatedAtDate(date, locale) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(locale, { <string:3478312518>: true, <string:4217799105>: true, <string:1449286816>: true });
+          toLocaleDateStringResult = date.toLocaleDateString(locale, { "Bool(true)": "log", "Bool(true)": "info", "Bool(true)": "warn" });
         }
       }
       return toLocaleDateStringResult;

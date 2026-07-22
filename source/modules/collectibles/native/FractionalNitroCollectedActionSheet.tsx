@@ -1,10 +1,10 @@
-// Module ID: 11825
-// Function ID: 91690
+// Module ID: 11826
+// Function ID: 91704
 // Name: NitroAcquiredHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11825 (NitroAcquiredHeader)
+// Module 11826 (NitroAcquiredHeader)
 function NitroAcquiredHeader() {
   const tmp = callback3();
   let obj = { style: tmp.header };
@@ -35,14 +35,14 @@ obj.content = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.buttonContainer = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.description = { textAlign: "center" };
-obj.header = { "Null": "accessibilityLabel", "Null": "r", "Null": "isArray", "Null": 24 };
-const obj3 = { -9223372036854775808: 4317509, 0: 1163911168, -9223372036854775808: 4318373, -9223372036854775808: 285204480, 9223372036854775807: 4320215 };
+obj.header = { "Null": true, "Null": true, x: false, c: false };
+const obj3 = { gap: "isArray", position: "isArray", right: "split", top: "header", alignItems: "guild" };
 const items = [{ translateX: -34 }, { translateY: -34 }];
 obj3.transform = items;
 obj.fractionNitroIcon = obj3;
-const obj4 = { "Null": "/assets/images/native/icons", "Null": 12, "Null": 12, alignItems: "center", justifyContent: "b28329d7d2ebd0b330f6112973e5d746", loading: "ic_sparkle", note: "png", right: importDefault(dependencyMap[6]).space.PX_16, top: importDefault(dependencyMap[6]).space.PX_16, backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
+const obj4 = { -9223372036854775808: "/assets/images/native/icons", 0: 12, 0: 12, 0: null, 9223372036854775807: "b28329d7d2ebd0b330f6112973e5d746", 0: "ic_sparkle", 9223372036854775807: "png", right: importDefault(dependencyMap[6]).space.PX_16, top: importDefault(dependencyMap[6]).space.PX_16, backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg, alignItems: "center" };
 obj.questionIconContainer = obj4;
-obj.questionIcon = { "Null": false, "Null": false };
+obj.questionIcon = { "Null": null, "Null": null };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/collectibles/native/FractionalNitroCollectedActionSheet.tsx");
@@ -77,7 +77,7 @@ export default function FractionalNitroCollectedActionSheet(consumed) {
       tmp(tmp6, obj);
       const obj3 = consumed(tmp2[12]);
     } else {
-      obj = {};
+      obj = { cachedAt: null, edpbxy: null };
       const intl = consumed(tmp2[16]).intl;
       obj.children = intl.string(consumed(consumed[16]).t.g5W1g8);
       return tmp(consumed(consumed[15]).Text, obj);
@@ -86,7 +86,7 @@ export default function FractionalNitroCollectedActionSheet(consumed) {
   const memo1 = React.useMemo(() => {
     const intl = consumed(tmp2[16]).intl;
     const formatToPlainStringResult = intl.formatToPlainString(consumed(tmp2[16]).t.Cz1G97, { days: 3 });
-    let obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
+    let obj = { cachedAt: 1, edpbxy: 1, style: tmp.description };
     if (consumed) {
       const intl3 = consumed(tmp2[16]).intl;
       obj = { duration: formatToPlainStringResult, expirationDate: expiresAt };
@@ -147,7 +147,7 @@ export default function FractionalNitroCollectedActionSheet(consumed) {
       tmp27 = obj8;
     }
     const items5 = [callback(arg1(dependencyMap[23]).Button, tmp27), ];
-    const obj9 = {};
+    const obj9 = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7" };
     const intl2 = arg1(dependencyMap[16]).intl;
     obj9.text = intl2.string(arg1(dependencyMap[16]).t.TkTvBz);
     obj9.onPress = function onPress() {

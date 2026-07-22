@@ -1,10 +1,10 @@
-// Module ID: 5449
-// Function ID: 46566
+// Module ID: 5183
+// Function ID: 45003
 // Name: RedesignBottomSheetTitleHeaderBase
 // Dependencies: []
 // Exports: BottomSheetTitleHeader
 
-// Module 5449 (RedesignBottomSheetTitleHeaderBase)
+// Module 5183 (RedesignBottomSheetTitleHeaderBase)
 function RedesignBottomSheetTitleHeaderBase(children) {
   const subtitle = children.subtitle;
   const tmp = callback5();
@@ -126,7 +126,7 @@ const View = arg1(dependencyMap[2]).View;
 const tmp2 = arg1(dependencyMap[3]);
 let closure_8 = arg1(dependencyMap[4]).createStyles(() => {
   let obj = {};
-  obj = { display: 80, flexDirection: 80, alignItems: null, borderBottomColor: "900d6a1aeefc6f4c571ad9d81203dc5c", paddingHorizontal: importDefault(dependencyMap[5]).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL };
+  obj = { enableCppPropsIteratorSetter: 0.5, isDestroyed: 0.4, guildHasTag: "none", GameDepthTier9LargeBadge: "restore", paddingHorizontal: importDefault(dependencyMap[5]).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL };
   obj.container = obj;
   obj.titles = {};
   obj.subtitle = { textAlign: "center" };

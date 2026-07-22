@@ -34,7 +34,7 @@ function setCancelFlag(passiveListener) {
 class Event {
   constructor(arg0, arg1) {
     self = this;
-    obj = { oldFormErrors: null, rejectWithError: null, failImmediatelyWhenRateLimited: null, <string:1684270296>: 6, <string:979634301>: false, <string:1481878102>: "#ffa813", <string:792366638>: "absolute", <string:2117947928>: null };
+    obj = { borderStyle: 1, displayProfile: true, NitroGem24Lottie: null, T8sBLJ: true, EphemeralMessageReason: false, lottieComponent: false, Zt4Mf4: true, GUILD_SETTINGS_ENABLE_COMMUNITY: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
     obj.eventTarget = global;
     obj.event = require;
     obj.currentTarget = global;
@@ -47,7 +47,7 @@ class Event {
     }
     obj.timeStamp = timeStamp;
     result = WeakMap.set(self, obj);
-    definePropertyResult = Object.defineProperty(self, "isTrusted", {});
+    definePropertyResult = Object.defineProperty(self, "isTrusted", { onDownloadProgress: 1766088043, GUILD_TAG_AVAILABLE_COACHMARK_V2: 827788593 });
     keys = Object.keys(require);
     for (let num = 0; num < keys.length; num = num + 1) {
       tmp5 = keys[num];
@@ -218,7 +218,7 @@ function defineEventAttribute(prototype, abort) {
           } while (null != iter);
         }
         if (null !== tmp3) {
-          obj = { LIGHT: false, st: false, displayName: false, httpServerLocation: false, name: false, listener: tmp3 };
+          obj = { marginHorizontal: "<string:827788593>", marginVertical: "<string:4211945741>", justifyContent: "<string:4229692187>", alignItems: true, INVITE_LINK: true, listener: tmp3 };
           if (null === tmp6) {
             const result1 = obj.set(arg0, obj);
           } else {
@@ -450,7 +450,7 @@ if (tmp5) {
   class Event {
     constructor(arg0, arg1) {
       self = this;
-      obj = { oldFormErrors: null, rejectWithError: null, failImmediatelyWhenRateLimited: null, <string:1684270296>: 6, <string:979634301>: false, <string:1481878102>: "#ffa813", <string:792366638>: "absolute", <string:2117947928>: null };
+      obj = { borderStyle: 1, displayProfile: true, NitroGem24Lottie: null, T8sBLJ: true, EphemeralMessageReason: false, lottieComponent: false, Zt4Mf4: true, GUILD_SETTINGS_ENABLE_COMMUNITY: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
       obj.eventTarget = global;
       obj.event = require;
       obj.currentTarget = global;
@@ -463,7 +463,7 @@ if (tmp5) {
       }
       obj.timeStamp = timeStamp;
       result = WeakMap.set(self, obj);
-      definePropertyResult = Object.defineProperty(self, "isTrusted", {});
+      definePropertyResult = Object.defineProperty(self, "isTrusted", { onDownloadProgress: 1766088043, GUILD_TAG_AVAILABLE_COACHMARK_V2: 827788593 });
       keys = Object.keys(require);
       for (let num = 0; num < keys.length; num = num + 1) {
         tmp5 = keys[num];

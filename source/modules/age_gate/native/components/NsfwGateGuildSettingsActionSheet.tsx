@@ -1,10 +1,10 @@
-// Module ID: 12794
-// Function ID: 98028
+// Module ID: 12801
+// Function ID: 98061
 // Name: NsfwGateGuildSettingsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12794 (NsfwGateGuildSettingsActionSheet)
+// Module 12801 (NsfwGateGuildSettingsActionSheet)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

@@ -1,5 +1,5 @@
 // Module ID: 8127
-// Function ID: 64347
+// Function ID: 64357
 // Name: useIsWindowLarge
 // Dependencies: []
 // Exports: default, getIsWindowLarge

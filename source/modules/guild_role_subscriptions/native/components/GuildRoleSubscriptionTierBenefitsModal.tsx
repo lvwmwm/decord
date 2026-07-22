@@ -1,10 +1,10 @@
-// Module ID: 16314
-// Function ID: 125893
+// Module ID: 16322
+// Function ID: 125935
 // Name: AddBenefitButton
 // Dependencies: []
 // Exports: GuildRoleSubscriptionTierChannelBenefitsModal, GuildRoleSubscriptionTierIntangibleBenefitsModal
 
-// Module 16314 (AddBenefitButton)
+// Module 16322 (AddBenefitButton)
 function AddBenefitButton(disabled) {
   let label;
   let onPress;
@@ -31,9 +31,7 @@ function AddBenefitButton(disabled) {
   const tmp2 = closure_13;
   const tmp3 = importDefault(dependencyMap[9]);
   obj.source = importDefault(dependencyMap[11]);
-  const items1 = [callback2(importDefault(dependencyMap[10]), obj), ];
-  const obj1 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.addBenefitLabel, children: label };
-  items1[1] = callback2(arg1(dependencyMap[12]).Text, obj1);
+  const items1 = [callback2(importDefault(dependencyMap[10]), obj), callback2(arg1(dependencyMap[12]).Text, { style: tmp.addBenefitLabel, children: label })];
   obj.children = items1;
   return tmp2(tmp3, obj);
 }
@@ -216,9 +214,9 @@ function Content(arg0) {
       onDelete() {
         function deleteBenefit(ref_type, arg1) {
           if (ref_type === lib.CHANNEL) {
-            callback((arr) => arr.filter(/* F125911 */ function() { ... }));
+            callback((arr) => arr.filter(/* F125953 */ function() { ... }));
           } else {
-            lib((arr) => arr.filter(/* F125913 */ function() { ... }));
+            lib((arr) => arr.filter(/* F125955 */ function() { ... }));
           }
         }(arg0.ref_type, arg1);
       },
@@ -447,7 +445,7 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = { listContainer: { paddingBottom: 16 } };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj = { stack: null, "Null": "r", "Bool(false)": "yes", "Null": "100%", "Bool(false)": "100%", "Bool(false)": null, "Bool(true)": "Lightbox Frame", "Bool(false)": "EdgeHTML", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.card = obj;
 const tmp4 = arg1(dependencyMap[6]);
 obj.item = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.none };
@@ -457,7 +455,7 @@ const obj2 = { borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, bo
 obj.itemLast = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 const obj3 = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.itemSeparatorContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-const obj5 = { -1446235189: true, 1347605089: true, 1658268125: true, 1263606231: true, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+const obj5 = { "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.itemSeparator = obj5;
 obj.listFooterText = { marginHorizontal: 16 };
 obj.listFooterSubtitle = { marginTop: 8 };

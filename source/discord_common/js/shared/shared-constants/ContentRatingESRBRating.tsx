@@ -1,11 +1,11 @@
 // Module ID: 6866
-// Function ID: 54320
+// Function ID: 54331
 // Name: set
 // Dependencies: []
 
 // Module 6866 (set)
-const obj = { ALL: new Set([]) };
-const set = new Set([]);
+const obj = { ALL: new Set([null, null, null, null, null, null]) };
+const set = new Set([null, null, null, null, null, null]);
 obj.IS_ADULT_ONLY = new Set([true]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentRatingESRBRating.tsx");

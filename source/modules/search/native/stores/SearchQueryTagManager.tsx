@@ -1,9 +1,9 @@
-// Module ID: 10081
-// Function ID: 78065
+// Module ID: 10082
+// Function ID: 78078
 // Name: isPrefix
 // Dependencies: []
 
-// Module 10081 (isPrefix)
+// Module 10082 (isPrefix)
 function isPrefix(type) {
   return type.type === SearchQueryTagTypes.PREFIX;
 }

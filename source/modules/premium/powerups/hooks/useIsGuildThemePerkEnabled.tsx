@@ -1,10 +1,10 @@
-// Module ID: 14866
-// Function ID: 111999
+// Module ID: 14874
+// Function ID: 112042
 // Name: useIsGuildThemePerkEnabled
 // Dependencies: []
 // Exports: default
 
-// Module 14866 (useIsGuildThemePerkEnabled)
+// Module 14874 (useIsGuildThemePerkEnabled)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const GuildFeatures = arg1(dependencyMap[2]).GuildFeatures;

@@ -1,10 +1,10 @@
-// Module ID: 10426
-// Function ID: 80317
+// Module ID: 10427
+// Function ID: 80330
 // Name: ChatOverlays
 // Dependencies: []
 // Exports: default
 
-// Module 10426 (ChatOverlays)
+// Module 10427 (ChatOverlays)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const ChatOverlays = arg1(dependencyMap[2]).ChatOverlays;

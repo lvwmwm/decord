@@ -1,8 +1,8 @@
-// Module ID: 8590
-// Function ID: 68227
+// Module ID: 8591
+// Function ID: 68239
 // Dependencies: []
 
-// Module 8590
+// Module 8591
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("utils/GameUtils.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 11942
-// Function ID: 92333
+// Module ID: 11943
+// Function ID: 92347
 // Name: JoinActivityButton
 // Dependencies: []
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 11942 (JoinActivityButton)
+// Module 11943 (JoinActivityButton)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -72,7 +72,7 @@ export const JoinActivityButton = function JoinActivityButton(user) {
           stringResult = intl.string(arg1(dependencyMap[25]).t.4i2vj+);
         }
         obj.text = stringResult;
-        obj.icon = jsx(arg1(dependencyMap[26]).AppsIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" });
+        obj.icon = jsx(arg1(dependencyMap[26]).AppsIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" });
         obj.variant = "active";
         obj.disabled = stateFromStores === arg1(dependencyMap[22]).ActivityJoinability.JOINED;
         obj.onPress = function onPress() {

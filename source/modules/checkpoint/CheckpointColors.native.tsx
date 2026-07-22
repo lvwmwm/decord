@@ -1,9 +1,9 @@
-// Module ID: 9890
-// Function ID: 76567
+// Module ID: 9891
+// Function ID: 76580
 // Name: items
 // Dependencies: []
 
-// Module 9890 (items)
+// Module 9891 (items)
 const CheckpointPersonas = require(dependencyMap[0]).CheckpointPersonas;
 let obj = {};
 obj = { primaryColor: importDefault(dependencyMap[1]).unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_PRIMARY, secondaryColor: importDefault(dependencyMap[1]).unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_SECONDARY, backgroundOverlayColor: importDefault(dependencyMap[1]).unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY };

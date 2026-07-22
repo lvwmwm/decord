@@ -1,10 +1,10 @@
-// Module ID: 9769
-// Function ID: 75973
+// Module ID: 9770
+// Function ID: 75986
 // Name: useFetchCollectiblesProductCategory
 // Dependencies: []
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 9769 (useFetchCollectiblesProductCategory)
+// Module 9770 (useFetchCollectiblesProductCategory)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");

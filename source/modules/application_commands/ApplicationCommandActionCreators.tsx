@@ -1,5 +1,5 @@
 // Module ID: 7015
-// Function ID: 56270
+// Function ID: 56281
 // Name: updateOptionStates
 // Dependencies: []
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionValidationStates, updateRegistry

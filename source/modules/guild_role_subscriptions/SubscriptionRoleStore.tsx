@@ -1,21 +1,9 @@
-// Module ID: 5262
-// Function ID: 44721
+// Module ID: 4989
+// Function ID: 43131
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 5262 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { isGuildOwner } from "result";
-import { hasPermission } from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import closure_11 from "result";
-import closure_12 from "result";
-import result from "result";
-import result from "result";
-
+// Module 4989 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -221,9 +209,18 @@ function handleRoleUpdate(guildId) {
   }
   return tmp2;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-({ Permissions: closure_13, GuildFeatures: closure_14 } = result);
+const isGuildOwner = arg1(dependencyMap[5]).isGuildOwner;
+const hasPermission = arg1(dependencyMap[6]).hasPermission;
+let closure_9 = importDefault(dependencyMap[7]);
+let closure_10 = importDefault(dependencyMap[8]);
+let closure_11 = importDefault(dependencyMap[9]);
+let closure_12 = importDefault(dependencyMap[10]);
+({ Permissions: closure_13, GuildFeatures: closure_14 } = arg1(dependencyMap[11]));
 const set = new Set();
 const map = new Map();
 const map1 = new Map();
@@ -341,9 +338,9 @@ let tmp8 = (Store) => {
     }
   };
   return callback(SubscriptionRoleStore, items);
-}(require("result").Store);
+}(importDefault(dependencyMap[13]).Store);
 tmp8.displayName = "SubscriptionRoleStore";
-tmp8 = new tmp8(require("result"), {
+tmp8 = new tmp8(importDefault(dependencyMap[14]), {
   CONNECTION_OPEN: deleteEverything,
   LOGOUT: deleteEverything,
   GUILD_CREATE: handleGuildUpdate,
@@ -385,6 +382,49 @@ tmp8 = new tmp8(require("result"), {
     return tmp5;
   }
 });
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/SubscriptionRoleStore.tsx");
+const obj = {
+  CONNECTION_OPEN: deleteEverything,
+  LOGOUT: deleteEverything,
+  GUILD_CREATE: handleGuildUpdate,
+  GUILD_DELETE: function handleGuildDelete(guild) {
+    const id = guild.guild.id;
+    let hasItem;
+    if (null != closure_20) {
+      hasItem = obj.has(id);
+    }
+    if (true !== hasItem) {
+      return false;
+    } else {
+      const _Set = Set;
+      const set = new Set(closure_20);
+      set.delete(id);
+      closure_20 = set;
+    }
+    const obj = closure_20;
+  },
+  GUILD_UPDATE: handleGuildUpdate,
+  GUILD_ROLE_CREATE: handleRoleUpdate,
+  GUILD_ROLE_UPDATE: handleRoleUpdate,
+  GUILD_ROLE_DELETE: handleRoleUpdate,
+  GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(guildId) {
+    guildId = guildId.guildId;
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (null != currentUser) {
+      id = currentUser.id;
+    }
+    let tmp3 = guildId.user.id !== id;
+    if (!tmp3) {
+      tmp3 = !map.has(guildId);
+    }
+    let tmp5 = !tmp3;
+    if (!tmp3) {
+      tmp5 = computeRolesForGuild(guildId);
+    }
+    return tmp5;
+  }
+};
+const tmp2 = arg1(dependencyMap[11]);
+const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_role_subscriptions/SubscriptionRoleStore.tsx");
 
 export default tmp8;

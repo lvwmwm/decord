@@ -1,10 +1,10 @@
-// Module ID: 14009
-// Function ID: 106556
+// Module ID: 14016
+// Function ID: 106596
 // Name: useEmojiByIdOrName
 // Dependencies: []
 // Exports: default, useEmojiByIdOrName
 
-// Module 14009 (useEmojiByIdOrName)
+// Module 14016 (useEmojiByIdOrName)
 function useEmojiByIdOrName(guildId, emojiId) {
   emojiId = guildId;
   const dependencyMap = emojiId;

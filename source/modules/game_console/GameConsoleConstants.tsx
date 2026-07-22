@@ -1,10 +1,10 @@
-// Module ID: 8942
-// Function ID: 70460
+// Module ID: 8943
+// Function ID: 70473
 // Name: XBOX_URL_BASE
 // Dependencies: []
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS
 
-// Module 8942 (XBOX_URL_BASE)
+// Module 8943 (XBOX_URL_BASE)
 const items = [require(dependencyMap[1]).OAuth2Scopes.VOICE, require(dependencyMap[1]).OAuth2Scopes.DM_CHANNELS_READ, require(dependencyMap[1]).OAuth2Scopes.GUILDS, require(dependencyMap[1]).OAuth2Scopes.GUILDS_MEMBERS_READ, require(dependencyMap[1]).OAuth2Scopes.IDENTIFY, require(dependencyMap[1]).OAuth2Scopes.CONNECTIONS, require(dependencyMap[1]).OAuth2Scopes.ACTIVITIES_READ];
 const items1 = [require(dependencyMap[1]).OAuth2Scopes.VOICE, require(dependencyMap[1]).OAuth2Scopes.DM_CHANNELS_READ, require(dependencyMap[1]).OAuth2Scopes.GUILDS, require(dependencyMap[1]).OAuth2Scopes.GUILDS_MEMBERS_READ, require(dependencyMap[1]).OAuth2Scopes.IDENTIFY, require(dependencyMap[1]).OAuth2Scopes.CONNECTIONS];
 let obj = { PLAYSTATION: "playstation", XBOX: "xbox" };

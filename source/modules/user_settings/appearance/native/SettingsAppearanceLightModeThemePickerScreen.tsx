@@ -1,10 +1,10 @@
-// Module ID: 14073
-// Function ID: 106875
+// Module ID: 14080
+// Function ID: 106915
 // Name: SettingsAppearanceLightModeThemePickerScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14073 (SettingsAppearanceLightModeThemePickerScreen)
+// Module 14080 (SettingsAppearanceLightModeThemePickerScreen)
 importAll(dependencyMap[0]);
 const SystemTheme = arg1(dependencyMap[1]).SystemTheme;
 const jsx = arg1(dependencyMap[2]).jsx;

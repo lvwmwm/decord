@@ -1,30 +1,30 @@
-// Module ID: 12580
-// Function ID: 96773
+// Module ID: 12585
+// Function ID: 96801
 // Name: NUFChannelIllustration
 // Dependencies: []
 // Exports: default
 
-// Module 12580 (NUFChannelIllustration)
+// Module 12585 (NUFChannelIllustration)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {}, card: { 0: true, 9223372036854775807: true } };
+obj = { container: { "Bool(false)": false, "Bool(false)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, card: { 1507939603: "age", 2021029889: "targetFrames" } };
 obj = { borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.cardBackground = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.header = { borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.content = { <string:151424082>: "<string:2164261321>", <string:1374314758>: "<string:1358954752>", <string:3429202876>: "Text", <string:2857818211>: "padding", <string:1688306001>: "names", <string:3328332636>: "r" };
-obj.message = {};
-obj.messageAvatar = { <string:1549954009>: true, <string:67064148>: true, <string:2018617953>: true };
+obj.content = { "Null": "<string:2399142344>", "Null": "<string:1358954752>", "Null": "<string:2520852300>", "Null": "<string:1107296959>", "Null": "text-xs/bold", "Null": "text-strong" };
+obj.message = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.messageAvatar = { -9223372036854775808: "valueCallback", 9223372036854775807: "<string:1749090560>", 0: "<string:822084842>" };
 obj.messageContent = {};
-obj.starMedium = { y: true, isArray: true };
-obj.starSmall = { y: "Array", isArray: "isArray" };
+obj.starMedium = { hideWhenScrolling: true, autoCapitalize: true };
+obj.starSmall = { hideWhenScrolling: -302624512, autoCapitalize: -1429651183 };
 obj.starGreen = {};
 obj.starBlue = {};
-obj.starPink = { justifyContent: "resolve", paddingRight: "isArray", height: "resolve" };
+obj.starPink = { "Bool(false)": "resolve", "Bool(false)": "isArray", "Bool(false)": "isArray" };
 obj.starPurple = {};
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function NUFChannelIllustrationTsx1(){const{interpolate,messageListAnimation}=this.__closure;return{transform:[{translateY:interpolate(messageListAnimation.get(),[0,1],[50,0])}]};}" };
@@ -88,7 +88,7 @@ export default function NUFChannelIllustration() {
   let obj2 = arg1(closure_2[9]);
   const fn = function b() {
     let obj = {};
-    obj = { translateY: tmp(closure_2[9]).interpolate(sharedValue.get(), ["replace", "then"], ["values", "application"]) };
+    obj = { translateY: tmp(closure_2[9]).interpolate(sharedValue.get(), [77601039, 1612144654], ["values", "application"]) };
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -122,7 +122,7 @@ export default function NUFChannelIllustration() {
   const items7 = [callback2(arg1(closure_2[16]).TextIcon, { size: "sm" }), ];
   const obj8 = {};
   const intl = arg1(closure_2[6]).intl;
-  const items8 = [-1402750382, intl.string(arg1(closure_2[6]).t.aLOLry)];
+  const items8 = [false, intl.string(arg1(closure_2[6]).t.aLOLry)];
   obj8.children = items8;
   items7[1] = callback3(arg1(closure_2[17]).Text, obj8);
   obj7.children = items7;
@@ -135,9 +135,9 @@ export default function NUFChannelIllustration() {
       obj = { source: avatar.avatar, style: tmp.messageAvatar };
       const items = [callback(closure_6, obj), ];
       obj = { style: tmp.messageContent };
-      const obj1 = { "Bool(false)": "flex", "Bool(false)": "flex-start", children: avatar.name };
+      const obj1 = { style: "flex", channelId: "flex-start", children: avatar.name };
       const items1 = [callback(tmp(closure_2[17]).Text, obj1), ];
-      const obj2 = { "Bool(false)": false, "Bool(false)": false, children: avatar.message };
+      const obj2 = { style: false, channelId: false, children: avatar.message };
       items1[1] = callback(tmp(closure_2[17]).Text, obj2);
       obj.children = items1;
       items[1] = callback2(closure_5, obj);

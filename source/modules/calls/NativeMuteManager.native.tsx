@@ -1,9 +1,9 @@
-// Module ID: 12626
-// Function ID: 97068
+// Module ID: 12631
+// Function ID: 97096
 // Name: NativeMuteManager
 // Dependencies: []
 
-// Module 12626 (NativeMuteManager)
+// Module 12631 (NativeMuteManager)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

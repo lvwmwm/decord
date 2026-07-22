@@ -1,10 +1,10 @@
-// Module ID: 9487
-// Function ID: 73919
+// Module ID: 9488
+// Function ID: 73932
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 9487 (_createForOfIteratorHelperLoose)
+// Module 9488 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -537,8 +537,8 @@ function CommandContentContainer(channelId) {
     return tmp;
   }, items2);
   obj = {};
-  const obj1 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.commandText, children: intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj) };
-  const items3 = [callback(arg1(dependencyMap[21]).Text, obj1, "commandName-" + data.name), callback(arg1(dependencyMap[21]).Text, { style: tmp.commandOptionText, children: memo }, "commandOption-" + data.name)];
+  const formatResult = intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj);
+  const items3 = [callback(arg1(dependencyMap[21]).Text, { style: tmp.commandText, children: intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj) }, "commandName-" + data.name), callback(arg1(dependencyMap[21]).Text, { style: tmp.commandOptionText, children: memo }, "commandOption-" + data.name)];
   obj.children = items3;
   return callback2(arg1(dependencyMap[28]).Card, obj);
 }
@@ -714,7 +714,7 @@ function CommandActionsContainer(channelId) {
   let tmp12 = null;
   if (0 !== items3.length) {
     const obj1 = { spacing: 8 };
-    const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: true };
+    const obj2 = { cachedAt: true, edpbxy: true };
     const intl3 = arg1(dependencyMap[23]).intl;
     obj2.children = intl3.string(arg1(dependencyMap[23]).t.3eF5/L);
     const items4 = [callback(arg1(dependencyMap[21]).Text, obj2), ];

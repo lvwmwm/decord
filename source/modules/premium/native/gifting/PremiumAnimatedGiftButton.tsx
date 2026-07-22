@@ -1,10 +1,10 @@
-// Module ID: 11344
-// Function ID: 88207
+// Module ID: 11345
+// Function ID: 88220
 // Name: PremiumAnimatedGiftButton
 // Dependencies: []
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11344 (PremiumAnimatedGiftButton)
+// Module 11345 (PremiumAnimatedGiftButton)
 let closure_3 = importAll(dependencyMap[0]);
 const useRef = arg1(dependencyMap[0]).useRef;
 let closure_5 = importDefault(dependencyMap[1]);
@@ -15,7 +15,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((width, marginHorizontal) =>
   obj.container = obj;
   obj = { width, height: width, borderRadius: importDefault(dependencyMap[4]).radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   obj.containerRefresh = obj;
-  obj.animation = { "Null": 1, "Null": 1 };
+  obj.animation = {};
   obj.animationRefresh = {};
   return obj;
 });

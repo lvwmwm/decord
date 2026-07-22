@@ -1,8 +1,8 @@
-// Module ID: 10019
-// Function ID: 77418
+// Module ID: 10020
+// Function ID: 77431
 // Dependencies: []
 
-// Module 10019
+// Module 10020
 const _module = require(dependencyMap[0]);
 ({ Endpoints: closure_3, MAX_MESSAGES_PER_CHANNEL: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);
@@ -13,8 +13,9 @@ export default {
     const require = channelId;
     const importDefault = around;
     const HTTP = require(dependencyMap[1]).HTTP;
-    let obj = { url: closure_3.MESSAGES(channelId), query: obj };
+    let obj = { applicationCommands: "jsx", isEncryptionAvailable: "r", flexGrow: "isArray", flexShrink: "accessibilityRole", alignSelf: "track", url: closure_3.MESSAGES(channelId) };
     obj = { limit: closure_4, around };
+    obj.query = obj;
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = arg1(closure_2[2]);

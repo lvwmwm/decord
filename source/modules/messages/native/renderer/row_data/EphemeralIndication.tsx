@@ -1,5 +1,5 @@
 // Module ID: 7755
-// Function ID: 61599
+// Function ID: 61609
 // Name: createEphemeralIndication
 // Dependencies: []
 // Exports: createEphemeralIndication
@@ -39,7 +39,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
     } else {
       const obj2 = {};
       const intl4 = arg1(dependencyMap[3]).intl;
-      const obj3 = { "Null": null, "Null": null };
+      const obj3 = { 9223372036854775807: "<string:2491613185>", 0: "<string:2941583362>" };
       const obj4 = { action: "bindDismissMessage", message };
       obj3.handleDelete = obj4;
       obj2.content = intl4.formatToParts(arg1(dependencyMap[3]).t.uX3ecL, obj3);

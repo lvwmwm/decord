@@ -1,10 +1,10 @@
-// Module ID: 12218
-// Function ID: 93794
+// Module ID: 12223
+// Function ID: 93822
 // Name: BlockUserElement
 // Dependencies: []
 // Exports: default
 
-// Module 12218 (BlockUserElement)
+// Module 12223 (BlockUserElement)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 14686
-// Function ID: 110751
+// Module ID: 14694
+// Function ID: 110794
 // Name: HomePanelContent
 // Dependencies: []
 
-// Module 14686 (HomePanelContent)
+// Module 14694 (HomePanelContent)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 8857
-// Function ID: 69886
+// Module ID: 8858
+// Function ID: 69899
 // Name: VoiceBadges
 // Dependencies: []
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 8857 (VoiceBadges)
+// Module 8858 (VoiceBadges)
 function VoiceBadges(arg0) {
   let muteDeafenIconState;
   let videoIconState;
@@ -39,12 +39,12 @@ let obj = arg1(dependencyMap[3]);
 obj = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.iconWrapper = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.icon = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj1 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.icon = obj1;
 obj.notConnectedAvatar = { opacity: 0.5 };
-obj.memberRow = { "Null": true, "Null": true, "Bool(false)": true };
+obj.memberRow = { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null };
 let closure_7 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
 
 export const VoicePanelFormSection = function VoicePanelFormSection(style) {
@@ -117,7 +117,7 @@ export const MemberRowItem = function MemberRowItem(user) {
         const intl = user(flag[19]).intl;
         intl.string(user(flag[19]).t.eXan7B);
       }
-      let formatResult = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null };
+      let formatResult = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821 };
       const intl2 = user(flag[19]).intl;
       formatResult = {};
       if (null == stateFromStores.details) {

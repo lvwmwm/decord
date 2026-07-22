@@ -1,14 +1,15 @@
 // Module ID: 7892
-// Function ID: 62820
+// Function ID: 62830
 // Name: transformMessageAttachments
-// Dependencies: []
+// Dependencies: [7898, 22, 2, 27, 7732, 1212, 2396, 2, 27, 1348, 3756, 4142, 653]
 // Exports: default
 
 // Module 7892 (transformMessageAttachments)
-const AttachmentType = require(dependencyMap[0]).AttachmentType;
-const MessageAttachmentFlags = require(dependencyMap[1]).MessageAttachmentFlags;
-const _module = require(dependencyMap[12]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformMessageAttachments.tsx");
+import { AttachmentType } from "buildPlatformPollResources";
+import { MessageAttachmentFlags } from "apply";
+import ME from "ME";
+
+const result = ME.fileFinishedImporting("modules/messages/native/renderer/transformMessageAttachments.tsx");
 
 export default function transformMessageAttachments(arg0) {
   let attachments;

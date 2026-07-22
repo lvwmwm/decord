@@ -1,16 +1,16 @@
-// Module ID: 9054
-// Function ID: 71100
+// Module ID: 9055
+// Function ID: 71113
 // Name: AcceptRequestConfirmationModal
 // Dependencies: []
 // Exports: default
 
-// Module 9054 (AcceptRequestConfirmationModal)
+// Module 9055 (AcceptRequestConfirmationModal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { notificationCenterAckedBeforeId: null, focusModeExpiresAtMs: null, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { "Null": null, "Null": null, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.bodyText = obj;
 obj.text = { textAlign: "center" };
 let closure_6 = obj.createStyles(obj);
@@ -35,7 +35,7 @@ export default function AcceptRequestConfirmationModal(onConfirm) {
   const intl3 = arg1(dependencyMap[6]).intl;
   obj.children = intl3.string(arg1(dependencyMap[6]).t.eJzSDT);
   const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.text };
+  const obj1 = { cachedAt: 3, edpbxy: null, style: tmp.text };
   const intl4 = arg1(dependencyMap[6]).intl;
   obj1.children = intl4.string(arg1(dependencyMap[6]).t.GB4jUw);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj1);

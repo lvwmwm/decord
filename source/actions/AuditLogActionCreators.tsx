@@ -1,10 +1,10 @@
-// Module ID: 16111
-// Function ID: 124239
+// Module ID: 16119
+// Function ID: 124281
 // Name: isLoading
 // Dependencies: []
 // Exports: fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 16111 (isLoading)
+// Module 16119 (isLoading)
 function isLoading(postId, sortOrder, tagFilter, tagSetting) {
   let isLoadingNextPage = closure_3.isLoading;
   if (!isLoadingNextPage) {

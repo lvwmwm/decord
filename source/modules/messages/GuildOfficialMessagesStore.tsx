@@ -1,21 +1,18 @@
-// Module ID: 12524
-// Function ID: 96125
+// Module ID: 12529
+// Function ID: 96153
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 12524 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import closure_11 from "result";
-import { MessageFlags } from "result";
-import result from "result";
+// Module 12529 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -283,12 +280,14 @@ function handleRelationshipUpdate() {
     return false;
   }
 }
+let closure_11 = importDefault(dependencyMap[9]);
+const MessageFlags = arg1(dependencyMap[10]).MessageFlags;
 let closure_13 = {};
 let tmp2 = (Store) => {
   class GuildOfficialMessagesStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildOfficialMessagesStore);
+      tmp = __exportStarResult1(this, GuildOfficialMessagesStore);
       obj = closure_5(GuildOfficialMessagesStore);
       tmp2 = closure_4;
       if (closure_14()) {
@@ -377,9 +376,9 @@ let tmp2 = (Store) => {
     }
   };
   return callback(GuildOfficialMessagesStore, items);
-}(require("result").Store);
+}(importDefault(dependencyMap[13]).Store);
 tmp2.displayName = "GuildOfficialMessagesStore";
-tmp2 = new tmp2(require("result"), {
+tmp2 = new tmp2(importDefault(dependencyMap[14]), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_13 = {};
   },
@@ -406,27 +405,27 @@ tmp2 = new tmp2(require("result"), {
     } else {
       obj = {};
       const merged2 = Object.assign(closure_13);
-      const obj1 = { ids: [], messages: {} };
+      const obj1 = { 9223372036854775807: "<string:4128768>", 9223372036854775807: "isArray", 9223372036854775807: "<string:2335309824>", 0: "<string:2851858284>", 9223372036854775807: "<string:1514128113>", 0: "<string:1340029796>", ids: [], messages: {} };
       obj[guildId] = obj1;
       closure_13 = obj;
     }
   },
   LOAD_OFFICIAL_MESSAGES_SUCCESS: function handleLoadOfficialMessagesSuccess(arg0) {
     let guildId;
-    ({ guildId, messages: closure_0, hasMore: closure_1, before: closure_2 } = arg0);
+    ({ guildId, messages: closure_0, hasMore: closure_1, before: __exportStarResult1 } = arg0);
     if (null == closure_13[guildId]) {
       return false;
     } else {
       updateGuildState(guildId, (ids) => {
         let iter2;
-        if (null != closure_2) {
+        if (null != __exportStarResult1) {
           const items = [];
           HermesBuiltin.arraySpread(ids.ids, 0);
           let items1 = items;
         } else {
           items1 = [];
         }
-        if (null != closure_2) {
+        if (null != __exportStarResult1) {
           let obj = {};
           const merged = Object.assign(ids.messages);
         } else {
@@ -448,7 +447,7 @@ tmp2 = new tmp2(require("result"), {
             iter = iter2;
           } while (!iter2.done);
         }
-        obj = { ids: items1 };
+        obj = { 9223372036854775807: "leftRock", 9223372036854775807: 122, 9223372036854775807: 58, 0: 48, 9223372036854775807: 10, 0: 4, ids: items1 };
         obj.messages = obj;
         obj.hasMore = closure_1;
         return obj;
@@ -460,7 +459,7 @@ tmp2 = new tmp2(require("result"), {
     if (null == closure_13[guildId]) {
       return false;
     } else {
-      updateGuildState(guildId, null != tmp ? () => ({ loading: false }) : () => ({}));
+      updateGuildState(guildId, null != tmp ? () => ({ loading: false }) : () => ({ "Null": 1766088043, "Null": 827788593 }));
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -667,7 +666,7 @@ tmp2 = new tmp2(require("result"), {
     ({ ids, guildId } = arg0);
     let arg1;
     let dependencyMap;
-    let closure_2;
+    let __exportStarResult1;
     if (null == guildId) {
       return false;
     } else if (null == closure_13[guildId]) {
@@ -684,7 +683,7 @@ tmp2 = new tmp2(require("result"), {
       } else {
         const obj = {};
         const merged = Object.assign(tmp8.messages);
-        closure_2 = obj;
+        __exportStarResult1 = obj;
         const tmp4 = _createForOfIteratorHelperLoose(tmp8.ids);
         let iter = tmp4();
         if (!iter.done) {
@@ -707,6 +706,6 @@ tmp2 = new tmp2(require("result"), {
   RELATIONSHIP_REMOVE: handleRelationshipUpdate,
   RELATIONSHIP_UPDATE: handleRelationshipUpdate
 });
-result = result.fileFinishedImporting("modules/messages/GuildOfficialMessagesStore.tsx");
+const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/messages/GuildOfficialMessagesStore.tsx");
 
 export default tmp2;

@@ -1,5 +1,5 @@
 // Module ID: 6811
-// Function ID: 53712
+// Function ID: 53723
 // Name: RewardHeroBlockRecord
 // Dependencies: []
 

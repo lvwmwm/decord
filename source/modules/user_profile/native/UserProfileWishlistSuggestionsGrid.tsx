@@ -1,10 +1,10 @@
-// Module ID: 12010
-// Function ID: 92826
+// Module ID: 12014
+// Function ID: 92852
 // Name: UserProfileWishlistSuggestionsGridContent
 // Dependencies: []
 // Exports: default
 
-// Module 12010 (UserProfileWishlistSuggestionsGridContent)
+// Module 12014 (UserProfileWishlistSuggestionsGridContent)
 function UserProfileWishlistSuggestionsGridContent(arg0) {
   let containerWidth;
   let maxWidth;
@@ -101,7 +101,7 @@ function WishlistSuggestionsGridContents(arg0) {
       str4 = "auto";
     }
     obj5.importantForAccessibility = str4;
-    const obj6 = {};
+    const obj6 = { <string:1986169986>: true, <string:2487833047>: true };
     const obj7 = { size: "sm", color: importDefault(dependencyMap[5]).colors.CONTROL_ICON_ONLY_ICON_DEFAULT };
     obj6.icon = callback(arg1(dependencyMap[21]).XSmallIcon, obj7);
     obj6.onPress = markAsDismissed;

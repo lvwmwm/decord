@@ -1,10 +1,10 @@
-// Module ID: 16451
-// Function ID: 127085
+// Module ID: 16459
+// Function ID: 127127
 // Name: SENT_TIMESTAMP_FORMATTER
-// Dependencies: [2550136852, 520093698, 385875995, 3774873627]
+// Dependencies: []
 // Exports: formatPendingRequestSentText
 
-// Module 16451 (SENT_TIMESTAMP_FORMATTER)
+// Module 16459 (SENT_TIMESTAMP_FORMATTER)
 function SENT_TIMESTAMP_FORMATTER() {
   const obj = {};
   const intl = require(dependencyMap[0]).intl;

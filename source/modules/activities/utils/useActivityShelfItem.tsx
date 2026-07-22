@@ -1,10 +1,10 @@
-// Module ID: 11166
-// Function ID: 86833
+// Module ID: 11167
+// Function ID: 86846
 // Name: getStaffReleasePhase
 // Dependencies: []
 // Exports: default
 
-// Module 11166 (getStaffReleasePhase)
+// Module 11167 (getStaffReleasePhase)
 function getStaffReleasePhase(application, activity) {
   if (!obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
     const obj2 = activity(dependencyMap[10]);
@@ -143,7 +143,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   ({ activityItem, context, assetNames } = backgroundResolution);
   ({ locationObject, onActivityItemSelected, embeddedActivitiesManager } = backgroundResolution);
   if (assetNames === undefined) {
-    assetNames = ["RollOutRight"];
+    assetNames = ["ETHERNET"];
   }
   let num = backgroundResolution.backgroundResolution;
   if (num === undefined) {

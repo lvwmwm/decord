@@ -1,9 +1,9 @@
-// Module ID: 13390
-// Function ID: 101812
+// Module ID: 13397
+// Function ID: 101845
 // Name: jsx
 // Dependencies: []
 
-// Module 13390 (jsx)
+// Module 13397 (jsx)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -18,9 +18,9 @@ obj.content = obj;
 obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.contentContainer = obj1;
 let closure_9 = obj1.createStyles(obj);
-const obj2 = { <string:2048437162>: 24, <string:2887950716>: 24, icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) };
+const obj2 = { "Null": 24, "Null": 24, icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) };
 const items = [obj2, ];
-const obj3 = { <string:2048437162>: 1358954760, <string:2887950716>: -1454293321, icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
+const obj3 = { "Null": "true", "Null": "vkt", icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
 items[1] = obj3;
 const memoResult = importAllResult.memo(() => {
   function getLabel(first) {
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(() => {
     return tmp;
   });
   const arg1 = stateFromStores;
-  const tmp3 = callback(importAllResult.useState({ borderRadius: true, borderColor: true }), 2);
+  const tmp3 = callback(importAllResult.useState({ "Null": true, "Null": true }), 2);
   const first = tmp3[0];
   const importDefault = first;
   closure_2 = tmp3[1];

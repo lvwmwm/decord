@@ -1,10 +1,10 @@
-// Module ID: 16334
-// Function ID: 126046
+// Module ID: 16342
+// Function ID: 126088
 // Name: GuildRoleSubscriptionTierConfirmationModal
 // Dependencies: []
 // Exports: default
 
-// Module 16334 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 16342 (GuildRoleSubscriptionTierConfirmationModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_7 = importAll(dependencyMap[4]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = { description: { paddingHorizontal: 16 }, coverPhotoContainer: { marginHorizontal: 16 } };
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { "Null": "jsx", "Null": "r", d: "isArray", E: "construct", borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.coverPhoto = obj;
 let closure_11 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
@@ -77,7 +77,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     const intl4 = arg1(dependencyMap[11]).intl;
     obj6.children = intl4.string(arg1(dependencyMap[11]).t.74JctW);
     items2[1] = callback3(importDefault(dependencyMap[12]), obj6);
-    const obj7 = { style: tmp4.description, children: callback2(closure_7.useGroupDescriptionState(), 1)[0] };
+    const obj7 = { "Null": 0.236, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184698513646185, alignItems: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000007170012376140887, style: tmp4.description, children: callback2(closure_7.useGroupDescriptionState(), 1)[0] };
     items2[2] = callback3(arg1(dependencyMap[14]).Text, obj7);
     obj1.children = items2;
     flag = callback4(closure_9, obj1);

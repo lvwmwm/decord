@@ -1,5 +1,5 @@
 // Module ID: 4589
-// Function ID: 40210
+// Function ID: 40218
 // Name: getThreadChannelIcon
 // Dependencies: []
 // Exports: getChannelIconComponentWithGuild, getChannelIconWithGuild, getChannelMentionIcon, getSimpleChannelIcon, getSimpleChannelIconComponent

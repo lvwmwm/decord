@@ -1,14 +1,13 @@
 // Module ID: 7311
-// Function ID: 58964
+// Function ID: 58975
 // Name: requestDataIntegration
 // Dependencies: []
 
 // Module 7311 (requestDataIntegration)
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
-let closure_4 = [false, false];
-const obj = { "Bool(false)": "Galaxy S6", "Bool(false)": "SM-G920", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": 1766163600000, user: { 1414937443: "Small", 1644363857: "sm", -77228886: "Placeholder" } };
-let closure_5 = { include: obj, transactionNamingScheme: "methodPath" };
+let closure_4 = [null, null];
+let closure_5 = { include: { user: {} }, transactionNamingScheme: "methodPath" };
 const _module = require(dependencyMap[3]);
 
 export const requestDataIntegration = _module.defineIntegration(function _requestDataIntegration() {
@@ -41,7 +40,7 @@ export const requestDataIntegration = _module.defineIntegration(function _reques
               ({ request, normalizedRequest } = prop);
               const include = lib.include;
               let user = include.user;
-              const items = [];
+              const items = [-144637948];
               const entries = Object.entries(callback2(include, closure_4));
               while (tmp2 !== undefined) {
                 let tmp4 = callback;

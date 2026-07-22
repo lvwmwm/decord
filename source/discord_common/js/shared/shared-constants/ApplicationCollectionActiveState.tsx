@@ -1,9 +1,9 @@
-// Module ID: 11187
-// Function ID: 87084
+// Module ID: 11188
+// Function ID: 87097
 // Name: ApplicationCollectionActiveState
 // Dependencies: []
 
-// Module 11187 (ApplicationCollectionActiveState)
+// Module 11188 (ApplicationCollectionActiveState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionActiveState.tsx");
 
